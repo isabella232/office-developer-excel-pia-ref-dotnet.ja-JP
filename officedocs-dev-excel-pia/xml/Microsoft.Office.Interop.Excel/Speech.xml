@@ -1,0 +1,141 @@
+<Type Name="Speech" FullName="Microsoft.Office.Interop.Excel.Speech">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="22837717535384f6c1e41513e3e32b7efde41769" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20576224" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Speech" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Speech" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Speech" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Speech" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Speech" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024466-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>音声機能に関するメソッドとプロパティを持っています。</summary>
+    <remarks>
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Application.Speech" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、 <b>Speech</b>オブジェクトを返すオブジェクト</para>。
+      <para><b>Speech</b>オブジェクトを取得したらを使って、 <see cref="M:Microsoft.Office.Interop.Excel.Speech.Speak(System.String,System.Object,System.Object,System.Object)" /> 、文字列の内容を再生する<b>音声</b>オブジェクトのメソッドです</para>。
+      <para><b>注</b>: ディクテーション モードとコマンドに関連するセットアップ ツリーに音声機能がある&amp;コントロールをインストールする必要はありません</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Direction">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlSpeakDirection Direction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlSpeakDirection Direction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Speech.Direction" />
+      <MemberSignature Language="VB.NET" Value="Public Property Direction As XlSpeakDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlSpeakDirection Direction { Microsoft::Office::Interop::Excel::XlSpeakDirection get(); void set(Microsoft::Office::Interop::Excel::XlSpeakDirection value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(168)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(168)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(168)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlSpeakDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>セルが読み上げられる順序を設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>Direction</b>プロパティの値は、<see cref="T:Microsoft.Office.Interop.Excel.XlSpeakDirection" />定数。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Speak">
+      <MemberSignature Language="C#" Value="public void Speak (string Text, object SpeakAsync, object SpeakXML, object Purge);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Speak([in]string Text, [in]object SpeakAsync, [in]object SpeakXML, [in]object Purge) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Speech.Speak(System.String,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Speak (Text As String, Optional SpeakAsync As Object, Optional SpeakXML As Object, Optional Purge As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2017)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Text" Type="System.String" />
+        <Parameter Name="SpeakAsync" Type="System.Object" />
+        <Parameter Name="SpeakXML" Type="System.Object" />
+        <Parameter Name="Purge" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Text">
+          <b>文字列</b> が必要です。 再生するテキスト。</param>
+        <param name="SpeakAsync">省略可能な<b>オブジェクト</b>です。 <b>True の場合</b>、<paramref name="Text" />非同期的に再生する (メソッドがを待たず、<paramref name="Text" />を読み上げる)。 <b>False を指定</b>すると、<paramref name="Text" />同期的に再生する (待機メソッド、<paramref name="Text" />を続行する前に読み上げる)。 既定では <b>False です</b> 。</param>
+        <param name="SpeakXML">オプションの <b>Boolean</b>。 <b>True の場合</b>、 <paramref name="Text" /> XML として解釈されます。 <b>False を指定</b>すると、<paramref name="Text" />の XML タグが読まれ、解釈ではないため、XML として解釈しないようにします。 既定では <b>False です</b> 。</param>
+        <param name="Purge">省略可能な<b>オブジェクト</b>です。 <b>True を指定</b>すると、現在の読み上げが終了して、前に削除するテキストをバッファーされている<paramref name="Text" />読み上げられます。 <b>False</b>は、現在の読み上げを終了するのには発生せず、消去されるわけでバッファーに格納された文字列の前に<paramref name="Text" />読み上げられます。 既定では <b>False です</b> 。</param>
+        <summary>Microsoft Excel は、指定されたテキスト文字列を再生します。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpeakCellOnEnter">
+      <MemberSignature Language="C#" Value="public bool SpeakCellOnEnter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SpeakCellOnEnter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Speech.SpeakCellOnEnter" />
+      <MemberSignature Language="VB.NET" Value="Public Property SpeakCellOnEnter As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SpeakCellOnEnter { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2235)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2235)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2235)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ENTER キーが押されたとき、またはアクティブ セルが終了したときにアクティブ セルが読み上げられるモード、Microsoft Excel をサポートしていますが編集されています。 <b>SpeakCellOnEnter</b>プロパティを<b>True</b>に設定が有効にするこのモードします。 <b>False を指定</b>するとこのモードをオフにします。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

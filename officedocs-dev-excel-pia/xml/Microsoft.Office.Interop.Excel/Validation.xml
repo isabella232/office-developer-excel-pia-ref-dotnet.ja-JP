@@ -1,0 +1,704 @@
+<Type Name="Validation" FullName="Microsoft.Office.Interop.Excel.Validation">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="083a06403ed93601b1e670cd7b0f4d2f6291f627" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20575804" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Validation" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Validation" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Validation" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Validation" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Validation" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0002442F-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>ワークシート範囲の入力規則を表します。</summary>
+    <remarks>
+      <para>使用の<see cref="P:Microsoft.Office.Interop.Excel.Range.Validation" /><b>オブジェクト</b>を返すプロパティです</para>。
+      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />を範囲にデータの入力規則を追加し、新しい<b>検証</b>オブジェクトを作成します</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (Microsoft.Office.Interop.Excel.XlDVType Type, object AlertStyle, object Operator, object Formula1, object Formula2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add([in]valuetype Microsoft.Office.Interop.Excel.XlDVType Type, [in]object AlertStyle, [in]object Operator, [in]object Formula1, [in]object Formula2) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (Type As XlDVType, Optional AlertStyle As Object, Optional Operator As Object, Optional Formula1 As Object, Optional Formula2 As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(181)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Interop.Excel.XlDVType" />
+        <Parameter Name="AlertStyle" Type="System.Object" />
+        <Parameter Name="Operator" Type="System.Object" />
+        <Parameter Name="Formula1" Type="System.Object" />
+        <Parameter Name="Formula2" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Type">必要な<see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />。 入力規則の種類を指定します。</param>
+        <param name="AlertStyle">省略可能な<b>オブジェクト</b>です。 検証エラーのスタイルです。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />定数: <b>xlValidAlertInformation</b><b>xlValidAlertStop</b>、 <b>xlValidAlertWarning</b>。</param>
+        <param name="Operator">省略可能な<b>オブジェクト</b>です。 データ入力規則の演算子です。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />定数:<b>で</b>、 <b>xlEqual</b>、 <b>xlGreater</b>、 <b>xlGreaterEqual</b>、 <b>xlLess</b>、 <b>xlLessEqual</b>、 <b>xlNotBetween</b>、 <b>xlNotEqual</b>か。</param>
+        <param name="Formula1">省略可能な<b>オブジェクト</b>です。 データ入力規則での条件式の最初の部分を指定します。</param>
+        <param name="Formula2">省略可能な<b>オブジェクト</b>です。 データの入力規則の 2 番目の部分と、<paramref name="Operator" />は、<b><b>規則での条件</b></b>(それ以外の場合、この引数は無視されます)。</param>
+        <summary>指定された範囲に入力規則を追加します。</summary>
+        <remarks>
+          <para>を追加する方法では、次の表に示すように入力規則の種類に応じて、さまざまな引数が必要です</para>。
+          <list type="table"><item><term><b>xlValidateCustom</b></term><description><paramref name="Formula1" />が必要です。<paramref name="Formula2" />は無視されます。<paramref name="Formula1" />データの入力が無効である場合、<b><b>該当</b>データの入力が有効である場合</b>に評価される式を含める必要があります</description></item>。
+            <item><term><b>xlInputOnly</b></term><description><paramref name="AlertStyle" />、 <paramref name="Formula1" />、または<paramref name="Formula2" />を使用します</description></item>。
+            <item><term><b>xlValidateList</b></term><description><paramref name="Formula1" />が必要です。<paramref name="Formula2" />は無視されます。<paramref name="Formula1" />の値のコンマ区切りの一覧またはこの一覧へのシート参照のいずれかが含まれている必要があります</description></item>。
+            <item><term><b>xlValidateWholeNumber</b>、 <b>xlValidateDate</b>、 <b>xlValidateDecimal</b>、 <b>xlValidateTextLength</b>、または<b>xlValidateTime</b></term><description>のいずれかのいずれかの<paramref name="Formula1" />または<paramref name="Formula2" />を指定する必要があります、またはその両方指定することがあります</description></item>。
+          </list><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlertStyle">
+      <MemberSignature Language="C#" Value="public int AlertStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AlertStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.AlertStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AlertStyle As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AlertStyle { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1605)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1605)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>検証エラーのスタイルを返します。 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />の範囲のエラーのスタイルを設定します。範囲には、データの入力規則が割り当てられている場合を使用して、<see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" />エラーのスタイルを変更するメソッドです。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Validation.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>オブジェクトを削除します。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorMessage">
+      <MemberSignature Language="C#" Value="public string ErrorMessage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ErrorMessage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.ErrorMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Property ErrorMessage As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorMessage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1609)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1609)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1609)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>データ検証エラー メッセージを設定または返します。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorTitle">
+      <MemberSignature Language="C#" Value="public string ErrorTitle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ErrorTitle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.ErrorTitle" />
+      <MemberSignature Language="VB.NET" Value="Public Property ErrorTitle As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>データ検証エラー ダイアログ ボックスのタイトルを設定または返します。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Formula1">
+      <MemberSignature Language="C#" Value="public string Formula1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Formula1" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Formula1" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Formula1 As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Formula1 { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1579)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1579)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>値または条件付き書式または入力規則に関連付けられた式を返します。 定数値、文字列値、セル参照、または数式を指定できます。 読み取り専用 <b>文字列</b> です。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Formula2">
+      <MemberSignature Language="C#" Value="public string Formula2 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Formula2" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Formula2" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Formula2 As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Formula2 { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1580)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1580)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>値または条件付き書式または入力規則の 2 番目の部分に関連付けられた式を返します。 読み取り専用 <b>文字列</b> です。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>のみこのプロパティが使用されるデータの入力規則の条件付き書式を設定すると<see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" />プロパティには、<b><b>規則での条件</b></b>です。定数値、文字列値、セル参照、または数式を指定できます。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreBlank">
+      <MemberSignature Language="C#" Value="public bool IgnoreBlank { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreBlank" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.IgnoreBlank" />
+      <MemberSignature Language="VB.NET" Value="Public Property IgnoreBlank As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreBlank { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1606)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1606)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1606)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> の場合、入力規則において特定のセル範囲への空白値の入力を許可します。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>IgnoreBlank</b>プロパティが<b>True</b>の場合は、セルのデータと見なされます有効な場合はいずれかの方法で参照されているセルまたはセルが空白の場合、<see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" />または<see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" />プロパティが空白です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IMEMode">
+      <MemberSignature Language="C#" Value="public int IMEMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 IMEMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.IMEMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property IMEMode As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int IMEMode { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1607)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1607)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1607)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>日本語の入力規則の説明を設定または返します。 いずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" />定数。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>日本語の言語サポートがインストールおよび選択されている場合にのみ、このプロパティを設定することに注意してください。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InCellDropdown">
+      <MemberSignature Language="C#" Value="public bool InCellDropdown { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InCellDropdown" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.InCellDropdown" />
+      <MemberSignature Language="VB.NET" Value="Public Property InCellDropdown As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InCellDropdown { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1608)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1608)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1608)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> の場合、入力規則で可能な値を含むドロップダウン リストを表示します。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>入力規則の種類が<b>xlValidateList</b>でない場合、このプロパティは無視されます</para>。
+          <para>使用、<paramref name="Minimum" />の引数、<see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />または<see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.Validation" />が有効なデータが含まれる範囲を指定するオブジェクトです</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputMessage">
+      <MemberSignature Language="C#" Value="public string InputMessage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InputMessage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.InputMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Property InputMessage As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InputMessage { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1611)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1611)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1611)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>データ検証入力メッセージを設定または返します。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputTitle">
+      <MemberSignature Language="C#" Value="public string InputTitle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InputTitle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.InputTitle" />
+      <MemberSignature Language="VB.NET" Value="Public Property InputTitle As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InputTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1612)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1612)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1612)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>データ検証入力ダイアログ ボックスのタイトルを設定または返します。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Modify">
+      <MemberSignature Language="C#" Value="public void Modify (object Type, object AlertStyle, object Operator, object Formula1, object Formula2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Modify([in]object Type, [in]object AlertStyle, [in]object Operator, [in]object Formula1, [in]object Formula2) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Modify (Optional Type As Object, Optional AlertStyle As Object, Optional Operator As Object, Optional Formula1 As Object, Optional Formula2 As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1581)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="System.Object" />
+        <Parameter Name="AlertStyle" Type="System.Object" />
+        <Parameter Name="Operator" Type="System.Object" />
+        <Parameter Name="Formula1" Type="System.Object" />
+        <Parameter Name="Formula2" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Type">必要な<see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />。 入力規則の種類を指定します。</param>
+        <param name="AlertStyle">省略可能な<see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />。 検証エラーのスタイルです。</param>
+        <param name="Operator">省略可能な<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />。 データ入力規則の演算子です。</param>
+        <param name="Formula1">省略可能な<b>オブジェクト</b>です。 データ入力規則での条件式の最初の部分を指定します。</param>
+        <param name="Formula2">省略可能な<b>オブジェクト</b>です。 データの入力規則の 2 番目の部分と、<paramref name="Operator" />は、<b><b>規則での条件</b></b>(それ以外の場合、この引数は無視されます)。</param>
+        <summary>セル範囲のデータの入力規則を変更します。</summary>
+        <remarks>
+          <para>
+            <b>Modify</b>メソッド、次の表に示すように、入力規則の種類に応じて、さまざまな引数が必要です</para>。
+          <list type="table"><item><term><b>xlInputOnly</b></term><description><paramref name="AlertStyle" />、 <paramref name="Formula1" />、および<paramref name="Formula2" />は使用されません</description></item>。
+            <item><term><b>xlValidateCustom</b></term><description><paramref name="Formula1" />が必要です。<paramref name="Formula2" />は無視されます。<paramref name="Formula1" />データの入力が無効である場合、<b><b>該当</b>データの入力が有効である場合</b>に評価される式を含める必要があります</description></item>。
+            <item><term><b>xlValidateList</b></term><description><paramref name="Formula1" />が必要です。<paramref name="Formula2" />は無視されます。<paramref name="Formula1" />の値のコンマ区切りのリストまたはリストへのシート参照のいずれかが含まれている必要があります</description></item>。
+            <item><term><b>xlValidateDate</b>、 <b>xlValidateDecimal</b>、 <b>xlValidateTextLength</b>、 <b>xlValidateTime</b>、または<b>xlValidateWholeNumber</b></term><description><paramref name="Formula1" />または<paramref name="Formula2" />、または、両方を指定する必要があります</description></item></list>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Operator">
+      <MemberSignature Language="C#" Value="public int Operator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Operator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Operator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Operator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(797)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(797)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>条件付き書式または入力規則の演算子を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowError">
+      <MemberSignature Language="C#" Value="public bool ShowError { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowError" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.ShowError" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowError As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowError { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1613)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1613)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1613)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> の場合、ユーザーが無効なデータを入力すると、入力規則でのエラー メッセージが必ず表示されます。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowInput">
+      <MemberSignature Language="C#" Value="public bool ShowInput { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowInput" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.ShowInput" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowInput As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowInput { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1614)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1614)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1614)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b> の場合、ユーザーが入力規則のセル範囲を選択すると、入力規則での入力メッセージが必ず表示されます。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public int Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Type { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>範囲の入力規則を取得します。 読み取り専用の<b>整数</b>の定数のいずれかを<see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public bool Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Validation.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Value { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>の場合 (つまり、範囲には、有効なデータが含まれています)、すべての入力規則の条件が満たされた場合です。 読み取り専用の <b>ブール値</b> です。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

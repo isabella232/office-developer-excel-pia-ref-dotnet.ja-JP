@@ -1,0 +1,220 @@
+<Type Name="IRtdServer" FullName="Microsoft.Office.Interop.Excel.IRtdServer">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="6fb4c2630e49381cd91d798ba2d0b584987cef3b" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20579129" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface IRtdServer" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRtdServer" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IRtdServer" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRtdServer" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRtdServer" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("EC0E6191-DB51-11D3-8F3E-00C04F3651B8")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>リアルタイム データ サーバーのインターフェイスを表します。</summary>
+    <remarks>
+      <para>
+        <b>IRTDServer</b>オブジェクトをインスタンス化または<b>Implements</b>キーワードを使用して<b>IRTDServer</b>インターフェイスを実装することによってのみ作成できます。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ConnectData">
+      <MemberSignature Language="C#" Value="public object ConnectData (int TopicID, ref Array Strings, out bool GetNewValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ConnectData([in]int32 TopicID, [in]class System.Array&amp; Strings, [out] bool&amp; GetNewValues) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.IRtdServer.ConnectData(System.Int32,System.Array@,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConnectData (TopicID As Integer, ByRef Strings As Array, ByRef GetNewValues As Boolean) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ConnectData(int TopicID, Array ^ % Strings, [Runtime::InteropServices::Out] bool % GetNewValues);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(11)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="TopicID" Type="System.Int32" />
+        <Parameter Name="Strings" Type="System.Array&amp;" RefType="ref" />
+        <Parameter Name="GetNewValues" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="TopicID">
+          <b>整数</b>が必要です。 トピックを識別する固有の値を指定します。</param>
+        <param name="Strings">
+          <b>オブジェクト</b>が必要です。 トピックを識別する文字列の 1 次元配列を指定します。</param>
+        <param name="GetNewValues">
+          <b>ブール値</b>が必要です。 <b>True</b> を設定すると、新しい値を取得します。</param>
+        <summary>リアルタイム データ サーバーから新しいトピックを追加します。 <b>ConnectData</b>メソッドには、リアルタイム データ関数を含むファイルを開くとき、またはユーザーが<b>RTD</b>関数を含む新しい数式と呼ばれます。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectData">
+      <MemberSignature Language="C#" Value="public void DisconnectData (int TopicID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DisconnectData([in]int32 TopicID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.IRtdServer.DisconnectData(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DisconnectData (TopicID As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DisconnectData(int TopicID);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(13)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="TopicID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="TopicID">
+          <b>整数</b>が必要です。 Microsoft Excel がトピックに対して割り当てた一意の値を指定します。</param>
+        <summary>リアルタイム データ (RTD) サーバー アプリケーションに、トピックが使用できなくなったことを通知します。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Heartbeat">
+      <MemberSignature Language="C#" Value="public int Heartbeat ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Heartbeat() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.IRtdServer.Heartbeat" />
+      <MemberSignature Language="VB.NET" Value="Public Function Heartbeat () As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Heartbeat();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>リアルタイム データ サーバーがまだアクティブなかどうかを決定します。 ゼロまたは負の数の障害を示す正の数は、サーバーがアクティブであることを示します。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>ハートビート メソッドが Microsoft Excel を使用して場合は、<see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" />プロパティと Excel が呼び出された最後の時間が経過、<see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" />メソッドです。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshData">
+      <MemberSignature Language="C#" Value="public Array RefreshData (out int TopicCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Array RefreshData([out] int32&amp; TopicCount) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.IRtdServer.RefreshData(System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RefreshData (ByRef TopicCount As Integer) As Array" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Array ^ RefreshData([Runtime::InteropServices::Out] int % TopicCount);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(12)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Array</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="TopicCount" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="TopicCount">
+          <b>整数</b>が必要です。 RTD サーバーの値を変更する必要があります、 <paramref name="TopicCount" /> 、配列の要素数が返されます。</param>
+        <summary>このメソッドは、新しいデータを取得するのには Microsoft Excel によって呼び出されます。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>Excel に返されるデータは、2 次元の配列を含む<b>オブジェクト</b>です。最初の次元はトピック Id のリストを表します。2 番目の次元はトピック Id に関連付けられている値を表します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerStart">
+      <MemberSignature Language="C#" Value="public int ServerStart (Microsoft.Office.Interop.Excel.IRTDUpdateEvent CallbackObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 ServerStart([in]class Microsoft.Office.Interop.Excel.IRTDUpdateEvent CallbackObject) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.IRtdServer.ServerStart(Microsoft.Office.Interop.Excel.IRTDUpdateEvent)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ServerStart (CallbackObject As IRTDUpdateEvent) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int ServerStart(Microsoft::Office::Interop::Excel::IRTDUpdateEvent ^ CallbackObject);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="CallbackObject" Type="Microsoft.Office.Interop.Excel.IRTDUpdateEvent" />
+      </Parameters>
+      <Docs>
+        <param name="CallbackObject">必要な<see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" />オブジェクトです。 コールバック オブジェクトを指定します。</param>
+        <summary>
+          <b>ServerStart</b>メソッドは、リアルタイム データ サーバーがインスタンス化された直後後に呼び出されます。 負の値または 0 はサーバーの起動に失敗したことを示します正の値は、成功を示します。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerTerminate">
+      <MemberSignature Language="C#" Value="public void ServerTerminate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ServerTerminate() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.IRtdServer.ServerTerminate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ServerTerminate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ServerTerminate();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(15)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>リアルタイム データ サーバーへの接続を終了します。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

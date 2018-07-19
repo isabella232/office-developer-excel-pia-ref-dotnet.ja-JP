@@ -1,0 +1,90 @@
+<Type Name="XlFileValidationPivotMode" FullName="Microsoft.Office.Interop.Excel.XlFileValidationPivotMode">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="c8e55ec1ec9ea610add3c7ccb937797796fc156c" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20575349" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum XlFileValidationPivotMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XlFileValidationPivotMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.XlFileValidationPivotMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum XlFileValidationPivotMode" />
+  <TypeSignature Language="C++ CLI" Value="public enum class XlFileValidationPivotMode" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>ピボットテーブル レポートのデータ キャッシュを検証する方法を指定します。</summary>
+    <remarks>
+      <para>この列挙体の使用の設定を指定するのには、<see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidationPivot" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel._Application" />オブジェクト</para>。
+      <para><b>XlFileValidationPivotDefault</b>の設定の効果は、PivotOptions レジストリ値によって、次のレジストリ サブキーに設定されている制御: HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Excel\Security\FileValidation。PivotOptions 値は、次の表に示すように設定できる DWORD 値です</para>。
+      <list type="table"><item><term>0</term><description>は、決して、ピボット テーブル レポートのデータ キャッシュを検証します。(推奨しません)</description></item><item><term>1</term><description>検証のピボット テーブル レポートのデータを次のような場合 (デフォルト設定) キャッシュ: ファイルが開かれたファイルは、電子メールの添付ファイル、Internet.The からです。ファイルは、保護されたビューで、[開く] ダイアログ ボックスの開くを使用して開かれました。ファイルは、インターネットのコンテンツがローカルでキャッシュされている既知の安全でない場所から、またはユーザー定義の信頼できない場所から開かれました。ファイルを開いたとき、ロード時にデータ キャッシュが解析されます</description></item>。
+        <item><term>2</term><description>すべてのピボット テーブル レポートのデータ キャッシュを確認します</description></item></list>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="xlFileValidationPivotDefault">
+      <MemberSignature Language="C#" Value="xlFileValidationPivotDefault" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Excel.XlFileValidationPivotMode xlFileValidationPivotDefault = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Excel.XlFileValidationPivotMode.xlFileValidationPivotDefault" />
+      <MemberSignature Language="VB.NET" Value="xlFileValidationPivotDefault" />
+      <MemberSignature Language="C++ CLI" Value="xlFileValidationPivotDefault" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlFileValidationPivotMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>PivotOptions レジストリの設定 (既定値) で指定されたデータ キャッシュの内容を検証します。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlFileValidationPivotRun">
+      <MemberSignature Language="C#" Value="xlFileValidationPivotRun" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Excel.XlFileValidationPivotMode xlFileValidationPivotRun = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Excel.XlFileValidationPivotMode.xlFileValidationPivotRun" />
+      <MemberSignature Language="VB.NET" Value="xlFileValidationPivotRun" />
+      <MemberSignature Language="C++ CLI" Value="xlFileValidationPivotRun" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlFileValidationPivotMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>レジストリ設定とは関係なく、すべてのデータ キャッシュの内容を検証します。</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="xlFileValidationPivotSkip">
+      <MemberSignature Language="C#" Value="xlFileValidationPivotSkip" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Interop.Excel.XlFileValidationPivotMode xlFileValidationPivotSkip = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Interop.Excel.XlFileValidationPivotMode.xlFileValidationPivotSkip" />
+      <MemberSignature Language="VB.NET" Value="xlFileValidationPivotSkip" />
+      <MemberSignature Language="C++ CLI" Value="xlFileValidationPivotSkip" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlFileValidationPivotMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>データ キャッシュの内容を検証しません。</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

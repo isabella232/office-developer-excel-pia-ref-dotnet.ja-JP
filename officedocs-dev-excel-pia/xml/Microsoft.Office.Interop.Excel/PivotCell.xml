@@ -1,0 +1,750 @@
+<Type Name="PivotCell" FullName="Microsoft.Office.Interop.Excel.PivotCell">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="97d53069436a318096bbfbdc2ce01e7de3cf9166" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20574726" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface PivotCell" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotCell" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotCell" />
+  <TypeSignature Language="VB.NET" Value="Public Interface PivotCell" />
+  <TypeSignature Language="C++ CLI" Value="public interface class PivotCell" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024458-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>ピボットテーブル レポート内のセルを表します。</summary>
+    <remarks>
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.Range.PivotCell" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.Range" /><b>PivotCell</b>オブジェクトを取得するコレクションです</para>。
+      <para><b>PivotCell</b>オブジェクトを取得したらを使って、 <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.PivotCellType" /> 、特定の範囲の島のセルの種類を決定するプロパティ</para><para>を使用することができます、<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" />または<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" />を確認するに、<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />を選択した番号を表す列または行の軸上のアイテムに対応するコレクションです</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllocateChange">
+      <MemberSignature Language="C#" Value="public void AllocateChange ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AllocateChange() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.PivotCell.AllocateChange" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AllocateChange ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AllocateChange();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2928)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>OLAP データ ソースに基づくピボットテーブル レポートの指定したセルで書き戻し操作を実行します。</summary>
+        <remarks>
+          <para>このメソッドはこの特定のセルの変更だけを追加するのには、UPDATE CUBE ステートメントを実行するも、以前に適用された変更が含まれます。UPDATE CUBE ステートメントを実行後、ピボット テーブルの更新を実行すると、トランザクションをロールバック ステートメントを実行し、します</para>。
+          <para>を実行している、<see cref="M:Microsoft.Office.Interop.Excel.PivotCell.AllocateChange" />非 OLAP データ ソースに基づくピボット テーブル レポート内のセルのメソッドには、実行時エラーが生成されます</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CellChanged">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCellChangedState CellChanged { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCellChangedState CellChanged" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CellChanged As XlCellChangedState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCellChangedState CellChanged { Microsoft::Office::Interop::Excel::XlCellChangedState get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2931)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2931)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCellChangedState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ピボット テーブルの値のセルを編集したり、ピボット テーブル レポートが作成されたか、または最後のコミット操作が実行されたために再計算するかどうかを取得します。</summary>
+        <value>A<see cref="T:Microsoft.Office.Interop.Excel.XlCellChangedState" />オブジェクトです。</value>
+        <remarks>
+          <para>値、<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" />プロパティは、<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />既定</para>。
+          <para>のピボット テーブル レポートを OLAP データ ソースでこのプロパティの値には、いずれかのみを指定できます<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />または<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />。<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />のセル内の編集されていない、<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />編集されたセル。変更を破棄してその値を設定<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />です</para>。
+          <para>OLAP データ ソースのピボット テーブル レポートにのみ適用され、変更を保存が適用されます。次の状態の説明、<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" />プロパティは、OLAP データ ソースのピボット テーブルにのみ適用されます</para>。
+          <list type="bullet"><item><description><see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />のセルが編集または再計算 (セルに数式が含まれています) ので、ピボット テーブルの作成または変更操作が実行されるため、最後に保存または破棄されていない</description></item>。
+            <item><description><see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />のセルを編集したり、ピボット テーブルが作成された、または、操作が実行された最後の変更を適用してから、または [変更の保存ですが、その変更が適用されていないために再計算されます (UPDATE CUBE ステートメントが実行されていないこと).</description></item><item><description><see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />- セルが編集されたか、変更、または操作が実行された変更を破棄し、変更が適用されているを保存するピボット テーブルが作成された後、または最後の変更を適用してから再計算、(UPDATE CUBE ステートメントは、実行が).</description></item></list><para>次の表では、さまざまなアクションによってユーザーに影響を与えるの設定を説明の<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" />では、OLAP データ ソースを含むピボット テーブルのプロパティです</para>。
+          <list type="table"><item><term>セルまたは複数のセルに値や数式を入力します</term>。
+              <description>に<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />それらのセルにします</description>。
+              <description>に<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />それらのセルにします</description></item>。
+            <item><term>を再計算、数式で複数のセルまたはセルか、手動で (f9 キー) または Excel によって自動的にします</term>。
+              <description>該当なし</description><description>に<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />それらのセルにします</description></item>。
+            <item><term>の変更 (コミット) を保存します</term>。
+              <description>に<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />のすべてのセルに数式を編集します</description>。
+              <description>に<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />のすべてのセルに数式を編集します</description></item>。
+            <item><term>のすべての変更を破棄します</term>。
+              <description>に<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />のすべてのセルに数式を編集します</description>。
+              <description>に<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />のすべてのセルに数式を編集します</description></item>。
+            <item><term>1 つのセル内の変更を破棄します</term>。
+              <description>に設定されて<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />のみ、そのセルにします</description>。
+              <description>に設定されて<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />のみ、そのセルにします</description></item>。
+            <item><term>1 回の操作で複数のセルをクリアします</term>。
+              <description>に設定<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />これらのすべてのセルにします</description>。
+              <description>に設定<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />これらのすべてのセルにします</description></item>。
+            <item><term>セルをクリアします</term>。
+              <description>に設定されて<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />のみ、そのセルにします</description>。
+              <description>に設定されて<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" />のみ、そのセルにします</description></item>。
+            <item><term>その値を適用する前に、以前に編集された値に値を変更を元に戻す操作を実行します</term>。
+              <description>に<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />のすべてのセルに数式を編集します</description>。
+              <description>に<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" />のすべてのセルに数式を編集します</description></item>。
+            <item><term>その値が適用された後に、以前に編集された値に値を変更を元に戻す操作を実行します</term>。
+              <description>に<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />のすべてのセルに数式を編集します</description>。
+              <description>に<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />のすべてのセルに数式を編集します</description></item></list>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnItems">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotItemList ColumnItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotItemList ColumnItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnItems As PivotItemList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotItemList ^ ColumnItems { Microsoft::Office::Interop::Excel::PivotItemList ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2191)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2191)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotItemList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.PivotItemList" /> 、選択範囲を表す列軸上のアイテムに対応するコレクションです。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>
+            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomSubtotalFunction">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlConsolidationFunction CustomSubtotalFunction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlConsolidationFunction CustomSubtotalFunction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.CustomSubtotalFunction" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomSubtotalFunction As XlConsolidationFunction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlConsolidationFunction CustomSubtotalFunction { Microsoft::Office::Interop::Excel::XlConsolidationFunction get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2193)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2193)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlConsolidationFunction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>カスタムの集計関数フィールドの設定値を返す、<see cref="T:Microsoft.Office.Interop.Excel.PivotCell" />オブジェクトです。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" />
+            <b>可能</b>定数は、次のいずれか:</para>
+          <para>
+            <b>xlAverage</b>
+          </para>
+          <para>
+            <b>xlCount</b>
+          </para>
+          <para>
+            <b>xlCountNums</b>
+          </para>
+          <para>
+            <b>xlMax</b>
+          </para>
+          <para>
+            <b>xlMin</b>
+          </para>
+          <para>
+            <b>xlProduct</b>
+          </para>
+          <para>
+            <b>xlStDev</b>
+          </para>
+          <para>
+            <b>xlStDevP</b>
+          </para>
+          <para>
+            <b>xlSum</b>
+          </para>
+          <para>
+            <b>xlUnknown</b>
+          </para>
+          <para>
+            <b>xlVar</b>
+          </para>
+          <para>
+            <b>xlVarP</b>
+          </para>
+          <para>、 <b>CustomSubtotalFunction</b>プロパティはエラーを返す場合は、 <b>PivotCell</b>オブジェクトの種類は、ユーザー設定の集計ではありません。このプロパティは、非 olap の集計元データにのみ適用されます</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataField">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotField DataField { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotField DataField" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.DataField" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataField As PivotField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotField ^ DataField { Microsoft::Office::Interop::Excel::PivotField ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2091)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2091)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 、選択したデータ フィールドに対応するオブジェクトです。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>PivotCell</b>オブジェクトが許可されている種類の 1 つでない場合、このプロパティはエラーを返しますが: <b>XlPivotCellTypeValue</b>、 <b>XlPivotCellTypeDataField</b>、 <b>XlPivotCellTypeSubtotal</b>、または<b>XlPivotCellTypeGrandTotal</b>です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSourceValue">
+      <MemberSignature Language="C#" Value="public object DataSourceValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DataSourceValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataSourceValue As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataSourceValue { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2930)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2930)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>最後に、ピボット テーブル レポートで編集されたセルのデータ ソースから取得する値を取得します。</summary>
+        <value>最後に、ピボット テーブル レポートで編集されたセルのデータ ソースから取得する値です。</value>
+        <remarks>
+          <para>読み取り専用</para>。ピボット テーブル レポートの [値] 領域で、セルが編集されるたびに、 
+          <para>、<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />プロパティが最後に取得されたデータ ソースの編集が行われる前に値を保持します。ピボット テーブル レポートの値のセルが編集されていない、または、対象のデータ ソースの値が取得されていない明示的に、このプロパティは null 参照 (Visual Basic では Nothing) を返します。ピボット テーブル レポートで OLAP データ ソースの値と、 <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> 、ユーザーが行ったすべての書き戻し操作の値が含まれていないことを確認する別の接続からプロパティを取得します</para>。
+          <para>の読み取り、<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />は、ピボット テーブル レポートの値領域の外側のセルのプロパティには、実行時エラーが生成されます</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiscardChange">
+      <MemberSignature Language="C#" Value="public void DiscardChange ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DiscardChange() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DiscardChange ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DiscardChange();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2929)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>ピボットテーブル レポート内の指定したセルの変更を破棄します。</summary>
+        <remarks>
+          <para>ピボット テーブル内のセルが、OLAP データ ソースを基に、<see cref="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" />メソッドは、値または指定したセルに入力された数式を削除し、データ ソースから最新の値を取得するためにピボット テーブルの更新が実行されます。データ ソースの値は、指定したセルには、このメソッドによって null 参照 (Visual Basic では Nothing) に設定されます。メソッドは、UPDATE CUBE ステートメントは、データ ソース用に収録できなくするため、Excel の変更] ボックスの一覧からこのセルに加えられたすべての変更も削除されます。このメソッドは、トランザクションで行われたその他の変更はすべてのセッション状態も再作成されます。これには、トランザクションをロールバック ステートメントを実行して、指定したセル以外のすべての変更で、UPDATE CUBE ステートメントを実行するが含まれます。非 OLAP データ ソースに基づくピボット テーブルのセルでは、このメソッドは単に編集されたセルをクリアします。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dummy18">
+      <MemberSignature Language="C#" Value="public string Dummy18 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Dummy18" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.Dummy18" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Dummy18 As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Dummy18 { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2295)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2295)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(64)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>内部使用のため予約済みです。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MDX">
+      <MemberSignature Language="C#" Value="public string MDX { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MDX" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.MDX" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MDX As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MDX { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2123)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>OLAP データ ソースを持つピボット テーブルの指定された値のセルのすべての MDX 座標を提供する組を取得します。</summary>
+        <value>OLAP データ ソースを持つピボット テーブルの指定された値のセルのすべての MDX 座標を提供するための組。</value>
+        <remarks>
+          <para>読み取り専用</para>。
+          <para>、組のサイズが返される、<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.MDX" />プロパティには、レポート フィルターの座標と同様に行と列の座標が含まれます。内外にピボット テーブル、ピボット テーブルの値の範囲の外のセルには、このプロパティにアクセスするに、実行時エラーが生成されます。ピボット テーブルのレポート フィルター フィールドで複数の項目の選択と、このプロパティにアクセスしてもエラーが生成される実行時</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotCellType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlPivotCellType PivotCellType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlPivotCellType PivotCellType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.PivotCellType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotCellType As XlPivotCellType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlPivotCellType PivotCellType { Microsoft::Office::Interop::Excel::XlPivotCellType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2189)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2189)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlPivotCellType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>セルの対応するピボット テーブル エンティティを識別する定数を返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlPivotCellType" />
+            <b>XlPivotCellType</b>定数は、次のいずれか:</para>
+          <para>
+            <b>xlPivotCellBlankCell</b>ピボット テーブル内の構造空白セル</para>。
+          <para><b>xlPivotCellCustomSubtotal</b> A のセルは、ユーザー設定の集計行または列の領域にします</para>。
+          <para>A である
+            <b>xlPivotCellDataField</b>データ フィールド ラベル ([<b>データ</b>] ボタンではありません).</para><para><b>xlPivotCellDataPivotField</b> [<b>データ</b>] ボタン</para>。
+          <para>は総計の行または列エリア内の
+            <b>xlPivotCellGrandTotal</b> A のセルです</para>。
+          <para><b>xlPivotCellPageFieldItem</b>ページ フィールドの選択した項目を表示するセルです</para>。
+          <para><b>xlPivotCellPivotField</b>フィールド ([<b>データ</b>] ボタンではない) に対応するボタンです</para>。
+          <para><b>xlPivotCellPivotItem</b> A のセルは、小計、総計合計、小計、または空白行ではない行または列領域にします</para>。
+          <para><b>xlPivotCellSubtotal</b> A のセルは、小計行または列領域にします</para>。
+          <para><b>xlPivotCellValue</b> (空白の行) を除くデータ領域の任意のセルします</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotColumnLine">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotLine PivotColumnLine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotLine PivotColumnLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.PivotColumnLine" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotColumnLine As PivotLine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotLine ^ PivotColumnLine { Microsoft::Office::Interop::Excel::PivotLine ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2674)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2674)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotLine</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> 、特定の<b>PivotCell</b>オブジェクトの列にします。 値の取得のみ可能です。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />
+        </value>
+        <remarks>
+          <para>行上の<b>PivotCell</b>の場合は、 <b>PivotColumnLine</b>プロパティは、実行時エラーを返します</para>。
+          <para>列上の<b>PivotCell</b>の場合は、 <b>PivotColumnLine</b>プロパティは列の<b>された</b>オブジェクトを返します</para>。
+          <para><b>PivotCell</b>がデータ エリア内にある場合は、 <b>PivotColumnLine</b>プロパティは、対応する列<b>された</b>オブジェクトを返します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotField">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotField PivotField { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotField PivotField" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.PivotField" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotField As PivotField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotField ^ PivotField { Microsoft::Office::Interop::Excel::PivotField ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(731)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(731)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />を指定した範囲の左上隅を含むピボット テーブル フィールドを表すオブジェクト。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotItem">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotItem PivotItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotItem PivotItem" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.PivotItem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotItem As PivotItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotItem ^ PivotItem { Microsoft::Office::Interop::Excel::PivotItem ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(740)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(740)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />を指定した範囲の左上隅を含むピボット テーブル アイテムを表すオブジェクト。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotRowLine">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotLine PivotRowLine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotLine PivotRowLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.PivotRowLine" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotRowLine As PivotLine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotLine ^ PivotRowLine { Microsoft::Office::Interop::Excel::PivotLine ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2673)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2673)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotLine</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> 、特定の<b>PivotCell</b>オブジェクトの行にします。 読み取り専用<b>されました</b>。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />
+        </value>
+        <remarks>
+          <para>行上の<b>PivotCell</b>の場合は、 <b>PivotRowLine</b>は行の<b>された</b>オブジェクトを返します</para>。
+          <para>列上の<b>PivotCell</b>の場合は、 <b>PivotRowLine</b>は、実行時エラーを返します</para>。
+          <para><b>PivotCell</b>がデータ エリア内にある場合は、 <b>PivotRowLine</b>は<b>された</b>オブジェクトを対応する行を返します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotTable">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotTable PivotTable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotTable PivotTable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.PivotTable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotTable As PivotTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotTable ^ PivotTable { Microsoft::Office::Interop::Excel::PivotTable ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(716)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(716)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotTable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 、指定範囲、またはピボット グラフ レポートに関連付けられたピボット テーブル レポートの左上隅を含むピボット テーブル レポートを表すオブジェクト。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Range">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Range Range { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Range Range" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.Range" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Range As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Range ^ Range { Microsoft::Office::Interop::Excel::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(197)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(197)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 、指定されたピボット テーブルのセル範囲を表すオブジェクトに適用します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowItems">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotItemList RowItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotItemList RowItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowItems As PivotItemList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotItemList ^ RowItems { Microsoft::Office::Interop::Excel::PivotItemList ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2190)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2190)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotItemList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.PivotItemList" />を選択したセルを表す項目軸の項目に対応するコレクションです。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerActions">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Actions ServerActions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Actions ServerActions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotCell.ServerActions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServerActions As Actions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Actions ^ ServerActions { Microsoft::Office::Interop::Excel::Actions ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2491)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2491)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Actions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>OLAP の定義のアクションで実行できるので構成されているアクションのコレクションを表します。 アクションは、ワークシート レベルで既存のピボット テーブルに固有です。 値の取得のみ可能です。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>サーバー アクションは、OLAP キューブ管理者がサーバーを使用するキューブ メンバーまたはメジャーをパラメーターとしてクエリにキューブの詳細を取得するに定義できるオプション機能です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
