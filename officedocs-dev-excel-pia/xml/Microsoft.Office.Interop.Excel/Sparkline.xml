@@ -1,0 +1,260 @@
+<Type Name="Sparkline" FullName="Microsoft.Office.Interop.Excel.Sparkline">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f6bbcc759a0ae6dc4daf56bf9557c19d8ef56e98" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20581880" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Sparkline" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Sparkline" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Sparkline" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Sparkline" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Sparkline" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000244B9-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>単一のスパークラインを表します。</summary>
+    <remarks>
+      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.Sparkline.ModifyLocation(Microsoft.Office.Interop.Excel.Range)" /> 、1 つのスパーク ラインの位置を変更し、使用するメソッド、<see cref="M:Microsoft.Office.Interop.Excel.Sparkline.ModifySourceData(System.String)" />元データの範囲を変更する方法です。スパーク ラインのグループを一度に使用するには、メンバーを使用して、<see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" />オブジェクトです。</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Sparkline.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 このプロパティが返すオブジェクト修飾子を使用する場合、<see cref="T:Microsoft.Office.Interop.Excel.Application" />を指定したオブジェクトの作成者を表すオブジェクト。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.Application" />オブジェクトです。</value>
+        <remarks>
+          <para>読み取り専用です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Sparkline.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>を取得します。</summary>
+        <value>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>。</value>
+        <remarks>
+          <para>読み取り専用<b>long</b></para> 。
+          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。<see cref="P:Microsoft.Office.Interop.Excel.Sparkline.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Excel では、クリエーター コード</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Location">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Range Location { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Range Location" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Sparkline.Location" />
+      <MemberSignature Language="VB.NET" Value="Public Property Location As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Range ^ Location { Microsoft::Office::Interop::Excel::Range ^ get(); void set(Microsoft::Office::Interop::Excel::Range ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1397)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1397)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1397)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得または 1 つのスパーク ラインの位置を設定します。</summary>
+        <value>単一のスパーク ラインの場所です。</value>
+        <remarks>
+          <para>読み取り/書き込み。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifyLocation">
+      <MemberSignature Language="C#" Value="public void ModifyLocation (Microsoft.Office.Interop.Excel.Range Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ModifyLocation([in]class Microsoft.Office.Interop.Excel.Range Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Sparkline.ModifyLocation(Microsoft.Office.Interop.Excel.Range)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ModifyLocation(Microsoft::Office::Interop::Excel::Range ^ Range);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2949)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Excel.Range" />
+      </Parameters>
+      <Docs>
+        <param name="Range">スパークラインを含むセルです。</param>
+        <summary>単一のスパークラインの位置を変更します。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifySourceData">
+      <MemberSignature Language="C#" Value="public void ModifySourceData (string Formula);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ModifySourceData([in]string Formula) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Sparkline.ModifySourceData(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ModifySourceData (Formula As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ModifySourceData(System::String ^ Formula);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2950)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Formula" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Formula">範囲の元データが含まれています。</param>
+        <summary>単一のスパークラインのソース データを変更します。</summary>
+        <remarks>
+          <para>単一のスパーク ラインのデータ ソースの範囲は、継続的である必要があります。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Sparkline.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>親を取得します<see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" />指定したオブジェクトのオブジェクトです。</summary>
+        <value>親<see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" />指定したオブジェクトのオブジェクトです。</value>
+        <remarks>
+          <para>読み取り専用です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceData">
+      <MemberSignature Language="C#" Value="public string SourceData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Sparkline.SourceData" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceData As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceData { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(686)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(686)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(686)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得または 1 つのスパーク ラインの元データを含む範囲を設定します。</summary>
+        <value>この範囲は、1 つのスパーク ラインの元データが含まれています。</value>
+        <remarks>
+          <para>読み取り/書き込み</para>。
+          <para>1 つのスパーク ラインのデータ ソースの範囲は、継続的である必要があります</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

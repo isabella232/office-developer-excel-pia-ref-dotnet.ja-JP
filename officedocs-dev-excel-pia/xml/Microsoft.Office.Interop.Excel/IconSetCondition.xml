@@ -1,0 +1,657 @@
+<Type Name="IconSetCondition" FullName="Microsoft.Office.Interop.Excel.IconSetCondition">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="bc68b806e9539de6f5350ba189ec017a58c6f1db" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20580725" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface IconSetCondition" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IconSetCondition" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IconSetCondition" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IconSetCondition" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IconSetCondition" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024497-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>アイコン セットの条件付き書式ルールを表します。</summary>
+    <remarks>
+      <para>すべての条件付き書式設定オブジェクトが含まれる、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />の子であるコレクション オブジェクトの<see cref="T:Microsoft.Office.Interop.Excel.Range" />コレクション。書式指定規則を使用して、アイコン セットを作成することができます、<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddIconSetCondition" /><b>FormatConditions</b>コレクションのメソッドです</para>。
+      <para>各アイコン セットには、3、4、または 5 つのアイコンが含まれています。使用する、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />オブジェクトを返す、<see cref="T:Microsoft.Office.Interop.Excel.IconSets" />組み込みアイコン セットのいずれかを指定するオブジェクト。メンバーによって、アイコン セット内の各アイコンは範囲の値のサブセットに割り当てられますが、<see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />オブジェクトです。しきい値の種類も、このオブジェクトによって指定されます</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Office Excel アプリケーションを表すオブジェクト。 オブジェクト修飾子を使用する場合、このプロパティは、指定したオブジェクトの作成元を表す <b>Application</b> オブジェクトを返します。 読み取り専用です。</summary>
+        <value>
+          <b>アプリケーション</b>(上記参照)</value>
+        <remarks>
+          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクトのアプリケーションを取得します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppliesTo">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Range AppliesTo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Range AppliesTo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.AppliesTo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AppliesTo As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Range ^ AppliesTo { Microsoft::Office::Interop::Excel::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2626)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2626)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの書式設定ルールを適用するセル範囲を指定します。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.Range" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>等価の 32 ビット整数を返します、<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />をこのオブジェクトの作成元アプリケーションを示す値です。 値の取得のみ可能です。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
+        </value>
+        <remarks>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.IconSetCondition.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>指定された条件付き書式ルールのオブジェクトを削除します。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Formula">
+      <MemberSignature Language="C#" Value="public string Formula { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Formula" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.Formula" />
+      <MemberSignature Language="VB.NET" Value="Public Property Formula As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Formula { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(261)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(261)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(261)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>アイコン セットの適用対象となる値を決定する数式を表す<b>文字列</b>を設定または返します。</summary>
+        <value>
+          <b>文字列型 (String)</b>
+        </value>
+        <remarks>
+          <para>このプロパティは、条件付き書式を表示する値の範囲を制限するのには便利です。典型的なシナリオでは、正と負の両方の値を含む数値の範囲がある場合です。この数値の範囲の 1 つ以上の条件付き書式を作成することが、正の値と負の値のいずれかです。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconCriteria">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.IconCriteria IconCriteria { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.IconCriteria IconCriteria" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconCriteria" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IconCriteria As IconCriteria" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::IconCriteria ^ IconCriteria { Microsoft::Office::Interop::Excel::IconCriteria ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2727)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2727)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.IconCriteria</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />コレクションで、アイコン セットの条件付き書式ルールの条件のセットを表します。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />
+        </value>
+        <remarks>
+          <para>作成したら、 <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />、コレクションを使用できます、<see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Item(System.Object)" />を返すコレクションのプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" />オブジェクトです。<see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" />オブジェクトは、アイコン セットの 1 つの基準を表します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconSet">
+      <MemberSignature Language="C#" Value="public object IconSet { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object IconSet" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconSet" />
+      <MemberSignature Language="VB.NET" Value="Public Property IconSet As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ IconSet { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2726)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2726)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2726)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Excel.IconSets" />コレクションで、設定、条件付き書式で使用されるアイコンを指定します。</summary>
+        <value>
+          <b>オブジェクト</b>
+        </value>
+        <remarks>
+          <para>使用して設定アイコンを割り当てることができます、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />オブジェクトです。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifyAppliesToRange">
+      <MemberSignature Language="C#" Value="public void ModifyAppliesToRange (Microsoft.Office.Interop.Excel.Range Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ModifyAppliesToRange([in]class Microsoft.Office.Interop.Excel.Range Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.IconSetCondition.ModifyAppliesToRange(Microsoft.Office.Interop.Excel.Range)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ModifyAppliesToRange(Microsoft::Office::Interop::Excel::Range ^ Range);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2627)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Excel.Range" />
+      </Parameters>
+      <Docs>
+        <param name="Range">書式のルールが適用される範囲を指定します。</param>
+        <summary>書式のルールが適用されるセル範囲を設定します。</summary>
+        <remarks>
+          <para>の範囲が A1 参照形式にする必要がありの親であるシート内で完全に収まること、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />コレクションです。それは、範囲演算子 (コロン)、交差演算子 (スペース)、または union 演算子 (コンマ) を含めることができます。ドル記号も使用できますが、それらは無視されます</para>。
+          <para>、ローカルで定義された名前の範囲の任意の部分を使用することもできますが、名前が、マクロの言語である必要があります</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</summary>
+        <value>
+          <b>オブジェクト</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PercentileValues">
+      <MemberSignature Language="C#" Value="public bool PercentileValues { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PercentileValues" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.PercentileValues" />
+      <MemberSignature Language="VB.NET" Value="Public Property PercentileValues As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PercentileValues { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2724)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2724)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2724)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>百分位を使用して、アイコン セットの条件付き書式のしきい値を決定するかどうかを示す<b>ブール</b>値を設定または返します。</summary>
+        <value>
+          <b>ブール型 (Boolean)</b>
+        </value>
+        <remarks>
+          <para>すべてのしきい値が百分位に設定されていない場合、このプロパティは<b>False</b>を返します。<b>True</b>にこのプロパティを設定、すべてのしきい値の種類が百分位に設定されます。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="public int Priority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Priority" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.Priority" />
+      <MemberSignature Language="VB.NET" Value="Public Property Priority As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Priority { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(985)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(985)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(985)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>条件付き書式ルールの優先度の値を取得、または設定します。優先度は、ワークシート内に複数の条件付き書式ルールが存在する場合、その評価の順序を決定します。</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>
+          <para>優先順位を設定する場合、値は 1 と、ワークシート上の条件付き書式ルールの合計数との間の正の整数でなければなりません。指定された条件付き書式ルールの優先順位を変更する場合があります他のルールの優先度の値に移動するワークシートの優先順位は、ワークシート上のすべてのルールの一意の値をする必要があります。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PTCondition">
+      <MemberSignature Language="C#" Value="public bool PTCondition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PTCondition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.PTCondition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PTCondition As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PTCondition { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2631)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2631)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>条件付き書式がピボットテーブル チャートに適用されるかどうかを表すブール型 (<b>Boolean</b>) の値を返します。値の取得のみ可能です。</summary>
+        <value>
+          <b>ブール型 (Boolean)</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReverseOrder">
+      <MemberSignature Language="C#" Value="public bool ReverseOrder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReverseOrder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.ReverseOrder" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReverseOrder As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReverseOrder { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2723)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2723)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2723)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>アイコン セットのアイコンの順序を反転するかどうかを示す<b>ブール</b>値を設定または返します。</summary>
+        <value>
+          <b>ブール型 (Boolean)</b>
+        </value>
+        <remarks>
+          <para>既定では、アイコン セットを使用することのほとんどはより高い値を持つ正のイメージを関連付けます。たとえば、「3 つの信号」アイコン セットでは、上限値のしきい値と赤の円の範囲の最小値を緑色の円が適用されます。データより低い値では、マラソン時の結果より適切な場合は、アイコンが緑色の円を最小値を関連付けるには、範囲に適用されている順序を逆にします。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScopeType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlPivotConditionScope ScopeType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlPivotConditionScope ScopeType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.ScopeType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScopeType As XlPivotConditionScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlPivotConditionScope ScopeType { Microsoft::Office::Interop::Excel::XlPivotConditionScope get(); void set(Microsoft::Office::Interop::Excel::XlPivotConditionScope value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2615)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2615)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2615)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlPivotConditionScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>値を取得または設定の定数のいずれか、<see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />列挙値は、ピボット テーブル チャートに適用されるときに、条件付き書式の範囲を決定します。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
+        </value>
+        <remarks>
+          <para>既定値は、<see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />を使用して、スコープを設定する、<see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.AppliesTo" />プロパティ。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFirstPriority">
+      <MemberSignature Language="C#" Value="public void SetFirstPriority ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetFirstPriority() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.IconSetCondition.SetFirstPriority" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetFirstPriority ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFirstPriority();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2629)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>条件付き書式ルールの優先度の値を "1" に設定し、ワークシート内の他のルールより先に評価されるようにします。</summary>
+        <remarks>
+          <para>ルールが以前優先順位「1」に設定されていない場合に、ワークシート内の複数の条件付き書式ルールがある場合このメソッドと、他のすべての既存のルールの優先順位で、ワークシートを 1 つずつ増加します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLastPriority">
+      <MemberSignature Language="C#" Value="public void SetLastPriority ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetLastPriority() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.IconSetCondition.SetLastPriority" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetLastPriority ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLastPriority();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2630)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>条件付き書式ルールの順位を設定し、ワークシート上の他のすべてのルールの後に評価されるようにします。</summary>
+        <remarks>
+          <para>優先度の実際の値は、ワークシート上の条件付き書式ルールの合計数と同じになります。ワークシート内に複数の条件付き書式ルールがある場合、このメソッドに優先度の値を 1 つずつ増やすには、このルールよりも大きい必要があった規則の優先順位が発生します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowIconOnly">
+      <MemberSignature Language="C#" Value="public bool ShowIconOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowIconOnly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.ShowIconOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowIconOnly As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowIconOnly { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2725)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2725)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2725)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得または設定セットの値を示す<b>ブール値</b>のアイコンはアイコンの表示のみの場合の条件付き書式を設定します。</summary>
+        <value>
+          <b>ブール型 (Boolean)</b>
+        </value>
+        <remarks>
+          <para>このプロパティの既定値は、 <b>false を指定</b>します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopIfTrue">
+      <MemberSignature Language="C#" Value="public bool StopIfTrue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StopIfTrue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.StopIfTrue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StopIfTrue As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StopIfTrue { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2625)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2625)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返すまたは、現在のルールが<b>True</b>と評価された場合にセルに追加の書式設定ルールを評価するかどうかを決定する<b>ブール</b>値を設定します。</summary>
+        <value>
+          <b>ブール型 (Boolean)</b>
+        </value>
+        <remarks>
+          <para>下位互換性をサポートするためにこのプロパティの既定値は<b>True</b>、書式の反対の動作をユーザー インターフェイスで作成されたルールです。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public int Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.IconSetCondition.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Type { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>定数のいずれかを取得、<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />列挙体は、条件付き書式の種類を指定します。 値の取得のみ可能です。</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>
+          <para>このプロパティは常にするのと同じである 6、値を返します<see cref="T:Microsoft.Office.Interop.Excel.XlIconSet" />。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

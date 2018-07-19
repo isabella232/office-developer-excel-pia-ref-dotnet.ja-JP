@@ -1,0 +1,837 @@
+<Type Name="FormatCondition" FullName="Microsoft.Office.Interop.Excel.FormatCondition">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="a635d52289eab8b27e83a83f54b3afc26b142b07" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20584414" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface FormatCondition" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FormatCondition" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.FormatCondition" />
+  <TypeSignature Language="VB.NET" Value="Public Interface FormatCondition" />
+  <TypeSignature Language="C++ CLI" Value="public interface class FormatCondition" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024425-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>条件付き書式を表します。</summary>
+    <remarks>
+      <para>
+        <b>FormatCondition</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />コレクションです。<b>FormatConditions</b>コレクションは、指定された範囲の最大 3 つの条件付き書式を含めることができます</para>。
+      <para>使用<b>FormatConditions</b>(<paramref name="index" />)、インデックスは、 <b>FormatCondition</b>オブジェクトを取得するのには、条件付き書式のインデックス番号です</para>。使用の
+      <para>、<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />新しい条件付き書式を作成します。1 つの範囲の複数の 3 つの条件付き書式を作成しようとすると、 <b>Add</b>メソッドは失敗します。範囲は、3 つの形式を使って、 <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> 、形式のいずれかを変更する方法を使用することができます、<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" />形式を削除し、新しい書式を作成するのには<b>Add</b>メソッドを使用する方法です</para>。
+      <para>使用、 <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Font" />、 <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Borders" />、および<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Interior" />の<b>FormatCondition</b>オブジェクトの外観を制御するには、セルを書式設定します。これらのオブジェクトの一部のプロパティは、条件付き書式オブジェクト モデルでサポートされていません。条件付き書式で使用できるプロパティは、次の表に記載されています</para>。
+      <list type="table"><item><term><b>フォント</b></term><description><b>太字</b><b>ColorIndex</b><b>FontStyle</b><b>斜体</b><b>取り消し線</b>の
+            <b>色
+            <b>の下線</b>会計の下線スタイルを使用することはできません</b></description></item>。
+        <item><term><b>境界線</b></term><description><b>下</b><b>色</b><b>左</b><b>右</b>の
+            <b>スタイル</b>以下の罫線のスタイルを使用することができます (他のユーザーがすべてサポートされていません): <b>xlNone</b>、 <b>xlSolid</b>、 <b>xlDash</b>、<b>xlDot</b>、 <b>xlDashDot</b>、 <b>xlDashDotDot</b>、 <b>xlGray50</b>、 <b>xlGray75</b>、および<b>xlGray25</b>です。<b>トップ</b><b>重量</b>次の枠線の重みを使用することができます (他のユーザーがすべてサポートされていません): <b>xlWeightHairline</b>および<b>xlWeightThin</b>です</description></item>。
+        <item><term><b>内部</b></term><description><b>色</b><b>ColorIndex</b><b>パターン</b><b>PatternColorIndex</b></description></item></list><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatCondition.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppliesTo">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Range AppliesTo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Range AppliesTo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AppliesTo As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Range ^ AppliesTo { Microsoft::Office::Interop::Excel::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2626)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2626)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの書式設定ルールを適用するセル範囲を指定します。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.Range" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Borders">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Borders Borders { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Borders Borders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatCondition.Borders" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Borders As Borders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Borders ^ Borders { Microsoft::Office::Interop::Excel::Borders ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(435)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(435)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Borders</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Borders" />スタイルの枠線または、セル範囲 (条件付き書式の一部として定義されている範囲を含む) を表すコレクション。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatCondition.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>
+            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateOperator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlTimePeriods DateOperator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlTimePeriods DateOperator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatCondition.DateOperator" />
+      <MemberSignature Language="VB.NET" Value="Public Property DateOperator As XlTimePeriods" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlTimePeriods DateOperator { Microsoft::Office::Interop::Excel::XlTimePeriods get(); void set(Microsoft::Office::Interop::Excel::XlTimePeriods value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2614)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2614)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2614)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlTimePeriods</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定します<see cref="T:Microsoft.Office.Interop.Excel.XlTimePeriods" />書式の条件に使用される日付演算子です。 値の取得および設定が可能です。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlTimePeriods" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>オブジェクトを削除します。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Font">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Font Font { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Font Font" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatCondition.Font" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Font As Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Font ^ Font { Microsoft::Office::Interop::Excel::Font ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(146)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(146)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Font" />を指定したオブジェクトのフォントを表すオブジェクト。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Formula1">
+      <MemberSignature Language="C#" Value="public string Formula1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Formula1" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatCondition.Formula1" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Formula1 As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Formula1 { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1579)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1579)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>値または条件付き書式または入力規則に関連付けられた式を返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>Formula1</b>プロパティには、定数値、文字列値、セル参照、または数式ができます。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Formula2">
+      <MemberSignature Language="C#" Value="public string Formula2 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Formula2" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatCondition.Formula2" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Formula2 As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Formula2 { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1580)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1580)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>値または条件付き書式または入力規則の 2 番目の部分に関連付けられた式を返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>Formula2</b>プロパティが専用に使用されるためデータの入力規則の条件付き書式を設定すると<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Operator" />プロパティには、<b><b>規則での条件</b></b>です。定数値、文字列値、セル参照、または数式を指定できます。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Interior">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Interior Interior { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Interior Interior" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatCondition.Interior" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Interior As Interior" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Interior ^ Interior { Microsoft::Office::Interop::Excel::Interior ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(129)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(129)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Interior" />を指定したオブジェクトの内部を表すオブジェクト。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Modify">
+      <MemberSignature Language="C#" Value="public void Modify (Microsoft.Office.Interop.Excel.XlFormatConditionType Type, object Operator, object Formula1, object Formula2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Modify([in]valuetype Microsoft.Office.Interop.Excel.XlFormatConditionType Type, [in]object Operator, [in]object Formula1, [in]object Formula2) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Modify (Type As XlFormatConditionType, Optional Operator As Object, Optional Formula1 As Object, Optional Formula2 As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2623)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Interop.Excel.XlFormatConditionType" />
+        <Parameter Name="Operator" Type="System.Object" />
+        <Parameter Name="Formula1" Type="System.Object" />
+        <Parameter Name="Formula2" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Type">必要な<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />。 セル値または演算式のどちらを基に条件付き書式を設定するかを指定します。 <b>XlFormatCondition</b>定数は、次のいずれか:<b>xlCellValue</b><b>xlExpression</b></param>
+        <param name="Operator">省略可能な<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />。 条件付き書式の演算子です。 <b>XlFormatConditionOperator</b>定数は、次のいずれか:<b>で</b><b>xlEqual</b><b>xlGreater</b><b>xlGreaterEqual</b><b>xlLess</b><b>xlLessEqua</b>l<b>xlNotBetween</b><b>xlNotEqual</b>場合<paramref name="Type" />、 <b>xlExpression</b>では、<paramref name="Operator" />引数は無視されます。</param>
+        <param name="Formula1">省略可能な<b>オブジェクト</b>です。 値または条件付き書式が関連付けられている式です。 定数値、文字列値、セル参照、または数式を指定できます。</param>
+        <param name="Formula2">省略可能な<b>オブジェクト</b>です。 値または条件付き書式が関連付けられている式です。 定数値、文字列値、セル参照、または数式を指定できます。</param>
+        <summary>既存の条件付き書式を変更します。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifyAppliesToRange">
+      <MemberSignature Language="C#" Value="public void ModifyAppliesToRange (Microsoft.Office.Interop.Excel.Range Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ModifyAppliesToRange([in]class Microsoft.Office.Interop.Excel.Range Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatCondition.ModifyAppliesToRange(Microsoft.Office.Interop.Excel.Range)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ModifyAppliesToRange(Microsoft::Office::Interop::Excel::Range ^ Range);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2627)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Excel.Range" />
+      </Parameters>
+      <Docs>
+        <param name="Range">書式のルールが適用される範囲を指定します。</param>
+        <summary>書式のルールが適用されるセル範囲を設定します。</summary>
+        <remarks>
+          <para>の範囲が A1 参照形式にする必要がありの親であるシート内で完全に収まること、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />コレクションです。それは、範囲演算子 (コロン)、交差演算子 (スペース)、または union 演算子 (コンマ) を含めることができます。ドル記号も使用できますが、それらは無視されます</para>。
+          <para>、ローカルで定義された名前の範囲の任意の部分を使用することもできますが、名前が、マクロの言語である必要があります</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifyEx">
+      <MemberSignature Language="C#" Value="public void ModifyEx (Microsoft.Office.Interop.Excel.XlFormatConditionType Type, object Operator, object Formula1, object Formula2, object String, object Operator2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ModifyEx([in]valuetype Microsoft.Office.Interop.Excel.XlFormatConditionType Type, [in]object Operator, [in]object Formula1, [in]object Formula2, [in]object String, [in]object Operator2) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatCondition.ModifyEx(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ModifyEx (Type As XlFormatConditionType, Optional Operator As Object, Optional Formula1 As Object, Optional Formula2 As Object, Optional String As Object, Optional Operator2 As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1581)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Type" Type="Microsoft.Office.Interop.Excel.XlFormatConditionType" />
+        <Parameter Name="Operator" Type="System.Object" />
+        <Parameter Name="Formula1" Type="System.Object" />
+        <Parameter Name="Formula2" Type="System.Object" />
+        <Parameter Name="String" Type="System.Object" />
+        <Parameter Name="Operator2" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Type">To be added.</param>
+        <param name="Operator">To be added.</param>
+        <param name="Formula1">To be added.</param>
+        <param name="Formula2">To be added.</param>
+        <param name="String">To be added.</param>
+        <param name="Operator2">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberFormat">
+      <MemberSignature Language="C#" Value="public object NumberFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object NumberFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatCondition.NumberFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumberFormat As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NumberFormat { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(193)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(193)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(193)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>条件付き書式設定ルールが<b>True</b>と評価された場合に、セルに適用される表示形式を設定または返します。 読み取り/書き込みの<b>オブジェクト</b>です。</summary>
+        <value>
+          <b>オブジェクト</b>
+        </value>
+        <remarks>
+          <para>数値の表示形式を指定するには、セルの書式設定] ダイアログ ボックスのタブに表示される同じ書式コードを使用します。「標準」などの組み込みの表示形式を使用するか、カスタムの表示形式を作成できます。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Operator">
+      <MemberSignature Language="C#" Value="public int Operator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Operator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatCondition.Operator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Operator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(797)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(797)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>条件付き書式の演算子を返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatCondition.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="public int Priority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Priority" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatCondition.Priority" />
+      <MemberSignature Language="VB.NET" Value="Public Property Priority As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Priority { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(985)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(985)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(985)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>条件付き書式ルールの優先度の値を取得、または設定します。優先度は、ワークシート内に複数の条件付き書式ルールが存在する場合、その評価の順序を決定します。</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>
+          <para>優先順位を設定する場合、値は 1 と、ワークシート上の条件付き書式ルールの合計数との間の正の整数でなければなりません。指定された条件付き書式ルールの優先順位を変更する場合があります他のルールの優先度の値に移動するワークシートの優先順位は、ワークシート上のすべてのルールの一意の値をする必要があります。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PTCondition">
+      <MemberSignature Language="C#" Value="public bool PTCondition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PTCondition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatCondition.PTCondition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PTCondition As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PTCondition { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2631)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2631)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>条件付き書式がピボットテーブル チャートに適用されるかどうかを表すブール型 (<b>Boolean</b>) の値を返します。値の取得のみ可能です。</summary>
+        <value>
+          <b>ブール型 (Boolean)</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScopeType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlPivotConditionScope ScopeType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlPivotConditionScope ScopeType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatCondition.ScopeType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScopeType As XlPivotConditionScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlPivotConditionScope ScopeType { Microsoft::Office::Interop::Excel::XlPivotConditionScope get(); void set(Microsoft::Office::Interop::Excel::XlPivotConditionScope value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2615)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2615)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2615)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlPivotConditionScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>値を取得または設定の定数のいずれか、<see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />列挙値は、ピボット テーブル チャートに適用されるときに、条件付き書式の範囲を決定します。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
+        </value>
+        <remarks>
+          <para>既定値は、<see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />を使用して、スコープを設定する、<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" />プロパティ。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFirstPriority">
+      <MemberSignature Language="C#" Value="public void SetFirstPriority ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetFirstPriority() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatCondition.SetFirstPriority" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetFirstPriority ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFirstPriority();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2629)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>条件付き書式ルールの優先度の値を "1" に設定し、ワークシート内の他のルールより先に評価されるようにします。</summary>
+        <remarks>
+          <para>がある場合、ワークシート内の複数の条件付き書式ルール ルールが以前優先順位「1」に設定されていない場合、このメソッドと、他のすべての既存のルールの優先順位で、ワークシートを 1 つずつ増加する</para>。
+          <para><b>注</b>: 条件付き書式ルールの優先度レベルは、ワークシート レベルで適用されます。</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLastPriority">
+      <MemberSignature Language="C#" Value="public void SetLastPriority ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetLastPriority() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.FormatCondition.SetLastPriority" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetLastPriority ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLastPriority();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2630)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>条件付き書式ルールの順位を設定し、ワークシート上の他のすべてのルールの後に評価されるようにします。</summary>
+        <remarks>
+          <para>の優先度の実際の値は、ワークシート上の条件付き書式ルールの合計数と同じになります。ワークシート内に複数の条件付き書式ルールがある場合このメソッドは、優先度の値を 1 つずつ増やすには、このルールよりも大きい必要があった規則の優先順位</para>。
+          <para><b>注</b>: 条件付き書式ルールの優先度レベルは、ワークシート レベルで適用されます。</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopIfTrue">
+      <MemberSignature Language="C#" Value="public bool StopIfTrue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StopIfTrue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatCondition.StopIfTrue" />
+      <MemberSignature Language="VB.NET" Value="Public Property StopIfTrue As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StopIfTrue { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2625)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2625)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2625)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返すまたは、現在のルールが<b>True</b>と評価された場合にセルに追加の書式設定ルールを評価するかどうかを決定する<b>ブール</b>値を設定します。</summary>
+        <value>
+          <b>ブール型 (Boolean)</b>
+        </value>
+        <remarks>
+          <para>下位互換性をサポートするためにこのプロパティの既定値は<b>True</b>、書式の反対の動作をユーザー インターフェイスで作成されたルールです。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatCondition.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(138)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(138)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(138)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>条件付き書式ルールで使用するテキストを指定する<b>文字列</b>値を設定または返します。</summary>
+        <value>
+          <b>文字列型 (String)</b>
+        </value>
+        <remarks>
+          <para>このプロパティは、<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Type" />にプロパティが設定されていない<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlTextString" />。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextOperator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlContainsOperator TextOperator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlContainsOperator TextOperator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatCondition.TextOperator" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextOperator As XlContainsOperator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlContainsOperator TextOperator { Microsoft::Office::Interop::Excel::XlContainsOperator get(); void set(Microsoft::Office::Interop::Excel::XlContainsOperator value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2613)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2613)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2613)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlContainsOperator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>値を取得または設定の定数のいずれか、 <see cref="T:Microsoft.Office.Interop.Excel.XlContainsOperator" /> 、条件付き書式ルールによって実行されるテキスト検索を指定する列挙です。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlContainsOperator" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public int Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.FormatCondition.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Type { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>オブジェクトの種類を取得します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>オブジェクトの種類には、次のいずれかを指定できます<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />定数:</para>
+          <para>
+            <b>xlCellValue</b>
+          </para>
+          <para>
+            <b>xlExpression</b>
+          </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

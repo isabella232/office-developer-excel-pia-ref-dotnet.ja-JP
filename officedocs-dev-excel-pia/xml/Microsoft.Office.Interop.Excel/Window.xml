@@ -1,0 +1,2305 @@
+<Type Name="Window" FullName="Microsoft.Office.Interop.Excel.Window">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="8c49a6753e6ec53845aee64eafc52c6fc09004d7" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20577771" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Window" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Window" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Window" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Window" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Window" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00020893-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>ウィンドウを表します。 スクロール バーや枠線など、ワークシートの特性の多くは、実際には、ウィンドウのプロパティです。</summary>
+    <remarks>
+      <para>
+        <b>Window</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.Windows" />コレクションです。によって返される<b>ウィンドウ</b>のコレクション、<see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.Application" />で<b>ウィンドウ</b>のコレクションが返されますが、オブジェクトがすべての windows アプリケーションでは、含まれています、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />オブジェクトには、ウィンドウのウィンドウだけが含まれています。指定されたブックにします</para>。
+      <para><b>Windows</b>(<paramref name="index" />)、 <paramref name="index" /> 、ウィンドウ名またはインデックス番号を 1 つの<b>ウィンドウ</b>オブジェクトを取得するには</para>。
+      <para>作業中のウィンドウは、常に windows (1) ことに注意してください</para>。
+      <para>ウィンドウのタイトル バーは、ウィンドウを最大化されていないとき、ウィンドウの上部にタイトル バーに表示されるテキストです。キャプションは、[ウィンドウ] メニューの一番下で開いているファイルの一覧にも表示されます。使用して、<see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" />プロパティを設定またはウィンドウのキャプションを取得します。ウィンドウのキャプションを変更するブックの名前は変更されません</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_DisplayRightToLeft">
+      <MemberSignature Language="C#" Value="public bool _DisplayRightToLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool _DisplayRightToLeft" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window._DisplayRightToLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property _DisplayRightToLeft As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool _DisplayRightToLeft { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(648)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(648)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(648)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>内部使用のため予約済みです。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="_PrintOut">
+      <MemberSignature Language="C#" Value="public object _PrintOut (object From, object To, object Copies, object Preview, object ActivePrinter, object PrintToFile, object Collate, object PrToFileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object _PrintOut([in]object From, [in]object To, [in]object Copies, [in]object Preview, [in]object ActivePrinter, [in]object PrintToFile, [in]object Collate, [in]object PrToFileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window._PrintOut(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function _PrintOut (Optional From As Object, Optional To As Object, Optional Copies As Object, Optional Preview As Object, Optional ActivePrinter As Object, Optional PrintToFile As Object, Optional Collate As Object, Optional PrToFileName As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1772)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1088)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="From" Type="System.Object" />
+        <Parameter Name="To" Type="System.Object" />
+        <Parameter Name="Copies" Type="System.Object" />
+        <Parameter Name="Preview" Type="System.Object" />
+        <Parameter Name="ActivePrinter" Type="System.Object" />
+        <Parameter Name="PrintToFile" Type="System.Object" />
+        <Parameter Name="Collate" Type="System.Object" />
+        <Parameter Name="PrToFileName" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="From">To be added.</param>
+        <param name="To">To be added.</param>
+        <param name="Copies">To be added.</param>
+        <param name="Preview">To be added.</param>
+        <param name="ActivePrinter">To be added.</param>
+        <param name="PrintToFile">To be added.</param>
+        <param name="Collate">To be added.</param>
+        <param name="PrToFileName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Activate">
+      <MemberSignature Language="C#" Value="public object Activate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Activate() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.Activate" />
+      <MemberSignature Language="VB.NET" Value="Public Function Activate () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Activate();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(304)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>ウィンドウを Z オーダーの前面に移動します。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>
+            <b>Activate</b>メソッドは、複数、または最初のマクロをブックに接続する可能性がありますを実行できません。使用して、 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> 、マクロを実行するメソッドです。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivateNext">
+      <MemberSignature Language="C#" Value="public object ActivateNext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ActivateNext() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.ActivateNext" />
+      <MemberSignature Language="VB.NET" Value="Public Function ActivateNext () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ActivateNext();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1115)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>指定されたウィンドウをアクティブにし、ウィンドウの z オーダーの背面に送信されます。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivatePrevious">
+      <MemberSignature Language="C#" Value="public object ActivatePrevious ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ActivatePrevious() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.ActivatePrevious" />
+      <MemberSignature Language="VB.NET" Value="Public Function ActivatePrevious () As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ActivatePrevious();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1116)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>指定されたウィンドウをアクティブにし、次に Z オーダーで一番後ろにあるウィンドウをアクティブにします。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveCell">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Range ActiveCell { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Range ActiveCell" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.ActiveCell" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveCell As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Range ^ ActiveCell { Microsoft::Office::Interop::Excel::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(305)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(305)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />作業中のウィンドウ (一番上にあるウィンドウ) 内のアクティブ セルを表すオブジェクトまたは指定されたウィンドウです。 ウィンドウは、ワークシートに表示されない、このプロパティは失敗します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>オブジェクト修飾子を指定しない場合このプロパティは、作業中のウィンドウにアクティブなセルを返します</para>。
+          <para>アクティブ セルと選択範囲を区別するのには注意が必要です。アクティブ セルは、現在の選択範囲内の単一のセルです。選択範囲が複数のセルを含めることが 1 つだけアクティブなセルです</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveChart">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Chart ActiveChart { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Chart ActiveChart" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.ActiveChart" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveChart As Chart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Chart ^ ActiveChart { Microsoft::Office::Interop::Excel::Chart ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(183)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(183)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Chart</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> 、アクティブなグラフ (埋め込みグラフまたはグラフ シート) を表すオブジェクト。 埋め込みグラフは選択されているまたは、アクティブと見なされます。 アクティブなグラフがないときは、このプロパティは<b>Nothing</b>を返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>オブジェクト修飾子を指定しない場合、このプロパティは、作業中のブックで作業中のグラフを返します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivePane">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Pane ActivePane { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Pane ActivePane" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.ActivePane" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivePane As Pane" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Pane ^ ActivePane { Microsoft::Office::Interop::Excel::Pane ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(642)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(642)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Pane</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Pane" />ウィンドウ内のアクティブなウィンドウを表すオブジェクト。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>このプロパティは、ワークシートとマクロ シートでのみ使用できます</para>。
+          <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.Window.Index" />アクティブなペインのインデックスを取得するプロパティ</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveSheet">
+      <MemberSignature Language="C#" Value="public object ActiveSheet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ActiveSheet" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.ActiveSheet" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveSheet As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ActiveSheet { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(307)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(307)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>作業中のブック、または指定されたウィンドウまたはブックのアクティブ シート (一番手前のシート) を表すオブジェクトを返します。 アクティブ シートがない場合は、 <b>Nothing</b>を返します。</summary>
+        <value>
+          <b>オブジェクト</b>
+        </value>
+        <remarks>
+          <para>オブジェクト修飾子を指定しない場合このプロパティは、作業中のブックで作業中のシートを返します</para>。
+          <para>ブックは、複数のウィンドウに表示されたら場合、によって<b>ActiveSheet</b>プロパティの異なる場合があります別の windows で</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveSheetView">
+      <MemberSignature Language="C#" Value="public object ActiveSheetView { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ActiveSheetView" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.ActiveSheetView" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveSheetView As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ActiveSheetView { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2369)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2369)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたウィンドウでのアクティブ シートの表示モードを表すオブジェクトを取得します。値の取得のみ可能です。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Excel アプリケーションを表すオブジェクト。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoFilterDateGrouping">
+      <MemberSignature Language="C#" Value="public bool AutoFilterDateGrouping { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoFilterDateGrouping" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.AutoFilterDateGrouping" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoFilterDateGrouping As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoFilterDateGrouping { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2371)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2371)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2371)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True の</b>場合、日付のグループ化のための自動フィルターに現在表示されて、指定されたウィンドウです。 値の取得および設定が可能です。</summary>
+        <value>
+          <b>ブール型 (Boolean)</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Caption">
+      <MemberSignature Language="C#" Value="public object Caption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Caption" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Caption" />
+      <MemberSignature Language="VB.NET" Value="Public Property Caption As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Caption { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ドキュメント ウィンドウのタイトル バーに表示される名前です。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public bool Close (object SaveChanges, object Filename, object RouteWorkbook);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Close([in]object SaveChanges, [in]object Filename, [in]object RouteWorkbook) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.Close(System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Close (Optional SaveChanges As Object, Optional Filename As Object, Optional RouteWorkbook As Object) As Boolean" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(277)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SaveChanges" Type="System.Object" />
+        <Parameter Name="Filename" Type="System.Object" />
+        <Parameter Name="RouteWorkbook" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="SaveChanges">省略可能な<b>オブジェクト</b>です。 ブックに変更がない場合、この引数は無視されます。 ブックへの変更があり、他の開いているウィンドウにブックが表示されます、この引数は無視されます。 ブックに変更が加えられた他の任意の開いているウィンドウにブックが表示されない場合は、この引数を指定の変更を保存するかどうか次の表に示すようにします。ValueAction の<b>場合は True</b>ブックに変更を保存します。 まだし、ブックに関連付けられているファイル名がない場合は、<paramref name="FileName" />を使用します。 場合<paramref name="FileName" />は、ファイル名を指定する省略すると、ユーザーに求めています。<b>False</b>このファイルへの変更は保存されません。OmittedDisplays ユーザーに変更を保存するかどうかを確認するダイアログ ボックスです。</param>
+        <param name="Filename">省略可能な<b>オブジェクト</b>です。 変更後のブックのファイル名。</param>
+        <param name="RouteWorkbook">省略可能な<b>オブジェクト</b>です。 ブックが (回覧先がないか、既に回覧されている) 場合は、次の受信者にルーティングする必要がある場合、この引数は無視されます。 それ以外の場合、Microsoft Excel は、次の表に示すように、ブックをルーティングします。値の意味 1<b>は True</b>は、次の受信者にブックを送信します。<b>False</b>ブックを送りません。OmittedDisplays ブックを送信するかどうかをユーザーに確認するダイアログ ボックスです。</param>
+        <summary>オブジェクトを閉じます。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>
+            <b>Close</b>メソッドは、ブック内の Auto_Close マクロを実行しません。使用して、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" />自動を実行するメソッドは、マクロを閉じます。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>
+            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayFormulas">
+      <MemberSignature Language="C#" Value="public bool DisplayFormulas { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayFormulas" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.DisplayFormulas" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayFormulas As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayFormulas { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(644)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(644)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(644)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True の</b>場合は、ウィンドウは数式を表示します。<b>False</b>場合は、ウィンドウが値を表示します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>このプロパティは、ワークシートとマクロ シートのみに適用されます。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayGridlines">
+      <MemberSignature Language="C#" Value="public bool DisplayGridlines { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayGridlines" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.DisplayGridlines" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayGridlines As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayGridlines { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(645)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(645)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(645)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>とグリッド線が表示されます。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>このプロパティは、ワークシートとマクロ シートのみに適用されます</para>。
+          <para>このプロパティは、グリッド線の表示だけに影響します。使用して、<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" />のグリッド線の印刷を制御するプロパティ</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayHeadings">
+      <MemberSignature Language="C#" Value="public bool DisplayHeadings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayHeadings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.DisplayHeadings" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayHeadings As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayHeadings { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(646)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(646)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(646)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True の</b>場合、両方の行と列見出しが表示されます。<b>False</b>に表示されるヘッダーがない場合。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>このプロパティは、ワークシートとマクロ シートのみに適用されます</para>。
+          <para>このプロパティは、見出しの表示だけに影響します。使用して、<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" />の番号を印刷を制御するプロパティ</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayHorizontalScrollBar">
+      <MemberSignature Language="C#" Value="public bool DisplayHorizontalScrollBar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayHorizontalScrollBar" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.DisplayHorizontalScrollBar" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayHorizontalScrollBar As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayHorizontalScrollBar { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(921)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(921)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(921)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>場合は、水平スクロール バーが表示されます。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayOutline">
+      <MemberSignature Language="C#" Value="public bool DisplayOutline { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayOutline" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.DisplayOutline" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayOutline As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayOutline { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(647)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(647)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(647)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>と、アウトライン記号が表示されます。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>このプロパティは、ワークシートとマクロ シートのみに適用されます。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayRightToLeft">
+      <MemberSignature Language="C#" Value="public bool DisplayRightToLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayRightToLeft" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.DisplayRightToLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayRightToLeft As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayRightToLeft { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1774)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1774)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1774)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True の</b>場合は右から左への代わりに左から右に指定したウィンドウが表示されます。 <b>False</b>場合は、オブジェクトが左から右に表示されます。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayRuler">
+      <MemberSignature Language="C#" Value="public bool DisplayRuler { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayRuler" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.DisplayRuler" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayRuler As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayRuler { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2370)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2370)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2370)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>と指定されたウィンドウのルーラーが表示されます。 値の取得および設定が可能です。</summary>
+        <value>
+          <b>ブール型 (Boolean)</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayVerticalScrollBar">
+      <MemberSignature Language="C#" Value="public bool DisplayVerticalScrollBar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayVerticalScrollBar" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.DisplayVerticalScrollBar" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayVerticalScrollBar As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayVerticalScrollBar { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(922)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(922)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(922)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>場合は、垂直スクロール バーが表示されます。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayWhitespace">
+      <MemberSignature Language="C#" Value="public bool DisplayWhitespace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayWhitespace" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.DisplayWhitespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayWhitespace As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayWhitespace { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2372)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2372)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2372)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>場合は空白が表示されます。 値の取得および設定が可能です。</summary>
+        <value>
+          <b>ブール型 (Boolean)</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayWorkbookTabs">
+      <MemberSignature Language="C#" Value="public bool DisplayWorkbookTabs { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayWorkbookTabs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayWorkbookTabs As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayWorkbookTabs { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(923)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(923)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(923)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True の</b>場合は、ブックのタブが表示されます。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayZeros">
+      <MemberSignature Language="C#" Value="public bool DisplayZeros { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayZeros" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.DisplayZeros" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayZeros As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayZeros { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(649)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(649)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(649)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>と 0 の値が表示されます。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>このプロパティは、ワークシートとマクロ シートのみに適用されます。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableResize">
+      <MemberSignature Language="C#" Value="public bool EnableResize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableResize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.EnableResize" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableResize As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableResize { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1192)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1192)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1192)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True の</b>場合は、ウィンドウのサイズを変更できます。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FreezePanes">
+      <MemberSignature Language="C#" Value="public bool FreezePanes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FreezePanes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" />
+      <MemberSignature Language="VB.NET" Value="Public Property FreezePanes As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FreezePanes { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(650)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(650)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(650)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True の</b>場合、分割ウィンドウ枠を固定します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>が<b>True</b>である<b>場合</b>と<see cref="P:Microsoft.Office.Interop.Excel.Window.Split" />である<b>場合は False</b>、またはその逆</para>。
+          <para>このプロパティは、ワークシートとマクロ シートのみに適用されます</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GridlineColor">
+      <MemberSignature Language="C#" Value="public int GridlineColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 GridlineColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.GridlineColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property GridlineColor As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int GridlineColor { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(651)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(651)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(651)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>枠線の色を RGB 値として設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GridlineColorIndex">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlColorIndex GridlineColorIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlColorIndex GridlineColorIndex" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.GridlineColorIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property GridlineColorIndex As XlColorIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlColorIndex GridlineColorIndex { Microsoft::Office::Interop::Excel::XlColorIndex get(); void set(Microsoft::Office::Interop::Excel::XlColorIndex value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(652)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(652)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(652)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlColorIndex</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>設定グリッド線の色のインデックスとして、現在のカラー パレットを取得または設定、<see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />定数。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>色の自動設定を指定する<b>番号</b>にこのプロパティを設定します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public double Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Height" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ポイント単位でウィンドウの高さ。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" /> 、ウィンドウの最大サイズを決定するプロパティです。ウィンドウが最大化または最小化されている場合、このプロパティを設定することはできません。使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> 、ウィンドウの状態を確認するにします。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hwnd">
+      <MemberSignature Language="C#" Value="public int Hwnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Hwnd" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Hwnd" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Hwnd As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Hwnd { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1950)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1950)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定したウィンドウのウィンドウ ハンドルを返します。</summary>
+        <value>整数値 (C# では int)</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(486)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(486)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ようなオブジェクトのコレクション内のオブジェクトのインデックス番号を返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LargeScroll">
+      <MemberSignature Language="C#" Value="public object LargeScroll (object Down, object Up, object ToRight, object ToLeft);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object LargeScroll([in]object Down, [in]object Up, [in]object ToRight, [in]object ToLeft) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.LargeScroll(System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LargeScroll (Optional Down As Object, Optional Up As Object, Optional ToRight As Object, Optional ToLeft As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(547)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Down" Type="System.Object" />
+        <Parameter Name="Up" Type="System.Object" />
+        <Parameter Name="ToRight" Type="System.Object" />
+        <Parameter Name="ToLeft" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Down">省略可能な<b>オブジェクト</b>です。 文字列を下にスクロールするページ数。</param>
+        <param name="Up">省略可能な<b>オブジェクト</b>です。 文字列を上にスクロールするページ数。</param>
+        <param name="ToRight">省略可能な<b>オブジェクト</b>です。 文字列を右にスクロールするページ数。</param>
+        <param name="ToLeft">省略可能な<b>オブジェクト</b>です。 文字列を左にスクロールするページ数。</param>
+        <summary>指定されたページ数分だけ、ウィンドウの文字列をスクロールします。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>場合<paramref name="Down" />と<paramref name="Up" />を指定した、ウィンドウの内容は、引数の差だけスクロールします。などの場合は<paramref name="Down" />3 と<paramref name="Up" />6 では、内容は上に 3 ページ分スクロールします</para>。
+          <para>場合<paramref name="ToLeft" />と<paramref name="ToRight" />を指定した、ウィンドウの内容は、引数の差だけスクロールします。などの場合<paramref name="ToLeft" />は、3 と<paramref name="ToRight" />6 では、内容が右に 3 ページ分スクロールします</para>。
+          <para>負の数は、任意の引数です</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public double Left { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Left" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Left" />
+      <MemberSignature Language="VB.NET" Value="Public Property Left As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Left { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>クライアント領域の左端からウィンドウの左端までのポイントでの距離です。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewWindow">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Window NewWindow ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Window NewWindow() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.NewWindow" />
+      <MemberSignature Language="VB.NET" Value="Public Function NewWindow () As Window" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Interop::Excel::Window ^ NewWindow();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(280)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Window</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>新しいウィンドウ、または指定されたウィンドウのコピーを作成します。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnWindow">
+      <MemberSignature Language="C#" Value="public string OnWindow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OnWindow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.OnWindow" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnWindow As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OnWindow { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(623)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(623)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(623)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ウィンドウをアクティブにするたびに実行されるプロシージャの名前を設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>その他のプロシージャが、ウィンドウまたはウィンドウに切り替えるには、コマンドが DDE チャネルを通じて受信したときに切り替えると、このプロパティで指定したプロシージャは実行されません。代わりに、プロシージャがユーザーのアクションに応答、マウスでウィンドウをクリックしてをクリックするとジャンプ [編集] メニューとにします</para>。
+          <para><b>OnWindow</b>プロパティで指定された手順の後、マクロが実行されますワークシートまたはマクロ シートに定義されて、複数、または最初のマクロがある場合</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Panes">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Panes Panes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Panes Panes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Panes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Panes As Panes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Panes ^ Panes { Microsoft::Office::Interop::Excel::Panes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(653)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(653)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Panes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> 、指定したウィンドウのすべてのウィンドウ枠を表すコレクション。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>このプロパティは、ウィンドウの場合にのみ使用可能なウィンドウの<see cref="P:Microsoft.Office.Interop.Excel.Window.Split" />プロパティを<b>True</b>に設定することができます。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PointsToScreenPixelsX">
+      <MemberSignature Language="C#" Value="public int PointsToScreenPixelsX (int Points);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 PointsToScreenPixelsX([in]int32 Points) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.PointsToScreenPixelsX(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PointsToScreenPixelsX (Points As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int PointsToScreenPixelsX(int Points);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1776)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Points" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Points">
+          <b>整数</b>が必要です。 変換する横方向の長さを、ドキュメント ウィンドウの左端を基点としたポイント単位の値で指定します。</param>
+        <summary>幅の値をポイント (ドキュメント座標) からピクセル (画面座標) に変換します。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PointsToScreenPixelsY">
+      <MemberSignature Language="C#" Value="public int PointsToScreenPixelsY (int Points);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 PointsToScreenPixelsY([in]int32 Points) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.PointsToScreenPixelsY(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PointsToScreenPixelsY (Points As Integer) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int PointsToScreenPixelsY(int Points);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1777)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Points" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Points">
+          <b>整数</b>が必要です。 変換する縦方向の長さを、ドキュメント ウィンドウの上端を基点としたポイント単位の値で指定します。</param>
+        <summary>高さの値をポイント (ドキュメント座標) からピクセル (画面座標) に変換します。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintOut">
+      <MemberSignature Language="C#" Value="public object PrintOut (object From, object To, object Copies, object Preview, object ActivePrinter, object PrintToFile, object Collate, object PrToFileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object PrintOut([in]object From, [in]object To, [in]object Copies, [in]object Preview, [in]object ActivePrinter, [in]object PrintToFile, [in]object Collate, [in]object PrToFileName) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.PrintOut(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PrintOut (Optional From As Object, Optional To As Object, Optional Copies As Object, Optional Preview As Object, Optional ActivePrinter As Object, Optional PrintToFile As Object, Optional Collate As Object, Optional PrToFileName As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2361)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="From" Type="System.Object" />
+        <Parameter Name="To" Type="System.Object" />
+        <Parameter Name="Copies" Type="System.Object" />
+        <Parameter Name="Preview" Type="System.Object" />
+        <Parameter Name="ActivePrinter" Type="System.Object" />
+        <Parameter Name="PrintToFile" Type="System.Object" />
+        <Parameter Name="Collate" Type="System.Object" />
+        <Parameter Name="PrToFileName" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="From">省略可能な<b>オブジェクト</b>です。 印刷を開始するページの数です。 この引数を省略すると、印刷は先頭から開始します。</param>
+        <param name="To">省略可能な<b>オブジェクト</b>です。 印刷する最終ページの数です。 この引数を省略すると、最後のページで印刷が終了します。</param>
+        <param name="Copies">省略可能な<b>オブジェクト</b>です。 印刷部数を指定します。 この引数を省略すると、1 つのコピーが印刷されます。</param>
+        <param name="Preview">省略可能な<b>オブジェクト</b>です。 <b>True</b>オブジェクトを印刷する前に印刷プレビューを実行します。 <b>False</b>(または省略した場合)、オブジェクトをすぐに印刷します。</param>
+        <param name="ActivePrinter">省略可能な<b>オブジェクト</b>です。 アクティブなプリンターの名前を指定します。</param>
+        <param name="PrintToFile">省略可能な<b>オブジェクト</b>です。 <b>True</b>ファイルに出力します。 場合<paramref name="PrToFileName" />が指定されていない、Microsoft Excel には、出力ファイルの名前を入力するように求めます。</param>
+        <param name="Collate">省略可能な<b>オブジェクト</b>です。 <b>True</b> の場合、部単位で印刷します。</param>
+        <param name="PrToFileName">省略可能な<b>オブジェクト</b>です。 場合<paramref name="PrintToFile" />は、設定に<b>は True</b>、この引数を指定して印刷しファイルの名前です。</param>
+        <summary>オブジェクトを印刷します。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>説明における「ページ」<paramref name="From" />と<paramref name="To" />印刷されるページを参照して、ない全体のページでは、シートまたはブックです。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintPreview">
+      <MemberSignature Language="C#" Value="public object PrintPreview (object EnableChanges);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object PrintPreview([in]object EnableChanges) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.PrintPreview(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PrintPreview (Optional EnableChanges As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(281)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="EnableChanges" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="EnableChanges">プレビュー中に、変更を有効にします。</param>
+        <summary>オブジェクトの印刷プレビュー (印刷時のイメージ) を表示します。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeFromPoint">
+      <MemberSignature Language="C#" Value="public object RangeFromPoint (int x, int y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object RangeFromPoint([in]int32 x, [in]int32 y) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.RangeFromPoint(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RangeFromPoint (x As Integer, y As Integer) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ RangeFromPoint(int x, int y);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1778)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">
+          <b>整数</b>が必要です。 画面の左端から目的のポイントまでの横方向の距離をピクセル単位で指定します。</param>
+        <param name="y">
+          <b>整数</b>が必要です。 画面の上端から目的のポイントまでの縦方向の距離をピクセル単位で指定します。</param>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />または<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトが、指定した画面座標のペアで置かれています。 指定した座標にある図形がない場合はこのメソッドは<b>Nothing</b>を返します。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeSelection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Range RangeSelection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Range RangeSelection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.RangeSelection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RangeSelection As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Range ^ RangeSelection { Microsoft::Office::Interop::Excel::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1189)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1189)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />グラフィック オブジェクトは、アクティブなワークシートで選択した場合でも、選択したシートのセルを指定されたウィンドウを表すオブジェクト。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>ワークシート上のグラフィック オブジェクトが選択されている場合、<see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" />プロパティは、 <b>Range</b>オブジェクトではなくグラフィック オブジェクトを返します。<b>RangeSelection</b>プロパティは、グラフィック オブジェクトを選択する前に選択したセル範囲を返します</para>。
+          <para>このプロパティと<b>Selection</b>プロパティは、ワークシートの範囲 (グラフィック オブジェクトではありません) を選択したときと同じ値を返す</para>。
+          <para>指定されたウィンドウで作業中のシートには、ワークシートがない場合は、このプロパティは失敗します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollColumn">
+      <MemberSignature Language="C#" Value="public int ScrollColumn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ScrollColumn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.ScrollColumn" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScrollColumn As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ScrollColumn { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(654)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(654)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(654)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得またはウィンドウまたはウィンドウの左端の列の数を設定します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>かどうか、ウィンドウが分割されているの<b>ScrollColumn</b>プロパティは、の<see cref="T:Microsoft.Office.Interop.Excel.Window" />オブジェクトは、ウィンドウの左ペインを参照します。ウィンドウ枠を固定している場合、 <b>Window</b>オブジェクトの<b>ScrollColumn</b>プロパティは、マスク領域を除外します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollIntoView">
+      <MemberSignature Language="C#" Value="public void ScrollIntoView (int Left, int Top, int Width, int Height, object Start);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ScrollIntoView([in]int32 Left, [in]int32 Top, [in]int32 Width, [in]int32 Height, [in]object Start) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.ScrollIntoView(System.Int32,System.Int32,System.Int32,System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScrollIntoView (Left As Integer, Top As Integer, Width As Integer, Height As Integer, Optional Start As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1781)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Int32" />
+        <Parameter Name="Top" Type="System.Int32" />
+        <Parameter Name="Width" Type="System.Int32" />
+        <Parameter Name="Height" Type="System.Int32" />
+        <Parameter Name="Start" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Left">
+          <b>整数</b>が必要です。 ドキュメント ウィンドウまたはペインの左端から四角形までの横方向の距離 (ポイント単位)。</param>
+        <param name="Top">
+          <b>整数</b>が必要です。 ドキュメント ウィンドウまたはペインの上端から四角形までの縦方向の距離 (ポイント単位)。</param>
+        <param name="Width">
+          <b>整数</b>が必要です。 四角形の幅 (ポイント単位)。</param>
+        <param name="Height">
+          <b>整数</b>が必要です。 四角形の高さ (ポイント単位)。</param>
+        <param name="Start">オプションの <b>Integer</b>。 <b>True を指定</b>する四角形の左上隅をドキュメント ウィンドウまたはペインの左上隅に表示されます。 <b>False を指定</b>する四角形の右下隅をドキュメント ウィンドウまたはペインの右下隅に表示されます。 既定値は <b>True</b> です。</param>
+        <summary>ドキュメント ウィンドウまたはペインの左上隅または右下の隅にある指定された四角形領域の内容が表示されるように、ドキュメント ウィンドウをスクロールします。</summary>
+        <remarks>
+          <para>
+            <paramref name="Start" />の引数は、四角形がドキュメント ウィンドウまたはペインより大きい場合、画面の表示領域を指定します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollRow">
+      <MemberSignature Language="C#" Value="public int ScrollRow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ScrollRow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.ScrollRow" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScrollRow As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ScrollRow { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(655)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(655)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(655)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得またはウィンドウまたはウィンドウの上部に表示される行の数を設定します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>かどうか、ウィンドウが分割されているの<b>ScrollRow</b>プロパティは、の<see cref="T:Microsoft.Office.Interop.Excel.Window" />オブジェクトは、ウィンドウの左ペインを参照します。ウィンドウ枠を固定している場合、 <b>Window</b>オブジェクトの<b>ScrollRow</b>プロパティは、マスク領域を除外します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollWorkbookTabs">
+      <MemberSignature Language="C#" Value="public object ScrollWorkbookTabs (object Sheets, object Position);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ScrollWorkbookTabs([in]object Sheets, [in]object Position) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.ScrollWorkbookTabs(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ScrollWorkbookTabs (Optional Sheets As Object, Optional Position As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(662)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Sheets" Type="System.Object" />
+        <Parameter Name="Position" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Sheets">省略可能な<b>オブジェクト</b>です。 使ってスクロールするシートの数です。 前方スクロールするのには正の数、後方にスクロールするのには負の数または 0 (ゼロ) がすべてのスクロールを使用します。 指定する必要があります<paramref name="Sheets" />を指定しない場合は、 <paramref name="Position" />。</param>
+        <param name="Position">省略可能な<b>オブジェクト</b>です。 <b>XlFirst</b>を使用して、最初のワークシートをスクロールするか、 <b>xlLast</b>を使用して、最後のシートをスクロールします。 指定する必要があります<paramref name="Position" />を指定しない場合は、 <paramref name="Sheets" />。</param>
+        <summary>ウィンドウの下部にあるシート見出しをスクロールします。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>
+            <b>ScrollWorkbookTabs</b>メソッドは、ブックのアクティブ シートに影響しません。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedSheets">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Sheets SelectedSheets { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Sheets SelectedSheets" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.SelectedSheets" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedSheets As Sheets" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Sheets ^ SelectedSheets { Microsoft::Office::Interop::Excel::Sheets ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(656)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(656)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Sheets</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> 、指定したウィンドウで選択したすべてのシートを表すコレクション。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Selection">
+      <MemberSignature Language="C#" Value="public object Selection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Selection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Selection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Selection As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Selection { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(147)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(147)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたウィンドウで選択したオブジェクトを返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>返されるオブジェクトの型は、現在の選択内容によって異なります。 (たとえば、セルが選択した場合、このプロパティを返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクト)。<b><b>選択</b>オブジェクトが返されます何も選択されて</b>います</para>。
+          <para>を使用するのと同じではないオブジェクト修飾子をこのプロパティを使用して、<see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Application" />オブジェクトです</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SheetViews">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.SheetViews SheetViews { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.SheetViews SheetViews" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.SheetViews" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SheetViews As SheetViews" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::SheetViews ^ SheetViews { Microsoft::Office::Interop::Excel::SheetViews ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2368)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2368)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.SheetViews</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.SheetViews" />の指定されたウィンドウ オブジェクトです。 値の取得のみ可能です。</summary>
+        <value>
+          <b>SheetViews</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SmallScroll">
+      <MemberSignature Language="C#" Value="public object SmallScroll (object Down, object Up, object ToRight, object ToLeft);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object SmallScroll([in]object Down, [in]object Up, [in]object ToRight, [in]object ToLeft) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Window.SmallScroll(System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SmallScroll (Optional Down As Object, Optional Up As Object, Optional ToRight As Object, Optional ToLeft As Object) As Object" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(548)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Down" Type="System.Object" />
+        <Parameter Name="Up" Type="System.Object" />
+        <Parameter Name="ToRight" Type="System.Object" />
+        <Parameter Name="ToLeft" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Down">省略可能な<b>オブジェクト</b>です。 文字列を下にスクロールする行数。</param>
+        <param name="Up">省略可能な<b>オブジェクト</b>です。 文字列を上にスクロールする行数。</param>
+        <param name="ToRight">省略可能な<b>オブジェクト</b>です。 文字列を右にスクロールする列数。</param>
+        <param name="ToLeft">省略可能な<b>オブジェクト</b>です。 文字列を左にスクロールする列数。</param>
+        <summary>指定した行数分または列数分だけ、ウィンドウの文字列をスクロールします。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>場合<paramref name="Down" />と<paramref name="Up" />を指定した、ウィンドウの内容は、引数の差だけスクロールします。などの場合<paramref name="Down" />は、3 と<paramref name="Up" />6 では、内容は上に 3 行分スクロールします</para>。
+          <para>場合<paramref name="ToLeft" />と<paramref name="ToRight" />を指定した、ウィンドウの内容は、引数の差だけスクロールします。などの場合<paramref name="ToLeft" />は、3 と<paramref name="ToRight" />6 では、内容が右に 3 列分スクロールします</para>。
+          <para>負の数は、これらの引数のいずれかです</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Split">
+      <MemberSignature Language="C#" Value="public bool Split { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Split" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Split" />
+      <MemberSignature Language="VB.NET" Value="Public Property Split As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Split { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(657)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(657)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(657)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True の</b>場合、ウィンドウを分割します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>ことができます<see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" />を<b>True</b>と<b>分割</b>である<b>場合は False</b>、またはその逆</para>。
+          <para>このプロパティは、ワークシートとマクロ シートのみに適用されます</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SplitColumn">
+      <MemberSignature Language="C#" Value="public int SplitColumn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SplitColumn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.SplitColumn" />
+      <MemberSignature Language="VB.NET" Value="Public Property SplitColumn As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SplitColumn { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(658)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(658)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(658)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>(分割線の左側に列の数) のウィンドウにウィンドウを分割する位置の列番号を設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SplitHorizontal">
+      <MemberSignature Language="C#" Value="public double SplitHorizontal { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 SplitHorizontal" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.SplitHorizontal" />
+      <MemberSignature Language="VB.NET" Value="Public Property SplitHorizontal As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SplitHorizontal { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(659)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(659)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(659)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得またはウィンドウの水平方向の分割位置をポイント単位で設定します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SplitRow">
+      <MemberSignature Language="C#" Value="public int SplitRow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SplitRow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.SplitRow" />
+      <MemberSignature Language="VB.NET" Value="Public Property SplitRow As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SplitRow { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(660)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(660)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(660)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>(分割線の上の行の数) のウィンドウにウィンドウを分割する位置の行番号を設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SplitVertical">
+      <MemberSignature Language="C#" Value="public double SplitVertical { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 SplitVertical" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.SplitVertical" />
+      <MemberSignature Language="VB.NET" Value="Public Property SplitVertical As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SplitVertical { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(661)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(661)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(661)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得またはウィンドウの垂直方向の分割位置をポイント単位で設定します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabRatio">
+      <MemberSignature Language="C#" Value="public double TabRatio { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 TabRatio" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.TabRatio" />
+      <MemberSignature Language="VB.NET" Value="Public Property TabRatio As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double TabRatio { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(673)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(673)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(673)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ウィンドウの水平スクロール バーの幅に対するブックのタブ領域の幅の比率を設定を取得または設定 (0 (ゼロ) と 1 の間の数値として、既定値は 0.6)。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>このプロパティを持たない場合の影響を与える<see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" />が<b>False</b>に設定 (その値は保持されますが、表示には影響を与えません)。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="public double Top { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Top" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Top" />
+      <MemberSignature Language="VB.NET" Value="Public Property Top As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Top { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>(メニュー、上部、および数式バーにある固定ツールバー) の下の使用可能な領域の上端をウィンドウの上端からのポイントでの距離です。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>最大化したウィンドウに対してこのプロパティを設定することはできません。使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> 、ウィンドウの状態を設定するプロパティです。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlWindowType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlWindowType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As XlWindowType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlWindowType Type { Microsoft::Office::Interop::Excel::XlWindowType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlWindowType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ウィンドウの種類を設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsableHeight">
+      <MemberSignature Language="C#" Value="public double UsableHeight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 UsableHeight" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UsableHeight As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double UsableHeight { double get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(389)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(389)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ウィンドウがアプリケーションのウィンドウ領域で占有できる領域のポイントの高さの最大値を返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsableWidth">
+      <MemberSignature Language="C#" Value="public double UsableWidth { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 UsableWidth" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UsableWidth As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double UsableWidth { double get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(390)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(390)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ウィンドウでアプリケーションのウィンドウ領域で使用できる容量の点で最大の幅を返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="View">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlWindowView View { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlWindowView View" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.View" />
+      <MemberSignature Language="VB.NET" Value="Public Property View As XlWindowView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlWindowView View { Microsoft::Office::Interop::Excel::XlWindowView get(); void set(Microsoft::Office::Interop::Excel::XlWindowView value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1194)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1194)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1194)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlWindowView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ウィンドウを表示するビューを設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="public bool Visible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>オブジェクトを表示するかどうかを決定します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisibleRange">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Range VisibleRange { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Range VisibleRange" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.VisibleRange" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VisibleRange As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Range ^ VisibleRange { Microsoft::Office::Interop::Excel::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />のウィンドウまたはウィンドウ枠に表示されているセル範囲を表すオブジェクト。 列または行が部分的に表示されている場合、範囲に含まれます。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public double Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Width" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ウィンドウのポイント単位の幅。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" /> 、ウィンドウの最大サイズを決定するプロパティです。ウィンドウが最大化または最小化されている場合、このプロパティを設定することはできません。使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> 、ウィンドウの状態を確認するにします。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowNumber">
+      <MemberSignature Language="C#" Value="public int WindowNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 WindowNumber" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.WindowNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WindowNumber As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WindowNumber { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1119)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1119)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ウィンドウ番号を返します。 たとえば、"Book1.xls:2"をという名前のウィンドウは、そのウィンドウ番号として 2 を持っています。 ほとんどのウィンドウには、ウィンドウ番号 1 があります。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>ウィンドウ番号とは異なり、ウィンドウのインデックス (の戻り値、<see cref="P:Microsoft.Office.Interop.Excel.Window.Index" />プロパティ)、ウィンドウ内の位置は、<see cref="T:Microsoft.Office.Interop.Excel.Windows" />コレクションです。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowState">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlWindowState WindowState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlWindowState WindowState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.WindowState" />
+      <MemberSignature Language="VB.NET" Value="Public Property WindowState As XlWindowState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlWindowState WindowState { Microsoft::Office::Interop::Excel::XlWindowState get(); void set(Microsoft::Office::Interop::Excel::XlWindowState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(396)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(396)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(396)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlWindowState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ウィンドウの状態を設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Zoom">
+      <MemberSignature Language="C#" Value="public object Zoom { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Zoom" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Window.Zoom" />
+      <MemberSignature Language="VB.NET" Value="Public Property Zoom As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Zoom { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(663)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(663)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(663)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>(100 は通常の大きさや、200 は 2 倍のサイズ) の割合として、ウィンドウの表示サイズを設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>True を指定</b>するには現在の選択範囲に合わせてウィンドウのサイズをこのプロパティを設定することもできます</para>。
+          <para>この関数は、ウィンドウで現在アクティブなシートのみに影響します。このプロパティを使用して、他のシートで、する必要があります最初にそれらをアクティブ化します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,606 @@
+<Type Name="WorkbookConnection" FullName="Microsoft.Office.Interop.Excel.WorkbookConnection">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="0412302ec11fc558839570922b03112869bc8d74" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20581068" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface WorkbookConnection" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WorkbookConnection" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />
+  <TypeSignature Language="VB.NET" Value="Public Interface WorkbookConnection" />
+  <TypeSignature Language="C++ CLI" Value="public interface class WorkbookConnection" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024485-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>接続は、1st_Excel12 ブック以外の外部データ ソースからデータを取得するために必要な情報のセットです。</summary>
+    <remarks>
+      <para>接続は、Excel のブック内に格納できます。 ブックが開かれると、Excel は、接続オブジェクトと呼ばれる接続のメモリ内のコピーを作成します。 接続オブジェクトには、サーバーの名前とそのサーバーで開かれるオブジェクトの名前などの情報が含まれています。 必要に応じて、接続オブジェクトもあります認証資格情報やサーバーに渡されると実行されるコマンド (例: SQL Server で実行される SELECT ステートメントです)。 </para>
+      <para>
+        <b>注</b>: 接続の正確な形式は、ODBC 接続、OLEDB 接続の場合は、データを取得するために使用されているメカニズムによって異なり、Web クエリには、さまざまな情報が含まれています</para>。
+      <para>A の接続は、別の接続ファイルにも保存されます。 Excel ブックの接続ほとんどにはには、外部接続ファイルへのポインターが含まれます。 接続ファイルは、接続ファイルと明示する拡張子を持つ (*。ODC を * します。Iqy が作成など)ユーザーのローカル コンピューターまたは WSS (データ接続ライブラリ) などの他の既知または信頼された場所またはその他の企業のサーバーにある場合があります。 接続ファイルは、接続を再使用する同じ組織内の複数のユーザーを有効にします。 ネットワーク管理者は、組織全体が 1 つの接続ファイルを変更することでバックエンド データ ソースに接続する方法を変更することです。 接続ファイルは常に必要な外部データ ソースに接続するときです</para>。
+      <para>接続名は、それらを使用するブック内の接続を一意に識別する文字列です。    一意ではありませんが、接続の他のプロパティがあります。 Excel の数式では、接続の引数を受け取り、常にことが、直接 (文字列) として、その接続の名前を参照するための十分なまたは直接 (を参照して接続名を表す文字列を含むセル)</para> 。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public string this { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string _Default" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection._Default" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property _Default As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Office Excel アプリケーションを表すオブジェクト。 オブジェクト修飾子を使用する場合、このプロパティは、指定したオブジェクトの作成元を表す <b>Application</b> オブジェクトを返します。 読み取り専用です。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクトのアプリケーションを取得します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataFeedConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.DataFeedConnection DataFeedConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.DataFeedConnection DataFeedConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.DataFeedConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataFeedConnection As DataFeedConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::DataFeedConnection ^ DataFeedConnection { Microsoft::Office::Interop::Excel::DataFeedConnection ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3104)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3104)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.DataFeedConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>データとデータ フィードへの接続に必要な機能を含む<b>DataFeedConnection</b>オブジェクトを返します。 値の取得のみ可能です。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.WorkbookConnection.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>ブックの接続を削除します。</summary>
+        <remarks>
+          <para>外部データ接続を削除するのにはこのメソッドを使用します。このメソッドは、他のブックへのリンクには適用されません。</para>
+          <para>接続を削除するが削除またはその接続を使用していたすべてのオブジェクトを削除します。 接続の削除の場合、ファイル システムから削除する接続ファイルのいずれか、行われません。 再び作業開始のすべての別の接続を使用するこれらのオブジェクトを編集する場合</para>。
+          <para>削除された接続を使用するオブジェクトは、接続を確立できませんでしたかのように動作します。 </para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(218)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(218)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(218)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>値を取得または設定の簡単な説明、<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />オブジェクトです。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>[接続プロパティ] ダイアログ ボックスでユーザーは、接続や説明の名前を編集する場合があります。 名前と説明は、このダイアログ ボックスでを変更する Excel 接続オブジェクト内でのみ、これらのフィールドを変更します</para>。
+          <para>説明の最大サイズは、255 文字です。 説明は 255 文字の制限に合わせて切り捨てられます、ユーザーは、255 文字より長い接続ファイル内の説明を指定する場合です</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InModel">
+      <MemberSignature Language="C#" Value="public bool InModel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InModel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.InModel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InModel As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InModel { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3105)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3105)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>WorkbookConnection</b>オブジェクトがモデルに追加されているかどうかを指定します。 <b>ブール値</b>(C# では<b>bool</b> )読み取り専用です。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>レガシ接続の場合は false である必要があります。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ModelConnection ModelConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ModelConnection ModelConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.ModelConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModelConnection As ModelConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ModelConnection ^ ModelConnection { Microsoft::Office::Interop::Excel::ModelConnection ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3100)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3100)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ModelConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>統合データ モデルを操作するために Excel 2013 で導入された、新しいモデル接続の種類についての情報を含むオブジェクトを返します。値の取得のみ可能です。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelTables">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ModelTables ModelTables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ModelTables ModelTables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.ModelTables" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModelTables As ModelTables" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ModelTables ^ ModelTables { Microsoft::Office::Interop::Excel::ModelTables ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3106)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3106)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ModelTables</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.ModelTables" /> 、特定の接続に関連付けられているオブジェクト。 値の取得のみ可能です。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ブック接続オブジェクトの名前を設定または返します。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ODBCConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ODBCConnection ODBCConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ODBCConnection ODBCConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.ODBCConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ODBCConnection As ODBCConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ODBCConnection ^ ODBCConnection { Microsoft::Office::Interop::Excel::ODBCConnection ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2698)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2698)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ODBCConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ODBC 接続値を返すの詳細を指定した<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />オブジェクトです。 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" />。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OLEDBConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.OLEDBConnection OLEDBConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.OLEDBConnection OLEDBConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.OLEDBConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OLEDBConnection As OLEDBConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::OLEDBConnection ^ OLEDBConnection { Microsoft::Office::Interop::Excel::OLEDBConnection ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2697)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2697)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.OLEDBConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>OLEDB 接続値を返すの詳細を指定した<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />オブジェクトです。 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ranges">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Ranges Ranges { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Ranges Ranges" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.Ranges" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Ranges As Ranges" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Ranges ^ Ranges { Microsoft::Office::Interop::Excel::Ranges ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2699)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2699)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Ranges</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定したオブジェクトの範囲を返します<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />オブジェクトです。 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.Ranges" />。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Refresh() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.WorkbookConnection.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1417)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>ブックの接続を更新します。</summary>
+        <remarks>
+          <para>場合、<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />プロパティは<b>False</b>に、ダイアログ ボックスは表示されませんが不足している接続情報の例外で<b>Refresh</b>メソッドが失敗した</para>。
+          <para>1 つの接続の更新に失敗では、他の接続の更新操作への影響はありません</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshWithRefreshAll">
+      <MemberSignature Language="C#" Value="public bool RefreshWithRefreshAll { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RefreshWithRefreshAll" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.RefreshWithRefreshAll" />
+      <MemberSignature Language="VB.NET" Value="Public Property RefreshWithRefreshAll As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RefreshWithRefreshAll { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3102)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3102)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(3102)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>すべての更新の実行時の接続を更新する必要がある場合を決定します。 <b>ブール値</b>(<b>bool</b>では C#) です。 読み取り/書き込み。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.TextConnection TextConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.TextConnection TextConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.TextConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextConnection As TextConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::TextConnection ^ TextConnection { Microsoft::Office::Interop::Excel::TextConnection ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3103)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3103)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.TextConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.TextConnection" />クエリをテキスト ファイルに情報を格納します。 値の取得のみ可能です。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlConnectionType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlConnectionType Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As XlConnectionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlConnectionType Type { Microsoft::Office::Interop::Excel::XlConnectionType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlConnectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ブックの接続の種類を返します。 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlConnectionType" />。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorksheetDataConnection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.WorksheetDataConnection WorksheetDataConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.WorksheetDataConnection WorksheetDataConnection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WorkbookConnection.WorksheetDataConnection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorksheetDataConnection As WorksheetDataConnection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::WorksheetDataConnection ^ WorksheetDataConnection { Microsoft::Office::Interop::Excel::WorksheetDataConnection ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3101)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3101)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.WorksheetDataConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>PowerPivot モデルからの範囲、名前付き範囲は、テーブルなど、ブック内のデータへの接続に関する情報を格納しているオブジェクトを返します。 読み取り専用です。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

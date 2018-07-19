@@ -1,0 +1,748 @@
+<Type Name="ControlFormat" FullName="Microsoft.Office.Interop.Excel.ControlFormat">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="482ee10d764810f337717c2623a0421ee3669708" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20578282" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ControlFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ControlFormat" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ControlFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ControlFormat" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ControlFormat" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024440-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Excel コントロールのプロパティを含みます。</summary>
+    <remarks>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Shape.ControlFormat" /> 、 <b>ControlFormat</b>オブジェクトを返すプロパティです</para>。
+      <para>場合は、図形には、コントロールがない場合は、 <b>ControlFormat</b>プロパティは失敗すると、コントロールは、リスト ボックスでない場合や、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" />プロパティは失敗します</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public int this { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 _Default" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ControlFormat._Default" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property _Default As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int default { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>内部使用のため予約済みです。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddItem">
+      <MemberSignature Language="C#" Value="public void AddItem (string Text, object Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddItem([in]string Text, [in]object Index) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddItem (Text As String, Optional Index As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(851)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Text" Type="System.String" />
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Text">
+          <b>文字列</b> が必要です。 テキストを追加します。</param>
+        <param name="Index">省略可能な<b>オブジェクト</b>です。 新しい項目の位置を指定します。 一覧の項目数を指定したインデックスを超える場合は、指定した位置にリストの末尾から空白の項目が追加されます。 この引数を省略すると、既存のリストに項目が追加されます。</param>
+        <summary>リスト ボックスまたはコンボ ボックスに項目を追加します。</summary>
+        <remarks>
+          <para>指定された任意のセル範囲をクリアするこのメソッドを使用して、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" />プロパティ。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ControlFormat.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ControlFormat.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>
+            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropDownLines">
+      <MemberSignature Language="C#" Value="public int DropDownLines { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DropDownLines" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ControlFormat.DropDownLines" />
+      <MemberSignature Language="VB.NET" Value="Public Property DropDownLines As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DropDownLines { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(848)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(848)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(848)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返すまたは、コンボ ボックスのドロップダウン部分に表示されるリストの行数を設定します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ControlFormat.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(600)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(600)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(600)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>オブジェクトが有効になっている場合です。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LargeChange">
+      <MemberSignature Language="C#" Value="public int LargeChange { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LargeChange" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ControlFormat.LargeChange" />
+      <MemberSignature Language="VB.NET" Value="Public Property LargeChange As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LargeChange { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(845)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(845)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(845)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>(ユーザーをクリックしたときに、スクロール バー) にスクロール、ページのスクロール ボックスずつ増減する量を設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinkedCell">
+      <MemberSignature Language="C#" Value="public string LinkedCell { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LinkedCell" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ControlFormat.LinkedCell" />
+      <MemberSignature Language="VB.NET" Value="Public Property LinkedCell As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LinkedCell { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1058)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1058)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1058)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>コントロールの値にリンクされているワークシートのセル範囲を設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>のセルに値を設定する場合は、コントロールは、この値を取得します。同様に場合は、コントロールの値を変更すると、その値はまたセルに配置します</para>。
+          <para>複数選択リスト ボックスでこのプロパティを使用することはできません</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="List">
+      <MemberSignature Language="C#" Value="public object List[object Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object List(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ControlFormat.List(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property List(Optional Index As Object) As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ List[System::Object ^] { System::Object ^ get(System::Object ^ Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(861)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(861)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">省略可能な<b>オブジェクト</b>です。 設定または取得する単一の項目のインデックス番号です。 この引数を省略すると、全体のリストが返されるか、文字列の配列として設定します。</param>
+        <summary>指定されたリスト ボックスまたはコンボ ボックスの項目を文字列配列または単一の項目で返します。リストに項目がない場合、エラーになります。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>このプロパティ設定で指定された任意のセル範囲をクリア、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" />プロパティ。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListCount">
+      <MemberSignature Language="C#" Value="public int ListCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ListCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ControlFormat.ListCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property ListCount As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ListCount { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(849)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(849)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(849)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>リスト ボックスまたはコンボ ボックスのエントリの数を返します。 一覧にエントリがない場合は、0 (ゼロ) を返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListFillRange">
+      <MemberSignature Language="C#" Value="public string ListFillRange { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ListFillRange" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" />
+      <MemberSignature Language="VB.NET" Value="Public Property ListFillRange As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ListFillRange { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(847)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(847)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(847)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたリスト ボックスの塗りつぶしに使用するワークシートの範囲を設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>このプロパティを設定、リスト ボックス内の既存のリストを破棄します</para>。
+          <para>Excel の範囲内のすべてのセルの内容を読み取り、リスト ボックスにセルの値を挿入します。リストの範囲のセルに変更を追跡します</para>。
+          <para>で、[リスト] ボックスの一覧が作成されたかどうか、<see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" />メソッドでは、このプロパティが空の文字列を返します ("").</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListIndex">
+      <MemberSignature Language="C#" Value="public int ListIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ListIndex" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ControlFormat.ListIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property ListIndex As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ListIndex { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(850)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(850)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(850)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返すまたは、リスト ボックスまたはコンボ ボックスで現在選択されている項目のインデックス番号を設定します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LockedText">
+      <MemberSignature Language="C#" Value="public bool LockedText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LockedText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ControlFormat.LockedText" />
+      <MemberSignature Language="VB.NET" Value="Public Property LockedText As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LockedText { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(616)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(616)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(616)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True の</b>場合は、指定したオブジェクト内のテキストは、ブックが保護されている場合は、変更を防ぐためにロックされます。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Max">
+      <MemberSignature Language="C#" Value="public int Max { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Max" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ControlFormat.Max" />
+      <MemberSignature Language="VB.NET" Value="Public Property Max As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Max { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(842)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(842)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(842)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>スクロール バーまたはスピン ボタンの最大値を設定を取得または設定範囲です。 スクロール バーまたはスピン ボタンは、この最大値より大きい値をとることはできません。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>Max</b>プロパティの値は、の値より大きい値である必要があります、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Min" />プロパティ。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Min">
+      <MemberSignature Language="C#" Value="public int Min { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Min" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ControlFormat.Min" />
+      <MemberSignature Language="VB.NET" Value="Public Property Min As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Min { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(843)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(843)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(843)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>スクロール バーまたはスピン ボタンの最小値を設定を取得または設定範囲です。 スクロール バーまたはスピン ボタンは、この最小値より小さい値をとることはできません。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>Min</b>プロパティの値がの値より小さい値にする必要があります、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Max" />プロパティ。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiSelect">
+      <MemberSignature Language="C#" Value="public int MultiSelect { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MultiSelect" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ControlFormat.MultiSelect" />
+      <MemberSignature Language="VB.NET" Value="Public Property MultiSelect As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MultiSelect { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(32)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(32)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(32)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたリスト ボックスの選択モードを設定または返します。 使用できる定数は、次のいずれか: <b>xlNone</b>、 <b>xlSimple</b>、または<b>xlExtended</b>。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>(単独選択<b>xlNone</b>) は、選択する時に、1 つの項目を使用できます。マウスをクリックするか、スペースバーを押して選択をキャンセルし、クリックした項目を選択します</para>。
+          <para>単純な複数 (<b>xlSimple</b>) は、選択範囲を切り替えますリストの項目をマウスでクリックしてまたは項目にフォーカスがあるときに space キーを押します。複数の項目の選択では、多くの場合がありこのモードは、場合に適しています</para>。
+          <para>拡張 multiselect (<b>xlExtended</b>) 通常、単一選択リスト ボックスのように動作します。アイテムをクリックすると、他のすべての選択をキャンセルします。Shift キーを押しながらマウスをクリックするか、矢印キーを押すと、それに応じて選択する項目の順番にします。Ctrl キーを押しながらマウスをクリックすると、1 つの項目が一覧に追加します。このモードは、複数の項目は使用できますが、ほとんど使用しませんがある場合に適しています</para>。
+          <para>を使用することができます、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Value" />または<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListIndex" />プロパティを取得して、単一選択リスト ボックスで選択した項目を設定します</para>。
+          <para>を使用して、複数選択リスト ボックスをリンクすることはできません、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.LinkedCell" />プロパティ</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ControlFormat.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintObject">
+      <MemberSignature Language="C#" Value="public bool PrintObject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PrintObject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ControlFormat.PrintObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrintObject As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PrintObject { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(618)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(618)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(618)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>オブジェクトは、ドキュメントを印刷するときに印刷する場合です。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAllItems">
+      <MemberSignature Language="C#" Value="public void RemoveAllItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAllItems() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ControlFormat.RemoveAllItems" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAllItems ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAllItems();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(853)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>リスト ボックスまたはコンボ ボックスからすべての項目を削除します。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveItem">
+      <MemberSignature Language="C#" Value="public void RemoveItem (int Index, object Count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveItem([in]int32 Index, [in]object Count) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ControlFormat.RemoveItem(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveItem (Index As Integer, Optional Count As Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(852)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+        <Parameter Name="Count" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <b>整数</b>が必要です。 削除する最初の項目の数。 有効な値が 1 からリスト内の項目の数には (によって返される、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListCount" />プロパティ)。</param>
+        <param name="Count">省略可能な<b>オブジェクト</b>です。 削除する項目の数の項目に<paramref name="Index" />。 この引数を省略すると、1 つの項目が削除されます。 場合<paramref name="Index" />  +  <paramref name="Count" />からすべての項目] の一覧で項目の数を超えています<paramref name="Index" />一覧の末尾までは、エラーなしで削除されます。</param>
+        <summary>リスト ボックスまたはコンボ ボックスから 1 つまたは複数のアイテムを削除します。</summary>
+        <remarks>
+          <para>セル範囲の定義を指定したオブジェクトには、このメソッドは失敗します</para>。
+          <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.RemoveAllItems" /> 、Microsoft Excel のリスト ボックスまたはコンボ ボックスからすべてのエントリを削除します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SmallChange">
+      <MemberSignature Language="C#" Value="public int SmallChange { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SmallChange" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ControlFormat.SmallChange" />
+      <MemberSignature Language="VB.NET" Value="Public Property SmallChange As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SmallChange { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(844)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(844)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(844)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>スクロール バーまたはスピン ボタンをインクリメントまたはデクリメントの行にスクロール (ユーザーは、矢印をクリックする) と金額を設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public int Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ControlFormat.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Value { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたコントロール書式の名前です。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
