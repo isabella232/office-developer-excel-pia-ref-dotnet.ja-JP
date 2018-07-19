@@ -1,0 +1,809 @@
+<Type Name="DefaultWebOptions" FullName="Microsoft.Office.Interop.Excel.DefaultWebOptions">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="89da5d5cdace92821c0dcb0423dda5bc8169b1f6" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20585569" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface DefaultWebOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DefaultWebOptions" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Interface DefaultWebOptions" />
+  <TypeSignature Language="C++ CLI" Value="public interface class DefaultWebOptions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024448-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>文書を Web ページとして保存または Web ページを開くときに Excel で使用されるアプリケーション レベルのグローバル属性が含まれています。</summary>
+    <remarks>
+      <para>返すか、アプリケーション (グローバル) レベルまたはブック レベルの属性を設定できます。(属性の値を 1 つのブックごとに異なることができることは、ブックの保存時の属性値によってに注意してください)。ブック レベルの属性の設定は、アプリケーション レベルの属性設定を上書きします。ブック レベルの属性は、<see cref="T:Microsoft.Office.Interop.Excel.WebOptions" />オブジェクトです</para>。
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Application.DefaultWebOptions" />を<b>必ず指定</b>のオブジェクトを返すプロパティです</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllowPNG">
+      <MemberSignature Language="C#" Value="public bool AllowPNG { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowPNG" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.AllowPNG" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowPNG As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowPNG { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1908)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1908)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1908)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>を Web ページとしてドキュメントを保存すると、画像形式として PNG (ポータブル ネットワーク グラフィックス) が許可されている場合です。 <b>False を指定</b> の出力形式として PNG が許可されていない場合。 既定値は、 <b>false を指定</b> します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>その他のファイル形式、PNG 形式で画像を保存する場合する可能性があります画像の品質を向上させるためや、画像ファイルのサイズを小さくしたがってダウンロード時間を短縮、PNG 形式をサポートしている Web ブラウザーは対象とするいると仮定すると。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlwaysSaveInDefaultEncoding">
+      <MemberSignature Language="C#" Value="public bool AlwaysSaveInDefaultEncoding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AlwaysSaveInDefaultEncoding" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.AlwaysSaveInDefaultEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlwaysSaveInDefaultEncoding As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AlwaysSaveInDefaultEncoding { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1912)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1912)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1912)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>該当</b>文書を保存する Web ページまたはテキスト形式、ファイルの元のエンコード形式を開くときに依存しないと、既定のエンコーディングが使用されている場合です。 <b>False</b>場合は、ファイルの元のエンコード形式を使用します。 既定値は <b>False</b> です。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.Encoding" />プロパティは、既定のエンコーディングを設定するのには使用できます。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckIfOfficeIsHTMLEditor">
+      <MemberSignature Language="C#" Value="public bool CheckIfOfficeIsHTMLEditor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CheckIfOfficeIsHTMLEditor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.CheckIfOfficeIsHTMLEditor" />
+      <MemberSignature Language="VB.NET" Value="Public Property CheckIfOfficeIsHTMLEditor As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CheckIfOfficeIsHTMLEditor { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1905)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1905)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1905)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True の</b>場合、Office アプリケーションの既定の HTML エディターは、Excel を起動するときに、かどうかを確認する Microsoft Excel がチェックします。 <b>False</b> Excel では、このチェックを実行していない場合。 既定値は <b>True</b> です。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>を使用している Web ブラウザーが HTML 編集と HTML エディターをサポートしている場合にのみ、このプロパティを使用します</para>。
+          <para>に別の HTML エディターを使用するには、このプロパティを<b>False</b>に設定し、エディターを既定のシステム HTML エディターとして登録します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>
+            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadComponents">
+      <MemberSignature Language="C#" Value="public bool DownloadComponents { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DownloadComponents" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.DownloadComponents" />
+      <MemberSignature Language="VB.NET" Value="Public Property DownloadComponents As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DownloadComponents { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1906)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1906)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1906)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>の<b>true</b>場合のみ場合は、コンポーネントがインストールされていないが、Web ブラウザーに保存されたドキュメントを表示するときに必要な Microsoft Office Web コンポーネントがダウンロードされます。 <b>False</b>場合は、コンポーネントはダウンロードされません。 既定値は <b>False</b> です。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>を設定すること、 <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.LocationOfComponents" /> (イントラネットまたは Web) 上のサーバーの URL またはパスのプロパティ (ローカルまたはネットワーク) を権限のあるユーザーがコンポーネントをダウンロード、保存したドキュメントを表示するときの場所にします。ユーザーが有効な Microsoft Office のライセンスが必要とのパスが有効である必要があり、必要なコンポーネントが含まれている場所をポイントする必要があります</para>。
+          <para>Office Web コンポーネントは、Web ページとして保存するドキュメントに対話機能を追加します。ページの対話部分を静的になるコンポーネントがインストールされていないコンピューターのブラウザーで Web ページを表示する場合です</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encoding">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoEncoding Encoding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoEncoding Encoding" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.Encoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Encoding As MsoEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoEncoding Encoding { Microsoft::Office::Core::MsoEncoding get(); void set(Microsoft::Office::Core::MsoEncoding value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1822)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1822)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1822)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoEncoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ドキュメントが保存されたドキュメントを表示するとき、Web ブラウザーで使用されるエンコード (コード ページまたは文字セット) を設定または返します。 既定値は、システム コード ページです。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>[自動検出]</b>のサフィックスが付いている<b>が可能</b>定数のいずれかを使用することはできません。これらの定数が使用、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.ReloadAs(Microsoft.Office.Core.MsoEncoding)" />メソッドです。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FolderSuffix">
+      <MemberSignature Language="C#" Value="public string FolderSuffix { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FolderSuffix" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FolderSuffix As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FolderSuffix { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1914)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1914)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>文書を Web ページとして保存、長いファイル名を使用して別のフォルダーに関連ファイルを保存するときに Excel で使用されるフォルダー サフィックスを返します (場合は、<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.UseLongFileNames" />と<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" />プロパティが<b>True</b>に設定)。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>新規ドキュメントの使用、<b>必ず指定</b>のオブジェクトの<b>FolderSuffix</b>プロパティから返されるサフィックスが作成されます。値、<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> 、別の言語バージョンの Microsoft Excel のドキュメントが編集された以前の場合、<b>必ず指定</b>のオブジェクトのオブジェクトが異なる場合があります。使用することができます、<see cref="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" />には、Microsoft Office で現在使用している言語のサフィックスを変更する方法です</para>。
+          <para>既定では、サポート フォルダーの名前は、Web ページとアンダー スコア (_)、ピリオド (.)、またはハイフン (-) と、word の [ファイル] ([Web ページとしてファイルを保存する Excel のバージョンの言語で表示される) の名前。たとえば、オランダ語の言語バージョンの Excel を使用して、"Page1"という名前のファイルを Web ページとして保存することとします。Page1_bestanden では、サポート フォルダーの既定の名前です</para>。
+          <para>は、次の表、[Office の各言語バージョンとその対応する<b>LanguageID</b>プロパティの値およびフォルダー サフィックス。テーブルに表示されていない言語、サフィックス"として.files"が使用されます</para>。
+          <list type="table"><item><term>アラビア語</term><description>1025</description><description>.files</description></item><item><term>バスク語</term><description>1069</description><description>_fitxategiak</description></item><item><term>(ブラジル)</term><description>1046</description><description>_arquivos</description></item><item><term>ブルガリア語</term><description>1026</description><description>.files</description></item><item><term>カタロニア語</term><description>1027</description><description>_fitxers</description></item><item><term>中国語 - 簡</term><description>2052</description><description>.files</description></item><item><term>中国語 - 繁体字</term>の
+              <description>1028</description><description>.files</description></item><item><term>クロアチア語</term><description>1050</description><description>_datoteke</description></item><item><term>チェコ語</term><description>1029</description><description>_soubory</description></item><item><term>デンマーク</term><description>1030</description><description>・ ファイラー ・</description></item><item><term>オランダ</term><description>1043</description><description>_bestanden</description></item><item><term>英語</term><description>1033</description><description>_files</description></item><item><term>エストニア語</term><description>1061</description><description>_failid</description></item><item><term>フィンランド</term><description>1035</description><description>_tiedostot</description></item><item><term>フランス語</term><description>1036</description><description>_fichiers</description></item><item><term>ドイツ語</term><description>1031</description><description>-Dateien</description></item><item><term>ギリシャ語</term><description>1032</description><description>.files</description></item><item><term>ヘブライ語</term><description>1037</description><description>.files</description></item><item><term>ハンガリー</term><description>1038</description><description>_elemei</description></item><item><term>イタリア</term><description>1040</description><description>-ファイル</description></item><item><term>日本語</term>、
+              <description>1041</description>、
+              <description>.files</description></item><item><term>韓国語</term><description>1042</description><description>.files</description></item><item><term>ラトビア</term><description>1062</description><description>_fails</description></item><item><term>リトアニア</term><description>1063</description><description>_bylos</description></item><item><term>ノルウェー語</term><description>1044</description><description>・ ファイラー ・</description></item><item><term>ポーランド</term><description>1045</description><description>_pliki</description></item><item><term>ポルトガル語</term><description>2070</description><description>_ficheiros</description></item><item><term>ルーマニア</term><description>1048</description><description>.files</description></item><item><term>ロシア</term><description>1049</description><description>.files</description></item><item><term>セルビア語 (キリル)</term><description>3098</description><description>.files</description></item><item><term>セルビア語 (ラテン)</term><description>2074</description><description>_fajlovi</description></item><item><term>スロバキア語</term><description>1051</description><description>.files</description></item><item><term>スロベニア語</term><description>1060</description><description>_datoteke</description></item><item><term>スペイン語</term><description>3082</description><description>_archivos</description></item><item><term>スウェーデン語</term><description>1053</description><description>・ ファイラー ・</description></item><item><term>タイ</term><description>1054</description><description>.files</description></item><item><term>トルコ語</term><description>1055</description><description>_dosyalar</description></item><item><term>ウクライナ</term><description>1058</description><description>.files</description></item><item><term>ベトナム</term><description>1066</description><description>.files</description></item></list><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fonts">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.WebPageFonts Fonts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.WebPageFonts Fonts" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.Fonts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Fonts As WebPageFonts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::WebPageFonts ^ Fonts { Microsoft::Office::Core::WebPageFonts ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1913)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1913)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.WebPageFonts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Core.WebPageFonts" />コレクションのフォントのセットを表す Microsoft Excel は、Excel で Web ページを開くとは、Web ページで指定されているフォント情報がないにいずれかまたは現在の既定のフォントは、文字セットで Web ページを表示できません。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadPictures">
+      <MemberSignature Language="C#" Value="public bool LoadPictures { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LoadPictures" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.LoadPictures" />
+      <MemberSignature Language="VB.NET" Value="Public Property LoadPictures As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LoadPictures { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1901)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1901)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1901)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>イメージとドキュメントが Microsoft Excel で作成されなかった場合に通常、Excel でドキュメントを開いたときにイメージが読み込まれた場合です。 <b>False</b>のイメージが読み込まれていない場合。 既定値は <b>True</b> です。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocationOfComponents">
+      <MemberSignature Language="C#" Value="public string LocationOfComponents { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LocationOfComponents" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.LocationOfComponents" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocationOfComponents As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LocationOfComponents { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1911)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1911)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1911)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>(イントラネットまたは Web) 上のサーバーの URL またはパスの設定を取得または設定 (ローカルまたはネットワーク) 権限を持つユーザーことができますをダウンロードする Microsoft Office Web コンポーネント、保存したドキュメントを表示するときの場所にします。 既定値は、ローカルまたは Microsoft Office のネットワーク インストール パスです。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>場合、指定した Web ページに office Web コンポーネントを自動的にダウンロード、<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.DownloadComponents" />プロパティが<b>True</b>に設定されて、コンポーネントがインストールされていない、パスが有効であり、必要なコンポーネントが含まれている場所をポイントし、ユーザーは、有効な Microsoft Office のライセンスを持っています。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrganizeInFolder">
+      <MemberSignature Language="C#" Value="public bool OrganizeInFolder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OrganizeInFolder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" />
+      <MemberSignature Language="VB.NET" Value="Public Property OrganizeInFolder As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OrganizeInFolder { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1902)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1902)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1902)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True の</b>場合は、指定した文書を Web ページとして保存すると、背景のテクスチャや画像など、すべての関連ファイルが別のフォルダーに編成されました。 <b>偽</b>のファイルをサポートしている場合は、Web ページと同じフォルダーに保存されます。 既定値は <b>True</b> です。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>新しいフォルダーは、Web ページを保存したフォルダーに作成され、ドキュメントの名前します。長いファイル名を使用する場合は、フォルダー名にサフィックスが追加されます。<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" />プロパティは、選択またはインストールされている言語サポートのフォルダー サフィックス、または既定のフォルダー サフィックスを取得します</para>。
+          <para>、 <b>OrganizeInFolder</b>プロパティを別の値に設定を以前に保存したドキュメントを保存すると、Microsoft Excel が自動的に移動または必要に応じて、フォルダーからファイルをサポートします</para>。長いファイル名を使用しない場合は
+          <para>(場合は、<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.UseLongFileNames" />プロパティが<b>False</b>に設定)、Microsoft Excel では、別のフォルダーに、任意のサポート ファイルを自動的に保存します。Web ページと同じフォルダーにファイルを保存することはできません</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PixelsPerInch">
+      <MemberSignature Language="C#" Value="public int PixelsPerInch { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PixelsPerInch" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.PixelsPerInch" />
+      <MemberSignature Language="VB.NET" Value="Public Property PixelsPerInch As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PixelsPerInch { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1910)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1910)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1910)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Web ページ上のグラフィック イメージおよび表のセルの密度 (1 インチあたりのピクセル数) を設定または返します。 通常の設定数値の範囲は 19 ～ 480 で、よく使用される画面のサイズに対する一般的な設定は、72、96、および 120 です。 既定値は 96 です。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>このプロパティは、Web ブラウザーで保存されたドキュメントを表示する際に画像やテキストのサイズを基準にして指定の Web ページ上のセルのサイズを決定します。結果のイメージまたはセルの物理的なサイズは、元のサイズ (インチ単位) の結果を 1 インチあたりのピクセル数を掛けた値です</para>。
+          <para>を使用する、<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.ScreenSize" />プロパティを対象の Web ブラウザーの最適な画面サイズを設定します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelyOnCSS">
+      <MemberSignature Language="C#" Value="public bool RelyOnCSS { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RelyOnCSS" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.RelyOnCSS" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelyOnCSS As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RelyOnCSS { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1899)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1899)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1899)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>の<b>場合は true。</b>保存済みの文書を Web ブラウザーで表示するときのフォント設定にカスケード スタイル シート (CSS) を使用する場合。 Microsoft Excel は、カスケード スタイル シート ファイルを作成し、指定したフォルダーに、またはの値に基づいて、Web ページと同じフォルダーに保存、<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" />プロパティ。 <b>False</b>場合 HTML&lt;フォント&gt;タグとカスケード スタイル シートを使用します。 既定値は <b>True</b> です。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>正確なレイアウトと書式制御が Web ページで提供し、これは、スタイル シートを重ねて、Web ブラウザーがサポートするよう場合より、文書に表示される Microsoft Excel で) このプロパティを<b>True</b>に設定する必要があります。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelyOnVML">
+      <MemberSignature Language="C#" Value="public bool RelyOnVML { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RelyOnVML" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.RelyOnVML" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelyOnVML As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RelyOnVML { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1907)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1907)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1907)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>を Web ページとして文書を保存するときに描画オブジェクトから画像ファイルを生成しない場合。 場合は<b>false を指定</b>のイメージが生成されます。 既定値は <b>False</b> です。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>は、Web ブラウザーには、ベクター マークアップ言語 (VML) がサポートされている場合、描画オブジェクトのイメージを生成しないことによりファイルのサイズを減らすことができます。たとえば、Microsoft Internet Explorer 5 はこの機能をサポートし、このブラウザーを対象としている場合は、 <b>RelyOnVML</b>プロパティを<b>True</b>に設定する必要があります。Vml を使って、イメージは表示されない場合をサポートしていないブラウザーでこのプロパティを有効に保存された Web ページを表示する</para>。
+          <para>などを生成しないように画像、Web ページは、以前に生成されたイメージ ファイルを使用している場合と、ページを Web サーバー上の最終的な場所から異なる場合は、ドキュメントを保存する場所です</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveHiddenData">
+      <MemberSignature Language="C#" Value="public bool SaveHiddenData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SaveHiddenData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.SaveHiddenData" />
+      <MemberSignature Language="VB.NET" Value="Public Property SaveHiddenData As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SaveHiddenData { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1900)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1900)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1900)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>を Web ページとして文書を保存するときに指定した範囲外のデータが保存されている場合です。 このデータを数式を維持するために必要なことがあります。 <b>False</b>場合は、Web ページで指定した範囲外のデータは保存されません。 既定値は <b>True</b> です。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveNewWebPagesAsWebArchives">
+      <MemberSignature Language="C#" Value="public bool SaveNewWebPagesAsWebArchives { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SaveNewWebPagesAsWebArchives" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.SaveNewWebPagesAsWebArchives" />
+      <MemberSignature Language="VB.NET" Value="Public Property SaveNewWebPagesAsWebArchives As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SaveNewWebPagesAsWebArchives { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2180)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2180)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2180)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>True の場合、新しい Web ページとして保存 Web アーカイブします。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScreenSize">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoScreenSize ScreenSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoScreenSize ScreenSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.ScreenSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScreenSize As MsoScreenSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoScreenSize ScreenSize { Microsoft::Office::Core::MsoScreenSize get(); void set(Microsoft::Office::Core::MsoScreenSize value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1909)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1909)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1909)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoScreenSize</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>保存した文書を Web ブラウザーで表示されるときに使用する理想的な最小画面サイズ (幅と高さをピクセル単位で) を設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>取得および設定</b>には、これらの<b>取得および設定が</b>定数のいずれかを指定できます:</para>
+          <para>
+            <b>msoScreenSize1152x882</b>
+          </para>
+          <para>
+            <b>msoScreenSize1280x1024</b>
+          </para>
+          <para>
+            <b>msoScreenSize1800x1440</b>
+          </para>
+          <para>
+            <b>msoScreenSize544x376</b>
+          </para>
+          <para>
+            <b>msoScreenSize720x512</b>
+          </para>
+          <para>
+            <b>msoScreenSize1024x768</b>
+          </para>
+          <para>
+            <b>msoScreenSize1152x900</b>
+          </para>
+          <para>
+            <b>msoScreenSize1600x1200</b>
+          </para>
+          <para>
+            <b>msoScreenSize1920x1200</b>
+          </para>
+          <para>
+            <b>msoScreenSize640x480</b>
+          </para>
+          <para>
+            <b>msoScreenSize800x600</b>既定</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetBrowser">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTargetBrowser TargetBrowser { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTargetBrowser TargetBrowser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.TargetBrowser" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetBrowser As MsoTargetBrowser" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTargetBrowser TargetBrowser { Microsoft::Office::Core::MsoTargetBrowser get(); void set(Microsoft::Office::Core::MsoTargetBrowser value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2179)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2179)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2179)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTargetBrowser</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ブラウザーのバージョンを示す定数を設定または返します。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>MsoTargetBrowser</b>には、これらの<b>MsoTargetBrowser</b>定数のいずれかを指定できます。</para>
+          <para>
+            <b>msoTargetBrowserIE4</b> 4.0 またはそれ以降の Microsoft Internet Explorer</para> 。
+          <para><b>msoTargetBrowserIE5</b> 5.0 またはそれ以降の Microsoft Internet Explorer</para> 。
+          <para><b>msoTargetBrowserIE6</b>またはそれ以降の Microsoft Internet Explorer</para> 。
+          <para><b>msoTargetBrowserV3</b> Microsoft Internet Explorer 3.0 では、3.0、またはそれ以降、Netscape Navigator</para> 。
+          <para><b>msoTargetBrowserV4</b> Microsoft Internet Explorer 4.0、4.0、またはそれ以降、Netscape Navigator</para> 。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateLinksOnSave">
+      <MemberSignature Language="C#" Value="public bool UpdateLinksOnSave { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UpdateLinksOnSave" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.UpdateLinksOnSave" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpdateLinksOnSave As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UpdateLinksOnSave { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1903)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1903)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1903)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>ハイパーリンクおよびすべての関連ファイルへのパス、自動的に更新される場合のリンクは、文書を保存する時点で最新の状態を確保する、Web ページとして文書を保存する前にします。 <b>False</b>場合は、リンクは更新されません。 既定値は <b>True</b> です。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>False</b>にこのプロパティを設定する必要がある場合は、ドキュメントの保存場所とは異なる Web サーバー上の最終的な場所と、最初の場所で関連ファイルがご利用いただけません。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseLongFileNames">
+      <MemberSignature Language="C#" Value="public bool UseLongFileNames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseLongFileNames" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.UseLongFileNames" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseLongFileNames As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseLongFileNames { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1904)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1904)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1904)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <b>True</b>を Web ページとして文書を保存するときに長いファイル名を使用する場合。 <b>False</b>場合は長いファイル名を使用しないと、DOS ファイル名形式 (8.3) が使用されます。 既定値は <b>True</b> です。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>長いファイル名を使用せずに、文書にサポート ファイルがあると、Microsoft Excel は自動的に別のフォルダーにそれらのファイルを整理します。それ以外の場合を使用して、<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" />の関連ファイルが別のフォルダーに配置するかどうかを確認するにします。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

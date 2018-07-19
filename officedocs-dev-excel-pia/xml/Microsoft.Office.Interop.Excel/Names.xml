@@ -1,0 +1,310 @@
+<Type Name="Names" FullName="Microsoft.Office.Interop.Excel.Names">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="a76d5115c800138621098c928ea18e19669180e4" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20584729" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Names : System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Names implements class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Names" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Names&#xA;Implements IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Names : System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000208B8-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>すべてのコレクション、 <see cref="T:Microsoft.Office.Interop.Excel.Name" /> 、アプリケーションまたはブック内のオブジェクト。 各<b>Name</b>オブジェクトは、セル範囲に定義名を表します。 名には、いずれかの組み込み名、データベース、Print_Area、Auto_Open など、またはカスタムの名前。</summary>
+    <remarks>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Names" /><b>の名前</b>のコレクションを返すプロパティです</para>。使用の
+      <para>、<see cref="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />名を作成し、コレクションに追加する方法です。<b>Add</b>メソッドの<paramref name="RefersTo" />の A1 スタイルの表記、適切な場所にドル記号 ($) を含む引数を指定する必要があります。たとえば、シート 1 のセル A10 を選択しを使用して名前を定義する場合、<paramref name="RefersTo" />の引数"は、シート 1 =!A1: b1」、新しい名前は A10:B10 のセル (相対参照を指定する) ためです。絶対参照を指定するのには次のように使用します「= sheet1! $A$ 1: $B$ 1"です。</para> 。
+      <para><b>名</b>を使用する (<paramref name="index" />)、<paramref name="index" />は、名前のインデックス番号またはオブジェクトを取得する 1 つ<b>の名前</b>を定義済みの名前</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Name _Default (object Index, object IndexLocal, object RefersTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Name _Default([in]object Index, [in]object IndexLocal, [in]object RefersTo) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Names._Default(System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function _Default (Optional Index As Object, Optional IndexLocal As Object, Optional RefersTo As Object) As Name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Name</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+        <Parameter Name="IndexLocal" Type="System.Object" />
+        <Parameter Name="RefersTo" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">To be added.</param>
+        <param name="IndexLocal">To be added.</param>
+        <param name="RefersTo">To be added.</param>
+        <summary>内部使用のため予約済みです。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Name Add (object Name, object RefersTo, object Visible, object MacroType, object ShortcutKey, object Category, object NameLocal, object RefersToLocal, object CategoryLocal, object RefersToR1C1, object RefersToR1C1Local);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Name Add([in]object Name, [in]object RefersTo, [in]object Visible, [in]object MacroType, [in]object ShortcutKey, [in]object Category, [in]object NameLocal, [in]object RefersToLocal, [in]object CategoryLocal, [in]object RefersToR1C1, [in]object RefersToR1C1Local) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(181)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Name</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Name" Type="System.Object" />
+        <Parameter Name="RefersTo" Type="System.Object" />
+        <Parameter Name="Visible" Type="System.Object" />
+        <Parameter Name="MacroType" Type="System.Object" />
+        <Parameter Name="ShortcutKey" Type="System.Object" />
+        <Parameter Name="Category" Type="System.Object" />
+        <Parameter Name="NameLocal" Type="System.Object" />
+        <Parameter Name="RefersToLocal" Type="System.Object" />
+        <Parameter Name="CategoryLocal" Type="System.Object" />
+        <Parameter Name="RefersToR1C1" Type="System.Object" />
+        <Parameter Name="RefersToR1C1Local" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Name">省略可能な<b>オブジェクト</b>です。 必要な場合<paramref name="NameLocal" />が指定されていません。 名前として使用するテキストです。 名は、スペースを含めることはできません、セル参照と同じように探すことはできません。</param>
+        <param name="RefersTo">省略可能な<b>オブジェクト</b>です。 しない限り、必要なその他の<paramref name="RefersTo" />引数を指定します。 (A1 形式の表記法を使用して) を参照する名前について説明します。 <b>メモ</b>参照が存在しない場合は、nothing が返されます。</param>
+        <param name="Visible">省略可能な<b>オブジェクト</b>です。 <b>True</b>通常名を定義します。 <b>False</b>非表示の名前と名前を定義するのには (つまり、表示されないダイアログ ボックスの [名前の定義、名前の貼り付け、または移動) します。 既定値は <b>True</b> です。</param>
+        <param name="MacroType">省略可能な<b>オブジェクト</b>です。 マクロの種類を次の表に示すようにします。ValueMeaning1User 定義関数 (<b>Function</b>プロシージャ) の 2Macro ( <b>Sub</b>プロシージャとも呼ばれます) 3 または omittedNone (定義した名前はユーザー定義関数またはマクロを参照しません)</param>
+        <param name="ShortcutKey">省略可能な<b>オブジェクト</b>です。 マクロのショートカット キーです。 "Z"または"Z"など、1 つの文字をする必要があります。 コマンド マクロに対してのみ適用されます。</param>
+        <param name="Category">省略可能な<b>オブジェクト</b>です。 カテゴリのマクロまたは関数の場合は<paramref name="MacroType" />が 1 または 2。 カテゴリは、関数ウィザードで使用されます。 か (1 から始まる) の数字によって、言語のマクロの名前には、既存の項目を参照できます。 Microsoft Excel は、指定したカテゴリが存在しない場合、新しいカテゴリを作成します。</param>
+        <param name="NameLocal">省略可能な<b>オブジェクト</b>です。 必要な場合<paramref name="Name" />が指定されていません。 (ユーザーの言語) の名前として使用するテキストです。 名は、スペースを含めることはできません、セル参照と同じように探すことはできません。</param>
+        <param name="RefersToLocal">省略可能な<b>オブジェクト</b>です。 しない限り、必要なその他の<paramref name="RefersTo" />引数を指定します。 名前が参照する対象の言語の A1 形式の表記法を使用して、ユーザーのについて説明します。</param>
+        <param name="CategoryLocal">省略可能な<b>オブジェクト</b>です。 必要な場合<paramref name="Category" />が指定されていません。 ユーザーの言語でユーザー定義関数のカテゴリを識別するテキストです。</param>
+        <param name="RefersToR1C1">省略可能な<b>オブジェクト</b>です。 しない限り、必要なその他の<paramref name="RefersTo" />引数を指定します。 名前の参照 (r1c1 形式の表記法を使用) について説明します。</param>
+        <param name="RefersToR1C1Local">省略可能な<b>オブジェクト</b>です。 しない限り、必要なその他の<paramref name="RefersTo" />引数を指定します。 名前が参照する対象言語で、r1c1 形式の表記法を使用してユーザーの) について説明します。</param>
+        <summary>新しい名前を定義します。 返します、<see cref="T:Microsoft.Office.Interop.Excel.Name" />オブジェクトです。</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Names.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Names.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(118)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>コレクション内にあるオブジェクトの数を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Names.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Names.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Name Item (object Index, object IndexLocal, object RefersTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Interop.Excel.Name Item([in]object Index, [in]object IndexLocal, [in]object RefersTo) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Names.Item(System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Item (Optional Index As Object, Optional IndexLocal As Object, Optional RefersTo As Object) As Name" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(170)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Name</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Object" />
+        <Parameter Name="IndexLocal" Type="System.Object" />
+        <Parameter Name="RefersTo" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Index">省略可能な<b>オブジェクト</b>です。 対象の定義名またはインデックス番号を指定します。</param>
+        <param name="IndexLocal">省略可能な<b>オブジェクト</b>です。 ユーザーの言語で定義された名前の名前です。 この引数を使用する場合、名前は変換されません。</param>
+        <param name="RefersTo">省略可能な<b>オブジェクト</b>です。 どのような名前を参照します。 参照するのに対象によって名前を識別するのにには、この引数を使用します。</param>
+        <summary>1 つを返します<see cref="T:Microsoft.Office.Interop.Excel.Name" />オブジェクトから、<see cref="T:Microsoft.Office.Interop.Excel.Names" />コレクションです。</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>1 との 1 つだけ、これら 3 つの引数を指定してください。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Names.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
