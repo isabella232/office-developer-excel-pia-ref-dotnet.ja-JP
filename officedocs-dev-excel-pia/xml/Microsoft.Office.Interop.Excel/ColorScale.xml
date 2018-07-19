@@ -1,0 +1,1294 @@
+<Type Name="ColorScale" FullName="Microsoft.Office.Interop.Excel.ColorScale">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="06c205813dcccacb04e48254943037851cce5de7" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20585590" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ColorScale" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorScale" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorScale" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ColorScale" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ColorScale" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024493-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="17006-101">カラー スケールの条件付き書式ルールを示します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="17006-101">Represents a color scale conditional formatting rule.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="17006-102">
+        <para>すべての条件付き書式設定オブジェクトが含まれる、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />の子であるコレクション オブジェクトの<see cref="T:Microsoft.Office.Interop.Excel.Range" />コレクション。書式指定規則を使用して、カラー スケールを作成することができます、<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />または<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddColorScale(System.Int32)" /><b>FormatConditions</b>コレクションのメソッドです</para>。
+      <para>カラー スケールでは、視覚的データの分布や偏差を理解するのに役立つガイドです。データ、テーブル内のデータまたはピボット テーブル レポート内のデータの範囲には、2 色または 3 色スケールのいずれかを適用できます。2 色スケールの条件付き書式では、値、種類、および色を範囲の最小および最大しきい値に割り当てます。3 色スケールは、中間しきい値もあります</para>。
+      <para>のプロパティを設定することによってこれらのしきい値の決定、<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />オブジェクトです。<b>ColorScale</b>オブジェクトの子である<b>ColorScaleCriteria</b>オブジェクトのすべてのコレクションでは、<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />カラー スケールのオブジェクトです</para>。
+      <para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="17006-102">
+          <para>All conditional formatting objects are contained within a <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection object, which is a child of a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> collection. You can create a color scale formatting rule by using either the <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> or <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddColorScale(System.Int32)" /> method of the <b>FormatConditions</b> collection.</para>
+          <para>Color scales are visual guides that help you understand data distribution and variation. You can apply either a two-color or a three-color scale to a range of data, data in a table, or data in a PivotTable report. For a two-color scale conditional format, you assign the value, type, and color to the minimum and maximum thresholds of a range. A three-color scale also has a midpoint threshold.</para>
+          <para>Each of these thresholds is determined by setting the properties of the <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> object. The <b>ColorScaleCriteria</b> object, which is a child of the <b>ColorScale</b> object, is a collection of all of the <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objects for the color scale.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+    <example>
+      <span data-ttu-id="17006-103">
+        <para>コード例を次は、数値の範囲を作成し、その範囲に 2 色スケールの条件付き書式ルールを適用します。赤、最高しきい値には、最小しきい値の色は青に割り当てられます。</para>
+        <code>&lt;span class="label"&gt;Sub CreateColorScaleCF() 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Dim cfColorScale As &lt;/span&gt;
+&lt;i&gt;ColorScale&lt;/i&gt;
+&lt;span class="label"&gt;'Fill cells with sample data from 1 to 10     With ActiveSheet         .Range("C1") = 1         .Range("C2") = 2         .Range("C1:C2").AutoFill Destination:=Range("C1:C10")     End With          Range("C1:C10").Select          'Create a two-color ColorScale object for the created sample data range     Set cfColorScale = Selection.FormatConditions.AddColorScale(ColorScaleType:=2)          'Set the minimum threshold to red and maximum threshold to blue     cfColorScale.ColorScaleCriteria(1).FormatColor.Color = RGB(255, 0, 0)     cfColorScale.ColorScaleCriteria(2).FormatColor.Color = RGB(0, 0, 255)          End Sub&lt;/span&gt;</code>
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="17006-103">
+          <para>The following code example creates a range of numbers and then applies a two-color scale conditional formatting rule to that range. The color for the minimum threshold is then assigned to red and the maximum threshold to blue.</para>
+          <code>&lt;span class="label"&gt;Sub CreateColorScaleCF() 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Dim cfColorScale As &lt;/span&gt;
+&lt;i&gt;ColorScale&lt;/i&gt;
+&lt;span class="label"&gt;'Fill cells with sample data from 1 to 10     With ActiveSheet         .Range("C1") = 1         .Range("C2") = 2         .Range("C1:C2").AutoFill Destination:=Range("C1:C10")     End With          Range("C1:C10").Select          'Create a two-color ColorScale object for the created sample data range     Set cfColorScale = Selection.FormatConditions.AddColorScale(ColorScaleType:=2)          'Set the minimum threshold to red and maximum threshold to blue     cfColorScale.ColorScaleCriteria(1).FormatColor.Color = RGB(255, 0, 0)     cfColorScale.ColorScaleCriteria(2).FormatColor.Color = RGB(0, 0, 255)          End Sub&lt;/span&gt;</code>
+        </span>
+      </span>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScale.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="17006-104">このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Office Excel アプリケーションを表すオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-104">When used without an object qualifier, this property returns an  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object that represents the Microsoft Office Excel  application.</span>
+          </span>
+          <span data-ttu-id="17006-105">オブジェクト修飾子を使用する場合、このプロパティは、指定したオブジェクトの作成元を表す <b>Application</b> オブジェクトを返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-105">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object.</span>
+          </span>
+          <span data-ttu-id="17006-106">読み取り専用です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-106">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="17006-107">
+            <b>アプリケーション</b>(上記参照)</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-107">
+              <b>Application</b> (see above)</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="17006-108">
+            <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクトのアプリケーションを取得します。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-108">
+              <para>You can use this property with an OLE Automation object to return the application of that object.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppliesTo">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Range AppliesTo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Range AppliesTo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScale.AppliesTo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AppliesTo As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Range ^ AppliesTo { Microsoft::Office::Interop::Excel::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2626)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2626)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="17006-109">返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの書式設定ルールを適用するセル範囲を指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-109">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object specifying the cell range to which the formatting rule is applied.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.Range" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColorScaleCriteria">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ColorScaleCriteria ColorScaleCriteria { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ColorScaleCriteria ColorScaleCriteria" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScale.ColorScaleCriteria" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColorScaleCriteria As ColorScaleCriteria" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ColorScaleCriteria ^ ColorScaleCriteria { Microsoft::Office::Interop::Excel::ColorScaleCriteria ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2716)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2716)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ColorScaleCriteria</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="17006-110">返します、<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />オブジェクトは、個々 のコレクションである<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />オブジェクトです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-110">Returns a   <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> object, which is a collection of individual <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> objects.</span>
+          </span>
+          <span data-ttu-id="17006-111">
+            <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />オブジェクトは、型、値、およびカラー スケールの条件付き書式で使用されているしきい値の条件の色を指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-111">The <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> object specifies the type, value, and color  of threshold criteria used in the color scale conditional format.</span>
+          </span>
+          <span data-ttu-id="17006-112">値の取得のみ可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-112">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScale.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="17006-113">定数、<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />をこのオブジェクトの作成元アプリケーションを示す列挙型。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-113">Returns a constant in the <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeration that indicates the application in which this object was created.</span>
+          </span>
+          <span data-ttu-id="17006-114">値の取得のみ可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-114">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
+        </value>
+        <remarks>
+          <span data-ttu-id="17006-115">
+            <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-115">
+              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.  The <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ColorScale.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="17006-116">指定された条件付き書式ルールのオブジェクトを削除します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-116">Deletes the specified conditional formatting rule object.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Formula">
+      <MemberSignature Language="C#" Value="public string Formula { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Formula" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScale.Formula" />
+      <MemberSignature Language="VB.NET" Value="Public Property Formula As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Formula { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(261)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(261)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(261)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="17006-117">アイコン セットの適用対象となる値を決定する数式を表す<b>文字列</b>を設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-117">Returns or sets a <b>String</b> representing a formula that determines the values to which the icon set will be applied.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="17006-118">
+            <b>文字列型 (String)</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-118">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="17006-119">
+            <para>このプロパティは、条件付き書式を表示する値の範囲を制限するのには便利です。典型的なシナリオでは、正と負の両方の値を含む数値の範囲がある場合です。この数値の範囲の 1 つ以上の条件付き書式を作成することが、正の値と負の値のいずれかです。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-119">
+              <para>This property is useful to limit the range of values that will display the conditional format. A typical scenario is when you have a range of numbers containing both positive and negative values. You may want to create more than one conditional format for this range of numbers—one for positive values and another for negative values.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifyAppliesToRange">
+      <MemberSignature Language="C#" Value="public void ModifyAppliesToRange (Microsoft.Office.Interop.Excel.Range Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ModifyAppliesToRange([in]class Microsoft.Office.Interop.Excel.Range Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ColorScale.ModifyAppliesToRange(Microsoft.Office.Interop.Excel.Range)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ModifyAppliesToRange(Microsoft::Office::Interop::Excel::Range ^ Range);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2627)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Excel.Range" />
+      </Parameters>
+      <Docs>
+        <param name="Range">
+          <span data-ttu-id="17006-120">書式のルールが適用される範囲を指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-120">The range to which this formatting rule will be applied.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="17006-121">書式のルールが適用されるセル範囲を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-121">Sets the cell range to which this formatting rule applies.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="17006-122">
+            <para>の範囲が A1 参照形式にする必要がありの親であるシート内で完全に収まること、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />コレクションです。それは、範囲演算子 (コロン)、交差演算子 (スペース)、または union 演算子 (コンマ) を含めることができます。ドル記号も使用できますが、それらは無視されます</para>。
+          <para>、ローカルで定義された名前の範囲の任意の部分を使用することもできますが、名前が、マクロの言語である必要があります</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-122">
+              <para>The range must be in the A1 reference style and be entirely contained within the sheet that is the parent of the <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. It can include the range operator (a colon), the intersection operator (a space), or the union operator (a comma). Dollar signs can also be used but they are ignored.</para>
+              <para>You can also use a local defined name in any part of the range, but the name must be in the language of the macro.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScale.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="17006-p104">指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-p104">Returns the parent object for the specified object. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="17006-125">
+            <b>オブジェクト</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-125">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="public int Priority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Priority" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScale.Priority" />
+      <MemberSignature Language="VB.NET" Value="Public Property Priority As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Priority { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(985)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(985)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(985)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="17006-p105">条件付き書式ルールの優先度の値を取得、または設定します。優先度は、ワークシート内に複数の条件付き書式ルールが存在する場合、その評価の順序を決定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-p105">Returns or sets the priority value of the conditional formatting rule. The priority determines the order of evaluation when multiple conditional formatting rules exist in a worksheet.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="17006-128">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-128">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="17006-129">
+            <para>優先順位を設定する場合、値は 1 と、ワークシート上の条件付き書式ルールの合計数との間の正の整数でなければなりません。指定された条件付き書式ルールの優先順位を変更する場合があります他のルールの優先度の値に移動するワークシートの優先順位は、ワークシート上のすべてのルールの一意の値をする必要があります。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-129">
+              <para>When setting the priority, the value must be a positive integer between 1 and the total number of conditional formatting rules on the worksheet. The priority must be a unique value for all rules on the worksheet, so changing the priority for the specified conditional formatting rule may cause the priority value of the other rules on the worksheet to be shifted.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PTCondition">
+      <MemberSignature Language="C#" Value="public bool PTCondition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PTCondition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScale.PTCondition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PTCondition As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PTCondition { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2631)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2631)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="17006-130">条件付き書式が適用されるかどうかを示す<b>ブール</b>値を返します、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />グラフです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-130">Returns a <b>Boolean</b> value indicating if the conditional format is being applied to a <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> chart.</span>
+          </span>
+          <span data-ttu-id="17006-131">値の取得のみ可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-131">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="17006-132">
+            <b>ブール型 (Boolean)</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-132">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScopeType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlPivotConditionScope ScopeType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlPivotConditionScope ScopeType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScale.ScopeType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScopeType As XlPivotConditionScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlPivotConditionScope ScopeType { Microsoft::Office::Interop::Excel::XlPivotConditionScope get(); void set(Microsoft::Office::Interop::Excel::XlPivotConditionScope value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2615)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2615)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2615)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlPivotConditionScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="17006-133">値を取得または設定の定数のいずれか、<see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />列挙値は、ピボット テーブル チャートに適用されるときに、条件付き書式の範囲を決定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-133">Returns or sets one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> enumeration, which determines the scope of the conditional format when it is applied to a PivotTable chart.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
+        </value>
+        <remarks>
+          <span data-ttu-id="17006-134">
+            <para>既定値は、<see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />を使用して、スコープを設定する、<see cref="P:Microsoft.Office.Interop.Excel.ColorScale.AppliesTo" />プロパティ。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-134">
+              <para>The default value is <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, which sets the scope using the <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.AppliesTo" />property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFirstPriority">
+      <MemberSignature Language="C#" Value="public void SetFirstPriority ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetFirstPriority() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ColorScale.SetFirstPriority" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetFirstPriority ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFirstPriority();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2629)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="17006-135">条件付き書式ルールの優先度の値を "1" に設定し、ワークシート内の他のルールより先に評価されるようにします。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-135">Sets the priority value for this conditional formatting rule to "1" so that it will be evaluated before all other rules on the worksheet.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="17006-136">
+            <para>がある場合、ワークシート内の複数の条件付き書式ルール ルールが以前優先順位「1」に設定されていない場合、このメソッドと、他のすべての既存のルールの優先順位で、ワークシートを 1 つずつ増加する</para>。
+          <para><b>注</b>: 条件付き書式ルールの優先度レベルは、ワークシート レベルで適用されます。</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-136">
+              <para>When you have multiple conditional formatting rules  in a worksheet, if the rule was not previously set to priority "1", this method will cause the priority of all other existing rules on the worksheet to be increased by one.</para>
+              <para>
+                <b>Note</b>: Priority levels for conditional formatting rules are applied on a worksheet-level basis.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLastPriority">
+      <MemberSignature Language="C#" Value="public void SetLastPriority ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetLastPriority() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.ColorScale.SetLastPriority" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetLastPriority ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLastPriority();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2630)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="17006-137">条件付き書式ルールの順位を設定し、ワークシート上の他のすべてのルールの後に評価されるようにします。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-137">Sets the evaluation order for this conditional formatting rule so it is evaluated after all other rules on the worksheet.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="17006-138">
+            <para>の優先度の実際の値は、ワークシート上の条件付き書式ルールの合計数と同じになります。ワークシート内に複数の条件付き書式ルールがある場合このメソッドは、優先度の値を 1 つずつ増やすには、このルールよりも大きい必要があった規則の優先順位</para>。
+          <para><b>注</b>: 条件付き書式ルールの優先度レベルは、ワークシート レベルで適用されます。</para><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-138">
+              <para>The actual vaule of the priority will be equal to the total number of conditional formatting rules on the worksheet. When you have multiple conditional formatting rules  in a worksheet, this method will cause the priority of rules that had a priority value greater than this rule to be increased by one.</para>
+              <para>
+                <b>Note</b>: Priority levels for conditional formatting rules are applied on a worksheet-level basis.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopIfTrue">
+      <MemberSignature Language="C#" Value="public bool StopIfTrue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StopIfTrue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScale.StopIfTrue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StopIfTrue As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StopIfTrue { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2625)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2625)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="17006-139">返すまたは、現在のルールが<b>True</b>と評価された場合にセルに追加の書式設定ルールを評価するかどうかを決定する<b>ブール</b>値を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-139">Returns or sets a <b>Boolean</b> value that determines if additional formatting rules on the cell should be evaluated if the current rule evaluates to <b>True</b>.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="17006-140">
+            <b>ブール型 (Boolean)</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-140">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="17006-141">
+            <para>下位互換性をサポートするためにこのプロパティの既定値は<b>True</b>、書式の反対の動作をユーザー インターフェイスで作成されたルールです。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-141">
+              <para>To support backward compatibility, the default value for this property is <b>True</b>, which is the opposite behavior of a formatting rule created in the user interface.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public int Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.ColorScale.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Type { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="17006-142">定数のいずれかを取得、<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />列挙体は、条件付き書式の種類を指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-142">Returns one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> enumeration, which specifies the type of conditional format.</span>
+          </span>
+          <span data-ttu-id="17006-143">値の取得のみ可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-143">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="17006-144">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-144">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="17006-145">
+            <para>このプロパティが常にするのと同じである「3」の<b>整数</b>値を返します<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlColorScale" />。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="17006-145">
+              <para>This property will always return a <b>Integer</b> value of "3", which is equivalent to <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlColorScale" />.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
