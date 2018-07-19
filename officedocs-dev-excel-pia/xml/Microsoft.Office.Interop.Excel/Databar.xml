@@ -1,0 +1,878 @@
+<Type Name="Databar" FullName="Microsoft.Office.Interop.Excel.Databar">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="1299f035e734d223e0829374140c99bc36cf85ae" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20587417" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Databar" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Databar" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Databar" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Databar" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Databar" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024496-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>データ バーの条件付き書式設定ルールを表します。範囲にデータ バーを使用すると、他のセルと相対的にセルの値を確認できます。</summary>
+    <remarks>
+      <para>すべての条件付き書式設定オブジェクトが含まれる、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />の子であるコレクション オブジェクトの<see cref="T:Microsoft.Office.Interop.Excel.Range" />コレクション。データ バーのいずれかの方法を使用して書式指定規則を作成することができます、<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />または<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddDatabar" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />コレクションです</para>。
+      <para>を使用する、<see cref="P:Microsoft.Office.Interop.Excel.Databar.MinPoint" />と<see cref="P:Microsoft.Office.Interop.Excel.Databar.MaxPoint" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> 、最短の棒と最長の棒のデータの範囲の値を設定するオブジェクト。これらのプロパティを返す、<see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" />オブジェクト、しきい値を評価する方法を指定できます</para>。
+      <para /></remarks>
+    <example>
+      <para>次の例では、データの範囲を作成し、範囲にデータ バーを適用します。範囲内に、非常に低い値と高い値があるため、中間値があるような長さのデータ バーが表示されます。サンプル コードを使用して、中間値を明確に区別する、 <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> 、しきい値が百分位に評価される方法を変更するオブジェクトです。</para>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Databar.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Office Excel アプリケーションを表すオブジェクト。 オブジェクト修飾子を使用する場合、このプロパティは、指定したオブジェクトの作成元を表す <b>Application</b> オブジェクトを返します。 読み取り専用です。</summary>
+        <value>
+          <b>アプリケーション</b>(上記参照)</value>
+        <remarks>
+          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクトのアプリケーションを取得します。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppliesTo">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Range AppliesTo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Range AppliesTo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Databar.AppliesTo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AppliesTo As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Range ^ AppliesTo { Microsoft::Office::Interop::Excel::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2626)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2626)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの書式設定ルールを適用するセル範囲を指定します。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.Range" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AxisColor">
+      <MemberSignature Language="C#" Value="public object AxisColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object AxisColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Databar.AxisColor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AxisColor As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ AxisColor { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2943)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2943)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>データ バーの条件付き書式を持つセルの軸の色を取得します。</summary>
+        <value>データ バーの条件付き書式を持つセルの軸の色。</value>
+        <remarks>
+          <para>読み取り専用です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AxisPosition">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlDataBarAxisPosition AxisPosition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlDataBarAxisPosition AxisPosition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Databar.AxisPosition" />
+      <MemberSignature Language="VB.NET" Value="Public Property AxisPosition As XlDataBarAxisPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlDataBarAxisPosition AxisPosition { Microsoft::Office::Interop::Excel::XlDataBarAxisPosition get(); void set(Microsoft::Office::Interop::Excel::XlDataBarAxisPosition value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2942)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2942)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2942)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlDataBarAxisPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得または条件付き書式ルールで指定されたデータ バーの軸の位置を設定します。</summary>
+        <value>条件付き書式ルールで指定されたデータ バーの軸の位置を指定します。</value>
+        <remarks>
+          <para>読み取り/書き込み</para>。
+          <para>データ バーの軸が表示される場合にのみ、<see cref="P:Microsoft.Office.Interop.Excel.Databar.AxisPosition" />プロパティは、いずれかの<see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisAutomatic" />または<see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisMidpoint" />、データ バーの条件付き書式ルールで指定された値の範囲内に負の値が存在する場合とします。既定値、<see cref="P:Microsoft.Office.Interop.Excel.Databar.AxisPosition" />プロパティは、<see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisAutomatic" />です</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BarBorder">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.DataBarBorder BarBorder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.DataBarBorder BarBorder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Databar.BarBorder" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BarBorder As DataBarBorder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::DataBarBorder ^ BarBorder { Microsoft::Office::Interop::Excel::DataBarBorder ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2944)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2944)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.DataBarBorder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>データ バーの境界線を指定するオブジェクトを取得します。</summary>
+        <value>データ バーの境界線を指定するオブジェクト。</value>
+        <remarks>
+          <para>読み取り専用です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BarColor">
+      <MemberSignature Language="C#" Value="public object BarColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object BarColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Databar.BarColor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BarColor As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ BarColor { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2722)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2722)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.FormatColor" />オブジェクトのデータ バーの条件付き書式でバーの色を変更するのには使用することできます。</summary>
+        <value>
+          <b>オブジェクト</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BarFillType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlDataBarFillType BarFillType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlDataBarFillType BarFillType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Databar.BarFillType" />
+      <MemberSignature Language="VB.NET" Value="Public Property BarFillType As XlDataBarFillType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlDataBarFillType BarFillType { Microsoft::Office::Interop::Excel::XlDataBarFillType get(); void set(Microsoft::Office::Interop::Excel::XlDataBarFillType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2941)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2941)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2941)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlDataBarFillType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得または設定の方法、データ バーは、色で塗りつぶされます。</summary>
+        <value>データ バーを色で塗りつぶす方法を指定します。</value>
+        <remarks>
+          <para>読み取り/書き込み</para>。
+          <para>の既定値、<see cref="P:Microsoft.Office.Interop.Excel.Databar.BarFillType" />プロパティは、<see cref="F:Microsoft.Office.Interop.Excel.XlDataBarFillType.xlDataBarFillGradient" />です</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Databar.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>定数、<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />をこのオブジェクトの作成元アプリケーションを示す列挙型。 値の取得のみ可能です。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
+        </value>
+        <remarks>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当<see cref="P:Microsoft.Office.Interop.Excel.Databar.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Databar.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>指定された条件付き書式ルールのオブジェクトを削除します。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Direction">
+      <MemberSignature Language="C#" Value="public int Direction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Direction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Databar.Direction" />
+      <MemberSignature Language="VB.NET" Value="Public Property Direction As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Direction { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(168)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(168)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(168)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得または、databar の表示方向を設定します。</summary>
+        <value>Databar の方向が表示されます。</value>
+        <remarks>
+          <para>読み取り/書き込み</para>。
+          <para>次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.Constants" />: <see cref="F:Microsoft.Office.Interop.Excel.Constants.xlContext" />、 <see cref="F:Microsoft.Office.Interop.Excel.Constants.xlLTR" /> (左から右)、または<see cref="F:Microsoft.Office.Interop.Excel.Constants.xlRTL" />(右から左の) です</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Formula">
+      <MemberSignature Language="C#" Value="public string Formula { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Formula" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Databar.Formula" />
+      <MemberSignature Language="VB.NET" Value="Public Property Formula As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Formula { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(261)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(261)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(261)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>アイコン セットの適用対象となる値を決定する数式を表す<b>文字列</b>を設定または返します。</summary>
+        <value>
+          <b>文字列型 (String)</b>
+        </value>
+        <remarks>
+          <para>このプロパティは、条件付き書式を表示する値の範囲を制限するのには便利です。典型的なシナリオでは、正と負の両方の値を含む数値の範囲がある場合です。この数値の範囲の 1 つ以上の条件付き書式を作成することが、正の値と負の値のいずれかです。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxPoint">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ConditionValue MaxPoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ConditionValue MaxPoint" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Databar.MaxPoint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxPoint As ConditionValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ConditionValue ^ MaxPoint { Microsoft::Office::Interop::Excel::ConditionValue ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2719)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2719)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ConditionValue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" />データ バーの条件付き書式の最長の棒が評価される方法を指定するオブジェクト。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" />
+        </value>
+        <remarks>
+          <para>型との評価の値を指定するにを使用して、<see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" />と<see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Value" />のプロパティです。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinPoint">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.ConditionValue MinPoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.ConditionValue MinPoint" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Databar.MinPoint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinPoint As ConditionValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::ConditionValue ^ MinPoint { Microsoft::Office::Interop::Excel::ConditionValue ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2718)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2718)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.ConditionValue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" />データ バーの条件付き書式に対する最短の棒を評価する方法を指定するオブジェクト。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" />
+        </value>
+        <remarks>
+          <para>型との評価の値を指定するにを使用して、<see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" />と<see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Value" />のプロパティです。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifyAppliesToRange">
+      <MemberSignature Language="C#" Value="public void ModifyAppliesToRange (Microsoft.Office.Interop.Excel.Range Range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ModifyAppliesToRange([in]class Microsoft.Office.Interop.Excel.Range Range) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Databar.ModifyAppliesToRange(Microsoft.Office.Interop.Excel.Range)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ModifyAppliesToRange(Microsoft::Office::Interop::Excel::Range ^ Range);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2627)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Range" Type="Microsoft.Office.Interop.Excel.Range" />
+      </Parameters>
+      <Docs>
+        <param name="Range">書式のルールが適用される範囲を指定します。</param>
+        <summary>書式のルールが適用されるセル範囲を設定します。</summary>
+        <remarks>
+          <para>の範囲が A1 参照形式にする必要がありの親であるシート内で完全に収まること、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />コレクションです。それは、範囲演算子 (コロン)、交差演算子 (スペース)、または union 演算子 (コンマ) を含めることができます。ドル記号も使用できますが、それらは無視されます</para>。
+          <para>、ローカルで定義された名前の範囲の任意の部分を使用することもできますが、名前が、マクロの言語である必要があります</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NegativeBarFormat">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.NegativeBarFormat NegativeBarFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.NegativeBarFormat NegativeBarFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Databar.NegativeBarFormat" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NegativeBarFormat As NegativeBarFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::NegativeBarFormat ^ NegativeBarFormat { Microsoft::Office::Interop::Excel::NegativeBarFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2945)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2945)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.NegativeBarFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得、<see cref="T:Microsoft.Office.Interop.Excel.NegativeBarFormat" />データ バーの条件付き書式ルールに関連付けられているオブジェクト。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.NegativeBarFormat" />データ バーの条件付き書式ルールに関連付けられているオブジェクト。</value>
+        <remarks>
+          <para>読み取り専用です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Databar.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</summary>
+        <value>
+          <b>オブジェクト</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PercentMax">
+      <MemberSignature Language="C#" Value="public int PercentMax { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PercentMax" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Databar.PercentMax" />
+      <MemberSignature Language="VB.NET" Value="Public Property PercentMax As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PercentMax { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2721)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2721)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2721)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得またはセルの幅に対する割合として、最長のデータ バーの長さを指定する<b>整数</b>値を設定します。</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>
+          <para>値は 0 から 100 までの整数である必要があります。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PercentMin">
+      <MemberSignature Language="C#" Value="public int PercentMin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PercentMin" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Databar.PercentMin" />
+      <MemberSignature Language="VB.NET" Value="Public Property PercentMin As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PercentMin { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2720)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2720)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2720)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>最短データ バーの長さをセルの幅のパーセンテージで指定する<b>整数</b>値を設定を取得または取得します。</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>
+          <para>値は 0 から 100 までの整数である必要があります。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="public int Priority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Priority" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Databar.Priority" />
+      <MemberSignature Language="VB.NET" Value="Public Property Priority As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Priority { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(985)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(985)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(985)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>条件付き書式ルールの優先度の値を取得、または設定します。優先度は、ワークシート内に複数の条件付き書式ルールが存在する場合、その評価の順序を決定します。</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>
+          <para>優先順位を設定する場合、値は 1 と、ワークシート上の条件付き書式ルールの合計数との間の正の整数でなければなりません。指定された条件付き書式ルールの優先順位を変更する場合があります他のルールの優先度の値に移動するワークシートの優先順位は、ワークシート上のすべてのルールの一意の値をする必要があります。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PTCondition">
+      <MemberSignature Language="C#" Value="public bool PTCondition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PTCondition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Databar.PTCondition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PTCondition As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PTCondition { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2631)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2631)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>条件付き書式がピボットテーブル チャートに適用されるかどうかを表すブール型 (<b>Boolean</b>) の値を返します。値の取得のみ可能です。</summary>
+        <value>
+          <b>ブール型 (Boolean)</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScopeType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlPivotConditionScope ScopeType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlPivotConditionScope ScopeType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Databar.ScopeType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScopeType As XlPivotConditionScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlPivotConditionScope ScopeType { Microsoft::Office::Interop::Excel::XlPivotConditionScope get(); void set(Microsoft::Office::Interop::Excel::XlPivotConditionScope value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2615)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2615)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2615)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlPivotConditionScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>値を取得または設定の定数のいずれか、<see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />列挙値は、ピボット テーブル チャートに適用されるときに、条件付き書式の範囲を決定します。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
+        </value>
+        <remarks>
+          <para>既定値は、<see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />を使用して、スコープを設定する、<see cref="P:Microsoft.Office.Interop.Excel.Databar.AppliesTo" />プロパティ。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFirstPriority">
+      <MemberSignature Language="C#" Value="public void SetFirstPriority ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetFirstPriority() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Databar.SetFirstPriority" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetFirstPriority ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFirstPriority();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2629)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>条件付き書式ルールの優先度の値を "1" に設定し、ワークシート内の他のルールより先に評価されるようにします。</summary>
+        <remarks>
+          <para>がある場合、ワークシート内の複数の条件付き書式ルール ルールが以前優先順位「1」に設定されていない場合、このメソッドと、他のすべての既存のルールの優先順位で、ワークシートを 1 つずつ増加する</para>。
+          <para><b>注</b>: 条件付き書式ルールの優先度レベルは、ワークシート レベルで適用されます。</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLastPriority">
+      <MemberSignature Language="C#" Value="public void SetLastPriority ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetLastPriority() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Databar.SetLastPriority" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetLastPriority ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetLastPriority();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2630)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>条件付き書式ルールの順位を設定し、ワークシート上の他のすべてのルールの後に評価されるようにします。</summary>
+        <remarks>
+          <para>の優先度の実際の値は、ワークシート上の条件付き書式ルールの合計数と同じになります。ワークシート内に複数の条件付き書式ルールがある場合このメソッドは、優先度の値を 1 つずつ増やすには、このルールよりも大きい必要があった規則の優先順位</para>。
+          <para><b>注</b>: 条件付き書式ルールの優先度レベルは、ワークシート レベルで適用されます。</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowValue">
+      <MemberSignature Language="C#" Value="public bool ShowValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Databar.ShowValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowValue As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowValue { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2024)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2024)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得または範囲にデータ バーの条件付き書式が適用されている場合、セルの値が表示されるかどうかを指定する<b>ブール</b>値を設定します。</summary>
+        <value>
+          <b>ブール型 (Boolean)</b>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopIfTrue">
+      <MemberSignature Language="C#" Value="public bool StopIfTrue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StopIfTrue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Databar.StopIfTrue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StopIfTrue As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StopIfTrue { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2625)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2625)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返すまたは、現在のルールが<b>True</b>と評価された場合にセルに追加の書式設定ルールを評価するかどうかを決定する<b>ブール</b>値を設定します。</summary>
+        <value>
+          <b>ブール型 (Boolean)</b>
+        </value>
+        <remarks>
+          <para>下位互換性をサポートするためにこのプロパティの既定値は<b>False</b>、書式の反対側の動作は、ユーザー インターフェイスで作成されたルールです。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public int Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Databar.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Type { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(108)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>定数のいずれかを取得、<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />列挙体は、条件付き書式の種類を指定します。 値の取得のみ可能です。</summary>
+        <value>
+          <b>Integer</b>
+        </value>
+        <remarks>
+          <para>このプロパティが常と同等である「4」は、<b>整数</b>値を返します<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlDatabar" />。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

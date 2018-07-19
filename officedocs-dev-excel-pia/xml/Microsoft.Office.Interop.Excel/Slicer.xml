@@ -1,0 +1,838 @@
+<Type Name="Slicer" FullName="Microsoft.Office.Interop.Excel.Slicer">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="eacfd0890002beb17c916870ea77d7aa5ba1db4b" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20587669" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Slicer" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Slicer" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Slicer" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Slicer" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Slicer" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000244C8-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>ブック内のスライサーを表します。</summary>
+    <remarks>
+      <para>各<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />オブジェクトは、ブックでスライサーを表します。スライサーをピボット テーブル レポートまたは OLAP データ ソースでデータをフィルター処理に使用します</para>。使用の
+      <para>、<see cref="M:Microsoft.Office.Interop.Excel.Slicers.Add" />メソッドを追加するのには、<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />オブジェクトを<see cref="T:Microsoft.Office.Interop.Excel.Slicers" />コレクション。アクセスを<see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" />でスライサーを使用して現在選択されているボタンを表すオブジェクト、<see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />オブジェクトです</para>。
+      <para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActiveItem">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.SlicerItem ActiveItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.SlicerItem ActiveItem" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveItem As SlicerItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::SlicerItem ^ ActiveItem { Microsoft::Office::Interop::Excel::SlicerItem ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2988)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2988)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.SlicerItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" />を指定したスライサーのフォーカスになっている、[スライサー] ボタンを表すオブジェクト。 値の取得のみ可能です。</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>指定したスライサーにフォーカスがあり、アクティブなコントロールでは、スライサー内のボタンの場合に、 <b>ActiveItem</b>プロパティが<b>SlicerItem</b>オブジェクトを返します (たとえば、ユーザーは移動できますこの状態でキーボードを使用してスライサー内のボタン) です</para>。
+          <para>、 <b>ActiveItem</b>プロパティは<b>Nothing</b> (null 参照 (Visual Basic では Nothing) C# で) 次のような場合:</para><list type="bullet"><item><description>指定したスライサーには (は選択した、またはアクティブではありません) フォーカスはありません</description></item>。
+            <item><description>指定されたスライサーにフォーカスがあり、それ自体全体のスライサーが選択されている (たとえば、ユーザー移動ことができます全体のスライサーこの状態でキーボードを使用して) です</description></item>。
+            <item><description>指定されたスライサーにフォーカスがあり、スライサーのヘッダーで [<b>フィルターのクリア</b>] ボタンは、アクティブなコントロールです</description></item></list>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 このプロパティが返すオブジェクト修飾子を使用する場合、<see cref="T:Microsoft.Office.Interop.Excel.Application" />を指定したオブジェクトの作成者を表すオブジェクト。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.Application" />オブジェクトです。</value>
+        <remarks>
+          <para>読み取り専用です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Caption">
+      <MemberSignature Language="C#" Value="public string Caption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Caption" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Caption" />
+      <MemberSignature Language="VB.NET" Value="Public Property Caption As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Caption { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(139)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得または指定されたスライサーのキャプションを設定します。</summary>
+        <value>指定されたスライサーのキャプションです。</value>
+        <remarks>
+          <para>読み取り/書き込み</para>。指定された値を
+          <para>、<see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" />プロパティは、スライサーのヘッダーに表示されます。場合、<see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" />プロパティは指定しない場合、Excel の値を使用して、<see cref="P:Microsoft.Office.Interop.Excel.PivotField.Caption" />の基になるプロパティ<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />オブジェクトです</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnWidth">
+      <MemberSignature Language="C#" Value="public double ColumnWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ColumnWidth" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property ColumnWidth As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ColumnWidth { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(242)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(242)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(242)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得またはスライサー内の各列の幅を設定します。</summary>
+        <value>スライサー内の各列のポイント単位の幅です。</value>
+        <remarks>
+          <para>読み取り/書き込み</para>。
+          <para>、<see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />オブジェクトとの値に基づいて自動的に調整、<see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" />プロパティと<see cref="P:Microsoft.Office.Interop.Excel.Slicer.NumberOfColumns" />プロパティ</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public void Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Copy() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Slicer.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Copy ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Copy();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(551)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>指定したスライサーをクリップボードにコピーします。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>を取得します。</summary>
+        <value>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>。</value>
+        <remarks>
+          <para>読み取り専用<b>long</b></para> 。
+          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。<see cref="P:Microsoft.Office.Interop.Excel.Slicer.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Excel では、クリエーター コード</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cut">
+      <MemberSignature Language="C#" Value="public void Cut ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Cut() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Slicer.Cut" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Cut ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cut();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(565)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>指定したスライサーを切り取って、クリップボードにコピーします。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Slicer.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>スライサーを削除し、関連付けられているから削除<see cref="T:Microsoft.Office.Interop.Excel.Slicers" />コレクションです。</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisableMoveResizeUI">
+      <MemberSignature Language="C#" Value="public bool DisableMoveResizeUI { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisableMoveResizeUI" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.DisableMoveResizeUI" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisableMoveResizeUI As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisableMoveResizeUI { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2983)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2983)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2983)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得または指定したスライサーを移動またはユーザー インターフェイスを使用してサイズを変更できるかどうかを設定します。</summary>
+        <value>
+          <b>true の</b>場合、指定したスライサーを移動またはユーザー インターフェイスを使用してサイズを変更することができます。それ以外の場合、 <b>false を指定</b>します。 既定では <b>false です</b> 。</value>
+        <remarks>
+          <para>読み取り/書き込み</para>。
+          <para><b>true の</b>場合は、スライサーを移動またはユーザー インターフェイスの境界線またはハンドルを選択することによってサイズを変更することはできません; それ以外の場合は<b>false を指定</b>します。既定値は、 <b>false を指定</b>します。設定、<see cref="P:Microsoft.Office.Interop.Excel.Slicer.DisableMoveResizeUI" />プロパティを<b>true</b>に、ユーザー ・ インタ フェースのみに影響します。移動または、次のようにプロパティを設定することにより、スライサーのサイズを変更、 <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Top" />、 <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Left" />、 <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Width" />、または<see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />のコードからのオブジェクトが無効になっていません。</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayHeader">
+      <MemberSignature Language="C#" Value="public bool DisplayHeader { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DisplayHeader" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.DisplayHeader" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayHeader As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisplayHeader { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2985)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2985)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2985)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ヘッダーを表示するかどうかを設定を取得またはスライサー<see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" />が表示されています。</summary>
+        <value>
+          <b>true の</b>場合は、ヘッダーを表示するスライサー<see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" />が表示されます。それ以外の場合、 <b>false を指定</b>します。 既定では<b>true です</b>。</value>
+        <remarks>
+          <para>読み取り/書き込み</para>。
+          <para><b>true の</b>場合は、ヘッダーが表示される; それ以外の場合は<b>false を指定</b>します。既定値は、 <b>true を指定</b>します。</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public double Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Height" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Height { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(123)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得または指定したスライサーの高さをポイント単位で設定します。</summary>
+        <value>ポイント単位で、指定されたスライサーの高さ。</value>
+        <remarks>
+          <para>読み取り/書き込み。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public double Left { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Left" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Left" />
+      <MemberSignature Language="VB.NET" Value="Public Property Left As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Left { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(127)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得またはワークシートのセル A1 の左上隅を基準にしてポイント単位で、指定されたスライサーの水平方向の位置を設定します。</summary>
+        <value>ワークシート上のセル A1 の左上隅を基準にしてポイント単位で、指定されたスライサーの水平方向の位置。</value>
+        <remarks>
+          <para>読み取り/書き込み。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locked">
+      <MemberSignature Language="C#" Value="public bool Locked { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Locked" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Locked" />
+      <MemberSignature Language="VB.NET" Value="Public Property Locked As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Locked { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(269)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(269)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(269)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得またはが含まれるシートが保護されている場合、指定したスライサーを変更できるかどうかを設定します。</summary>
+        <value>
+          <b>true の</b>場合、シートが含まれている場合に、指定したスライサーを変更できますが保護されています。それ以外の場合、 <b>false を指定</b>します。 既定<b>値</b>は</value>
+        <remarks>
+          <para>読み取り/書き込み</para>。
+          <para>の
+            <b>場合は true</b>スライサーは、シートが保護されているときにロックされている場合。<b>false</b>場合は、シートが保護されているスライサーを変更することができます。既定値は、 <b>true を指定</b>します。</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得または指定されたスライサーの名前を設定します。</summary>
+        <value>指定されたスライサーの名前。</value>
+        <remarks>
+          <para>読み取り/書き込み</para>。
+          <para>名前一意でなければなりません、ブック内のすべてのスライサーにします。デフォルト名を使用して、テキストをスライサーの基になるピボット フィールドのフィールド名と、必要に応じて、場所と名前を一意にするための番号を追加する場合</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfColumns">
+      <MemberSignature Language="C#" Value="public int NumberOfColumns { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfColumns" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.NumberOfColumns" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumberOfColumns As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumberOfColumns { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2984)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2984)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2984)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得または指定されたスライサーの列の数を設定します。</summary>
+        <value>指定したスライサー内の列の数です。 既定値は 1 です。</value>
+        <remarks>
+          <para>読み取り/書き込み</para>。
+          <para>既定値は 1 です</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得、 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> 、スライサーを含むシートを表すオブジェクト。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> 、スライサーを含むシートを表すオブジェクト。</value>
+        <remarks>
+          <para>読み取り専用です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowHeight">
+      <MemberSignature Language="C#" Value="public double RowHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 RowHeight" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.RowHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property RowHeight As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double RowHeight { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(272)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(272)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(272)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得または指定したスライサー内の各行の高さを設定します。</summary>
+        <value>ポイント単位で、指定したスライサー内の各行の高さです。</value>
+        <remarks>
+          <para>読み取り/書き込み</para>。
+          <para>このプロパティでは、スライサーの高さは影響しません。使用、<see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />オブジェクトを取得またはスライサーの高さを設定します</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shape">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Shape Shape { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Shape Shape" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Shape" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shape As Shape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Shape ^ Shape { Microsoft::Office::Interop::Excel::Shape ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1582)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1582)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />指定されたスライサーに関連付けられているオブジェクト。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.Shape" />指定されたスライサーに関連付けられているオブジェクト。</value>
+        <remarks>
+          <para>読み取り専用</para>。
+          <para>、スライサーのいくつかのプロパティ次のように、<see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" />から、プロパティにアクセスできるだけ、 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 、スライサーに関連付けられているオブジェクト</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SlicerCache">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.SlicerCache SlicerCache { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.SlicerCache SlicerCache" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.SlicerCache" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SlicerCache As SlicerCache" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::SlicerCache ^ SlicerCache { Microsoft::Office::Interop::Excel::SlicerCache ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2986)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2986)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.SlicerCache</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得、 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> 、スライサーに関連付けられているオブジェクト。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> 、スライサーに関連付けられているオブジェクト。</value>
+        <remarks>
+          <para>読み取り専用です。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SlicerCacheLevel">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.SlicerCacheLevel SlicerCacheLevel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.SlicerCacheLevel SlicerCacheLevel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.SlicerCacheLevel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SlicerCacheLevel As SlicerCacheLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::SlicerCacheLevel ^ SlicerCacheLevel { Microsoft::Office::Interop::Excel::SlicerCacheLevel ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2987)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2987)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.SlicerCacheLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得、 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> 、スライサーに関連付けられているオブジェクト。</summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> 、スライサーに関連付けられているオブジェクト。</value>
+        <remarks>
+          <para>読み取り専用</para>。
+          <para>このプロパティは、OLAP データ ソースにのみ適用されます</para>。
+          <para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SlicerCacheType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlSlicerCacheType SlicerCacheType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlSlicerCacheType SlicerCacheType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.SlicerCacheType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SlicerCacheType As XlSlicerCacheType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlSlicerCacheType SlicerCacheType { Microsoft::Office::Interop::Excel::XlSlicerCacheType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3111)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3111)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlSlicerCacheType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>スライサー キャッシュ – スライサーまたはタイムラインの種類を返します。 <b>XlSlicerCacheType</b>読み取り専用</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Style">
+      <MemberSignature Language="C#" Value="public object Style { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Style" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Style" />
+      <MemberSignature Language="VB.NET" Value="Public Property Style As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Style { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(260)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(260)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(260)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得または指定したスライサーに現在適用されているスタイルを設定します。</summary>
+        <value>指定したスライサーに現在適用されているスタイルです。</value>
+        <remarks>
+          <para>読み取り/書き込み。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimelineViewState">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.TimelineViewState TimelineViewState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.TimelineViewState TimelineViewState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.TimelineViewState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimelineViewState As TimelineViewState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::TimelineViewState ^ TimelineViewState { Microsoft::Office::Interop::Excel::TimelineViewState ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3116)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3116)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.TimelineViewState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>スライサーのタイムラインに固有の状態。 <b>TimelineViewState</b>読み取り専用</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="public double Top { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Top" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Top" />
+      <MemberSignature Language="VB.NET" Value="Public Property Top As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Top { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(126)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得またはワークシートのセル A1 の左上隅を基準にしてポイント単位で、指定されたスライサーの垂直位置を設定します。</summary>
+        <value>ワークシート上のセル A1 の左上隅を基準にしてポイント単位で、指定されたスライサーの垂直方向の位置。</value>
+        <remarks>
+          <para>読み取り/書き込み。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public double Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Width" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Slicer.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Double" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(122)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>取得または、指定されたスライサーの幅をポイント単位で設定します。</summary>
+        <value>ポイント単位で、指定されたスライサーの幅。</value>
+        <remarks>
+          <para>読み取り/書き込み。</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
