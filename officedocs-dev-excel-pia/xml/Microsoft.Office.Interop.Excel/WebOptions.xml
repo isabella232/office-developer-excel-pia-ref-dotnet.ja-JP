@@ -1,0 +1,1044 @@
+<Type Name="WebOptions" FullName="Microsoft.Office.Interop.Excel.WebOptions">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="1bb92fb327f4b105c6f89b685f7776df03148a7f" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20579836" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface WebOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WebOptions" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WebOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Interface WebOptions" />
+  <TypeSignature Language="C++ CLI" Value="public interface class WebOptions" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024449-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="e31a1-101">ドキュメントを Web ページとして保存するとき、または Web ページを開くときに Microsoft Excel で使用する、ブック レベルでの属性が含まれています。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="e31a1-101">Contains workbook-level attributes used by Microsoft Excel when you save a document as a Web page or open a Web page.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="e31a1-102">
+        <para>返すか、アプリケーション (グローバル) レベルまたはブック レベルの属性を設定できます。(属性の値を 1 つのブックごとに異なることができることは、ブックの保存時の属性値によってに注意してください)。ブック レベルの属性の設定は、アプリケーション レベルの属性設定を上書きします。アプリケーション レベルの属性が含まれている、<see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" />オブジェクトです</para>。
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.WebOptions" /> 、 <b>WebOptions</b>オブジェクトを取得するプロパティ</para>。
+      <para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="e31a1-102">
+          <para>You can return or set attributes either at the application (global) level or at the workbook level. (Note that attribute values can be different from one workbook to another, depending on the attribute value at the time the workbook was saved.) Workbook-level attribute settings override application-level attribute settings. Application-level attributes are contained in the <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> object.</para>
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.WebOptions" /> property to return the <b>WebOptions</b> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllowPNG">
+      <MemberSignature Language="C#" Value="public bool AllowPNG { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowPNG" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.AllowPNG" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowPNG As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowPNG { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1908)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1908)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1908)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e31a1-103">
+            <b>True</b>を Web ページとしてドキュメントを保存すると、画像形式として PNG (ポータブル ネットワーク グラフィックス) が許可されている場合です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-103">
+              <b>True</b> if PNG (Portable Network Graphics) is allowed as an image format when you save documents as a Web page.</span>
+          </span>
+          <span data-ttu-id="e31a1-104">
+            <b>False を指定</b> の出力形式として PNG が許可されていない場合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-104">
+              <b>False</b> if PNG is not allowed as an output format.</span>
+          </span>
+          <span data-ttu-id="e31a1-105">既定値は、 <b>false を指定</b> します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-105">The default value is <b>False</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="e31a1-106">
+            <para>その他のファイル形式、PNG 形式で画像を保存する場合する可能性があります画像の品質を向上させるためや、画像ファイルのサイズを小さくしたがってダウンロード時間を短縮、PNG 形式をサポートしている Web ブラウザーは対象とするいると仮定すると。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-106">
+              <para>If you save images in the PNG format as opposed to any other file format, you might improve the image quality or reduce the size of those image files, and therefore decrease the download time, assuming that the Web browsers you are targeting support the PNG format.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e31a1-107">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-107">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e31a1-108">現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-108">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="e31a1-109">
+            <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+            <para>
+              <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-109">
+              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
+              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadComponents">
+      <MemberSignature Language="C#" Value="public bool DownloadComponents { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DownloadComponents" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.DownloadComponents" />
+      <MemberSignature Language="VB.NET" Value="Public Property DownloadComponents As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DownloadComponents { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1906)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1906)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1906)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e31a1-110">の<b>true</b>場合のみ場合は、コンポーネントがインストールされていないが、Web ブラウザーに保存されたドキュメントを表示するときに必要な Microsoft Office Web コンポーネントがダウンロードされます。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-110">
+              <b>True</b> if the necessary Microsoft Office Web components are downloaded when you view the saved document in a Web browser, but only if the components are not already installed.</span>
+          </span>
+          <span data-ttu-id="e31a1-111">
+            <b>False</b>場合は、コンポーネントはダウンロードされません。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-111">
+              <b>False</b> if the components are not downloaded.</span>
+          </span>
+          <span data-ttu-id="e31a1-112">既定値は <b>False</b> です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-112">The default value is <b>False</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="e31a1-113">
+            <para>を設定すること、 <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.LocationOfComponents" /> (イントラネットまたは Web) 上のサーバーの URL またはパスのプロパティ (ローカルまたはネットワーク) を権限のあるユーザーがコンポーネントをダウンロード、保存したドキュメントを表示するときの場所にします。ユーザーが有効な Microsoft Office のライセンスが必要とのパスが有効である必要があり、必要なコンポーネントが含まれている場所をポイントする必要があります</para>。
+          <para>Office Web コンポーネントは、Web ページとして保存するドキュメントに対話機能を追加します。ページの対話部分を静的になるコンポーネントがインストールされていないコンピューターのブラウザーで Web ページを表示する場合です</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-113">
+              <para>You can set the <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.LocationOfComponents" /> property to a central URL (on the intranet or Web) or path (local or network) to a location from which authorized users can download components when viewing your saved document. The path must be valid and must point to a location that contains the necessary components, and the user must have a valid Microsoft Office license.</para>
+              <para>Office Web components add interactivity to documents that you save as Web pages. If you view a Web page in a browser on a computer that does not have the components installed, the interactive portions of the page will be static.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encoding">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoEncoding Encoding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoEncoding Encoding" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.Encoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Encoding As MsoEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoEncoding Encoding { Microsoft::Office::Core::MsoEncoding get(); void set(Microsoft::Office::Core::MsoEncoding value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1822)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1822)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1822)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoEncoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e31a1-114">ドキュメントが保存されたドキュメントを表示するとき、Web ブラウザーで使用されるエンコード (コード ページまたは文字セット) を設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-114">Returns or sets the document encoding (code page or character set) to be used by the Web browser when you view the saved document.</span>
+          </span>
+          <span data-ttu-id="e31a1-115">既定値は、システム コード ページです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-115">The default is the system code page.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="e31a1-116">
+            <para>
+              <b>[自動検出]</b>のサフィックスが付いている定数のいずれかの操作を使うことはできません。これらの定数が使用、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.ReloadAs(Microsoft.Office.Core.MsoEncoding)" />メソッドです。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-116">
+              <para>You cannot use any of the constants that have the suffix <b>AutoDetect</b>. These constants are used by the <see cref="M:Microsoft.Office.Interop.Excel._Workbook.ReloadAs(Microsoft.Office.Core.MsoEncoding)" /> method.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FolderSuffix">
+      <MemberSignature Language="C#" Value="public string FolderSuffix { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FolderSuffix" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FolderSuffix As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FolderSuffix { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1914)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1914)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e31a1-117">文書を Web ページとして保存、長いファイル名を使用して別のフォルダーに関連ファイルを保存するときに Excel で使用されるフォルダー サフィックスを返します (場合は、<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" />と<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" />プロパティが<b>True</b>に設定)。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-117">Returns the folder suffix that Microsoft Excel uses when you save a document as a Web page, use long file names, and choose to save supporting files in a separate folder (that is, if the <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> and <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> properties are set to <b>True</b>).</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="e31a1-118">
+            <para>サフィックスによって返されるドキュメントの使用を新しく作成された、<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" />オブジェクトです。<b>FolderSuffix</b>プロパティの値、 <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> 、別の言語バージョンの Microsoft Excel のドキュメントが編集された以前の場合、<b>必ず指定</b>のオブジェクトのオブジェクトが異なる場合があります。使用することができます、<see cref="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" />には、Microsoft Office で現在使用している言語のサフィックスを変更する方法です</para>。
+          <para>既定では、サポート フォルダーの名前は、Web ページとアンダー スコア (_)、ピリオド (.)、またはハイフン (-) と、word の [ファイル] ([Web ページとしてファイルを保存する Excel のバージョンの言語で表示される) の名前。たとえば、オランダ語の言語バージョンの Excel を使用して、"Page1"という名前のファイルを Web ページとして保存することとします。Page1_bestanden では、サポート フォルダーの既定の名前です</para>。
+          <para>は、次の表は Office の各言語バージョンの一覧が表示し、対応する<see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" />プロパティの値とフォルダーの接尾辞です。テーブルに表示されていない言語、サフィックス"として.files"が使用されます</para>。
+          <list type="table"><item><term>アラビア語</term><description>1025</description><description>.files</description></item><item><term>バスク語</term><description>1069</description><description>_fitxategiak</description></item><item><term>(ブラジル)</term><description>1046</description><description>_arquivos</description></item><item><term>ブルガリア語</term><description>1026</description><description>.files</description></item><item><term>カタロニア語</term><description>1027</description><description>_fitxers</description></item><item><term>中国語 - 簡</term><description>2052</description><description>.files</description></item><item><term>中国語 - 繁体字</term>の
+              <description>1028</description><description>.files</description></item><item><term>クロアチア語</term><description>1050</description><description>_datoteke</description></item><item><term>チェコ語</term><description>1029</description><description>_soubory</description></item><item><term>デンマーク</term><description>1030</description><description>・ ファイラー ・</description></item><item><term>オランダ</term><description>1043</description><description>_bestanden</description></item><item><term>英語</term><description>1033</description><description>_files</description></item><item><term>エストニア語</term><description>1061</description><description>_failid</description></item><item><term>フィンランド</term><description>1035</description><description>_tiedostot</description></item><item><term>フランス語</term><description>1036</description><description>_fichiers</description></item><item><term>ドイツ語</term><description>1031</description><description>-Dateien</description></item><item><term>ギリシャ語</term><description>1032</description><description>.files</description></item><item><term>ヘブライ語</term><description>1037</description><description>.files</description></item><item><term>ハンガリー</term><description>1038</description><description>_elemei</description></item><item><term>イタリア</term><description>1040</description><description>-ファイル</description></item><item><term>日本語</term>、
+              <description>1041</description>、
+              <description>.files</description></item><item><term>韓国語</term><description>1042</description><description>.files</description></item><item><term>ラトビア</term><description>1062</description><description>_fails</description></item><item><term>リトアニア</term><description>1063</description><description>_bylos</description></item><item><term>ノルウェー語</term><description>1044</description><description>・ ファイラー ・</description></item><item><term>ポーランド</term><description>1045</description><description>_pliki</description></item><item><term>ポルトガル語</term><description>2070</description><description>_ficheiros</description></item><item><term>ルーマニア</term><description>1048</description><description>.files</description></item><item><term>ロシア</term><description>1049</description><description>.files</description></item><item><term>セルビア語 (キリル)</term><description>3098</description><description>.files</description></item><item><term>セルビア語 (ラテン)</term><description>2074</description><description>_fajlovi</description></item><item><term>スロバキア語</term><description>1051</description><description>.files</description></item><item><term>スロベニア語</term><description>1060</description><description>_datoteke</description></item><item><term>スペイン語</term><description>3082</description><description>_archivos</description></item><item><term>スウェーデン語</term><description>1053</description><description>・ ファイラー ・</description></item><item><term>タイ</term><description>1054</description><description>.files</description></item><item><term>トルコ語</term><description>1055</description><description>_dosyalar</description></item><item><term>ウクライナ</term><description>1058</description><description>.files</description></item><item><term>ベトナム</term><description>1066</description><description>.files</description></item></list><para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-118">
+              <para>Newly created documents use the suffix returned by the <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> object. The value of the <b>FolderSuffix</b> property of the <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> object may differ from that of the <b>DefaultWebOptions</b> object if the document was previously edited in a different language version of Microsoft Excel. You can use the <see cref="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" /> method to change the suffix to the language you are currently using in Microsoft Office.</para>
+              <para>By default, the name of the supporting folder is the name of the Web page plus an underscore (_), a period (.), or a hyphen (-) and the word "files" (appearing in the language of the version of Excel in which the file was saved as a Web page). For example, suppose that you use the Dutch language version of Excel to save a file called "Page1" as a Web page. The default name of the supporting folder is Page1_bestanden.</para>
+              <para>The following table lists each language version of Office and gives its corresponding <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> property value and folder suffix. For the languages that are not listed in the table, the suffix ".files" is used.</para>
+              <list type="table">
+                <item>
+                  <term>Arabic</term>
+                  <description>1025</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Basque</term>
+                  <description>1069</description>
+                  <description>_fitxategiak</description>
+                </item>
+                <item>
+                  <term>Brazilian</term>
+                  <description>1046</description>
+                  <description>_arquivos</description>
+                </item>
+                <item>
+                  <term>Bulgarian</term>
+                  <description>1026</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Catalan</term>
+                  <description>1027</description>
+                  <description>_fitxers</description>
+                </item>
+                <item>
+                  <term>Chinese - Simplified</term>
+                  <description>2052</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Chinese - Traditional</term>
+                  <description>1028</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Croatian</term>
+                  <description>1050</description>
+                  <description>_datoteke</description>
+                </item>
+                <item>
+                  <term>Czech</term>
+                  <description>1029</description>
+                  <description>_soubory</description>
+                </item>
+                <item>
+                  <term>Danish</term>
+                  <description>1030</description>
+                  <description>-filer</description>
+                </item>
+                <item>
+                  <term>Dutch</term>
+                  <description>1043</description>
+                  <description>_bestanden</description>
+                </item>
+                <item>
+                  <term>English</term>
+                  <description>1033</description>
+                  <description>_files</description>
+                </item>
+                <item>
+                  <term>Estonian</term>
+                  <description>1061</description>
+                  <description>_failid</description>
+                </item>
+                <item>
+                  <term>Finnish</term>
+                  <description>1035</description>
+                  <description>_tiedostot</description>
+                </item>
+                <item>
+                  <term>French</term>
+                  <description>1036</description>
+                  <description>_fichiers</description>
+                </item>
+                <item>
+                  <term>German</term>
+                  <description>1031</description>
+                  <description>-Dateien</description>
+                </item>
+                <item>
+                  <term>Greek</term>
+                  <description>1032</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Hebrew</term>
+                  <description>1037</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Hungarian</term>
+                  <description>1038</description>
+                  <description>_elemei</description>
+                </item>
+                <item>
+                  <term>Italian</term>
+                  <description>1040</description>
+                  <description>-file</description>
+                </item>
+                <item>
+                  <term>Japanese</term>
+                  <description>1041</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Korean</term>
+                  <description>1042</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Latvian</term>
+                  <description>1062</description>
+                  <description>_fails</description>
+                </item>
+                <item>
+                  <term>Lithuanian</term>
+                  <description>1063</description>
+                  <description>_bylos</description>
+                </item>
+                <item>
+                  <term>Norwegian</term>
+                  <description>1044</description>
+                  <description>-filer</description>
+                </item>
+                <item>
+                  <term>Polish</term>
+                  <description>1045</description>
+                  <description>_pliki</description>
+                </item>
+                <item>
+                  <term>Portuguese</term>
+                  <description>2070</description>
+                  <description>_ficheiros</description>
+                </item>
+                <item>
+                  <term>Romanian</term>
+                  <description>1048</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Russian</term>
+                  <description>1049</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Serbian (Cyrillic)</term>
+                  <description>3098</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Serbian (Latin)</term>
+                  <description>2074</description>
+                  <description>_fajlovi</description>
+                </item>
+                <item>
+                  <term>Slovakian</term>
+                  <description>1051</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Slovenian</term>
+                  <description>1060</description>
+                  <description>_datoteke</description>
+                </item>
+                <item>
+                  <term>Spanish</term>
+                  <description>3082</description>
+                  <description>_archivos</description>
+                </item>
+                <item>
+                  <term>Swedish</term>
+                  <description>1053</description>
+                  <description>-filer</description>
+                </item>
+                <item>
+                  <term>Thai</term>
+                  <description>1054</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Turkish</term>
+                  <description>1055</description>
+                  <description>_dosyalar</description>
+                </item>
+                <item>
+                  <term>Ukranian</term>
+                  <description>1058</description>
+                  <description>.files</description>
+                </item>
+                <item>
+                  <term>Vietnamese</term>
+                  <description>1066</description>
+                  <description>.files</description>
+                </item>
+              </list>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocationOfComponents">
+      <MemberSignature Language="C#" Value="public string LocationOfComponents { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LocationOfComponents" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.LocationOfComponents" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocationOfComponents As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LocationOfComponents { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1911)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1911)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1911)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e31a1-119">(イントラネットまたは Web) 上のサーバーの URL またはパスの設定を取得または設定 (ローカルまたはネットワーク) 権限を持つユーザーことができますをダウンロードする Microsoft Office Web コンポーネント、保存したドキュメントを表示するときの場所にします。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-119">Returns or sets the central URL (on the intranet or Web) or path (local or network) to the location from which authorized users can download Microsoft Office Web components when viewing your saved document.</span>
+          </span>
+          <span data-ttu-id="e31a1-120">既定値は、ローカルまたは Microsoft Office のネットワーク インストール パスです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-120">The default value is the local or network installation path for Microsoft Office.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="e31a1-121">
+            <para>場合、指定した Web ページに office Web コンポーネントを自動的にダウンロード、<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.DownloadComponents" />プロパティが<b>True</b>に設定されて、コンポーネントがインストールされていない、パスが有効であり、必要なコンポーネントが含まれている場所をポイントし、ユーザーは、有効な Microsoft Office のライセンスを持っています。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-121">
+              <para>Office Web components are automatically downloaded with the specified Web page if the <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.DownloadComponents" /> property is set to <b>True</b>, the components are not already installed, the path is valid and points to a location that contains the necessary components, and the user has a valid Microsoft Office license.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrganizeInFolder">
+      <MemberSignature Language="C#" Value="public bool OrganizeInFolder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OrganizeInFolder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" />
+      <MemberSignature Language="VB.NET" Value="Public Property OrganizeInFolder As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OrganizeInFolder { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1902)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1902)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1902)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e31a1-122">
+            <b>True の</b>場合は、指定した文書を Web ページとして保存すると、背景のテクスチャや画像など、すべての関連ファイルが別のフォルダーに編成されました。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-122">
+              <b>True</b> if all supporting files, such as background textures and graphics, are organized in a separate folder when you save the specified document as a Web page.</span>
+          </span>
+          <span data-ttu-id="e31a1-123">
+            <b>偽</b>のファイルをサポートしている場合は、Web ページと同じフォルダーに保存されます。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-123">
+              <b>False</b> if supporting files are saved in the same folder as the Web page.</span>
+          </span>
+          <span data-ttu-id="e31a1-124">既定値は <b>True</b> です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-124">The default value is <b>True</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="e31a1-125">
+            <para>新しいフォルダーは、Web ページを保存したフォルダーに作成され、ドキュメントの名前します。長いファイル名を使用する場合は、フォルダー名にサフィックスが追加されます。<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" />プロパティは、選択またはインストールされている言語サポートのフォルダー サフィックス、または既定のフォルダー サフィックスを取得します</para>。
+          <para>、 <b>OrganizeInFolder</b>プロパティを別の値に設定を以前に保存したドキュメントを保存すると、Microsoft Excel が自動的に移動または必要に応じて、フォルダーからファイルをサポートします</para>。長いファイル名を使用しない場合は
+          <para>(場合は、<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" />プロパティが<b>False</b>に設定)、Microsoft Excel では、別のフォルダーに、任意のサポート ファイルを自動的に保存します。Web ページと同じフォルダーにファイルを保存することはできません</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-125">
+              <para>The new folder is created in the folder where you have saved the Web page and is named after the document. If long file names are used, a suffix is added to the folder name. The <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> property returns the folder suffix for the language support you have selected or installed, or the default folder suffix.</para>
+              <para>If you save a document that was previously saved with the <b>OrganizeInFolder</b> property set to a different value, Microsoft Excel automatically moves the supporting files into or out of the folder, as appropriate.</para>
+              <para>If you don't use long file names (that is, if the <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> property is set to <b>False</b>), Microsoft Excel automatically saves any supporting files in a separate folder. The files cannot be saved in the same folder as the Web page.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e31a1-126">指定されたオブジェクトの親オブジェクトを返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-126">Returns the parent object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PixelsPerInch">
+      <MemberSignature Language="C#" Value="public int PixelsPerInch { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PixelsPerInch" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.PixelsPerInch" />
+      <MemberSignature Language="VB.NET" Value="Public Property PixelsPerInch As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PixelsPerInch { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1910)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1910)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1910)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e31a1-127">Web ページ上のグラフィック イメージおよび表のセルの密度 (1 インチあたりのピクセル数) を設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-127">Returns or sets the density (pixels per inch) of graphics images and table cells on a Web page.</span>
+          </span>
+          <span data-ttu-id="e31a1-128">通常の設定数値の範囲は 19 ～ 480 で、よく使用される画面のサイズに対する一般的な設定は、72、96、および 120 です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-128">The range of settings is usually from 19 to 480, and common settings for popular screen sizes are 72, 96, and 120.</span>
+          </span>
+          <span data-ttu-id="e31a1-129">既定値は 96 です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-129">The default setting is 96.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="e31a1-130">
+            <para>このプロパティは、Web ブラウザーで保存されたドキュメントを表示する際に画像やテキストのサイズを基準にして指定の Web ページ上のセルのサイズを決定します。結果のイメージまたはセルの物理的なサイズは、元のサイズ (インチ単位) の結果を 1 インチあたりのピクセル数を掛けた値です</para>。
+          <para>を使用する、<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.ScreenSize" />プロパティを対象の Web ブラウザーの最適な画面サイズを設定します</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-130">
+              <para>This property determines the size of the images and cells on the specified Web page relative to the size of text whenever you view the saved document in a Web browser. The physical dimensions of the resulting image or cell are the result of the original dimensions (in inches) multiplied by the number of pixels per inch.</para>
+              <para>You use the <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.ScreenSize" /> property to set the optimum screen size for the targeted Web browsers.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelyOnCSS">
+      <MemberSignature Language="C#" Value="public bool RelyOnCSS { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RelyOnCSS" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.RelyOnCSS" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelyOnCSS As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RelyOnCSS { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1899)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1899)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1899)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e31a1-131">の<b>場合は true。</b>保存済みの文書を Web ブラウザーで表示するときのフォント設定にカスケード スタイル シート (CSS) を使用する場合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-131">
+              <b>True</b> if cascading style sheets (CSS) are used for font formatting when you view a saved document in a Web browser.</span>
+          </span>
+          <span data-ttu-id="e31a1-132">
+            <b>False</b>場合 HTML&lt;フォント&gt;タグとカスケード スタイル シートを使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-132">
+              <b>False</b> if HTML &lt;FONT&gt; tags and cascading style sheets are used.</span>
+          </span>
+          <span data-ttu-id="e31a1-133">既定値は <b>True</b> です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-133">The default value is <b>True</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="e31a1-134">
+            <para>Microsoft Excel は、カスケード スタイル シート ファイルを作成し、指定したフォルダーに、またはの値に基づいて、Web ページと同じフォルダーに保存、<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" />プロパティ</para>。
+          <para>の<b>場合は True</b> Web ブラウザーより正確なレイアウトと書式制御が Web ページで提供し、外観、ドキュメントと同じようにより (Microsoft Excel で表示されます) これは、カスケード スタイル シートをサポートしている場合にこのプロパティを設定する必要があります</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-134">
+              <para>Microsoft Excel creates a cascading style sheet file and saves it either to the specified folder or to the same folder as your Web page, depending on the value of the <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> property.</para>
+              <para>You should set this property to <b>True</b> if your Web browser supports cascading style sheets, as this will give you more precise layout and formatting control on your Web page and make it look more like your document (as it appears in Microsoft Excel).</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelyOnVML">
+      <MemberSignature Language="C#" Value="public bool RelyOnVML { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RelyOnVML" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.RelyOnVML" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelyOnVML As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RelyOnVML { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1907)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1907)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1907)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e31a1-135">
+            <b>True</b>を Web ページとして文書を保存するときに描画オブジェクトから画像ファイルを生成しない場合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-135">
+              <b>True</b> if image files are not generated from drawing objects when you save a document as a Web page.</span>
+          </span>
+          <span data-ttu-id="e31a1-136">場合は<b>false を指定</b>のイメージが生成されます。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-136">
+              <b>False</b> if images are generated.</span>
+          </span>
+          <span data-ttu-id="e31a1-137">既定値は <b>False</b> です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-137">The default value is <b>False</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="e31a1-138">
+            <para>、Web ブラウザーには、ベクター マークアップ言語 (VML) がサポートされている場合、描画オブジェクトのイメージを生成しないことにより、ファイルのサイズを減らすことができます。VML をサポートしているブラウザーを対象としている場合は、 <b>RelyOnVML</b>プロパティを<b>True</b>に設定する必要があります。Vml を使って、イメージは表示されない場合をサポートしていないブラウザーでこのプロパティを有効に保存された Web ページを表示する</para>。
+          <para>などを生成しないように画像、Web ページが以前に生成されたイメージ ファイルを使用する場合と、ページを Web サーバー上の最終的な場所から異なる場合は、ドキュメントを保存する場所です</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-138">
+              <para>You can reduce file sizes by not generating images for drawing objects if your Web browser supports Vector Markup Language (VML). You should set the <b>RelyOnVML</b> property to <b>True</b> if you are targeting a browser that supports VML. For browsers that do not support VML, the image will not appear when you view a Web page saved with this property enabled.</para>
+              <para>For example, you should not generate images if your Web page uses image files that you have generated earlier, and if the location where you save the document is different from the final location of the page on the Web server.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScreenSize">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoScreenSize ScreenSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoScreenSize ScreenSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.ScreenSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScreenSize As MsoScreenSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoScreenSize ScreenSize { Microsoft::Office::Core::MsoScreenSize get(); void set(Microsoft::Office::Core::MsoScreenSize value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1909)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1909)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1909)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoScreenSize</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e31a1-139">値を取得または設定、<see cref="T:Microsoft.Office.Core.MsoScreenSize" />保存した文書を Web ブラウザーで表示されるときに使用する理想的な最小画面サイズ (幅と高さをピクセル単位で) を指定する定数です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-139">Returns or sets an <see cref="T:Microsoft.Office.Core.MsoScreenSize" /> constant specifying the ideal minimum screen size (width by height, in pixels) that you should use when viewing the saved document in a Web browser.</span>
+          </span>
+          <span data-ttu-id="e31a1-140">既定の定数は、 <b>msoScreenSize800x600</b>です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-140">The default constant is <b>msoScreenSize800x600</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetBrowser">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTargetBrowser TargetBrowser { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTargetBrowser TargetBrowser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.TargetBrowser" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetBrowser As MsoTargetBrowser" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTargetBrowser TargetBrowser { Microsoft::Office::Core::MsoTargetBrowser get(); void set(Microsoft::Office::Core::MsoTargetBrowser value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2179)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2179)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2179)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTargetBrowser</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e31a1-141">値を取得または設定、<see cref="T:Microsoft.Office.Core.MsoTargetBrowser" />ブラウザーのバージョンを示す定数です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-141">Returns or sets an <see cref="T:Microsoft.Office.Core.MsoTargetBrowser" /> constant indicating the browser version.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseDefaultFolderSuffix">
+      <MemberSignature Language="C#" Value="public void UseDefaultFolderSuffix ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UseDefaultFolderSuffix() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UseDefaultFolderSuffix ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UseDefaultFolderSuffix();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1915)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="e31a1-142">指定されたドキュメントのフォルダーの接尾辞として、選択またはインストールした言語サポートの既定の接尾辞を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-142">Sets the folder suffix for the specified document to the default suffix for the language support you have selected or installed.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="e31a1-143">
+            <para>Excel 文書を Web ページとして保存、長いファイル名を使用して別のフォルダーに関連ファイルを保存するときにフォルダー サフィックスを使用して (場合は、<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" />と<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" />プロパティが<b>True</b>に設定されます).</para>
+            <para>サフィックスが表示されます、フォルダー名にドキュメント名の後。ドキュメントは"Book1"と呼ばれる場合は、言語が日本語フォルダー名は Book1_files です。使用可能なフォルダー サフィックスが記載されて、<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" />プロパティのトピックです</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-143">
+              <para>Microsoft Excel uses the folder suffix when you save a document as a Web page, use long file names, and choose to save supporting files in a separate folder (that is, if the <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> and <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> properties are set to <b>True</b>).</para>
+              <para>The suffix appears in the folder name after the document name. For example, if the document is called "Book1" and the language is English, the folder name is Book1_files. The available folder suffixes are listed in the <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> property topic.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseLongFileNames">
+      <MemberSignature Language="C#" Value="public bool UseLongFileNames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseLongFileNames" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseLongFileNames As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseLongFileNames { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1904)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1904)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1904)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="e31a1-144">
+            <b>True</b>を Web ページとして文書を保存するときに長いファイル名を使用する場合。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-144">
+              <b>True</b> if long file names are used when you save the document as a Web page.</span>
+          </span>
+          <span data-ttu-id="e31a1-145">
+            <b>False</b>場合は長いファイル名を使用しないと、DOS ファイル名形式 (8.3) が使用されます。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-145">
+              <b>False</b> if long file names are not used and the DOS file name format (8.3) is used.</span>
+          </span>
+          <span data-ttu-id="e31a1-146">既定値は <b>True</b> です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-146">The default value is <b>True</b>.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="e31a1-147">
+            <para>長いファイル名を使用せずに、文書にサポート ファイルがあると、Microsoft Excel は自動的に別のフォルダーにそれらのファイルを整理します。それ以外の場合を使用して、<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" />の関連ファイルが別のフォルダーに配置するかどうかを確認するにします。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="e31a1-147">
+              <para>If you don't use long file names and your document has supporting files, Microsoft Excel automatically organizes those files in a separate folder. Otherwise, use the <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> property to determine whether supporting files are organized in a separate folder.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

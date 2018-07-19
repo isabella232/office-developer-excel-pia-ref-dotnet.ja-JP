@@ -1,0 +1,110 @@
+<Type Name="WorkbookEvents_BeforeXmlImportEventHandler" FullName="Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeXmlImportEventHandler">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="52cb33b3c4364f6d81cce3321fd2dcdfbca546f7" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20578471" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public delegate void WorkbookEvents_BeforeXmlImportEventHandler(XmlMap Map, string Url, bool IsRefresh, out bool Cancel);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WorkbookEvents_BeforeXmlImportEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeXmlImportEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub WorkbookEvents_BeforeXmlImportEventHandler(Map As XmlMap, Url As String, IsRefresh As Boolean, ByRef Cancel As Boolean)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void WorkbookEvents_BeforeXmlImportEventHandler(XmlMap ^ Map, System::String ^ Url, bool IsRefresh, [Runtime::InteropServices::Out] bool % Cancel);" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="Map" Type="Microsoft.Office.Interop.Excel.XmlMap" />
+    <Parameter Name="Url" Type="System.String" />
+    <Parameter Name="IsRefresh" Type="System.Boolean" />
+    <Parameter Name="Cancel" Type="System.Boolean&amp;" RefType="out" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="Map">
+      <span data-ttu-id="19306-101">必要な<see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />オブジェクトです。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="19306-101">Required <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> object.</span>
+      </span>
+      <span data-ttu-id="19306-102">データのインポートに使用される XML マップを示します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="19306-102">The XML map that will be used to import data.</span>
+      </span>
+    </param>
+    <param name="Url">
+      <span data-ttu-id="19306-103">
+        <b>文字列</b> が必要です。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="19306-103">Required <b>String</b>.</span>
+      </span>
+      <span data-ttu-id="19306-104">XML ファイルのインポート先となる場所を指定します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="19306-104">The location of the XML file to be imported.</span>
+      </span>
+    </param>
+    <param name="IsRefresh">
+      <span data-ttu-id="19306-105">
+        <b>ブール値</b>が必要です。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="19306-105">Required <b>Boolean</b>.</span>
+      </span>
+      <span data-ttu-id="19306-106">XML データへの既存の接続を更新することによってイベントがトリガーされた場合は  <b>True</b> 、他のデータ ソースからインポートを行ったことによってイベントがトリガーされた場合は <b>False</b> を指定します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="19306-106">
+          <b>True</b> if the event was triggered by refreshing an existing connection to XML data; <b>False</b> if the event was triggered by importing from a different data source.</span>
+      </span>
+    </param>
+    <param name="Cancel">
+      <span data-ttu-id="19306-107">
+        <b>ブール値</b>が必要です。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="19306-107">Required <b>Boolean</b>.</span>
+      </span>
+      <span data-ttu-id="19306-108">
+        <b>True</b>に、インポートをキャンセルするか、更新操作を設定します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="19306-108">Set to <b>True</b> to cancel the import or refresh operation.</span>
+      </span>
+    </param>
+    <summary>
+      <span data-ttu-id="19306-109">
+        <b>デリゲート</b>型のイベント ハンドラーを追加するために使用します<see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.BeforeXmlImport" />イベントです。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="19306-109">A <b>Delegate</b> type used to add an event handler for the <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.BeforeXmlImport" /> event.</span>
+      </span>
+      <span data-ttu-id="19306-110">
+        <b>BeforeXmlImport</b>イベントは、既存の XML データ接続が更新されるか、Microsoft Excel のブックに新しい XML の前にデータをインポートする前に発生します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="19306-110">The <b>BeforeXmlImport</b> event occurs before an existing XML data connection is refreshed or before new XML data is imported into a Microsoft Excel workbook.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="19306-111">
+        <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="19306-111">
+          <para>XML features, except for saving files in the XML Spreadsheet format, are available only in Microsoft Office Professional Edition 2003 and Microsoft Office Excel 2003.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+</Type>

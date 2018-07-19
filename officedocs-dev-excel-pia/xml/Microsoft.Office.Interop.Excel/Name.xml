@@ -1,0 +1,983 @@
+<Type Name="Name" FullName="Microsoft.Office.Interop.Excel.Name">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="dc0260c6b148041f273cfeb372c53b2a97c08418" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20575895" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Name" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Name" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Name" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Name" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Name" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000208B9-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="2bc84-101">セル範囲に定義名を表します。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="2bc84-101">Represents a defined name for a range of cells.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="2bc84-102">
+        <para>名には、いずれかの組み込み名、データベース、Print_Area、Auto_Open など、またはカスタムの名前</para>。
+      <para>アプリケーション、ブックとワークシート オブジェクト</para><para><b>名前</b>のオブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.Names" />のコレクション、 <see cref="T:Microsoft.Office.Interop.Excel.Application" />、 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" />、および<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />オブジェクトです。<b>名</b>を使用 (<paramref name="index" />)、<paramref name="index" />は、名前のインデックス番号またはオブジェクトを取得する 1 つ<b>の名前</b>を定義済みの名前</para>。
+      <para>インデックス番号は、コレクション内の名前の位置を示します。名は、アルファベット順で内から、z、および (これは、同じ順序で名前の定義ダイアログ ボックスを挿入] メニューの [名前] をクリックすることによって返される表示されて) は、大文字小文字を区別しません</para>。
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.Name.Name" />名自体のテキストを設定するプロパティ</para>。
+      <para>Range オブジェクト</para><para>が、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトは、複数の名前を持つことができます、 <b>Range</b>オブジェクトの<b>名前</b>のコレクションが存在します。範囲に割り当てられている最初の名前 (アルファベット順) の名前のリストを取得する<b>Range</b>オブジェクトの<b>名前</b>を使用します</para>。
+      <para /></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="2bc84-102">
+          <para>Names can be either built-in names — such as Database, Print_Area, and Auto_Open — or custom names.</para>
+          <para>Application, Workbook, and Worksheet Objects</para>
+          <para>The <b>Name</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.Names" /> collection for the <see cref="T:Microsoft.Office.Interop.Excel.Application" />, <see cref="T:Microsoft.Office.Interop.Excel.Workbook" />, and <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> objects. Use <b>Names</b>(<paramref name="index" />), where <paramref name="index" /> is the name index number or defined name, to return a single <b>Name</b> object.</para>
+          <para>The index number indicates the position of the name within the collection. Names are placed in alphabetic order, from a to z, and are not case-sensitive (this is the same order as is displayed in the Define Name and Apply Names dialog boxes, returned by clicking the Name command on the Insert menu).</para>
+          <para>Use the <see cref="P:Microsoft.Office.Interop.Excel.Name.Name" /> property to return or set the text of the name itself.</para>
+          <para>Range Objects</para>
+          <para>Although a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object can have more than one name, there’s no <b>Names</b> collection for the <b>Range</b> object. Use <b>Name</b> with a <b>Range</b> object to return the first name from the list of names (sorted alphabetically) assigned to the range.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_Default">
+      <MemberSignature Language="C#" Value="public string this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string _Default" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name._Default" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property _Default As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2bc84-103">内部使用のため予約済みです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-103">Reserved for internal use.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2bc84-104">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-104">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Category">
+      <MemberSignature Language="C#" Value="public string Category { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Category" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.Category" />
+      <MemberSignature Language="VB.NET" Value="Public Property Category As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Category { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(934)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(934)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(934)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2bc84-105">マクロの言語で指定した名前のカテゴリを設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-105">Returns or sets the category for the specified name in the language of the macro.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="2bc84-106">
+            <para>名前は、ユーザー定義関数またはコマンドを参照してくださいする必要があります。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-106">
+              <para>The name must refer to a custom function or command.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CategoryLocal">
+      <MemberSignature Language="C#" Value="public string CategoryLocal { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CategoryLocal" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.CategoryLocal" />
+      <MemberSignature Language="VB.NET" Value="Public Property CategoryLocal As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CategoryLocal { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(935)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(935)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(935)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2bc84-107">名前がユーザー定義関数またはコマンドを参照している場合、ユーザーの言語では、指定した名前のカテゴリを設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-107">Returns or sets the category for the specified name, in the language of the user, if the name refers to a custom function or command.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Comment">
+      <MemberSignature Language="C#" Value="public string Comment { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Comment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.Comment" />
+      <MemberSignature Language="VB.NET" Value="Public Property Comment As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Comment { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(910)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(910)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(910)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2bc84-108">名前に関連付けるコメントを設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-108">Returns or sets the comment associated with the name.</span>
+          </span>
+          <span data-ttu-id="2bc84-109">値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-109">Read/write <b>String</b>.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="2bc84-110">
+            <b>文字列型 (String)</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-110">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="2bc84-111">
+            <para>コメントのテキストには、255 文字を超えることはできません。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-111">
+              <para>The comment text cannot exceed 255 characters. </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2bc84-112">現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-112">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="2bc84-113">
+            <para>指定されたオブジェクトは、Microsoft excel で作成された場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+            <para>
+              <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-113">
+              <para>If the specified object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
+              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.Name.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="2bc84-114">オブジェクトを削除します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-114">Deletes the object.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(486)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(486)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2bc84-115">ようなオブジェクトのコレクション内のオブジェクトのインデックス番号を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-115">Returns the index number of the object within the collection of similar objects.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MacroType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlXLMMacroType MacroType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlXLMMacroType MacroType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.MacroType" />
+      <MemberSignature Language="VB.NET" Value="Public Property MacroType As XlXLMMacroType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlXLMMacroType MacroType { Microsoft::Office::Interop::Excel::XlXLMMacroType get(); void set(Microsoft::Office::Interop::Excel::XlXLMMacroType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(936)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(936)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(936)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlXLMMacroType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2bc84-116">参照する名前を設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-116">Returns or sets what the name refers to.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2bc84-117">オブジェクトの名前を設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-117">Returns or sets the name of the object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameLocal">
+      <MemberSignature Language="C#" Value="public string NameLocal { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NameLocal" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.NameLocal" />
+      <MemberSignature Language="VB.NET" Value="Public Property NameLocal As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NameLocal { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(937)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(937)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(937)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2bc84-118">取得またはユーザーの言語では、オブジェクトの名前を設定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-118">Returns or sets the name of the object in the language of the user.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="2bc84-119">
+            <para>スタイルが組み込みのスタイルの場合は、このプロパティは、現在のロケールの言語では、スタイルの名前を返します。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-119">
+              <para>If the style is a built-in style, this property returns the name of the style in the language of the current locale.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2bc84-120">指定されたオブジェクトの親オブジェクトを返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-120">Returns the parent object for the specified object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefersTo">
+      <MemberSignature Language="C#" Value="public object RefersTo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object RefersTo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.RefersTo" />
+      <MemberSignature Language="VB.NET" Value="Public Property RefersTo As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RefersTo { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(938)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(938)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(938)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2bc84-121">取得または設定の数式を設定するマクロの言語で、A1 形式で、等号 (=) で始まるを参照するために名前が定義されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-121">Returns or sets the formula that the name is defined to refer to, in the language of the macro and in A1-style notation, beginning with an equal sign.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefersToLocal">
+      <MemberSignature Language="C#" Value="public object RefersToLocal { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object RefersToLocal" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.RefersToLocal" />
+      <MemberSignature Language="VB.NET" Value="Public Property RefersToLocal As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RefersToLocal { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(939)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(939)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(939)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2bc84-122">名前を参照する数式を設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-122">Returns or sets the formula that the name refers to.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="2bc84-123">
+            <para>数式が、ユーザーの言語では、等号 (=) で始まり、A1 スタイルの表記では.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-123">
+              <para>The formula is in the language of the user, and it's in A1-style notation, beginning with an equal sign.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefersToR1C1">
+      <MemberSignature Language="C#" Value="public object RefersToR1C1 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object RefersToR1C1" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.RefersToR1C1" />
+      <MemberSignature Language="VB.NET" Value="Public Property RefersToR1C1 As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RefersToR1C1 { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(940)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(940)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(940)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2bc84-124">名前を参照する数式を設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-124">Returns or sets the formula that the name refers to.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="2bc84-125">
+            <para>数式は、マクロの言語では、等号 (=) で始まり、r1c1 形式の表記法では.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-125">
+              <para>The formula is in the language of the macro, and it's in R1C1-style notation, beginning with an equal sign.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefersToR1C1Local">
+      <MemberSignature Language="C#" Value="public object RefersToR1C1Local { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object RefersToR1C1Local" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.RefersToR1C1Local" />
+      <MemberSignature Language="VB.NET" Value="Public Property RefersToR1C1Local As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ RefersToR1C1Local { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(941)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(941)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(941)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2bc84-126">名前を参照する数式を設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-126">Returns or sets the formula that the name refers to.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="2bc84-127">
+            <para>この数式は、ユーザーの言語では、等号 (=) で始まり、r1c1 形式の表記法では.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-127">
+              <para>This formula is in the language of the user, and it's in R1C1-style notation, beginning with an equal sign.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefersToRange">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Range RefersToRange { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Range RefersToRange" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.RefersToRange" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RefersToRange As Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Range ^ RefersToRange { Microsoft::Office::Interop::Excel::Range ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1160)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1160)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2bc84-128">返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />によって参照されるオブジェクトの<see cref="T:Microsoft.Office.Interop.Excel.Name" />オブジェクトです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-128">Returns the <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object referred to by a <see cref="T:Microsoft.Office.Interop.Excel.Name" /> object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="2bc84-129">
+            <para>
+              <b>Name</b>オブジェクトは、(たとえば、定数または数式を参照する場合) の範囲を参照していない、このプロパティは失敗します</para>。
+          <para>に名前が参照する範囲を変更するを使用して、<see cref="P:Microsoft.Office.Interop.Excel.Name.RefersTo" />プロパティ</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-129">
+              <para>If the <b>Name</b> object doesn't refer to a range (for example, if it refers to a constant or a formula), this property fails.</para>
+              <para>To change the range that a name refers to, use the <see cref="P:Microsoft.Office.Interop.Excel.Name.RefersTo" /> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShortcutKey">
+      <MemberSignature Language="C#" Value="public string ShortcutKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ShortcutKey" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.ShortcutKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShortcutKey As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ShortcutKey { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(597)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(597)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(597)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2bc84-130">カスタム Microsoft Excel 4.0 マクロ コマンドとして定義された名前のショートカット キーを設定または返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-130">Returns or sets the shortcut key for a name defined as a custom Microsoft Excel 4.0 macro command.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidWorkbookParameter">
+      <MemberSignature Language="C#" Value="public bool ValidWorkbookParameter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ValidWorkbookParameter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.ValidWorkbookParameter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidWorkbookParameter As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidWorkbookParameter { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2608)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2608)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2bc84-131">指定の<b>Name</b>オブジェクトが有効なブック パラメーターである場合は<b>True</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-131">Returns <b>True</b> if the specified <b>Name</b> object is a valid workbook parameter.</span>
+          </span>
+          <span data-ttu-id="2bc84-132">読み取り専用<b>ブール</b>です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-132">Read-only <b>Boolen</b>.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="2bc84-133">
+            <b>ブール</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-133">
+              <b>Boolen</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2bc84-134">名前が定義されている数式を含む文字列を返しますを参照してください。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-134">Returns a string containing the formula that the name is defined to refer to.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="2bc84-135">
+            <para>文字列は、マクロの言語で、A1 スタイルの表記では、等号 (=) で始まります。</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-135">
+              <para>The string is in A1-style notation in the language of the macro, and it begins with an equal sign.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="public bool Visible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(558)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2bc84-136">オブジェクトを表示するかどうかを決定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-136">Determines whether the object is visible.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="2bc84-137">
+            <para>アイテムがテーブルに表示されている場合は、ピボット テーブル アイテムの<b>Visible</b>プロパティは<b>true を指定</b>します</para>。
+          <para>名前の<b>Visible</b>プロパティを<b>False</b>に設定すると、名前が<b>名前の定義</b>] ダイアログ ボックスに表示されません</para>。
+          <para /></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-137">
+              <para>The <b>Visible</b> property for a PivotTable item is <b>True</b> if the item is currently visible in the table.</para>
+              <para>If you set the <b>Visible</b> property for a name to <b>False</b>, the name won't appear in the <b>Define Name</b> dialog box.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkbookParameter">
+      <MemberSignature Language="C#" Value="public bool WorkbookParameter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WorkbookParameter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.Name.WorkbookParameter" />
+      <MemberSignature Language="VB.NET" Value="Public Property WorkbookParameter As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WorkbookParameter { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2607)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2607)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2607)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="2bc84-138">値を取得または設定、指定した<see cref="T:Microsoft.Office.Interop.Excel.Name" />オブジェクトをブック パラメーターとして。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-138">Returns or sets the specified <see cref="T:Microsoft.Office.Interop.Excel.Name" /> object as a workbook parameter.</span>
+          </span>
+          <span data-ttu-id="2bc84-139">値の取得および設定が可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-139">Read/write</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="2bc84-140">
+            <b>ブール型 (Boolean)</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="2bc84-140">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
