@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20584477" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ColorFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -34,7 +34,7 @@
     <remarks>
       <para>明示的な赤、緑、青値に色を設定することができます (を使用して、<see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" />プロパティ) または配色パターンの色に (を使用して、<see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" />プロパティ) です</para>。
       <para>プロパティのいずれかを使用は、 <b>ColorFormat</b>オブジェクトを取得する次の表に一覧表示します</para>。
-      <list type="table"><item><term><see cref="P:Microsoft.Office.Interop.Excel.FillFormat.BackColor" /></term><description><b>FillFormat</b></description><description>、背景塗りつぶし (グラデーションまたはパターンの塗りつぶしで使用)</description></item><item><term><see cref="P:Microsoft.Office.Interop.Excel.FillFormat.ForeColor" /></term><description><b>FillFormat</b></description><description>前景の塗りつぶし色 (または均一な色の塗りつぶしの色だけで)</description></item><item><term><see cref="P:Microsoft.Office.Interop.Excel.LineFormat.BackColor" /></term><description><b>LineFormat</b></description><description>、背景色 (線のパターンで使用)</description></item><item><term><see cref="P:Microsoft.Office.Interop.Excel.LineFormat.ForeColor" /></term><description><b>LineFormat</b></description><description>前景の線の色 (または実線の色)</description></item><item><term><see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.ForeColor" /></term><description><b>ShadowFormat</b></description><description>の影の色</description></item><item><term><see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.ExtrusionColor" /></term><description><b>ThreeDFormat</b></description><description>3-d オブジェクトの側面の色</description></item></list><para /></remarks>
+      <list type="table"><item><term><see cref="P:Microsoft.Office.Interop.Excel.FillFormat.BackColor" /></term><description><b>FillFormat</b></description><description>、背景塗りつぶし (グラデーションまたはパターンの塗りつぶしで使用)</description></item><item><term><see cref="P:Microsoft.Office.Interop.Excel.FillFormat.ForeColor" /></term><description><b>FillFormat</b></description><description>前景の塗りつぶし色 (または均一な色の塗りつぶしの色だけで)</description></item><item><term><see cref="P:Microsoft.Office.Interop.Excel.LineFormat.BackColor" /></term><description><b>LineFormat</b></description><description>、背景色 (線のパターンで使用)</description></item><item><term><see cref="P:Microsoft.Office.Interop.Excel.LineFormat.ForeColor" /></term><description><b>LineFormat</b></description><description>前景の線の色 (または実線の色)</description></item><item><term><see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.ForeColor" /></term><description><b>ShadowFormat</b></description><description>の影の色</description></item><item><term><see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.ExtrusionColor" /></term><description><b>ThreeDFormat</b></description><description>3-d オブジェクトの側面の色</description></item></list><para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -99,7 +99,7 @@
         <remarks>
           <para>読み取り/書き込み</para>。
           <para>このプロパティの値は 0.0 (最も暗い) から 1.0 (最も明るい) までの数値である必要があります</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -135,7 +135,7 @@
         <remarks>
           <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
           <para>、<see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Microsoft Excel は、クリエーター コードを持っています。参照してください<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />です</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ObjectThemeColor">
@@ -296,9 +296,8 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>TintAndShade</b>プロパティは、0 (ゼロ) がニュートラル (最も明るい) 1、-1 (最も暗い) から数値を入力できます。</para>
-          <para />
-        </remarks>
+            <b>TintAndShade</b>プロパティは、0 (ゼロ) がニュートラル (最も明るい) 1、-1 (最も暗い) から番号を入力することができます</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -329,7 +328,7 @@
         <remarks>
           <para>
             <b>MsoCalloutType</b>には、これらの<b>MsoCalloutType</b>定数のいずれかを指定できます</para>。
-          <para><b>msoCalloutFour</b></para><para><b>msoCalloutMixed</b></para><para><b>msoCalloutOne</b></para><para><b>msoCalloutThree</b></para><para><b>msoCalloutTwo</b></para><para /></remarks>
+          <para><b>msoCalloutFour</b></para><para><b>msoCalloutMixed</b></para><para><b>msoCalloutOne</b></para><para><b>msoCalloutThree</b></para><para><b>msoCalloutTwo</b></para><para></para></remarks>
       </Docs>
     </Member>
   </Members>

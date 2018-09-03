@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20586115" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ConnectorFormat" />
@@ -37,7 +37,7 @@
       <para>接続サイトは一般に次の表に示す規則に従って番号が付けられます</para>。
       <list type="table"><item><term>オートシェイプ、ワードアート、ピクチャ、および OLE オブジェクト</term><description>接続サイトは、上から、反時計回りに進行中に番号が付けられます</description></item>。
         <item><term>フリー フォーム</term><description>接続サイトには、頂点と頂点番号に対応します</description></item></list>。
-      <para /></remarks>
+      <para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -97,9 +97,9 @@
           <b>整数</b>が必要です。 指定された図形上の接続サイト<paramref name="ConnectedShape" />。 1 ~ によって返される整数の整数にする必要があります、 <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> 、指定した図形のプロパティ。 コネクタが自動的に接続する 2 つの図形間の最短経路を検索する場合は、この引数に有効な整数を指定しを使用して、<see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" />メソッドで図形にコネクタを接続した後です。</param>
         <summary>指定されたコネクタの始点を指定された図形に接続します。</summary>
         <remarks>
-          <para>場合は、コネクタの始点との接続が切断された、別の図形間の接続が既に存在します。コネクタの始点を指定した結合点に位置していない場合、このメソッドは、コネクタの始点を結合点に移動し、サイズとコネクタの位置を調整します。使用して、 <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> 、コネクタの終点を図形に接続します</para>。
+          <para>別の図形とコネクタの始点との間の接続が既に存在して、その接続は解除されます。コネクタの始点を指定した結合点に位置していない場合、このメソッドは、コネクタの始点を結合点に移動し、サイズとコネクタの位置を調整します。使用して、 <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> 、コネクタの終点を図形に接続します</para>。
           <para>ために必要な場合にサイズとコネクタの位置を自動的に調整オブジェクトにコネクタを接続するとします</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginConnected">
@@ -146,7 +146,7 @@
           </para>
           <para>
             <b>msoTrue</b>指定したコネクタの始点が図形に接続します</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginConnectedShape">
@@ -175,9 +175,8 @@
         <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />に指定されたコネクタの始点が接続されている図形を表すオブジェクト。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>指定されたコネクタの始点が図形に接続されていない、このプロパティはエラーを生成します。</para>
-          <para />
-        </remarks>
+          <para>場合は、指定されたコネクタの始点が図形に接続されていない、このエラーが発生します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginConnectionSite">
@@ -206,9 +205,8 @@
         <summary>コネクタの終点が接続されている結合点を表す整数値を取得します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>指定されたコネクタの終点が図形に接続されていない、このプロパティはエラーを生成します。</para>
-          <para />
-        </remarks>
+          <para>場合は、指定されたコネクタの終点が図形に接続されていない、このエラーが発生します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeginDisconnect">
@@ -235,9 +233,8 @@
         <summary>接続している図形から指定したコネクタの始点をデタッチします。</summary>
         <remarks>
           <para>
-            <b>残ります</b>は、コネクタの配置やサイズを変更しません。コネクタの始点がそのまま残りますが、接続が接続されていません。使用して、<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndDisconnect" />図形からコネクタの終点をデタッチする方法です。</para>
-          <para />
-        </remarks>
+            <b>BeginDisconnect</b>メソッドは、コネクタの配置やサイズを変更しません。コネクタの始点がそのまま残りますが、接続が接続されていません。使用、 <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndDisconnect" /> 、図形からコネクタの終点にします</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -269,7 +266,7 @@
           <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
           <para>
             <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndConnect">
@@ -301,9 +298,9 @@
           <b>整数</b>が必要です。 指定された図形上の接続サイト<paramref name="ConnectedShape" />。 1 ~ によって返される整数の整数にする必要があります、 <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> 、指定した図形のプロパティ。 コネクタが自動的に接続する 2 つの図形間の最短経路を検索する場合は、この引数に有効な整数を指定しを使用して、<see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" />メソッドで図形にコネクタを接続した後です。</param>
         <summary>指定されたコネクタの終点を指定された図形に接続します。</summary>
         <remarks>
-          <para>場合は、コネクタの終点と接続が切断されたが、別の図形間の接続が既に存在します。コネクタの終点指定した結合点に位置していない場合、このメソッドは、コネクタの終点を接続しているサイトに移動し、サイズとコネクタの位置を調整します。使用して、 <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> 、コネクタの始点を図形に接続します</para>。
+          <para>別の図形とコネクタの終点の間の接続が既に存在して、その接続は解除されます。コネクタの終点指定した結合点に位置していない場合、このメソッドは、コネクタの終点を接続しているサイトに移動し、サイズとコネクタの位置を調整します。使用して、 <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> 、コネクタの始点を図形に接続します</para>。
           <para>ために必要な場合にサイズとコネクタの位置を自動的に調整オブジェクトにコネクタを接続するとします</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndConnected">
@@ -338,7 +335,7 @@
           <para>
             <b>msoFalse</b>指定したコネクタの終点が図形に接続できません</para>。
           <para><b>msoTrue</b>指定したコネクタの終点が図形に接続します</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndConnectedShape">
@@ -367,9 +364,8 @@
         <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />に指定されたコネクタの終点が接続されている図形を表すオブジェクト。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>指定されたコネクタの終点が図形に接続されていない、このプロパティはエラーを生成します。</para>
-          <para />
-        </remarks>
+          <para>場合は、指定されたコネクタの終点が図形に接続されていない、このエラーが発生します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndConnectionSite">
@@ -398,9 +394,8 @@
         <summary>コネクタの終点が接続されている結合点を表す整数値を取得します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>指定されたコネクタの終点が図形に接続されていない、このプロパティはエラーを生成します。</para>
-          <para />
-        </remarks>
+          <para>場合は、指定されたコネクタの終点が図形に接続されていない、このエラーが発生します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EndDisconnect">
@@ -426,9 +421,8 @@
       <Docs>
         <summary>指定したコネクタに接続している図形の終点を切り離します。</summary>
         <remarks>
-          <para>このメソッドは、コネクタの配置やサイズを変更しませんコネクタの終点はそのまま残りますが、接続が接続されていません。使用して、<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginDisconnect" />図形からコネクタの始点をデタッチする方法です。</para>
-          <para />
-        </remarks>
+          <para>このメソッドは、コネクタの配置やサイズを変更しません。 コネクタの終点はそのまま残りますが、接続が接続されていません。使用して、<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginDisconnect" />図形からコネクタの始点をデタッチする方法です</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -503,7 +497,7 @@
           <para>
             <b>msoConnectorTypeMixed</b>
           </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

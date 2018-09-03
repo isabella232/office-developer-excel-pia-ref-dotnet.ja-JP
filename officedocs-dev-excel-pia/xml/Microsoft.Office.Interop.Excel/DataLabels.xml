@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20584554" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DataLabels : System.Collections.IEnumerable" />
@@ -37,7 +37,7 @@
     <remarks>
       <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.Series.DataLabels(System.Object)" /> 、 <b>DataLabels</b>コレクションを返します</para>。
       <para>使用して<b>データ ラベル</b>(<paramref name="index" />)、<paramref name="index" />は、データ ラベルのインデックス番号で、1 つの<b>DataLabel</b>オブジェクトを取得する</para>。
-      <para /></remarks>
+      <para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -235,7 +235,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 値の取得のみ可能です。</summary>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -400,9 +400,8 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para />
-        </remarks>
+            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -457,7 +456,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.FillFormat" />指定した図形のオブジェクト、または<see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" />指定されたグラフの塗りつぶしの書式設定、図形やグラフのプロパティを含むオブジェクト。 値の取得のみ可能です。</summary>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.FillFormat" />指定した図形のオブジェクト、または<see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" />指定されたグラフの塗りつぶしの書式設定、図形やグラフのプロパティを含むオブジェクト。 読み取り専用。</summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" />
         </value>
@@ -520,7 +519,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />オブジェクトです。 値の取得のみ可能です。</summary>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />オブジェクトです。 読み取り専用。</summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
         </value>
@@ -604,7 +603,7 @@
             <b>xlRight</b>
           </para>
           <para>が選択またはインストールされている言語サポート (たとえば、日本語) によっては使用ができないこれらの定数のいくつかがあります</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -729,9 +728,8 @@
         <summary>オブジェクトの書式設定コードを設定または返します。読み取りまたは書き込み <b>文字列</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>形式は、[表示形式]、[セルの書式設定] ダイアログ ボックスの文字列と同じです。<b>Format</b>関数は、<b>数字</b>よりもコードの文字列を別の形式を使用して、<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />のプロパティです。</para>
-          <para />
-        </remarks>
+          <para>形式は、[表示形式]、[セルの書式設定] ダイアログ ボックスと同じ文字列です。<b>Format</b>関数は、<b>数字</b>よりもコードの文字列を別の形式を使用して、<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />プロパティ</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLinked">
@@ -796,9 +794,8 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Format</b>関数は、コードの文字列を別の形式を使用して、<see cref="P:Microsoft.Office.Interop.Excel.DataLabels.NumberFormat" />と<b>NumberFormatLocal</b>プロパティです。</para>
-          <para />
-        </remarks>
+            <b>Format</b>関数は、コードの文字列を別の形式を使用して、<see cref="P:Microsoft.Office.Interop.Excel.DataLabels.NumberFormat" />と<b>NumberFormatLocal</b>プロパティ</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -843,7 +840,7 @@
           <para>
             <b>xlVertical</b>
           </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -933,7 +930,8 @@
         <summary>1 つのデータ ラベルの内容と書式設定を、系列の他のすべてのデータ ラベルに適用することができます。</summary>
         <remarks>
           <para>として、[フィールド名] フィールドを挿入するがソースのデータ ラベルは、フィールドを移動先のデータ ラベルとの互換性をサポートする場合。たとえば、縦棒グラフのデータ ラベルにパーセント値フィールドを使用して円の系列のデータ ラベルが伝達されると、割合] フィールドにそのなります] フィールドが未解決であることを [パーセンテージ] を表示します</para>。
-          <para><b>注</b>: データ ラベルに現在のプロトタイプは、ゼロ (0) の引数を渡すリセットします。</para><para /></remarks>
+          <para><b>注</b>: データ ラベルに現在のプロトタイプは、ゼロ (0) の引数を渡すリセットします</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadingOrder">
@@ -965,9 +963,8 @@
         <summary>指定したオブジェクトの読み取り順序を設定または返します。 使用できる定数は、次のいずれか: <b>xlRTL</b> (右から左へ)、 <b>xlLTR</b> (左から右)、または<b>xlContext</b>。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>これらの定数のいくつかを選択またはインストールされている言語サポート (たとえば、日本語) によっては使用できないがあります。</para>
-          <para />
-        </remarks>
+          <para>が選択またはインストールされている言語サポート (たとえば、日本語) によっては使用ができないこれらの定数のいくつかがあります</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -1025,9 +1022,8 @@
         <summary>グラフのデータ ラベルに使用する区切り記号を表す<b>オブジェクト</b>を取得または設定します。 値の取得および設定が可能です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>グラフがアクティブになってプログラムからデータ ラベルにアクセスする前にそれ以外の場合、実行時エラーが発生します。</para>
-          <para />
-        </remarks>
+          <para>グラフがアクティブになって前に、プログラムを使用してデータ ラベルにアクセスすることができます; それ以外の場合、実行時エラーが発生します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shadow">
@@ -1092,9 +1088,8 @@
           <b>True</b> の場合、グラフのデータ ラベルのバブル サイズを表示します。 <b>False</b> の場合は表示しません。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>グラフがアクティブになっていないプログラムを使用してデータ ラベルにアクセスするか、実行時エラーが発生します。</para>
-          <para />
-        </remarks>
+          <para>グラフがアクティブになってプログラムを使用してデータ ラベルにアクセスするか、実行時エラーが発生する前にします</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowCategoryName">
@@ -1127,9 +1122,8 @@
           <b>True</b> の場合、グラフのデータ ラベルの分類名を表示します。 <b>False</b> の場合は表示しません。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>グラフがアクティブになっていないプログラムを使用してデータ ラベルにアクセスするか、実行時エラーが発生します。</para>
-          <para />
-        </remarks>
+          <para>グラフがアクティブになってプログラムを使用してデータ ラベルにアクセスするか、実行時エラーが発生する前にします</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowLegendKey">
@@ -1194,9 +1188,8 @@
           <b>True</b> の場合、グラフのデータ ラベルにパーセントの値を表示します。 <b>False</b> の場合は表示しません。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>グラフがアクティブになっていないプログラムを使用してデータ ラベルにアクセスするか、実行時エラーが発生します。</para>
-          <para />
-        </remarks>
+          <para>グラフがアクティブになってプログラムを使用してデータ ラベルにアクセスするか、実行時エラーが発生する前にします</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowRange">
@@ -1229,9 +1222,8 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Range</b>オブジェクトでは、各データ ラベルは、範囲内のセルのいずれかに一致するように、データ ラベルの範囲にセルの任意の範囲をマップします。</para>
-          <para />
-        </remarks>
+            <b>Range</b>オブジェクトは、各データ ラベルは、範囲内のセルのいずれかに一致するよう、データ ラベルの範囲にセルの任意の範囲をマップします</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowSeriesName">
@@ -1264,9 +1256,8 @@
           <b>ブール値</b>をグラフのデータ ラベルの系列名表示の動作を示すを設定または返します。 <b>True</b>を系列名を表示します。 <b>False</b>を非表示にします。 値の取得および設定が可能です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>グラフがアクティブになっていないプログラムを使用してデータ ラベルにアクセスするか、実行時エラーが発生します。</para>
-          <para />
-        </remarks>
+          <para>グラフがアクティブになってプログラムを使用してデータ ラベルにアクセスするか、実行時エラーが発生する前にします</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowValue">
@@ -1299,9 +1290,8 @@
           <b>ブール値</b>を指定したグラフのデータ ラベル値の表示動作に対応する設定または返します。 <b>True を指定</b>すると、値が表示されます。 <b>False</b>を非表示にします。 値の取得および設定が可能です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>指定されたグラフがアクティブになっていないプログラムを使用してデータ ラベルにアクセスするか、実行時エラーが発生します。</para>
-          <para />
-        </remarks>
+          <para>指定されたグラフがアクティブになってプログラムを使用してデータ ラベルにアクセスするか、実行時エラーが発生する前にします</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -1388,7 +1378,7 @@
           <para>
             <b>表示する、xlTop</b>
           </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>

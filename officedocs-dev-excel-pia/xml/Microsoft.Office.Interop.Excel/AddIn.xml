@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20584148" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AddIn" />
@@ -38,7 +38,7 @@
       <para>インデックス番号は、[アドイン] ダイアログ ボックスでアドインの使用可能なボックス内のアドインの位置を表します</para>。
       <para>、<see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" />メソッドは使用可能なアドインの一覧にアドインを追加しますが、アドインをインストールしない、<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" />を<b>True</b>にアドインをインストールするアドインのプロパティです。使用できるアドインの一覧にアドインが表示されないをインストールするには、最初に<b>Add</b>メソッドを使用し、 <b>Installed</b>プロパティを設定し、必要があります。これを行う 1 つのステップで</para><para>を使用して<b>ブック</b>(<paramref name="index" />)、 <paramref name="index" /> 、アドインのファイル名 (タイトルではなく) 読み込まれているアドインに対応するブックへの参照を取得するには。読み込まれているアドインは、通常に表示されるため、ファイル名を使用する必要があります、<see cref="T:Microsoft.Office.Interop.Excel.Workbooks" />コレクションです</para>。
       <para>の場合は、<b>インストールされている</b>プロパティを返します<b>True</b>、ですが、アドイン内の関数への呼び出しは失敗するが、アドインが実際に読み込むことができません。これ<b>Addin</b>オブジェクトの存在を表しているためと、アドインの状態がインストールされているが、アドイン ブックの実際の内容を表していません。インストールされているアドインが読み込まれることは、アドイン ブックを開く必要があります</para>。
-      <para /></remarks>
+      <para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -188,7 +188,7 @@
           <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
           <para>
             <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FullName">
@@ -217,9 +217,8 @@
         <summary>文字列として、ディスク上のパスを含む、オブジェクトの名前を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、 <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> 、現在のファイル システム区切り記号の後に、プロパティの後に、<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" />プロパティ。</para>
-          <para />
-        </remarks>
+          <para>このプロパティは、 <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> 、現在のファイル システム区切り記号の後に、プロパティの後に、<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" />プロパティ</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Installed">
@@ -252,10 +251,8 @@
           <b>True</b>場合は、アドインがインストールされています。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>
-            <b>True</b>にこのプロパティを設定では、アドインをインストールし、Auto_Add 関数を呼び出します。このプロパティを<b>False</b>に設定では、アドインを削除し、Auto_Remove 関数を呼び出します。</para>
-          <para />
-        </remarks>
+          <para>アドインをインストールし、Auto_Add 関数を呼び出すこのプロパティを<b>True</b>に設定します。アドインを削除し、Auto_Remove 関数を呼び出してこのプロパティを<b>False</b>に設定します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsOpen">
@@ -286,9 +283,8 @@
           <b>true の</b>場合、アドインが現在開いています。それ以外の場合、 <b>false を指定</b>します。</value>
         <remarks>
           <para>
-            <b>ブール値</b>読み取り専用です。</para>
-          <para />
-        </remarks>
+            <b>ブール</b>読み取り専用</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Keywords">
