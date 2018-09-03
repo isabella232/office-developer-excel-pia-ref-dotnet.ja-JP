@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20578100" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ShapeNodes : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
@@ -39,7 +39,7 @@
       <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Nodes" /><b>ShapeNodes</b>コレクションを取得するプロパティ</para>。
       <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />新しいノードを作成し、 <b>ShapeNodes</b>コレクションに追加します</para>。
       <para><b>ノード</b>の使用 (<paramref name="index" />)、<paramref name="index" />は、ノードのインデックス番号で、単一の<b>ShapeNode</b>オブジェクトを取得する</para>。
-      <para /></remarks>
+      <para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -68,7 +68,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 値の取得のみ可能です。</summary>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,9 +131,8 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para />
-        </remarks>
+            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -330,8 +329,8 @@
         <param name="EditingType">必要な<see cref="T:Microsoft.Office.Core.MsoEditingType" />。 頂点の編集プロパティを指定します。</param>
         <summary>指定された節点の編集タイプを設定します。</summary>
         <remarks>
-          <para>ノードが曲線セグメントのコントロール ポイントの場合は、このメソッドは設定編集の種類のノードの横にある 2 つのセグメントを結合すること。、編集のタイプによってはこの方法に影響を与えます隣接する節点の位置に注意してください。</para>
-          <para />
+          <para>ノードが曲線セグメントのコントロール ポイントの場合、このメソッドは設定編集の種類のノードの隣接する 2 つのセグメントを結合します。、編集のタイプによってはこの方法に影響を与えます隣接する節点の位置をメモします。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -368,9 +367,8 @@
           <b>1 つ</b>が必要です。 文書の左上隅を基準にして、新しい節点の位置をポイント単位で指定します。</param>
         <summary>指定したノードの場所を設定します。</summary>
         <remarks>
-          <para>、ノードの編集タイプによってはこの方法に影響を与えます隣接する節点の位置に注意してください。</para>
-          <para />
-        </remarks>
+          <para>、ノードの編集タイプによってはこの方法に影響を与えます隣接する節点の位置をメモします</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSegmentType">
@@ -402,9 +400,8 @@
         <param name="SegmentType">必要な<see cref="T:Microsoft.Office.Core.MsoSegmentType" />。 セグメントが直線か曲線かを指定します。 <b>MsoSegmentType</b>定数のいずれか:<b>MsoSegmentType</b><b>msoSegmentCurve</b><b>msoSegmentLine</b></param>
         <summary>指定された節点に続くセグメントの種類を設定します。</summary>
         <remarks>
-          <para>ノードが曲線セグメントのコントロール ポイントの場合は、このメソッドはその曲線のセグメントの種類を設定します。これに影響を与えますノード数の合計によって挿入または削除の隣接する節点に注意してください。</para>
-          <para />
-        </remarks>
+          <para>ノードが曲線セグメントのコントロール ポイントの場合、このメソッドは、その曲線のセグメントの種類を設定します。挿入または隣接する節点を削除するノードの合計数に影響この可能性があります</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
   </Members>

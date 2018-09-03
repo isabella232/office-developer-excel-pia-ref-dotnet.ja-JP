@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20579500" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotCache" />
@@ -35,7 +35,7 @@
         <b>PivotCache</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" />コレクションです</para>。
       <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotCache" /> (各レポートは、1 つだけのキャッシュを持つ) ピボット テーブル レポートの<b>PivotCache</b>オブジェクトを返します</para>。
       <para>使用<b>PivotCaches</b>(<paramref name="index" />)、<paramref name="index" />は、ブックの<b>PivotCaches</b>コレクションから 1 つの<b>PivotCache</b>オブジェクトを取得するのには、ピボット テーブル キャッシュの数です</para>。
-      <para /></remarks>
+      <para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ADOConnection">
@@ -68,7 +68,7 @@
             <b>ADOConnection</b>プロパティは、データ プロバイダーは、ユーザーが Excel が ADO (リレーショナル ソース) または ADOMD (OLAP ソース) で使用しているのと同じセッションのコンテキスト内でコードを記述できるようにする Microsoft Excel の接続を公開します</para>。
           <para><b>ADOConnection</b>プロパティは、使用可能なセッションに対してのみデータ ソースが OLE DB データ ソースにあります。ADO セッションがない場合にクエリが、実行時エラーです</para>。
           <para><b>ADOConnection</b>プロパティは、ADO を使って、ole DB ベースのキャッシュを使用できます。ADO 接続オブジェクトは、キャッシュの基になる OLAP キューブに関する情報を検索するため ADOMD で使用できます</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -129,9 +129,8 @@
           <b>True の</b>ピボット テーブル レポートまたはクエリ テーブルのクエリが非同期 (バック グラウンド) で実行される場合です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>OLAP データ ソースの場合、このプロパティは読み取り専用で、常に<b>False</b>が返されます。</para>
-          <para />
-        </remarks>
+          <para>の OLAP データ ソースの場合、このプロパティは読み取り専用で、常に<b>False</b>が返されます</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandText">
@@ -163,9 +162,8 @@
         <summary>指定したデータ ソースにコマンド文字列を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>OLE DB ソースの場合、<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.CommandType" />プロパティは、 <b>CommandText</b>プロパティの値の型を説明します。</para>
-          <para />
-        </remarks>
+          <para>の OLE DB ソースを<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.CommandType" />プロパティは、 <b>CommandText</b>プロパティの値の型を説明します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandType">
@@ -207,7 +205,7 @@
           <para><b>xlCmdTable</b>。OLE DB データ ソースにアクセスするためのテーブル名が含まれています</para>。
           <para>の値を<b>CommandType</b>プロパティ場合にのみに設定する、 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.QueryType" /><b>xlOLEDBQuery</b>は、クエリ テーブルまたはピボット テーブル キャッシュのプロパティ</para>。
           <para><b>CommandType</b>プロパティの値が<b>xlCmdCube</b>の場合は、クエリ テーブルに関連付けられているピボット テーブル レポートがある場合、この値を変更することはできません</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Connection">
@@ -245,7 +243,7 @@
           <para>オフライン キューブ ファイルを使用して、設定、<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" />プロパティに<b>true を指定</b>し、使用して、 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" /><b>接続</b>プロパティ</para>。
           <para>接続文字列の構文の詳細についてを参照してください、 <see cref="M:Microsoft.Office.Interop.Excel.PivotCaches.Add(Microsoft.Office.Interop.Excel.XlPivotTableSourceType,System.Object)" /><b>PivotCaches</b>コレクションのメソッドです</para>。
           <para>または、代わりに、Microsoft ActiveX データ オブジェクト (ADO) ライブラリを使用して直接データ ソースにアクセスできます可能性があります</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CreatePivotChart">
@@ -295,7 +293,7 @@
           <para>場合は、PivotCache に既に関連付けられているピボット テーブル:</para><item><description>「PivotCache のクローンを作成</description></item>する
           <list type="bullet"><item><description>新しいブックのピボット テーブルに基づいて作成され、クローンとして作成された PivotCache</description></item> 。
             <item><description>スタンドアロンの新しいブックのピボット テーブルへの参照でピボット グラフを作成します</description></item></list>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CreatePivotTable">
@@ -331,9 +329,8 @@
         <summary>に基づいてピボット テーブル レポートを作成、<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />オブジェクトです。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>ピボット テーブル キャッシュに基づいてピボット テーブル レポートを作成する別の方法を参照してください、<see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" />のメソッドの<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />オブジェクトです。</para>
-          <para />
-        </remarks>
+          <para>ピボット テーブル キャッシュに基づいてピボット テーブル レポートを作成する別の方法を参照してください、<see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" />のメソッドの<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />オブジェクトです</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -365,7 +362,7 @@
           <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
           <para>
             <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableRefresh">
@@ -401,7 +398,7 @@
           <para>
             <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.RefreshOnFileOpen" /> 、 <b>EnableRefresh</b>プロパティが<b>False</b>に設定する場合、プロパティは無視されます</para>。
           <para>OLAP データ ソースの場合、このプロパティを<b>False</b>に設定を無効に更新します</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -460,9 +457,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>操作</b>のプロパティは、接続が接続されているかどうかにはチェックされません。このプロパティが<b>True</b>を返す場合でも、プロバイダーにコマンドを送信、可能性がありますエラー接続が有効でなくなった場合</para>。
+            <b>操作</b>プロパティは、接続が接続されているかどうかにはチェックされません。このプロパティが<b>True</b>を返す場合でも、プロバイダーにコマンドを送信、可能性がありますエラー接続が有効でなくなった場合</para>。
           <para>外部キャッシュ ソースの種類であるし、OLE DB データ ソースである必要があります</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LocalConnection">
@@ -498,7 +495,7 @@
           <para><b>LocalConnection</b>プロパティの設定は、データ ソースへの接続をすぐに開始しません。最初を使用する必要があります、<see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" />の接続を行い、データを取得するメソッドです</para>。場合、 
           <para>、 <b>LocalConnection</b>プロパティの値が使用される、<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" />プロパティが<b>True</b>に設定します。<b>UseLocalConnection</b>プロパティが false に設定されている場合、<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" />プロパティは、ローカル キューブ ファイル以外のソースを基にクエリ テーブルの接続文字列を指定します</para>。
           <para>接続文字列の構文の詳細については、のヘルプ トピックを参照してください、 <see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" /> 、<b>ピボット テーブル</b>のコレクションのメソッドです</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MaintainConnection">
@@ -534,7 +531,7 @@
           <para>
             <b>MaintainConnection</b>プロパティのみの場合を設定することができます、 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.QueryType" /> 、クエリ テーブルまたはピボット テーブル キャッシュのプロパティが<b>xlOLEDBQuery</b>に設定します</para>。
           <para>サーバーに対して頻繁にクエリが予想される場合、このプロパティを<b>True</b>に設定する可能性がありますパフォーマンス向上再接続時間が短縮します。開いている接続が終了すると、プロパティを<b>False</b>に設定します</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MakeConnection">
@@ -564,7 +561,7 @@
             <b>MakeConnection</b>メソッドを使用してキャッシュが接続を切断し、ユーザーは接続を再確立しようとしています</para>。
           <para>さまざまなオブジェクトおよびメソッドは、キャッシュが接続されていない場合に、実行時エラーに返すことがあります。このメソッドを使用して他のオブジェクトやメソッドを実行する前に接続を保証します</para>。
           <para>この方法と、実行時エラーの場合、<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.MaintainConnection" />を<b>False</b>に指定されたピボット テーブル キャッシュのプロパティが設定されて、 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceType" /><b>xlExternal</b>に指定されたピボット テーブル キャッシュのプロパティが設定されていない、または、接続されていない場合OLEDB</para> 。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MemoryUsed">
@@ -596,7 +593,7 @@
           <para>
             <b>MemoryUsed</b>プロパティはクエリ実行時に一時的なキャッシュの状態が反映されます</para>。
           <para>場合、<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />のそれに接続されているピボット テーブル レポートで、このプロパティが 0 (ゼロ) を返します</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MissingItemsLimit">
@@ -637,7 +634,7 @@
           <para><b>xlMissingItemsNone</b>ピボット テーブルごとに固有のアイテムが (0) を使用できません</para>。
           <para>このプロパティは、0 ~ 32500 の値を設定できます。0 未満の整数が指定されている場合これは、 <b>xlMissingItemsDefault</b>を指定することに相当します。整数よりも 32,500 を指定することができますが、 <b>xlMissingItemsMax</b>を指定すると同じ効果があります</para>。
           <para><b>MissingItemsLimit</b>プロパティはの非 OLAP ピボット テーブルのみ機能; それ以外の場合、実行時エラーが発生することができます</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OLAP">
@@ -700,7 +697,7 @@
         <remarks>
           <para>キャッシュの最適化を選択し、追加のクエリで結果をピボット テーブル レポートの最初のパフォーマンスが低下します</para>。
           <para>の OLE DB データ ソースでは、このプロパティは読み取り専用で、常に<b>False</b>が返されます</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -768,7 +765,7 @@
           <para><b>xlDAORecordSet</b>。DAO レコード セット クエリに基づくクエリ テーブル専用にします</para>。
           <para><b>xlODBCQuery</b>。ODBC データ ソースに基づいています</para>。
           <para>の接頭辞にデータ ソースを指定する、<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" />プロパティの値です</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RecordCount">
@@ -797,9 +794,8 @@
         <summary>ピボット テーブルのキャッシュまたは指定されたアイテムを含むキャッシュ レコードの数のレコードの数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティはクエリ実行時にキャッシュの一時的な状態を反映します。キャッシュは、クエリの間で変更できます。</para>
-          <para />
-        </remarks>
+          <para>このプロパティはクエリ実行時に一時的なキャッシュの状態が反映されます。クエリのキャッシュを変更できます</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Recordset">
@@ -831,9 +827,8 @@
         <summary>取得または指定されたクエリ テーブルまたはピボット テーブル キャッシュのデータ ソースとして使用する<b>Recordset</b>オブジェクトを設定します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>変更は有効である場合はこのプロパティを使用して、既存のレコード セットを上書きする、ときに、<see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" />メソッドを実行します。</para>
-          <para />
-        </remarks>
+          <para>変更は有効である場合はこのプロパティを使用して、既存のレコード セットを上書きする、ときに、<see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" />メソッドを実行します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -889,7 +884,7 @@
         <remarks>
           <para>キャッシュには、少なくとも 1 つのピボット テーブル レポートをそれに関連付けられている必要があります。</para>
           <para>OLAP データ ソースの場合、このプロパティは各クエリの後に更新します</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshName">
@@ -950,9 +945,8 @@
           <b>True の</b>場合、ピボット テーブルのキャッシュを自動的に更新するたびに、ブックが開かれます。 既定値は <b>False</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ピボット テーブル レポートは自動的に更新されません。使用して、 <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> 、ブックを開いた後にデータを更新する方法です。</para>
-          <para />
-        </remarks>
+          <para>ピボット テーブル レポートは自動的に更新されません。使用して、 <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.Refresh" /> 、ブックを開いた後にデータを更新する方法です</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshPeriod">
@@ -986,7 +980,7 @@
         <remarks>
           <para>期間を 0 に設定 (ゼロ) を無効に自動タイムアウトになりましたが更新され、このプロパティを<b>Null</b>に設定するのと同じです</para>。
           <para><b>RefreshPeriod</b>プロパティの値が 0 から 32,767 までの整数にすることができます</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ResetTimer">
@@ -1050,7 +1044,7 @@
             <b>xlAlways</b>キャッシュは、外部ソースの情報を常に使用 (で定義されている、<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceConnectionFile" />または<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.SourceDataFile" />プロパティ) に再接続します</para>。
           <para><b>xlAsRequired</b>キャッシュを使用して外部ソースの情報を使用して再接続するのには、<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" />プロパティ</para>。
           <para><b>xlNever</b>キャッシュ使用しない情報のソースに再接続します</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveAsODC">
@@ -1115,9 +1109,8 @@
           <b>True</b>指定されたクエリを使用して、ODBC 接続文字列のパスワード情報が保存されている場合です。 <b>False</b>場合は、パスワードを削除します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、ODBC クエリにのみ影響します。</para>
-          <para />
-        </remarks>
+          <para>このプロパティは ODBC クエリにのみ影響します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceConnectionFile">
@@ -1192,7 +1185,7 @@
               <description>。各行は、参照と、関連付けられたページ フィールドのアイテムで構成されています</description></item>。
             <item><term>ほかのピボット テーブル レポート</term><description>上記の 3 種類の情報の 1 つです</description></item></list>。
           <para>このプロパティは OLE DB データ ソースで利用できません</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceDataFile">
@@ -1221,9 +1214,8 @@
         <summary>ピボット テーブルのキャッシュのソース データ ファイルを示す<b>文字列</b>を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ファイル ・ ベースのデータ ソース (Access など) は、 <b>SourceDataFile</b>プロパティには、元のデータ ファイルへの完全修飾パスが含まれています。サーバー ベースのデータ ソース (たとえば、SQL Server) は<b>Null</b>です。場合、 <b>SourceDataFile</b>プロパティは<b>Null</b>に設定します<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" />プロパティをプログラムで変更します。</para>
-          <para />
-        </remarks>
+          <para>にはファイル ・ ベースのデータ ソース (Access など)、 <b>SourceDataFile</b>プロパティの元のデータ ファイルへの完全修飾パスが含まれています。サーバー ベースのデータ ソース (たとえば、SQL Server) は<b>Null</b>です。場合、 <b>SourceDataFile</b>プロパティは<b>Null</b>に設定します<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" />プロパティをプログラムで変更します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceType">
@@ -1270,7 +1262,7 @@
           <para>
             <b>xlScenario</b>
           </para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1345,7 +1337,7 @@
           <para>既定値は、 <b>false を指定</b>します。の<b>PivotCache</b>に対して<b>true を指定</b>するプロパティが設定されている場合のいずれかの更新<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /><b>PivotCache</b>アップグレードする<b>PivotCache</b>とすべての接続されている<b>ピボット テーブル</b>をバージョン 2007 に接続されている (バージョン = 3) の一部として更新します</para>。
           <para>の<b>PivotCache</b>のプロパティが<b>False</b>に設定する場合は、を<b>返すメソッド</b>では、バージョンも、接続されている<b>のピボット テーブルのバージョン<b>PivotCache</b>は変更されませんが接続されている<b>ピボット テーブル</b>を更新します。</b>.すべて更新前とに、同じバージョンのままです</para>。
           <para>で互換性モードがこのプロパティ設定を<b>True</b>にすべての場合は、short_Excel2007 ファイル形式に保存<see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" />ブックにします</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UseLocalConnection">
@@ -1403,14 +1395,13 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotTableVersionList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel のバージョンを取得、<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />が作成されました。 値の取得のみ可能です。</summary>
+        <summary>Microsoft Excel のバージョンを取得、<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />が作成されました。 読み取り専用。</summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" />
         </value>
         <remarks>
-          <para>このプロパティのバージョンを取得する、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。既定の設定と動作は、古い<b>ピボット テーブル</b>オブジェクト モデル コードを<b>ピボット テーブル</b>のバージョンのコードが記述されている Excel のバージョンに対応している場合、1st_Excel12 と同じ動作で実行できるようにするためのバージョンによって異なります。</para>
-          <para />
-        </remarks>
+          <para>のバージョンをこのプロパティが返されます、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。既定の設定と動作は、古い<b>ピボット テーブル</b>オブジェクト モデル コードを<b>ピボット テーブル</b>のバージョンのコードが記述されている Excel のバージョンに対応している場合、1st_Excel12 と同じ動作で実行できるようにするためのバージョンによって異なります</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkbookConnection">
@@ -1436,13 +1427,12 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のブックとの間の接続を確立し、<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />オブジェクトです。 値の取得のみ可能です。</summary>
+        <summary>現在のブックとの間の接続を確立し、<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />オブジェクトです。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>WorkbookConnection</b>オブジェクトは、外部データ ソースへの接続を表します。</para>
-          <para />
-        </remarks>
+            <b>WorkbookConnection</b>オブジェクトは、外部データ ソースへの接続を表します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
   </Members>

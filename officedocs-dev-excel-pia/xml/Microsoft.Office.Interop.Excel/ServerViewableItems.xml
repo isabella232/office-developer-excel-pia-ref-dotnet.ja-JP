@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20579451" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ServerViewableItems : System.Collections.IEnumerable" />
@@ -38,7 +38,7 @@
       <para>内のオブジェクトへの参照のコレクションは、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。サーバーでは、このコレクション内のオブジェクトのみが表示されます。 既定では、(ワークシートをすべて含む) ブック全体が表示されます。 </para>1
       <para><see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />ごとにオブジェクトが存在できます<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />。 サーバー上で表示可能とマークされているオブジェクトの名前が一意であることは保証されていませんので、このコレクションを名前によってインデックスを付けることはありません</para>。
       <para>Excel では、ユーザー インターフェイスでは、Excel Services のオプション] ダイアログ ボックスで、サーバー上で表示可能とマークされているオブジェクトのコレクションを表示することができます</para>。
-      <para /></remarks>
+      <para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -105,10 +105,7 @@
         <returns>
           <b>オブジェクト</b>
         </returns>
-        <remarks>
-          <para>シートと名前付きアイテムの両方の組み合わせを追加しようとするかどうか、<see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />コレクション、エラーが返されます。 <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />コレクションへの参照だけのシート、またはへの参照だけが、名前付きアイテムは、同じ呼び出しで両方を含めることができます。</para>
-          <para />
-        </remarks>
+        <remarks>シートと名前付きアイテムの両方の組み合わせを追加しようとする場合、 <para>、<see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />コレクション、エラーが返されます。 <see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />コレクションへの参照だけのシート、またはへの参照だけが、名前付きアイテムは、同じ呼び出しで両方を含めることができます。 </para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -134,14 +131,13 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel._Application" />オブジェクトです。 値の取得のみ可能です。</summary>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel._Application" />オブジェクトです。 読み取り専用。</summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel._Application" />
         </value>
         <remarks>
-          <para>オブジェクト修飾子を指定しない場合に使用する場合、このプロパティは、Microsoft Office Excel アプリケーションを返します。オブジェクト修飾子を使用する場合、このプロパティは、指定したオブジェクトの作成元を表す<b>Application</b>オブジェクトを返します。</para>
-          <para />
-        </remarks>
+          <para>オブジェクト修飾子なしで使用するときは、このプロパティは、Microsoft Office Excel アプリケーションを返します。オブジェクト修飾子を使用する場合、このプロパティは指定したオブジェクトの作成元を表す<b>Application</b>オブジェクトを返します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -197,14 +193,13 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>の整数</b>を返します。 値の取得のみ可能です。</summary>
+        <summary>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>の整数</b>を返します。 読み取り専用。</summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para />
-        </remarks>
+          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。 <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -234,9 +229,8 @@
           <b>整数</b>を削除するオブジェクトのインデックスが必要です。</param>
         <summary>内のオブジェクトへの参照を削除、<see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />のコレクション、 <see cref="T:Microsoft.Office.Interop.Excel._Workbook" />。</summary>
         <remarks>
-          <para>特定のオブジェクトを Excel Services で表示可能にしたくない場合は、そのオブジェクトを削除するのにはこのメソッドを使用します。</para>
-          <para />
-        </remarks>
+          <para>特定のオブジェクトを Excel Services で表示可能にしたくない場合は、そのオブジェクトを削除するのにはこのメソッドを使用します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteAll">
@@ -264,7 +258,7 @@
         <remarks>
           <para>かどうかしない内のオブジェクトのいずれか、<see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />に、サーバー上で表示できるコレクションでは、このメソッドを使用して、それらを一度にすべて削除します</para>。
           <para><b>注</b>: 場合は、<see cref="T:Microsoft.Office.Interop.Excel.ServerViewableItems" />には、少なくとも 1 つの<b>オブジェクト</b>がコレクションに含まれていない、表示するときに [できませんを表示指定したという名前の範囲またはアイテムのメッセージが表示されます、 <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> Excel Services で</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -353,7 +347,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親を返します。 値の取得のみ可能です。</summary>
+        <summary>指定したオブジェクトの親を返します。 読み取り専用。</summary>
         <value>
           <b>オブジェクト</b>
         </value>

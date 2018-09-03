@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20574726" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotCell" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.Range.PivotCell" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.Range" /><b>PivotCell</b>オブジェクトを取得するコレクションです</para>。
       <para><b>PivotCell</b>オブジェクトを取得したらを使って、 <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.PivotCellType" /> 、特定の範囲の島のセルの種類を決定するプロパティ</para><para>を使用することができます、<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" />または<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" />を確認するに、<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />を選択した番号を表す列または行の軸上のアイテムに対応するコレクションです</para>。
-      <para /></remarks>
+      <para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AllocateChange">
@@ -61,7 +61,7 @@
         <remarks>
           <para>このメソッドはこの特定のセルの変更だけを追加するのには、UPDATE CUBE ステートメントを実行するも、以前に適用された変更が含まれます。UPDATE CUBE ステートメントを実行後、ピボット テーブルの更新を実行すると、トランザクションをロールバック ステートメントを実行し、します</para>。
           <para>を実行している、<see cref="M:Microsoft.Office.Interop.Excel.PivotCell.AllocateChange" />非 OLAP データ ソースに基づくピボット テーブル レポート内のセルのメソッドには、実行時エラーが生成されます</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -149,7 +149,7 @@
             <item><term>その値が適用された後に、以前に編集された値に値を変更を元に戻す操作を実行します</term>。
               <description>に<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />のすべてのセルに数式を編集します</description>。
               <description>に<see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />のすべてのセルに数式を編集します</description></item></list>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ColumnItems">
@@ -209,7 +209,7 @@
           <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
           <para>
             <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomSubtotalFunction">
@@ -278,7 +278,7 @@
             <b>xlVarP</b>
           </para>
           <para>、 <b>CustomSubtotalFunction</b>プロパティはエラーを返す場合は、 <b>PivotCell</b>オブジェクトの種類は、ユーザー設定の集計ではありません。このプロパティは、非 olap の集計元データにのみ適用されます</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataField">
@@ -308,9 +308,8 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>PivotCell</b>オブジェクトが許可されている種類の 1 つでない場合、このプロパティはエラーを返しますが: <b>XlPivotCellTypeValue</b>、 <b>XlPivotCellTypeDataField</b>、 <b>XlPivotCellTypeSubtotal</b>、または<b>XlPivotCellTypeGrandTotal</b>です。</para>
-          <para />
-        </remarks>
+            <b>PivotCell</b>オブジェクトが許可されている種類の 1 つでない場合、このプロパティはエラーを返しますが: <b>XlPivotCellTypeValue</b>、 <b>XlPivotCellTypeDataField</b>、 <b>XlPivotCellTypeSubtotal</b>、または<b>XlPivotCellTypeGrandTotal</b>です</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataSourceValue">
@@ -342,7 +341,7 @@
           <para>読み取り専用</para>。ピボット テーブル レポートの [値] 領域で、セルが編集されるたびに、 
           <para>、<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />プロパティが最後に取得されたデータ ソースの編集が行われる前に値を保持します。ピボット テーブル レポートの値のセルが編集されていない、または、対象のデータ ソースの値が取得されていない明示的に、このプロパティは null 参照 (Visual Basic では Nothing) を返します。ピボット テーブル レポートで OLAP データ ソースの値と、 <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> 、ユーザーが行ったすべての書き戻し操作の値が含まれていないことを確認する別の接続からプロパティを取得します</para>。
           <para>の読み取り、<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" />は、ピボット テーブル レポートの値領域の外側のセルのプロパティには、実行時エラーが生成されます</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DiscardChange">
@@ -368,9 +367,8 @@
       <Docs>
         <summary>ピボットテーブル レポート内の指定したセルの変更を破棄します。</summary>
         <remarks>
-          <para>ピボット テーブル内のセルが、OLAP データ ソースを基に、<see cref="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" />メソッドは、値または指定したセルに入力された数式を削除し、データ ソースから最新の値を取得するためにピボット テーブルの更新が実行されます。データ ソースの値は、指定したセルには、このメソッドによって null 参照 (Visual Basic では Nothing) に設定されます。メソッドは、UPDATE CUBE ステートメントは、データ ソース用に収録できなくするため、Excel の変更] ボックスの一覧からこのセルに加えられたすべての変更も削除されます。このメソッドは、トランザクションで行われたその他の変更はすべてのセッション状態も再作成されます。これには、トランザクションをロールバック ステートメントを実行して、指定したセル以外のすべての変更で、UPDATE CUBE ステートメントを実行するが含まれます。非 OLAP データ ソースに基づくピボット テーブルのセルでは、このメソッドは単に編集されたセルをクリアします。</para>
-          <para />
-        </remarks>
+          <para>、OLAP データ ソースに基づいて、ピボット テーブル内のセル、<see cref="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" />メソッドは、値または指定したセルに入力された数式を削除し、データ ソースから最新の値を取得するためにピボット テーブルの更新が実行されます。データ ソースの値は、指定したセルには、このメソッドによって null 参照 (Visual Basic では Nothing) に設定されます。メソッドは、UPDATE CUBE ステートメントは、データ ソース用に収録できなくするため、Excel の変更] ボックスの一覧からこのセルに加えられたすべての変更も削除されます。このメソッドは、トランザクションで行われたその他の変更はすべてのセッション状態も再作成されます。これには、トランザクションをロールバック ステートメントを実行して、指定したセル以外のすべての変更で、UPDATE CUBE ステートメントを実行するが含まれます。このメソッドが単に編集されたセルをクリアして、ピボット テーブル内のセルは、OLAP 以外のデータ ソースに基づいてのです</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Dummy18">
@@ -432,7 +430,7 @@
         <remarks>
           <para>読み取り専用</para>。
           <para>、組のサイズが返される、<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.MDX" />プロパティには、レポート フィルターの座標と同様に行と列の座標が含まれます。内外にピボット テーブル、ピボット テーブルの値の範囲の外のセルには、このプロパティにアクセスするに、実行時エラーが生成されます。ピボット テーブルのレポート フィルター フィールドで複数の項目の選択と、このプロパティにアクセスしてもエラーが生成される実行時</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -504,7 +502,7 @@
           <para><b>xlPivotCellPivotItem</b> A のセルは、小計、総計合計、小計、または空白行ではない行または列領域にします</para>。
           <para><b>xlPivotCellSubtotal</b> A のセルは、小計行または列領域にします</para>。
           <para><b>xlPivotCellValue</b> (空白の行) を除くデータ領域の任意のセルします</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotColumnLine">
@@ -530,7 +528,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotLine</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> 、特定の<b>PivotCell</b>オブジェクトの列にします。 値の取得のみ可能です。</summary>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> 、特定の<b>PivotCell</b>オブジェクトの列にします。 読み取り専用。</summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />
         </value>
@@ -538,7 +536,7 @@
           <para>行上の<b>PivotCell</b>の場合は、 <b>PivotColumnLine</b>プロパティは、実行時エラーを返します</para>。
           <para>列上の<b>PivotCell</b>の場合は、 <b>PivotColumnLine</b>プロパティは列の<b>された</b>オブジェクトを返します</para>。
           <para><b>PivotCell</b>がデータ エリア内にある場合は、 <b>PivotColumnLine</b>プロパティは、対応する列<b>された</b>オブジェクトを返します</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotField">
@@ -628,7 +626,7 @@
           <para>行上の<b>PivotCell</b>の場合は、 <b>PivotRowLine</b>は行の<b>された</b>オブジェクトを返します</para>。
           <para>列上の<b>PivotCell</b>の場合は、 <b>PivotRowLine</b>は、実行時エラーを返します</para>。
           <para><b>PivotCell</b>がデータ エリア内にある場合は、 <b>PivotRowLine</b>は<b>された</b>オブジェクトを対応する行を返します</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotTable">
@@ -738,12 +736,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Actions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>OLAP の定義のアクションで実行できるので構成されているアクションのコレクションを表します。 アクションは、ワークシート レベルで既存のピボット テーブルに固有です。 値の取得のみ可能です。</summary>
+        <summary>OLAP の定義のアクションで実行できるので構成されているアクションのコレクションを表します。 アクションは、ワークシート レベルで既存のピボット テーブルに固有です。 読み取り専用</summary>
         <value>To be added.</value>
         <remarks>
-          <para>サーバー アクションは、OLAP キューブ管理者がサーバーを使用するキューブ メンバーまたはメジャーをパラメーターとしてクエリにキューブの詳細を取得するに定義できるオプション機能です。</para>
-          <para />
-        </remarks>
+          <para>サーバー アクションは、オプションの機能を使用するキューブ メンバーまたはメジャーをパラメーターとしてクエリに、キューブの詳細を取得するのにはサーバー上で OLAP キューブ管理者が定義できます</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20575146" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SlicerItem" />
@@ -30,10 +30,8 @@
   </Attributes>
   <Docs>
     <summary>スライサー内のアイテムを表します。</summary>
-    <remarks>
-      <para>アクセスを<see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" />、スライサーの使用で現在選択されているボタンを表すオブジェクト、<see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />オブジェクト。アクセスを<see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" />、スライサーを使用して、ピボット テーブルをフィルター処理のすべての項目を表すコレクション、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />オブジェクトに関連付けられている、<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />オブジェクトです。アクセスを<see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" />、スライサーを使用して、OLAP 階層のレベルのフィルターでアイテムを表すコレクション、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> 、階層のレベルを表すオブジェクト。</para>
-      <para />
-    </remarks>
+    <remarks>アクセスするための<para>、<see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" />でスライサーを使用して現在選択されているボタンを表すオブジェクト、<see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />オブジェクトです。アクセスを<see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" />、スライサーを使用して、ピボット テーブルをフィルター処理のすべての項目を表すコレクション、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />オブジェクトに関連付けられている、<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />オブジェクトです。アクセスを<see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" />、スライサーを使用して、OLAP 階層のレベルのフィルターでアイテムを表すコレクション、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> 、階層のレベルを表すオブジェクト</para>。
+      <para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,9 +61,8 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.Application" />オブジェクトです。</value>
         <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+          <para>読み取り専用</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Caption">
@@ -94,9 +91,8 @@
         <summary>スライサーの項目のラベル テキストを取得します。</summary>
         <value>スライサーの項目のラベル テキスト。</value>
         <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+          <para>読み取り専用</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -125,9 +121,8 @@
         <summary>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>を取得します。</summary>
         <value>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>。</value>
         <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当<see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para />
-        </remarks>
+          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。<see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Excel では、クリエーター コード</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasData">
@@ -160,7 +155,7 @@
           <para>読み取り専用</para>。
           <para><b>true の</b>場合は、スライサーの項目には、手動フィルターの現在の状態と一致するデータが含まれています; それ以外の場合は<b>false を指定</b>します。</para> 。
           <para>クロス フィルターがオンにし、それ以外の場合、実行時エラーが生成される場合にのみ、このプロパティがサポートされます。値をチェックするかどうかはクロス フィルターをオンにスライサーをピボット テーブル レポートに関連付けられているを確認する、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />の指定したプロパティ<see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" />オブジェクトの親<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />オブジェクトです。値をチェックするかどうかはクロス フィルターをオンに、OLAP データ ソースに関連付けられているスライサーを調べるには、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />フィルター処理に使用する OLAP 階層に対応するオブジェクトです</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -189,9 +184,8 @@
         <summary>スライサーの項目の名前を取得します。</summary>
         <value>スライサーの項目の名前です。</value>
         <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+          <para>読み取り専用</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -220,9 +214,8 @@
         <summary>親を取得します<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />スライサー項目のオブジェクトです。</summary>
         <value>親<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />スライサー項目のオブジェクトです。</value>
         <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+          <para>読み取り専用</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -257,7 +250,8 @@
         <remarks>
           <para>読み取り/書き込み</para>。
           <para>の
-            <b>場合は true</b>スライサー項目が選択されている場合; それ以外の場合は<b>false を指定</b>します。</para><para /></remarks>
+            <b>場合は true</b>スライサー項目が選択されている場合; それ以外の場合は<b>false を指定</b>します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceName">
@@ -286,9 +280,8 @@
         <summary>スライサー アイテムのソース名を取得します。</summary>
         <value>スライサーの項目のソースの名前です。</value>
         <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+          <para>読み取り専用</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceNameStandard">
@@ -319,7 +312,7 @@
         <remarks>
           <para>読み取り専用</para>。
           <para>スライサー項目がローカライズされたバージョンを持つ場合、このプロパティを使用および<see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.SourceNameStandard" />プロパティの値と異なる場合、<see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.SourceName" />プロパティ値をこのような日付の書式設定と同様です</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -348,9 +341,8 @@
         <summary>スライサーの項目の値を取得します。</summary>
         <value>スライサーの項目の値です。</value>
         <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+          <para>読み取り専用</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
   </Members>

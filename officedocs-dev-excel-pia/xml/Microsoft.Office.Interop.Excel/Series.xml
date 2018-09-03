@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20574831" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Series" />
@@ -93,7 +93,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 値の取得のみ可能です。</summary>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -300,10 +300,8 @@
         <summary>指定されたグラフ種類グループやデータ系列のグループを返します。 読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" />。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>
-            <b>XlPrimary</b>だけは、3-D グラフの場合、有効です。</para>
-          <para />
-        </remarks>
+          <para>3-D グラフでは、 <b>xlPrimary</b>だけが有効です</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BarShape">
@@ -396,10 +394,8 @@
       <Docs>
         <summary>取得またはバブル チャートのサイズ データを含むワークシートのセルを参照する文字列を設定します。 バブル チャートにのみ適用されます。 読み取り/書き込みの<b>オブジェクト</b>です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>セル参照を取得する場合は、A1 形式でセルを示す文字列が返されます。バブル チャートのサイズ データを設定するには、R1 スタイルの表記を使用する必要があります。</para>
-          <para />
-        </remarks>
+        <remarks>セル参照を取得する場合は、<para>を A1 形式でセルを示す文字列を返します。バブル チャートのサイズ データを設定するには、R1 形式の表記法を使用する必要があります</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartType">
@@ -431,9 +427,8 @@
         <summary>グラフの種類を設定または返します。 読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Excel.XlChartType" />。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>グラフの種類によっては、ピボット グラフ レポートで使用できません。</para>
-          <para />
-        </remarks>
+          <para>いくつかの種類のグラフはピボット グラフ レポートで使用されます</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearFormats">
@@ -515,9 +510,8 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para />
-        </remarks>
+            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabels">
@@ -547,7 +541,7 @@
         <returns>To be added.</returns>
         <remarks>
           <para>系列にデータ ラベルを有効にする<b>値を表示する</b>オプションがある場合、返されるコレクションは、ポイントごとに 1 つのラベルを含めることができます。データ ラベルが、オンまたはオフの系列の個々 のポイントの</para>。
-          <para>のみ 1 つのラベル、データ系列の面のラベルであるが、返されるコレクションに含まれている面グラフのデータ系列には、<b>ラベルの表示</b>オプションをオンにデータ ラベルの場合は、.</para><para /></remarks>
+          <para>のみ 1 つのラベル、データ系列の面のラベルであるが、返されるコレクションに含まれている面グラフのデータ系列には、<b>ラベルの表示</b>オプションをオンにデータ ラベルの場合は、.</para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -575,9 +569,8 @@
         <returns>To be added.</returns>
         <remarks>
           <para>
-            <b>ポイント</b>または<b>返すプロパティ</b>のオブジェクトを削除すると、データ系列全体が削除されます。</para>
-          <para />
-        </remarks>
+            <b>ポイント</b>または<b>返すプロパティ</b>オブジェクトを削除するデータ系列全体を削除します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorBar">
@@ -639,7 +632,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ErrorBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.ErrorBars" />のデータ系列の誤差範囲を表すオブジェクト。 値の取得のみ可能です。</summary>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.ErrorBars" />のデータ系列の誤差範囲を表すオブジェクト。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -701,7 +694,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> 、指定したグラフまたは図形のプロパティを格納しているオブジェクト。 値の取得のみ可能です。</summary>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> 、指定したグラフまたは図形のプロパティを格納しているオブジェクト。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -729,7 +722,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />オブジェクトです。 値の取得のみ可能です。</summary>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />オブジェクトです。 読み取り専用。</summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
         </value>
@@ -770,7 +763,7 @@
           <para>値またはセルの数式を日付に設定する場合、Microsoft Excel はそのセルの書式が既に日付または時刻の表示形式のいずれかどうかを確認します。Microsoft Excel 形式に変更、既定の日付の形式です</para>。
           <para>の範囲が 1 つまたは 2 次元範囲の場合、同じ次元の Visual Basic の配列数式を設定できます。同様に、Visual Basic の配列数式を入力します</para>。
           <para>複数のセル範囲の入力、数式のセル範囲のすべてのセルの数式を設定します</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaLocal">
@@ -805,7 +798,7 @@
           <para>セルに定数が含まれている場合、このプロパティはその定数を返します。セルが空の場合は、プロパティは空の文字列を返します。セルに数式が含まれている場合は、数式を文字列として返しますでの表示と、数式バーの (等号 (=) を含む) に同じ形式で</para>。
           <para>値またはセルの数式を日付に設定する場合、Microsoft Excel はそのセルの書式が既に日付または時刻の表示形式のいずれかどうかを確認します。、数値の表示形式は変更されません、既定の日付の形式にします。</para><para>の範囲が 1 つまたは 2 次元範囲の場合、同じ次元の Visual Basic の配列数式を設定できます。同様に、Visual Basic の配列数式を入力します</para>。
           <para>、数式のセル範囲のすべてのセルを格納する複数のセル範囲の数式を設定します</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaR1C1">
@@ -840,7 +833,7 @@
           <para>セルに定数が含まれている場合、このプロパティは、定数を返します。セルが空の場合は、プロパティは空の文字列を返します。セルに数式が含まれている場合は、数式を文字列として返しますでの表示と、数式バーの (等号 (=) を含む) に同じ形式で</para>。
           <para>値またはセルの数式を日付に設定する場合、Microsoft Excel はそのセルの書式が既に日付または時刻の表示形式のいずれかどうかを確認します。、数値の表示形式は変更されません、既定の日付の形式にします。</para><para>の範囲が 1 つまたは 2 次元範囲の場合、同じ次元の Visual Basic の配列数式を設定できます。同様に、Visual Basic の配列数式を入力します</para>。
           <para>、数式のセル範囲のすべてのセルを格納する複数のセル範囲の数式を設定します</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaR1C1Local">
@@ -875,7 +868,7 @@
           <para>セルに定数が含まれている場合、このプロパティはその定数を返します。セルが空の場合は、プロパティは空の文字列を返します。セルに数式が含まれている場合は、数式を文字列として返しますでの表示と、数式バーの (等号 (=) を含む) に同じ形式で</para>。
           <para>値またはセルの数式を日付に設定する場合、Microsoft Excel はそのセルの書式が既に日付または時刻の表示形式のいずれかどうかを確認します。、数値の表示形式は変更されません、既定の日付の形式にします。</para><para>の範囲が 1 つまたは 2 次元範囲の場合、同じ次元の Visual Basic の配列数式を設定できます。同様に、Visual Basic の配列数式を入力します</para>。
           <para>、数式のセル範囲のすべてのセルを格納する複数のセル範囲の数式を設定します</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Has3DEffect">
@@ -1069,7 +1062,7 @@
           <para>読み取り/書き込み</para>。
           <para>、<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" />プロパティを使用すると、特定の数値、16 進数、8 進数、または RGB カラー値として負の値のデータ要素の塗りつぶしの色を設定します。RBG 値として値を設定するには、Visual Basic の<b>RGB</b>関数を使用します。使用するのではなく、<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" />プロパティを使用できます、<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" />プロパティで、現在のカラー パレットから整数値の単純なセットを使用します</para>。
           <para>の<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" />プロパティを影響を与える、<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertIfNegative" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Series" />オブジェクトは、 <b>true</b>にも設定する必要があります</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InvertColorIndex">
@@ -1104,7 +1097,7 @@
           <para>読み取り/書き込み</para>。
           <para>、<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" />プロパティを使用すると、色のインデックス値として 0 から 56 に負の値のデータ要素の塗りつぶしの色を設定します。使用するのではなく、<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" />プロパティを使って、<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColor" />として特定数値、16 進、8 進数、色の設定を有効にするプロパティ、または RGB カラー値です</para>。
           <para>の<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertColorIndex" />プロパティを影響を与える、<see cref="P:Microsoft.Office.Interop.Excel.Series.InvertIfNegative" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Series" />オブジェクトは、 <b>true</b>にも設定する必要があります</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InvertIfNegative">
@@ -1168,9 +1161,8 @@
         <summary>この設定は、データ系列がグラフから除外されたかどうかを制御します。 既定値は <b>False</b> です。 <b>ブール値</b>(C# では<b>bool</b> )読み取り/書き込み。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ユーザーは、系列をフィルターと系列の<b>IsFiltered</b>プロパティが<b>true を指定</b>するスイッチ シリーズは、その親を<b>返すプロパティ</b>を転送します。ただし、その系列は、親の<b>FullSeriesCollection</b>にまだ残っています。一連のバックアップでユーザーのフィルターを<b>返すプロパティ</b>内の元の場所に挿入されます。</para>
-          <para />
-        </remarks>
+          <para>のユーザーが一連のシリーズに<b>は True</b>、 <b>IsFiltered</b>プロパティのスイッチを除外すると、シリーズは、その親を<b>返すプロパティ</b>を転送します。ただし、その系列は、親の<b>FullSeriesCollection</b>にまだ残っています。一連のバックアップでユーザーのフィルターを<b>返すプロパティ</b>内の元の場所に挿入します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LeaderLines">
@@ -1196,7 +1188,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.LeaderLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>データ系列の引き出し線を表すオブジェクトを<b>返すプロパティです</b>が返されます。 値の取得のみ可能です。</summary>
+        <summary>データ系列の引き出し線を表すオブジェクトを<b>返すプロパティです</b>が返されます。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1419,7 +1411,7 @@
           <para>次の表に、値の例の<b>Name</b>プロパティと関連するプロパティの指定、OLAP データ ソースの一意の名前] [ヨーロッパ] です。[東京都] です。[東京]"OLAP 以外のデータ ソースのアイテム名が「東京」とします</para>。
           <list type="table"><item><term><b>キャプション</b></term><description>パリ</description><description>パリ</description></item><item><term><b>名</b></term><description>[ヨーロッパ]. [東京都] です。[東京](読み取り専用)</description><description>パリ</description></item><item><term><b>SourceName</b></term><description>[ヨーロッパ]. [東京都] です。[東京](読み取り専用)</description><description>(SQL プロパティの値が読み取り専用と同じ)</description></item><item><term><b>値</b></term><description>[ヨーロッパ]. [東京都] です。[東京](読み取り専用)</description><description>パリ</description></item></list><para>へのインデックスを指定する場合、<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />コレクションでは、次の表に示すように構文を使用することができます</para>。
           <list type="table"><item><term>式です。返すプロパティ (「[ヨーロッパ]。 [東京都] です。[東京]")</term><description>式です。PivotItems("Paris")</description></item></list><para>を使用する場合、<see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" />プロパティ、コレクションの特定のメンバーを参照するには、次の表に示すようにテキストをインデックス名を使用することができます</para>。
-          <list type="table"><item><term>[ヨーロッパ]. [東京都] です。[東京]</term><description>パリ</description></item></list><para /></remarks>
+          <list type="table"><item><term>[ヨーロッパ]. [東京都] です。[東京]</term><description>パリ</description></item></list><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1605,7 +1597,7 @@
         <remarks>
           <para>読み取り専用</para>。
           <para>このプロパティは Excel の内部で使用し、コードから呼び出すためのものではありません</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PlotOrder">
@@ -1639,7 +1631,7 @@
         <remarks>
           <para>(設定できません全体のグラフをプロットする順序、1 つ以上のグラフの種類がある場合)、グラフ種類グループ内でのみプロットする順序を設定することができます。グラフ種類グループは、同じ種類のグラフの系列のコレクションです</para>。
           <para>1 つの系列のプロット順序を変更すると、他の系列のプロット順では、グラフ種類グループを必要に応じて調整されます</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Points">
@@ -1665,7 +1657,7 @@
       </Parameters>
       <Docs>
         <param name="Index">省略可能な<b>オブジェクト</b>です。 データ要素の名前またはインデックス番号を指定します。</param>
-        <summary>単一ポイントを表すオブジェクトを返します (、<see cref="T:Microsoft.Office.Interop.Excel.Point" />オブジェクト) またはすべてのポイントのコレクション (、<see cref="T:Microsoft.Office.Interop.Excel.Points" />コレクション) シリーズ。 値の取得のみ可能です。</summary>
+        <summary>単一ポイントを表すオブジェクトを返します (、<see cref="T:Microsoft.Office.Interop.Excel.Point" />オブジェクト) またはすべてのポイントのコレクション (、<see cref="T:Microsoft.Office.Interop.Excel.Points" />コレクション) シリーズ。 読み取り専用。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1693,10 +1685,8 @@
       <Docs>
         <summary>オブジェクトを選択します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>セルまたはセル範囲を選択するには、 <b>Select</b>メソッドを使用します。1 つのセルをアクティブ セルにするを使用して、<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" />メソッドです。</para>
-          <para />
-        </remarks>
+        <remarks>セルまたはセル範囲を選択するには、 <b>Select</b>メソッドを使用して<para>。1 つのセルをアクティブ セルにするを使用して、<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" />メソッドです</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shadow">
@@ -1851,9 +1841,8 @@
         <summary>系列のすべての値のコレクションを設定または返します。 これは、範囲、ワークシート、または定数値の配列ですが、両方の組み合わせではありません。 読み取り/書き込みの<b>オブジェクト</b>です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ピボット グラフ レポートの場合は、このプロパティは読み取り専用です。</para>
-          <para />
-        </remarks>
+          <para>のピボット グラフ レポートをこのプロパティは、読み取り専用</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="XValues">
@@ -1885,9 +1874,8 @@
         <summary>グラフの系列の x 値の配列を設定または返します。 ワークシート上の範囲または値の配列を<b>取得および</b>プロパティを設定できますが、両方の組み合わせのことはできません。 読み取り/書き込みの<b>オブジェクト</b>です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ピボット グラフ レポートのこのプロパティは読み取り専用です。</para>
-          <para />
-        </remarks>
+          <para>のピボット グラフ レポートをこのプロパティは、読み取り専用</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
   </Members>

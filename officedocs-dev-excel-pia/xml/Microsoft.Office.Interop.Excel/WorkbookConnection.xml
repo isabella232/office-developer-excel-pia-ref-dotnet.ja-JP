@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20581068" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface WorkbookConnection" />
@@ -36,7 +36,7 @@
         <b>注</b>: 接続の正確な形式は、ODBC 接続、OLEDB 接続の場合は、データを取得するために使用されているメカニズムによって異なり、Web クエリには、さまざまな情報が含まれています</para>。
       <para>A の接続は、別の接続ファイルにも保存されます。 Excel ブックの接続ほとんどにはには、外部接続ファイルへのポインターが含まれます。 接続ファイルは、接続ファイルと明示する拡張子を持つ (*。ODC を * します。Iqy が作成など)ユーザーのローカル コンピューターまたは WSS (データ接続ライブラリ) などの他の既知または信頼された場所またはその他の企業のサーバーにある場合があります。 接続ファイルは、接続を再使用する同じ組織内の複数のユーザーを有効にします。 ネットワーク管理者は、組織全体が 1 つの接続ファイルを変更することでバックエンド データ ソースに接続する方法を変更することです。 接続ファイルは常に必要な外部データ ソースに接続するときです</para>。
       <para>接続名は、それらを使用するブック内の接続を一意に識別する文字列です。    一意ではありませんが、接続の他のプロパティがあります。 Excel の数式では、接続の引数を受け取り、常にことが、直接 (文字列) として、その接続の名前を参照するための十分なまたは直接 (を参照して接続名を表す文字列を含むセル)</para> 。
-      <para /></remarks>
+      <para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -102,9 +102,8 @@
         <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Office Excel アプリケーションを表すオブジェクト。 オブジェクト修飾子を使用する場合、このプロパティは、指定したオブジェクトの作成元を表す <b>Application</b> オブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクトのアプリケーションを取得します。</para>
-          <para />
-        </remarks>
+          <para>そのオブジェクトのアプリケーションを取得するのには OLE オートメーション オブジェクトに対してこのプロパティを使用することができます</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -133,9 +132,8 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para />
-        </remarks>
+          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。 <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataFeedConnection">
@@ -161,7 +159,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DataFeedConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>データとデータ フィードへの接続に必要な機能を含む<b>DataFeedConnection</b>オブジェクトを返します。 値の取得のみ可能です。</summary>
+        <summary>データとデータ フィードへの接続に必要な機能を含む<b>DataFeedConnection</b>オブジェクトを返します。 読み取り専用</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -191,7 +189,7 @@
         <remarks>
           <para>外部データ接続を削除するのにはこのメソッドを使用します。このメソッドは、他のブックへのリンクには適用されません。</para>
           <para>接続を削除するが削除またはその接続を使用していたすべてのオブジェクトを削除します。 接続の削除の場合、ファイル システムから削除する接続ファイルのいずれか、行われません。 再び作業開始のすべての別の接続を使用するこれらのオブジェクトを編集する場合</para>。
-          <para>削除された接続を使用するオブジェクトは、接続を確立できませんでしたかのように動作します。 </para><para /></remarks>
+          <para>削除された接続を使用するオブジェクトは、接続を確立できませんでしたかのように動作します。 </para><para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -225,7 +223,7 @@
         <remarks>
           <para>[接続プロパティ] ダイアログ ボックスでユーザーは、接続や説明の名前を編集する場合があります。 名前と説明は、このダイアログ ボックスでを変更する Excel 接続オブジェクト内でのみ、これらのフィールドを変更します</para>。
           <para>説明の最大サイズは、255 文字です。 説明は 255 文字の制限に合わせて切り捨てられます、ユーザーは、255 文字より長い接続ファイル内の説明を指定する場合です</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InModel">
@@ -255,9 +253,8 @@
           <b>WorkbookConnection</b>オブジェクトがモデルに追加されているかどうかを指定します。 <b>ブール値</b>(C# では<b>bool</b> )読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>レガシ接続の場合は false である必要があります。</para>
-          <para />
-        </remarks>
+          <para>レガシ接続の場合は false である必要があります</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ModelConnection">
@@ -311,7 +308,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTables</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.ModelTables" /> 、特定の接続に関連付けられているオブジェクト。 値の取得のみ可能です。</summary>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.ModelTables" /> 、特定の接続に関連付けられているオブジェクト。 読み取り専用</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -484,7 +481,7 @@
         <remarks>
           <para>場合、<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />プロパティは<b>False</b>に、ダイアログ ボックスは表示されませんが不足している接続情報の例外で<b>Refresh</b>メソッドが失敗した</para>。
           <para>1 つの接続の更新に失敗では、他の接続の更新操作への影響はありません</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshWithRefreshAll">
@@ -541,7 +538,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TextConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.TextConnection" />クエリをテキスト ファイルに情報を格納します。 値の取得のみ可能です。</summary>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.TextConnection" />クエリをテキスト ファイルに情報を格納します。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

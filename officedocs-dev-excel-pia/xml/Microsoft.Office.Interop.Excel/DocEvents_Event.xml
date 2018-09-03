@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20572612" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DocEvents_Event" />
@@ -89,9 +89,10 @@
       <Docs>
         <summary>既定のダブルクリックの操作の前に、ワークシートをダブルクリックしたときに発生します。</summary>
         <remarks>
-          <para>、<see cref="M:Microsoft.Office.Interop.Excel._Application.DoubleClick" />メソッドが原因でこのイベントは発生しません</para>。
+          <para>
+            <see cref="M:Microsoft.Office.Interop.Excel._Application.DoubleClick" />メソッドが原因でこのイベントは発生しません</para>。
           <para>ユーザーは、セルの枠線をダブルクリックすると、このイベントは発生しません</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeforeRightClick">
@@ -111,9 +112,8 @@
       <Docs>
         <summary>既定の右クリックの操作の前に、ワークシートを右クリックしたときに発生します。</summary>
         <remarks>
-          <para>他のワークシート イベントと同様に、ポインターが図形またはコマンド バー (ツールバーまたはメニュー バー) を右クリックした場合、このイベントは発生しません。</para>
-          <para />
-        </remarks>
+          <para>、他のワークシート イベントと同様に、このイベントをポインターが図形またはコマンド バー (ツールバーまたはメニュー バー) の上に右クリックした場合は発生しません</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Calculate">
@@ -152,9 +152,8 @@
       <Docs>
         <summary>ワークシートのセルがユーザーまたは外部リンクにより変更されたときに発生します。</summary>
         <remarks>
-          <para>セルが再計算中に変更すると、このイベントは発生しません。使用して、<see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.Calculate" />シートの再計算をトラップするイベントです。</para>
-          <para />
-        </remarks>
+          <para>のセルが再計算中に変更すると、このイベントは発生しません。使用して、<see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.Calculate" />シートの再計算をトラップするイベントです</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Deactivate">
@@ -212,9 +211,8 @@
       <Docs>
         <summary>(動的および静的) の引き出しギャラリーのアイコンがレンダリングを完了したときに発生します。</summary>
         <remarks>
-          <para>画面の更新を再度有効にする] または [その他の表示」ダイアログ ボックスの例を示すためにこのイベントを使用することができます。</para>
-          <para />
-        </remarks>
+          <para>と画面の更新を再度有効にする] または [その他の表示」ダイアログ ボックスの例を示すためにこのイベントを使用することができます</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotTableAfterValueChange">
@@ -234,10 +232,8 @@
       <Docs>
         <summary>ピボットテーブル内のセルまたはセル範囲を編集または再計算 (数式を含むセルの場合) した後に発生します。</summary>
         <remarks>
-          <para>
-            <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableAfterValueChange" />の編集、またはセルを再計算以外の状況でもイベントは発生しません。たとえば、これは発生せず、ピボット テーブルの更新、並べ替え、フィルター、またはドリル ダウンでは、これらの操作は、セルを移動して、OLAP データ ソースから新しい値が取得される可能性がありますが。</para>
-          <para />
-        </remarks>
+          <para>、<see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableAfterValueChange" />の編集、またはセルを再計算以外の状況でもイベントは発生しません。たとえば、これは発生せず、ピボット テーブルの更新、並べ替え、フィルター、またはドリル ダウンでは、これらの操作は、セルを移動して、OLAP データ ソースから新しい値が取得される可能性がありますが</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotTableBeforeAllocateChanges">
@@ -257,10 +253,8 @@
       <Docs>
         <summary>ピボットテーブルに変更を適用する前に発生します。</summary>
         <remarks>
-          <para>
-            <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeAllocateChanges" /> Excel ピボット テーブルの OLAP データ ソースへのすべての変更を適用するのには UPDATE CUBE ステートメントを実行する前にすぐに、ユーザーがユーザー インターフェイスの変更を適用するを選択した直後にイベントが発生します。</para>
-          <para />
-        </remarks>
+          <para>、 <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeAllocateChanges" /> Excel ピボット テーブルの OLAP データ ソースへのすべての変更を適用するのには UPDATE CUBE ステートメントを実行する前にすぐに、ユーザーがユーザー インターフェイスの変更を適用するを選択した直後にイベントが発生します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotTableBeforeCommitChanges">
@@ -280,10 +274,8 @@
       <Docs>
         <summary>ピボットテーブルの OLAP データ ソースに対して変更を確定する前に発生します。</summary>
         <remarks>
-          <para>
-            <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeAllocateChanges" />と Excel にピボット テーブルの OLAP データ ソースに対して、COMMIT TRANSACTION が実行される直前に、全体のピボット テーブルの変更を保存するのには、ユーザーが選択した後にすぐにイベントが発生します。</para>
-          <para />
-        </remarks>
+          <para>、<see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeAllocateChanges" />と Excel にピボット テーブルの OLAP データ ソースに対して、COMMIT TRANSACTION が実行される直前に、全体のピボット テーブルの変更を保存するのには、ユーザーが選択した後にすぐにイベントが発生します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotTableBeforeDiscardChanges">
@@ -303,9 +295,8 @@
       <Docs>
         <summary>ピボットテーブルに対する変更が破棄される前に発生します。</summary>
         <remarks>
-          <para>トランザクションがアクティブであるとユーザーが変更を破棄するを選択した後、ピボット テーブル内のすべての編集された値を破棄する場合、Excel が ROLLBACK TRANSACTION ステートメントを OLAP データ ソースに対してを実行する直前に発生します。</para>
-          <para />
-        </remarks>
+          <para>トランザクションがアクティブであるとユーザーが変更を破棄するを選択した後、ピボット テーブル内のすべての編集された値を破棄する場合、Excel が ROLLBACK TRANSACTION ステートメントを OLAP データ ソースに対してを実行する前にすぐに実行します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotTableChangeSync">
@@ -325,10 +316,8 @@
       <Docs>
         <summary>ピボットテーブルが変更された後に発生します。</summary>
         <remarks>
-          <para>
-            <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableChangeSync" /> 、ピボット テーブルに対するほとんどの変更時にイベントが発生する消去などのユーザー アクションに応答するコードを記述することができるようにグループ化、またはピボット テーブル内の項目を更新します。</para>
-          <para />
-        </remarks>
+          <para>、 <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableChangeSync" /> 、ピボット テーブルに対するほとんどの変更時にイベントが発生する消去などのユーザー アクションに応答するコードを記述することができるようにグループ化、またはピボット テーブル内の項目を更新します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotTableUpdate">

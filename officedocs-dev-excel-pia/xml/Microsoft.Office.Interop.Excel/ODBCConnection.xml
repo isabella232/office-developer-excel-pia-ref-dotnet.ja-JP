@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20578051" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ODBCConnection" />
@@ -33,7 +33,7 @@
     <remarks>
       <para>ODBC 接続は、Excel ブックに保存できます。 Excel と呼ばれる ODBC 接続のメモリ内コピーを作成する方 Excel がブックを開くときに、<see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" />オブジェクトです</para>。
       <para>、<see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" />オブジェクトには、接続先のサーバーの名前とそのサーバーで開かれるオブジェクトの名前など、接続に関連する情報が含まれています。 必要に応じて、<see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" />オブジェクトが認証の資格情報、またはサーバーに渡され、(たとえば、SQL Server で実行される SELECT ステートメントなど) を実行するのにはコマンドを含めることもできます</para>。
-      <para /></remarks>
+      <para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AlwaysUseConnectionFile">
@@ -67,9 +67,8 @@
           <b>ブール型 (Boolean)</b>
         </value>
         <remarks>
-          <para>このプロパティが<b>True</b>の場合は、接続ファイルがデータ ソースへの接続を確立するために使用されます。 ブックに埋め込まれている接続が外部接続ファイルと異なる場合は、埋め込まれた接続は無視され、外部接続ファイルと見なされる唯一のバージョンになります。</para>
-          <para />
-        </remarks>
+          <para>このプロパティに<b>true を指定</b>、接続ファイルは、データ ソースへの接続を確立するために使用されます。 ブックに埋め込まれている接続が外部接続ファイルと異なる場合は、埋め込まれた接続は無視され、外部接続ファイルは唯一のバージョンと見なされます</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -99,9 +98,8 @@
         <value>
           <b>アプリケーション</b>(上記参照)</value>
         <remarks>
-          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクトのアプリケーションを取得します。</para>
-          <para />
-        </remarks>
+          <para>そのオブジェクトのアプリケーションを取得するのには OLE オートメーション オブジェクトに対してこのプロパティを使用することができます</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundQuery">
@@ -161,9 +159,8 @@
       <Docs>
         <summary>指定された ODBC 接続の実行中の更新処理をすべて取り消します。</summary>
         <remarks>
-          <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Refreshing" />への更新操作が現在進行中かどうかを確認するにします。</para>
-          <para />
-        </remarks>
+          <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Refreshing" />への更新操作が現在進行中かどうかを決定するプロパティ</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandText">
@@ -199,7 +196,7 @@
         <remarks>
           <para>使用する必要があります、 <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.CommandText" /> 、 <b>SQL</b>プロパティを Microsoft Excel の以前のバージョンとの互換性のために主に存在するようになりました。両方のプロパティを使用する場合、<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.CommandText" />プロパティの値が優先されます</para>。
           <para>、<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.CommandType" />プロパティの値を記述する、<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.CommandText" />プロパティ</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandType">
@@ -233,8 +230,8 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />
         </value>
         <remarks>
-          <para>返されるかを設定する定数の値を記述する、<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.CommandText" />プロパティ。既定値は、 <see cref="F:Microsoft.Office.Interop.Excel.XlCmdType.xlCmdSql" />。</para>
-          <para />
+          <para>が返されるかを設定する定数の値を記述する、<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.CommandText" />プロパティ。既定値は、 <see cref="F:Microsoft.Office.Interop.Excel.XlCmdType.xlCmdSql" />。</para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -269,9 +266,8 @@
           <b>オブジェクト</b>
         </value>
         <remarks>
-          <para>設定、<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Connection" />プロパティがデータ ソースへの接続をすぐに開始されません。使用する必要があります、<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />の接続を行い、データを取得するメソッドです。</para>
-          <para />
-        </remarks>
+          <para>の設定、<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Connection" />プロパティがデータ ソースへの接続をすぐに開始されません。使用する必要があります、<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />の接続を行い、データを取得するメソッドです</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -297,14 +293,13 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>定数、<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />をこのオブジェクトの作成元アプリケーションを示す列挙型。 値の取得のみ可能です。</summary>
+        <summary>定数、<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />をこのオブジェクトの作成元アプリケーションを示す列挙型。 読み取り専用。</summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para />
-        </remarks>
+          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。 <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Excel では、クリエーター コード</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableRefresh">
@@ -338,10 +333,8 @@
           <b>ブール型 (Boolean)</b>
         </value>
         <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.RefreshOnFileOpen" />プロパティは、<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.EnableRefresh" />プロパティが<b>False</b>に設定します。OLAP データ ソースの場合、このプロパティを<b>False</b>に設定により、更新が無効にします。</para>
-          <para />
-        </remarks>
+          <para>、<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.RefreshOnFileOpen" />プロパティは、<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.EnableRefresh" />プロパティが<b>False</b>に設定します。OLAP データ ソースの場合、このプロパティを<b>False</b>に設定を無効に更新します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -403,7 +396,7 @@
           <para>、<see cref="T:Microsoft.Office.Interop.Excel.Parameters" />する前にパラメーターのバインド情報のコレクションを初期化する必要があります、<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />メソッドが呼び出されます。十分なパラメーターが結合している場合、<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />メソッドはパラメーター エラー例外で失敗します。設定に関係なくユーザーにダイアログ ボックスを表示、値の入力を求めるパラメーターを設定した場合、<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />プロパティ。ユーザーは、[パラメーター] ダイアログ ボックスをキャンセルした場合、<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />メソッドは停止し、 <b>False</b>を返します。余分なパラメーターが結合している場合、<see cref="T:Microsoft.Office.Interop.Excel.Parameters" />コレクションでは、これらの余分なパラメーターは無視されます</para>。
           <para>、 <see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" /> 、クエリが正常に完了または開始する場合、メソッドが<b>True</b>を返します; <b>False</b>を返し、ユーザーが接続またはパラメーターを指定するダイアログ ボックスをキャンセルした場合</para>。フェッチされたローの数が、ワークシート上の行の数を超えたかどうかを参照してください、確認する
           <para>、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.FetchedRowOverflow" />プロパティ。このプロパティはすべての時間を初期化、<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" />メソッドが呼び出されます</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshDate">
@@ -434,9 +427,8 @@
           <b>DateTime</b>
         </value>
         <remarks>
-          <para>OLAP データ ソースの場合、このプロパティは各クエリの後に更新されます。</para>
-          <para />
-        </remarks>
+          <para>OLAP データ ソースの場合、このプロパティは各クエリの後に更新します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Refreshing">
@@ -467,9 +459,8 @@
           <b>ブール型 (Boolean)</b>
         </value>
         <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.CancelRefresh" />バック グラウンド クエリをキャンセルするメソッドです。</para>
-          <para />
-        </remarks>
+          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.CancelRefresh" />バック グラウンド クエリをキャンセルするメソッドです</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshOnFileOpen">
@@ -503,9 +494,8 @@
           <b>ブール型 (Boolean)</b>
         </value>
         <remarks>
-          <para>使用してブックを開くと、接続が自動的に更新されません、<see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />メソッドです。使用して、 <see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" /> 、ブックを開いた後にデータを更新する方法です。</para>
-          <para />
-        </remarks>
+          <para>を使用してブックを開くと、接続が自動的に更新されません、<see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />メソッドです。使用して、 <see cref="M:Microsoft.Office.Interop.Excel.ODBCConnection.Refresh" /> 、ブックを開いた後にデータを更新する方法です</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshPeriod">
@@ -539,9 +529,8 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>期間を 0 (ゼロ) に設定、自動タイマー更新が無効になります、、このプロパティを<b>Null</b>に設定するのと同じです。 値、<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.RefreshPeriod" />プロパティは、0 から 32767 までの整数を使用できます。</para>
-          <para />
-        </remarks>
+          <para>期間を 0 (ゼロ) に設定する自動タイマー更新が無効になり、このプロパティを<b>Null</b>に設定するのと同じです。 値、<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.RefreshPeriod" />プロパティは、0 から 32767 までの整数を使用できます</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RobustConnect">
@@ -577,7 +566,7 @@
         <remarks>
           <para>Excel はブックの接続情報を使用して接続を確立することが、信頼性の高い接続を使用する場合、Excel はブックの接続が外部接続ファイルへのパスを持つかどうか確認します。 場合は、Excel は外部接続ファイルを開くし、外部接続ファイルに含まれる情報を使用して接続しようとしています。 外部接続ファイルを使用した後、接続を確立できる場合、Excel はブックの接続オブジェクトを更新します。 </para>
           <para>これにより、情報技術部門を保持し、一元的に接続を更新する場所のシナリオで信頼性の高い接続を許可するものを自動的に取得するのにはユーザーのブックを更新するたびに以前のバージョンの(ブック内でキャッシュされている) 接続が失敗します。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -644,9 +633,8 @@
           <b>ブール型 (Boolean)</b>
         </value>
         <remarks>
-          <para>ODBC および OLE DB の両方のクエリで、ピボット テーブルおよびクエリ テーブルで使用して、このプロパティが使用されます。</para>
-          <para />
-        </remarks>
+          <para>、ODBC や OLE DB の両方のクエリで、ピボット テーブルおよびクエリ テーブルで使用して、このプロパティを使用します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ServerCredentialsMethod">
@@ -788,7 +776,7 @@
               <description>。各行は、参照と、関連付けられたページ フィールドのアイテムで構成されています</description></item>。
             <item><term>ほかのピボット テーブル レポート</term><description>上記の 3 種類の情報の 1 つです</description></item></list>。
           <para>このプロパティは OLE DB データ ソースで利用できません</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceDataFile">
@@ -822,9 +810,8 @@
           <b>文字列型 (String)</b>
         </value>
         <remarks>
-          <para>ファイル ・ ベースのデータ ソース (たとえば、アクセス許可)、<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.SourceDataFile" />プロパティには、元のデータ ファイルへの完全修飾パスが含まれています。サーバー ベースのデータ ソース (たとえば、SQL Server の) の null であります。<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.SourceDataFile" />プロパティが null の場合、<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Connection" />プロパティをプログラムで変更します。</para>
-          <para />
-        </remarks>
+          <para>のファイル ・ ベースのデータ ソース (Access など)、<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.SourceDataFile" />プロパティには、元のデータ ファイルへの完全修飾パスが含まれています。サーバー ベースのデータ ソース (たとえば、SQL Server の) の null であります。<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.SourceDataFile" />プロパティが null の場合、<see cref="P:Microsoft.Office.Interop.Excel.ODBCConnection.Connection" />プロパティをプログラムで変更します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
   </Members>

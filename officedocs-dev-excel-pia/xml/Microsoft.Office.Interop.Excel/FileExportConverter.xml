@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20582405" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface FileExportConverter" />
@@ -31,9 +31,8 @@
   <Docs>
     <summary>ファイルの保存に使用するファイル コンバーターを表します。</summary>
     <remarks>
-      <para>新しいファイル コンバーターを作成するか、いずれかを追加することはできません、<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" />コレクションです。<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" />の補足的なファイル コンバーターをインストールすることによって Microsoft Office のインストール時にオブジェクトが追加されます。</para>
-      <para />
-    </remarks>
+      <para>ことはできません、新規のファイル コンバーターを作成または追加するにいずれか、<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" />コレクションです。<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" />の補足的なファイル コンバーターをインストールすることによって Microsoft Office のインストール時にオブジェクトが追加されます</para>。
+      <para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,7 +58,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 値の取得のみ可能です。</summary>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 読み取り専用。</summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.Application" />.</value>
         <remarks>To be added.</remarks>
@@ -88,13 +87,12 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />を指定したオブジェクトが作成されたアプリケーションを示します。 値の取得のみ可能です。</summary>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />を指定したオブジェクトが作成されたアプリケーションを示します。 読み取り専用。</summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</value>
         <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合、このプロパティは、5843454 C は、文字列「クリエーター」を表す 16 進値を返します。Creator プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para />
-        </remarks>
+          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティは、5843454 C は、文字列「クリエーター」を表す 16 進値を返します。Creator プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -180,7 +178,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたに関連付けられているファイル形式を識別する整数を返します<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" />オブジェクトです。 値の取得のみ可能です。</summary>
+        <summary>指定されたに関連付けられているファイル形式を識別する整数を返します<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" />オブジェクトです。 読み取り専用。</summary>
         <value>
           <b>Integer</b>
         </value>
@@ -210,7 +208,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した親オブジェクトを表す<b>オブジェクト</b>を返します。<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" />オブジェクトです。 値の取得のみ可能です。</summary>
+        <summary>指定した親オブジェクトを表す<b>オブジェクト</b>を返します。<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" />オブジェクトです。 読み取り専用。</summary>
         <value>
           <b>オブジェクト</b>
         </value>

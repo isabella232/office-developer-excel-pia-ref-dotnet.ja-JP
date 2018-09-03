@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20579591" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SlicerCache" />
@@ -32,7 +32,7 @@
     <summary>スライサーと情報については、現在のフィルターの状態を表す<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />または<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />にスライサーが接続されています。</summary>
     <remarks>
       <para>使用、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.SlicerCaches" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />オブジェクトのコレクションにアクセスするのには<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />、ブック内のオブジェクトです</para>。
-      <para>各スライサーをベースには<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />、スライサーと、対応するアイテムのタイトルに表示されるタイルの現在のユーザー インターフェイスの状態で表示されるアイテムを表すオブジェクト。Excel でユーザーに表示される各スライサー コントロールは、<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />を持っているオブジェクト、<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />オブジェクトがそれに関連付けられている</para><para /></remarks>
+      <para>各スライサーをベースには<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />、スライサーと、対応するアイテムのタイトルに表示されるタイルの現在のユーザー インターフェイスの状態で表示されるアイテムを表すオブジェクト。Excel でユーザーに表示される各スライサー コントロールは、<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />を持っているオブジェクト、<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />オブジェクトがそれに関連付けられている</para><para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,9 +62,8 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.Application" />オブジェクトです。</value>
         <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+          <para>読み取り専用</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearAllFilters">
@@ -140,9 +139,8 @@
       <Docs>
         <summary>指定したスライサー キャッシュに関連付けられているすべてのスライサーのフィルターを削除します。</summary>
         <remarks>
-          <para>使用して 1 つのスライサーのフィルター処理をオフにする場合、<see cref="M:Microsoft.Office.Interop.Excel.SlicerCache.ClearManualFilter" />メソッドが 1 つまたは複数のスライサーは、クロス ・ スライサー、最初のスライサーのいくつかの項目が灰色表示されている点では、データをフィルター処理します。たとえば、クロスは顧客および国のスライサーは、フィルター処理した場合は、ActiveWorkbook.SlicerCaches("Slicer_Customer") を実行します。ClearManualFilter、顧客のスライサーのすべてのアイテムが利用可能にならない ActiveWorkbook.SlicerCaches("Slicer_Country") を実行するまでです。ClearManualFilter。クロス フィルター処理の詳細についてを参照してください、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />プロパティ。</para>
-          <para />
-        </remarks>
+          <para>を使用して 1 つのスライサーのフィルター処理をオフにする場合、<see cref="M:Microsoft.Office.Interop.Excel.SlicerCache.ClearManualFilter" />メソッドが 1 つまたは複数のスライサーは、クロス ・ スライサー、最初のスライサーのいくつかの項目が灰色表示されている点では、データをフィルター処理します。たとえば、クロスは顧客および国のスライサーは、フィルター処理した場合は、ActiveWorkbook.SlicerCaches("Slicer_Customer") を実行します。ClearManualFilter、顧客のスライサーのすべてのアイテムが利用可能にならない ActiveWorkbook.SlicerCaches("Slicer_Country") を実行するまでです。ClearManualFilter。クロス フィルター処理の詳細についてを参照してください、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />プロパティ</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -173,7 +171,7 @@
         <remarks>
           <para>読み取り専用<b>long</b></para> 。
           <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CrossFilterType">
@@ -209,7 +207,7 @@
           <para>場合は、1 つ以上のスライサーは、同じピボット テーブルに関連付けられている既定では、または複数のアイテムをフィルターで 1 つのスライサーがいない場合の対応するデータのもう 1 つのスライサーは、これらの項目は淡色表示されます。などの国のスライサーと状態のスライサーでは、ある国のスライサーの国をクリックする場合は、すべての状態である国は無効になっていないという点で。この機能が「クロス フィルター処理」と呼ばれます</para>。
           <para>ユーザー インターフェイスの設定の設定に対応する、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />プロパティは、視覚的に示し、データなしでアイテムなしデータ最後のチェック ボックス、[スライサーの設定] ダイアログ ボックスで項目を表示します。設定、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />を<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithDataAtTop" />両方の選択に対応、データのないアイテムを視覚的に示すし、最後のチェック ボックスをデータなしでアイテムを表示します。設定、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />を<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithNoData" />のみを選択することに対応して、なしのデータ] チェック ボックスを持つ項目を視覚的に示します。両方のチェック ボックスをオフにする設定に対応して、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />を<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerNoCrossFilter" />です</para>。
           <para>OLAP データ ソース (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />です<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />。 =  <b>true</b>) でサポートされていない、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />オブジェクトです。OLAP データ ソースを使用して、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />オブジェクトの代わりにします</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -235,9 +233,8 @@
       <Docs>
         <summary>指定したスライサー キャッシュおよびそれに関連付けられたスライサーを削除します。</summary>
         <remarks>
-          <para>スライサー キャッシュとは別に特定のスライサーを削除するのにを使用して、<see cref="M:Microsoft.Office.Interop.Excel.Slicer.Delete" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />オブジェクトの代わりにします。</para>
-          <para />
-        </remarks>
+          <para>スライサー キャッシュとは別に特定のスライサーを削除するのにを使用して、<see cref="M:Microsoft.Office.Interop.Excel.Slicer.Delete" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />オブジェクトの代わりにします</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FilterCleared">
@@ -263,7 +260,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スライサーまたはタイムラインのフィルターの状態がオフになっているかどうかを返します。 <b>ブール値</b>(<b>bool</b>では C#) です。 値の取得のみ可能です。</summary>
+        <summary>スライサーまたはタイムラインのフィルターの状態がオフになっているかどうかを返します。 <b>ブール値</b>(<b>bool</b>では C#) です。 読み取り専用</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -349,7 +346,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <b>ListObject</b>オブジェクトを取得します<see cref="T:Microsoft.Office.Interop.Excel.QueryTable" />オブジェクトです。 値の取得のみ可能です。</summary>
+          <b>ListObject</b>オブジェクトを取得します<see cref="T:Microsoft.Office.Interop.Excel.QueryTable" />オブジェクトです。 読み取り専用</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -384,7 +381,7 @@
         <value>スライサー キャッシュの名前です。</value>
         <remarks>
           <para>スライサー キャッシュの名前は、ブックの名前空間内で一意である必要があります。既定では、スライサーのキャッシュに割り当てられた名前は、スライサー キャッシュのピボット テーブル フィールドの名前の後に Slicer_ に関連付けられています。たとえば、スライサーをピボット テーブルで製品カテゴリ フィールドに関連付けられている場合は、既定の名前になります (フィールド名にスペースは、アンダー スコア文字に置き換えられます) Slicer_Product_Category。Slicer_Product_Category という名前のブックで、スライサーを使用した同じブック内の商品区分] フィールドに関連付けられている 1 つ以上、またはいくつか他の名前付きエンティティがある場合は、Excel 固有の名前を生成するのには名の後に番号が追加されます。、Slicer_Product_Category1 などです。</para>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -417,7 +414,8 @@
         <remarks>
           <para>読み取り専用</para>。
           <para>の
-            <b>場合は true</b>スライサーが OLAP データ ソースに基づいている場合; それ以外の場合は<b>false を指定</b>します。</para><para /></remarks>
+            <b>場合は true</b>スライサーが OLAP データ ソースに基づいている場合; それ以外の場合は<b>false を指定</b>します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -446,9 +444,8 @@
         <summary>親を取得します<see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" />指定されたオブジェクト<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />オブジェクトです。</summary>
         <value>親<see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" />指定されたオブジェクト<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />オブジェクトです。</value>
         <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+          <para>読み取り専用</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotTables">
@@ -479,7 +476,7 @@
         <remarks>
           <para>読み取り専用</para>。
           <para>、<see cref="T:Microsoft.Office.Interop.Excel.SlicerPivotTables" />によって返されるコレクションの<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.PivotTables" />プロパティは、スライサーは、指定されたに関連付けられている場合は空になります<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />任意のピボット テーブルに接続されていません</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RequireManualUpdate">
@@ -546,7 +543,7 @@
           <para>読み取り/書き込み</para>。
           <para>と、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" />プロパティ<b>は true</b> (既定値) に設定されて、指定したスライサー キャッシュに接続されているスライサーでソース データから削除されている項目が表示されます。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" />プロパティは、[スライサーの設定] ダイアログ ボックスで、データ ソース] チェック ボックスから削除されたアイテムを表示するの設定に対応します</para>。
           <para>、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" />プロパティは、ブックの範囲またはリストに基づくスライサーにのみ適用されます (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />です<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />。 =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />)、またはリレーショナル データ ソースに基づくスライサー (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />です<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />。 =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" />と<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  = <b>は false</b>)。設定すると、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.ShowAllItems" />外部の OLAP データ ソースに基づいて、ピボット テーブルに接続されているスライサーのプロパティ (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />です<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />。 = <b>場合は true</b>)、実行時エラーが生成されます</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SlicerCacheLevels">
@@ -577,7 +574,7 @@
         <remarks>
           <para>読み取り専用</para>。
           <para>、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerCacheLevels" />プロパティは、OLAP データ ソースをフィルター処理するスライサーにのみ適用されます (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />です<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />。 = <b>場合は true</b>)。OLAP 以外のスライサーからこのプロパティにアクセスしようとして、実行時エラーが生成されます</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SlicerCacheType">
@@ -636,7 +633,7 @@
         <remarks>
           <para>読み取り専用</para>。
           <para>、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />オブジェクトは、ブックの範囲またはリストに基づいて、ピボット テーブルを基にしたスライサーにのみ適用 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />です<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />。 =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />)、またはリレーショナル データ ソースに基づいて、ピボット テーブルに基づくスライサー (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />です<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />。 =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" />と<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  = <b>は false</b>)。アクセスしようとしたとき、 <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> 、外部の OLAP データ ソースに接続されているスライサーのプロパティ (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />です<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />。 = <b>場合は true</b>)、実行時エラーが生成されます。OLAP データ ソースを使用して、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />オブジェクトの代わりにします</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Slicers">
@@ -665,9 +662,8 @@
         <summary>取得、<see cref="T:Microsoft.Office.Interop.Excel.Slicers" />のコレクションを格納するコレクション<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />オブジェクトが、指定されたに関連付けられている<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。</summary>
         <value>A<see cref="T:Microsoft.Office.Interop.Excel.Slicers" />のコレクションを格納するコレクション<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />オブジェクトが、指定されたに関連付けられている<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。</value>
         <remarks>
-          <para>読み取り専用です。</para>
-          <para />
-        </remarks>
+          <para>読み取り専用</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SortItems">
@@ -702,7 +698,7 @@
           <para>読み取り/書き込み</para>。
           <para>このプロパティの既定の設定は<see cref="F:Microsoft.Office.Interop.Excel.XlSortOrder.xlAscending" />です</para>。
           <para>、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortItems" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />オブジェクトは、ブックの範囲またはリストに接続されているピボット テーブルを基にしたスライサーにのみ適用されます (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />です<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />。 = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />).アクセスしようとしたとき、 <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortItems" /> 、OLAP データ ソースに接続されているスライサーのプロパティ (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />です<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />。 = <b>場合は true</b>)、実行時エラーが生成されます。OLAP データ ソースを使用して、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SortItems" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />オブジェクトの代わりにします</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SortUsingCustomLists">
@@ -738,7 +734,7 @@
           <para>読み取り/書き込み</para>。
           <para>、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortUsingCustomLists" />プロパティは、チェック ボックスをオン、[スライサーの設定] ダイアログ ボックスの並べ替えを行うときを使用してカスタム一覧の設定に対応します。Excel の現在のインストールに関連付けられているユーザー設定のリストにアクセスするに、[ファイル] タブをクリックして、[オプション] をクリックして、[詳細設定] をクリックし、[全般] で [ユーザー設定リストの編集] をクリックします</para>。
           <para>、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SortUsingCustomLists" />プロパティは、OLAP 以外のデータ ソースのフィルター処理を行うためのスライサーにのみ適用されます。OLAP データ ソースがフィルター処理するスライサー キャッシュからこのプロパティにアクセスしようとしています (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />です<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />。 = <b>場合は true</b>)、実行時エラーが生成されます</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceName">
@@ -770,7 +766,7 @@
           <para>読み取り専用</para>。
           <para>のスライサーがブック内のデータに基づく (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />です<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />。 =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />)、または OLAP 以外の外部データに基づくスライサー (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />です<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />。 =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" />と<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />  = <b>は false</b>)、ソース データ内の対応する列の名前を返します</para>。
           <para>Olap データベースのスライサー (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />です<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />。 = <b>場合は true</b>)、スライサーがに基づいて階層の MDX 一意な名前を返します</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceType">
@@ -801,7 +797,7 @@
         <remarks>
           <para>読み取り専用</para>。
           <para>のみ、<see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />と<see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" />データ ソースの種類がサポートされています</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TimelineState">
@@ -828,7 +824,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <b>SlicerCache</b>オブジェクトのタイムラインに固有の状態です。 値の取得のみ可能です。</summary>
+          <b>SlicerCache</b>オブジェクトのタイムラインに固有の状態です。 読み取り専用</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -861,7 +857,7 @@
         <remarks>
           <para>読み取り専用</para>。
           <para>、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItems" />プロパティは、ブックの範囲またはリストに基づいて、ピボット テーブルを基にしたスライサーにのみ適用 (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />です<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />。 = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />).アクセスしようとしたとき、 <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItems" /> 、OLAP データ ソースに接続されているスライサーのプロパティ (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />です<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />。 = <b>場合は true</b>)、実行時エラーが生成されます</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleSlicerItemsList">
@@ -895,7 +891,7 @@
         <remarks>
           <para>読み取り/書き込み</para>。
           <para>、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.VisibleSlicerItemsList" />プロパティは、OLAP データ ソースに基づくスライサーの該当する場合のみ (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />です<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />。 = <b>場合は true</b>) です</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkbookConnection">
@@ -926,7 +922,7 @@
         <remarks>
           <para>読み取り専用</para>。
           <para>、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.WorkbookConnection" />プロパティは、外部データ ソースに基づくスライサーにのみ適用されます (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />です<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />。 = <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlExternal" />).アクセスしようとしたとき、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.WorkbookConnection" />ブックの範囲またはリストに基づいて、ピボット テーブルに接続されているスライサーのプロパティ (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />です<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SourceType" />。 =  <see cref="F:Microsoft.Office.Interop.Excel.XlPivotTableSourceType.xlDatabase" />)、実行時エラーが生成されます</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20574089" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface XmlNamespaces : System.Collections.IEnumerable" />
@@ -38,7 +38,7 @@
       <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
       <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.XmlNamespaces.Item(System.Object)" /> 、特定の<b>XmlNamespace</b>オブジェクトにアクセスするプロパティ</para>。
       <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.XmlNamespaces.Value" />のブックに追加されている名前空間を一覧表示する<b>文字列</b>を返すプロパティです</para>。
-      <para /></remarks>
+      <para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -99,7 +99,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 値の取得のみ可能です。</summary>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -159,9 +159,8 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para />
-        </remarks>
+            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -226,7 +225,7 @@
         <remarks>
           <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
           <para>セキュリティのために、署名のないマニフェストをインストールすることはできません。マニフェストの詳細については、Microsoft Developer Network (MSDN) Web サイトで、スマート ドキュメント ソフトウェア開発キット (SDK) を参照してください</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -316,9 +315,8 @@
         <summary>ブックに追加されている XML 名前空間を表す<b>文字列</b>を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ブックに複数の名前空間が含まれている場合、名前空間は、 <b>Value</b>プロパティによって返される文字列に空白で区切られます。</para>
-          <para />
-        </remarks>
+          <para>ブックに複数の名前空間が含まれているかどうかは、名前空間が、 <b>Value</b>プロパティによって返される文字列に空白で区切られます</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20576147" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DiagramNode : Microsoft.Office.Core._IMsoDispObj" />
@@ -38,7 +38,7 @@
         <item><description>、個々 の子図表節点を参照するのには、 <b>AddNode</b>、 <b>CloneNode</b>、 <b>NextNode</b> 、 <b>PrevNode</b>メソッドまたは<b>Root</b>プロパティを使用しています</description></item>。
         <item><description>、子図表節点のコレクションを参照するには、<see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" />プロパティ</description></item>。
         <item><description>、図形を参照する、<see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Shape" />または<see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.TextShape" />プロパティ</description></item></list>。
-      <para /></remarks>
+      <para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNode">
@@ -196,7 +196,7 @@
           <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
           <para>
             <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -290,7 +290,7 @@
           <para><b>msoOrgChartLayoutMixed</b>の戻り値の 1 つ以上の<b>MsoOrgChartLayoutType</b>を使用して書式指定子を持つ親ノード</para>。
           <para><b>msoOrgChartLayoutRightHanging</b>場所の子ノードの右側にある親ノードから垂直方向にします</para>。
           <para><b>msoOrgChartLayoutStandard</b>場所の子ノード、親ノードの下に水平にします</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveNode">
@@ -429,9 +429,8 @@
         <param name="pTargetNode">必要な<see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" />オブジェクトです。 ターゲット図表ノードに置き換えられます。</param>
         <summary>ターゲット図表ノードをソース図表ノードに置き換えます。</summary>
         <remarks>
-          <para>ターゲット図表ノードは削除され、ターゲット図表ノードがあった場所に移動、ソース図表ノードが子ノードのいずれかを含みます。</para>
-          <para />
-        </remarks>
+          <para>ターゲット図表ノードは削除され、その子ノードのいずれかを含む、ソース図表ノードは、ターゲット図表ノードがあった場所に移動します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Root">

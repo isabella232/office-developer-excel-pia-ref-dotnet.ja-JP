@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20578982" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotItem" />
@@ -32,9 +32,8 @@
     <summary>ピボットテーブル レポートのフィールドのアイテムを表します。 アイテムとは、フィールド カテゴリの各データのことです。 <b>PivotItem</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />コレクションです。 <b>返すプロパティ</b>のコレクションには、すべてのアイテムが含まれています、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />オブジェクトです。</summary>
     <remarks>
       <para>
-        <b>返すプロパティ</b>を使用して (<paramref name="index" />)、 <paramref name="index" /> 、アイテムのインデックス番号または名前、1 つの<b>PivotItem</b>オブジェクトを取得するには。</para>
-      <para />
-    </remarks>
+        <b>返すプロパティ</b>の使用 (<paramref name="index" />)、 <paramref name="index" /> 、アイテムのインデックス番号または名前、1 つの<b>PivotItem</b>オブジェクトを取得するには</para>。
+      <para></para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -97,7 +96,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 値の取得のみ可能です。</summary>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -160,12 +159,11 @@
       </Parameters>
       <Docs>
         <param name="Index">省略可能な<b>オブジェクト</b>です。 アイテムの名前またはインデックス番号を指定します。複数のアイテムを指定する場合は、配列を使うことができます。</param>
-        <summary>1 つのピボット テーブル アイテムのいずれかを表すオブジェクトを返します (、<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />オブジェクト) またはすべての項目のコレクション (、<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />オブジェクト) で指定したフィールドのグループの子または指定した項目の子であります。 値の取得のみ可能です。</summary>
+        <summary>1 つのピボット テーブル アイテムのいずれかを表すオブジェクトを返します (、<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />オブジェクト) またはすべての項目のコレクション (、<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />オブジェクト) で指定したフィールドのグループの子または指定した項目の子であります。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、OLAP データ ソースに対して使用可能なは。</para>
-          <para />
-        </remarks>
+          <para>このプロパティは OLAP データ ソースに対しては利用できません</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -195,9 +193,8 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para />
-        </remarks>
+            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataRange">
@@ -223,7 +220,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトです。 値の取得のみ可能です。</summary>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトです。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
           <para>
@@ -237,7 +234,7 @@
               <description>フィールドのアイテム</description></item>
             <term>アイテム</term>の
             <item><description>データは、そのアイテムに対応</description></item></list>
-          <para />
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -264,9 +261,8 @@
       <Docs>
         <summary>オブジェクトを削除します。</summary>
         <remarks>
-          <para>キューブ フィールドを削除するには、キューブ自分のフィールドを使用して作成した場合のみ、<see cref="M:Microsoft.Office.Interop.Excel.CalculatedMembers.Add(System.String,System.String,System.Object,System.Object)" />を持つメソッド、<paramref name="xlCalculatedSet" />の引数です。</para>
-          <para />
-        </remarks>
+          <para>キューブ フィールドを削除するには、キューブ自分のフィールドを使用して作成した場合のみ、<see cref="M:Microsoft.Office.Interop.Excel.CalculatedMembers.Add(System.String,System.String,System.Object,System.Object)" />を持つメソッド、<paramref name="xlCalculatedSet" />の引数です</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DrilledDown">
@@ -301,7 +297,7 @@
         <remarks>
           <para>OLAP データ ソースに対してのみこのプロパティを使用することができます</para>。
           <para>フィールドまたはアイテムが非表示の場合は、このプロパティを設定することはできません</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DrillTo">
@@ -331,9 +327,8 @@
         <summary>
           <see cref="M:Microsoft.Office.Interop.Excel.PivotItem.DrillTo(System.String)" />メソッドは、指定したドリルをサポートしています<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />から、 <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />。</summary>
         <remarks>
-          <para>OLAP データ ソースの<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />にドリルすると同じ階層にある必要があります、<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />ドリルするか、行または列に隣接して複数の属性階層が配置されている場合、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />属性のいずれかが先は互いに連続している階層ユーザーの階層を配置することで、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />の<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />ドリルして、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />をドリルします。 これらの条件が満たされない場合は、実行時エラーが返されます。</para>
-          <para />
-        </remarks>
+          <para>Olap データベースのデータ ソースでは、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />にドリルすると同じ階層にある必要があります、<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />ドリルするか、行または列に隣接して複数の属性階層が配置されている場合、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />属性のいずれかが先は互いに連続している階層ユーザーの階層を配置することで、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />の<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />ドリルして、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />をドリルします。 これらの条件が満たされない場合、実行時エラーが返されます</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Formula">
@@ -370,7 +365,7 @@
           <para>値またはセルの数式を日付に設定する場合、Microsoft Excel はそのセルの書式が既に日付または時刻の表示形式のいずれかどうかを確認します。Microsoft Excel 形式に変更、既定の日付の形式です</para>。
           <para>の範囲が 1 つまたは 2 次元範囲の場合、同じ次元の Visual Basic の配列数式を設定できます。同様に、Visual Basic の配列数式を入力します</para>。
           <para>複数のセル範囲の入力、数式のセル範囲のすべてのセルの数式を設定します</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsCalculated">
@@ -400,9 +395,8 @@
           <b>True の</b>場合、ピボット テーブル フィールドまたはピボット テーブル アイテムは集計フィールドまたは集計アイテムには。 読み取り専用の <b>ブール値</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>OLAP データ ソースの場合、このプロパティは常に<b>False</b>を返します。</para>
-          <para />
-        </remarks>
+          <para>の OLAP データ ソースの場合、このプロパティ常に<b>False</b>を返します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LabelRange">
@@ -428,7 +422,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />アイテムを含むピボット テーブル レポート内のすべてのセルを表すオブジェクト。 値の取得のみ可能です。</summary>
+        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />アイテムを含むピボット テーブル レポート内のすべてのセルを表すオブジェクト。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -515,12 +509,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> 、親の親ピボット テーブル アイテムを表すオブジェクト<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />(フィールド グループ化しますがある、親になるよう) オブジェクト。 値の取得のみ可能です。</summary>
+        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> 、親の親ピボット テーブル アイテムを表すオブジェクト<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />(フィールド グループ化しますがある、親になるよう) オブジェクト。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、OLAP データ ソースに対して使用します。</para>
-          <para />
-        </remarks>
+          <para>このプロパティは、OLAP データ ソースに対して使用します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ParentShowDetail">
@@ -550,9 +543,8 @@
           <b>真</b>の親の詳細を表示するために指定した項目が表示されている場合です。 <b>False</b>の親のいずれかの詳細を非表示のために指定した項目が表示されていない場合。 このプロパティは、項目をグループ化する場合にのみ使用します。 読み取り専用の <b>ブール値</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、OLAP データ ソースに対して使用します。</para>
-          <para />
-        </remarks>
+          <para>このプロパティは、OLAP データ ソースに対して使用します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -584,10 +576,8 @@
         <summary>項目が表示されている場合は、そのフィールド内の項目の位置。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.CubeFields" />コレクションでは、このプロパティを返します階層フィールドの位置をピボット テーブル レポートにも、フィールドからドラッグされるときです。</para>
-          <para />
-        </remarks>
+          <para>の<see cref="T:Microsoft.Office.Interop.Excel.CubeFields" />コレクションでは、このプロパティを返します階層フィールドの位置をピボット テーブル レポートにも、フィールドからドラッグされるときです</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RecordCount">
@@ -616,9 +606,8 @@
         <summary>ピボット テーブルのキャッシュまたは指定されたアイテムを含むキャッシュ レコードの数のレコードの数を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティはクエリ実行時にキャッシュの一時的な状態を反映します。キャッシュは、クエリの間で変更できます。</para>
-          <para />
-        </remarks>
+          <para>このプロパティはクエリ実行時に一時的なキャッシュの状態が反映されます。クエリのキャッシュを変更できます</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowDetail">
@@ -658,7 +647,7 @@
             <item><description>、サマリー行または列のすべての子の詳細はこのプロパティを<b>True</b>に設定します</description></item>。
             <item><description>、サマリー行または列のすべての子を非表示にするのと同じではこのプロパティを<b>False</b>に設定します</description></item></list>。
           <para>場合は、指定された範囲は、ピボット テーブル レポートでは、範囲が連続している場合、一度に複数のセルに対してこのプロパティを設定することができます。範囲が単一のセルである場合にのみ、このプロパティが返されることができます</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceName">
@@ -712,12 +701,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>標準的な英語 (米国) の書式設定のピボット テーブル アイテムのソース名を表す<b>文字列</b>を返します。 値の取得のみ可能です。</summary>
+        <summary>標準的な英語 (米国) の書式設定のピボット テーブル アイテムのソース名を表す<b>文字列</b>を返します。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>項目が、ローカライズされたバージョンと、その<b>SourceNameStandard</b>プロパティの値と異なる場合、このプロパティを使用、<see cref="P:Microsoft.Office.Interop.Excel.PivotItem.SourceName" />プロパティの値、このような日付の書式設定と同様です。</para>
-          <para />
-        </remarks>
+          <para>は、ローカライズされたバージョンのアイテムと、その<b>SourceNameStandard</b>プロパティの値と異なる場合、このプロパティを使用、<see cref="P:Microsoft.Office.Interop.Excel.PivotItem.SourceName" />プロパティ値に設定するなどと同様に日付の書式設定します</para>。
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StandardFormula">
@@ -752,7 +740,7 @@
           <para>
             <b>StandardFormula</b>プロパティは、日付または数値の書式と項目名に主に影響を与えます。指定するか、指定した集計アイテムの数式をクエリする方法が用意されています</para>。
           <para><b>StandardFormula</b>プロパティは、[国際対応の"は、<see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Formula" />プロパティではありません</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -817,7 +805,7 @@
         <remarks>
           <para>アイテムがテーブルに表示されている場合は、ピボット テーブル アイテムの<b>Visible</b>プロパティは<b>true を指定</b>します</para>。
           <para>名前の<b>Visible</b>プロパティを<b>False</b>に設定すると、名前が名前の定義] ダイアログ ボックスに表示されません</para>。
-          <para /></remarks>
+          <para></para></remarks>
       </Docs>
     </Member>
   </Members>
