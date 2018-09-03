@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
     <Meta Name="ms.locfileid" Value="20576210" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface OLEDBConnection" />
@@ -30,21 +30,21 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="317a2-101">OLE DB 接続を表します。</span>
+      <span data-ttu-id="629a2-101">OLE DB 接続を表します。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="317a2-101">Represents the OLE DB connection.</span>
+        <span data-stu-id="629a2-101">Represents the OLE DB connection.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="317a2-102">
+      <span data-ttu-id="629a2-102">
         <para>OLE DB 接続は、Excel ブックに保存できます。 Excel と呼ばれる OLE DB 接続のメモリ内コピーを作成する方 Excel がブックを開くときに、<see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />オブジェクトです</para>。
       <para>、<see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />オブジェクトには、接続先のサーバーの名前とそのサーバーで開かれるオブジェクトの名前など、接続に関連する情報が含まれています。 必要に応じて、<see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />オブジェクトが認証の資格情報、またはサーバーに渡され、(たとえば、SQL Server で実行される SELECT ステートメントなど) を実行するのにはコマンドを含めることもできます</para>。
-      <para /></span>
+      <para></para></span>
       <span class="sxs-lookup">
-        <span data-stu-id="317a2-102">
+        <span data-stu-id="629a2-102">
           <para>An OLE DB connection can be stored in an Excel workbook.  When Micrososft Excel opens the workbook, Excel creates an in-memory copy of the OLE DB connection known as the  <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> object.</para>
           <para>An <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> object contains information related to the connection, such as the name of the server to connect to and the name of the objects to be opened on that server.  Optionally, the <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> object may also include authentication credential information, or a command that is to be passed to the server and executed (for example, a SELECT statement to be executed by SQL Server).</para>
-          <para />
+          <para></para>
         </span>
       </span>
     </remarks>
@@ -74,32 +74,32 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-p101">ピボットテーブル キャッシュが OLE DB データ ソースに接続している場合は、ADO 接続オブジェクトを返します。値の取得のみ可能です。</span>
+          <span data-ttu-id="629a2-p101">ピボットテーブル キャッシュが OLE DB データ ソースに接続している場合は、ADO 接続オブジェクトを返します。値の取得のみ可能です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-p101">Returns an ADO connection object if the PivotTable cache is connected to an OLE DB data source. Read-only.</span>
+            <span data-stu-id="629a2-p101">Returns an ADO connection object if the PivotTable cache is connected to an OLE DB data source. Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-105">
+          <span data-ttu-id="629a2-105">
             <b>オブジェクト</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-105">
+            <span data-stu-id="629a2-105">
               <b>Object</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="317a2-106">
+          <span data-ttu-id="629a2-106">
             <para>
               <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" />プロパティは、データ プロバイダーは、ユーザーが Excel を使用しているのと同じセッションのコンテキスト内でコードを記述できるようにする Microsoft Excel の接続を公開します。</para>
             <para>、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" />プロパティは、使用可能なセッションに対してのみデータ ソースが OLE DB データ ソースにあります。ADO セッションがない場合、クエリは、実行時エラーになります。 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" /> Ado、OLE DB ベースのキャッシュのプロパティを使用することができます。キャッシュの基になる OLAP キューブに関する情報を検索する ADO MD の ADO 接続オブジェクトを使用することができます</para>。
-          <para /></span>
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-106">
+            <span data-stu-id="629a2-106">
               <para>The <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" /> property exposes the Microsoft Excel connection to the data provider, allowing the user to write code within the context of the same session that Excel is using. </para>
               <para>The <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" /> property is available only for sessions where the data source is an OLE DB data source. When there is no ADO session, the query will result in a run-time error.  The <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.ADOConnection" /> property can be used for any OLE DB–based cache with ADO. The ADO connection object can be used with ADO MD for finding information about OLAP cubes on which the cache is based.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -132,36 +132,35 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-107">
+          <span data-ttu-id="629a2-107">
             <b>True の</b>接続ファイルが常にデータ ソースへの接続を確立するために使用されている場合です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-107">
+            <span data-stu-id="629a2-107">
               <b>True</b>if the connection file is always used to establish connection to the data source.</span>
           </span>
-          <span data-ttu-id="317a2-108">ブール型 ( <b>Boolean</b>) の値を使用します。</span>
+          <span data-ttu-id="629a2-108">ブール型 ( <b>Boolean</b>) の値を使用します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-108">Read/write <b>Boolean</b>.</span>
+            <span data-stu-id="629a2-108">Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-109">
+          <span data-ttu-id="629a2-109">
             <b>ブール型 (Boolean)</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-109">
+            <span data-stu-id="629a2-109">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="317a2-110">
-            <para>このプロパティが<b>True</b>の場合、データ ソースへの接続を確立するために常に接続ファイルが使用します。 ブックに埋め込まれている接続が外部接続ファイルと異なる場合は、埋め込まれた接続は無視され、外部接続ファイルと見なされる唯一のバージョンになります。</para>
-            <para />
-          </span>
+          <span data-ttu-id="629a2-110">
+            <para>このプロパティが<b>True の</b>接続ファイルは、データ ソースへの接続を確立するために常に使用されます。 ブックに埋め込まれている接続が外部接続ファイルと異なる場合は、埋め込まれた接続は無視され、外部接続ファイルは唯一のバージョンと見なされます</para>。
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-110">
+            <span data-stu-id="629a2-110">
               <para>When this property is <b>True</b> the connection file will always be used to establish the connection to the data source.  If the connection embedded within the workbook is different from the external connection file, the embedded connection will be ignored and the external connection file will be the only version considered.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -191,38 +190,37 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-111">このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Office Excel アプリケーションを表すオブジェクト。</span>
+          <span data-ttu-id="629a2-111">このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Office Excel アプリケーションを表すオブジェクト。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-111">When used without an object qualifier, this property returns an  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object that represents the Microsoft Office Excel  application.</span>
+            <span data-stu-id="629a2-111">When used without an object qualifier, this property returns an  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object that represents the Microsoft Office Excel  application.</span>
           </span>
-          <span data-ttu-id="317a2-112">オブジェクト修飾子を使用する場合、このプロパティは、指定したオブジェクトの作成元を表す <b>Application</b> オブジェクトを返します。</span>
+          <span data-ttu-id="629a2-112">オブジェクト修飾子を使用する場合、このプロパティは、指定したオブジェクトの作成元を表す <b>Application</b> オブジェクトを返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-112">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object.</span>
+            <span data-stu-id="629a2-112">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object.</span>
           </span>
-          <span data-ttu-id="317a2-113">読み取り専用です。</span>
+          <span data-ttu-id="629a2-113">読み取り専用です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-113">Read-only.</span>
+            <span data-stu-id="629a2-113">Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-114">
-            <b>Application</b>
+          <span data-ttu-id="629a2-114">
+            <b>アプリケーション</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-114">
+            <span data-stu-id="629a2-114">
               <b>Application</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="317a2-115">
-            <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクトのアプリケーションを取得します。</para>
-            <para />
-          </span>
+          <span data-ttu-id="629a2-115">
+            <para>そのオブジェクトのアプリケーションを取得するのには OLE オートメーション オブジェクトに対してこのプロパティを使用することができます</para>。
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-115">
+            <span data-stu-id="629a2-115">
               <para>You can use this property with an OLE Automation object to return the application of that object.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -255,32 +253,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-p104">
+          <span data-ttu-id="629a2-p104">
             <b>True</b> の場合、OLE DB 接続のクエリをバックグラウンド (非同期) で実行します。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-p104">
+            <span data-stu-id="629a2-p104">
               <b>True</b> if queries for the OLE DB connection are performed asynchronously (in the background). Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-118">
+          <span data-ttu-id="629a2-118">
             <b>ブール型 (Boolean)</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-118">
+            <span data-stu-id="629a2-118">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="317a2-119">
-            <para>OLAP データ ソースの場合、このプロパティは読み取り専用で、常に<b>False</b>が返されます。</para>
-            <para />
-          </span>
+          <span data-ttu-id="629a2-119">
+            <para>の OLAP データ ソースの場合、このプロパティは読み取り専用で、常に<b>False</b>が返されます</para>。
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-119">
+            <span data-stu-id="629a2-119">
               <para>For OLAP data sources, this property is read-only and always returns <b>False</b>.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -310,28 +307,28 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-120">取得、 <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> 、指定された接続のコレクションです。</span>
+          <span data-ttu-id="629a2-120">取得、 <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> 、指定された接続のコレクションです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-120">Gets the <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> collection for the specified connection.</span>
+            <span data-stu-id="629a2-120">Gets the <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> collection for the specified connection.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-121">
+          <span data-ttu-id="629a2-121">
             <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> 、指定された接続のコレクションです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-121">The <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> collection for the specified connection.</span>
+            <span data-stu-id="629a2-121">The <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> collection for the specified connection.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="317a2-122">
+          <span data-ttu-id="629a2-122">
             <para>読み取り専用</para>。
           <para>を使用して、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CalculatedMembers" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />コレクションに同じ接続を使用する複数のピボット テーブルやキューブ関数の間での計算されるメンバーを共有します</para>。
-          <para /></span>
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-122">
+            <span data-stu-id="629a2-122">
               <para>Read-only.</para>
               <para>Use the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CalculatedMembers" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> collection to share calculated members between multiple PivotTables and cube functions that use the same connection.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -359,20 +356,19 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-123">指定された OLE DB 接続の実行中の更新処理をすべて取り消します。</span>
+          <span data-ttu-id="629a2-123">指定された OLE DB 接続の実行中の更新処理をすべて取り消します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-123">Cancels all refresh operations in progress for the specified OLE DB connection.</span>
+            <span data-stu-id="629a2-123">Cancels all refresh operations in progress for the specified OLE DB connection.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="317a2-124">
-            <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Refreshing" />への更新操作が現在進行中かどうかを確認するにします。</para>
-            <para />
-          </span>
+          <span data-ttu-id="629a2-124">
+            <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Refreshing" />への更新操作が現在進行中かどうかを決定するプロパティ</para>。
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-124">
+            <span data-stu-id="629a2-124">
               <para>Use the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Refreshing" /> property to determine whether a refresh operation is currently in progress.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -405,35 +401,35 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-125">指定したデータ ソースにコマンド文字列を設定または返します。</span>
+          <span data-ttu-id="629a2-125">指定したデータ ソースにコマンド文字列を設定または返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-125">Returns or sets the command string for the specified data source.</span>
+            <span data-stu-id="629a2-125">Returns or sets the command string for the specified data source.</span>
           </span>
-          <span data-ttu-id="317a2-126">読み取り/書き込みの<b>オブジェクト</b>です。</span>
+          <span data-ttu-id="629a2-126">読み取り/書き込みの<b>オブジェクト</b>です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-126">Read/write <b>Object</b>.</span>
+            <span data-stu-id="629a2-126">Read/write <b>Object</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-127">
+          <span data-ttu-id="629a2-127">
             <b>オブジェクト</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-127">
+            <span data-stu-id="629a2-127">
               <b>Object</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="317a2-128">
+          <span data-ttu-id="629a2-128">
             <para>使用する必要があります、 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> 、 <b>SQL</b>プロパティを Microsoft Excel の以前のバージョンとの互換性のために主に存在するようになりました。両方のプロパティを使用する場合、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" />プロパティの値が優先されます</para>。
           <para>、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandType" />プロパティの値を記述する、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" />プロパティ</para>。
-          <para /></span>
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-128">
+            <span data-stu-id="629a2-128">
               <para>You should use the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> property instead of the <b>SQL</b>property, which now exists primarily for compatibility with earlier versions of Microsoft Excel. If you use both properties, the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> property's value takes precedence.</para>
               <para>The <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandType" /> property describes the value of the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> property.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -466,28 +462,28 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-129">
+          <span data-ttu-id="629a2-129">
             <b>可能</b>定数のいずれかを設定または返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-129">Returns or sets one of the <b>XlCmdType</b> constants.</span>
+            <span data-stu-id="629a2-129">Returns or sets one of the <b>XlCmdType</b> constants.</span>
           </span>
-          <span data-ttu-id="317a2-130">読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />。</span>
+          <span data-ttu-id="629a2-130">読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-130">Read/write <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />.</span>
+            <span data-stu-id="629a2-130">Read/write <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />.</span>
           </span>
         </summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />
         </value>
         <remarks>
-          <span data-ttu-id="317a2-131">
-            <para>返されるかを設定する定数の値を記述する、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" />プロパティ。既定値は、 <see cref="F:Microsoft.Office.Interop.Excel.XlCmdType.xlCmdSql" />。</para>
-            <para />
+          <span data-ttu-id="629a2-131">
+            <para>が返されるかを設定する定数の値を記述する、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" />プロパティ。既定値は、 <see cref="F:Microsoft.Office.Interop.Excel.XlCmdType.xlCmdSql" />。</para>
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-131">
+            <span data-stu-id="629a2-131">
               <para>The constant that is returned or set describes the value of the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.CommandText" /> property. The default value is <see cref="F:Microsoft.Office.Interop.Excel.XlCmdType.xlCmdSql" />. </para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -520,34 +516,33 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-132">返すまたは、OLE DB データ ソースに接続できるようにする OLE DB 設定を含む文字列を設定します。</span>
+          <span data-ttu-id="629a2-132">返すまたは、OLE DB データ ソースに接続できるようにする OLE DB 設定を含む文字列を設定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-132">Returns or sets a string that contains OLE DB settings that enable Microsoft Excel to connect to an OLE DB data source.</span>
+            <span data-stu-id="629a2-132">Returns or sets a string that contains OLE DB settings that enable Microsoft Excel to connect to an OLE DB data source.</span>
           </span>
-          <span data-ttu-id="317a2-133">読み取り/書き込みの<b>オブジェクト</b>です。</span>
+          <span data-ttu-id="629a2-133">読み取り/書き込みの<b>オブジェクト</b>です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-133">Read/write <b>Object</b>.</span>
+            <span data-stu-id="629a2-133">Read/write <b>Object</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-134">
+          <span data-ttu-id="629a2-134">
             <b>オブジェクト</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-134">
+            <span data-stu-id="629a2-134">
               <b>Object</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="317a2-135">
-            <para>設定、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" />プロパティがデータ ソースへの接続をすぐに開始されません。使用する必要があります、<see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" />の接続を行い、データを取得するメソッドです。 オフライン キューブ ファイルを使用して、設定、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" />プロパティに<b>true を指定</b>し、使用して、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" />プロパティの代わりに、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" />プロパティ。</para>
-            <para />
-          </span>
+          <span data-ttu-id="629a2-135">
+            <para>の設定、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" />プロパティがデータ ソースへの接続をすぐに開始されません。使用する必要があります、<see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" />の接続を行い、データを取得するメソッドです。 オフライン キューブ ファイルを使用して、設定、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" />プロパティに<b>true を指定</b>し、使用して、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" />プロパティの代わりに、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" />プロパティ</para>。
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-135">
+            <span data-stu-id="629a2-135">
               <para>Setting the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> property does not immediately initiate the connection to the data source. You must use the <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> method to make the connection and retrieve the data.  When using an offline cube file, set the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> property to <b>True</b> and use the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> property instead of the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> property.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -577,27 +572,26 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-136">定数、<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />をこのオブジェクトの作成元アプリケーションを示す列挙型。</span>
+          <span data-ttu-id="629a2-136">定数、<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />をこのオブジェクトの作成元アプリケーションを示す列挙型。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-136">Returns a constant in the <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeration that indicates the application in which this object was created.</span>
+            <span data-stu-id="629a2-136">Returns a constant in the <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> enumeration that indicates the application in which this object was created.</span>
           </span>
-          <span data-ttu-id="317a2-137">値の取得のみ可能です。</span>
+          <span data-ttu-id="629a2-137">読み取り専用。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-137">Read-only.</span>
+            <span data-stu-id="629a2-137">Read-only.</span>
           </span>
         </summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <span data-ttu-id="317a2-138">
-            <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-            <para />
-          </span>
+          <span data-ttu-id="629a2-138">
+            <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。 <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Excel では、クリエーター コード</para>。
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-138">
+            <span data-stu-id="629a2-138">
               <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.  The <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -630,32 +624,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-p109">ユーザーが接続を更新できる場合は、 <b>True</b> に設定します。既定値は <b>True</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</span>
+          <span data-ttu-id="629a2-p109">ユーザーが接続を更新できる場合は、 <b>True</b> に設定します。既定値は <b>True</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-p109">
+            <span data-stu-id="629a2-p109">
               <b>True</b> if the connection can be refreshed by the user. The default value is <b>True</b>. Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-142">
+          <span data-ttu-id="629a2-142">
             <b>ブール型 (Boolean)</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-142">
+            <span data-stu-id="629a2-142">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="317a2-143">
-            <para>
-              <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RefreshOnFileOpen" />プロパティは、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.EnableRefresh" />プロパティが<b>False</b>に設定します。</para>
-            <para />
-          </span>
+          <span data-ttu-id="629a2-143">
+            <para>、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RefreshOnFileOpen" />プロパティは、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.EnableRefresh" />プロパティが<b>False</b>に設定します</para>。
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-143">
+            <span data-stu-id="629a2-143">
               <para>The <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RefreshOnFileOpen" /> property is ignored if the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.EnableRefresh" /> property is set to <b>False</b>. </para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -685,40 +677,38 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-144">
+          <span data-ttu-id="629a2-144">
             <b>True を設定する場合は</b>、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.MaintainConnection" />プロパティが<b>True</b>です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-144">Returns <b>True</b> if the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.MaintainConnection" /> property is<b>True</b>.</span>
+            <span data-stu-id="629a2-144">Returns <b>True</b> if the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.MaintainConnection" /> property is<b>True</b>.</span>
           </span>
-          <span data-ttu-id="317a2-145">ソースに現在接続されていない場合は<b>False</b>を返します。</span>
+          <span data-ttu-id="629a2-145">ソースに現在接続されていない場合は<b>False</b>を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-145">Returns <b>False</b> if it is not currently connected to its source.</span>
+            <span data-stu-id="629a2-145">Returns <b>False</b> if it is not currently connected to its source.</span>
           </span>
-          <span data-ttu-id="317a2-146">読み取り専用の <b>ブール値</b> です。</span>
+          <span data-ttu-id="629a2-146">読み取り専用の <b>ブール値</b> です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-146">Read-only <b>Boolean</b>.</span>
+            <span data-stu-id="629a2-146">Read-only <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-147">
+          <span data-ttu-id="629a2-147">
             <b>ブール型 (Boolean)</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-147">
+            <span data-stu-id="629a2-147">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="317a2-148">
-            <para>
-              <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.IsConnected" />プロパティは、接続が接続されているかどうかにはチェックされません。このプロパティが<b>True</b>を返す場合でも、プロバイダーにコマンドを送信、可能性がありますエラー接続が有効でなくなった場合。</para>
-            <para />
-          </span>
+          <span data-ttu-id="629a2-148">
+            <para>、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.IsConnected" />プロパティは、接続が接続されているかどうかにはチェックされません。このプロパティが<b>True</b>を返す場合でも、プロバイダーにコマンドを送信、可能性がありますエラー接続が有効でなくなった場合</para>。
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-148">
+            <span data-stu-id="629a2-148">
               <para>The <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.IsConnected" /> property does not check to see if the connection is connected. Even if this property returns<b>True</b>, sending commands to the provider could result in an error if the connection is no longer valid.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -751,37 +741,37 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-149">取得またはオフライン キューブ ファイルに接続文字列を設定します。</span>
+          <span data-ttu-id="629a2-149">取得またはオフライン キューブ ファイルに接続文字列を設定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-149">Returns or sets the connection string to an offline cube file.</span>
+            <span data-stu-id="629a2-149">Returns or sets the connection string to an offline cube file.</span>
           </span>
-          <span data-ttu-id="317a2-150">読み取り/書き込みの<b>オブジェクト</b>です。</span>
+          <span data-ttu-id="629a2-150">読み取り/書き込みの<b>オブジェクト</b>です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-150">Read/write <b>Object</b>.</span>
+            <span data-stu-id="629a2-150">Read/write <b>Object</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-151">
+          <span data-ttu-id="629a2-151">
             <b>オブジェクト</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-151">
+            <span data-stu-id="629a2-151">
               <b>Object</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="317a2-152">
+          <span data-ttu-id="629a2-152">
             <para>非 OLAP データ ソースの値を<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" />プロパティは空の文字列と<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" />プロパティが<b>False</b>に設定します</para>。
           <para>の設定、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" />プロパティがデータ ソースへの接続をすぐに開始されません。最初を使用する必要があります、<see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" />の接続を行い、データを取得するメソッドです</para>。
           <para>値の<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" />場合は、プロパティが使用される、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" />プロパティが<b>True</b>に設定します。場合、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" />プロパティが<b>False</b>に設定します<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" />プロパティは、ローカル キューブ ファイル以外のソースを基にクエリ テーブルの接続文字列を指定します</para>。
-          <para /></span>
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-152">
+            <span data-stu-id="629a2-152">
               <para>For a non-OLAP data source, the value of the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> property is an empty string, and the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> property is set to <b>False</b>.</para>
               <para>Setting the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> property does not immediately initiate the connection to the data source. You must first use the <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> method to make the connection and retrieve the data.</para>
               <para>The value of the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> property is used if the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> property is set to <b>True</b>. If the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.UseLocalConnection" /> property is set to <b>False</b>, the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> property specifies the connection string for query tables based on sources other than local cube files.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -814,27 +804,27 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-153">取得または指定された接続のロケール識別子を設定します。</span>
+          <span data-ttu-id="629a2-153">取得または指定された接続のロケール識別子を設定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-153">Gets or sets the locale identifier for the specified connection.</span>
+            <span data-stu-id="629a2-153">Gets or sets the locale identifier for the specified connection.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-154">指定した接続のロケール識別子です。</span>
+          <span data-ttu-id="629a2-154">指定した接続のロケール識別子です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-154">The locale identifier for the specified connection.</span>
+            <span data-stu-id="629a2-154">The locale identifier for the specified connection.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="317a2-155">
+          <span data-ttu-id="629a2-155">
             <para>読み取り/書き込み</para>。
           <para>を設定する前に、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocaleID" />に新しいロケールのプロパティを設定する必要あります、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RetrieveInOfficeUILang" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /><b>false を指定</b>するオブジェクト。有効なロケール ID (LCID) 値については、"ロケール Id 割り当てによってマイクロソフトの MSDN web サイトを検索します</para>。
-          <para /></span>
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-155">
+            <span data-stu-id="629a2-155">
               <para>Read/write.</para>
               <para>Before you set the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocaleID" /> property to a new locale, you must set the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.RetrieveInOfficeUILang" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> object to <b>false</b>. For information about valid Locale ID (LCID) values, search the MSDN website for "Locale IDs Assigned by Microsoft".</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -867,34 +857,33 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-156">更新操作の後、ブックが閉じられるまで、指定したデータ ソースへの接続が維持される場合は<b>True</b>を返します。</span>
+          <span data-ttu-id="629a2-156">更新操作の後、ブックが閉じられるまで、指定したデータ ソースへの接続が維持される場合は<b>True</b>を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-156">Returns <b>True</b> if the connection to the specified data source is maintained after the refresh operation and until the workbook is closed.</span>
+            <span data-stu-id="629a2-156">Returns <b>True</b> if the connection to the specified data source is maintained after the refresh operation and until the workbook is closed.</span>
           </span>
-          <span data-ttu-id="317a2-157">ブール型 ( <b>Boolean</b>) の値を使用します。</span>
+          <span data-ttu-id="629a2-157">ブール型 ( <b>Boolean</b>) の値を使用します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-157">Read/write <b>Boolean</b>.</span>
+            <span data-stu-id="629a2-157">Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-158">
+          <span data-ttu-id="629a2-158">
             <b>ブール型 (Boolean)</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-158">
+            <span data-stu-id="629a2-158">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="317a2-159">
-            <para>既定値は、 <b>true を指定</b>します。サーバーに対して頻繁にクエリする場合、このプロパティを<b>True</b>に設定可能性がありますパフォーマンス向上再接続時間が短縮します。このプロパティを<b>False</b>に設定すると、未処理の接続が閉じられます。</para>
-            <para />
-          </span>
+          <span data-ttu-id="629a2-159">
+            <para>既定値は<b>True です</b>。サーバーに対して頻繁にクエリする場合、このプロパティを<b>True</b>に設定可能性がありますパフォーマンス向上再接続時間が短縮します。開いている接続が終了すると、このプロパティを<b>False</b>に設定します</para>。
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-159">
+            <span data-stu-id="629a2-159">
               <para>The default value is <b>True</b>. If you anticipate frequent queries to a server, setting this property to <b>True</b> might improve performance by reducing reconnection time. Setting this property to <b>False</b> causes an open connection to be closed.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -922,24 +911,24 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-160">指定された OLE DB 接続の接続を確立します。</span>
+          <span data-ttu-id="629a2-160">指定された OLE DB 接続の接続を確立します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-160">Establishes a connection for the specified OLE DB connection.</span>
+            <span data-stu-id="629a2-160">Establishes a connection for the specified OLE DB connection.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="317a2-161">
+          <span data-ttu-id="629a2-161">
             <para>
               <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.MakeConnection" />の接続を削除し、ユーザーが接続を再確立するとき、メソッドを使用できます。</para>
             <para>さまざまなオブジェクトおよびメソッドは、接続が切断された場合に、実行時エラーに返すことがあります。このメソッドを使用して他のオブジェクトやメソッドを実行する前に接続を保証します</para>。
           <para>この方法と、実行時エラーの場合、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.MaintainConnection" />指定された OLE DB 接続のプロパティが<b>False</b>に設定されています</para>。
-          <para /></span>
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-161">
+            <span data-stu-id="629a2-161">
               <para>The <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.MakeConnection" /> method can be used when a connection drops and the user wants to reestablish the connection. </para>
               <para>Various objects and methods might return a run-time error if the connection is dropped. Use of this method assures a connection before executing other objects or methods.</para>
               <para>This method will result in a run-time error if the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.MaintainConnection" /> property of the specified OLE DB connection has been set to <b>False</b>.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -972,21 +961,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-162">取得または取得するレコードの最大数を設定します。</span>
+          <span data-ttu-id="629a2-162">取得または取得するレコードの最大数を設定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-162">Returns or sets the maximum number of records to retrieve.</span>
+            <span data-stu-id="629a2-162">Returns or sets the maximum number of records to retrieve.</span>
           </span>
-          <span data-ttu-id="317a2-163">値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</span>
+          <span data-ttu-id="629a2-163">値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-163">Read/write <b>Integer</b>.</span>
+            <span data-stu-id="629a2-163">Read/write <b>Integer</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-164">
+          <span data-ttu-id="629a2-164">
             <b>Integer</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-164">
+            <span data-stu-id="629a2-164">
               <b>Integer</b>
             </span>
           </span>
@@ -1018,21 +1007,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-165">OLE DB 接続は、オンライン分析処理 (OLAP) サーバーに接続されている場合は<b>True</b>を返します。</span>
+          <span data-ttu-id="629a2-165">OLE DB 接続は、オンライン分析処理 (OLAP) サーバーに接続されている場合は<b>True</b>を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-165">Returns <b>True</b> if the OLE DB connection is connected to an Online Analytical Processing (OLAP) server.</span>
+            <span data-stu-id="629a2-165">Returns <b>True</b> if the OLE DB connection is connected to an Online Analytical Processing (OLAP) server.</span>
           </span>
-          <span data-ttu-id="317a2-166">読み取り専用の <b>ブール値</b> です。</span>
+          <span data-ttu-id="629a2-166">読み取り専用の <b>ブール値</b> です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-166">Read-only <b>Boolean</b>.</span>
+            <span data-stu-id="629a2-166">Read-only <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-167">
+          <span data-ttu-id="629a2-167">
             <b>ブール型 (Boolean)</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-167">
+            <span data-stu-id="629a2-167">
               <b>Boolean</b>
             </span>
           </span>
@@ -1064,17 +1053,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-p115">指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</span>
+          <span data-ttu-id="629a2-p115">指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-p115">Returns the parent object for the specified object. Read-only.</span>
+            <span data-stu-id="629a2-p115">Returns the parent object for the specified object. Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-170">
+          <span data-ttu-id="629a2-170">
             <b>オブジェクト</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-170">
+            <span data-stu-id="629a2-170">
               <b>Object</b>
             </span>
           </span>
@@ -1104,9 +1093,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-171">指定した接続を切断してから再度接続します。</span>
+          <span data-ttu-id="629a2-171">指定した接続を切断してから再度接続します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-171">Drops and then reconnects the specified connection.</span>
+            <span data-stu-id="629a2-171">Drops and then reconnects the specified connection.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -1134,27 +1123,27 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-172">OLE DB 接続を更新します。</span>
+          <span data-ttu-id="629a2-172">OLE DB 接続を更新します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-172">Refreshes an OLE DB connection.</span>
+            <span data-stu-id="629a2-172">Refreshes an OLE DB connection.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="317a2-173">
+          <span data-ttu-id="629a2-173">
             <para>Microsoft Excel がで指定された接続文字列を使用して OLE DB データ ソースへの接続を行う場合、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" />プロパティ。指定した接続文字列には、必要な値がない、ユーザーに必要な情報の入力を求めるダイアログ ボックスが表示されます。場合、<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />プロパティが<b>False</b>で、ダイアログ ボックスは表示されませんし、<see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" />メソッドが不足している接続情報の例外で失敗します</para>。
           <para>Excel の後は、接続に成功する、完全な接続文字列を格納するため、それ以降のダイアログ ボックスが表示されませんが、<see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" />メソッドは、同じ編集セッション中にします。値を調べることによって完全な接続文字列を取得することができます、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" />プロパティ</para>。
           <para>データベースの接続が行われると、SQL クエリを検証します。クエリは有効ではない場合、<see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" />メソッドは、SQL 構文エラーの例外で失敗します</para>。
           <para>、 <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> 、クエリが正常に完了または開始する場合、メソッドが<b>True</b>を返します; <b>False</b>を返し、ユーザーが接続をキャンセルした場合</para>。フェッチされたローの数が、ワークシート上の行の数を超えたかどうかを参照してください、確認する
           <para>、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.FetchedRowOverflow" />プロパティ。このプロパティはすべての時間を初期化、<see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" />メソッドが呼び出されます</para>。
-          <para /></span>
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-173">
+            <span data-stu-id="629a2-173">
               <para>When making the connection to the OLE DB data source, Microsoft Excel uses the connection string specified by the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> property. If the specified connection string is missing required values, dialog boxes will be displayed to prompt the user for the required information. If the <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> property is <b>False</b>, dialog boxes are not displayed and the <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> method fails with the Insufficient Connection Information exception.</para>
               <para>After Microsoft Excel makes a successful connection, it stores the completed connection string so that prompts will not be displayed for subsequent calls to the <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> method during the same editing session. You can obtain the completed connection string by examining the value of the  <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> property.</para>
               <para>After the database connection is made, the SQL query is validated. If the query is not valid, the <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> method fails with the SQL Syntax Error exception.</para>
               <para>The <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> method returns <b>True</b> if the query is successfully completed or started; it returns <b>False</b> if the user cancels a connection.</para>
               <para>To see whether the number of fetched rows exceeded the number of available rows on the worksheet, examine the <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.FetchedRowOverflow" /> property. This property is initialized every time the <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> method is called.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1184,34 +1173,33 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-174">OLE DB 接続が最後に更新された日付を返します。</span>
+          <span data-ttu-id="629a2-174">OLE DB 接続が最後に更新された日付を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-174">Returns the date on which the OLE DB connection was last refreshed.</span>
+            <span data-stu-id="629a2-174">Returns the date on which the OLE DB connection was last refreshed.</span>
           </span>
-          <span data-ttu-id="317a2-175">読み取り専用で<b>DateTime</b>。</span>
+          <span data-ttu-id="629a2-175">読み取り専用で<b>DateTime</b>。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-175">Read-only <b>DateTime</b>.</span>
+            <span data-stu-id="629a2-175">Read-only <b>DateTime</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-176">
+          <span data-ttu-id="629a2-176">
             <b>DateTime</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-176">
+            <span data-stu-id="629a2-176">
               <b>DateTime</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="317a2-177">
-            <para>OLAP データ ソースの場合、このプロパティは各クエリの後に更新されます。</para>
-            <para />
-          </span>
+          <span data-ttu-id="629a2-177">
+            <para>OLAP データ ソースの場合、このプロパティは各クエリの後に更新します</para>。
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-177">
+            <span data-stu-id="629a2-177">
               <para>For OLAP data sources, this property is updated after each query.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1241,31 +1229,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-p117">指定された OLE DB 接続に対するバックグラウンド OLE DB クエリが実行中である場合、このプロパティの値は  <b>True</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</span>
+          <span data-ttu-id="629a2-p117">指定された OLE DB 接続に対するバックグラウンド OLE DB クエリが実行中である場合、このプロパティの値は  <b>True</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-p117">
+            <span data-stu-id="629a2-p117">
               <b>True</b> if a background OLE DB query is in progress for the specified OLE DB connection. Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-180">
+          <span data-ttu-id="629a2-180">
             <b>ブール型 (Boolean)</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-180">
+            <span data-stu-id="629a2-180">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="317a2-181">
-            <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.CancelRefresh" />バック グラウンド クエリをキャンセルするメソッドです。</para>
-            <para />
-          </span>
+          <span data-ttu-id="629a2-181">
+            <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.CancelRefresh" />バック グラウンド クエリをキャンセルするメソッドです</para>。
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-181">
+            <span data-stu-id="629a2-181">
               <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.CancelRefresh" /> method to cancel background queries.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1298,31 +1285,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-p118">ブックを開くたびに接続を自動的に更新する場合は、 <b>True</b> に設定します。既定値は <b>False</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</span>
+          <span data-ttu-id="629a2-p118">ブックを開くたびに接続を自動的に更新する場合は、 <b>True</b> に設定します。既定値は <b>False</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-p118">
+            <span data-stu-id="629a2-p118">
               <b>True</b> if the connection is automatically updated each time the workbook is opened. The default value is <b>False</b>. Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-185">
+          <span data-ttu-id="629a2-185">
             <b>ブール型 (Boolean)</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-185">
+            <span data-stu-id="629a2-185">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="317a2-186">
-            <para>使用してブックを開くと、接続が自動的に更新されません、<see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />では、Visual Basic のメソッドです。使用して、 <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> 、ブックを開いた後にデータを更新する方法です。</para>
-            <para />
-          </span>
+          <span data-ttu-id="629a2-186">
+            <para>を使用してブックを開くと、接続が自動的に更新されません、<see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />では、Visual Basic のメソッドです。使用して、 <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> 、ブックを開いた後にデータを更新する方法です</para>。
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-186">
+            <span data-stu-id="629a2-186">
               <para>The connections are not automatically refreshed when you open the workbook by using the <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method in Visual Basic. Use the <see cref="M:Microsoft.Office.Interop.Excel.OLEDBConnection.Refresh" /> method to refresh the data after the workbook is open.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1355,34 +1341,33 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-187">返すまたは、更新間隔を分単位の数を設定します。</span>
+          <span data-ttu-id="629a2-187">返すまたは、更新間隔を分単位の数を設定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-187">Returns or sets the number of minutes between refreshes.</span>
+            <span data-stu-id="629a2-187">Returns or sets the number of minutes between refreshes.</span>
           </span>
-          <span data-ttu-id="317a2-188">値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</span>
+          <span data-ttu-id="629a2-188">値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-188">Read/write <b>Integer</b>.</span>
+            <span data-stu-id="629a2-188">Read/write <b>Integer</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-189">
+          <span data-ttu-id="629a2-189">
             <b>Integer</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-189">
+            <span data-stu-id="629a2-189">
               <b>Integer</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="317a2-190">
-            <para>期間を 0 (ゼロ) に設定、自動タイマー更新が無効になります、、このプロパティを<b>Null</b>に設定するのと同じです。<b>RefreshPeriod</b>プロパティの値は 0 から 32767 までの整数にできます。</para>
-            <para />
-          </span>
+          <span data-ttu-id="629a2-190">
+            <para>期間を 0 (ゼロ) に設定する自動タイマー更新が無効になり、このプロパティを<b>Null</b>に設定するのと同じです。<b>RefreshPeriod</b>プロパティの値は 0 から 32767 までの整数であることができます</para>。
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-190">
+            <span data-stu-id="629a2-190">
               <para>Setting the period to 0 (zero) disables automatic timed refreshes and is equivalent to setting this property to <b>Null</b>. The value of the <b>RefreshPeriod</b> property can be an integer from 0 through 32767.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1415,37 +1400,35 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-191">
+          <span data-ttu-id="629a2-191">
             <b>True</b>データおよびエラーは、Office ユーザー インターフェイス表示言語が使用可能な場合に取得する場合。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-191">
+            <span data-stu-id="629a2-191">
               <b>True</b> if the data and errors are to be retrieved in the Office user interface display language when available.</span>
           </span>
-          <span data-ttu-id="317a2-192">ブール型 ( <b>Boolean</b>) の値を使用します。</span>
+          <span data-ttu-id="629a2-192">ブール型 ( <b>Boolean</b>) の値を使用します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-192">Read/write <b>Boolean</b>.</span>
+            <span data-stu-id="629a2-192">Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-193">
+          <span data-ttu-id="629a2-193">
             <b>ブール型 (Boolean)</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-193">
+            <span data-stu-id="629a2-193">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="317a2-194">
-            <para>
-              <b>False</b>にこのプロパティが設定されている場合、接続文字列の LCID 値が代わりに使用します。LCID を指定しない場合は、サーバーから既定の LCID が使用されます。</para>
-            <para />
-          </span>
+          <span data-ttu-id="629a2-194">
+            <para>に<b>false を指定</b>、接続文字列の LCID 値にこのプロパティが設定されている場合は、代わりに使用されます。LCID を指定しない場合は、サーバーから既定の LCID が使用されます</para>。
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-194">
+            <span data-stu-id="629a2-194">
               <para>If this property is set to <b>False</b>, the LCID value in the connection string is used instead. If an LCID is not specified, the default LCID from the server is used.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1478,29 +1461,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-195">OLE DB 接続がデータ ソースに接続する方法を設定または返します。</span>
+          <span data-ttu-id="629a2-195">OLE DB 接続がデータ ソースに接続する方法を設定または返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-195">Returns or sets how OLE DB connection connects to its data source.</span>
+            <span data-stu-id="629a2-195">Returns or sets how OLE DB connection connects to its data source.</span>
           </span>
-          <span data-ttu-id="317a2-196">読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" />。</span>
+          <span data-ttu-id="629a2-196">読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-196">Read/write <see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" />.</span>
+            <span data-stu-id="629a2-196">Read/write <see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" />.</span>
           </span>
         </summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlRobustConnect" />
         </value>
         <remarks>
-          <span data-ttu-id="317a2-197">
+          <span data-ttu-id="629a2-197">
             <para>Excel はブックの接続情報を使用して接続を確立することが、信頼性の高い接続を使用する場合、Excel はブックの接続が外部接続ファイルへのパスを持つかどうか確認します。 場合は、Excel は外部接続ファイルを開くし、外部接続ファイルに含まれる情報を使用して接続しようとしています。 外部接続ファイルを使用した後、接続を確立できる場合、Excel はブックの接続オブジェクトを更新します。 </para>
             <para>これにより、情報技術部門を保持し、一元的に接続を更新する場所のシナリオで信頼性の高い接続を許可するものを自動的に取得するのにはユーザーのブックを更新するたびに以前のバージョンの(ブック内でキャッシュされている) 接続が失敗します。</para>
-            <para />
+            <para></para>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-197">
+            <span data-stu-id="629a2-197">
               <para>If you use robust connectivity, when Microsoft Excel is unable to establish a connection using the workbook connection information,   Excel will check if the workbook connection has a path to an external connection file.  If it does, Excel will open the external connection file and try to connect using the information contained in the external connection file.  If a connection can be established after using the external connection file, Excel will then update the workbook's connection object.  </para>
               <para>This provides robust connectivity in scenarios where an Information Technology Department maintains and updates connections in a central place, permitting a user's workbook to automatically fetch those updates whenever the previous version of the connection (cached within the workbook) fails. </para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1531,27 +1514,27 @@
       </Parameters>
       <Docs>
         <param name="ODCFileName">
-          <span data-ttu-id="317a2-198">ファイルの保存場所。</span>
+          <span data-ttu-id="629a2-198">ファイルの保存場所。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-198">Location to save the file.</span>
+            <span data-stu-id="629a2-198">Location to save the file.</span>
           </span>
         </param>
         <param name="Description">
-          <span data-ttu-id="317a2-199">ファイルに保存する説明。</span>
+          <span data-ttu-id="629a2-199">ファイルに保存する説明。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-199">Description that will be saved in the file.</span>
+            <span data-stu-id="629a2-199">Description that will be saved in the file.</span>
           </span>
         </param>
         <param name="Keywords">
-          <span data-ttu-id="317a2-200">ファイルの検索に使用するキーワード。各キーワードを空白で区切って指定します。</span>
+          <span data-ttu-id="629a2-200">ファイルの検索に使用するキーワード。各キーワードを空白で区切って指定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-200">Space-separated keywords that can be used to search for this file.</span>
+            <span data-stu-id="629a2-200">Space-separated keywords that can be used to search for this file.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="317a2-201">OLE DB 接続を Microsoft Office データ接続ファイルとして保存します。</span>
+          <span data-ttu-id="629a2-201">OLE DB 接続を Microsoft Office データ接続ファイルとして保存します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-201">Saves the OLE DB connection as an Microsoft Office Data Connection file.</span>
+            <span data-stu-id="629a2-201">Saves the OLE DB connection as an Microsoft Office Data Connection file.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -1584,32 +1567,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-p122">
+          <span data-ttu-id="629a2-p122">
             <b>True</b> の場合、OLE DB 接続文字列のパスワード情報は接続文字列に保存されます。 <b>False</b> の場合、パスワードは削除されます。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-p122">
+            <span data-stu-id="629a2-p122">
               <b>True</b> if password information in an OLE DB connection string is saved in the connection string. <b>False</b> if the password is removed. Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-205">
+          <span data-ttu-id="629a2-205">
             <b>ブール型 (Boolean)</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-205">
+            <span data-stu-id="629a2-205">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="317a2-206">
-            <para>ODBC および ole DB の両方のクエリで、ピボット テーブルおよびクエリ テーブルで使用して、このプロパティが使用されます。</para>
-            <para />
-          </span>
+          <span data-ttu-id="629a2-206">
+            <para>、ODBC と ole DB の両方のクエリで、ピボット テーブルおよびクエリ テーブルで使用して、このプロパティを使用します</para>。
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-206">
+            <span data-stu-id="629a2-206">
               <para>This property is used in both ODBC and OLEDB queries, and by both PivotTables and QueryTables.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -1642,13 +1624,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-207">返すまたは、サーバーの認証に使用される資格情報の種類を設定します。</span>
+          <span data-ttu-id="629a2-207">返すまたは、サーバーの認証に使用される資格情報の種類を設定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-207">Returns or sets the type of credentials that should be used for server authentication.</span>
+            <span data-stu-id="629a2-207">Returns or sets the type of credentials that should be used for server authentication.</span>
           </span>
-          <span data-ttu-id="317a2-208">読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Excel.XlCredentialsMethod" />。</span>
+          <span data-ttu-id="629a2-208">読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Excel.XlCredentialsMethod" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-208">Read/write <see cref="T:Microsoft.Office.Interop.Excel.XlCredentialsMethod" />.</span>
+            <span data-stu-id="629a2-208">Read/write <see cref="T:Microsoft.Office.Interop.Excel.XlCredentialsMethod" />.</span>
           </span>
         </summary>
         <value>
@@ -1684,23 +1666,23 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-209">
+          <span data-ttu-id="629a2-209">
             <b>True の</b>場合は、OLAP サーバーの塗りつぶしの色の書式設定はサーバーから取得、指定された接続を使用する場合。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-209">
+            <span data-stu-id="629a2-209">
               <b>True</b> if the fill color format for the OLAP server is retrieved from the server when using the specified connection.</span>
           </span>
-          <span data-ttu-id="317a2-210">ブール型 ( <b>Boolean</b>) の値を使用します。</span>
+          <span data-ttu-id="629a2-210">ブール型 ( <b>Boolean</b>) の値を使用します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-210">Read/write <b>Boolean</b>.</span>
+            <span data-stu-id="629a2-210">Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-211">
+          <span data-ttu-id="629a2-211">
             <b>ブール型 (Boolean)</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-211">
+            <span data-stu-id="629a2-211">
               <b>Boolean</b>
             </span>
           </span>
@@ -1735,23 +1717,23 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-212">
+          <span data-ttu-id="629a2-212">
             <b>True の</b>場合は、OLAP サーバーのフォント スタイルの書式設定はサーバーから取得、指定された接続を使用する場合。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-212">
+            <span data-stu-id="629a2-212">
               <b>True</b> if the font style format for the OLAP server is retrieved from the server when using the specified connection.</span>
           </span>
-          <span data-ttu-id="317a2-213">ブール型 ( <b>Boolean</b>) の値を使用します。</span>
+          <span data-ttu-id="629a2-213">ブール型 ( <b>Boolean</b>) の値を使用します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-213">Read/write <b>Boolean</b>.</span>
+            <span data-stu-id="629a2-213">Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-214">
+          <span data-ttu-id="629a2-214">
             <b>ブール型 (Boolean)</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-214">
+            <span data-stu-id="629a2-214">
               <b>Boolean</b>
             </span>
           </span>
@@ -1786,23 +1768,23 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-215">
+          <span data-ttu-id="629a2-215">
             <b>True の</b>場合は、OLAP サーバーの数字書式がサーバーから取得、指定された接続を使用する場合。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-215">
+            <span data-stu-id="629a2-215">
               <b>True</b> if the number format for the OLAP server is retrieved from the server when using the specified connection.</span>
           </span>
-          <span data-ttu-id="317a2-216">ブール型 ( <b>Boolean</b>) の値を使用します。</span>
+          <span data-ttu-id="629a2-216">ブール型 ( <b>Boolean</b>) の値を使用します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-216">Read/write <b>Boolean</b>.</span>
+            <span data-stu-id="629a2-216">Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-217">
+          <span data-ttu-id="629a2-217">
             <b>ブール型 (Boolean)</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-217">
+            <span data-stu-id="629a2-217">
               <b>Boolean</b>
             </span>
           </span>
@@ -1837,21 +1819,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-218">SSO 資格情報データベースで検索を実行するために使用されるシングル サインオン アプリケーション (SSO) の識別子を設定または返します。</span>
+          <span data-ttu-id="629a2-218">SSO 資格情報データベースで検索を実行するために使用されるシングル サインオン アプリケーション (SSO) の識別子を設定または返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-218">Returns or sets a single sign-on application (SSO) identifier that is used to perform a lookup in the SSO database for credentials.</span>
+            <span data-stu-id="629a2-218">Returns or sets a single sign-on application (SSO) identifier that is used to perform a lookup in the SSO database for credentials.</span>
           </span>
-          <span data-ttu-id="317a2-219">値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</span>
+          <span data-ttu-id="629a2-219">値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-219">Read/write <b>String</b>.</span>
+            <span data-stu-id="629a2-219">Read/write <b>String</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-220">
+          <span data-ttu-id="629a2-220">
             <b>文字列型 (String)</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-220">
+            <span data-stu-id="629a2-220">
               <b>String</b>
             </span>
           </span>
@@ -1886,23 +1868,23 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-221">
+          <span data-ttu-id="629a2-221">
             <b>True の</b>場合、テキストの色は、OLAP サーバーの書式設定はサーバーから取得、指定された接続を使用する場合。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-221">
+            <span data-stu-id="629a2-221">
               <b>True</b> if the text color format for the OLAP server is retrieved from the server when using the specified connection.</span>
           </span>
-          <span data-ttu-id="317a2-222">ブール型 ( <b>Boolean</b>) の値を使用します。</span>
+          <span data-ttu-id="629a2-222">ブール型 ( <b>Boolean</b>) の値を使用します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-222">Read/write <b>Boolean</b>.</span>
+            <span data-stu-id="629a2-222">Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-223">
+          <span data-ttu-id="629a2-223">
             <b>ブール型 (Boolean)</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-223">
+            <span data-stu-id="629a2-223">
               <b>Boolean</b>
             </span>
           </span>
@@ -1937,21 +1919,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-224">Microsoft Office データ接続ファイルの接続を作成するために使用されたのようなファイルを示す<b>文字列</b>を設定または返します。</span>
+          <span data-ttu-id="629a2-224">Microsoft Office データ接続ファイルの接続を作成するために使用されたのようなファイルを示す<b>文字列</b>を設定または返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-224">Returns or sets a <b>String</b> indicating the Microsoft Office Data Connection file or similar file that was used to create the connection.</span>
+            <span data-stu-id="629a2-224">Returns or sets a <b>String</b> indicating the Microsoft Office Data Connection file or similar file that was used to create the connection.</span>
           </span>
-          <span data-ttu-id="317a2-225">値の取得および設定が可能です。</span>
+          <span data-ttu-id="629a2-225">値の取得および設定が可能です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-225">Read/write.</span>
+            <span data-stu-id="629a2-225">Read/write.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-226">
+          <span data-ttu-id="629a2-226">
             <b>文字列型 (String)</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-226">
+            <span data-stu-id="629a2-226">
               <b>String</b>
             </span>
           </span>
@@ -1986,34 +1968,33 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-227">OLE DB 接続のソース データ ファイルを示す<b>文字列</b>を設定または返します。</span>
+          <span data-ttu-id="629a2-227">OLE DB 接続のソース データ ファイルを示す<b>文字列</b>を設定または返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-227">Returns or sets a <b>String</b> indicating the source data file for an OLE DB connection.</span>
+            <span data-stu-id="629a2-227">Returns or sets a <b>String</b> indicating the source data file for an OLE DB connection.</span>
           </span>
-          <span data-ttu-id="317a2-228">値の取得および設定が可能です。</span>
+          <span data-ttu-id="629a2-228">値の取得および設定が可能です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-228">Read/write.</span>
+            <span data-stu-id="629a2-228">Read/write.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-229">
+          <span data-ttu-id="629a2-229">
             <b>文字列型 (String)</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-229">
+            <span data-stu-id="629a2-229">
               <b>String</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="317a2-230">
-            <para>ファイル ・ ベースのデータ ソース (たとえば、アクセス許可)、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceDataFile" />プロパティには、元のデータ ファイルへの完全修飾パスが含まれています。サーバー ベースのデータ ソース (たとえば、SQL Server の) の null であります。<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceDataFile" />プロパティが null の場合、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" />プロパティをプログラムで変更します。</para>
-            <para />
-          </span>
+          <span data-ttu-id="629a2-230">
+            <para>のファイル ・ ベースのデータ ソース (Access など)、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceDataFile" />プロパティには、元のデータ ファイルへの完全修飾パスが含まれています。サーバー ベースのデータ ソース (たとえば、SQL Server の) の null であります。<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceDataFile" />プロパティが null の場合、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" />プロパティをプログラムで変更します</para>。
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-230">
+            <span data-stu-id="629a2-230">
               <para>For file-based data sources (for example, Access) the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceDataFile" /> property contains a fully qualified path to the source data file. It is null for server-based data sources (for example, SQL Server). The <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.SourceDataFile" /> property is set to null if the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> property is changed programmatically.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
@@ -2046,42 +2027,41 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="317a2-231">
+          <span data-ttu-id="629a2-231">
             <b>True</b>の場合、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" />プロパティを使用して Excel データ ソースへの接続を可能にする文字列を指定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-231">
+            <span data-stu-id="629a2-231">
               <b>True</b> if the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.LocalConnection" /> property is used to specify the string that enables Microsoft Excel to connect to a data source.</span>
           </span>
-          <span data-ttu-id="317a2-232">
+          <span data-ttu-id="629a2-232">
             <b>False を指定</b>して接続文字列を指定した場合、<see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" />プロパティを使用します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-232">
+            <span data-stu-id="629a2-232">
               <b>False</b> if the connection string specified by the <see cref="P:Microsoft.Office.Interop.Excel.OLEDBConnection.Connection" /> property is used.</span>
           </span>
-          <span data-ttu-id="317a2-233">ブール型 ( <b>Boolean</b>) の値を使用します。</span>
+          <span data-ttu-id="629a2-233">ブール型 ( <b>Boolean</b>) の値を使用します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-233">Read/write <b>Boolean</b>.</span>
+            <span data-stu-id="629a2-233">Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="317a2-234">
+          <span data-ttu-id="629a2-234">
             <b>ブール型 (Boolean)</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-234">
+            <span data-stu-id="629a2-234">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="317a2-235">
-            <para>この例では、オフライン キューブ ファイルを参照する最初のピボット テーブル キャッシュの接続文字列を設定します。</para>
-            <para />
-          </span>
+          <span data-ttu-id="629a2-235">
+            <para>次の使用例は、オフライン キューブ ファイルを参照する最初のピボット テーブル キャッシュの接続文字列を設定します</para>。
+          <para></para></span>
           <span class="sxs-lookup">
-            <span data-stu-id="317a2-235">
+            <span data-stu-id="629a2-235">
               <para>This example sets the connection string of the first PivotTable cache to reference an offline cube file.</para>
-              <para />
+              <para></para>
             </span>
           </span>
         </remarks>
