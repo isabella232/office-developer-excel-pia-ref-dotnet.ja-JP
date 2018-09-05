@@ -1,0 +1,1396 @@
+<Type Name="PivotFilter" FullName="Microsoft.Office.Interop.Excel.PivotFilter">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="a5e7f1c81a635cfb8b63c8d4ecfb57f50d9536c4" />
+    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="ja-JP" />
+    <Meta Name="ms.lasthandoff" Value="09/04/2018" />
+    <Meta Name="ms.locfileid" Value="20579493" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface PivotFilter" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotFilter" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotFilter" />
+  <TypeSignature Language="VB.NET" Value="Public Interface PivotFilter" />
+  <TypeSignature Language="C++ CLI" Value="public interface class PivotFilter" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00024483-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(2)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4096)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="4ffb7-101">A<see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" />に適用される、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />オブジェクトです。</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="4ffb7-101">A <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> is applied to a <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> object.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="4ffb7-102">
+        <para>の開発者では、信頼性の高いインデックスは参照用のフィルターの名前を付けるオプションがあります。<see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.DataField" />プロパティを指定します<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />値フィルターの基にします</para>。
+      <para></para></span>
+      <span class="sxs-lookup">
+        <span data-stu-id="4ffb7-102">
+          <para>Developers have the option of naming filters for reference since the index is not reliable. The <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.DataField" /> property specifies the <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> to base a value filter on.</para>
+          <para></para>
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Active">
+      <MemberSignature Language="C#" Value="public bool Active { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Active" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.Active" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Active As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Active { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2312)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2312)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ffb7-103">返すかどうか、指定した<see cref="P:Microsoft.Office.Interop.Excel.PivotFilter" />がアクティブです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-103">Returns whether the specified <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter" /> is active.</span>
+          </span>
+          <span data-ttu-id="4ffb7-104">読み取り専用。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-104">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="4ffb7-105">
+            <b>ブール型 (Boolean)</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-105">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="4ffb7-106">このプロパティは<b>True</b>を返します<para>と、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />では、フィルターの<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />フィルターが評価されると、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />が更新されます。<b>False</b>を返しますと、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />のフィルターではありません、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />影響を与えませんし、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />計算します</para>。
+          <para></para></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-106">
+              <para>This property returns <b>True</b> when the <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> of the filter is in the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> and the filter is evaluated when the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> is updated. It returns <b>False</b> when the <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> of the filter is not in the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> and has no effect on the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> calculation.</para>
+              <para></para>
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.Application Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.Application Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::Application ^ Application { Microsoft::Office::Interop::Excel::Application ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ffb7-107">オブジェクト修飾子を指定しない場合に使用する場合、このプロパティは、Microsoft Office Excel を返します<see cref="T:Microsoft.Office.Interop.Excel._Application" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-107">When used without an object qualifier, this property returns the Microsoft Office Excel <see cref="T:Microsoft.Office.Interop.Excel._Application" />.</span>
+          </span>
+          <span data-ttu-id="4ffb7-108">オブジェクト修飾子を使用する場合、このプロパティは、指定したオブジェクトの作成者を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-108">When used with an object qualifier, this property returns the creator of the specified object.</span>
+          </span>
+          <span data-ttu-id="4ffb7-109">読み取り専用。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-109">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
+        </value>
+        <remarks>
+          <span data-ttu-id="4ffb7-110">
+            <para>そのオブジェクトのアプリケーションを取得するのには OLE オートメーション オブジェクトに対してこのプロパティを使用することができます</para>。
+          <para></para></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-110">
+              <para>You can use this property with an OLE Automation object to return the application of that object.</para>
+              <para></para>
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlCreator Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlCreator Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As XlCreator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlCreator Creator { Microsoft::Office::Interop::Excel::XlCreator get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ffb7-111">このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>の整数</b>を返します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-111">Returns a 32-bit <b>Integer</b> that indicates the application in which this object was created.</span>
+          </span>
+          <span data-ttu-id="4ffb7-112">読み取り専用。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-112">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
+        </value>
+        <remarks>
+          <span data-ttu-id="4ffb7-113">
+            <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。 <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
+          <para></para></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-113">
+              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.  The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
+              <para></para>
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataCubeField">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.CubeField DataCubeField { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.CubeField DataCubeField" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.DataCubeField" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataCubeField As CubeField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::CubeField ^ DataCubeField { Microsoft::Office::Interop::Excel::CubeField ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2687)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2687)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.CubeField</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ffb7-114">このプロパティは、OLAP にのみ適用<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />を提供し、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Value" />フィールド (<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />値領域内) を値フィルターによってフィルター処理されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-114">This property is applicable only to OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> and provides the <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Value" /> field (<see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> in the Values area) being filtered by for a value filter.</span>
+          </span>
+          <span data-ttu-id="4ffb7-115">値の取得および設定が可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-115">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.CubeField" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataField">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotField DataField { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotField DataField" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.DataField" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataField As PivotField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotField ^ DataField { Microsoft::Office::Interop::Excel::PivotField ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2091)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2091)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ffb7-116">このプロパティは、OLAP 以外にのみ適用<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />を提供し、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Value" />フィールド (<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />値領域内) を値フィルターによってフィルター処理されています。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-116">This property is applicable only to non-OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> and provides the <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Value" /> field (<see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> in the Values area) being filtered by for a value filter.</span>
+          </span>
+          <span data-ttu-id="4ffb7-117">値の取得および設定が可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-117">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Interop.Excel.PivotFilter.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(117)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ffb7-118">フィルターを削除し、フィルターのコレクションから削除される、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />と<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-118">Deletes the filter and removes it from the filter collections of the <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> and the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.Description" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(218)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(218)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ffb7-119">オプションの説明を提供します<see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" />オブジェクトです。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-119">Provides an optional description for the <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> object.</span>
+          </span>
+          <span data-ttu-id="4ffb7-120">読み取り専用。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-120">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="4ffb7-121">
+            <b>文字列型 (String)</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-121">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="4ffb7-122">
+            <para>説明<b>の文字列</b>の最大長は、255 文字です</para>。
+          <para></para></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-122">
+              <para>The maximum length of the description <b>String</b> is 255 characters.</para>
+              <para></para>
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.XlPivotFilterType FilterType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Interop.Excel.XlPivotFilterType FilterType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.FilterType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FilterType As XlPivotFilterType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::XlPivotFilterType FilterType { Microsoft::Office::Interop::Excel::XlPivotFilterType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2686)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2686)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.XlPivotFilterType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ffb7-123">適用するフィルターの種類を指定します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-123">Specifies the type of filter to be applied.</span>
+          </span>
+          <span data-ttu-id="4ffb7-124">読み取り専用。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-124">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFilterType" />
+        </value>
+        <remarks>
+          <span data-ttu-id="4ffb7-125">
+            <para>次の表に追加できるフィルターの種類を示します、 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />。引数を指定する必要がありますが、<see cref="T:Microsoft.Office.Interop.Excel.xlPivotFilters.Add" />そのフィルターの種類のメソッドに「必須」とマークされている場合は、「使用できません」をマークを使うことはできません</para>。
+          <list type="table"><item><term><paramref name="Data  Field" /></term></item><item><term><paramref name="DataField" />(OLAP<see cref="T:Microsoft.Office.Interop.Excel.CubeField" /></term></item><item><term><paramref name="Value1" /></term></item><item><term><paramref name="Value2" /></term></item><item><term>xlPivotFilterType</term><description>DataField</description><description>DataCubeField (OLAP)</description>の
+              <description>値 1</description><description>値 2</description></item><item><term>xlTopCount</term><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description><description>利用不可</description></item><item><term>の
+            <item><term>xlBottomCount の</term><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description><description>利用不可</description></item>xlTopPercent</term><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description><description>利用不可</description></item><item><term>xlBottomPercent の</term><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description><description>利用不可</description></item><item><term>xlTopSum</term><description>必要な</description><description>必要な</description><description>必要な</description><description>使用不可</description></item><item><term>xlBottomSum の</term><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description><description>利用不可</description></item><item><term>xlCaptionEquals</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlCaptionDoesNotEqual</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlCaptionIsGreaterThan</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlCaptionIsGreaterThanOrEqualTo</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlCaptionIsLessThan</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlCaptionIsLessThanOrEqualTo</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlCaptionBeginsWith</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlCaptionDoesNotBeginWith</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlCaptionEndsWith</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlCaptionDoesNotEndWith</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlCaptionContains</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlCaptionDoesNotContain</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><description>利用不可</description><description>利用不可</description>の
+              <description>ために必要な</description>に
+              <description>必要な</description><term>xlCaptionIsBetween</term></item><item><description>利用不可</description><description>利用不可</description>の
+              <description>ために必要な</description>に
+              <description>必要な</description><term>xlCaptionIsNotBetween</term></item><item><term>xlValueEquals の</term><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description><description>利用不可</description></item><item><term>xlValueDoesNotEqual の</term><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description><description>利用不可</description></item><item><term>xlValueIsGreaterThan の</term><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description><description>利用不可</description></item><item><term>xlValueIsGreaterThanOrEqualTo の</term><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description><description>利用不可</description></item><item><term>xlValueIsLessThan の</term><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description><description>利用不可</description></item><item><term>xlValueIsLessThanOrEqualTo の</term><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description><description>利用不可</description></item><item><term>xlValueIsBetween</term><description>が必要な</description><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description></item><item><term>xlValueIsNotBetween</term><description>が必要な</description><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description></item><item><term>xlSpecificDate</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlNotSpecificDate</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlBefore</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlBeforeOrEqualTo</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlAfter</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlAfterOrEqualTo</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>で</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlNotBetween</term><description>利用不可</description><description>利用不可</description><description>に必要な</description><description>利用不可</description></item><item><term>xlFilterToday</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterYesterday</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterTomorrow</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterThisWeek</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterLastWeek</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterNextWeek</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterThisMonth</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterLastMonth</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterNextMonth</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterThisQuarter</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterLastQuarter</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterNextQuarter</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterThisYear</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterLastYear</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterNextYear</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterYearToDate</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodQuarter1</term><description>使用不可</description><description>使用不可</description><description>使用不可</description><description>使用不可</description></item><item><term>xlFilterAllDatesInPeriodQuarter2</term><description>使用不可</description><description>使用不可</description><description>使用不可</description><description>使用不可</description></item><item><term>xlFilterAllDatesInPeriodQuarter3</term><description>使用不可</description><description>使用不可</description><description>使用不可</description><description>使用不可</description></item><item><term>xlFilterAllDatesInPeriodQuarter4</term><description>使用不可</description><description>使用不可</description><description>使用不可</description><description>使用不可</description></item><item><term>xlFilterAllDatesInPeriodJanuary</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodFebruary</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodMarch</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodApril</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodMay</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodJune</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodJuly</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodAugust</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodSeptember</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodOctober</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodNovember</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodDecember</term><description>使用不可</description><description>使用不可</description><description>を使用できません</description><description>を使用できません</description></item></list><para></para></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-125">
+              <para>The following table shows the filter types that can be added to a <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />. Arguments that must be supplied to the <see cref="T:Microsoft.Office.Interop.Excel.xlPivotFilters.Add" /> method for that filter type are marked “Required”, and those that cannot be supplied are marked “Unavailable”.</para>
+              <list type="table">
+                <item>
+                  <term>
+                    <paramref name="Data  Field" />
+                    <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />
+                  </term>
+                </item>
+                <item>
+                  <term>
+                    <paramref name="DataField" />(OLAP<see cref="T:Microsoft.Office.Interop.Excel.CubeField" /></term>
+                </item>
+                <item>
+                  <term>
+                    <paramref name="Value1" />
+                  </term>
+                </item>
+                <item>
+                  <term>
+                    <paramref name="Value2" />
+                  </term>
+                </item>
+                <item>
+                  <term>xlPivotFilterType</term>
+                  <description>DataField</description>
+                  <description>DataCubeField (OLAP)</description>
+                  <description>Value1</description>
+                  <description>Value2</description>
+                </item>
+                <item>
+                  <term>xlTopCount</term>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlBottomCount</term>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlTopPercent</term>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlBottomPercent</term>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlTopSum</term>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlBottomSum</term>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlCaptionEquals</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlCaptionDoesNotEqual</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlCaptionIsGreaterThan</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlCaptionIsGreaterThanOrEqualTo</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlCaptionIsLessThan</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlCaptionIsLessThanOrEqualTo</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlCaptionBeginsWith</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlCaptionDoesNotBeginWith</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlCaptionEndsWith</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlCaptionDoesNotEndWith</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlCaptionContains</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlCaptionDoesNotContain</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlCaptionIsBetween</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Required</description>
+                  <description>Required</description>
+                </item>
+                <item>
+                  <term>xlCaptionIsNotBetween</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Required</description>
+                  <description>Required</description>
+                </item>
+                <item>
+                  <term>xlValueEquals</term>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlValueDoesNotEqual</term>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlValueIsGreaterThan</term>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlValueIsGreaterThanOrEqualTo</term>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlValueIsLessThan</term>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlValueIsLessThanOrEqualTo</term>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlValueIsBetween</term>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Required</description>
+                </item>
+                <item>
+                  <term>xlValueIsNotBetween</term>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Required</description>
+                  <description>Required</description>
+                </item>
+                <item>
+                  <term>xlSpecificDate</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlNotSpecificDate</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlBefore</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlBeforeOrEqualTo</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlAfter</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlAfterOrEqualTo</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlBetween</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlNotBetween</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Required</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterToday</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterYesterday</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterTomorrow</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterThisWeek</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterLastWeek</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterNextWeek</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterThisMonth</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterLastMonth</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterNextMonth</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterThisQuarter</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterLastQuarter</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterNextQuarter</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterThisYear</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterLastYear</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterNextYear</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterYearToDate</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterAllDatesInPeriodQuarter1</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterAllDatesInPeriodQuarter2</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterAllDatesInPeriodQuarter3</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterAllDatesInPeriodQuarter4</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterAllDatesInPeriodJanuary</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterAllDatesInPeriodFebruary</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterAllDatesInPeriodMarch</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterAllDatesInPeriodApril</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterAllDatesInPeriodMay</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterAllDatesInPeriodJune</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterAllDatesInPeriodJuly</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterAllDatesInPeriodAugust</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterAllDatesInPeriodSeptember</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterAllDatesInPeriodOctober</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterAllDatesInPeriodNovember</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+                <item>
+                  <term>xlFilterAllDatesInPeriodDecember</term>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                  <description>Unavailable</description>
+                </item>
+              </list>
+              <para></para>
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMemberPropertyFilter">
+      <MemberSignature Language="C#" Value="public bool IsMemberPropertyFilter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsMemberPropertyFilter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.IsMemberPropertyFilter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsMemberPropertyFilter As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMemberPropertyFilter { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2690)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2690)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ffb7-126">ラベル フィルターに基づくかどうかを指定します<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />のフィールドまたはメンバー プロパティのキャプション、<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />のキャプション、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />自体。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-126">Specifies whether the label filter is based on the <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> captions of a member property of the field or on the <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> captions of the <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> itself.</span>
+          </span>
+          <span data-ttu-id="4ffb7-127">読み取り専用。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-127">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="4ffb7-128">
+            <b>ブール型 (Boolean)</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-128">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="4ffb7-129">
+            <para>このプロパティの既定値は<b>false を指定</b>します</para>。
+          <para>が<b>True</b>を返す場合は、ラベル フィルターに基づいて<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />のメンバー プロパティのキャプション、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />は、フィルターに基づいている場合は、<b>False</b>を返すか、 <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> c のキャプション。このプロパティは、ラベル フィルターおよび OLAP に対してのみ有効な<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />には、少なくとも 1 つのメンバー プロパティがある</para>。
+          <para></para></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-129">
+              <para>The default value of this property is <b>False</b>.</para>
+              <para>Returns <b>True</b> if the label filter is based on <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> captions of a member property of the <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />; or returns<b>False</b> if the filter is based on the <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> captions of the c. This property is valid only for Label filters and only for OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> that have at least one member property.</para>
+              <para></para>
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberPropertyField">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotField MemberPropertyField { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotField MemberPropertyField" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.MemberPropertyField" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberPropertyField As PivotField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotField ^ MemberPropertyField { Microsoft::Office::Interop::Excel::PivotField ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2689)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2689)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ffb7-130">このプロパティは、メンバー プロパティを指定します。<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />ラベル フィルターを基にします。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-130">This property specifies the member property <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> on which the label filter is based.</span>
+          </span>
+          <span data-ttu-id="4ffb7-131">値の取得および設定が可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-131">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />
+        </value>
+        <remarks>
+          <span data-ttu-id="4ffb7-132">
+            <para>このプロパティは、OLAP およびラベルのフィルターに対してのみ有効な<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />には、少なくとも 1 つのメンバー プロパティがある</para>。
+          <para></para></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-132">
+              <para>This property is valid only for Label filters and for OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> that have at least one member property.</para>
+              <para></para>
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(110)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ffb7-p110">このプロパティは、参照の名前付けフィルターのオプションを提供します。インデックス値は変更される可能性があるため、正確な参照のために使用することはできません。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-p110">This property provides the option of naming filters for reference. You cannot rely on the index value for accurate reference because this value can change.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="4ffb7-135">
+            <b>文字列型 (String)</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-135">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Order">
+      <MemberSignature Language="C#" Value="public int Order { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Order" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" />
+      <MemberSignature Language="VB.NET" Value="Public Property Order As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Order { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(192)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(192)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(192)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ffb7-136">全体に適用されるすべての値フィルターでフィルターの評価順序を指定する<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-136">Specifies the evaluation order of the filter among all Value filters applied to the entire <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />.</span>
+          </span>
+          <span data-ttu-id="4ffb7-137">値の取得および設定が可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-137">Read/write</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="4ffb7-138">
+            <b>整数</b>です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-138">
+              <b>Integer</b>.</span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="4ffb7-139">
+            <para>このプロパティの<b>値</b>と<b>一番上</b>でのみ有効です<paramref name="n" />型<see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" />秒です。<b>ラベル</b>と<b>日付</b>のフィルターにこのプロパティを取得または設定をしようとした場合に、実行時エラーが返されます。1 が最初に評価されるフィルターを表します、2 は評価されたとに、までは、次のフィルターを表す、<paramref name="n" />番目の値に達するとします。フィルターを表し、-1 です</para>。
+          <para>場合、 <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> 、新しいフィルターを追加するときにプロパティを指定しない場合設定されます<paramref name="N+1" />(、<paramref name="N" />は、現在の最高<see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" />フィルター コレクション内の番号).</para><para>のプロパティを指定することができます、<see cref="T:Microsoft.Office.Interop.Excel.PivotFilters.Add" />メソッドまたは設定できます後でフィールドのプロパティを変更することで</para>。
+          <para>フィールドがその評価の順序の値を保持していたフィールドの評価順序を低下の評価順序を増やすこと、および 2 つのフィールドの間のすべてのフィールド-1 つ。評価順序を前に、と同じに設定する効果はありません。フィールドがその評価の順序の値を保持していたフィールドの評価順序を増加の評価順序が下がります- と 2 つのフィールドの間にすべてのフィールド、1 つずつ</para>。順序の
+          <para>の<see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" />コレクションでは、それらが評価される順序と同じです。開発者が順序を変更できるように、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />が評価されます。<see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> (非 OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />)、または<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />(OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />) から削除されます、<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />コレクションでは、このプロパティが-1 に設定値または上の<paramref name="n" />フィールドにフィルターを適用します。フィールドを戻すに設定されます、<see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" />プロパティを<paramref name="N+1" />の値] または [上の<paramref name="n" />値が明示的に指定されていない場合に適用されるフィルターです</para>。
+          <para></para></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-139">
+              <para>This property is valid only for <b>Value</b> and <b>Top</b><paramref name="n" /> type <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" />s. A run-time error is returned if an attempt is made to set or get this property for <b>Label</b> and <b>Date</b> filters. 1 represents the first filter evaluated, 2 represents the next filter evaluated, and so on, until the <paramref name="n" />th value is reached. -1 represents an inactive filter.</para>
+              <para>If the <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> property is not specified when a new filter is added, it will be set to <paramref name="N+1" /> (where <paramref name="N" /> is the current highest <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> number in the filter collection).</para>
+              <para>The property can be specified in the <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters.Add" /> method or it can be set later for a field by changing the property.</para>
+              <para>Increasing the evaluation order for a field will decrease the evaluation order of the field previously holding that evaluation order value—and all fields in between the two fields—by one. Setting the evaluation order to the same as before will have no effect. Decreasing the evaluation order for a field will increase the evaluation order of the field previously holding that evaluation order value—and all fields in between the two fields—by one.</para>
+              <para>The order of <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> in the collection is the same as the order in which they are evaluated. So developers can change the order in which a <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> is evaluated. When a <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> (non-OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />) or a <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> (OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />) is removed from the <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> collection, this property is set to -1 for a Value or a Top <paramref name="n" /> filter applied to the field. Adding the field back again will set the <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> property to <paramref name="N+1" /> for a Value or Top <paramref name="n" /> filter applied if a value is not explicitly specified.</para>
+              <para></para>
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ffb7-140">指定された親を返します<see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-140">Returns the parent for the specified <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" />.</span>
+          </span>
+          <span data-ttu-id="4ffb7-141">読み取り専用。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-141">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="4ffb7-142">
+            <b>オブジェクト</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-142">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PivotField">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Interop.Excel.PivotField PivotField { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Interop.Excel.PivotField PivotField" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.PivotField" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PivotField As PivotField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Interop::Excel::PivotField ^ PivotField { Microsoft::Office::Interop::Excel::PivotField ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(731)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(731)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ffb7-143">指定の<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />にフィルターを適用します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-143">Specifies the <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> to which the filter is applied.</span>
+          </span>
+          <span data-ttu-id="4ffb7-144">読み取り専用。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-144">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value1">
+      <MemberSignature Language="C#" Value="public object Value1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value1" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.Value1" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value1 As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value1 { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2688)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2688)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ffb7-145">このプロパティは、ユーザーが指定したパラメーターのフィルターを定義するのには、 <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.PivotField" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-145">This property is a user-supplied parameter to define a filter for a <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.PivotField" />.</span>
+          </span>
+          <span data-ttu-id="4ffb7-146">値の取得および設定が可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-146">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="4ffb7-147">
+            <b>オブジェクト</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-147">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value2">
+      <MemberSignature Language="C#" Value="public object Value2 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value2" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.Value2" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value2 As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value2 { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1388)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1388)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ffb7-148">このプロパティは、ユーザーが指定したパラメーターのフィルターを定義するのには、 <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.PivotField" />。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-148">This property is a user-supplied parameter to define a filter for a <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.PivotField" />.</span>
+          </span>
+          <span data-ttu-id="4ffb7-149">値の取得および設定が可能です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-149">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="4ffb7-150">
+            <b>オブジェクト</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-150">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WholeDayFilter">
+      <MemberSignature Language="C#" Value="public bool WholeDayFilter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WholeDayFilter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Interop.Excel.PivotFilter.WholeDayFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Property WholeDayFilter As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WholeDayFilter { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Office.Interop.Excel</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3099)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3099)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(3099)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="4ffb7-151">設定または日付フィルターのフィルター処理のセマンティクスを取得します。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-151">Sets or gets the filtering semantics for date filters.</span>
+          </span>
+          <span data-ttu-id="4ffb7-152">
+            <b>ブール値</b>(<b>bool</b>では C#) です。</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-152">
+              <b>Boolean</b> (<b>bool</b> in C#).</span>
+          </span>
+          <span data-ttu-id="4ffb7-153">読み取り/書き込み</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-153">Read/Write</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="4ffb7-154">
+            <para>次の以前のバージョンと現在のプロパティの設定の結果を説明する:</para>
+            <list type="bullet">
+              <item>
+                <description>False (Office 2010 の動作): 任意の時間を指定することができます; (指定した日付の午前 0 時) の日付は、正確なポイントです。日付範囲のフィルター処理を開始または午前 0 時に終了します</description>
+              </item>。
+            <item><description>True (Office 2013 の動作): この現象は、タイムライン コントロールに対して適用します。日付だけを指定するとします。日付がすべて時間帯までと、翌日の午前 0 時直前に含まれます</description></item></list>。
+          <para>がタイムラインには常に<b>True</b>を返します; これを<b>False</b>に設定する場合は、実行時エラーを返します</para>。
+          <para>日付以外のフィルターでは、すべてのアクセスには、実行時エラーが返されます</para>。
+          <para></para></span>
+          <span class="sxs-lookup">
+            <span data-stu-id="4ffb7-154">
+              <para>The following describes the results for previous and current property settings:</para>
+              <list type="bullet">
+                <item>
+                  <description>False (Office 2010 behavior): Any time can be specified; dates are precise points in time (midnight of the specified date). Filtering date ranges start or end at midnight.</description>
+                </item>
+                <item>
+                  <description>True (Office 2013 behavior): This behavior is enforced for Timeline controls. Only whole dates are specified; dates include all times-of-day until and not including the next day at midnight.</description>
+                </item>
+              </list>
+              <para>For a Timeline, always returns <b>True</b>; returns a run-time error when setting to this to <b>False</b>.</para>
+              <para>For a non-date filter, any access returns a run-time error.</para>
+              <para></para>
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
