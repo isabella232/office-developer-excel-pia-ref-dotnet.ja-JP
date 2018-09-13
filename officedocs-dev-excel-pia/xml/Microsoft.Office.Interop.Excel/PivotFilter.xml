@@ -1,10 +1,10 @@
 <Type Name="PivotFilter" FullName="Microsoft.Office.Interop.Excel.PivotFilter">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a5e7f1c81a635cfb8b63c8d4ecfb57f50d9536c4" />
+    <Meta Name="ms.openlocfilehash" Value="8ca490d3d62655bdb53770e1be334fbb762008fb" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/04/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/13/2018" />
     <Meta Name="ms.locfileid" Value="20579493" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotFilter" />
@@ -31,8 +31,9 @@
   <Docs>
     <summary>A<see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" />に適用される、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />オブジェクトです。</summary>
     <remarks>
-      <para>の開発者では、信頼性の高いインデックスは参照用のフィルターの名前を付けるオプションがあります。<see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.DataField" />プロパティを指定します<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />値フィルターの基にします</para>。
-      <para></para></remarks>
+      <para>開発者には、信頼性の高いインデックスは参照用のフィルターの名前を付けるオプションがあります。 <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.DataField" />プロパティを指定します<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />値フィルターの基になります。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Active">
@@ -62,8 +63,10 @@
         <value>
           <b>ブール型 (Boolean)</b>
         </value>
-        <remarks>このプロパティは<b>True</b>を返します<para>と、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />では、フィルターの<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />フィルターが評価されると、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />が更新されます。<b>False</b>を返しますと、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />のフィルターではありません、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />影響を与えませんし、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />計算します</para>。
-          <para></para></remarks>
+        <remarks>
+          <para>このプロパティは<b>True</b>を返しますと、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />では、フィルターの<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />フィルターが評価されると、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />が更新されます。 <b>False</b>を返しますと、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />のフィルターではありません、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />影響を与えませんし、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />計算します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -94,8 +97,9 @@
           <see cref="T:Microsoft.Office.Interop.Excel._Application" />
         </value>
         <remarks>
-          <para>そのオブジェクトのアプリケーションを取得するのには OLE オートメーション オブジェクトに対してこのプロパティを使用することができます</para>。
-          <para></para></remarks>
+          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクト用のアプリケーションを取得できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -126,8 +130,9 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。 <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当  <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataCubeField">
@@ -243,8 +248,9 @@
           <b>文字列型 (String)</b>
         </value>
         <remarks>
-          <para>説明<b>の文字列</b>の最大長は、255 文字です</para>。
-          <para></para></remarks>
+          <para>説明<b>の文字列</b>の最大長は、255 文字です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FilterType">
@@ -275,14 +281,514 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFilterType" />
         </value>
         <remarks>
-          <para>次の表に追加できるフィルターの種類を示します、 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />。引数を指定する必要がありますが、<see cref="T:Microsoft.Office.Interop.Excel.xlPivotFilters.Add" />そのフィルターの種類のメソッドに「必須」とマークされている場合は、「使用できません」をマークを使うことはできません</para>。
-          <list type="table"><item><term><paramref name="Data  Field" /></term></item><item><term><paramref name="DataField" />(OLAP<see cref="T:Microsoft.Office.Interop.Excel.CubeField" /></term></item><item><term><paramref name="Value1" /></term></item><item><term><paramref name="Value2" /></term></item><item><term>xlPivotFilterType</term><description>DataField</description><description>DataCubeField (OLAP)</description>の
-              <description>値 1</description><description>値 2</description></item><item><term>xlTopCount</term><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description><description>利用不可</description></item><item><term>の
-            <item><term>xlBottomCount の</term><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description><description>利用不可</description></item>xlTopPercent</term><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description><description>利用不可</description></item><item><term>xlBottomPercent の</term><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description><description>利用不可</description></item><item><term>xlTopSum</term><description>必要な</description><description>必要な</description><description>必要な</description><description>使用不可</description></item><item><term>xlBottomSum の</term><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description><description>利用不可</description></item><item><term>xlCaptionEquals</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlCaptionDoesNotEqual</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlCaptionIsGreaterThan</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlCaptionIsGreaterThanOrEqualTo</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlCaptionIsLessThan</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlCaptionIsLessThanOrEqualTo</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlCaptionBeginsWith</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlCaptionDoesNotBeginWith</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlCaptionEndsWith</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlCaptionDoesNotEndWith</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlCaptionContains</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlCaptionDoesNotContain</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><description>利用不可</description><description>利用不可</description>の
-              <description>ために必要な</description>に
-              <description>必要な</description><term>xlCaptionIsBetween</term></item><item><description>利用不可</description><description>利用不可</description>の
-              <description>ために必要な</description>に
-              <description>必要な</description><term>xlCaptionIsNotBetween</term></item><item><term>xlValueEquals の</term><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description><description>利用不可</description></item><item><term>xlValueDoesNotEqual の</term><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description><description>利用不可</description></item><item><term>xlValueIsGreaterThan の</term><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description><description>利用不可</description></item><item><term>xlValueIsGreaterThanOrEqualTo の</term><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description><description>利用不可</description></item><item><term>xlValueIsLessThan の</term><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description><description>利用不可</description></item><item><term>xlValueIsLessThanOrEqualTo の</term><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description><description>利用不可</description></item><item><term>xlValueIsBetween</term><description>が必要な</description><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description></item><item><term>xlValueIsNotBetween</term><description>が必要な</description><description>ために必要な</description><description>ために必要な</description><description>ために必要な</description></item><item><term>xlSpecificDate</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlNotSpecificDate</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlBefore</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlBeforeOrEqualTo</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlAfter</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlAfterOrEqualTo</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>で</term><description>使用不可</description><description>使用不可</description><description>必要な</description><description>を使用できません。</description></item><item><term>xlNotBetween</term><description>利用不可</description><description>利用不可</description><description>に必要な</description><description>利用不可</description></item><item><term>xlFilterToday</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterYesterday</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterTomorrow</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterThisWeek</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterLastWeek</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterNextWeek</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterThisMonth</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterLastMonth</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterNextMonth</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterThisQuarter</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterLastQuarter</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterNextQuarter</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterThisYear</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterLastYear</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterNextYear</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterYearToDate</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodQuarter1</term><description>使用不可</description><description>使用不可</description><description>使用不可</description><description>使用不可</description></item><item><term>xlFilterAllDatesInPeriodQuarter2</term><description>使用不可</description><description>使用不可</description><description>使用不可</description><description>使用不可</description></item><item><term>xlFilterAllDatesInPeriodQuarter3</term><description>使用不可</description><description>使用不可</description><description>使用不可</description><description>使用不可</description></item><item><term>xlFilterAllDatesInPeriodQuarter4</term><description>使用不可</description><description>使用不可</description><description>使用不可</description><description>使用不可</description></item><item><term>xlFilterAllDatesInPeriodJanuary</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodFebruary</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodMarch</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodApril</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodMay</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodJune</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodJuly</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodAugust</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodSeptember</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodOctober</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodNovember</term><description>使用不可</description><description>使用不可</description><description>を使用できません。</description><description>を使用できません。</description></item><item><term>xlFilterAllDatesInPeriodDecember</term><description>使用不可</description><description>使用不可</description><description>を使用できません</description><description>を使用できません</description></item></list><para></para></remarks>
+          <para>次の表に追加できるフィルターの種類を示します、 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />。 引数を指定する必要がありますが、<see cref="T:Microsoft.Office.Interop.Excel.xlPivotFilters.Add" />そのフィルターの種類のメソッドに「必須」とマークされている場合は、「使用できません」をマークを使うことはできません。</para>
+          <list type="table">
+            <item>
+              <term>
+                <paramref name="Data  Field" />
+                <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />
+              </term>
+            </item>
+            <item>
+              <term>
+                <paramref name="DataField" />(OLAP<see cref="T:Microsoft.Office.Interop.Excel.CubeField" /></term>
+            </item>
+            <item>
+              <term>
+                <paramref name="Value1" />
+              </term>
+            </item>
+            <item>
+              <term>
+                <paramref name="Value2" />
+              </term>
+            </item>
+            <item>
+              <term>xlPivotFilterType</term>
+              <description>データ フィールド</description>
+              <description>DataCubeField (OLAP)</description>
+              <description>値 1</description>
+              <description>Value2</description>
+            </item>
+            <item>
+              <term>xlTopCount</term>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlBottomCount</term>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlTopPercent</term>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlBottomPercent</term>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlTopSum</term>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlBottomSum</term>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlCaptionEquals</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlCaptionDoesNotEqual</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlCaptionIsGreaterThan</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlCaptionIsGreaterThanOrEqualTo</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlCaptionIsLessThan</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlCaptionIsLessThanOrEqualTo</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlCaptionBeginsWith</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlCaptionDoesNotBeginWith</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlCaptionEndsWith</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlCaptionDoesNotEndWith</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlCaptionContains</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlCaptionDoesNotContain</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlCaptionIsBetween</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>必須である</description>
+              <description>必須である</description>
+            </item>
+            <item>
+              <term>xlCaptionIsNotBetween</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>必須である</description>
+              <description>必須である</description>
+            </item>
+            <item>
+              <term>xlValueEquals</term>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlValueDoesNotEqual</term>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlValueIsGreaterThan</term>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlValueIsGreaterThanOrEqualTo</term>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlValueIsLessThan</term>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlValueIsLessThanOrEqualTo</term>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlValueIsBetween</term>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>必須である</description>
+            </item>
+            <item>
+              <term>xlValueIsNotBetween</term>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>必須である</description>
+              <description>必須である</description>
+            </item>
+            <item>
+              <term>xlSpecificDate</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlNotSpecificDate</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlBefore</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlBeforeOrEqualTo</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlAfter</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlAfterOrEqualTo</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>規則での条件</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlNotBetween</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>必須である</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterToday</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterYesterday</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterTomorrow</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterThisWeek</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterLastWeek</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterNextWeek</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterThisMonth</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterLastMonth</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterNextMonth</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterThisQuarter</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterLastQuarter</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterNextQuarter</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterThisYear</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterLastYear</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterNextYear</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterYearToDate</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodQuarter1</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodQuarter2</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodQuarter3</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodQuarter4</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodJanuary</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodFebruary</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodMarch</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodApril</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodMay</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodJune</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodJuly</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodAugust</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodSeptember</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodOctober</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodNovember</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+            <item>
+              <term>xlFilterAllDatesInPeriodDecember</term>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+              <description>使用できない</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsMemberPropertyFilter">
@@ -313,9 +819,10 @@
           <b>ブール型 (Boolean)</b>
         </value>
         <remarks>
-          <para>このプロパティの既定値は<b>false を指定</b>します</para>。
-          <para>が<b>True</b>を返す場合は、ラベル フィルターに基づいて<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />のメンバー プロパティのキャプション、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />は、フィルターに基づいている場合は、<b>False</b>を返すか、 <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> c のキャプション。このプロパティは、ラベル フィルターおよび OLAP に対してのみ有効な<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />には、少なくとも 1 つのメンバー プロパティがある</para>。
-          <para></para></remarks>
+          <para>このプロパティの既定値は、 <b>false を指定</b> します。</para>
+          <para>ラベル フィルターに基づいている場合<b>は True</b>を返します。<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />のメンバー プロパティのキャプション、 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />。フィルターに基づいている場合は、<b>False</b>を返すか、 <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> 、c のキャプションです。 このプロパティは、ラベル フィルターおよび OLAP に対してのみ有効な<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />には、少なくとも 1 つのメンバー プロパティがあります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MemberPropertyField">
@@ -346,8 +853,9 @@
           <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />
         </value>
         <remarks>
-          <para>このプロパティは、OLAP およびラベルのフィルターに対してのみ有効な<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />には、少なくとも 1 つのメンバー プロパティがある</para>。
-          <para></para></remarks>
+          <para>このプロパティは、OLAP およびラベルのフィルターに対してのみ有効な<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />には、少なくとも 1 つのメンバー プロパティがあります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -410,11 +918,13 @@
         <value>
           <b>整数</b>です。</value>
         <remarks>
-          <para>このプロパティの<b>値</b>と<b>一番上</b>でのみ有効です<paramref name="n" />型<see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" />秒です。<b>ラベル</b>と<b>日付</b>のフィルターにこのプロパティを取得または設定をしようとした場合に、実行時エラーが返されます。1 が最初に評価されるフィルターを表します、2 は評価されたとに、までは、次のフィルターを表す、<paramref name="n" />番目の値に達するとします。フィルターを表し、-1 です</para>。
-          <para>場合、 <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> 、新しいフィルターを追加するときにプロパティを指定しない場合設定されます<paramref name="N+1" />(、<paramref name="N" />は、現在の最高<see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" />フィルター コレクション内の番号).</para><para>のプロパティを指定することができます、<see cref="T:Microsoft.Office.Interop.Excel.PivotFilters.Add" />メソッドまたは設定できます後でフィールドのプロパティを変更することで</para>。
-          <para>フィールドがその評価の順序の値を保持していたフィールドの評価順序を低下の評価順序を増やすこと、および 2 つのフィールドの間のすべてのフィールド-1 つ。評価順序を前に、と同じに設定する効果はありません。フィールドがその評価の順序の値を保持していたフィールドの評価順序を増加の評価順序が下がります- と 2 つのフィールドの間にすべてのフィールド、1 つずつ</para>。順序の
-          <para>の<see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" />コレクションでは、それらが評価される順序と同じです。開発者が順序を変更できるように、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />が評価されます。<see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> (非 OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />)、または<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />(OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />) から削除されます、<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />コレクションでは、このプロパティが-1 に設定値または上の<paramref name="n" />フィールドにフィルターを適用します。フィールドを戻すに設定されます、<see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" />プロパティを<paramref name="N+1" />の値] または [上の<paramref name="n" />値が明示的に指定されていない場合に適用されるフィルターです</para>。
-          <para></para></remarks>
+          <para>このプロパティの<b>値</b>と<b>一番上</b>でのみ有効です<paramref name="n" />型<see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" />秒です。 <b>ラベル</b>と<b>日付</b>のフィルターにこのプロパティを取得または設定をしようとした場合に、実行時エラーが返されます。 1 が最初に評価されるフィルターを表します、2 は評価されたとに、までは、次のフィルターを表す、<paramref name="n" />番目の値に達するとします。 フィルターを表し、-1 です。</para>
+          <para>場合、 <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> 、新しいフィルターを追加するときにプロパティを指定しない場合設定されます<paramref name="N+1" />(、<paramref name="N" />は、現在の最高<see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" />フィルター コレクション内の番号)。</para>
+          <para>プロパティを指定することができます、<see cref="T:Microsoft.Office.Interop.Excel.PivotFilters.Add" />メソッドまたは設定できます後でフィールドのプロパティを変更します。</para>
+          <para>フィールドの評価順序を下げると、以前にその評価順位を保持していたフィールドと 2 つのフィールド間のフィールドはすべて 1 つずつ評価順序が上がります。評価順序を以前と同じに設定すると、影響はありません。フィールドの評価順序を上げると、以前にその評価順位を保持していたフィールドと 2 つのフィールド間のフィールドはすべて 1 つずつ評価順序が下がります。</para>
+          <para>順序<see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" />コレクションでは、それらが評価される順序と同じです。 開発者が順序を変更できるように、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />が評価されます。 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> (非 OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />)、または<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />(OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />) から削除されます、<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />コレクションでは、このプロパティが-1 に設定値または上の<paramref name="n" />フィールドにフィルターを適用します。 フィールドを戻すに設定されます、<see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" />プロパティを<paramref name="N+1" />の値] または [上の<paramref name="n" />値が明示的に指定されていない場合に適用されるフィルターです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -566,15 +1076,19 @@
         <summary>設定または日付フィルターのフィルター処理のセマンティクスを取得します。 <b>ブール値</b>(<b>bool</b>では C#) です。 読み取り/書き込み</summary>
         <value>To be added.</value>
         <remarks>
-          <para>次の以前のバージョンと現在のプロパティの設定の結果を説明する:</para>
+          <para>以前のプロパティ設定と現在のプロパティ設定の結果は次のとおりです。</para>
           <list type="bullet">
             <item>
-              <description>False (Office 2010 の動作): 任意の時間を指定することができます; (指定した日付の午前 0 時) の日付は、正確なポイントです。日付範囲のフィルター処理を開始または午前 0 時に終了します</description>
-            </item>。
-            <item><description>True (Office 2013 の動作): この現象は、タイムライン コントロールに対して適用します。日付だけを指定するとします。日付がすべて時間帯までと、翌日の午前 0 時直前に含まれます</description></item></list>。
-          <para>がタイムラインには常に<b>True</b>を返します; これを<b>False</b>に設定する場合は、実行時エラーを返します</para>。
-          <para>日付以外のフィルターでは、すべてのアクセスには、実行時エラーが返されます</para>。
-          <para></para></remarks>
+              <description>False (Office 2010 の動作): すべての時間を指定できます。日付は、(指定した日付の午前 0 時) の時間での正確なポイントです。 日付範囲のフィルター処理を開始または午前 0 時に終了します。</description>
+            </item>
+            <item>
+              <description>True を設定する (Office 2013 の動作): タイムラインのコントロールにこの動作が適用されます。 日付だけを指定するとします。すべて時間帯までと、翌日の午前 0 時直前に日付が含まれます。</description>
+            </item>
+          </list>
+          <para>タイムラインは、常に返す<b>場合は True</b>です。これを<b>False</b>に設定する場合は、実行時エラーを返します。</para>
+          <para>日付以外のフィルターの場合は、すべてのアクセスで実行時エラーが返されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>
