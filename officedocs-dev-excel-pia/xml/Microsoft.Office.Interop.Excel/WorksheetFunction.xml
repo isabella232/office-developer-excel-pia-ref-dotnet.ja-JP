@@ -157,23 +157,23 @@
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>米国 (NASD) 30 日/360</description> 
+              <description>30 日/360 日 (NASD 方式)</description>
             </item>
-            <item> 
-              <term></term>
-              <description>1/実際の日数</description>
+            <item>
+              <term>1</term>
+              <description>実際の日数/実際の日数</description>
             </item>
-            <item> 
+            <item>
               <term>2</term>
-              <description>/360 日の実績</description>
+              <description>実際の日数/360 日</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>/365 日の実績</description>
+              <description>実際の日数/365 日</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
-              <description>ヨーロッパの 30 日/360</description> 
+              <description>30 日/360 日 (ヨーロッパ方式)</description>
             </item>
           </list>
           <para> </para></remarks>
@@ -218,47 +218,47 @@
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>米国 (NASD) 30 日/360</description> 
+              <description>30 日/360 日 (NASD 方式)</description>
             </item>
-            <item> 
-              <term></term>
-              <description>1/実際の日数</description>
+            <item>
+              <term>1</term>
+              <description>実際の日数/実際の日数</description>
             </item>
-            <item> 
+            <item>
               <term>2</term>
-              <description>/360 日の実績</description>
+              <description>実際の日数/360 日</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>/365 日の実績</description>
+              <description>実際の日数/365 日</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
-              <description>ヨーロッパの 30 日/360</description> 
+              <description>30 日/360 日 (ヨーロッパ方式)</description>
             </item>
           </list>
           <para>次の一覧には、日を操作するときに注意すべき情報が含まれています。</para>
           <list type="bullet">
             <item>
-              <description>Microsoft Excel は、日付シリアル値として計算に使用できます。既定では、1900 年 1 月 1 日は、シリアル値 1 と、1900 年 1 月 1 日から数えて 39,448 日目であるために、2008 年 1 月 1 日がシリアル番号 39,448 です。</description>
+              <description>Excel では、日付は集計に使用できるようにシリアル値として格納されます。既定では、1900 年 1 月 1 日のシリアル値は 1、2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後であるためシリアル値は 39,448 になります。</description>
             </item>
             <item>
-              <description>問題、成熟度と単位が整数に切り捨てられます</description>
-            </item>。
+              <description>発行日、満期日、基準に整数以外の値を指定すると、小数点以下が切り捨てられます。</description>
+            </item>
             <item>
-              <description>の問題や成熟度が有効な日付でない場合、日によってエラーが発生します</description>
-            </item>。
+              <description>発行日または満期日に無効な日付を指定すると、エラーになります。</description>
+            </item>
             <item>
-              <description>場合利率 ≤ 0 または額面 ≤ 0 であるかどうかと、エラーが生成されます</description>
-            </item>。
+              <description>利率 ≦ 0 または基準 ≦ 0 の場合、エラーになります。</description>
+            </item>
             <item>
-              <description>場合単位&lt;0 または基準&gt;4 日エラーが生成されます</description>
-            </item>。
+              <description>場合単位&lt;0 または基準&gt;4 日エラーが生成されます。 </description>
+            </item>
             <item>
-              <description>問題受領成熟度、日、エラーが発生する場合です</description>
-            </item>。
+              <description>発行日 ≧ 満期日の場合、エラーになります。</description>
+            </item>
             <item>
-              <description>日として計算されます:</description>
+              <description>ACCRINTM 関数は次の数式で表されます。 </description>
             </item>
           </list>
           <para>各項目の意味は次のとおりです。</para>
@@ -470,16 +470,16 @@
         <remarks><para>次の制約は、<b>集計</b>値に基づいて、Ref 引数 (Arg3 - Arg 30) に適用されます。</para>
           <list type="table">
             <item>
-              <term>1-13</term>
-              <description>有効なデータ型: 任意のセル参照のインター セクションの定義済みの共用体名 referencesInvalid 型の構造化: 実際のデータ配列</description>
-              <description>有効なデータ型: 任意のセル参照のインター セクションの定義済みの共用体名 referencesInvalid 型の構造化: 実際のデータ配列</description>
-              <description>有効なデータ型: 任意のセル参照のインター セクションの定義済みの共用体名 referencesInvalid 型の構造化: 実際のデータ配列</description>
+              <term>1 ～ 13</term>
+              <description>有効な型: 任意のセル参照のインター セクションの定義済みの共用体名 referencesInvalid 型の構造化: 実際のデータの配列</description>
+              <description>有効な型: 任意のセル参照のインター セクションの定義済みの共用体名 referencesInvalid 型の構造化: 実際のデータの配列</description>
+              <description>有効な型: 任意のセル参照のインター セクションの定義済みの共用体名 referencesInvalid 型の構造化: 実際のデータの配列</description>
             </item>
-            <item> 
-              <term>14-17</term>
-              <description>の有効なタイプ: 共用体の交差に定義されている任意のセル参照実績データの配列の構造化参照の名前</description>
-              <description>の有効なタイプ: 共用体の交差に定義されている任意のセル参照実績データの配列の構造化参照の名前</description>
-              <description>なし参照は許可されて</description>
+            <item>
+              <term>14 ～ 17</term>
+              <description>有効な型: 共用体の交差に定義されている任意のセル参照実績データの配列の構造化参照の名前</description>
+              <description>有効な型: 共用体の交差に定義されている任意のセル参照実績データの配列の構造化参照の名前</description>
+              <description>参照は使用できません</description>
             </item>
           </list>
           <para>2 番目の ref 引数が必須の場合に指定されていないと、#VALUE! エラーが返されます。</para>
@@ -528,19 +528,19 @@
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>360 日 (NASD メソッド)</description> 
+              <description>360 日 (NASD 方式)</description>
             </item>
-            <item> 
+            <item>
               <term>1</term>
-              <description>実績</description>
+              <description>実際の日数</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>年に 365 日</description>
+              <description>365 日</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
-              <description>360 日 (ヨーロッパ方式) 1 年</description>
+              <description>360 日 (ヨーロッパ方式)</description>
             </item>
           </list>
           <para>Excel では、日付を連続したシリアル値として処理することで、日付の計算が行われています。既定では、1900 年 1 月 1 日がシリアル値 1 として保存されます。2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後に当たるので、シリアル値は 39,448 になります。Macintosh 版 Excel では、標準として異なる日付システムが使用されています。</para>
@@ -548,16 +548,16 @@
           <para>減価償却係数は、次のように定義されています。</para>
           <list type="table">
             <item>
-              <term>間で 3、4 年間</term>
-              <description>1.5</description> 
+              <term>3 ～ 4 年</term>
+              <description>1.5</description>
             </item>
             <item>
-              <description>2</description>の
-              <term>間で 5、6 年間</term>
+              <term>5 ～ 6 年</term>
+              <description>2</description>
             </item>
-            <item> 
-              <term>6 年以上にわたって</term>
-              <description>2.5</description> 
+            <item>
+              <term>6 年を超える年数</term>
+              <description>2.5</description>
             </item>
           </list>
           <para>減価償却率は、最後から 1 つ前の期で 50% まで上昇し、最後の会計期で 100% まで上昇します。</para>
@@ -606,19 +606,19 @@
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>360 日 (NASD メソッド)</description> 
+              <description>360 日 (NASD 方式)</description>
             </item>
-            <item> 
+            <item>
               <term>1</term>
-              <description>実績</description>
+              <description>実際の日数</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>年に 365 日</description>
+              <description>365 日</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
-              <description>360 日 (ヨーロッパ方式) 1 年</description>
+              <description>360 日 (ヨーロッパ方式)</description>
             </item>
           </list>
           <para>
@@ -1112,14 +1112,14 @@
           <para><b>平均</b>メソッドでの中心傾向の統計的分布における数値グループの中央の場所であります。 中心傾向を表す指標は、3 つ。</para>
           <list type="bullet">
             <item>
-              <description>平均算術平均、数字のグループを追加して、それらの数値の個数で割ることによって計算されます。たとえば、2、3、3、5、7、および 10 の平均値は割ることによって、5 であります。</description>
+              <description>平均 演算によって求める平均値であり、グループの各数値を加算してそれらの数値の個数で割ることにより計算します。たとえば、2、3、3、5、7、および 10 の平均は、30 を 6 で割った商、つまり 5 です。</description>
             </item>
             <item>
-              <description>メジアン数値グループの中央数であるテストの結果、半分の数値、中央値よりも大きい値があり、半分の数値が中央値より小さい値を持ちます。2、3、3、5、7、および 10 のメジアンは 4 です</description>
-            </item>。
+              <description>メジアン 数値のグループの中で中央に当たる数値であり、メジアンより大きい数値と小さい数値の個数が半々になります。たとえば、2、3、3、5、7、および 10 のメジアンは 4 です。</description>
+            </item>
             <item>
-              <description>モード数値グループで最も頻繁に出現する数値です。2、3、3、5、7、および 10 のモードは 3 です</description>
-            </item>。
+              <description>モード 数値のグループの中で、最も頻出する数値です。たとえば、2、3、3、5、7、および 10 のモードは 3 です。</description>
+            </item>
           </list>
           <para>数値のグループが対称分布の場合には、これら 3 つの中心傾向の測度の値は同じになります。数値のグループが非対称分布の場合には、値が異なることがあります。</para>
           <para>セルを平均することに注意してください空のセルと値が 0 が含まれているとの違い [表示] タブ ([オプション] を [ツール] メニューの)、ゼロ値] チェック ボックスをオフにした場合に特に。 空のセルはカウントされませんが、ゼロの値。</para>
@@ -1163,37 +1163,37 @@
           <para>平均範囲に含まれるセルの個数と形状は、必ずしも対応するセルと一致している必要はありません。平均の対象となる実際のセルは、平均範囲の左上のセルを基準にして決定されます。次にその例を示します。</para>
           <list type="table">
             <item>
-              <term>範囲 a1: a5</term>
-              <description>B1: b5</description>
-              <description>B1: b5</description> 
+              <term>A1:A5</term>
+              <description>B1:B5</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <description>B1: b3</description>
-              <term>の範囲 a1: a5</term>
-              <description>b1: b5</description> 
+              <term>A1:A5</term>
+              <description>B1:B3</description>
+              <description>B1:B5</description>
             </item>
-            <item> 
-              <term>A1: b4</term>
+            <item>
+              <term>A1:B4</term>
               <description>C1:D4</description>
-              <description>C1:D4</description> 
+              <description>C1:D4</description>
             </item>
-            <item> 
-              <term>A1: b4</term>
+            <item>
+              <term>A1:B4</term>
               <description>C1:C2</description>
-              <description>C1:D4</description> 
+              <description>C1:D4</description>
             </item>
           </list>
           <para><b>AverageIf</b>メソッドのメジャーの中心傾向、統計的分布における数値グループの中央の場所であります。 中心傾向を表す指標は、3 つ。</para>
           <list type="bullet">
             <item>
-              <description>平均算術平均、数字のグループを追加して、それらの数値の個数で割ることによって計算されます。たとえば、2、3、3、5、7、および 10 の平均値は割ることによって、5 であります。</description>
+              <description>平均 演算によって求める平均値であり、グループの各数値を加算してそれらの数値の個数で割ることにより計算します。たとえば、2、3、3、5、7、および 10 の平均は、30 を 6 で割った商、つまり 5 です。</description>
             </item>
             <item>
-              <description>メジアン数値グループの中央数であるテストの結果、半分の数値、中央値よりも大きい値があり、半分の数値が中央値より小さい値を持ちます。2、3、3、5、7、および 10 のメジアンは 4 です</description>
-            </item>。
+              <description>メジアン 数値のグループの中で中央に当たる数値であり、メジアンより大きい数値と小さい数値の個数が半々になります。たとえば、2、3、3、5、7、および 10 のメジアンは 4 です。</description>
+            </item>
             <item>
-              <description>モード数値グループで最も頻繁に出現する数値です。2、3、3、5、7、および 10 のモードは 3 です</description>
-            </item>。
+              <description>モード 数値のグループの中で、最も頻出する数値です。たとえば、2、3、3、5、7、および 10 のモードは 3 です。</description>
+            </item>
           </list>
           <para>数値のグループが対称分布の場合には、これら 3 つの中心傾向の測度の値は同じになります。数値のグループが非対称分布の場合には、値が異なることがあります。</para>
           <para> </para></remarks>
@@ -1290,37 +1290,37 @@
           <para>各検索条件範囲に含まれるセルの個数と形状は、必ずしも平均範囲のセルと一致している必要はありません。平均の対象となる実際のセルは、検索条件範囲の左上のセルを基準にして決定されます。次にその例を示します。</para>
           <list type="table">
             <item>
-              <term>範囲 a1: a5</term>
-              <description>B1: b5</description>
-              <description>B1: b5</description> 
+              <term>A1:A5</term>
+              <description>B1:B5</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <description>B1: b3</description>
-              <term>の範囲 a1: a5</term>
-              <description>b1: b5</description> 
+              <term>A1:A5</term>
+              <description>B1:B3</description>
+              <description>B1:B5</description>
             </item>
-            <item> 
-              <term>A1: b4</term>
+            <item>
+              <term>A1:B4</term>
               <description>C1:D4</description>
-              <description>C1:D4</description> 
+              <description>C1:D4</description>
             </item>
-            <item> 
-              <term>A1: b4</term>
+            <item>
+              <term>A1:B4</term>
               <description>C1:C2</description>
-              <description>C1:D4</description> 
+              <description>C1:D4</description>
             </item>
           </list>
           <para><b>エラー</b>関数中心的な傾向、統計的分布における数値グループの中央の場所であります。 中心傾向を表す指標は、3 つ。</para>
           <list type="bullet">
             <item>
-              <description>平均算術平均、数字のグループを追加して、それらの数値の個数で割ることによって計算されます。たとえば、2、3、3、5、7、および 10 の平均値は割ることによって、5 であります。</description>
+              <description>平均 演算によって求める平均値であり、グループの各数値を加算してそれらの数値の個数で割ることにより計算します。たとえば、2、3、3、5、7、および 10 の平均は、30 を 6 で割った商、つまり 5 です。</description>
             </item>
             <item>
-              <description>メジアン数値グループの中央数であるテストの結果、半分の数値、中央値よりも大きい値があり、半分の数値が中央値より小さい値を持ちます。2、3、3、5、7、および 10 のメジアンは 4 です</description>
-            </item>。
+              <description>メジアン 数値のグループの中で中央に当たる数値であり、メジアンより大きい数値と小さい数値の個数が半々になります。たとえば、2、3、3、5、7、および 10 のメジアンは 4 です。</description>
+            </item>
             <item>
-              <description>モード数値グループで最も頻繁に出現する数値です。2、3、3、5、7、および 10 のモードは 3 です</description>
-            </item>。
+              <description>モード 数値のグループの中で、最も頻出する数値です。たとえば、2、3、3、5、7、および 10 のモードは 3 です。</description>
+            </item>
           </list>
           <para>数値のグループが対称分布の場合には、これら 3 つの中心傾向の測度の値は同じになります。数値のグループが非対称分布の場合には、値が異なることがあります。</para>
           <para> </para></remarks>
@@ -1583,17 +1583,17 @@
         <remarks><para>β分布は、複数の標本を対象に割合の変化を分析する場合などに使用します。たとえば、複数の人が 1 日のうちにテレビを見ている時間の割合を算出するときは、この関数を使用します。</para>
           <list type="bullet">
             <item>
-              <description>いずれかの引数が数値以外の場合は、 <b>Beta_Dist</b>は、#VALUE を返します。エラー値です</description>
-            </item>。
+              <description>いずれかの引数が数値以外の場合は、 <b>Beta_Dist</b>は、#VALUE を返します。 エラー値です。</description>
+            </item>
             <item>
-              <description>Α ≤ 0 または β ≤ 0、 <b>Beta_Dist</b>がエラー値を生成するかどうかです</description>
-            </item>。
+              <description>場合は、α ≤ 0 または β ≤ 0、 <b>Beta_Dist</b>には、エラー値が生成されます。</description>
+            </item>
             <item>
-              <description>場合 x&lt;は、x &gt; B、または A = B、 <b>Beta_Dist</b>には、エラー値が生成されます</description>
-            </item>。
+              <description>場合 x&lt;は、x &gt; B、または A = B、 <b>Beta_Dist</b>には、エラー値が生成されます。</description>
+            </item>
             <item>
-              <description>A の値を省略すると、B (上限と下限)、 <b>Beta_Dist</b>標準累積 β 分布が使用され、A = 0 および B = 1 です</description>
-            </item>。
+              <description>A の値を省略すると、B (上限と下限)、 <b>Beta_Dist</b>標準累積 β 分布が使用され、A = 0 および B = 1。</description>
+            </item>
           </list>
           <para> </para></remarks>
       </Docs>
@@ -1634,17 +1634,17 @@
         <remarks><para>β分布は、プロジェクトの立案時に、予測される完成日数と公差によって完了可能日時を計算するために使用できます。</para>
           <list type="bullet">
             <item>
-              <description>いずれかの引数が数値以外の場合は、 <b>Beta_Inv</b>がエラー値を生成します</description>
-            </item>。
+              <description>いずれかの引数が数値以外の場合は、 <b>Beta_Inv</b>には、エラー値が生成されます。</description>
+            </item>
             <item>
-              <description>Α ≤ 0 または β ≤ 0、 <b>Beta_Inv</b>がエラー値を生成するかどうかです</description>
-            </item>。
+              <description>場合は、α ≤ 0 または β ≤ 0、 <b>Beta_Inv</b>には、エラー値が生成されます。</description>
+            </item>
             <item>
-              <description>場合は確率 ≤ 0、または確率&gt;1, <b>Beta_Inv</b>には、エラー値が生成されます</description>
-            </item>。
+              <description>場合確率 ≤ 0、または確率&gt;1, <b>Beta_Inv</b>には、エラー値が生成されます。</description>
+            </item>
             <item>
-              <description>A の値を省略すると、B (上限と下限)、 <b>Beta_Inv</b>標準累積 β 分布が使用され、A = 0 および B = 1 です</description>
-            </item>。
+              <description>A の値を省略すると、B (上限と下限)、 <b>Beta_Inv</b>標準累積 β 分布が使用され、A = 0 および B = 1。</description>
+            </item>
           </list>
           <para>確率の値を与え、そのような値 x がシーク<b>Beta_Inv</b> Beta_Dist (x、アルファ、ベータ版では、true の場合、A、B) = 確率。 <b>Beta_Inv</b>の精度がの精度に依存するため、 <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Beta_Dist(System.Double,System.Double,System.Double,System.Boolean,System.Object,System.Object)" />。 <b>Beta_Inv</b>では、反復計算の手法を使用します。</para>
           <para> </para></remarks>
@@ -1688,17 +1688,17 @@
           <para>β分布は、複数の標本を対象に割合の変化を分析する場合などに使用します。たとえば、複数の人が 1 日のうちにテレビを見ている時間の割合を算出するときは、この関数を使用します。</para>
           <list type="bullet">
             <item>
-              <description>いずれかの引数が数値以外の場合は、<b>指定</b>が #VALUE を返します。エラー値です</description>
-            </item>。
+              <description>いずれかの引数が数値以外の場合は、<b>指定</b>が #VALUE を返します。 エラー値です。</description>
+            </item>
             <item>
-              <description>エラー値が返されますかどうか α ≤ 0 または β ≤ 0 を<b>指定</b>します</description>
-            </item>。
+              <description>場合は、α ≤ 0 または β ≤ 0、<b>指定</b>には、エラー値が生成されます。</description>
+            </item>
             <item>
-              <description>場合 x&lt;は、x &gt; B、または A = B、<b>指定</b>には、エラー値が生成されます</description>
-            </item>。
+              <description>場合 x&lt;は、x &gt; B、または A = B、<b>指定</b>には、エラー値が生成されます。</description>
+            </item>
             <item>
-              <description>A の値を省略すると<b>場合</b>、標準累積 β 分布が使用され、A = 0 および B = 1 です</description>
-            </item>。
+              <description>A の値を省略すると<b>場合</b>、標準累積 β 分布が使用され、A = 0 および B = 1。</description>
+            </item>
           </list>
           <para> </para></remarks>
       </Docs>
@@ -1741,17 +1741,17 @@
           <para>β分布は、プロジェクトの立案時に、予測される完成日数と公差によって、完了可能日時を計算するために使用できます。</para>
           <list type="bullet">
             <item>
-              <description>いずれかの引数が数値以外の場合は、エラー値が返されます<b>BetaInv</b> </description> 
-            </item> 。
+              <description><b>いずれかの引数が数値以外の場合は、エラー値が返されます。</b></description>
+            </item>
             <item>
-              <description>かどうか、α ≤ 0 または β ≤ 0、 <b>BetaInv</b>はエラー値を生成します</description>
-            </item>。
+              <description>場合は、α ≤ 0 または β ≤ 0、 <b>BetaInv</b>は、エラー値を生成します。 </description>
+            </item>
             <item>
-              <description>場合は確率 ≤ 0、または確率&gt;1、<b>エラー値が返さ</b></description>
-            </item>。
+              <description>場合確率 ≤ 0、または確率&gt;1、 <b>BetaInv</b>エラー値が返されます。 </description>
+            </item>
             <item>
-              <description>A の値を省略すると<b>場合</b>、標準累積 β 分布が使用され、A = 0 および B = 1 です</description>
-            </item>。
+              <description>A の値を省略すると<b>場合</b>、標準累積 β 分布が使用され、A = 0 および B = 1。</description>
+            </item>
           </list>
           <para><b>BetaInv</b>確率の値を与え、そのような値 x がシークを指定 (x、アルファ、ベータ版、A、B) = 確率です。 <b>BetaInv</b>の精度がの精度に依存するため、 <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.BetaDist(System.Double,System.Double,System.Double,System.Object,System.Object)" />。 <b>BetaInv</b>は、反復計算の手法を使用します。 結果は 100 回反復後収束しないが、この関数はエラー値を生成します。</para>
           <para> </para></remarks>
@@ -1894,16 +1894,16 @@
         <remarks><para>試行が独立した場合、すべての試行の結果が成功または失敗のみと成功の確率が実験を通じて一定のテストまたは試用版では、固定数の問題で、 <b>Binom_Dist</b>メソッドを使用します。 たとえば、 <b>Binom_Dist</b>メソッドでは、(オス) は次の 3 つの赤ちゃんの 2 つの確率を計算できます。 </para>
           <list type="bullet">
             <item>
-              <description>成功数、試行回数が整数に切り捨てられます</description>
-            </item>。
+              <description>成功数、試行回数に整数以外の値を指定すると、小数点以下が切り捨てられます。</description>
+            </item>
             <item>
-              <description>成功数、試行回数、成功率が数値以外の場合は、 <b>Binom_Dist</b>メソッドはエラーを生成します</description>
-            </item>。
+              <description>成功数、試行回数、成功率が数値以外の場合は、 <b>Binom_Dist</b>メソッドはエラーを生成します。 </description>
+            </item>
             <item>
-              <description>場合成功&lt;0 または成功数&gt;試験、 <b>Binom_Dist</b>メソッドには、エラーが生成されます</description>
-            </item>。
+              <description>場合成功&lt;0 または成功数&gt;試験、 <b>Binom_Dist</b>メソッドには、エラーが生成されます。 </description>
+            </item>
             <item>
-              <description>場合は成功率&lt;0 または成功率&gt;1、 <b>Binom_Dist</b>メソッドには、エラーが生成されます。二項確率質量関数は、:</description>
+              <description>場合成功率&lt;0 または成功率&gt;1、 <b>Binom_Dist</b>メソッドには、エラーが生成されます。 二項確率密度関数は、次の数式で表されます。 </description>
             </item>
           </list>
           <para>ここで、</para>
@@ -2299,17 +2299,20 @@
           <list type="table">
             <item>
               <term>-/-</term>
-              <description>ゼロに向かって切り下げる。</description> 
-            </item> 。
+              <description>切り捨て</description>
+            </item>
             <item>
-              <term>+/+</term>ゼロ回
-            </item>。
-            <item> 
-              <term>-/+</term>0 に向かって切り下げる。
-            </item> 。
+              <term>+/+</term>
+              <description>切り上げ</description>
+            </item>
             <item>
-              <term>+/-</term>ゼロ回
-            </item>。
+              <term>-/+</term>
+              <description>切り捨て</description>
+            </item>
+            <item>
+              <term>+/-</term>
+              <description>切り上げ</description>
+            </item>
           </list>
           <para>いずれかの引数が数値以外の場合は、 <b>Ceiling_Precise</b>にはエラーが生成されます。 </para>
           <para>数値が既に基準値の倍数になっている場合は、その値が返されます。</para>
@@ -2578,7 +2581,7 @@
           <para>各項目の意味は次のとおりです。</para>
           <list type="bullet">
             <item>
-              <description>Aij = i 行 j 列内の実際の周波数</description>
+              <description>Aij = i 行 j 列内の実際の頻度</description>
             </item>
             <item>
               <description>Eij = i 行 j 列内の予期周波数</description>
@@ -2587,7 +2590,7 @@
               <description>r = 番号または行</description>
             </item>
             <item>
-              <description>c 列の数を =</description>
+              <description>c = 列数</description>
             </item>
           </list>
           <para>Χ2 の低値は、独立性を示すインジケーターです。 数式からわかるように、χ2 は常に正または 0 の場合、ありのみの場合は 0 を Aij Eij を = どの i、j。</para>
@@ -2635,7 +2638,7 @@
           <para>各項目の意味は次のとおりです。</para>
           <list type="bullet">
             <item>
-              <description>Aij = i 行 j 列内の実際の周波数</description>
+              <description>Aij = i 行 j 列内の実際の頻度</description>
             </item>
             <item>
               <description>Eij = i 行 j 列内の予期周波数</description>
@@ -2644,7 +2647,7 @@
               <description>r = 番号または行</description>
             </item>
             <item>
-              <description>c 列の数を =</description>
+              <description>c = 列数</description>
             </item>
           </list>
           <para> </para>
@@ -3053,28 +3056,28 @@
         <remarks><list type="table">
             <item>
               <term>グラム</term>
-              <description>"g"</description> 
+              <description>"g"</description>
             </item>
             <item>
               <term>スラグ</term>
-              <description>sg</description> 
+              <description>"sg"</description>
             </item>
             <item>
-              <term>ポンド (常衡)</term>の
-              <description>「荷重」</description> 
+              <term>ポンド (常衡)</term>
+              <description>"lbm"</description>
             </item>
-            <item> 
+            <item>
               <term>U (原子質量単位)</term>
-              <description>"u"</description> 
+              <description>"u"</description>
             </item>
             <item>
-              <term>オンス (常衡) の大容量</term>
-              <description>「ozm」</description> 
-            </item> 
+              <term>オンス (常衡)</term>
+              <description>"ozm"</description>
+            </item>
           </list>
           <list type="table">
             <item>
-              <term>メーター</term>
+              <term>メートル</term>
               <description>"m"</description>
             </item>
             <item>
@@ -3087,36 +3090,36 @@
             </item>
             <item>
               <term>インチ</term>
-              <description>「で」</description>
+              <description>"in"</description>
             </item>
             <item>
               <term>フィート</term>
               <description>"ft"</description>
             </item>
             <item>
-              <term>庭</term>
-              <description>「ヤード」</description>
+              <term>ヤード</term>
+              <description>"yd"</description>
             </item>
             <item>
-              <term>Angstrom</term>
+              <term>オングストローム</term>
               <description>"ang"</description>
             </item>
             <item>
               <term>パイカ (1/72 インチ)</term>
-              <description>「パイカ」</description> 
-            </item> 
+              <description>"Pica"</description>
+            </item>
           </list>
           <list type="table">
             <item>
-              <term>年</term>の
-              <description>「年」</description>
+              <term>年</term>
+              <description>"yr"</description>
             </item>
             <item>
               <term>日</term>
-              <description>[日]</description>
+              <description>"day"</description>
             </item>
             <item>
-              <term>1 時間</term>
+              <term>時</term>
               <description>"hr"</description>
             </item>
             <item>
@@ -3124,85 +3127,85 @@
               <description>"mn"</description>
             </item>
             <item>
-              <term>2 番目</term>の
-              <description>「秒」</description> 
-            </item> 
+              <term>秒</term>
+              <description>"sec"</description>
+            </item>
           </list>
-          <list type="table"> 
-            <item> 
-              <term>Pascal 形式</term>
-              <description>"Pa"(または"p")</description>
+          <list type="table">
+            <item>
+              <term>パスカル</term>
+              <description>"Pa" (または "p")</description>
             </item>
             <item>
-              <term>大気</term>
-              <description>「atm」(at)</description>
+              <term>気圧</term>
+              <description>"atm" (または "at")</description>
             </item>
             <item>
-              <term>mm 水銀柱の高さ</term>の
-              <description>「mmHg」</description> 
-            </item> 
+              <term>ミリメートル Hg</term>
+              <description>「mmHg」</description>
+            </item>
           </list>
           <list type="table">
             <item>
               <term>ニュートン</term>
-              <description>N</description>
+              <description>"N"</description>
             </item>
             <item>
-              <term>単位はダイン</term>
-              <description>"dyn"(または"dy")</description>
+              <term>ダイン</term>
+              <description>"dyn" (または "dy")</description>
             </item>
             <item>
-              <term>ポンドを強制的</term>に
-              <description>「lbf」</description> 
-            </item> 
+              <term>ポンド フォース</term>
+              <description>"lbf"</description>
+            </item>
           </list>
-          <list type="table"> 
-            <item> 
-              <term>Joule</term>
-              <description>J</description>
+          <list type="table">
+            <item>
+              <term>ジュール</term>
+              <description>"J"</description>
             </item>
             <item>
-              <term>Erg</term>
-              <description>"の e"</description>
+              <term>エルグ</term>
+              <description>"e"</description>
             </item>
             <item>
-              <term>Thermodynamic カロリー</term>
+              <term>カロリー (物理化学的熱量)</term>
               <description>"c"</description>
             </item>
             <item>
-              <term>IT のカロリー</term>
+              <term>カロリー (生理学的代謝熱量)</term>
               <description>"cal"</description>
             </item>
             <item>
-              <description>"eV"である
-              <term>電子ボルト</term>(または"ev")</description> 
+              <term>電子ボルト</term>
+              <description>"eV" (または "ev")</description>
             </item>
             <item>
-              <term>馬力時間</term>
-              <description>"HPh"(または"hh")</description> 
+              <term>馬力時</term>
+              <description>"HPh" (または "hh")</description>
             </item>
-            <item> 
-              <term>Watt-hour</term>
-              <description>「修正」(または「修正」)</description> 
+            <item>
+              <term>ワット時</term>
+              <description>"Wh" (または "wh")</description>
             </item>
-            <item> 
-              <term>Foot-pound</term>
-              <description>「flb」</description> 
+            <item>
+              <term>フィートポンド</term>
+              <description>"flb"</description>
             </item>
-            <item> 
-              <term>BTU</term>
-              <description>"BTU"(または"btu")</description> 
-            </item> 
+            <item>
+              <term>BTU (英国熱量単位)</term>
+              <description>"BTU" (または "btu")</description>
+            </item>
           </list>
           <list type="table">
             <item>
               <term>馬力</term>
-              <description>"HP"(または"h")</description>
-            </item>、
+              <description>"HP" (または "h")</description>
+            </item>
             <item>
               <term>ワット</term>
-              <description>"の W"(または"w")</description> 
-            </item> 
+              <description>"W" (または "w")</description>
+            </item>
           </list>
           <list type="table">
             <item>
@@ -3210,47 +3213,47 @@
               <description>"T"</description>
             </item>
             <item>
-              <description>"ga"</description>の
-              <term>単位はガウス</term>
+              <term>ガウス</term>
+              <description>"ga"</description>
             </item>
           </list>
           <list type="table">
             <item>
-            <item>
-              <term>セ氏度記号</term>
-              <description>「C」(または「cel」)</description>
-            </item>
-              <term>度華氏</term>
-              <description>"F"(または"fah")</description>
+              <term>摂氏</term>
+              <description>"C" (または "cel")</description>
             </item>
             <item>
-              <term>ケルビン</term>
-              <description>"K"(または"kel")</description> 
-            </item> 
+              <term>華氏</term>
+              <description>"F" (または "fah")</description>
+            </item>
+            <item>
+              <term>絶対温度</term>
+              <description>"K" (または "kel")</description>
+            </item>
           </list>
-          <list type="table"> 
-            <item> 
-              <term>Teaspoon</term>
+          <list type="table">
+            <item>
+              <term>ティースプーン</term>
               <description>"tsp"</description>
             </item>
             <item>
-              <term>さじ</term>
+              <term>テーブルスプーン</term>
               <description>"tbs"</description>
             </item>
             <item>
-              <term>液量オンス</term>
-              <description>"オズの魔法使い」「</description>
+              <term>オンス</term>
+              <description>"oz"</description>
             </item>
             <item>
               <term>カップ</term>
-              <description>」カップ」</description> 
-            </item> 
-            <item> 
-              <term>パイント (米)</term>
-              <description>"pt"(または"us_pt")</description>
+              <description>"cup"</description>
             </item>
             <item>
-              <term>パイント</term>
+              <term>パイント (米)</term>
+              <description>"pt" (または "us_pt")</description>
+            </item>
+            <item>
+              <term>パイント (英)</term>
               <description>"uk_pt"</description>
             </item>
             <item>
@@ -3262,91 +3265,91 @@
               <description>"gal"</description>
             </item>
             <item>
-              <term>リットル</term> 
-              <description>"l"(または"lt")</description> 
-            </item> 
+              <term>リットル</term>
+              <description>"l" (または "lt")</description>
+            </item>
           </list>
           <para>次に示す 10 のべき乗に対応する略語は、変換前単位または変換後単位に前置することができます。</para>
           <list type="table">
             <item>
-              <term>エクサ</term>
-              <description>1E + 18</description>
-              <description>"E"</description> 
+              <term>exa</term>
+              <description>1E+18</description>
+              <description>"E"</description>
             </item>
             <item>
-              <term>ペタ</term>
-              <description>1E + 15</description>
-              <description>P</description> 
+              <term>peta</term>
+              <description>1E+15</description>
+              <description>"P"</description>
             </item>
             <item>
-              <term>テラ</term>
-              <description>1E + 12</description>
-              <description>"T"</description> 
+              <term>tera</term>
+              <description>1E+12</description>
+              <description>"T"</description>
             </item>
             <item>
-              <term>ギガ</term>
-              <description>1E + 09</description>
-              <description>"G"</description> 
+              <term>giga</term>
+              <description>1E+09</description>
+              <description>"G"</description>
             </item>
             <item>
-              <term>メガ</term>
-              <description>1E + 06</description>
-              <description>"M"</description> 
+              <term>mega</term>
+              <description>1E+06</description>
+              <description>"M"</description>
             </item>
             <item>
-              <term>キロ</term>
-              <description>1E + 03</description>
-              <description>"k"</description> 
+              <term>kilo</term>
+              <description>1E+03</description>
+              <description>"k"</description>
             </item>
-            <item> 
+            <item>
               <term>hecto</term>
-              <description>1E + 02</description>
-              <description>"h"</description> 
+              <description>1E+02</description>
+              <description>"h"</description>
             </item>
-            <item> 
+            <item>
               <term>dekao</term>
-              <description>1E + 01</description>
-              <description>"e"</description> 
+              <description>1E+01</description>
+              <description>"e"</description>
             </item>
-            <item> 
+            <item>
               <term>deci</term>
-              <description>1E 01</description>
-              <description>"d"</description> 
+              <description>1E-01</description>
+              <description>"d"</description>
             </item>
             <item>
-              <term>センチ</term>
-              <description>1E 02</description>
-              <description>"c"</description> 
+              <term>centi</term>
+              <description>1E-02</description>
+              <description>"c"</description>
             </item>
             <item>
-              <term>ミリ秒</term>
-              <description>1E 03</description>
-              <description>"m"</description> 
+              <term>milli</term>
+              <description>1E-03</description>
+              <description>"m"</description>
             </item>
             <item>
-              <term>マイクロ</term>
-              <description>1E 06</description>
-              <description>"u"</description> 
+              <term>micro</term>
+              <description>1E-06</description>
+              <description>"u"</description>
             </item>
-            <item> 
+            <item>
               <term>nano</term>
               <description>1E-09</description>
-              <description>"n"</description> 
+              <description>"n"</description>
             </item>
-            <item> 
-              <term>'pico'</term>
-              <description>1E 12</description>
-              <description>p</description> 
+            <item>
+              <term>pico</term>
+              <description>1E-12</description>
+              <description>"p"</description>
             </item>
-            <item> 
+            <item>
               <term>femto</term>
-              <description>1E 15</description>
-              <description>"f"</description> 
+              <description>1E-15</description>
+              <description>"f"</description>
             </item>
-            <item> 
+            <item>
               <term>atto</term>
               <description>1E-18</description>
-              <description>a</description> 
+              <description>"a"</description>
             </item>
           </list>
           <para>入力データ型が正しくない場合は、<b>変換</b>エラーが発生します。 </para>
@@ -3856,23 +3859,23 @@
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>米国 (NASD) 30 日/360</description> 
+              <description>30 日/360 日 (NASD 方式)</description>
             </item>
-            <item> 
-              <term></term>
-              <description>1/実際の日数</description>
+            <item>
+              <term>1</term>
+              <description>実際の日数/実際の日数</description>
             </item>
-            <item> 
+            <item>
               <term>2</term>
-              <description>/360 日の実績</description>
+              <description>実際の日数/360 日</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>/365 日の実績</description>
+              <description>実際の日数/365 日</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
-              <description>ヨーロッパの 30 日/360</description> 
+              <description>30 日/360 日 (ヨーロッパ方式)</description>
             </item>
           </list>
           <para>Excel では、日付を連続したシリアル値として処理することで、日付の計算が行われています。既定では、1900 年 1 月 1 日がシリアル値 1 として保存されます。2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後に当たるので、シリアル値は 39,448 になります。Macintosh 版 Excel では、標準として異なる日付システムが使用されています。</para>
@@ -3922,23 +3925,23 @@
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>米国 (NASD) 30 日/360</description> 
+              <description>30 日/360 日 (NASD 方式)</description>
             </item>
-            <item> 
-              <term></term>
-              <description>1/実際の日数</description>
+            <item>
+              <term>1</term>
+              <description>実際の日数/実際の日数</description>
             </item>
-            <item> 
+            <item>
               <term>2</term>
-              <description>/360 日の実績</description>
+              <description>実際の日数/360 日</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>/365 日の実績</description>
+              <description>実際の日数/365 日</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
-              <description>ヨーロッパの 30 日/360</description> 
+              <description>30 日/360 日 (ヨーロッパ方式)</description>
             </item>
           </list>
           <para>Excel では、日付を連続したシリアル値として処理することで、日付の計算が行われています。既定では、1900 年 1 月 1 日がシリアル値 1 として保存されます。2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後に当たるので、シリアル値は 39,448 になります。Macintosh 版 Excel では、標準として異なる日付システムが使用されています。</para>
@@ -3988,23 +3991,23 @@
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>米国 (NASD) 30 日/360</description> 
+              <description>30 日/360 日 (NASD 方式)</description>
             </item>
-            <item> 
-              <term></term>
-              <description>1/実際の日数</description>
+            <item>
+              <term>1</term>
+              <description>実際の日数/実際の日数</description>
             </item>
-            <item> 
+            <item>
               <term>2</term>
-              <description>/360 日の実績</description>
+              <description>実際の日数/360 日</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>/365 日の実績</description>
+              <description>実際の日数/365 日</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
-              <description>ヨーロッパの 30 日/360</description> 
+              <description>30 日/360 日 (ヨーロッパ方式)</description>
             </item>
           </list>
           <para>Excel では、日付を連続したシリアル値として処理することで、日付の計算が行われています。既定では、1900 年 1 月 1 日がシリアル値 1 として保存されます。2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後に当たるので、シリアル値は 39,448 になります。Macintosh 版 Excel では、標準として異なる日付システムが使用されています。</para>
@@ -4054,23 +4057,23 @@
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>米国 (NASD) 30 日/360</description> 
+              <description>30 日/360 日 (NASD 方式)</description>
             </item>
-            <item> 
-              <term></term>
-              <description>1/実際の日数</description>
+            <item>
+              <term>1</term>
+              <description>実際の日数/実際の日数</description>
             </item>
-            <item> 
+            <item>
               <term>2</term>
-              <description>/360 日の実績</description>
+              <description>実際の日数/360 日</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>/365 日の実績</description>
+              <description>実際の日数/365 日</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
-              <description>ヨーロッパの 30 日/360</description> 
+              <description>30 日/360 日 (ヨーロッパ方式)</description>
             </item>
           </list>
           <para>Excel では、日付を連続したシリアル値として処理することで、日付の計算が行われています。既定では、1900 年 1 月 1 日がシリアル値 1 として保存されます。2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後に当たるので、シリアル値は 39,448 になります。Macintosh 版 Excel では、標準として異なる日付システムが使用されています。</para>
@@ -4120,23 +4123,23 @@
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>米国 (NASD) 30 日/360</description> 
+              <description>30 日/360 日 (NASD 方式)</description>
             </item>
-            <item> 
-              <term></term>
-              <description>1/実際の日数</description>
+            <item>
+              <term>1</term>
+              <description>実際の日数/実際の日数</description>
             </item>
-            <item> 
+            <item>
               <term>2</term>
-              <description>/360 日の実績</description>
+              <description>実際の日数/360 日</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>/365 日の実績</description>
+              <description>実際の日数/365 日</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
-              <description>ヨーロッパの 30 日/360</description> 
+              <description>30 日/360 日 (ヨーロッパ方式)</description>
             </item>
           </list>
           <para>Excel では、日付を連続したシリアル値として処理することで、日付の計算が行われています。既定では、1900 年 1 月 1 日がシリアル値 1 として保存されます。2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後に当たるので、シリアル値は 39,448 になります。Macintosh 版 Excel では、標準として異なる日付システムが使用されています。</para>
@@ -4186,23 +4189,23 @@
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>米国 (NASD) 30 日/360</description> 
+              <description>30 日/360 日 (NASD 方式)</description>
             </item>
-            <item> 
-              <term></term>
-              <description>1/実際の日数</description>
+            <item>
+              <term>1</term>
+              <description>実際の日数/実際の日数</description>
             </item>
-            <item> 
+            <item>
               <term>2</term>
-              <description>/360 日の実績</description>
+              <description>実際の日数/360 日</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>/365 日の実績</description>
+              <description>実際の日数/365 日</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
-              <description>ヨーロッパの 30 日/360</description> 
+              <description>30 日/360 日 (ヨーロッパ方式)</description>
             </item>
           </list>
           <para>Excel では、日付を連続したシリアル値として処理することで、日付の計算が行われています。既定では、1900 年 1 月 1 日がシリアル値 1 として保存されます。2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後に当たるので、シリアル値は 39,448 になります。Macintosh 版 Excel では、標準として異なる日付システムが使用されています。</para>
@@ -4500,11 +4503,11 @@
           <list type="table">
             <item>
               <term>0 (ゼロ)</term>
-              <description>支払</description>期間の最後に
+              <description>各期の期末</description>
             </item>
-            <item> 
+            <item>
               <term>1</term>
-              <description>支払期間の開始時</description>
+              <description>各期の期首</description>
             </item>
           </list>
           <para>利率と期間を指定するために使用する単位について一貫していることを確認します。 年利 12% の 4 年ローンを月払いにする場合、4 * 12 の 12 分の 12% を使用して、 <paramref name="Arg2" />。 同じローンを年払いにする場合は、12% を使用して、4 の<paramref name="Arg2" />。 </para>
@@ -4556,11 +4559,11 @@
           <list type="table">
             <item>
               <term>0 (ゼロ)</term>
-              <description>支払</description>期間の最後に
+              <description>各期の期末</description>
             </item>
-            <item> 
+            <item>
               <term>1</term>
-              <description>支払期間の開始時</description>
+              <description>各期の期首</description>
             </item>
           </list>
           <para>利率と期間を指定するために使用する単位について一貫していることを確認します。 年利 12% の 4 年ローンを月払いにする場合、4 * 12 の 12 分の 12% を使用して、 <paramref name="Arg2" />。 同じローンを年払いにする場合は、12% を使用して、4 の<paramref name="Arg2" />。 </para>
@@ -4607,12 +4610,12 @@
           <para>場所を検索する文字列または値入力内容にします。 例:</para>
           <list type="table">
             <item>
-              <term>=「="西脇」"</term>
-              <description>="西脇"</description> 
+              <term>="=西脇"</term>
+              <description>=西脇</description>
             </item>
             <item>
-              <description>3000 を =</description> 
-              <term>=「= 3000」</term>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>テキスト データの抽出では、大文字と小文字は区別されません。ただし、特定の関数を使用することによって、大文字と小文字を区別した検索を実行できます。</para>
@@ -4683,15 +4686,15 @@
           <list type="table">
             <item>
               <term>
-                <b>false を指定</b>するか省略する</term>
-              <description>米国 NASD 方式です。開始日が月の 31 日の場合は、30 th 同じ月に等しくなります。終了日は、1 か月の 31 日、開始日が 1 か月の 30 日目より前の場合は、終了日になる次の月の 1 日それ以外の場合終了日が 30 th 同じ月のと同じになります</description>
-            </item>。
+                <b>false を指定</b>するか省略します。</term>
+              <description>NASD 方式。開始日が、ある月の 31 日になる場合、同じ月の 30 日として計算が行われます。終了日が、ある月の 31 日になる場合は、開始日が 30 日でない限り、その翌月の 1 日として計算が行われます。2 月の 28 日と 29 日は、いずれも 2 月 30 日と見なされます。</description>
+            </item>
             <item>
               <term>
-                <b>真</b>
+                <b>true</b>
               </term>
-              <description>ヨーロッパ方式です。開始日と終了日が月の 31 日が 30 th 同じ月のと同じになります</description>
-            </item>。
+              <description>ヨーロッパ方式。開始日または終了日が、ある月の 31 日になる場合、同じ月の 30 日として計算が行われます。</description>
+            </item>
           </list>
           <para>Excel では、日付を連続したシリアル値として処理することで、日付の計算が行われています。既定では、1900 年 1 月 1 日がシリアル値 1 として保存されます。2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後に当たるので、シリアル値は 39,448 になります。Macintosh 版 Excel では、標準として異なる日付システムが使用されています。</para>
           <para> </para></remarks>
@@ -4805,12 +4808,12 @@
           <para>エントリが、テキストまたは値を検索します。 例:</para>
           <list type="table">
             <item>
-              <term>=「="西脇」"</term>
-              <description>="西脇"</description> 
+              <term>="=西脇"</term>
+              <description>=西脇</description>
             </item>
             <item>
-              <description>3000 を =</description> 
-              <term>=「= 3000」</term>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>テキスト データの抽出では、大文字と小文字は区別されません。ただし、特定の関数を使用することによって、大文字と小文字を区別した検索を実行できます。</para>
@@ -4852,12 +4855,12 @@
           <para>エントリが、テキストまたは値を検索します。 例:</para>
           <list type="table">
             <item>
-              <term>=「="西脇」"</term>
-              <description>="西脇"</description> 
+              <term>="=西脇"</term>
+              <description>=西脇</description>
             </item>
             <item>
-              <description>3000 を =</description> 
-              <term>=「= 3000」</term>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>テキスト データの抽出では、大文字と小文字は区別されません。ただし、特定の関数を使用することによって、大文字と小文字を区別した検索を実行できます。</para>
@@ -5237,12 +5240,12 @@
           <para>エントリが、テキストまたは値を検索します。 例:</para>
           <list type="table">
             <item>
-              <term>=「="西脇」"</term>
-              <description>="西脇"</description> 
+              <term>="=西脇"</term>
+              <description>=西脇</description>
             </item>
             <item>
-              <description>3000 を =</description> 
-              <term>=「= 3000」</term>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>テキスト データの抽出では、大文字と小文字は区別されません。ただし、特定の関数を使用することによって、大文字と小文字を区別した検索を実行できます。</para>
@@ -5337,12 +5340,12 @@
           <para>エントリが、テキストまたは値を検索します。 例:</para>
           <list type="table">
             <item>
-              <term>=「="西脇」"</term>
-              <description>="西脇"</description> 
+              <term>="=西脇"</term>
+              <description>=西脇</description>
             </item>
             <item>
-              <description>3000 を =</description> 
-              <term>=「= 3000」</term>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>テキスト データの抽出では、大文字と小文字は区別されません。ただし、特定の関数を使用することによって、大文字と小文字を区別した検索を実行できます。</para>
@@ -5384,12 +5387,12 @@
           <para>エントリが、テキストまたは値を検索します。 例:</para>
           <list type="table">
             <item>
-              <term>=「="西脇」"</term>
-              <description>="西脇"</description> 
+              <term>="=西脇"</term>
+              <description>=西脇</description>
             </item>
             <item>
-              <description>3000 を =</description> 
-              <term>=「= 3000」</term>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>テキスト データの抽出では、大文字と小文字は区別されません。ただし、特定の関数を使用することによって、大文字と小文字を区別した検索を実行できます。</para>
@@ -5530,12 +5533,12 @@
           <para>エントリが、テキストまたは値を検索します。 例:</para>
           <list type="table">
             <item>
-              <term>=「="西脇」"</term>
-              <description>="西脇"</description> 
+              <term>="=西脇"</term>
+              <description>=西脇</description>
             </item>
             <item>
-              <description>3000 を =</description> 
-              <term>=「= 3000」</term>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>テキスト データの抽出では、大文字と小文字は区別されません。ただし、特定の関数を使用することによって、大文字と小文字を区別した検索を実行できます。</para>
@@ -5577,12 +5580,12 @@
           <para>エントリが、テキストまたは値を検索します。 例:</para>
           <list type="table">
             <item>
-              <term>=「="西脇」"</term>
-              <description>="西脇"</description> 
+              <term>="=西脇"</term>
+              <description>=西脇</description>
             </item>
             <item>
-              <description>3000 を =</description> 
-              <term>=「= 3000」</term>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>テキスト データの抽出では、大文字と小文字は区別されません。ただし、特定の関数を使用することによって、大文字と小文字を区別した検索を実行できます。</para>
@@ -5624,12 +5627,12 @@
           <para>エントリが、テキストまたは値を検索します。 例:</para>
           <list type="table">
             <item>
-              <term>=「="西脇」"</term>
-              <description>="西脇"</description> 
+              <term>="=西脇"</term>
+              <description>=西脇</description>
             </item>
             <item>
-              <description>3000 を =</description> 
-              <term>=「= 3000」</term>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>テキスト データの抽出では、大文字と小文字は区別されません。ただし、特定の関数を使用することによって、大文字と小文字を区別した検索を実行できます。</para>
@@ -5671,12 +5674,12 @@
           <para>エントリが、テキストまたは値を検索します。 例:</para>
           <list type="table">
             <item>
-              <term>=「="西脇」"</term>
-              <description>="西脇"</description> 
+              <term>="=西脇"</term>
+              <description>=西脇</description>
             </item>
             <item>
-              <description>3000 を =</description> 
-              <term>=「= 3000」</term>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>テキスト データの抽出では、大文字と小文字は区別されません。ただし、特定の関数を使用することによって、大文字と小文字を区別した検索を実行できます。</para>
@@ -5846,23 +5849,23 @@
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>米国 (NASD) 30 日/360</description> 
+              <description>30 日/360 日 (NASD 方式)</description>
             </item>
-            <item> 
-              <term></term>
-              <description>1/実際の日数</description>
+            <item>
+              <term>1</term>
+              <description>実際の日数/実際の日数</description>
             </item>
-            <item> 
+            <item>
               <term>2</term>
-              <description>/360 日の実績</description>
+              <description>実際の日数/360 日</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>/365 日の実績</description>
+              <description>実際の日数/365 日</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
-              <description>ヨーロッパの 30 日/360</description> 
+              <description>30 日/360 日 (ヨーロッパ方式)</description>
             </item>
           </list>
           <para>Excel では、日付を連続したシリアル値として処理することで、日付の計算が行われています。既定では、1900 年 1 月 1 日がシリアル値 1 として保存されます。2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後に当たるので、シリアル値は 39,448 になります。Macintosh 版 Excel では、標準として異なる日付システムが使用されています。</para>
@@ -5911,12 +5914,12 @@
           <para>エントリが、テキストまたは値を検索します。 例:</para>
           <list type="table">
             <item>
-              <term>=「="西脇」"</term>
-              <description>="西脇"</description> 
+              <term>="=西脇"</term>
+              <description>=西脇</description>
             </item>
             <item>
-              <description>3000 を =</description> 
-              <term>=「= 3000」</term>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>テキスト データの抽出では、大文字と小文字は区別されません。ただし、特定の関数を使用することによって、大文字と小文字を区別した検索を実行できます。</para>
@@ -5958,12 +5961,12 @@
           <para>エントリが、テキストまたは値を検索します。 例:</para>
           <list type="table">
             <item>
-              <term>=「="西脇」"</term>
-              <description>="西脇"</description> 
+              <term>="=西脇"</term>
+              <description>=西脇</description>
             </item>
             <item>
-              <description>3000 を =</description> 
-              <term>=「= 3000」</term>
+              <term>="=3000"</term>
+              <description>=3000</description>
             </item>
           </list>
           <para>テキスト データの抽出では、大文字と小文字は区別されません。ただし、特定の関数を使用することによって、大文字と小文字を区別した検索を実行できます。</para>
@@ -6768,12 +6771,12 @@
             <b>重要</b>:<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Find(System.String,System.String,System.Object)" />はシングル バイト文字を使用する言語での使用を意図したものセット (SBCS)、 <b>findb 関数</b>は、2 バイト文字セット (DBCS) を使用する言語を使用します。 お使いのコンピューター上の既定の言語設定は、戻り値を次のように影響します。</para>
           <list type="bullet">
             <item>
-              <description> 
-                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Find(System.String,System.String,System.Object)" /> 1 バイトまたは 2 バイトとして、既定の言語設定. とも、1 かどうか、各文字を常にカウント</description>
+              <description>
+                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Find(System.String,System.String,System.Object)" />常に 1 バイトまたは 2 バイト、1 は、既定の言語の設定に関係なくかどうかは、それぞれの文字をカウントします。</description>
             </item>
-            <item> 
-              <description> 
-                <b>Findb 関数</b>では、DBCS をサポートする言語の編集を有効にして、既定の言語として設定するときに 2 として各 2 バイト文字をカウントします。それ以外の場合、 <b>findb 関数</b>は、1 つとして各文字をカウントします。</description>
+            <item>
+              <description>
+                <b>FindB</b>関数では、DBCS をサポートする言語の編集を有効にして、既定の言語として設定するときに、各 2 バイト文字が 2 として数えられます。 それ以外の場合、 <b>findb 関数</b>は、1 つとして各文字をカウントします。</description>
             </item>
           </list>
           <para>DBCS をサポートする言語には、日本語、簡体字中国語、繁体字中国語、および韓国語があります。</para>
@@ -7037,17 +7040,20 @@
           <list type="table">
             <item>
               <term>-/-</term>
-              <description>ゼロ回</description>
-            </item>。
-            <item> 
-              <term>+/+</term>0 に向かって切り下げる。
-            </item> 。
+              <description>切り上げ</description>
+            </item>
             <item>
-              <term>-/+</term>ゼロ回
-            </item>。
-            <item> 
-              <term>+/-</term>0 に向かって切り下げる。
-            </item> 。
+              <term>+/+</term>
+              <description>切り捨て</description>
+            </item>
+            <item>
+              <term>-/+</term>
+              <description>切り上げ</description>
+            </item>
+            <item>
+              <term>+/-</term>
+              <description>切り捨て</description>
+            </item>
           </list>
           <para>いずれかの引数が数値以外の場合は、 <b>Floor_Precise</b>メソッドはエラーを生成します。 </para>
           <para>数値が既に基準値の倍数になっている場合は、その値が返されます。</para>
@@ -7209,11 +7215,11 @@
           <list type="table">
             <item>
               <term>0</term>
-              <description>期間の最後に</description>
+              <description>各期の期末</description>
             </item>
             <item>
-              <description>期間の先頭に</description> 
               <term>1</term>
+              <description>各期の期首</description>
             </item>
           </list>
           <para>利率と期間を指定するときは、時間的な単位を一致させる必要があります。たとえば、年利 12% の 4 年ローンを月払いで返済する場合、利率には 12%/12 = 1 (%) を、また期間には 4*12 = 48 (月) を指定します。また、これと同じローンを年払いで返済する場合は、利率に 12 (%)、期間に 4 (年) を指定します。</para>
@@ -9300,12 +9306,12 @@
           <list type="bullet">
             <item>
               <description>
-                <b>インターセプト</b>し、 <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Slope(System.Object,System.Object)" /> #DIV または 0 を返します。エラーです。の<b>インターセプト</b>と<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Slope(System.Object,System.Object)" />のアルゴリズムは、1 つの答えを探すように設計されていて、ここですることができます複数の回答です。</description>
-            </item> 
+                <b>インターセプト</b>し、 <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Slope(System.Object,System.Object)" /> #DIV または 0 を返します。 エラーを返します。 の<b>インターセプト</b>と<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Slope(System.Object,System.Object)" />のアルゴリズムは、1 つの答えを探すように設計されていて、ここですることができます複数の回答です。 </description>
+            </item>
             <item>
-              <description> 
-                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" /> 0 の値を返します。<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" />アルゴリズムは、共線性のデータに対して適切な結果を返すように設計されていて、ここで少なくとも 1 つの解が求められます</description>
-            </item>。
+              <description>
+                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" />0 の値を返します。 <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" />アルゴリズムは、共線性のデータに対して適切な結果を返すように設計されていて、ここで少なくとも 1 つの解が求められます。</description>
+            </item>
           </list>
           <para> </para></remarks>
       </Docs>
@@ -9346,23 +9352,23 @@
         <remarks><list type="table">
             <item>
               <term>0 または省略</term>
-              <description>米国 (NASD) 30 日/360</description> 
+              <description>30 日/360 日 (NASD 方式)</description>
             </item>
-            <item> 
-              <term></term>
-              <description>1/実際の日数</description>
+            <item>
+              <term>1</term>
+              <description>実際の日数/実際の日数</description>
             </item>
-            <item> 
+            <item>
               <term>2</term>
-              <description>/360 日の実績</description>
+              <description>実際の日数/360 日</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>/365 日の実績</description>
+              <description>実際の日数/365 日</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
-              <description>ヨーロッパの 30 日/360</description> 
+              <description>30 日/360 日 (ヨーロッパ方式)</description>
             </item>
           </list>
           <para>Excel では、日付を連続したシリアル値として処理することで、日付の計算が行われています。既定では、1900 年 1 月 1 日がシリアル値 1 として保存されます。2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後に当たるので、シリアル値は 39,448 になります。Macintosh 版 Excel では、標準として異なる日付システムが使用されています。</para>
@@ -9421,14 +9427,14 @@
         <remarks><list type="table">
             <item>
               <term>0</term>
-              <description>期間の最後に</description>
+              <description>各期の期末</description>
             </item>
             <item>
-              <description>期間の先頭に</description> 
               <term>1</term>
+              <description>各期の期首</description>
             </item>
           </list>
-          <para>利率と期間を指定するときは、時間的な単位を一致させる必要があります。たとえば、年利 12% の 4 年ローンを月払いで返済する場合、利率には 12%/12 = 1 (%) を、また期間には 4*12 = 48 (月) を指定します。また、これと同じローンを年払いで返済する場合は、利率に 12 (%)、期間に 4 (年) を指定します。</para>
+          <para>利率と期間を指定するときは、時間的な単位を一致させる必要があります。たとえば、年利 12% の 4 年ローンを月払いで返済する場合、利率には 12%/12 = 1 (%) を、また期間には 4*12 = 48 (月) を指定します。また、これと同じローンを年払いで返済する場合は、利率に 12 (%)、期間に 4 (年) を指定します。 </para>
           <para>すべての引数に関して、定額預金の支払いのような出金は負の数で表し、配当金のような入金は正の数で表します。</para>
           <para> </para></remarks>
       </Docs>
@@ -10175,37 +10181,37 @@
           <para>次のような回帰直線の補正項が追加情報として返されます。</para>
           <list type="table">
             <item>
-              <term>se1、se2、...、sen と</term>
-              <description>標準誤差の値が係数 m1、m2、..., mn</description> 
-            </item> 。
-            <item> 
-              <term>seb</term>
-              <description>定数 b の標準誤差の値 (seb = #n/a は、定数が<b>false の場合</b>).</description> 
+              <term>se1,se2,...,sen</term>
+              <description>係数 m1,m2,...,mn に対する標準誤差の値です。</description>
             </item>
-            <item> 
+            <item>
+              <term>seb</term>
+              <description>定数 b の標準誤差の値 (seb = #n/a は、定数が<b>false の場合</b>)。</description>
+            </item>
+            <item>
               <term>r2</term>
-              <description>決定の係数です。推定と実際の y 値を比較し、範囲は 0 から 1 までの値にします。サンプルの完全な相関関係がある 1 である場合、y の予測値と実際の y の値との間の違いはありません。他の極端な例として、決定の係数が 0 の場合回帰方程式は y の値を予測する場合に便利です。</description> 
-            </item> 
-            <item> 
+              <description>決定の係数です。 推定と実際の y 値を比較し、範囲は 0 から 1 までの値にします。 サンプルの完全な相関関係がある 1 である場合、y の予測値と実際の y の値との間の違いはありません。 他の極端な例として、決定の係数が 0 の場合回帰方程式は y の値を予測する場合に便利です。 </description>
+            </item>
+            <item>
               <term>sey</term>
-              <description>y 見積もりの標準的なエラーです</description>
-            </item>。
-            <item> 
+              <description>予測される y の値に対する標準誤差です。</description>
+            </item>
+            <item>
               <term>F</term>
-              <description>、F 補正項または F 観測値です。F 補正項を使用して従属と独立変数の間で観察された関係が偶然によるものかどうかを決定します</description>
-            </item>。
-            <item> 
+              <description>F 補正項または F 観測値です。F 補正項を利用すると、独立変数と従属変数の間で観察された関係が偶然によるものかどうかを判断できます。</description>
+            </item>
+            <item>
               <term>df</term>
-              <description>の自由度。統計テーブルで F の臨界値を検索するための自由度を使用します。F 補正項をテーブル内で検索する値が返されます、信頼の決定には、 <b>LinEst</b>によってモデルのレベルを比較します。</description> 
-            </item> 
-            <item> 
+              <description>自由度。 統計テーブルで F の臨界値を検索するための自由度を使用します。 F 補正項をテーブル内で検索する値が返されます、信頼の決定には、 <b>LinEst</b>によってモデルのレベルを比較します。 </description>
+            </item>
+            <item>
               <term>ssreg</term>
-              <description>回帰の平方和です</description>
-            </item>。
-            <item> 
+              <description>回帰の平方和です。</description>
+            </item>
+            <item>
               <term>ssresid</term>
-              <description>残余の平方和です</description>
-            </item>。
+              <description>四角形の残余合計。</description>
+            </item>
           </list>
           <para>次の図では、回帰直線の追加補正項が返される順序を示します。</para>
           <para>図 1: ワークシート</para>
@@ -10586,15 +10592,15 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
         <returns>To be added.</returns>
         <remarks><list type="table">
             <item>
-              <term>値と 2 番目の 1 行または 1 列の範囲内の同じ位置から値を取得、1 行または 1 列範囲 (ベクトル) で検索</term>
+              <term>1 行または 1 列のみのセル範囲 (ベクトル) を検査範囲として検査値を検索し、検査値が見つかると、セル範囲の次の行または列の同じ位置にある値を返す</term>
               <description>ベクトル形式</description>
-              <description>を検索する値または値が経時変化との大規模なリストがある場合は、ベクトル形式を使用します</description>
-            </item>。小さな値と値のリストがある場合、
+              <description>ベクトル形式の LOOKUP 関数を使用するのは、検索する値のリストが大きい場合や、値が経時変化する場合です。</description>
+            </item>
             <item>
-              <term>ファイルの場所で最初の行または列を指定した配列の値、最後の行または列の配列の同じ位置から値を返す</term>
+              <term>配列の先頭行または先頭列で、指定された値を検索し、検査値が見つかると、配列の最終行または最終列の同じ位置の値を返す</term>
               <description>配列形式</description>
-              <description>の配列を使用してフォームを一定に保つ時間の経過とともに</description>
-            </item>。
+              <description>配列形式の LOOKUP 関数を使用するのは、検索する値のリストが小さい場合や、値が経時変化しない場合です。</description>
+            </item>
           </list>
           <para>
             <b>注</b>: 7 つ以上の条件のテストの IF 関数の代わりに、 <b>Lookup</b>関数を使用することもできます。 配列形式の例を参照してください。</para>
@@ -10938,14 +10944,14 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
             <b>注</b>: <b>Median</b>関数中心傾向、統計的分布における数値グループの中央の場所であります。 中心傾向を表す指標は、3 つ。</para>
           <list type="bullet">
             <item>
-              <description>平均算術平均、数字のグループを追加して、それらの数値の個数で割ることによって計算されます。たとえば、2、3、3、5、7、および 10 の平均値は割ることによって、5 であります。</description>
+              <description>平均 演算によって求める平均値であり、グループの各数値を加算してそれらの数値の個数で割ることにより計算します。たとえば、2、3、3、5、7、および 10 の平均は、30 を 6 で割った商、つまり 5 です。</description>
             </item>
             <item>
-              <description>メジアン数値グループの中央数であるテストの結果、半分の数値、中央値よりも大きい値があり、半分の数値が中央値より小さい値を持ちます。2、3、3、5、7、および 10 のメジアンは 4 です</description>
-            </item>。
+              <description>メジアン 数値のグループの中で中央に当たる数値であり、メジアンより大きい数値と小さい数値の個数が半々になります。たとえば、2、3、3、5、7、および 10 のメジアンは 4 です。</description>
+            </item>
             <item>
-              <description>モード数値グループで最も頻繁に出現する数値です。2、3、3、5、7、および 10 のモードは 3 です</description>
-            </item>。
+              <description>モード 数値のグループの中で、最も頻出する数値です。たとえば、2、3、3、5、7、および 10 のモードは 3 です。</description>
+            </item>
           </list>
           <para>数値のグループが対称分布の場合には、これら 3 つの中心傾向の測度の値は同じになります。数値のグループが非対称分布の場合には、値が異なることがあります。</para>
           <para> </para></remarks>
@@ -11080,13 +11086,13 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>行 1</term>
-              <description>d/(*d、a b*c)</description>
-              <description>b/(b*c、* d)</description> 
+              <description>d/(a*d-b*c)</description>
+              <description>b/(b*c-a*d)</description>
             </item>
             <item>
               <term>行 2</term>
-              <description>c/(b*c、* d)</description>
-              <description>、または (*d、a b*c)</description> 
+              <description>c/(b*c-a*d)</description>
+              <description>a/(a*d-b*c)</description>
             </item>
           </list>
           <para>
@@ -11272,14 +11278,14 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
             <b>注</b>:<b>モード</b>関数メジャー中心的な傾向、統計的分布における数値グループの中央の場所であります。 中心傾向を表す指標は、3 つ。</para>
           <list type="bullet">
             <item>
-              <description>平均算術平均、数字のグループを追加して、それらの数値の個数で割ることによって計算されます。たとえば、2、3、3、5、7、および 10 の平均値は割ることによって、5 であります。</description>
+              <description>平均 演算によって求める平均値であり、グループの各数値を加算してそれらの数値の個数で割ることにより計算します。たとえば、2、3、3、5、7、および 10 の平均は、30 を 6 で割った商、つまり 5 です。</description>
             </item>
             <item>
-              <description>メジアン数値グループの中央数であるテストの結果、半分の数値、中央値よりも大きい値があり、半分の数値が中央値より小さい値を持ちます。たとえば、2、3、3、5、7、および 10 のメジアンは 4 です。</description>
+              <description>メジアン 数値のグループの中で中央に当たる数値であり、メジアンより大きい数値と小さい数値の個数が半々になります。たとえば、2、3、3、5、7、および 10 のメジアンは 4 です。</description>
             </item>
             <item>
-              <description>モードが、最も頻繁に発生している数値のグループの番号です。2、3、3、5、7、および 10 のモードは 3 です</description>
-            </item>。
+              <description>モード 数値のグループの中で、最も頻出する数値です。たとえば、2、3、3、5、7、および 10 のモードは 3 です。</description>
+            </item>
           </list>
           <para>数値のグループが対称分布の場合には、これら 3 つの中心傾向の測度の値は同じになります。数値のグループが非対称分布の場合には、値が異なることがあります。</para>
           <para> </para></remarks>
@@ -11466,14 +11472,14 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
             <b>注</b>: <b>Mode_Sngl</b>関数での中心傾向の統計的分布における数値グループの中央の場所であります。 中心傾向を表す指標は、3 つ。</para>
           <list type="bullet">
             <item>
-              <description>は算術平均を平均して、番号のグループを追加して、それらの数値の個数で割ることによって計算されます。たとえば、2、3、3、5、7、および 10 の平均値は割ることによって、5 であります。</description>
+              <description>平均 算術平均です。数値グループを加算した値を、さらに、数値の個数で割ることによって求められます。たとえば、2、3、3、5、7、10 という数値グループがあった場合、30 を 6 で割った 5 が平均値となります。</description>
             </item>
             <item>
-              <description>中央のメジアンを計算する数値のグループの数; は、メジアンより大きい値を持つ数値を半分と中央値より小さい値を持つ数値が半分。たとえば、2、3、3、5、7、および 10 のメジアンは 4 です。</description>
+              <description>メジアン 数値のグループの中で中央に当たる数値であり、メジアンより大きい数値と小さい数値の個数が半々になります。たとえば、2、3、3、5、7、10 のメジアンは 4 になります。</description>
             </item>
             <item>
-              <description>モード数値グループで最も頻繁に出現する数です。2、3、3、5、7、および 10 のモードは 3 です</description>
-            </item>。
+              <description>モード 数値グループの中で最も頻繁に出現する数値のことです。たとえば、2、3、3、5、7、10 のモードは 3 になります。</description>
+            </item>
           </list>
           <para>数値のグループが対称分布の場合には、これら 3 つの中心傾向の測度の値は同じになります。数値のグループが非対称分布の場合には、値が異なることがあります。</para>
           <para> </para></remarks>
@@ -12177,11 +12183,11 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
         <remarks><list type="table">
             <item>
               <term>0 または省略</term>
-              <description>期間の最後に</description>
+              <description>各期の期末</description>
             </item>
             <item>
-              <description>期間の先頭に</description> 
               <term>1</term>
+              <description>各期の期首</description>
             </item>
           </list>
           <para> </para></remarks>
@@ -12498,23 +12504,23 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
         <remarks><list type="table">
             <item>
               <term>0 または省略</term>
-              <description>米国 (NASD) 30 日/360</description> 
+              <description>30 日/360 日 (NASD 方式)</description>
             </item>
-            <item> 
-              <term></term>
-              <description>1/実際の日数</description>
+            <item>
+              <term>1</term>
+              <description>実際の日数/実際の日数</description>
             </item>
-            <item> 
+            <item>
               <term>2</term>
-              <description>/360 日の実績</description>
+              <description>実際の日数/360 日</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>/365 日の実績</description>
+              <description>実際の日数/365 日</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
-              <description>ヨーロッパの 30 日/360</description> 
+              <description>30 日/360 日 (ヨーロッパ方式)</description>
             </item>
           </list>
           <para>Excel では、日付を連続したシリアル値として処理することで、日付の計算が行われています。既定では、1900 年 1 月 1 日がシリアル値 1 として保存されます。2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後に当たるので、シリアル値は 39,448 になります。Macintosh 版 Excel では、標準として異なる日付システムが使用されています。</para>
@@ -12599,23 +12605,23 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>米国 (NASD) 30 日/360</description> 
+              <description>30 日/360 日 (NASD 方式)</description>
             </item>
-            <item> 
-              <term></term>
-              <description>1/実際の日数</description>
+            <item>
+              <term>1</term>
+              <description>実際の日数/実際の日数</description>
             </item>
-            <item> 
+            <item>
               <term>2</term>
-              <description>/360 日の実績</description>
+              <description>実際の日数/360 日</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>/365 日の実績</description>
+              <description>実際の日数/365 日</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
-              <description>ヨーロッパの 30 日/360</description> 
+              <description>30 日/360 日 (ヨーロッパ方式)</description>
             </item>
           </list>
           <para>Excel では、日付を連続したシリアル値として処理することで、日付の計算が行われています。既定では、1900 年 1 月 1 日がシリアル値 1 として保存されます。2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後に当たるので、シリアル値は 39,448 になります。Macintosh 版 Excel では、標準として異なる日付システムが使用されています。</para>
@@ -12674,23 +12680,23 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>米国 (NASD) 30 日/360</description> 
+              <description>30 日/360 日 (NASD 方式)</description>
             </item>
-            <item> 
-              <term></term>
-              <description>1/実際の日数</description>
+            <item>
+              <term>1</term>
+              <description>実際の日数/実際の日数</description>
             </item>
-            <item> 
+            <item>
               <term>2</term>
-              <description>/360 日の実績</description>
+              <description>実際の日数/360 日</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>/365 日の実績</description>
+              <description>実際の日数/365 日</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
-              <description>ヨーロッパの 30 日/360</description> 
+              <description>30 日/360 日 (ヨーロッパ方式)</description>
             </item>
           </list>
           <para>Excel では、日付を連続したシリアル値として処理することで、日付の計算が行われています。既定では、1900 年 1 月 1 日がシリアル値 1 として保存されます。2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後に当たるので、シリアル値は 39,448 になります。Macintosh 版 Excel では、標準として異なる日付システムが使用されています。</para>
@@ -12748,23 +12754,23 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>米国 (NASD) 30 日/360</description> 
+              <description>30 日/360 日 (NASD 方式)</description>
             </item>
-            <item> 
-              <term></term>
-              <description>1/実際の日数</description>
+            <item>
+              <term>1</term>
+              <description>実際の日数/実際の日数</description>
             </item>
-            <item> 
+            <item>
               <term>2</term>
-              <description>/360 日の実績</description>
+              <description>実際の日数/360 日</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>/365 日の実績</description>
+              <description>実際の日数/365 日</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
-              <description>ヨーロッパの 30 日/360</description> 
+              <description>30 日/360 日 (ヨーロッパ方式)</description>
             </item>
           </list>
           <para>Excel では、日付を連続したシリアル値として処理することで、日付の計算が行われています。既定では、1900 年 1 月 1 日がシリアル値 1 として保存されます。2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後に当たるので、シリアル値は 39,448 になります。Macintosh 版 Excel では、標準として異なる日付システムが使用されています。</para>
@@ -13387,11 +13393,11 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>期間の最後に</description>
+              <description>各期の期末</description>
             </item>
             <item>
-              <description>期間の先頭に</description> 
               <term>1</term>
+              <description>各期の期首</description>
             </item>
           </list>
           <para><b>Pmt</b>によって返された支払には、元金と利息が含まれていますが、準備金の支払の手数料や税金なしローンで。 </para>
@@ -13565,11 +13571,11 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>期間の最後に</description>
+              <description>各期の期末</description>
             </item>
             <item>
-              <description>期間の先頭に</description> 
               <term>1</term>
+              <description>各期の期首</description>
             </item>
           </list>
           <para>利率と期間を指定するときは、時間的な単位を一致させる必要があります。たとえば、年利 12% の 4 年ローンを月払いで返済する場合、利率には 12%/12 = 1 (%) を、また期間には 4*12 = 48 (月) を指定します。また、これと同じローンを年払いで返済する場合は、利率に 12 (%)、期間に 4 (年) を指定します。</para>
@@ -13618,23 +13624,23 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>米国 (NASD) 30 日/360</description> 
+              <description>30 日/360 日 (NASD 方式)</description>
             </item>
-            <item> 
-              <term></term>
-              <description>1/実際の日数</description>
+            <item>
+              <term>1</term>
+              <description>実際の日数/実際の日数</description>
             </item>
-            <item> 
+            <item>
               <term>2</term>
-              <description>/360 日の実績</description>
+              <description>実際の日数/360 日</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>/365 日の実績</description>
+              <description>実際の日数/365 日</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
-              <description>ヨーロッパの 30 日/360</description> 
+              <description>30 日/360 日 (ヨーロッパ方式)</description>
             </item>
           </list>
           <para>Excel では、日付を連続したシリアル値として処理することで、日付の計算が行われています。既定では、1900 年 1 月 1 日がシリアル値 1 として保存されます。2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後に当たるので、シリアル値は 39,448 になります。Macintosh 版 Excel では、標準として異なる日付システムが使用されています。</para>
@@ -13695,23 +13701,23 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>米国 (NASD) 30 日/360</description> 
+              <description>30 日/360 日 (NASD 方式)</description>
             </item>
-            <item> 
-              <term></term>
-              <description>1/実際の日数</description>
+            <item>
+              <term>1</term>
+              <description>実際の日数/実際の日数</description>
             </item>
-            <item> 
+            <item>
               <term>2</term>
-              <description>/360 日の実績</description>
+              <description>実際の日数/360 日</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>/365 日の実績</description>
+              <description>実際の日数/365 日</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
-              <description>ヨーロッパの 30 日/360</description> 
+              <description>30 日/360 日 (ヨーロッパ方式)</description>
             </item>
           </list>
           <para>Excel では、日付を連続したシリアル値として処理することで、日付の計算が行われています。既定では、1900 年 1 月 1 日がシリアル値 1 として保存されます。2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後に当たるので、シリアル値は 39,448 になります。Macintosh 版 Excel では、標準として異なる日付システムが使用されています。</para>
@@ -13772,23 +13778,23 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>米国 (NASD) 30 日/360</description> 
+              <description>30 日/360 日 (NASD 方式)</description>
             </item>
-            <item> 
-              <term></term>
-              <description>1/実際の日数</description>
+            <item>
+              <term>1</term>
+              <description>実際の日数/実際の日数</description>
             </item>
-            <item> 
+            <item>
               <term>2</term>
-              <description>/360 日の実績</description>
+              <description>実際の日数/360 日</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>/365 日の実績</description>
+              <description>実際の日数/365 日</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
-              <description>ヨーロッパの 30 日/360</description> 
+              <description>30 日/360 日 (ヨーロッパ方式)</description>
             </item>
           </list>
           <para>Excel では、日付を連続したシリアル値として処理することで、日付の計算が行われています。既定では、1900 年 1 月 1 日がシリアル値 1 として保存されます。2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後に当たるので、シリアル値は 39,448 になります。Macintosh 版 Excel では、標準として異なる日付システムが使用されています。</para>
@@ -14000,44 +14006,44 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
         <remarks><list type="table">
             <item>
               <term>0 または省略</term>
-              <description>期間の最後に</description>
+              <description>各期の期末</description>
             </item>
             <item>
-              <description>期間の先頭に</description> 
               <term>1</term>
+              <description>各期の期首</description>
             </item>
           </list>
-          <para>利率と期間を指定するときは、時間的な単位を一致させる必要があります。たとえば、年利 12% の 4 年ローンを月払いで返済する場合、利率には 12%/12 = 1 (%) を、また期間には 4*12 = 48 (月) を指定します。また、これと同じローンを年払いで返済する場合は、利率に 12 (%)、期間に 4 (年) を指定します。</para>
+          <para>利率と期間を指定するときは、時間的な単位を一致させる必要があります。たとえば、年利 12% の 4 年ローンを月払いで返済する場合、利率には 12%/12 = 1 (%) を、また期間には 4*12 = 48 (月) を指定します。また、これと同じローンを年払いで返済する場合は、利率に 12 (%)、期間に 4 (年) を指定します。 </para>
           <para>財務関数は、以下が適用されます。 </para>
           <list type="table">
             <item>
-              <term>支払</term>
-              <description>PPMT</description> 
+              <term>CUMIPMT</term>
+              <description>PPMT</description>
             </item>
-            <item> 
+            <item>
               <term>CUMPRINC</term>
-              <description>PV</description> 
+              <description>PV</description>
             </item>
             <item>
-              <term>将来</term>の
-              <description>レート</description>
+              <term>FV</term>
+              <description>RATE</description>
             </item>
             <item>
-              <term>金利</term>
-              <description>XIRR</description> 
+              <term>FVSCHEDULE</term>
+              <description>XIRR</description>
             </item>
-            <item> 
+            <item>
               <term>IPMT</term>
-              <description>XNPV</description> 
+              <description>XNPV</description>
             </item>
-            <item> 
-              <term>PMT</term> 
-              <description /> 
+            <item>
+              <term>PMT</term>
+              <description />
             </item>
           </list>
           <para>一定額の支払いを一定期間の継続的な一連の定額です。 自動車ローンまたは住宅ローンは、投資に必要です。 詳細については、各関数の説明を参照してください。 </para>
-          <para>投資関数では、すべての引数に関して、定額預金の支払いのような出金は負の数で表し、配当金のような入金は正の数で表します。たとえば、銀行口座の預金 10 万円を引数として使用する場合、預金者側は -100000、銀行側では 100000 と指定します。</para>
-          <para>財務関数の引数は、相互に関連しています。たとえば、利率が 0 でない場合は、次の数式が成立します。</para>
+          <para>投資関数では、すべての引数に関して、定額預金の支払いのような出金は負の数で表し、配当金のような入金は正の数で表します。たとえば、銀行口座の預金 10 万円を引数として使用する場合、預金者側は -100000、銀行側では 100000 と指定します。 </para>
+          <para>財務関数の引数は、相互に関連しています。たとえば、利率が 0 でない場合は、次の数式が成立します。 </para>
           <para>図 1: 数式のレートがない場合 0</para>
           <para> </para>
           <para> </para>
@@ -14081,19 +14087,19 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
               <term>0</term>
               <description>最小値</description>
             </item>
-            <item> 
+            <item>
               <term>1</term>
-              <description>最初の 25% (25 位)</description> 
+              <description>第 1 四分位数 (25%)</description>
             </item>
-            <item> 
+            <item>
               <term>2</term>
-              <description>の中央値の値 (50 パーセン タイル)</description> 
+              <description>第 2 四分位数 = 中位数 (50%)</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>25% の第 3 (位 75%)</description> 
+              <description>第 3 四分位数 (75%)</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
               <description>最大値</description>
             </item>
@@ -14420,11 +14426,11 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>期間の最後に</description>
+              <description>各期の期末</description>
             </item>
             <item>
-              <description>期間の先頭に</description> 
               <term>1</term>
+              <description>各期の期首</description>
             </item>
           </list>
           <para>推定値を省略すると、10% が計算に使用されます。</para>
@@ -14471,23 +14477,23 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>米国 (NASD) 30 日/360</description> 
+              <description>30 日/360 日 (NASD 方式)</description>
             </item>
-            <item> 
-              <term></term>
-              <description>1/実際の日数</description>
+            <item>
+              <term>1</term>
+              <description>実際の日数/実際の日数</description>
             </item>
-            <item> 
+            <item>
               <term>2</term>
-              <description>/360 日の実績</description>
+              <description>実際の日数/360 日</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>/365 日の実績</description>
+              <description>実際の日数/365 日</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
-              <description>ヨーロッパの 30 日/360</description> 
+              <description>30 日/360 日 (ヨーロッパ方式)</description>
             </item>
           </list>
           <para>Excel では、日付を連続したシリアル値として処理することで、日付の計算が行われています。既定では、1900 年 1 月 1 日がシリアル値 1 として保存されます。2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後に当たるので、シリアル値は 39,448 になります。Macintosh 版 Excel では、標準として異なる日付システムが使用されています。</para>
@@ -14647,36 +14653,36 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
         <remarks><list type="table">
             <item>
               <term>0 または省略</term>
-              <description>クラシック</description>
-            </item>。
-            <item> 
+              <description>正式</description>
+            </item>
+            <item>
               <term>1</term>
-              <description>より簡単です</description>
-            </item>。
-            <item> 
+              <description>簡単です。</description>
+            </item>
+            <item>
               <term>2</term>
-              <description>より簡単です</description>
-            </item>。
-            <item> 
+              <description>簡単です。</description>
+            </item>
+            <item>
               <term>3</term>
-              <description>より簡単です</description>
-            </item>。
-            <item> 
+              <description>簡単です。</description>
+            </item>
+            <item>
               <term>4</term>
-              <description>簡素化します</description>
-            </item>。
+              <description>略式</description>
+            </item>
             <item>
               <term>
-                <b>真</b>
+                <b>true</b>
               </term>
               <description>クラシック</description>
-            </item>。
-            <item> 
+            </item>
+            <item>
               <term>
                 <b>false</b>
               </term>
-              <description>簡体字</description>
-            </item>。
+              <description>略式</description>
+            </item>
           </list>
           <para>数値に負の値を指定すると、エラー値 #VALUE! が返されます。</para>
           <para>数値に 3999 より大きい値を指定すると、エラー値 #VALUE! が返されます。</para>
@@ -15482,12 +15488,12 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="bullet">
             <item>
               <description>
-                <b>スロープ</b>と<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Intercept(System.Object,System.Object)" />#DIV または 0 を返します。エラーです。<b>スロープ</b>と<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Intercept(System.Object,System.Object)" />のアルゴリズムは、1 つの答えを探すように設計されていて、ここですることができます複数の回答です。</description>
-            </item> 
+                <b>スロープ</b>と<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Intercept(System.Object,System.Object)" />#DIV または 0 を返します。 エラーを返します。 <b>スロープ</b>と<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Intercept(System.Object,System.Object)" />のアルゴリズムは、1 つの答えを探すように設計されていて、ここですることができます複数の回答です。 </description>
+            </item>
             <item>
-              <description> 
-                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" /> 0 の値を返します。<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" />アルゴリズムは、共線性のデータに対して適切な結果を返すように設計されていて、ここで少なくとも 1 つの解が求められます</description>
-            </item>。
+              <description>
+                <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" />0 の値を返します。 <see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.LinEst(System.Object,System.Object,System.Object,System.Object)" />アルゴリズムは、共線性のデータに対して適切な結果を返すように設計されていて、ここで少なくとも 1 つの解が求められます。</description>
+            </item>
           </list>
           <para> </para></remarks>
       </Docs>
@@ -16275,24 +16281,24 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
         <remarks><para>合計範囲に含まれるセルの個数と形状は、必ずしも対応するセルと一致している必要はありません。加算の対象となる実際のセルは、合計範囲の左上のセルを基準にして決定されます。次にその例を示します。</para>
           <list type="table">
             <item>
-              <term>範囲 a1: a5</term>
-              <description>B1: b5</description>
-              <description>B1: b5</description> 
+              <term>A1:A5</term>
+              <description>B1:B5</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <description>B1: b3</description>
-              <term>の範囲 a1: a5</term>
-              <description>b1: b5</description> 
+              <term>A1:A5</term>
+              <description>B1:B3</description>
+              <description>B1:B5</description>
             </item>
-            <item> 
-              <term>A1: b4</term>
+            <item>
+              <term>A1:B4</term>
               <description>C1:D4</description>
-              <description>C1:D4</description> 
+              <description>C1:D4</description>
             </item>
-            <item> 
-              <term>A1: b4</term>
+            <item>
+              <term>A1:B4</term>
               <description>C1:C2</description>
-              <description>C1:D4</description> 
+              <description>C1:D4</description>
             </item>
           </list>
           <para>検索条件では、半角の疑問符 (?) または半角のアスタリスク (*) をワイルドカード文字として使用することができます。ワイルドカード文字の疑問符は任意の 1 文字を表し、アスタリスクは任意の文字列を表します。ワイルドカード文字ではなく、通常の文字として疑問符やアスタリスクを検索する場合は、その文字の前に、"~*" のように半角のティルダ (~) を付けます。</para>
@@ -16386,24 +16392,24 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <para>各条件範囲に含まれるセルの個数と形状は、合計対象範囲と必ずしも一致している必要はありません。実際に加算の対象となるセルは、条件範囲の左上のセルを基準にして決定されます。次にその例を示します。</para>
           <list type="table">
             <item>
-              <term>範囲 a1: a5</term>
-              <description>B1: b5</description>
-              <description>B1: b5</description> 
+              <term>A1:A5</term>
+              <description>B1:B5</description>
+              <description>B1:B5</description>
             </item>
             <item>
-              <description>B1: b3</description>
-              <term>の範囲 a1: a5</term>
-              <description>b1: b5</description> 
+              <term>A1:A5</term>
+              <description>B1:B3</description>
+              <description>B1:B5</description>
             </item>
-            <item> 
-              <term>A1: b4</term>
+            <item>
+              <term>A1:B4</term>
               <description>C1:D4</description>
-              <description>C1:D4</description> 
+              <description>C1:D4</description>
             </item>
-            <item> 
-              <term>A1: b4</term>
+            <item>
+              <term>A1:B4</term>
               <description>C1:C2</description>
-              <description>C1:D4</description> 
+              <description>C1:D4</description>
             </item>
           </list>
           <para> </para></remarks>
@@ -17646,15 +17652,15 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>1</term>
-              <description>ペア</description>
+              <description>対をなすデータの t 検定</description>
             </item>
-            <item> 
+            <item>
               <term>2</term>
-              <description>2 標本の等分散 (標本)</description> 
+              <description>等分散の 2 標本を対象とする t 検定</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>非等分散の 2 つの標本 (標本)</description> 
+              <description>非等分散の 2 標本を対象とする t 検定</description>
             </item>
           </list>
           <para>配列 1 と配列 2 のデータの個数と型の数が異なる場合は、1 (ペア) の<b>指定</b>を返します。 エラー値 #n/a を = します。 </para>
@@ -18291,44 +18297,44 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
         <returns>To be added.</returns>
         <remarks><list type="table">
             <item>
-              <term>1 または省略します。</term>
-              <description>番号は 1 (日曜日) から 7 (土曜日) です。Microsoft Excel の以前のバージョンと同様に動作します</description>
-            </item>。
-            <item> 
+              <term>1 または省略</term>
+              <description>1 (日曜) ～ 7 (土曜) の範囲の整数。以前のバージョンの Excel と結果は同じ。</description>
+            </item>
+            <item>
               <term>2</term>
-              <description>数値 1 (月曜日) から 7 (日曜日) です</description>
-            </item>。
-            <item> 
+              <description>1 (月曜) ～ 7 (日曜) の範囲の整数</description>
+            </item>
+            <item>
               <term>3</term>
-              <description>0 (月曜日) から 6 (日曜日) までの番号です</description>
-            </item>。
-            <item> 
+              <description>0 (月曜) ～ 6 (日曜) の範囲の整数</description>
+            </item>
+            <item>
               <term>11</term>
-              <description>数値 1 (月曜日) から 7 (日曜日) です</description>
-            </item>。
-            <item> 
+              <description>1 (月曜) ～ 7 (日曜) の範囲の整数</description>
+            </item>
+            <item>
               <term>12</term>
-              <description>数値 1 (火曜日) から 7 (月曜日)</description> 
+              <description>1 (火曜) ～ 7 (月曜) の範囲の整数</description>
             </item>
-            <item> 
+            <item>
               <term>13</term>
-              <description>数値 1 (水曜日) から 7 (火曜日)</description> 
+              <description>1 (水曜) ～ 7 (火曜) の範囲の整数</description>
             </item>
-            <item> 
+            <item>
               <term>14</term>
-              <description>数値 1 (木曜日) から 7 (水曜日)</description> 
+              <description>1 (木曜) ～ 7 (水曜) の範囲の整数</description>
             </item>
-            <item> 
+            <item>
               <term>15</term>
-              <description>数値 1 (金曜日) から 7 (木曜日)</description> 
+              <description>1 (金曜) ～ 7 (木曜) の範囲の整数</description>
             </item>
-            <item> 
+            <item>
               <term>16</term>
-              <description>数値 1 (土曜日) から 7 (金曜日)</description> 
+              <description>1 (土曜) ～ 7 (金曜) の範囲の整数</description>
             </item>
-            <item> 
+            <item>
               <term>17</term>
-              <description>番号は 1 (日曜日) から 7 (土曜)</description> 
+              <description>1 (日曜) ～ 7 (土曜) の範囲の整数</description>
             </item>
           </list>
           <para>Excel では、日付を連続したシリアル値として処理することで、日付の計算が行われています。既定では、1900 年 1 月 1 日がシリアル値 1 として保存されます。2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後に当たるので、シリアル値は 39,448 になります。Macintosh 版 Excel では、標準として異なる日付システムが使用されています。</para>
@@ -18367,12 +18373,12 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>1</term>
-              <description>週の日曜日に開始します。平日は 1 から 7 まで番号が付けられます</description>
-            </item>。
-            <item> 
+              <description>週の始まりを日曜日とします。曜日には順に 1 ? 7 の番号が対応します。</description>
+            </item>
+            <item>
               <term>2</term>
-              <description>の週は月曜日に開始されます。平日は 1 から 7 まで番号が付けられます</description>
-            </item>。
+              <description>週の始まりを月曜日とします。曜日には順に 1 ? 7 の番号が対応します。</description>
+            </item>
           </list>
           <para>Excel では、日付を連続したシリアル値として処理することで、日付の計算が行われています。既定では、1900 年 1 月 1 日がシリアル値 1 として保存されます。2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後に当たるので、シリアル値は 39,448 になります。Macintosh 版 Excel では、標準として異なる日付システムが使用されています。</para>
           <para> </para></remarks>
@@ -18759,23 +18765,23 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>米国 (NASD) 30 日/360</description> 
+              <description>30 日/360 日 (NASD 方式)</description>
             </item>
-            <item> 
-              <term></term>
-              <description>1/実際の日数</description>
+            <item>
+              <term>1</term>
+              <description>実際の日数/実際の日数</description>
             </item>
-            <item> 
+            <item>
               <term>2</term>
-              <description>/360 日の実績</description>
+              <description>実際の日数/360 日</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>/365 日の実績</description>
+              <description>実際の日数/365 日</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
-              <description>ヨーロッパの 30 日/360</description> 
+              <description>30 日/360 日 (ヨーロッパ方式)</description>
             </item>
           </list>
           <para>Excel では、日付を連続したシリアル値として処理することで、日付の計算が行われています。既定では、1900 年 1 月 1 日がシリアル値 1 として保存されます。2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後に当たるので、シリアル値は 39,448 になります。Macintosh 版 Excel では、標準として異なる日付システムが使用されています。</para>
@@ -18823,23 +18829,23 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>米国 (NASD) 30 日/360</description> 
+              <description>30 日/360 日 (NASD 方式)</description>
             </item>
-            <item> 
-              <term></term>
-              <description>1/実際の日数</description>
+            <item>
+              <term>1</term>
+              <description>実際の日数/実際の日数</description>
             </item>
-            <item> 
+            <item>
               <term>2</term>
-              <description>/360 日の実績</description>
+              <description>実際の日数/360 日</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>/365 日の実績</description>
+              <description>実際の日数/365 日</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
-              <description>ヨーロッパの 30 日/360</description> 
+              <description>30 日/360 日 (ヨーロッパ方式)</description>
             </item>
           </list>
           <para>Excel では、日付を連続したシリアル値として処理することで、日付の計算が行われています。既定では、1900 年 1 月 1 日がシリアル値 1 として保存されます。2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後に当たるので、シリアル値は 39,448 になります。Macintosh 版 Excel では、標準として異なる日付システムが使用されています。</para>
@@ -18892,23 +18898,23 @@ INDEX(LOGEST(known_y's,known_x's),2)</para>
           <list type="table">
             <item>
               <term>0 または省略</term>
-              <description>米国 (NASD) 30 日/360</description> 
+              <description>30 日/360 日 (NASD 方式)</description>
             </item>
-            <item> 
-              <term></term>
-              <description>1/実際の日数</description>
+            <item>
+              <term>1</term>
+              <description>実際の日数/実際の日数</description>
             </item>
-            <item> 
+            <item>
               <term>2</term>
-              <description>/360 日の実績</description>
+              <description>実際の日数/360 日</description>
             </item>
-            <item> 
+            <item>
               <term>3</term>
-              <description>/365 日の実績</description>
+              <description>実際の日数/365 日</description>
             </item>
-            <item> 
+            <item>
               <term>4</term>
-              <description>ヨーロッパの 30 日/360</description> 
+              <description>30 日/360 日 (ヨーロッパ方式)</description>
             </item>
           </list>
           <para>Excel では、日付を連続したシリアル値として処理することで、日付の計算が行われています。既定では、1900 年 1 月 1 日がシリアル値 1 として保存されます。2008 年 1 月 1 日は 1900 年 1 月 1 日から 39,448 日後に当たるので、シリアル値は 39,448 になります。Macintosh 版 Excel では、標準として異なる日付システムが使用されています。</para>
