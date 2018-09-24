@@ -1,10 +1,10 @@
 <Type Name="CalculatedFields" FullName="Microsoft.Office.Interop.Excel.CalculatedFields">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="322bea970ce4e1d5a0095eafdd21ad263f26ffe7" />
+    <Meta Name="ms.openlocfilehash" Value="551200c74cbef27982489b80758fa22c187b61fe" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572675" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CalculatedFields : System.Collections.IEnumerable" />
@@ -34,27 +34,38 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="1ed31-101">コレクションの<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />を指定されたピボット テーブル レポート内のすべての集計フィールドを表すオブジェクト。</span>
+      <span data-ttu-id="d9442-101">コレクションの<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />を指定されたピボット テーブル レポート内のすべての集計フィールドを表すオブジェクト。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="1ed31-101">A collection of <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objects that represents all the calculated fields in the specified PivotTable report.</span>
+        <span data-stu-id="d9442-101">A collection of <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> objects that represents all the calculated fields in the specified PivotTable report.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="1ed31-102">
-        <para>が集計フィールドの「利益」という名前があり、コスト フィールドの金額を差し引いた収益] フィールドの値と定義されている収益と経費のフィールドが含まれるレポートなどです</para>。
-      <para>の OLAP データ ソースの場合、このコレクションを設定することはできませんし、常に<b>Nothing</b>が返されます</para>。
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CalculatedFields" /><b>CalculatedFields</b>コレクションを返します</para>。
-      <para>使用<b>CalculatedFields</b>(<paramref name="index" />)、<paramref name="index" />は、指定したフィールドの名前またはインデックス番号は、 <b>CalculatedFields</b>コレクションから 1 つの<b>ピボット テーブル</b>オブジェクトを返す</para>。
-      <para></para></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="1ed31-102">
-          <para>For example, a report that contains Revenue and Expense fields could have a calculated field named “Profit” and defined as the amount in the Revenue field minus the amount in the Expense field.</para>
-          <para>For OLAP data sources, you cannot set this collection, and it always returns <b>Nothing</b>.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CalculatedFields" /> method to return the <b>CalculatedFields</b> collection.</para>
-          <para>Use <b>CalculatedFields</b>(<paramref name="index" />), where <paramref name="index" /> is the specified field’s name or index number, to return a single <b>PivotField</b> object from the <b>CalculatedFields</b> collection.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="d9442-102">などを含むレポート収益と経費のフィールドが演算フィールドの「利益」という名前があり、コスト フィールドの金額を差し引いた収益] フィールドの値と定義されています。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="d9442-102">For example, a report that contains Revenue and Expense fields could have a calculated field named “Profit” and defined as the amount in the Revenue field minus the amount in the Expense field.</span>
         </span>
-      </span>
+      </para>
+      <para>
+        <span data-ttu-id="d9442-103">OLAP データ ソースの場合、このコレクションを設定することはできませんし、常に<b>Nothing</b>が返されます。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="d9442-103">For OLAP data sources, you cannot set this collection, and it always returns <b>Nothing</b>.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="d9442-104">使用して、 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CalculatedFields" /><b>CalculatedFields</b>コレクションを返します。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="d9442-104">Use the <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CalculatedFields" /> method to return the <b>CalculatedFields</b> collection.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="d9442-105">
+          <b>CalculatedFields</b>を使用 (<paramref name="index" />)、<paramref name="index" />は、指定したフィールドの名前またはインデックス番号は、 <b>CalculatedFields</b>コレクションから 1 つの<b>ピボット テーブル</b>オブジェクトを取得します。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="d9442-105">Use <b>CalculatedFields</b>(<paramref name="index" />), where <paramref name="index" /> is the specified field’s name or index number, to return a single <b>PivotField</b> object from the <b>CalculatedFields</b> collection.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -88,9 +99,9 @@
         <param name="Name">To be added.</param>
         <param name="Formula">To be added.</param>
         <summary>
-          <span data-ttu-id="1ed31-103">内部使用のため予約済みです。</span>
+          <span data-ttu-id="d9442-106">内部使用のため予約済みです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1ed31-103">Reserved for internal use.</span>
+            <span data-stu-id="d9442-106">Reserved for internal use.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -128,9 +139,9 @@
       <Docs>
         <param name="Field">To be added.</param>
         <summary>
-          <span data-ttu-id="1ed31-104">内部使用のため予約済みです。</span>
+          <span data-ttu-id="d9442-107">内部使用のため予約済みです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1ed31-104">Reserved for internal use.</span>
+            <span data-stu-id="d9442-107">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -162,53 +173,53 @@
       </Parameters>
       <Docs>
         <param name="Name">
-          <span data-ttu-id="1ed31-105">
+          <span data-ttu-id="d9442-108">
             <b>文字列</b> が必要です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1ed31-105">Required <b>String</b>.</span>
+            <span data-stu-id="d9442-108">Required <b>String</b>.</span>
           </span>
-          <span data-ttu-id="1ed31-106">フィールドの名前です。</span>
+          <span data-ttu-id="d9442-109">フィールドの名前です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1ed31-106">The name of the field.</span>
+            <span data-stu-id="d9442-109">The name of the field.</span>
           </span>
         </param>
         <param name="Formula">
-          <span data-ttu-id="1ed31-107">
+          <span data-ttu-id="d9442-110">
             <b>文字列</b> が必要です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1ed31-107">Required <b>String</b>.</span>
+            <span data-stu-id="d9442-110">Required <b>String</b>.</span>
           </span>
-          <span data-ttu-id="1ed31-108">フィールドの数式を指定します。</span>
+          <span data-ttu-id="d9442-111">フィールドの数式を指定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1ed31-108">The formula for the field.</span>
+            <span data-stu-id="d9442-111">The formula for the field.</span>
           </span>
         </param>
         <param name="UseStandardFormula">
-          <span data-ttu-id="1ed31-109">省略可能な<b>オブジェクト</b>です。</span>
+          <span data-ttu-id="d9442-112">省略可能な<b>オブジェクト</b>です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1ed31-109">Optional <b>Object</b>.</span>
+            <span data-stu-id="d9442-112">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="1ed31-110">
+          <span data-ttu-id="d9442-113">
             <b>False</b>(既定値) の上位互換性を確保します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1ed31-110">
+            <span data-stu-id="d9442-113">
               <b>False</b> (default) for upward compatibility.</span>
           </span>
-          <span data-ttu-id="1ed31-111">
+          <span data-ttu-id="d9442-114">
             <b>True</b> (標準のアメリカ英語でローカルの設定ではなくフォーマットされていることと解釈されます)、フィールド名は、任意の引数に含まれる文字列。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1ed31-111">
+            <span data-stu-id="d9442-114">
               <b>True</b> for strings contained in any arguments that are field names (will be interpreted as having been formatted in standard U.S. English instead of local settings).</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="1ed31-112">新しい演算フィールドを作成します。</span>
+          <span data-ttu-id="d9442-115">新しい演算フィールドを作成します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1ed31-112">Creates a new calculated field.</span>
+            <span data-stu-id="d9442-115">Creates a new calculated field.</span>
           </span>
-          <span data-ttu-id="1ed31-113">返します、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />オブジェクトです。</span>
+          <span data-ttu-id="d9442-116">返します、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />オブジェクトです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1ed31-113">Returns a <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> object.</span>
+            <span data-stu-id="d9442-116">Returns a <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> object.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -239,9 +250,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1ed31-114">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</span>
+          <span data-ttu-id="d9442-117">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1ed31-114">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="d9442-117">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -272,9 +283,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1ed31-115">コレクション内にあるオブジェクトの数を返します。</span>
+          <span data-ttu-id="d9442-118">コレクション内にあるオブジェクトの数を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1ed31-115">Returns the number of objects in the collection.</span>
+            <span data-stu-id="d9442-118">Returns the number of objects in the collection.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -305,25 +316,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1ed31-116">現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</span>
+          <span data-ttu-id="d9442-119">現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1ed31-116">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="d9442-119">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="1ed31-117">
-            <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
-            <para>
-              <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="1ed31-117">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="d9442-120">オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="d9442-120">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="d9442-121">
+              <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="d9442-121">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="d9442-122">たとえば、Microsoft Excel は、クリエーター コードを持っています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="d9442-122">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -383,20 +400,20 @@
       </Parameters>
       <Docs>
         <param name="Index">
-          <span data-ttu-id="1ed31-118">
+          <span data-ttu-id="d9442-123">
             <b>オブジェクト</b>が必要です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1ed31-118">Required <b>Object</b>.</span>
+            <span data-stu-id="d9442-123">Required <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="1ed31-119">オブジェクトの名前またはインデックス番号を指定します。</span>
+          <span data-ttu-id="d9442-124">オブジェクトの名前またはインデックス番号を指定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1ed31-119">The name or index number for the object.</span>
+            <span data-stu-id="d9442-124">The name or index number for the object.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="1ed31-120">コレクションから単一のオブジェクトを返します。</span>
+          <span data-ttu-id="d9442-125">コレクションから単一のオブジェクトを返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1ed31-120">Returns a single object from a collection.</span>
+            <span data-stu-id="d9442-125">Returns a single object from a collection.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -427,9 +444,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1ed31-121">指定されたオブジェクトの親オブジェクトを取得します。</span>
+          <span data-ttu-id="d9442-126">指定されたオブジェクトの親オブジェクトを取得します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1ed31-121">Returns the parent object for the specified object.</span>
+            <span data-stu-id="d9442-126">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>

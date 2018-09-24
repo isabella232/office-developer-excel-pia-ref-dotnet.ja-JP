@@ -1,10 +1,10 @@
 <Type Name="MultiThreadedCalculation" FullName="Microsoft.Office.Interop.Excel.MultiThreadedCalculation">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f504d9330bdf2c118f35f9620acdacd076e1024c" />
+    <Meta Name="ms.openlocfilehash" Value="6303c87efd1fdc778df51bbbfeccb07abc3c42b4" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575615" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface MultiThreadedCalculation" />
@@ -30,9 +30,9 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="1176a-101">同時計算モードを取得または設定します。</span>
+      <span data-ttu-id="ee0fc-101">同時計算モードを取得または設定します。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="1176a-101">Returns or sets the concurrent calculation mode.</span>
+        <span data-stu-id="ee0fc-101">Returns or sets the concurrent calculation mode.</span>
       </span>
     </summary>
     <remarks>To be added.</remarks>
@@ -62,24 +62,24 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1176a-102">このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Office Excel アプリケーションを表すオブジェクト。</span>
+          <span data-ttu-id="ee0fc-102">このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Office Excel アプリケーションを表すオブジェクト。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1176a-102">When used without an object qualifier, this property returns an  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object that represents the Microsoft Office Excel  application.</span>
+            <span data-stu-id="ee0fc-102">When used without an object qualifier, this property returns an  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object that represents the Microsoft Office Excel  application.</span>
           </span>
-          <span data-ttu-id="1176a-103">オブジェクト修飾子を使用する場合、このプロパティは、指定したオブジェクトの作成元を表す <b>Application</b> オブジェクトを返します。</span>
+          <span data-ttu-id="ee0fc-103">オブジェクト修飾子を使用する場合、このプロパティは、指定したオブジェクトの作成元を表す <b>Application</b> オブジェクトを返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1176a-103">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object.</span>
+            <span data-stu-id="ee0fc-103">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object.</span>
           </span>
-          <span data-ttu-id="1176a-104">読み取り専用です。</span>
+          <span data-ttu-id="ee0fc-104">読み取り専用です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1176a-104">Read-only.</span>
+            <span data-stu-id="ee0fc-104">Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="1176a-105">
+          <span data-ttu-id="ee0fc-105">
             <b>アプリケーション</b>(上記参照)</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1176a-105">
+            <span data-stu-id="ee0fc-105">
               <b>Application</b> (see above)</span>
           </span>
         </value>
@@ -110,28 +110,35 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1176a-106">定数に対応する 32 ビットの整数を返す<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />をこのオブジェクトの作成元アプリケーションを示します。</span>
+          <span data-ttu-id="ee0fc-106">定数に対応する 32 ビットの整数を返す<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />をこのオブジェクトの作成元アプリケーションを示します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1176a-106">Returns a 32-bit integer corresponding to a constant in <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> that indicates the application in which this object was created.</span>
+            <span data-stu-id="ee0fc-106">Returns a 32-bit integer corresponding to a constant in <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> that indicates the application in which this object was created.</span>
           </span>
-          <span data-ttu-id="1176a-107">読み取り専用。</span>
+          <span data-ttu-id="ee0fc-107">読み取り専用。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1176a-107">Read-only.</span>
+            <span data-stu-id="ee0fc-107">Read-only.</span>
           </span>
         </summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <span data-ttu-id="1176a-108">
-            <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。 <see cref="P:Microsoft.Office.Interop.Excel.MultiThreadedCalculation.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="1176a-108">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.  The <see cref="P:Microsoft.Office.Interop.Excel.MultiThreadedCalculation.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ee0fc-108">オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ee0fc-108">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+            <span data-ttu-id="ee0fc-109">
+              <see cref="P:Microsoft.Office.Interop.Excel.MultiThreadedCalculation.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ee0fc-109">The <see cref="P:Microsoft.Office.Interop.Excel.MultiThreadedCalculation.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="ee0fc-110">たとえば、Microsoft Excel は、クリエーター コードを持っています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ee0fc-110">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -162,14 +169,14 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1176a-109">
+          <span data-ttu-id="ee0fc-111">
             <b>Enabled</b>プロパティには、 <b>MultiThreadedCalculation</b>オブジェクトを有効にするか、実行時に無効にすることができます。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1176a-109">The <b>Enabled</b> property allows <b>MultiThreadedCalculation</b> objects to be enabled or disabled at run time.</span>
+            <span data-stu-id="ee0fc-111">The <b>Enabled</b> property allows <b>MultiThreadedCalculation</b> objects to be enabled or disabled at run time.</span>
           </span>
-          <span data-ttu-id="1176a-110">値の取得および設定が可能です。</span>
+          <span data-ttu-id="ee0fc-112">値の取得および設定が可能です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1176a-110">Read/write.</span>
+            <span data-stu-id="ee0fc-112">Read/write.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -200,17 +207,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1176a-p104">指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</span>
+          <span data-ttu-id="ee0fc-p105">指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1176a-p104">Returns the parent object for the specified object. Read-only.</span>
+            <span data-stu-id="ee0fc-p105">Returns the parent object for the specified object. Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="1176a-113">
+          <span data-ttu-id="ee0fc-115">
             <b>オブジェクト</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="1176a-113">
+            <span data-stu-id="ee0fc-115">
               <b>Object</b>
             </span>
           </span>
@@ -245,17 +252,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1176a-114">指定の一部になっているプロセスのスレッドの合計数を取得する<see cref="T:Microsoft.Office.Interop.Excel.MultiThreadedCalculation" />オブジェクトです。</span>
+          <span data-ttu-id="ee0fc-116">指定の一部になっているプロセスのスレッドの合計数を取得する<see cref="T:Microsoft.Office.Interop.Excel.MultiThreadedCalculation" />オブジェクトです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1176a-114">Gets the total count of the process threads that are a part of the specified <see cref="T:Microsoft.Office.Interop.Excel.MultiThreadedCalculation" /> object.</span>
+            <span data-stu-id="ee0fc-116">Gets the total count of the process threads that are a part of the specified <see cref="T:Microsoft.Office.Interop.Excel.MultiThreadedCalculation" /> object.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="1176a-115">
+          <span data-ttu-id="ee0fc-117">
             <b>Integer</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="1176a-115">
+            <span data-stu-id="ee0fc-117">
               <b>Integer</b>
             </span>
           </span>
@@ -290,28 +297,26 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1176a-116">値を取得または指定されたスレッド モードを設定します<see cref="T:Microsoft.Office.Interop.Excel.MultiThreadedCalculation" />オブジェクトです。</span>
+          <span data-ttu-id="ee0fc-118">値を取得または指定されたスレッド モードを設定します<see cref="T:Microsoft.Office.Interop.Excel.MultiThreadedCalculation" />オブジェクトです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1176a-116">Returns or sets the thread mode for the specified <see cref="T:Microsoft.Office.Interop.Excel.MultiThreadedCalculation" /> object.</span>
+            <span data-stu-id="ee0fc-118">Returns or sets the thread mode for the specified <see cref="T:Microsoft.Office.Interop.Excel.MultiThreadedCalculation" /> object.</span>
           </span>
-          <span data-ttu-id="1176a-117">読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Excel.XlThreadMode" />。</span>
+          <span data-ttu-id="ee0fc-119">読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Excel.XlThreadMode" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1176a-117">Read/write <see cref="T:Microsoft.Office.Interop.Excel.XlThreadMode" />.</span>
+            <span data-stu-id="ee0fc-119">Read/write <see cref="T:Microsoft.Office.Interop.Excel.XlThreadMode" />.</span>
           </span>
         </summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlThreadMode" />
         </value>
         <remarks>
-          <span data-ttu-id="1176a-118">
-            <para>するか、スレッド モードを設定することができます<see cref="F:Microsoft.Office.Interop.Excel.XlThreadMode.xlThreadModeAutomatic" />または<see cref="F:Microsoft.Office.Interop.Excel.XlThreadMode.xlThreadModeManual" />です</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="1176a-118">
-              <para>You can set the thread mode to either <see cref="F:Microsoft.Office.Interop.Excel.XlThreadMode.xlThreadModeAutomatic" /> or <see cref="F:Microsoft.Office.Interop.Excel.XlThreadMode.xlThreadModeManual" />.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ee0fc-120">スレッド モードを設定するにはいずれかに<see cref="F:Microsoft.Office.Interop.Excel.XlThreadMode.xlThreadModeAutomatic" />または<see cref="F:Microsoft.Office.Interop.Excel.XlThreadMode.xlThreadModeManual" />。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ee0fc-120">You can set the thread mode to either <see cref="F:Microsoft.Office.Interop.Excel.XlThreadMode.xlThreadModeAutomatic" /> or <see cref="F:Microsoft.Office.Interop.Excel.XlThreadMode.xlThreadModeManual" />.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

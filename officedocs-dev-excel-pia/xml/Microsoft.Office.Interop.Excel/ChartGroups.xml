@@ -1,10 +1,10 @@
 <Type Name="ChartGroups" FullName="Microsoft.Office.Interop.Excel.ChartGroups">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ed49e202a12a761d2ea1f0fade680591aab69567" />
+    <Meta Name="ms.openlocfilehash" Value="d05b335ff2ac16ca069b154e14a4f4ac9e9eb27d" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582769" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartGroups : System.Collections.IEnumerable" />
@@ -34,50 +34,123 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="c4b5c-101">すべてのコレクション、<see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" />指定されたグラフ内のオブジェクト。</span>
+      <span data-ttu-id="ee803-101">すべてのコレクション、<see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" />指定されたグラフ内のオブジェクト。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="c4b5c-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> objects in the specified chart.</span>
+        <span data-stu-id="ee803-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> objects in the specified chart.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="c4b5c-102">
-        <para>各<see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" />オブジェクトを表す 1 つまたは複数の系列が同じ形式のグラフにプロットします。グラフには、1 つ以上のグラフ グループが含まれています、各グラフ種類グループには、1 つまたは複数の系列が含まれている系列ごとに 1 つまたは複数のポイントが含まれています。グループ、すべてのデータ系列を折れ線グラフ形式でプロットとすべてのデータ系列を横棒グラフ形式でプロット、横棒グラフ グループの両方など、1 つのグラフを含む可能性があります</para>。使用の
-      <para>、<see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" />メソッドを<b>指定しないで、ChartGroups</b>コレクションを取得します。<b>指定しないで、ChartGroups</b>を使用して (<paramref name="index" />)、<paramref name="index" />は、グラフ種類グループのインデックス番号で、1 つの<b>ChartGroup</b>オブジェクトを取得します。グラフがアクティブにされている場合を使用できます<see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />です</para>。
-      <para>特定のグラフ グループのインデックス番号は、そのグループに使用されるグラフの形式が変更された場合に変更することがありますグラフ グループ専用のメソッドのいずれかを使用して特定のグラフ グループを取得するのには容易になります。<see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />メソッドは、グラフでは、円グラフ グループのコレクションを返します、<see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />メソッド、折れ線グラフ グループのコレクションを返します。これらの各メソッドは、1 つの<b>ChartGroup</b>オブジェクトをインデックス番号を持つか、インデックス番号を<b>指定しないで、ChartGroups</b>コレクションを取得することがなく使用できます。次のグラフ グループ メソッドは、利用可能な:</para><list type="bullet"><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" />メソッド</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" />メソッド</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" />メソッド</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" />メソッド</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />メソッド</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />メソッド</description></item></list><para></para></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="c4b5c-102">
-          <para>Each <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> object represents one or more series plotted in a chart with the same format. A chart contains one or more chart groups, each chart group contains one or more series, and each series contains one or more points. For example, a single chart might contain both a line chart group, containing all the series plotted with the line chart format, and a bar chart group, containing all the series plotted with the bar chart format.</para>
-          <para>Use the <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> method to return the <b>ChartGroups</b> collection. Use <b>ChartGroups</b>(<paramref name="index" />), where <paramref name="index" /> is the chart-group index number, to return a single <b>ChartGroup</b> object. If the chart has been activated, you can use <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />.</para>
-          <para>Because the index number for a particular chart group can change if the chart format used for that group is changed, it may be easier to use one of the named chart group shortcut methods to return a particular chart group. The <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> method returns the collection of pie chart groups in a chart, the <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> method returns the collection of line chart groups, and so on. Each of these methods can be used with an index number to return a single <b>ChartGroup</b> object, or without an index number to return a <b>ChartGroups</b> collection. The following chart group methods are available:</para>
-          <list type="bullet">
-            <item>
-              <description>
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" /> method</description>
-            </item>
-            <item>
-              <description>
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" /> method</description>
-            </item>
-            <item>
-              <description>
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" /> method</description>
-            </item>
-            <item>
-              <description>
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" /> method</description>
-            </item>
-            <item>
-              <description>
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> method</description>
-            </item>
-            <item>
-              <description>
-                <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> method</description>
-            </item>
-          </list>
-          <para></para>
+      <para>
+        <span data-ttu-id="ee803-102">各<see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" />オブジェクトを表す 1 つまたは複数の系列が同じ形式のグラフにプロットします。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="ee803-102">Each <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> object represents one or more series plotted in a chart with the same format.</span>
         </span>
-      </span>
+        <span data-ttu-id="ee803-103">1 つのグラフには、1 つ以上のグラフ グループが含まれ、各グラフ グループには 1 つ以上のデータ系列が、そして各データ系列には、1 つ以上のポイントが含まれています。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="ee803-103">A chart contains one or more chart groups, each chart group contains one or more series, and each series contains one or more points.</span>
+        </span>
+        <span data-ttu-id="ee803-104">たとえば、1 つのグラフに、すべてのデータ系列を折れ線グラフ形式でプロットした折れ線グラフ グループと、すべてのデータ系列を横棒グラフ形式でプロットした横棒グラフ グループの両方を含めることができます。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="ee803-104">For example, a single chart might contain both a line chart group, containing all the series plotted with the line chart format, and a bar chart group, containing all the series plotted with the bar chart format.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="ee803-105">使用して、<see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" />メソッドを<b>指定しないで、ChartGroups</b>コレクションを取得します。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="ee803-105">Use the <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> method to return the <b>ChartGroups</b> collection.</span>
+        </span>
+        <span data-ttu-id="ee803-106">
+          <b>指定しないで、ChartGroups</b>を使用して (<paramref name="index" />)、<paramref name="index" />は、グラフ種類グループのインデックス番号で、1 つの<b>ChartGroup</b>オブジェクトを取得します。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="ee803-106">Use <b>ChartGroups</b>(<paramref name="index" />), where <paramref name="index" /> is the chart-group index number, to return a single <b>ChartGroup</b> object.</span>
+        </span>
+        <span data-ttu-id="ee803-107">使用することができる場合は、グラフがアクティブ化されて、 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="ee803-107">If the chart has been activated, you can use <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="ee803-108">特定のグラフ グループのインデックス番号は、そのグループに使用されるグラフの形式が変更された場合に変更するためは、グラフ グループ専用のメソッドのいずれかを使用して特定のグラフ グループを取得しやすい場合があります。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="ee803-108">Because the index number for a particular chart group can change if the chart format used for that group is changed, it may be easier to use one of the named chart group shortcut methods to return a particular chart group.</span>
+        </span>
+        <span data-ttu-id="ee803-109">
+          <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />メソッドは、グラフでは、円グラフ グループのコレクションを返します、<see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />メソッド、折れ線グラフ グループのコレクションを返します。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="ee803-109">The <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> method returns the collection of pie chart groups in a chart, the <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> method returns the collection of line chart groups, and so on.</span>
+        </span>
+        <span data-ttu-id="ee803-110">これらの各メソッドは、1 つの<b>ChartGroup</b>オブジェクトをインデックス番号を持つか、インデックス番号を<b>指定しないで、ChartGroups</b>コレクションを取得することがなく使用できます。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="ee803-110">Each of these methods can be used with an index number to return a single <b>ChartGroup</b> object, or without an index number to return a <b>ChartGroups</b> collection.</span>
+        </span>
+        <span data-ttu-id="ee803-111">次のグラフ グループ メソッドは、使用できます。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="ee803-111">The following chart group methods are available:</span>
+        </span>
+      </para>
+      <list type="bullet">
+        <item>
+          <description>
+            <span data-ttu-id="ee803-112">
+              <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" />メソッド</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ee803-112">
+                <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" /> method</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="ee803-113">
+              <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" />メソッド</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ee803-113">
+                <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" /> method</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="ee803-114">
+              <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" />メソッド</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ee803-114">
+                <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" /> method</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="ee803-115">
+              <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" />メソッド</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ee803-115">
+                <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" /> method</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="ee803-116">
+              <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />メソッド</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ee803-116">
+                <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> method</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="ee803-117">
+              <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />メソッド</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ee803-117">
+                <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> method</span>
+            </span>
+          </description>
+        </item>
+      </list>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -105,13 +178,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="c4b5c-103">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> (ことができますこのプロパティを使用する OLE オートメーション オブジェクトとそのオブジェクトのアプリケーションを取得)、指定したオブジェクトの作成者を表すオブジェクト。</span>
+          <span data-ttu-id="ee803-118">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> (ことができますこのプロパティを使用する OLE オートメーション オブジェクトとそのオブジェクトのアプリケーションを取得)、指定したオブジェクトの作成者を表すオブジェクト。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4b5c-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the creator of the specified object (you can use this property with an OLE Automation object to return the application of that object).</span>
+            <span data-stu-id="ee803-118">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the creator of the specified object (you can use this property with an OLE Automation object to return the application of that object).</span>
           </span>
-          <span data-ttu-id="c4b5c-104">読み取り専用。</span>
+          <span data-ttu-id="ee803-119">読み取り専用。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4b5c-104">Read-only.</span>
+            <span data-stu-id="ee803-119">Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -142,13 +215,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="c4b5c-105">コレクション内にあるオブジェクトの数を返します。</span>
+          <span data-ttu-id="ee803-120">コレクション内にあるオブジェクトの数を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4b5c-105">Returns the number of objects in the collection.</span>
+            <span data-stu-id="ee803-120">Returns the number of objects in the collection.</span>
           </span>
-          <span data-ttu-id="c4b5c-106">整数型 ( <b>Integer</b>) の値を使用します。</span>
+          <span data-ttu-id="ee803-121">整数型 ( <b>Integer</b>) の値を使用します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4b5c-106">Read-only <b>Integer</b>.</span>
+            <span data-stu-id="ee803-121">Read-only <b>Integer</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -179,31 +252,33 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="c4b5c-107">現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</span>
+          <span data-ttu-id="ee803-122">現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4b5c-107">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="ee803-122">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
-          <span data-ttu-id="c4b5c-108">オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</span>
+          <span data-ttu-id="ee803-123">オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4b5c-108">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
+            <span data-stu-id="ee803-123">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
           </span>
-          <span data-ttu-id="c4b5c-109">読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</span>
+          <span data-ttu-id="ee803-124">読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4b5c-109">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+            <span data-stu-id="ee803-124">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="c4b5c-110">
-            <para>
-              <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="c4b5c-110">
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="ee803-125">
+              <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ee803-125">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
             </span>
-          </span>
+            <span data-ttu-id="ee803-126">たとえば、Microsoft Excel は、クリエーター コードを持っています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="ee803-126">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -263,20 +338,20 @@
       </Parameters>
       <Docs>
         <param name="Index">
-          <span data-ttu-id="c4b5c-111">
+          <span data-ttu-id="ee803-127">
             <b>オブジェクト</b>が必要です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4b5c-111">Required <b>Object</b>.</span>
+            <span data-stu-id="ee803-127">Required <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="c4b5c-112">オブジェクトの名前またはインデックス番号を指定します。</span>
+          <span data-ttu-id="ee803-128">オブジェクトの名前またはインデックス番号を指定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4b5c-112">The name or index number for the object.</span>
+            <span data-stu-id="ee803-128">The name or index number for the object.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="c4b5c-113">コレクションから単一のオブジェクトを返します。</span>
+          <span data-ttu-id="ee803-129">コレクションから単一のオブジェクトを返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4b5c-113">Returns a single object from a collection.</span>
+            <span data-stu-id="ee803-129">Returns a single object from a collection.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -307,9 +382,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="c4b5c-p105">指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</span>
+          <span data-ttu-id="ee803-p109">指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="c4b5c-p105">Returns the parent object for the specified object. Read-only.</span>
+            <span data-stu-id="ee803-p109">Returns the parent object for the specified object. Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
