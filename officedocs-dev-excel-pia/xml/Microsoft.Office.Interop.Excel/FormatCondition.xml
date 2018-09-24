@@ -1,10 +1,10 @@
 <Type Name="FormatCondition" FullName="Microsoft.Office.Interop.Excel.FormatCondition">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a635d52289eab8b27e83a83f54b3afc26b142b07" />
+    <Meta Name="ms.openlocfilehash" Value="06db90663108615d83dc620b65e7671be2f3d791" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584414" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface FormatCondition" />
@@ -30,70 +30,150 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="9f730-101">条件付き書式を表します。</span>
+      <span data-ttu-id="aa462-101">条件付き書式を表します。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="9f730-101">Represents a conditional format.</span>
+        <span data-stu-id="aa462-101">Represents a conditional format.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="9f730-102">
-        <para>
-          <b>FormatCondition</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />コレクションです。<b>FormatConditions</b>コレクションは、指定された範囲の最大 3 つの条件付き書式を含めることができます</para>。
-      <para>使用<b>FormatConditions</b>(<paramref name="index" />)、インデックスは、 <b>FormatCondition</b>オブジェクトを取得するのには、条件付き書式のインデックス番号です</para>。使用の
-      <para>、<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />新しい条件付き書式を作成します。1 つの範囲の複数の 3 つの条件付き書式を作成しようとすると、 <b>Add</b>メソッドは失敗します。範囲は、3 つの形式を使って、 <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> 、形式のいずれかを変更する方法を使用することができます、<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" />形式を削除し、新しい書式を作成するのには<b>Add</b>メソッドを使用する方法です</para>。
-      <para>使用、 <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Font" />、 <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Borders" />、および<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Interior" />の<b>FormatCondition</b>オブジェクトの外観を制御するには、セルを書式設定します。これらのオブジェクトの一部のプロパティは、条件付き書式オブジェクト モデルでサポートされていません。条件付き書式で使用できるプロパティは、次の表に記載されています</para>。
-      <list type="table"><item><term><b>フォント</b></term><description><b>太字</b><b>ColorIndex</b><b>FontStyle</b><b>斜体</b><b>取り消し線</b>の
-            <b>色
-            <b>の下線</b>会計の下線スタイルを使用することはできません</b></description></item>。
-        <item><term><b>境界線</b></term><description><b>下</b><b>色</b><b>左</b><b>右</b>の
-            <b>スタイル</b>以下の罫線のスタイルを使用することができます (他のユーザーがすべてサポートされていません): <b>xlNone</b>、 <b>xlSolid</b>、 <b>xlDash</b>、<b>xlDot</b>、 <b>xlDashDot</b>、 <b>xlDashDotDot</b>、 <b>xlGray50</b>、 <b>xlGray75</b>、および<b>xlGray25</b>です。<b>トップ</b><b>重量</b>次の枠線の重みを使用することができます (他のユーザーがすべてサポートされていません): <b>xlWeightHairline</b>および<b>xlWeightThin</b>です</description></item>。
-        <item><term><b>内部</b></term><description><b>色</b><b>ColorIndex</b><b>パターン</b><b>PatternColorIndex</b></description></item></list><para></para></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="9f730-102">
-          <para>The <b>FormatCondition</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. The <b>FormatConditions</b> collection can contain up to three conditional formats for a given range.</para>
-          <para>Use <b>FormatConditions</b>(<paramref name="index" />), where index is the index number of the conditional format, to return a <b>FormatCondition</b> object.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> method to create a new conditional format. If you try to create more than three conditional formats for a single range, the <b>Add</b> method fails. If a range has three formats, you can use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> method to change one of the formats, or you can use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> method to delete a format and then use the <b>Add</b> method to create a new format.</para>
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Font" />, <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Borders" />, and <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Interior" /> properties of the <b>FormatCondition</b> object to control the appearance of formatted cells. Some properties of these objects aren’t supported by the conditional format object model. The properties that can be used with conditional formatting are listed in the following table.</para>
-          <list type="table">
-            <item>
-              <term>
+      <para>
+        <span data-ttu-id="aa462-102">
+          <b>FormatCondition</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />コレクションです。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="aa462-102">The <b>FormatCondition</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection.</span>
+        </span>
+        <span data-ttu-id="aa462-103">
+          <b>FormatConditions</b>コレクションには、特定の範囲の最大 3 つの条件付き書式を含めることができます。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="aa462-103">The <b>FormatConditions</b> collection can contain up to three conditional formats for a given range.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="aa462-104">
+          <b>FormatConditions</b>を使用 (<paramref name="index" />)、インデックスは、 <b>FormatCondition</b>オブジェクトを取得するのには、条件付き書式のインデックス番号です。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="aa462-104">Use <b>FormatConditions</b>(<paramref name="index" />), where index is the index number of the conditional format, to return a <b>FormatCondition</b> object.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="aa462-105">使用して、 <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> 、新しい条件付き書式を作成します。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="aa462-105">Use the <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> method to create a new conditional format.</span>
+        </span>
+        <span data-ttu-id="aa462-106">1 つの範囲の複数の 3 つの条件付き書式を作成しようとすると、 <b>Add</b>メソッドは失敗します。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="aa462-106">If you try to create more than three conditional formats for a single range, the <b>Add</b> method fails.</span>
+        </span>
+        <span data-ttu-id="aa462-107">範囲は、3 つの形式を使って、<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />の形式のいずれかを変更する方法を使用することができます、<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" />フォーマットを削除し、新しい書式を作成するのには<b>Add</b>メソッドを使用する方法。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="aa462-107">If a range has three formats, you can use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> method to change one of the formats, or you can use the <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> method to delete a format and then use the <b>Add</b> method to create a new format.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="aa462-108">使用、 <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Font" />、 <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Borders" />、および<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Interior" />の<b>FormatCondition</b>オブジェクトの外観を制御するには、セルを書式設定します。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="aa462-108">Use the <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Font" />, <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Borders" />, and <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Interior" /> properties of the <b>FormatCondition</b> object to control the appearance of formatted cells.</span>
+        </span>
+        <span data-ttu-id="aa462-109">これらのオブジェクトの一部のプロパティは、条件付き書式オブジェクト モデルでサポートされていません。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="aa462-109">Some properties of these objects aren’t supported by the conditional format object model.</span>
+        </span>
+        <span data-ttu-id="aa462-110">条件付き書式で使用できるプロパティは次の表に一覧表示されます。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="aa462-110">The properties that can be used with conditional formatting are listed in the following table.</span>
+        </span>
+      </para>
+      <list type="table">
+        <item>
+          <term>
+            <span data-ttu-id="aa462-111">
+              <b>フォント</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-111">
                 <b>Font</b>
-              </term>
-              <description>
+              </span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="aa462-112">
+              <b>太字</b>
+              <b>色</b>
+              <b>ColorIndex</b>
+              <b>FontStyle</b>
+              <b>斜体</b>
+              <b>取り消し線</b>
+              <b>下線を引く</b>会計の下線のスタイルを使用することはできません。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-112">
                 <b>Bold</b>
                 <b>Color</b>
                 <b>ColorIndex</b>
                 <b>FontStyle</b>
                 <b>Italic</b>
                 <b>Strikethrough</b>
-                <b>Underline</b>The accounting underline styles cannot be used.</description>
-            </item>
-            <item>
-              <term>
+                <b>Underline</b>The accounting underline styles cannot be used.</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="aa462-113">
+              <b>枠線</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-113">
                 <b>Border</b>
-              </term>
-              <description>
+              </span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="aa462-114">
+              <b>下</b>
+              <b>色</b>
+              <b>左</b>
+              <b>右</b>
+              <b>スタイル</b>次の枠線のスタイルを使用することができます (他のユーザーがすべてサポートされていません): <b>xlNone</b>、 <b>xlSolid</b>、 <b>xlDash</b>、 <b>xlDot</b>、 <b>xlDashDot</b>、 <b>xlDashDotDot</b>、 <b>xlGray50</b>、 <b>xlGray75</b>、<b>および xlGray25</b>.<b>トップ</b><b>重量</b>次の枠線の重みを使用することができます (他のユーザーがすべてサポートされていません): <b>xlWeightHairline</b>および<b>xlWeightThin</b>です。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-114">
                 <b>Bottom</b>
                 <b>Color</b>
                 <b>Left</b>
                 <b>Right</b>
-                <b>Style</b>The following border styles can be used (all others aren’t supported): <b>xlNone</b>, <b>xlSolid</b>, <b>xlDash</b>, <b>xlDot</b>, <b>xlDashDot</b>, <b>xlDashDotDot</b>, <b>xlGray50</b>, <b>xlGray75</b>, and <b>xlGray25</b>.<b>Top</b><b>Weight</b>The following border weights can be used (all others aren’t supported): <b>xlWeightHairline</b> and <b>xlWeightThin</b>.</description>
-            </item>
-            <item>
-              <term>
+                <b>Style</b>The following border styles can be used (all others aren’t supported): <b>xlNone</b>, <b>xlSolid</b>, <b>xlDash</b>, <b>xlDot</b>, <b>xlDashDot</b>, <b>xlDashDotDot</b>, <b>xlGray50</b>, <b>xlGray75</b>, and <b>xlGray25</b>.<b>Top</b><b>Weight</b>The following border weights can be used (all others aren’t supported): <b>xlWeightHairline</b> and <b>xlWeightThin</b>.</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <span data-ttu-id="aa462-115">
+              <b>内部</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-115">
                 <b>Interior</b>
-              </term>
-              <description>
+              </span>
+            </span>
+          </term>
+          <description>
+            <span data-ttu-id="aa462-116">
+              <b>色</b>
+              <b>ColorIndex</b>
+              <b>パターン</b>
+              <b>PatternColorIndex</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-116">
                 <b>Color</b>
                 <b>ColorIndex</b>
                 <b>Pattern</b>
                 <b>PatternColorIndex</b>
-              </description>
-            </item>
-          </list>
-          <para></para>
-        </span>
-      </span>
+              </span>
+            </span>
+          </description>
+        </item>
+      </list>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -121,9 +201,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="9f730-103">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</span>
+          <span data-ttu-id="aa462-117">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="aa462-117">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -154,9 +234,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="9f730-104">返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの書式設定ルールを適用するセル範囲を指定します。</span>
+          <span data-ttu-id="aa462-118">返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの書式設定ルールを適用するセル範囲を指定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-104">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object specifying the cell range to which the formatting rule is applied.</span>
+            <span data-stu-id="aa462-118">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object specifying the cell range to which the formatting rule is applied.</span>
           </span>
         </summary>
         <value>
@@ -189,9 +269,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="9f730-105">返します、<see cref="T:Microsoft.Office.Interop.Excel.Borders" />スタイルの枠線または、セル範囲 (条件付き書式の一部として定義されている範囲を含む) を表すコレクション。</span>
+          <span data-ttu-id="aa462-119">返します、<see cref="T:Microsoft.Office.Interop.Excel.Borders" />スタイルの枠線または、セル範囲 (条件付き書式の一部として定義されている範囲を含む) を表すコレクション。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-105">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> collection that represents the borders of a style or a range of cells (including a range defined as part of a conditional format).</span>
+            <span data-stu-id="aa462-119">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> collection that represents the borders of a style or a range of cells (including a range defined as part of a conditional format).</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -222,25 +302,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="9f730-106">現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</span>
+          <span data-ttu-id="aa462-120">現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-106">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="aa462-120">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="9f730-107">
-            <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
-            <para>
-              <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9f730-107">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="aa462-121">オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-121">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="aa462-122">
+              <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-122">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="aa462-123">たとえば、Microsoft Excel は、クリエーター コードを持っています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-123">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -271,13 +357,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="9f730-108">指定します<see cref="T:Microsoft.Office.Interop.Excel.XlTimePeriods" />書式の条件に使用される日付演算子です。</span>
+          <span data-ttu-id="aa462-124">指定します<see cref="T:Microsoft.Office.Interop.Excel.XlTimePeriods" />書式の条件に使用される日付演算子です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-108">Specifies the <see cref="T:Microsoft.Office.Interop.Excel.XlTimePeriods" /> Date operator used in the format condition.</span>
+            <span data-stu-id="aa462-124">Specifies the <see cref="T:Microsoft.Office.Interop.Excel.XlTimePeriods" /> Date operator used in the format condition.</span>
           </span>
-          <span data-ttu-id="9f730-109">値の取得および設定が可能です。</span>
+          <span data-ttu-id="aa462-125">値の取得および設定が可能です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-109">Read/write.</span>
+            <span data-stu-id="aa462-125">Read/write.</span>
           </span>
         </summary>
         <value>
@@ -308,9 +394,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="9f730-110">オブジェクトを削除します。</span>
+          <span data-ttu-id="aa462-126">オブジェクトを削除します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-110">Deletes the object.</span>
+            <span data-stu-id="aa462-126">Deletes the object.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -340,9 +426,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="9f730-111">返します、<see cref="T:Microsoft.Office.Interop.Excel.Font" />を指定したオブジェクトのフォントを表すオブジェクト。</span>
+          <span data-ttu-id="aa462-127">返します、<see cref="T:Microsoft.Office.Interop.Excel.Font" />を指定したオブジェクトのフォントを表すオブジェクト。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-111">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object that represents the font of the specified object.</span>
+            <span data-stu-id="aa462-127">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object that represents the font of the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -373,23 +459,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="9f730-112">値または条件付き書式または入力規則に関連付けられた式を返します。</span>
+          <span data-ttu-id="aa462-128">値または条件付き書式または入力規則に関連付けられた式を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-112">Returns the value or expression associated with the conditional format or data validation.</span>
+            <span data-stu-id="aa462-128">Returns the value or expression associated with the conditional format or data validation.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="9f730-113">
-            <para>
-              <b>Formula1</b>プロパティは、定数値、文字列値、セル参照、または数式</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9f730-113">
-              <para>The <b>Formula1</b> property can be a constant value, a string value, a cell reference, or a formula.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="aa462-129">
+              <b>Formula1</b>プロパティには、定数値、文字列値、セル参照、または数式ができます。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-129">The <b>Formula1</b> property can be a constant value, a string value, a cell reference, or a formula.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -417,23 +501,25 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="9f730-114">値または条件付き書式または入力規則の 2 番目の部分に関連付けられた式を返します。</span>
+          <span data-ttu-id="aa462-130">値または条件付き書式または入力規則の 2 番目の部分に関連付けられた式を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-114">Returns the value or expression associated with the second part of a conditional format or data validation.</span>
+            <span data-stu-id="aa462-130">Returns the value or expression associated with the second part of a conditional format or data validation.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="9f730-115">
-            <para>
-              <b>Formula2</b>プロパティを使用してのみデータの入力規則の条件付き書式を設定すると<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Operator" />プロパティには、<b><b>規則での条件</b></b>です。定数値、文字列値、セル参照、または数式にすることができます</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9f730-115">
-              <para>The <b>Formula2</b> property is used only when the data validation conditional format <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Operator" /> property is <b>xlBetween</b> or <b>xlNotBetween</b>. Can be a constant value, a string value, a cell reference, or a formula.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="aa462-131">
+              <b>Formula2</b>プロパティが専用に使用されるためデータの入力規則の条件付き書式を設定すると<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Operator" />プロパティには、<b><b>規則での条件</b></b>です。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-131">The <b>Formula2</b> property is used only when the data validation conditional format <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Operator" /> property is <b>xlBetween</b> or <b>xlNotBetween</b>.</span>
             </span>
-          </span>
+            <span data-ttu-id="aa462-132">定数値、文字列値、セル参照、または数式を指定できます。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-132">Can be a constant value, a string value, a cell reference, or a formula.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -461,9 +547,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="9f730-116">返します、<see cref="T:Microsoft.Office.Interop.Excel.Interior" />を指定したオブジェクトの内部を表すオブジェクト。</span>
+          <span data-ttu-id="aa462-133">返します、<see cref="T:Microsoft.Office.Interop.Excel.Interior" />を指定したオブジェクトの内部を表すオブジェクト。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-116">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object that represents the interior of the specified object.</span>
+            <span data-stu-id="aa462-133">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> object that represents the interior of the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -499,67 +585,67 @@
       </Parameters>
       <Docs>
         <param name="Type">
-          <span data-ttu-id="9f730-117">必要な<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />。</span>
+          <span data-ttu-id="aa462-134">必要な<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-117">Required <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />.</span>
+            <span data-stu-id="aa462-134">Required <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />.</span>
           </span>
-          <span data-ttu-id="9f730-118">セル値または演算式のどちらを基に条件付き書式を設定するかを指定します。</span>
+          <span data-ttu-id="aa462-135">セル値または演算式のどちらを基に条件付き書式を設定するかを指定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-118">Specifies whether the conditional format is based on a cell value or an expression.</span>
+            <span data-stu-id="aa462-135">Specifies whether the conditional format is based on a cell value or an expression.</span>
           </span>
-          <span data-ttu-id="9f730-119">
+          <span data-ttu-id="aa462-136">
             <b>XlFormatCondition</b>定数は、次のいずれか:<b>xlCellValue</b><b>xlExpression</b></span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-119">Can be one of the following <b>XlFormatCondition</b> constants:<b>xlCellValue</b><b>xlExpression</b></span>
+            <span data-stu-id="aa462-136">Can be one of the following <b>XlFormatCondition</b> constants:<b>xlCellValue</b><b>xlExpression</b></span>
           </span>
         </param>
         <param name="Operator">
-          <span data-ttu-id="9f730-120">省略可能な<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />。</span>
+          <span data-ttu-id="aa462-137">省略可能な<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-120">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />.</span>
+            <span data-stu-id="aa462-137">Optional <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />.</span>
           </span>
-          <span data-ttu-id="9f730-121">条件付き書式の演算子です。</span>
+          <span data-ttu-id="aa462-138">条件付き書式の演算子です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-121">The conditional format operator.</span>
+            <span data-stu-id="aa462-138">The conditional format operator.</span>
           </span>
-          <span data-ttu-id="9f730-122">
+          <span data-ttu-id="aa462-139">
             <b>XlFormatConditionOperator</b>定数は、次のいずれか:<b>で</b><b>xlEqual</b><b>xlGreater</b><b>xlGreaterEqual</b><b>xlLess</b><b>xlLessEqua</b>l<b>xlNotBetween</b><b>xlNotEqual</b>場合<paramref name="Type" />、 <b>xlExpression</b>では、<paramref name="Operator" />引数は無視されます。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-122">Can be one of the following <b>XlFormatConditionOperator</b> constants:<b>xlBetween</b><b>xlEqual</b><b>xlGreater</b><b>xlGreaterEqual</b><b>xlLess</b><b>xlLessEqua</b>l<b>xlNotBetween</b><b>xlNotEqual</b>If <paramref name="Type" />, is <b>xlExpression</b>, the <paramref name="Operator" /> argument is ignored.</span>
+            <span data-stu-id="aa462-139">Can be one of the following <b>XlFormatConditionOperator</b> constants:<b>xlBetween</b><b>xlEqual</b><b>xlGreater</b><b>xlGreaterEqual</b><b>xlLess</b><b>xlLessEqua</b>l<b>xlNotBetween</b><b>xlNotEqual</b>If <paramref name="Type" />, is <b>xlExpression</b>, the <paramref name="Operator" /> argument is ignored.</span>
           </span>
         </param>
         <param name="Formula1">
-          <span data-ttu-id="9f730-123">省略可能な<b>オブジェクト</b>です。</span>
+          <span data-ttu-id="aa462-140">省略可能な<b>オブジェクト</b>です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-123">Optional <b>Object</b>.</span>
+            <span data-stu-id="aa462-140">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="9f730-124">値または条件付き書式が関連付けられている式です。</span>
+          <span data-ttu-id="aa462-141">値または条件付き書式が関連付けられている式です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-124">The value or expression associated with the conditional format.</span>
+            <span data-stu-id="aa462-141">The value or expression associated with the conditional format.</span>
           </span>
-          <span data-ttu-id="9f730-125">定数値、文字列値、セル参照、または数式を指定できます。</span>
+          <span data-ttu-id="aa462-142">定数値、文字列値、セル参照、または数式を指定できます。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-125">Can be a constant value, a string value, a cell reference, or a formula.</span>
+            <span data-stu-id="aa462-142">Can be a constant value, a string value, a cell reference, or a formula.</span>
           </span>
         </param>
         <param name="Formula2">
-          <span data-ttu-id="9f730-126">省略可能な<b>オブジェクト</b>です。</span>
+          <span data-ttu-id="aa462-143">省略可能な<b>オブジェクト</b>です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-126">Optional <b>Object</b>.</span>
+            <span data-stu-id="aa462-143">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="9f730-127">値または条件付き書式が関連付けられている式です。</span>
+          <span data-ttu-id="aa462-144">値または条件付き書式が関連付けられている式です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-127">The value or expression associated with the conditional format.</span>
+            <span data-stu-id="aa462-144">The value or expression associated with the conditional format.</span>
           </span>
-          <span data-ttu-id="9f730-128">定数値、文字列値、セル参照、または数式を指定できます。</span>
+          <span data-ttu-id="aa462-145">定数値、文字列値、セル参照、または数式を指定できます。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-128">Can be a constant value, a string value, a cell reference, or a formula.</span>
+            <span data-stu-id="aa462-145">Can be a constant value, a string value, a cell reference, or a formula.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="9f730-129">既存の条件付き書式を変更します。</span>
+          <span data-ttu-id="aa462-146">既存の条件付き書式を変更します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-129">Modifies an existing conditional format.</span>
+            <span data-stu-id="aa462-146">Modifies an existing conditional format.</span>
           </span>
         </summary>
         <remarks>To be added.</remarks>
@@ -588,29 +674,39 @@
       </Parameters>
       <Docs>
         <param name="Range">
-          <span data-ttu-id="9f730-130">書式のルールが適用される範囲を指定します。</span>
+          <span data-ttu-id="aa462-147">書式のルールが適用される範囲を指定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-130">The range to which this formatting rule will be applied.</span>
+            <span data-stu-id="aa462-147">The range to which this formatting rule will be applied.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="9f730-131">書式のルールが適用されるセル範囲を設定します。</span>
+          <span data-ttu-id="aa462-148">書式のルールが適用されるセル範囲を設定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-131">Sets the cell range to which this formatting rule applies.</span>
+            <span data-stu-id="aa462-148">Sets the cell range to which this formatting rule applies.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="9f730-132">
-            <para>範囲が A1 参照形式にする必要がありの親であるシート内で完全に収まること、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />コレクションです。それは、範囲演算子 (コロン)、交差演算子 (スペース)、または union 演算子 (コンマ) を含めることができます。ドル記号も使用できますが、それらは無視されます</para>。
-          <para>、ローカルで定義された名前の範囲の任意の部分を使用することもできますが、名前が、マクロの言語である必要があります</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9f730-132">
-              <para>The range must be in the A1 reference style and be entirely contained within the sheet that is the parent of the <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection. It can include the range operator (a colon), the intersection operator (a space), or the union operator (a comma). Dollar signs can also be used but they are ignored.</para>
-              <para>You can also use a local defined name in any part of the range, but the name must be in the language of the macro.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="aa462-149">範囲が A1 参照形式にする必要がありの親であるシート内で完全に収まること、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />コレクションです。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-149">The range must be in the A1 reference style and be entirely contained within the sheet that is the parent of the <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> collection.</span>
             </span>
-          </span>
+            <span data-ttu-id="aa462-150">それは、範囲演算子 (コロン)、交差演算子 (スペース)、または union 演算子 (コンマ) を含めることができます。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-150">It can include the range operator (a colon), the intersection operator (a space), or the union operator (a comma).</span>
+            </span>
+            <span data-ttu-id="aa462-151">ドル記号も使用できますが、それらは無視されます。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-151">Dollar signs can also be used but they are ignored.</span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="aa462-152">セル範囲の一部にローカルに定義した名前を使用できますが、その名前はコード記述時の言語で定義された名前である必要があります。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-152">You can also use a local defined name in any part of the range, but the name must be in the language of the macro.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -678,35 +774,33 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="9f730-133">条件付き書式設定ルールが<b>True</b>と評価された場合に、セルに適用される表示形式を設定または返します。</span>
+          <span data-ttu-id="aa462-153">条件付き書式設定ルールが<b>True</b>と評価された場合に、セルに適用される表示形式を設定または返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-133">Returns or sets the number format applied to a cell if the conditional formatting rule evaluates to <b>True</b>.</span>
+            <span data-stu-id="aa462-153">Returns or sets the number format applied to a cell if the conditional formatting rule evaluates to <b>True</b>.</span>
           </span>
-          <span data-ttu-id="9f730-134">読み取り/書き込みの<b>オブジェクト</b>です。</span>
+          <span data-ttu-id="aa462-154">読み取り/書き込みの<b>オブジェクト</b>です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-134">Read/write <b>Object</b>.</span>
+            <span data-stu-id="aa462-154">Read/write <b>Object</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="9f730-135">
+          <span data-ttu-id="aa462-155">
             <b>オブジェクト</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-135">
+            <span data-stu-id="aa462-155">
               <b>Object</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="9f730-136">
-            <para>数値の表示形式を指定するには、セルの書式設定] ダイアログ ボックスのタブに表示される同じ書式コードを使用します。「標準」などの組み込みの表示形式を使用したり、カスタムの表示形式を作成します</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9f730-136">
-              <para>The number format is specified using the same format codes displayed on the Number tab of the Format Cells dialog box. You can use a built-in number format, for example "General", or create a custom number format.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="aa462-p113">表示形式は、[セルの書式設定] ダイアログ ボックスの [表示形式] タブに表示されるのと同じ書式コードを使用して指定します。"標準" などの組み込みの表示形式を使用するか、またはユーザー設定の表示形式を作成することができます。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-p113">The number format is specified using the same format codes displayed on the Number tab of the Format Cells dialog box. You can use a built-in number format, for example "General", or create a custom number format.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -734,9 +828,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="9f730-137">条件付き書式の演算子を返します。</span>
+          <span data-ttu-id="aa462-158">条件付き書式の演算子を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-137">Returns the operator for the conditional format.</span>
+            <span data-stu-id="aa462-158">Returns the operator for the conditional format.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -767,9 +861,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="9f730-138">指定されたオブジェクトの親オブジェクトを返します。</span>
+          <span data-ttu-id="aa462-159">指定されたオブジェクトの親オブジェクトを返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-138">Returns the parent object for the specified object.</span>
+            <span data-stu-id="aa462-159">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -803,31 +897,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="9f730-p107">条件付き書式ルールの優先度の値を取得、または設定します。優先度は、ワークシート内に複数の条件付き書式ルールが存在する場合、その評価の順序を決定します。</span>
+          <span data-ttu-id="aa462-p114">条件付き書式ルールの優先度の値を取得、または設定します。優先度は、ワークシート内に複数の条件付き書式ルールが存在する場合、その評価の順序を決定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-p107">Returns or sets the priority value of the conditional formatting rule. The priority determines the order of evaluation when multiple conditional formatting rules exist in a worksheet.</span>
+            <span data-stu-id="aa462-p114">Returns or sets the priority value of the conditional formatting rule. The priority determines the order of evaluation when multiple conditional formatting rules exist in a worksheet.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="9f730-141">
+          <span data-ttu-id="aa462-162">
             <b>Integer</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-141">
+            <span data-stu-id="aa462-162">
               <b>Integer</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="9f730-142">
-            <para>の優先度の値を設定するときは、1 と、ワークシート上の条件付き書式ルールの合計数との間の正の整数である必要があります。優先順位は、ワークシート上のすべてのルールの一意の値をする必要があります、指定された条件付き書式ルールの優先順位を変更する場合があります他のルールの優先度の値、ワークシートを移動するにします</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9f730-142">
-              <para>When setting the priority, the value must be a positive integer between 1 and the total number of conditional formatting rules on the worksheet. The priority must be a unique value for all rules on the worksheet, so changing the priority for the specified conditional formatting rule may cause the priority value of the other rules on the worksheet to be shifted.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="aa462-p115">優先度の値は、1 からワークシート上の条件付き書式ルールの合計数までの正の整数を設定する必要があります。優先度の値は、ワークシート上のすべてのルールに対して固有である必要があるので、特定の条件付き書式ルールの優先度の値を変更すると、ワークシート上のほかのルールの値も変更される可能性があります。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-p115">When setting the priority, the value must be a positive integer between 1 and the total number of conditional formatting rules on the worksheet. The priority must be a unique value for all rules on the worksheet, so changing the priority for the specified conditional formatting rule may cause the priority value of the other rules on the worksheet to be shifted.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -855,17 +947,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="9f730-p108">条件付き書式がピボットテーブル チャートに適用されるかどうかを表すブール型 (<b>Boolean</b>) の値を返します。値の取得のみ可能です。</span>
+          <span data-ttu-id="aa462-p116">条件付き書式がピボットテーブル チャートに適用されるかどうかを表すブール型 (<b>Boolean</b>) の値を返します。値の取得のみ可能です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-p108">Returns a <b>Boolean</b> value indicating if the conditional format is being applied to a PivotTable chart. Read-only.</span>
+            <span data-stu-id="aa462-p116">Returns a <b>Boolean</b> value indicating if the conditional format is being applied to a PivotTable chart. Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="9f730-145">
+          <span data-ttu-id="aa462-167">
             <b>ブール型 (Boolean)</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-145">
+            <span data-stu-id="aa462-167">
               <b>Boolean</b>
             </span>
           </span>
@@ -900,24 +992,22 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="9f730-146">値を取得または設定の定数のいずれか、<see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />列挙値は、ピボット テーブル チャートに適用されるときに、条件付き書式の範囲を決定します。</span>
+          <span data-ttu-id="aa462-168">値を取得または設定の定数のいずれか、<see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />列挙値は、ピボット テーブル チャートに適用されるときに、条件付き書式の範囲を決定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-146">Returns or sets one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> enumeration, which determines the scope of the conditional format when it is applied to a PivotTable chart.</span>
+            <span data-stu-id="aa462-168">Returns or sets one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> enumeration, which determines the scope of the conditional format when it is applied to a PivotTable chart.</span>
           </span>
         </summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
         </value>
         <remarks>
-          <span data-ttu-id="9f730-147">
-            <para>既定値は、<see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />を使用して、スコープを設定する、<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" />プロパティ</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9f730-147">
-              <para>The default value is <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, which sets the scope using the <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" />property.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="aa462-169">既定値は、<see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />を使用して、スコープを設定する、<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" />プロパティ。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-169">The default value is <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />, which sets the scope using the <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" />property.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -943,24 +1033,27 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="9f730-148">条件付き書式ルールの優先度の値を "1" に設定し、ワークシート内の他のルールより先に評価されるようにします。</span>
+          <span data-ttu-id="aa462-170">条件付き書式ルールの優先度の値を "1" に設定し、ワークシート内の他のルールより先に評価されるようにします。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-148">Sets the priority value for this conditional formatting rule to "1" so that it will be evaluated before all other rules on the worksheet.</span>
+            <span data-stu-id="aa462-170">Sets the priority value for this conditional formatting rule to "1" so that it will be evaluated before all other rules on the worksheet.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="9f730-149">
-            <para>がある場合、ワークシート内の複数の条件付き書式ルール ルールが以前優先順位「1」に設定されていない場合、このメソッドと、他のすべての既存のルールの優先順位で、ワークシートを 1 つずつ増加する</para>。
-          <para><b>注</b>: 条件付き書式ルールの優先度レベルは、ワークシート レベルで適用されます</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9f730-149">
-              <para>When you have multiple conditional formatting rules  in a worksheet, if the rule was not previously set to priority "1", this method will cause the priority of all other existing rules on the worksheet to be increased by one.</para>
-              <para>
-                <b>Note</b>: Priority levels for conditional formatting rules are applied on a worksheet-level basis.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="aa462-171">ワークシート内に複数の条件付き書式ルールがあり、指定したルールがもともと優先度 "1" に設定されていなかった場合、このメソッドを使用すると、優先度にこのルールより小さい値が設定されていたルールは、優先順位が 1 つ下がります。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-171">When you have multiple conditional formatting rules  in a worksheet, if the rule was not previously set to priority "1", this method will cause the priority of all other existing rules on the worksheet to be increased by one.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="aa462-172">
+              <b>注</b>: 条件付き書式ルールの優先度レベルは、ワークシート レベルで適用されます。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-172">
+                <b>Note</b>: Priority levels for conditional formatting rules are applied on a worksheet-level basis.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -986,24 +1079,27 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="9f730-150">条件付き書式ルールの順位を設定し、ワークシート上の他のすべてのルールの後に評価されるようにします。</span>
+          <span data-ttu-id="aa462-173">条件付き書式ルールの順位を設定し、ワークシート上の他のすべてのルールの後に評価されるようにします。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-150">Sets the evaluation order for this conditional formatting rule so it is evaluated after all other rules on the worksheet.</span>
+            <span data-stu-id="aa462-173">Sets the evaluation order for this conditional formatting rule so it is evaluated after all other rules on the worksheet.</span>
           </span>
         </summary>
         <remarks>
-          <span data-ttu-id="9f730-151">
-            <para>の優先度の実際の値は、ワークシート上の条件付き書式ルールの合計数と同じになります。ワークシート内に複数の条件付き書式ルールがある場合このメソッドは、優先度の値を 1 つずつ増やすには、このルールよりも大きい必要があった規則の優先順位</para>。
-          <para><b>注</b>: 条件付き書式ルールの優先度レベルは、ワークシート レベルで適用されます</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9f730-151">
-              <para>The actual vaule of the priority will be equal to the total number of conditional formatting rules on the worksheet. When you have multiple conditional formatting rules  in a worksheet, this method will cause the priority of rules that had a priority value greater than this rule to be increased by one.</para>
-              <para>
-                <b>Note</b>: Priority levels for conditional formatting rules are applied on a worksheet-level basis.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="aa462-p117">このメソッドで設定される実際の優先度の値は、ワークシート上の条件付き書式ルールの数と一致します。ワークシート内に複数の条件付き書式ルールがある場合、このメソッドを使用すると、優先度にこのルールより大きい値が設定されていたルールは、優先順位が 1 つ上がります。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-p117">The actual vaule of the priority will be equal to the total number of conditional formatting rules on the worksheet. When you have multiple conditional formatting rules  in a worksheet, this method will cause the priority of rules that had a priority value greater than this rule to be increased by one.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="aa462-176">
+              <b>注</b>: 条件付き書式ルールの優先度レベルは、ワークシート レベルで適用されます。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-176">
+                <b>Note</b>: Priority levels for conditional formatting rules are applied on a worksheet-level basis.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1034,31 +1130,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="9f730-152">返すまたは、現在のルールが<b>True</b>と評価された場合にセルに追加の書式設定ルールを評価するかどうかを決定する<b>ブール</b>値を設定します。</span>
+          <span data-ttu-id="aa462-177">返すまたは、現在のルールが<b>True</b>と評価された場合にセルに追加の書式設定ルールを評価するかどうかを決定する<b>ブール</b>値を設定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-152">Returns or sets a <b>Boolean</b> value that determines if additional formatting rules on the cell should be evaluated if the current rule evaluates to <b>True</b>.</span>
+            <span data-stu-id="aa462-177">Returns or sets a <b>Boolean</b> value that determines if additional formatting rules on the cell should be evaluated if the current rule evaluates to <b>True</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="9f730-153">
+          <span data-ttu-id="aa462-178">
             <b>ブール型 (Boolean)</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-153">
+            <span data-stu-id="aa462-178">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="9f730-154">
-            <para>の下位互換性をサポートするためにこのプロパティの既定値は<b>True</b>、書式の反対側の動作ルールのユーザー インターフェイスで作成します</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9f730-154">
-              <para>To support backward compatibility, the default value for this property is <b>True</b>, which is the opposite behavior of a formatting rule created in the user interface.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="aa462-179">下位互換性をサポートするためにこのプロパティの既定値は<b>True</b>、書式の反対の動作をユーザー インターフェイスで作成されたルールです。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-179">To support backward compatibility, the default value for this property is <b>True</b>, which is the opposite behavior of a formatting rule created in the user interface.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1089,31 +1183,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="9f730-155">条件付き書式ルールで使用するテキストを指定する<b>文字列</b>値を設定または返します。</span>
+          <span data-ttu-id="aa462-180">条件付き書式ルールで使用するテキストを指定する<b>文字列</b>値を設定または返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-155">Returns or sets a <b>String</b> value specifying the text used by the conditional formatting rule.</span>
+            <span data-stu-id="aa462-180">Returns or sets a <b>String</b> value specifying the text used by the conditional formatting rule.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="9f730-156">
+          <span data-ttu-id="aa462-181">
             <b>文字列型 (String)</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-156">
+            <span data-stu-id="aa462-181">
               <b>String</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="9f730-157">
-            <para>このプロパティは、<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Type" />にプロパティが設定されていない<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlTextString" />です</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9f730-157">
-              <para>This property is ignored if the <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Type" /> property is not set to <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlTextString" />.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="aa462-182">このプロパティは、<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Type" />にプロパティが設定されていない<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlTextString" />。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-182">This property is ignored if the <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Type" /> property is not set to <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlTextString" />.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -1144,9 +1236,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="9f730-158">値を取得または設定の定数のいずれか、 <see cref="T:Microsoft.Office.Interop.Excel.XlContainsOperator" /> 、条件付き書式ルールによって実行されるテキスト検索を指定する列挙です。</span>
+          <span data-ttu-id="aa462-183">値を取得または設定の定数のいずれか、 <see cref="T:Microsoft.Office.Interop.Excel.XlContainsOperator" /> 、条件付き書式ルールによって実行されるテキスト検索を指定する列挙です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-158">Returns or sets one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlContainsOperator" /> enumeration, specifying the text search performed by the conditional formatting rule.</span>
+            <span data-stu-id="aa462-183">Returns or sets one of the constants of the <see cref="T:Microsoft.Office.Interop.Excel.XlContainsOperator" /> enumeration, specifying the text search performed by the conditional formatting rule.</span>
           </span>
         </summary>
         <value>
@@ -1179,35 +1271,40 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="9f730-159">オブジェクトの種類を取得します。</span>
+          <span data-ttu-id="aa462-184">オブジェクトの種類を取得します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="9f730-159">Returns the object type.</span>
+            <span data-stu-id="aa462-184">Returns the object type.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="9f730-160">
-            <para>オブジェクトの種類には、次のいずれかを指定できます<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />定数:</para>
-            <para>
-              <b>xlCellValue</b>
-            </para>
-            <para>
-              <b>xlExpression</b>
-            </para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9f730-160">
-              <para>The object type can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> constants:</para>
-              <para>
-                <b>xlCellValue</b>
-              </para>
-              <para>
-                <b>xlExpression</b>
-              </para>
-              <para></para>
+          <para>
+            <span data-ttu-id="aa462-185">オブジェクトの種類には、次のいずれかを指定できます<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />定数。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-185">The object type can be one of the following <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> constants:</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="aa462-186">
+              <b>xlCellValue</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-186">
+                <b>xlCellValue</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="aa462-187">
+              <b>xlExpression</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="aa462-187">
+                <b>xlExpression</b>
+              </span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

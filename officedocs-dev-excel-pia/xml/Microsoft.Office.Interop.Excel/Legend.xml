@@ -1,10 +1,10 @@
 <Type Name="Legend" FullName="Microsoft.Office.Interop.Excel.Legend">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a1be48c9d0d19cc48ee0a2813dac8b8828be4fbf" />
+    <Meta Name="ms.openlocfilehash" Value="67108bf0496a38e9f989b18082d38d2c41e4a563" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587620" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Legend" />
@@ -30,25 +30,40 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="698ed-101">グラフの凡例を表します。</span>
+      <span data-ttu-id="3a741-101">グラフの凡例を表します。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="698ed-101">Represents the legend in a chart.</span>
+        <span data-stu-id="3a741-101">Represents the legend in a chart.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="698ed-102">
-        <para>各グラフには、凡例は 1 つのみを持つことができます。<b>Legend</b>オブジェクトには、1 つまたは複数が含まれています<see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" />オブジェクトです。各<see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" />オブジェクトが含まれています、<see cref="T:Microsoft.Office.Interop.Excel.LegendKey" />オブジェクトです</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Chart.Legend" /><b>Legend</b>オブジェクトを返すプロパティです</para>。
-      <para>グラフの凡例が表示されていない限り、<see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" />プロパティが<b>True</b>です。このプロパティが<b>False</b>の場合は、 <b>Legend</b>オブジェクトのプロパティとメソッドは失敗します</para>。
-      <para></para></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="698ed-102">
-          <para>Each chart can have only one legend. The <b>Legend</b> object contains one or more <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> objects; each <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> object contains a <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> object.</para>
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Excel._Chart.Legend" /> property to return the <b>Legend</b> object.</para>
-          <para>The chart legend isn’t visible unless the <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" /> property is <b>True</b>. If this property is <b>False</b>, properties and methods of the <b>Legend</b> object will fail.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="3a741-102">各グラフに凡例は 1 つだけです。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="3a741-102">Each chart can have only one legend.</span>
         </span>
-      </span>
+        <span data-ttu-id="3a741-103">
+          <b>Legend</b>オブジェクトには、1 つまたは複数が含まれています<see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" />オブジェクトです。各<see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" />オブジェクトが含まれています、<see cref="T:Microsoft.Office.Interop.Excel.LegendKey" />オブジェクトです。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="3a741-103">The <b>Legend</b> object contains one or more <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> objects; each <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> object contains a <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> object.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="3a741-104">使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Chart.Legend" /><b>Legend</b>オブジェクトを返すプロパティです。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="3a741-104">Use the <see cref="P:Microsoft.Office.Interop.Excel._Chart.Legend" /> property to return the <b>Legend</b> object.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="3a741-105">グラフの凡例が表示されていない限り、<see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" />プロパティが<b>True</b>です。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="3a741-105">The chart legend isn’t visible unless the <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" /> property is <b>True</b>.</span>
+        </span>
+        <span data-ttu-id="3a741-106">このプロパティが <b>False</b> の場合は、 <b>Legend</b> オブジェクトのプロパティとメソッドは失敗します。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="3a741-106">If this property is <b>False</b>, properties and methods of the <b>Legend</b> object will fail.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -76,9 +91,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="698ed-103">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</span>
+          <span data-ttu-id="3a741-107">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="3a741-107">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -118,15 +133,15 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="698ed-104">
+          <span data-ttu-id="3a741-108">
             <b>True</b>場合は、オブジェクト内のテキストは、オブジェクトのサイズを変更したときにフォント サイズを変更します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-104">
+            <span data-stu-id="3a741-108">
               <b>True</b> if the text in the object changes font size when the object size changes.</span>
           </span>
-          <span data-ttu-id="698ed-105">既定値は <b>True</b> です。</span>
+          <span data-ttu-id="3a741-109">既定値は <b>True</b> です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-105">The default value is <b>True</b>.</span>
+            <span data-stu-id="3a741-109">The default value is <b>True</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -160,9 +175,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="698ed-106">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 、オブジェクトの枠線を表すオブジェクト。</span>
+          <span data-ttu-id="3a741-110">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 、オブジェクトの枠線を表すオブジェクト。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-106">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Border" /> object that represents the border of the object.</span>
+            <span data-stu-id="3a741-110">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Border" /> object that represents the border of the object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -191,9 +206,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="698ed-107">オブジェクト全体をクリアします。</span>
+          <span data-ttu-id="3a741-111">オブジェクト全体をクリアします。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-107">Clears the entire object.</span>
+            <span data-stu-id="3a741-111">Clears the entire object.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -224,25 +239,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="698ed-108">現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</span>
+          <span data-ttu-id="3a741-112">現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-108">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="3a741-112">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="698ed-109">
-            <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
-            <para>
-              <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="698ed-109">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="3a741-113">オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="3a741-113">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="3a741-114">
+              <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="3a741-114">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="3a741-115">たとえば、Microsoft Excel は、クリエーター コードを持っています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="3a741-115">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -268,9 +289,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="698ed-110">オブジェクトを削除します。</span>
+          <span data-ttu-id="3a741-116">オブジェクトを削除します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-110">Deletes the object.</span>
+            <span data-stu-id="3a741-116">Deletes the object.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -304,9 +325,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="698ed-111">返します、<see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" />塗りつぶしの書式指定されたグラフの凡例のプロパティを格納しているオブジェクト。</span>
+          <span data-ttu-id="3a741-117">返します、<see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" />塗りつぶしの書式指定されたグラフの凡例のプロパティを格納しているオブジェクト。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-111">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> object that contains fill formatting properties for the specified chart legend.</span>
+            <span data-stu-id="3a741-117">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> object that contains fill formatting properties for the specified chart legend.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -340,9 +361,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="698ed-112">返します、<see cref="T:Microsoft.Office.Interop.Excel.Font" />を指定したオブジェクトのフォントを表すオブジェクト。</span>
+          <span data-ttu-id="3a741-118">返します、<see cref="T:Microsoft.Office.Interop.Excel.Font" />を指定したオブジェクトのフォントを表すオブジェクト。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-112">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object that represents the font of the specified object.</span>
+            <span data-stu-id="3a741-118">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object that represents the font of the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -373,13 +394,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="698ed-113">返します、<see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />オブジェクトです。</span>
+          <span data-ttu-id="3a741-119">返します、<see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />オブジェクトです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-113">Returns the <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> object.</span>
+            <span data-stu-id="3a741-119">Returns the <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> object.</span>
           </span>
-          <span data-ttu-id="698ed-114">読み取り専用。</span>
+          <span data-ttu-id="3a741-120">読み取り専用。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-114">Read-only.</span>
+            <span data-stu-id="3a741-120">Read-only.</span>
           </span>
         </summary>
         <value>
@@ -415,9 +436,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="698ed-115">オブジェクトのポイント単位の高さです。</span>
+          <span data-ttu-id="3a741-121">オブジェクトのポイント単位の高さです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-115">The height, in points, of the object.</span>
+            <span data-stu-id="3a741-121">The height, in points, of the object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -451,33 +472,39 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="698ed-p103">
+          <span data-ttu-id="3a741-p106">
             <b>True</b> に設定すると、グラフ レイアウトの決定時に凡例がグラフ レイアウト領域を占領します。既定値は <b>True</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-p103">
+            <span data-stu-id="3a741-p106">
               <b>True</b> if a legend will occupy the chart layout space when a chart layout is being determined. The default value is <b>True</b>. Read/write <b>Boolean</b>.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="698ed-119">
+          <span data-ttu-id="3a741-125">
             <b>ブール型 (Boolean)</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-119">
+            <span data-stu-id="3a741-125">
               <b>Boolean</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="698ed-120">
-            <para>このプロパティは、かどうか、グラフ自動レイアウト モードでは、影響しません。 ユーザーは、グラフの上コマンドを使用してタイトルを追加する場合、グラフはサイズを変更するより小さい、Microsoft Office Excel 2003 のように。 ユーザー タイトルを削除するかいずれかのタイトル オーバーレイ オプションを選択し場合、グラフはグラフのタイトルが設定されていない場合と同様、大きいサイズを変更します.</para> 。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="698ed-120">
-              <para>This property does not affect whether a chart is in autolayout mode or not.  If the user adds a title using the Above Chart  command, the chart will resize smaller, as in Microsoft Office Excel 2003.  If the user then removes the title or selects one of the overlay title options, the chart will resize larger, as if the title were not on the chart.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="3a741-126">このプロパティは、グラフが自動レイアウト モードであるかどうかに影響しません。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="3a741-126">This property does not affect whether a chart is in autolayout mode or not.</span>
             </span>
-          </span>
+            <span data-ttu-id="3a741-127">ユーザーは、グラフの上コマンドを使用してタイトルを追加する場合、グラフはサイズを変更するより小さい、Microsoft Office Excel 2003 のように。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="3a741-127">If the user adds a title using the Above Chart  command, the chart will resize smaller, as in Microsoft Office Excel 2003.</span>
+            </span>
+            <span data-ttu-id="3a741-128">その後、ユーザーがタイトルを削除するか、いずれかのタイトル オーバーレイ オプションを選択した場合、グラフにタイトルが設定されていなかったときの状態まで、グラフのサイズは大きくなります。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="3a741-128">If the user then removes the title or selects one of the overlay title options, the chart will resize larger, as if the title were not on the chart.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -508,9 +535,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="698ed-121">指定したオブジェクトの内部を表す Interior オブジェクトを返します。</span>
+          <span data-ttu-id="3a741-129">指定したオブジェクトの内部を表す Interior オブジェクトを返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-121">Returns an Interior object that represents the interior of the specified object.</span>
+            <span data-stu-id="3a741-129">Returns an Interior object that represents the interior of the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -544,9 +571,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="698ed-122">グラフ エリアの左端からのオブジェクトの左端からポイント単位での距離です。</span>
+          <span data-ttu-id="3a741-130">グラフ エリアの左端からのオブジェクトの左端からポイント単位での距離です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-122">The distance, in points, from the left edge of the object to the left edge of the chart area.</span>
+            <span data-stu-id="3a741-130">The distance, in points, from the left edge of the object to the left edge of the chart area.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -576,19 +603,19 @@
       </Parameters>
       <Docs>
         <param name="Index">
-          <span data-ttu-id="698ed-123">省略可能な<b>オブジェクト</b>です。</span>
+          <span data-ttu-id="3a741-131">省略可能な<b>オブジェクト</b>です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-123">Optional <b>Object</b>.</span>
+            <span data-stu-id="3a741-131">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="698ed-124">凡例文字列のインデックス番号を指定します。</span>
+          <span data-ttu-id="3a741-132">凡例文字列のインデックス番号を指定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-124">The number of the legend entry.</span>
+            <span data-stu-id="3a741-132">The number of the legend entry.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="698ed-125">1 つの凡例エントリのいずれかを表すオブジェクトを返します (、<see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" />オブジェクト) または凡例文字列のコレクション (、<see cref="T:Microsoft.Office.Interop.Excel.LegendEntries" />オブジェクト) の凡例です。</span>
+          <span data-ttu-id="3a741-133">1 つの凡例エントリのいずれかを表すオブジェクトを返します (、<see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" />オブジェクト) または凡例文字列のコレクション (、<see cref="T:Microsoft.Office.Interop.Excel.LegendEntries" />オブジェクト) の凡例です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-125">Returns an object that represents either a single legend entry (a <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> object) or a collection of legend entries (a <see cref="T:Microsoft.Office.Interop.Excel.LegendEntries" /> object) for the legend.</span>
+            <span data-stu-id="3a741-133">Returns an object that represents either a single legend entry (a <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> object) or a collection of legend entries (a <see cref="T:Microsoft.Office.Interop.Excel.LegendEntries" /> object) for the legend.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -619,90 +646,140 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="698ed-126">オブジェクトの名前を返します。</span>
+          <span data-ttu-id="3a741-134">オブジェクトの名前を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-126">Returns the name of the object.</span>
+            <span data-stu-id="3a741-134">Returns the name of the object.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="698ed-127">
-            <para>次の表は、 <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a>を与え、関連するプロパティ、 <b>Name</b>プロパティの値の例を示します</para>
-            <list type="table">
-              <item>
-                <term>
-                  <b>キャプション</b>
-                </term>
-                <description>パリ</description>
-                <description>パリ</description>
-              </item>
-              <item>
-                <term>
-                  <b>名</b>
-                </term>
-                <description>[ヨーロッパ]. [東京都] です。[東京](読み取り専用)</description>
-                <description>パリ</description>
-              </item>
-              <item>
-                <term>
-                  <b>SourceName</b>
-                </term>
-                <description>[ヨーロッパ]. [東京都] です。[東京](読み取り専用)</description>
-                <description>(SQL プロパティの値が読み取り専用と同じ)</description>
-              </item>
-              <item>
-                <term>
-                  <b>値</b>
-                </term>
-                <description>[ヨーロッパ]. [東京都] です。[東京](読み取り専用)</description>
-                <description>パリ</description>
-              </item>
-            </list>
-            <para>へのインデックスを指定する場合、<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />コレクションでは、次の表に示すように構文を使用することができます</para>。
-          <list type="table"><item><term>式です。返すプロパティ (「[ヨーロッパ]。 [東京都] です。[東京]")</term><description>式です。PivotItems("Paris")</description></item></list><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="698ed-127">
-              <para>The following table shows example values of the <b>Name</b> property and related properties given an <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a></para>
-              <list type="table">
-                <item>
-                  <term>
-                    <b>Caption</b>
-                  </term>
-                  <description>Paris</description>
-                  <description>Paris</description>
-                </item>
-                <item>
-                  <term>
-                    <b>Name</b>
-                  </term>
-                  <description>[Europe].[France].[Paris] (read-only)</description>
-                  <description>Paris</description>
-                </item>
-                <item>
-                  <term>
-                    <b>SourceName</b>
-                  </term>
-                  <description>[Europe].[France].[Paris] (read-only)</description>
-                  <description>(Same as SQL property value, read-only)</description>
-                </item>
-                <item>
-                  <term>
-                    <b>Value</b>
-                  </term>
-                  <description>[Europe].[France].[Paris] (read-only)</description>
-                  <description>Paris</description>
-                </item>
-              </list>
-              <para>When specifying an index into the <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, you can use the syntax shown in the following table.</para>
-              <list type="table">
-                <item>
-                  <term>expression.PivotItems("[Europe].[France].[Paris]")</term>
-                  <description>expression.PivotItems("Paris")</description>
-                </item>
-              </list>
-              <para></para>
+          <para>
+            <span data-ttu-id="3a741-135">次の表は、 <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a>を与え、関連するプロパティ、 <b>Name</b>プロパティの値の例を示しています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="3a741-135">The following table shows example values of the <b>Name</b> property and related properties given an <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a></span>
             </span>
-          </span>
+          </para>
+          <list type="table">
+            <item>
+              <term>
+                <span data-ttu-id="3a741-136">
+                  <b>キャプション</b>
+                </span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="3a741-136">
+                    <b>Caption</b>
+                  </span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="3a741-137">東京</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="3a741-137">Paris</span>
+                </span>
+              </description>
+              <description>
+                <span data-ttu-id="3a741-138">東京</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="3a741-138">Paris</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <term>
+                <span data-ttu-id="3a741-139">
+                  <b>名</b>
+                </span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="3a741-139">
+                    <b>Name</b>
+                  </span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="3a741-140">[都道府県].[東京都].[東京] (読み取り専用)</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="3a741-140">[Europe].[France].[Paris] (read-only)</span>
+                </span>
+              </description>
+              <description>
+                <span data-ttu-id="3a741-141">東京</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="3a741-141">Paris</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <term>
+                <span data-ttu-id="3a741-142">
+                  <b>SourceName</b>
+                </span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="3a741-142">
+                    <b>SourceName</b>
+                  </span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="3a741-143">[都道府県].[東京都].[東京] (読み取り専用)</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="3a741-143">[Europe].[France].[Paris] (read-only)</span>
+                </span>
+              </description>
+              <description>
+                <span data-ttu-id="3a741-144">(SQL プロパティと同じ値、読み取り専用)</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="3a741-144">(Same as SQL property value, read-only)</span>
+                </span>
+              </description>
+            </item>
+            <item>
+              <term>
+                <span data-ttu-id="3a741-145">
+                  <b>値</b>
+                </span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="3a741-145">
+                    <b>Value</b>
+                  </span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="3a741-146">[都道府県].[東京都].[東京] (読み取り専用)</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="3a741-146">[Europe].[France].[Paris] (read-only)</span>
+                </span>
+              </description>
+              <description>
+                <span data-ttu-id="3a741-147">東京</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="3a741-147">Paris</span>
+                </span>
+              </description>
+            </item>
+          </list>
+          <para>
+            <span data-ttu-id="3a741-148">インデックスを指定する場合、<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />コレクションでは、次の表に示すように構文を使用することができます。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="3a741-148">When specifying an index into the <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, you can use the syntax shown in the following table.</span>
+            </span>
+          </para>
+          <list type="table">
+            <item>
+              <term>
+                <span data-ttu-id="3a741-149">式です。返すプロパティ (「[ヨーロッパ]。 [東京都] です。[東京]")</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="3a741-149">expression.PivotItems("[Europe].[France].[Paris]")</span>
+                </span>
+              </term>
+              <description>
+                <span data-ttu-id="3a741-150">式です。PivotItems("Paris")</span>
+                <span class="sxs-lookup">
+                  <span data-stu-id="3a741-150">expression.PivotItems("Paris")</span>
+                </span>
+              </description>
+            </item>
+          </list>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -730,9 +807,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="698ed-128">指定されたオブジェクトの親オブジェクトを返します。</span>
+          <span data-ttu-id="3a741-151">指定されたオブジェクトの親オブジェクトを返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-128">Returns the parent object for the specified object.</span>
+            <span data-stu-id="3a741-151">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -766,56 +843,73 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="698ed-129">グラフの凡例の位置を設定または返します。</span>
+          <span data-ttu-id="3a741-152">グラフの凡例の位置を設定または返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-129">Returns or sets the position of the legend on the chart.</span>
+            <span data-stu-id="3a741-152">Returns or sets the position of the legend on the chart.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="698ed-130">
-            <para>
+          <para>
+            <span data-ttu-id="3a741-153">
               <see cref="T:Microsoft.Office.Interop.Excel.XlLegendPosition" />
-              <b>XlLegendPosition</b>定数のいずれか:</para>
-            <para>
-              <b>xlLegendPositionCorner</b>
-            </para>
-            <para>
-              <b>xlLegendPositionRight</b>
-            </para>
-            <para>
-              <b>xlLegendPositionTop</b>
-            </para>
-            <para>
-              <b>xlLegendPositionBottom</b>
-            </para>
-            <para>
-              <b>xlLegendPositionLeft</b>
-            </para>
-            <para></para>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="698ed-130">
-              <para>
-                <see cref="T:Microsoft.Office.Interop.Excel.XlLegendPosition" /> can be one of these <b>XlLegendPosition</b> constants:</para>
-              <para>
-                <b>xlLegendPositionCorner</b>
-              </para>
-              <para>
-                <b>xlLegendPositionRight</b>
-              </para>
-              <para>
-                <b>xlLegendPositionTop</b>
-              </para>
-              <para>
-                <b>xlLegendPositionBottom</b>
-              </para>
-              <para>
-                <b>xlLegendPositionLeft</b>
-              </para>
-              <para></para>
+              <b>XlLegendPosition</b>定数のいずれかできます。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="3a741-153">
+                <see cref="T:Microsoft.Office.Interop.Excel.XlLegendPosition" /> can be one of these <b>XlLegendPosition</b> constants:</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="3a741-154">
+              <b>xlLegendPositionCorner</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="3a741-154">
+                <b>xlLegendPositionCorner</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="3a741-155">
+              <b>xlLegendPositionRight</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="3a741-155">
+                <b>xlLegendPositionRight</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="3a741-156">
+              <b>xlLegendPositionTop</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="3a741-156">
+                <b>xlLegendPositionTop</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="3a741-157">
+              <b>xlLegendPositionBottom</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="3a741-157">
+                <b>xlLegendPositionBottom</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="3a741-158">
+              <b>xlLegendPositionLeft</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="3a741-158">
+                <b>xlLegendPositionLeft</b>
+              </span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -841,9 +935,9 @@
       <Parameters />
       <Docs>
         <summary>
-          <span data-ttu-id="698ed-131">オブジェクトを選択します。</span>
+          <span data-ttu-id="3a741-159">オブジェクトを選択します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-131">Selects the object.</span>
+            <span data-stu-id="3a741-159">Selects the object.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -877,10 +971,10 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="698ed-132">
+          <span data-ttu-id="3a741-160">
             <b>True</b>フォントが影付きフォントの場合、またはオブジェクトに影がある場合。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-132">
+            <span data-stu-id="3a741-160">
               <b>True</b> if the font is a shadow font or if the object has a shadow.</span>
           </span>
         </summary>
@@ -915,9 +1009,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="698ed-133">グラフ エリアの最上部にオブジェクトの上端からポイント単位での距離です。</span>
+          <span data-ttu-id="3a741-161">グラフ エリアの最上部にオブジェクトの上端からポイント単位での距離です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-133">The distance, in points, from the top edge of the object to the top of the chart area.</span>
+            <span data-stu-id="3a741-161">The distance, in points, from the top edge of the object to the top of the chart area.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -951,9 +1045,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="698ed-134">オブジェクトのポイント単位の高さです。</span>
+          <span data-ttu-id="3a741-162">オブジェクトのポイント単位の高さです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="698ed-134">The width, in points, of the object.</span>
+            <span data-stu-id="3a741-162">The width, in points, of the object.</span>
           </span>
         </summary>
         <value>To be added.</value>

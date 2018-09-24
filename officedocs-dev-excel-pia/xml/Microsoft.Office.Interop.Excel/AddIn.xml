@@ -1,10 +1,10 @@
 <Type Name="AddIn" FullName="Microsoft.Office.Interop.Excel.AddIn">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7b2ad4081ea4bdb99cc06e468b6712922b5b097b" />
+    <Meta Name="ms.openlocfilehash" Value="ad740aac6b501b523017ffe9ffd52b91e10dd267" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584148" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AddIn" />
@@ -30,33 +30,97 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="45bdf-101">組み込まれているかどうかにかかわらず単一のアドインを表します。</span>
+      <span data-ttu-id="82ef8-101">組み込まれているかどうかにかかわらず単一のアドインを表します。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="45bdf-101">Represents a single add-in, either installed or not installed.</span>
+        <span data-stu-id="82ef8-101">Represents a single add-in, either installed or not installed.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="45bdf-102">
-        <para>
-          <b>AddIn</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.AddIns" />コレクションです。<b>AddIns</b>コレクションには、インストールされているかどうかに関係なく、Microsoft Excel に利用可能なすべてのアドインの一覧が含まれています。このリストは、[アドイン] ダイアログ ボックス ([ツール] メニュー) に表示されるアドインの一覧に対応しています</para>。
-      <para>使用<b>アドイン</b>(<paramref name="index" />)、<paramref name="index" />は、アドイン タイトルまたはインデックス番号を 1 つの<b>AddIn</b>オブジェクトを取得する</para>。
-      <para>間違わないように、追加のタイトルは、[アドイン] ダイアログ ボックスのアドイン名は、アドインのファイル名に表示されます。まったく同じように [アドイン] ダイアログ ボックスで、スペルがいますが、大文字と小文字が一致しなくてもかまいません、アドインのタイトルを入力する必要があります</para>。
-      <para>インデックス番号は、[アドイン] ダイアログ ボックスでアドインの使用可能なボックス内のアドインの位置を表します</para>。
-      <para>、<see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" />メソッドは使用可能なアドインの一覧にアドインを追加しますが、アドインをインストールしない、<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" />を<b>True</b>にアドインをインストールするアドインのプロパティです。使用できるアドインの一覧にアドインが表示されないをインストールするには、最初に<b>Add</b>メソッドを使用し、 <b>Installed</b>プロパティを設定し、必要があります。これを行う 1 つのステップで</para><para>を使用して<b>ブック</b>(<paramref name="index" />)、 <paramref name="index" /> 、アドインのファイル名 (タイトルではなく) 読み込まれているアドインに対応するブックへの参照を取得するには。読み込まれているアドインは、通常に表示されるため、ファイル名を使用する必要があります、<see cref="T:Microsoft.Office.Interop.Excel.Workbooks" />コレクションです</para>。
-      <para>の場合は、<b>インストールされている</b>プロパティを返します<b>True</b>、ですが、アドイン内の関数への呼び出しは失敗するが、アドインが実際に読み込むことができません。これ<b>Addin</b>オブジェクトの存在を表しているためと、アドインの状態がインストールされているが、アドイン ブックの実際の内容を表していません。インストールされているアドインが読み込まれることは、アドイン ブックを開く必要があります</para>。
-      <para></para></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="45bdf-102">
-          <para>The <b>AddIn</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.AddIns" /> collection. The <b>AddIns</b> collection contains a list of all the add-ins available to Microsoft Excel, regardless of whether they’re installed. This list corresponds to the list of add-ins displayed in the Add-Ins dialog box (Tools menu).</para>
-          <para>Use <b>AddIns</b>(<paramref name="index" />), where <paramref name="index" /> is the add-in title or index number, to return a single <b>AddIn</b> object.</para>
-          <para>Don’t confuse the add-in title, which appears in the Add-Ins dialog box, with the add-in name, which is the file name of the add-in. You must spell the add-in title exactly as it’s spelled in the Add-Ins dialog box, but the capitalization doesn’t have to match.</para>
-          <para>The index number represents the position of the add-in in the Add-ins available box in the Add-Ins dialog box.</para>
-          <para>The <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> method adds an add-in to the list of available add-ins but doesn’t install the add-in. Set the <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> property of the add-in to <b>True</b> to install the add-in. To install an add-in that doesn’t appear in the list of available add-ins, you must first use the <b>Add</b> method and then set the <b>Installed</b> property. This can be done in a single step</para>
-          <para>Use <b>Workbooks</b>(<paramref name="index" />) where <paramref name="index" /> is the add-in filename (not title) to return a reference to the workbook corresponding to a loaded add-in. You must use the file name because loaded add-ins don’t normally appear in the <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> collection.</para>
-          <para>If the <b>Installed</b> property returns <b>True</b>, but calls to functions in the add-in still fail, the add-in may not actually be loaded. This is because the <b>Addin</b> object represents the existence and installed state of the add-in but doesn't represent the actual contents of the add-in workbook. To guarantee that an installed add-in is loaded, you should open the add-in workbook.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="82ef8-102">
+          <b>AddIn</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.AddIns" />コレクションです。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="82ef8-102">The <b>AddIn</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.AddIns" /> collection.</span>
         </span>
-      </span>
+        <span data-ttu-id="82ef8-103">
+          <b>AddIns</b>コレクションには、インストールされているかどうかに関係なく、Microsoft Excel に利用可能なすべてのアドインの一覧が含まれています。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="82ef8-103">The <b>AddIns</b> collection contains a list of all the add-ins available to Microsoft Excel, regardless of whether they’re installed.</span>
+        </span>
+        <span data-ttu-id="82ef8-104">このリストは、[アドイン] ダイアログ ボックス ([ツール] メニュー) に表示されるアドインの一覧に対応しています。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="82ef8-104">This list corresponds to the list of add-ins displayed in the Add-Ins dialog box (Tools menu).</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="82ef8-105">
+          <b>アドイン</b>を使用して (<paramref name="index" />)、<paramref name="index" />は、アドイン タイトルまたはインデックス番号を 1 つの<b>AddIn</b>オブジェクトを取得します。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="82ef8-105">Use <b>AddIns</b>(<paramref name="index" />), where <paramref name="index" /> is the add-in title or index number, to return a single <b>AddIn</b> object.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="82ef8-106">[アドイン] ダイアログ ボックスのアドイン名は、アドインのファイル名で表示されるアドインのタイトルを混同しないでください。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="82ef8-106">Don’t confuse the add-in title, which appears in the Add-Ins dialog box, with the add-in name, which is the file name of the add-in.</span>
+        </span>
+        <span data-ttu-id="82ef8-107">まったく同じように [アドイン] ダイアログ ボックスで、スペルがいますが、大文字と小文字が一致しなくてもかまいません、アドインのタイトルを入力する必要があります。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="82ef8-107">You must spell the add-in title exactly as it’s spelled in the Add-Ins dialog box, but the capitalization doesn’t have to match.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="82ef8-108">インデックス番号は、[アドイン] ダイアログ ボックスでアドインの使用可能なボックス内のアドインの位置を表します。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="82ef8-108">The index number represents the position of the add-in in the Add-ins available box in the Add-Ins dialog box.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="82ef8-109">
+          <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" />メソッドは使用可能なアドインの一覧にアドインを追加しますが、アドインをインストールできません。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="82ef8-109">The <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> method adds an add-in to the list of available add-ins but doesn’t install the add-in.</span>
+        </span>
+        <span data-ttu-id="82ef8-110">設定、<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" />を<b>True</b>にアドインをインストールするアドインのプロパティです。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="82ef8-110">Set the <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> property of the add-in to <b>True</b> to install the add-in.</span>
+        </span>
+        <span data-ttu-id="82ef8-111">使用できるアドインの一覧にアドインが表示されないをインストールするには、最初に<b>Add</b>メソッドを使用し、 <b>Installed</b>プロパティを設定し、必要があります。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="82ef8-111">To install an add-in that doesn’t appear in the list of available add-ins, you must first use the <b>Add</b> method and then set the <b>Installed</b> property.</span>
+        </span>
+        <span data-ttu-id="82ef8-112">これを行う 1 つの手順で</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="82ef8-112">This can be done in a single step</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="82ef8-113">
+          <b>ブック</b>を使用して (<paramref name="index" />)、<paramref name="index" />は、アドインのファイル名 (タイトルではなく) に読み込まれているアドインに対応するブックへの参照を返します。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="82ef8-113">Use <b>Workbooks</b>(<paramref name="index" />) where <paramref name="index" /> is the add-in filename (not title) to return a reference to the workbook corresponding to a loaded add-in.</span>
+        </span>
+        <span data-ttu-id="82ef8-114">読み込まれているアドインは、通常に表示されるため、ファイル名を使用する必要があります、<see cref="T:Microsoft.Office.Interop.Excel.Workbooks" />コレクションです。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="82ef8-114">You must use the file name because loaded add-ins don’t normally appear in the <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> collection.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="82ef8-115">
+          <b>Installed</b>プロパティは<b>True</b>を返しますが、呼び出しを行っている場合は、アドイン内の関数は失敗するが、アドインが実際に読み込むことができません。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="82ef8-115">If the <b>Installed</b> property returns <b>True</b>, but calls to functions in the add-in still fail, the add-in may not actually be loaded.</span>
+        </span>
+        <span data-ttu-id="82ef8-116">これ<b>Addin</b>オブジェクトの存在を表しているためと、アドインの状態がインストールされているが、アドイン ブックの実際の内容を表していません。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="82ef8-116">This is because the <b>Addin</b> object represents the existence and installed state of the add-in but doesn't represent the actual contents of the add-in workbook.</span>
+        </span>
+        <span data-ttu-id="82ef8-117">確実にインストールされているアドインがロードされている、アドイン ブックを開く必要があります。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="82ef8-117">To guarantee that an installed add-in is loaded, you should open the add-in workbook.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -84,9 +148,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="45bdf-103">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</span>
+          <span data-ttu-id="82ef8-118">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="45bdf-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="82ef8-118">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -120,9 +184,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="45bdf-104">内部使用のため予約済みです。</span>
+          <span data-ttu-id="82ef8-119">内部使用のため予約済みです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="45bdf-104">Reserved for internal use.</span>
+            <span data-stu-id="82ef8-119">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -153,9 +217,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="45bdf-105">読み取り専用の一意の識別子または<b>文字列</b>として、オブジェクトの特定の CLSID を返します。</span>
+          <span data-ttu-id="82ef8-120">読み取り専用の一意の識別子または<b>文字列</b>として、オブジェクトの特定の CLSID を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="45bdf-105">Returns a read-only unique identifier, or CLSID, identifying an object, as a <b>String</b>.</span>
+            <span data-stu-id="82ef8-120">Returns a read-only unique identifier, or CLSID, identifying an object, as a <b>String</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -189,9 +253,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="45bdf-106">内部使用のため予約済みです。</span>
+          <span data-ttu-id="82ef8-121">内部使用のため予約済みです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="45bdf-106">Reserved for internal use.</span>
+            <span data-stu-id="82ef8-121">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -222,25 +286,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="45bdf-107">現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</span>
+          <span data-ttu-id="82ef8-122">現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="45bdf-107">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="82ef8-122">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="45bdf-108">
-            <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
-            <para>
-              <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="45bdf-108">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="82ef8-123">オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="82ef8-123">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="82ef8-124">
+              <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="82ef8-124">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="82ef8-125">たとえば、Microsoft Excel は、クリエーター コードを持っています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="82ef8-125">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -268,22 +338,20 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="45bdf-109">文字列として、ディスク上のパスを含む、オブジェクトの名前を返します。</span>
+          <span data-ttu-id="82ef8-126">文字列として、ディスク上のパスを含む、オブジェクトの名前を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="45bdf-109">Returns the name of the object, including its path on disk, as a string.</span>
+            <span data-stu-id="82ef8-126">Returns the name of the object, including its path on disk, as a string.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="45bdf-110">
-            <para>このプロパティは、 <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> 、現在のファイル システム区切り記号の後に、プロパティの後に、<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" />プロパティ</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="45bdf-110">
-              <para>This property is equivalent to the <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> property, followed by the current file system separator, followed by the <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> property.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="82ef8-127">このプロパティは、 <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> 、現在のファイル システム区切り記号の後に、プロパティの後に、<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" />プロパティ。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="82ef8-127">This property is equivalent to the <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Path" /> property, followed by the current file system separator, followed by the <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Name" /> property.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -314,24 +382,27 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="45bdf-111">
+          <span data-ttu-id="82ef8-128">
             <b>True</b>場合は、アドインがインストールされています。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="45bdf-111">
+            <span data-stu-id="82ef8-128">
               <b>True</b> if the add-in is installed.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="45bdf-112">
-            <para>アドインをインストールし、Auto_Add 関数を呼び出すこのプロパティを<b>True</b>に設定します。アドインを削除し、Auto_Remove 関数を呼び出してこのプロパティを<b>False</b>に設定します</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="45bdf-112">
-              <para>Setting this property to <b>True</b> installs the add-in and calls its Auto_Add functions. Setting this property to <b>False</b> removes the add-in and calls its Auto_Remove functions.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="82ef8-129">
+              <b>True</b>にこのプロパティを設定では、アドインをインストールし、Auto_Add 関数を呼び出します。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="82ef8-129">Setting this property to <b>True</b> installs the add-in and calls its Auto_Add functions.</span>
             </span>
-          </span>
+            <span data-ttu-id="82ef8-130">このプロパティを<b>False</b>に設定では、アドインを削除し、Auto_Remove 関数を呼び出します。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="82ef8-130">Setting this property to <b>False</b> removes the add-in and calls its Auto_Remove functions.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -359,31 +430,29 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="45bdf-113">アドインが現在開いているかどうかを取得します。</span>
+          <span data-ttu-id="82ef8-131">アドインが現在開いているかどうかを取得します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="45bdf-113">Gets whether the add-in is currently open.</span>
+            <span data-stu-id="82ef8-131">Gets whether the add-in is currently open.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="45bdf-114">
+          <span data-ttu-id="82ef8-132">
             <b>true の</b>場合、アドインが現在開いています。それ以外の場合、 <b>false を指定</b>します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="45bdf-114">
+            <span data-stu-id="82ef8-132">
               <b>true</b> if the add-in is currently open; otherwise, <b>false</b>.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="45bdf-115">
-            <para>
-              <b>ブール</b>読み取り専用</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="45bdf-115">
-              <para>
-                <b>boolean</b> Read-only.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="82ef8-133">
+              <b>ブール値</b>読み取り専用です。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="82ef8-133">
+                <b>boolean</b> Read-only.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -414,9 +483,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="45bdf-116">内部使用のため予約済みです。</span>
+          <span data-ttu-id="82ef8-134">内部使用のため予約済みです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="45bdf-116">Reserved for internal use.</span>
+            <span data-stu-id="82ef8-134">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -447,9 +516,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="45bdf-117">オブジェクトの名前を返します。</span>
+          <span data-ttu-id="82ef8-135">オブジェクトの名前を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="45bdf-117">Returns the name of the object.</span>
+            <span data-stu-id="82ef8-135">Returns the name of the object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -480,9 +549,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="45bdf-118">指定されたオブジェクトの親オブジェクトを返します。</span>
+          <span data-ttu-id="82ef8-136">指定されたオブジェクトの親オブジェクトを返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="45bdf-118">Returns the parent object for the specified object.</span>
+            <span data-stu-id="82ef8-136">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -513,9 +582,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="45bdf-119">アプリケーションの名前と最後の区切り記号を除く、アプリケーションの完全なパスを返します。</span>
+          <span data-ttu-id="82ef8-137">アプリケーションの名前と最後の区切り記号を除く、アプリケーションの完全なパスを返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="45bdf-119">Returns the complete path to the application, excluding the final separator and name of the application.</span>
+            <span data-stu-id="82ef8-137">Returns the complete path to the application, excluding the final separator and name of the application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -546,9 +615,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="45bdf-120">オブジェクトのプログラム id を返します。</span>
+          <span data-ttu-id="82ef8-138">オブジェクトのプログラム id を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="45bdf-120">Returns the programmatic identifiers for the object.</span>
+            <span data-stu-id="82ef8-138">Returns the programmatic identifiers for the object.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -582,9 +651,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="45bdf-121">内部使用のため予約済みです。</span>
+          <span data-ttu-id="82ef8-139">内部使用のため予約済みです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="45bdf-121">Reserved for internal use.</span>
+            <span data-stu-id="82ef8-139">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -618,9 +687,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="45bdf-122">内部使用のために予約されています。</span>
+          <span data-ttu-id="82ef8-140">内部使用のために予約されています。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="45bdf-122">Reserved for internal use.</span>
+            <span data-stu-id="82ef8-140">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>

@@ -1,10 +1,10 @@
 <Type Name="ModuleView" FullName="Microsoft.Office.Interop.Excel.ModuleView">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b3d32a67f2f1ef23ab53c418cc3f57f390d398a5" />
+    <Meta Name="ms.openlocfilehash" Value="19cb4ef15ded6d881e2d623f856debafb90eb693" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581418" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ModuleView" />
@@ -30,21 +30,23 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="d8ee6-101">既存を表す<see cref="T:Microsoft.Office.Interop.Excel.Module" />ブックのビューです。</span>
+      <span data-ttu-id="454d1-101">既存を表す<see cref="T:Microsoft.Office.Interop.Excel.Module" />ブックのビューです。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="d8ee6-101">Represents existing <see cref="T:Microsoft.Office.Interop.Excel.Module" />views in the workbook.</span>
+        <span data-stu-id="454d1-101">Represents existing <see cref="T:Microsoft.Office.Interop.Excel.Module" />views in the workbook.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="d8ee6-102">
-        <para>モジュールの領域には、グラフのプロット エリアを含むすべてが含まれています。ただし、プロット エリア、独自の塗りつぶしには、モジュールの領域を満たないため、プロット エリアを入力します</para>。
-      <para></para></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="d8ee6-102">
-          <para>The module area includes everything, including the plot area of a chart. However, the plot area has its own fill, so filling the plot area does not fill the module area.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="454d1-102">モジュールの領域には、グラフのプロット エリアを含むすべてが含まれています。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="454d1-102">The module area includes everything, including the plot area of a chart.</span>
         </span>
-      </span>
+        <span data-ttu-id="454d1-103">ただし、プロット エリアでは、プロット エリアの塗りつぶしは、モジュール領域を塗りつぶすしないように独自の塗りつぶしがあります。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="454d1-103">However, the plot area has its own fill, so filling the plot area does not fill the module area.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -72,37 +74,35 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d8ee6-103">このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Office Excel アプリケーションを表すオブジェクト。</span>
+          <span data-ttu-id="454d1-104">このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Office Excel アプリケーションを表すオブジェクト。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d8ee6-103">When used without an object qualifier, this property returns an  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object that represents the Microsoft Office Excel  application.</span>
+            <span data-stu-id="454d1-104">When used without an object qualifier, this property returns an  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> object that represents the Microsoft Office Excel  application.</span>
           </span>
-          <span data-ttu-id="d8ee6-104">オブジェクト修飾子を使用する場合、このプロパティは、指定したオブジェクトの作成元を表す <b>Application</b> オブジェクトを返します。</span>
+          <span data-ttu-id="454d1-105">オブジェクト修飾子を使用する場合、このプロパティは、指定したオブジェクトの作成元を表す <b>Application</b> オブジェクトを返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d8ee6-104">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object.</span>
+            <span data-stu-id="454d1-105">When used with an object qualifier, this property returns an <b>Application</b> object that represents the creator of the specified object.</span>
           </span>
-          <span data-ttu-id="d8ee6-105">読み取り専用です。</span>
+          <span data-ttu-id="454d1-106">読み取り専用です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d8ee6-105">Read-only.</span>
+            <span data-stu-id="454d1-106">Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="d8ee6-106">
+          <span data-ttu-id="454d1-107">
             <b>アプリケーション</b>(上記参照)</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d8ee6-106">
+            <span data-stu-id="454d1-107">
               <b>Application</b> (see above)</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="d8ee6-107">
-            <para>そのオブジェクトのアプリケーションを取得するのには OLE オートメーション オブジェクトに対してこのプロパティを使用することができます</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d8ee6-107">
-              <para>You can use this property with an OLE Automation object to return the application of that object.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="454d1-108">OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクト用のアプリケーションを取得できます。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="454d1-108">You can use this property with an OLE Automation object to return the application of that object.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -130,28 +130,35 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d8ee6-108">等価の 32 ビット整数を返します、<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />をこのオブジェクトの作成元アプリケーションを示す定数です。</span>
+          <span data-ttu-id="454d1-109">等価の 32 ビット整数を返します、<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />をこのオブジェクトの作成元アプリケーションを示す定数です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d8ee6-108">Returns a 32-bit integer equivalent to a <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> constant that indicates the application in which this object was created.</span>
+            <span data-stu-id="454d1-109">Returns a 32-bit integer equivalent to a <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> constant that indicates the application in which this object was created.</span>
           </span>
-          <span data-ttu-id="d8ee6-109">読み取り専用。</span>
+          <span data-ttu-id="454d1-110">読み取り専用。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d8ee6-109">Read-only.</span>
+            <span data-stu-id="454d1-110">Read-only.</span>
           </span>
         </summary>
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <span data-ttu-id="d8ee6-110">
-            <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。 <see cref="P:Microsoft.Office.Interop.Excel.ModuleView.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="d8ee6-110">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.  The <see cref="P:Microsoft.Office.Interop.Excel.ModuleView.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="454d1-111">オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="454d1-111">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+            <span data-ttu-id="454d1-112">
+              <see cref="P:Microsoft.Office.Interop.Excel.ModuleView.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="454d1-112">The <see cref="P:Microsoft.Office.Interop.Excel.ModuleView.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="454d1-113">たとえば、Microsoft Excel は、クリエーター コードを持っています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="454d1-113">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -179,17 +186,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d8ee6-p103">指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</span>
+          <span data-ttu-id="454d1-p105">指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d8ee6-p103">Returns the parent object for the specified object. Read-only.</span>
+            <span data-stu-id="454d1-p105">Returns the parent object for the specified object. Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="d8ee6-113">
+          <span data-ttu-id="454d1-116">
             <b>オブジェクト</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="d8ee6-113">
+            <span data-stu-id="454d1-116">
               <b>Object</b>
             </span>
           </span>
@@ -221,21 +228,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="d8ee6-114">指定されたシートの名前を返します<see cref="T:Microsoft.Office.Interop.Excel.ModuleView" />オブジェクトです。</span>
+          <span data-ttu-id="454d1-117">指定されたシートの名前を返します<see cref="T:Microsoft.Office.Interop.Excel.ModuleView" />オブジェクトです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d8ee6-114">Returns the sheet name for the specified <see cref="T:Microsoft.Office.Interop.Excel.ModuleView" /> object.</span>
+            <span data-stu-id="454d1-117">Returns the sheet name for the specified <see cref="T:Microsoft.Office.Interop.Excel.ModuleView" /> object.</span>
           </span>
-          <span data-ttu-id="d8ee6-115">読み取り専用。</span>
+          <span data-ttu-id="454d1-118">読み取り専用。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="d8ee6-115">Read-only.</span>
+            <span data-stu-id="454d1-118">Read-only.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="d8ee6-116">
+          <span data-ttu-id="454d1-119">
             <b>オブジェクト</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="d8ee6-116">
+            <span data-stu-id="454d1-119">
               <b>Object</b>
             </span>
           </span>

@@ -1,10 +1,10 @@
 <Type Name="HPageBreaks" FullName="Microsoft.Office.Interop.Excel.HPageBreaks">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="67108f19eb2bdfc41fd93ef30c28377a61a1667c" />
+    <Meta Name="ms.openlocfilehash" Value="0624b974810397b893a61eed52c425b38d116dad" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585730" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface HPageBreaks : System.Collections.IEnumerable" />
@@ -34,42 +34,67 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="1db86-101">印刷範囲での水平な改ページのコレクションです。</span>
+      <span data-ttu-id="5bcbd-101">印刷範囲での水平な改ページのコレクションです。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="1db86-101">The collection of horizontal page breaks within the print area.</span>
+        <span data-stu-id="5bcbd-101">The collection of horizontal page breaks within the print area.</span>
       </span>
-      <span data-ttu-id="1db86-102">水平の改ページは、<see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" />オブジェクトです。</span>
+      <span data-ttu-id="5bcbd-102">水平の改ページは、<see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" />オブジェクトです。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="1db86-102">Each horizontal page break is represented by an <see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" /> object.</span>
+        <span data-stu-id="5bcbd-102">Each horizontal page break is represented by an <see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" /> object.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="1db86-103">
-        <para>
-          <b>HPageBreaks</b>プロパティを使用して、<b>返すプロパティ</b>のコレクションを取得します。使用して、<see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" />水平な改ページを追加します</para>。
-      <para>印刷範囲を交差しない改ページを追加するかどうかは、新しく追加した<b>HPageBreak</b>オブジェクトは<b>HPageBreaks</b>コレクションの印刷範囲には表示されません</para>。
-      <para>と、<see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Application" />プロパティでは、<see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Count" />プロパティでは、<see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Creator" />プロパティでは、<see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Item(System.Int32)" />プロパティでは、<see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Parent" />プロパティ、または<see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" />メソッドを<b>HPageBreaks</b>プロパティと共に使用:</para><list type="bullet"><item><description>印刷範囲の場合、 <b>HPageBreaks</b>プロパティは印刷範囲内の改ページにのみ適用されます。</description></item> 。
-        <item><description>ユーザー定義印刷の領域の同じ範囲、 <b>HPageBreaks</b>プロパティはすべての改ページには</description></item></list>。
-      <para><b>ノート</b>は、海抜 1,026 水平な改ページ 1 枚に制限します</para>。
-      <para></para></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="1db86-103">
-          <para>Use the <b>HPageBreaks</b> property to return the <b>HPageBreaks</b> collection. Use the <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> method to add a horizontal page break.</para>
-          <para>If you add a page break that does not intersect the print area, then the newly-added <b>HPageBreak</b> object will not appear in the <b>HPageBreaks</b> collection for the print area.</para>
-          <para>When the <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Application" /> property, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Count" /> property, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Creator" /> property, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Item(System.Int32)" /> property, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Parent" /> property, or <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> method is used in conjunction with the <b>HPageBreaks</b> property:</para>
-          <list type="bullet">
-            <item>
-              <description>For an automatic print area, the <b>HPageBreaks</b> property applies only to the page breaks within the print area.</description>
-            </item>
-            <item>
-              <description>For a user-defined print area of the same range, the <b>HPageBreaks</b> property applies to all of the page breaks.</description>
-            </item>
-          </list>
-          <para>
-            <b>Note</b>  There is a limit of 1,026 horizontal page breaks per sheet.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="5bcbd-103">
+          <b>HPageBreaks</b>プロパティを使用して、<b>返すプロパティ</b>のコレクションを取得します。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5bcbd-103">Use the <b>HPageBreaks</b> property to return the <b>HPageBreaks</b> collection.</span>
         </span>
-      </span>
+        <span data-ttu-id="5bcbd-104">使用して、<see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" />水平な改ページを追加します。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5bcbd-104">Use the <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> method to add a horizontal page break.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="5bcbd-105">印刷範囲を交差しない改ページを追加すると、印刷範囲を<b>返すプロパティ</b>のコレクションに新しく追加した<b>HPageBreak</b>オブジェクトは表示されません。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5bcbd-105">If you add a page break that does not intersect the print area, then the newly-added <b>HPageBreak</b> object will not appear in the <b>HPageBreaks</b> collection for the print area.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="5bcbd-106">
+          <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Application" />プロパティでは、<see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Count" />プロパティ、<see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Creator" />プロパティ、<see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Item(System.Int32)" />プロパティ、<see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Parent" />プロパティ、または<see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" />メソッドを<b>HPageBreaks</b>プロパティと共に使用します。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5bcbd-106">When the <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Application" /> property, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Count" /> property, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Creator" /> property, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Item(System.Int32)" /> property, <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Parent" /> property, or <see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" /> method is used in conjunction with the <b>HPageBreaks</b> property:</span>
+        </span>
+      </para>
+      <list type="bullet">
+        <item>
+          <description>
+            <span data-ttu-id="5bcbd-107">自動的に決められた印刷範囲の場合、<b>HPageBreaks</b> プロパティは印刷範囲内の改ページにのみ使用できます。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5bcbd-107">For an automatic print area, the <b>HPageBreaks</b> property applies only to the page breaks within the print area.</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <description>
+            <span data-ttu-id="5bcbd-108">ユーザーが指定した印刷範囲の場合、<b>HPageBreaks</b> プロパティはすべての改ページに使用できます。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5bcbd-108">For a user-defined print area of the same range, the <b>HPageBreaks</b> property applies to all of the page breaks.</span>
+            </span>
+          </description>
+        </item>
+      </list>
+      <para>
+        <span data-ttu-id="5bcbd-109">
+          <b>メモ</b> 海抜 1,026 水平な改ページ 1 枚の制限があります。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="5bcbd-109">
+            <b>Note</b>  There is a limit of 1,026 horizontal page breaks per sheet.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -104,9 +129,9 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>
-          <span data-ttu-id="1db86-104">内部使用のため予約済みです。</span>
+          <span data-ttu-id="5bcbd-110">内部使用のため予約済みです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1db86-104">Reserved for internal use.</span>
+            <span data-stu-id="5bcbd-110">Reserved for internal use.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -137,28 +162,28 @@
       </Parameters>
       <Docs>
         <param name="Before">
-          <span data-ttu-id="1db86-105">
+          <span data-ttu-id="5bcbd-111">
             <b>オブジェクト</b>が必要です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1db86-105">Required <b>Object</b>.</span>
+            <span data-stu-id="5bcbd-111">Required <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="1db86-106">A<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトです。</span>
+          <span data-ttu-id="5bcbd-112">A<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1db86-106">A <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object.</span>
+            <span data-stu-id="5bcbd-112">A <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object.</span>
           </span>
-          <span data-ttu-id="1db86-107">新しい改ページを追加する先の上の範囲です。</span>
+          <span data-ttu-id="5bcbd-113">新しい改ページを追加する先の上の範囲です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1db86-107">The range above which the new page break will be added.</span>
+            <span data-stu-id="5bcbd-113">The range above which the new page break will be added.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="1db86-108">水平な改ページを追加します。</span>
+          <span data-ttu-id="5bcbd-114">水平な改ページを追加します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1db86-108">Adds a horizontal page break.</span>
+            <span data-stu-id="5bcbd-114">Adds a horizontal page break.</span>
           </span>
-          <span data-ttu-id="1db86-109">返します、<see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" />オブジェクトです。</span>
+          <span data-ttu-id="5bcbd-115">返します、<see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" />オブジェクトです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1db86-109">Returns an <see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" /> object.</span>
+            <span data-stu-id="5bcbd-115">Returns an <see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" /> object.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -189,9 +214,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1db86-110">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</span>
+          <span data-ttu-id="5bcbd-116">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1db86-110">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="5bcbd-116">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -222,9 +247,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1db86-111">コレクション内にあるオブジェクトの数を返します。</span>
+          <span data-ttu-id="5bcbd-117">コレクション内にあるオブジェクトの数を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1db86-111">Returns the number of objects in the collection.</span>
+            <span data-stu-id="5bcbd-117">Returns the number of objects in the collection.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -255,25 +280,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1db86-112">現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</span>
+          <span data-ttu-id="5bcbd-118">現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1db86-112">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="5bcbd-118">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="1db86-113">
-            <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
-            <para>
-              <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="1db86-113">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="5bcbd-119">オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5bcbd-119">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="5bcbd-120">
+              <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5bcbd-120">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="5bcbd-121">たとえば、Microsoft Excel は、クリエーター コードを持っています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="5bcbd-121">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -336,19 +367,19 @@
       </Parameters>
       <Docs>
         <param name="Index">
-          <span data-ttu-id="1db86-114">整数が必要です。</span>
+          <span data-ttu-id="5bcbd-122">整数が必要です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1db86-114">Required Integer.</span>
+            <span data-stu-id="5bcbd-122">Required Integer.</span>
           </span>
-          <span data-ttu-id="1db86-115">オブジェクトのインデックス番号を指定します。</span>
+          <span data-ttu-id="5bcbd-123">オブジェクトのインデックス番号を指定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1db86-115">The index number of the object.</span>
+            <span data-stu-id="5bcbd-123">The index number of the object.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="1db86-116">コレクションから単一のオブジェクトを返します。</span>
+          <span data-ttu-id="5bcbd-124">コレクションから単一のオブジェクトを返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1db86-116">Returns a single object from a collection.</span>
+            <span data-stu-id="5bcbd-124">Returns a single object from a collection.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -379,9 +410,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="1db86-117">指定されたオブジェクトの親オブジェクトを取得します。</span>
+          <span data-ttu-id="5bcbd-125">指定されたオブジェクトの親オブジェクトを取得します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="1db86-117">Returns the parent object for the specified object.</span>
+            <span data-stu-id="5bcbd-125">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>

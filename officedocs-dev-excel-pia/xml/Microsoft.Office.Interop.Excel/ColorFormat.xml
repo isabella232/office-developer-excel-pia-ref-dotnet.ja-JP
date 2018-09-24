@@ -1,10 +1,10 @@
 <Type Name="ColorFormat" FullName="Microsoft.Office.Interop.Excel.ColorFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="94eccbe19d3d32c07fd1936d4fcbe2799d83801e" />
+    <Meta Name="ms.openlocfilehash" Value="3d031f52b238ec46211ddb6bca7295480f58f00f" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584477" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ColorFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -31,79 +31,153 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="ee98b-101">単色のオブジェクト、グラデーションやパターンの塗りつぶしを持つオブジェクトの前景色または背景色、またはポインターの色を表します。</span>
+      <span data-ttu-id="34371-101">単色のオブジェクト、グラデーションやパターンの塗りつぶしを持つオブジェクトの前景色または背景色、またはポインターの色を表します。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="ee98b-101">Represents the color of a one-color object, the foreground or background color of an object with a gradient or patterned fill, or the pointer color.</span>
+        <span data-stu-id="34371-101">Represents the color of a one-color object, the foreground or background color of an object with a gradient or patterned fill, or the pointer color.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="ee98b-102">
-        <para>明示的な赤、緑、青値に色を設定することができます (を使用して、<see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" />プロパティ) または配色パターンの色に (を使用して、<see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" />プロパティ) です</para>。
-      <para>プロパティのいずれかを使用は、 <b>ColorFormat</b>オブジェクトを取得する次の表に一覧表示します</para>。
-      <list type="table"><item><term><see cref="P:Microsoft.Office.Interop.Excel.FillFormat.BackColor" /></term><description><b>FillFormat</b></description><description>、背景塗りつぶし (グラデーションまたはパターンの塗りつぶしで使用)</description></item><item><term><see cref="P:Microsoft.Office.Interop.Excel.FillFormat.ForeColor" /></term><description><b>FillFormat</b></description><description>前景の塗りつぶし色 (または均一な色の塗りつぶしの色だけで)</description></item><item><term><see cref="P:Microsoft.Office.Interop.Excel.LineFormat.BackColor" /></term><description><b>LineFormat</b></description><description>、背景色 (線のパターンで使用)</description></item><item><term><see cref="P:Microsoft.Office.Interop.Excel.LineFormat.ForeColor" /></term><description><b>LineFormat</b></description><description>前景の線の色 (または実線の色)</description></item><item><term><see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.ForeColor" /></term><description><b>ShadowFormat</b></description><description>の影の色</description></item><item><term><see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.ExtrusionColor" /></term><description><b>ThreeDFormat</b></description><description>3-d オブジェクトの側面の色</description></item></list><para></para></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="ee98b-102">
-          <para>You can set colors to an explicit red-green-blue value (by using the <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" /> property) or to a color in the color scheme (by using the <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" /> property).</para>
-          <para>Use one of the properties listed in the following table to return a <b>ColorFormat</b> object.</para>
-          <list type="table">
-            <item>
-              <term>
-                <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.BackColor" />
-              </term>
-              <description>
-                <b>FillFormat</b>
-              </description>
-              <description>The background fill color (used in a shaded or patterned fill)</description>
-            </item>
-            <item>
-              <term>
-                <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.ForeColor" />
-              </term>
-              <description>
-                <b>FillFormat</b>
-              </description>
-              <description>The foreground fill color (or simply the fill color for a solid fill)</description>
-            </item>
-            <item>
-              <term>
-                <see cref="P:Microsoft.Office.Interop.Excel.LineFormat.BackColor" />
-              </term>
-              <description>
-                <b>LineFormat</b>
-              </description>
-              <description>The background line color (used in a patterned line)</description>
-            </item>
-            <item>
-              <term>
-                <see cref="P:Microsoft.Office.Interop.Excel.LineFormat.ForeColor" />
-              </term>
-              <description>
-                <b>LineFormat</b>
-              </description>
-              <description>The foreground line color (or just the line color for a solid line)</description>
-            </item>
-            <item>
-              <term>
-                <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.ForeColor" />
-              </term>
-              <description>
-                <b>ShadowFormat</b>
-              </description>
-              <description>The shadow color</description>
-            </item>
-            <item>
-              <term>
-                <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.ExtrusionColor" />
-              </term>
-              <description>
-                <b>ThreeDFormat</b>
-              </description>
-              <description>The color of the sides of an extruded object</description>
-            </item>
-          </list>
-          <para></para>
+      <para>
+        <span data-ttu-id="34371-102">明示的な赤、緑、青値に色を設定することができます (を使用して、<see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" />プロパティ) または配色パターンの色に (を使用して、<see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" />プロパティ)。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="34371-102">You can set colors to an explicit red-green-blue value (by using the <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" /> property) or to a color in the color scheme (by using the <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" /> property).</span>
         </span>
-      </span>
+      </para>
+      <para>
+        <span data-ttu-id="34371-103">次に示すオブジェクトおよびプロパティによって取得する <b>ColorFormat</b> オブジェクトの表す内容が異なります。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="34371-103">Use one of the properties listed in the following table to return a <b>ColorFormat</b> object.</span>
+        </span>
+      </para>
+      <list type="table">
+        <item>
+          <term>
+            <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.BackColor" />
+          </term>
+          <description>
+            <span data-ttu-id="34371-104">
+              <b>FillFormat</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-104">
+                <b>FillFormat</b>
+              </span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="34371-105">背景色の塗りつぶし (グラデーションまたはパターンで使用)</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-105">The background fill color (used in a shaded or patterned fill)</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.ForeColor" />
+          </term>
+          <description>
+            <span data-ttu-id="34371-106">
+              <b>FillFormat</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-106">
+                <b>FillFormat</b>
+              </span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="34371-107">前景色または均一な色の塗りつぶし</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-107">The foreground fill color (or simply the fill color for a solid fill)</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <see cref="P:Microsoft.Office.Interop.Excel.LineFormat.BackColor" />
+          </term>
+          <description>
+            <span data-ttu-id="34371-108">
+              <b>LineFormat</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-108">
+                <b>LineFormat</b>
+              </span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="34371-109">線の背景色 (線のパターンで使用)</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-109">The background line color (used in a patterned line)</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <see cref="P:Microsoft.Office.Interop.Excel.LineFormat.ForeColor" />
+          </term>
+          <description>
+            <span data-ttu-id="34371-110">
+              <b>LineFormat</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-110">
+                <b>LineFormat</b>
+              </span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="34371-111">線の前景色 (線のパターンで使用) または線の色</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-111">The foreground line color (or just the line color for a solid line)</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.ForeColor" />
+          </term>
+          <description>
+            <span data-ttu-id="34371-112">
+              <b>ShadowFormat</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-112">
+                <b>ShadowFormat</b>
+              </span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="34371-113">影の色</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-113">The shadow color</span>
+            </span>
+          </description>
+        </item>
+        <item>
+          <term>
+            <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.ExtrusionColor" />
+          </term>
+          <description>
+            <span data-ttu-id="34371-114">
+              <b>ThreeDFormat</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-114">
+                <b>ThreeDFormat</b>
+              </span>
+            </span>
+          </description>
+          <description>
+            <span data-ttu-id="34371-115">3-D オブジェクトの側面の色</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-115">The color of the sides of an extruded object</span>
+            </span>
+          </description>
+        </item>
+      </list>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -134,9 +208,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee98b-103">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</span>
+          <span data-ttu-id="34371-116">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee98b-103">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="34371-116">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -170,29 +244,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee98b-104">取得または指定したオブジェクトの明るさを設定します。</span>
+          <span data-ttu-id="34371-117">取得または指定したオブジェクトの明るさを設定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee98b-104">Gets or sets the luminosity of the specified object.</span>
+            <span data-stu-id="34371-117">Gets or sets the luminosity of the specified object.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="ee98b-105">指定したオブジェクトの明るさです。</span>
+          <span data-ttu-id="34371-118">指定したオブジェクトの明るさです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee98b-105">The luminosity of the specified object.</span>
+            <span data-stu-id="34371-118">The luminosity of the specified object.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="ee98b-106">
-            <para>読み取り/書き込み</para>。
-          <para>このプロパティの値は 0.0 (最も暗い) から 1.0 (最も明るい) までの数値である必要があります</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee98b-106">
-              <para>Read/write.</para>
-              <para>The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="34371-119">値の取得および設定が可能です。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-119">Read/write.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="34371-120">このプロパティの値は、0.0 (最も暗い) から 1.0 (最も明るい) までの数値である必要があります。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-120">The value for this property must be a number from 0.0 (dimmest) to 1.0 (brightest).</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -223,33 +299,44 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee98b-107">現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</span>
+          <span data-ttu-id="34371-121">現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee98b-107">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="34371-121">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="ee98b-108">
+          <span data-ttu-id="34371-122">
             <b>Integer</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee98b-108">
+            <span data-stu-id="34371-122">
               <b>Integer</b>
             </span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="ee98b-109">
-            <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
-            <para>、<see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Microsoft Excel は、クリエーター コードを持っています。参照してください<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />です</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee98b-109">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL. See also <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="34371-123">オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-123">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="34371-124">
+              <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-124">The <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="34371-125">たとえば、Microsoft Excel は、クリエーター コードを持っています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-125">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+            <span data-ttu-id="34371-126">参照してください<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-126">See also <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -280,13 +367,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee98b-110">テーマの配色パターンにマップされている色を設定または返します。</span>
+          <span data-ttu-id="34371-127">テーマの配色パターンにマップされている色を設定または返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee98b-110">Returns or sets a color that is mapped to the theme color scheme.</span>
+            <span data-stu-id="34371-127">Returns or sets a color that is mapped to the theme color scheme.</span>
           </span>
-          <span data-ttu-id="ee98b-111">読み取り/書き込み<see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" />。</span>
+          <span data-ttu-id="34371-128">読み取り/書き込み<see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee98b-111">Read/write <see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" />.</span>
+            <span data-stu-id="34371-128">Read/write <see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" />.</span>
           </span>
         </summary>
         <value>
@@ -319,17 +406,17 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee98b-112">指定されたオブジェクトの親オブジェクトを返します。</span>
+          <span data-ttu-id="34371-129">指定されたオブジェクトの親オブジェクトを返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee98b-112">Returns the parent object for the specified object.</span>
+            <span data-stu-id="34371-129">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="ee98b-113">
+          <span data-ttu-id="34371-130">
             <b>オブジェクト</b>
           </span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee98b-113">
+            <span data-stu-id="34371-130">
               <b>Object</b>
             </span>
           </span>
@@ -367,9 +454,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee98b-114">指定した色の赤、緑、青の値を設定または返します。</span>
+          <span data-ttu-id="34371-131">指定した色の赤、緑、青の値を設定または返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee98b-114">Returns or sets the red-green-blue value of the specified color.</span>
+            <span data-stu-id="34371-131">Returns or sets the red-green-blue value of the specified color.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -403,9 +490,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee98b-115">現在の配色でのインデックスとして、カラー オブジェクトの色を設定または返します。</span>
+          <span data-ttu-id="34371-132">現在の配色でのインデックスとして、カラー オブジェクトの色を設定または返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee98b-115">Returns or sets the color of a color object as an index in the current color scheme.</span>
+            <span data-stu-id="34371-132">Returns or sets the color of a color object as an index in the current color scheme.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -439,23 +526,21 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee98b-116">取得または設定、 <b>1 つ</b>を明るく、または指定した図形の色を暗きます。</span>
+          <span data-ttu-id="34371-133">取得または設定、 <b>1 つ</b>を明るく、または指定した図形の色を暗きます。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee98b-116">Returns or sets a <b>Single</b> that lightens or darkens the color of a specified shape.</span>
+            <span data-stu-id="34371-133">Returns or sets a <b>Single</b> that lightens or darkens the color of a specified shape.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="ee98b-117">
-            <para>
-              <b>TintAndShade</b>プロパティは、0 (ゼロ) がニュートラル (最も明るい) 1、-1 (最も暗い) から番号を入力することができます</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee98b-117">
-              <para>You can enter a number from -1 (darkest) to 1 (lightest) for the <b>TintAndShade</b> property, 0 (zero) being neutral.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="34371-134">
+              <b>TintAndShade</b> プロパティは、0 (ゼロ) がニュートラル (最も明るい) 1、-1 (最も暗い) から数値を入力できます。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-134">You can enter a number from -1 (darkest) to 1 (lightest) for the <b>TintAndShade</b> property, 0 (zero) being neutral.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -483,39 +568,72 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="ee98b-118">吹き出し書式の種類を設定または返します。</span>
+          <span data-ttu-id="34371-135">吹き出し書式の種類を設定または返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="ee98b-118">Returns or sets the callout format type.</span>
+            <span data-stu-id="34371-135">Returns or sets the callout format type.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="ee98b-119">
-            <para>
-              <b>MsoCalloutType</b>には、これらの<b>MsoCalloutType</b>定数のいずれかを指定できます</para>。
-          <para><b>msoCalloutFour</b></para><para><b>msoCalloutMixed</b></para><para><b>msoCalloutOne</b></para><para><b>msoCalloutThree</b></para><para><b>msoCalloutTwo</b></para><para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee98b-119">
-              <para>
-                <b>MsoCalloutType</b> can be one of these <b>MsoCalloutType</b> constants.</para>
-              <para>
-                <b>msoCalloutFour</b>
-              </para>
-              <para>
-                <b>msoCalloutMixed</b>
-              </para>
-              <para>
-                <b>msoCalloutOne</b>
-              </para>
-              <para>
-                <b>msoCalloutThree</b>
-              </para>
-              <para>
-                <b>msoCalloutTwo</b>
-              </para>
-              <para></para>
+          <para>
+            <span data-ttu-id="34371-136">
+              <b>MsoCalloutType</b> は、次に示すいずれかの <b>MsoCalloutType</b> 定数になります。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-136">
+                <b>MsoCalloutType</b> can be one of these <b>MsoCalloutType</b> constants.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="34371-137">
+              <b>msoCalloutFour</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-137">
+                <b>msoCalloutFour</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="34371-138">
+              <b>msoCalloutMixed</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-138">
+                <b>msoCalloutMixed</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="34371-139">
+              <b>msoCalloutOne</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-139">
+                <b>msoCalloutOne</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="34371-140">
+              <b>msoCalloutThree</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-140">
+                <b>msoCalloutThree</b>
+              </span>
+            </span>
+          </para>
+          <para>
+            <span data-ttu-id="34371-141">
+              <b>msoCalloutTwo</b>
+            </span>
+            <span class="sxs-lookup">
+              <span data-stu-id="34371-141">
+                <b>msoCalloutTwo</b>
+              </span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

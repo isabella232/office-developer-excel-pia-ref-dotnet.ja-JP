@@ -1,10 +1,10 @@
 <Type Name="LegendEntries" FullName="Microsoft.Office.Interop.Excel.LegendEntries">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9f439456cc13f822ef976d853af582329ce32bfe" />
+    <Meta Name="ms.openlocfilehash" Value="8e175f39321b99a7e8cc5297856cd4932c8371cc" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579339" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface LegendEntries : System.Collections.IEnumerable" />
@@ -34,27 +34,50 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="db9d9-101">すべてのコレクション、<see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" />指定されたグラフの凡例内のオブジェクト。</span>
+      <span data-ttu-id="9f870-101">すべてのコレクション、<see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" />指定されたグラフの凡例内のオブジェクト。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="db9d9-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> objects in the specified chart legend.</span>
+        <span data-stu-id="9f870-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.LegendEntry" /> objects in the specified chart legend.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="db9d9-102">
-        <para>各凡例文字列には 2 つの部分: 文字列のデータ系列または近似曲線の凡例のエントリに関連付けられています。凡例マーカー、凡例文字列に、関連付けられたデータ系列またはグラフの近似曲線を視覚的にリンクします。凡例マーカーとその関連付けられたデータ系列または近似曲線の書式設定プロパティは、<see cref="T:Microsoft.Office.Interop.Excel.LegendKey" />オブジェクトです</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.Legend.LegendEntries(System.Object)" />メソッドを<b>返すメソッド</b>のコレクションを取得します</para>。
-      <para>使用して<b>返すメソッド</b>(<paramref name="index" />)、<paramref name="index" />の凡例エントリのインデックス番号、1 つの<b>凡例</b>オブジェクトを取得するには。名前で凡例項目を返すことはできません</para>。
-      <para>、インデックス番号は、凡例内の凡例項目の位置を表します。LegendEntries(1) は、上部の凡例です。凡例を下部にあるのです</para>。
-      <para></para></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="db9d9-102">
-          <para>Each legend entry has two parts: the text of the entry, which is the name of the series or trendline associated with the legend entry; and the entry marker, which visually links the legend entry with its associated series or trendline in the chart. The formatting properties for the entry marker and its associated series or trendline are contained in the <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> object.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.Legend.LegendEntries(System.Object)" /> method to return the <b>LegendEntries</b> collection.</para>
-          <para>Use <b>LegendEntries</b>(<paramref name="index" />), where <paramref name="index" /> is the legend entry index number, to return a single <b>LegendEntry</b> object. You cannot return legend entries by name.</para>
-          <para>The index number represents the position of the legend entry in the legend. LegendEntries(1) is at the top of the legend; LegendEntries(LegendEntries.Count) is at the bottom.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="9f870-102">各凡例文字列には 2 つの部分: 文字列のデータ系列または近似曲線の凡例のエントリに関連付けられています。凡例マーカー、凡例文字列に、関連付けられたデータ系列またはグラフの近似曲線を視覚的にリンクします。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="9f870-102">Each legend entry has two parts: the text of the entry, which is the name of the series or trendline associated with the legend entry; and the entry marker, which visually links the legend entry with its associated series or trendline in the chart.</span>
         </span>
-      </span>
+        <span data-ttu-id="9f870-103">凡例マーカーとその関連付けられたデータ系列または近似曲線の書式設定プロパティは、<see cref="T:Microsoft.Office.Interop.Excel.LegendKey" />オブジェクトです。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="9f870-103">The formatting properties for the entry marker and its associated series or trendline are contained in the <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> object.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="9f870-104">使用して、<see cref="M:Microsoft.Office.Interop.Excel.Legend.LegendEntries(System.Object)" />を<b>返すメソッド</b>のコレクションを返すメソッドです。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="9f870-104">Use the <see cref="M:Microsoft.Office.Interop.Excel.Legend.LegendEntries(System.Object)" /> method to return the <b>LegendEntries</b> collection.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="9f870-105">
+          <b>返すメソッド</b>を使用して (<paramref name="index" />)、<paramref name="index" />の凡例エントリのインデックス番号、1 つの<b>凡例</b>オブジェクトを取得するには。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="9f870-105">Use <b>LegendEntries</b>(<paramref name="index" />), where <paramref name="index" /> is the legend entry index number, to return a single <b>LegendEntry</b> object.</span>
+        </span>
+        <span data-ttu-id="9f870-106">名前で、凡例のエントリを返すことはできません。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="9f870-106">You cannot return legend entries by name.</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="9f870-107">インデックス番号は、凡例内での凡例文字列の位置と対応します。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="9f870-107">The index number represents the position of the legend entry in the legend.</span>
+        </span>
+        <span data-ttu-id="9f870-108">LegendEntries(1) は、上部の凡例です。凡例は、下部にあるのです。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="9f870-108">LegendEntries(1) is at the top of the legend; LegendEntries(LegendEntries.Count) is at the bottom.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -86,9 +109,9 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>
-          <span data-ttu-id="db9d9-103">内部使用のため予約済みです。</span>
+          <span data-ttu-id="9f870-109">内部使用のため予約済みです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="db9d9-103">Reserved for internal use.</span>
+            <span data-stu-id="9f870-109">Reserved for internal use.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -119,9 +142,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="db9d9-104">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</span>
+          <span data-ttu-id="9f870-110">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="db9d9-104">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="9f870-110">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -152,9 +175,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="db9d9-105">コレクション内にあるオブジェクトの数を返します。</span>
+          <span data-ttu-id="9f870-111">コレクション内にあるオブジェクトの数を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="db9d9-105">Returns the number of objects in the collection.</span>
+            <span data-stu-id="9f870-111">Returns the number of objects in the collection.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -185,25 +208,31 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="db9d9-106">現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</span>
+          <span data-ttu-id="9f870-112">現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="db9d9-106">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="9f870-112">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="db9d9-107">
-            <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
-            <para>
-              <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="db9d9-107">
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</para>
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="9f870-113">オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="9f870-113">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="9f870-114">
+              <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="9f870-114">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="9f870-115">たとえば、Microsoft Excel は、クリエーター コードを持っています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="9f870-115">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -263,20 +292,20 @@
       </Parameters>
       <Docs>
         <param name="Index">
-          <span data-ttu-id="db9d9-108">
+          <span data-ttu-id="9f870-116">
             <b>オブジェクト</b>が必要です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="db9d9-108">Required <b>Object</b>.</span>
+            <span data-stu-id="9f870-116">Required <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="db9d9-109">オブジェクトの名前またはインデックス番号を指定します。</span>
+          <span data-ttu-id="9f870-117">オブジェクトの名前またはインデックス番号を指定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="db9d9-109">The name or index number for the object.</span>
+            <span data-stu-id="9f870-117">The name or index number for the object.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="db9d9-110">コレクションから単一のオブジェクトを返します。</span>
+          <span data-ttu-id="9f870-118">コレクションから単一のオブジェクトを返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="db9d9-110">Returns a single object from a collection.</span>
+            <span data-stu-id="9f870-118">Returns a single object from a collection.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -307,9 +336,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="db9d9-111">指定されたオブジェクトの親オブジェクトを取得します。</span>
+          <span data-ttu-id="9f870-119">指定されたオブジェクトの親オブジェクトを取得します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="db9d9-111">Returns the parent object for the specified object.</span>
+            <span data-stu-id="9f870-119">Returns the parent object for the specified object.</span>
           </span>
         </summary>
         <value>To be added.</value>

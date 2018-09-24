@@ -1,10 +1,10 @@
 <Type Name="SlicerCacheLevels" FullName="Microsoft.Office.Interop.Excel.SlicerCacheLevels">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="50ee558450edaad745671bfb39d84af2b7535fec" />
+    <Meta Name="ms.openlocfilehash" Value="aa0b86cacb4cc71377b8c24dce9b71558a7bfc10" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584722" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SlicerCacheLevels : System.Collections.IEnumerable" />
@@ -34,21 +34,27 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="793c6-101">スライサーでフィルター処理する OLAP データ ソースの階層レベルのコレクションを表します。</span>
+      <span data-ttu-id="7fb26-101">スライサーでフィルター処理する OLAP データ ソースの階層レベルのコレクションを表します。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="793c6-101">Represents the collection of hierarchy levels for the OLAP data source that is filtered by a slicer.</span>
+        <span data-stu-id="7fb26-101">Represents the collection of hierarchy levels for the OLAP data source that is filtered by a slicer.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="793c6-102">
-        <para>スライサーを使用して OLAP データ ソースにフィルターを適用する場合は、その親のスライサー キャッシュは、データ ソースからの複数の階層レベルを含めることができます。使用して、 <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerCacheLevels" /> 、親のコレクション<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />オブジェクトのアクセスを<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />これらの階層レベルを表すオブジェクト。このコレクションは非 OLAP データ ソースにアクセス可能ではありません</para>。
-      <para></para></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="793c6-102">
-          <para>When a slicer is used to filter an OLAP data source, its parent slicer cache can contain multiple hierarchy levels from the data source. Use the <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerCacheLevels" /> collection of the parent <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> object to access the <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objects that represent these hierarchy levels. This collection is not accessible for non-OLAP data sources.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="7fb26-102">OLAP データ ソースをフィルター処理するスライサーを使用する場合、その親のスライサー キャッシュはデータ ソースからの複数の階層レベルを含めることができます。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="7fb26-102">When a slicer is used to filter an OLAP data source, its parent slicer cache can contain multiple hierarchy levels from the data source.</span>
         </span>
-      </span>
+        <span data-ttu-id="7fb26-103">使用して、 <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerCacheLevels" /> 、親のコレクション<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />オブジェクトのアクセスを<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />これらの階層レベルを表すオブジェクト。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="7fb26-103">Use the <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerCacheLevels" /> collection of the parent <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> object to access the <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> objects that represent these hierarchy levels.</span>
+        </span>
+        <span data-ttu-id="7fb26-104">このコレクションは、非 OLAP データ ソースにアクセス可能ではありません。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="7fb26-104">This collection is not accessible for non-OLAP data sources.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -84,9 +90,9 @@
         <param name="Level">To be added.</param>
         <summary>To be added.</summary>
         <value>
-          <span data-ttu-id="793c6-103">返します。 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />。</span>
+          <span data-ttu-id="7fb26-105">返します。 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="793c6-103">Returns <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />.</span>
+            <span data-stu-id="7fb26-105">Returns <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />.</span>
           </span>
         </value>
         <remarks>To be added.</remarks>
@@ -116,32 +122,30 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="793c6-104">このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</span>
+          <span data-ttu-id="7fb26-106">このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="793c6-104">When used without an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="7fb26-106">When used without an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
-          <span data-ttu-id="793c6-105">このプロパティが返すオブジェクト修飾子を使用する場合、<see cref="T:Microsoft.Office.Interop.Excel.Application" />を指定したオブジェクトの作成者を表すオブジェクト。</span>
+          <span data-ttu-id="7fb26-107">このプロパティが返すオブジェクト修飾子を使用する場合、<see cref="T:Microsoft.Office.Interop.Excel.Application" />を指定したオブジェクトの作成者を表すオブジェクト。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="793c6-105">When used with an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the creator of the specified object.</span>
+            <span data-stu-id="7fb26-107">When used with an object qualifier, this property returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the creator of the specified object.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="793c6-106">
+          <span data-ttu-id="7fb26-108">
             <see cref="T:Microsoft.Office.Interop.Excel.Application" />オブジェクトです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="793c6-106">An <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object.</span>
+            <span data-stu-id="7fb26-108">An <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="793c6-107">
-            <para>読み取り専用</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="793c6-107">
-              <para>Read-only.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="7fb26-109">読み取り専用。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="7fb26-109">Read-only.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -169,15 +173,15 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="793c6-108">指定されたレベルの数を取得する<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" />、コレクションに関連付けられているレベルの数を表す<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />オブジェクトです。</span>
+          <span data-ttu-id="7fb26-110">指定されたレベルの数を取得する<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" />、コレクションに関連付けられているレベルの数を表す<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />オブジェクトです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="793c6-108">Gets the number of levels in the specified <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> collection, which represents the number of levels in the associated <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> object.</span>
+            <span data-stu-id="7fb26-110">Gets the number of levels in the specified <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> collection, which represents the number of levels in the associated <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> object.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="793c6-109">指定されたレベルの数<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" />コレクションに関連付けられているレベルの数を表す<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />オブジェクトです。</span>
+          <span data-ttu-id="7fb26-111">指定されたレベルの数<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" />コレクションに関連付けられているレベルの数を表す<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />オブジェクトです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="793c6-109">The number of levels in the specified <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> collection, which represents the number of levels in the associated <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> object.</span>
+            <span data-stu-id="7fb26-111">The number of levels in the specified <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> collection, which represents the number of levels in the associated <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> object.</span>
           </span>
         </value>
         <remarks>To be added.</remarks>
@@ -207,29 +211,40 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="793c6-110">このオブジェクトが作成されたアプリケーションを示す 32 ビット整数を取得します。</span>
+          <span data-ttu-id="7fb26-112">このオブジェクトが作成されたアプリケーションを示す 32 ビット整数を取得します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="793c6-110">Gets a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="7fb26-112">Gets a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="793c6-111">このオブジェクトが作成されたアプリケーションを示す 32 ビット整数。</span>
+          <span data-ttu-id="7fb26-113">このオブジェクトが作成されたアプリケーションを示す 32 ビット整数。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="793c6-111">A 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="7fb26-113">A 32-bit integer that indicates the application in which this object was created.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="793c6-112">
-            <para>読み取り専用<b>long</b></para> 。
-          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevels.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="793c6-112">
-              <para>Read-only <b>long</b>.</para>
-              <para>If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C. The <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevels.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="7fb26-114">読み取り専用<b>long</b>です。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="7fb26-114">Read-only <b>long</b>.</span>
             </span>
-          </span>
+          </para>
+          <para>
+            <span data-ttu-id="7fb26-115">オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="7fb26-115">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
+            </span>
+            <span data-ttu-id="7fb26-116">
+              <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevels.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="7fb26-116">The <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevels.Creator" /> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
+            </span>
+            <span data-ttu-id="7fb26-117">たとえば、Microsoft Excel は、クリエーター コードを持っています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="7fb26-117">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -262,9 +277,9 @@
       <Docs>
         <summary>To be added.</summary>
         <returns>
-          <span data-ttu-id="793c6-113">返します。 <see cref="T:System.Collections.IEnumerator" />。</span>
+          <span data-ttu-id="7fb26-118">返します。 <see cref="T:System.Collections.IEnumerator" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="793c6-113">Returns <see cref="T:System.Collections.IEnumerator" />.</span>
+            <span data-stu-id="7fb26-118">Returns <see cref="T:System.Collections.IEnumerator" />.</span>
           </span>
         </returns>
         <remarks>To be added.</remarks>
@@ -297,21 +312,21 @@
       </Parameters>
       <Docs>
         <param name="Level">
-          <span data-ttu-id="793c6-114">オブジェクトのレベルを表す一意の MDX 名またはインデックス番号です。</span>
+          <span data-ttu-id="7fb26-119">オブジェクトのレベルを表す一意の MDX 名またはインデックス番号です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="793c6-114">The MDX unique name of the level or index number of the object.</span>
+            <span data-stu-id="7fb26-119">The MDX unique name of the level or index number of the object.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="793c6-115">指定<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />、コレクションからオブジェクトを返します最初のレベルを指定しない場合、または<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />コレクション内のオブジェクト。</span>
+          <span data-ttu-id="7fb26-120">指定<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />、コレクションからオブジェクトを返します最初のレベルを指定しない場合、または<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />コレクション内のオブジェクト。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="793c6-115">Returns the specified <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> object from the collection, or if no level is specified, returns the first <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> object in the collection.</span>
+            <span data-stu-id="7fb26-120">Returns the specified <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> object from the collection, or if no level is specified, returns the first <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> object in the collection.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="793c6-116">返します。 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />。</span>
+          <span data-ttu-id="7fb26-121">返します。 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="793c6-116">Returns <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />.</span>
+            <span data-stu-id="7fb26-121">Returns <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />.</span>
           </span>
         </value>
         <remarks>To be added.</remarks>
@@ -341,28 +356,26 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="793c6-117">取得、<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />の指定した親である<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" />オブジェクトです。</span>
+          <span data-ttu-id="7fb26-122">取得、<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />の指定した親である<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" />オブジェクトです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="793c6-117">Gets the <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> object that is the parent of the specified <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> object.</span>
+            <span data-stu-id="7fb26-122">Gets the <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> object that is the parent of the specified <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> object.</span>
           </span>
         </summary>
         <value>
-          <span data-ttu-id="793c6-118">
+          <span data-ttu-id="7fb26-123">
             <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />の指定した親である<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" />オブジェクトです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="793c6-118">The <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> object that is the parent of the specified <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> object.</span>
+            <span data-stu-id="7fb26-123">The <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> object that is the parent of the specified <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> object.</span>
           </span>
         </value>
         <remarks>
-          <span data-ttu-id="793c6-119">
-            <para>読み取り専用</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="793c6-119">
-              <para>Read-only.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="7fb26-124">読み取り専用です。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="7fb26-124">Read-only.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>

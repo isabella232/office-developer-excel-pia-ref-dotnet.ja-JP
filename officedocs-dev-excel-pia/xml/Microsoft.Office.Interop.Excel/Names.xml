@@ -1,10 +1,10 @@
 <Type Name="Names" FullName="Microsoft.Office.Interop.Excel.Names">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a76d5115c800138621098c928ea18e19669180e4" />
+    <Meta Name="ms.openlocfilehash" Value="25942f5647980d40fd5f4e153bf99810065d6715" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584729" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Names : System.Collections.IEnumerable" />
@@ -34,33 +34,53 @@
   </Attributes>
   <Docs>
     <summary>
-      <span data-ttu-id="24993-101">すべてのコレクション、 <see cref="T:Microsoft.Office.Interop.Excel.Name" /> 、アプリケーションまたはブック内のオブジェクト。</span>
+      <span data-ttu-id="cbc7d-101">すべてのコレクション、 <see cref="T:Microsoft.Office.Interop.Excel.Name" /> 、アプリケーションまたはブック内のオブジェクト。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="24993-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objects in the application or workbook.</span>
+        <span data-stu-id="cbc7d-101">A collection of all the <see cref="T:Microsoft.Office.Interop.Excel.Name" /> objects in the application or workbook.</span>
       </span>
-      <span data-ttu-id="24993-102">各<b>Name</b>オブジェクトは、セル範囲に定義名を表します。</span>
+      <span data-ttu-id="cbc7d-102">各<b>Name</b>オブジェクトは、セル範囲に定義名を表します。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="24993-102">Each <b>Name</b> object represents a defined name for a range of cells.</span>
+        <span data-stu-id="cbc7d-102">Each <b>Name</b> object represents a defined name for a range of cells.</span>
       </span>
-      <span data-ttu-id="24993-103">名には、いずれかの組み込み名、データベース、Print_Area、Auto_Open など、またはカスタムの名前。</span>
+      <span data-ttu-id="cbc7d-103">名には、いずれかの組み込み名、データベース、Print_Area、Auto_Open など、またはカスタムの名前。</span>
       <span class="sxs-lookup">
-        <span data-stu-id="24993-103">Names can be either built-in names — such as Database, Print_Area, and Auto_Open — or custom names.</span>
+        <span data-stu-id="cbc7d-103">Names can be either built-in names — such as Database, Print_Area, and Auto_Open — or custom names.</span>
       </span>
     </summary>
     <remarks>
-      <span data-ttu-id="24993-104">
-        <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Names" /><b>の名前</b>のコレクションを返すプロパティです</para>。使用の
-      <para>、<see cref="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />名を作成し、コレクションに追加する方法です。<b>Add</b>メソッドの<paramref name="RefersTo" />の A1 スタイルの表記、適切な場所にドル記号 ($) を含む引数を指定する必要があります。たとえば、シート 1 のセル A10 を選択しを使用して名前を定義する場合、<paramref name="RefersTo" />の引数"は、シート 1 =!A1: b1」、新しい名前は A10:B10 のセル (相対参照を指定する) ためです。絶対参照を指定するのには次のように使用します「= sheet1! $A$ 1: $B$ 1"です。</para> 。
-      <para><b>名</b>を使用する (<paramref name="index" />)、<paramref name="index" />は、名前のインデックス番号またはオブジェクトを取得する 1 つ<b>の名前</b>を定義済みの名前</para>。
-      <para></para></span>
-      <span class="sxs-lookup">
-        <span data-stu-id="24993-104">
-          <para>Use the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Names" /> property to return the <b>Names</b> collection.</para>
-          <para>Use the <see cref="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to create a name and add it to the collection. The <b>Add</b> method's <paramref name="RefersTo" /> argument must be specified in A1-style notation, including dollar signs ($) where appropriate. For example, if cell A10 is selected on Sheet1 and you define a name by using the <paramref name="RefersTo" /> argument "=sheet1!A1:B1", the new name actually refers to cells A10:B10 (because you specified a relative reference). To specify an absolute reference, use "=sheet1!$A$1:$B$1".</para>
-          <para>Use <b>Names</b>(<paramref name="index" />), where <paramref name="index" /> is the name index number or defined name, to return a single <b>Name</b> object.</para>
-          <para></para>
+      <para>
+        <span data-ttu-id="cbc7d-104">使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Names" /><b>の名前</b>のコレクションを返すプロパティです。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="cbc7d-104">Use the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Names" /> property to return the <b>Names</b> collection.</span>
         </span>
-      </span>
+      </para>
+      <para>
+        <span data-ttu-id="cbc7d-105">使用して、<see cref="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />名を作成し、コレクションに追加する方法です。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="cbc7d-105">Use the <see cref="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method to create a name and add it to the collection.</span>
+        </span>
+        <span data-ttu-id="cbc7d-106">
+          <b>Add</b>メソッドの<paramref name="RefersTo" />の A1 スタイルの表記、適切な場所にドル記号 ($) を含む引数を指定する必要があります。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="cbc7d-106">The <b>Add</b> method's <paramref name="RefersTo" /> argument must be specified in A1-style notation, including dollar signs ($) where appropriate.</span>
+        </span>
+        <span data-ttu-id="cbc7d-107">たとえば、シート 1 のセル A10 を選択しを使用して名前を定義する場合、<paramref name="RefersTo" />の引数"は、シート 1 =!A1: b1」、新しい名前は A10:B10 のセル (相対参照を指定する) ためです。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="cbc7d-107">For example, if cell A10 is selected on Sheet1 and you define a name by using the <paramref name="RefersTo" /> argument "=sheet1!A1:B1", the new name actually refers to cells A10:B10 (because you specified a relative reference).</span>
+        </span>
+        <span data-ttu-id="cbc7d-108">絶対参照を指定するのには次のように使用します。「= sheet1! $A$ 1: $B$ 1"です。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="cbc7d-108">To specify an absolute reference, use "=sheet1!$A$1:$B$1".</span>
+        </span>
+      </para>
+      <para>
+        <span data-ttu-id="cbc7d-109">
+          <b>名</b>を使用 (<paramref name="index" />)、<paramref name="index" />は、名前のインデックス番号またはオブジェクトを取得する 1 つ<b>の名前</b>を定義済みの名前。</span>
+        <span class="sxs-lookup">
+          <span data-stu-id="cbc7d-109">Use <b>Names</b>(<paramref name="index" />), where <paramref name="index" /> is the name index number or defined name, to return a single <b>Name</b> object.</span>
+        </span>
+      </para>
+      <para></para>
     </remarks>
   </Docs>
   <Members>
@@ -95,9 +115,9 @@
         <param name="IndexLocal">To be added.</param>
         <param name="RefersTo">To be added.</param>
         <summary>
-          <span data-ttu-id="24993-105">内部使用のため予約済みです。</span>
+          <span data-ttu-id="cbc7d-110">内部使用のため予約済みです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-105">Reserved for internal use.</span>
+            <span data-stu-id="cbc7d-110">Reserved for internal use.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -136,197 +156,197 @@
       </Parameters>
       <Docs>
         <param name="Name">
-          <span data-ttu-id="24993-106">省略可能な<b>オブジェクト</b>です。</span>
+          <span data-ttu-id="cbc7d-111">省略可能な<b>オブジェクト</b>です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-106">Optional <b>Object</b>.</span>
+            <span data-stu-id="cbc7d-111">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="24993-107">必要な場合<paramref name="NameLocal" />が指定されていません。</span>
+          <span data-ttu-id="cbc7d-112">必要な場合<paramref name="NameLocal" />が指定されていません。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-107">Required if <paramref name="NameLocal" /> isn't specified.</span>
+            <span data-stu-id="cbc7d-112">Required if <paramref name="NameLocal" /> isn't specified.</span>
           </span>
-          <span data-ttu-id="24993-108">名前として使用するテキストです。</span>
+          <span data-ttu-id="cbc7d-113">名前として使用するテキストです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-108">The text to use as the name.</span>
+            <span data-stu-id="cbc7d-113">The text to use as the name.</span>
           </span>
-          <span data-ttu-id="24993-109">名は、スペースを含めることはできません、セル参照と同じように探すことはできません。</span>
+          <span data-ttu-id="cbc7d-114">名は、スペースを含めることはできません、セル参照と同じように探すことはできません。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-109">Names cannot include spaces and cannot look like cell references.</span>
+            <span data-stu-id="cbc7d-114">Names cannot include spaces and cannot look like cell references.</span>
           </span>
         </param>
         <param name="RefersTo">
-          <span data-ttu-id="24993-110">省略可能な<b>オブジェクト</b>です。</span>
+          <span data-ttu-id="cbc7d-115">省略可能な<b>オブジェクト</b>です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-110">Optional <b>Object</b>.</span>
+            <span data-stu-id="cbc7d-115">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="24993-111">しない限り、必要なその他の<paramref name="RefersTo" />引数を指定します。</span>
+          <span data-ttu-id="cbc7d-116">しない限り、必要なその他の<paramref name="RefersTo" />引数を指定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-111">Required unless one of the other <paramref name="RefersTo" /> arguments is specified.</span>
+            <span data-stu-id="cbc7d-116">Required unless one of the other <paramref name="RefersTo" /> arguments is specified.</span>
           </span>
-          <span data-ttu-id="24993-112">(A1 形式の表記法を使用して) を参照する名前について説明します。</span>
+          <span data-ttu-id="cbc7d-117">(A1 形式の表記法を使用して) を参照する名前について説明します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-112">Describes what the name refers to (using A1-style notation).</span>
+            <span data-stu-id="cbc7d-117">Describes what the name refers to (using A1-style notation).</span>
           </span>
-          <span data-ttu-id="24993-113">
+          <span data-ttu-id="cbc7d-118">
             <b>メモ</b>参照が存在しない場合は、nothing が返されます。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-113">
+            <span data-stu-id="cbc7d-118">
               <b>Note</b> Nothing is returned if the reference does not exist.</span>
           </span>
         </param>
         <param name="Visible">
-          <span data-ttu-id="24993-114">省略可能な<b>オブジェクト</b>です。</span>
+          <span data-ttu-id="cbc7d-119">省略可能な<b>オブジェクト</b>です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-114">Optional <b>Object</b>.</span>
+            <span data-stu-id="cbc7d-119">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="24993-115">
+          <span data-ttu-id="cbc7d-120">
             <b>True</b>通常名を定義します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-115">
+            <span data-stu-id="cbc7d-120">
               <b>True</b> to define the name normally.</span>
           </span>
-          <span data-ttu-id="24993-116">
+          <span data-ttu-id="cbc7d-121">
             <b>False</b>非表示の名前と名前を定義するのには (つまり、表示されないダイアログ ボックスの [名前の定義、名前の貼り付け、または移動) します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-116">
+            <span data-stu-id="cbc7d-121">
               <b>False</b> to define the name as a hidden name (that is, it doesn't appear in either the Define Name, Paste Name, or Goto dialog box).</span>
           </span>
-          <span data-ttu-id="24993-117">既定値は <b>True</b> です。</span>
+          <span data-ttu-id="cbc7d-122">既定値は <b>True</b> です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-117">The default value is <b>True</b>.</span>
+            <span data-stu-id="cbc7d-122">The default value is <b>True</b>.</span>
           </span>
         </param>
         <param name="MacroType">
-          <span data-ttu-id="24993-118">省略可能な<b>オブジェクト</b>です。</span>
+          <span data-ttu-id="cbc7d-123">省略可能な<b>オブジェクト</b>です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-118">Optional <b>Object</b>.</span>
+            <span data-stu-id="cbc7d-123">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="24993-119">マクロの種類を次の表に示すようにします。ValueMeaning1User 定義関数 (<b>Function</b>プロシージャ) の 2Macro ( <b>Sub</b>プロシージャとも呼ばれます) 3 または omittedNone (定義した名前はユーザー定義関数またはマクロを参照しません)</span>
+          <span data-ttu-id="cbc7d-124">マクロの種類を次の表に示すようにします。ValueMeaning1User 定義関数 (<b>Function</b>プロシージャ) の 2Macro ( <b>Sub</b>プロシージャとも呼ばれます) 3 または omittedNone (定義した名前はユーザー定義関数またはマクロを参照しません)</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-119">The macro type, as shown in the following table.ValueMeaning1User-defined function (<b>Function</b> procedure)2Macro (also known as <b>Sub</b> procedure)3 or omittedNone (that is, the name doesn't refer to a user-defined function or macro)</span>
+            <span data-stu-id="cbc7d-124">The macro type, as shown in the following table.ValueMeaning1User-defined function (<b>Function</b> procedure)2Macro (also known as <b>Sub</b> procedure)3 or omittedNone (that is, the name doesn't refer to a user-defined function or macro)</span>
           </span>
         </param>
         <param name="ShortcutKey">
-          <span data-ttu-id="24993-120">省略可能な<b>オブジェクト</b>です。</span>
+          <span data-ttu-id="cbc7d-125">省略可能な<b>オブジェクト</b>です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-120">Optional <b>Object</b>.</span>
+            <span data-stu-id="cbc7d-125">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="24993-121">マクロのショートカット キーです。</span>
+          <span data-ttu-id="cbc7d-126">マクロのショートカット キーです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-121">The macro shortcut key.</span>
+            <span data-stu-id="cbc7d-126">The macro shortcut key.</span>
           </span>
-          <span data-ttu-id="24993-122">"Z"または"Z"など、1 つの文字をする必要があります。</span>
+          <span data-ttu-id="cbc7d-127">"Z"または"Z"など、1 つの文字をする必要があります。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-122">Must be a single letter, such as "z" or "Z".</span>
+            <span data-stu-id="cbc7d-127">Must be a single letter, such as "z" or "Z".</span>
           </span>
-          <span data-ttu-id="24993-123">コマンド マクロに対してのみ適用されます。</span>
+          <span data-ttu-id="cbc7d-128">コマンド マクロに対してのみ適用されます。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-123">Applies only for command macros.</span>
+            <span data-stu-id="cbc7d-128">Applies only for command macros.</span>
           </span>
         </param>
         <param name="Category">
-          <span data-ttu-id="24993-124">省略可能な<b>オブジェクト</b>です。</span>
+          <span data-ttu-id="cbc7d-129">省略可能な<b>オブジェクト</b>です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-124">Optional <b>Object</b>.</span>
+            <span data-stu-id="cbc7d-129">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="24993-125">カテゴリのマクロまたは関数の場合は<paramref name="MacroType" />が 1 または 2。</span>
+          <span data-ttu-id="cbc7d-130">カテゴリのマクロまたは関数の場合は<paramref name="MacroType" />が 1 または 2。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-125">The category of the macro or function if <paramref name="MacroType" /> is 1 or 2.</span>
+            <span data-stu-id="cbc7d-130">The category of the macro or function if <paramref name="MacroType" /> is 1 or 2.</span>
           </span>
-          <span data-ttu-id="24993-126">カテゴリは、関数ウィザードで使用されます。</span>
+          <span data-ttu-id="cbc7d-131">カテゴリは、関数ウィザードで使用されます。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-126">The category is used in the Function Wizard.</span>
+            <span data-stu-id="cbc7d-131">The category is used in the Function Wizard.</span>
           </span>
-          <span data-ttu-id="24993-127">か (1 から始まる) の数字によって、言語のマクロの名前には、既存の項目を参照できます。</span>
+          <span data-ttu-id="cbc7d-132">か (1 から始まる) の数字によって、言語のマクロの名前には、既存の項目を参照できます。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-127">Existing categories can be referred to either by number (starting at 1) or by name (in the language of the macro).</span>
+            <span data-stu-id="cbc7d-132">Existing categories can be referred to either by number (starting at 1) or by name (in the language of the macro).</span>
           </span>
-          <span data-ttu-id="24993-128">Microsoft Excel は、指定したカテゴリが存在しない場合、新しいカテゴリを作成します。</span>
+          <span data-ttu-id="cbc7d-133">Microsoft Excel は、指定したカテゴリが存在しない場合、新しいカテゴリを作成します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-128">Microsoft Excel creates a new category if the specified category doesn't already exist.</span>
+            <span data-stu-id="cbc7d-133">Microsoft Excel creates a new category if the specified category doesn't already exist.</span>
           </span>
         </param>
         <param name="NameLocal">
-          <span data-ttu-id="24993-129">省略可能な<b>オブジェクト</b>です。</span>
+          <span data-ttu-id="cbc7d-134">省略可能な<b>オブジェクト</b>です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-129">Optional <b>Object</b>.</span>
+            <span data-stu-id="cbc7d-134">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="24993-130">必要な場合<paramref name="Name" />が指定されていません。</span>
+          <span data-ttu-id="cbc7d-135">必要な場合<paramref name="Name" />が指定されていません。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-130">Required if <paramref name="Name" /> isn't specified.</span>
+            <span data-stu-id="cbc7d-135">Required if <paramref name="Name" /> isn't specified.</span>
           </span>
-          <span data-ttu-id="24993-131">(ユーザーの言語) の名前として使用するテキストです。</span>
+          <span data-ttu-id="cbc7d-136">(ユーザーの言語) の名前として使用するテキストです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-131">The text to use as the name (in the language of the user).</span>
+            <span data-stu-id="cbc7d-136">The text to use as the name (in the language of the user).</span>
           </span>
-          <span data-ttu-id="24993-132">名は、スペースを含めることはできません、セル参照と同じように探すことはできません。</span>
+          <span data-ttu-id="cbc7d-137">名は、スペースを含めることはできません、セル参照と同じように探すことはできません。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-132">Names cannot include spaces and cannot look like cell references.</span>
+            <span data-stu-id="cbc7d-137">Names cannot include spaces and cannot look like cell references.</span>
           </span>
         </param>
         <param name="RefersToLocal">
-          <span data-ttu-id="24993-133">省略可能な<b>オブジェクト</b>です。</span>
+          <span data-ttu-id="cbc7d-138">省略可能な<b>オブジェクト</b>です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-133">Optional <b>Object</b>.</span>
+            <span data-stu-id="cbc7d-138">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="24993-134">しない限り、必要なその他の<paramref name="RefersTo" />引数を指定します。</span>
+          <span data-ttu-id="cbc7d-139">しない限り、必要なその他の<paramref name="RefersTo" />引数を指定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-134">Required unless one of the other <paramref name="RefersTo" /> arguments is specified.</span>
+            <span data-stu-id="cbc7d-139">Required unless one of the other <paramref name="RefersTo" /> arguments is specified.</span>
           </span>
-          <span data-ttu-id="24993-135">名前が参照する対象の言語の A1 形式の表記法を使用して、ユーザーのについて説明します。</span>
+          <span data-ttu-id="cbc7d-140">名前が参照する対象の言語の A1 形式の表記法を使用して、ユーザーのについて説明します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-135">Describes what the name refers to (in the language of the user, using A1-style notation).</span>
+            <span data-stu-id="cbc7d-140">Describes what the name refers to (in the language of the user, using A1-style notation).</span>
           </span>
         </param>
         <param name="CategoryLocal">
-          <span data-ttu-id="24993-136">省略可能な<b>オブジェクト</b>です。</span>
+          <span data-ttu-id="cbc7d-141">省略可能な<b>オブジェクト</b>です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-136">Optional <b>Object</b>.</span>
+            <span data-stu-id="cbc7d-141">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="24993-137">必要な場合<paramref name="Category" />が指定されていません。</span>
+          <span data-ttu-id="cbc7d-142">必要な場合<paramref name="Category" />が指定されていません。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-137">Required if <paramref name="Category" /> isn't specified.</span>
+            <span data-stu-id="cbc7d-142">Required if <paramref name="Category" /> isn't specified.</span>
           </span>
-          <span data-ttu-id="24993-138">ユーザーの言語でユーザー定義関数のカテゴリを識別するテキストです。</span>
+          <span data-ttu-id="cbc7d-143">ユーザーの言語でユーザー定義関数のカテゴリを識別するテキストです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-138">Text identifying the category of a custom function in the language of the user.</span>
+            <span data-stu-id="cbc7d-143">Text identifying the category of a custom function in the language of the user.</span>
           </span>
         </param>
         <param name="RefersToR1C1">
-          <span data-ttu-id="24993-139">省略可能な<b>オブジェクト</b>です。</span>
+          <span data-ttu-id="cbc7d-144">省略可能な<b>オブジェクト</b>です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-139">Optional <b>Object</b>.</span>
+            <span data-stu-id="cbc7d-144">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="24993-140">しない限り、必要なその他の<paramref name="RefersTo" />引数を指定します。</span>
+          <span data-ttu-id="cbc7d-145">しない限り、必要なその他の<paramref name="RefersTo" />引数を指定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-140">Required unless one of the other <paramref name="RefersTo" /> arguments is specified.</span>
+            <span data-stu-id="cbc7d-145">Required unless one of the other <paramref name="RefersTo" /> arguments is specified.</span>
           </span>
-          <span data-ttu-id="24993-141">名前の参照 (r1c1 形式の表記法を使用) について説明します。</span>
+          <span data-ttu-id="cbc7d-146">名前の参照 (r1c1 形式の表記法を使用) について説明します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-141">Describes what the name refers to (using R1C1-style notation).</span>
+            <span data-stu-id="cbc7d-146">Describes what the name refers to (using R1C1-style notation).</span>
           </span>
         </param>
         <param name="RefersToR1C1Local">
-          <span data-ttu-id="24993-142">省略可能な<b>オブジェクト</b>です。</span>
+          <span data-ttu-id="cbc7d-147">省略可能な<b>オブジェクト</b>です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-142">Optional <b>Object</b>.</span>
+            <span data-stu-id="cbc7d-147">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="24993-143">しない限り、必要なその他の<paramref name="RefersTo" />引数を指定します。</span>
+          <span data-ttu-id="cbc7d-148">しない限り、必要なその他の<paramref name="RefersTo" />引数を指定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-143">Required unless one of the other <paramref name="RefersTo" /> arguments is specified.</span>
+            <span data-stu-id="cbc7d-148">Required unless one of the other <paramref name="RefersTo" /> arguments is specified.</span>
           </span>
-          <span data-ttu-id="24993-144">名前が参照する対象言語で、r1c1 形式の表記法を使用してユーザーの) について説明します。</span>
+          <span data-ttu-id="cbc7d-149">名前が参照する対象言語で、r1c1 形式の表記法を使用してユーザーの) について説明します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-144">Describes what the name refers to (in the language of the user, using R1C1-style notation).</span>
+            <span data-stu-id="cbc7d-149">Describes what the name refers to (in the language of the user, using R1C1-style notation).</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="24993-145">新しい名前を定義します。</span>
+          <span data-ttu-id="cbc7d-150">新しい名前を定義します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-145">Defines a new name.</span>
+            <span data-stu-id="cbc7d-150">Defines a new name.</span>
           </span>
-          <span data-ttu-id="24993-146">返します、<see cref="T:Microsoft.Office.Interop.Excel.Name" />オブジェクトです。</span>
+          <span data-ttu-id="cbc7d-151">返します、<see cref="T:Microsoft.Office.Interop.Excel.Name" />オブジェクトです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-146">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Name" /> object.</span>
+            <span data-stu-id="cbc7d-151">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Name" /> object.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
@@ -357,9 +377,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="24993-147">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</span>
+          <span data-ttu-id="cbc7d-152">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-147">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
+            <span data-stu-id="cbc7d-152">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -390,13 +410,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="24993-148">コレクション内にあるオブジェクトの数を返します。</span>
+          <span data-ttu-id="cbc7d-153">コレクション内にあるオブジェクトの数を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-148">Returns the number of objects in the collection.</span>
+            <span data-stu-id="cbc7d-153">Returns the number of objects in the collection.</span>
           </span>
-          <span data-ttu-id="24993-149">整数型 ( <b>Integer</b>) の値を使用します。</span>
+          <span data-ttu-id="cbc7d-154">整数型 ( <b>Integer</b>) の値を使用します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-149">Read-only <b>Integer</b>.</span>
+            <span data-stu-id="cbc7d-154">Read-only <b>Integer</b>.</span>
           </span>
         </summary>
         <value>To be added.</value>
@@ -427,31 +447,33 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="24993-150">現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</span>
+          <span data-ttu-id="cbc7d-155">現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-150">Returns a 32-bit integer that indicates the application in which this object was created.</span>
+            <span data-stu-id="cbc7d-155">Returns a 32-bit integer that indicates the application in which this object was created.</span>
           </span>
-          <span data-ttu-id="24993-151">オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</span>
+          <span data-ttu-id="cbc7d-156">オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-151">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
+            <span data-stu-id="cbc7d-156">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
           </span>
-          <span data-ttu-id="24993-152">読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</span>
+          <span data-ttu-id="cbc7d-157">読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-152">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
+            <span data-stu-id="cbc7d-157">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
           </span>
         </summary>
         <value>To be added.</value>
         <remarks>
-          <span data-ttu-id="24993-153">
-            <para>
-              <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="24993-153">
-              <para>The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code. For example, Microsoft Excel has the creator code XCEL.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="cbc7d-158">
+              <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="cbc7d-158">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
             </span>
-          </span>
+            <span data-ttu-id="cbc7d-159">たとえば、Microsoft Excel は、クリエーター コードを持っています。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="cbc7d-159">For example, Microsoft Excel has the creator code XCEL.</span>
+            </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -512,60 +534,58 @@
       </Parameters>
       <Docs>
         <param name="Index">
-          <span data-ttu-id="24993-154">省略可能な<b>オブジェクト</b>です。</span>
+          <span data-ttu-id="cbc7d-160">省略可能な<b>オブジェクト</b>です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-154">Optional <b>Object</b>.</span>
+            <span data-stu-id="cbc7d-160">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="24993-155">対象の定義名またはインデックス番号を指定します。</span>
+          <span data-ttu-id="cbc7d-161">対象の定義名またはインデックス番号を指定します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-155">The name or number of the defined name to be returned.</span>
+            <span data-stu-id="cbc7d-161">The name or number of the defined name to be returned.</span>
           </span>
         </param>
         <param name="IndexLocal">
-          <span data-ttu-id="24993-156">省略可能な<b>オブジェクト</b>です。</span>
+          <span data-ttu-id="cbc7d-162">省略可能な<b>オブジェクト</b>です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-156">Optional <b>Object</b>.</span>
+            <span data-stu-id="cbc7d-162">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="24993-157">ユーザーの言語で定義された名前の名前です。</span>
+          <span data-ttu-id="cbc7d-163">ユーザーの言語で定義された名前の名前です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-157">The name of the defined name in the language of the user.</span>
+            <span data-stu-id="cbc7d-163">The name of the defined name in the language of the user.</span>
           </span>
-          <span data-ttu-id="24993-158">この引数を使用する場合、名前は変換されません。</span>
+          <span data-ttu-id="cbc7d-164">この引数を使用する場合、名前は変換されません。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-158">No names will be translated if you use this argument.</span>
+            <span data-stu-id="cbc7d-164">No names will be translated if you use this argument.</span>
           </span>
         </param>
         <param name="RefersTo">
-          <span data-ttu-id="24993-159">省略可能な<b>オブジェクト</b>です。</span>
+          <span data-ttu-id="cbc7d-165">省略可能な<b>オブジェクト</b>です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-159">Optional <b>Object</b>.</span>
+            <span data-stu-id="cbc7d-165">Optional <b>Object</b>.</span>
           </span>
-          <span data-ttu-id="24993-160">どのような名前を参照します。</span>
+          <span data-ttu-id="cbc7d-166">どのような名前を参照します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-160">What the name refers to.</span>
+            <span data-stu-id="cbc7d-166">What the name refers to.</span>
           </span>
-          <span data-ttu-id="24993-161">参照するのに対象によって名前を識別するのにには、この引数を使用します。</span>
+          <span data-ttu-id="cbc7d-167">参照するのに対象によって名前を識別するのにには、この引数を使用します。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-161">You use this argument to identify a name by what it refers to.</span>
+            <span data-stu-id="cbc7d-167">You use this argument to identify a name by what it refers to.</span>
           </span>
         </param>
         <summary>
-          <span data-ttu-id="24993-162">1 つを返します<see cref="T:Microsoft.Office.Interop.Excel.Name" />オブジェクトから、<see cref="T:Microsoft.Office.Interop.Excel.Names" />コレクションです。</span>
+          <span data-ttu-id="cbc7d-168">1 つを返します<see cref="T:Microsoft.Office.Interop.Excel.Name" />オブジェクトから、<see cref="T:Microsoft.Office.Interop.Excel.Names" />コレクションです。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-162">Returns a single <see cref="T:Microsoft.Office.Interop.Excel.Name" /> object from a <see cref="T:Microsoft.Office.Interop.Excel.Names" /> collection.</span>
+            <span data-stu-id="cbc7d-168">Returns a single <see cref="T:Microsoft.Office.Interop.Excel.Name" /> object from a <see cref="T:Microsoft.Office.Interop.Excel.Names" /> collection.</span>
           </span>
         </summary>
         <returns>To be added.</returns>
         <remarks>
-          <span data-ttu-id="24993-163">
-            <para>、1 つとの 1 つだけ、これら 3 つの引数を指定する必要があります</para>。
-          <para></para></span>
-          <span class="sxs-lookup">
-            <span data-stu-id="24993-163">
-              <para>You must specify one, and only one, of these three arguments.</para>
-              <para></para>
+          <para>
+            <span data-ttu-id="cbc7d-169">省略可能な 3 つの引数から必ず 1 つだけ引数を指定するようにしてください。</span>
+            <span class="sxs-lookup">
+              <span data-stu-id="cbc7d-169">You must specify one, and only one, of these three arguments.</span>
             </span>
-          </span>
+          </para>
+          <para></para>
         </remarks>
       </Docs>
     </Member>
@@ -593,9 +613,9 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <span data-ttu-id="24993-p119">指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</span>
+          <span data-ttu-id="cbc7d-p121">指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</span>
           <span class="sxs-lookup">
-            <span data-stu-id="24993-p119">Returns the parent object for the specified object. Read-only.</span>
+            <span data-stu-id="cbc7d-p121">Returns the parent object for the specified object. Read-only.</span>
           </span>
         </summary>
         <value>To be added.</value>
