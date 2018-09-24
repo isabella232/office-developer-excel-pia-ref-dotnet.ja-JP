@@ -1,10 +1,10 @@
 <Type Name="ChartFormat" FullName="Microsoft.Office.Interop.Excel.ChartFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="08f4ab1e4d7030bcec598931465b5ff7a16ca754" />
+    <Meta Name="ms.openlocfilehash" Value="18e25547dff0fcae494f7e6a31d98406eeac4918" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576091" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartFormat" />
@@ -31,8 +31,10 @@
   <Docs>
     <summary>グラフ要素の Office Art 書式へのアクセスを提供します。</summary>
     <remarks>
-      <para>プロパティまたは<b>ChartFormat</b>オブジェクトがアタッチされるオブジェクトの型には適用されないメソッドを使用すると、実行時エラーが発生します</para>。
-      <para></para></remarks>
+      <para>
+        <b>ChartFormat</b> オブジェクトがアタッチされるオブジェクトの種類に適用されないプロパティまたはメソッドを使用すると、実行時エラーを引き起こします。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Adjustments">
@@ -151,8 +153,9 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。 <see cref="P:Microsoft.Office.Interop.Excel.ChartFormat.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当  <see cref="P:Microsoft.Office.Interop.Excel.ChartFormat.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -213,7 +216,7 @@
           <see cref="T:Microsoft.Office.Core.GlowFormat" />
         </value>
         <remarks>
-          <para>発光の効果は、鮮やかなカラーのエッジをグラフィックに追加します。 </para>
+          <para>光彩効果は、画像のエッジに鮮やかな色を適用します。  </para>
           <para></para>
         </remarks>
       </Docs>
@@ -246,8 +249,9 @@
           <see cref="T:Microsoft.Office.Interop.Excel.LineFormat" />
         </value>
         <remarks>
-          <para>行の<see cref="T:Microsoft.Office.Interop.Excel.LineFormat" />オブジェクトは直線自体を表し、枠線のグラフを<see cref="T:Microsoft.Office.Interop.Excel.LineFormat" />は境界線を表します</para>。
-          <para></para></remarks>
+          <para>行の<see cref="T:Microsoft.Office.Interop.Excel.LineFormat" />オブジェクトは、線自体を表します。グラフの枠線と、<see cref="T:Microsoft.Office.Interop.Excel.LineFormat" />は境界線を表します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

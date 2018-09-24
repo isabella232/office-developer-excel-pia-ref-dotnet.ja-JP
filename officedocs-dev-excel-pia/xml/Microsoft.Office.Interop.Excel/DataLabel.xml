@@ -1,10 +1,10 @@
 <Type Name="DataLabel" FullName="Microsoft.Office.Interop.Excel.DataLabel">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2b832d255d01c5c5b7e9ed01b46690aca71f5da4" />
+    <Meta Name="ms.openlocfilehash" Value="2636427ad9e2bda4aa31e39589f7777b7ffdf22f" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586759" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DataLabel" />
@@ -32,11 +32,13 @@
     <summary>グラフのデータ要素または近似曲線のデータ ラベルを表します。</summary>
     <remarks>
       <para>
-        <b>DataLabel</b>オブジェクト、一連のメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.DataLabels" />コレクションです。<b>DataLabels</b>コレクションには、ポイントごとにオブジェクト<b>返すプロパティ</b>にはが含まれています。系列では、データ系列の面) など、 <b>DataLabels</b>コレクションに含まれる<b>DataLabel</b>オブジェクトの 1 つです</para>。
-      <para>使用して<b>データ ラベル</b>(<paramref name="index" />)、<paramref name="index" />は、データ ラベルのインデックス番号で、1 つの<b>DataLabel</b>オブジェクトを取得する</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Point.DataLabel" /> 1 つのポイントの<b>DataLabel</b>オブジェクトを返すプロパティです</para>。
-      <para>、近似曲線、<see cref="P:Microsoft.Office.Interop.Excel.Trendline.DataLabel" />プロパティは近似曲線と共に表示されるテキストを返します。これは、数式、R 2 乗値、またはその両方 (両方が表示されている) 場合です</para>。
-      <para></para></remarks>
+        <b>DataLabel</b>オブジェクト、一連のメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.DataLabels" />コレクションです。 <b>DataLabels</b> コレクションは各データ要素の <b>DataLabel</b> オブジェクトを含みます。 面グラフのデータ系列でデータ ラベルを項目名に設定した場合のように、各データ要素ごとに扱うことができないデータ系列では、 <b>DataLabels</b> コレクションに含まれる <b>DataLabel</b> オブジェクトは 1 つだけです。</para>
+      <para>
+        <b>データ ラベル</b>を使用して (<paramref name="index" />)、<paramref name="index" />は、データ ラベルのインデックス番号で、1 つの<b>DataLabel</b>オブジェクトを取得します。</para>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Point.DataLabel" /> 1 つのポイントの<b>DataLabel</b>オブジェクトを返すプロパティです。</para>
+      <para>、近似曲線、<see cref="P:Microsoft.Office.Interop.Excel.Trendline.DataLabel" />プロパティは近似曲線と共に表示されるテキストを返します。 返される文字列は、方程式か R-2 乗値で、両方が表示されているときは両方が返されます。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Height">
@@ -297,8 +299,10 @@
         <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Characters" />オブジェクトのテキスト内の文字の範囲を表すオブジェクト。 テキスト文字列内の書式指定文字を<b>文字</b>オブジェクトを使用することができます。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、<b>文字</b>オブジェクトは、コレクションはありません</para>。
-          <para></para></remarks>
+          <para>
+            <b>Characters</b>オブジェクトは、コレクションはありません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -328,8 +332,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -483,8 +488,9 @@
         <summary>取得または英語で、A1 形式の表記法を使用して、オブジェクトの数式を表す値を設定します。</summary>
         <value>英語で、A1 形式の表記法を使用して、オブジェクトの数式です。</value>
         <remarks>
-          <para>読み取り/書き込み</para>。
-          <para></para></remarks>
+          <para>値の取得および設定が可能です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaLocal">
@@ -516,8 +522,9 @@
         <summary>取得またはユーザーの言語で、A1 形式の表記法を使用して、オブジェクトの数式を表す値を設定します。</summary>
         <value>ユーザーの言語で、A1 形式の表記法を使用して、オブジェクトの数式です。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaR1C1">
@@ -549,8 +556,9 @@
         <summary>取得または英語で、r1c1 形式の表記法を使用して、オブジェクトの数式を表す値を設定します。</summary>
         <value>英語で、r1c1 形式の表記法を使用して、オブジェクトの数式です。</value>
         <remarks>
-          <para>読み取り/書き込み</para>。
-          <para></para></remarks>
+          <para>値の取得および設定が可能です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaR1C1Local">
@@ -582,8 +590,9 @@
         <summary>取得またはユーザーの言語で、r1c1 形式の表記法を使用して、オブジェクトの数式を表す値を設定します。</summary>
         <value>ユーザーの言語で、r1c1 形式の表記法を使用して、オブジェクトの数式です。</value>
         <remarks>
-          <para>読み取り/書き込み</para>。
-          <para></para></remarks>
+          <para>値の取得および設定が可能です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -615,8 +624,9 @@
         <summary>オブジェクトの高さを取得します。</summary>
         <value>オブジェクトのポイント単位の高さです。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlignment">
@@ -648,7 +658,7 @@
         <summary>指定したオブジェクトの水平方向の配置を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>以下の定数を使用することができます:</para>
+          <para>次の定数を使用することができます。</para>
           <para>
             <b>xlCenter</b>
           </para>
@@ -664,8 +674,9 @@
           <para>
             <b>xlRight</b>
           </para>
-          <para>が選択またはインストールされている言語サポート (たとえば、日本語) によっては使用ができないこれらの定数のいくつかがあります</para>。
-          <para></para></remarks>
+          <para>[!メモ] 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -730,8 +741,9 @@
         <summary>列 A の左端 (ワークシートの場合)、またはグラフ エリアの左端 (グラフの場合) からオブジェクトの左端までのポイント単位の距離です。 読み取り/書き込み <b>二重</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ウィンドウが最大化されている場合、このプロパティは、ウィンドウの境界線の幅に基づいて、変化する負の数を返します。このプロパティを 0 (ゼロ) に設定すると、ウィンドウがアプリケーション ウィンドウを最大表示したかどうかはそれよりも少し小さくなります。つまり、このプロパティが 0 (ゼロ) の場合は、Microsoft Excel のメイン ウィンドウの左枠線だけではほとんど表示されません、画面にします</para>。
-          <para></para></remarks>
+          <para>ウィンドウを最大化すると、このプロパティはウィンドウの境界線の幅に基づいて、変化する負の数を返します。 このプロパティを 0 (ゼロ) に設定すると、ウィンドウがアプリケーション ウィンドウを最大表示したかどうかはそれよりも少し小さくなります。 つまり、このプロパティが 0 (ゼロ) の場合は、Microsoft Excel のメイン ウィンドウの左側の境界線はかろうじて画面に表示されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -791,8 +803,9 @@
         <summary>オブジェクトの書式設定コードを設定または返します。読み取りまたは書き込み <b>文字列</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>形式は、[表示形式]、[セルの書式設定] ダイアログ ボックスと同じ文字列です。<b>Format</b>関数は、<b>数字</b>よりもコードの文字列を別の形式を使用して、<see cref="P:Microsoft.Office.Interop.Excel.DataLabel.NumberFormatLocal" />プロパティ</para>。
-          <para></para></remarks>
+          <para>表示形式を示す文字列は、[ セルの書式設定] ダイアログ ボックスの [ 表示形式] の文字列と同じです。 <b>Format</b>関数は、<b>数字</b>よりもコードの文字列を別の形式を使用して、<see cref="P:Microsoft.Office.Interop.Excel.DataLabel.NumberFormatLocal" />のプロパティです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLinked">
@@ -857,8 +870,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Format</b>関数は、コードの文字列を別の形式を使用して、<see cref="P:Microsoft.Office.Interop.Excel.DataLabel.NumberFormat" />と<b>NumberFormatLocal</b>プロパティ</para>。
-          <para></para></remarks>
+            <b>Format</b>関数は、コードの文字列を別の形式を使用して、<see cref="P:Microsoft.Office.Interop.Excel.DataLabel.NumberFormat" />と<b>NumberFormatLocal</b>プロパティです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -890,7 +904,7 @@
         <summary>テキストの方向。 90 度に –90 から整数値を指定できます。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>以下の定数を使用することができます:</para>
+          <para>次の定数を使用することができます。</para>
           <para>
             <b>xlDownward</b>
           </para>
@@ -995,8 +1009,9 @@
         <summary>指定したオブジェクトの読み取り順序を設定または返します。 使用できる定数は、次のいずれか: <b>xlRTL</b> (右から左へ)、 <b>xlLTR</b> (左から右)、または<b>xlContext</b>。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>が選択またはインストールされている言語サポート (たとえば、日本語) によっては使用ができないこれらの定数のいくつかがあります</para>。
-          <para></para></remarks>
+          <para>[!メモ] 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -1054,8 +1069,9 @@
         <summary>グラフのデータ ラベルに使用する区切り記号を表す<b>オブジェクト</b>を取得または設定します。 値の取得および設定が可能です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>グラフがアクティブになって前に、プログラムを使用してデータ ラベルにアクセスすることができます; それ以外の場合、実行時エラーが発生します</para>。
-          <para></para></remarks>
+          <para>グラフがアクティブになってプログラムからデータ ラベルにアクセスする前にそれ以外の場合、実行時エラーが発生します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Shadow">
@@ -1120,8 +1136,9 @@
           <b>True</b> の場合、グラフのデータ ラベルのバブル サイズを表示します。 <b>False</b> の場合は表示しません。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>グラフがアクティブになってプログラムを使用してデータ ラベルにアクセスするか、実行時エラーが発生する前にします</para>。
-          <para></para></remarks>
+          <para>グラフがアクティブになっていないと、プログラムからデータ ラベルにアクセスできません。そうでない場合、実行時エラーが発生します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowCategoryName">
@@ -1154,8 +1171,9 @@
           <b>True</b> の場合、グラフのデータ ラベルの分類名を表示します。 <b>False</b> の場合は表示しません。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>グラフがアクティブになってプログラムを使用してデータ ラベルにアクセスするか、実行時エラーが発生する前にします</para>。
-          <para></para></remarks>
+          <para>グラフがアクティブになっていないと、プログラムからデータ ラベルにアクセスできません。そうでない場合、実行時エラーが発生します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowLegendKey">
@@ -1220,8 +1238,9 @@
           <b>True</b> の場合、グラフのデータ ラベルにパーセントの値を表示します。 <b>False</b> の場合は表示しません。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>グラフがアクティブになってプログラムを使用してデータ ラベルにアクセスするか、実行時エラーが発生する前にします</para>。
-          <para></para></remarks>
+          <para>グラフがアクティブになっていないと、プログラムからデータ ラベルにアクセスできません。そうでない場合、実行時エラーが発生します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowRange">
@@ -1254,8 +1273,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Range</b>オブジェクトは、各データ ラベルは、範囲内のセルのいずれかに一致するよう、データ ラベルの範囲にセルの任意の範囲をマップします</para>。
-          <para></para></remarks>
+            <b>Range</b>オブジェクトでは、各データ ラベルは、範囲内のセルのいずれかに一致するように、データ ラベルの範囲にセルの任意の範囲をマップします。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowSeriesName">
@@ -1288,8 +1308,9 @@
           <b>ブール値</b>をグラフのデータ ラベルの系列名表示の動作を示すを設定または返します。 <b>True</b>を系列名を表示します。 <b>False</b>を非表示にします。 値の取得および設定が可能です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>グラフがアクティブになってプログラムを使用してデータ ラベルにアクセスするか、実行時エラーが発生する前にします</para>。
-          <para></para></remarks>
+          <para>グラフがアクティブになっていないと、プログラムからデータ ラベルにアクセスできません。そうでない場合、実行時エラーが発生します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowValue">
@@ -1322,8 +1343,9 @@
           <b>ブール値</b>を指定したグラフのデータ ラベル値の表示動作に対応する設定または返します。 <b>True を指定</b>すると、値が表示されます。 <b>False</b>を非表示にします。 値の取得および設定が可能です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>指定されたグラフがアクティブになってプログラムを使用してデータ ラベルにアクセスするか、実行時エラーが発生する前にします</para>。
-          <para></para></remarks>
+          <para>指定されたグラフがアクティブになっていないと、プログラムからデータ ラベルにアクセスできません。そうでない場合、実行時エラーが発生します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -1456,7 +1478,7 @@
         <summary>指定したオブジェクトの垂直方向の配置を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>以下の定数を使用することができます:</para>
+          <para>次の定数を使用することができます。</para>
           <para>
             <b>xlBottom</b>
           </para>
@@ -1505,8 +1527,9 @@
         <summary>オブジェクトの幅を取得します。</summary>
         <value>オブジェクトのポイント単位の高さです。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,10 +1,10 @@
 <Type Name="AutoCorrect" FullName="Microsoft.Office.Interop.Excel.AutoCorrect">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e14cf70b8bdf1df93bc526f14352da5bd8c8b680" />
+    <Meta Name="ms.openlocfilehash" Value="782c79cfc9bebcca05b2fc4c4e554571d4077391" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572724" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AutoCorrect" />
@@ -31,8 +31,9 @@
   <Docs>
     <summary>曜日の先頭文字を大文字にするかどうか、2 文字目を小文字にするかどうかの設定と、置き換えを行う文字列など、Excel のオートコレクトの設定全体を表します。</summary>
     <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Application.AutoCorrect" /> 、<b>オート コレクト</b>オブジェクトを返すプロパティです</para>。
-      <para></para></remarks>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Application.AutoCorrect" /> 、<b>オート コレクト</b>オブジェクトを返すプロパティです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddReplacement">
@@ -125,8 +126,9 @@
         <summary>リストの自動拡張が有効になっているかどうかを示す<b>ブール</b>値です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>空の行またはリストの横の列のセルに入力するとリストが自動拡張が有効になっている場合、その行または列を含むように拡張します</para>。
-          <para></para></remarks>
+          <para>空の行またはリストの横の列のセルに入力すると一覧が自動拡張が有効になっている場合、その行または列を含めるために展開されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFillFormulasInLists">
@@ -160,8 +162,9 @@
           <b>ブール型 (Boolean)</b>
         </value>
         <remarks>
-          <para>プロパティでは、既存の集計列や自動入力が発生しなかった作成された集計列は影響しません</para>。
-          <para></para></remarks>
+          <para>このプロパティは、既存の集計列や自動入力を使わずに作成された集計列には影響しません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CapitalizeNamesOfDays">
@@ -286,10 +289,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteReplacement">
@@ -352,9 +356,10 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>DisplayAutoCorrectOptions</b>プロパティは、Microsoft Office の設定です。Microsoft Excel では、このプロパティを変更することは、他の Office アプリケーションにも影響します</para>。
-          <para>Excel で、[オート コレクトのオプション] ボタンは、ハイパーリンクが自動的に作成される場合にのみ表示されます</para>。
-          <para></para></remarks>
+            <b>DisplayAutoCorrectOptions</b>プロパティは、Microsoft Office の設定です。 Microsoft Excel では、このプロパティを変更することは、他の Office アプリケーションにも影響します。</para>
+          <para>Excel のオート コレクトのオプションではボタンのみ表示されます、ハイパーリンクが自動的に作成するとします。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -418,11 +423,20 @@
         <summary>オートコレクト項目の配列を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>場合<paramref name="Index" />が指定されていない、このメソッドは、2 次元の配列を返します。次の表に示すように、配列内の各行が 1 つの交換では、含まれています</para>。
-          <list type="table"><item><term>1</term><description>置き換えられるテキスト</description></item>の
-            <item><description>置換後の文字列</description>である
-              <term>2</term></item></list><para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.AutoCorrect.AddReplacement(System.String,System.String)" /> 、[置換] ボックスの一覧にエントリを追加します</para>。
-          <para></para></remarks>
+          <para>場合<paramref name="Index" />が指定されていない、このメソッドは、2 次元の配列を返します。 配列内の各行には、次の表に示すように、1 つの交換が含まれています。</para>
+          <list type="table">
+            <item>
+              <term>1</term>
+              <description>置換される文字列</description>
+            </item>
+            <item>
+              <term>2</term>
+              <description>置換文字列</description>
+            </item>
+          </list>
+          <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.AutoCorrect.AddReplacement(System.String,System.String)" /> 、[置換] ボックスの一覧にエントリを追加する方法です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReplaceText">

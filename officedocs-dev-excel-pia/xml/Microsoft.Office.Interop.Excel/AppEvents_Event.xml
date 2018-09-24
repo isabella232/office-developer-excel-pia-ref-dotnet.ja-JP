@@ -1,10 +1,10 @@
 <Type Name="AppEvents_Event" FullName="Microsoft.Office.Interop.Excel.AppEvents_Event">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a27629fb8f2b82071d18bfdd4a110964f2911154" />
+    <Meta Name="ms.openlocfilehash" Value="9bf90f2833e35c96400ee1d99e1cdd02fe945d69" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580242" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AppEvents_Event" />
@@ -51,10 +51,13 @@
         <summary>
           <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" />と、すべて保留中の更新処理 (同期と非同期) イベントが発生して、すべての計算処理が完了しました。</summary>
         <remarks>
-          <para>このイベントは、計算が完了して、未解決のクエリがない場合に発生します。 両方の条件を満たす必要があるイベントが発生する前に必須では。 データがないシート、ブックにブック全体の計算が終了するたびに、実行中のクエリがない場合でもイベントが発生することができます。 </para>
-          <para>使用して、アドインの開発者、<see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" />イベントは、ブック内のすべてのデータが完全が更新されたときであるクエリや計算を実行中であった可能性がありますを知っている</para>。
-          <para>このイベントはすべて発生<see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Calculate" />、 <see cref="E:Microsoft.Office.Interop.Excel.RefreshEvents_Event.AfterRefresh" />、および<see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetChange" />のイベント。 すべての更新処理と計算処理がすべて完了しましたと後に発生した後に発生する最後のイベントである<see cref="P:Microsoft.Office.Interop.Excel._Application.CalculationState" />に設定されて<see cref="F:Microsoft.Office.Interop.Excel.XlCalculationState.xlDone" />です</para>。
-          <para></para></remarks>
+          <para>このイベントは、計算が完了して、未解決のクエリがない場合に発生します。  両方の条件を満たす必要があるイベントが発生する前に必須では。  データがないシート、ブックにブック全体の計算が終了するたびに、実行中のクエリがない場合でもイベントが発生することができます。
+
+</para>
+          <para>アドインの開発者を使用して、 <see cref="E:Microsoft.Office.Interop.Excel.ApplicationClass.AfterCalculate" /> 、ブック内のすべてのデータが完全が更新されたときであるクエリや計算を実行中であった可能性があります知っているイベントです。</para>
+          <para>結局のところでこのイベントが発生した<see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.Calculate" />、 <see cref="E:Microsoft.Office.Interop.Excel.RefreshEvents_Event.AfterRefresh" />、および<see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetChange" />のイベントです。  すべての更新処理と計算処理がすべて完了しましたと後に発生した後に発生する最後のイベントである<see cref="P:Microsoft.Office.Interop.Excel._Application.CalculationState" />に設定されて<see cref="F:Microsoft.Office.Interop.Excel.XlCalculationState.xlDone" />。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NewWorkbook">
@@ -245,8 +248,9 @@
       <Docs>
         <summary>既定のダブルクリックの操作の前に、ワークシートをダブルクリックしたときに発生します。</summary>
         <remarks>
-          <para>グラフ シート上にこのイベントは発生しません</para>。
-          <para></para></remarks>
+          <para>グラフ シートの場合、このイベントは発生しません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetBeforeRightClick">
@@ -266,8 +270,9 @@
       <Docs>
         <summary>既定の右クリックの操作の前に、ワークシートを右クリックしたときに発生します。</summary>
         <remarks>
-          <para>グラフ シート上にこのイベントは発生しません</para>。
-          <para></para></remarks>
+          <para>グラフ シートの場合、このイベントは発生しません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetCalculate">
@@ -306,8 +311,9 @@
       <Docs>
         <summary>ユーザーまたは外部リンクにより、ワークシートのセルが変更されるときに発生します。</summary>
         <remarks>
-          <para>グラフ シート上にこのイベントは発生しません</para>。
-          <para></para></remarks>
+          <para>グラフ シートの場合、このイベントは発生しません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetDeactivate">
@@ -346,8 +352,9 @@
       <Docs>
         <summary>Microsoft Excel でハイパーリンクをクリックすると発生します。</summary>
         <remarks>
-          <para>ワークシート レベルのイベントを参照してください、<see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.FollowHyperlink" />イベントです</para>。
-          <para></para></remarks>
+          <para>ワークシート レベルのイベントを参照してください、<see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.FollowHyperlink" />イベントです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetLensGalleryRenderComplete">
@@ -386,8 +393,10 @@
       <Docs>
         <summary>ピボットテーブル内のセルまたはセル範囲を編集または再計算 (数式を含むセルの場合) した後に発生します。</summary>
         <remarks>
-          <para>、<see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableAfterValueChange" />の編集、またはセルを再計算以外の状況でもイベントは発生しません。たとえば、これは発生せず、ピボット テーブルの更新、並べ替え、フィルター、またはドリル ダウンでは、これらの操作は、セルを移動して、OLAP データ ソースから新しい値が取得される可能性がありますが</para>。
-          <para></para></remarks>
+          <para>
+            <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableAfterValueChange" />の編集、またはセルを再計算以外の状況でもイベントは発生しません。 たとえば、これは発生せず、ピボット テーブルの更新、並べ替え、フィルター、またはドリル ダウンでは、これらの操作は、セルを移動して、OLAP データ ソースから新しい値が取得される可能性がありますが。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetPivotTableBeforeAllocateChanges">
@@ -407,8 +416,10 @@
       <Docs>
         <summary>ピボットテーブルに変更を適用する前に発生します。</summary>
         <remarks>
-          <para>、 <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeAllocateChanges" /> Excel ピボット テーブルの OLAP データ ソースへのすべての変更を適用するのには UPDATE CUBE ステートメントを実行する前にすぐに、ユーザーがユーザー インターフェイスの変更を適用するを選択した直後にイベントが発生します</para>。
-          <para></para></remarks>
+          <para>
+            <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeAllocateChanges" /> Excel ピボット テーブルの OLAP データ ソースへのすべての変更を適用するのには UPDATE CUBE ステートメントを実行する前にすぐに、ユーザーがユーザー インターフェイスの変更を適用するを選択した直後にイベントが発生します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetPivotTableBeforeCommitChanges">
@@ -428,8 +439,10 @@
       <Docs>
         <summary>ピボットテーブルの OLAP データ ソースに対して変更を確定する前に発生します。</summary>
         <remarks>
-          <para>、<see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeCommitChanges" />全体のピボット テーブルの変更を保存するのには、ユーザーが選択した後にすぐに、Excel は、ピボット テーブルの OLAP データ ソースに対してコミット トランザクションを実行する前にすぐにイベントが発生します</para>。
-          <para></para></remarks>
+          <para>
+            <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.SheetPivotTableBeforeCommitChanges" />全体のピボット テーブルの変更を保存するのには、ユーザーが選択した後にすぐに、Excel は、ピボット テーブルの OLAP データ ソースに対してコミット トランザクションを実行する前にすぐにイベントが発生します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetPivotTableBeforeDiscardChanges">
@@ -449,8 +462,9 @@
       <Docs>
         <summary>ピボットテーブルに対する変更が破棄される前に発生します。</summary>
         <remarks>
-          <para>トランザクションがアクティブであるとユーザーが変更を破棄するを選択した後、ピボット テーブル内のすべての編集された値を破棄する場合、Excel が ROLLBACK TRANSACTION ステートメントを OLAP データ ソースに対してを実行する前にすぐに実行します</para>。
-          <para></para></remarks>
+          <para>トランザクションがアクティブであるとユーザーが変更を破棄するを選択した後、ピボット テーブル内のすべての編集された値を破棄する場合、Excel が ROLLBACK TRANSACTION ステートメントを OLAP データ ソースに対してを実行する直前に発生します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetPivotTableUpdate">
@@ -660,9 +674,10 @@
       <Docs>
         <summary>Microsoft Excel の保存または開いているブックからデータを XML データ ファイルにエクスポートした後に発生します。</summary>
         <remarks>
-          <para>特定のブックから XML データをエクスポートした後に操作を実行する場合は、 <b>AfterXmlExport</b>イベントを使用します</para>。
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para></para></remarks>
+          <para>特定のブックから XML データをエクスポートした後に操作を実行する場合は、 <b>AfterXmlExport</b>イベントを使用します。</para>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkbookAfterXmlImport">
@@ -682,9 +697,11 @@
       <Docs>
         <summary>既存の XML データ接続が更新されるか、開いている Microsoft Excel ブックに新しい XML データがインポートされた後に発生します。</summary>
         <remarks>
-          <para>特定のブックに XML データをインポートした後に操作を実行する場合は、 <b>AfterXmlImport</b>イベントを使用します</para>。
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para></para></remarks>
+          <para>
+            <b>AfterXmlImport</b>イベントは、特定のブックに XML データをインポートした後に操作を実行する場合に使用します。</para>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkbookBeforeClose">
@@ -762,9 +779,10 @@
         <summary>Microsoft Excel の保存または開いているブックからデータを XML データ ファイルにエクスポートする前に発生します。</summary>
         <remarks>
           <para>
-            <b>BeforeXmlExport</b>イベントを使用して、対象となっている XML データをキャプチャする場合は、特定のブックの保存またはエクスポートします</para>。
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para></para></remarks>
+            <b>BeforeXmlExport</b>イベントを使用して、対象となっている XML データをキャプチャする場合は、特定のブックの保存またはエクスポートします。</para>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkbookBeforeXmlImport">
@@ -785,9 +803,10 @@
         <summary>既存の XML データ接続が更新されるか、開いている Microsoft Excel ブックに新しい XML データがインポートされる前に発生します。</summary>
         <remarks>
           <para>
-            <b>BeforeXmlImport</b>イベントを使用して、対象となっている XML データをキャプチャする場合は、インポート、または特定のブックを更新します</para>。
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para></para></remarks>
+            <b>BeforeXmlImport</b>イベントを使用して、対象となっている XML データをキャプチャする場合は、インポート、または特定のブックを更新します。</para>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkbookDeactivate">
@@ -846,9 +865,11 @@
         <summary>開いているブックで新しいグラフを作成するときに発生します。</summary>
         <remarks>
           <para>
-            <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /> 、新しいグラフを挿入またはワークシート、グラフ シート、またはその他の種類のシートに貼り付けるときに発生します。複数のグラフを挿入または貼り付け、それぞれのグラフが挿入または貼り付けの順序でのイベントが発生します。別 1 つの場所からが、chart オブジェクト、またはグラフ シートを移動する場合、イベントは発生しません。ただし、グラフ オブジェクトとグラフ シートのグラフを移動する場合、イベントが発生新しいグラフを作成する必要があるためです</para>。
-          <para>、<see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" />イベントは、次のシナリオでは発生しません: コピーまたはグラフ シートを貼り付ける、グラフの種類を変更する、元に戻すまたはやり直しの挿入または、グラフを貼り付けると、グラフを含むブックの読み込み、グラフのデータ ソースを変更します</para>。
-          <para></para></remarks>
+            <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" /> 、新しいグラフを挿入またはワークシート、グラフ シート、またはその他の種類のシートに貼り付けるときに発生します。 複数のグラフを挿入または貼り付け、それぞれのグラフが挿入または貼り付けの順序でのイベントが発生します。 別 1 つの場所からが、chart オブジェクト、またはグラフ シートを移動する場合、イベントは発生しません。 ただし、グラフ オブジェクトとグラフ シートのグラフを移動すると、イベントが発生、新しいグラフを作成する必要があるためします。</para>
+          <para>
+            <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookNewChart" />イベントは、次のシナリオでは発生しません: コピーまたはグラフ シートを貼り付ける、グラフの種類を変更する、元に戻すまたはやり直しの挿入または、グラフを貼り付けると、グラフを含むブックの読み込み、グラフのデータ ソースを変更します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkbookNewSheet">
@@ -945,8 +966,9 @@
         <summary>
           <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookRowsetComplete" />、ユーザーがレコード セットをドリルまたは OLAP ピボット テーブルで行セット アクションを起動するときにイベントが発生します。</summary>
         <remarks>
-          <para>イベントが操作が完了したときを決定するのにはオートメーションを使用してレコード セットを非同期に作成するためです。さらに、レコード セットが作成されるための別のシート、イベントはワークシート レベルでする必要があります</para>。
-          <para></para></remarks>
+          <para>レコードセットは非同期で作成されるため、イベントはアクションが完了した時をオートメーションが判断できるようにします。さらに、レコードセットは個別のシート上で作成されるため、イベントはワークシート レベルである必要があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkbookSync">

@@ -1,10 +1,10 @@
 <Type Name="RoutingSlip" FullName="Microsoft.Office.Interop.Excel.RoutingSlip">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cecf638f353f71fb8e3f7ca178c4b958a480636c" />
+    <Meta Name="ms.openlocfilehash" Value="d1e265b4ea2021fff6dba4ef91746a75aeaa3e17" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572703" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface RoutingSlip" />
@@ -31,9 +31,11 @@
   <Docs>
     <summary>ブックの回覧先を表します。 回覧先を使用して、電子メール システムを使用してブックを送信します。</summary>
     <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.RoutingSlip" /> 、<b>回覧先</b>のオブジェクトを返すプロパティです</para>。
-      <para><b>回覧先</b>のオブジェクトが存在しないし、しない限り、返されることはできません、 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" /> 、ブックのプロパティは<b>true を指定</b>します</para>。
-      <para></para></remarks>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.RoutingSlip" /> 、<b>回覧先</b>のオブジェクトを返すプロパティです。</para>
+      <para>
+        <b>回覧先</b>のオブジェクトが存在しないし、しない限り、返されることはできません、 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" /> 、ブックのプロパティは<b>true を指定</b>します。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -90,10 +92,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delivery">
@@ -125,8 +128,9 @@
         <summary>回覧配信方法を設定または返します。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery" />定数: <b>xlOneAfterAnother</b>または<b>xlAllAtOnce</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ルーティングが進行中の場合、このプロパティを設定することはできません</para>。
-          <para></para></remarks>
+          <para>ルーティングが進行中の場合、このプロパティを設定することはできません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -221,9 +225,10 @@
         <summary>回覧先に受信者を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>受信者の一覧の順序は、ルーティングの配信オプションが<b>xlOneAfterAnother</b>の場合に配信順序を定義します</para>。
-          <para>回覧先は、進行中は、既に受信され、ドキュメントをルーティングしていない受信者のみが返されるかを設定します</para>。
-          <para></para></remarks>
+          <para>受信者の一覧の順序は、ルーティングの配信オプションが<b>xlOneAfterAnother</b>の場合、配信順序を定義します。</para>
+          <para>回覧先は、進行中は、既に受信され、ドキュメントをルーティングしていない受信者のみが返されるかを設定します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -249,8 +254,10 @@
       <Docs>
         <summary>(同じ受信者リストと提供情報を使用して) 同じ明細で新規のルーティングを開始できるように、回覧先をリセットします。</summary>
         <returns>To be added.</returns>
-        <remarks>このメソッドを使用する前に、ルーティング<para>を完了する必要があります。その他の時間にこのメソッドを使用して、エラーが発生します</para>。
-          <para></para></remarks>
+        <remarks>
+          <para>このメソッドを使用する前に、ルーティングを完了する必要があります。 それ以外の場合にこのメソッドを使用すると、エラーが発生します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReturnWhenDone">
@@ -342,8 +349,9 @@
         <summary>メーラーまたは回覧先の件名を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>の件名の<see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" />オブジェクトは、ブックをルーティングするための電子メール メッセージの件名として使用されます</para>。
-          <para></para></remarks>
+          <para>件名の<see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" />オブジェクトは、ブックをルーティングするための電子メール メッセージの件名として使用されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TrackStatus">
@@ -376,8 +384,9 @@
           <b>True の</b>場合は、回覧先に対して状況管理が有効になっています。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ルーティングが進行中の場合、このプロパティを設定することはできません</para>。
-          <para></para></remarks>
+          <para>ルーティングが進行中の場合、このプロパティを設定することはできません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

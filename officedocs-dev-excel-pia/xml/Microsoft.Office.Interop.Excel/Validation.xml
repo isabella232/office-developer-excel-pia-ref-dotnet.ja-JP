@@ -1,10 +1,10 @@
 <Type Name="Validation" FullName="Microsoft.Office.Interop.Excel.Validation">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="083a06403ed93601b1e670cd7b0f4d2f6291f627" />
+    <Meta Name="ms.openlocfilehash" Value="64490ccfa07c156fb946aaf6fbcab62bd0310122" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575804" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Validation" />
@@ -31,9 +31,10 @@
   <Docs>
     <summary>ワークシート範囲の入力規則を表します。</summary>
     <remarks>
-      <para>使用の<see cref="P:Microsoft.Office.Interop.Excel.Range.Validation" /><b>オブジェクト</b>を返すプロパティです</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />を範囲にデータの入力規則を追加し、新しい<b>検証</b>オブジェクトを作成します</para>。
-      <para></para></remarks>
+      <para>使用の<see cref="P:Microsoft.Office.Interop.Excel.Range.Validation" /><b>オブジェクト</b>を返すプロパティです。</para>
+      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />を範囲にデータの入力規則を追加し、新しい<b>検証</b>オブジェクトを作成します。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -69,12 +70,37 @@
         <param name="Formula2">省略可能な<b>オブジェクト</b>です。 データの入力規則の 2 番目の部分と、<paramref name="Operator" />は、<b><b>規則での条件</b></b>(それ以外の場合、この引数は無視されます)。</param>
         <summary>指定された範囲に入力規則を追加します。</summary>
         <remarks>
-          <para>を追加する方法では、次の表に示すように入力規則の種類に応じて、さまざまな引数が必要です</para>。
-          <list type="table"><item><term><b>xlValidateCustom</b></term><description><paramref name="Formula1" />が必要です。<paramref name="Formula2" />は無視されます。<paramref name="Formula1" />データの入力が無効である場合、<b><b>該当</b>データの入力が有効である場合</b>に評価される式を含める必要があります</description></item>。
-            <item><term><b>xlInputOnly</b></term><description><paramref name="AlertStyle" />、 <paramref name="Formula1" />、または<paramref name="Formula2" />を使用します</description></item>。
-            <item><term><b>xlValidateList</b></term><description><paramref name="Formula1" />が必要です。<paramref name="Formula2" />は無視されます。<paramref name="Formula1" />の値のコンマ区切りの一覧またはこの一覧へのシート参照のいずれかが含まれている必要があります</description></item>。
-            <item><term><b>xlValidateWholeNumber</b>、 <b>xlValidateDate</b>、 <b>xlValidateDecimal</b>、 <b>xlValidateTextLength</b>、または<b>xlValidateTime</b></term><description>のいずれかのいずれかの<paramref name="Formula1" />または<paramref name="Formula2" />を指定する必要があります、またはその両方指定することがあります</description></item></list>。
-          <para></para></remarks>
+          <para>Add メソッドでは、次の表に示すように、入力規則の種類に応じて、さまざまな引数が必要です。</para>
+          <list type="table">
+            <item>
+              <term>
+                <b>xlValidateCustom</b>
+              </term>
+              <description>
+                <paramref name="Formula1" />必要です。<paramref name="Formula2" />は無視されます。 <paramref name="Formula1" />データの入力が無効である場合、<b><b>該当</b>データの入力が有効である場合</b>に評価される式を含める必要があります。</description>
+            </item>
+            <item>
+              <term>
+                <b>xlInputOnly</b>
+              </term>
+              <description>
+                <paramref name="AlertStyle" />、 <paramref name="Formula1" />、または<paramref name="Formula2" />を使用します。</description>
+            </item>
+            <item>
+              <term>
+                <b>xlValidateList</b>
+              </term>
+              <description>
+                <paramref name="Formula1" />必要です。<paramref name="Formula2" />は無視されます。 <paramref name="Formula1" />値のコンマ区切りの一覧またはこの一覧へのシート参照のいずれかを含める必要があります。</description>
+            </item>
+            <item>
+              <term>
+                <b>xlValidateWholeNumber</b>、<b>xlValidateDate</b>、<b>xlValidateDecimal</b>、<b>xlValidateTextLength</b>、または <b>xlValidateTime</b></term>
+              <description>いずれかの方法のいずれかの<paramref name="Formula1" />または<paramref name="Formula2" />を指定する必要があります、または両方の月を指定します。</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AlertStyle">
@@ -102,8 +128,10 @@
       <Docs>
         <summary>検証エラーのスタイルを返します。 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />。</summary>
         <value>To be added.</value>
-        <remarks>使用の<para>、<see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />範囲のエラーのスタイルを設定します。範囲には、データの入力規則が割り当てられている場合を使用して、<see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" />エラーのスタイルを変更するメソッドです</para>。
-          <para></para></remarks>
+        <remarks>
+          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />の範囲のエラーのスタイルを設定します。 範囲には、データの入力規則が割り当てられている場合を使用して、<see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" />エラーのスタイルを変更するメソッドです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -161,8 +189,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -305,8 +334,10 @@
       <Docs>
         <summary>値または条件付き書式または入力規則の 2 番目の部分に関連付けられた式を返します。 読み取り専用 <b>文字列</b> です。</summary>
         <value>To be added.</value>
-        <remarks>このプロパティは、<para>とデータの入力規則の条件付き書式設定のみを使用する<see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" />プロパティには、<b><b>規則での条件</b></b>です。定数値、文字列値、セル参照、または数式であることができます</para>。
-          <para></para></remarks>
+        <remarks>
+          <para>のみこのプロパティが使用されるデータの入力規則の条件付き書式を設定すると<see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" />プロパティには、<b><b>規則での条件</b></b>です。 定数値、文字列値、セル参照、または数式を指定できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IgnoreBlank">
@@ -340,8 +371,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>IgnoreBlank</b>プロパティが<b>True</b>の場合は、セルのデータと見なされます有効な場合はいずれかの方法で参照されているセルまたはセルが空白の場合、<see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" />または<see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" />プロパティが空白です</para>。
-          <para></para></remarks>
+            <b>IgnoreBlank</b>プロパティが<b>True</b>の場合は、セルのデータと見なされます有効な場合はいずれかの方法で参照されているセルまたはセルが空白の場合、<see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" />または<see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" />プロパティが空白です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IMEMode">
@@ -373,8 +405,9 @@
         <summary>日本語の入力規則の説明を設定または返します。 いずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" />定数。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>日本語の言語サポートがインストールおよび選択されている場合にのみ、このプロパティを設定することに注意してください</para>。
-          <para></para></remarks>
+          <para>このプロパティを設定できるのは、言語の設定に日本語が選択またはセットアップされている場合だけです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InCellDropdown">
@@ -407,9 +440,10 @@
           <b>True</b> の場合、入力規則で可能な値を含むドロップダウン リストを表示します。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>入力規則の種類が<b>xlValidateList</b>でない場合、このプロパティは無視されます</para>。
-          <para>使用、<paramref name="Minimum" />の引数、<see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />または<see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.Validation" />が有効なデータが含まれる範囲を指定するオブジェクトです</para>。
-          <para></para></remarks>
+          <para>入力規則の種類が<b>xlValidateList</b>でない場合、このプロパティは無視されます。</para>
+          <para>使用、<paramref name="Minimum" />の引数、<see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />または<see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.Validation" />が有効なデータが含まれる範囲を指定するオブジェクト。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InputMessage">
@@ -508,12 +542,38 @@
         <summary>セル範囲のデータの入力規則を変更します。</summary>
         <remarks>
           <para>
-            <b>Modify</b>メソッド、次の表に示すように、入力規則の種類に応じて、さまざまな引数が必要です</para>。
-          <list type="table"><item><term><b>xlInputOnly</b></term><description><paramref name="AlertStyle" />、 <paramref name="Formula1" />、および<paramref name="Formula2" />は使用されません</description></item>。
-            <item><term><b>xlValidateCustom</b></term><description><paramref name="Formula1" />が必要です。<paramref name="Formula2" />は無視されます。<paramref name="Formula1" />データの入力が無効である場合、<b><b>該当</b>データの入力が有効である場合</b>に評価される式を含める必要があります</description></item>。
-            <item><term><b>xlValidateList</b></term><description><paramref name="Formula1" />が必要です。<paramref name="Formula2" />は無視されます。<paramref name="Formula1" />の値のコンマ区切りのリストまたはリストへのシート参照のいずれかが含まれている必要があります</description></item>。
-            <item><term><b>xlValidateDate</b>、 <b>xlValidateDecimal</b>、 <b>xlValidateTextLength</b>、 <b>xlValidateTime</b>、または<b>xlValidateWholeNumber</b></term><description><paramref name="Formula1" />または<paramref name="Formula2" />、または、両方を指定する必要があります</description></item></list>。
-          <para></para></remarks>
+            <b>Modify</b>メソッドでは、次の表に示すように、入力規則の種類に応じて、さまざまな引数が必要です。</para>
+          <list type="table">
+            <item>
+              <term>
+                <b>xlInputOnly</b>
+              </term>
+              <description>
+                <paramref name="AlertStyle" />、 <paramref name="Formula1" />、および<paramref name="Formula2" />は使用されません。</description>
+            </item>
+            <item>
+              <term>
+                <b>xlValidateCustom</b>
+              </term>
+              <description>
+                <paramref name="Formula1" />必要です。<paramref name="Formula2" />は無視されます。 <paramref name="Formula1" />データの入力が無効である場合、<b><b>該当</b>データの入力が有効である場合</b>に評価される式を含める必要があります。</description>
+            </item>
+            <item>
+              <term>
+                <b>xlValidateList</b>
+              </term>
+              <description>
+                <paramref name="Formula1" />必要です。<paramref name="Formula2" />は無視されます。 <paramref name="Formula1" />値のコンマ区切りのリストまたはリストへのシート参照のいずれかを含める必要があります。</description>
+            </item>
+            <item>
+              <term>
+                <b>xlValidateDate</b> 、 <b>xlValidateDecimal</b> 、 <b>xlValidateTextLength</b> 、 <b>xlValidateTime</b> 、または <b>xlValidateWholeNumber</b></term>
+              <description>
+                <paramref name="Formula1" />または<paramref name="Formula2" />、両方を指定する必要がありますか。</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Operator">

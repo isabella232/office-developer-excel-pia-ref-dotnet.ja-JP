@@ -1,10 +1,10 @@
 <Type Name="CalculatedItems" FullName="Microsoft.Office.Interop.Excel.CalculatedItems">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="236c2e7a52552d9fa2fe650a19294ed8aa767e12" />
+    <Meta Name="ms.openlocfilehash" Value="803d3690114439928c366959ebf02ca6bbb754d4" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578737" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CalculatedItems : System.Collections.IEnumerable" />
@@ -35,10 +35,12 @@
   <Docs>
     <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />、指定されたピボット テーブル レポート内のすべての集計アイテムを表すオブジェクト。</summary>
     <remarks>
-      <para>1 月、2 月と 3 月のアイテムを含むことがあるという集計アイテムを"FirstQuarter"が 1 月、2 月の金額の合計として定義されるピボット テーブル レポートや March. など</para>
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.PivotField.CalculatedItems" /><b>CalculatedItems</b>コレクションを返します</para>。
-      <para>使用<b>CalculatedItems</b>(<paramref name="index" />)、 <paramref name="index" /><b>CalculatedItems</b>コレクションから 1 つの<b>PivotItem</b>オブジェクトを取得するのには、フィールドのインデックス番号または名前です</para>。
-      <para></para></remarks>
+      <para>たとえば、1 月、2 月と 3 月のアイテムを含むピボット テーブル レポートは、アイテム 1 月、2 月と 3 月の金額の合計として定義されている"FirstQuarter"という名前の計算される可能性があります。</para>
+      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.PivotField.CalculatedItems" /><b>CalculatedItems</b>コレクションを取得するメソッドです。</para>
+      <para>
+        <b>CalculatedItems</b>を使用 (<paramref name="index" />)、 <paramref name="index" /><b>CalculatedItems</b>コレクションから 1 つの<b>PivotItem</b>オブジェクトを取得するのには、フィールドのインデックス番号または名前。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Add">
@@ -226,10 +228,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -292,8 +295,9 @@
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>の値は、オブジェクトの名前は、<see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Name" />と<see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Value" />のプロパティ</para>。
-          <para></para></remarks>
+          <para>値は、オブジェクトの名前は、<see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Name" />と<see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Value" />のプロパティです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

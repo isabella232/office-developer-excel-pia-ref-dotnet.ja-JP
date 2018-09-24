@@ -1,10 +1,10 @@
 <Type Name="PivotFormulas" FullName="Microsoft.Office.Interop.Excel.PivotFormulas">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2ee42ffdcba76dcc9edf39321b65ceaeb9559d69" />
+    <Meta Name="ms.openlocfilehash" Value="883ef67197cacd07662fdeaa82dbd82051f41c92" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574698" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotFormulas : System.Collections.IEnumerable" />
@@ -35,9 +35,10 @@
   <Docs>
     <summary>ピボット テーブル レポートの数式のコレクションを表します。 それぞれの数式は、<see cref="T:Microsoft.Office.Interop.Excel.PivotFormula" />オブジェクトです。</summary>
     <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PivotFormulas" /> 、 <b>PivotFormulas</b>コレクションを返します</para>。
-      <para>このオブジェクトと関連付けられているプロパティとメソッドが使用できない OLAP データ ソースのフィールドを計算するため、項目がサポートされていません</para>。
-      <para></para></remarks>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PivotFormulas" /> 、 <b>PivotFormulas</b>コレクションを返します。</para>
+      <para>OLAP データ ソースに対して、このオブジェクトに関連するプロパティやメソッドは使用できません。それは計算フィールドや計算アイテムがサポートされていないからです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Add">
@@ -220,10 +221,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -286,8 +288,9 @@
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>の値は、オブジェクトの名前は、<see cref="P:Microsoft.Office.Interop.Excel.PivotFormula.Value" />プロパティ</para>。
-          <para></para></remarks>
+          <para>値は、オブジェクトの名前は、<see cref="P:Microsoft.Office.Interop.Excel.PivotFormula.Value" />プロパティ。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

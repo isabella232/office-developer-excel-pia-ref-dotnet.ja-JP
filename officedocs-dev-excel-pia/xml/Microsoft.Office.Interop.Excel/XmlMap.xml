@@ -1,10 +1,10 @@
 <Type Name="XmlMap" FullName="Microsoft.Office.Interop.Excel.XmlMap">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c3b5f447ad7e8151b7dba366715192ac74ad6768" />
+    <Meta Name="ms.openlocfilehash" Value="90e19f9871537de3824defd244b85c6255bb7e45" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20583609" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface XmlMap" />
@@ -31,12 +31,13 @@
   <Docs>
     <summary>ブックに追加されている XML マップを表します。</summary>
     <remarks>
-      <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-      <para>使用、<see cref="M:Microsoft.Office.Interop.Excel.XmlMaps.Add(System.String,System.Object)" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.XmlMaps" />コレクションを XML の対応付けをブックに追加します</para>。
-      <para>インポートおよび XML データをエクスポートします。</para>使用の
-      <para>、<see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Import(System.String,System.Object)" />指定した<b>XmlMap</b>にマッピングされたセルに XML データ ファイルから XML データをインポートする方法です。<see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ImportXml(System.String,System.Object)" />メソッドは、<b>文字列</b>変数に XML データをインポートします</para>。使用の
-      <para>、<see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Export(System.String,System.Object)" />指定した<b>XmlMap</b>にマッピングされたセルからデータをエクスポートする方法です。<see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ExportXml(System.String@)" />メソッドは、<b>文字列</b>変数に XML データをエクスポートします</para>。
-      <para></para></remarks>
+      <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.XmlMaps.Add(System.String,System.Object)" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.XmlMaps" />ブックに XML の対応付けを追加するコレクション。</para>
+      <para>XML データのインポートとエクスポート</para>
+      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Import(System.String,System.Object)" /> 、指定した<b>XmlMap</b>にマッピングされたセルに XML データ ファイルから XML データをインポートする方法です。 <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ImportXml(System.String,System.Object)" />メソッドは、<b>文字列</b>変数に XML データをインポートします。</para>
+      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Export(System.String,System.Object)" /> 、指定した<b>XmlMap</b>にマッピングされたセルからデータをエクスポートする方法です。 <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ExportXml(System.String@)" />メソッドは、<b>文字列</b>変数に XML データをエクスポートします。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,8 +101,9 @@
           <b>True の</b>場合の最適な列幅を自動的に調整に合わせて、指定されたクエリ テーブルまたは XML の対応付けを更新するたびにします。 <b>False</b>の列の幅は、更新ごとに自動的に調整されていない場合。 既定値は <b>True</b> です。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>最大列幅は 3 分の 2 を画面の幅です</para>。
-          <para></para></remarks>
+          <para>列幅の最大値は、画面幅の 3 分の 2 です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AppendOnImport">
@@ -134,8 +136,9 @@
           <b>True</b>を新しいデータをインポートするか、既存の接続を更新するとき、指定されたスキーマ マップにバインドされている XML リストに新しい行を追加する場合。 <b>False</b>のセルの内容を上書きする場合。 既定値は、 <b>false を指定</b> します。 読み取り/書き込み <b>ブール値</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -193,8 +196,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataBinding">
@@ -223,8 +227,9 @@
         <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.XmlDataBinding" />指定されたスキーマ マップに関連付けられているバインディングを表すオブジェクト。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -282,8 +287,9 @@
         <summary>指定したマップされたセルの内容をエクスポート<see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />オブジェクトを XML データ ファイルにします。 返します。 <see cref="T:Microsoft.Office.Interop.Excel.XlXmlExportResult" />。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ExportXml(System.String@)" />を<b>文字列</b>変数にマップされたセルの内容をエクスポートする方法です</para>。
-          <para></para></remarks>
+          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.XmlMap.ExportXml(System.String@)" />を<b>文字列</b>変数にマップされたセルの内容をエクスポートする方法です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportXml">
@@ -314,9 +320,10 @@
         <summary>指定したマップされたセルの内容をエクスポート<see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /><b>文字列</b>の変数へのオブジェクト。 返します。 <see cref="T:Microsoft.Office.Interop.Excel.XlXmlExportResult" />。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para>マップされたセルの内容を XML データ ファイルにエクスポートするには、<see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Export(System.String,System.Object)" />メソッドです</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para>マップされたセルの内容を XML データ ファイルにエクスポートするには、<see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Export(System.String,System.Object)" />メソッドです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Import">
@@ -379,9 +386,10 @@
         <summary>マップされたセルに、<b>文字列</b>変数から XML データをインポートする、指定された<see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />オブジェクトです。 返します、<see cref="T:Microsoft.Office.Interop.Excel.XlXmlImportResult" />定数。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para>、指定したスキーマ マップにマップされているセルに XML データ ファイルの内容をインポートするには、 <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Import(System.String,System.Object)" /> 、 <b>XmlMap</b>オブジェクトのメソッドです</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para>指定したスキーマ マップにマップされているセルに XML データ ファイルの内容をインポートするを使用して、 <see cref="M:Microsoft.Office.Interop.Excel.XmlMap.Import(System.String,System.Object)" /> 、 <b>XmlMap</b>オブジェクトのメソッドです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsExportable">
@@ -410,8 +418,9 @@
         <summary>Microsoft Excel が使用できる場合は<b>True</b>を返します、<see cref="T:Microsoft.Office.Interop.Excel.XPath" />の XML データと指定されたスキーマ マップにマップされているすべての XML リストをエクスポートできるかどうかをエクスポートするのには指定したスキーマ マップ内のオブジェクト。 読み取り専用の <b>ブール値</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -502,8 +511,9 @@
         <summary>指定された XML マップを更新するとフィルター機能を維持するかどうかを設定または返します。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreserveNumberFormatting">
@@ -535,8 +545,9 @@
         <summary>指定された XML スキーマ マップを更新する際に、そのスキーマ マップにマップされたセル内の数値の書式を維持する場合は、 <b>True</b> を設定します。既定値は <b>False</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RootElementName">
@@ -565,8 +576,9 @@
         <summary>指定された XML スキーマ マップのルート要素の名前を表す文字列型 ( <b>String</b> ) の値を返します。値の取得のみ可能です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RootElementNamespace">
@@ -595,8 +607,9 @@
         <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.XmlNamespace" />指定された XML スキーマ マップのルート要素を表すオブジェクト。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveDataSourceDefinition">
@@ -628,8 +641,9 @@
         <summary>指定された XML スキーマ マップのデータ ソース定義をワークブックと共に保存する場合は、 <b>True</b> を返します。既定値は <b>True</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Schemas">
@@ -658,9 +672,10 @@
         <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.XmlSchemas" />のスキーマを表すコレクションを指定した<see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />オブジェクトが含まれています。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para>返された<b>XmlSchemas</b>コレクション内の最初の項目は、指定された XML スキーマ マップのルート要素として使用されるスキーマです</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para>返された<b>XmlSchemas</b>コレクション内の最初の項目は、指定された XML スキーマ マップのルート要素として使用されるスキーマです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowImportExportValidationErrors">
@@ -692,8 +707,9 @@
         <summary>指定された XML スキーマ マップを使用してデータをインポートまたはエクスポートする際に発生したスキーマ検証エラーの詳細を示すダイアログ ボックスを表示するかどうかを設定します。既定値は <b>False</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkbookConnection">

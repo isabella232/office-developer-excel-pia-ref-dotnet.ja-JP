@@ -1,10 +1,10 @@
 <Type Name="ChartEvents_BeforeDoubleClickEventHandler" FullName="Microsoft.Office.Interop.Excel.ChartEvents_BeforeDoubleClickEventHandler">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8317659a581dc6a99d68d82d76b3a829ed81e45b" />
+    <Meta Name="ms.openlocfilehash" Value="11e9e9672dfb9f102af0f56248495b9887a5ed19" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572857" />
   </Metadata>
   <TypeSignature Language="C#" Value="public delegate void ChartEvents_BeforeDoubleClickEventHandler(int ElementID, int Arg1, int Arg2, out bool Cancel);" />
@@ -44,19 +44,207 @@
     <summary>
       <b>デリゲート</b>型のイベント ハンドラーを追加するために使用します<see cref="E:Microsoft.Office.Interop.Excel.ChartEvents_Event.BeforeDoubleClick" />イベントです。 <b>BeforeDoubleClick</b>イベントは、既定のダブルクリック操作の前に、埋め込みグラフをダブルクリックしたときに発生します。</summary>
     <remarks>
-      <para>次の表は、それぞれに関連付けられている引数を示しています<paramref name="ElementID" />です</para>。
-      <list type="table"><item><term>xlAxis</term><description>AxisIndex</description><description>AxisType</description></item><item><term>xlAxisTitle</term><description>AxisIndex</description><description>AxisType</description></item><item><term>xlDisplayUnitLabel</term><description>AxisIndex</description><description>AxisType</description></item><item><term>xlMajorGridlines</term><description>AxisIndex</description><description>AxisType</description></item><item><term>xlMinorGridlines</term><description>AxisIndex</description><description>AxisType</description></item><item><term>xlPivotChartDropZone</term><description>DropZoneType</description><description>なし</description></item><item><term>xlPivotChartFieldButton</term><description>DropZoneType</description><description>PivotFieldIndex</description></item><item><description>GroupIndex</description><description>なし</description><term>xlDownBars</term></item><item><description>GroupIndex</description><description>なし</description><term>xlDropLines</term></item><item><description>GroupIndex</description><description>なし</description><term>xlHiLoLines</term></item><item><description>GroupIndex</description><description>なし</description><term>xlRadarAxisLabels</term></item><item><description>GroupIndex</description><description>なし</description><term>xlSeriesLines</term></item><item><description>GroupIndex</description><description>なし</description><term>xlUpBars</term></item><item><term>xlChartArea</term><description>なし</description><description>なし</description></item><item><term>xlChartTitle</term><description>なし</description><description>なし</description></item><item><term>xlCorners</term><description>なし</description><description>なし</description></item><item><term>xlDataTable</term><description>なし</description><description>なし</description></item><item><term>xlFloor</term><description>なし</description><description>なし</description></item><item><term>xlLegend</term><description>なし</description><description>なし</description></item><item><term>xlNothing</term><description>なし</description><description>なし</description></item><item><term>xlPlotArea</term><description>なし</description><description>なし</description></item><item><term>xlWalls</term><description>なし</description><description>なし</description></item><item><term>xlDataLabel</term><description>SeriesIndex</description><description>PointIndex</description></item><item><term>xlErrorBars</term><description>SeriesIndex</description><description>なし</description></item><item><term>xlLegendEntry</term><description>SeriesIndex</description><description>なし</description></item><item><term>xlLegendKey</term><description>SeriesIndex</description><description>なし</description></item><item><term>引数</term><description>SeriesIndex</description><description>PointIndex</description></item><item><term>xlTrendline</term><description>SeriesIndex</description><description>TrendLineIndex</description></item><item><term>xlXErrorBars</term><description>SeriesIndex</description><description>なし</description></item><item><term>xlYErrorBars</term><description>SeriesIndex</description><description>なし</description></item><item><description>ShapeIndex</description><description>なし</description><term>xlShape</term></item></list><para>次の表は、引数の意味を説明します</para>。
-      <list type="table"><item><term>AxisIndex</term><description>は、軸がプライマリまたはセカンダリであるかどうかを指定します。次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" />定数: <b>xlPrimary</b>または<b>xlSecondary</b>です</description></item>。
-        <item><term>AxisType</term><description>では、軸の種類を指定します。次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" />定数: <b>xlCategory</b>、 <b>xlSeriesAxis</b>、または<b>軸</b></description></item>。
-        <item><term>DropZoneType</term><description>は、ドロップ ゾーンの種類を指定します。 列、データ、ページ、または行フィールドです。次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" />定数: <b>xlColumnField</b>、 <b>xlDataField</b>、 <b>xlPageField</b>、 <b>xlRowField</b>。列と行フィールドの定数は、系列とカテゴリのフィールドをそれぞれ指定します</description></item>。
-        <item><term>GroupIndex</term><description>内のオフセットを指定します<see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" />特定のグラフ グループのコレクションです</description></item>。
-        <item><term>PivotFieldIndex</term><description>内のオフセットを指定します<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />特定の列 (系列)、データ、ページ、または行 (項目) フィールドのコレクションです</description></item>。内のオフセットを指定する
-        <item><term>PointIndex</term><description>、 <see cref="T:Microsoft.Office.Interop.Excel.Points" /> 、系列内の特定のポイントのコレクションです。値 – 1 は、すべてのデータ ポイントが選択されていることを示します</description></item>。
-        <item><term>SeriesIndex</term><description>内のオフセットを指定します<see cref="T:Microsoft.Office.Interop.Excel.Series" />特定のデータ系列のコレクションです</description></item>。
-        <item><term>ShapeIndex</term><description>内のオフセットを指定します<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />の特定の図形のコレクションです</description></item>。
-        <item><term>TrendlineIndex</term><description>内のオフセットを指定します<see cref="T:Microsoft.Office.Interop.Excel.Trendlines" />系列内の特定の近似曲線のコレクションです</description></item></list>。
-      <para>、<see cref="M:Microsoft.Office.Interop.Excel._Application.DoubleClick" />メソッドが原因でこのイベントは発生しません</para>。
-      <para>ユーザーは、セルの枠線をダブルクリックすると、このイベントは発生しません</para>。
-      <para></para></remarks>
+      <para>次の表は、それぞれに関連付けられている引数を示しています<paramref name="ElementID" />。</para>
+      <list type="table">
+        <item>
+          <term>xlAxis</term>
+          <description>AxisIndex</description>
+          <description>AxisType</description>
+        </item>
+        <item>
+          <term>xlAxisTitle</term>
+          <description>AxisIndex</description>
+          <description>AxisType</description>
+        </item>
+        <item>
+          <term>xlDisplayUnitLabel</term>
+          <description>AxisIndex</description>
+          <description>AxisType</description>
+        </item>
+        <item>
+          <term>xlMajorGridlines</term>
+          <description>AxisIndex</description>
+          <description>AxisType</description>
+        </item>
+        <item>
+          <term>xlMinorGridlines</term>
+          <description>AxisIndex</description>
+          <description>AxisType</description>
+        </item>
+        <item>
+          <term>xlPivotChartDropZone</term>
+          <description>DropZoneType</description>
+          <description>なし</description>
+        </item>
+        <item>
+          <term>xlPivotChartFieldButton</term>
+          <description>DropZoneType</description>
+          <description>PivotFieldIndex</description>
+        </item>
+        <item>
+          <term>xlDownBars</term>
+          <description>GroupIndex</description>
+          <description>なし</description>
+        </item>
+        <item>
+          <term>xlDropLines</term>
+          <description>GroupIndex</description>
+          <description>なし</description>
+        </item>
+        <item>
+          <term>xlHiLoLines</term>
+          <description>GroupIndex</description>
+          <description>なし</description>
+        </item>
+        <item>
+          <term>xlRadarAxisLabels</term>
+          <description>GroupIndex</description>
+          <description>なし</description>
+        </item>
+        <item>
+          <term>xlSeriesLines</term>
+          <description>GroupIndex</description>
+          <description>なし</description>
+        </item>
+        <item>
+          <term>xlUpBars</term>
+          <description>GroupIndex</description>
+          <description>なし</description>
+        </item>
+        <item>
+          <term>xlChartArea</term>
+          <description>なし</description>
+          <description>なし</description>
+        </item>
+        <item>
+          <term>xlChartTitle</term>
+          <description>なし</description>
+          <description>なし</description>
+        </item>
+        <item>
+          <term>xlCorners</term>
+          <description>なし</description>
+          <description>なし</description>
+        </item>
+        <item>
+          <term>xlDataTable</term>
+          <description>なし</description>
+          <description>なし</description>
+        </item>
+        <item>
+          <term>xlFloor</term>
+          <description>なし</description>
+          <description>なし</description>
+        </item>
+        <item>
+          <term>xlLegend</term>
+          <description>なし</description>
+          <description>なし</description>
+        </item>
+        <item>
+          <term>xlNothing</term>
+          <description>なし</description>
+          <description>なし</description>
+        </item>
+        <item>
+          <term>xlPlotArea</term>
+          <description>なし</description>
+          <description>なし</description>
+        </item>
+        <item>
+          <term>xlWalls</term>
+          <description>なし</description>
+          <description>なし</description>
+        </item>
+        <item>
+          <term>xlDataLabel</term>
+          <description>SeriesIndex</description>
+          <description>PointIndex</description>
+        </item>
+        <item>
+          <term>xlErrorBars</term>
+          <description>SeriesIndex</description>
+          <description>なし</description>
+        </item>
+        <item>
+          <term>xlLegendEntry</term>
+          <description>SeriesIndex</description>
+          <description>なし</description>
+        </item>
+        <item>
+          <term>xlLegendKey</term>
+          <description>SeriesIndex</description>
+          <description>なし</description>
+        </item>
+        <item>
+          <term>xlSeries</term>
+          <description>SeriesIndex</description>
+          <description>PointIndex</description>
+        </item>
+        <item>
+          <term>xlTrendline</term>
+          <description>SeriesIndex</description>
+          <description>TrendLineIndex</description>
+        </item>
+        <item>
+          <term>xlXErrorBars</term>
+          <description>SeriesIndex</description>
+          <description>なし</description>
+        </item>
+        <item>
+          <term>xlYErrorBars</term>
+          <description>SeriesIndex</description>
+          <description>なし</description>
+        </item>
+        <item>
+          <term>xlShape</term>
+          <description>ShapeIndex</description>
+          <description>なし</description>
+        </item>
+      </list>
+      <para>次に引数の内容を示します。</para>
+      <list type="table">
+        <item>
+          <term>AxisIndex</term>
+          <description>軸が主軸または第 2 軸かどうかの値です。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" />定数: <b>xlPrimary</b>または<b>xlSecondary</b>です。</description>
+        </item>
+        <item>
+          <term>AxisType</term>
+          <description>軸の種類の値です。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" />定数: <b>xlCategory</b>、 <b>xlSeriesAxis</b>、または<b>軸</b>です。</description>
+        </item>
+        <item>
+          <term>DropZoneType</term>
+          <description>列、データ、ページ、または行フィールドのドロップ ゾーンの種類です。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" />定数: <b>xlColumnField</b>、 <b>xlDataField</b>、 <b>xlPageField</b>、 <b>xlRowField</b>。 列フィールドおよび行フィールドは、それぞれ系列フィールドおよび項目のフィールドに対応します。</description>
+        </item>
+        <item>
+          <term>GroupIndex</term>
+          <description>内のオフセットを指定します<see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" />特定のグラフ グループのコレクションです。</description>
+        </item>
+        <item>
+          <term>PivotFieldIndex</term>
+          <description>内のオフセットを指定します<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />特定の列 (系列)、データ、ページ、または行 (項目) フィールドのコレクションです。</description>
+        </item>
+        <item>
+          <term>PointIndex</term>
+          <description>内のオフセットを指定します<see cref="T:Microsoft.Office.Interop.Excel.Points" />系列内の特定の点のコレクション。 値 – 1 は、すべてのデータ ポイントが選択されていることを示します。</description>
+        </item>
+        <item>
+          <term>SeriesIndex</term>
+          <description>内のオフセットを指定します<see cref="T:Microsoft.Office.Interop.Excel.Series" />特定のデータ系列のコレクションです。</description>
+        </item>
+        <item>
+          <term>ShapeIndex</term>
+          <description>内のオフセットを指定します<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />の特定の図形のコレクションです。</description>
+        </item>
+        <item>
+          <term>TrendlineIndex</term>
+          <description>内のオフセットを指定します<see cref="T:Microsoft.Office.Interop.Excel.Trendlines" />系列内の特定の近似曲線のコレクションです。</description>
+        </item>
+      </list>
+      <para>
+        <see cref="M:Microsoft.Office.Interop.Excel._Application.DoubleClick" />メソッドが原因でこのイベントは発生しません。</para>
+      <para>ユーザーがセルの境界をダブルクリックしたとき、このイベントは発生しません。</para>
+      <para></para>
+    </remarks>
   </Docs>
 </Type>

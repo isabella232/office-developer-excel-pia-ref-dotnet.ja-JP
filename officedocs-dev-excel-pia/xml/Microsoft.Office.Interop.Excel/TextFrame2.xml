@@ -1,10 +1,10 @@
 <Type Name="TextFrame2" FullName="Microsoft.Office.Interop.Excel.TextFrame2">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d24c98b23e803f95f010af3cea96d47a9497cbcf" />
+    <Meta Name="ms.openlocfilehash" Value="ed2de645a61dfb227782869ab7a06f69f1159fde" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576035" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface TextFrame2 : Microsoft.Office.Core._IMsoDispObj" />
@@ -32,8 +32,9 @@
   <Docs>
     <summary>テキスト フレームを表す、 <see cref="T:Microsoft.Office.Interop.Excel.Shape" />、 <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />、または<see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />オブジェクトです。</summary>
     <remarks>
-      <para>にはこのオブジェクトには、テキスト枠と同様に、プロパティとの配置やレイアウト枠の向きを制御するメソッド内のテキストが含まれています。<b>TextFrame2</b>プロパティを使用する<see cref="T:Microsoft.Office.Interop.Excel.TextFrame2" />オブジェクトです</para>。
-      <para></para></remarks>
+      <para>このオブジェクトには、テキスト枠と同様に、プロパティとの配置やレイアウト枠の向きを制御するメソッド内のテキストが含まれています。 <b>TextFrame2</b>プロパティを使用する<see cref="T:Microsoft.Office.Interop.Excel.TextFrame2" />オブジェクトです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -66,7 +67,10 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel._Application" />
         </value>
-        <remarks>オブジェクト修飾子なしで使用するときに<para>、このプロパティが返されます、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。このプロパティが返すオブジェクト修飾子を使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> (ことができますこのプロパティを使用する OLE オートメーション オブジェクトとそのオブジェクトのアプリケーションを取得)、指定したオブジェクトの作成者を表すオブジェクト。</para><para></para></remarks>
+        <remarks>
+          <para>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 このプロパティが返すオブジェクト修飾子を使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> (ことができますこのプロパティを使用する OLE オートメーション オブジェクトとそのオブジェクトのアプリケーションを取得)、指定したオブジェクトの作成者を表すオブジェクト。 </para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoSize">
@@ -163,8 +167,9 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。<see cref="P:Microsoft.Office.Interop.Excel.TextFrame2.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 <see cref="P:Microsoft.Office.Interop.Excel.TextFrame2.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteText">
@@ -190,8 +195,9 @@
       <Docs>
         <summary>テキスト ボックスと関連するすべてのテキスト プロパティからテキストを削除します。</summary>
         <remarks>
-          <para>に対応するテキスト プロパティには、<see cref="T:Microsoft.Office.Interop.Excel.Font" />属性など、太字、下線表示され、</para> 。
-          <para></para></remarks>
+          <para>関連するテキスト プロパティには、<see cref="T:Microsoft.Office.Interop.Excel.Font" />属性など、太字、下線表示され。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasText">
@@ -418,9 +424,37 @@
         <summary>図形を回転したときに図形の上のテキストを回転させるかどうかを指定する値を取得または設定します。値の取得および設定が可能です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>読み取り/書き込み</para>。
-          <para>以下の値で示す msotristate クラスの列挙体を設定を取得または設定します</para>。
-          <list type="number"><item><description><b>msoCTrue</b></description></item><item><description><b>msoFalse</b></description></item><item><description><b>msoTriStateMixed</b></description></item><item><description><b>msoTriStateToggle</b></description></item><item><description><b>msotrue を設定します。</b></description></item></list><para></para></remarks>
+          <para>値の取得および設定が可能です。</para>
+          <para>次の値を含む MsoTriState 列挙型が返されるか、次の値を含む MsoTriState 列挙型を設定します。</para>
+          <list type="number">
+            <item>
+              <description>
+                <b>msoCTrue</b>
+              </description>
+            </item>
+            <item>
+              <description>
+                <b>msofalse を設定します。</b>
+              </description>
+            </item>
+            <item>
+              <description>
+                <b>msoTriStateMixed</b>
+              </description>
+            </item>
+            <item>
+              <description>
+                <b>msoTriStateToggle</b>
+              </description>
+            </item>
+            <item>
+              <description>
+                <b>msotrue を設定します。</b>
+              </description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -454,8 +488,9 @@
           <see cref="T:Microsoft.Office.Core.MsoTextOrientation" />
         </value>
         <remarks>
-          <para>から –90 を 90 度、またはのいずれかを整数値にこのプロパティの値を設定することができます、<see cref="T:Microsoft.Office.Core.MsoTextOrientation" />定数</para>。
-          <para></para></remarks>
+          <para>–90 を 90 度、またはのいずれかを整数値にこのプロパティの値を設定することができます、<see cref="T:Microsoft.Office.Core.MsoTextOrientation" />定数。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

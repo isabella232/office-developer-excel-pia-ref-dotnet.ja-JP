@@ -1,10 +1,10 @@
 <Type Name="Style" FullName="Microsoft.Office.Interop.Excel.Style">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d16dc7a8953f4adcd743c663cce1a8e9c3cd90e3" />
+    <Meta Name="ms.openlocfilehash" Value="c4f738901e25e0863ca50d9f0bc3e164a839d737" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574047" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Style" />
@@ -32,14 +32,16 @@
     <summary>セル範囲のスタイル全体を表します。</summary>
     <remarks>
       <para>
-        <b>Style</b>オブジェクトには、プロパティとしてすべてのスタイル属性 (フォント、表示形式、配置、およびなど) が含まれています。標準、通貨、パーセントなど、いくつかの組み込みスタイルがあります。同時に複数のセルに複数のセルの書式設定プロパティを変更するのには迅速かつ効率的な方法は、<b>スタイル</b>オブジェクトを使用します</para>。
-      <para>用の<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />オブジェクト、 <b>Style</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.Styles" />コレクションです。<b>Styles</b>コレクションには、ブックのすべての定義されたスタイルが含まれています</para>。
-      <para>使用、<see cref="P:Microsoft.Office.Interop.Excel.Range.Style" />で使用される<b>スタイル</b>オブジェクトを取得するプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトです</para>。
-      <para>は、そのセルに適用するスタイルのプロパティを変更してセルの外観を変更できます。留意、ただし、スタイル プロパティを変更することは、そのスタイルに設定されているすべてのセルに影響が与えるされます</para>。
-      <para><b>スタイル</b>を使用 (<paramref name="index" />)、<paramref name="index" />スタイルのインデックス番号または名前、ブック<b>のスタイル</b>のコレクションから 1 つの<b>スタイル</b>オブジェクトを返すには、</para> 。
-      <para>スタイルはスタイル名でアルファベット順に並べ替えられます。スタイルのインデックス番号は、スタイル名の並べ替えられた一覧内の指定されたスタイルの位置を表します。Styles(1) 一覧をアルファベット順の最初のスタイルは、Styles(Styles.Count)、ボックスの一覧で最後の 1 つです</para>。
-      <para>を作成して、スタイルの変更の詳細についてを参照してください、<see cref="T:Microsoft.Office.Interop.Excel.Styles" />オブジェクトです</para>。
-      <para></para></remarks>
+        <b>Style</b> オブジェクトには、フォント、数値の表示形式、配置などのすべてのスタイル属性がプロパティとして含まれています。標準、通貨、パーセントなどの組み込みスタイルがあります。多くのセルで複数の書式のプロパティを同時に変更するには、 <b>Style</b> オブジェクトを使う方が効率よく便利です。</para>
+      <para>用の<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />オブジェクト、 <b>Style</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.Styles" />コレクションです。 <b>Styles</b>コレクションには、ブックのすべての定義されたスタイルが含まれています。</para>
+      <para>使用、<see cref="P:Microsoft.Office.Interop.Excel.Range.Style" />で使用される<b>スタイル</b>オブジェクトを取得するプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトです。</para>
+      <para>セルに適用されているスタイルのプロパティを変更すると、そのセルの表示形式を変更できます。しかし、スタイルのプロパティを変更すると、そのスタイルで既に書式設定されている他のセルにも影響するので、注意が必要です。</para>
+      <para>
+        <b>スタイル</b>を使用 (<paramref name="index" />)、<paramref name="index" />スタイルのインデックス番号または名前、ブック<b>のスタイル</b>のコレクションから 1 つの<b>スタイル</b>オブジェクトを返すには。</para>
+      <para>スタイルはスタイル名で並べ替えられます。スタイルのインデックス番号は、並べ替えられたスタイル名の一覧でのスタイルの並び順に対応します。Styles(1) は一覧の最初のスタイルであり、Styles(Styles.Count) は一覧の最後のスタイルです。</para>
+      <para>作成して、スタイルの変更の詳細についてを参照してください、<see cref="T:Microsoft.Office.Interop.Excel.Styles" />オブジェクトです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -102,8 +104,10 @@
         <summary>
           <b>True の</b>場合は水平方向または垂直方向に均等にセル内の文字列の配置を設定すると、テキストが自動的にインデントします。</summary>
         <value>To be added.</value>
-        <remarks>均等割り付け、テキストの配置を設定するのには<para>を設定すること、<see cref="P:Microsoft.Office.Interop.Excel.Style.VerticalAlignment" />プロパティを<b>xlVAlignDistributed</b>ときの値、<see cref="P:Microsoft.Office.Interop.Excel.Style.Orientation" />プロパティが<b>xlVertical</b>を設定すること、<see cref="P:Microsoft.Office.Interop.Excel.Style.HorizontalAlignment" />プロパティを<b>xlHAlignDistributed</b>と<b>Orientation</b>プロパティの値は、 <b>xlHorizontal</b></para> 。
-          <para></para></remarks>
+        <remarks>
+          <para>テキストの配置を均等割り付けを設定するに設定することができます、<see cref="P:Microsoft.Office.Interop.Excel.Style.VerticalAlignment" />プロパティを<b>xlVAlignDistributed</b>ときの値、<see cref="P:Microsoft.Office.Interop.Excel.Style.Orientation" />プロパティが<b>xlVertical</b>を設定すること、<see cref="P:Microsoft.Office.Interop.Excel.Style.HorizontalAlignment" />プロパティを<b>xlHAlignDistributed</b>とき、<b>Orientation</b>プロパティの値は、 <b>xlHorizontal</b>です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -217,10 +221,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -307,8 +312,9 @@
           <b>True の</b>場合は、ワークシートが保護されている場合、数式は表示されます。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティとを混同しないで、<see cref="P:Microsoft.Office.Interop.Excel.Range.Hidden" />プロパティ。ブックが保護されているし、ワークシートではありませんが、ワークシートが保護されている場合にのみ、数式は表示されません</para>。
-          <para></para></remarks>
+          <para>このプロパティとを混同しないで、<see cref="P:Microsoft.Office.Interop.Excel.Range.Hidden" />プロパティ。 ブックが保護されているし、ワークシートではありませんが、ワークシートが保護されている場合にのみ、数式は表示されません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlignment">
@@ -342,7 +348,7 @@
         <remarks>
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" />
-            <b>XlHAlign</b>定数は、次のいずれか:</para>
+            <b>XlHAlign</b>定数は、次のいずれかできます。</para>
           <para>
             <b>xlHAlignCenter</b>
           </para>
@@ -367,8 +373,9 @@
           <para>
             <b>xlHAlignRight</b>
           </para>
-          <para>が選択またはインストールされている言語サポート (たとえば、日本語) によっては使用ができないこれらの定数のいくつかがあります</para>。
-          <para></para></remarks>
+          <para>[!メモ] 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeAlignment">
@@ -591,8 +598,9 @@
         <summary>スタイルのインデント レベルを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>インデント レベルを 0 (ゼロ) より小さい数値に設定するのにはこのプロパティを使用するかそれ以上を指定すると 15、エラーが発生します</para>。
-          <para></para></remarks>
+          <para>インデントのレベルに 0 未満または 15 を超える値を設定すると、エラーが発生します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -685,8 +693,9 @@
           <b>True の</b>スタイルが含まれている場合に結合セルを示します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>の結合されたセルを含む範囲を選択すると、選択範囲は、目的の選択範囲とは異なる可能性があります。使用して、<see cref="P:Microsoft.Office.Interop.Excel.Range.Address(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object)" />プロパティを選択した範囲のアドレスを確認します</para>。
-          <para></para></remarks>
+          <para>結合されたセルを含む範囲を選択すると、選択範囲が意図した選択範囲と異なる場合があります。 使用して、<see cref="P:Microsoft.Office.Interop.Excel.Range.Address(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object)" />プロパティを選択した範囲のアドレスを確認します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -715,10 +724,53 @@
         <summary>オブジェクトの名前を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>次の表に、値の例の<b>Name</b>プロパティと関連するプロパティ、データ ソースの一意の名前] [ヨーロッパ] です。[東京都] です。[東京]"OLAP 以外のデータ ソースのアイテム名が「東京」とします</para>。
-          <list type="table"><item><term><b>キャプション</b></term><description>パリ</description><description>パリ</description></item><item><term><b>名</b></term><description>[ヨーロッパ]. [東京都] です。[東京](読み取り専用)</description><description>パリ</description></item><item><term><b>SourceName</b></term><description>[ヨーロッパ]. [東京都] です。[東京](読み取り専用)</description><description>(SQL プロパティの値が読み取り専用と同じ)</description></item><item><term><b>値</b></term><description>[ヨーロッパ]. [東京都] です。[東京](読み取り専用)</description><description>パリ</description></item></list><para>へのインデックスを指定する場合、<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />コレクションでは、次の表に示すように構文を使用することができます</para>。
-          <list type="table"><item><term>式です。返すプロパティ (「[ヨーロッパ]。 [東京都] です。[東京]")</term><description>式です。PivotItems("Paris")</description></item></list><para>を使用する場合、<see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" />プロパティ、コレクションの特定のメンバーを参照するには、次の表に示すようにテキストをインデックス名を使用することができます</para>。
-          <list type="table"><item><term>[ヨーロッパ]. [東京都] です。[東京]</term><description>パリ</description></item></list><para></para></remarks>
+          <para>次の表に、値の例の<b>Name</b>プロパティと関連するプロパティ、データ ソースの一意の名前] [ヨーロッパ] です。[東京都] です。[東京]"OLAP 以外のデータ ソースのアイテム名が「東京」とします。</para>
+          <list type="table">
+            <item>
+              <term>
+                <b>キャプション</b>
+              </term>
+              <description>東京</description>
+              <description>東京</description>
+            </item>
+            <item>
+              <term>
+                <b>名</b>
+              </term>
+              <description>[都道府県].[東京都].[東京] (読み取り専用)</description>
+              <description>東京</description>
+            </item>
+            <item>
+              <term>
+                <b>SourceName</b>
+              </term>
+              <description>[都道府県].[東京都].[東京] (読み取り専用)</description>
+              <description>(SQL プロパティと同じ値、読み取り専用)</description>
+            </item>
+            <item>
+              <term>
+                <b>値</b>
+              </term>
+              <description>[都道府県].[東京都].[東京] (読み取り専用)</description>
+              <description>東京</description>
+            </item>
+          </list>
+          <para>インデックスを指定する場合、<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />コレクションでは、次の表に示すように構文を使用することができます。</para>
+          <list type="table">
+            <item>
+              <term>式です。返すプロパティ (「[ヨーロッパ]。 [東京都] です。[東京]")</term>
+              <description>式です。PivotItems("Paris")</description>
+            </item>
+          </list>
+          <para>使用する場合、<see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" />プロパティ、コレクションの特定のメンバーを参照するには、次の表に示すようにテキストをインデックス名を使用することができます。</para>
+          <list type="table">
+            <item>
+              <term>[ヨーロッパ] です。[東京都] です。[東京]</term>
+              <description>東京</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NameLocal">
@@ -747,8 +799,9 @@
         <summary>ユーザーの言語では、オブジェクトの名前を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>スタイルが組み込みのスタイルの場合は、このプロパティには、現在のロケールの言語では、スタイルの名前を返します</para>。
-          <para></para></remarks>
+          <para>このプロパティは、組み込みスタイルのときに、現在の地域情報で設定されている言語でのスタイル名を返します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormat">
@@ -780,8 +833,9 @@
         <summary>オブジェクトの書式設定コードを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>形式は、[表示形式]、[セルの書式設定] ダイアログ ボックスと同じ文字列です。<b>Format</b>関数は、<b>数字</b>よりもコードの文字列を別の形式を使用して、<see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormatLocal" />プロパティ</para>。
-          <para></para></remarks>
+          <para>表示形式を示す文字列は、[ セルの書式設定] ダイアログ ボックスの [ 表示形式] の文字列と同じです。 <b>Format</b>関数は、<b>数字</b>よりもコードの文字列を別の形式を使用して、<see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormatLocal" />のプロパティです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLocal">
@@ -814,8 +868,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Format</b>関数は、コードの文字列を別の形式を使用して、<see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormat" />と<b>NumberFormatLocal</b>プロパティ</para>。
-          <para></para></remarks>
+            <b>Format</b>関数は、コードの文字列を別の形式を使用して、<see cref="P:Microsoft.Office.Interop.Excel.Style.NumberFormat" />と<b>NumberFormatLocal</b>プロパティです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -848,7 +903,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>XlOrientation</b>には、以下の定数のいずれかを指定できます:</para>
+            <b>XlOrientation</b>には、以下の定数のいずれかを指定できます。</para>
           <para>
             <b>xlDownward</b>
           </para>
@@ -923,9 +978,10 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>ReadingOrder</b>プロパティには、以下の定数のいずれかを指定できます: <b>xlRTL</b> (右から左へ)、 <b>xlLTR</b> (左から右)、または<b>xlContext</b></para> 。
-          <para>が選択またはインストールされている言語サポート (たとえば、日本語) によっては使用ができないこれらの定数のいくつかがあります</para>。
-          <para></para></remarks>
+            <b>ReadingOrder</b>プロパティには、以下の定数のいずれかを指定できます: <b>xlRTL</b> (右から左へ)、 <b>xlLTR</b> (左から右)、または<b>xlContext</b>。</para>
+          <para>[!メモ] 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShrinkToFit">
@@ -1019,7 +1075,7 @@
         <remarks>
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlVAlign" />
-            <b>可能</b>定数は、次のいずれか:</para>
+            <b>可能</b>定数は、次のいずれかできます。</para>
           <para>
             <b>xlVAlignCenter</b>
           </para>
@@ -1035,8 +1091,9 @@
           <para>
             <b>xlVAlignTop</b>
           </para>
-          <para>、使用することができないこれらの定数のいくつかの場合があります選択またはインストールされている言語サポート (たとえば、日本語) です</para>。
-          <para></para></remarks>
+          <para>[!メモ] 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WrapText">

@@ -1,10 +1,10 @@
 <Type Name="TickLabels" FullName="Microsoft.Office.Interop.Excel.TickLabels">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fcdd070f496219f0cc3c7df419775ae6cd824dc6" />
+    <Meta Name="ms.openlocfilehash" Value="80b3e086ba4d3ed73fe6b8241b450f89bafae6e6" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579570" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface TickLabels" />
@@ -31,9 +31,10 @@
   <Docs>
     <summary>グラフ軸の目盛に関連付けられている目盛のラベルを表します。</summary>
     <remarks>
-      <para>このオブジェクトでは、コレクションはありません。1 つの目盛ラベルを表すオブジェクトがないです。単位としてすべての目盛ラベルを返す必要があります。項目軸の目盛マークのラベルのテキスト、グラフに関連付けられているカテゴリの名前に由来します。項目軸の既定の目盛マークのラベル テキストは、この軸の左端を基準にしてカテゴリの位置を示す番号です。数を変更するのにはラベルが付いていないタイマー刻みの目盛ラベルの間で、変更する必要があります、 <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> 、カテゴリ軸のプロパティです。目盛りマークのラベルのテキスト、数値軸の計算に基づいて、 <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" />、 <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" />、および<see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" />の値軸のプロパティです。数値軸の目盛マークのラベル テキストを変更するには、これらのプロパティの値を変更する必要があります</para>。
-      <para>使用の<see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabels" />オブジェクトを<b>返すプロパティ</b>を返すプロパティです</para>。
-      <para></para></remarks>
+      <para>このオブジェクトでは、コレクションはありません。 1 つの目盛ラベルを表すオブジェクトがないです。単位としてすべての目盛ラベルを返す必要があります。 項目軸の目盛マークのラベルのテキスト、グラフに関連付けられているカテゴリの名前に由来します。 項目軸の既定の目盛マークのラベル テキストは、この軸の左端を基準にしてカテゴリの位置を示す番号です。 数を変更するのにはラベルが付いていないタイマー刻みの目盛ラベルの間で、変更する必要があります、 <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> 、カテゴリ軸のプロパティです。 目盛りマークのラベルのテキスト、数値軸の計算に基づいて、 <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" />、 <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" />、および<see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" />の値軸のプロパティです。 数値軸の目盛マークのラベル テキストを変更するには、これらのプロパティの値を変更する必要があります。</para>
+      <para>使用の<see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabels" />オブジェクトを<b>返すプロパティ</b>を返すプロパティです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -66,7 +67,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>配置</b>プロパティには、次のいずれかを指定できる<see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" />定数:</para>
+            <b>配置</b>プロパティには、次のいずれかを指定できる<see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" />定数。</para>
           <para>
             <b>XlHAlignCenter</b>
           </para>
@@ -172,10 +173,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -321,8 +323,9 @@
           <b>ブール型 (Boolean)</b>
         </value>
         <remarks>
-          <para>このプロパティの既定値は<b>True</b>です</para>。
-          <para></para></remarks>
+          <para>このプロパティの既定値は、 <b>True</b>です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -382,8 +385,9 @@
         <summary>オブジェクトの書式設定コードを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>形式は、[表示形式]、[セルの書式設定] ダイアログ ボックスの文字列と同じです</para>。
-          <para></para></remarks>
+          <para>表示形式を示す文字列は、[ セルの書式設定] ダイアログ ボックスの [ 表示形式] の文字列と同じです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLinked">
@@ -478,8 +482,9 @@
         <summary>ラベルのレベル、および先頭レベルと軸線間の距離の間の距離を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>デフォルトの距離は、100% になり、軸ラベルと軸線の既定の間隔を表します。0 ~ 1000 の軸ラベルのフォント サイズを基準にして、整数のパーセントを指定できます</para>。
-          <para></para></remarks>
+          <para>既定の距離は 100% です。これは、軸ラベルと軸線の既定の間隔を表します。使用できる範囲は、0 ～ 1000 のパーセントを示す整数で、軸ラベルのフォント サイズに比例します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -571,9 +576,10 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>ReadingOrder</b>プロパティには、以下の定数のいずれかを指定できます: <b>xlRTL</b> (右から左へ)、 <b>xlLTR</b> (左から右)、または<b>xlContext</b></para> 。
-          <para>が選択またはインストールされている言語サポート (たとえば、日本語) によっては使用ができないこれらの定数のいくつかがあります</para>。
-          <para></para></remarks>
+            <b>ReadingOrder</b>プロパティには、以下の定数のいずれかを指定できます: <b>xlRTL</b> (右から左へ)、 <b>xlLTR</b> (左から右)、または<b>xlContext</b>。</para>
+          <para>[!メモ] 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">

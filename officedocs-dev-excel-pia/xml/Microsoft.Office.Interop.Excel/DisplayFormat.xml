@@ -1,10 +1,10 @@
 <Type Name="DisplayFormat" FullName="Microsoft.Office.Interop.Excel.DisplayFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="950506d4053e1b80daf0ee4edfebb807a67ddea2" />
+    <Meta Name="ms.openlocfilehash" Value="4ddcd9f96de4128a0ca313e475935d98703af7f3" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20573529" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DisplayFormat" />
@@ -31,9 +31,10 @@
   <Docs>
     <summary>関連付けの表示設定を表す<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトです。</summary>
     <remarks>
-      <para>読み取り専用</para>。内の対応するプロパティの値と一致する現在のユーザー インターフェイスに表示されていると、条件付き書式や表、セル範囲のスタイルを変更するなど、
-      <para>のアクションが発生することが、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトです。プロパティを使用して、 <see cref="T:Microsoft.Office.Interop.Excel.DisplayFormat" /> 、現在のユーザー インターフェイスに表示されている値を取得するオブジェクトです</para>。
-      <para></para></remarks>
+      <para>読み取り専用。</para>
+      <para>内の対応するプロパティの値と一致する現在のユーザー インターフェイスに表示される内容と範囲の条件付き書式や表のスタイルを変更するなどのアクションが発生することが、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトです。 プロパティを使用して、 <see cref="T:Microsoft.Office.Interop.Excel.DisplayFormat" /> 、現在のユーザー インターフェイスに表示されている値を取得するオブジェクトです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddIndent">
@@ -62,9 +63,10 @@
         <summary>Microsoft Excel が関連付けられているテキストに自動的にインデントを示す値を取得する<see cref="T:Microsoft.Office.Interop.Excel.Range" />(水平方向または垂直方向に)、均等にセル内のテキストの配置が設定されると、現在のユーザー インターフェイスに表示されています。</summary>
         <value>Microsoft Excel が関連付けられているテキストに自動的にインデントを示します<see cref="T:Microsoft.Office.Interop.Excel.Range" />(水平方向または垂直方向に)、均等にセル内のテキストの配置が設定されると、現在のユーザー インターフェイスに表示されています。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para>を返します<b>true の</b>場合、テキストをセル内のテキストの配置を設定すると水平方向または垂直方向に均等に自動的にインデントされます</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para>セル内のテキストの配置を設定すると水平方向または垂直方向に均等にテキストが自動的にインデントを設定しない場合は<b>true</b>を返します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -94,8 +96,9 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.Application" />オブジェクトです。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -124,8 +127,9 @@
         <summary>取得、<see cref="T:Microsoft.Office.Interop.Excel.Borders" />オブジェクトが関連付けられている罫線を表す<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの現在のユーザー インターフェイスに表示されています。</summary>
         <value>A<see cref="T:Microsoft.Office.Interop.Excel.Borders" />オブジェクトが関連付けられている罫線を表す<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの現在のユーザー インターフェイスに表示されています。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Characters">
@@ -188,9 +192,10 @@
         <summary>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>を取得します。</summary>
         <value>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>。</value>
         <remarks>
-          <para>読み取り専用<b>long</b></para> 。
-          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。<see cref="P:Microsoft.Office.Interop.Excel.DisplayFormat.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+          <para>読み取り専用<b>long</b>です。</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 <see cref="P:Microsoft.Office.Interop.Excel.DisplayFormat.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -219,8 +224,9 @@
         <summary>取得、<see cref="T:Microsoft.Office.Interop.Excel.Font" />の関連付けられているフォントを表す<see cref="T:Microsoft.Office.Interop.Excel.Range" />、現在のユーザー インターフェイスに表示されています。</summary>
         <value>A<see cref="T:Microsoft.Office.Interop.Excel.Font" />オブジェクトが関連付けられているフォントを表す<see cref="T:Microsoft.Office.Interop.Excel.Range" />、現在のユーザー インターフェイスに表示されています。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaHidden">
@@ -249,9 +255,10 @@
         <summary>場合を示す値を取得する関連付けられている数式<see cref="T:Microsoft.Office.Interop.Excel.Range" />現在のユーザー インターフェイスに表示されているワークシートが保護されているオブジェクトが非表示にします。</summary>
         <value>場合関連付けられている数式<see cref="T:Microsoft.Office.Interop.Excel.Range" />現在のユーザー インターフェイスに表示されているワークシートが保護されているオブジェクトが非表示にします。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para>ワークシートの場合、数式が非表示の場合<b>は true</b>を返します保護の場合は、といくつかのセルが範囲に含まれている場合は null 参照 (Visual Basic の Nothing) <see cref="P:Microsoft.Office.Interop.Excel.DisplayFormat.FormulaHidden" /><b>といくつかのセルに</b>等しい<see cref="P:Microsoft.Office.Interop.Excel.DisplayFormat.FormulaHidden" />を<b>false</b>に等しいです。</para> 。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para>ワークシートの場合、数式が非表示の場合<b>は true</b>を返します。 保護の場合は、といくつかのセルが範囲に含まれている場合は null 参照 (Visual Basic の Nothing) <see cref="P:Microsoft.Office.Interop.Excel.DisplayFormat.FormulaHidden" /><b>といくつかのセルに</b>等しい<see cref="P:Microsoft.Office.Interop.Excel.DisplayFormat.FormulaHidden" />を<b>false</b>に等しい。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlignment">
@@ -280,8 +287,9 @@
         <summary>関連付けられている水平方向の配置を表す値を取得する<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの現在のユーザー インターフェイスに表示されています。</summary>
         <value>関連付けられている水平方向の配置<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの現在のユーザー インターフェイスに表示されています。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IndentLevel">
@@ -310,8 +318,9 @@
         <summary>それに関連付けられたインデント レベルを表す値を取得する<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの現在のユーザー インターフェイスに表示されています。</summary>
         <value>それに関連付けられたインデント レベル<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの現在のユーザー インターフェイスに表示されています。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -341,8 +350,9 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.Interior" />関連の内部を表す<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの現在のユーザー インターフェイスに表示されています。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -371,9 +381,10 @@
         <summary>場合を示す値を取得、関連付けられている<see cref="T:Microsoft.Office.Interop.Excel.Range" />、現在のユーザー インターフェイスに表示されているオブジェクトがロックされています。</summary>
         <value>場合、関連付けられている<see cref="T:Microsoft.Office.Interop.Excel.Range" />、現在のユーザー インターフェイスに表示されているオブジェクトがロックされています。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para>を返します<b>true の</b>範囲がロックされている場合、 <b>false</b>場合は、シートが保護されている場合、または null 参照 (Visual Basic では Nothing) の範囲に含まれている場合がロックされているし、の両方のセルのロックを解除すると、範囲を変更できます</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para>を返します<b>true</b>場合は、範囲がロックされている場合は<b>false</b>シートが保護されている場合、または null 参照 (Visual Basic では Nothing) の範囲に含まれている場合がロックされているし、の両方のセルのロックを解除すると、範囲を変更できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MergeCells">
@@ -402,9 +413,10 @@
         <summary>場合を示す値を取得、関連付けられている<see cref="T:Microsoft.Office.Interop.Excel.Range" />、現在のユーザー インターフェイスに表示されているオブジェクトに結合されたセルが含まれます。</summary>
         <value>場合、関連付けられている<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトには、現在のユーザー インターフェイスに表示されている結合セルが含まれます。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para>の範囲に結合セルが含まれている場合に<b>true</b>を返します</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para>範囲に結合セルが含まれている場合は<b>true</b>を返します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormat">
@@ -433,9 +445,10 @@
         <summary>関連付けられている形式のコードを表す値を取得する<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの現在のユーザー インターフェイスに表示されています。</summary>
         <value>関連付けられている書式コード<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの現在のユーザー インターフェイスに表示されています。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para>このプロパティは、指定範囲内のすべてのセルに同じ表示形式がない場合に null 参照 (Visual Basic では Nothing) を返します</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para>このプロパティは、指定範囲内のすべてのセルに同じ表示形式がない場合に null 参照 (Visual Basic では Nothing) を返します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormatLocal">
@@ -464,8 +477,9 @@
         <summary>関連付けられている形式のコードを表す値を取得する<see cref="T:Microsoft.Office.Interop.Excel.Range" />として、ユーザーの言語で文字列としてが現在のユーザー インターフェイスで表示されます。</summary>
         <value>関連付けられている書式コード<see cref="T:Microsoft.Office.Interop.Excel.Range" />として、ユーザーの言語で文字列としてが現在のユーザー インターフェイスで表示されます。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Orientation">
@@ -494,8 +508,9 @@
         <summary>関連付けられているテキストの向きを表す値を取得する<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの現在のユーザー インターフェイスに表示されています。</summary>
         <value>テキストの向き、関連付けられているの<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの現在のユーザー インターフェイスに表示されています。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -524,8 +539,9 @@
         <summary>指定したオブジェクトの親オブジェクトを取得します。</summary>
         <value>指定したオブジェクトの親オブジェクトです。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadingOrder">
@@ -554,8 +570,9 @@
         <summary>関連付けられている読み取り順序を取得する<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの現在のユーザー インターフェイスに表示されています。</summary>
         <value>関連付けられている読み取り順序<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの現在のユーザー インターフェイスに表示されています。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShrinkToFit">
@@ -584,9 +601,10 @@
         <summary>Microsoft Excel が関連付けられている使用可能な列幅に収まるようにテキストを自動的に縮小するかどうかを示す値を取得する<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの現在のユーザー インターフェイスに表示されています。</summary>
         <value>Microsoft Excel が関連付けられている使用可能な列幅に収まるようにテキストを自動的に縮小するかどうかを示します<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの現在のユーザー インターフェイスに表示されています。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para>のテキストは、使用可能な列幅に収まるように自動的に縮小する場合は<b>true</b>を返します</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para>テキストは、使用可能な列幅に収まるように自動的に縮小する場合は<b>true</b>を返します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Style">
@@ -643,8 +661,9 @@
         <summary>関連付けられている垂直方向の配置を表す値を取得する<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの現在のユーザー インターフェイスに表示されています。</summary>
         <value>垂直方向の配置のそれに関連付けられた<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの現在のユーザー インターフェイスに表示されています。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WrapText">
@@ -673,9 +692,10 @@
         <summary>Microsoft Excel が関連付けられているテキストを折り返し表示を示す値を取得する<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの現在のユーザー インターフェイスに表示されています。</summary>
         <value>Microsoft Excel が関連付けられているテキストを折り返し表示することを示します<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの現在のユーザー インターフェイスに表示されています。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para>の範囲内のすべてのセルでテキストを折り返す場合は<b>true</b>を返します</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para>範囲内のすべてのセルでテキストを折り返す場合は<b>true</b>を返します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,10 +1,10 @@
 <Type Name="ErrorCheckingOptions" FullName="Microsoft.Office.Interop.Excel.ErrorCheckingOptions">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9e4747600167fd2eed7dd64b83d8c7d1cb5b951d" />
+    <Meta Name="ms.openlocfilehash" Value="fcbc54c7e67e1b8642a95dec50c04ef275b48f27" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585639" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ErrorCheckingOptions" />
@@ -31,10 +31,59 @@
   <Docs>
     <summary>アプリケーションのエラー チェックのオプションを表します。</summary>
     <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Application.ErrorCheckingOptions" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /><b>ErrorCheckingOptions</b>オブジェクトを返すオブジェクト</para>。
-      <para>参照、<see cref="P:Microsoft.Office.Interop.Excel.Errors.Item(System.Object)" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Errors" />オブジェクトのインデックス値の一覧を表示するのには、エラー チェックに関連付けられているオプションです</para>。
-      <para><b>ErrorCheckingOptions</b>オブジェクトのメンバーであり、次のプロパティを使用して、エラー チェック オプションを設定します</para>。
-      <list type="bullet"><item><description><see cref="P:Microsoft.Office.Interop.Excel.ErrorCheckingOptions.BackgroundChecking" /></description></item><item><description><see cref="P:Microsoft.Office.Interop.Excel.ErrorCheckingOptions.EmptyCellReferences" /></description></item><item><description><see cref="P:Microsoft.Office.Interop.Excel.ErrorCheckingOptions.EvaluateToError" /></description></item><item><description><see cref="P:Microsoft.Office.Interop.Excel.ErrorCheckingOptions.InconsistentFormula" /></description></item><item><description><see cref="P:Microsoft.Office.Interop.Excel.ErrorCheckingOptions.IndicatorColorIndex" /></description></item><item><description><see cref="P:Microsoft.Office.Interop.Excel.ErrorCheckingOptions.NumberAsText" /></description></item><item><description><see cref="P:Microsoft.Office.Interop.Excel.ErrorCheckingOptions.OmittedCells" /></description></item><item><description><see cref="P:Microsoft.Office.Interop.Excel.ErrorCheckingOptions.TextDate" /></description></item></list><para></para></remarks>
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Application.ErrorCheckingOptions" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /><b>ErrorCheckingOptions</b>オブジェクトを返すオブジェクト。</para>
+      <para>参照、<see cref="P:Microsoft.Office.Interop.Excel.Errors.Item(System.Object)" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Errors" />オブジェクトのインデックス値の一覧を表示するのには、エラー チェックに関連付けられているオプションです。</para>
+      <para>
+        <b>ErrorCheckingOptions</b>オブジェクトのメンバーであり、次のプロパティを使用するにはエラー チェックのオプションを取得または設定します。</para>
+      <list type="bullet">
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.ErrorCheckingOptions.BackgroundChecking" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.ErrorCheckingOptions.EmptyCellReferences" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.ErrorCheckingOptions.EvaluateToError" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.ErrorCheckingOptions.InconsistentFormula" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.ErrorCheckingOptions.IndicatorColorIndex" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.ErrorCheckingOptions.NumberAsText" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.ErrorCheckingOptions.OmittedCells" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.ErrorCheckingOptions.TextDate" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.ErrorCheckingOptions.UnlockedFormulaCells" />
+          </description>
+        </item>
+      </list>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -95,9 +144,10 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>BackgroundChecking</b>プロパティを<b>True</b> (既定値) に設定すると、オート コレクトのオプション ボタンが表示されます横に違反するすべてのセルには、エラーが有効になっています。バック グラウンドのエラー チェックを無効に<b>false を指定</b>します</para>。
-          <para>を参照してください、<see cref="T:Microsoft.Office.Interop.Excel.ErrorCheckingOptions" />を有効にすることができるメンバーの一覧を表示するオブジェクトです</para>。
-          <para></para></remarks>
+            <b>BackgroundChecking</b>プロパティを<b>True</b> (既定値) に設定すると、オート コレクトのオプション ボタンが表示されます横に違反するすべてのセルには、エラーが有効になっています。 <b>False</b>は、バック グラウンドのエラー チェックを無効にします。</para>
+          <para>参照してください、<see cref="T:Microsoft.Office.Interop.Excel.ErrorCheckingOptions" />を有効にすることができるメンバーの一覧を表示するオブジェクトです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -126,10 +176,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EmptyCellReferences">
@@ -226,8 +277,9 @@
           <b>True</b> (既定値) に設定すると、Microsoft Excel は、領域内の矛盾した数式を含むセルを識別します。 <b>False</b>は、矛盾した数式のチェックを無効にします。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>領域内の一貫性のある数式は、左側と右側に、または上下にある<b>InconsistentFormula</b>プロパティが正常に動作するための矛盾した数式を含むセルを置く必要があります</para>。
-          <para></para></remarks>
+          <para>領域内の一貫性のある数式は、左側と右側に上や正常に動作する<b>InconsistentFormula</b>プロパティに矛盾した数式を含むセルの下に配置してください。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InconsistentTableFormula">
@@ -294,13 +346,15 @@
         <remarks>
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />
-            <b>定数</b>のいずれか:</para>
+            <b>定数</b>のいずれかできます。</para>
           <para>
-            <b>オブジェクト</b>の既定のシステム カラーです</para>。
-          <para><b>定数で</b>このプロパティでは使用できません</para>。
-          <para>は対応するインデックス値を入力して、インジケーターの特定の色を指定できます。使用することができます、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Colors(System.Object)" />を現在のカラー パレットを返すプロパティです</para>。
-          <para>次の図は、既定のカラー パレットのカラー インデックス値を示します</para>。
-          <para></para></remarks>
+            <b>xlColorIndexAutomatic</b> 既定のシステム カラー。</para>
+          <para>
+            <b>xlColorIndexNone</b> このプロパティには使用できません。</para>
+          <para>インジケーターに特定の色を指定するには、対応するインデックス値を入力します。 使用することができます、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Colors(System.Object)" />を現在のカラー パレットを返すプロパティです。</para>
+          <para>次の図は、既定のカラー パレットのカラー インデックス値を示します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ListDataValidation">
@@ -332,8 +386,9 @@
         <summary>リストのデータの入力規則が有効になっている場合に<b>True</b>となる<b>ブール</b>値。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>一覧については、データの入力規則もにするにオンまたはオフ ユーザー インターフェイスで選択するか、[エラー チェック] タブで、[オプション] ダイアログ ボックスの一覧のデータ検証エラー チェック ボックスをオフにします</para>。
-          <para></para></remarks>
+          <para>一覧については、データの入力規則できますもでにするにオンとオフをユーザー インターフェイスで選択するか、[エラー チェック] タブで、[オプション] ダイアログ ボックスの一覧のデータ検証エラー チェック ボックスをオフにします。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberAsText">

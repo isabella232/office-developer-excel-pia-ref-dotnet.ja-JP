@@ -1,10 +1,10 @@
 <Type Name="TextFrame" FullName="Microsoft.Office.Interop.Excel.TextFrame">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5f65a001e332b0d729e68b7d8047a3dbe72260fc" />
+    <Meta Name="ms.openlocfilehash" Value="2d1bfd568b124e87a7cc39c702d6b945df65ab68" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577064" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface TextFrame" />
@@ -92,8 +92,9 @@
           <b>True の</b>場合、Microsoft Excel は、テキスト枠の余白を自動的に計算されます。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティが<b>True の</b>場合、 <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginLeft" />、 <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginRight" />、 <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginTop" />、および<see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginBottom" />のプロパティは無視されます</para>。
-          <para></para></remarks>
+          <para>このプロパティが<b>True の</b>場合、 <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginLeft" />、 <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginRight" />、 <see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginTop" />、および<see cref="P:Microsoft.Office.Interop.Excel.TextFrame.MarginBottom" />のプロパティは無視されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoSize">
@@ -157,9 +158,11 @@
         <returns>To be added.</returns>
         <remarks>
           <para>
-            <b>Characters</b>オブジェクトを使用するにを追加し、テキスト フレーム内の文字の書式を設定します</para>。
-          <para>、<b>文字</b>オブジェクトは、コレクションはありません</para>。
-          <para></para></remarks>
+            <b>Characters</b>オブジェクトを使用するにを追加し、テキスト フレーム内の文字の書式を設定します。</para>
+          <para>
+            <b>Characters</b>オブジェクトは、コレクションはありません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -188,10 +191,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlignment">
@@ -224,9 +228,10 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>返します</b>には、いずれかを指定できます、<see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" />定数</para>。
-          <para>が選択またはインストールされている言語サポート (たとえば、日本語) によっては使用ができないこれらの定数のいくつかがあります</para>。
-          <para></para></remarks>
+            <b>返します</b>には、いずれかを指定できます、<see cref="T:Microsoft.Office.Interop.Excel.XlHAlign" />定数。</para>
+          <para>[!メモ] 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalOverflow">
@@ -258,9 +263,10 @@
         <summary>取得または指定したオブジェクトの水平方向のオーバーフローの設定を設定します。</summary>
         <value>指定したオブジェクトの水平方向のオーバーフローの設定です。</value>
         <remarks>
-          <para>読み取り/書き込み</para>。
-          <para>のみ、このプロパティでは、有効と、<see cref="P:Microsoft.Office.Interop.Excel.TextFrame2.WordWrap" />は、プロパティに<b>msofalse を設定する</b>(0) です</para>。
-          <para></para></remarks>
+          <para>値の取得および設定が可能です。</para>
+          <para>のみ、このプロパティでは、有効と、<see cref="P:Microsoft.Office.Interop.Excel.TextFrame2.WordWrap" />は、プロパティに<b>msofalse を設定する</b>(0)。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MarginBottom">
@@ -416,8 +422,10 @@
         <summary>レイアウト枠の向きです。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>–90 からを 90 度または<b>が可能</b>のいずれかの整数値は、<b>方向</b>プロパティ</para>。
-          <para></para></remarks>
+          <para>
+            <b>方向</b>プロパティは、–90 から 90 ° または<b>が可能</b>のいずれかの整数値にできます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -478,9 +486,10 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>ReadingOrder</b>プロパティには、以下の定数のいずれかを指定できます: <b>xlRTL</b> (右から左へ)、 <b>xlLTR</b> (左から右)、または<b>xlContext</b></para> 。
-          <para>が選択またはインストールされている言語サポート (たとえば、日本語) によっては使用ができないこれらの定数のいくつかがあります</para>。
-          <para></para></remarks>
+            <b>ReadingOrder</b>プロパティには、以下の定数のいずれかを指定できます: <b>xlRTL</b> (右から左へ)、 <b>xlLTR</b> (左から右)、または<b>xlContext</b>。</para>
+          <para>[!メモ] 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalAlignment">
@@ -513,9 +522,10 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>VerticalAlignment</b>プロパティには、いずれかを指定できる、<see cref="T:Microsoft.Office.Interop.Excel.XlVAlign" />定数</para>。
-          <para>が選択またはインストールされている言語サポート (たとえば、日本語) によっては使用ができないこれらの定数のいくつかがあります</para>。
-          <para></para></remarks>
+            <b>VerticalAlignment</b>プロパティには、いずれかを指定できる、<see cref="T:Microsoft.Office.Interop.Excel.XlVAlign" />定数。</para>
+          <para>[!メモ] 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalOverflow">
@@ -547,9 +557,10 @@
         <summary>取得または指定したオブジェクトの垂直方向のオーバーフローの設定を設定します。</summary>
         <value>指定したオブジェクトの垂直方向のオーバーフローの設定です。</value>
         <remarks>
-          <para>読み取り/書き込み</para>。
-          <para>のみ、このプロパティでは、有効と、<see cref="P:Microsoft.Office.Interop.Excel.TextFrame.AutoSize" />プロパティは<b>false を指定</b>します</para>。
-          <para></para></remarks>
+          <para>値の取得および設定が可能です。</para>
+          <para>のみ、このプロパティでは、有効と、<see cref="P:Microsoft.Office.Interop.Excel.TextFrame.AutoSize" />プロパティは<b>false を指定</b>します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

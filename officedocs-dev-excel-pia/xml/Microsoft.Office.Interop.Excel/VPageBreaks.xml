@@ -1,10 +1,10 @@
 <Type Name="VPageBreaks" FullName="Microsoft.Office.Interop.Excel.VPageBreaks">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="40747211c0a9bc6951867f60f1e99349accca4af" />
+    <Meta Name="ms.openlocfilehash" Value="9f1ccf11f0bbaf483e28c650605da8bce1726a26" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581957" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface VPageBreaks : System.Collections.IEnumerable" />
@@ -35,11 +35,14 @@
   <Docs>
     <summary>印刷領域での垂直な改ページのコレクションです。 各垂直改ページは、<see cref="T:Microsoft.Office.Interop.Excel.VPageBreak" />オブジェクトです。</summary>
     <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.VPageBreaks" /><b>VPageBreaks</b>コレクションを返すプロパティです。使用して、 <see cref="M:Microsoft.Office.Interop.Excel.VPageBreaks.Add(System.Object)" /> 、垂直な改ページを追加します</para>。<b>VPageBreaks</b>コレクションの印刷範囲には、
-      <para>し、新しく追加された<b>VPageBreak</b>オブジェクト、印刷範囲を交差しない改ページを追加する場合は表示されません。印刷範囲のサイズを変更または再定義する場合、コレクションの内容を変更することがあります</para>。
-      <para>と、<see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Application" />プロパティでは、<see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Count" />プロパティでは、<see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Creator" />プロパティでは、<see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Item(System.Int32)" />プロパティでは、<see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Parent" />プロパティまたは<see cref="M:Microsoft.Office.Interop.Excel.VPageBreaks.Add(System.Object)" />メソッドを<b>VPageBreaks</b>プロパティと共に使用:</para><para>印刷範囲の場合、 <b>VPageBreaks</b>プロパティは印刷範囲内の改ページにのみ適用されます。</para> 。
-      <para>のすべての改ページのユーザー定義印刷の領域の同じ範囲、 <b>VPageBreaks</b>プロパティが適用されます</para>。
-      <para></para></remarks>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.VPageBreaks" /><b>VPageBreaks</b>コレクションを返すプロパティです。 使用して、 <see cref="M:Microsoft.Office.Interop.Excel.VPageBreaks.Add(System.Object)" /> 、垂直な改ページを追加します。</para>
+      <para>印刷範囲を交差しない改ページを追加すると、 <b>VPageBreaks</b>コレクションの印刷範囲に新たに追加された<b>VPageBreak</b>オブジェクトは表示されません。 印刷範囲のサイズを変更または再定義する場合、コレクションの内容を変更できます。</para>
+      <para>
+        <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Application" />プロパティでは、<see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Count" />プロパティ、<see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Creator" />プロパティでは、<see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Item(System.Int32)" />プロパティ、<see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Parent" />プロパティまたは<see cref="M:Microsoft.Office.Interop.Excel.VPageBreaks.Add(System.Object)" />メソッドを<b>VPageBreaks</b>プロパティと共に使用します。</para>
+      <para>印刷範囲の場合、 <b>VPageBreaks</b>プロパティは印刷範囲内の改ページにのみ適用されます。</para>
+      <para>ユーザー定義印刷の領域の同じ範囲、 <b>VPageBreaks</b>プロパティはすべての改ページには。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -189,10 +192,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

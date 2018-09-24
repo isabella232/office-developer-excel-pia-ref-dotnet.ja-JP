@@ -1,10 +1,10 @@
 <Type Name="PlotArea" FullName="Microsoft.Office.Interop.Excel.PlotArea">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="bb1049061bbf006d23a68d870ddfb1d3042027a2" />
+    <Meta Name="ms.openlocfilehash" Value="5a540fca333680ff420954f4c897f1253f3abc3a" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574733" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PlotArea" />
@@ -31,9 +31,10 @@
   <Docs>
     <summary>グラフのプロット エリアを表します。 プロット エリアとは、グラフ データがプロットされる領域です。</summary>
     <remarks>
-      <para>2-d グラフのプロット エリアには、データ マーカー、目盛線、データ ラベル、近似曲線、およびグラフ エリアに配置されたオプションのグラフ要素が含まれています。3-D グラフのプロット エリアには、上記のすべての項目と壁、床面、軸、軸ラベル、およびグラフの目盛ラベルが含まれています。プロット エリアはグラフ エリアに囲まれています。2-d グラフのグラフ エリアには、軸、グラフ タイトル、軸ラベル、および凡例が含まれています。3-D グラフのグラフ エリアには、グラフ タイトルと凡例が含まれています。グラフ エリアの書式設定方法の詳細についてを参照してください、<see cref="T:Microsoft.Office.Interop.Excel.ChartArea" />オブジェクトです</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Chart.PlotArea" /> 、 <b>PlotArea</b>オブジェクトを取得するプロパティ</para>。
-      <para></para></remarks>
+      <para>2-D グラフのプロット エリアには、データ マーカー、目盛線、データ ラベル、近似曲線、およびグラフ エリアに配置されたオプションのグラフ要素が含まれます。 3-D グラフのプロット エリアには、すべてのグラフ要素以外に壁面、床面、軸、軸ラベル、および目盛ラベルが含まれます。 プロット エリアはグラフ エリアに囲まれています。 2-D グラフのグラフ エリアには、軸、グラフ タイトル、軸ラベル、および凡例が含まれます。 3-D グラフのグラフ エリアには、グラフ タイトルと凡例が含まれます。 グラフ エリアの書式設定方法の詳細についてを参照してください、<see cref="T:Microsoft.Office.Interop.Excel.ChartArea" />オブジェクトです。</para>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Chart.PlotArea" /> 、 <b>PlotArea</b>オブジェクトを返すプロパティです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_InsideHeight">
@@ -271,10 +272,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -398,8 +400,9 @@
         <summary>内側を返すポイントのプロット エリアの高さです。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>この測定に使用されるプロット エリアには、軸ラベルが含まれていません。<see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Height" /> 、プロット エリアのプロパティは、軸ラベルを含む外接する四角形を使用します</para>。
-          <para></para></remarks>
+          <para>この測定に使用されるプロット エリアには、軸ラベルが含まれていません。 <see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Height" /> 、プロット エリアのプロパティは、軸ラベルを含む外接する四角形を使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InsideLeft">
@@ -431,8 +434,9 @@
         <summary>ポイントのプロット エリアの左端の内部の上端グラフからの距離を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>この測定に使用されるプロット エリアには、軸ラベルが含まれていません。<see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Left" /> 、プロット エリアのプロパティは、軸ラベルを含む外接する四角形を使用します</para>。
-          <para></para></remarks>
+          <para>この測定に使用されるプロット エリアには、軸ラベルが含まれていません。 <see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Left" /> 、プロット エリアのプロパティは、軸ラベルを含む外接する四角形を使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InsideTop">
@@ -464,8 +468,9 @@
         <summary>上プロット エリアの端の内側にエッジの距離をグラフからポイント単位で返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>この測定に使用されるプロット エリアには、軸ラベルが含まれていません。<see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Top" /> 、プロット エリアのプロパティは、軸ラベルを含む外接する四角形を使用します</para>。
-          <para></para></remarks>
+          <para>この測定に使用されるプロット エリアには、軸ラベルが含まれていません。 <see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Top" /> 、プロット エリアのプロパティは、軸ラベルを含む外接する四角形を使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InsideWidth">
@@ -497,8 +502,9 @@
         <summary>内側を返すポイントのプロット エリアの幅。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>この測定に使用されるプロット エリアには、軸ラベルが含まれていません。<see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Width" /> 、プロット エリアのプロパティは、軸ラベルを含む外接する四角形を使用します</para>。
-          <para></para></remarks>
+          <para>この測定に使用されるプロット エリアには、軸ラベルが含まれていません。 <see cref="P:Microsoft.Office.Interop.Excel.PlotArea.Width" /> 、プロット エリアのプロパティは、軸ラベルを含む外接する四角形を使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">

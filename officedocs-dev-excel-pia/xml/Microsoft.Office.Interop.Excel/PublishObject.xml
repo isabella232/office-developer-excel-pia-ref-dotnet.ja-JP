@@ -1,10 +1,10 @@
 <Type Name="PublishObject" FullName="Microsoft.Office.Interop.Excel.PublishObject">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b96f660c297a7de8cbf9fee33cb4e9de84d52863" />
+    <Meta Name="ms.openlocfilehash" Value="fcc61ded7b33a1797bd24a5447641b388b7f9f14" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574747" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PublishObject" />
@@ -29,9 +29,11 @@
     <summary>Web ページとして保存されたブックのアイテムを表します。<b>PublishObject</b> のプロパティやメソッドで指定された値に従って更新されます。</summary>
     <remarks>
       <para>
-        <b>PublishObject</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.PublishObjects" />コレクションです</para>。
-      <para>使用<b>PublishObjects</b>(<paramref name="index" />)、<paramref name="index" />は、1 つの<b>PublishObject</b>オブジェクトを取得するのには、ブック内の指定された項目のインデックス番号です</para>。
-      <para></para></remarks>
+        <b>PublishObject</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.PublishObjects" />コレクションです。</para>
+      <para>
+        <b>PublishObjects</b>を使用 (<paramref name="index" />)、<paramref name="index" />は、1 つの<b>PublishObject</b>オブジェクトを取得するのには、ブック内の指定された項目のインデックス番号です。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -119,10 +121,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -176,8 +179,9 @@
         <summary>HTML の識別に使用される一意の識別子を返します。 &lt;DIV&gt; Web ページにタグ付けします。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>タグは、Web ページに保存されているドキュメント内のアイテムに関連付けられます。ブック全体、ワークシート、選択した印刷範囲、オート フィルターの範囲、セル範囲、グラフ、ピボット テーブル レポートまたはクエリ テーブルをアイテムとして使用することができます</para>。
-          <para></para></remarks>
+          <para>タグは、Web ページに保存されているドキュメント内のアイテムに関連付けられます。 アイテムには、ブック全体、ワークシート、選択した印刷範囲、オート フィルターの範囲、セル範囲、グラフ、ピボット テーブル レポートまたはクエリ テーブルができます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Filename">
@@ -209,8 +213,10 @@
         <summary>取得または設定の URL (イントラネットまたは Web) またはパス (ローカルまたはネットワーク) を指定するソース オブジェクトを保存する場所。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、 <b>Filename</b>プロパティでは、指定したパス内のフォルダーが存在しない場合、エラーが生成されます</para>。
-          <para></para></remarks>
+          <para>
+            <b>Filename</b>プロパティでは、指定したパス内のフォルダーが存在しない場合、エラーが生成されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HtmlType">
@@ -243,8 +249,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>HtmlType</b>プロパティには、いずれかを指定できます、<see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" />の項目は、静的または Web ページに対話型かどうかを指定する定数です。既定値には<b>定数</b>です</para>。
-          <para></para></remarks>
+            <b>HtmlType</b>プロパティには、いずれかを指定できる、<see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" />の項目は、静的または Web ページに対話型かどうかを指定する定数です。 既定値は、<b>定数</b>です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -300,8 +307,10 @@
         <param name="Create">省略可能な<b>オブジェクト</b>です。 HTML ファイルが存在する場合、 <b>true を指定</b>の置換ファイル、この引数を設定し、この引数を<b>False</b>に設定ファイルの末尾にアイテムを挿入します。 値に関係なく、ファイルが作成されたファイルが存在しない場合、<paramref name="Create" />の引数です。</param>
         <summary>ドキュメント内のアイテムまたはアイテムのコレクションを Web ページ形式で保存します。</summary>
         <remarks>
-          <para>、 <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.Filename" /> 、HTML ファイルの名前と保存場所を設定します</para>。
-          <para></para></remarks>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.Filename" /> 、HTML ファイルの名前と保存場所を設定します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Sheet">
@@ -359,8 +368,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>指定</b>する<b>ソースの種類</b>のプロパティが設定されている場合、このプロパティは、範囲は、定義された名前を返します。<b>場合</b>、<b>範囲</b>、または<b>名前</b>に、<b>ソースの種類</b>のプロパティを設定すると、このプロパティは、グラフ名、ピボット テーブル レポート名、またはクエリ テーブル名など、オブジェクトの名前を返します</para>。
-          <para></para></remarks>
+            <b>SourceType</b>プロパティは、<b>指定</b>に設定されている場合、このプロパティは、範囲は、定義された名前を返します。 <b>場合</b>、<b>範囲</b>、または<b>名前</b>に、<b>ソースの種類</b>のプロパティを設定すると、このプロパティは、グラフ名、ピボット テーブル レポート名、またはクエリ テーブル名など、オブジェクトの名前を返します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceType">
@@ -420,8 +430,9 @@
         <summary>文書を Web ページとして保存するときに Web ページのタイトルを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>タイトルは通常、ウィンドウのタイトル バーの Web ブラウザーでドキュメントを表示するときに表示されます</para>。
-          <para></para></remarks>
+          <para>タイトルは通常、ドキュメントを Web ブラウザーで表示するときに、ウィンドウのタイトル バーに表示されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

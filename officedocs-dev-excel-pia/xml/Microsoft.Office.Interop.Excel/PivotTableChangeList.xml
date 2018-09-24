@@ -1,10 +1,10 @@
 <Type Name="PivotTableChangeList" FullName="Microsoft.Office.Interop.Excel.PivotTableChangeList">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="63698bef46404d04033b537d223fd3813ffa3abc" />
+    <Meta Name="ms.openlocfilehash" Value="636cf57ba1c7b70d9eb9e8e8297d99ac0acff5dc" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574719" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotTableChangeList : System.Collections.IEnumerable" />
@@ -35,8 +35,10 @@
   <Docs>
     <summary>OLAP データ ソースに基づくピボットテーブル レポートの値セルに対してユーザーが行った変更の一覧を表します。</summary>
     <remarks>
-      <para>、<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />コレクションが含まれています<see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />ユーザーがピボット テーブル レポート内の値のセルに行われた変更内容を表すオブジェクト。返す、<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />使用して、ピボット テーブルのコレクション、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ChangeList" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />オブジェクト</para>。
-      <para></para></remarks>
+      <para>
+        <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />コレクションが含まれています<see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />ユーザーがピボット テーブル レポート内の値のセルに行われた変更内容を表すオブジェクト。 返す、<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />使用して、ピボット テーブルのコレクション、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ChangeList" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />オブジェクト。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -108,8 +110,10 @@
         <summary>追加の<see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />オブジェクトを指定された<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />コレクションです。</summary>
         <returns>返します。 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />。</returns>
         <remarks>
-          <para>、<see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" />メソッドを使用する追加するのには<see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />コードをピボット テーブル レポートに変更を表すオブジェクトです。これは、この変更の一覧を基に Excel を構築する UPDATE CUBE ステートメントを追加します。すべての変更は、同じ設定を持つように、ユーザーは割り当ての設定を変更する場合 Excel は同じ設定が適用されたときに行われた変更のグループごとに 1 つ、複数の UPDATE CUBE ステートメントを実行するはことに注意してください</para>。
-          <para></para></remarks>
+          <para>
+            <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" />メソッドを使用する追加するのには<see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />コードをピボット テーブル レポートに変更を表すオブジェクトです。 これは、この変更の一覧を基に Excel を構築する UPDATE CUBE ステートメントを追加します。 すべての変更は、同じ設定を持つように、ユーザーは割り当ての設定を変更する場合 Excel は同じ設定が適用されたときに行われた変更のグループごとに 1 つ、複数の UPDATE CUBE ステートメントを実行するはことに注意してください。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -139,8 +143,9 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.Application" />オブジェクトです。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -197,9 +202,10 @@
         <summary>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>を取得します。</summary>
         <value>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>。</value>
         <remarks>
-          <para>読み取り専用<b>long</b></para> 。
-          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。<see cref="P:Microsoft.Office.Interop.Excel.PivotTableChangeList.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+          <para>読み取り専用<b>long</b>です。</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 <see cref="P:Microsoft.Office.Interop.Excel.PivotTableChangeList.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -292,8 +298,9 @@
         <summary>親を取得します<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />指定されたオブジェクト<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />コレクションです。</summary>
         <value>親<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />指定されたオブジェクト<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />コレクションです。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,10 +1,10 @@
 <Type Name="IconCriteria" FullName="Microsoft.Office.Interop.Excel.IconCriteria">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ef3b184a713db5375fa9501f07c78266ac2688e2" />
+    <Meta Name="ms.openlocfilehash" Value="dee775d3bd8923235b1ef96a3cdebab5cd05c778" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572920" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface IconCriteria : System.Collections.IEnumerable" />
@@ -35,10 +35,12 @@
   <Docs>
     <summary>コレクションを表す<see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" />オブジェクトです。 各<b>IconCriterion</b>は値を表し、アイコンのアイコンのしきい値の種類は、条件付き書式ルールを設定します。</summary>
     <remarks>
-      <para>、<b>その後 IconCriteria</b>コレクションが返されます、<see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconCriteria" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" />オブジェクトです。コレクションにインデックスを渡すことにより、コレクション内の各<b>IconCriterion</b>オブジェクトにアクセスできます。詳細については例を参照してください</para>。
-      <para></para></remarks>
+      <para>
+        <b>その後 IconCriteria</b>コレクションが返されますから、<see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconCriteria" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" />オブジェクトです。 コレクションにインデックスを渡すことにより、コレクション内の各<b>IconCriterion</b>オブジェクトにアクセスできます。 詳細については例を参照してください。</para>
+      <para></para>
+    </remarks>
     <example>
-      <para>コード例を次に示しますは、テストの得点を表す番号の範囲を作成し、その範囲のアイコン セットの条件付き書式ルールを適用します。アイコン セットの種類は、5 つの矢印のアイコン セットに既定のアイコンから変更されます。最後に、ハード コーディングされた値に、百分位数から、しきい値の種類を変更します。</para>
+      <para>次のコード例は、テストの得点を表す番号の範囲を作成し、アイコン セットの条件付き書式ルールをその範囲に適用します。アイコン セットの種類は、既定のアイコンセットから 5 つの矢印のアイコン セットに変更されます。最後に、しきい値の種類が百分位からハードコードされた番号に変更されます。</para>
       <code>&lt;span class="label"&gt;Sub CreateIconSetCF() 
 
 
@@ -26728,8 +26730,9 @@ End Sub&lt;/span&gt;</code>
         <summary>アイコン セットの条件付き書式ルールの条件の数を指定する<b>long 型</b>の値を返します。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>の条件の数は、アイコン セットに割り当てられたしきい値の数に相当します</para>。
-          <para></para></remarks>
+          <para>条件の数はアイコン セットに割り当てられたしきい値の数と同じです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -26795,8 +26798,9 @@ End Sub&lt;/span&gt;</code>
         <summary>1 つを返します<see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" />、<b>その後 IconCriteria</b>コレクションからオブジェクトです。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>値の<paramref name="Index" />パラメーターをアイコン セットの条件付き書式を設定した条件の数より大きい値にすることはできません。条件は、アイコン セットに割り当てられたしきい値の値に相当します。しきい値の数を検索するを使用して、<see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Count" />プロパティ</para>。
-          <para></para></remarks>
+          <para>値、<paramref name="Index" />パラメーターをアイコン セットの条件付き書式を設定した条件の数より大きい値にすることはできません。 条件は、アイコン セットに割り当てられたしきい値の値に相当します。 しきい値の数を検索するを使用して、<see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Count" />プロパティ。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

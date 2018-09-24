@@ -1,10 +1,10 @@
 <Type Name="ODBCError" FullName="Microsoft.Office.Interop.Excel.ODBCError">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2946dd5f47245aca9aa97d5745e8d17546eaafd3" />
+    <Meta Name="ms.openlocfilehash" Value="774b935a1d08dc0ba643f5f2e6e1a60659bb479d" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584687" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ODBCError" />
@@ -32,9 +32,11 @@
     <summary>最新の ODBC クエリによって発生した ODBC エラーを表します。</summary>
     <remarks>
       <para>
-        <b>ODBCError</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.ODBCErrors" />コレクションです。エラーが発生せず、指定された ODBC クエリが実行されると場合、 <b>ODBCErrors</b>コレクションは空です。コレクション内のエラーは、ODBC データ ソースによって生成している順序でインデックスを作成します</para>。
-      <para>使用<b>ODBCErrors</b>(<paramref name="index" />)、インデックスは 1 つの<b>ODBCError</b>オブジェクトを取得する、エラーのインデックス番号です</para>。
-      <para></para></remarks>
+        <b>ODBCError</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.ODBCErrors" />コレクションです。 エラーが発生せず、指定された ODBC クエリが実行されると場合、 <b>ODBCErrors</b>コレクションは空です。 コレクション内のエラーは ODBC データ ソースによって生成している順序でインデックスを作成します。</para>
+      <para>
+        <b>ODBCErrors</b>を使用 (<paramref name="index" />)、インデックスは 1 つの<b>ODBCError</b>オブジェクトを取得する、エラーのインデックス番号です。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -91,10 +93,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorString">
@@ -179,8 +182,9 @@
         <summary>SQL 状態エラーを返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>特定のエラーの詳細については、SQL は、マニュアルを参照してください</para>。
-          <para></para></remarks>
+          <para>特定のエラーの詳細については、SQL のマニュアルを参照してください。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

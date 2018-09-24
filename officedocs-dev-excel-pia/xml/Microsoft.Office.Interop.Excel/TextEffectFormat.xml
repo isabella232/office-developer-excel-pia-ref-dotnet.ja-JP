@@ -1,10 +1,10 @@
 <Type Name="TextEffectFormat" FullName="Microsoft.Office.Interop.Excel.TextEffectFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="988e85ab2e6ef7b42cff85a134ea2c142a4955d7" />
+    <Meta Name="ms.openlocfilehash" Value="fbb84779b82f0d04327c445fb2dede8ff19b5468" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581012" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface TextEffectFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -125,10 +125,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FontBold">
@@ -379,8 +380,9 @@
         <summary>指定したワードアートの形状を設定します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>を設定します<see cref="P:Microsoft.Office.Interop.Excel.TextEffectFormat.PresetTextEffect" />プロパティは、自動的に<b>PresetShape</b>プロパティを設定します</para>。
-          <para></para></remarks>
+          <para>設定、<see cref="P:Microsoft.Office.Interop.Excel.TextEffectFormat.PresetTextEffect" />プロパティは、自動的に<b>PresetShape</b>プロパティを設定します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PresetTextEffect">
@@ -412,9 +414,11 @@
         <summary>指定したワードアートのスタイルを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティの値は、(左から右、上から下へ番号が付けられます)、[ワードアート ギャラリー] ダイアログ ボックスの書式に対応します</para>。
-          <para>指定した図形の他の多くの書式設定プロパティを設定する<b>PresetTextEffect</b>プロパティを自動的に設定します</para>。
-          <para></para></remarks>
+          <para>このプロパティの値は、(左から右、上から下へ番号が付けられます)、[ワードアート ギャラリー] ダイアログ ボックスの書式に対応しています。</para>
+          <para>
+            <b>PresetTextEffect</b> プロパティを設定すると、他のほとんどの書式設定のプロパティも、指定した図形に自動的に設定されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RotatedChars">
@@ -447,9 +451,11 @@
           <b>True の</b>場合、指定したワードアートの文字は、ワードアートの境界図形を基準に 90 度回転します。 <b>False</b>場合は、指定したワードアートの文字が境界図形を基準に元の向きを保持します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ワードアートの横書きテキストの場合、 <b>RotatedChars</b>プロパティを<b>msoTrue</b>に設定する文字を回転反時計回りに 90 度です。ワードアートに縦書きのテキストがある場合、 <b>RotatedChars</b>プロパティを<b>msoFalse</b>に設定文字回転時計回りに 90 ° です。使用して、<see cref="M:Microsoft.Office.Interop.Excel.TextEffectFormat.ToggleVerticalText" />を水平方向および垂直方向のテキストの方向を切り替える方法です</para>。
-          <para>、<see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" />メソッドと<see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Shape" />オブジェクトと、 <b>RotatedChars</b>プロパティと<see cref="M:Microsoft.Office.Interop.Excel.TextEffectFormat.ToggleVerticalText" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" />オブジェクトの文字の方向に影響を及ぼすすべてと、<b>図形</b>内のテキスト フローの方向にオブジェクトをワードアートを表します。これらのプロパティとを必要と結果を取得するメソッドの効果を結合する方法を確認する必要があります</para>。
-          <para></para></remarks>
+          <para>ワードアートに横書きテキストが含まれている場合、 <b>RotatedChars</b> プロパティを <b>msoTrue</b> に設定すると、文字は反時計方向に 90°回転します。 ワードアートに垂直なテキストが含まれている場合、 <b>RotatedChars</b> プロパティを <b>msoFalse</b> に設定すると、文字は時計方向に 90°回転します。 使用して、<see cref="M:Microsoft.Office.Interop.Excel.TextEffectFormat.ToggleVerticalText" />を水平方向および垂直方向のテキストの方向を切り替えます。</para>
+          <para>
+            <see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" />メソッドと<see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Shape" />オブジェクトと、 <b>RotatedChars</b>プロパティと<see cref="M:Microsoft.Office.Interop.Excel.TextEffectFormat.ToggleVerticalText" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" />を表す<b>Shape</b>オブジェクトのテキスト フローの方向、文字の方向に影響を与えるすべてのオブジェクトワードアートです。 これらのプロパティとを必要と結果を取得するメソッドの効果を結合する方法を確認する必要があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -507,9 +513,11 @@
         <summary>指定したワードアートの横書きと縦書きを切り替えます。</summary>
         <remarks>
           <para>
-            <b>ToggleVerticalText</b>メソッドを使用するの値を入れ替えて、<see cref="P:Microsoft.Office.Interop.Excel.Shape.Width" />と<see cref="P:Microsoft.Office.Interop.Excel.Shape.Height" />いるなり、ワードアートを表す<b>Shape</b>オブジェクトのプロパティ、<see cref="P:Microsoft.Office.Interop.Excel.Shape.Left" />と<see cref="P:Microsoft.Office.Interop.Excel.Shape.Top" />プロパティが変更されません</para>。
-          <para>、<see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" />メソッドと<see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Shape" />オブジェクトと<see cref="P:Microsoft.Office.Interop.Excel.TextEffectFormat.RotatedChars" />プロパティと<b>ToggleVerticalText</b>メソッド、<see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" />文字の方向と<b>図形</b>内のテキスト フローの方向に影響を与えるすべてのオブジェクトワードアートを表すオブジェクトです。これらのプロパティとを必要と結果を取得するメソッドの効果を結合する方法を確認する必要があります</para>。
-          <para></para></remarks>
+            <b>ToggleVerticalText</b>メソッドを使用するの値を入れ替えて、<see cref="P:Microsoft.Office.Interop.Excel.Shape.Width" />と<see cref="P:Microsoft.Office.Interop.Excel.Shape.Height" />いるなり、ワードアートを表す<b>Shape</b>オブジェクトのプロパティ、<see cref="P:Microsoft.Office.Interop.Excel.Shape.Left" />と<see cref="P:Microsoft.Office.Interop.Excel.Shape.Top" />プロパティが変更されません。</para>
+          <para>
+            <see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" />メソッドと<see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Shape" />オブジェクトと<see cref="P:Microsoft.Office.Interop.Excel.TextEffectFormat.RotatedChars" />プロパティと<b>ToggleVerticalText</b>メソッドの<see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" />オブジェクトの文字の方向に影響を及ぼすすべてと、<b>図形</b>内のテキスト フローの方向にオブジェクトをワードアートを表します。 これらのプロパティとを必要と結果を取得するメソッドの効果を結合する方法を確認する必要があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Tracking">
@@ -541,11 +549,32 @@
         <summary>文字の幅を指定したワードアートの各文字に割り当てられている水平方向の間隔の比率を設定または返します。 5 0 (ゼロ) から値を指定できます。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティの値が大きい文字の間に十分なスペースを指定する; 1 未満の値は、文字は重ねて表示を作成できます</para>。
-          <para>次の表は、ユーザー インターフェイスで利用可能な設定に対応する<b>Tracking</b>プロパティの値を示します</para>。
-          <list type="table"><item><term>非常に厳しい</term><description>0.8</description></item><item><description>0.9</description>の
-              <term>緊密な</term></item><item><term>標準</term><description>1.0</description></item><item><description>1.2</description>の
-              <term>緩やかな</term></item><item><term>非常に緩やかな</term><description>1.5</description></item></list><para></para></remarks>
+          <para>このプロパティの値が大きい文字の間に十分なスペースを指定します。1 未満の値は、文字の重複を生成できます。</para>
+          <para>次に、画面上で文字の間隔を設定する場合の設定項目と、それに対応する <b>Tracking</b> プロパティの値を示します。</para>
+          <list type="table">
+            <item>
+              <term>より狭く</term>
+              <description>0.8</description>
+            </item>
+            <item>
+              <term>狭く</term>
+              <description>0.9</description>
+            </item>
+            <item>
+              <term>標準</term>
+              <description>1.0</description>
+            </item>
+            <item>
+              <term>広く</term>
+              <description>1.2</description>
+            </item>
+            <item>
+              <term>より広く</term>
+              <description>1.5</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,10 +1,10 @@
 <Type Name="AutoRecover" FullName="Microsoft.Office.Interop.Excel.AutoRecover">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b126d37a57a924ef96cf203d46d8043619a844cf" />
+    <Meta Name="ms.openlocfilehash" Value="cd09f7ea28f0544739412fc8f1a64ac1370cadc1" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576749" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AutoRecover" />
@@ -31,12 +31,14 @@
   <Docs>
     <summary>ブックの自動回復機能を表します。</summary>
     <remarks>
-      <para>AutoRecover オブジェクトのプロパティは、すべてのファイルをバックアップするためのパスと時間間隔を決定します</para>。
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Application.AutoRecover" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /><b>自動</b>オブジェクトを返すオブジェクト</para>。
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.AutoRecover.Path" />が、自動バックアップ ファイルの保存場所のパスを設定するのには、 <b>AutoRecover</b>オブジェクトのプロパティです</para>。
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.AutoRecover.Time" />すべてのファイルをバックアップする時間の間隔を設定するのには、 <b>AutoRecover</b>オブジェクトのプロパティです</para>。
-      <para>分では、 <b>Time</b>プロパティの単位数をメモします</para>。
-      <para></para></remarks>
+      <para>AutoRecover オブジェクトのプロパティは、すべてのファイルをバックアップするためのパスと時間間隔を決定します。</para>
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Application.AutoRecover" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /><b>自動</b>オブジェクトを返すオブジェクト。</para>
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.AutoRecover.Path" />が、自動バックアップ ファイルの保存場所のパスを設定するのには、 <b>AutoRecover</b>オブジェクトのプロパティです。</para>
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.AutoRecover.Time" />すべてのファイルをバックアップする時間の間隔を設定するのには、 <b>AutoRecover</b>オブジェクトのプロパティです。</para>
+      <para>
+        <b>Time</b>プロパティの注の単位は、分単位です。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -93,10 +95,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -219,10 +222,11 @@
         <summary>時間間隔を取得または設定します<see cref="T:Microsoft.Office.Interop.Excel.AutoRecover" />オブジェクトです。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>の許容値は、120 分に 1 の整数です。既定値は、10 分</para>。
-          <para>、最も近い整数に丸められます 10 進値を入力します。5.5 の値を入力することは 6 に相当します</para>。
-          <para>有効範囲外の値を入力すると、Microsoft Excel に戻ります前の時刻の値を使用します</para>。
-          <para></para></remarks>
+          <para>許容値は、120 分に 1 の整数です。 既定値は、10 分です。</para>
+          <para>10 進値を入力すると、最も近い整数に丸められます。たとえば、値 5.5 を入力すると、6 になります。</para>
+          <para>有効範囲外の値を入力すると、それまで使われていた値に戻ります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

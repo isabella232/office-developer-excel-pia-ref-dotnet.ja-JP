@@ -1,10 +1,10 @@
 <Type Name="WorksheetView" FullName="Microsoft.Office.Interop.Excel.WorksheetView">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="97c336b4282cbc103ce2a8f4618467c615c04d48" />
+    <Meta Name="ms.openlocfilehash" Value="6d639f6ce96c01d378daef71d514ccd7be53adeb" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577099" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface WorksheetView" />
@@ -31,8 +31,9 @@
   <Docs>
     <summary>指定された、またはアクティブなブック内のすべての<b>WorksheetView</b>オブジェクトのコレクションです。</summary>
     <remarks>
-      <para>プロパティを次のように処理して、アプリケーションまたはブック レベルのビューの外観と動作を制御する<see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayFormulas" />、<see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayGridlines" />と<see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayHeadings" />です</para>。
-      <para></para></remarks>
+      <para>プロパティを次のように処理して、アプリケーションまたはブック レベルのビューの外観と動作を制御する<see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayFormulas" />、<see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayGridlines" />と<see cref="P:Microsoft.Office.Interop.Excel.WorksheetView.DisplayHeadings" />。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,8 +64,9 @@
           <see cref="T:Microsoft.Office.Interop.Excel._Application" />
         </value>
         <remarks>
-          <para>そのオブジェクトのアプリケーションを取得するのには OLE オートメーション オブジェクトに対してこのプロパティを使用することができます</para>。
-          <para></para></remarks>
+          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクト用のアプリケーションを取得できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -95,8 +97,9 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。 <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当  <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayFormulas">
@@ -164,9 +167,10 @@
           <b>ブール型 (Boolean)</b>
         </value>
         <remarks>
-          <para>このプロパティは、ワークシートとマクロ シートのみに適用されます。 </para>
-          <para>このプロパティに影響を与えるだけで目盛線を表示します。使用して、<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" />のグリッド線の印刷を制御するプロパティ</para>。
-          <para></para></remarks>
+          <para>このプロパティは、ワークシートとマクロ シートにだけ使用できます。</para>
+          <para>このプロパティは、グリッド線の表示だけに影響します。 使用して、<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" />のグリッド線の印刷を制御するプロパティです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayHeadings">
@@ -201,9 +205,10 @@
           <b>ブール型 (Boolean)</b>
         </value>
         <remarks>
-          <para>このプロパティは、ワークシートとマクロ シートのみに適用されます。 </para>
-          <para>このプロパティに影響を与えるだけで見出しを表示します。使用して、<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" />の番号を印刷を制御するプロパティ</para>。
-          <para></para></remarks>
+          <para>このプロパティは、ワークシートとマクロ シートにだけ使用できます。</para>
+          <para>このプロパティは、見出しの表示だけに影響します。 使用して、<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" />の番号を印刷を制御するプロパティです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayOutline">
@@ -238,8 +243,9 @@
           <b>ブール型 (Boolean)</b>
         </value>
         <remarks>
-          <para>このプロパティは、ワークシートとマクロ シートのみに適用されます</para>。
-          <para></para></remarks>
+          <para>このプロパティは、ワークシートとマクロ シートにだけ使用できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayZeros">
@@ -274,8 +280,9 @@
           <b>ブール型 (Boolean)</b>
         </value>
         <remarks>
-          <para>このプロパティは、ワークシートとマクロ シートのみに適用されます</para>。
-          <para></para></remarks>
+          <para>このプロパティは、ワークシートとマクロ シートにだけ使用できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

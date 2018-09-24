@@ -1,10 +1,10 @@
 <Type Name="QueryTables" FullName="Microsoft.Office.Interop.Excel.QueryTables">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dca19c730db3c359bc26e265f3af266c406db4a5" />
+    <Meta Name="ms.openlocfilehash" Value="243a843ba48be5881f9e62bc2223ea6860624c17" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586941" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface QueryTables : System.Collections.IEnumerable" />
@@ -35,9 +35,10 @@
   <Docs>
     <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Excel.QueryTable" />オブジェクトです。 各  <b>QueryTable</b> オブジェクトは、外部データ ソースから返されるデータに基づいて作成されるワークシート テーブルを表します。</summary>
     <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.QueryTables" />プロパティを<b>クエリ テーブルで使用</b>のコレクションを取得します</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" />新しいクエリ テーブルを作成し、<b>クエリ テーブルで使用</b>のコレクションに追加します</para>。
-      <para></para></remarks>
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.QueryTables" />に、<b>クエリ テーブルで使用</b>のコレクションを返すプロパティです。</para>
+      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" /> 、新しいクエリ テーブルを作成し、<b>クエリ テーブルで使用</b>のコレクションに追加する方法です。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -107,8 +108,9 @@
         <summary>新しいクエリ テーブルを作成します。 返します、 <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> 、新しいクエリ テーブルを表すオブジェクト。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>までこのメソッドによって作成されたクエリが実行されていない、<see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" />メソッドが呼び出されます</para>。
-          <para></para></remarks>
+          <para>までこのメソッドによって作成されたクエリが実行されていない、<see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" />メソッドが呼び出されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -194,8 +196,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -258,8 +261,9 @@
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>の値は、オブジェクトの名前は、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Name" />プロパティ</para>。
-          <para></para></remarks>
+          <para>値は、オブジェクトの名前は、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Name" />プロパティ。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

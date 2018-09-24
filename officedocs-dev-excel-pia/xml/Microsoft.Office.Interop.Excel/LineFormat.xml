@@ -1,10 +1,10 @@
 <Type Name="LineFormat" FullName="Microsoft.Office.Interop.Excel.LineFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="13bc8c12ad34dfd5fd661b85e444b185e1b7b074" />
+    <Meta Name="ms.openlocfilehash" Value="7d64676ab2ca48d349cd8696c6abf4830f0a9f32" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575489" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface LineFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -30,12 +30,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>線と矢印の両端の書式を表します。</summary>
+    <summary>線と矢印の書式を表します。</summary>
     <remarks>
       <para>
-        <b>LineFormat</b>オブジェクトには、行には、線自体の書式に関する情報が含まれています外枠で囲まれた図形の場合、このオブジェクトには、図形の枠線の書式に関する情報が含まれます</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Line" /> 、 <b>LineFormat</b>オブジェクトを取得するプロパティ</para>。
-      <para></para></remarks>
+        <b>LineFormat</b> オブジェクトには、行には、線自体の書式に関する情報が含まれています輪郭のある図形、図形の枠線の書式に関する情報が含まれます。</para>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Line" /> 、 <b>LineFormat</b>オブジェクトを取得するプロパティです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -222,10 +223,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DashStyle">
@@ -412,9 +414,11 @@
         <summary>取得または指定した図形の境界線の内側を結ぶ線を描画するかどうかを設定します。</summary>
         <value>A<see cref="T:Microsoft.Office.Core.MsoTriState" />オブジェクトです。</value>
         <remarks>
-          <para>読み取り/書き込み</para>。
-          <para><b>msotrue を設定する</b>図形の境界線の内側を結ぶ線を描画する場合は (-1); (0) である場合は<b>msofalse を設定</b>します</para>。
-          <para></para></remarks>
+          <para>値の取得および設定が可能です。</para>
+          <para>図形の境界線の内側に線を描く場合は  
+            <b>msoTrue</b> (-1)。それ以外の場合は、 <b>msoFalse</b> (0)。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -536,8 +540,9 @@
         <summary>取得または指定した塗りつぶしの透明度値として設定 0.0 (不透明) から 1.0 (透明) です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>; このプロパティの値は単色の塗りの外観に影響を与えるし、だけ線、線のパターンまたはパターン、グラデーション、図、またはテクスチャの塗りつぶしの外観に影響を与えません</para>。
-          <para></para></remarks>
+          <para>Transparency プロパティの値は、単一な色の塗りつぶしと線にしか設定できません。パターンが設定された線、塗りつぶしのパターン、グラデーション、図、およびテクスチャを半透明にすることはできません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">

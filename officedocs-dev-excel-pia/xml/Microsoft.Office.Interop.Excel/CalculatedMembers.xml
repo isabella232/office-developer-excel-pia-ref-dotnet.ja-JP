@@ -1,10 +1,10 @@
 <Type Name="CalculatedMembers" FullName="Microsoft.Office.Interop.Excel.CalculatedMembers">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="953e871a40c21fce56f87ab1a7241017eaeb4ca0" />
+    <Meta Name="ms.openlocfilehash" Value="2ef237f29eff8550f0d57ac22a72517d08855192" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572836" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CalculatedMembers : System.Collections.IEnumerable" />
@@ -35,9 +35,10 @@
   <Docs>
     <summary>すべてのコレクション、<see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" />指定されたピボット テーブル上のオブジェクトです。</summary>
     <remarks>
-      <para>各<see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" />オブジェクトは、計算されるメンバーまたは計算されるメジャーを表します</para>。
-      <para>使用、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.CalculatedMembers" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />オブジェクトを返す、<see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" />コレクションです</para>。
-      <para></para></remarks>
+      <para>各<see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" />オブジェクトは、計算されるメンバーまたは計算されるメジャーを表します。</para>
+      <para>使用、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.CalculatedMembers" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />オブジェクトを返す、<see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" />コレクションです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -113,9 +114,10 @@
         <returns>To be added.</returns>
         <remarks>
           <para>
-            <paramref name="Formula" />引数は、有効な MDX (多次元式) 構文ステートメントを持つ必要があります。<paramref name="Name" />オンライン分析処理 (OLAP) プロバイダーを使用して、<paramref name="Type" />を定義するには、引数です</para>。
-          <para>を設定する場合、<paramref name="Type" />には、このメソッドの引数<paramref name="xlCalculatedSet" />を呼び出す必要がありますし、 <see cref="M:Microsoft.Office.Interop.Excel.CubeFields.AddSet(System.String,System.String)" /> 、新しいフィールドをピボット テーブルの表示を設定する方法です</para>。
-          <para></para></remarks>
+            <paramref name="Formula" />引数は、有効な MDX (多次元式) 構文ステートメントを持つ必要があります。 <paramref name="Name" />オンライン分析処理 (OLAP) プロバイダーを使用して、<paramref name="Type" />を定義するには、引数です。</para>
+          <para>設定する場合、<paramref name="Type" />には、このメソッドの引数<paramref name="xlCalculatedSet" />を呼び出す必要がありますし、 <see cref="M:Microsoft.Office.Interop.Excel.CubeFields.AddSet(System.String,System.String)" /> 、新しいフィールドをピボット テーブルの表示を設定する方法です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add2">
@@ -201,11 +203,24 @@
         <summary>ピボットテーブルに集計フィールドまたは集計アイテムを追加します。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>引数<b>Formula</b>には有効な MDX (多次元式) 構文ステートメントが必要です。引数<b>Name</b>は、オンライン分析処理 (OLAP) プロバイダーを使用するがします</para>。
-          <list type="bullet"><item><description><b>DisplayFolder</b>: 表示データは計算されるメジャーに対して無効です。計算されるメンバーに対して有効ではありません。文字列はセミコロン; を持つことができます。この中の。セミコロンは、複数の表示フォルダーを指定します。などの文字列を使用する場合は [folder1; myfolder2、計算されるメジャーが表示されます 2 つの表示フォルダー、1 つ名前付き myfolder1 で、他の名前付き 'myfolder2'。文字列に円記号 () を持つことができます\.の表示フォルダーの階層パスを指定します。などがあります文字列 welcome\to\seattle を使用する場合表示フォルダーに含まれている表示フォルダーへようこそ] と呼ばれると呼ばれるにシアトルと呼ばれる表示のフォルダーが含まれています。表示フォルダーは、仮想フォルダーです。 本当に存在しないシステムフォルダーのことと思われるのと同じ意味で。目的の計算されるメジャーを表示するためにのみ存在します</description></item>。
-            <item><description><b>NumberFormat</b>: 表示形式は、マクロでのみ設定できます。それらを設定するためのユーザー インターフェイスはありません。これは、ユーザー インターフェイスを使用して設定できない唯一のプロパティです。型は<b>xlNumberFormatTypeDefault</b>で、常にユーザー インターフェイスを使用して計算されるメンバーが作成されたとき。番号の形式では、計算されるメンバーの有効なだけです。計算されるメジャーに対して無効です</description></item>。
-            <item><description><b>ParentHierarchy</b>: 親階層が任意の有効な MDX の階層構造にすることができます。親階層では、計算されるメンバーの有効なだけです。計算されるメジャーに対して有効ではありません。親メンバーの親階層と一致する親階層を自動的に変更する別の親階層の親メンバーを選択した場合</description></item></list>。
-          <para></para></remarks>
+          <para>
+            <b>Formula</b> 引数は有効な MDX (多次元式) 構文ステートメントである必要があります。 <b>Name</b> 引数は、オンライン分析処理 (OLAP) プロバイダーが受け付け可能である必要があります。</para>
+          <list type="bullet">
+            <item>
+              <description>
+                <b>DisplayFolder</b>: 表示データは計算されるメジャーに対して無効です。 計算されるメンバーに対して有効ではありません。 文字列はセミコロン; を持つことができます。この中の。 セミコロンは、複数の表示フォルダーを指定します。 などの文字列を使用する場合は [folder1; myfolder2、計算されるメジャーが表示されます 2 つの表示フォルダー、1 つ名前付き myfolder1 で、他の名前付き 'myfolder2'。 文字列に円記号 () を持つことができます \ です。 これは、階層の表示フォルダーのパスを指定します。 などがあります文字列 welcome\to\seattle を使用する場合表示フォルダーに含まれている表示フォルダーへようこそ] と呼ばれると呼ばれるにシアトルと呼ばれる表示のフォルダーが含まれています。 表示フォルダーは、仮想フォルダーです。  本当に存在しないシステムフォルダーのことと思われるのと同じ意味で。 計算されるメジャーを表示するためにのみ存在します。</description>
+            </item>
+            <item>
+              <description>
+                <b>NumberFormat</b>: 数値の書式はマクロでのみ設定できます。数値の書式を設定するためのユーザー インターフェイスはありません。これは、ユーザー インターフェイスを通して設定できない唯一のプロパティです。計算メンバーをユーザー インターフェイスを介して作成する場合の型は、常に <b>xlNumberFormatTypeDefault</b> です。数値の書式は、計算メンバーに対してのみ有効です。計算メジャーに対しては有効ではありません。</description>
+            </item>
+            <item>
+              <description>
+                <b>ParentHierarchy</b>: 親階層が任意の有効な MDX の階層構造にすることができます。 親階層では、計算されるメンバーの有効なだけです。 計算されるメジャーに対して有効ではありません。 別の親階層の親メンバーを選択した場合、親メンバーの親階層と一致する親階層を自動的に変更されます。</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -290,10 +305,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

@@ -1,10 +1,10 @@
 <Type Name="FileExportConverters" FullName="Microsoft.Office.Interop.Excel.FileExportConverters">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a0248fd27bcefad2e1cbf85330ede4a467e15625" />
+    <Meta Name="ms.openlocfilehash" Value="d9d15ade86de30f26a8ffa76c4393a2b02abadaa" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572458" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface FileExportConverters : System.Collections.IEnumerable" />
@@ -35,10 +35,12 @@
   <Docs>
     <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" />ファイルを保存するために使用できるすべてのファイル コンバーターを表すオブジェクト。</summary>
     <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Application.FileExportConverters" />を返すプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" />コレクションです</para>。
-      <para><b>追加</b>のメソッドは、<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" />コレクションです。<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" />オブジェクトは、補足的なコンバーターをインストールすることによって Microsoft Office のインストール中に追加されます</para>。
-      <para>使用<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" />(インデックス) 1 つの FileExportConverter オブジェクトを取得するのには、整数インデックスであります。インデックス番号は、FileExportConverters コレクション内のファイル コンバーターの位置を表します</para>。
-      <para></para></remarks>
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Application.FileExportConverters" />を返すプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" />コレクションです。</para>
+      <para>
+        <b>Add</b>メソッドでは使用できません、<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" />コレクションです。 <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" />オブジェクトは、補足的なコンバーターをインストールすることによって Microsoft Office のインストール中に追加されます。</para>
+      <para>使用<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" />(インデックス) 1 つの FileExportConverter オブジェクトを取得するのには、整数インデックスであります。 インデックス番号は、FileExportConverters コレクション内のファイル コンバーターの位置を表します。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -166,8 +168,9 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティは、5843454 C は、文字列「クリエーター」を表す 16 進値を返します。Creator プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合、このプロパティは、5843454 C は、文字列「クリエーター」を表す 16 進値を返します。 Creator プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

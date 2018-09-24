@@ -1,10 +1,10 @@
 <Type Name="Workbooks" FullName="Microsoft.Office.Interop.Excel.Workbooks">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b12eeb1525d59a72dc56c31e86d541cd2b6125d0" />
+    <Meta Name="ms.openlocfilehash" Value="e216142f85071dc6b33c9b1eb3c9ddffaa7369de" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574936" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Workbooks : System.Collections.IEnumerable" />
@@ -32,11 +32,12 @@
   <Docs>
     <summary>すべてのコレクション、 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> Microsoft Excel アプリケーションでは、現在のオブジェクトを開きます。</summary>
     <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /><b>ブック</b>のコレクションを返すプロパティです</para>。
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Add(System.Object)" /> 、新しい空のブックを作成し、コレクションに追加します</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />ファイルを開くためのメソッドです</para>。
-      <para>1 つの<b>ブック</b>オブジェクトの使い方の詳細についてを参照してください、<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />オブジェクトです</para>。
-      <para></para></remarks>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /><b>ブック</b>のコレクションを返すプロパティです。</para>
+      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Add(System.Object)" /> 、新しい空のブックを作成し、コレクションに追加する方法です。</para>
+      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />ファイルを開くためのメソッドです。</para>
+      <para>1 つの<b>ブック</b>オブジェクトの使い方の詳細についてを参照してください、<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />オブジェクトです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="__OpenText">
@@ -316,7 +317,7 @@
         <summary>新しいブックを作成します。 作業中のブックを新しいブックになります。 返します、<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />オブジェクトです。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>場合、<paramref name="Template" />の引数は、ファイルを指定、ファイル名、パスを含めることができます</para>
+          <para>場合、<paramref name="Template" />の引数は、ファイルを指定、ファイル名にパスを含めることができます。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -435,8 +436,10 @@
       <Docs>
         <summary>オブジェクトを閉じます。</summary>
         <remarks>
-          <para>ブック内の Auto_Close マクロを実行しない、 <b>Close</b>メソッドを使用してブックを閉じるします。使用して、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" />自動を実行するメソッドは、マクロを閉じます</para>。
-          <para></para></remarks>
+          <para>
+            <b>Close</b>メソッドを使用してブックを閉じると、ブック内の Auto_Close マクロが実行されません。 使用して、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" />自動を実行するメソッドは、マクロを閉じます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -494,8 +497,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -621,8 +625,9 @@
         <summary>ブックを開きます。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>ファイルをプログラムで開くと、既定では、マクロが有効にします。使用して、<see cref="P:Microsoft.Office.Interop.Excel._Application.AutomationSecurity" />プロパティをプログラムでファイルを開くときに使用するマクロのセキュリティ モードを設定します</para>。
-          <para></para></remarks>
+          <para>既定では、プログラムでファイルを開くときにマクロが有効にします。 使用して、<see cref="P:Microsoft.Office.Interop.Excel._Application.AutomationSecurity" />プログラムを使用してファイルを開くときに使用するマクロのセキュリティ モードを設定するプロパティです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenDatabase">
@@ -758,8 +763,9 @@
         <summary>XML データ ファイルを開きます。 返します、<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />オブジェクトです。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

@@ -1,10 +1,10 @@
 <Type Name="Sheets" FullName="Microsoft.Office.Interop.Excel.Sheets">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="370f0fa19b86c461efce88bb828c15aab19745a1" />
+    <Meta Name="ms.openlocfilehash" Value="db6b3bb11f3b424395c8a07057d1712212b447b0" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581215" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Sheets : System.Collections.IEnumerable" />
@@ -33,12 +33,15 @@
     <summary>指定されたブックまたは作業中のブックにあるすべてのシートのコレクションです。</summary>
     <remarks>
       <para>
-        <b>Sheets</b>コレクションを含めることができます<see cref="T:Microsoft.Office.Interop.Excel.Chart" />または<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />のオブジェクトです。<b>Sheets</b>コレクションは、任意の種類のシートを取得するときに便利です。1 つだけの種類のシートで作業をする場合は、その種類のシートのオブジェクトのトピックを参照してください</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Sheets" /> 、 <b>Sheets</b>コレクションを返すプロパティです</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.Sheets.Add(System.Object,System.Object,System.Object,System.Object)" />メソッドに新しいシートを作成し、コレクションに追加します</para>。
-      <para><b>シート</b>の使用 (<paramref name="index" />)、<paramref name="index" />シートの名前またはインデックス番号を 1 つを返すには、<see cref="T:Microsoft.Office.Interop.Excel.Chart" />または<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />オブジェクトです</para>。
-      <para><b>シート</b>の使用 (<paramref name="array" />) を複数のシートを指定します</para>。
-      <para></para></remarks>
+        <b>Sheets</b>コレクションを含めることができます<see cref="T:Microsoft.Office.Interop.Excel.Chart" />または<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />のオブジェクトです。 <b>Sheets</b>コレクションは、任意の種類のシートを取得するときに便利です。 1 つだけの種類のシートで作業をする場合は、その種類のシートのオブジェクトのトピックを参照してください。</para>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Sheets" /> 、 <b>Sheets</b>コレクションを返すプロパティです。</para>
+      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.Sheets.Add(System.Object,System.Object,System.Object,System.Object)" />新しいシートを作成し、コレクションに追加する方法です。</para>
+      <para>
+        <b>シート</b>を使用して (<paramref name="index" />)、<paramref name="index" />シートの名前またはインデックス番号を 1 つを返すには、<see cref="T:Microsoft.Office.Interop.Excel.Chart" />または<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />オブジェクトです。</para>
+      <para>
+        <b>シート</b>を使用して (<paramref name="array" />) を複数のシートを指定します。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -156,8 +159,9 @@
         <summary>新しいワークシート、グラフ シート、またはマクロ シートを作成します。新しいワークシートがアクティブ シートになります。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>場合<paramref name="Before" />と<paramref name="After" />は、両方とも省略すると、新しいシートがアクティブ シートの直前に挿入します</para>。
-          <para></para></remarks>
+          <para>場合<paramref name="Before" />と<paramref name="After" />は、両方とも省略すると、新しいシートがアクティブ シートの直前に挿入します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Add2">
@@ -252,8 +256,9 @@
         <param name="After">省略可能な<b>オブジェクト</b>です。 その後、コピーしたシートを配置するシートです。 指定することはできません<paramref name="After" />を指定する場合は、 <paramref name="Before" />。</param>
         <summary>シートをブック内の他の場所にコピーします。</summary>
         <remarks>
-          <para>いずれかの方法を指定しない場合は、<paramref name="Before" />または<paramref name="After" />、コピーしたシートを含む新しいブックを作成します</para>。
-          <para></para></remarks>
+          <para>いずれかの方法を指定しない場合は、<paramref name="Before" />または<paramref name="After" />、コピーしたシートを含む新しいブックを作成します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -311,8 +316,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -432,8 +438,9 @@
         <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" />シートの水平方向のページを表すコレクションを中断します。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>は海抜 1,026 水平な改ページ 1 枚の制限があります</para>。
-          <para></para></remarks>
+          <para>1 つのシートに使用できる水平な改ページの数は 1026 です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -499,8 +506,9 @@
         <param name="After">省略可能な<b>オブジェクト</b>です。 配置移動したシートです。 指定することはできません<paramref name="After" />を指定する場合は、 <paramref name="Before" />。</param>
         <summary>シートをブック内の他の場所に移動します。</summary>
         <remarks>
-          <para>いずれかの方法を指定しない場合は、<paramref name="Before" />または<paramref name="After" />、移動するワークシートを含む新しいブックを作成します</para>。
-          <para></para></remarks>
+          <para>いずれかの方法を指定しない場合は、<paramref name="Before" />または<paramref name="After" />、移動するワークシートを含む新しいブックを作成します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -576,8 +584,9 @@
         <param name="PrToFileName">省略可能な<b>オブジェクト</b>です。 場合<paramref name="PrintToFile" />は、設定に<b>は True</b>、この引数を指定して印刷しファイルの名前です。</param>
         <summary>オブジェクトを印刷します。</summary>
         <remarks>
-          <para>の説明における「ページ」<paramref name="From" />と<paramref name="To" />印刷されたページを参照して、ない全体のページでは、シートまたはブック</para>。
-          <para></para></remarks>
+          <para>説明における「ページ」<paramref name="From" />と<paramref name="To" />印刷されるページを参照して、ない全体のページでは、シートまたはブックです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintOutEx">

@@ -1,10 +1,10 @@
 <Type Name="DiagramNode" FullName="Microsoft.Office.Interop.Excel.DiagramNode">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0ca42ecf50dd3405db74400e2269347011d04258" />
+    <Meta Name="ms.openlocfilehash" Value="86e622fca7f83a44ee8326d13178a7a41108a865" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576147" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DiagramNode : Microsoft.Office.Core._IMsoDispObj" />
@@ -32,13 +32,45 @@
   <Docs>
     <summary>図表内のノードを表します。</summary>
     <remarks>
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" />図表または図表ノードにノードを追加する方法です</para>。
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.Delete" /> 、図表または図表ノードからノードを削除します</para>。
-      <para><b>DiagramNode</b>オブジェクトを取得するには、次のいずれかの操作を使用して:</para><list type="bullet"><item><description><b>DiagramNode</b>オブジェクトの<see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" />、 <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.CloneNode(System.Boolean,Microsoft.Office.Interop.Excel.DiagramNode,Microsoft.Office.Core.MsoRelativeNodePosition)" />、 <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.NextNode" />、または<see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.PrevNode" />メソッド、または<see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Root" />プロパティ</description></item><item><description>、<see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" />コレクションの<see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" />または<see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" />メソッドまたは<see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" />または<see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" />のプロパティ</description></item><item><description>、<see cref="T:Microsoft.Office.Interop.Excel.DiagramNodes" />コレクションの<see cref="M:Microsoft.Office.Interop.Excel.DiagramNodes.Item(System.Object)" />メソッド</description></item><item><description>、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />オブジェクトのまたは<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />コレクションの<b>DiagramNode</b>プロパティ</description></item></list><para>A の図表ノードが終了すること、またはその他の子の図を含めることができる子図表節点、または子図形です。次にこれらを参照してください:</para><list type="bullet"><item><description>、子図表を参照する、<see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Diagram" />プロパティ</description></item>。
-        <item><description>、個々 の子図表節点を参照するのには、 <b>AddNode</b>、 <b>CloneNode</b>、 <b>NextNode</b> 、 <b>PrevNode</b>メソッドまたは<b>Root</b>プロパティを使用しています</description></item>。
-        <item><description>、子図表節点のコレクションを参照するには、<see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" />プロパティ</description></item>。
-        <item><description>、図形を参照する、<see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Shape" />または<see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.TextShape" />プロパティ</description></item></list>。
-      <para></para></remarks>
+      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" />図表または図表ノードにノードを追加する方法です。</para>
+      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.Delete" />図表または図表ノードからノードを削除する方法です。</para>
+      <para>
+        <b>DiagramNode</b>オブジェクトを取得するには、次のいずれかの手順に従います。</para>
+      <list type="bullet">
+        <item>
+          <description>
+            <b>DiagramNode</b>オブジェクトの<see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" />、 <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.CloneNode(System.Boolean,Microsoft.Office.Interop.Excel.DiagramNode,Microsoft.Office.Core.MsoRelativeNodePosition)" />、 <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.NextNode" />、または<see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.PrevNode" />のメソッド、または<see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Root" />プロパティ</description>
+        </item>
+        <item>
+          <description>
+            <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" />コレクションの<see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" />または<see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" />メソッドまたは<see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" />または<see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" />のプロパティ</description>
+        </item>
+        <item>
+          <description>
+            <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodes" />コレクションの<see cref="M:Microsoft.Office.Interop.Excel.DiagramNodes.Item(System.Object)" />メソッド</description>
+        </item>
+        <item>
+          <description>
+            <see cref="T:Microsoft.Office.Interop.Excel.Shape" />オブジェクトのまたは<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />コレクションの<b>DiagramNode</b>プロパティ</description>
+        </item>
+      </list>
+      <para>図表ノードが終了すること、またはその他の子、子図表節点、または子図形を含めることができます。 次のようにこれらを参照してください。</para>
+      <list type="bullet">
+        <item>
+          <description>子図表を参照するを使用して、<see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Diagram" />プロパティ。</description>
+        </item>
+        <item>
+          <description>個々 の子図表節点を参照するには、 <b>AddNode</b>、 <b>CloneNode</b>、 <b>NextNode</b> 、 <b>PrevNode</b>メソッドまたは<b>Root</b>プロパティを使用します。</description>
+        </item>
+        <item>
+          <description>子図表節点のコレクションを参照するを使用して、<see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" />プロパティ。</description>
+        </item>
+        <item>
+          <description>図形を参照するを使用して、<see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Shape" />または<see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.TextShape" />のプロパティです。</description>
+        </item>
+      </list>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNode">
@@ -193,10 +225,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -282,15 +315,22 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>MsoOrgChartLayoutType</b>には、これらの<b>MsoOrgChartLayoutType</b>定数のいずれかを指定できます</para>。
-          <para>アシスタントとして
-            <b>msoOrgChartLayoutAssistant</b>の場所の子ノードです</para>。
-          <para><b>msoOrgChartLayoutBothHanging</b>場所の子ノードの左側と右側の両方の親ノードから垂直方向にします</para>。
-          <para><b>msoOrgChartLayoutLeftHanging</b>場所の子ノードの左側にある親ノードから垂直方向にします</para>。
-          <para><b>msoOrgChartLayoutMixed</b>の戻り値の 1 つ以上の<b>MsoOrgChartLayoutType</b>を使用して書式指定子を持つ親ノード</para>。
-          <para><b>msoOrgChartLayoutRightHanging</b>場所の子ノードの右側にある親ノードから垂直方向にします</para>。
-          <para><b>msoOrgChartLayoutStandard</b>場所の子ノード、親ノードの下に水平にします</para>。
-          <para></para></remarks>
+            <b>MsoOrgChartLayoutType</b>には、これらの<b>MsoOrgChartLayoutType</b>定数のいずれかを指定できます。</para>
+          <para>
+            <b>msoOrgChartLayoutAssistant</b>アシスタントとしては、子ノードを配置します。</para>
+          <para>
+            <b>msoOrgChartLayoutBothHanging</b>両方の左側と右側にある子ノードを親ノードから垂直方向に配置します。</para>
+          <para>
+            <b>msoOrgChartLayoutLeftHanging</b>左側の垂直方向に、親ノードから子ノードを配置します。</para>
+          <para>
+            <b>msoOrgChartLayoutMixed</b>
+            <b>MsoOrgChartLayoutType</b>を 1 つ以上を使用して書式指定子を持つ親ノードの値を返します。</para>
+          <para>
+            <b>msoOrgChartLayoutRightHanging</b>右側にある垂直方向に、親ノードから子ノードを配置します。</para>
+          <para>
+            <b>msoOrgChartLayoutStandard</b>子ノードを親ノードの下に水平方向に配置します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MoveNode">
@@ -429,8 +469,9 @@
         <param name="pTargetNode">必要な<see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" />オブジェクトです。 ターゲット図表ノードに置き換えられます。</param>
         <summary>ターゲット図表ノードをソース図表ノードに置き換えます。</summary>
         <remarks>
-          <para>ターゲット図表ノードは削除され、その子ノードのいずれかを含む、ソース図表ノードは、ターゲット図表ノードがあった場所に移動します</para>。
-          <para></para></remarks>
+          <para>ターゲット図表ノードは削除され、ターゲット図表ノードがあった場所に移動、ソース図表ノードが子ノードのいずれかを含みます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Root">

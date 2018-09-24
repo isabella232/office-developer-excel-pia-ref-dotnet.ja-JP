@@ -1,10 +1,10 @@
 <Type Name="ChartObjects" FullName="Microsoft.Office.Interop.Excel.ChartObjects">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3019bdb5ddacb9a6d190a2084952101edf58700e" />
+    <Meta Name="ms.openlocfilehash" Value="2c2b455b605d204bbd8ef7f4faf0116be7341efd" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586094" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartObjects : System.Collections.IEnumerable" />
@@ -35,10 +35,12 @@
   <Docs>
     <summary>すべてのコレクション、<see cref="T:Microsoft.Office.Interop.Excel.ChartObject" />指定されたグラフ シート、ダイアログ シート、またはワークシート上のオブジェクトです。</summary>
     <remarks>
-      <para>各<b>ChartObject</b>オブジェクトは、埋め込みグラフを表します。<b>ChartObject</b>オブジェクトは、コンテナーとして動作する<see cref="T:Microsoft.Office.Interop.Excel.Chart" />オブジェクトです。<b>ChartObject</b>オブジェクトのプロパティとメソッドは、シートにある埋め込みグラフのサイズと外観を制御します</para>。使用の
-      <para>、 <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.ChartObjects(System.Object)" /><b>ChartObjects</b>コレクションを取得するメソッドです。使用して、 <see cref="M:Microsoft.Office.Interop.Excel.ChartObjects.Add(System.Double,System.Double,System.Double,System.Double)" /> 、新しい空の埋め込みグラフを作成し、コレクションに追加する方法です。使用して、<see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />のデータを追加し、新しいグラフの書式を設定します</para>。
-      <para><b>返すメソッド</b>の使用 (<paramref name="index" />)、<paramref name="index" />は、埋め込みグラフのインデックス番号または名前、単一の<b>ChartObject</b>オブジェクトを取得する</para>。
-      <para></para></remarks>
+      <para>各<b>ChartObject</b>オブジェクトは、埋め込みグラフを表します。 <b>ChartObject</b>オブジェクトは、コンテナーとして動作する<see cref="T:Microsoft.Office.Interop.Excel.Chart" />オブジェクトです。 <b>ChartObject</b>オブジェクトのプロパティとメソッドは、シートにある埋め込みグラフのサイズと外観を制御します。</para>
+      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.ChartObjects(System.Object)" />を<b>返すメソッド</b>のコレクションを返すメソッドです。 使用して、 <see cref="M:Microsoft.Office.Interop.Excel.ChartObjects.Add(System.Double,System.Double,System.Double,System.Double)" /> 、新しい空の埋め込みグラフを作成し、コレクションに追加する方法です。 使用して、<see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />のデータを追加し、新しいグラフの書式を設定する方法です。</para>
+      <para>
+        <b>返すメソッド</b>を使用して、(<paramref name="index" />)、<paramref name="index" />は、埋め込みグラフのインデックス番号または名前、単一の<b>ChartObject</b>オブジェクトを取得します。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Copy">
@@ -535,7 +537,7 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para></para>
         </remarks>
       </Docs>
@@ -564,8 +566,9 @@
         <summary>オブジェクトを切り取り、クリップボードまたは指定された範囲に貼り付けます。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>埋め込みグラフのみを切り取ることができます</para>。
-          <para></para></remarks>
+          <para>対象がグラフのときは、埋め込みグラフのみを切り取ることができます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -840,8 +843,9 @@
         <summary>(ワークシートの列 A の左端をグラフ エリア (グラフの場合) の左端から、オブジェクトの左端からの距離。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ウィンドウが最大化されている場合、このプロパティは、ウィンドウの境界線の幅に基づいて、変化する負の数を返します。このプロパティを 0 (ゼロ) に設定すると、ウィンドウがアプリケーション ウィンドウを最大表示したかどうかはそれよりも少し小さくなります。つまり、このプロパティが 0 (ゼロ) の場合は、Microsoft Excel のメイン ウィンドウの左枠線だけではほとんど表示されません、画面にします</para>。
-          <para></para></remarks>
+          <para>ウィンドウを最大化すると、このプロパティはウィンドウの境界線の幅に基づいて、変化する負の数を返します。 このプロパティを 0 (ゼロ) に設定すると、ウィンドウがアプリケーション ウィンドウを最大表示したかどうかはそれよりも少し小さくなります。 つまり、このプロパティが 0 (ゼロ) の場合は、Microsoft Excel のメイン ウィンドウの左側の境界線はかろうじて画面に表示されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -1036,8 +1040,9 @@
           <b>ブール型 (Boolean)</b>
         </value>
         <remarks>
-          <para>を<b>True</b>にこのプロパティの設定は保護されません埋め込みグラフ オブジェクト モデルを通じて変更されるからです</para>。
-          <para></para></remarks>
+          <para>このプロパティを<b>True</b>に設定、オブジェクト モデルを使った変更からの埋め込みグラフは保護されません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RoundedCorners">
@@ -1261,9 +1266,12 @@
         <summary>オブジェクトを表示するかどうかを決定します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>アイテムがテーブルに表示されている場合は、ピボット テーブル アイテムの<b>Visible</b>プロパティは<b>true を指定</b>します</para>。
-          <para>名前の<b>Visible</b>プロパティを<b>False</b>に設定すると、名前が名前の定義] ダイアログ ボックスに表示されません</para>。
-          <para></para></remarks>
+          <para>
+            <b>アイテムがテーブルに表示されている場合、ピボット テーブル アイテムの<b>Visible</b>プロパティは</b>
+          </para>
+          <para>名前の<b>Visible</b>プロパティを<b>False</b>に設定する場合、[名前の定義] ダイアログ ボックスで名前が表示されません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">

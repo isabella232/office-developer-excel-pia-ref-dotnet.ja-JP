@@ -1,10 +1,10 @@
 <Type Name="Diagram" FullName="Microsoft.Office.Interop.Excel.Diagram">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="284dac8d28fb2f4619db584ffa0820a68ade7b37" />
+    <Meta Name="ms.openlocfilehash" Value="9a421c6b190452977e49a87c2df60fb4cf93d756" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572668" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Diagram" />
@@ -32,11 +32,14 @@
     <summary>図表を表します。</summary>
     <remarks>
       <para>
-        <b>図</b>のプロパティを使用して、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />オブジェクトまたは<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />戻り値の<b>ダイアグラム</b>オブジェクトのコレクションです</para>。
-      <para>を使用して、別のダイアグラムに現在の図を変換することも、<see cref="M:Microsoft.Office.Interop.Excel.Diagram.Convert(Microsoft.Office.Core.MsoDiagramType)" />メソッドです</para>。
-      <para><b>注</b>場合は、現在の図は、組織図 (<b>msoDiagramOrgChart</b>)、実行時エラーが発生します</para>。
-      <para>は<b>図</b>オブジェクトを操作するときにから選択する図のいくつかの種類があります。参照してください、<see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddDiagram(Microsoft.Office.Core.MsoDiagramType,System.Single,System.Single,System.Single,System.Single)" />メソッドを使用できる図表の種類の一覧を表示します</para>。
-      <para></para></remarks>
+        <b>図</b>のプロパティを使用して、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />オブジェクトまたは<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />戻り値の<b>ダイアグラム</b>オブジェクトのコレクションです。</para>
+      <para>使用して、別のダイアグラムに現在の図を変換することも、<see cref="M:Microsoft.Office.Interop.Excel.Diagram.Convert(Microsoft.Office.Core.MsoDiagramType)" />メソッドです。</para>
+      <para>
+        <b>メモ</b>  現在の図表が組織図 (<b>msoDiagramOrgChart</b>) である場合、実行時エラーが発生します。</para>
+      <para>
+        <b>ダイアグラム</b>オブジェクトを操作するときにから選択する図のいくつかの種類があります。 参照してください、<see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddDiagram(Microsoft.Office.Core.MsoDiagramType,System.Single,System.Single,System.Single,System.Single)" />を使用できる図表の種類の一覧を表示する方法です。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -97,9 +100,11 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Msofalse を設定</b>する<b>オート フォーマット</b>を設定するには、図表のオート フォーマットが無効にします。図表のオート フォーマットを有効に<b>msotrue を設定</b>する<b>オート フォーマット</b>を設定します</para>。
-          <para><b>Msotristate クラス</b>定数は、次にこのプロパティには適用されません: <b>msoCTrue</b>、 <b>msoTriStateMixed</b>、 <b>msoTriStateToggle</b></para> 。
-          <para></para></remarks>
+            <b>Msofalse を設定</b>する<b>オート フォーマット</b>を設定するには、図表のオート フォーマットが無効にします。 <b>Msotrue を設定</b>する<b>オート フォーマット</b>を設定する図表のオート フォーマットを使用できます。</para>
+          <para>
+            <b>Msotristate クラス</b>定数は、次にこのプロパティには適用されません: <b>msoCTrue</b>、 <b>msoTriStateMixed</b>、 <b>msoTriStateToggle</b>。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoLayout">
@@ -132,9 +137,11 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>オート</b>を<b>msoFalse</b>に設定すると、図表のオート フォーマットが無効になります。図表のオート フォーマットにより、<b>オート レイアウト機能</b>を<b>msoTrue</b>に設定します</para>。
-          <para><b>Msotristate クラス</b>定数は、次にこのプロパティには適用されません: <b>msoCTrue</b>、 <b>msoTriStateMixed</b>、 <b>msoTriStateToggle</b></para> 。
-          <para></para></remarks>
+            <b>オート</b>を<b>msoFalse</b>に設定すると、図表のオート フォーマットが無効になります。 <b>オート</b>を<b>msoTrue</b>に設定するには、図表のオート フォーマット有効になります。</para>
+          <para>
+            <b>Msotristate クラス</b>定数は、次にこのプロパティには適用されません: <b>msoCTrue</b>、 <b>msoTriStateMixed</b>、 <b>msoTriStateToggle</b>。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Convert">
@@ -191,10 +198,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FitText">
@@ -220,8 +228,9 @@
       <Docs>
         <summary>ノードの境界内に収まるように、ダイアグラム内のノード内のテキストのサイズを調整します。</summary>
         <remarks>
-          <para>このメソッドは、Microsoft Office PowerPoint 2003 でのみ機能します</para>。
-          <para></para></remarks>
+          <para>Microsoft Office PowerPoint 2003 でのみ、このメソッドは機能します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Nodes">
@@ -310,9 +319,11 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Msofalse を設定</b>する<b>逆</b>を設定すると、いるときに図表節点が生じます。図でノードを反転<b>を逆</b><b>に msoTrue</b>に設定します</para>。
-          <para><b>Msotristate クラス</b>定数は、次にこのプロパティには適用されません: <b>msoCTrue</b>、 <b>msoTriStateMixed</b>、 <b>msoTriStateToggle</b></para> 。
-          <para></para></remarks>
+            <b>Msofalse を設定</b>する<b>逆</b>を設定すると、いるときに図表節点が生じます。 <b>MsoTrue</b>に設定<b>を逆</b>に、図表内のノードが反転します。</para>
+          <para>
+            <b>Msotristate クラス</b>定数は、次にこのプロパティには適用されません: <b>msoCTrue</b>、 <b>msoTriStateMixed</b>、 <b>msoTriStateToggle</b>。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -343,7 +354,7 @@
         <remarks>
           <para>
             <see cref="T:Microsoft.Office.Core.MsoDiagramType" />
-            <b>MsoDiagramType</b>定数のいずれか:</para>
+            <b>MsoDiagramType</b>定数のいずれかできます。</para>
           <para>
             <b>msoDiagramCycle</b>
           </para>

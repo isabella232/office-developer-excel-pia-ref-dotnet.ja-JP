@@ -1,10 +1,10 @@
 <Type Name="SeriesCollection" FullName="Microsoft.Office.Interop.Excel.SeriesCollection">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d44d6dd2808248a2c1a9c306f871ed35d2124273" />
+    <Meta Name="ms.openlocfilehash" Value="9b503045ebef3ddb75466923708250f026284484" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578968" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SeriesCollection : System.Collections.IEnumerable" />
@@ -35,10 +35,12 @@
   <Docs>
     <summary>すべてのコレクション、 <see cref="T:Microsoft.Office.Interop.Excel.Series" /> 、指定したグラフまたはグラフ種類グループ内のオブジェクト。</summary>
     <remarks>
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel._Chart.SeriesCollection(System.Object)" />メソッドを<b>返すプロパティ</b>のコレクションを取得します</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.SeriesCollection.Add(System.Object,Microsoft.Office.Interop.Excel.XlRowCol,System.Object,System.Object,System.Object)" />を新しい系列を作成し、グラフに追加する方法です</para>。
-      <para><b>返すプロパティ</b>の使用 (<paramref name="index" />)、インデックス、データ系列のインデックス番号または名前、オブジェクトを取得する 1 つ<b>の系列</b>にします</para>。
-      <para></para></remarks>
+      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel._Chart.SeriesCollection(System.Object)" />を<b>返すプロパティ</b>のコレクションを返すメソッドです。</para>
+      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.SeriesCollection.Add(System.Object,Microsoft.Office.Interop.Excel.XlRowCol,System.Object,System.Object,System.Object)" />を新しい系列を作成し、グラフに追加する方法です。</para>
+      <para>
+        <b>返すプロパティ</b>を使用して (<paramref name="index" />)、インデックス、データ系列のインデックス番号または名前、オブジェクトを取得する 1 つ<b>の系列</b>に。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -108,8 +110,9 @@
         <summary>1 つまたは複数の新しい系列を追加、<see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" />コレクションです。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>このメソッドは、ピボット グラフ レポートでは使用できません</para>。
-          <para></para></remarks>
+          <para>ピボットグラフ レポートでは、このプロパティを使用できません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -194,10 +197,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Extend">
@@ -231,8 +235,9 @@
         <summary>既存のデータ系列のコレクションに新しいデータ要素を追加します。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>このメソッドは、ピボット グラフ レポートでは使用できません</para>。
-          <para></para></remarks>
+          <para>ピボットグラフ レポートでは、このプロパティを使用できません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -321,8 +326,9 @@
         <summary>新しいデータ系列を作成します。 返します、 <see cref="T:Microsoft.Office.Interop.Excel.Series" /> 、新しいデータ系列を表すオブジェクト。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>このメソッドはピボット グラフ レポートは使用できません</para>。
-          <para></para></remarks>
+          <para>ピボットグラフ レポートに対して、このメソッドは使用できません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

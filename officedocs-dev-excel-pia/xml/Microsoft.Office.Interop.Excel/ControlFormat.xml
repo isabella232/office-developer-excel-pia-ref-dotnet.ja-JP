@@ -1,10 +1,10 @@
 <Type Name="ControlFormat" FullName="Microsoft.Office.Interop.Excel.ControlFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="482ee10d764810f337717c2623a0421ee3669708" />
+    <Meta Name="ms.openlocfilehash" Value="d88e80486b6e3c8db83afbc148105146372d3b01" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578282" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ControlFormat" />
@@ -31,9 +31,11 @@
   <Docs>
     <summary>Excel コントロールのプロパティを含みます。</summary>
     <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Shape.ControlFormat" /> 、 <b>ControlFormat</b>オブジェクトを返すプロパティです</para>。
-      <para>場合は、図形には、コントロールがない場合は、 <b>ControlFormat</b>プロパティは失敗すると、コントロールは、リスト ボックスでない場合や、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" />プロパティは失敗します</para>。
-      <para></para></remarks>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Shape.ControlFormat" /> 、 <b>ControlFormat</b>オブジェクトを返すプロパティです。</para>
+      <para>
+        <b>ControlFormat</b>プロパティが失敗した場合は、図形には、コントロールがない場合は、コントロールは、リスト ボックスでない場合や、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" />プロパティは失敗します。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -101,8 +103,9 @@
         <param name="Index">省略可能な<b>オブジェクト</b>です。 新しい項目の位置を指定します。 一覧の項目数を指定したインデックスを超える場合は、指定した位置にリストの末尾から空白の項目が追加されます。 この引数を省略すると、既存のリストに項目が追加されます。</param>
         <summary>リスト ボックスまたはコンボ ボックスに項目を追加します。</summary>
         <remarks>
-          <para>で指定された任意のセル範囲をクリアするこのメソッドを使用して、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" />プロパティ</para>。
-          <para></para></remarks>
+          <para>指定された任意のセル範囲をクリアするこのメソッドを使用して、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" />プロパティ。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -159,10 +162,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DropDownLines">
@@ -288,9 +292,10 @@
         <summary>コントロールの値にリンクされているワークシートのセル範囲を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>のセルに値を設定する場合は、コントロールは、この値を取得します。同様に場合は、コントロールの値を変更すると、その値はまたセルに配置します</para>。
-          <para>複数選択リスト ボックスでこのプロパティを使用することはできません</para>。
-          <para></para></remarks>
+          <para>セルに値を設定する場合、コントロールはこのような値を使用します。 同様に、コントロールの値を変更すると、その値はまたセルに配置されます。</para>
+          <para>複数の項目を選択できるリスト ボックスでは、このプロパティを使用できません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -323,8 +328,9 @@
         <summary>指定されたリスト ボックスまたはコンボ ボックスの項目を文字列配列または単一の項目で返します。リストに項目がない場合、エラーになります。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティ設定で指定された任意のセル範囲をクリア、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" />プロパティ</para>。
-          <para></para></remarks>
+          <para>このプロパティ設定で指定された任意のセル範囲をクリア、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" />プロパティ。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ListCount">
@@ -387,9 +393,11 @@
         <summary>指定されたリスト ボックスの塗りつぶしに使用するワークシートの範囲を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティを設定、リスト ボックス内の既存のリストを破棄します</para>。
-          <para>Excel の範囲内のすべてのセルの内容を読み取り、リスト ボックスにセルの値を挿入します。リストの範囲のセルに変更を追跡します</para>。
-          <para>で、[リスト] ボックスの一覧が作成されたかどうか、<see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" />メソッドでは、このプロパティが空の文字列を返します ("").</para><para></para></remarks>
+          <para>このプロパティを設定すると、リスト ボックス内の既存のリストが破棄されます。</para>
+          <para>Excel では、指定したセル範囲に含まれる各セルの内容を読み込み、読み込んだ値をリスト ボックスに挿入します。指定したセル範囲内のセルに加えられた変更は、リスト ボックスにも反映されます。</para>
+          <para>リスト ボックスの一覧が作成されたかどうか、<see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" />メソッドでは、このプロパティが空の文字列を返します ("")。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ListIndex">
@@ -484,8 +492,10 @@
         <summary>スクロール バーまたはスピン ボタンの最大値を設定を取得または設定範囲です。 スクロール バーまたはスピン ボタンは、この最大値より大きい値をとることはできません。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、 <b>Max</b>プロパティの値は、の値より大きい値である必要があります、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Min" />プロパティ</para>。
-          <para></para></remarks>
+          <para>
+            <b>Max</b>プロパティの値は、の値より大きい値である必要があります、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Min" />プロパティ。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Min">
@@ -517,8 +527,10 @@
         <summary>スクロール バーまたはスピン ボタンの最小値を設定を取得または設定範囲です。 スクロール バーまたはスピン ボタンは、この最小値より小さい値をとることはできません。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、 <b>Min</b>プロパティの値がの値より小さい値にする必要があります、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Max" />プロパティ</para>。
-          <para></para></remarks>
+          <para>
+            <b>Min</b>プロパティの値がの値より小さい値にする必要があります、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Max" />プロパティ。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MultiSelect">
@@ -550,12 +562,14 @@
         <summary>指定されたリスト ボックスの選択モードを設定または返します。 使用できる定数は、次のいずれか: <b>xlNone</b>、 <b>xlSimple</b>、または<b>xlExtended</b>。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>(単独選択<b>xlNone</b>) は、選択する時に、1 つの項目を使用できます。マウスをクリックするか、スペースバーを押して選択をキャンセルし、クリックした項目を選択します</para>。
-          <para>単純な複数 (<b>xlSimple</b>) は、選択範囲を切り替えますリストの項目をマウスでクリックしてまたは項目にフォーカスがあるときに space キーを押します。複数の項目の選択では、多くの場合がありこのモードは、場合に適しています</para>。
-          <para>拡張 multiselect (<b>xlExtended</b>) 通常、単一選択リスト ボックスのように動作します。アイテムをクリックすると、他のすべての選択をキャンセルします。Shift キーを押しながらマウスをクリックするか、矢印キーを押すと、それに応じて選択する項目の順番にします。Ctrl キーを押しながらマウスをクリックすると、1 つの項目が一覧に追加します。このモードは、複数の項目は使用できますが、ほとんど使用しませんがある場合に適しています</para>。
-          <para>を使用することができます、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Value" />または<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListIndex" />プロパティを取得して、単一選択リスト ボックスで選択した項目を設定します</para>。
-          <para>を使用して、複数選択リスト ボックスをリンクすることはできません、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.LinkedCell" />プロパティ</para>。
-          <para></para></remarks>
+          <para>
+            <b>xlNone</b> (単独選択) を指定すると、一度に 1 項目だけ選択できます。マウスをクリックするか Space キーを押すと、選択していた項目を選択解除し、クリックした項目が選択されます。</para>
+          <para>(<b>XlSimple</b>) 複数の選択項目を切り替えますリストの項目をマウスでクリックしてまたは項目にフォーカスがあるときに space キーを押します。 このモードの選択リストでは、適切ないますが、多くの場合で複数の項目が選択されます。</para>
+          <para>Multiselect (<b>xlExtended</b>) を拡張する通常、単一選択リスト ボックスのように動作します。 アイテムをクリックすると、他のすべての選択をキャンセルします。 Shift キーを押しながらマウスをクリックするか、矢印キーを押すと、それに応じて選択する項目の順番にします。 Ctrl キーを押しながらマウスをクリックすると、1 つの項目が一覧に追加します。 このモードは、複数の項目は使用できますが、使用しないことが多い場合に適しています。</para>
+          <para>使用することができます、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Value" />または<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListIndex" />プロパティを取得して、単一選択リスト ボックスで選択した項目を設定します。</para>
+          <para>使用して、複数選択リスト ボックスをリンクすることはできません、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.LinkedCell" />プロパティ。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -671,9 +685,10 @@
         <param name="Count">省略可能な<b>オブジェクト</b>です。 削除する項目の数の項目に<paramref name="Index" />。 この引数を省略すると、1 つの項目が削除されます。 場合<paramref name="Index" />  +  <paramref name="Count" />からすべての項目] の一覧で項目の数を超えています<paramref name="Index" />一覧の末尾までは、エラーなしで削除されます。</param>
         <summary>リスト ボックスまたはコンボ ボックスから 1 つまたは複数のアイテムを削除します。</summary>
         <remarks>
-          <para>セル範囲の定義を指定したオブジェクトには、このメソッドは失敗します</para>。
-          <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.RemoveAllItems" /> 、Microsoft Excel のリスト ボックスまたはコンボ ボックスからすべてのエントリを削除します</para>。
-          <para></para></remarks>
+          <para>指定されたオブジェクトがセル範囲の内容で定義されているときは、このメソッドは失敗します。</para>
+          <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.RemoveAllItems" /> 、Microsoft Excel のリスト ボックスまたはコンボ ボックスからすべてのエントリを削除する方法です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallChange">

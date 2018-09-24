@@ -1,10 +1,10 @@
 <Type Name="CalculatedFields" FullName="Microsoft.Office.Interop.Excel.CalculatedFields">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="322bea970ce4e1d5a0095eafdd21ad263f26ffe7" />
+    <Meta Name="ms.openlocfilehash" Value="551200c74cbef27982489b80758fa22c187b61fe" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20572675" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CalculatedFields : System.Collections.IEnumerable" />
@@ -35,11 +35,13 @@
   <Docs>
     <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />を指定されたピボット テーブル レポート内のすべての集計フィールドを表すオブジェクト。</summary>
     <remarks>
-      <para>が集計フィールドの「利益」という名前があり、コスト フィールドの金額を差し引いた収益] フィールドの値と定義されている収益と経費のフィールドが含まれるレポートなどです</para>。
-      <para>の OLAP データ ソースの場合、このコレクションを設定することはできませんし、常に<b>Nothing</b>が返されます</para>。
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CalculatedFields" /><b>CalculatedFields</b>コレクションを返します</para>。
-      <para>使用<b>CalculatedFields</b>(<paramref name="index" />)、<paramref name="index" />は、指定したフィールドの名前またはインデックス番号は、 <b>CalculatedFields</b>コレクションから 1 つの<b>ピボット テーブル</b>オブジェクトを返す</para>。
-      <para></para></remarks>
+      <para>などを含むレポート収益と経費のフィールドが演算フィールドの「利益」という名前があり、コスト フィールドの金額を差し引いた収益] フィールドの値と定義されています。</para>
+      <para>OLAP データ ソースの場合、このコレクションを設定することはできませんし、常に<b>Nothing</b>が返されます。</para>
+      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CalculatedFields" /><b>CalculatedFields</b>コレクションを返します。</para>
+      <para>
+        <b>CalculatedFields</b>を使用 (<paramref name="index" />)、<paramref name="index" />は、指定したフィールドの名前またはインデックス番号は、 <b>CalculatedFields</b>コレクションから 1 つの<b>ピボット テーブル</b>オブジェクトを取得します。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Add">
@@ -227,10 +229,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

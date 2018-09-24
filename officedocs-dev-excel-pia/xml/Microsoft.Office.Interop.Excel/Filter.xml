@@ -1,10 +1,10 @@
 <Type Name="Filter" FullName="Microsoft.Office.Interop.Excel.Filter">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0b4f5874cb8cfaefd8c795df970db8c632ebef06" />
+    <Meta Name="ms.openlocfilehash" Value="0a55068feedec78d62f267ca39e674ead9d7d9f3" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576329" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Filter" />
@@ -32,9 +32,11 @@
     <summary>一列に対するフィルターを表します。 <b>フィルター</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.Filters" />コレクションです。 <b>Filters</b>コレクションには、オート フィルター範囲のすべてのフィルターが含まれています。</summary>
     <remarks>
       <para>
-        <b>フィルター</b>を使用して (<paramref name="index" />)、<paramref name="index" />は、フィルターのタイトルまたはインデックス番号を 1 つの<b>フィルター</b>オブジェクトを取得する</para>。
-      <para><b>Filter</b>オブジェクトのすべてのプロパティは読み取り専用であるメモします。これらのプロパティを設定するには、手動でオート フィルターを適用またはを使用して、<see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" />のメソッドの<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトです</para>。
-      <para></para></remarks>
+        <b>フィルター</b>を使用して (<paramref name="index" />)、<paramref name="index" />は、フィルターのタイトルまたはインデックス番号を 1 つの<b>フィルター</b>オブジェクトを取得します。</para>
+      <para>
+        <b>Filter</b>オブジェクトのすべてのプロパティは読み取り専用であることを注意してください。 これらのプロパティを設定するには、手動でオート フィルターを適用またはを使用して、<see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" />のメソッドの<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Operator">
@@ -153,8 +155,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Criteria1">
@@ -211,8 +214,9 @@
         <summary>フィルターのセル範囲で指定した列の 2 番目のフィルターが適用された値を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>の 2 つの条件を使用していないフィルターの<b>Criteria2</b>プロパティにアクセスしようとする場合、エラーが発生します。確認、<see cref="P:Microsoft.Office.Interop.Excel.Filter.Operator" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Filter" />オブジェクト値の<b>Criteria2</b>プロパティにアクセスする前にゼロ (0) が一致しません</para>。
-          <para></para></remarks>
+          <para>2 つの条件を使用していないフィルターの<b>Criteria2</b>プロパティにアクセスしようとすると、エラーが発生します。 確認、<see cref="P:Microsoft.Office.Interop.Excel.Filter.Operator" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Filter" />オブジェクト値の<b>Criteria2</b>プロパティにアクセスする前にゼロ (0) が一致しません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="On">

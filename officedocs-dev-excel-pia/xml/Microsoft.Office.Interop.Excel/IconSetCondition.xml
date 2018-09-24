@@ -1,10 +1,10 @@
 <Type Name="IconSetCondition" FullName="Microsoft.Office.Interop.Excel.IconSetCondition">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="bc68b806e9539de6f5350ba189ec017a58c6f1db" />
+    <Meta Name="ms.openlocfilehash" Value="60529c90129fadd3409df7f77d68bfab6f56e963" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580725" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface IconSetCondition" />
@@ -31,9 +31,10 @@
   <Docs>
     <summary>アイコン セットの条件付き書式ルールを表します。</summary>
     <remarks>
-      <para>すべての条件付き書式設定オブジェクトが含まれる、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />の子であるコレクション オブジェクトの<see cref="T:Microsoft.Office.Interop.Excel.Range" />コレクション。書式指定規則を使用して、アイコン セットを作成することができます、<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddIconSetCondition" /><b>FormatConditions</b>コレクションのメソッドです</para>。
-      <para>各アイコン セットには、3、4、または 5 つのアイコンが含まれています。使用する、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />オブジェクトを返す、<see cref="T:Microsoft.Office.Interop.Excel.IconSets" />組み込みアイコン セットのいずれかを指定するオブジェクト。メンバーによって、アイコン セット内の各アイコンは範囲の値のサブセットに割り当てられますが、<see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />オブジェクトです。しきい値の種類も、このオブジェクトによって指定されます</para>。
-      <para></para></remarks>
+      <para>すべての条件付き書式設定オブジェクトが含まれる、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />の子であるコレクション オブジェクトの<see cref="T:Microsoft.Office.Interop.Excel.Range" />コレクション。 書式指定規則を使用して、アイコン セットを作成することができます、<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddIconSetCondition" /><b>FormatConditions</b>コレクションのメソッド。</para>
+      <para>各アイコン セットには、3、4、または 5 つのアイコンが含まれています。 使用する、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />オブジェクトを返す、<see cref="T:Microsoft.Office.Interop.Excel.IconSets" />組み込みアイコン セットのいずれかを指定するオブジェクト。 メンバーによって、アイコン セット内の各アイコンは範囲の値のサブセットに割り当てられますが、<see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />オブジェクトです。 しきい値の種類は、このオブジェクトによって指定されます。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,8 +64,9 @@
         <value>
           <b>アプリケーション</b>(上記参照)</value>
         <remarks>
-          <para>そのオブジェクトのアプリケーションを取得するのには OLE オートメーション オブジェクトに対してこのプロパティを使用することができます</para>。
-          <para></para></remarks>
+          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクト用のアプリケーションを取得できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AppliesTo">
@@ -125,8 +127,9 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。 <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当  <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -185,8 +188,9 @@
           <b>文字列型 (String)</b>
         </value>
         <remarks>
-          <para>このプロパティは、条件付き書式を表示する値の範囲を制限するのには便利です。典型的なシナリオでは、正と負の両方の値を含む数値の範囲がある場合です。この数値の範囲の 1 つ以上の条件付き書式を作成することが、正の値と負の値を別の 1 つです</para>。
-          <para></para></remarks>
+          <para>プロパティは、条件フォーマットを表示する値の範囲を限定するときに便利です。一般的には、数値範囲に正の値と負の値の両方が含まれる場合です。この数値範囲の条件フォーマットを複数作成し、1 つを正の値用、もう 1 つを負の値用とします。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IconCriteria">
@@ -216,8 +220,10 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />
         </value>
-        <remarks>作成したら、 <para>、 <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />、コレクションを使用できます、<see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Item(System.Object)" />を返すコレクションのプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" />オブジェクトです。<see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" />オブジェクトは、アイコン セットの 1 つの基準を表します</para>。
-          <para></para></remarks>
+        <remarks>
+          <para>作成したら、 <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" />、コレクションを使用できます、<see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Item(System.Object)" />を返すコレクションのプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" />オブジェクトです。 <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" />オブジェクトは、アイコン セットの 1 つの基準を表します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IconSet">
@@ -251,8 +257,9 @@
           <b>オブジェクト</b>
         </value>
         <remarks>
-          <para>を使用して設定アイコンを割り当てることができます、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />オブジェクトです</para>。
-          <para></para></remarks>
+          <para>使用して設定アイコンを割り当てることができます、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />オブジェクトです。 </para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ModifyAppliesToRange">
@@ -280,9 +287,10 @@
         <param name="Range">書式のルールが適用される範囲を指定します。</param>
         <summary>書式のルールが適用されるセル範囲を設定します。</summary>
         <remarks>
-          <para>範囲が A1 参照形式にする必要がありの親であるシート内で完全に収まること、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />コレクションです。それは、範囲演算子 (コロン)、交差演算子 (スペース)、または union 演算子 (コンマ) を含めることができます。ドル記号も使用できますが、それらは無視されます</para>。
-          <para>、ローカルで定義された名前の範囲の任意の部分を使用することもできますが、名前が、マクロの言語である必要があります</para>。
-          <para></para></remarks>
+          <para>範囲が A1 参照形式にする必要がありの親であるシート内で完全に収まること、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />コレクションです。 それは、範囲演算子 (コロン)、交差演算子 (スペース)、または union 演算子 (コンマ) を含めることができます。 ドル記号も使用できますが、それらは無視されます。</para>
+          <para>セル範囲の一部にローカルに定義した名前を使用できますが、その名前はコード記述時の言語で定義された名前である必要があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -345,8 +353,10 @@
         <value>
           <b>ブール型 (Boolean)</b>
         </value>
-        <remarks>すべてのしきい値が百分位に設定されていない場合、<para>このプロパティは<b>False</b>を返します。百分位にすべてのしきい値の種類を設定、このプロパティを<b>True</b>に設定します</para>。
-          <para></para></remarks>
+        <remarks>
+          <para>すべてのしきい値が百分位に設定されていない場合、このプロパティは<b>False</b>を返します。 <b>True</b>にこのプロパティを設定、すべてのしきい値の種類が百分位に設定されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Priority">
@@ -380,8 +390,9 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>の優先度の値を設定するときは、1 と、ワークシート上の条件付き書式ルールの合計数との間の正の整数である必要があります。優先順位は、ワークシート上のすべてのルールの一意の値をする必要があります、指定された条件付き書式ルールの優先順位を変更する場合があります他のルールの優先度の値、ワークシートを移動するにします</para>。
-          <para></para></remarks>
+          <para>優先度の値は、1 からワークシート上の条件付き書式ルールの合計数までの正の整数を設定する必要があります。優先度の値は、ワークシート上のすべてのルールに対して固有である必要があるので、特定の条件付き書式ルールの優先度の値を変更すると、ワークシート上のほかのルールの値も変更される可能性があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PTCondition">
@@ -445,8 +456,9 @@
           <b>ブール型 (Boolean)</b>
         </value>
         <remarks>
-          <para>既定では、ほとんどのアイコン セットを使用することができますがより高い値を持つ肯定的な画像を関連付けます。たとえば、「3 つの信号」アイコン セットでは、上限値のしきい値と赤の円の範囲の最小値を緑色の円が適用されます。データがより低い値では、マラソン時の結果より適切なことなどの場合は、アイコンが緑色の円を最小値を関連付けるには、範囲に適用されている順序を逆にする場合があります</para>。
-          <para></para></remarks>
+          <para>既定で、使用できるアイコン セットのほとんどは肯定的な画像をより高い値に関連付けます。たとえば、"3 つの信号" アイコン セットは、緑の円をより高いしきい値に適用し、赤の円を範囲の最も低い値に適用します。マラソンのタイムの結果など、低い値がより望ましいデータの場合、アイコンが範囲に適用する順序を逆にして、緑の円を最小値に関連付けられます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ScopeType">
@@ -480,8 +492,9 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
         </value>
         <remarks>
-          <para>既定値は、<see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />を使用して、スコープを設定する、<see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.AppliesTo" />プロパティ</para>。
-          <para></para></remarks>
+          <para>既定値は、<see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />を使用して、スコープを設定する、<see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.AppliesTo" />プロパティ。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetFirstPriority">
@@ -507,8 +520,9 @@
       <Docs>
         <summary>条件付き書式ルールの優先度の値を "1" に設定し、ワークシート内の他のルールより先に評価されるようにします。</summary>
         <remarks>
-          <para>がある場合、ワークシート内の複数の条件付き書式ルール ルールが以前優先順位「1」に設定されていない場合、このメソッドと、他のすべての既存のルールの優先順位で、ワークシートを 1 つずつ増加する</para>。
-          <para></para></remarks>
+          <para>ワークシート内に複数の条件付き書式ルールがあり、指定したルールがもともと優先度 "1" に設定されていなかった場合、このメソッドを使用すると、優先度にこのルールより小さい値が設定されていたルールは、優先順位が 1 つ下がります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetLastPriority">
@@ -534,8 +548,9 @@
       <Docs>
         <summary>条件付き書式ルールの順位を設定し、ワークシート上の他のすべてのルールの後に評価されるようにします。</summary>
         <remarks>
-          <para>の優先度の実際の値は、ワークシート上の条件付き書式ルールの合計数と同じになります。ワークシート内に複数の条件付き書式ルールがある場合このメソッドは、優先度の値を 1 つずつ増やすには、このルールよりも大きい必要があった規則の優先順位</para>。
-          <para></para></remarks>
+          <para>優先度の実際の値は、ワークシート上の条件付き書式ルールの合計数と同じになります。 ワークシート内に複数の条件付き書式ルールがある場合、このメソッドに優先度の値を 1 つずつ増やすには、このルールよりも大きい必要があった規則の優先順位が発生します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowIconOnly">
@@ -569,8 +584,9 @@
           <b>ブール型 (Boolean)</b>
         </value>
         <remarks>
-          <para>このプロパティの既定値は<b>false を指定</b>します</para>。
-          <para></para></remarks>
+          <para>このプロパティの既定値は <b>False</b> です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StopIfTrue">
@@ -601,8 +617,9 @@
           <b>ブール型 (Boolean)</b>
         </value>
         <remarks>
-          <para>の下位互換性をサポートするためにこのプロパティの既定値は<b>True</b>、書式の反対側の動作ルールのユーザー インターフェイスで作成します</para>。
-          <para></para></remarks>
+          <para>下位互換性をサポートするためにこのプロパティの既定値は<b>True</b>、書式の反対の動作をユーザー インターフェイスで作成されたルールです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -633,8 +650,9 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>このプロパティは常にするのと同じである 6、値を返します<see cref="T:Microsoft.Office.Interop.Excel.XlIconSet" />です</para>。
-          <para></para></remarks>
+          <para>このプロパティは常にするのと同じである 6、値を返します<see cref="T:Microsoft.Office.Interop.Excel.XlIconSet" />。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

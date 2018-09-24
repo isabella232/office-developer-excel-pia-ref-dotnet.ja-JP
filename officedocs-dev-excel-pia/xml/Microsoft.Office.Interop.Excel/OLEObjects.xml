@@ -1,10 +1,10 @@
 <Type Name="OLEObjects" FullName="Microsoft.Office.Interop.Excel.OLEObjects">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0ceeeadbbe58866d8578dc0cbfba5a77ed0fec61" />
+    <Meta Name="ms.openlocfilehash" Value="c7a55aea3278bf57d03536464456af6c54d9afe8" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575636" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface OLEObjects : System.Collections.IEnumerable" />
@@ -35,11 +35,12 @@
   <Docs>
     <summary>すべてのコレクション、 <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> 、指定したワークシート上のオブジェクトです。 各 <b>OLEObject</b> オブジェクトは、ActiveX コントロール、リンクされた OLE オブジェクト、または埋め込まれている OLE オブジェクトを表します。</summary>
     <remarks>
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.OLEObjects(System.Object)" /> 、 <b>OLEObjects</b>コレクションを返します</para>。
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 、新しい OLE オブジェクトを作成し、 <b>OLEObjects</b>コレクションに追加します</para>。
-      <para>シート上の ActiveX コントロールには 2 つの名前: 表示される [名前] ボックスで、シートと、コードの名前 (名) のプロパティ] ウィンドウの右側のセルに表示するコントロールを表示すると、コントロールが含まれている図形の名前です。最初に、シートにコントロールを追加すると、図形の名前とコード名が一致します。ただし、図形の名前またはコード名を変更すると、他の自動的には変更されませんが一致しています</para>。コントロールのコード名を使用して、イベント プロシージャの名前を
-      <para>します。コントロールを取得するときに、<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />シートの<b>OLEObjects</b>コレクション、コントロールを名前で参照するのには、コード名ではなく、図形の名前を使用する必要がありますか。たとえば、既定の図形の名前とコード名の両方の checkbox1 というシートには、チェック ボックスを追加することとします。ChkFinished を使用して、イベント プロシージャの名前にする必要がありますが、ハンドラーは、まだ CheckBox1 を使用して<b>Shapes</b>または<b>OLEObjects</b>からコントロールを取得する場合は、[プロパティ] ウィンドウで (名前) の横にある chkFinished を入力して、コントロールのコード名を変更します。コレクションです</para>。
-      <para></para></remarks>
+      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.OLEObjects(System.Object)" /> 、 <b>OLEObjects</b>コレクションを返します。</para>
+      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 、新しい OLE オブジェクトを作成し、 <b>OLEObjects</b>コレクションに追加する方法です。</para>
+      <para>シート上の ActiveX コントロールには 2 つの名前: 表示される [名前] ボックスで、シートと、コードの名前 (名) のプロパティ] ウィンドウの右側のセルに表示するコントロールを表示すると、コントロールが含まれている図形の名前です。 最初に、シートにコントロールを追加すると、図形の名前とコード名が一致します。 ただし、図形の名前またはコード名を変更すると、他のない自動的に変更と一致します。</para>
+      <para>イベント プロシージャの名前には、コントロールのコード名を使用します。 コントロールを取得するときに、<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />シートの<b>OLEObjects</b>コレクション、コントロールを名前で参照するのには、コード名ではなく、図形の名前を使用する必要がありますか。 たとえば、既定の図形の名前とコード名の両方の checkbox1 というシートには、チェック ボックスを追加することとします。 ChkFinished を使用して、イベント プロシージャの名前にする必要がありますが、ハンドラーは、まだ CheckBox1 を使用して<b>Shapes</b>または<b>OLEObjects</b>からコントロールを取得する場合は、[プロパティ] ウィンドウで (名前) の横にある chkFinished を入力して、コントロールのコード名を変更します。コレクションです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Dummy12">
@@ -540,9 +541,10 @@
           <b>True の</b>ブックに含まれている場合、OLE オブジェクトが自動的に読み込まれている場合は、開かれます。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ActiveX コントロールでこのプロパティは無視されます。ActiveX コントロールは、ブックを開くときに常に読み込まれます</para>。
-          <para>のほとんどの種類の OLE オブジェクトは、このプロパティを<b>True</b>に設定する必要はありません。既定では、 <b>AutoLoad</b>プロパティは<b>False</b>に設定新しい OLE オブジェクトこれによって保存時間とメモリは、Microsoft Excel のブックの読み込み時にします。必要な場合は、揮発性データを表すオブジェクトでは、ソース データへのリンクをすぐに再確立することができ、もう一度オブジェクトをレンダリングすることができますは、オブジェクトの OLE を自動的に読み込みの利点です</para>。
-          <para></para></remarks>
+          <para>ActiveX コントロールの場合、このプロパティの設定は無視されます。ブックが開かれるときは、常に ActiveX コントロールが自動的に読み込まれます。</para>
+          <para>ほとんどの種類の OLE オブジェクトには、このプロパティを<b>True</b>に設定する必要はありません。 既定では、 <b>AutoLoad</b>プロパティは<b>False</b>に設定新しい OLE オブジェクトこれによって保存時間とメモリは、Microsoft Excel のブックの読み込み時にします。 OLE オブジェクトを自動的に読み込むメリットは、必要な場合は、揮発性データを表すオブジェクトでは、ソース データへのリンクをすぐに再確立することができ、もう一度オブジェクトをレンダリングすることができます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -709,10 +711,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -739,9 +742,10 @@
         <summary>オブジェクトを切り取り、クリップボードまたは指定された範囲に貼り付けます。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>の隣接するセル、セル範囲を切り取る行う必要があります</para>。
-          <para>埋め込みグラフのみを切り取ることができます</para>。
-          <para></para></remarks>
+          <para>セル範囲を切り取るときは、連続しているセルを対象とする必要があります。</para>
+          <para>対象がグラフのときは、埋め込みグラフのみを切り取ることができます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -1135,7 +1139,7 @@
         <summary>オブジェクトがその下のセルに関連付けられている方法を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>定数は、次のいずれかを使用して、:</para>
+          <para>以下の定数のいずれかを使用します。</para>
           <para>
             <b>xlFreeFloating</b>
           </para>
@@ -1445,8 +1449,9 @@
         <summary>オブジェクトの z オーダーの位置を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトのコレクション、オブジェクトの z オーダーの背面には、 <paramref name="collection" />(1)、z オーダーの前面にあるオブジェクトは、 <paramref name="collection" />(<paramref name="collection" />です<b>。カウント</b>) です</para>。
-          <para></para></remarks>
+          <para>オブジェクトのコレクション、オブジェクトの z オーダーの背面には、 <paramref name="collection" />(1)、z オーダーの前面にあるオブジェクトは、 <paramref name="collection" />(<paramref name="collection" />です<b>。カウント</b>)。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

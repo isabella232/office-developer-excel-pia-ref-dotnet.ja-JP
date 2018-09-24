@@ -1,10 +1,10 @@
 <Type Name="ChartObject" FullName="Microsoft.Office.Interop.Excel.ChartObject">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e70775c119372af08e654cf7036704b31a39b048" />
+    <Meta Name="ms.openlocfilehash" Value="6a46bae59a2c5593efb705b20c2aca39fc1b0090" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577211" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartObject" />
@@ -32,8 +32,9 @@
     <summary>ワークシートの埋め込みグラフを表します。</summary>
     <remarks>
       <para>
-        <b>ChartObject</b>オブジェクトのコンテナーとして機能する<see cref="T:Microsoft.Office.Interop.Excel.Chart" />オブジェクトです。<b>ChartObject</b>オブジェクトのプロパティとメソッドは、ワークシートの埋め込みグラフのサイズと外観を制御します。<b>ChartObject</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.ChartObjects" />コレクションです。<b>ChartObjects</b>コレクションには、1 枚の用紙上のすべての埋め込みグラフが含まれています</para>。
-      <para></para></remarks>
+        <b>ChartObject</b>オブジェクトは、コンテナーとして動作する<see cref="T:Microsoft.Office.Interop.Excel.Chart" />オブジェクトです。 <b>ChartObject</b>オブジェクトのプロパティとメソッドは、ワークシートの埋め込みグラフのサイズと外観を制御します。 <b>ChartObject</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.ChartObjects" />コレクションです。 <b>ChartObjects</b>コレクションには、1 枚の用紙上のすべての埋め込みグラフが含まれています。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Copy">
@@ -315,8 +316,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -343,8 +345,9 @@
         <summary>オブジェクトを切り取り、クリップボードまたは指定された範囲に貼り付けます。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>埋め込みグラフのみを切り取ることができます</para>。
-          <para></para></remarks>
+          <para>対象がグラフのときは、埋め込みグラフのみを切り取ることができます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -556,8 +559,9 @@
         <summary>(ワークシートの列 A の左端をグラフ エリア (グラフの場合) の左端から、オブジェクトの左端からの距離。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ウィンドウが最大化されている場合、このプロパティは、ウィンドウの境界線の幅に基づいて、変化する負の数を返します。このプロパティを 0 (ゼロ) に設定すると、ウィンドウがアプリケーション ウィンドウを最大表示したかどうかはそれよりも少し小さくなります。つまり、このプロパティが 0 (ゼロ) の場合は、Microsoft Excel のメイン ウィンドウの左枠線だけではほとんど表示されません、画面にします</para>。
-          <para></para></remarks>
+          <para>ウィンドウを最大化すると、このプロパティはウィンドウの境界線の幅に基づいて、変化する負の数を返します。 このプロパティを 0 (ゼロ) に設定すると、ウィンドウがアプリケーション ウィンドウを最大表示したかどうかはそれよりも少し小さくなります。 つまり、このプロパティが 0 (ゼロ) の場合は、Microsoft Excel のメイン ウィンドウの左側の境界線はかろうじて画面に表示されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -840,8 +844,10 @@
         <param name="Replace">省略可能な<b>オブジェクト</b>です。 <b>True</b> を指定したオブジェクトで現在の選択範囲を置き換えます。 <b>False を指定</b> する現在の選択範囲を拡張する選択したオブジェクトと指定したオブジェクトです。</param>
         <summary>オブジェクトを選択します。</summary>
         <returns>To be added.</returns>
-        <remarks>セルまたはセル範囲を選択するには、 <b>Select</b>メソッドを使用して<para>。1 つのセルをアクティブ セルにするを使用して、<see cref="M:Microsoft.Office.Interop.Excel.ChartObject.Activate" />メソッドです</para>。
-          <para></para></remarks>
+        <remarks>
+          <para>セルまたはセル範囲を選択するには、 <b>Select</b>メソッドを使用します。 1 つのセルをアクティブ セルにするを使用して、<see cref="M:Microsoft.Office.Interop.Excel.ChartObject.Activate" />メソッドです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SendToBack">
@@ -1077,8 +1083,9 @@
         <summary>オブジェクトの z オーダーの位置を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトのコレクション、オブジェクトの z オーダーの背面には、collection(1)、および z オーダーの前面にあるオブジェクトは、コレクション (コレクションです。数) です</para>。
-          <para></para></remarks>
+          <para>オブジェクトのコレクション、オブジェクトの z オーダーの背面には、collection(1)、および z オーダーの前面にあるオブジェクトは、コレクション (コレクションです。カウント)。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

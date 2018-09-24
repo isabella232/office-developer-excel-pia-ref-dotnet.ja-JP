@@ -1,10 +1,10 @@
 <Type Name="SmartTagOptions" FullName="Microsoft.Office.Interop.Excel.SmartTagOptions">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c56b52fc5575c4410dbfda5ac1c7f7b98b1d6b52" />
+    <Meta Name="ms.openlocfilehash" Value="08e6c64d1c42348903ffb92e85b1dbbff6eb03f3" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581796" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SmartTagOptions" />
@@ -31,9 +31,23 @@
   <Docs>
     <summary>スマート タグで実行できるオプションを表します。</summary>
     <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.SmartTagOptions" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> 、 <b>SmartTagOptions</b>オブジェクトを返すオブジェクト</para>。
-      <para><b>SmartTagOptions</b>オブジェクトが返されます、次のプロパティを使用するにはスマート タグの表示オプションを決定するとするかどうかのスマート タグが埋め込まれている作業中のブックにします</para>。
-      <list type="bullet"><item><description><see cref="P:Microsoft.Office.Interop.Excel.SmartTagOptions.EmbedSmartTags" /></description></item></list><para></para></remarks>
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.SmartTagOptions" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> 、 <b>SmartTagOptions</b>オブジェクトを返すオブジェクト。</para>
+      <para>
+        <b>SmartTagOptions</b>オブジェクトが返されると、スマート タグやスマート タグを作業中のブックに埋め込まれているかどうかの表示オプションを特定するのには次のプロパティを使用できます。</para>
+      <list type="bullet">
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.SmartTagOptions.EmbedSmartTags" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.SmartTagOptions.DisplaySmartTags" />
+          </description>
+        </item>
+      </list>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -90,10 +104,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplaySmartTags">
@@ -126,12 +141,15 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>XlSmartTagDisplayMode</b>には、以下の定数のいずれかを指定できます:</para>
+            <b>XlSmartTagDisplayMode</b>には、以下の定数のいずれかを指定できます。</para>
           <para>
-            <b>xlButtonOnly</b>スマート タグのボタンのみを表示します</para>。
-          <para><b>xlDisplayNone</b>スマート タグに何も表示されます</para>。
-          <para><b>xlIndicatorAndButton</b>インジケーターおよびスマート タグのボタンを表示します</para>。
-          <para></para></remarks>
+            <b>xlButtonOnly</b>スマート タグのボタンのみが表示されます。</para>
+          <para>
+            <b>xlDisplayNone</b>スマート タグについて何も表示されません。</para>
+          <para>
+            <b>xlIndicatorAndButton</b>インジケーターおよびスマート タグのボタンを表示します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EmbedSmartTags">

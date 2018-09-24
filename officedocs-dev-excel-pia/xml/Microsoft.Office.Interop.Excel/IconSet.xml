@@ -1,10 +1,10 @@
 <Type Name="IconSet" FullName="Microsoft.Office.Interop.Excel.IconSet">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="edd1f28ee8b5a4020748a5990476af31b8889717" />
+    <Meta Name="ms.openlocfilehash" Value="62eb85821f62dd352395cbd400597e9412efe980" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577561" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface IconSet : System.Collections.IEnumerable" />
@@ -36,10 +36,12 @@
     <summary>アイコン セットの条件付き書式ルールで使用されるアイコンの単一セットを表します。</summary>
     <remarks>
       <para>
-        <b>IconSet</b>オブジェクトの子オブジェクトでは、<see cref="T:Microsoft.Office.Interop.Excel.IconSets" />コレクションです</para>。
-      <para>アイコンの設定を使用して条件付き書式が割り当てられているため、<see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconSet" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" />オブジェクトです。組み込みアイコン セットのいずれかの定数のいずれかを渡すことによってこのプロパティを設定する、<see cref="T:Microsoft.Office.Interop.Excel.XlIconSet" />のインデックスとして列挙型の<see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />オブジェクトです。詳細については例を参照してください。</para><para></para></remarks>
+        <b>IconSet</b>オブジェクトの子オブジェクトでは、<see cref="T:Microsoft.Office.Interop.Excel.IconSets" />コレクションです。</para>
+      <para>設定を使用して条件付き書式が割り当てられているアイコン、<see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconSet" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" />オブジェクトです。 組み込みアイコン セットのいずれかの定数のいずれかを渡すことによってこのプロパティを設定する、<see cref="T:Microsoft.Office.Interop.Excel.XlIconSet" />のインデックスとして列挙型の<see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />オブジェクトです。 詳細については例を参照してください。 </para>
+      <para></para>
+    </remarks>
     <example>
-      <para>コード例を次に示しますは、テストの得点を表す番号の範囲を作成し、その範囲のアイコン セットの条件付き書式ルールを適用します。アイコン セットの種類は、5 つの矢印のアイコン セットに既定のアイコンから変更されます。最後に、ハード コーディングされた値に、百分位数から、しきい値の種類を変更します。</para>
+      <para>次のコード例は、テストの得点を表す番号の範囲を作成し、アイコン セットの条件付き書式ルールをその範囲に適用します。アイコン セットの種類は、既定のアイコンセットから 5 つの矢印のアイコン セットに変更されます。最後に、しきい値の種類が百分位からハードコードされた番号に変更されます。</para>
       <code>&lt;span class="label"&gt;Sub CreateIconSetCF()  
 
 
@@ -14698,8 +14700,9 @@ End Sub&lt;/span&gt;</code>
         <value>
           <b>アプリケーション</b>(上記参照)</value>
         <remarks>
-          <para>そのオブジェクトのアプリケーションを取得するのには OLE オートメーション オブジェクトに対してこのプロパティを使用することができます</para>。
-          <para></para></remarks>
+          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクト用のアプリケーションを取得できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -14760,8 +14763,9 @@ End Sub&lt;/span&gt;</code>
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。 <see cref="P:Microsoft.Office.Interop.Excel.IconSet.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当  <see cref="P:Microsoft.Office.Interop.Excel.IconSet.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -14859,8 +14863,9 @@ End Sub&lt;/span&gt;</code>
           <see cref="T:Microsoft.Office.Interop.Excel.Icon" />
         </value>
         <remarks>
-          <para>値の<paramref name="Index" />パラメーターをアイコン セットのアイコンの数より大きい値にすることはできません。アイコン セットのアイコンの合計数を検索するには、<see cref="P:Microsoft.Office.Interop.Excel.IconSet.Count" />プロパティ</para>。
-          <para></para></remarks>
+          <para>値、<paramref name="Index" />パラメーターをアイコン セットのアイコンの数より大きい値にすることはできません。 アイコン セットのアイコンの合計数を検索するには、<see cref="P:Microsoft.Office.Interop.Excel.IconSet.Count" />プロパティ。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

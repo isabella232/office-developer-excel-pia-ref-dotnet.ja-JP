@@ -1,10 +1,10 @@
 <Type Name="Comment" FullName="Microsoft.Office.Interop.Excel.Comment">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7623036514119839c00f2d3d08991f073ef618c8" />
+    <Meta Name="ms.openlocfilehash" Value="aee055e9a2656dedc02e66bab44aba17d315d4f9" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585849" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Comment" />
@@ -32,11 +32,13 @@
     <summary>セルのコメントを表します。</summary>
     <remarks>
       <para>
-        <b>コメント</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.Comments" />コレクションです</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Range.Comment" /> 、<b>コメント</b>オブジェクトを返すプロパティです</para>。
-      <para><b>のコメント</b>を使用 (<paramref name="index" />)、 <paramref name="index" /><b>Comments</b>コレクションから 1 つのコメントを取得する、コメント番号を指定します</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.Range.AddComment(System.Object)" />の範囲にコメントを追加する方法です</para>。
-      <para></para></remarks>
+        <b>コメント</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.Comments" />コレクションです。</para>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Range.Comment" /> 、<b>コメント</b>オブジェクトを返すプロパティです。</para>
+      <para>
+        <b>コメント</b>を使用して (<paramref name="index" />)、 <paramref name="index" /><b>Comments</b>コレクションから 1 つのコメントを取得する、コメント番号を指定します。</para>
+      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.Range.AddComment(System.Object)" />の範囲にコメントを追加する方法です。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -121,10 +123,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -176,8 +179,9 @@
         <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Comment" />の次のコメントを表すオブジェクト。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>このメソッドは、1 つのシート上でのみ機能します。シートの最後のコメントでこのメソッドを使用して<b>Null</b> (いないは、次のシート上の次のコメント) を返します</para>。
-          <para></para></remarks>
+          <para>このメソッドは、1 つのシート上でのみ機能します。 シートの最後のコメントでこのメソッドを使用して<b>Null</b> (いないは、次のシート上の次のコメント) を返します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -232,8 +236,9 @@
         <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Comment" />の前のコメントを表すオブジェクト。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>このメソッドは、1 つのシート上でのみ機能します。シート上の最初のコメントでこのメソッドを使用して<b>Null</b> (前回コメントではなく、前のシート) を返します</para>。
-          <para></para></remarks>
+          <para>このメソッドは、1 つのシート上でのみ機能します。 シート上の最初のコメントでこのメソッドを使用して<b>Null</b> (前回コメントではなく、前のシート) を返します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Shape">

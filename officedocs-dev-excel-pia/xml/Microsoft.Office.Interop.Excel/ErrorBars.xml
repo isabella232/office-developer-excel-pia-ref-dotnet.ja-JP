@@ -1,10 +1,10 @@
 <Type Name="ErrorBars" FullName="Microsoft.Office.Interop.Excel.ErrorBars">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6184f44146a0a3b987edb9aaee7576a2b9ce0177" />
+    <Meta Name="ms.openlocfilehash" Value="60889c6b8ce84452540bb212c8f4d70d23f454da" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581348" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ErrorBars" />
@@ -31,9 +31,10 @@
   <Docs>
     <summary>グラフのデータ系列の誤差範囲を表します。</summary>
     <remarks>
-      <para>の誤差範囲は、グラフのデータの不確実性の度合いを示します。領域、バー、列、行、および 2 次元グラフの散布図のデータ系列だけでは、誤差範囲を持つことができます。散布図グループのデータ系列だけを持つことができます x と y の誤差範囲。このオブジェクトでは、コレクションはありません。単一の誤差範囲を表すオブジェクトがないです。いずれかの方法がある x 誤差範囲または y 誤差範囲をオフになっていることには、一連のすべてのポイントのになっている</para>
-      <para>使用の<see cref="P:Microsoft.Office.Interop.Excel.Series.ErrorBars" />オブジェクトを<b>返すプロパティ</b>を返すプロパティです</para>。
-      <para></para></remarks>
+      <para>誤差範囲の線は、グラフ データの誤差の範囲を示します。誤差範囲を表示できるのは、2-D の面グラフ、横棒グラフ、縦棒グラフ、折れ線グラフ、および散布図のデータ系列だけです。散布図グループのデータ系列だけは、x 軸方向と y 軸方向の両方の誤差範囲を表示できます。単体の ErrorBar オブジェクトというオブジェクトはないので、X 誤差範囲または Y 誤差範囲を表示するか非表示にするかを、データ系列の各データ要素ごとに設定することはできません。</para>
+      <para>使用の<see cref="P:Microsoft.Office.Interop.Excel.Series.ErrorBars" />オブジェクトを<b>返すプロパティ</b>を返すプロパティです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -144,10 +145,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -206,8 +208,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>EndStyle</b>プロパティには、次のいずれかを指定できる<see cref="T:Microsoft.Office.Interop.Excel.XlEndStyleCap" />定数: <b>xlCap</b>または<b>xlNoCap</b>です</para>。
-          <para></para></remarks>
+            <b>EndStyle</b>プロパティには、次のいずれかを指定できる<see cref="T:Microsoft.Office.Interop.Excel.XlEndStyleCap" />定数: <b>xlCap</b>または<b>xlNoCap</b>です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Format">

@@ -1,10 +1,10 @@
 <Type Name="ListObjects" FullName="Microsoft.Office.Interop.Excel.ListObjects">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c26d759231e55f2d7cd0214bee3fb3636fe79db1" />
+    <Meta Name="ms.openlocfilehash" Value="297eaae8b8252f38795243645194d97dbacd5ca5" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580942" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ListObjects : System.Collections.IEnumerable" />
@@ -35,8 +35,9 @@
   <Docs>
     <summary>すべてのコレクション、 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> 、ワークシート上のオブジェクトです。 各<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />オブジェクトは、ワークシート内のリストを表します。</summary>
     <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.ListObjects" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /><b>ListObjects</b>コレクションを取得するオブジェクトです</para>。
-      <para></para></remarks>
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.ListObjects" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /><b>ListObjects</b>コレクションを取得するオブジェクトです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -112,8 +113,9 @@
         <summary>新しいリスト オブジェクトを作成します。 返します、<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />オブジェクトです。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>リストにヘッダー、セルの最初の行がある場合は<b>テキスト</b>に変換していないされるテキストに既に設定されています。変換は、セルに表示されるテキストに基づいているが。これは、ロケールを変更する<b>日付</b>形式で日付の値がある場合リストへの変換は現在のシステム ロケールによって異なる結果を生成する可能性があることを意味します。さらに、ヘッダー行と同じテキストが表示されている 2 つのセルがある場合は、増分<b>整数</b>に追加されます固有の各列のヘッダーを作成します</para>。
-          <para></para></remarks>
+          <para>リストにヘッダーがある場合は、セルの最初の行は、<b>テキスト</b>に変換設定されていない場合既にテキストにします。 変換は、セルに表示されるテキストに基づいているが。 これは、ロケールを変更する<b>日付</b>形式で日付の値がある場合リストへの変換は現在のシステム ロケールによって異なる結果を生成する可能性があることを意味します。 さらに、ヘッダー行と同じテキストが表示されている 2 つのセルがある場合は、固有の各列のヘッダーを作成するのには増分<b>整数</b>が追加されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddEx">
@@ -237,8 +239,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

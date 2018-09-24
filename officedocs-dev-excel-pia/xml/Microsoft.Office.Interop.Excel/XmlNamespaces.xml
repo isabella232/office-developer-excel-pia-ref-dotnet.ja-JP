@@ -1,10 +1,10 @@
 <Type Name="XmlNamespaces" FullName="Microsoft.Office.Interop.Excel.XmlNamespaces">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6b18d825ce842de4499b72d3d765f6051669fd7b" />
+    <Meta Name="ms.openlocfilehash" Value="ac6aaff6a7a94436f8945b52b3a9d34e20f3ae1c" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574089" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface XmlNamespaces : System.Collections.IEnumerable" />
@@ -35,10 +35,11 @@
   <Docs>
     <summary>コレクションを表す<see cref="T:Microsoft.Office.Interop.Excel.XmlNamespace" />ブック内のオブジェクト。</summary>
     <remarks>
-      <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.XmlNamespaces.Item(System.Object)" /> 、特定の<b>XmlNamespace</b>オブジェクトにアクセスするプロパティ</para>。
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.XmlNamespaces.Value" />のブックに追加されている名前空間を一覧表示する<b>文字列</b>を返すプロパティです</para>。
-      <para></para></remarks>
+      <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.XmlNamespaces.Item(System.Object)" /> 、特定の<b>XmlNamespace</b>オブジェクトにアクセスするプロパティ。</para>
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.XmlNamespaces.Value" />のブックに追加されている名前空間を一覧表示する<b>文字列</b>を返すプロパティです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -159,8 +160,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -223,9 +225,10 @@
         <param name="InstallForAllUsers">オプションの <b>Boolean</b>。 <b>True</b>では、XML 拡張パックをインストールや、コンピューター上のすべてのユーザーが利用できるようにします。 現在のユーザーのみ使用可能 XML 拡張パックを<b>false</b>になります。 既定では <b>false を指定</b> します。</param>
         <summary>指定された XML 拡張パックをユーザーのコンピューターにインストールし、1 人または複数のユーザーが XML スマート ドキュメント ソリューションを使用できるようにします。</summary>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para>セキュリティのために、署名のないマニフェストをインストールすることはできません。マニフェストの詳細については、Microsoft Developer Network (MSDN) Web サイトで、スマート ドキュメント ソフトウェア開発キット (SDK) を参照してください</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para>セキュリティの目的で、署名されていないマニフェストをインストールすることはできません。マニフェストの詳細については、Microsoft Developer Network (MSDN) Web サイトにある「Smart Document Software Development Kit (SDK)」を参照してください。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -315,8 +318,9 @@
         <summary>ブックに追加されている XML 名前空間を表す<b>文字列</b>を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ブックに複数の名前空間が含まれているかどうかは、名前空間が、 <b>Value</b>プロパティによって返される文字列に空白で区切られます</para>。
-          <para></para></remarks>
+          <para>ブックに複数の名前空間が含まれている場合、名前空間は、 <b>Value</b>プロパティによって返される文字列に空白で区切られます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

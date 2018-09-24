@@ -1,10 +1,10 @@
 <Type Name="ShadowFormat" FullName="Microsoft.Office.Interop.Excel.ShadowFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="09d808183dd11068f3bb29e58ab558271621e063" />
+    <Meta Name="ms.openlocfilehash" Value="5eeac5f0fb754a2bafeb2c032994726f97c18d68" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584435" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ShadowFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -32,8 +32,9 @@
   <Docs>
     <summary>影の書式設定を表す、 <see cref="T:Microsoft.Office.Interop.Excel.Shape" />。</summary>
     <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.Shape.Shadow" />を返すプロパティの<see cref="T:Microsoft.Office.Interop.Excel.ShadowFormat" />オブジェクトです</para>。
-      <para></para></remarks>
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.Shape.Shadow" />を返すプロパティの<see cref="T:Microsoft.Office.Interop.Excel.ShadowFormat" />オブジェクトです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -129,10 +130,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -193,8 +195,9 @@
           <b>1 つ</b>が必要です。 影の相対位置の移動を水平方向にポイント単位で指定します。 正の値を指定すると影は右に移動し、負の値を指定すると左に移動します。</param>
         <summary>影の水平方向の相対位置を、指定したポイント数だけ変更します。</summary>
         <remarks>
-          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.OffsetX" /> 、影の水平方向のオフセットを設定するプロパティ</para>。
-          <para></para></remarks>
+          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.OffsetX" /> 、影の水平方向のオフセットを設定するプロパティです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementOffsetY">
@@ -224,8 +227,9 @@
           <b>1 つ</b>が必要です。 影の相対位置の移動を垂直方向にポイント単位で指定します。 正の値を指定すると影は下に移動し、負の値を指定すると影は上に移動します。</param>
         <summary>影の垂直方向の相対位置を、指定したポイント数だけ変更します。</summary>
         <remarks>
-          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.OffsetY" /> 、影の垂直方向のオフセットを設定するプロパティ</para>。
-          <para></para></remarks>
+          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.OffsetY" /> 、影の垂直方向のオフセットを設定するプロパティです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Obscured">
@@ -289,9 +293,10 @@
         <summary>ポイント単位で指定した図形の影の水平方向のオフセットを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>正の値相対位置は図形の右側に; 負の値が左側にオフセットします</para>。
-          <para>影を水平方向に移動または垂直方向に絶対位置を指定せずに、現在の位置から使用する場合、<see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetX(System.Single)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetY(System.Single)" />メソッドです</para>。
-          <para></para></remarks>
+          <para>正の値相対位置は図形の右側に負の値は、左側にオフセットします。</para>
+          <para>影を水平方向に移動または垂直方向に絶対位置を指定せずに、現在の位置から使用するかどうか、<see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetX(System.Single)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetY(System.Single)" />メソッドです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OffsetY">
@@ -323,9 +328,10 @@
         <summary>ポイント単位で指定した図形の影の垂直方向のオフセットを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>正の値相対位置は図形の右側に; 負の値が左側にオフセットします</para>。
-          <para>影を水平方向に移動または垂直方向に絶対位置を指定せずに、現在の位置から使用する場合、<see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetX(System.Single)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetY(System.Single)" />メソッドです</para>。
-          <para></para></remarks>
+          <para>正の値相対位置は図形の右側に負の値は、左側にオフセットします。</para>
+          <para>影を水平方向に移動または垂直方向に絶対位置を指定せずに、現在の位置から使用するかどうか、<see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetX(System.Single)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Excel.ShadowFormat.IncrementOffsetY(System.Single)" />メソッドです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -453,8 +459,26 @@
           <see cref="T:Microsoft.Office.Core.MsoShadowStyle" />
         </value>
         <remarks>
-          <para>次の表は、可能な値を示しています<see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.Style" />です。</para> 。
-          <list type="table"><item><term><see cref="F:Microsoft.Office.Core.MsoShadowStyle.msoShadowStyleInnerShadow" /></term></item><item><term><see cref="F:Microsoft.Office.Core.MsoShadowStyle.msoShadowStyleMixed" /></term></item></list><para></para></remarks>
+          <para>次の表は、可能な値を示しています。 <see cref="P:Microsoft.Office.Interop.Excel.ShadowFormat.Style" />。</para>
+          <list type="table">
+            <item>
+              <term>
+                <see cref="F:Microsoft.Office.Core.MsoShadowStyle.msoShadowStyleInnerShadow" />
+              </term>
+            </item>
+            <item>
+              <term>
+                <see cref="F:Microsoft.Office.Core.MsoShadowStyle.msoShadowStyleMixed" />
+              </term>
+            </item>
+            <item>
+              <term>
+                <see cref="F:Microsoft.Office.Core.MsoShadowStyle.msoShadowStyleOuterShadow" />
+              </term>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Transparency">
@@ -486,8 +510,9 @@
         <summary>取得または指定した塗りつぶしの透明度値として設定 0.0 (不透明) から 1.0 (透明) です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>; このプロパティの値は単色の塗りの外観に影響を与えるし、だけ線、線のパターンまたはパターン、グラデーション、図、またはテクスチャの塗りつぶしの外観に影響を与えません</para>。
-          <para></para></remarks>
+          <para>Transparency プロパティの値は、単一な色の塗りつぶしと線にしか設定できません。パターンが設定された線、塗りつぶしのパターン、グラデーション、図、およびテクスチャを半透明にすることはできません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">

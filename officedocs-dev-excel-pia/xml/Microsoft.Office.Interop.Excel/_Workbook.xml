@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575048" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _Workbook" />
@@ -331,57 +331,325 @@
         <summary>取得または特定のワークシート関数では、最新の精度アルゴリズムを使用して、結果を計算するかどうかを設定します。</summary>
         <value>特定のワークシート関数を使用するアルゴリズムのバージョンを指定します。</value>
         <remarks>
-          <para>読み取り/書き込み</para>
-          <para>既定では、いくつかの Microsoft Office Excel 2007 ワークシート関数および Microsoft Excel の以前のバージョンを使用して、その精度を向上させる新しいアルゴリズムです。ただし、場合によっては、新しいアルゴリズムが低下する Microsoft Office Excel 2007 でのパフォーマンスを基準にしてこれらの関数のパフォーマンスおよび Excel の以前のバージョンです。これらのワークシート関数を使用して古いアルゴリズムのパフォーマンスを向上する、設定、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" />プロパティを 1 にします。次の表に設定できる、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" />プロパティ</para>。
-          <list type="table"><item><term>0</term><description>(既定値) は、最新で最も正確なアルゴリズムを使用して</description></item><item><term>1</term><description>使用の Microsoft Office Excel 2007 または以前のバージョンのアルゴリズム</description></item><item><term>2</term><description>アルゴリズムを使用して Microsoft Excel 2010</description></item></list><para><b>注意</b>: 設定、 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> 0、1 または 2 以外の値にプロパティが未定義の動作で発生します</para>。
-          <para>は、次の表に設定することによりどの機能が影響を受ける、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" />プロパティを 1 にします。「の機能は影響を受けません」列に記載されている関数は、常に最新の精度アルゴリズムを使用または Excel 2010 では変更されませんでした。関数名、名前にピリオド (.) を含む、対応する関数の名前を確認するのには VBA のメソッドとして実装の<see cref="T:Microsoft.Office.Interop.Excel.WorksheetFunction" />オブジェクト、ピリオドの代わりにアンダー スコア (_) です。たとえば、ベータ版に対応する VBA メソッドです。DIST 関数では、<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Beta_Dist(System.Double,System.Double,System.Double,System.Boolean,System.Object,System.Object)" />メソッドです</para>。
-          <list type="table"><item><term>指定</term><description>集計</description></item><item><term>BETAINV</term><description>ベータ版です。DIST</description></item><item><term>中</term><description>ベータ版です。INV</description></item><item><description>BINOM である
-              <term>れます</term>。DIST</description></item><item><term>CHIINV</term><description>BINOM。INV</description></item><item><term>CHITEST</term><description>天井</description></item><item><term>自信を持って</term><description>天井。正確な</description></item><item><term>CRITBINOM</term><description>CHISQ。DIST</description></item><item><description>CHISQ の
-              <term>指定</term>。版RT</description></item><item><description>CHISQ の
-              <term>指定</term>。INV</description></item><item><description>CHISQ の
-              <term>積分値</term>です。在庫RT</description></item><item><term>ERFC</term><description>CHISQ。テスト</description></item><item><description>信頼度の
-              <term>間隔</term>。標準</description></item><item><term>FDIST</term><description>自信を持っています。T</description></item><item><term>finv 関数</term><description>covar 関数</description></item><item><description>共分散である
-              <term>場合</term>。P</description></item><item><description>共分散である
-              <term>場合</term>。S</description></item><item><term>GAMMALN</term><description>積分値です。正確な</description></item><item><term>GAMMINV</term><description>ERFC。正確な</description></item><item><description>EXPON の
-              <term>HYPGEOMDIST</term>。DIST</description></item><item><term>IPMT</term><description>F.DIST</description></item><item><description>F.DIST である
-              <term>IRR</term>。RT</description></item><item><term>LOGINV</term><description>F.INV</description></item><item><term>LOGNORMDIST</term><description>F.INV。RT</description></item><item><term>NEGBINOMDIST</term><description>F.TEST</description></item><item><term>式</term><description>フロア</description></item><item><description>フロアの
-              <term>ある場合</term>。正確な</description></item><item><term>NORMSDIST</term><description>ガンマ。DIST</description></item><item><term>normsinv 関数</term>ガンマを
-              <description>。INV</description></item><item><description>GAMMALN の
-              <term>定期支払額</term>です。正確な</description></item><item><description>HYPGEOM の
-              <term>ポワソン</term>です。DIST</description></item><item><description>ISO の
-              <term>PPMT</term>。天井</description></item><item><description>LOGNORM の
-              <term>標準偏差</term>です。DIST</description></item><item><term>STDEVP</term><description>LOGNORM。INV</description></item><item><term>TDIST</term><description>MOD</description></item><item><term>TINV</term><description>モード</description></item><item><term>TTEST</term><description>モードです。MULT</description></item><item><term>VAR</term><description>モードです。SNGL</description></item><item><description>NEGBINOM の
-              <term>VARA</term>。DIST</description></item><item><term>分散</term><description>NETWORKDAYS。INTL</description></item><item><term>VARPA</term><description>標準。DIST</description></item><item><term>ワイブル</term><description>標準。INV</description></item><item><term>XIRR</term><description>標準。S.DIST</description></item><item><term>ZTEST</term><description>標準。S.INV</description></item><item><term />位
-            </item><item><term />位です。EXC
-            </item><item><term />位です。INC
-            </item><item><term />小数点
-            </item><item><term />小数点です。EXC
-            </item><item><term />小数点です。INC
-            </item><item><term />ポワソンです。DIST
-            </item><item><term />25%
-            </item><item><term />25% です。EXC
-            </item><item><term />25% です。INC
-            </item><item><term />ランク
-            </item><item><term />ランクです。平均
-            </item><item><term />ランクです。EQ
-            </item><item><term />標準偏差です。P
-            </item><item><term />標準偏差です。S
-            </item><item><term />T.DIST
-            </item><item><term />T.DIST.2T
-            </item><item><term />T.DIST。RT
-            </item><item><term />T.DIST。RT
-            </item><item><term />T.INV
-            </item><item><term />T.INV.2T
-            </item><item><term />T.INV。RT
-            </item><item><term />T.TEST
-            </item><item><term />var 関数P
-            </item><item><term />var 関数S
-            </item><item><term />平日
-            </item><item><term />WEEKNUM
-            </item><item><term />ワイブル。DIST
-            </item><item><term />の作業日です。INTL
-            </item><item><term />Z.TEST
-            </item></list><para></para></remarks>
+          <para>値の取得および設定が可能です。</para>
+          <para>Microsoft Office Excel 2007 ワークシート関数のいくつかと以前のバージョンの Microsoft Excel は、既定では、その精度を向上させる新しいアルゴリズムを使用します。 ただし、場合によっては、新しいアルゴリズムが低下する Microsoft Office Excel 2007 でのパフォーマンスを基準にしてこれらの関数のパフォーマンスおよび Excel の以前のバージョンです。 これらのワークシート関数を使用して古いアルゴリズムのパフォーマンスを向上する、設定、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" />プロパティを 1 にします。 次の表に設定できる、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" />プロパティ。</para>
+          <list type="table">
+            <item>
+              <term>0</term>
+              <description>最も正確な最新のアルゴリズムを使用します (既定値)。</description>
+            </item>
+            <item>
+              <term>1</term>
+              <description>Microsoft Office Excel 2007 または以前のバージョンのアルゴリズムを使用します。</description>
+            </item>
+            <item>
+              <term>2</term>
+              <description>Microsoft Excel 2010 のアルゴリズムを使用します。</description>
+            </item>
+          </list>
+          <para>
+            <b>注意</b>: 設定、 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" /> 0、1 または 2 以外の値にプロパティが未定義の動作で発生します。</para>
+          <para>次の表を設定する機能が影響を受ける、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.AccuracyVersion" />プロパティを 1 にします。 「の機能は影響を受けません」列に記載されている関数は、常に最新の精度アルゴリズムを使用または Excel 2010 では変更されませんでした。 関数名、名前にピリオド (.) を含む、対応する関数の名前を確認するのには VBA のメソッドとして実装の<see cref="T:Microsoft.Office.Interop.Excel.WorksheetFunction" />オブジェクト、ピリオドの代わりにアンダー スコア (_) です。 たとえば、ベータ版に対応する VBA メソッドです。DIST 関数では、<see cref="M:Microsoft.Office.Interop.Excel.WorksheetFunction.Beta_Dist(System.Double,System.Double,System.Double,System.Boolean,System.Object,System.Object)" />メソッドです。</para>
+          <list type="table">
+            <item>
+              <term>指定</term>
+              <description>AGGREGATE</description>
+            </item>
+            <item>
+              <term>BETAINV</term>
+              <description>Beta。DIST</description>
+            </item>
+            <item>
+              <term>BINOMDIST</term>
+              <description>Beta。INV</description>
+            </item>
+            <item>
+              <term>れます</term>
+              <description>BINOM。DIST</description>
+            </item>
+            <item>
+              <term>CHIINV</term>
+              <description>BINOM。INV</description>
+            </item>
+            <item>
+              <term>CHITEST 関数</term>
+              <description>CEILING</description>
+            </item>
+            <item>
+              <term>自信を持って</term>
+              <description>天井。正確です</description>
+            </item>
+            <item>
+              <term>CRITBINOM</term>
+              <description>CHISQ。DIST</description>
+            </item>
+            <item>
+              <term>CUMIPMT</term>
+              <description>CHISQ。版RT</description>
+            </item>
+            <item>
+              <term>CUMPRINC</term>
+              <description>CHISQ。INV</description>
+            </item>
+            <item>
+              <term>ERF 関数</term>
+              <description>CHISQ。在庫RT</description>
+            </item>
+            <item>
+              <term>ERFC</term>
+              <description>CHISQ。テスト</description>
+            </item>
+            <item>
+              <term>EXPONDIST</term>
+              <description>自信を持っています。基準</description>
+            </item>
+            <item>
+              <term>FDIST</term>
+              <description>自信を持っています。T</description>
+            </item>
+            <item>
+              <term>FINV 関数</term>
+              <description>COVAR 関数</description>
+            </item>
+            <item>
+              <term>場合</term>
+              <description>共分散します。P</description>
+            </item>
+            <item>
+              <term>場合</term>
+              <description>共分散します。S</description>
+            </item>
+            <item>
+              <term>GAMMALN</term>
+              <description>ERF 関数です。正確です</description>
+            </item>
+            <item>
+              <term>GAMMINV</term>
+              <description>ERFC。正確です</description>
+            </item>
+            <item>
+              <term>HYPGEOMDIST</term>
+              <description>EXPON。DIST</description>
+            </item>
+            <item>
+              <term>IPMT</term>
+              <description>F.DIST</description>
+            </item>
+            <item>
+              <term>IRR</term>
+              <description>F.DIST。RT</description>
+            </item>
+            <item>
+              <term>LOGINV</term>
+              <description>F.INV</description>
+            </item>
+            <item>
+              <term>LOGNORMDIST</term>
+              <description>F.INV。RT</description>
+            </item>
+            <item>
+              <term>NEGBINOMDIST 関数を利用</term>
+              <description>F.TEST</description>
+            </item>
+            <item>
+              <term>式</term>
+              <description>FLOOR</description>
+            </item>
+            <item>
+              <term>NORMINV</term>
+              <description>フロアです。正確です</description>
+            </item>
+            <item>
+              <term>NORMSDIST</term>
+              <description>ガンマ値。DIST</description>
+            </item>
+            <item>
+              <term>NORMSINV 関数</term>
+              <description>ガンマ値。INV</description>
+            </item>
+            <item>
+              <term>PMT</term>
+              <description>GAMMALN。正確です</description>
+            </item>
+            <item>
+              <term>ポワソン</term>
+              <description>HYPGEOM。DIST</description>
+            </item>
+            <item>
+              <term>PPMT</term>
+              <description>ISO。天井</description>
+            </item>
+            <item>
+              <term>STDEV</term>
+              <description>LOGNORM。DIST</description>
+            </item>
+            <item>
+              <term>STDEVP</term>
+              <description>LOGNORM。INV</description>
+            </item>
+            <item>
+              <term>TDIST</term>
+              <description>MOD</description>
+            </item>
+            <item>
+              <term>TINV</term>
+              <description>モード</description>
+            </item>
+            <item>
+              <term>TTEST</term>
+              <description>モードです。MULT</description>
+            </item>
+            <item>
+              <term>VAR</term>
+              <description>モードです。SNGL</description>
+            </item>
+            <item>
+              <term>VARA</term>
+              <description>NEGBINOM。DIST</description>
+            </item>
+            <item>
+              <term>VARP 関数</term>
+              <description>NETWORKDAYS。INTL</description>
+            </item>
+            <item>
+              <term>VARPA 関数</term>
+              <description>基準です。DIST</description>
+            </item>
+            <item>
+              <term>ワイブル</term>
+              <description>基準です。INV</description>
+            </item>
+            <item>
+              <term>XIRR</term>
+              <description>基準です。S.DIST</description>
+            </item>
+            <item>
+              <term>ZTEST 関数</term>
+              <description>基準です。S.INV</description>
+            </item>
+            <item>
+              <term />
+              <description>百分位数</description>
+            </item>
+            <item>
+              <term />
+              <description>百分位数。EXC</description>
+            </item>
+            <item>
+              <term />
+              <description>百分位数。INC</description>
+            </item>
+            <item>
+              <term />
+              <description>小数点</description>
+            </item>
+            <item>
+              <term />
+              <description>小数点です。EXC</description>
+            </item>
+            <item>
+              <term />
+              <description>小数点です。INC</description>
+            </item>
+            <item>
+              <term />
+              <description>ポワソンです。DIST</description>
+            </item>
+            <item>
+              <term />
+              <description>25%</description>
+            </item>
+            <item>
+              <term />
+              <description>25% です。EXC</description>
+            </item>
+            <item>
+              <term />
+              <description>25% です。INC</description>
+            </item>
+            <item>
+              <term />
+              <description>RANK</description>
+            </item>
+            <item>
+              <term />
+              <description>ランク付けします。平均</description>
+            </item>
+            <item>
+              <term />
+              <description>ランク付けします。EQ</description>
+            </item>
+            <item>
+              <term />
+              <description>標準偏差です。P</description>
+            </item>
+            <item>
+              <term />
+              <description>標準偏差です。S</description>
+            </item>
+            <item>
+              <term />
+              <description>T.DIST</description>
+            </item>
+            <item>
+              <term />
+              <description>T.DIST.2T</description>
+            </item>
+            <item>
+              <term />
+              <description>T.DIST。RT</description>
+            </item>
+            <item>
+              <term />
+              <description>T.DIST。RT</description>
+            </item>
+            <item>
+              <term />
+              <description>T.INV</description>
+            </item>
+            <item>
+              <term />
+              <description>T.INV.2T</description>
+            </item>
+            <item>
+              <term />
+              <description>T.INV。RT</description>
+            </item>
+            <item>
+              <term />
+              <description>T.TEST</description>
+            </item>
+            <item>
+              <term />
+              <description>VAR 関数P</description>
+            </item>
+            <item>
+              <term />
+              <description>VAR 関数S</description>
+            </item>
+            <item>
+              <term />
+              <description>曜日</description>
+            </item>
+            <item>
+              <term />
+              <description>WEEKNUM</description>
+            </item>
+            <item>
+              <term />
+              <description>ワイブル。DIST</description>
+            </item>
+            <item>
+              <term />
+              <description>作業日です。INTL</description>
+            </item>
+            <item>
+              <term />
+              <description>Z.TEST</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Activate">
@@ -438,8 +706,9 @@
         <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> 、アクティブなグラフ (埋め込みグラフまたはグラフ シート) を表すオブジェクト。 埋め込みグラフは選択されているまたは、アクティブと見なされます。 アクティブなグラフがないときは、このプロパティは<b>Nothing</b>を返します。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクト修飾子を指定しない場合このプロパティは、作業中のブックで作業中のグラフを返します</para>。
-          <para></para></remarks>
+          <para>対象となるオブジェクトを指定しない場合、このプロパティでは作業中のブックのアクティブなグラフが返されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveSheet">
@@ -468,9 +737,10 @@
         <summary>作業中のブック、または指定されたウィンドウまたはブックのアクティブ シート (一番手前のシート) を表すオブジェクトを返します。 アクティブ シートがない場合は、 <b>Nothing</b>を返します。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクト修飾子を指定しない場合このプロパティは、作業中のブックで作業中のシートを返します</para>。
-          <para>ブックを複数のウィンドウで表示する場合、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" />プロパティは、複数のウィンドウで異なる場合があります</para>。
-          <para></para></remarks>
+          <para>対象となるオブジェクトを指定しない場合は、作業中のブックのアクティブ シートが返されます。</para>
+          <para>ブックを複数のウィンドウで表示する場合、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" />プロパティは、複数のウィンドウで異なる場合があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveSlicer">
@@ -499,10 +769,11 @@
         <summary>または指定されたブックで作業中のブックで作業中のスライサーを表すオブジェクトを取得します。</summary>
         <value>または指定されたブックで作業中のブックで作業中のスライサーを表すオブジェクト。</value>
         <remarks>
-          <para>アクティブなスライサーがない場合は null 参照 (Visual Basic では Nothing) を返します</para>。
-          <para>読み取り専用</para>。
-          <para>を指定しない場合、<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />オブジェクトの場合、このプロパティは、作業中のブックで作業中のスライサーを返します</para>。
-          <para></para></remarks>
+          <para>アクティブなスライサーがない場合は、null 参照 (Visual Basic では Nothing) を返します。</para>
+          <para>読み取り専用。</para>
+          <para>指定しない場合、<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />オブジェクトの場合、このプロパティは、作業中のブックで作業中のスライサーを返します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddToFavorites">
@@ -628,19 +899,19 @@
         <value>返します。 <see cref="T:System.String" />。</value>
         <remarks>To be added.</remarks>
         <example>
-          <para>この例では、作業中のシートで田中一郎によって追加されたすべてのコメントを削除します。</para>
+          <para>次の使用例は、作業中のブックで田中一郎によって追加されたすべてのコメントを削除します。</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
         </example>
         <example>
-          <para>この例では、作業中のシートで田中一郎によって追加されたすべてのコメントを削除します。</para>
+          <para>次の使用例は、作業中のブックで田中一郎によって追加されたすべてのコメントを削除します。</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
         </example>
         <example>
-          <para>この例では、作業中のシートで田中一郎によって追加されたすべてのコメントを削除します。</para>
+          <para>次の使用例は、作業中のブックで田中一郎によって追加されたすべてのコメントを削除します。</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
@@ -677,8 +948,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>AutoUpdateFrequency</b>プロパティは、5 を有効にするには、このプロパティの 1,440 の値に設定する必要があります</para>。
-          <para></para></remarks>
+            <b>AutoUpdateFrequency</b>プロパティは、5 を有効にするには、このプロパティの 1,440 の値に設定しなければなりません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoUpdateSaveChanges">
@@ -711,8 +983,10 @@
           <b>True</b>ブックが自動的に更新されるたびに、他のユーザーに共有ブックに行った変更が転記された場合。 場合は<b>false を指定</b>の変更を通知しません (ブックが他のユーザーによって行われた変更と同期しても)。 既定値は <b>True</b> です。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.AutoUpdateFrequency" />から 5 を有効にするには、このプロパティの 1,440 の値にプロパティを設定する必要があります</para>。
-          <para></para></remarks>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.AutoUpdateFrequency" />から 5 を有効にするには、このプロパティの 1,440 の値にプロパティを設定する必要があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BreakLink">
@@ -772,12 +1046,44 @@
         <summary>返します、<see cref="T:Microsoft.Office.Core.DocumentProperties" />指定されたブックのすべての組み込みドキュメント プロパティを表すコレクション。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、組み込みのドキュメント プロパティのコレクション全体を返します。使用、<see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" />コレクションの 1 つのメンバーを返します (、<see cref="T:Microsoft.Office.Core.DocumentProperty" />オブジェクト) のプロパティの名前またはコレクションのインデックス (数値) としてのいずれかを指定することで</para>。
-          <para>ことができますを参照するドキュメントのプロパティのインデックス値または名前のいずれかです。次に示します、利用可能な組み込みドキュメント プロパティ名:</para><para>タイトル</para><para>件名</para><para>著者</para><para>キーワード</para><para>コメント</para><para>テンプレート</para><para>作成者の最終</para><para>リビジョン番号</para><para>アプリケーション名</para><para>最終印刷日時</para><para>作成日</para><para>最終時刻を保存</para><para>編集時間</para><para>ページの数</para><para>の単語の数</para><para>の文字数</para><para>セキュリティ</para><para>カテゴリ</para><para>マネージャー</para><para>会社</para><para>バイト数</para><para>行の数</para><para>の段落の数</para><para>スライド数</para><para>ノートの数</para>の
-          <para>書式設定</para><para>非表示のスライドの数</para><para>クリップをマルチ メディアの数</para><para>ハイパーリンクの基点</para><para>数の文字 (スペース) を</para><para>コンテナー アプリケーションは、すべての組み込みドキュメント プロパティの値を定義する必要は。Microsoft Excel の組み込みドキュメント プロパティのいずれかの値が定義されていない場合、は、読み取り、<see cref="P:Microsoft.Office.Core.DocumentProperty.Value" />そのドキュメント プロパティのプロパティのエラーが発生します</para>。
-          <para><b>Item</b>メソッドは、<b>オートメーション</b>コレクションの既定の方法です</para>。
-          <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.CustomDocumentProperties" />プロパティをカスタム ドキュメント プロパティのコレクションを取得します</para>。
-          <para></para></remarks>
+          <para>このプロパティは、組み込みのドキュメント プロパティのコレクション全体を返します。 使用、<see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" />コレクションの 1 つのメンバーを返します (、<see cref="T:Microsoft.Office.Core.DocumentProperty" />オブジェクト) のプロパティの名前またはコレクションのインデックス (数値) としてのいずれかを指定することによって。</para>
+          <para>インデックス値または名前でドキュメント プロパティを指定することができます。次の表は、有効な組み込みのドキュメント プロパティの名前を示します。</para>
+          <para>タイトル </para>
+          <para>件名</para>
+          <para>Author (著者)</para>
+          <para>Keywords</para>
+          <para>コメント</para>
+          <para>Template</para>
+          <para>最終作成者</para>
+          <para>リビジョン番号</para>
+          <para>Application Name</para>
+          <para>最終印刷日時</para>
+          <para>作成日 </para>
+          <para>最後に時間を節約します。</para>
+          <para>編集時間の合計</para>
+          <para>ページの数</para>
+          <para>単語の数</para>
+          <para>文字数</para>
+          <para>セキュリティ</para>
+          <para>カテゴリ</para>
+          <para>Format</para>
+          <para>Manager</para>
+          <para>会社</para>
+          <para>バイト数</para>
+          <para>明細行の数</para>
+          <para>段落の数</para>
+          <para>スライドの数</para>
+          <para>ノートの数</para>
+          <para>非表示スライドの数</para>
+          <para>マルチ メディア クリップの数</para>
+          <para>ハイパーリンクの基点</para>
+          <para>(スペース) を文字数</para>
+          <para>コンテナー アプリケーションは、すべての組み込みドキュメント プロパティの値を定義するのには必要ないです。 Microsoft Excel の組み込みドキュメント プロパティのいずれかの値が定義されていない場合、は、読み取り、<see cref="P:Microsoft.Office.Core.DocumentProperty.Value" />そのドキュメント プロパティのプロパティのエラーが発生します。</para>
+          <para>
+            <b>Item</b>メソッドは、<b>オートメーション</b>コレクションの既定の方法です。</para>
+          <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.CustomDocumentProperties" />をカスタム ドキュメント プロパティのコレクションを返すプロパティです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CalculationVersion">
@@ -806,8 +1112,9 @@
         <summary>一番右の 4 桁のマイナー バージョン番号は、の数を返します (左側) には、他の数字は、Microsoft Excel のメジャー バージョンです。 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" />オブジェクトの場合、このプロパティは、ブックの再計算が最後完全に Excel のバージョンに関する情報を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>場合は、Excel の以前のバージョンで保存されたブックやブックを完全に再計算されていない場合、このプロパティは 0 を返します</para>。
-          <para></para></remarks>
+          <para>以前のバージョンの Excel でブックを保存し、ブックの完全に再計算されていない場合、このプロパティは 0 を返します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CanCheckIn">
@@ -898,8 +1205,9 @@
         <param name="Notify">省略可能な<b>オブジェクト</b>です。 <b>True</b> (または省略) の場合、ファイルにすぐにアクセスできない状態のときに警告メッセージを表示します。</param>
         <summary>ブックのアクセス権を変更します。変更した後で、ディスクから読み込むことが必要な場合があります。</summary>
         <remarks>
-          <para>読み取り専用モードで開くファイルがある場合、ファイルへの排他アクセスがありません。読み取り/書き込み可能、読み取り専用ファイルを変更する場合は、Microsoft Excel は、変更されていないファイルが読み取り専用で開かれていたときにことを確認するファイルの新しいコピーを読み込む必要があります</para>。
-          <para></para></remarks>
+          <para>読み取り専用でファイルを開いているときは、排他的アクセスはできません。読み取り専用を書き込み可能に変更した場合は、読み取り専用にしていた間に変更された部分がないことを確認するために、ファイルが改めて読み込まれます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ChangeHistoryDuration">
@@ -931,8 +1239,9 @@
         <summary>返すまたは、共有ブックの変更履歴に示す日数を設定します。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ブックが閉じられるとき、このプロパティの設定よりも古い変更履歴のすべての変更は削除されます</para>。
-          <para></para></remarks>
+          <para>ブックを閉じるとき、このプロパティを設定する前の変更は変更履歴から削除されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ChangeLink">
@@ -1029,8 +1338,9 @@
         <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> 、指定されたブック内のすべてのグラフ シートを表すコレクション。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクト修飾子を指定せずにこのプロパティを使用するには、すべてのグラフの作業中のブック内のシートが返されます</para>。
-          <para></para></remarks>
+          <para>このプロパティでオブジェクト修飾子を指定しないを使用すると、作業中のブックですべてのグラフ シートが返されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckCompatibility">
@@ -1130,9 +1440,10 @@
         <param name="VersionType">ブックのバージョン管理情報を指定します。</param>
         <summary>ローカル コンピューターからサーバーにブックを保存し、ローカルなブックを読み取り専用に設定して編集されないようにします。</summary>
         <remarks>
-          <para>設定、<paramref name="MakePublic" />パラメーターを<b>true</b>には、承認プロセスは、ブックを読み取り専用の権限を持つユーザーに対して公開されるワークブックのバージョンが最終的にブックを送信する (場合にのみ適用されます<paramref name="SaveChanges" /><b>を true に設定</b>).</para>
-          <para>Microsoft Excel に組み込まれているコラボレーション機能を利用するには、Microsoft SharePoint サーバーのドキュメントを保存します</para>。
-          <para></para></remarks>
+          <para>設定、<paramref name="MakePublic" />パラメーターを<b>true</b>には、承認プロセスは、ブックを読み取り専用の権限を持つユーザーに対して公開されるワークブックのバージョンが最終的にブックを送信する (場合にのみ適用されます<paramref name="SaveChanges" /><b>を true に設定</b>). </para>
+          <para>Microsoft Excel に組み込まれたグループ作業機能を利用するには、Microsoft SharePoint Server にブックを保存する必要があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -1167,8 +1478,10 @@
         <param name="RouteWorkbook">省略可能な<b>オブジェクト</b>です。 ブックが (回覧先がないか、既に回覧されている) 場合は、次の受信者にルーティングする必要がある場合、この引数は無視されます。 それ以外の場合、Microsoft Excel は、次の表に示すように、ブックをルーティングします。値の意味 1<b>は True</b>は、次の受信者にブックを送信します。<b>False</b>ブックを送りません。OmittedDisplays ブックを送信するかどうかをユーザーに確認するダイアログ ボックスです。</param>
         <summary>オブジェクトを閉じます。</summary>
         <remarks>
-          <para>ブック内の Auto_Close マクロを実行しない、 <b>Close</b>メソッドを使用してブックを閉じるします。使用して、 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> Auto_Close マクロを実行するメソッドです</para>。
-          <para></para></remarks>
+          <para>
+            <b>Close</b>メソッドを使用してブックを閉じると、ブック内の Auto_Close マクロが実行されません。 使用して、 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> Auto_Close マクロを実行するメソッドです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CodeName">
@@ -1197,9 +1510,10 @@
         <summary>オブジェクトのコード名を返します。 読み取り専用 <b>文字列</b> です。 [プロパティ] ウィンドウの<b>(Name)</b>の右側のセルに表示される値は、選択したオブジェクトのコード名です。 デザイン時に、この値を変更することによってオブジェクトのコード名を変更できます。 このプロパティは、実行時にプログラムで変更できません。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトのコード名はオブジェクトを表すオブジェクト式の代わりに使用することができます</para>。
-          <para>シート名とコード名は異なる可能性があります。シートを作成する、シート名とコード名は同じですが、シート名を変更するコードの名前は変更されません (Visual Basic エディターで [プロパティ] ウィンドウを使用して) コード名を変更するシート名は変更されません</para>。
-          <para></para></remarks>
+          <para>オブジェクトのコード名は、オブジェクトを表すオブジェクト式の代わりに使用できます。</para>
+          <para>シート名とコード名は異なることができます。 シートを作成してシート名とコード名は同じですが、シート名を変更するコードの名前を変更しない、(Visual Basic エディターで [プロパティ] ウィンドウを使用して) コード名を変更するシート名は変更されません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Colors">
@@ -1269,9 +1583,10 @@
         <summary>返します、 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.CommandBars" /> 、Microsoft Excel のコマンド バーを表すオブジェクト。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ブックが別のアプリケーションに埋め込まれているし、ブックをダブルクリックすると、ユーザーがアクティブになる、 <b>Workbook</b>オブジェクトに対してこのプロパティを使用して他のアプリケーション内で使用できる Microsoft Excel のコマンド バーのセットを返します。他のすべての回では、 <b>Workbook</b>オブジェクトに対してこのプロパティを使用しては<b>Nothing</b>を返します</para>。
-          <para>プログラムによってブックに関連付けられているコマンド バーのセットを返す方法はありません</para>。
-          <para></para></remarks>
+          <para>ブックが別のアプリケーションに埋め込まれているし、ブックをダブルクリックすると、ユーザーがアクティブになる、 <b>Workbook</b>オブジェクトに対してこのプロパティを使用して他のアプリケーション内で使用できる Microsoft Excel のコマンド バーのセットを返します。 <b>それ以外の場合、 <b>Workbook</b>オブジェクトに対してこのプロパティを使用して返されます。</b></para>
+          <para>ブックに割り当てたコマンド バーを取得するのに、プログラミング的な手法は使用しません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Comments">
@@ -1316,19 +1631,19 @@
         <value>返します。 <see cref="T:System.String" />。</value>
         <remarks>To be added.</remarks>
         <example>
-          <para>この例では、作業中のシートで田中一郎によって追加されたすべてのコメントを削除します。</para>
+          <para>次の使用例は、作業中のブックで田中一郎によって追加されたすべてのコメントを削除します。</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
         </example>
         <example>
-          <para>この例では、作業中のシートで田中一郎によって追加されたすべてのコメントを削除します。</para>
+          <para>次の使用例は、作業中のブックで田中一郎によって追加されたすべてのコメントを削除します。</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
         </example>
         <example>
-          <para>この例では、作業中のシートで田中一郎によって追加されたすべてのコメントを削除します。</para>
+          <para>次の使用例は、作業中のブックで田中一郎によって追加されたすべてのコメントを削除します。</para>
           <code>&lt;span class="label"&gt;For Each c in ActiveSheet.Comments     If c.&lt;/span&gt;
 &lt;i&gt;Author&lt;/i&gt;
 &lt;span class="label"&gt;= "Jean Selva" Then c.Delete Next&lt;/span&gt;</code>
@@ -1453,8 +1768,9 @@
         <summary>指定された OLE オブジェクトのコンテナー アプリケーションを表すオブジェクトを返します。 読み取り専用 <b>オブジェクト</b> 。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティには、Microsoft Internet Explorer などのホスト アプリケーション内で Excel ブックを開いた場合は、コンテナー アプリケーションのオブジェクト モデルにアクセスする手段が用意されています</para>。
-          <para></para></remarks>
+          <para>Excel ブックが Microsoft Internet Explorer などのホスト アプリケーションの中で開かれている場合、このプロパティを使用すると、コンテナー アプリケーションのオブジェクト モデルにアクセスできます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ContentTypeProperties">
@@ -1546,8 +1862,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomDocumentProperties">
@@ -1576,10 +1893,12 @@
         <summary>値を取得または設定、<see cref="T:Microsoft.Office.Core.DocumentProperties" />指定されたブックのすべてのカスタム ドキュメント プロパティを表すコレクション。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、カスタム ドキュメント プロパティのコレクション全体を返します。使用、<see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" />コレクションの 1 つのメンバーを返します (、<see cref="T:Microsoft.Office.Core.DocumentProperty" />オブジェクト) のプロパティの名前またはコレクションのインデックス (数値) としてのいずれかを指定することで</para>。
-          <para><b>Item</b>メソッドは、<b>オートメーション</b>コレクションの既定の方法です</para>。
-          <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties" />を組み込みのドキュメント プロパティのコレクションを返すプロパティです</para>。
-          <para></para></remarks>
+          <para>このプロパティは、カスタム ドキュメント プロパティのコレクション全体を返します。 使用、<see cref="P:Microsoft.Office.Core.DocumentProperties.Item(System.Object)" />コレクションの 1 つのメンバーを返します (、<see cref="T:Microsoft.Office.Core.DocumentProperty" />オブジェクト) のプロパティの名前またはコレクションのインデックス (数値) としてのいずれかを指定することによって。</para>
+          <para>
+            <b>Item</b>メソッドは、<b>オートメーション</b>コレクションの既定の方法です。</para>
+          <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties" />を組み込みのドキュメント プロパティのコレクションを返すプロパティです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomViews">
@@ -1752,8 +2071,9 @@
         <summary>取得または設定のスタイル、<see cref="T:Microsoft.Office.Interop.Excel.TableStyles" />のスライサーの既定のスタイルとして使用されるオブジェクトです。</summary>
         <value>スタイルから、<see cref="T:Microsoft.Office.Interop.Excel.TableStyles" />のスライサーの既定のスタイルとして使用されるオブジェクトです。</value>
         <remarks>
-          <para>読み取り/書き込み</para>。
-          <para></para></remarks>
+          <para>値の取得および設定が可能です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DefaultTableStyle">
@@ -1930,14 +2250,29 @@
         <summary>図形の表示方法を設定または返します。 読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Excel.XlDisplayDrawingObjects" />。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>XlDisplayDrawingObjects 定数は、次のいずれかをすることができます</para>。
-          <list type="table"><item><term><paramref name="xlDisplayShapes" /></term>のすべての図形を表示します
-            </item>。
-            <item><term><paramref name="xlPlaceholders" /></term>単なるプレース ホルダーを表示します
-            </item>。
-            <item><term><paramref name="xlHide" /></term>のすべての図形を非表示にします
-            </item></list>。
-          <para></para></remarks>
+          <para>XlDisplayDrawingObjects 定数は、次のいずれかをすることができます。</para>
+          <list type="table">
+            <item>
+              <term>
+                <paramref name="xlDisplayShapes" />
+              </term>
+              <description>描画オブジェクトをすべて表示</description>
+            </item>
+            <item>
+              <term>
+                <paramref name="xlPlaceholders" />
+              </term>
+              <description>描画オブジェクトの位置のみ表示</description>
+            </item>
+            <item>
+              <term>
+                <paramref name="xlHide" />
+              </term>
+              <description>描画オブジェクトをすべて非表示</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayInkComments">
@@ -2027,8 +2362,9 @@
         <summary>返します、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.DocumentLibraryVersions" />がバージョン管理が有効になっているサーバー上のドキュメント ライブラリに格納されている共有ブックのバージョンのコレクションを表すコレクション。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DoNotPromptForConvert">
@@ -2206,8 +2542,9 @@
         <summary>保存は、一定の間隔ですべての形式のファイルを変更します。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Excel の場合に失敗すると、システムが失敗する、または場合は、システムが正常に終了しないように変更されたファイルを保存する Excel)、バックアップ ・ ファイルを開く、ユーザーはそれ以外の場合、失われた変更内容を保存することです。ユーザーは、Excel を再起動するとき、ドキュメント回復ウィンドウが開き、作業中のファイルをリカバリするためのオプションをユーザーに提供します。この機能を有効にする<b>場合は True</b> (既定値) にこのプロパティを設定します</para>。
-          <para></para></remarks>
+          <para>Microsoft Excel が失敗した場合、システム障害が発生した、または場合は、システムが正常に終了しないように変更されたファイルを保存する Excel)、バックアップ ・ ファイルを開く、ユーザーはそれ以外の場合、失われた変更内容を保存することです。 ユーザーは、Excel を再起動するとき、ドキュメント回復ウィンドウが開き、作業中のファイルをリカバリするためのオプションをユーザーに提供します。 このプロパティを<b>True</b> (既定値) に設定すると、この機能が有効にします。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableConnections">
@@ -2411,8 +2748,9 @@
           <b>Boolean</b>
         </value>
         <remarks>
-          <para>互換モードで特定の機能が無効にするか異なる方法で機能します。 たとえば、short_Excel2007 である行と列が Excel の以前のバージョンと比較した場合。Short_Excel2007 では構造化参照することもできます</para>。
-          <para></para></remarks>
+          <para>互換モードで特定の機能が無効になったり、機能が異なります。  たとえば、short_Excel2007 である行と列が Excel の以前のバージョンと比較した場合。 構造化参照は、short_Excel2007 で使用可能です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExclusiveAccess">
@@ -2443,9 +2781,10 @@
         <returns>To be added.</returns>
         <remarks>
           <para>
-            <b>ExclusiveAccess</b>メソッドは、ブックに行ったし、別のファイルに加えた変更内容を保存するのには他のユーザーがブックを開く必要があります変更を保存します</para>。
-          <para>指定されたブックが共有リストとして開かれていない場合、このメソッドは失敗します。ブックが共有リストとして開かれているかどうかを確認するに、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.MultiUserEditing" />プロパティ</para>。
-          <para></para></remarks>
+            <b>ExclusiveAccess</b>メソッドは、ブックに行ったし、別のファイルに加えた変更内容を保存するのには他のユーザーがブックを開く必要があります変更を保存します。</para>
+          <para>指定されたブックが共有リストとして開かれていない場合は、このメソッドは失敗します。 ブックが共有リストとして開かれているかどうかを確認するに、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.MultiUserEditing" />プロパティ。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportAsFixedFormat">
@@ -2493,8 +2832,10 @@
           <see cref="M:Microsoft.Office.Interop.Excel._Workbook.ExportAsFixedFormat(Microsoft.Office.Interop.Excel.XlFixedFormatType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />メソッドを使用して、ブックを PDF または XPS 形式に発行します。</summary>
         <remarks>To be added.</remarks>
         <example>
-          <para>次の使用例は、現在のファイルのディレクトリ内の標準的な品質で PDF を作成し、発行後にビューアーでファイルを表示します</para>。
-          <para><b>注</b>: PDF アドインがインストールされていない場合、エラーが発生します。</para></example>
+          <para>次の例では、標準の品質で現在のファイルのディレクトリに PDF を作成し、発行後にビューアーにファイルを表示します。</para>
+          <para>
+            <b>注</b>: PDF アドインがインストールされていない場合、エラーが発生します。</para>
+        </example>
       </Docs>
     </Member>
     <Member MemberName="FileFormat">
@@ -2526,8 +2867,9 @@
         <summary>ファイル形式とブックの種類を返します。 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlFileFormat" />。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>が選択またはインストールされている言語サポート (たとえば、日本語) によっては使用ができないこれらの定数のいくつかがあります</para>。
-          <para></para></remarks>
+          <para>選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Final">
@@ -2562,8 +2904,9 @@
           <b>ブール型 (Boolean)</b>
         </value>
         <remarks>
-          <para>値を設定マークの<b>場合は True</b>ブックを最終版には、受信者に通知 (存在する場合)、ブックが最終版では、し、ブックを読み取り専用に設定します</para>。
-          <para></para></remarks>
+          <para>値を設定、マークの<b>場合は True</b>ブック最終版として、受信者に通知 (ある場合) ブックが最終版では、ブックを読み取り専用に設定します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FollowHyperlink">
@@ -2696,8 +3039,9 @@
         <summary>文字列として、ディスク上のパスを含む、オブジェクトの名前を返します。 読み取り専用 <b>文字列</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Path" /> 、現在のファイル システム区切り記号の後に、プロパティの後に、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Name" />プロパティ</para>。
-          <para></para></remarks>
+          <para>このプロパティは、 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Path" /> 、現在のファイル システム区切り記号の後に、プロパティの後に、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Name" />プロパティ。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FullNameURLEncoded">
@@ -2860,8 +3204,9 @@
           <b>True</b> の場合、ブックに読み取りパスワードが設定されています。値の取得のみ可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>を使用して、ブックに読み取りパスワードを割り当てることができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" />メソッドです</para>。
-          <para></para></remarks>
+          <para>使用して、ブックに読み取りパスワードを割り当てることができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" />メソッドです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasRoutingSlip">
@@ -2906,8 +3251,9 @@
           <b>True</b> の場合、ブックに回覧先を設定します。値の取得および設定が可能です。ブール型 (<b>Boolean</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>既定値で回覧先を作成するこのプロパティを<b>True</b>に設定します。回覧先を削除して、プロパティを<b>False</b>に設定します</para>。
-          <para></para></remarks>
+          <para>このプロパティを <b>True</b> に設定すると、既定の回覧先が作成されます。<b>False</b> に設定すると、回覧先が削除されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasVBProject">
@@ -2938,8 +3284,9 @@
           <b>ブール型 (Boolean)</b>
         </value>
         <remarks>
-          <para>このプロパティは、プログラムでブックをマクロ有効ファイル形式に保存する必要があるかどうかを判断するに最適です。別の形式で保存されているマクロとコード プロジェクトのドキュメントに含まれているが失われます</para>。
-          <para></para></remarks>
+          <para>このプロパティは、マクロが有効なファイル形式でブックを保存する必要があるかどうかをプログラムで判断する場合に最も役立ちます。別の形式で保存すると、文書に含まれているマクロとコード プロジェクトが失われることがあります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HighlightChangesOnScreen">
@@ -3095,8 +3442,9 @@
         <summary>リストがアクティブでない場合、リストの境界線が表示するかどうかを指定する<b>ブール</b>値です。 枠線が表示される場合は<b>True</b>を返します。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティの設定は、ワークシート上にあるすべてのリストに影響が与えるされます</para>。
-          <para></para></remarks>
+          <para>このプロパティを設定すると、そのワークシート上にあるすべてのリストが影響を受けます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsAddin">
@@ -3129,17 +3477,26 @@
           <b>True</b> の場合、ブックをアドインとして実行します。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>
-            <b>True</b>にこのプロパティを設定すると、ブックは次の特徴:</para>
+          <para>このプロパティに <b>True</b> を設定すると、ブックは次の特性を持ちます。</para>
           <list type="bullet">
             <item>
-              <description>ブックが開いているときに変更を加えた場合、ブックを保存を求められることはありません</description>
-            </item>。
-            <item><description>ブック ウィンドウは表示されません</description></item>。
-            <item><description>([ツール] メニューの [マクロ] をポイントしてマクロをクリックすると表示されます)、[マクロ] ダイアログ ボックスで、ブックのマクロは表示されません</description></item>。
-            <item><description>ブック内のマクロも実行できます、[マクロ] ダイアログ ボックスから、見えなくも。さらに、マクロ名は、ブック名で修飾する必要ない</description></item>。
-            <item><description>SHIFT キーを押しながら、ブックを開くときに影響を与えません</description></item></list>。
-          <para></para></remarks>
+              <description>ブックを開いているときに変更を加えると、ブックの保存は要求されません。</description>
+            </item>
+            <item>
+              <description>ブック ウィンドウは表示されません。</description>
+            </item>
+            <item>
+              <description>ブックのマクロは、[マクロ] ダイアログ ボックス ([ツール] - [マクロ] - [マクロ]) に表示されません。</description>
+            </item>
+            <item>
+              <description>ブック内のマクロとは違う表示されている場合でも、[マクロ] ダイアログ ボックスから実行できます。 さらに、マクロ名にブック名で修飾する必要はありません。</description>
+            </item>
+            <item>
+              <description>ブックを開くときに、Shift キーを押しても、何も実行されません。</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsInplace">
@@ -3312,9 +3669,10 @@
         <summary>ブック内のリンクの配列を返します。 配列内の名前は、リンクされたドキュメント、エディション、DDE または OLE サーバーの名前です。 リンクがない場合は<b>Empty</b>値を返します。 <b>オブジェクト</b>です。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>配列の形式は、すべての種類が、パブリッシャーとサブスクライバーの 1 次元配列です。関数が返す文字列には、リンクの種類に応じて表記されたリンク ソースの名前が含まれています。たとえば、DDE リンクを使用して、"サーバー |ドキュメント!項目"の構文です</para>。
-          <para>パブリッシャーとサブスクライバーのリンクでは、返される配列は 2 次元です。配列の最初の列にはエディションの名前が含まれていて、テキストとして 2 番目の列にはエディションの参照が含まれています</para>。
-          <para></para></remarks>
+          <para>このメソッドでは、発行側と引用側以外のリンクのときは 1 次元配列を返します。返された文字列には、リンク ソースの名前がリンクの種類に適した表記法で示されます。たとえば DDE リンクでは、"Server|Document!Item" という構文が使われます。</para>
+          <para>このメソッドでは、発行側と引用側のリンクのときは 2 次元配列を返します。配列の最初の列は発行物の名前、2 列目は発行物に対する参照を示す文字列です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ListChangesOnNewSheet">
@@ -3519,8 +3877,10 @@
         <summary>
           <b>True</b> の場合、ブックが共有ファイルとして開かれています。値の取得のみ可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
-        <remarks>共有ファイルとしてブックを保存を使用する<para>、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" />メソッドです。共有モードからブックを排他モードに切り替えるを使用して、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.ExclusiveAccess" />メソッドです</para>。
-          <para></para></remarks>
+        <remarks>
+          <para>共有ファイルとしてブックを保存するには、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" />メソッドです。 共有モードからブックを排他モードに切り替えるを使用して、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.ExclusiveAccess" />メソッドです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -3829,8 +4189,9 @@
         <summary>指定されたブックを開くために指定する必要があるパスワードを設定または返します。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>を使用して強力なパスワードを大文字と小文字の英字、数字、および記号を組み合わせます。脆弱なパスワードは、これらの要素を混在させていません。強力なパスワード: Y6dh! et5。脆弱なパスワード: House27。メモに記録する必要があるないように覚えやすい強力なパスワードを使用します</para>。
-          <para></para></remarks>
+          <para>[!メモ] パスワードには、大文字、小文字、数字、記号を組み合わせた複雑なものを使用してください。これらの文字を混在させたものになっていないパスワードは強固とはいえません。たとえば、Y6dh!et5 は安全性の高いパスワードです。House27 は推測されやすいパスワードです。また、高い安全性を保ちながらも、書き留めておかなくても覚えておくことができるパスワードを使用してください。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PasswordEncryptionAlgorithm">
@@ -3859,8 +4220,9 @@
         <summary>指定されたブックのパスワードを暗号化するアルゴリズムを示す<b>文字列</b>を使用します。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" />のパスワードで保護されたブックのファイル プロパティを暗号化するかどうかを指定します</para>。
-          <para></para></remarks>
+          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" />のパスワードで保護されたブックのファイル プロパティを暗号化するかどうかを指定します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PasswordEncryptionFileProperties">
@@ -3889,8 +4251,9 @@
         <summary>パスワード保護された指定のブックのファイル プロパティを暗号化する場合は  <b>True</b> を返します。値の取得のみ可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" />指定されたパスワードで保護されたブックのファイル プロパティを暗号化するかどうかを指定します</para>。
-          <para></para></remarks>
+          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" />指定されたパスワードで保護されたブックのファイル プロパティを暗号化するかどうかを指定します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PasswordEncryptionKeyLength">
@@ -3919,8 +4282,9 @@
         <summary>指定されたブックのパスワードを暗号化するときに Microsoft Excel を使用してアルゴリズムのキーの長さを示す<b>整数</b>を返します。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" />指定されたパスワードで保護されたブックのファイル プロパティを暗号化するかどうかを指定します</para>。
-          <para></para></remarks>
+          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SetPasswordEncryptionOptions(System.Object,System.Object,System.Object,System.Object)" />指定されたパスワードで保護されたブックのファイル プロパティを暗号化するかどうかを指定します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PasswordEncryptionProvider">
@@ -4306,8 +4670,9 @@
         <param name="PrToFileName">省略可能な<b>オブジェクト</b>です。 場合<paramref name="PrintToFile" />は、設定に<b>は True</b>、この引数を指定して印刷しファイルの名前です。</param>
         <summary>オブジェクトを印刷します。</summary>
         <remarks>
-          <para>の説明における「ページ」<paramref name="From" />と<paramref name="To" />印刷されたページを参照して、シートまたはブックのページ全体ではありません</para>。
-          <para></para></remarks>
+          <para>説明における「ページ」<paramref name="From" />と<paramref name="To" />印刷されたページを参照して、シートまたはブックのページ全体ではありません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintOutEx">
@@ -4455,8 +4820,9 @@
         <param name="SharingPassword">省略可能な<b>オブジェクト</b>です。 共用としてファイルを保護するときに使用するパスワードを示す文字列を指定します。</param>
         <summary>ブックを保存し、共用として保護します。</summary>
         <remarks>
-          <para>を使用して強力なパスワードを大文字と小文字の英字、数字、および記号を組み合わせます。脆弱なパスワードは、これらの要素を混在させていません。強力なパスワード: Y6dh! et5。脆弱なパスワード: House27。メモに記録する必要があるないように覚えやすい強力なパスワードを使用します</para>。
-          <para></para></remarks>
+          <para>[!メモ] パスワードには、大文字、小文字、数字、記号を組み合わせた複雑なものを使用してください。これらの文字を混在させたものになっていないパスワードは強固とはいえません。たとえば、Y6dh!et5 は安全性の高いパスワードです。House27 は推測されやすいパスワードです。また、高い安全性を保ちながらも、書き留めておかなくても覚えておくことができるパスワードを使用してください。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProtectSharingEx">
@@ -4643,8 +5009,9 @@
         <summary>指定されたオブジェクトを読み取り専用モードで開いている場合、 <b>True</b> を返します。値の取得のみ可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、SharePoint サイトにリンクされているリストに対してのみ使用します</para>。
-          <para></para></remarks>
+          <para>このプロパティは、SharePoint サイトにリンクしているリストにのみ使用できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadOnlyRecommended">
@@ -4677,9 +5044,10 @@
           <b>True</b> の場合、指定されたブックは、[読み取り専用を推奨する] チェック ボックスをオンにして保存されています。値の取得のみ可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>を開くと、保存されたブックを読み取り専用を推奨、読み取り専用でブックを開くことを推奨するメッセージが表示されます</para>。
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" />メソッドでこのプロパティを変更します</para>。
-          <para></para></remarks>
+          <para>[読み取り専用を推奨する] チェック ボックスをオンにして保存されたブックを開こうとすると、読み取り専用で開くことを推奨するメッセージが表示されます。</para>
+          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" />メソッドでこのプロパティを変更します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RecheckSmartTags">
@@ -4733,8 +5101,9 @@
       <Docs>
         <summary>ブックの外部データ範囲とピボットテーブル レポートをすべて更新します。</summary>
         <remarks>
-          <para>を持つオブジェクトの<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.BackgroundQuery" />バック グラウンドで更新されるプロパティを<b>True</b>に設定します</para>。
-          <para></para></remarks>
+          <para>オブジェクトを持つ、<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.BackgroundQuery" />プロパティを<b>True</b>に設定がバック グラウンドで更新されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RejectAllChanges">
@@ -4794,9 +5163,9 @@
         <param name="Encoding">必要な<see cref="T:Microsoft.Office.Core.MsoEncoding" />。 ブックに適用するエンコードの種類を指定します。</param>
         <summary>指定されたドキュメント エンコードを使用して、ブックを HTML ドキュメントとして再読み込みします。</summary>
         <remarks>
-          <para>
-            <b>ReloadAs</b>メソッドを使用して HTML に適用できること<b>が可能</b>定数のみが使用されます</para>。
-          <para></para></remarks>
+          <para>HTML に適用できること<b>が可能</b>定数だけは、 <b>ReloadAs</b>メソッドを使用して動作します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveDocumentInformation">
@@ -4968,8 +5337,10 @@
       <Docs>
         <param name="ShowMessage">省略可能な<b>オブジェクト</b>です。 <b>False</b>は、メッセージは表示されません。 <b>True を指定</b>すると、メッセージが表示されます。</param>
         <summary>校閲用に送信されたブックの作成者に電子メール メッセージを送信し、校閲者がブックの校閲を終わったことを知らせます。</summary>
-        <remarks>使用の<para>、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SendForReview(System.Object,System.Object,System.Object,System.Object)" />ブックの共同校閲を開始するメソッドです。共同校閲サイクルの一部ではないブックで<b>ReplyWithChanges</b>メソッドを実行する場合、ユーザーにエラーが発生します</para>。
-          <para></para></remarks>
+        <remarks>
+          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SendForReview(System.Object,System.Object,System.Object,System.Object)" />ブックの共同校閲を開始するメソッドです。 共同校閲サイクルの一部ではないブックで<b>ReplyWithChanges</b>メソッドを実行する場合、エラーがユーザーに表示されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Research">
@@ -5056,8 +5427,10 @@
         <summary>共有リストとして開かれているときに、ブックが保存された回数を返します。 ブックが排他モードで開かれている場合は、このプロパティは 0 (ゼロ) を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>リモート コピーが保存されたときではなく、ブックのローカル コピーが保存された場合にのみ、 <b>RevisionNumber</b>プロパティを更新します</para>。
-          <para></para></remarks>
+          <para>
+            <b>RevisionNumber</b>プロパティは、ブックのローカル コピーが保存されたときではなくリモート コピーが保存された場合にのみ更新されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Route">
@@ -5089,8 +5462,9 @@
       <Docs>
         <summary>ブックの現在の回覧先を使って、ブックを回覧します。</summary>
         <remarks>
-          <para>ブックを設定するルーティング、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Routed" />プロパティを<b>True</b>にします</para>。
-          <para></para></remarks>
+          <para>ブックの設定をルーティング、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Routed" />プロパティを<b>True</b>にします。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Routed">
@@ -5126,7 +5500,7 @@
           <b>True</b> の場合、ブックは次の受信者に対して回覧済みです。<b>False</b> の場合、ブックの回覧が必要です。値の取得のみ可能です。ブール型 (<b>Boolean</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>場合は、ブックは、現在の受信者に対して回覧されなかった場合、このプロパティは常に<b>false の場合</b>(たとえば、文書には回覧用紙がない場合や明細が作成されただけで、ルーティングの場合).</para>
+          <para>ブックが現在の受信者に対して回覧されなかった場合 (たとえば、回覧先が設定されていないドキュメントの場合や、作成された直後の回覧先の場合)、このプロパティに必ず <b>False</b> が設定されます。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5219,10 +5593,11 @@
       <Docs>
         <summary>指定されたブックへの変更を保存します。</summary>
         <remarks>
-          <para>ブック ファイルを開くを使用して、<see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />メソッドです</para>。
-          <para>ディスクに書き込まずに保存されたブックのマーク、設定、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Saved" />プロパティを<b>True</b>にします</para>。
-          <para>、ブックを保存する最初の時間を使用して、 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 、ファイルの名前を指定します</para>。
-          <para></para></remarks>
+          <para>ブック ファイルを開くを使用して、<see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />メソッドです。</para>
+          <para>ディスクに書き込まずに保存されたブックのマーク、設定、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Saved" />プロパティを<b>True</b>にします。</para>
+          <para>初めてブックを保存するを使用して、 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 、ファイルの名前を指定します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveAs">
@@ -5306,9 +5681,10 @@
         <param name="Map">必要な<see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />オブジェクトです。 データに対して適用するスキーマ マップを指定します。</param>
         <summary>指定された XML スキーマ マップに対してマップされたデータを、XML データ ファイルへエクスポートします。</summary>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para>このメソッドと、実行時エラーの場合、Excel は、指定されたスキーマ マップを使用してデータをエクスポートできません。Excel がデータをエクスポートするのには指定されたスキーマ マップを使用できるかどうかを確認するを使用して、<see cref="P:Microsoft.Office.Interop.Excel.XmlMap.IsExportable" />プロパティ</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para>指定されたスキーマ マップを使用してデータをエクスポートできなかった場合、このメソッドは実行時エラーになります。 Excel がデータをエクスポートするのには指定されたスキーマ マップを使用できるかどうかを確認するを使用して、<see cref="P:Microsoft.Office.Interop.Excel.XmlMap.IsExportable" />プロパティ。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveCopyAs">
@@ -5377,8 +5753,11 @@
           <b>True</b> の場合、ブックは最後に保存された状態から変更されていません。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ブックが保存されていない場合、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Path" />プロパティは空の文字列を返します ("") です</para>。
-          <para>このプロパティに<b>True</b>を設定するには、それを保存するメッセージが表示されているかを保存せずに変更を加えたブックを終了する場合</para><para></para></remarks>
+          <para>ブックが保存されていない場合、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Path" />プロパティは空の文字列を返します ("")。</para>
+          <para>
+            <b>True</b>にこのプロパティを設定するには、または保存するメッセージが表示されているいずれかを保存せずに変更を加えたブックを閉じる場合。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveLinkValues">
@@ -5480,9 +5859,12 @@
         <summary>ワークシートを fax として指定された受信者に送信します。</summary>
         <remarks>
           <para>
-            <b>SendFaxOverInternet</b>メソッドを使用するには、fax サービスがユーザーのコンピューターで有効になっている必要があります</para>。Fax 番号を指定するために使用する形式の
-          <para>、<paramref name="Recipients" />パラメーターは、いずれかの<paramref name="recipientsfaxnumber@usersfaxprovider" />または<paramref name="recipientsname@recipientsfaxnumber" />。次のレジストリ パスを使用してユーザーの fax プロバイダーの情報にアクセスすることができます:</para><para>HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Common\Services\Fax</para><para>では、このレジストリ パスの FaxAddress キーの値を使用を決定するのには、受信者に対して使用する書式を設定します</para>。
-          <para></para></remarks>
+            <b>SendFaxOverInternet</b>メソッドを使用するには、ユーザーのコンピューターに fax サービスが有効になっている必要があります。</para>
+          <para>Fax 番号を指定するために使用する形式、<paramref name="Recipients" />パラメーターは、いずれかの<paramref name="recipientsfaxnumber@usersfaxprovider" />または<paramref name="recipientsname@recipientsfaxnumber" />。 次のレジストリ パスから、ユーザーの FAX プロバイダーの情報にアクセスできます。</para>
+          <para>HKEY_CURRENT_USER\Software\Microsoft\Office\11.0\Common\Services\Fax</para>
+          <para>このレジストリ パスの FaxAddress キーの値を参照して、宛先に使用する形式を判断できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SendForReview">
@@ -5517,8 +5899,9 @@
         <summary>校閲用のブックを指定された受信者に電子メール メッセージとして送信します。</summary>
         <remarks>
           <para>
-            <b>SendForReview</b>メソッドでは、グループ作業校閲サイクルを開始します。使用して、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.EndReview" />校閲サイクルを終了します</para>。
-          <para></para></remarks>
+            <b>SendForReview</b> メソッドは、共同校閲サイクルを開始します。 使用して、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.EndReview" />校閲サイクルを終了します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SendMail">
@@ -5646,7 +6029,7 @@
           <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ServerViewableItems" />
         </value>
         <remarks>
-          <para>このプロパティは、Excel Services に発行できるアイテムのコレクションを返します。 テーブル、ピボット テーブル、名前付き範囲、およびグラフに含めることができます。 シートの組み合わせではない限り、シートを含めることも、前述の一覧の前にします。 </para>
+          <para>このプロパティは、Excel Services に発行できるアイテムのコレクションを返します。  テーブル、ピボット テーブル、名前付き範囲、およびグラフに含めることができます。  シートの組み合わせではない限り、シートを含めることも、前述の一覧の前にします。  </para>
           <para></para>
         </remarks>
       </Docs>
@@ -5717,9 +6100,11 @@
         <summary>パスワードを使用するブックの暗号化のオプションを設定します。</summary>
         <remarks>
           <para>
-            <paramref name="PasswordEncryptionProvider" />、 <paramref name="PasswordEncryptionAlgorithm" />、および<paramref name="PasswordEncryptionKeyLength" />は互いに独立しています。選択された暗号化プロバイダーは、一連のアルゴリズムとキーの長さを選択することができますを制限します</para>。
-          <para>の<paramref name="PasswordEncryptionKeyLength" />引数を指定のキーの長さの範囲に制限はありません。範囲も暗号化アルゴリズムを決定する暗号化サービス プロバイダーによって決定されます</para>。
-          <para></para></remarks>
+            <paramref name="PasswordEncryptionProvider" />、 <paramref name="PasswordEncryptionAlgorithm" />、および<paramref name="PasswordEncryptionKeyLength" />は互いに独立しています。 選択された暗号化プロバイダーは、一連のアルゴリズムとキーの長さを選択することができますを制限します。</para>
+          <para>
+            <paramref name="PasswordEncryptionKeyLength" />引数を指定のキーの長さの範囲に制限はありません。 範囲は、また、暗号化アルゴリズムを決定する暗号化サービス プロバイダーによって決定されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SharedWorkspace">
@@ -5814,8 +6199,9 @@
           <b>True</b> の場合、共有ファイルとして開かれているブックで、コンフリクトの履歴のワークシートを表示しています。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>指定されたブックが共有リストとして開かれていない場合、このプロパティは失敗します。ブックが共有リストとして開かれているかどうかを確認するに、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.MultiUserEditing" />プロパティ</para>。
-          <para></para></remarks>
+          <para>指定されたブックが共有リストとして開かれていない場合は、このプロパティは失敗します。 ブックが共有リストとして開かれているかどうかを確認するに、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.MultiUserEditing" />プロパティ。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowPivotChartActiveFields">
@@ -5849,7 +6235,7 @@
           <b>ブール型 (Boolean)</b>
         </value>
         <remarks>
-          <para>このプロパティは、(オン/オフ) は、ピボット グラフ フィルター ウィンドウの表示/非表示を制御します。 それを表示するためには、<b>ピボット グラフ</b>オブジェクトを選択してください。</para>
+          <para>このプロパティは、(オン/オフ) は、ピボット グラフ フィルター ウィンドウの表示/非表示を制御します。  それを表示するためには、<b>ピボット グラフ</b>オブジェクトを選択してください。 </para>
           <para></para>
         </remarks>
       </Docs>
@@ -5914,7 +6300,8 @@
           <see cref="T:Microsoft.Office.Core.SignatureSet" />
         </value>
         <remarks>
-          <para>デジタル Excel2007 ブックに署名し、他の署名を確認する Microsoft CryptoAPI と固有のデジタル署名証明書が必要です。CryptoAPI は、Microsoft Internet Explorer 4.01 以降にインストールされます。証明機関からデジタル署名証明書を取得できます。</para>
+          <para>デジタル Excel2007 ブックを署名すると、それらの他の署名の確認、Microsoft CryptoAPI と固有のデジタル署名証明書を必要があります。 CryptoAPI は、Microsoft Internet Explorer 4.01 以降にインストールされます。 デジタル署名証明書は、認証機関から取得できます。
+</para>
           <para></para>
         </remarks>
       </Docs>
@@ -5946,8 +6333,9 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" /> 、ブックに関連付けられているオブジェクト。</value>
         <remarks>
-          <para>読み取り/書き込み</para>。
-          <para></para></remarks>
+          <para>値の取得および設定が可能です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SmartDocument">
@@ -6136,8 +6524,9 @@
           <see cref="T:Microsoft.Office.Interop.Excel.TableStyles" />
         </value>
         <remarks>
-          <para>プロパティによって返された表スタイルを操作することができます</para>。
-          <para></para></remarks>
+          <para>プロパティから返された表スタイルを操作できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TemplateRemoveExtData">
@@ -6268,8 +6657,9 @@
       <Docs>
         <summary>フォームのデザイン モードのオンとオフを切り替えます。</summary>
         <remarks>
-          <para>フォームのデザイン モードでは、Excel の場合、コントロール ツールボックス] ツールバーが表示されます。このツールバーを使用すると、コマンド ボタン、スクロール バー、オプション ボタンなどの ActiveX コントロールを挿入します。フォームのデザイン モードでは、イベント プロシージャは実行されず、埋め込みコントロールをクリックすると、コントロールのサイズ変更ハンドルが表示されます</para>。
-          <para></para></remarks>
+          <para>Excel では、フォームのデザイン モードでは、コントロール ツールボックス] ツールバーが表示されます。 このツールバーを使用すると、コマンド ボタン、スクロール バー、オプション ボタンなどの ActiveX コントロールを挿入します。 フォームのデザイン モードでイベント プロシージャを実行するには、埋め込みコントロールをクリックすると、コントロールのサイズ変更ハンドルが表示されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Unprotect">
@@ -6300,8 +6690,9 @@
         <param name="Password">省略可能な<b>オブジェクト</b>です。 シートまたはブックの保護を解除するパスワードを示す文字列。 シートまたはブックがパスワードで保護されていない場合、この引数は無視されます。 パスワードで保護されているシートに対してこの引数を省略すると、パスワードが要求されるでしょう。 パスワードで保護されているブックに対してこの引数を省略すると、メソッドは失敗します。</param>
         <summary>シートまたはブックの保護を解除します。保護されていないシートやブックに対しては、このメソッドは無効です。</summary>
         <remarks>
-          <para>、パスワードを忘れた場合は、保護を解除できません、シートやブック。安全な場所に、パスワードと、対応するドキュメント名のリストを保持することをお勧めします</para>。
-          <para></para></remarks>
+          <para>パスワードを忘れると、シートまたはブックの保護を解除できなくなってしまうので注意してください。パスワードおよび対応するブック名またはシート名を一覧表にして、安全な場所に保管しておくことをお勧めします。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UnprotectSharing">
@@ -6329,8 +6720,9 @@
         <param name="SharingPassword">省略可能な<b>オブジェクト</b>です。 ブックのパスワードを指定します。</param>
         <summary>共有保護を解除し、ブックを保存します。</summary>
         <remarks>
-          <para>を使用して強力なパスワードを大文字と小文字の英字、数字、および記号を組み合わせます。脆弱なパスワードは、これらの要素を混在させていません。強力なパスワード: Y6dh! et5。脆弱なパスワード: House27。メモに記録する必要があるないように覚えやすい強力なパスワードを使用します</para>。
-          <para></para></remarks>
+          <para>[!メモ] パスワードには、大文字、小文字、数字、記号を組み合わせた複雑なものを使用してください。これらの文字を混在させたものになっていないパスワードは強固とはいえません。たとえば、Y6dh!et5 は安全性の高いパスワードです。House27 は推測されやすいパスワードです。また、高い安全性を保ちながらも、書き留めておかなくても覚えておくことができるパスワードを使用してください。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateFromFile">
@@ -6359,8 +6751,9 @@
       <Docs>
         <summary>メモリ上の読み取り専用ブックを、ディスク上で保存されているものに置き換えます (ディスク上のブックの方が新しい場合)。ブックが開かれてから、ディスク上のブックが変更されていない場合には、更新が行われません。</summary>
         <remarks>
-          <para>このメソッドはブックが A のユーザーによって読み取り専用として開くし、ユーザー B が読み取り/書き込みとして開かれるユーザー B は、A する必要があるブックのオープン、ユーザーを閉じると、ブックを再び開くと表示の設定が失われることがなく、更新されたコピーを入手できないときに、ブックの新しいバージョンをディスクに保存します。 場合、<b>UpdateFromFile</b>メソッドは、ブックをディスク ファイルからのメモリ内コピーを更新します</para>。
-          <para></para></remarks>
+          <para>このメソッドは、ブックが A のユーザーによって読み取り専用として開くし、ユーザー B が読み取り/書き込みとして開かれたときに便利です。ユーザー B は、A する必要があるブックのオープン、ユーザーを閉じると、ブックを再び開くと表示の設定が失われることがなく、更新されたコピーを入手できないときに、ブックの新しいバージョンをディスクに保存します。 場合、 <b>UpdateFromFile</b>メソッドは、ブックをディスク ファイルからのメモリ内コピーを更新します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateLink">
@@ -6394,8 +6787,9 @@
         <summary>Excel、DDE、OLE のいずれかのリンクを更新します。</summary>
         <remarks>
           <para>
-            <b>UpdateLink</b>メソッドはパラメーターなしで呼び出されると、Excel のワークシートのすべてのリンクを更新するのには既定値です</para>。
-          <para></para></remarks>
+            <b>UpdateLink</b>メソッドはパラメーターなしで呼び出されると、Excel のワークシートのすべてのリンクを更新するのには既定値です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateLinks">
@@ -6534,8 +6928,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>UserStatus</b>プロパティは、指定したブックを読み取り専用で開かれているユーザーに関する情報を返しません</para>。
-          <para></para></remarks>
+            <b>UserStatus</b>プロパティは、指定したブックを読み取り専用で開かれているユーザーに関する情報を返しません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UseWholeCellCriteria">
@@ -6732,8 +7127,9 @@
         <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> 、指定されたブック内のすべてのウィンドウを表すコレクション。 <b>Windows</b>オブジェクトの読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティの表示と非表示の両方の windows コレクションを返します</para>。
-          <para></para></remarks>
+          <para>このプロパティは、表示および非表示の両方のウィンドウのコレクションを返します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Worksheets">
@@ -6762,9 +7158,10 @@
         <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> 、指定されたブックのすべてのワークシートを表すコレクション。 読み取り専用の<b>シート</b>のオブジェクトです。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>を返しますすべてのワークシートを作業中のブックでオブジェクト修飾子を指定せずにこのプロパティを使用します</para>。
-          <para>このプロパティは、マクロ シートを返しませんので、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4MacroSheets" />プロパティまたは<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4IntlMacroSheets" />これらのシートを返すプロパティです</para>。
-          <para></para></remarks>
+          <para>このプロパティでオブジェクト修飾子を指定しないコードを使用すると、作業中のブックのすべてのワークシートが返されます。</para>
+          <para>このプロパティはマクロ シートを返しません。使用して、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4MacroSheets" />プロパティまたは<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Excel4IntlMacroSheets" />これらのシートを返すプロパティです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WritePassword">
@@ -6828,8 +7225,9 @@
           <b>True</b> の場合、指定されたブックを書き込み保護 (書き込みパスワードが設定) しています。値の取得のみ可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" />このプロパティを設定します</para>。
-          <para></para></remarks>
+          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.SaveAs(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSaveAsAccessMode,System.Object,System.Object,System.Object,System.Object,System.Object)" />このプロパティを設定します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WriteReservedBy">
@@ -6896,12 +7294,21 @@
         <summary>作業中のブックに XML データ ファイルをインポートします。 返します。 <see cref="T:Microsoft.Office.Interop.Excel.XlXmlImportResult" />。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para>の値を指定しない、<paramref name="Destination" />パラメーターは、既存のマッピングにデータをインポートする場合</para>。
-          <para><b>XMLImport</b>メソッドの実行時エラーを生成すると、次の条件:</para><list type="bullet"><item><description>指定された XML データに構文エラーが含まれています</description></item>。
-            <item><description>指定したデータがワークシートに収まらないために、インポート処理がキャンセルされました</description></item></list>。
-          <para>使用、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.XmlImportXml(System.String,Microsoft.Office.Interop.Excel.XmlMap@,System.Object,System.Object)" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />がメモリに読み込まれている XML データをインポートするオブジェクトです</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para>値を指定しない、<paramref name="Destination" />パラメーターは、既存のマッピングにデータをインポートする場合。</para>
+          <para>
+            <b>XMLImport</b>メソッドの実行時エラーを生成するが次の条件になります。</para>
+          <list type="bullet">
+            <item>
+              <description>指定した XML データに構文エラーがある場合。</description>
+            </item>
+            <item>
+              <description>指定したデータがワークシートに収まらないためインポート処理がキャンセルされた場合。</description>
+            </item>
+          </list>
+          <para>使用、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.XmlImportXml(System.String,Microsoft.Office.Interop.Excel.XmlMap@,System.Object,System.Object)" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />がメモリに読み込まれている XML データをインポートするオブジェクトです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlImportXml">
@@ -6937,12 +7344,21 @@
         <summary>メモリに読み込まれている XML データ ストリームをインポートします。 返します。 <see cref="T:Microsoft.Office.Interop.Excel.XlXmlImportResult" />。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para>の値を指定しない、<paramref name="Destination" />パラメーターは、既存のマッピングにデータをインポートする場合</para>。
-          <para><b>XMLImport</b>メソッドの実行時エラーを生成すると、次の条件:</para><list type="bullet"><item><description>指定された XML データに構文エラーが含まれています</description></item>。
-            <item><description>指定したデータがワークシートに収まらないために、インポート処理がキャンセルされました</description></item></list>。
-          <para>使用、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.XmlImport(System.String,Microsoft.Office.Interop.Excel.XmlMap@,System.Object,System.Object)" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />オブジェクトを現在のブックに XML データ ファイルをインポートします</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para>値を指定しない、<paramref name="Destination" />パラメーターは、既存のマッピングにデータをインポートする場合。</para>
+          <para>
+            <b>XMLImport</b>メソッドの実行時エラーを生成するが次の条件になります。</para>
+          <list type="bullet">
+            <item>
+              <description>指定した XML データに構文エラーがある場合。</description>
+            </item>
+            <item>
+              <description>指定したデータがワークシートに収まらないためインポート処理がキャンセルされた場合。</description>
+            </item>
+          </list>
+          <para>使用、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.XmlImport(System.String,Microsoft.Office.Interop.Excel.XmlMap@,System.Object,System.Object)" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />オブジェクトを現在のブックに XML データ ファイルをインポートします。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlMaps">
@@ -6971,8 +7387,9 @@
         <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.XmlMaps" /> 、指定されたブックに追加されているスキーマ マップを表すコレクション。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlNamespaces">
@@ -7001,8 +7418,9 @@
         <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.XmlNamespaces" /> 、指定されたブックに含まれている XML 名前空間を表すコレクション。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

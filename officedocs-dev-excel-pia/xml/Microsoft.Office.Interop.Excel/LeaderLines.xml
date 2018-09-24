@@ -1,10 +1,10 @@
 <Type Name="LeaderLines" FullName="Microsoft.Office.Interop.Excel.LeaderLines">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f3159f39681e331a65f1147c07be26f3c75a9620" />
+    <Meta Name="ms.openlocfilehash" Value="966ec7cb4dee40d61d3a60b81b21661fea46bad2" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582272" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface LeaderLines" />
@@ -31,10 +31,11 @@
   <Docs>
     <summary>円グラフの引き出し線を表します。</summary>
     <remarks>
-      <para>リーダー ラインは、データ ラベルをデータ ポイントに接続します。1 本の引出線を表すオブジェクトが存在しないためこのオブジェクトはコレクションではありません</para>。
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.Series.LeaderLines" />プロパティが返すオブジェクトを<b>返すプロパティです</b></para>。
-      <para>このオブジェクトは、円グラフにのみ適用されます</para>。
-      <para></para></remarks>
+      <para>引き出し線はデータ ラベルと各データ系列を結び付ける役割をします。 このオブジェクトでは、1 本の引出線を表すオブジェクトがないため、コレクションがありません。</para>
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.Series.LeaderLines" />プロパティが返すオブジェクトを<b>返すプロパティです</b>。</para>
+      <para>このオブジェクトは、円グラフにのみ使用できます。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -119,10 +120,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">

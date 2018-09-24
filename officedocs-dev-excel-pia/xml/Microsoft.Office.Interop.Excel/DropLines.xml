@@ -1,10 +1,10 @@
 <Type Name="DropLines" FullName="Microsoft.Office.Interop.Excel.DropLines">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b812f4bbf5c164a5e6bd7c838afce5e6befd46ba" />
+    <Meta Name="ms.openlocfilehash" Value="75b4c26df638c0a7eb516bce66d8566fed0d8a59" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580879" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DropLines" />
@@ -31,10 +31,11 @@
   <Docs>
     <summary>グラフ種類グループの降下線を表します。</summary>
     <remarks>
-      <para>ドロップの線は、x 軸をグラフ内のポイントを接続します。だけの行と面グラフ グループには、降下線を持つことができます。このオブジェクトでは、コレクションはありません。オブジェクトを 1 つのドロップの行ではありません。降下線を表示、グラフ種類グループのすべてのポイントに対して有効にされているいずれかの方法か、無効に</para>
-      <para>使用の<see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.DropLines" />オブジェクトを<b>返すプロパティ</b>を返すプロパティです</para>。
-      <para>場合、<see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.HasDropLines" />プロパティが<b>False</b>で、オブジェクトを<b>返すプロパティ</b>のほとんどのプロパティは無効になります</para>。
-      <para></para></remarks>
+      <para>降下線はグラフのデータ要素と x 軸を結ぶ線です。降下線を設定できるのは、折れ線グラフ グループと面グラフ グループだけです。単体の DropLine オブジェクトというオブジェクトはないので、降下線を表示するか非表示にするかを、グラフ種類グループの各データ要素ごとに設定することはできません。</para>
+      <para>使用の<see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.DropLines" />オブジェクトを<b>返すプロパティ</b>を返すプロパティです。</para>
+      <para>場合、<see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.HasDropLines" />プロパティが<b>False</b>で、オブジェクトを<b>返すプロパティ</b>のほとんどのプロパティは無効になります。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -119,10 +120,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -260,8 +262,10 @@
       <Docs>
         <summary>オブジェクトを選択します。</summary>
         <returns>To be added.</returns>
-        <remarks>セルまたはセル範囲を選択するには、 <b>Select</b>メソッドを使用して<para>。1 つのセルをアクティブ セルにするを使用して、<see cref="M:Microsoft.Office.Interop.Excel._Chart.Activate" />メソッドです</para>。
-          <para></para></remarks>
+        <remarks>
+          <para>セルまたはセル範囲を選択するには、 <b>Select</b>メソッドを使用します。 1 つのセルをアクティブ セルにするを使用して、<see cref="M:Microsoft.Office.Interop.Excel._Chart.Activate" />メソッドです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

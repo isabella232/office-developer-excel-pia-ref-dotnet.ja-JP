@@ -1,10 +1,10 @@
 <Type Name="ChartGroups" FullName="Microsoft.Office.Interop.Excel.ChartGroups">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ed49e202a12a761d2ea1f0fade680591aab69567" />
+    <Meta Name="ms.openlocfilehash" Value="d05b335ff2ac16ca069b154e14a4f4ac9e9eb27d" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582769" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartGroups : System.Collections.IEnumerable" />
@@ -35,9 +35,37 @@
   <Docs>
     <summary>すべてのコレクション、<see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" />指定されたグラフ内のオブジェクト。</summary>
     <remarks>
-      <para>各<see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" />オブジェクトを表す 1 つまたは複数の系列が同じ形式のグラフにプロットします。グラフには、1 つ以上のグラフ グループが含まれています、各グラフ種類グループには、1 つまたは複数の系列が含まれている系列ごとに 1 つまたは複数のポイントが含まれています。グループ、すべてのデータ系列を折れ線グラフ形式でプロットとすべてのデータ系列を横棒グラフ形式でプロット、横棒グラフ グループの両方など、1 つのグラフを含む可能性があります</para>。使用の
-      <para>、<see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" />メソッドを<b>指定しないで、ChartGroups</b>コレクションを取得します。<b>指定しないで、ChartGroups</b>を使用して (<paramref name="index" />)、<paramref name="index" />は、グラフ種類グループのインデックス番号で、1 つの<b>ChartGroup</b>オブジェクトを取得します。グラフがアクティブにされている場合を使用できます<see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />です</para>。
-      <para>特定のグラフ グループのインデックス番号は、そのグループに使用されるグラフの形式が変更された場合に変更することがありますグラフ グループ専用のメソッドのいずれかを使用して特定のグラフ グループを取得するのには容易になります。<see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />メソッドは、グラフでは、円グラフ グループのコレクションを返します、<see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />メソッド、折れ線グラフ グループのコレクションを返します。これらの各メソッドは、1 つの<b>ChartGroup</b>オブジェクトをインデックス番号を持つか、インデックス番号を<b>指定しないで、ChartGroups</b>コレクションを取得することがなく使用できます。次のグラフ グループ メソッドは、利用可能な:</para><list type="bullet"><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" />メソッド</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" />メソッド</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" />メソッド</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" />メソッド</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />メソッド</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />メソッド</description></item></list><para></para></remarks>
+      <para>各<see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" />オブジェクトを表す 1 つまたは複数の系列が同じ形式のグラフにプロットします。 1 つのグラフには、1 つ以上のグラフ グループが含まれ、各グラフ グループには 1 つ以上のデータ系列が、そして各データ系列には、1 つ以上のポイントが含まれています。 たとえば、1 つのグラフに、すべてのデータ系列を折れ線グラフ形式でプロットした折れ線グラフ グループと、すべてのデータ系列を横棒グラフ形式でプロットした横棒グラフ グループの両方を含めることができます。</para>
+      <para>使用して、<see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" />メソッドを<b>指定しないで、ChartGroups</b>コレクションを取得します。 <b>指定しないで、ChartGroups</b>を使用して (<paramref name="index" />)、<paramref name="index" />は、グラフ種類グループのインデックス番号で、1 つの<b>ChartGroup</b>オブジェクトを取得します。 使用することができる場合は、グラフがアクティブ化されて、 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />。</para>
+      <para>特定のグラフ グループのインデックス番号は、そのグループに使用されるグラフの形式が変更された場合に変更するためは、グラフ グループ専用のメソッドのいずれかを使用して特定のグラフ グループを取得しやすい場合があります。 <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />メソッドは、グラフでは、円グラフ グループのコレクションを返します、<see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />メソッド、折れ線グラフ グループのコレクションを返します。 これらの各メソッドは、1 つの<b>ChartGroup</b>オブジェクトをインデックス番号を持つか、インデックス番号を<b>指定しないで、ChartGroups</b>コレクションを取得することがなく使用できます。 次のグラフ グループ メソッドは、使用できます。</para>
+      <list type="bullet">
+        <item>
+          <description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" />メソッド</description>
+        </item>
+        <item>
+          <description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" />メソッド</description>
+        </item>
+        <item>
+          <description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" />メソッド</description>
+        </item>
+        <item>
+          <description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" />メソッド</description>
+        </item>
+        <item>
+          <description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />メソッド</description>
+        </item>
+        <item>
+          <description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />メソッド</description>
+        </item>
+      </list>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -123,8 +151,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

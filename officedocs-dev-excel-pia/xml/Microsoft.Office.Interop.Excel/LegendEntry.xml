@@ -1,10 +1,10 @@
 <Type Name="LegendEntry" FullName="Microsoft.Office.Interop.Excel.LegendEntry">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7de5505ce151e50ee7cf3bb22663696d2b691245" />
+    <Meta Name="ms.openlocfilehash" Value="983427dff3c6cf28781fdc671025f8966ca21207" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576945" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface LegendEntry" />
@@ -32,14 +32,17 @@
     <summary>グラフの凡例の凡例文字列を表します。</summary>
     <remarks>
       <para>
-        <b>凡例</b>のオブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.LegendEntries" />コレクションです。<b>返すメソッド</b>のコレクションには、<b>凡例で凡例</b>が含まれています</para>。
-      <para>各凡例文字列には 2 つの部分: 凡例の項目と、凡例マーカーは、凡例文字列に、関連付けられたデータ系列またはグラフの近似曲線を視覚的にリンクに関連付けられている一連の名前のエントリのテキストです。凡例マーカーとその関連付けられたデータ系列または近似曲線の書式設定プロパティは、<see cref="T:Microsoft.Office.Interop.Excel.LegendKey" />オブジェクトです</para>。
-      <para>凡例項目のテキストを変更できません。<b>凡例</b>文字列には、フォント フォーマットをサポートし、それらを削除することができます。パターンの書式設定はサポートされていませんの凡例のエントリです。エントリのサイズと位置が固定されています</para>。
-      <para>使用して<b>返すメソッド</b>(<paramref name="index" />)、<paramref name="index" />の凡例エントリのインデックス番号、1 つの<b>凡例</b>オブジェクトを取得するには。名前で凡例項目を返すことはできません</para>。
-      <para>、インデックス番号は、凡例内の凡例項目の位置を表します。LegendEntries(1)、凡例の一番上には、1 の凡例の一番下にします</para>。
-      <para>データ系列または凡例文字列に対応する近似曲線を取得する直接的な方法はありません</para>。
-      <para>を削除し、凡例を設定してそれらを再作成してそれらを復元する唯一の方法は、凡例のエントリが削除された後、<see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" />のグラフの<b>場合は False</b>と<b>True</b>に戻ります</para>。
-      <para></para></remarks>
+        <b>凡例</b>のオブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.LegendEntries" />コレクションです。 <b>LegendEntries</b> コレクションには、凡例のすべての <b>LegendEntry</b> オブジェクトが含まれています。</para>
+      <para>各凡例文字列には 2 つの部分: 凡例の項目と、凡例マーカーは、凡例文字列に、関連付けられたデータ系列またはグラフの近似曲線を視覚的にリンクに関連付けられている一連の名前のエントリのテキストです。 凡例マーカーとその関連付けられたデータ系列または近似曲線の書式設定プロパティは、<see cref="T:Microsoft.Office.Interop.Excel.LegendKey" />オブジェクトです。</para>
+      <para>
+        <b>LegendEntry</b> オブジェクトは、フォントの設定およびオブジェクトの削除が可能です。しかし、凡例文字列の文字列は変更できません。凡例文字列にパターンを設定したり、位置やサイズを変更することもできません。</para>
+      <para>
+        <b>返すメソッド</b>を使用して (<paramref name="index" />)、<paramref name="index" />の凡例エントリのインデックス番号、1 つの<b>凡例</b>オブジェクトを取得するには。 名前で、凡例のエントリを返すことはできません。</para>
+      <para>インデックス番号は、凡例内での凡例文字列の位置と対応します。 LegendEntries(1)、凡例の一番上には、1 の凡例の一番下にあります。</para>
+      <para>LegendEntry オブジェクトから、凡例文字列に対応しているデータ系列または近似曲線を直接返す方法はありません。</para>
+      <para>削除し、凡例を設定してそれらを再作成してそれらを復元する唯一の方法は、凡例のエントリが削除された後、<see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" />のグラフの<b>場合は False</b>と<b>True</b>に戻ります。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -134,10 +137,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">

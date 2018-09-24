@@ -1,10 +1,10 @@
 <Type Name="ProtectedViewWindows" FullName="Microsoft.Office.Interop.Excel.ProtectedViewWindows">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5f5d6154812eece1e15f8ff475735c633b7bf0bc" />
+    <Meta Name="ms.openlocfilehash" Value="66b22fff8688e9bbf701a61d74932c01a62ad6e6" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578919" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ProtectedViewWindows : System.Collections.IEnumerable" />
@@ -35,8 +35,9 @@
   <Docs>
     <summary>コレクション、<see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" />アプリケーションでは、現在すべての保護されたビュー ウィンドウを表すオブジェクトを開きます。</summary>
     <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Application.ProtectedViewWindows" />を返すプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" />コレクションです</para>。
-      <para></para></remarks>
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Application.ProtectedViewWindows" />を返すプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" />コレクションです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -101,8 +102,9 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.Application" />オブジェクトです。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -159,9 +161,10 @@
         <summary>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>を取得します。</summary>
         <value>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>。</value>
         <remarks>
-          <para>読み取り専用<b>long</b></para> 。
-          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。<see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindows.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+          <para>読み取り専用<b>long</b>です。</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindows.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -261,8 +264,9 @@
         <summary>新しい保護されたビュー ウィンドウで、指定されたブックを開きます。</summary>
         <returns>A<see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" />オブジェクトです。</returns>
         <remarks>
-          <para>しないように、アプリケーションにハード コーディングされたパスワードを使用しています。ユーザーからパスワードを要求するプロシージャでは、パスワードが必要である場合、変数に格納およびコード内で変数を使用します</para>。
-          <para></para></remarks>
+          <para>アプリケーションにハードコードされたパスワードを使わないでください。プロシージャでパスワードが必要な場合は、ユーザーに要求したパスワードを変数に格納し、プログラムでその変数を使います。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -291,8 +295,9 @@
         <summary>指定したオブジェクトの親オブジェクトを取得します。</summary>
         <value>指定したオブジェクトの親オブジェクトです。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

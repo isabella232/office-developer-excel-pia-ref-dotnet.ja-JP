@@ -1,10 +1,10 @@
 <Type Name="Walls" FullName="Microsoft.Office.Interop.Excel.Walls">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a799677b46bf969b126a84541e7f118b6dcbcf47" />
+    <Meta Name="ms.openlocfilehash" Value="694e055e0616d70a2ab7c59205f377db0e237a53" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576049" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Walls" />
@@ -31,9 +31,10 @@
   <Docs>
     <summary>3-D グラフの壁面を表します。</summary>
     <remarks>
-      <para>このオブジェクトはコレクションはありません。単一の壁面を表すオブジェクトがないです。単位として、すべての壁を返す必要があります</para>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Chart.Walls" /><b>の壁</b>オブジェクトを取得するプロパティ</para>。
-      <para></para></remarks>
+      <para>このオブジェクトでは、コレクションはありません。 単一の壁面を表すオブジェクトがないです。単位として、すべての壁を返す必要があります。</para>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Chart.Walls" /><b>の壁</b>オブジェクトを返すプロパティです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -147,10 +148,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -271,9 +273,46 @@
         <summary>オブジェクトの名前を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>次の表に、値の例の<b>Name</b>プロパティと関連するプロパティの指定、OLAP データ ソースの一意の名前] [ヨーロッパ] です。[東京都] です。[東京]"OLAP 以外のデータ ソースのアイテム名が「東京」とします</para>。
-          <list type="table"><item><term><b>キャプション</b></term><description>パリ</description><description>パリ</description></item><item><term><b>名</b></term><description>[ヨーロッパ]. [東京都] です。[東京](読み取り専用)</description><description>パリ</description></item><item><term><b>SourceName</b></term><description>[ヨーロッパ]. [東京都] です。[東京](読み取り専用)</description><description>(SQL プロパティの値が読み取り専用と同じ)</description></item><item><term><b>値</b></term><description>[ヨーロッパ]. [東京都] です。[東京](読み取り専用)</description><description>パリ</description></item></list><para>へのインデックスを指定する場合、<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />コレクションでは、次の表に示すように構文を使用することができます</para>。
-          <list type="table"><item><term>式です。返すプロパティ (「[ヨーロッパ]。 [東京都] です。[東京]")</term><description>式です。PivotItems("Paris")</description></item></list><para></para></remarks>
+          <para>次の表に、値の例の<b>Name</b>プロパティと関連するプロパティの指定、OLAP データ ソースの一意の名前] [ヨーロッパ] です。[東京都] です。[東京]"OLAP 以外のデータ ソースのアイテム名が「東京」とします。</para>
+          <list type="table">
+            <item>
+              <term>
+                <b>キャプション</b>
+              </term>
+              <description>東京</description>
+              <description>東京</description>
+            </item>
+            <item>
+              <term>
+                <b>名</b>
+              </term>
+              <description>[都道府県].[東京都].[東京] (読み取り専用)</description>
+              <description>東京</description>
+            </item>
+            <item>
+              <term>
+                <b>SourceName</b>
+              </term>
+              <description>[都道府県].[東京都].[東京] (読み取り専用)</description>
+              <description>(SQL プロパティと同じ値、読み取り専用)</description>
+            </item>
+            <item>
+              <term>
+                <b>値</b>
+              </term>
+              <description>[都道府県].[東京都].[東京] (読み取り専用)</description>
+              <description>東京</description>
+            </item>
+          </list>
+          <para>インデックスを指定する場合、<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />コレクションでは、次の表に示すように構文を使用することができます。</para>
+          <list type="table">
+            <item>
+              <term>式です。返すプロパティ (「[ヨーロッパ]。 [東京都] です。[東京]")</term>
+              <description>式です。PivotItems("Paris")</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -327,8 +366,9 @@
       <Docs>
         <summary>クリップボードからグラフの壁面に図を貼り付けます。</summary>
         <remarks>
-          <para>列、バー、行、またはレーダー チャートでこのメソッドを使用することができます。<b>MarkerStyle</b>プロパティを<b>xlMarkerStylePicture</b>に設定します</para>。
-          <para></para></remarks>
+          <para>このメソッドは、縦棒グラフ、横棒グラフ、折れ線グラフ、およびレーダー チャートに使用することができます。 <b>MarkerStyle</b>プロパティを<b>xlMarkerStylePicture</b>に設定します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureType">
@@ -361,8 +401,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>リンク</b>のプロパティには、以下の定数のいずれかを指定できます: <b>xlStack</b>または<b>xlStretch</b></para> 。
-          <para></para></remarks>
+            <b>リンク</b>のプロパティには、以下の定数のいずれかを指定できます: <b>xlStack</b>または<b>xlStretch</b>。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureUnit">
@@ -453,8 +494,9 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>壁の厚さを設定するのにはこのプロパティを使用します。 既定の厚さは、0 です</para>。
-          <para></para></remarks>
+          <para>壁の厚さを設定するためにこのプロパティを使用します。既定の厚さは 0 です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

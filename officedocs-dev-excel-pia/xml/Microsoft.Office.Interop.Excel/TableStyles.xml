@@ -1,10 +1,10 @@
 <Type Name="TableStyles" FullName="Microsoft.Office.Interop.Excel.TableStyles">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="03e47761cb02c3ab6b4ff2d4f2536bdbb8cc8a76" />
+    <Meta Name="ms.openlocfilehash" Value="70d5a69d0e4e826dda6e82f38beab66614060a9a" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579598" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface TableStyles : System.Collections.IEnumerable" />
@@ -35,12 +35,31 @@
   <Docs>
     <summary>表に適用できるスタイルを表します。</summary>
     <remarks>
-      <para>の表のスタイルは、テーブル全体またはピボット テーブルの書式を設定する方法を提供します。表のスタイルには、テーブル全体を書式設定には、既存のオート フォーマット機能が置き換えられます</para>。
-      <para>表のスタイルとは異なる自動フォーマットから次のように:</para><para></para><list type="bullet"><item><description>を作成して、独自のユーザー設定のテーブル スタイルを再利用します</description></item>。
-        <item><description>の表のスタイルはテーマと共に機能します。 </description></item><item><description>のドキュメントのテーマの配色パターンやフォント パターンを変更すると、組み込みの表スタイルの外観が変更されます</description></item>。
-        <item><description>の表のスタイルは、オブジェクトの変更として、ピボット テーブルやテーブルなどのオブジェクトにスタイルを適用できます。 テーブルがそれらに適用するスタイルのことを忘れないでくださいし、は適切に再表示セルが追加、削除、非表示し、表示されます</description></item>。
-        <item><description>表のスタイルがリボンでビジュアルなユーザー インターフェイスを持っています</description></item></list>。
-      <para></para><para></para></remarks>
+      <para>表スタイルによって、表またはピボットテーブル全体を書式設定できます。表スタイルは、表全体の書式を設定する既存のオートフォーマット機能に置き換わります。</para>
+      <para>表スタイルは、次の点でオートフォーマットとは異なります。</para>
+      <para></para>
+      <list type="bullet">
+        <item>
+          <description>作成し、独自のユーザー設定のテーブル スタイルを再利用できます。
+</description>
+        </item>
+        <item>
+          <description>表スタイルはテーマと共に機能します。  </description>
+        </item>
+        <item>
+          <description>ドキュメントのテーマの配色パターンやフォント パターンを変更すると、組み込みの表スタイルの外観が変更されます。 </description>
+        </item>
+        <item>
+          <description>表スタイルは、オブジェクトが変更されても、ピボットテーブルや表のようなオブジェクトにスタイルを再適用できます。表は、テーマに適用されたスタイルを記憶し、セルが追加、削除、非表示、表示されると適切に再表示します。</description>
+        </item>
+        <item>
+          <description>表のスタイルには、リボン内のビジュアルなユーザー インターフェイスがあります。
+</description>
+        </item>
+      </list>
+      <para></para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -135,8 +154,9 @@
           <b>オブジェクト</b>
         </value>
         <remarks>
-          <para>そのオブジェクトのアプリケーションを取得するのには OLE オートメーション オブジェクトに対してこのプロパティを使用することができます</para>。
-          <para></para></remarks>
+          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクト用のアプリケーションを取得できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -197,8 +217,9 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。 <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当  <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

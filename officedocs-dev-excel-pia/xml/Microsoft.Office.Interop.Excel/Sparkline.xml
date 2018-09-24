@@ -1,10 +1,10 @@
 <Type Name="Sparkline" FullName="Microsoft.Office.Interop.Excel.Sparkline">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f6bbcc759a0ae6dc4daf56bf9557c19d8ef56e98" />
+    <Meta Name="ms.openlocfilehash" Value="c3b25443564b1ba5ad0aba47d0107551ef56fce0" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581880" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Sparkline" />
@@ -31,8 +31,9 @@
   <Docs>
     <summary>単一のスパークラインを表します。</summary>
     <remarks>
-      <para>使用、 <see cref="M:Microsoft.Office.Interop.Excel.Sparkline.ModifyLocation(Microsoft.Office.Interop.Excel.Range)" /> 、1 つのスパーク ラインの位置を変更し、使用するメソッド、<see cref="M:Microsoft.Office.Interop.Excel.Sparkline.ModifySourceData(System.String)" />元のデータの範囲を変更する方法。スパーク ラインのグループを一度に使用するには、メンバーを使用して、<see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" />オブジェクトです</para>。
-      <para></para></remarks>
+      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.Sparkline.ModifyLocation(Microsoft.Office.Interop.Excel.Range)" /> 、1 つのスパーク ラインの位置を変更し、使用するメソッド、<see cref="M:Microsoft.Office.Interop.Excel.Sparkline.ModifySourceData(System.String)" />元データの範囲を変更する方法です。 スパーク ラインのグループを一度に使用するには、メンバーを使用して、<see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" />オブジェクトです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,8 +63,9 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.Application" />オブジェクトです。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -92,9 +94,10 @@
         <summary>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>を取得します。</summary>
         <value>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>。</value>
         <remarks>
-          <para>読み取り専用<b>long</b></para> 。
-          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。<see cref="P:Microsoft.Office.Interop.Excel.Sparkline.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+          <para>読み取り専用<b>long</b>です。</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 <see cref="P:Microsoft.Office.Interop.Excel.Sparkline.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -126,8 +129,9 @@
         <summary>取得または 1 つのスパーク ラインの位置を設定します。</summary>
         <value>単一のスパーク ラインの場所です。</value>
         <remarks>
-          <para>読み取り/書き込み</para>。
-          <para></para></remarks>
+          <para>値の取得および設定が可能です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ModifyLocation">
@@ -183,8 +187,9 @@
         <param name="Formula">範囲の元データが含まれています。</param>
         <summary>単一のスパークラインのソース データを変更します。</summary>
         <remarks>
-          <para>1 つのスパーク ラインのデータ ソースの範囲は、継続的である必要があります</para>。
-          <para></para></remarks>
+          <para>単一のスパークラインのデータ ソースの範囲は、連続している必要があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -213,8 +218,9 @@
         <summary>親を取得します<see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" />指定したオブジェクトのオブジェクトです。</summary>
         <value>親<see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" />指定したオブジェクトのオブジェクトです。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceData">
@@ -246,9 +252,10 @@
         <summary>取得または 1 つのスパーク ラインの元データを含む範囲を設定します。</summary>
         <value>この範囲は、1 つのスパーク ラインの元データが含まれています。</value>
         <remarks>
-          <para>読み取り/書き込み</para>。
-          <para>1 つのスパーク ラインのデータ ソースの範囲は、継続的である必要があります</para>。
-          <para></para></remarks>
+          <para>値の取得および設定が可能です。</para>
+          <para>単一のスパークラインのデータ ソースの範囲は、連続している必要があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

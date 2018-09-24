@@ -1,10 +1,10 @@
 <Type Name="DiagramNodeChildren" FullName="Microsoft.Office.Interop.Excel.DiagramNodeChildren">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="400abd43bd6a9f21fbbd69dbd9ad5dc5baf8bf44" />
+    <Meta Name="ms.openlocfilehash" Value="c37b83ec609da17fbc1f54f6970e5d09d6941f16" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20573543" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DiagramNodeChildren : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
@@ -34,8 +34,10 @@
   </Attributes>
   <Docs>
     <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" />図表の子ノードを表すオブジェクト。</summary>
-    <remarks>使用の<para>、 <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" /><b>DiagamNodeChildren</b>コレクションを取得するのには、 <b>DiagramNode</b>オブジェクトのプロパティです。個々 の子図表ノードをコレクションに追加するを使用して、<see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" />メソッドです。コレクション内の個々 の子図表節点を返すを使用して、<see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" />または<see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" />プロパティ、または<see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" />メソッドです</para>。
-      <para></para></remarks>
+    <remarks>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" /><b>DiagamNodeChildren</b>コレクションを取得するのには、 <b>DiagramNode</b>オブジェクトのプロパティです。 個々 の子図表ノードをコレクションに追加するを使用して、<see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" />メソッドです。 コレクション内の個々 の子図表節点を返すを使用して、<see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" />または<see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" />プロパティ、または<see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" />メソッドです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AddNode">
@@ -156,10 +158,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FirstChild">

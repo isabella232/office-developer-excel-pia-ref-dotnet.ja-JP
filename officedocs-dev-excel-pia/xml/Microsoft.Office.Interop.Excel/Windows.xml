@@ -1,10 +1,10 @@
 <Type Name="Windows" FullName="Microsoft.Office.Interop.Excel.Windows">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4e22f5c32e648c50b21962a902607fb0d77f69c0" />
+    <Meta Name="ms.openlocfilehash" Value="216071def9d8f4a2c63cf628170e2d5fcd646a71" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20574922" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
@@ -35,11 +35,13 @@
   <Docs>
     <summary>すべてのコレクション、<see cref="T:Microsoft.Office.Interop.Excel.Window" />では、Microsoft Excel のオブジェクトです。</summary>
     <remarks>
-      <para>によって返される<b>ウィンドウ</b>のコレクション、<see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.Application" />で<b>ウィンドウ</b>のコレクションが返されますが、オブジェクトがすべての windows アプリケーションでは、含まれています、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />オブジェクトには、ウィンドウのウィンドウだけが含まれています。指定されたブックにします</para>。
-      <para><b>ウィンドウ</b>または<b>ブック</b>のオブジェクトの<b>NewWindow</b>メソッドを使用して、新しいウィンドウを作成し、コレクションに追加します</para>。
-      <para><b>Windows</b>(<paramref name="index" />)、 <paramref name="index" /> 、ウィンドウ名またはインデックス番号を 1 つの<b>ウィンドウ</b>オブジェクトを取得するには</para>。
-      <para>作業中のウィンドウは、常に windows (1) ことに注意してください</para>。
-      <para></para></remarks>
+      <para>によって返される<b>ウィンドウ</b>のコレクション、<see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.Application" />で<b>ウィンドウ</b>のコレクションが返されますが、オブジェクトがすべての windows アプリケーションでは、含まれています、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />オブジェクトには、ウィンドウのウィンドウだけが含まれています。指定されたブックです。</para>
+      <para>新しいウィンドウを作成し、コレクションに追加するには、<b>ウィンドウ</b>または<b>ブック</b>のオブジェクトの<b>NewWindow</b>メソッドを使用します。</para>
+      <para>
+        <b>Windows</b>を使用して、(<paramref name="index" />)、<paramref name="index" />のウィンドウ名またはインデックス番号を 1 つの<b>ウィンドウ</b>オブジェクトを取得するには。</para>
+      <para>アクティブ ウィンドウは常に Windows(1) と記述します。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -192,8 +194,10 @@
         <summary>サイド バイ サイド モードでは、2 つのウィンドウを開きます。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>と<b>CompareSideBySideWith</b>メソッドを使用することはできません、<see cref="T:Microsoft.Office.Interop.Excel._Application" />オブジェクト、または<see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" />プロパティ</para>。
-          <para></para></remarks>
+          <para>
+            <b>CompareSideBySideWith</b>メソッドを使用することはできません、<see cref="T:Microsoft.Office.Interop.Excel._Application" />オブジェクト、または<see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" />プロパティ。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -250,10 +254,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -371,8 +376,10 @@
       <Parameters />
       <Docs>
         <summary>並べて比較している 2 つのワークシートのウィンドウの位置をリセットします。</summary>
-        <remarks>並べて比較している 2 つのワークシートの位置をリセットするのには<para>使用<b>ResetPositionsSideBySide</b>メソッドです。たとえば、ユーザーが最小化または比較する 2 つのワークシート ウィンドウのいずれかを最大化、 <b>ResetPositionsSideBySide</b>メソッドの表示をリセット、2 つのウィンドウが表示されるように並べてもう一度</para>。
-          <para></para></remarks>
+        <remarks>
+          <para>並べて比較している 2 つのワークシートの位置をリセットするのにには、 <b>ResetPositionsSideBySide</b>メソッドを使用します。 たとえば、ユーザーが最小化したり、比較される 2 つのワークシート ウィンドウのいずれかを最大限に高め場合、は、2 つのウィンドウが表示されるように並べてもう一度<b>ResetPositionsSideBySide</b>メソッドの表示はリセットされます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SyncScrollingSideBySide">

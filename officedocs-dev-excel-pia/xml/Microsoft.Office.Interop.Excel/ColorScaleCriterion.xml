@@ -1,10 +1,10 @@
 <Type Name="ColorScaleCriterion" FullName="Microsoft.Office.Interop.Excel.ColorScaleCriterion">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="24fc2abe615803db23b08c339fdd812ffa384856" />
+    <Meta Name="ms.openlocfilehash" Value="71a5a3fdaa7d1393ccedac6ff867343c7fd8ae11" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580543" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ColorScaleCriterion" />
@@ -31,11 +31,12 @@
   <Docs>
     <summary>色書式の条件付き書式の最小、中間、最高しきい値の条件を表します。</summary>
     <remarks>
-      <para>各<b>ColorScaleCriterion</b>の一部である、<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />コレクションです。<b>ColorScaleCriteria</b>を使用 (<paramref name="index" />)、個々 の条件を返します</para>。
-      <para>を設定すること、 <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" />、 <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Value" />、および<see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.FormatColor" />のカラー スケールの各閾値</para>。
-      <para></para></remarks>
+      <para>各<b>ColorScaleCriterion</b>の一部である、<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />コレクションです。 <b>ColorScaleCriteria</b>を使用 (<paramref name="index" />)、個々 の条件を返します。</para>
+      <para>設定することができます、 <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" />、 <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Value" />、および<see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.FormatColor" />のカラー スケールの各閾値。</para>
+      <para></para>
+    </remarks>
     <example>
-      <para>コード例を次は、数値の範囲を作成し、その範囲に 2 色スケールの条件付き書式ルールを適用します。インデックスを作成して青、赤、最高しきい値に最小しきい値の色が割り当てられます、<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />個々 の条件を設定するコレクションです。</para>
+      <para>コード例を次は、数値の範囲を作成し、その範囲に 2 色スケールの条件付き書式ルールを適用します。 インデックスを作成して青、赤、最高しきい値に最小しきい値の色が割り当てられます、<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />個々 の条件を設定するコレクションです。</para>
     </example>
   </Docs>
   <Members>
@@ -67,8 +68,9 @@
           <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" />
         </value>
         <remarks>
-          <para>、最小、中間、または最大しきい値の色を任意のユーザー設定の色に設定するにを使用して、<see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Color" />プロパティまたは使用して、<see cref="P:Microsoft.Office.Interop.Excel.FormatColor.ThemeColor" />プロパティ</para>。
-          <para></para></remarks>
+          <para>最小、中間、または最大しきい値の色を任意のユーザー設定の色に設定するにを使用して、<see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Color" />プロパティです。使用して、または、<see cref="P:Microsoft.Office.Interop.Excel.FormatColor.ThemeColor" />プロパティ。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -99,8 +101,9 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>2 色スケール条件付き書式ルールでは、このプロパティは最小しきい値に「1」、最大しきい値が「2」の値を返します。3 色スケールのルールを使用している場合、値になります 1、最小値、「2」の中間点、および最大しきい値が「3」です</para>。
-          <para></para></remarks>
+          <para>2 色スケールの条件付き書式ルールの場合、このプロパティは最小しきい値に "1" の値、最大しきい値に "2" の値を返します。3 色スケールのルールを使用している場合、値は最小しきい値が "1"、中間しきい値が "2"、最大しきい値が "3" となります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -134,8 +137,9 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes" />
         </value>
         <remarks>
-          <para>データ バーまたはカラーのしきい値の値の型の小数点部桁数は、数値、パーセント、式、または百分位にあります。種類を百分位に設定関数を使用、百分位 Excel でのしきい値の値を確認する</para>。
-          <para></para></remarks>
+          <para>種類のしきい値の値のデータ バーまたはカラー スケールできるは数値、パーセント、式、または百分位です。 種類を百分位に設定関数を使用、百分位 Excel でのしきい値の値を確認します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -169,9 +173,10 @@
           <b>オブジェクト</b>
         </value>
         <remarks>
-          <para>場合にのみ値を設定することができます、<see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" />定数は、次のいずれかに条件付き書式のプロパティを設定: <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" />、 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" />、 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" />、または<see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" />です</para>。
-          <para>のしきい値の種類が数式の場合、<b>文字列</b>式を設定できます。数式が 1 つの数値を返す必要があります</para>。
-          <para></para></remarks>
+          <para>場合にのみ値を設定することができます、<see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriterion.Type" />定数は、次のいずれかに条件付き書式のプロパティを設定: <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" />、 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" />、 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" />、または<see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" />。</para>
+          <para>しきい値の種類が数式の場合は、<b>文字列</b>としての式を設定できます。 数式は、1 つの数値を返す必要があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

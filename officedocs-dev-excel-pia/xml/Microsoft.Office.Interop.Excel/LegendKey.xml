@@ -1,10 +1,10 @@
 <Type Name="LegendKey" FullName="Microsoft.Office.Interop.Excel.LegendKey">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e97e2c6b2812c0c27e94200204837ef948711b2c" />
+    <Meta Name="ms.openlocfilehash" Value="5c0f463a642ccce4a5ea924e670fcd78c73fdfeb" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580732" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface LegendKey" />
@@ -31,9 +31,10 @@
   <Docs>
     <summary>グラフの凡例の凡例マーカーを表します。</summary>
     <remarks>
-      <para>各凡例マーカーは、凡例文字列に、関連付けられたデータ系列またはグラフの近似曲線を視覚的にリンクされている画像です。凡例マーカーは、関連付けられたデータ系列または近似曲線の他の書式を変更同時に 1 つの書式を変更するようにリンクします</para>。
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.LegendEntry.LegendKey" />を返すプロパティの<see cref="T:Microsoft.Office.Interop.Excel.LegendKey" />オブジェクトです</para>。
-      <para></para></remarks>
+      <para>凡例マーカーは、凡例文字列に対応しているデータ系列または近似曲線が、グラフの中でどのように表示されているかを例示します。凡例マーカーとデータ系列 (または近似曲線) は、どちらかの書式を変更するともう一方の書式も連動して変更されるようになっています。</para>
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.LegendEntry.LegendKey" />を返すプロパティの<see cref="T:Microsoft.Office.Interop.Excel.LegendKey" />オブジェクトです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -147,10 +148,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -177,8 +179,9 @@
         <summary>オブジェクトを削除します。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>を削除する、<see cref="T:Microsoft.Office.Interop.Excel.LegendKey" />オブジェクトは、データ系列全体を削除します</para>。
-          <para></para></remarks>
+          <para>削除する、<see cref="T:Microsoft.Office.Interop.Excel.LegendKey" />オブジェクトは、データ系列全体を削除します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -546,31 +549,31 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlMarkerStyle" />これら<b>が可能</b>のいずれかのことができます:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlMarkerStyle" />これら<b>が可能</b>のいずれかのことができます。</para>
           <para>
-            <b>xlMarkerStyleAutomatic</b>。自動マーカー</para>
+            <b>xlMarkerStyleAutomatic</b> 自動マーカー</para>
           <para>
-            <b>xlMarkerStyleCircle</b>。円形のマーカー</para>
+            <b>xlMarkerStyleCircle</b> 円形のマーカー</para>
           <para>
-            <b>xlMarkerStyleDash</b>。長い棒のマーカー</para>
+            <b>xlMarkerStyleDash</b> 長い棒のマーカー</para>
           <para>
-            <b>xlMarkerStyleDiamond</b>。ひし形のマーカー</para>
+            <b>xlMarkerStyleDiamond</b> ひし形のマーカー</para>
           <para>
-            <b>xlMarkerStyleDot</b>。短い棒のマーカー</para>
+            <b>xlMarkerStyleDot</b> 短い棒のマーカー</para>
           <para>
-            <b>xlMarkerStyleNone</b>。マーカーなし</para>
+            <b>xlMarkerStyleNone</b> マーカーなし</para>
           <para>
-            <b>xlMarkerStylePicture</b>。マーカーの画像</para>
+            <b>xlMarkerStylePicture</b> 画像マーカー</para>
           <para>
-            <b>xlMarkerStylePlus</b>。プラス記号付きのマーカーを正方形</para>
+            <b>xlMarkerStylePlus</b> 正記号 (+) 付きの四角形のマーカー</para>
           <para>
-            <b>xlMarkerStyleSquare</b>。マーカーを正方形</para>
+            <b>xlMarkerStyleSquare</b> 四角形のマーカー</para>
           <para>
-            <b>xlMarkerStyleStar</b>。アスタリスク付きのマーカーを正方形</para>
+            <b>xlMarkerStyleStar</b> アスタリスク (*) 付きの四角形のマーカー</para>
           <para>
-            <b>xlMarkerStyleTriangle</b>。三角形のマーカー</para>
+            <b>xlMarkerStyleTriangle</b> 三角形のマーカー</para>
           <para>
-            <b>xlMarkerStyleX</b>。X マーカーを正方形</para>
+            <b>xlMarkerStyleX</b> X 印付きの四角形のマーカー</para>
           <para></para>
         </remarks>
       </Docs>
@@ -633,7 +636,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>リンク</b>のプロパティには、次のいずれかを指定できる<see cref="T:Microsoft.Office.Interop.Excel.XlChartPictureType" />定数:</para>
+            <b>リンク</b>のプロパティには、次のいずれかを指定できる<see cref="T:Microsoft.Office.Interop.Excel.XlChartPictureType" />定数。</para>
           <para>
             <b>xlStack</b>
           </para>

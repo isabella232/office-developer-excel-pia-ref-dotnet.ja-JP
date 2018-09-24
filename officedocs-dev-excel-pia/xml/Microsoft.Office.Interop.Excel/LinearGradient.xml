@@ -1,10 +1,10 @@
 <Type Name="LinearGradient" FullName="Microsoft.Office.Interop.Excel.LinearGradient">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="250babde04104bda95819ab5ffb2aca0cc58b39e" />
+    <Meta Name="ms.openlocfilehash" Value="82c4b43f65abfbbe4c1e37be6fcbcaa9b08edec1" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20573816" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface LinearGradient" />
@@ -36,10 +36,14 @@
         <b>注</b>: を使用する場合の考慮事項<see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" />オブジェクト</para>
       <list type="bullet">
         <item>
-          <description>にアクセスしようとしています、<see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.Interior" />オブジェクトに既存のグラデーションの塗りつぶしがないと、実行時エラーです。 注意してください、 <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> Gradient プロパティにアクセスする前にプロパティ</description>
-        </item>。
-        <item><description>場合<see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" />以外のグラデーションの種類では、グラデーションの種類から変更は、<see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" />オブジェクトは、既定値が表示されます</description></item></list>。
-      <para></para></remarks>
+          <description>アクセスしようとしたとき、<see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.Interior" />オブジェクトに既存のグラデーションの塗りつぶしがないと、実行時エラーが発生します。  注意してください、 <see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" /> Gradient プロパティにアクセスする前にプロパティ。</description>
+        </item>
+        <item>
+          <description>場合<see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" />以外のグラデーションの種類では、グラデーションの種類から変更は、<see cref="T:Microsoft.Office.Interop.Excel.LinearGradient" />オブジェクトは、既定値が表示されます。</description>
+        </item>
+      </list>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -129,7 +133,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。Creator プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。Creator プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 用の Excel で使用するように設計されました。たとえば、Excel の作成元コードは XCEL です。 </para>
           <para></para>
         </remarks>
       </Docs>
@@ -165,8 +169,9 @@
           <b>Double</b>
         </value>
         <remarks>
-          <para>0 からまでの値を使用して - 360 です</para>。
-          <para></para></remarks>
+          <para>0 ～ 360 の範囲の値を指定します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

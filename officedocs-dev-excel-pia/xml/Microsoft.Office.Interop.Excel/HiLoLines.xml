@@ -1,10 +1,10 @@
 <Type Name="HiLoLines" FullName="Microsoft.Office.Interop.Excel.HiLoLines">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5300eb63b2cb9ad8129b976b20d3040d87976583" />
+    <Meta Name="ms.openlocfilehash" Value="a7b28a36ca59d5770eb15c3211f159b99148efcd" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586129" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface HiLoLines" />
@@ -31,9 +31,10 @@
   <Docs>
     <summary>グラフ種類グループの高低線を表します。</summary>
     <remarks>
-      <para>高低線は、グラフ種類グループ内のすべてのカテゴリで最も低いポイントで最高のポイントを接続します。のみ、2-d 折れ線グラフ グループは、高低線を持つことができます。このオブジェクトでは、コレクションはありません。1 つの高低線を表すオブジェクトがないです。高低線のグラフ種類グループのすべてのポイントに対して有効にされているいずれかの方法か、無効に</para>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.HiLoLines" />プロパティを<b>返すプロパティ</b>オブジェクトを取得します</para>。
-      <para></para></remarks>
+      <para>高低線は、グラフ種類グループの各項目で、最高の値のデータ要素と最低の値のデータ要素を結ぶ線です。高低線を設定できるのは 2-D 折れ線グラフまたは株価チャートのグループだけです。単体の HiLoLine オブジェクトというオブジェクトはないので、高低線を表示するか非表示にするかを、グラフ種類グループの各データ要素ごとに設定することはできません。</para>
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.HiLoLines" />プロパティが返すオブジェクトを<b>返すプロパティです</b>。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -118,10 +119,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">

@@ -1,10 +1,10 @@
 <Type Name="ChartView" FullName="Microsoft.Office.Interop.Excel.ChartView">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="64e3d0eb74ea386ed7789a74ad85ee0f5db4ab04" />
+    <Meta Name="ms.openlocfilehash" Value="66d11355e519fc34b24dc963c54e03b1573babd9" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577204" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartView" />
@@ -32,11 +32,11 @@
     <summary>グラフのビューを表します。</summary>
     <remarks>
       <para>
-        <b>ChartView</b>オブジェクトは、によって返されるオブジェクトの 1 つ、<see cref="T:Microsoft.Office.Interop.Excel.SheetViews" />のようなコレクション、<see cref="T:Microsoft.Office.Interop.Excel.Sheets" />コレクションです。<b>ChartView</b>オブジェクトはグラフ シートのみに適用されます。  </para>
+        <b>ChartView</b>オブジェクトは、によって返されるオブジェクトの 1 つ、<see cref="T:Microsoft.Office.Interop.Excel.SheetViews" />のようなコレクション、<see cref="T:Microsoft.Office.Interop.Excel.Sheets" />コレクションです。 <b>ChartView</b>オブジェクトはグラフ シートのみに適用されます。   </para>
       <para></para>
     </remarks>
     <example>
-      <para>次の使用例は、 <b>ChartView</b>オブジェクトを返します</para>。
+      <para>次の使用例は、 <b>ChartView</b>オブジェクトを返します。</para>
       <code>&lt;span class="label"&gt;ActiveWindow.SheetViews.Item(1)  
 
 
@@ -165,7 +165,8 @@
 
 
 
-&lt;/span&gt;</code><para>次の使用例、<see cref="T:Microsoft.Office.Interop.Excel._Chart" />オブジェクトです</para>。
+&lt;/span&gt;</code>
+      <para>返す例を次の<see cref="T:Microsoft.Office.Interop.Excel._Chart" />オブジェクトです。</para>
       <code>&lt;span class="label"&gt;ActiveWindow.SheetViews.Item(1).Sheet  
 
 
@@ -294,7 +295,8 @@
 
 
 
-&lt;/span&gt;</code></example>
+&lt;/span&gt;</code>
+    </example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -324,8 +326,9 @@
         <value>
           <b>アプリケーション</b>(上記参照)</value>
         <remarks>
-          <para>そのオブジェクトのアプリケーションを取得するのには OLE オートメーション オブジェクトに対してこのプロパティを使用することができます</para>。
-          <para></para></remarks>
+          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクト用のアプリケーションを取得できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -356,8 +359,9 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。 <see cref="P:Microsoft.Office.Interop.Excel.ChartView.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当  <see cref="P:Microsoft.Office.Interop.Excel.ChartView.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
