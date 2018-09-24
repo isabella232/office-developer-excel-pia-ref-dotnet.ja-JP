@@ -1,10 +1,10 @@
 <Type Name="Errors" FullName="Microsoft.Office.Interop.Excel.Errors">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b4f3cf8bb7a50a611d29713aebe29d640596ae60" />
+    <Meta Name="ms.openlocfilehash" Value="73bd6a9f765a75f5056ac06000a5ad65696c4627" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576399" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Errors" />
@@ -31,9 +31,11 @@
   <Docs>
     <summary>セル範囲のさまざまなエラーを表します。</summary>
     <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.Range.Errors" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.Range" /><b>のエラー</b>オブジェクトを取得するコレクションです</para>。
-      <para><b>エラー</b>オブジェクトが返されると、使用できます、<see cref="P:Microsoft.Office.Interop.Excel.Error.Value" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.Error" />特定のエラー チェックの条件をチェックするオブジェクトです</para>。
-      <para></para></remarks>
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.Range.Errors" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.Range" /><b>のエラー</b>オブジェクトを取得するコレクションです。</para>
+      <para>
+        <b>エラー</b>オブジェクトが返されると、使用できます、<see cref="P:Microsoft.Office.Interop.Excel.Error.Value" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Error" />オブジェクトが特定のエラー チェックの条件をチェックします。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -69,10 +71,11 @@
         <summary>エラー チェックの各オプションの状態を取得することができます。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>参照、<see cref="T:Microsoft.Office.Interop.Excel.Errors" />エラー チェック オプションに関連付けられたインデックス値の一覧を表示するオブジェクトです</para>。
-          <para></para></remarks>
+          <para>参照、<see cref="T:Microsoft.Office.Interop.Excel.Errors" />エラー チェック オプションに関連付けられたインデックス値の一覧を表示するオブジェクトです。</para>
+          <para></para>
+        </remarks>
         <example>
-          <para>この例では、文字列として記述された数値がセル A1 に配置されます。 Microsoft Excel、かどうかを数はセル A1 のテキストとして書き込まれますそれに応じてユーザーに通知します。</para>
+          <para>次の使用例では、セル A1 に数値を文字列として設定します。その数値が文字列として記述されているかどうか判別し、その結果に応じて、メッセージを表示します。</para>
           <code>&lt;span class="label"&gt;Sub CheckForErrors()
 
 
@@ -1157,10 +1160,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">

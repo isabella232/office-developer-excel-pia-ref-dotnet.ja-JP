@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587844" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _QueryTable" />
@@ -63,8 +63,9 @@
           <b>True の</b>場合の最適な列幅を自動的に調整に合わせて、指定されたクエリ テーブルまたは XML の対応付けを更新するたびにします。 <b>False</b>の列の幅は、更新ごとに自動的に調整されていない場合。 既定値は <b>True</b> です。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>最大列幅は 3 分の 2 を画面の幅です</para>。
-          <para></para></remarks>
+          <para>列幅の最大値は、画面幅の 3 分の 2 です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -181,8 +182,9 @@
         <summary>指定したデータ ソースにコマンド文字列を設定または返します。 読み取り/書き込みの<b>オブジェクト</b>です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>の OLE DB ソースを<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.CommandType" />プロパティは、 <b>CommandText</b>プロパティの値を示します</para>。
-          <para></para></remarks>
+          <para>OLE DB ソースの場合、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.CommandType" />プロパティは、 <b>CommandText</b>プロパティの値を説明します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandType">
@@ -214,9 +216,12 @@
         <summary>値を取得または設定、<see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />にコマンドの種類を記述する定数に関連付けられている、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.CommandText" />プロパティ。 既定値は、 <b>xlCmdSQL</b>です。 読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>クエリ テーブルの<b>QueryType</b>プロパティの値を<b>CommandType</b>プロパティ場合にのみに設定するか、ピボット テーブル キャッシュが<b>xlOLEDBQuery</b></para> 。
-          <para><b>CommandType</b>プロパティの値が<b>xlCmdCube</b>の場合は、クエリ テーブルに関連付けられているピボット テーブル レポートがある場合、この値を変更することはできません</para>。
-          <para></para></remarks>
+          <para>
+            <b>CommandType</b>プロパティのみの場合、クエリ テーブルの<b>QueryType</b>プロパティの値を設定できますか、ピボット テーブル キャッシュが<b>xlOLEDBQuery</b>の場合。</para>
+          <para>
+            <b>XlCmdCube</b>の<b>CommandType</b>プロパティの値が表示された場合は、クエリ テーブルに関連付けられているピボット テーブル レポートがある場合にこの値を変更できません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Connection">
@@ -249,12 +254,14 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>接続</b>のプロパティには、次のいずれかを指定できます: ソースの ODBC データへの接続に Microsoft Excel を有効にする設定を ODBC、OLE DB データ ソースに接続できるようにする OLE DB 設定、URL への接続に Microsoft Excel を有効にする、Web データのソースへのパスとファイル、テキスト ファイル、またはパスの名前と、データベースまたは Web クエリを指定するファイルのファイル名です</para>。
-          <para><b>接続</b>のプロパティの設定は、データ ソースへの接続をすぐに開始しません。使用する必要があります、<see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" />の接続を行い、データを取得するメソッドです</para>。
-          <para>オフライン キューブ ファイルを使用して、設定、<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" />プロパティに<b>true を指定</b>し、使用して、 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" /><b>接続</b>プロパティ</para>。
-          <para>接続文字列の構文の詳細についてを参照してください、<see cref="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.QueryTables" />コレクションと<see cref="M:Microsoft.Office.Interop.Excel.PivotCaches.Add(Microsoft.Office.Interop.Excel.XlPivotTableSourceType,System.Object)" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" />コレクションです</para>。
-          <para>または、Microsoft ActiveX データ オブジェクト (ADO) を使用して直接データ ソースにアクセスするのには選択する可能性があります</para>。
-          <para></para></remarks>
+            <b>接続</b>のプロパティには、次のいずれかを指定できます: ソースの ODBC データへの接続に Microsoft Excel を有効にする設定を ODBC、OLE DB データ ソースに接続できるようにする OLE DB 設定、URL への接続に Microsoft Excel を有効にする、Web のデータ ソースへのパス、テキスト ファイルへのパスや、データベースまたは Web クエリを指定するファイルのファイル名のファイル名です。</para>
+          <para>
+            <b>接続</b>プロパティを設定すると、データ ソースへの接続はすぐに開始します。 使用する必要があります、<see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" />の接続を行い、データを取得するメソッドです。</para>
+          <para>オフライン キューブ ファイルを使用して、設定、<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.UseLocalConnection" />プロパティに<b>true を指定</b>し、使用して、 <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.LocalConnection" /><b>接続</b>プロパティです。</para>
+          <para>接続文字列の構文の詳細についてを参照してください、<see cref="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.QueryTables" />コレクションと<see cref="M:Microsoft.Office.Interop.Excel.PivotCaches.Add(Microsoft.Office.Interop.Excel.XlPivotTableSourceType,System.Object)" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" />コレクションです。</para>
+          <para>または、Microsoft ActiveX データ オブジェクト (ADO) を使用して直接データ ソースにアクセスすることができます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -284,8 +291,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -371,9 +379,11 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>EditWebPage</b>プロパティは<b>Null</b>を返しますそうでない場合に設定します。<b>EditWebPage</b>プロパティは、意味のあるクエリの種類が<b>xlWebQuery</b>または<b>xlOLEDBQuery</b>の場合のみです</para>。
-          <para><b>EditWebPage</b>が null でない場合は無視して、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebTables" />を更新するためのプロパティです。結果として XML クエリと<b>WebTable</b>プロパティ元の Web ページにテーブルを参照し、事前に、[Web クエリ] ダイアログ ボックスを設定するのには編集の場合のみ使用しています</para>。
-          <para></para></remarks>
+            <b>EditWebPage</b>プロパティは<b>Null</b>を返しますそうでない場合に設定します。 <b>EditWebPage</b>プロパティは、意味のあるクエリの種類が<b>xlWebQuery</b>または<b>xlOLEDBQuery</b>の場合のみです。</para>
+          <para>
+            <b>EditWebPage</b>が null でない場合は無視して、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebTables" />を更新するためのプロパティです。 結果として XML クエリ<b>WebTable</b>プロパティ元の Web ページにテーブルを参照し、[Web クエリ] ダイアログ ボックスを事前に設定するのには編集の場合のみ使用しています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableEditing">
@@ -439,9 +449,10 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.RefreshOnFileOpen" /> 、 <b>EnableRefresh</b>プロパティが<b>False</b>に設定する場合、プロパティは無視されます</para>。
-          <para>OLAP データ ソースの場合、このプロパティを<b>False</b>に設定を無効に更新します</para>。
-          <para></para></remarks>
+            <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.RefreshOnFileOpen" /> 、 <b>EnableRefresh</b>プロパティが<b>False</b>に設定する場合、プロパティは無視されます。</para>
+          <para>OLAP データ ソースの場合、このプロパティを<b>False</b>に設定により、更新が無効にします。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FetchedRowOverflow">
@@ -633,9 +644,10 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>MaintainConnection</b>プロパティのみの場合を設定することができます、 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> 、クエリ テーブルまたはピボット テーブル キャッシュのプロパティが<b>xlOLEDBQuery</b>に設定します</para>。
-          <para>サーバーに対して頻繁にクエリが予想される場合、このプロパティを<b>True</b>に設定する可能性がありますパフォーマンス向上再接続時間が短縮します。開いている接続が終了すると、プロパティを<b>False</b>に設定します</para>。
-          <para></para></remarks>
+            <b>MaintainConnection</b>プロパティのみの場合を設定することができます、 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" /> 、クエリ テーブルまたはピボット テーブル キャッシュのプロパティが<b>xlOLEDBQuery</b>に設定します。</para>
+          <para>サーバーに対して頻繁にクエリする場合、このプロパティを<b>True</b>に設定可能性がありますパフォーマンス向上再接続時間が短縮します。 プロパティを<b>False</b>に設定すると、未処理の接続が閉じられます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -667,10 +679,53 @@
         <summary>指定されたオブジェクトの名前を設定します。値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>次の表は、 <b>Name</b>プロパティと関連するプロパティの一意の名前] [ヨーロッパ] データ ソースを指定の値の例を示します。[東京都] です。[東京]"OLAP 以外のデータ ソースのアイテム名が「東京」とします</para>。
-          <list type="table"><item><term><b>キャプション</b></term><description>パリ</description><description>パリ</description></item><item><term><b>名</b></term><description>[ヨーロッパ]. [東京都] です。[東京](読み取り専用)</description><description>パリ</description></item><item><term><b>SourceName</b></term><description>[ヨーロッパ]. [東京都] です。[東京](読み取り専用)</description><description>(SQL プロパティの値が読み取り専用と同じ)</description></item><item><term><b>値</b></term><description>[ヨーロッパ]. [東京都] です。[東京](読み取り専用)</description><description>パリ</description></item></list><para>へのインデックスを指定する場合、<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />コレクションでは、次の表に示すように構文を使用することができます</para>。
-          <list type="table"><item><term>式です。返すプロパティ (「[ヨーロッパ]。 [東京都] です。[東京]")</term><description>Expression.PivotItems("Paris")</description></item></list><para>を使用する場合、<see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" />プロパティ、コレクションの特定のメンバーを参照するには、次の表に示すようにテキストをインデックス名を使用することができます</para>。
-          <list type="table"><item><term>[ヨーロッパ]. [東京都] です。[東京]</term><description>パリ</description></item></list><para></para></remarks>
+          <para>次の表は、 <b>Name</b>プロパティと関連するプロパティの一意の名前] [ヨーロッパ] データ ソースを指定の値の例を示します。[東京都] です。[東京]"OLAP 以外のデータ ソースのアイテム名が「東京」とします。</para>
+          <list type="table">
+            <item>
+              <term>
+                <b>キャプション</b>
+              </term>
+              <description>東京</description>
+              <description>東京</description>
+            </item>
+            <item>
+              <term>
+                <b>名</b>
+              </term>
+              <description>[都道府県].[東京都].[東京] (読み取り専用)</description>
+              <description>東京</description>
+            </item>
+            <item>
+              <term>
+                <b>SourceName</b>
+              </term>
+              <description>[都道府県].[東京都].[東京] (読み取り専用)</description>
+              <description>(SQL プロパティと同じ値、読み取り専用)</description>
+            </item>
+            <item>
+              <term>
+                <b>値</b>
+              </term>
+              <description>[都道府県].[東京都].[東京] (読み取り専用)</description>
+              <description>東京</description>
+            </item>
+          </list>
+          <para>インデックスを指定する場合、<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />コレクションでは、次の表に示すように構文を使用することができます。</para>
+          <list type="table">
+            <item>
+              <term>式です。返すプロパティ (「[ヨーロッパ]。 [東京都] です。[東京]")</term>
+              <description>Expression.PivotItems("Paris")</description>
+            </item>
+          </list>
+          <para>使用する場合、<see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" />プロパティ、コレクションの特定のメンバーを参照するには、次の表に示すようにテキストをインデックス名を使用することができます。</para>
+          <list type="table">
+            <item>
+              <term>[ヨーロッパ] です。[東京都] です。[東京]</term>
+              <description>東京</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parameters">
@@ -758,9 +813,10 @@
         <summary>Web クエリからデータを取得するのには Web サーバーにデータを入力の post メソッドで使用される文字列を設定または返します。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>言語によっては適用できない場合がありますこのトピックの内容の一部です</para>。
-          <para>Microsoft Excel には、ワードパッドなどのテキスト エディターを使用して HTML コードを変更することによって変更することができますのサンプル Web クエリが含まれています。Microsoft Office がインストールされているクエリ フォルダーにこれらのサンプルを見つけることができます</para>。
-          <para></para></remarks>
+          <para>このトピックの内容の一部をいくつかの言語には適用できないがあります。</para>
+          <para>Excel には、WordPad または別のテキスト エディターを使用して HTML コードを変更することにより、変更できるサンプル Web クエリが用意されています。Office をセットアップしたフォルダーにある [Queries] フォルダーに、これらのサンプルがあります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreserveColumnInfo">
@@ -793,9 +849,11 @@
           <b>True の</b>場合、クエリ テーブルが更新されるたびに、列の並べ替え、フィルター、およびレイアウト情報が保持されます。 既定値は、 <b>false を指定</b> します。 読み取り/書き込み <b>ブール値</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、クエリ テーブルがデータベース接続を使用している場合にのみに有効です</para>。
-          <para>を<b>False</b>にこのプロパティを設定するには Microsoft Excel の以前のバージョンとの互換性</para>。
-          <para></para></remarks>
+          <para>このプロパティが有効になるのは、クエリ テーブルがデータベース接続を使用しているときだけです。</para>
+          <para>
+            <b>False</b>にこのプロパティを設定するには Microsoft Excel の以前のバージョンとの互換性のためです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PreserveFormatting">
@@ -827,8 +885,10 @@
         <summary>このプロパティが<b>True</b>の場合、最初の 5 行のデータに共通する書式をクエリ テーブル内のデータの新しい行に適用します。 使用されていないセルの書式が設定されません。 プロパティは、 <b>False</b>最後のオート フォーマットがクエリ テーブルに適用されている場合データの新しい行に適用されます。 既定値は<b>True</b> (クエリ テーブルは、Microsoft Excel 97 で作成した場合を除きと<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.HasAutoFormat" />プロパティが<b>True の</b>場合<b>PreserveFormatting</b>が<b>False</b>)。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>データベース クエリ テーブルでは、既定の書式設定は<b>xlSimple</b>です</para>。
-          <para>新しいオート フォーマット スタイルは、テーブルが更新されたとき、クエリ テーブルに適用されます。<b>PreserveFormatting</b>が<b>False</b>に設定するたびに、オート フォーマットは<b>[なし]</b>にリセットされます。その結果、 <b>PreserveFormatting</b>が<b>False</b>に設定し、クエリ実行前にテーブルが更新される前に設定されているすべてのオート フォーマットが反映されません、し、それに適用した書式を要求している結果のクエリ テーブルがありません</para><para></para></remarks>
+          <para>データベース クエリ テーブルでは、既定の書式設定は<b>xlSimple</b>です。</para>
+          <para>新しいオートフォーマットの形式は、テーブルが更新されたときにクエリ テーブルに適用されます。<b>PreserveFormatting</b> プロパティに <b>False</b> を設定すると、オートフォーマットには "なし<b></b>" が設定されます。このため、<b>PreserveFormatting</b> プロパティに <b>False</b> を設定する前、およびクエリ テーブルを更新する前に設定したオートフォーマットは無効になります。また、生成されるクエリ テーブルにもオートフォーマットは適用されません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="QueryType">
@@ -857,8 +917,9 @@
         <summary>クエリ テーブルまたはピボット テーブル キャッシュを作成する Excel で使用されるクエリの種類を示します。 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlQueryType" />。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>の接頭辞にデータ ソースを指定する、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" />プロパティの値です</para>。
-          <para></para></remarks>
+          <para>接頭辞にデータ ソースを指定する、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" />プロパティの値です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Recordset">
@@ -890,8 +951,9 @@
         <summary>取得または指定されたクエリ テーブルまたはピボット テーブル キャッシュのデータ ソースとして使用する<b>Recordset</b>オブジェクトを設定します。 値の取得および設定が可能です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>変更は有効である場合はこのプロパティを使用して、既存のレコード セットを上書きする、ときに、<see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" />メソッドを実行します</para>。
-          <para></para></remarks>
+          <para>変更は有効である場合はこのプロパティを使用して、既存のレコード セットを上書きする、ときに、<see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" />メソッドを実行します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -920,16 +982,18 @@
         <summary>外部データ範囲を更新 (<see cref="T:Microsoft.Office.Interop.Excel.QueryTable" />)。 <b>ブール値</b> です。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>次の「解説」は、SQL クエリ結果基にした<b>QueryTable</b>オブジェクトに適用します。</para>
-          <b>更新</b>の
-          <para>メソッドは、 <b>QueryTable</b>オブジェクトのデータ ソースへの接続、SQL クエリを実行し、 <b>QueryTable</b>オブジェクトに基づいた範囲にデータを返します。<b>QueryTable</b>オブジェクトがデータ ソースと通信しない限り、このメソッドが呼び出されると、します</para>。
-          <para>OLE DB または ODBC データ ソースへの接続を行うときで指定された接続文字列を使用して、Microsoft Excel、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" />プロパティ。指定した接続文字列には、必要な値がない、ユーザーに必要な情報の入力を求めるダイアログ ボックスが表示されます。場合、<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />プロパティが<b>False</b>、ダイアログ ボックスが表示されていないし、 <b>Refresh</b>メソッドは例外で失敗が不足している接続情報です</para>。
-          <para>Excel の後は正常に接続、完全な接続文字列を格納するため、同じ編集セッション中に、 <b>Refresh</b>メソッドを呼び出すのためのプロンプトは表示されません。値を調べることによって完全な接続文字列を取得することができます、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" />プロパティ</para>。
-          <para>データベースの接続が行われると、SQL クエリを検証します。クエリが無効の場合、 <b>Refresh</b>メソッド、SQL 構文エラー例外で失敗します</para>。クエリのパラメーターを必要とする場合、 
-          <para>、 <see cref="T:Microsoft.Office.Interop.Excel.Parameters" /> 、 <b>Refresh</b>メソッドが呼び出される前に、パラメーターのバインド情報を使用してコレクションを初期化する必要があります。かどうかは、十分なパラメーターがバインドされている、 <b>Refresh</b>メソッドはパラメーター エラー例外で失敗します。設定に関係なくユーザーにダイアログ ボックスを表示、値の入力を求めるパラメーターを設定した場合、<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />プロパティ。ユーザーは、[パラメーター] ダイアログ ボックスをキャンセルした場合、 <b>Refresh</b>メソッドは停止し、 <b>False</b>を返します。余分なパラメーターが<b>Parameters</b>コレクションにバインドされている、これらの余分なパラメーターが無視されます</para>。
-          <para>クエリが正常に完了または開始する場合は、 <b>Refresh</b>メソッドが<b>True</b>を返します; <b>False</b>を返し、ユーザーが接続またはパラメーターを指定するダイアログ ボックスをキャンセルした場合</para>。フェッチされたローの数が、ワークシート上の行の数を超えたかどうかを参照してください、確認する
-          <para>、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.FetchedRowOverflow" />プロパティ。<b>Refresh</b>メソッドが呼び出されるたびに、このプロパティを初期化します</para>。
-          <para></para></remarks>
+          <para>次の「解説」では、SQL クエリの結果を基にした<b>QueryTable</b>オブジェクトに適用されます。</para>
+          <para>
+            <b>Refresh</b>メソッドは、 <b>QueryTable</b>オブジェクトのデータ ソースへの接続、SQL クエリを実行し、 <b>QueryTable</b>オブジェクトに基づいた範囲にデータを返します。 しない限り、このメソッドが呼び出されると、 <b>QueryTable</b>オブジェクトはデータ ソースと通信しません。</para>
+          <para>Microsoft Excel がで指定された接続文字列を使用して、OLE DB または ODBC データ ソースへの接続を行う場合、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" />プロパティ。 指定した接続文字列には、必要な値がない、ユーザーに必要な情報の入力を求めるダイアログ ボックスが表示されます。 場合、<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />プロパティが<b>False</b>、ダイアログ ボックスが表示されていないし、 <b>Refresh</b>メソッドは例外で失敗が不足している接続情報です。</para>
+          <para>成功した接続を Excel は、同じ編集セッション中に、 <b>Refresh</b>メソッドを呼び出すのためのプロンプトは表示されませんように、完全な接続文字列を格納します。 値を調べることによって完全な接続文字列を取得することができます、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" />プロパティ。</para>
+          <para>データベース接続が行われると、SQL クエリが検証されます。 クエリが無効の場合、 <b>Refresh</b>メソッドは、SQL 構文エラー例外で失敗します。</para>
+          <para>クエリのパラメーターを必要とする場合、 <see cref="T:Microsoft.Office.Interop.Excel.Parameters" /> 、 <b>Refresh</b>メソッドが呼び出される前に、パラメーターのバインド情報を使用してコレクションを初期化する必要があります。 かどうかは、十分なパラメーターがバインドされている、 <b>Refresh</b>メソッドはパラメーター エラー例外で失敗します。 設定に関係なくユーザーにダイアログ ボックスを表示、値の入力を求めるパラメーターを設定した場合、<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />プロパティ。 ユーザーは、[パラメーター] ダイアログ ボックスをキャンセルした場合、 <b>Refresh</b>メソッドは停止し、 <b>False</b>を返します。 余分なパラメーターが<b>Parameters</b>コレクションにバインドされている、これらの余分なパラメーターは無視されます。</para>
+          <para>
+            <b>更新</b>メソッドを返します。 <b>True の</b>場合、クエリが正常に完了または開始します。ユーザー接続またはパラメーターを指定するダイアログ ボックスをキャンセルする場合は<b>False</b>を返します。</para>
+          <para>フェッチされたローの数が、ワークシート上の行の数を超えたかどうかを確認するには、確認、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.FetchedRowOverflow" />プロパティ。 このプロパティは、 <b>Refresh</b>メソッドが呼び出されるたびに初期化します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Refreshing">
@@ -959,8 +1023,9 @@
           <b>True</b>指定されたクエリ テーブルに対して進行中のバック グラウンド クエリがある場合。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel._QueryTable.CancelRefresh" />バック グラウンド クエリをキャンセルするメソッドです</para>。
-          <para></para></remarks>
+          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel._QueryTable.CancelRefresh" />バック グラウンド クエリをキャンセルするメソッドです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshOnFileOpen">
@@ -993,8 +1058,9 @@
           <b>True</b> の場合、ブックを開くたびにピボットテーブルのキャッシュまたはクエリ テーブルを自動的に更新します。既定値は <b>False</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>クエリ テーブルやピボット テーブル レポートは自動的に更新されませんを使用してブックを開くと、<see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />メソッドです。使用して、 <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> 、ブックを開いた後にデータを更新する方法です</para>。
-          <para></para></remarks>
+          <para>クエリ テーブルやピボット テーブル レポートは自動的に更新されませんを使用してブックを開くと、<see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />メソッドです。 使用して、 <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> 、ブックを開いた後にデータを更新する方法です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshPeriod">
@@ -1026,9 +1092,11 @@
         <summary>返すまたは、更新間隔を分単位の数を設定します。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>期間を 0 に設定 (ゼロ) を無効に自動タイムアウトになりましたが更新され、このプロパティを<b>Null</b>に設定するのと同じです</para>。
-          <para><b>RefreshPeriod</b>プロパティの値が 0 から 32,767 までの整数にすることができます</para>。
-          <para></para></remarks>
+          <para>期間を 0 (ゼロ) に設定、自動タイマー更新が無効になります、、このプロパティを<b>Null</b>に設定するのと同じです。</para>
+          <para>
+            <b>RefreshPeriod</b>プロパティの値は 0 ~ 32,767 の整数にできます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshStyle">
@@ -1113,8 +1181,9 @@
         <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />指定されたクエリ テーブルが占有するワークシートの領域を表すオブジェクト。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>の範囲は、フィールド名の行または行番号の列に含まれていません</para>。
-          <para></para></remarks>
+          <para>範囲には、フィールド名の行または行番号の列は含まれません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RobustConnect">
@@ -1178,8 +1247,10 @@
           <b>True</b> の場合、行番号は指定されたクエリ テーブルの最初の列として追加されます。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>を<b>True</b>にこのプロパティを設定してもすぐに行われない行番号を表示します。行番号は、クエリ テーブルを更新すると、次の時間を表示し、クエリ テーブルが更新されるたびに、再構成している</para>。
-          <para></para></remarks>
+          <para>
+            <b>True</b>にこのプロパティを設定してもすぐに行われない行番号を表示します。 行番号は、クエリ テーブルを更新すると、次の時間を表示し、クエリ テーブルが更新されるたびに、再構成しています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveAsODC">
@@ -1244,8 +1315,9 @@
           <b>True</b> の場合、ピボットテーブル レポートのデータをブックと共に保存します。 <b>False</b> の場合、レポートの定義のみを保存します。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>の OLAP データ ソースの場合、このプロパティが<b>False</b>に設定常にします</para>。
-          <para></para></remarks>
+          <para>OLAP データ ソースの場合、このプロパティは常に<b>False</b>に設定します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SavePassword">
@@ -1278,8 +1350,9 @@
           <b>True</b> の場合、ODBC 接続文字列のパスワード情報は指定されたクエリと共に保存されます。 <b>False</b> の場合、パスワードは削除されます。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは ODBC クエリにのみ影響します</para>。
-          <para></para></remarks>
+          <para>このプロパティは、ODBC クエリにのみ影響します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -1310,10 +1383,13 @@
           <see cref="T:Microsoft.Office.Interop.Excel.Sort" />
         </value>
         <remarks>
-          <para>Web クエリ] または [テキストのクエリからのデータとしてインポートは、ユーザー ・ インタ フェースを使用してデータをインポートする場合、<see cref="T:Microsoft.Office.Interop.Excel._QueryTable" />として他のすべての外部データをインポート中に、オブジェクトの<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />オブジェクトです</para>。
-          <para>として<b>クエリ テーブル</b>では、Web クエリ] または [テキストのクエリからデータをインポートする必要がありますオブジェクト モデルを使用してデータをインポートする場合は、 <b>ListObject</b>または、<b>クエリ テーブル</b>のいずれかとして他のすべての外部データをインポートすることができます中にします</para>。
-          <para><b>ListObject</b>の<b>QueryTable</b>プロパティを使用するには、 <b>Sort</b>プロパティにアクセスします</para>。
-          <para></para></remarks>
+          <para>Web クエリ] または [テキストのクエリからのデータとしてインポートは、ユーザー ・ インタ フェースを使用してデータをインポートする場合、<see cref="T:Microsoft.Office.Interop.Excel._QueryTable" />として他のすべての外部データをインポート中に、オブジェクトの<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />オブジェクトです。</para>
+          <para>
+            <b>ListObject</b>または、<b>クエリ テーブル</b>のいずれかとして他のすべての外部データをインポートすることができます中に、オブジェクト モデルを使用してデータをインポートする場合として<b>クエリ テーブル</b>では、Web クエリ] または [テキストのクエリからのデータをインポートする必要があります。</para>
+          <para>
+            <b>ListObject</b>の<b>QueryTable</b>プロパティを使用するには、 <b>Sort</b>プロパティにアクセスします。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceConnectionFile">
@@ -1376,8 +1452,9 @@
         <summary>クエリ テーブルのソース データ ファイルを示す<b>文字列</b>を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>にはファイル ・ ベースのデータ ソース (Access など)、 <b>SourceDataFile</b>プロパティの元のデータ ファイルへの完全修飾パスが含まれています。(たとえば、SQL Server) のサーバ ・ ベースのデータ ソースの null であります。<b>SourceDataFile</b>プロパティが null の場合に、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" />プロパティをプログラムで変更します</para>。
-          <para></para></remarks>
+          <para>ファイル ・ ベースのデータ ソース (Access など) には、 <b>SourceDataFile</b>プロパティにはソース データ ファイルへの完全修飾パスが含まれています。 (たとえば、SQL Server) のサーバ ・ ベースのデータ ソースの null であります。 <b>SourceDataFile</b>プロパティが null の場合に、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" />プロパティをプログラムで変更します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Sql">
@@ -1452,10 +1529,11 @@
         <summary>ワークシートで定義した入力値と数式に基づいて、データ テーブルを作成します。</summary>
         <value>バリアント型 (Variant)</value>
         <remarks>
-          <para>上の他のセルの値が影響を受ける方法を参照してください特定の定数値を変更することによって what-if 分析を実行するデータ テーブルを使用します</para>。
-          <para></para></remarks>
+          <para>このデータ テーブルは、ワークシートの特定の定数を変化させて、ほかのセルの値への影響を調べるケース スタディのために使います。</para>
+          <para></para>
+        </remarks>
         <example>
-          <para>次の使用例は、Sheet1 のセル範囲 a1: k11 に書式設定された乗算表を作成します。</para>
+          <para>次の使用例は、シート 1 のセル範囲 A1:K11 に書式設定された乗算表を作成します。</para>
           <code>&lt;span class="label"&gt;Set dataTableRange = Worksheets("Sheet1").Range("A1:K11")  
  
  
@@ -10677,7 +10755,7 @@ dataTableRange.&lt;/span&gt;
 &lt;span class="label"&gt;rowInputCell, columnInputCell With Worksheets("Sheet1").Range("A1").CurrentRegion     .Rows(1).Font.Bold = True     .Columns(1).Font.Bold = True     .Columns.AutoFit End With&lt;/span&gt;</code>
         </example>
         <example>
-          <para>次の使用例は、Sheet1 のセル範囲 a1: k11 に書式設定された乗算表を作成します。</para>
+          <para>次の使用例は、シート 1 のセル範囲 A1:K11 に書式設定された乗算表を作成します。</para>
           <code>&lt;span class="label"&gt;Set dataTableRange = Worksheets("Sheet1").Range("A1:K11")  
  
  
@@ -19899,7 +19977,7 @@ dataTableRange.&lt;/span&gt;
 &lt;span class="label"&gt;rowInputCell, columnInputCell With Worksheets("Sheet1").Range("A1").CurrentRegion     .Rows(1).Font.Bold = True     .Columns(1).Font.Bold = True     .Columns.AutoFit End With&lt;/span&gt;</code>
         </example>
         <example>
-          <para>次の使用例は、Sheet1 のセル範囲 a1: k11 に書式設定された乗算表を作成します。</para>
+          <para>次の使用例は、シート 1 のセル範囲 A1:K11 に書式設定された乗算表を作成します。</para>
           <code>&lt;span class="label"&gt;Set dataTableRange = Worksheets("Sheet1").Range("A1:K11")  
  
  
@@ -29151,12 +29229,75 @@ dataTableRange.&lt;/span&gt;
         <summary>クエリ テーブルにインポートするテキスト ファイル内の対応する列に適用されるデータ型を指定する定数の配列を設定または返します。 各列の既定の定数は<b>xlGeneral</b>です。 読み取り/書き込みの<b>オブジェクト</b>です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>使用することができます、<see cref="T:Microsoft.Office.Interop.Excel.XlColumnDataType" />定数を使用する列のデータ型またはデータのインポート中に実行されるアクションを指定するのには次の表に記載されている</para>。
-          <list type="table"><item><term><b>xlGeneralFormat</b></term><description>全般</description></item><item><term><b>xlTextFormat</b></term><description>文字列</description></item><item><term><b>xlSkipColumn</b></term><description>スキップ列</description></item><item><term><b>xlDMYFormat</b></term><description>日-月-年の日付の形式</description></item><item><term><b>xlDYMFormat</b></term><description>日-年-月の日付の形式</description></item><item><term><b>xlEMDFormat</b></term><description>EMD 日付</description></item><item><term><b>xlMDYFormat</b></term><description>月-日-年の日付の形式</description></item><item><term><b>xlMYDFormat</b></term><description>月日年の日付の形式</description></item><item><term><b>xlYDMFormat</b></term><description>年-日-月の日付の形式</description></item><item><description>年-月-日の日付の形式</description>である
-              <term><b>xlYMDFormat</b></term></item></list><para>、クエリ テーブルがテキスト ファイルからのデータに基づく場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>) です</para>。
-          <para>列の数よりも配列の要素を指定すると、それらの値が無視されます</para>。
-          <para>台湾語の言語サポートがインストールされ、選択されている場合にのみ、 <b>xlEMDFormat</b>を使用することができます。定数<b>xlEMDFormat</b>は、台湾が使用されていることを指定します</para>。
-          <para></para></remarks>
+          <para>使用することができます、<see cref="T:Microsoft.Office.Interop.Excel.XlColumnDataType" />定数を使用する列のデータ型またはデータのインポート中に実行されるアクションを指定するのには次の表に記載されています。</para>
+          <list type="table">
+            <item>
+              <term>
+                <b>xlGeneralFormat</b>
+              </term>
+              <description>全般</description>
+            </item>
+            <item>
+              <term>
+                <b>xlTextFormat</b>
+              </term>
+              <description>テキスト</description>
+            </item>
+            <item>
+              <term>
+                <b>xlSkipColumn</b>
+              </term>
+              <description>スキップ列</description>
+            </item>
+            <item>
+              <term>
+                <b>xlDMYFormat</b>
+              </term>
+              <description>DMY (日月年) 形式の日付</description>
+            </item>
+            <item>
+              <term>
+                <b>xlDYMFormat</b>
+              </term>
+              <description>DYM (日年月) 形式の日付</description>
+            </item>
+            <item>
+              <term>
+                <b>xlEMDFormat</b>
+              </term>
+              <description>EMD (台湾年月日) 形式の日付</description>
+            </item>
+            <item>
+              <term>
+                <b>xlMDYFormat</b>
+              </term>
+              <description>MDY (月日年) 形式の日付</description>
+            </item>
+            <item>
+              <term>
+                <b>xlMYDFormat</b>
+              </term>
+              <description>MYD (月年日) 形式の日付</description>
+            </item>
+            <item>
+              <term>
+                <b>xlYDMFormat</b>
+              </term>
+              <description>YDM (年日月) 形式の日付</description>
+            </item>
+            <item>
+              <term>
+                <b>xlYMDFormat</b>
+              </term>
+              <description>YMD (年月日) 形式の日付</description>
+            </item>
+          </list>
+          <para>テキスト ファイルからのデータに基づいて、クエリ テーブルの場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>)。</para>
+          <para>列の数よりも配列の要素を指定すると、これらの値は無視されます。</para>
+          <para>
+            <b>XlEMDFormat</b>は、台湾語の言語サポートがインストールされ、選択されている場合にのみ使用できます。 定数<b>xlEMDFormat</b>は、台湾が使用されていることを指定します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileCommaDelimiter">
@@ -29189,8 +29330,9 @@ dataTableRange.&lt;/span&gt;
           <b>True</b> の場合、クエリ テーブルにテキスト ファイルをインポートするときにカンマを区切り文字に使用します。 <b>False</b> の場合、区切り文字に別の文字を使用します。既定値は <b>False</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、クエリ テーブルがテキスト ファイルからのデータに基づく場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>) と場合にのみの値、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" />プロパティが<b>xlDelimited</b>です</para>。
-          <para></para></remarks>
+          <para>クエリ テーブルがテキスト ファイルからのデータに基づく場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>) と場合にのみの値、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" />プロパティが<b>xlDelimited</b>です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileConsecutiveDelimiter">
@@ -29223,8 +29365,9 @@ dataTableRange.&lt;/span&gt;
           <b>True の</b>場合、クエリ テーブルにテキスト ファイルをインポートするとき、連続した区切り文字が 1 つの区切り文字として扱われます。 既定値は、 <b>Fals</b>e です。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、クエリ テーブルがテキスト ファイルからのデータに基づく場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>) と場合にのみの値、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" />プロパティが<b>xlDelimited</b>です</para>。
-          <para></para></remarks>
+          <para>クエリ テーブルがテキスト ファイルからのデータに基づく場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>) と場合にのみの値、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" />プロパティが<b>xlDelimited</b>です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileDecimalSeparator">
@@ -29256,10 +29399,52 @@ dataTableRange.&lt;/span&gt;
         <summary>クエリ テーブルにテキスト ファイルをインポートするときに使われる 10 進数の区切り文字を設定または返します。 既定ではシステムの桁区切り記号文字です。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>テキスト ファイルからのデータに基づいて、クエリ テーブルの場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>) 小数点と桁を含む別の言語のため、コンピューターで使用されているものとは異なる区切り記号使用されているを設定します</para>。
-          <para>次の表結果を示していますテキストを Excel にインポートすると、さまざまな区切り記号を使用します。右端の列の数値の結果が表示されます</para>。
-          <list type="table"><item><term>ピリオド</term><description>コンマ</description><description>カンマ</description><description>期間</description><description>123.123,45</description><description>123,123.45 (数値)</description></item><item><term>期間</term><description>コンマ</description><description>カンマ</description><description>コンマ</description><description>123.123,45</description><description>123.123,45 (テキスト)</description></item><item><term>期間</term><description>コンマ</description><description>期間</description><description>コンマである
-            <item><term>コンマ</term><description>ピリオド</description><description>コンマ</description><description>期間</description><description>123,123.45</description><description>123,123.45 (数値)</description></item></description><description>123 123.45</description><description>123 123.45 (テキスト)</description></item><item><term>期間</term><description>コンマ</description><description>ピリオド</description><description>スペース</description><description>123 123.45</description><description>(数値) の 123,123.45</description></item></list><para></para></remarks>
+          <para>テキスト ファイルからのデータに基づいて、クエリ テーブルの場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>) 小数点と桁を含む別の言語のため、コンピューターで使用されているものとは異なる区切り記号設定が使用されています。</para>
+          <para>異なる記号を使用して Excel にテキストをインポートした場合の結果を次に示します。結果の数値は最も右の列に表示されます。</para>
+          <list type="table">
+            <item>
+              <term>ピリオド</term>
+              <description>カンマ</description>
+              <description>カンマ</description>
+              <description>ピリオド</description>
+              <description>123.123,45</description>
+              <description>123,123.45 (数値)</description>
+            </item>
+            <item>
+              <term>ピリオド</term>
+              <description>カンマ</description>
+              <description>カンマ</description>
+              <description>カンマ</description>
+              <description>123.123,45</description>
+              <description>123.123,45 (文字列)</description>
+            </item>
+            <item>
+              <term>カンマ</term>
+              <description>ピリオド</description>
+              <description>カンマ</description>
+              <description>ピリオド</description>
+              <description>123,123.45</description>
+              <description>123,123.45 (数値)</description>
+            </item>
+            <item>
+              <term>ピリオド</term>
+              <description>カンマ</description>
+              <description>ピリオド</description>
+              <description>カンマ</description>
+              <description>123,123.45</description>
+              <description>123 123.45 (文字列)</description>
+            </item>
+            <item>
+              <term>ピリオド</term>
+              <description>カンマ</description>
+              <description>ピリオド</description>
+              <description>スペース</description>
+              <description>123,123.45</description>
+              <description>123,123.45 (数値)</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileFixedColumnWidths">
@@ -29291,8 +29476,10 @@ dataTableRange.&lt;/span&gt;
         <summary>クエリ テーブルにインポートするテキスト ファイルの文字数) 単位での列の幅に対応する整数の配列を設定または返します。 有効な幅は、1 から 32,767 文字までです。 読み取り/書き込みの<b>オブジェクト</b>です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>テキスト ファイルからのデータに基づいて、クエリ テーブルの場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>) と場合にのみの値、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" />プロパティが<b>xlFixedWidth</b>がします</para>。
-          <para>は負でない、有効な列幅を指定する必要があります。テキスト ファイルの幅を超える列を指定すると、これらの値は無視されます。追加の列にテキスト ファイルの残りをインポートするテキスト ファイルの幅が指定した列の幅の合計より大きい場合は、.</para><para></para></remarks>
+          <para>クエリ テーブルがテキスト ファイルからのデータに基づく場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>) と場合にのみの値、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" />プロパティが<b>xlFixedWidth</b>です。</para>
+          <para>正または 0 の有効な列幅を指定してください。テキスト ファイルの幅を超える列を指定した場合、それらの値は無視されます。指定の列幅の合計よりもテキスト ファイルの幅の方が広い場合、テキスト ファイルの残りの部分は追加された列にインポートされます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileOtherDelimiter">
@@ -29324,9 +29511,10 @@ dataTableRange.&lt;/span&gt;
         <summary>クエリ テーブルにテキスト ファイルをインポートするときに区切り記号として使用する文字を設定または返します。 既定値は <b>Null</b> です。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>テキスト ファイルからのデータに基づいて、クエリ テーブルの場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>) と場合にのみの値、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" />プロパティが<b>xlDelimited</b>がします</para>。
-          <para>最初の文字のみが使用される 1 つ以上の文字を文字列で指定する場合です</para>。
-          <para></para></remarks>
+          <para>クエリ テーブルがテキスト ファイルからのデータに基づく場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>) と場合にのみの値、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" />プロパティが<b>xlDelimited</b>です。</para>
+          <para>文字列中に複数の文字を指定すると、先頭の文字のみが使用されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileParseType">
@@ -29358,8 +29546,9 @@ dataTableRange.&lt;/span&gt;
         <summary>取得またはクエリ テーブルにインポートするテキスト ファイルのデータの列形式を設定します。 読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Excel.XlTextParsingType" />。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、クエリ テーブルがテキスト ファイルからのデータに基づく場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>) です</para>。
-          <para></para></remarks>
+          <para>テキスト ファイルからのデータに基づいて、クエリ テーブルの場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>)。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFilePlatform">
@@ -29391,8 +29580,9 @@ dataTableRange.&lt;/span&gt;
         <summary>クエリ テーブルにインポートするテキスト ファイルの原点を設定または返します。 このプロパティは、データのインポート中に使用されるコード ページを決定します。 既定値は、テキスト ファイルのインポート ウィザードで [元のファイル オプションの現在の設定です。 読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Excel.XlPlatform" />。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、クエリ テーブルがテキスト ファイルからのデータに基づく場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>) です</para>。
-          <para></para></remarks>
+          <para>テキスト ファイルからのデータに基づいて、クエリ テーブルの場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>)。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFilePromptOnRefresh">
@@ -29425,10 +29615,11 @@ dataTableRange.&lt;/span&gt;
           <b>True</b>クエリ テーブルが更新されるたびにインポートするテキスト ファイルの名前を指定する場合です。 テキスト ファイルのインポート] ダイアログ ボックスを使用すると、パスとファイル名を指定できます。 既定値は、 <b>false を指定</b> します。 読み取り/書き込み <b>ブール値</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>テキスト ファイルからのデータに基づいて、クエリ テーブルの場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>) です</para>。
-          <para>ダイアログ ボックスがクエリ テーブルの最初の更新では表示されない場合はこのプロパティの値が<b>True</b>の場合です</para>。
-          <para>の既定値は<b>True</b>ユーザー ・ インタ フェースで</para>。
-          <para></para></remarks>
+          <para>テキスト ファイルからのデータに基づいて、クエリ テーブルの場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>)。</para>
+          <para>このプロパティの値が<b>True</b>の場合は、ダイアログ ボックスがクエリ テーブルの最初の更新では表示されません。</para>
+          <para>既定値は<b>True</b>ユーザー ・ インタ フェースで。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileSemicolonDelimiter">
@@ -29461,8 +29652,9 @@ dataTableRange.&lt;/span&gt;
           <b>True の</b>場合は、クエリ テーブルにテキスト ファイルをインポートする場合と、セミコロンは区切り記号の値、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" />プロパティが<b>xlDelimited</b>です。 既定値は、 <b>false を指定</b> します。 読み取り/書き込み <b>ブール値</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、クエリ テーブルがテキスト ファイルからのデータに基づく場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>) です</para>。
-          <para></para></remarks>
+          <para>テキスト ファイルからのデータに基づいて、クエリ テーブルの場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>)。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileSpaceDelimiter">
@@ -29495,8 +29687,9 @@ dataTableRange.&lt;/span&gt;
           <b>True</b> の場合、テキスト ファイルをクエリ テーブルにインポートするときの区切り文字にスペースを設定します。既定値は <b>False</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、クエリ テーブルがテキスト ファイルからのデータに基づく場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>) と場合にのみの値、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" />プロパティが<b>xlDelimited</b>です</para>。
-          <para></para></remarks>
+          <para>クエリ テーブルがテキスト ファイルからのデータに基づく場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>) と場合にのみの値、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" />プロパティが<b>xlDelimited</b>です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileStartRow">
@@ -29528,8 +29721,9 @@ dataTableRange.&lt;/span&gt;
         <summary>テキストの解析が開始されます、クエリ テーブルにテキスト ファイルをインポートする行の番号を設定または返します。 有効な値は、1 から 32,767 までの整数です。 既定値は 1 です。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、クエリ テーブルがテキスト ファイルからのデータに基づく場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>) です</para>。
-          <para></para></remarks>
+          <para>テキスト ファイルからのデータに基づいて、クエリ テーブルの場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>)。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileTabDelimiter">
@@ -29562,8 +29756,9 @@ dataTableRange.&lt;/span&gt;
           <b>True</b> の場合、テキスト ファイルをクエリ テーブルにインポートするときの区切り文字にタブ記号を設定します。既定値は <b>False</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、クエリ テーブルがテキスト ファイルからのデータに基づく場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>) と場合にのみの値、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" />プロパティが<b>xlDelimited</b>です</para>。
-          <para></para></remarks>
+          <para>クエリ テーブルがテキスト ファイルからのデータに基づく場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>) と場合にのみの値、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.TextFileParseType" />プロパティが<b>xlDelimited</b>です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileTextQualifier">
@@ -29595,8 +29790,9 @@ dataTableRange.&lt;/span&gt;
         <summary>クエリ テーブルにテキスト ファイルをインポートするときに、テキスト区切り記号を設定または返します。 テキスト修飾子は、かっこで囲まれたデータが、テキスト形式を指定します。 読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Excel.XlTextQualifier" />。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、クエリ テーブルがテキスト ファイルからのデータに基づく場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>) です</para>。
-          <para></para></remarks>
+          <para>テキスト ファイルからのデータに基づいて、クエリ テーブルの場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>)。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileThousandsSeparator">
@@ -29628,10 +29824,52 @@ dataTableRange.&lt;/span&gt;
         <summary>何千ものクエリ テーブルにテキスト ファイルをインポートするときに使用する区切り文字を設定または返します。 既定ではシステムの桁区切り記号です。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>テキスト ファイルからのデータに基づいて、クエリ テーブルの場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>) ファイルには、小数点と桁が含まれている場合は特に、区切り記号は異なるため、コンピューター上で使われる、別の言語設定が使用されています</para>。
-          <para>次の表結果を示していますテキストを Excel にインポートすると、さまざまな区切り記号を使用します。右端の列の数値の結果が表示されます</para>。
-          <list type="table"><item><term>ピリオド</term><description>コンマ</description><description>カンマ</description><description>期間</description><description>123.123,45</description><description>123,123.45 (数値)</description></item><item><term>期間</term><description>コンマ</description><description>カンマ</description><description>コンマ</description><description>123.123,45</description><description>123.123,45 (テキスト)</description></item><item><term>期間</term><description>コンマ</description><description>期間</description><description>コンマである
-            <item><term>コンマ</term><description>ピリオド</description><description>コンマ</description><description>期間</description><description>123,123.45</description><description>123,123.45 (数値)</description></item></description><description>123 123.45</description><description>123 123.45 (テキスト)</description></item><item><term>期間</term><description>コンマ</description><description>ピリオド</description><description>スペース</description><description>123 123.45</description><description>(数値) の 123,123.45</description></item></list><para></para></remarks>
+          <para>テキスト ファイルからのデータに基づいて、クエリ テーブルの場合にのみ、このプロパティを使用する (と、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xltextimport</b>) ファイルには、小数点と桁が含まれている場合は特に、区切り記号は異なるため、コンピューター上で使われる、別の言語設定が使用されています。</para>
+          <para>異なる記号を使用して Excel にテキストをインポートした場合の結果を次に示します。結果の数値は最も右の列に表示されます。</para>
+          <list type="table">
+            <item>
+              <term>ピリオド</term>
+              <description>カンマ</description>
+              <description>カンマ</description>
+              <description>ピリオド</description>
+              <description>123.123,45</description>
+              <description>123,123.45 (数値)</description>
+            </item>
+            <item>
+              <term>ピリオド</term>
+              <description>カンマ</description>
+              <description>カンマ</description>
+              <description>カンマ</description>
+              <description>123.123,45</description>
+              <description>123.123,45 (文字列)</description>
+            </item>
+            <item>
+              <term>カンマ</term>
+              <description>ピリオド</description>
+              <description>カンマ</description>
+              <description>ピリオド</description>
+              <description>123,123.45</description>
+              <description>123,123.45 (数値)</description>
+            </item>
+            <item>
+              <term>ピリオド</term>
+              <description>カンマ</description>
+              <description>ピリオド</description>
+              <description>カンマ</description>
+              <description>123,123.45</description>
+              <description>123 123.45 (文字列)</description>
+            </item>
+            <item>
+              <term>ピリオド</term>
+              <description>カンマ</description>
+              <description>ピリオド</description>
+              <description>スペース</description>
+              <description>123,123.45</description>
+              <description>123,123.45 (数値)</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TextFileTrailingMinusNumbers">
@@ -29727,8 +29965,9 @@ dataTableRange.&lt;/span&gt;
           <b>True の</b>場合、連続する区切り文字は、HTML からデータをインポートする場合、1 つの区切り文字として扱われます。&lt;より前のバージョン&gt;クエリ テーブルに Web ページ内のタグ データの列を解析する場合とします。 <b>False</b>を複数の区切り記号として、連続する区切り文字を扱う場合です。 既定値は <b>True</b> です。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティを使用して場合にのみ、クエリ テーブルの<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xlWebQuery</b>で、クエリは、HTML ドキュメントを返しますと<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebPreFormattedTextToColumns" />プロパティが<b>True</b>に設定します</para>。
-          <para></para></remarks>
+          <para>このプロパティを使用して場合にのみ、クエリ テーブルの<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xlWebQuery</b>で、クエリは、HTML ドキュメントを返しますと<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebPreFormattedTextToColumns" />プロパティが<b>True</b>に設定します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WebDisableDateRecognition">
@@ -29761,8 +30000,9 @@ dataTableRange.&lt;/span&gt;
           <b>True</b> の場合、Web ページをクエリ テーブルにインポートするときに、日付形式のデータをテキストとして解析します。 <b>False</b> の場合、日付認識を有効にします。既定値は <b>False</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティを使用して場合にのみ、クエリ テーブルの<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xlWebQuery</b>に設定し、クエリには、HTML ドキュメントが返されます</para>。
-          <para></para></remarks>
+          <para>このプロパティを使用して場合にのみ、クエリ テーブルの<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xlWebQuery</b>に設定し、クエリには、HTML ドキュメントが返されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WebDisableRedirections">
@@ -29826,8 +30066,9 @@ dataTableRange.&lt;/span&gt;
         <summary>返すまたは、どの程度存在する場合に、Web ページでは、書式設定、適用ページをクエリ テーブルにインポートするときを決定する値を設定します。 読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Excel.XlWebFormatting" />。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティを使用して場合にのみ、クエリ テーブルの<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xlWebQuery</b>に設定し、クエリには、HTML ドキュメントが返されます</para>。
-          <para></para></remarks>
+          <para>このプロパティを使用して場合にのみ、クエリ テーブルの<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xlWebQuery</b>に設定し、クエリには、HTML ドキュメントが返されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WebPreFormattedTextToColumns">
@@ -29859,8 +30100,9 @@ dataTableRange.&lt;/span&gt;
         <summary>データが HTML に含まれているかどうかを設定を取得または&lt;より前のバージョン&gt;ページをクエリ テーブルにインポートすると、列に、Web ページ内のタグを解析します。 既定では <b>True です</b> 。 読み取り/書き込み <b>ブール値</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティが使用される場合にのみ、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />クエリ テーブルのプロパティが<b>xlWebQuery</b>で、クエリには、HTML ドキュメントが返されます</para>。
-          <para></para></remarks>
+          <para>このプロパティが使用される場合にのみ、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />クエリ テーブルのプロパティが<b>xlWebQuery</b>で、クエリには、HTML ドキュメントが返されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WebSelectionType">
@@ -29892,9 +30134,10 @@ dataTableRange.&lt;/span&gt;
         <summary>返すまたは、Web ページ全体、すべての Web ページで、テーブルまたは Web ページ上の特定のテーブルのみがクエリ テーブルにインポートするかどうかを決定する値を設定します。 読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Excel.XlWebSelectionType" />。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティを使用して場合にのみ、クエリ テーブルの<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xlWebQuery</b>に設定し、クエリには、HTML ドキュメントが返されます</para>。
-          <para>このプロパティの値が<b>xlSpecifiedTables</b>の場合は、使用できます、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebTables" />プロパティをインポートするテーブルを指定します</para>。
-          <para></para></remarks>
+          <para>このプロパティを使用して場合にのみ、クエリ テーブルの<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xlWebQuery</b>に設定し、クエリには、HTML ドキュメントが返されます。</para>
+          <para>このプロパティの値が<b>xlSpecifiedTables</b>の場合は、使用できます、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebTables" />をインポートするテーブルを指定するプロパティです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WebSingleBlockTextImport">
@@ -29927,8 +30170,9 @@ dataTableRange.&lt;/span&gt;
           <b>True</b>の場合 HTML からデータを&lt;より前のバージョン&gt;ページをクエリ テーブルにインポートすると、指定した Web ページ内のタグがすべてを一度に処理します。 <b>偽</b>ヘッダー行が次のように認識されるように、連続した行のブロックにデータがインポートされた場合です。 既定値は、 <b>false を指定</b> します。 読み取り/書き込み <b>ブール値</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティを使用して場合にのみ、クエリ テーブルの<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xlWebQuery</b>に設定し、クエリには、HTML ドキュメントが返されます</para>。
-          <para></para></remarks>
+          <para>このプロパティを使用して場合にのみ、クエリ テーブルの<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xlWebQuery</b>に設定し、クエリには、HTML ドキュメントが返されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WebTables">
@@ -29960,8 +30204,9 @@ dataTableRange.&lt;/span&gt;
         <summary>取得または Web ページをクエリ テーブルにインポートするときにテーブル名またはインデックス番号のカンマ区切りリストを設定します。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティを使用する場合にのみ、クエリ テーブルの<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xlWebQuery</b>で、クエリは、HTML ドキュメントとの値を返します、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebSelectionType" />プロパティは、 <b>xlSpecifiedTables</b></para> 。
-          <para></para></remarks>
+          <para>このプロパティを使用する場合にのみ、クエリ テーブルの<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.QueryType" />プロパティが<b>xlWebQuery</b>で、クエリは、HTML ドキュメントとの値を返します、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.WebSelectionType" />プロパティは、 <b>xlSpecifiedTables</b>。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WorkbookConnection">
@@ -29992,10 +30237,13 @@ dataTableRange.&lt;/span&gt;
           <b>WorkbookConnection</b>
         </value>
         <remarks>
-          <para>として Web クエリ、またはテキストのクエリからデータをインポートするユーザー インターフェイスを使用してデータをインポートする場合、<see cref="T:Microsoft.Office.Interop.Excel._QueryTable" />として他のすべての外部データをインポート中に、オブジェクトの<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />オブジェクトです</para>。
-          <para>として<b>クエリ テーブル</b>では、Web クエリ、またはテキストのクエリからのデータをインポートする必要がありますオブジェクト モデルを使用してデータをインポートする場合は、 <b>ListObject</b>または、<b>クエリ テーブル</b>のいずれかとして他のすべての外部データをインポートすることができます中にします</para>。
-          <para><b>WorkbookConnection</b>プロパティは、 <b>QueryTable</b>オブジェクトにのみ適用されます</para>。
-          <para></para></remarks>
+          <para>として Web クエリ、またはテキストのクエリからデータをインポートするユーザー インターフェイスを使用してデータをインポートする場合、<see cref="T:Microsoft.Office.Interop.Excel._QueryTable" />として他のすべての外部データをインポート中に、オブジェクトの<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />オブジェクトです。</para>
+          <para>
+            <b>ListObject</b>または、<b>クエリ テーブル</b>のいずれかとして他のすべての外部データをインポートすることができます中に、オブジェクト モデルを使用してデータをインポートする場合として<b>クエリ テーブル</b>では、Web クエリまたはテキストのクエリからのデータをインポートする必要があります。</para>
+          <para>
+            <b>WorkbookConnection</b>プロパティは、<b>クエリ テーブル</b>オブジェクトにのみ適用されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

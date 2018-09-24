@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20579976" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _OLEObject" />
@@ -154,9 +154,10 @@
           <b>True</b> の場合、OLE オブジェクトが含まれているブックが開かれると、自動的にそのオブジェクトを読み込みます。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ActiveX コントロールでこのプロパティは無視されます。ActiveX コントロールは、ブックを開くときに常に読み込まれます</para>。
-          <para>のほとんどの種類の OLE オブジェクトは、このプロパティを<b>True</b>に設定する必要はありません。既定では、 <b>AutoLoad</b>プロパティは<b>False</b>に設定新しい OLE オブジェクトこれによって保存時間とメモリは、Microsoft Excel のブックの読み込み時にします。OLE を自動的に読み込みの利点はオブジェクトは、揮発性データを表すオブジェクトのソース データへのリンクをすぐに再確立することができます、必要な場合にオブジェクトを再度表示可能です</para>。
-          <para></para></remarks>
+          <para>ActiveX コントロールの場合、このプロパティの設定は無視されます。ブックが開かれるときは、常に ActiveX コントロールが自動的に読み込まれます。</para>
+          <para>ほとんどの種類の OLE オブジェクトには、このプロパティを<b>True</b>に設定する必要はありません。 既定では、 <b>AutoLoad</b>プロパティは<b>False</b>に設定新しい OLE オブジェクトこれによって保存時間とメモリは、Microsoft Excel のブックの読み込み時にします。 OLE オブジェクトを自動的に読み込むメリットは、揮発性データを表すオブジェクトのソース データへのリンクをすぐに再確立することができ、必要な場合にオブジェクトを再度表示可能です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoUpdate">
@@ -356,8 +357,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -384,8 +386,9 @@
         <summary>オブジェクトを切り取り、クリップボードまたは指定された範囲に貼り付けます。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>埋め込みグラフのみを切り取ることができます</para>。
-          <para></para></remarks>
+          <para>対象がグラフのときは、埋め込みグラフのみを切り取ることができます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -588,8 +591,9 @@
         <summary>列 A の左端 (ワークシートの場合)、またはグラフ エリアの左端 (グラフの場合) からオブジェクトの左端までのポイント単位の距離です。 読み取り/書き込み <b>二重</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ウィンドウが最大化されている場合、このプロパティは、ウィンドウの境界線の幅に基づいて、変化する負の数を返します。このプロパティを 0 (ゼロ) に設定すると、ウィンドウがアプリケーション ウィンドウを最大表示したかどうかはそれよりも少し小さくなります。つまり、 <b>Left</b>プロパティが 0 (ゼロ) の場合は、Microsoft Excel のメイン ウィンドウの左枠線だけではほとんど表示されません画面にします</para>。
-          <para></para></remarks>
+          <para>ウィンドウを最大化すると、このプロパティはウィンドウの境界線の幅に基づいて、変化する負の数を返します。 このプロパティを 0 (ゼロ) に設定すると、ウィンドウがアプリケーション ウィンドウを最大表示したかどうかはそれよりも少し小さくなります。 つまり、 <b>Left</b>プロパティに 0 (ゼロ) がある場合、Microsoft Excel のメイン ウィンドウの左側の境界線はかろうじて画面に表示されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkedCell">
@@ -621,8 +625,9 @@
         <summary>コントロールの値にリンクされているワークシートのセル範囲を設定または返します。 セルに値を設定する場合、コントロールはこのような値を使用します。 同様に、コントロールの値を変更すると、その値はまたセルに配置されます。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>複数選択リスト ボックスでこのプロパティを使用することはできません</para>。
-          <para></para></remarks>
+          <para>複数の項目を選択できるリスト ボックスでは、このプロパティを使用できません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ListFillRange">
@@ -654,8 +659,10 @@
         <summary>指定されたリスト ボックスの塗りつぶしに使用するワークシートの範囲を設定または返します。 このプロパティを設定すると、リスト ボックス内の既存のリストが破棄されます。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Excel の範囲内のすべてのセルの内容を読み取り、リスト ボックスにセルの値を挿入します。リストの範囲のセルに変更を追跡します</para>。
-          <para>で、[リスト] ボックスの一覧が作成されたかどうか、<see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" />メソッドでは、このプロパティが空の文字列を返します ("").</para><para></para></remarks>
+          <para>Excel では、指定したセル範囲に含まれる各セルの内容を読み込み、読み込んだ値をリスト ボックスに挿入します。指定したセル範囲内のセルに加えられた変更は、リスト ボックスにも反映されます。</para>
+          <para>リスト ボックスの一覧が作成されたかどうか、<see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" />メソッドでは、このプロパティが空の文字列を返します ("")。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -812,22 +819,23 @@
         <summary>指定したオブジェクトがクリックされたときに実行されるマクロの名前を設定または返します。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>メニュー項目のカスタム ヘルプをオーバーライドするためにこのプロパティを設定する情報を使用してメニュー項目に設定された情報を設定に割り当てられているマクロです</para>。
-          <para></para></remarks>
+          <para>メニュー項目にこのプロパティを設定すると、メニュー項目に登録されていたヘルプの設定が、登録したマクロのヘルプ設定に置き換えられます。</para>
+          <para></para>
+        </remarks>
         <example>
-          <para>この使用例は、1 番目の図形をクリックしたときに、ShapeClick プロシージャを実行します。</para>
+          <para>次の使用例は、図形 1 をクリックしたときに、ShapeClick プロシージャを実行するようにします。</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(1).&lt;/span&gt;
 &lt;span class="label"&gt;OnAction&lt;/span&gt;
 &lt;span class="label"&gt;= "ShapeClick"&lt;/span&gt;</code>
         </example>
         <example>
-          <para>この使用例は、1 番目の図形をクリックしたときに、ShapeClick プロシージャを実行します。</para>
+          <para>次の使用例は、図形 1 をクリックしたときに、ShapeClick プロシージャを実行するようにします。</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(1).&lt;/span&gt;
 &lt;span class="label"&gt;OnAction&lt;/span&gt;
 &lt;span class="label"&gt;= "ShapeClick"&lt;/span&gt;</code>
         </example>
         <example>
-          <para>この使用例は、1 番目の図形をクリックしたときに、ShapeClick プロシージャを実行します。</para>
+          <para>次の使用例は、図形 1 をクリックしたときに、ShapeClick プロシージャを実行するようにします。</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(1).&lt;/span&gt;
 &lt;span class="label"&gt;OnAction&lt;/span&gt;
 &lt;span class="label"&gt;= "ShapeClick"&lt;/span&gt;</code>
@@ -891,7 +899,7 @@
         <summary>オブジェクトがその下のセルに関連付けられている方法を設定または返します。 読み取り/書き込みの<b>オブジェクト</b>です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>定数は、次のいずれかを使用して、:</para>
+          <para>以下の定数のいずれかを使用します。</para>
           <para>
             <b>xlFreeFloating</b>
           </para>
@@ -1312,8 +1320,9 @@
         <summary>オブジェクトの z オーダーの位置を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトのコレクション、オブジェクトの z オーダーの背面には、 <paramref name="collection" />(1)、z オーダーの前面にあるオブジェクトは、 <paramref name="collection" />(<paramref name="collection" />です<b>。カウント</b>) です</para>。
-          <para></para></remarks>
+          <para>オブジェクトのコレクション、オブジェクトの z オーダーの背面には、 <paramref name="collection" />(1)、z オーダーの前面にあるオブジェクトは、 <paramref name="collection" />(<paramref name="collection" />です<b>。カウント</b>)。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

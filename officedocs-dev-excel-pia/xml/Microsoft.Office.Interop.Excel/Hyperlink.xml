@@ -1,10 +1,10 @@
 <Type Name="Hyperlink" FullName="Microsoft.Office.Interop.Excel.Hyperlink">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="dd29b6bc04f2e1a3332ee1b3e06df7d844ecc7c4" />
+    <Meta Name="ms.openlocfilehash" Value="0dfd3a08d223fb5d9858e759d9369366737cb84c" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580690" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Hyperlink" />
@@ -32,10 +32,11 @@
     <summary>ハイパーリンクを表します。</summary>
     <remarks>
       <para>
-        <b>Hyperlink</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.Hyperlinks" />コレクションです</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Hyperlink" /> (図形は 1 つのみハイパーリンクを持つことができます)、図形のハイパーリンクを取得するプロパティ</para>。
-      <para>ワークシートまたは範囲には、複数のハイパーリンクを持つことができます。<b>ハイパーリンク</b>を使用して (<paramref name="index" />)、どこで<paramref name="index" />は、オブジェクトを取得する 1 つ<b>のハイパーリンク</b>に、ハイパーリンクの数</para>。
-      <para></para></remarks>
+        <b>Hyperlink</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.Hyperlinks" />コレクションです。</para>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Hyperlink" /> (図形は 1 つのみハイパーリンクを持つことができます)、図形のハイパーリンクを取得するプロパティです。</para>
+      <para>範囲やワークシートは、複数のハイパーリンクを持つことができます。 <b>ハイパーリンク</b>を使用して (<paramref name="index" />)、どこで<paramref name="index" />は、オブジェクトを取得する 1 つ<b>のハイパーリンク</b>に、ハイパーリンクの数。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Address">
@@ -183,10 +184,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -243,9 +245,10 @@
         <summary>指定したハイパーリンクの電子メールの件名のテキスト文字列を設定または返します。 件名は、ハイパーリンクのアドレスに追加されます。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、通常、電子メール ハイパーリンクで使用されます</para>。
-          <para>このプロパティの値優先順位は、電子メールの件名を使用して指定した、 <see cref="P:Microsoft.Office.Interop.Excel.Hyperlink.Address" /><b>、同じオブジェクト</b>のプロパティです</para>。
-          <para></para></remarks>
+          <para>このプロパティは主に、電子メールへのハイパーリンクで使用されます。</para>
+          <para>このプロパティの値優先順位は、電子メールの件名を使用して指定した、 <see cref="P:Microsoft.Office.Interop.Excel.Hyperlink.Address" /><b>、同じオブジェクト</b>のプロパティです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Follow">
@@ -396,8 +399,9 @@
         <summary>指定されたハイパーリンクのポップ ヒントのテキストを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>のドキュメントを Web ページに保存した後、[ヒントのテキストが表示ことがあります (たとえば) と、マウス ポインターが置かハイパーリンク経由で Web ブラウザーでドキュメントが表示されているときにします。一部の Web ブラウザーにポップ ヒントを使用することはできません</para>。
-          <para></para></remarks>
+          <para>Web ページとして保存したドキュメントを Web ブラウザーで表示し、ハイパーリンクの上にマウス ポインターをしばらく置いた場合などに、ヒントが表示されます。一部のブラウザーは、ヒントをサポートしていません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Shape">
@@ -517,8 +521,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>型</b>のプロパティには、次のいずれかを指定できます<see cref="T:Microsoft.Office.Core.MsoHyperlinkType" />定数: <b>msoHyperlinkInlineShape</b>、 <b>msoHyperlinkRange</b>、または<b>msoHyperlinkShape</b>です</para>。
-          <para></para></remarks>
+            <b>Type</b>プロパティには、次のいずれかを指定できます<see cref="T:Microsoft.Office.Core.MsoHyperlinkType" />定数: <b>msoHyperlinkInlineShape</b>、 <b>msoHyperlinkRange</b>、または<b>msoHyperlinkShape</b>。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

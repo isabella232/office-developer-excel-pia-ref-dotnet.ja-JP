@@ -1,10 +1,10 @@
 <Type Name="ModuleView" FullName="Microsoft.Office.Interop.Excel.ModuleView">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="b3d32a67f2f1ef23ab53c418cc3f57f390d398a5" />
+    <Meta Name="ms.openlocfilehash" Value="19cb4ef15ded6d881e2d623f856debafb90eb693" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581418" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ModuleView" />
@@ -31,8 +31,9 @@
   <Docs>
     <summary>既存を表す<see cref="T:Microsoft.Office.Interop.Excel.Module" />ブックのビューです。</summary>
     <remarks>
-      <para>モジュールの領域には、グラフのプロット エリアを含むすべてが含まれています。ただし、プロット エリア、独自の塗りつぶしには、モジュールの領域を満たないため、プロット エリアを入力します</para>。
-      <para></para></remarks>
+      <para>モジュールの領域には、グラフのプロット エリアを含むすべてが含まれています。 ただし、プロット エリアでは、プロット エリアの塗りつぶしは、モジュール領域を塗りつぶすしないように独自の塗りつぶしがあります。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,8 +63,9 @@
         <value>
           <b>アプリケーション</b>(上記参照)</value>
         <remarks>
-          <para>そのオブジェクトのアプリケーションを取得するのには OLE オートメーション オブジェクトに対してこのプロパティを使用することができます</para>。
-          <para></para></remarks>
+          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクト用のアプリケーションを取得できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -94,8 +96,9 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。 <see cref="P:Microsoft.Office.Interop.Excel.ModuleView.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当  <see cref="P:Microsoft.Office.Interop.Excel.ModuleView.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

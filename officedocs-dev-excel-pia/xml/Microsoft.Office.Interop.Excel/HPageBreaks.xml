@@ -1,10 +1,10 @@
 <Type Name="HPageBreaks" FullName="Microsoft.Office.Interop.Excel.HPageBreaks">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="67108f19eb2bdfc41fd93ef30c28377a61a1667c" />
+    <Meta Name="ms.openlocfilehash" Value="0624b974810397b893a61eed52c425b38d116dad" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585730" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface HPageBreaks : System.Collections.IEnumerable" />
@@ -36,12 +36,22 @@
     <summary>印刷範囲での水平な改ページのコレクションです。 水平の改ページは、<see cref="T:Microsoft.Office.Interop.Excel.HPageBreak" />オブジェクトです。</summary>
     <remarks>
       <para>
-        <b>HPageBreaks</b>プロパティを使用して、<b>返すプロパティ</b>のコレクションを取得します。使用して、<see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" />水平な改ページを追加します</para>。
-      <para>印刷範囲を交差しない改ページを追加するかどうかは、新しく追加した<b>HPageBreak</b>オブジェクトは<b>HPageBreaks</b>コレクションの印刷範囲には表示されません</para>。
-      <para>と、<see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Application" />プロパティでは、<see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Count" />プロパティでは、<see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Creator" />プロパティでは、<see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Item(System.Int32)" />プロパティでは、<see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Parent" />プロパティ、または<see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" />メソッドを<b>HPageBreaks</b>プロパティと共に使用:</para><list type="bullet"><item><description>印刷範囲の場合、 <b>HPageBreaks</b>プロパティは印刷範囲内の改ページにのみ適用されます。</description></item> 。
-        <item><description>ユーザー定義印刷の領域の同じ範囲、 <b>HPageBreaks</b>プロパティはすべての改ページには</description></item></list>。
-      <para><b>ノート</b>は、海抜 1,026 水平な改ページ 1 枚に制限します</para>。
-      <para></para></remarks>
+        <b>HPageBreaks</b>プロパティを使用して、<b>返すプロパティ</b>のコレクションを取得します。 使用して、<see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" />水平な改ページを追加します。</para>
+      <para>印刷範囲を交差しない改ページを追加すると、印刷範囲を<b>返すプロパティ</b>のコレクションに新しく追加した<b>HPageBreak</b>オブジェクトは表示されません。</para>
+      <para>
+        <see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Application" />プロパティでは、<see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Count" />プロパティ、<see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Creator" />プロパティ、<see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Item(System.Int32)" />プロパティ、<see cref="P:Microsoft.Office.Interop.Excel.HPageBreaks.Parent" />プロパティ、または<see cref="M:Microsoft.Office.Interop.Excel.HPageBreaks.Add(System.Object)" />メソッドを<b>HPageBreaks</b>プロパティと共に使用します。</para>
+      <list type="bullet">
+        <item>
+          <description>自動的に決められた印刷範囲の場合、<b>HPageBreaks</b> プロパティは印刷範囲内の改ページにのみ使用できます。</description>
+        </item>
+        <item>
+          <description>ユーザーが指定した印刷範囲の場合、<b>HPageBreaks</b> プロパティはすべての改ページに使用できます。</description>
+        </item>
+      </list>
+      <para>
+        <b>メモ</b> 海抜 1,026 水平な改ページ 1 枚の制限があります。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -191,10 +201,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

@@ -1,10 +1,10 @@
 <Type Name="Charts" FullName="Microsoft.Office.Interop.Excel.Charts">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f0e75c27ff1370b7c1737585a6a29f589fcd20eb" />
+    <Meta Name="ms.openlocfilehash" Value="21bb7adb80852e2d82d5897dcd0ffec87dcefadd" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20581740" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Charts : System.Collections.IEnumerable" />
@@ -35,11 +35,14 @@
   <Docs>
     <summary>指定されたブックまたは作業中のブックにあるすべてのグラフ シートのコレクションです。 各グラフ シートは、<see cref="T:Microsoft.Office.Interop.Excel.Chart" />オブジェクトです。 ワークシートまたはダイアログ シートに埋め込まれたグラフは含まれません。 埋め込みグラフの詳細についてを参照してください、<see cref="T:Microsoft.Office.Interop.Excel.ChartObject" />オブジェクトです。</summary>
     <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /><b>Charts</b>コレクションを返すプロパティです。使用して、<see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" />メソッドを新しいグラフ シートを作成し、ブックに追加します</para>。
-      <para>組み合わせることができます、<see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" />を持つメソッド、<see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />ワークシートからのデータを含む新しいグラフを追加します</para>。
-      <para><b>グラフ</b>を使用 (<paramref name="index" />)、<paramref name="index" />は、グラフ シートのインデックス番号または名前、1 つの<b>グラフ</b>オブジェクトを取得する</para>。
-      <para>、<see cref="T:Microsoft.Office.Interop.Excel.Sheets" />コレクションには、(グラフ シートとワークシートの両方) のブックのすべてのシートが含まれています。<b>シート</b>を使用して (<paramref name="index" />)、どこで<paramref name="index" />は、シートの名前または番号を 1 つのシートを取得する</para>。
-      <para></para></remarks>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Charts" /><b>Charts</b>コレクションを返すプロパティです。 使用して、<see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" />メソッドを新しいグラフ シートを作成し、ブックに追加します。</para>
+      <para>組み合わせることができます、<see cref="M:Microsoft.Office.Interop.Excel.Charts.Add(System.Object,System.Object,System.Object)" />を持つメソッド、<see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />ワークシートからのデータを含む新しいグラフを追加します。</para>
+      <para>
+        <b>グラフ</b>を使用して (<paramref name="index" />)、 <paramref name="index" /> 、グラフ シートのインデックス番号または名前、1 つの<b>グラフ</b>オブジェクトを取得するには。</para>
+      <para>
+        <see cref="T:Microsoft.Office.Interop.Excel.Sheets" />コレクションには、(グラフ シートとワークシートの両方) のブックのすべてのシートが含まれています。 <b>シート</b>を使用して (<paramref name="index" />)、どこで<paramref name="index" />は、シートの名前または番号を 1 つのシートを取得します。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -272,8 +275,9 @@
         <param name="After">省略可能な<b>オブジェクト</b>です。 その後、コピーしたシートを配置するシートです。 指定することはできません<paramref name="After" />を指定する場合は、 <paramref name="Before" />。</param>
         <summary>シートをブック内の他の場所にコピーします。</summary>
         <remarks>
-          <para>いずれかの方法を指定しない場合は、<paramref name="Before" />または<paramref name="After" />、コピーしたシートを含む新しいブックを作成します</para>。
-          <para></para></remarks>
+          <para>いずれかの方法を指定しない場合は、<paramref name="Before" />または<paramref name="After" />、コピーしたシートを含む新しいブックを作成します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -331,8 +335,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -418,8 +423,9 @@
         <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" />シートの水平方向のページを表すコレクションを中断します。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>は 1026 水平な改ページ 1 枚の制限があります</para>。
-          <para></para></remarks>
+          <para>1 つのシートに使用できる水平な改ページの数は 1026 です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -482,8 +488,9 @@
         <param name="After">省略可能な<b>オブジェクト</b>です。 配置移動したシートです。 指定することはできません<paramref name="After" />を指定する場合は、 <paramref name="Before" />。</param>
         <summary>シートをブック内の他の場所に移動します。</summary>
         <remarks>
-          <para>いずれかの方法を指定しない場合は、<paramref name="Before" />または<paramref name="After" />、移動するワークシートを含む新しいブックを作成します</para>。
-          <para></para></remarks>
+          <para>いずれかの方法を指定しない場合は、<paramref name="Before" />または<paramref name="After" />、移動するワークシートを含む新しいブックを作成します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -556,8 +563,9 @@
         <param name="PrToFileName">省略可能な<b>オブジェクト</b>です。 場合<paramref name="PrintToFile" />は、設定に<b>は True</b>、この引数を指定して印刷しファイルの名前です。</param>
         <summary>オブジェクトを印刷します。</summary>
         <remarks>
-          <para>の説明における「ページ」<paramref name="From" />と<paramref name="To" />印刷されたページを参照して、シートまたはブックのページ全体ではありません</para>。
-          <para></para></remarks>
+          <para>説明における「ページ」<paramref name="From" />と<paramref name="To" />印刷されたページを参照して、シートまたはブックのページ全体ではありません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintOut_2">

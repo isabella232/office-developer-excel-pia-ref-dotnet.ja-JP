@@ -1,10 +1,10 @@
 <Type Name="Phonetic" FullName="Microsoft.Office.Interop.Excel.Phonetic">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ab43da53049ee91947b83a304d2ced9fecefe68c" />
+    <Meta Name="ms.openlocfilehash" Value="968b33512b8ee5525d7c2fa249064b898613c020" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587648" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Phonetic" />
@@ -31,10 +31,13 @@
   <Docs>
     <summary>セルの指定されたふりがなテキスト文字列についての情報を表します。</summary>
     <remarks>
-      <para>Microsoft Excel 97 では、このオブジェクトに指定した範囲のふりがなテキストの書式設定属性が含まれている</para>。
-      <para>使用<b>[ふりがな]</b>(<paramref name="index" />)、<paramref name="index" />は、1 つの<b>Phonetic</b>オブジェクトを取得するのには、ふりがなテキストのインデックス番号です</para>。
-      <para>、<see cref="P:Microsoft.Office.Interop.Excel.Range.Phonetic" />プロパティは、Microsoft Excel の以前のバージョンとの互換性を提供します。<b>[ふりがな]</b>を使用する必要があります (<paramref name="index" />)、<paramref name="index" />は、1 つの<b>Phonetic</b>オブジェクトを取得するのには、ふりがなテキストのインデックス番号です</para>。
-      <para></para></remarks>
+      <para>Microsoft Excel 97 では、指定されたセル範囲のすべてのふりがなテキストの書式の属性が含まれています。</para>
+      <para>
+        <b>表音</b>を使用する (<paramref name="index" />)、<paramref name="index" />は、1 つの<b>Phonetic</b>オブジェクトを取得するのには、ふりがなテキストのインデックス番号です。</para>
+      <para>
+        <see cref="P:Microsoft.Office.Interop.Excel.Range.Phonetic" />プロパティは、Microsoft Excel の以前のバージョンとの互換性を提供します。 <b>[ふりがな]</b>を使用する必要があります (<paramref name="index" />)、<paramref name="index" />は、1 つの<b>Phonetic</b>オブジェクトを取得するのには、ふりがなテキストのインデックス番号です。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -67,7 +70,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>配置</b>プロパティには、次のいずれかを指定できる<see cref="T:Microsoft.Office.Interop.Excel.XlPhoneticAlignment" />定数:</para>
+            <b>配置</b>プロパティには、次のいずれかを指定できる<see cref="T:Microsoft.Office.Interop.Excel.XlPhoneticAlignment" />定数。</para>
           <para>
             <b>XlPhoneticAlignCenter</b>
           </para>
@@ -169,10 +172,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -260,8 +264,9 @@
         <summary>指定したオブジェクトのテキストを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティを取得または設定のふりがなテキストを設定する<see cref="T:Microsoft.Office.Interop.Excel.Phonetic" />オブジェクトです。このプロパティを<b>Null</b>に設定できません</para>。
-          <para></para></remarks>
+          <para>このプロパティを取得または設定のふりがなテキストを設定する<see cref="T:Microsoft.Office.Interop.Excel.Phonetic" />オブジェクトです。 <b>Null</b>には、このプロパティを設定することはできません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">

@@ -1,10 +1,10 @@
 <Type Name="ChartEvents_Event" FullName="Microsoft.Office.Interop.Excel.ChartEvents_Event">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2808562b058c5c927be434f6cc05ef99c00270fc" />
+    <Meta Name="ms.openlocfilehash" Value="8fa24bd36a40b86e1c8eda5d1c429fc248c390f6" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576644" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartEvents_Event" />
@@ -70,9 +70,10 @@
         <summary>既定のダブルクリック操作の前に、埋め込みグラフをダブルクリックしたときに発生します。</summary>
         <remarks>
           <para>
-            <see cref="M:Microsoft.Office.Interop.Excel._Application.DoubleClick" />メソッドが原因でこのイベントは発生しません</para>。
-          <para>ユーザーは、セルの枠線をダブルクリックすると、このイベントは発生しません</para>。
-          <para></para></remarks>
+            <see cref="M:Microsoft.Office.Interop.Excel._Application.DoubleClick" />メソッドが原因でこのイベントは発生しません。</para>
+          <para>ユーザーがセルの境界をダブルクリックしたとき、このイベントは発生しません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BeforeRightClick">
@@ -92,8 +93,9 @@
       <Docs>
         <summary>埋め込みグラフは、既定のアクションを右クリックする前に、右クリックしたときに発生します。</summary>
         <remarks>
-          <para>、他のワークシート イベントと同様に、このイベントをポインターが図形またはコマンド バー (ツールバーまたはメニュー バー) の上に右クリックした場合は発生しません</para>。
-          <para></para></remarks>
+          <para>他のワークシート イベントと同様に、ポインターが図形またはコマンド バー (ツールバーまたはメニュー バー) の上にある場合、右クリックしてもこのイベントは発生しません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Calculate">

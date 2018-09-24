@@ -1,10 +1,10 @@
 <Type Name="ColorScaleCriteria" FullName="Microsoft.Office.Interop.Excel.ColorScaleCriteria">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c8c5c4bd0f115d5f46e3f8b194a4b36d82012e7f" />
+    <Meta Name="ms.openlocfilehash" Value="589e9e7df115b961e73fd7901c8f7f0502669047" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587438" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ColorScaleCriteria : System.Collections.IEnumerable" />
@@ -36,10 +36,11 @@
     <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />のすべてのカラー スケールの条件付き書式の条件を表すオブジェクト。 各条件は、最小、中間、またはカラー スケールの最大しきい値を指定します。</summary>
     <remarks>
       <para>
-        <b>ColorScaleCriteria</b>コレクションを返すを使用して、<see cref="P:Microsoft.Office.Interop.Excel.ColorScale.ColorScaleCriteria" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.ColorScale" />オブジェクトです</para>。
-      <para></para></remarks>
+        <b>ColorScaleCriteria</b>コレクションを返すを使用して、<see cref="P:Microsoft.Office.Interop.Excel.ColorScale.ColorScaleCriteria" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.ColorScale" />オブジェクトです。</para>
+      <para></para>
+    </remarks>
     <example>
-      <para>コード例を次は、数値の範囲を作成し、その範囲に 2 色スケールの条件付き書式ルールを適用します。最小しきい値の色は青でそれぞれの基準を設定するのには、 <b>ColorScaleCriteria</b>コレクションにインデックスを付けるには赤、最高しきい値を割り当てられます。</para>
+      <para>コード例を次は、数値の範囲を作成し、その範囲に 2 色スケールの条件付き書式ルールを適用します。 最小しきい値の色は青でそれぞれの基準を設定するのには、 <b>ColorScaleCriteria</b>コレクションにインデックスを付けるには赤、最高しきい値を割り当てられます。</para>
       <code>&lt;span class="label"&gt;Sub CreateColorScaleCF()  
 
 
@@ -4463,8 +4464,9 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>の条件の数は、カラー スケールに割り当てられたしきい値の数と同じです。2 つまたは 3 つのいずれかになります、条件付き書式ルールに 2 色スケールまたは 3 色スケールを使用するかどうかによって異なります</para>。
-          <para></para></remarks>
+          <para>条件の数はカラー スケールに割り当てられたしきい値の数と同じです。これは、条件付き書式ルールに 2 色スケールと 3 色スケールのどちらを使用するのかに応じて 2 または 3 になります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -4531,8 +4533,9 @@
           <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" />
         </value>
         <remarks>
-          <para>値の<paramref name="Index" />パラメーターをカラー スケールの条件付き書式を設定した条件の数より大きい値にすることはできません。条件は、カラー スケールに割り当てられたしきい値の値に相当します。しきい値の数を検索するを使用して、<see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriteria.Count" />プロパティ</para>。
-          <para></para></remarks>
+          <para>値、<paramref name="Index" />パラメーターをカラー スケールの条件付き書式を設定した条件の数より大きい値にすることはできません。 条件は、カラー スケールに割り当てられたしきい値の値に相当します。 しきい値の数を検索するを使用して、<see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriteria.Count" />プロパティ。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,10 +1,10 @@
 <Type Name="PivotFields" FullName="Microsoft.Office.Interop.Excel.PivotFields">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e9e082deeb3ead6e32fc7df870f7f8494e27376b" />
+    <Meta Name="ms.openlocfilehash" Value="b9bff936f8cd3ec167ac2ff150e560a9433d1081" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586871" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotFields : System.Collections.IEnumerable" />
@@ -35,9 +35,38 @@
   <Docs>
     <summary>すべてのコレクション、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />ピボット テーブル レポート内のオブジェクト。</summary>
     <remarks>
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotFields(System.Object)" />のメソッド、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /><b>PivotFields</b>コレクションを返すオブジェクト</para>。
-      <para><b>ピボット フィールド</b>の使用 (<paramref name="index" />)、<paramref name="index" />は、フィールドの名前またはインデックス番号を 1 つの<b>ピボット テーブル</b>オブジェクトを取得する</para>。
-      <para>いくつかの場合、簡単に使用するピボット テーブル フィールドのサブセットを取得するプロパティのいずれかの場合があります。次のアクセサー メソッドが利用可能な:</para><list type="bullet"><item><description><see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ColumnFields(System.Object)" />プロパティ</description></item><item><description><see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DataFields(System.Object)" />プロパティ</description></item><item><description><see cref="P:Microsoft.Office.Interop.Excel.PivotTable.HiddenFields(System.Object)" />プロパティ</description></item><item><description><see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PageFields(System.Object)" />プロパティ</description></item><item><description><see cref="P:Microsoft.Office.Interop.Excel.PivotTable.RowFields(System.Object)" />プロパティ</description></item><item><description><see cref="P:Microsoft.Office.Interop.Excel.PivotTable.VisibleFields(System.Object)" />プロパティ</description></item></list><para></para></remarks>
+      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotFields(System.Object)" />のメソッド、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /><b>PivotFields</b>コレクションを返すオブジェクト。</para>
+      <para>
+        <b>ピボット フィールド</b>を使用して (<paramref name="index" />)、どこで<paramref name="index" />は、フィールドの名前またはインデックス番号を 1 つの<b>ピボット テーブル</b>オブジェクトを取得します。</para>
+      <para>ピボットテーブル フィールドのサブセットを取得するプロパティを使うと便利な場合があります。使用できるプロパティを次に示します。</para>
+      <list type="bullet">
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ColumnFields(System.Object)" />プロパティ</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DataFields(System.Object)" />プロパティ</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.HiddenFields(System.Object)" />プロパティ</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PageFields(System.Object)" />プロパティ</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.RowFields(System.Object)" />プロパティ</description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.VisibleFields(System.Object)" />プロパティ</description>
+        </item>
+      </list>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -123,8 +152,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

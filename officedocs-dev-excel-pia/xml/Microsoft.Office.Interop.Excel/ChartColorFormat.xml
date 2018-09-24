@@ -1,10 +1,10 @@
 <Type Name="ChartColorFormat" FullName="Microsoft.Office.Interop.Excel.ChartColorFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2fc25a7018dd0e9e1de00d846f891570157c61e7" />
+    <Meta Name="ms.openlocfilehash" Value="deb6994bf1703cd29b935ef38c58228a26d6f7d9" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582307" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartColorFormat" />
@@ -31,10 +31,29 @@
   <Docs>
     <summary>グラフでだけ使用されます。 1 色のオブジェクトの前景色の色や、グラデーションまたはパターンで塗りつぶされたオブジェクトの背景色を表します。</summary>
     <remarks>
-      <para>オブジェクトを<b>返すプロパティです</b>を取得する次の表に示すプロパティのいずれか使用しています</para>。
-      <list type="table"><item><term><see cref="P:Microsoft.Office.Interop.Excel.ChartFillFormat.BackColor" /></term><description><see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /></description>の背景の塗りつぶしの色 (グラデーションまたはパターンの塗りつぶしで使用)
-        </item><item><term><see cref="P:Microsoft.Office.Interop.Excel.ChartFillFormat.ForeColor" /></term><description><b>返す</b></description>の
-          <description>前景の塗りつぶし色 (または均一な塗りつぶしの色の塗りつぶし)</description></item></list><para></para></remarks>
+      <para>次に示すプロパティによって、取得する <b>ChartColorFormat</b> オブジェクトの内容が異なります。</para>
+      <list type="table">
+        <item>
+          <term>
+            <see cref="P:Microsoft.Office.Interop.Excel.ChartFillFormat.BackColor" />
+          </term>
+          <description>
+            <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" />
+          </description>
+          <description>背景の塗りつぶし色 (網かけまたはパターンを使った塗りつぶしに使用)</description>
+        </item>
+        <item>
+          <term>
+            <see cref="P:Microsoft.Office.Interop.Excel.ChartFillFormat.ForeColor" />
+          </term>
+          <description>
+            <b>返す</b>
+          </description>
+          <description>前景色、または均一な色の塗りつぶし</description>
+        </item>
+      </list>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -122,10 +141,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -242,8 +262,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>返すプロパティです</b>プロパティには、次のいずれかを指定できる<b /><see cref="T:Microsoft.Office.Core.MsoColorType" />定数: <b>msoColorTypeRGB</b>または<b>msoColorTypeScheme</b>です</para>。
-          <para></para></remarks>
+            <b>返すプロパティです</b>プロパティには、次のいずれかを指定できる<b /><see cref="T:Microsoft.Office.Core.MsoColorType" />定数: <b>msoColorTypeRGB</b>または<b>msoColorTypeScheme</b>です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,10 +1,10 @@
 <Type Name="Point" FullName="Microsoft.Office.Interop.Excel.Point">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7e25b0218180f3970a9efba6f581a14516fdea82" />
+    <Meta Name="ms.openlocfilehash" Value="41d76d059050993a028c8b26b1795b64c3e70e33" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587683" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Point" />
@@ -32,9 +32,11 @@
     <summary>グラフのデータ系列にある 1 つのデータ要素を表します。</summary>
     <remarks>
       <para>
-        <b>ポイント</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.Points" />コレクションです。<b>Points</b>コレクションには、1 つの系列内のすべてのポイントが含まれています</para>。
-      <para>使用の<b>ポイント</b>(<paramref name="index" />)、<paramref name="index" />ポイントのインデックス番号で、1 つを返すには、オブジェクトを<b>ポイント</b>します。ポイントは、シリーズの右に左から番号が付けられます。Points(1) は最も左側のポイントから最も右側のポイントです</para>。
-      <para></para></remarks>
+        <b>ポイント</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.Points" />コレクションです。 <b>Points</b> コレクションには、1 つのデータ系列にあるすべてのデータ要素が含まれています。</para>
+      <para>
+        <b>ポイント</b>を使用して (<paramref name="index" />)、<paramref name="index" />ポイントのインデックス番号で、1 つを返すには、オブジェクトを<b>ポイント</b>します。 ポイントは、シリーズの右に左から番号が付けられます。 Points(1)、左端のポイントから最も右側のポイント。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_ApplyDataLabels">
@@ -178,8 +180,9 @@
           <b>True を指定</b>または系列のすべてのポイントの末尾に図が適用されている場合です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、3-D グラフにのみ適用されます</para>。
-          <para></para></remarks>
+          <para>このプロパティは、3-D グラフにのみ適用されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyPictToFront">
@@ -212,8 +215,9 @@
           <b>True を指定</b>または系列のすべてのポイントの前面に図が適用されている場合です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、3-D グラフにのみ適用されます</para>。
-          <para></para></remarks>
+          <para>このプロパティは、3-D グラフにのみ適用されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ApplyPictToSides">
@@ -246,8 +250,9 @@
           <b>True を指定</b>または系列のすべてのポイントの側面に図が適用されている場合です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、3-d グラフにのみ適用されます</para>。
-          <para></para></remarks>
+          <para>このプロパティは、3-d グラフにのみ適用されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -359,10 +364,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabel">
@@ -391,8 +397,9 @@
         <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> 、要素または近似曲線に関連付けられたデータ ラベルを表すオブジェクト。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>を設定する必要があります近似曲線のデータ ラベルを有効にするには、<see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayEquation" />プロパティまたは<see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayRSquared" />プロパティを<b>True</b>にします。</para> 。
-          <para></para></remarks>
+          <para>設定する必要があります。 近似曲線のデータ ラベルを有効にするには、<see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayEquation" />プロパティまたは<see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayRSquared" />プロパティを<b>True</b>にします。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -419,8 +426,9 @@
         <summary>オブジェクトを削除します。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>を削除する、<see cref="T:Microsoft.Office.Interop.Excel.Point" />オブジェクトは、データ系列全体を削除します</para>。
-          <para></para></remarks>
+          <para>削除する、<see cref="T:Microsoft.Office.Interop.Excel.Point" />オブジェクトは、データ系列全体を削除します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Explosion">
@@ -544,9 +552,10 @@
         <summary>取得し、ポイントが 3 次元の外観を持つかどうかであることを示す値を設定します。 読み取り/書き込み。</summary>
         <value>ブール型</value>
         <remarks>
-          <para>ポイントは、3 次元の外観を持つ場合は True を返します</para>。
-          <para>このプロパティはバブル チャートにのみ適用されます</para>。
-          <para></para></remarks>
+          <para>ポイントは、3 次元の外観を持つ場合は、True を返します。 </para>
+          <para>このプロパティは、バブルチャートにのみ使用できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasDataLabel">
@@ -607,8 +616,9 @@
         <summary>オブジェクトの高さを取得します。</summary>
         <value>オブジェクトのポイント単位の高さです。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -700,8 +710,9 @@
         <summary>グラフ エリアの左端からのオブジェクトの左端からの距離をポイント単位でを表す値を取得します。</summary>
         <value>グラフ エリアの左端からのオブジェクトの左端からポイント単位での距離です。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MarkerBackgroundColor">
@@ -889,32 +900,31 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlMarkerStyle" />
-            <b>可能</b>定数は、次のいずれか:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlMarkerStyle" />以下<b>が可能</b>のいずれかのことができます。</para>
           <para>
-            <b>xlMarkerStyleAutomatic</b>。自動マーカー</para>
+            <b>xlMarkerStyleAutomatic</b> 自動マーカー</para>
           <para>
-            <b>xlMarkerStyleCircle</b>。円形のマーカー</para>
+            <b>xlMarkerStyleCircle</b> 円形のマーカー</para>
           <para>
-            <b>xlMarkerStyleDash</b>。長い棒のマーカー</para>
+            <b>xlMarkerStyleDash</b> 長い棒のマーカー</para>
           <para>
-            <b>xlMarkerStyleDiamond</b>。ひし形のマーカー</para>
+            <b>xlMarkerStyleDiamond</b> ひし形のマーカー</para>
           <para>
-            <b>xlMarkerStyleDot</b>。短い棒のマーカー</para>
+            <b>xlMarkerStyleDot</b> 短い棒のマーカー</para>
           <para>
-            <b>xlMarkerStyleNone</b>。マーカーなし</para>
+            <b>xlMarkerStyleNone</b> マーカーなし</para>
           <para>
-            <b>xlMarkerStylePicture</b>。マーカーの画像</para>
+            <b>xlMarkerStylePicture</b> 画像マーカー</para>
           <para>
-            <b>xlMarkerStylePlus</b>。プラス記号付きのマーカーを正方形</para>
+            <b>xlMarkerStylePlus</b> 正記号 (+) 付きの四角形のマーカー</para>
           <para>
-            <b>xlMarkerStyleSquare</b>。マーカーを正方形</para>
+            <b>xlMarkerStyleSquare</b> 四角形のマーカー</para>
           <para>
-            <b>xlMarkerStyleStar</b>。アスタリスク付きのマーカーを正方形</para>
+            <b>xlMarkerStyleStar</b> アスタリスク (*) 付きの四角形のマーカー</para>
           <para>
-            <b>xlMarkerStyleTriangle</b>。三角形のマーカー</para>
+            <b>xlMarkerStyleTriangle</b> 三角形のマーカー</para>
           <para>
-            <b>xlMarkerStyleX</b>。X マーカーを正方形</para>
+            <b>xlMarkerStyleX</b> X 印付きの四角形のマーカー</para>
           <para></para>
         </remarks>
       </Docs>
@@ -945,9 +955,10 @@
         <summary>オブジェクト名を取得します。</summary>
         <value>オブジェクトの名前です。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para>このプロパティは、グラフのデータ ポイントの名前に対応します。名前は次の形式を使用して表される: S&lt;シリーズ番号&gt;P&lt;ポイント数&gt;です</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para>このプロパティは、グラフ上のデータ要素の名前に対応します。 名前は次の形式を使用して表される: S&lt;シリーズ番号&gt;P&lt;ポイント数&gt;。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1002,8 +1013,9 @@
         <summary>クリップボードの図をマーカーとして、選択された要素に貼り付けます。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>上の列、バー、行、またはレーダー チャートでは、 <b>Paste</b>メソッドを使用することができ、設定、<see cref="P:Microsoft.Office.Interop.Excel.Point.MarkerStyle" />プロパティを<b>xlMarkerStylePicture</b></para> 。
-          <para></para></remarks>
+          <para>上の列、バー、行、またはレーダー チャートでは、 <b>Paste</b>メソッドを使用することができ、設定、<see cref="P:Microsoft.Office.Interop.Excel.Point.MarkerStyle" />プロパティを<b>xlMarkerStylePicture</b>。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PictureType">
@@ -1036,7 +1048,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlChartPictureType" />以下の<b>値</b>定数のいずれか:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlChartPictureType" />以下の<b>値</b>定数のいずれかできます。</para>
           <para>
             <b>xlStack</b>
           </para>
@@ -1148,8 +1160,9 @@
         <summary>グラフ項目上の点の垂直方向または水平方向の位置を (オブジェクトの上端または左端からグラフ エリアの上端または左端までの) ポイント単位で返します。</summary>
         <returns>垂直方向または水平方向の位置のグラフ要素上の点のグラフ エリアの上端または左端に、オブジェクトの上端または左端からポイント単位で。</returns>
         <remarks>
-          <para>このプロパティは、円グラフおよびドーナツ グラフの種類にのみ適用されます</para>。
-          <para></para></remarks>
+          <para>このプロパティは、円グラフおよびドーナツ グラフにのみ使用できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SecondaryPlot">
@@ -1268,8 +1281,9 @@
         <summary>グラフ エリアの上端からのオブジェクトの上端からの距離をポイント単位でを表す値を取得します。</summary>
         <value>グラフ エリアの上端からのオブジェクトの上端からポイント単位での距離です。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -1298,8 +1312,9 @@
         <summary>オブジェクトの幅を取得します。</summary>
         <value>オブジェクトのポイント単位の高さです。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

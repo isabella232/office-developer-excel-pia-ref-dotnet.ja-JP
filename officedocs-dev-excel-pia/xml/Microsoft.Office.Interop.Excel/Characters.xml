@@ -1,10 +1,10 @@
 <Type Name="Characters" FullName="Microsoft.Office.Interop.Excel.Characters">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="af8c5c7adc42aa94b514bcaf0612a241b196dc71" />
+    <Meta Name="ms.openlocfilehash" Value="175d99118aa50595e1cd1bb6597be66d75d3d559" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582363" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Characters" />
@@ -32,9 +32,11 @@
     <summary>オブジェクトに含まれる文字列の文字を表します。 <b>Characters</b>オブジェクトを使用して、完全なテキスト文字列に含まれる文字の並びを変更できます。</summary>
     <remarks>
       <para>
-        <b>文字</b>を使用 (<paramref name="start" />、 <paramref name="length" />)、<paramref name="start" />開始文字番号と<paramref name="length" />、文字数、<b>文字</b>オブジェクトを取得するには</para>。<b>文字</b>の
-      <para>メソッドは、(オブジェクトがリッチ テキストをサポートしない場合、テキストの一部の書式を設定する<b>文字</b>を使用できません)、残りの部分に影響を与えずに、オブジェクトの文字列の一部を変更する必要がある場合にのみ必要があります。同時に、すべてのテキストを変更することができます通常、適切なメソッドまたはプロパティに直接適用するオブジェクトです</para>。
-      <para></para></remarks>
+        <b>文字</b>を使用 (<paramref name="start" />、 <paramref name="length" />)、<paramref name="start" />開始文字番号と<paramref name="length" />、文字数、<b>文字</b>オブジェクトを取得するには。</para>
+      <para>
+        <b>文字</b>は、(オブジェクトがリッチ テキストをサポートしない場合、テキストの一部の書式を設定する<b>文字</b>を使用できません)、残りの部分に影響を与えずに、オブジェクトの文字列の一部を変更する必要がある場合にのみ必要があります。 同時にすべてのテキストを変更するにオブジェクトに直接、適切なメソッドまたはプロパティを適用することが通常です。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -150,10 +152,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -296,9 +299,10 @@
         <summary>指定されたふりがなテキストを設定を取得または<see cref="T:Microsoft.Office.Interop.Excel.Characters" />オブジェクトです。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティを使用する代わりに使用する必要があります、<see cref="M:Microsoft.Office.Interop.Excel.Phonetics.Add(System.Int32,System.Int32,System.String)" />のメソッド、 <see cref="T:Microsoft.Office.Interop.Excel.Phonetics" /> 、セルにふりがな情報を追加し、使用するコレクション、<see cref="P:Microsoft.Office.Interop.Excel.Phonetic.Text" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.Phonetic" />のセルにふりがなテキストの文字列を設定するオブジェクトです</para>。
-          <para>1 つのセルを基にした<b>文字</b>オブジェクトでのみ、このプロパティを使用することができます</para>。
-          <para></para></remarks>
+          <para>このプロパティを使用する代わりに使用する必要があります、<see cref="M:Microsoft.Office.Interop.Excel.Phonetics.Add(System.Int32,System.Int32,System.String)" />のメソッド、 <see cref="T:Microsoft.Office.Interop.Excel.Phonetics" /> 、セルにふりがな情報を追加し、使用するコレクション、<see cref="P:Microsoft.Office.Interop.Excel.Phonetic.Text" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.Phonetic" />のセルにふりがなテキストの文字列を設定するオブジェクト。</para>
+          <para>このプロパティは、セルを 1 つに基づく<b>文字</b>オブジェクトでのみ使用できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">

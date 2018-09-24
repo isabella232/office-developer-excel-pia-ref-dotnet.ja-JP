@@ -1,10 +1,10 @@
 <Type Name="GroupShapes" FullName="Microsoft.Office.Interop.Excel.GroupShapes">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="08f0c9c9914f1d93c86d67a488eeab74bc79ab4c" />
+    <Meta Name="ms.openlocfilehash" Value="ebe63e575d737f035f42220903f1e7f1ac5fd0cc" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586654" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface GroupShapes : System.Collections.IEnumerable" />
@@ -35,9 +35,10 @@
   <Docs>
     <summary>グループ化した図形を表します。</summary>
     <remarks>
-      <para>各図形は、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />オブジェクトです。使用して、<see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" />メソッド グループ化を解除することがなくこのオブジェクトでは、グループ内の 1 つの図形を操作できます</para>。使用の
-      <para>、 <see cref="P:Microsoft.Office.Interop.Excel.Shape.GroupItems" /><b>グループ形状</b>のコレクションを返すプロパティです。<b>GroupItems</b>を使用 (<paramref name="index" />)、 <paramref name="index" /><b>グループ形状</b>のコレクションから単一の図形を取得するのには、グループ化された図形内の個々 の図形の番号です</para>。
-      <para></para></remarks>
+      <para>各図形は、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />オブジェクトです。 使用して、<see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" />メソッド グループ化を解除することがなくこのオブジェクトでは、グループ内の 1 つの図形を操作できます。</para>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Shape.GroupItems" /><b>グループ形状</b>のコレクションを返すプロパティです。 <b>GroupItems</b>を使用 (<paramref name="index" />)、 <paramref name="index" /><b>グループ形状</b>のコレクションから単一の図形を取得するのには、グループ化された図形内の個々 の図形の番号です。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -154,10 +155,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -281,9 +283,10 @@
         <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />内の図形のサブセットを表すオブジェクトを<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />コレクションです。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>使用できますが、 <see cref="P:Microsoft.Office.Interop.Excel.GroupShapes.Range(System.Object)" /> 、図形の数を取得するプロパティを使用する方が簡単、<see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" />メソッドは、コレクションの単一のメンバーを取得する場合</para>。
-          <para>の整数または文字列の配列を指定する<paramref name="Index" />、 <b>Array</b>関数を使用することができます</para>。
-          <para></para></remarks>
+          <para>使用できますが、 <see cref="P:Microsoft.Office.Interop.Excel.GroupShapes.Range(System.Object)" /> 、図形の数を取得するプロパティを使用する方が簡単、<see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" />メソッドは、コレクションの単一のメンバーを取得する場合。</para>
+          <para>整数または文字列の配列を指定する<paramref name="Index" />、 <b>Array</b>関数を使用することができます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

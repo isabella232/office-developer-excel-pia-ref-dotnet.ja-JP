@@ -4,7 +4,7 @@
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20583133" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface _Worksheet" />
@@ -482,8 +482,9 @@
         <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" />オブジェクトのかどうかは、フィルター処理します。 フィルターがオフの場合は、 <b>Nothing</b>を返します。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ワークシートの<b>オート フィルター</b>オブジェクトを作成する必要がありますを有効にするオート フィルター、ワークシート上の範囲のか、手動でまたはを使用して、<see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" />のメソッドの<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトです</para>。
-          <para></para></remarks>
+          <para>ワークシートの<b>オート フィルター</b>オブジェクトを作成する必要がありますを有効にするオート フィルター、ワークシート上の範囲のか、手動でまたはを使用して、<see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" />のメソッドの<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFilterMode">
@@ -528,10 +529,9 @@
           <b>True の</b>場合は、シートにオート フィルターのドロップダウン矢印を表示します。 このプロパティは、<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.FilterMode" />プロパティ。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <b>
-            <para>このプロパティは Trueを返す場合は、ドロップダウン矢印が表示されています。このプロパティを設定するには<b>False</b>矢印を削除するには<b>True</b>に設定することはできません。使用して、<see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" />メソッドの一覧をフィルター処理し、ドロップダウン矢印を表示します</para>
-          </b>。
-          <para></para></remarks>
+          <para>このプロパティは、ドロップダウン矢印が表示されている場合に<b>True</b>を返します。 このプロパティを設定するには<b>False</b>矢印を削除するには<b>True</b>に設定することはできません。 使用して、<see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" />メソッドの一覧をフィルター処理し、ドロップダウン矢印を表示します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Buttons">
@@ -596,13 +596,16 @@
         <remarks>
           <list type="table">
             <item>
-              <description>Worksheets(1) の
-              <term>特定のワークシート</term>の
-            <item><term>すべての開いているブック</term><description>Application.Calculate</description></item>。計算</description>
+              <term>開いているすべてのブック</term>
+              <description>Application.Calculate</description>
             </item>
             <item>
-              <description>Worksheets(1) の
-              <term>範囲を指定</term>します。Rows(2)。計算</description>
+              <term>特定のワークシート</term>
+              <description>Worksheets(1)。計算</description>
+            </item>
+            <item>
+              <term>指定されたセル範囲</term>
+              <description>Worksheets(1)。Rows(2)。計算</description>
             </item>
           </list>
           <para></para>
@@ -636,9 +639,10 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.Worksheets.Item(System.Object)" />プロパティは<b>Range</b>オブジェクトの既定のプロパティ、 <b>Cells</b>キーワードの後にすぐに行および列のインデックスを指定することができます。詳細については、 <b>Item</b>プロパティを参照してください</para>。
-          <para>作業中のワークシート上のすべてのセルを表す<b>Range</b>オブジェクトを返すオブジェクト修飾子を指定せずにこのプロパティを使用します</para>。
-          <para></para></remarks>
+            <see cref="P:Microsoft.Office.Interop.Excel.Worksheets.Item(System.Object)" />プロパティは<b>Range</b>オブジェクトの既定のプロパティ、 <b>Cells</b>キーワードの後にすぐに行および列のインデックスを指定することができます。 詳細については、 <b>Item</b>プロパティを参照してください。</para>
+          <para>オブジェクト修飾子を指定せずにこのプロパティを使用するには、作業中のワークシート上のすべてのセルを表す<b>Range</b>オブジェクトが返されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ChartObjects">
@@ -669,8 +673,10 @@
         <param name="Index">省略可能な<b>バリアント型</b>です。 名前またはグラフの数。 この引数は、複数のグラフを指定する配列を使用できます。</param>
         <summary>1 つの埋め込みグラフのいずれかを表すオブジェクトを返します (、<see cref="T:Microsoft.Office.Interop.Excel.ChartObject" />オブジェクト) またはすべての埋め込みグラフのコレクション (、<see cref="T:Microsoft.Office.Interop.Excel.ChartObjects" />オブジェクト) シートにします。</summary>
         <returns>To be added.</returns>
-        <remarks>このメソッドがするのと同じでは<para>、<see cref="T:Microsoft.Office.Interop.Excel.Charts" />プロパティ。このメソッドは、埋め込みグラフを返します。<b>グラフ</b>のプロパティは、グラフ シートを返します。使用して、<see cref="T:Microsoft.Office.Interop.Excel.Chart" />を返すプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.Chart" />の埋め込みグラフ オブジェクトです</para>。
-          <para></para></remarks>
+        <remarks>
+          <para>同じ、このメソッドは、<see cref="T:Microsoft.Office.Interop.Excel.Charts" />プロパティ。 このメソッドは、埋め込みグラフを返します。<b>グラフ</b>のプロパティは、グラフ シートを返します。 使用して、<see cref="T:Microsoft.Office.Interop.Excel.Chart" />を返すプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.Chart" />の埋め込みグラフ オブジェクト。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CheckBoxes">
@@ -741,8 +747,9 @@
         <param name="SpellLang">省略可能な<b>オブジェクト</b>です。 使用されている辞書の言語です。 使用される<b>MsoLanguageID</b>の値のいずれかの<see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" />プロパティ。</param>
         <summary>オブジェクトのスペルをチェックします。 このフォームには、戻り値がありません。Microsoft Excel では、[スペル チェック] ダイアログ ボックスが表示されます。</summary>
         <remarks>
-          <para>このメソッドを使用して、ヘッダー、フッター、およびワークシート上のオブジェクトを確認します</para>。
-          <para></para></remarks>
+          <para>このメソッドを使用すると、ヘッダー、フッター、およびワークシート上のオブジェクトを確認できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CircleInvalid">
@@ -852,8 +859,9 @@
       <Docs>
         <summary>ワークシートの [入力規則] で設定された制限外の値が入力されているセルに付けられた丸印を消去します。</summary>
         <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.CircleInvalid" />メソッドを無効なデータを含むセルにします</para>。
-          <para></para></remarks>
+          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.CircleInvalid" />メソッドを無効なデータを含むセルにします。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CodeName">
@@ -882,10 +890,11 @@
         <summary>オブジェクトのコード名を返します。 読み取り専用 <b>文字列</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>[プロパティ] ウィンドウの<b>(Name)</b>の右側のセルに表示される値は、選択したオブジェクトのコード名です。デザイン時に、この値を変更することによってオブジェクトのコード名を変更できます。プログラムによって実行時にこのプロパティを変更することはできません</para>。
-          <para>オブジェクトのコード名はオブジェクトを表すオブジェクト式の代わりに使用することができます</para>。
-          <para>シート名とコード名は異なる可能性があります。シートを作成する、シート名とコード名は同じですが、シート名を変更するコードの名前は変更されません (Visual Basic エディターで [プロパティ] ウィンドウを使用して) コード名を変更するシート名は変更されません</para>。
-          <para></para></remarks>
+          <para>[プロパティ] ウィンドウの<b>(Name)</b>の右側のセルに表示される値は、選択したオブジェクトのコード名です。 デザイン時に、この値を変更することによってオブジェクトのコード名を変更できます。 このプロパティは、実行時にプログラムで変更できません。</para>
+          <para>オブジェクトのコード名は、オブジェクトを表すオブジェクト式の代わりに使用できます。</para>
+          <para>シート名とコード名は異なることができます。 シートを作成してシート名とコード名は同じですが、シート名を変更するコードの名前を変更しない、(Visual Basic エディターで [プロパティ] ウィンドウを使用して) コード名を変更するシート名は変更されません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Columns">
@@ -1010,11 +1019,19 @@
           <list type="table">
             <item>
               <term>1</term>
-              <description>上の行のラベルを使用します</description>
-            </item>。
-            <item><term>2</term><description>左の列にラベルを使用します</description></item>。
-            <item><term>3</term><description>ソース データへのリンクを作成します</description></item></list>。
-          <para></para></remarks>
+              <description>最上位の行ラベルを使用します。</description>
+            </item>
+            <item>
+              <term>2</term>
+              <description>左の列にラベルを使用します。</description>
+            </item>
+            <item>
+              <term>3</term>
+              <description>ソース データへのリンクを作成します。</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ConsolidationSources">
@@ -1078,8 +1095,9 @@
         <param name="After">省略可能な<b>オブジェクト</b>です。 その後、コピーしたシートを配置するシートです。 指定することはできません<paramref name="After" />を指定する場合は、 <paramref name="Before" />。</param>
         <summary>シートをブック内の他の場所にコピーします。</summary>
         <remarks>
-          <para>いずれかの方法を指定しない場合は、<paramref name="Before" />または<paramref name="After" />、コピーしたシートを含む新しいブックを作成します</para>。
-          <para></para></remarks>
+          <para>いずれかの方法を指定しない場合は、<paramref name="Before" />または<paramref name="After" />、コピーしたシートを含む新しいブックを作成します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -1111,8 +1129,9 @@
         </value>
         <remarks>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CustomProperties">
@@ -1141,8 +1160,10 @@
         <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.CustomProperties" />ワークシートに関連付けられている識別情報を表すオブジェクト。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、<b>ユーザー設定プロパティ</b>のプロパティでは、ワークシートに識別子情報は、XML のメタデータを表すことができます</para>。
-          <para></para></remarks>
+          <para>
+            <b>ユーザー</b>プロパティでは、ワークシートに識別子情報は、XML のメタデータを表すことができます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -1171,8 +1192,9 @@
       <Docs>
         <summary>オブジェクトを削除します。</summary>
         <remarks>
-          <para>を削除すると、 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />、このメソッドは、削除を確認するのにはユーザーの入力を求めるダイアログ ボックスを表示します。既定では、このダイアログ ボックスが表示されます。<b>Delete</b>メソッドは、ユーザー] をクリックをクリックしたユーザーを削除する場合、ダイアログ ボックスで [キャンセル] または<b>True</b>場合は、 <b>false を指定</b>する<b>ブール</b>値を返します</para>。
-          <para></para></remarks>
+          <para>削除すると、 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />、このメソッドは、削除を確認するのにはユーザーの入力を求めるダイアログ ボックスを表示します。 既定では、このダイアログ ボックスが表示されます。 <b>Delete</b>メソッドは、ユーザーがクリックした] ダイアログ ボックスで [キャンセル] または<b>True</b>の場合、クリックしたユーザーを削除する場合は<b>False</b>の<b>ブール</b>値を返します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayAutomaticPageBreaks">
@@ -1248,8 +1270,9 @@
           <b>True</b> の場合、指定されたシートにページ区切り (自動および手動の両方) を表示します。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>プリンターがインストールされていない場合は、このプロパティを設定することはできません</para>。
-          <para></para></remarks>
+          <para>プリンターがセットアップされていない場合、このプロパティを設定できません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayRightToLeft">
@@ -1427,8 +1450,9 @@
         <summary>画面上での変更のみの保護が設定されているときに、このプロパティが  <b>True</b> の場合、オートフィルター矢印が使用可能です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、各ワークシートに適用され、ワークシートまたはセッションには保存されません</para>。
-          <para></para></remarks>
+          <para>このプロパティは各ワークシートを対象とします。行った設定はブックを閉じると破棄され、シートや動作環境の設定と共には保存されません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableCalculation">
@@ -1461,8 +1485,9 @@
           <b>True</b> の場合、必要に応じて自動的にシートの再計算を実行します。 <b>False</b> の場合、シートの再計算を実行しません。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティの値が<b>False</b>の場合は、再計算を要求することはできません。<b>False</b>から<b>True</b>に値を変更すると、ワークシートが再計算します</para>。
-          <para></para></remarks>
+          <para>このプロパティの値が<b>False</b>の場合は、再計算を要求できません。 <b>False</b>から<b>True</b>に値を変更する場合は、ワークシートが再計算します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableFormatConditionsCalculation">
@@ -1497,9 +1522,10 @@
         </value>
         <remarks>
           <para>
-            <b>True</b> (既定値) に設定すると、条件付き書式は必要に応じて自動的に行われます。 <b>False</b>に設定すると、条件付き書式は再評価されません。 以前に適用された条件付き書式が表示されますが、セルの値も更新されませんまたは<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" />の範囲を変更します。 </para>
-          <para>このフラグの目的は、プログラマがそれを評価する前に規則を完全に構成を許可します。 これは、パフォーマンスは、このような場合に時間がかかるように広い範囲に条件が適用される場合に特に便利です</para>。
-          <para></para></remarks>
+            <b>True</b> (既定値) に設定すると、条件付き書式は必要に応じて自動的に行われます。  <b>False</b>に設定すると、条件付き書式は再評価されません。  以前に適用された条件付き書式が表示されますが、セルの値も更新されませんまたは<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" />の範囲を変更します。  </para>
+          <para>このフラグの目的は、プログラマは、それを評価する前に規則を完全に構成をできるようにすることです。  これは、パフォーマンスは、このような場合に時間がかかるように広い範囲に条件が適用される場合に特に便利です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableOutlining">
@@ -1537,8 +1563,9 @@
         <summary>画面上での変更のみの保護が設定されているとき、このプロパティが  <b>True</b> の場合、アウトライン記号が使用可能です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、各ワークシートに適用され、ワークシートまたはセッションには保存されません</para>。
-          <para></para></remarks>
+          <para>このプロパティは各ワークシートを対象とします。行った設定はブックを閉じると破棄され、シートや動作環境の設定と共には保存されません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnablePivotTable">
@@ -1576,9 +1603,10 @@
         <summary>画面上での変更のみの保護が設定されているときに、このプロパティが  <b>True</b> の場合、ピボットテーブルのコントロールと機能が使用できます。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、各ワークシートに適用され、ワークシートまたはセッションには保存されません</para>。
-          <para>を再計算し、ピボット テーブル レポートを表示する Microsoft Excel のピボット テーブル レポートの右側にロックされていないセルの下のための十分な数が存在する必要があります</para>。
-          <para></para></remarks>
+          <para>このプロパティは各ワークシートを対象とします。行った設定はブックを閉じると破棄され、シートや動作環境の設定と共には保存されません。</para>
+          <para>ピボットテーブル レポートは再計算するとサイズが大きくなる場合があるので、その拡張分を見込んでピボットテーブル レポートの下側および右側のいくつかのセルのロックを解除しておきます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableSelection">
@@ -1610,8 +1638,9 @@
         <summary>シートで何が選択できるかを設定または返します。 読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Excel.XlEnableSelection" />。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、効果、ワークシートが保護されている場合にのみ:<b>ワークシート</b>は、シート上の選択を防ぐことが、 <b>Locked</b>プロパティが<b>False</b>が選択可能にするには、<b>で<b>保護している</b>セルだけは、使用</b>により、任意のセルを選択します</para>。
-          <para></para></remarks>
+          <para>ワークシートが保護されている場合にのみにこのプロパティを反映します<b>ワークシート</b>は、シート上の選択を防ぐことが、 <b>Locked</b>プロパティが<b>False</b>が選択可能にするには、<b>で<b>保護している</b>セルだけは、。使用</b>任意のセルを選択することができます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Evaluate">
@@ -1645,13 +1674,17 @@
         <summary>使用する名前を、オブジェクトまたは値に変換します。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>このメソッドを使用して Microsoft Excel 内の名前の次の種類を使用することができます:</para>
+          <para>このメソッドでは、次のような種類の名前を使用できます。</para>
           <list type="bullet">
             <item>
-              <description>[定義された名前です。任意の名前を指定することができます</description>
-            </item>。外部参照を
-            <item><description>。使用することができます、!演算子を別のブックで定義されているワークシートを参照してください</description></item></list>。
-          <para></para></remarks>
+              <description>定義名。 任意の名前を指定することができます。</description>
+            </item>
+            <item>
+              <description>外部参照します。 使用することができます、! 別のブックで定義されているワークシートを参照する演算子です。</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExportAsFixedFormat">
@@ -1696,8 +1729,9 @@
           <b>FixedFormatExt</b>クラスへのポインター。</param>
         <summary>指定された形式のファイルにエクスポートします。</summary>
         <remarks>
-          <para>このメソッドもサポートしていますファイルを固定形式ファイルにエクスポートするのにはアドインを初期化します。コンバーターが存在する場合に、Excel で、ファイル形式の変換が実行されますか。変換は通常ユーザーによって開始されます</para>。
-          <para></para></remarks>
+          <para>このメソッドは、固定形式ファイルにファイルをエクスポートするために、アドインの初期化もサポートします。たとえば、コンバーターが存在する場合は、Excel はファイル形式を変換します。通常は、ユーザーが変換を開始します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FilterMode">
@@ -1730,8 +1764,9 @@
           <b>True の</b>場合は、ワークシートがフィルター モード。 読み取り専用の <b>ブール値</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティが<b>True</b>の場合は、ワークシートに保存されている非表示の行、フィルターされたリストが含まれています</para>。
-          <para></para></remarks>
+          <para>このプロパティは、ワークシートに保存されている非表示の行、フィルターされたリストが含まれている場合<b>は True</b>です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupBoxes">
@@ -1828,8 +1863,9 @@
         <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" />シートの水平方向のページを表すコレクションを中断します。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>は海抜 1,026 水平な改ページ 1 枚の制限があります</para>。
-          <para></para></remarks>
+          <para>1 つのシートに使用できる水平な改ページの数は 1026 です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Hyperlinks">
@@ -2079,8 +2115,9 @@
         <param name="After">省略可能な<b>オブジェクト</b>です。 配置移動したシートです。 指定することはできません<paramref name="After" />を指定する場合は、 <paramref name="Before" />。</param>
         <summary>シートをブック内の別の場所に移動します。</summary>
         <remarks>
-          <para>いずれかの方法を指定しない場合は、<paramref name="Before" />または<paramref name="After" />、移動するワークシートを含む新しいブックを作成します</para>。
-          <para></para></remarks>
+          <para>いずれかの方法を指定しない場合は、<paramref name="Before" />または<paramref name="After" />、移動するワークシートを含む新しいブックを作成します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -2168,9 +2205,10 @@
         <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Chart" />、 <see cref="T:Microsoft.Office.Interop.Excel.Range" />、または<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />次のシートまたはセルを表すオブジェクト。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>プロパティは、それを選択せずに次のセルを返しますが、オブジェクトが一定の範囲である場合このプロパティは TAB キーをエミュレート</para>
-          <para>、保護されたシートには、このプロパティは次のロックされていないセルを返します。保護されていないシートでは、常に返しますセル直後に指定したセルの右側にします</para>。
-          <para></para></remarks>
+          <para>セル (Range オブジェクト) を対象としたとき、このプロパティが返すセルは Tab キーを押したときの移動先セルと同じです。ただし、そのセルを選択する動作は行われません。</para>
+          <para>保護されたシートでは、ロックされていないセルの中から、次のセルを返します。保護されていないシートでは、指定したセルの右隣のセルを常に返します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OLEObjects">
@@ -2644,9 +2682,10 @@
         <param name="Link">省略可能な<b>オブジェクト</b>です。 の<b>場合は true</b>貼り付けたデータ ソースへのリンクを確立するためにします。 この引数を指定する場合、<paramref name="Destination" />引数を使用することはできません。 既定値は <b>False</b> です。</param>
         <summary>クリップボードの内容をシートに貼り付けます。</summary>
         <remarks>
-          <para>指定しない場合、<paramref name="Destination" />引数では、このメソッドを使用する前に貼り付け先の範囲を選択する必要があります</para>。
-          <para>このメソッドは、クリップボードの内容によって、選択範囲を変更可能性があります</para>。
-          <para></para></remarks>
+          <para>指定しない場合、<paramref name="Destination" />引数では、このメソッドを使用する前に貼り付け先の範囲を選択する必要があります。</para>
+          <para>このメソッドは、クリップボードの内容に合うように現在の選択範囲を変更します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PasteSpecial">
@@ -2690,10 +2729,11 @@
         <summary>指定した形式を使用してシートの上にクリップボードの内容を貼り付けます。 他のアプリケーションからデータを貼り付ける、または特定の形式でデータを貼り付けるには、このメソッドを使用します。</summary>
         <remarks>
           <para>
-            <paramref name="NoHTMLFormatting" />問題のみをときに<paramref name="Format" />="HTML"。他のすべての場合では、<paramref name="NoHTMLFormatting" />は無視されます</para>。
-          <para>このメソッドを使用する前に、貼り付け先の範囲を選択する必要があります</para>。
-          <para>このメソッドは、クリップボードの内容によって、選択範囲を変更可能性があります</para>。
-          <para></para></remarks>
+            <paramref name="NoHTMLFormatting" />問題のみをときに<paramref name="Format" />="HTML"。 他のすべての場合では、<paramref name="NoHTMLFormatting" />は無視されます。</para>
+          <para>このメソッドを使う前に、貼り付け先のセル範囲を必ず選択してください。</para>
+          <para>このメソッドは、クリップボードの内容に合うように現在の選択範囲を変更します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Pictures">
@@ -2848,9 +2888,10 @@
         <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Chart" />、 <see cref="T:Microsoft.Office.Interop.Excel.Range" />、または<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />、前のシートまたはセルを表すオブジェクト。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティはオブジェクトが一定の範囲である場合に SHIFT キーを押しながら TAB キーを押すとエミュレート; キーの組み合わせとは異なり、プロパティが返されますそれを選択しない場合は、前のセル</para>
-          <para>、保護されたシートには、このプロパティは前のロックされていないセルを返します。保護されていないシートでは、常に返しますセル直後に指定したセルの左側にします</para>。
-          <para></para></remarks>
+          <para>セル範囲 (Range オブジェクト) が対象のとき、このプロパティでは、Shift + Tab キーを押したときの移動先セルと同じセルが返されます。ただし、そのセルを選択する動作は行われません。</para>
+          <para>保護されたシートでは、ロックされていないセルの中から前のセルが返されます。保護されていないシートでは、指定したセルの常に左隣のセルが返されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintedCommentPages">
@@ -2879,9 +2920,11 @@
         <summary>現在のワークシートで印刷されるコメント ページの数を取得します。</summary>
         <value>現在のワークシートで印刷されるコメント ページの数です。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para>、<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.PrintedCommentPages" />プロパティがのみ返される場合は 0 より大きい、コメント シート] タブの [ページ設定の設定] ダイアログ ボックスに設定されてシートの末尾です。シートが MS Excel 5.0 ダイアログ シート、またはグラフ シートの場合にこのプロパティが 0 を返します</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.PrintedCommentPages" />プロパティがのみ返される場合は 0 より大きい、コメント シート] タブの [ページ設定の設定] ダイアログ ボックスに設定されてシートの末尾です。 シートが MS Excel 5.0 ダイアログ シート、またはグラフ シートの場合、このプロパティは 0 を返します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintOut">
@@ -2929,8 +2972,9 @@
         <param name="PrToFileName">省略可能な<b>オブジェクト</b>です。 場合<paramref name="PrintToFile" />は、設定に<b>は True</b>、この引数を指定して印刷しファイルの名前です。</param>
         <summary>オブジェクトを印刷します。</summary>
         <remarks>
-          <para>の説明における「ページ」<paramref name="From" />と<paramref name="To" />印刷されたページを参照して、シートまたはブックのページ全体ではありません</para>。
-          <para></para></remarks>
+          <para>説明における「ページ」<paramref name="From" />と<paramref name="To" />印刷されたページを参照して、シートまたはブックのページ全体ではありません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintOutEx">
@@ -3065,10 +3109,12 @@
         <summary>ワークシートを保護し、変更できないようにします。</summary>
         <remarks>
           <para>
-            <b>保護する</b>方法を適用する場合、<paramref name="UserInterfaceOnly" />ワークシートに引数が<b>True</b>に設定し、ブック、ワークシート全体 (インターフェイスだけではなく) 完全に保護されます、ブックを再び開くとします。ユーザー インターフェイスの保護は、ブックを開いた後に再度有効にを<b>保護する</b>方法を適用する必要がありますもう一度<paramref name="UserInterfaceOnly" />を<b>True</b>に設定します</para>。
-          <para>保護されたワークシートを変更する場合は、パスワードを指定した場合、保護されたワークシートで、 <b>Protect</b>メソッドを使用することです。ワークシートの保護を解除、必要な変更を行い、もう一度、ワークシートを保護するために別の方法になります</para>。
-          <para><b>注</b>: セル可能性があります 'Unprotected' 手段には、(セルの書式設定] ダイアログ ボックス) がロックされているユーザーをできるように、[範囲の編集] ダイアログで定義された範囲に含まれますが、ユーザーがパスワードを使用して範囲の保護を解除または NT のアクセス許可を通じて確認されていると</para>。
-          <para></para></remarks>
+            <b>保護する</b>方法を適用する場合、<paramref name="UserInterfaceOnly" />ワークシートに引数が<b>True</b>に設定し、ブック、ワークシート全体 (インターフェイスだけではなく) 完全に保護されます、ブックを再び開くとします。 ユーザー インターフェイスの保護は、ブックを開いた後に再度有効にを<b>保護する</b>方法を適用する必要がありますもう一度<paramref name="UserInterfaceOnly" />を<b>True</b>に設定します。</para>
+          <para>保護されたワークシートに変更を加える場合は、パスワードを指定した場合、保護されたワークシートで、 <b>Protect</b>メソッドを使用することができます。 別のメソッドは、ワークシートの保護を解除、必要な変更を行い、もう一度、ワークシートを保護することです。</para>
+          <para>
+            <b>注</b>: セル可能性があります 'Unprotected' 手段には、(セルの書式設定] ダイアログ ボックス) がロックされているが許可する範囲の編集] ダイアログ ボックスで定義された範囲に含まれていて、ユーザーがパスワードを使用して範囲の保護を解除または NT のアクセス許可を通じて確認されています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProtectContents">
@@ -3515,8 +3561,9 @@
         <summary>A1 スタイルの範囲参照として、スクロール可能範囲を設定または返します。 スクロール領域の外側のセルを選択することはできません。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティを空の文字列に設定 ("") シート全体のセルの選択を有効にするのにします</para>。
-          <para></para></remarks>
+          <para>シート全体でセル選択を可能にするには、このプロパティに空の文字列 ("") を設定します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollBars">
@@ -3580,8 +3627,10 @@
       <Docs>
         <param name="Replace">省略可能な<b>オブジェクト</b>です。 置換するオブジェクトです。</param>
         <summary>オブジェクトを選択します。</summary>
-        <remarks>セルまたはセル範囲を選択するには、 <b>Select</b>メソッドを使用して<para>。1 つのセルをアクティブ セルにするを使用して、<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" />メソッドです</para>。
-          <para></para></remarks>
+        <remarks>
+          <para>セルまたはセル範囲を選択するには、 <b>Select</b>メソッドを使用します。 1 つのセルをアクティブ セルにするを使用して、<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" />メソッドです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetBackgroundPicture">
@@ -3695,9 +3744,10 @@
       <Docs>
         <summary>対象ワークシートに関連付けられたデータ フォームを表示します。</summary>
         <remarks>
-          <para>データ フォームを使用しているときに実行を一時停止します。<b>ShowDataForm</b>メソッドの次の行から実行が再開して、データ フォームを閉じるとします</para>。
-          <para>1 つが存在する場合、このメソッドは、カスタムのデータ フォームを実行します</para>。
-          <para></para></remarks>
+          <para>データ フォームを使用しているときに実行を一時停止します。 データ フォームを閉じると、 <b>ShowDataForm</b>メソッドの次の行で実行が再開されます。</para>
+          <para>このメソッドでは、ユーザー設定のデータ フォームの実行も可能です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SmartTags">
@@ -3861,8 +3911,9 @@
         <summary>取得またはワークシート内のすべての列の標準 (既定) の幅を設定します。 読み取り/書き込み <b>二重</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>列の幅の単位は、標準スタイルの 1 つの文字の幅と同じです。プロポーショナル フォントでは、0 (ゼロ) の文字の幅を使用します</para>。
-          <para></para></remarks>
+          <para>列幅の単位は、標準スタイルの 1 文字分の幅に相当します。プロポーショナル フォントでは、数字の 0 の幅が列幅の単位になります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Tab">
@@ -4074,8 +4125,9 @@
         <param name="Password">省略可能な<b>オブジェクト</b>です。 シートまたはブックの保護を解除するパスワードを示す文字列。 シートまたはブックがパスワードで保護されていない場合、この引数は無視されます。 パスワードで保護されているシートに対してこの引数を省略すると、パスワードが要求されるでしょう。 パスワードで保護されているブックに対してこの引数を省略すると、メソッドは失敗します。</param>
         <summary>シートまたはブックの保護を解除します。保護されていないシートやブックに対しては、このメソッドは無効です。</summary>
         <remarks>
-          <para>、パスワードを忘れた場合は、保護を解除できません、シートやブック。安全な場所に、パスワードと、対応するドキュメント名のリストを保持することをお勧めします</para>。
-          <para></para></remarks>
+          <para>パスワードを忘れると、シートまたはブックの保護を解除できなくなってしまうので注意してください。パスワードおよび対応するブック名またはシート名を一覧表にして、安全な場所に保管しておくことをお勧めします。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UsedRange">
@@ -4144,9 +4196,12 @@
         <summary>オブジェクトを表示するかどうかを決定します。 読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Excel.XlSheetVisibility" />。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>アイテムがテーブルに表示されている場合は、ピボット テーブル アイテムの<b>Visible</b>プロパティは<b>true を指定</b>します</para>。
-          <para>名前の<b>Visible</b>プロパティを<b>False</b>に設定すると、名前が名前の定義] ダイアログ ボックスに表示されません</para>。
-          <para></para></remarks>
+          <para>
+            <b>アイテムがテーブルに表示されている場合、ピボット テーブル アイテムの<b>Visible</b>プロパティは</b>
+          </para>
+          <para>名前の<b>Visible</b>プロパティを<b>False</b>に設定する場合、[名前の定義] ダイアログ ボックスで名前が表示されません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VPageBreaks">
@@ -4208,9 +4263,10 @@
         <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 、特定の XPath にマップされているセルを表すオブジェクト。 指定した XPath がワークシートにマップされていない場合、またはマップされた範囲が空の場合は、 <b>Nothing</b>を返します。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para>、XPath は、XML リストの列内に存在する、ヘッダー行や挿入行は含まれませんの<b>Range</b>オブジェクトが返されます</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para>XPath が XML リストの列内で存在する場合、返される<b>Range</b>オブジェクトがヘッダー行や挿入行含まれません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="XmlMapQuery">
@@ -4244,9 +4300,10 @@
         <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 、特定の XPath にマップされているセルを表すオブジェクト。 指定した XPath がワークシートにマップされていない場合は、 <b>Nothing</b>を返します。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para>とは異なり、<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.XmlDataQuery(System.String,System.Object,System.Object)" />メソッドでは、 <b>XmlMapQuery</b>メソッドは、ヘッダー行と挿入行を含む、XML リストの列全体を返します</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para>異なり、<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.XmlDataQuery(System.String,System.Object,System.Object)" />メソッドでは、 <b>XmlMapQuery</b>メソッドは、ヘッダー行と挿入行を含む、XML リストの列全体を返します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

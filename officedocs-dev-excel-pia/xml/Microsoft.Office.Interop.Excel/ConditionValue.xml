@@ -1,10 +1,10 @@
 <Type Name="ConditionValue" FullName="Microsoft.Office.Interop.Excel.ConditionValue">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a502761111afad4e3e8a449a28ce61efad23c0b4" />
+    <Meta Name="ms.openlocfilehash" Value="81c793a0733604f15df8956de448166bd0681dac" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587312" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ConditionValue" />
@@ -32,9 +32,10 @@
     <summary>データ バーの条件付き書式ルールに対して、最短の棒と最長の棒がどのように評価されるかを表します。</summary>
     <remarks>
       <para>
-        <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" />オブジェクトが返される場合は、いずれかの方法を使用して、<see cref="P:Microsoft.Office.Interop.Excel.Databar.MaxPoint" />または<see cref="P:Microsoft.Office.Interop.Excel.Databar.MinPoint" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Databar" />オブジェクトです</para>。
-      <para>を使用して既定の設定 (最短の棒に最低の値)、最長の棒に最高の値からの評価の種類を変更することができます、<see cref="M:Microsoft.Office.Interop.Excel.ConditionValue.Modify(Microsoft.Office.Interop.Excel.XlConditionValueTypes,System.Object)" />メソッドです</para>。
-      <para></para></remarks>
+        <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" />オブジェクトが返される場合は、いずれかの方法を使用して、<see cref="P:Microsoft.Office.Interop.Excel.Databar.MaxPoint" />または<see cref="P:Microsoft.Office.Interop.Excel.Databar.MinPoint" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Databar" />オブジェクトです。</para>
+      <para>使用して既定の設定 (最短の棒に最低の値)、最長の棒に最高の値からの評価の種類を変更することができます、<see cref="M:Microsoft.Office.Interop.Excel.ConditionValue.Modify(Microsoft.Office.Interop.Excel.XlConditionValueTypes,System.Object)" />メソッドです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -64,8 +65,9 @@
         <value>
           <b>アプリケーション</b>(上記参照)</value>
         <remarks>
-          <para>そのオブジェクトのアプリケーションを取得するのには OLE オートメーション オブジェクトに対してこのプロパティを使用することができます</para>。
-          <para></para></remarks>
+          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクト用のアプリケーションを取得できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -96,8 +98,9 @@
           <see cref="F:Microsoft.Office.Interop.Excel.XlCreator.xlCreatorCode" />
         </value>
         <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。 <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当  <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Modify">
@@ -127,14 +130,47 @@
         <param name="newvalue">最短または最長のデータ バーに割り当てられている値です。 によって、 <paramref name="newtype" /> 、または数値に評価される数式は、この引数をします。</param>
         <summary>データ バーの条件付き書式ルールの最長の棒または最短の棒が評価される方法を変更します。</summary>
         <remarks>
-          <para>次の表は、評価の種類ごとに許容可能なしきい値の値を示します</para>。
-          <list type="table"><item><term><see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionLowestValue" /></term>引数は、
-            </item><item><term><see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionHighestValue" /></term>引数は無視されます
-            </item><item><term><see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" /></term>任意の数
-            </item><item><term><see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" /></term>0 から 100 までの任意の数
-            </item><item><term><see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" /></term>0 から 100 までの任意の数
-            </item><item><term><see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" /></term>式を1 つの数値を返します
-            </item></list><para></para> 。</remarks>
+          <para>次の表は、各種類の評価の可能なしきい値を示します。</para>
+          <list type="table">
+            <item>
+              <term>
+                <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionLowestValue" />
+              </term>
+              <description>引数は無視されます。</description>
+            </item>
+            <item>
+              <term>
+                <see cref="T:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionHighestValue" />
+              </term>
+              <description>引数は無視されます。</description>
+            </item>
+            <item>
+              <term>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" />
+              </term>
+              <description>任意の数。</description>
+            </item>
+            <item>
+              <term>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" />
+              </term>
+              <description>0 から 100 までの任意の数。 </description>
+            </item>
+            <item>
+              <term>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" />
+              </term>
+              <description>0 から 100 までの任意の数。</description>
+            </item>
+            <item>
+              <term>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" />
+              </term>
+              <description>1 つの数を返す数式。</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -225,9 +261,10 @@
           <b>オブジェクト</b>
         </value>
         <remarks>
-          <para>場合にのみ値を設定することができます、<see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" />定数は、次のいずれかに条件付き書式のプロパティを設定: <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" />、 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" />、 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" />、または<see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" />です</para>。
-          <para>しきい値の種類が数式の場合、<b>文字列</b>式を設定できます。数式が 1 つの数値を返す必要があります</para>。
-          <para></para></remarks>
+          <para>場合にのみ値を設定することができます、<see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" />定数は、次のいずれかに条件付き書式のプロパティを設定: <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueNumber" />、 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercent" />、 <see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValuePercentile" />、または<see cref="F:Microsoft.Office.Interop.Excel.XlConditionValueTypes.xlConditionValueFormula" />。</para>
+          <para>しきい値の種類が数式の場合は、数式を<b>文字列</b>として設定できます。 数式は、1 つの数値を返す必要があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

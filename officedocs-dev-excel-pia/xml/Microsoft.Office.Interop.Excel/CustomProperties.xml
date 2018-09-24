@@ -1,10 +1,10 @@
 <Type Name="CustomProperties" FullName="Microsoft.Office.Interop.Excel.CustomProperties">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="564b2e7e7736a68bf5b30982c78ebd00481f015e" />
+    <Meta Name="ms.openlocfilehash" Value="5fa7755a939da1d185231965c1c4aa599e110df3" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584463" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface CustomProperties : System.Collections.IEnumerable" />
@@ -35,11 +35,13 @@
   <Docs>
     <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Excel.CustomProperty" />の追加情報を表すオブジェクト。 情報は、XML のメタデータとして使用できます。</summary>
     <remarks>
-      <para>使用、<see cref="P:Microsoft.Office.Interop.Excel.SmartTag.Properties" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.SmartTag" />オブジェクト、または<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.CustomProperties" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />オブジェクトは、<b>ユーザー設定プロパティ</b>のコレクションを取得する</para>。
-      <para><b>ユーザー設定プロパティ</b>のコレクションが返されると、ワークシートとの作業を選択するかによって、スマート タグにメタデータを追加することができます</para>。
-      <para>ワークシートにメタデータを追加するには、<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.CustomProperties" />プロパティと、<see cref="M:Microsoft.Office.Interop.Excel.CustomProperties.Add(System.String,System.Object)" />メソッドです</para>。
-      <para>のスマート タグにメタデータを追加するのにを使用して、 <see cref="P:Microsoft.Office.Interop.Excel.SmartTag.Properties" /> 、 <b>Add</b>メソッドを持つプロパティ</para>。
-      <para></para></remarks>
+      <para>使用、<see cref="P:Microsoft.Office.Interop.Excel.SmartTag.Properties" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.SmartTag" />オブジェクト、または<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.CustomProperties" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />オブジェクトは、<b>ユーザー設定プロパティ</b>のコレクションを取得します。</para>
+      <para>
+        <b>ユーザー設定プロパティ</b>のコレクションが返されるは、ワークシートとの作業を選択するかによって、スマート タグにメタデータを追加できます。</para>
+      <para>ワークシートにメタデータを追加するには、<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.CustomProperties" />プロパティと、<see cref="M:Microsoft.Office.Interop.Excel.CustomProperties.Add(System.String,System.Object)" />メソッドです。</para>
+      <para>スマート タグにメタデータを追加するのにを使用して、 <see cref="P:Microsoft.Office.Interop.Excel.SmartTag.Properties" /> 、 <b>Add</b>メソッドとプロパティ。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -192,10 +194,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

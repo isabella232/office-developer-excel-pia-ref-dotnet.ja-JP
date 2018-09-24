@@ -1,10 +1,10 @@
 <Type Name="HPageBreak" FullName="Microsoft.Office.Interop.Excel.HPageBreak">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d7639a911b0b101be74933f305618b0af07f12d1" />
+    <Meta Name="ms.openlocfilehash" Value="810cb48a90322f18dd49494e6eee45563ac06ba7" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585450" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface HPageBreak" />
@@ -32,10 +32,13 @@
     <summary>水平な改ページを表します。</summary>
     <remarks>
       <para>
-        <b>HPageBreak</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" />コレクションです</para>。
-      <para><b>返すプロパティ</b>の使用 (<paramref name="index" />)、 <paramref name="index" /><b>HPageBreak</b>オブジェクトを返すため、改ページのインデックス番号です</para>。
-      <para><b>ノート</b>は、海抜 1,026 水平な改ページ 1 枚に制限します</para>。
-      <para></para></remarks>
+        <b>HPageBreak</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" />コレクションです。</para>
+      <para>
+        <b>返すプロパティ</b>を使用して (<paramref name="index" />)、 <paramref name="index" /><b>HPageBreak</b>オブジェクトを返すため、改ページのインデックス番号です。</para>
+      <para>
+        <b>メモ</b> 海抜 1,026 水平な改ページ 1 枚の制限があります。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -92,10 +95,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -152,8 +156,9 @@
           <b>整数</b>が必要です。 (マウス ポインターのあるユーザーが改ページをドラッグする場合、マウス ボタンが押されたときに、領域) 改ページの印刷領域インデックスです。 印刷領域が連続している場合は、1 つだけの印刷領域を設定することはできます。 印刷領域が連続していない場合は、1 つ以上の印刷領域を設定することはできます。</param>
         <summary>改ページ プレビューで表示されている場合、改ページを印刷領域の外にドラッグします。</summary>
         <remarks>
-          <para>マクロの記録機能の主にこのメソッドが存在します。使用することができます、<see cref="M:Microsoft.Office.Interop.Excel.HPageBreak.Delete" />プログラムを使用してページ区切りを削除します</para>。
-          <para></para></remarks>
+          <para>このメソッドは、主にマクロの記録に存在します。 使用することができます、<see cref="M:Microsoft.Office.Interop.Excel.HPageBreak.Delete" />プログラムを使用してページ区切りを削除する方法です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Extent">
@@ -183,8 +188,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>エクステント</b>プロパティには、次のいずれかを指定できる<see cref="T:Microsoft.Office.Interop.Excel.XlPageBreakExtent" />定数: <b>xlPageBreakFull</b>または<b>xlPageBreakPartial</b>です</para>。
-          <para></para></remarks>
+            <b>エクステント</b>プロパティには、次のいずれかを指定できる<see cref="T:Microsoft.Office.Interop.Excel.XlPageBreakExtent" />定数: <b>xlPageBreakFull</b>または<b>xlPageBreakPartial</b>です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -216,8 +222,9 @@
         <summary>セルの設定を取得または設定 (、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクト) 改ページ位置を定義します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>水平な改ページは、位置のセルの上端に揃えて配置されます</para>。
-          <para></para></remarks>
+          <para>水平な改ページは、位置のセルの上端に揃えて配置されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -278,7 +285,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlPageBreak" />これらの定数のいずれか:</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlPageBreak" />これらの定数のいずれかできます。</para>
           <para>
             <b>xlPageBreakAutomatic</b>
           </para>

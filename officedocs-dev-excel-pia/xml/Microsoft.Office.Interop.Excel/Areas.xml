@@ -1,10 +1,10 @@
 <Type Name="Areas" FullName="Microsoft.Office.Interop.Excel.Areas">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7cdbce4233c98945faa9b4ad7a5d8d53b5756c20" />
+    <Meta Name="ms.openlocfilehash" Value="3d66092e7ce8a02412645f2fcf1c40d1d7d63d9e" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584358" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Areas : System.Collections.IEnumerable" />
@@ -35,11 +35,13 @@
   <Docs>
     <summary>選択範囲内にある領域 (隣接しているセルのブロック) のコレクションです。</summary>
     <remarks>
-      <para>単体で<b>Area</b>オブジェクトはありません。<b>Areas</b>コレクションの各メンバーは、<see cref="T:Microsoft.Office.Interop.Excel.Range" />のオブジェクトです。<b>Areas</b>コレクションには、各不連続、連続したセル範囲、選択範囲内の 1 つの<b>Range</b>オブジェクトが含まれています。その選択範囲に対応する 1 つの<b>Range</b>オブジェクトが<b>Areas</b>コレクションに含まれています選択範囲に 1 つだけの領域が含まれている場合</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Range.Areas" /><b>の領域</b>のコレクションを返すプロパティです</para>。使用<b>領域</b>の
-      <para>(<paramref name="index" />)、<paramref name="index" />領域のインデックス番号で、1 つの<b>Range</b>オブジェクトをコレクションから取得するには。領域が選択されている順にインデックス番号が対応しています</para>。
-      <para>を同時に選択範囲内の複数の領域にいくつかの操作を実行することはできません; 選択範囲内をループし、各エリアの操作を個別に実行する必要があります</para>。
-      <para></para></remarks>
+      <para>単体で<b>Area</b>オブジェクトはありません。<b>Areas</b>コレクションの各メンバーは、<see cref="T:Microsoft.Office.Interop.Excel.Range" />のオブジェクトです。 <b>Areas</b>コレクションには、各不連続、連続したセル範囲、選択範囲内の 1 つの<b>Range</b>オブジェクトが含まれています。 選択範囲に 1 つだけの領域が含まれている場合、 <b>Areas</b>コレクションには、その選択範囲に対応する<b>Range</b>オブジェクト 1 つにはが含まれています。</para>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Range.Areas" /><b>の領域</b>のコレクションを返すプロパティです。</para>
+      <para>
+        <b>領域</b>を使用して (<paramref name="index" />)、<paramref name="index" />領域のインデックス番号で、1 つの<b>Range</b>オブジェクトをコレクションから取得するには。 インデックス番号は、領域が選択されている注文に対応しています。</para>
+      <para>は同時に選択範囲内の複数の領域では、いくつかの操作を実行できません選択範囲内をループ処理し、個別に各領域での操作を実行する必要があります。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -159,10 +161,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

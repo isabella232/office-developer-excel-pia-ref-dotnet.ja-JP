@@ -1,10 +1,10 @@
 <Type Name="Window" FullName="Microsoft.Office.Interop.Excel.Window">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8c49a6753e6ec53845aee64eafc52c6fc09004d7" />
+    <Meta Name="ms.openlocfilehash" Value="628d319ce41e267cd4a082a94f976467ed8bebe1" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577771" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Window" />
@@ -32,11 +32,13 @@
     <summary>ウィンドウを表します。 スクロール バーや枠線など、ワークシートの特性の多くは、実際には、ウィンドウのプロパティです。</summary>
     <remarks>
       <para>
-        <b>Window</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.Windows" />コレクションです。によって返される<b>ウィンドウ</b>のコレクション、<see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.Application" />で<b>ウィンドウ</b>のコレクションが返されますが、オブジェクトがすべての windows アプリケーションでは、含まれています、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />オブジェクトには、ウィンドウのウィンドウだけが含まれています。指定されたブックにします</para>。
-      <para><b>Windows</b>(<paramref name="index" />)、 <paramref name="index" /> 、ウィンドウ名またはインデックス番号を 1 つの<b>ウィンドウ</b>オブジェクトを取得するには</para>。
-      <para>作業中のウィンドウは、常に windows (1) ことに注意してください</para>。
-      <para>ウィンドウのタイトル バーは、ウィンドウを最大化されていないとき、ウィンドウの上部にタイトル バーに表示されるテキストです。キャプションは、[ウィンドウ] メニューの一番下で開いているファイルの一覧にも表示されます。使用して、<see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" />プロパティを設定またはウィンドウのキャプションを取得します。ウィンドウのキャプションを変更するブックの名前は変更されません</para>。
-      <para></para></remarks>
+        <b>Window</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.Windows" />コレクションです。 によって返される<b>ウィンドウ</b>のコレクション、<see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.Application" />で<b>ウィンドウ</b>のコレクションが返されますが、オブジェクトがすべての windows アプリケーションでは、含まれています、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />オブジェクトには、ウィンドウのウィンドウだけが含まれています。指定されたブックです。</para>
+      <para>
+        <b>Windows</b>を使用して、(<paramref name="index" />)、<paramref name="index" />のウィンドウ名またはインデックス番号を 1 つの<b>ウィンドウ</b>オブジェクトを取得するには。</para>
+      <para>アクティブ ウィンドウは常に Windows(1) と記述します。</para>
+      <para>ウィンドウのタイトル バーは、ウィンドウを最大化されていないとき、ウィンドウの上部にタイトル バーに表示されるテキストです。 キャプションは、[ウィンドウ] メニューの一番下で開いているファイルの一覧にも表示されます。 使用して、<see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" />プロパティを設定またはウィンドウのキャプションを取得します。 ウィンドウのキャプションを変更すると、ブックの名前が変更されません。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_DisplayRightToLeft">
@@ -146,8 +148,9 @@
         <returns>To be added.</returns>
         <remarks>
           <para>
-            <b>をアクティブにする</b>方法は、複数、または最初のマクロをブックに接続する可能性がありますを実行できません。使用して、 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> 、マクロを実行するメソッドです</para>。
-          <para></para></remarks>
+            <b>Activate</b>メソッドは、複数、または最初のマクロをブックに接続する可能性がありますを実行できません。 使用して、 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> 、マクロを実行するメソッドです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ActivateNext">
@@ -228,9 +231,10 @@
         <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />作業中のウィンドウ (一番上にあるウィンドウ) 内のアクティブ セルを表すオブジェクトまたは指定されたウィンドウです。 ウィンドウは、ワークシートに表示されない、このプロパティは失敗します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクト修飾子を指定しない場合このプロパティは、作業中のウィンドウにアクティブなセルを返します</para>。
-          <para>アクティブ セルと選択範囲を区別するのには注意が必要です。アクティブ セルは、現在の選択範囲内の単一のセルです。選択範囲が複数のセルを含めることが 1 つだけアクティブなセルです</para>。
-          <para></para></remarks>
+          <para>対象となるオブジェクトを指定しない場合は、アクティブ ウィンドウのアクティブ セルが返されます。</para>
+          <para>アクティブ セルと選択セル範囲を混同しないように注意してください。アクティブ セルは、現在の選択セル範囲内の単一セルを指します。選択セル範囲には、複数のセルが含まれる場合がありますが、アクティブ セルはその中の 1 つだけを指します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveChart">
@@ -259,8 +263,9 @@
         <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> 、アクティブなグラフ (埋め込みグラフまたはグラフ シート) を表すオブジェクト。 埋め込みグラフは選択されているまたは、アクティブと見なされます。 アクティブなグラフがないときは、このプロパティは<b>Nothing</b>を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクト修飾子を指定しない場合このプロパティは、作業中のブックで作業中のグラフを返します</para>。
-          <para></para></remarks>
+          <para>対象となるオブジェクトを指定しない場合、このプロパティでは作業中のブックのアクティブなグラフが返されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ActivePane">
@@ -289,9 +294,10 @@
         <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Pane" />ウィンドウ内のアクティブなウィンドウを表すオブジェクト。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、ワークシートとマクロ シートでのみ使用できます</para>。
-          <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.Window.Index" />アクティブなペインのインデックスを取得するプロパティ</para>。
-          <para></para></remarks>
+          <para>このプロパティは、ワークシートとマクロ シートにだけ使用できます。</para>
+          <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.Window.Index" />アクティブなペインのインデックスを取得するプロパティです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveSheet">
@@ -322,9 +328,10 @@
           <b>オブジェクト</b>
         </value>
         <remarks>
-          <para>オブジェクト修飾子を指定しない場合このプロパティは、作業中のブックで作業中のシートを返します</para>。
-          <para>ブックは、複数のウィンドウに表示されたら場合、によって<b>ActiveSheet</b>プロパティの異なる場合があります別の windows で</para>。
-          <para></para></remarks>
+          <para>対象となるオブジェクトを指定しない場合は、作業中のブックのアクティブ シートが返されます。</para>
+          <para>ブックを複数のウィンドウで表示している場合、異なるウィンドウでは <b>ActiveSheet</b> プロパティの値が異なることがあります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveSheetView">
@@ -478,8 +485,10 @@
         <summary>オブジェクトを閉じます。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>、 <b>Close</b>メソッドは、ブック内の Auto_Close マクロを実行しません。使用して、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" />自動を実行するメソッドは、マクロを閉じます</para>。
-          <para></para></remarks>
+          <para>
+            <b>Close</b>メソッドは、ブック内の Auto_Close マクロを実行しません。 使用して、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" />自動を実行するメソッドは、マクロを閉じます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -508,10 +517,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayFormulas">
@@ -544,8 +554,9 @@
           <b>True の</b>場合は、ウィンドウは数式を表示します。<b>False</b>場合は、ウィンドウが値を表示します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、ワークシートとマクロ シートのみに適用されます</para>。
-          <para></para></remarks>
+          <para>このプロパティは、ワークシートとマクロ シートにだけ使用できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayGridlines">
@@ -578,9 +589,10 @@
           <b>True</b>とグリッド線が表示されます。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、ワークシートとマクロ シートのみに適用されます</para>。
-          <para>このプロパティは、グリッド線の表示だけに影響します。使用して、<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" />のグリッド線の印刷を制御するプロパティ</para>。
-          <para></para></remarks>
+          <para>このプロパティは、ワークシートとマクロ シートにだけ使用できます。</para>
+          <para>このプロパティは、グリッド線の表示だけに影響します。 使用して、<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" />のグリッド線の印刷を制御するプロパティです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayHeadings">
@@ -613,9 +625,10 @@
           <b>True の</b>場合、両方の行と列見出しが表示されます。<b>False</b>に表示されるヘッダーがない場合。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、ワークシートとマクロ シートのみに適用されます</para>。
-          <para>このプロパティは、見出しの表示だけに影響します。使用して、<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" />の番号を印刷を制御するプロパティ</para>。
-          <para></para></remarks>
+          <para>このプロパティは、ワークシートとマクロ シートにだけ使用できます。</para>
+          <para>このプロパティは、見出しの表示だけに影響します。 使用して、<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" />の番号を印刷を制御するプロパティです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayHorizontalScrollBar">
@@ -680,8 +693,9 @@
           <b>True</b>と、アウトライン記号が表示されます。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、ワークシートとマクロ シートのみに適用されます</para>。
-          <para></para></remarks>
+          <para>このプロパティは、ワークシートとマクロ シートにだけ使用できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayRightToLeft">
@@ -878,8 +892,9 @@
           <b>True</b>と 0 の値が表示されます。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、ワークシートとマクロ シートのみに適用されます</para>。
-          <para></para></remarks>
+          <para>このプロパティは、ワークシートとマクロ シートにだけ使用できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableResize">
@@ -945,9 +960,10 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>真</b>である<b>場合</b>と<see cref="P:Microsoft.Office.Interop.Excel.Window.Split" />である<b>場合は False</b>、またはその逆</para>。
-          <para>このプロパティは、ワークシートとマクロ シートのみに適用されます</para>。
-          <para></para></remarks>
+            <b>真</b>である<b>場合</b>と<see cref="P:Microsoft.Office.Interop.Excel.Window.Split" />である<b>場合は False</b>、またはその逆。</para>
+          <para>このプロパティは、ワークシートとマクロ シートにだけ使用できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GridlineColor">
@@ -1010,8 +1026,9 @@
         <summary>設定グリッド線の色のインデックスとして、現在のカラー パレットを取得または設定、<see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />定数。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>の自動設定の色を指定する<b>オブジェクト</b>にこのプロパティを設定します</para>。
-          <para></para></remarks>
+          <para>色の自動設定を指定する<b>番号</b>にこのプロパティを設定します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -1042,8 +1059,10 @@
       <Docs>
         <summary>ポイント単位でウィンドウの高さ。</summary>
         <value>To be added.</value>
-        <remarks>使用の<para>、 <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" /> 、ウィンドウの最大サイズを決定するプロパティ。ウィンドウが最大化または最小化されている場合、このプロパティを設定することはできません。使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> 、ウィンドウの状態を確認するにします</para>。
-          <para></para></remarks>
+        <remarks>
+          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" /> 、ウィンドウの最大サイズを決定するプロパティです。 ウィンドウを最大化または最小化されている場合は、このプロパティを設定することはできません。 使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> 、ウィンドウの状態を確認するにします。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Hwnd">
@@ -1134,10 +1153,11 @@
         <summary>指定されたページ数分だけ、ウィンドウの文字列をスクロールします。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>場合<paramref name="Down" />と<paramref name="Up" />を指定した、ウィンドウの内容は、引数の差だけスクロールします。などの場合は<paramref name="Down" />3 と<paramref name="Up" />6 では、内容は上に 3 ページ分スクロールします</para>。
-          <para>場合<paramref name="ToLeft" />と<paramref name="ToRight" />を指定した、ウィンドウの内容は、引数の差だけスクロールします。などの場合<paramref name="ToLeft" />は、3 と<paramref name="ToRight" />6 では、内容が右に 3 ページ分スクロールします</para>。
-          <para>負の数は、任意の引数です</para>。
-          <para></para></remarks>
+          <para>場合<paramref name="Down" />と<paramref name="Up" />を指定した、ウィンドウの内容は、引数の差だけスクロールします。 などの場合は<paramref name="Down" />3 と<paramref name="Up" />6 では、内容は上に 3 ページ分スクロールします。</para>
+          <para>場合<paramref name="ToLeft" />と<paramref name="ToRight" />を指定した、ウィンドウの内容は、引数の差だけスクロールします。 などの場合<paramref name="ToLeft" />は、3 と<paramref name="ToRight" />6 では、内容が右に 3 ページ分スクロールします。</para>
+          <para>どの引数も負の値を指定できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -1226,9 +1246,10 @@
         <summary>ウィンドウをアクティブにするたびに実行されるプロシージャの名前を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>その他のプロシージャが、ウィンドウまたはウィンドウに切り替えるには、コマンドが DDE チャネルを通じて受信したときに切り替えると、このプロパティで指定したプロシージャは実行されません。代わりに、プロシージャがユーザーのアクションに応答、マウスでウィンドウをクリックしてをクリックするとジャンプ [編集] メニューとにします</para>。
-          <para><b>OnWindow</b>プロパティで指定された手順の後、マクロが実行されますワークシートまたはマクロ シートに定義されて、複数、または最初のマクロがある場合</para>。
-          <para></para></remarks>
+          <para>他のプロシージャが、ウィンドウまたはウィンドウに切り替えるには、コマンドが DDE チャネルを通じて受信したときに切り替えると、このプロパティで指定したプロシージャは実行されません。 代わりに、プロシージャは、ユーザーの操作、マウスでウィンドウをクリックするなどの編集] メニューの [ジャンプ] をクリックしてに応答します。</para>
+          <para>ワークシートまたはマクロ シートに定義されて、複数、または最初のマクロがある場合は、 <b>OnWindow</b>プロパティで指定された手順の後、マクロが実行されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Panes">
@@ -1257,8 +1278,9 @@
         <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> 、指定したウィンドウのすべてのウィンドウ枠を表すコレクション。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、ウィンドウの場合にのみ使用可能なウィンドウの<see cref="P:Microsoft.Office.Interop.Excel.Window.Split" />プロパティを<b>True</b>に設定することができます</para>。
-          <para></para></remarks>
+          <para>このプロパティは、ウィンドウの場合にのみ使用可能なウィンドウの<see cref="P:Microsoft.Office.Interop.Excel.Window.Split" />プロパティを<b>True</b>に設定することができます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1389,8 +1411,9 @@
         <summary>オブジェクトを印刷します。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>の説明における「ページ」<paramref name="From" />と<paramref name="To" />印刷されたページを参照して、ない全体のページでは、シートまたはブック</para>。
-          <para></para></remarks>
+          <para>説明における「ページ」<paramref name="From" />と<paramref name="To" />印刷されるページを参照して、ない全体のページでは、シートまたはブックです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintPreview">
@@ -1480,10 +1503,11 @@
         <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />グラフィック オブジェクトは、アクティブなワークシートで選択した場合でも、選択したシートのセルを指定されたウィンドウを表すオブジェクト。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ワークシート上のグラフィック オブジェクトが選択されている場合、<see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" />プロパティは、 <b>Range</b>オブジェクトではなくグラフィック オブジェクトを返します。<b>RangeSelection</b>プロパティは、グラフィック オブジェクトを選択する前に選択したセル範囲を返します</para>。
-          <para>このプロパティと<b>Selection</b>プロパティは、ワークシートの範囲 (グラフィック オブジェクトではありません) を選択したときと同じ値を返す</para>。
-          <para>指定されたウィンドウで作業中のシートには、ワークシートがない場合は、このプロパティは失敗します</para>。
-          <para></para></remarks>
+          <para>ワークシート上のグラフィック オブジェクトが選択されている場合、<see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" />プロパティは、 <b>Range</b>オブジェクトではなくグラフィック オブジェクトを返します。<b>RangeSelection</b>プロパティは、グラフィック オブジェクトを選択する前に選択したセル範囲を返します。</para>
+          <para>描画オブジェクトではなく、セル範囲が選択されているワークシートの場合、このプロパティと <b>Selection</b> プロパティの取得する値は同じになります。</para>
+          <para>指定したウィンドウのアクティブ シートがワークシートではない場合、このプロパティは失敗します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollColumn">
@@ -1514,8 +1538,10 @@
       <Docs>
         <summary>取得またはウィンドウまたはウィンドウの左端の列の数を設定します。</summary>
         <value>To be added.</value>
-        <remarks>ウィンドウが分割されている<b>ScrollColumn</b>プロパティの場合、 <para>、<see cref="T:Microsoft.Office.Interop.Excel.Window" />オブジェクトの左上隅のウィンドウを参照します。ウィンドウ枠を固定すると、 <b>Window</b>オブジェクトの<b>ScrollColumn</b>プロパティは固定領域を除外します</para>。
-          <para></para></remarks>
+        <remarks>
+          <para>かどうか、ウィンドウが分割されているの<b>ScrollColumn</b>プロパティは、の<see cref="T:Microsoft.Office.Interop.Excel.Window" />オブジェクトは、ウィンドウの左ペインを参照します。 ウィンドウ枠を固定している場合、 <b>Window</b>オブジェクトの<b>ScrollColumn</b>プロパティは、マスク領域を除外します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollIntoView">
@@ -1555,8 +1581,10 @@
         <param name="Start">オプションの <b>Integer</b>。 <b>True を指定</b>する四角形の左上隅をドキュメント ウィンドウまたはペインの左上隅に表示されます。 <b>False を指定</b>する四角形の右下隅をドキュメント ウィンドウまたはペインの右下隅に表示されます。 既定値は <b>True</b> です。</param>
         <summary>ドキュメント ウィンドウまたはペインの左上隅または右下の隅にある指定された四角形領域の内容が表示されるように、ドキュメント ウィンドウをスクロールします。</summary>
         <remarks>
-          <para>、<paramref name="Start" />の引数は、四角形がドキュメント ウィンドウまたはペインより大きい場合、画面の表示領域を指定します</para>。
-          <para></para></remarks>
+          <para>
+            <paramref name="Start" />の引数は、四角形がドキュメント ウィンドウまたはペインより大きい場合、画面の表示領域を指定します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollRow">
@@ -1587,8 +1615,10 @@
       <Docs>
         <summary>取得またはウィンドウまたはウィンドウの上部に表示される行の数を設定します。</summary>
         <value>To be added.</value>
-        <remarks>ウィンドウが分割されている<b>ScrollRow</b>プロパティの場合、 <para>、<see cref="T:Microsoft.Office.Interop.Excel.Window" />オブジェクトの左上隅のウィンドウを参照します。ウィンドウ枠を固定すると、 <b>Window</b>オブジェクトの<b>ScrollRow</b>プロパティはマスクの領域を除外します</para>。
-          <para></para></remarks>
+        <remarks>
+          <para>かどうか、ウィンドウが分割されているの<b>ScrollRow</b>プロパティは、の<see cref="T:Microsoft.Office.Interop.Excel.Window" />オブジェクトは、ウィンドウの左ペインを参照します。 ウィンドウ枠を固定している場合、 <b>Window</b>オブジェクトの<b>ScrollRow</b>プロパティは、マスク領域を除外します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollWorkbookTabs">
@@ -1620,8 +1650,9 @@
         <returns>To be added.</returns>
         <remarks>
           <para>
-            <b>ScrollWorkbookTabs</b>メソッドは、ブックのアクティブなシートを影響しません</para>。
-          <para></para></remarks>
+            <b>ScrollWorkbookTabs</b>メソッドは、ブックのアクティブ シートに影響しません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedSheets">
@@ -1678,9 +1709,10 @@
         <summary>指定されたウィンドウで選択したオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>返されるオブジェクトの型は、現在の選択内容によって異なります。 (たとえば、セルが選択した場合、このプロパティを返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクト)。<b><b>選択</b>オブジェクトが返されます何も選択されて</b>います</para>。
-          <para>を使用するのと同じではないオブジェクト修飾子をこのプロパティを使用して、<see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Application" />オブジェクトです</para>。
-          <para></para></remarks>
+          <para>返されるオブジェクトの型は、現在の選択内容によって異なります。 (たとえば、セルが選択した場合、このプロパティを返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクト)。 選択されていない場合、 <b>Selection</b>プロパティは<b>Nothing</b>を返します。</para>
+          <para>使用するのと同じではないオブジェクト修飾子をこのプロパティを使用して、<see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Application" />オブジェクトです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetViews">
@@ -1745,10 +1777,11 @@
         <summary>指定した行数分または列数分だけ、ウィンドウの文字列をスクロールします。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>場合<paramref name="Down" />と<paramref name="Up" />を指定した、ウィンドウの内容は、引数の差だけスクロールします。などの場合<paramref name="Down" />は、3 と<paramref name="Up" />6 では、内容は上に 3 行分スクロールします</para>。
-          <para>場合<paramref name="ToLeft" />と<paramref name="ToRight" />を指定した、ウィンドウの内容は、引数の差だけスクロールします。などの場合<paramref name="ToLeft" />は、3 と<paramref name="ToRight" />6 では、内容が右に 3 列分スクロールします</para>。
-          <para>負の数は、これらの引数のいずれかです</para>。
-          <para></para></remarks>
+          <para>場合<paramref name="Down" />と<paramref name="Up" />を指定した、ウィンドウの内容は、引数の差だけスクロールします。 などの場合<paramref name="Down" />は、3 と<paramref name="Up" />6 では、内容は上に 3 行分スクロールします。</para>
+          <para>場合<paramref name="ToLeft" />と<paramref name="ToRight" />を指定した、ウィンドウの内容は、引数の差だけスクロールします。 などの場合<paramref name="ToLeft" />は、3 と<paramref name="ToRight" />6 では、内容が右に 3 列分スクロールします。</para>
+          <para>これらの引数には負数を指定できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Split">
@@ -1781,9 +1814,10 @@
           <b>True の</b>場合、ウィンドウを分割します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>できます<see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" />を<b>True</b>と<b>分割</b>である<b>場合は False</b>、またはその逆</para>。
-          <para>このプロパティは、ワークシートとマクロ シートのみに適用されます</para>。
-          <para></para></remarks>
+          <para>できます<see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" />を<b>True</b>と<b>分割</b>である<b>場合は False</b>、またはその逆。</para>
+          <para>このプロパティは、ワークシートとマクロ シートにだけ使用できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SplitColumn">
@@ -1939,7 +1973,7 @@
         <summary>ウィンドウの水平スクロール バーの幅に対するブックのタブ領域の幅の比率を設定を取得または設定 (0 (ゼロ) と 1 の間の数値として、既定値は 0.6)。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティを持たない場合の影響を与える<see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" />が<b>False</b>に設定 (その値は保持されますが、表示には影響を与えません).</para>
+          <para>このプロパティを持たない場合の影響を与える<see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" />が<b>False</b>に設定 (その値は保持されますが、表示には影響を与えません)。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -1973,8 +2007,9 @@
         <summary>(メニュー、上部、および数式バーにある固定ツールバー) の下の使用可能な領域の上端をウィンドウの上端からのポイントでの距離です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>最大化したウィンドウに対してこのプロパティを設定することはできません。使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> 、ウィンドウの状態を設定するプロパティ</para>。
-          <para></para></remarks>
+          <para>最大化したウィンドウに対してこのプロパティを設定することはできません。 使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> 、ウィンドウの状態を設定するプロパティです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -2179,8 +2214,10 @@
       <Docs>
         <summary>ウィンドウのポイント単位の幅。</summary>
         <value>To be added.</value>
-        <remarks>使用の<para>、 <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" /> 、ウィンドウの最大サイズを決定するプロパティ。ウィンドウが最大化または最小化されている場合、このプロパティを設定することはできません。使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> 、ウィンドウの状態を確認するにします</para>。
-          <para></para></remarks>
+        <remarks>
+          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" /> 、ウィンドウの最大サイズを決定するプロパティです。 ウィンドウを最大化または最小化されている場合は、このプロパティを設定することはできません。 使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> 、ウィンドウの状態を確認するにします。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowNumber">
@@ -2209,8 +2246,9 @@
         <summary>ウィンドウ番号を返します。 たとえば、"Book1.xls:2"をという名前のウィンドウは、そのウィンドウ番号として 2 を持っています。 ほとんどのウィンドウには、ウィンドウ番号 1 があります。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ウィンドウ番号とは異なり、ウィンドウのインデックス (の戻り値、<see cref="P:Microsoft.Office.Interop.Excel.Window.Index" />プロパティ)、ウィンドウ内の位置は、<see cref="T:Microsoft.Office.Interop.Excel.Windows" />コレクションです</para>。
-          <para></para></remarks>
+          <para>ウィンドウ番号とは異なり、ウィンドウのインデックス (の戻り値、<see cref="P:Microsoft.Office.Interop.Excel.Window.Index" />プロパティ)、ウィンドウ内の位置は、<see cref="T:Microsoft.Office.Interop.Excel.Windows" />コレクションです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowState">
@@ -2274,9 +2312,10 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>True を指定</b>するには現在の選択範囲に合わせてウィンドウのサイズをこのプロパティを設定することもできます</para>。
-          <para>この関数は、ウィンドウで現在アクティブなシートのみに影響します。このプロパティを使用して、他のシートで、する必要があります最初にそれらをアクティブ化します</para>。
-          <para></para></remarks>
+            <b>True を指定</b>するには現在の選択範囲に合わせてウィンドウのサイズをこのプロパティを設定することもできます。</para>
+          <para>現在のウィンドウでのアクティブ シートだけを対象にします。このプロパティを他のシートに対して使用するには、最初にそのシートをアクティブにする必要があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

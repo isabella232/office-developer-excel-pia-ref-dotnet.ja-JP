@@ -1,10 +1,10 @@
 <Type Name="UserAccess" FullName="Microsoft.Office.Interop.Excel.UserAccess">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="cbd39fb1f38835efe39fe6d5eb2e5786a179eb1c" />
+    <Meta Name="ms.openlocfilehash" Value="5757d729f5b2ba76353f83174ceb6884fc95261d" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587200" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface UserAccess" />
@@ -31,9 +31,11 @@
   <Docs>
     <summary>保護された範囲のユーザー アクセスを表します。</summary>
     <remarks>
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.UserAccessList.Add(System.String,System.Boolean)" />メソッドまたは<see cref="P:Microsoft.Office.Interop.Excel.UserAccessList.Item(System.Object)" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.UserAccessList" /><b>UserAccess</b>オブジェクトを取得するコレクションです</para>。
-      <para>判断できます<b>UserAccess</b>オブジェクトが返されると、アクセスが許可された場合、ワークシート内の特定の範囲を使用して、<see cref="P:Microsoft.Office.Interop.Excel.UserAccess.AllowEdit" />プロパティ</para>。
-      <para></para></remarks>
+      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.UserAccessList.Add(System.String,System.Boolean)" />メソッドまたは<see cref="P:Microsoft.Office.Interop.Excel.UserAccessList.Item(System.Object)" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.UserAccessList" /><b>UserAccess</b>オブジェクトを取得するコレクションです。</para>
+      <para>
+        <b>UserAccess</b>オブジェクトが返されると、指定できますアクセスが許可された場合、ワークシート内の特定の範囲を使用して、<see cref="P:Microsoft.Office.Interop.Excel.UserAccess.AllowEdit" />プロパティ。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AllowEdit">
@@ -118,10 +120,53 @@
         <summary>オブジェクトの名前を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>次の表に、値の例の<b>Name</b>プロパティと関連するプロパティ、データ ソースの一意の名前] [ヨーロッパ] です。[東京都] です。[東京]"OLAP 以外のデータ ソースのアイテム名が「東京」とします</para>。
-          <list type="table"><item><term><b>キャプション</b></term><description>パリ</description><description>パリ</description></item><item><term><b>名</b></term><description>[ヨーロッパ]. [東京都] です。[東京](読み取り専用)</description><description>パリ</description></item><item><term><b>SourceName</b></term><description>[ヨーロッパ]. [東京都] です。[東京](読み取り専用)</description><description>(SQL プロパティの値が読み取り専用と同じ)</description></item><item><term><b>値</b></term><description>[ヨーロッパ]. [東京都] です。[東京](読み取り専用)</description><description>パリ</description></item></list><para>へのインデックスを指定する場合、<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />コレクションでは、次の表に示すように構文を使用することができます</para>。
-          <list type="table"><item><term>式です。返すプロパティ (「[ヨーロッパ]。 [東京都] です。[東京]")</term><description>式です。PivotItems("Paris")</description></item></list><para>を使用する場合、<see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" />プロパティ、コレクションの特定のメンバーを参照するには、次の表に示すようにテキストをインデックス名を使用することができます</para>。
-          <list type="table"><item><term>[ヨーロッパ]. [東京都] です。[東京]</term><description>パリ</description></item></list><para></para></remarks>
+          <para>次の表に、値の例の<b>Name</b>プロパティと関連するプロパティ、データ ソースの一意の名前] [ヨーロッパ] です。[東京都] です。[東京]"OLAP 以外のデータ ソースのアイテム名が「東京」とします。</para>
+          <list type="table">
+            <item>
+              <term>
+                <b>キャプション</b>
+              </term>
+              <description>東京</description>
+              <description>東京</description>
+            </item>
+            <item>
+              <term>
+                <b>名</b>
+              </term>
+              <description>[都道府県].[東京都].[東京] (読み取り専用)</description>
+              <description>東京</description>
+            </item>
+            <item>
+              <term>
+                <b>SourceName</b>
+              </term>
+              <description>[都道府県].[東京都].[東京] (読み取り専用)</description>
+              <description>(SQL プロパティと同じ値、読み取り専用)</description>
+            </item>
+            <item>
+              <term>
+                <b>値</b>
+              </term>
+              <description>[都道府県].[東京都].[東京] (読み取り専用)</description>
+              <description>東京</description>
+            </item>
+          </list>
+          <para>インデックスを指定する場合、<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />コレクションでは、次の表に示すように構文を使用することができます。</para>
+          <list type="table">
+            <item>
+              <term>式です。返すプロパティ (「[ヨーロッパ]。 [東京都] です。[東京]")</term>
+              <description>式です。PivotItems("Paris")</description>
+            </item>
+          </list>
+          <para>使用する場合、<see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" />プロパティ、コレクションの特定のメンバーを参照するには、次の表に示すようにテキストをインデックス名を使用することができます。</para>
+          <list type="table">
+            <item>
+              <term>[ヨーロッパ] です。[東京都] です。[東京]</term>
+              <description>東京</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

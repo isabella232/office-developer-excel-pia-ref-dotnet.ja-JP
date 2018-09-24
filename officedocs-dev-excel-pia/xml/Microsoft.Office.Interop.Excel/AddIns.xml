@@ -1,10 +1,10 @@
 <Type Name="AddIns" FullName="Microsoft.Office.Interop.Excel.AddIns">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d97bdc18c8727af88437835877abfa363ae29787" />
+    <Meta Name="ms.openlocfilehash" Value="08779fe0f93d595b31e4991956a1b4a5705a2268" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584134" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface AddIns : System.Collections.IEnumerable" />
@@ -35,11 +35,13 @@
   <Docs>
     <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Excel.AddIn" />Microsoft excel では、インストールされているかどうかに関係なく使用可能なすべてのアドインを表すオブジェクト。 このリストは、[アドイン] ダイアログ ボックス ([ツール] メニュー) に表示されるアドインの一覧に対応しています。</summary>
     <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Application.AddIns" /> 、 <b>AddIns</b>コレクションを返すプロパティです</para>。使用の
-      <para>、<see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" />使用できるアドインの一覧にアドインを追加する方法です。<b>Add</b>メソッドは一覧にアドインを追加しますが、アドインをインストールしない、<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" />を<b>True</b>にアドインをインストールするアドインのプロパティです。使用できるアドインの一覧にアドインが表示されないをインストールするには、最初に<b>Add</b>メソッドを使用し、 <b>Installed</b>プロパティを設定し、必要があります。これを行う 1 つのステップにします</para>。
-      <para>使用<b>アドイン</b>(<paramref name="index" />)、<paramref name="index" />は、アドイン タイトルまたはインデックス番号を 1 つの<b>AddIn</b>オブジェクトを取得する</para>。
-      <para>間違わないように、追加のタイトルは、[アドイン] ダイアログ ボックスのアドイン名は、アドインのファイル名に表示されます。まったく同じように [アドイン] ダイアログ ボックスで、スペルがいますが、大文字と小文字が一致しなくてもかまいません、アドインのタイトルを入力する必要があります</para>。
-      <para></para></remarks>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Application.AddIns" /> 、 <b>AddIns</b>コレクションを返すプロパティです。</para>
+      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" />メソッドを使用できるアドインの一覧にアドインを追加します。<b>Add</b>メソッドは一覧にアドインを追加しますが、アドインをインストールできません。 設定、<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" />を<b>True</b>にアドインをインストールするアドインのプロパティです。 使用できるアドインの一覧にアドインが表示されないをインストールするには、最初に<b>Add</b>メソッドを使用し、 <b>Installed</b>プロパティを設定し、必要があります。 これは、1 つのステップで実行できます。</para>
+      <para>
+        <b>アドイン</b>を使用して (<paramref name="index" />)、<paramref name="index" />は、アドイン タイトルまたはインデックス番号を 1 つの<b>AddIn</b>オブジェクトを取得します。</para>
+      <para>[アドイン] ダイアログ ボックスのアドイン名は、アドインのファイル名で表示されるアドインのタイトルを混同しないでください。 まったく同じように [アドイン] ダイアログ ボックスで、スペルがいますが、大文字と小文字が一致しなくてもかまいません、アドインのタイトルを入力する必要があります。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -106,7 +108,7 @@
         <summary>新しいアドイン ファイルをアドインの一覧に追加する<see cref="T:Microsoft.Office.Interop.Excel.AddIn" />オブジェクトです。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>このメソッドは、新しいアドインをインストールしません。設定する必要があります、 <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> 、アドインをインストールするのにはプロパティ</para>
+          <para>このメソッドは、新しいアドインをインストールできません。 設定する必要があります、<see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" />アドインをインストールするのにはプロパティです。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -193,10 +195,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

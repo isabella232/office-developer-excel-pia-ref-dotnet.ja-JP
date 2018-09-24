@@ -1,10 +1,10 @@
 <Type Name="Panes" FullName="Microsoft.Office.Interop.Excel.Panes">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="366e9975d23f2f4766d04e9edb84c85c24c04024" />
+    <Meta Name="ms.openlocfilehash" Value="7d60437390854068b5400256a6be386c545e5280" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578093" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Panes" />
@@ -32,10 +32,12 @@
     <summary>すべてのコレクション、 <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> 、指定したウィンドウに表示されるオブジェクトです。</summary>
     <remarks>
       <para>
-        <b>ウィンドウ</b>オブジェクトは、ワークシートおよび Excel 4.0 マクロ シートにだけ存在します</para>。
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Window.Panes" /> 、 <b>Panes</b>コレクションを返すプロパティです</para>。
-      <para><b>ウィンドウ</b>の使用 (<paramref name="index" />)、<paramref name="index" />は、単一の<b>Pane</b>オブジェクトを取得するペインのインデックス番号</para>。
-      <para></para></remarks>
+        <b>Pane</b> オブジェクトは、ワークシートおよび Microsoft Excel 4.0 マクロ シートだけにあります。</para>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Window.Panes" /> 、 <b>Panes</b>コレクションを返すプロパティです。</para>
+      <para>
+        <b>ペイン</b>を使用して (<paramref name="index" />)、<paramref name="index" />は、単一の<b>Pane</b>オブジェクトを取得するペインのインデックス番号。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -155,10 +157,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">

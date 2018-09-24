@@ -1,10 +1,10 @@
 <Type Name="FormatConditions" FullName="Microsoft.Office.Interop.Excel.FormatConditions">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4ea44a9883870de6c0c9f822551e19d40e34f00d" />
+    <Meta Name="ms.openlocfilehash" Value="ba5c29fb9f36cf63da85041a757db4dd4b830ce1" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587515" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface FormatConditions : System.Collections.IEnumerable" />
@@ -36,11 +36,12 @@
     <summary>1 つのセル範囲の条件付き書式のコレクションを表します。</summary>
     <remarks>
       <para>
-        <b>FormatConditions</b>コレクションには、最大 3 つの条件付き書式を含めることができます。各形式は、<see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" />オブジェクトです</para>。使用の
-      <para>、 <see cref="P:Microsoft.Office.Interop.Excel.Range.FormatConditions" /><b>FormatConditions</b>オブジェクトを取得するプロパティです。使用して、 <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> 、新しい条件付き書式を作成して使用する方法、<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />を既存の条件付き書式を変更する方法です</para>。
-      <para>1 つの範囲の複数の 3 つの条件付き書式を作成しようとする場合、 <b>Add</b>メソッドは失敗します。範囲に 3 つの形式は、 <b>Modify</b>メソッドを使用するには、形式のいずれかを変更するのにはまたはを使用することができます、<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" />の形式を削除し、新しい書式を作成するのには<b>Add</b>メソッドを使用する方法です</para>。
-      <para>条件付き書式の詳細についてを参照してください、<see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" />オブジェクトです</para>。
-      <para></para></remarks>
+        <b>FormatConditions</b>コレクションには、最大 3 つの条件付き書式を含めることができます。 各形式は、<see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" />オブジェクトです。</para>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Range.FormatConditions" /> 、 <b>FormatConditions</b>オブジェクトを返すプロパティです。 使用して、 <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> 、新しい条件付き書式を作成して使用する方法、<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />を既存の条件付き書式を変更する方法です。</para>
+      <para>1 つの範囲の複数の 3 つの条件付き書式を作成しようとすると、 <b>Add</b>メソッドは失敗します。 範囲に 3 つの形式は、 <b>Modify</b>メソッドを使用するには、形式のいずれかを変更するのにはまたはを使用することができます、<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" />の形式を削除し、新しい書式を作成するのには<b>Add</b>メソッドを使用する方法です。</para>
+      <para>条件付き書式の詳細についてを参照してください、<see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" />オブジェクトです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -118,8 +119,9 @@
         <summary>新しい条件付き書式を追加します。</summary>
         <returns>A <see cref="T:Microsoft.Office.Interop.Excel.FormatCondition" /> 、新しい条件付き書式を表すオブジェクト。</returns>
         <remarks>
-          <para>の範囲の複数の 3 つの条件付き書式を定義することはできません。使用して、<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />を既存の条件付き書式を変更または使用する方法、<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" />新しいを追加する前に既存の書式を削除する方法です</para>。
-          <para></para></remarks>
+          <para>範囲の複数の 3 つの条件付き書式を定義することはできません。 使用して、<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />を既存の条件付き書式を変更または使用する方法、<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" />新しいを追加する前に既存の書式を削除する方法です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddAboveAverage">
@@ -147,8 +149,10 @@
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" />オブジェクト</returns>
         <remarks>
-          <para>、<see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" />オブジェクトを使用するセル範囲の平均または標準偏差より上または下の値を検索します。年次の業績評価の平均の上の実行者にありますなど、品質評価で 2 つの標準偏差を下回る製造の資料を見つけることができます</para>。
-          <para></para></remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Excel.AboveAverage" />オブジェクトを使用するセル範囲の平均または標準偏差より上または下の値を検索します。 年次の業績評価の平均の上の実行者にありますなど、品質評価で 2 つの標準偏差を下回る製造の資料を見つけることができます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddColorScale">
@@ -179,7 +183,7 @@
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" />オブジェクト</returns>
         <remarks>
-          <para>カラー スケールでは、視覚的データの分布や偏差を理解するのに役立つガイドです。カラー スケールを使用して、カラー バリエーションを使用して特定の範囲内のセルの値の相対的な違いを識別できます。さまざまな色と色のグラデーションは、セル値の違いを表しています。などで 3 色スケールでは、指定できます、最高の相対的なデータ値を含むセルの色を緑、中間の値を含むセルは黄色、および最小値を持つセルは、red.</para>
+          <para>カラー スケールは、データの分布や偏差を把握するうえで視覚的な手掛かりとなります。カラー スケールでカラー バリエーションを使用して、特定の範囲内のセルの値の相対的な違いを特定できます。異なる色や、色のグラデーションがセル値の違いを示します。たとえば、3 色スケールでは、相対値の高いセルはi緑色、中程度の値のセルは黄色、値の低いセルは赤色になるように指定できます。</para>
           <para></para>
         </remarks>
       </Docs>
@@ -209,8 +213,9 @@
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.Databar" />オブジェクト</returns>
         <remarks>
-          <para>データ バーを使用して、他のセルと相対的にセルの値を表示できます。データ バーの長さは、セルの値を表します。長いバーはより大きな値を表し、バーが短いほど小さい値を表します。データ バーは、特に大量のデータは、上部と下部のホリデー シーズン中のおもちゃを販売するなど、上位と下位の数値を発見に役立ちます販売レポートします</para>。
-          <para></para></remarks>
+          <para>データ バーを使用すると、他のセルと相対的にセルの値を確認できます。データ バーの長さは、セルの値を表します。バーが長いほど値が大きいことを、バーが短いほど値が小さいことを示します。ホリデー シーズン中の売上レポートから、最も売れ行きのよかった玩具と最も売れ行きの悪かった玩具を特定する場合など、特に大量のデータの中で上位の数値と下位の数値を特定する場合に便利です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddIconSetCondition">
@@ -237,8 +242,10 @@
         <summary>新しいを返します<see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" />アイコンを表すオブジェクトは、指定された範囲の条件付き書式のルールを設定します。</summary>
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" />オブジェクト</returns>
-        <remarks>注釈を付けるし、3 ~ 5 個のカテゴリのしきい値の値で区切られたデータを分類するアイコン セットの<para>を使用します。各アイコンは、値の範囲を表します。たとえば、3 つの矢印のアイコン セットでは、赤の上向き矢印はより大きい値を表します黄色の横向き矢印が中間の値を表す、緑の下向き矢印は小さい値を表します。</para> 。
-          <para></para></remarks>
+        <remarks>
+          <para>しきい値によりデータを 3 ～ 5 つのカテゴリに分類して各カテゴリの内容を示唆できるようにするには、アイコン セットを使用します。各アイコンは、ある範囲の値を表します。たとえば、3 つの矢印によるアイコン セットを使用する場合、赤の上向き矢印は大きい値を、黄色の横向き矢印は中程度の値を、緑の下向き矢印は小さい値を表します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddTop10">
@@ -266,8 +273,9 @@
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.Top10" />オブジェクト</returns>
         <remarks>
-          <para>を使用する、<see cref="T:Microsoft.Office.Interop.Excel.Top10" />オブジェクトでは、最大値と最小値を検索指定した区分値に基づいてセルの範囲内です。などの商品を検索できます、上位 5 販売地域のレポートであり、顧客の製品の下位 15% アンケート、または部門の社員分析で上位 25 の給与</para>。
-          <para></para></remarks>
+          <para>使用して、<see cref="T:Microsoft.Office.Interop.Excel.Top10" />オブジェクトでは、最大値と最小値を検索指定した区分値に基づいてセルの範囲内です。 たとえば、地域レポート、顧客の調査では、製品や部門の社員分析で上位 25 の給与額の下の 15% で、上位 5 つの商品が表示されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddUniqueValues">
@@ -295,8 +303,9 @@
         <returns>
           <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" />オブジェクト</returns>
         <remarks>
-          <para>を使用することができます、 <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> 、一意または重複する値を含むセルを簡単に視覚化するオブジェクトです</para>。
-          <para></para></remarks>
+          <para>使用することができます、 <see cref="T:Microsoft.Office.Interop.Excel.UniqueValues" /> 、一意または重複する値を含むセルを簡単に視覚化するオブジェクトです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -381,10 +390,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">

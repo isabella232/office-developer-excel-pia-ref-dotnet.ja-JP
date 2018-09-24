@@ -1,10 +1,10 @@
 <Type Name="XPath" FullName="Microsoft.Office.Interop.Excel.XPath">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f001cd2ee91a64e5f9f9b522beeb19a822533c95" />
+    <Meta Name="ms.openlocfilehash" Value="d73d2c6682dfafc4ccfddfe3f9001a4e4768bd0e" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20573599" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface XPath" />
@@ -31,10 +31,11 @@
   <Docs>
     <summary>マッピングされている XPath を表します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />または<see cref="T:Microsoft.Office.Interop.Excel.ListColumn" />オブジェクトです。</summary>
     <remarks>
-      <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。使用の
-      <para>、 <see cref="M:Microsoft.Office.Interop.Excel.XPath.SetValue(Microsoft.Office.Interop.Excel.XmlMap,System.String,System.Object,System.Object)" /> 、XPath を指定範囲またはリストの列にマップする方法です。<b>SetValue</b>メソッドは、既存の XPath のプロパティを変更するのにも使用します</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.XPath.Clear" />の範囲またはリストの列にマッピングされている XPath を削除する方法です</para>。
-      <para></para></remarks>
+      <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.XPath.SetValue(Microsoft.Office.Interop.Excel.XmlMap,System.String,System.Object,System.Object)" />の範囲またはリストの列に XPath にマップする方法です。 <b>SetValue</b>メソッドは、既存の XPath のプロパティを変更するのにも使用されます。</para>
+      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.XPath.Clear" />の範囲またはリストの列にマッピングされている XPath を削除する方法です。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -119,9 +120,10 @@
       <Docs>
         <summary>指定した XPath にマップされているセルからスキーマのマッピングを削除します。</summary>
         <remarks>
-          <para>このメソッドは、指定した XPath にマップされているセルからのデータをクリアしていません。使用、<see cref="M:Microsoft.Office.Interop.Excel.Range.Clear" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.Range" />のセルからデータを消去するオブジェクトです</para>。
-          <para>かどうかは、指定した XPath が XML リストにマップされているが、スキーマ マッピングを削除すると、リストはワークシートから削除されません</para>。
-          <para></para></remarks>
+          <para>このメソッドは、指定した XPath にマップされているセルからのデータをクリアしていません。 使用、<see cref="M:Microsoft.Office.Interop.Excel.Range.Clear" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.Range" />のセルからデータを消去するオブジェクトです。</para>
+          <para>指定した XPath が XML リスト内でマッピングされている場合、スキーマ マップは削除されますが、リストはワークシートから削除されません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -151,8 +153,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Map">
@@ -181,8 +184,9 @@
         <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />を含む、指定されたスキーマ マップを表す<see cref="T:Microsoft.Office.Interop.Excel.XPath" />オブジェクトです。 読み取り専用。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -240,8 +244,9 @@
           <b>True を設定する場合は</b>、指定された<see cref="T:Microsoft.Office.Interop.Excel.XPath" />オブジェクトが XML リストにマップされています。<b>XPath</b>オブジェクトが 1 つのセルにマップされている場合は<b>False</b>を返します。 読み取り専用の <b>ブール値</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -276,8 +281,9 @@
         <param name="Repeating">オプションの <b>Boolean</b>。 <b>XPath</b>オブジェクトを XML リストの列にバインドするか、1 つのセルにマップされているかどうかを指定します。 XML リストの列に<b>XPath</b>オブジェクトをバインドするのには<b>True</b>に設定します。</param>
         <summary>指定したマップ<see cref="T:Microsoft.Office.Interop.Excel.XPath" />オブジェクトを<see cref="T:Microsoft.Office.Interop.Excel.ListColumn" />オブジェクトまたは<see cref="T:Microsoft.Office.Interop.Excel.Range" />コレクションです。 <b>XPath</b>オブジェクトは、 <b>ListColumn</b>オブジェクトまたはコレクションの<b>範囲</b>にマッピングされている以前、 <b>SetValue</b>メソッドは<b>XPath</b>オブジェクトのプロパティを設定します。</summary>
         <remarks>
-          <para>、XML スプレッドシート形式で、ファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します</para>。
-          <para></para></remarks>
+          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">

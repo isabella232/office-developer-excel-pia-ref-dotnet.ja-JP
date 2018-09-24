@@ -1,10 +1,10 @@
 <Type Name="Parameters" FullName="Microsoft.Office.Interop.Excel.Parameters">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="23a1adc381a42531ec3916120000e82dec4029e9" />
+    <Meta Name="ms.openlocfilehash" Value="6941b2d7f4dfb9eda0f671667102e7c868310e4e" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586822" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Parameters : System.Collections.IEnumerable" />
@@ -35,10 +35,11 @@
   <Docs>
     <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Excel.Parameter" />指定されたクエリ テーブルのオブジェクト。 各<b>パラメーター</b>オブジェクトは、1 つのクエリ パラメーターを表します。 各クエリ テーブルには<b>Parameters</b>コレクションが含まれていますが、クエリ テーブルでパラメーター クエリを使用している場合を除き、コレクションは空です。</summary>
     <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Parameters" /><b>のパラメーター</b>のコレクションを返すプロパティです</para>。
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.Parameters.Add(System.String,System.Object)" /> 、クエリ テーブルの新しいパラメーターを作成します</para>。
-      <para>の URL 接続クエリ テーブルに対して、 <b>Add</b>メソッドを使用することはできません。URL 接続クエリ テーブルでは、Microsoft Excel がに基づいてパラメーターを作成、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" />と<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.PostText" />のプロパティ</para>。
-      <para></para></remarks>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Parameters" /><b>のパラメーター</b>のコレクションを返すプロパティです。</para>
+      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.Parameters.Add(System.String,System.Object)" /> 、クエリ テーブルの新しいパラメーターを作成します。</para>
+      <para>URL 接続クエリ テーブルに対して、 <b>Add</b>メソッドを使うことはできません。 URL 接続クエリ テーブルでは、Microsoft Excel がに基づいてパラメーターを作成、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" />と<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.PostText" />のプロパティです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -189,8 +190,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">

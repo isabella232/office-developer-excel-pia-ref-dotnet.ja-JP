@@ -1,10 +1,10 @@
 <Type Name="DefaultWebOptions" FullName="Microsoft.Office.Interop.Excel.DefaultWebOptions">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="89da5d5cdace92821c0dcb0423dda5bc8169b1f6" />
+    <Meta Name="ms.openlocfilehash" Value="f60968ca4bfd4013c6973e97422f9c5c78bdce23" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585569" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface DefaultWebOptions" />
@@ -28,9 +28,10 @@
   <Docs>
     <summary>文書を Web ページとして保存または Web ページを開くときに Excel で使用されるアプリケーション レベルのグローバル属性が含まれています。</summary>
     <remarks>
-      <para>返すか、アプリケーション (グローバル) レベルまたはブック レベルの属性を設定できます。(属性の値を 1 つのブックごとに異なることができることは、ブックの保存時の属性値によってに注意してください)。ブック レベルの属性の設定は、アプリケーション レベルの属性設定を上書きします。ブック レベルの属性は、<see cref="T:Microsoft.Office.Interop.Excel.WebOptions" />オブジェクトです</para>。
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Application.DefaultWebOptions" />を<b>必ず指定</b>のオブジェクトを返すプロパティです</para>。
-      <para></para></remarks>
+      <para>返すか、アプリケーション (グローバル) レベルまたはブック レベルの属性を設定できます。 (属性の値を 1 つのブックごとに異なることができることは、ブックの保存時の属性値によってに注意してください)。ブック レベルの属性の設定は、アプリケーション レベルの属性設定を上書きします。 ブック レベルの属性は、<see cref="T:Microsoft.Office.Interop.Excel.WebOptions" />オブジェクトです。</para>
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Application.DefaultWebOptions" />を<b>必ず指定</b>のオブジェクトを返すプロパティです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AllowPNG">
@@ -63,8 +64,9 @@
           <b>True</b>を Web ページとしてドキュメントを保存すると、画像形式として PNG (ポータブル ネットワーク グラフィックス) が許可されている場合です。 <b>False を指定</b> の出力形式として PNG が許可されていない場合。 既定値は、 <b>false を指定</b> します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>その他のファイル形式、PNG 形式で画像を保存する場合可能性があります画像の品質を向上させるためや、画像ファイルのサイズを小さくする対象としている Web ブラウザーが PNG 形式をサポートすることを想定して、ダウンロード時間が短きます</para>。
-          <para></para></remarks>
+          <para>画像を PNG 形式で保存すると、画質が向上して画像ファイル サイズを小さくすることができます。このため、対象の Web ブラウザーが PNG 形式をサポートしているとダウンロード時間が短縮されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AlwaysSaveInDefaultEncoding">
@@ -97,8 +99,10 @@
           <b>該当</b>文書を保存する Web ページまたはテキスト形式、ファイルの元のエンコード形式を開くときに依存しないと、既定のエンコーディングが使用されている場合です。 <b>False</b>場合は、ファイルの元のエンコード形式を使用します。 既定値は <b>False</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.Encoding" />プロパティは、既定のエンコーディングを設定するのには使用できます</para>。
-          <para></para></remarks>
+          <para>
+            <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.Encoding" />プロパティは、既定のエンコーディングを設定するのには使用できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -156,12 +160,13 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <b>True の</b>場合、Office アプリケーションの既定の HTML エディターは、Excel を起動するときに、かどうかを確認する Microsoft Excel がチェックします。 <b>False</b> Excel では、このチェックを実行していない場合。 既定値は <b>True</b> です。</summary>
+          <b>True の</b>場合、Office アプリケーションの既定の HTML エディターは、Excel を起動するときに、かどうかを確認する Microsoft Excel がチェックします。 <b>False</b> Excel では、このチェックを実行していない場合。 既定値は、 <b>true を指定</b> します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>を使用している Web ブラウザーが HTML 編集と HTML エディターをサポートしている場合にのみ、このプロパティを使用します</para>。
-          <para>に別の HTML エディターを使用するには、このプロパティを<b>False</b>に設定し、エディターを既定のシステム HTML エディターとして登録します</para>。
-          <para></para></remarks>
+          <para>HTML 編集と HTML エディターを使用している Web ブラウザーをサポートしている場合にのみ、このプロパティが使用されます。</para>
+          <para>別の HTML エディターを使用してするにはこのプロパティを <b>False</b> に設定し、エディターを既定のシステム HTML エディターとして登録します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -190,10 +195,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DownloadComponents">
@@ -225,9 +231,10 @@
         <summary>の<b>true</b>場合のみ場合は、コンポーネントがインストールされていないが、Web ブラウザーに保存されたドキュメントを表示するときに必要な Microsoft Office Web コンポーネントがダウンロードされます。 <b>False</b>場合は、コンポーネントはダウンロードされません。 既定値は <b>False</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>設定することができます、 <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.LocationOfComponents" /> (イントラネットまたは Web) 上のサーバーの URL またはパスのプロパティ (ローカルまたはネットワーク) を権限のあるユーザーがコンポーネントをダウンロード、保存したドキュメントを表示するときの場所にします。ユーザーが有効な Microsoft Office のライセンスが必要とのパスが有効である必要があり、必要なコンポーネントが含まれている場所をポイントする必要があります</para>。
-          <para>Office Web コンポーネントは、Web ページとして保存するドキュメントに対話機能を追加します。ページの対話部分を静的になるコンポーネントがインストールされていないコンピューターのブラウザーで Web ページを表示する場合です</para>。
-          <para></para></remarks>
+          <para>設定することができます、 <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.LocationOfComponents" /> (イントラネットまたは Web) 上のサーバーの URL またはパスのプロパティ (ローカルまたはネットワーク) を権限のあるユーザーがコンポーネントをダウンロード、保存したドキュメントを表示するときの場所にします。 パスが有効である必要があり、必要なコンポーネントが含まれている場所をポイントする必要があり、有効な Microsoft Office のライセンスが必要です。</para>
+          <para>Office Web コンポーネントにより、Web ページとして保存されるドキュメントに対話機能が加わります。必要なコンポーネントがインストールされていないコンピューターのブラウザーで Web ページを表示する場合、ページの対話部分は機能しません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Encoding">
@@ -259,8 +266,10 @@
         <summary>ドキュメントが保存されたドキュメントを表示するとき、Web ブラウザーで使用されるエンコード (コード ページまたは文字セット) を設定または返します。 既定値は、システム コード ページです。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>が<b>[自動検出]</b>のサフィックスが付いている<b>が可能</b>定数のいずれかを使用することはできません。これらの定数が使用、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.ReloadAs(Microsoft.Office.Core.MsoEncoding)" />メソッドです</para>。
-          <para></para></remarks>
+          <para>
+            <b>[自動検出]</b>のサフィックスが付いている<b>が可能</b>定数のいずれかを使用することはできません。 これらの定数が使用、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.ReloadAs(Microsoft.Office.Core.MsoEncoding)" />メソッドです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="FolderSuffix">
@@ -289,13 +298,208 @@
         <summary>文書を Web ページとして保存、長いファイル名を使用して別のフォルダーに関連ファイルを保存するときに Excel で使用されるフォルダー サフィックスを返します (場合は、<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.UseLongFileNames" />と<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" />プロパティが<b>True</b>に設定)。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>新規ドキュメントの使用、<b>必ず指定</b>のオブジェクトの<b>FolderSuffix</b>プロパティから返されるサフィックスが作成されます。値、<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> 、別の言語バージョンの Microsoft Excel のドキュメントが編集された以前の場合、<b>必ず指定</b>のオブジェクトのオブジェクトが異なる場合があります。使用することができます、<see cref="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" />には、Microsoft Office で現在使用している言語のサフィックスを変更する方法です</para>。
-          <para>既定では、サポート フォルダーの名前は、Web ページとアンダー スコア (_)、ピリオド (.)、またはハイフン (-) と、word の [ファイル] ([Web ページとしてファイルを保存する Excel のバージョンの言語で表示される) の名前。たとえば、オランダ語の言語バージョンの Excel を使用して、"Page1"という名前のファイルを Web ページとして保存することとします。Page1_bestanden では、サポート フォルダーの既定の名前です</para>。
-          <para>は、次の表、[Office の各言語バージョンとその対応する<b>LanguageID</b>プロパティの値およびフォルダー サフィックス。テーブルに表示されていない言語、サフィックス"として.files"が使用されます</para>。
-          <list type="table"><item><term>アラビア語</term><description>1025</description><description>.files</description></item><item><term>バスク語</term><description>1069</description><description>_fitxategiak</description></item><item><term>(ブラジル)</term><description>1046</description><description>_arquivos</description></item><item><term>ブルガリア語</term><description>1026</description><description>.files</description></item><item><term>カタロニア語</term><description>1027</description><description>_fitxers</description></item><item><term>中国語 - 簡</term><description>2052</description><description>.files</description></item><item><term>中国語 - 繁体字</term>の
-              <description>1028</description><description>.files</description></item><item><term>クロアチア語</term><description>1050</description><description>_datoteke</description></item><item><term>チェコ語</term><description>1029</description><description>_soubory</description></item><item><term>デンマーク</term><description>1030</description><description>・ ファイラー ・</description></item><item><term>オランダ</term><description>1043</description><description>_bestanden</description></item><item><term>英語</term><description>1033</description><description>_files</description></item><item><term>エストニア語</term><description>1061</description><description>_failid</description></item><item><term>フィンランド</term><description>1035</description><description>_tiedostot</description></item><item><term>フランス語</term><description>1036</description><description>_fichiers</description></item><item><term>ドイツ語</term><description>1031</description><description>-Dateien</description></item><item><term>ギリシャ語</term><description>1032</description><description>.files</description></item><item><term>ヘブライ語</term><description>1037</description><description>.files</description></item><item><term>ハンガリー</term><description>1038</description><description>_elemei</description></item><item><term>イタリア</term><description>1040</description><description>-ファイル</description></item><item><term>日本語</term>、
-              <description>1041</description>、
-              <description>.files</description></item><item><term>韓国語</term><description>1042</description><description>.files</description></item><item><term>ラトビア</term><description>1062</description><description>_fails</description></item><item><term>リトアニア</term><description>1063</description><description>_bylos</description></item><item><term>ノルウェー語</term><description>1044</description><description>・ ファイラー ・</description></item><item><term>ポーランド</term><description>1045</description><description>_pliki</description></item><item><term>ポルトガル語</term><description>2070</description><description>_ficheiros</description></item><item><term>ルーマニア</term><description>1048</description><description>.files</description></item><item><term>ロシア</term><description>1049</description><description>.files</description></item><item><term>セルビア語 (キリル)</term><description>3098</description><description>.files</description></item><item><term>セルビア語 (ラテン)</term><description>2074</description><description>_fajlovi</description></item><item><term>スロバキア語</term><description>1051</description><description>.files</description></item><item><term>スロベニア語</term><description>1060</description><description>_datoteke</description></item><item><term>スペイン語</term><description>3082</description><description>_archivos</description></item><item><term>スウェーデン語</term><description>1053</description><description>・ ファイラー ・</description></item><item><term>タイ</term><description>1054</description><description>.files</description></item><item><term>トルコ語</term><description>1055</description><description>_dosyalar</description></item><item><term>ウクライナ</term><description>1058</description><description>.files</description></item><item><term>ベトナム</term><description>1066</description><description>.files</description></item></list><para></para></remarks>
+          <para>新規ドキュメントの使用、 <b>必ず指定</b> のオブジェクトの <b>FolderSuffix</b> プロパティから返されるサフィックスが作成されます。 値、<see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> 、別の言語バージョンの Microsoft Excel のドキュメントが編集された以前の場合、<b>必ず指定</b>のオブジェクトのオブジェクトが異なる場合があります。 使用することができます、<see cref="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" />には、Microsoft Office で現在使用している言語のサフィックスを変更する方法です。</para>
+          <para>特に指定しない限り、関連フォルダーの名前は、Web ページ名と "files" という単語をアンダスコア (_)、ピリオド (.)、ハイフン (-) のいずれかで結んだものになります。"files" の部分は、どの言語バージョンの Excel でファイルを Web ページとして保存するかによって異なります。たとえば、オランダ語バージョンの Excel で "Page1" というファイルを Web ページとして保存する場合、既定の関連フォルダー名は Page_bestanden となります。</para>
+          <para>次の表は、各言語のバージョンの Office と、その対応する<b>LanguageID</b>プロパティの値およびフォルダー サフィックスを使用します。 テーブルに表示されていない言語では、サフィックス"として.files"が使用されます。</para>
+          <list type="table">
+            <item>
+              <term>アラビア語</term>
+              <description>1025</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>バスク語</term>
+              <description>1069</description>
+              <description>_fitxategiak</description>
+            </item>
+            <item>
+              <term>ポルトガル語 (ブラジル)</term>
+              <description>1046</description>
+              <description>_arquivos</description>
+            </item>
+            <item>
+              <term>ブルガリア語</term>
+              <description>1026</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>カタルニア語</term>
+              <description>1027</description>
+              <description>_fitxers</description>
+            </item>
+            <item>
+              <term>簡体字中国語</term>
+              <description>2052</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>繁体字中国語</term>
+              <description>1028</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>クロアチア語</term>
+              <description>1050</description>
+              <description>_datoteke</description>
+            </item>
+            <item>
+              <term>チェコ語</term>
+              <description>1029</description>
+              <description>_soubory</description>
+            </item>
+            <item>
+              <term>デンマーク語</term>
+              <description>1030</description>
+              <description>-filer</description>
+            </item>
+            <item>
+              <term>オランダ語</term>
+              <description>1043</description>
+              <description>_bestanden</description>
+            </item>
+            <item>
+              <term>英語</term>
+              <description>1033</description>
+              <description>_files</description>
+            </item>
+            <item>
+              <term>エストニア語</term>
+              <description>1061</description>
+              <description>_failid</description>
+            </item>
+            <item>
+              <term>フィンランド語</term>
+              <description>1035</description>
+              <description>_tiedostot</description>
+            </item>
+            <item>
+              <term>フランス語</term>
+              <description>1036</description>
+              <description>_fichiers</description>
+            </item>
+            <item>
+              <term>ドイツ語</term>
+              <description>1031</description>
+              <description>-Dateien</description>
+            </item>
+            <item>
+              <term>ギリシャ語</term>
+              <description>1032</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>ヘブライ語</term>
+              <description>1037</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>ハンガリー語</term>
+              <description>1038</description>
+              <description>_elemei</description>
+            </item>
+            <item>
+              <term>イタリア語</term>
+              <description>1040</description>
+              <description>-file</description>
+            </item>
+            <item>
+              <term>日本語</term>
+              <description>1041</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>韓国語</term>
+              <description>1042</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>ラトビア語</term>
+              <description>1062</description>
+              <description>_fails</description>
+            </item>
+            <item>
+              <term>リトアニア語</term>
+              <description>1063</description>
+              <description>_bylos</description>
+            </item>
+            <item>
+              <term>ノルウェー語</term>
+              <description>1044</description>
+              <description>-filer</description>
+            </item>
+            <item>
+              <term>ポーランド語</term>
+              <description>1045</description>
+              <description>_pliki</description>
+            </item>
+            <item>
+              <term>ポルトガル語</term>
+              <description>2070</description>
+              <description>_ficheiros</description>
+            </item>
+            <item>
+              <term>ルーマニア語</term>
+              <description>1048</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>ロシア語</term>
+              <description>1049</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>セルビア語 (キリル)</term>
+              <description>3098</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>セルビア語 (ラテン)</term>
+              <description>2074</description>
+              <description>_fajlovi</description>
+            </item>
+            <item>
+              <term>スロバキア語</term>
+              <description>1051</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>スロベニア語</term>
+              <description>1060</description>
+              <description>_datoteke</description>
+            </item>
+            <item>
+              <term>スペイン語</term>
+              <description>3082</description>
+              <description>_archivos</description>
+            </item>
+            <item>
+              <term>スウェーデン語</term>
+              <description>1053</description>
+              <description>-filer</description>
+            </item>
+            <item>
+              <term>タイ語</term>
+              <description>1054</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>トルコ語</term>
+              <description>1055</description>
+              <description>_dosyalar</description>
+            </item>
+            <item>
+              <term>ウクライナ語</term>
+              <description>1058</description>
+              <description>.files</description>
+            </item>
+            <item>
+              <term>ベトナム語</term>
+              <description>1066</description>
+              <description>.files</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Fonts">
@@ -387,8 +591,9 @@
         <summary>(イントラネットまたは Web) 上のサーバーの URL またはパスの設定を取得または設定 (ローカルまたはネットワーク) 権限を持つユーザーことができますをダウンロードする Microsoft Office Web コンポーネント、保存したドキュメントを表示するときの場所にします。 既定値は、ローカルまたは Microsoft Office のネットワーク インストール パスです。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Office Web コンポーネントが自動的にダウンロード、指定した Web ページで、<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.DownloadComponents" />プロパティが<b>True</b>に設定されて、コンポーネントがインストールされていない、パスが有効であり、必要なコンポーネントが含まれている場所をポイントし、ユーザーが有効な Microsoft Office のライセンスを持っています</para>。
-          <para></para></remarks>
+          <para>場合、指定した Web ページに office Web コンポーネントを自動的にダウンロード、<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.DownloadComponents" />プロパティが<b>True</b>に設定されて、コンポーネントがインストールされていない、パスが有効であり、必要なコンポーネントが含まれている場所をポイントし、ユーザーは、有効な Microsoft Office のライセンスを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OrganizeInFolder">
@@ -421,10 +626,11 @@
           <b>True の</b>場合は、指定した文書を Web ページとして保存すると、背景のテクスチャや画像など、すべての関連ファイルが別のフォルダーに編成されました。 <b>偽</b>のファイルをサポートしている場合は、Web ページと同じフォルダーに保存されます。 既定値は <b>True</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>新しいフォルダーは、Web ページを保存したフォルダーに作成され、ドキュメントの名前します。長いファイル名を使用する場合は、フォルダー名にサフィックスが追加されます。<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" />プロパティは、選択またはインストールされている言語サポートのフォルダー サフィックス、または既定のフォルダー サフィックスを取得します</para>。
-          <para>、 <b>OrganizeInFolder</b>プロパティを別の値に設定を以前に保存したドキュメントを保存すると、Microsoft Excel が自動的に移動または必要に応じて、フォルダーからファイルをサポートします</para>。長いファイル名を使用しない場合は
-          <para>(場合は、<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.UseLongFileNames" />プロパティが<b>False</b>に設定)、Microsoft Excel では、別のフォルダーに、任意のサポート ファイルを自動的に保存します。Web ページと同じフォルダーにファイルを保存することはできません</para>。
-          <para></para></remarks>
+          <para>新しいフォルダーは、Web ページを保存したフォルダーに作成され、ドキュメントの名前します。 長いファイル名を使用する場合は、フォルダー名にサフィックスが追加されます。 <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" />プロパティは、選択またはインストールされている言語サポートのフォルダー サフィックス、または既定のフォルダー サフィックスを取得します。</para>
+          <para>または必要に応じて、フォルダーから、 <b>OrganizeInFolder</b>プロパティを別の値に設定を以前に保存した文書を保存する場合 Excel 関連のファイルに自動的に移動します。</para>
+          <para>長いファイル名を使用しない場合は (場合は、<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.UseLongFileNames" />プロパティが<b>False</b>に設定)、Microsoft Excel では、別のフォルダーに、任意のサポート ファイルを自動的に保存します。 Web ページと同じフォルダーにファイルを保存できません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -484,9 +690,10 @@
         <summary>Web ページ上のグラフィック イメージおよび表のセルの密度 (1 インチあたりのピクセル数) を設定または返します。 通常の設定数値の範囲は 19 ～ 480 で、よく使用される画面のサイズに対する一般的な設定は、72、96、および 120 です。 既定値は 96 です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティは、Web ブラウザーで保存されたドキュメントを表示する際に画像やテキストのサイズを基準にして指定の Web ページ上のセルのサイズを決定します。結果のイメージまたはセルの物理的なサイズは、元のサイズ (インチ単位) の結果を 1 インチあたりのピクセル数を掛けた値です</para>。
-          <para>を使用する、<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.ScreenSize" />プロパティを対象の Web ブラウザーの最適な画面サイズを設定します</para>。
-          <para></para></remarks>
+          <para>保存した文書を Web ブラウザーで表示するときは、常に、指定した Web ページのイメージおよびセルのサイズが、文字列のサイズに応じてこのプロパティによって決定されます。設定後のイメージまたはセルの物理的な大きさは、元の大きさ (インチ単位) に 1 インチあたりのピクセル数を掛けると得られます。</para>
+          <para>使用する、<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.ScreenSize" />対象の Web ブラウザーの最適な画面サイズを設定するプロパティです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RelyOnCSS">
@@ -518,8 +725,9 @@
         <summary>の<b>場合は true。</b>保存済みの文書を Web ブラウザーで表示するときのフォント設定にカスケード スタイル シート (CSS) を使用する場合。 Microsoft Excel は、カスケード スタイル シート ファイルを作成し、指定したフォルダーに、またはの値に基づいて、Web ページと同じフォルダーに保存、<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" />プロパティ。 <b>False</b>場合 HTML&lt;フォント&gt;タグとカスケード スタイル シートを使用します。 既定値は <b>True</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>の<b>場合は True</b> Web ブラウザーより正確なレイアウトと書式制御が Web ページで提供し、外観、ドキュメントと同じようにより (Microsoft Excel で表示されます) これは、カスケード スタイル シートをサポートしている場合にこのプロパティを設定する必要があります</para>。
-          <para></para></remarks>
+          <para>正確なレイアウトと書式制御が Web ページで提供し、これは、スタイル シートを重ねて、Web ブラウザーがサポートするよう場合より、文書に表示される Microsoft Excel で) このプロパティを<b>True</b>に設定する必要があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RelyOnVML">
@@ -552,9 +760,10 @@
           <b>True</b>を Web ページとして文書を保存するときに描画オブジェクトから画像ファイルを生成しない場合。 場合は<b>false を指定</b>のイメージが生成されます。 既定値は <b>False</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>Web ブラウザーには、ベクター マークアップ言語 (VML) がサポートされている場合、描画オブジェクトのイメージを生成しないことにより、ファイルのサイズを減らすことができます。たとえば、Microsoft Internet Explorer 5 はこの機能をサポートし、このブラウザーを対象としている場合は、 <b>RelyOnVML</b>プロパティを<b>True</b>に設定する必要があります。Vml を使って、イメージは表示されない場合をサポートしていないブラウザーでこのプロパティを有効に保存された Web ページを表示する</para>。
-          <para>などを生成しないように画像、Web ページは、以前に生成されたイメージ ファイルを使用している場合と、ページを Web サーバー上の最終的な場所から異なる場合は、ドキュメントを保存する場所です</para>。
-          <para></para></remarks>
+          <para>使用する Web ブラウザーが VML (Vector Markup Language) をサポートする場合、描画オブジェクトの画像を生成しないように設定するとファイル サイズを小さくできます。たとえば、Microsoft Internet Explorer 5 ではこの機能がサポートされています。このブラウザーが対象の場合、 <b>RelyOnVML</b> プロパティを <b>True</b> に指定します。VML がサポートされていないブラウザーの場合、このプロパティを有効にして保存した Web ページを表示しても、画像は表示されません。</para>
+          <para>たとえば、Web ページは、以前に生成されたイメージ ファイルを使用している場合と、文書を保存する場所は、ページを Web サーバー上の最終的な場所とは異なる場合画像を生成しない必要があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SaveHiddenData">
@@ -650,7 +859,7 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>取得および設定</b>には、これらの<b>取得および設定が</b>定数のいずれかを指定できます:</para>
+            <b>取得および設定</b>には、これらの<b>取得および設定が</b>定数のいずれかを指定できます。</para>
           <para>
             <b>msoScreenSize1152x882</b>
           </para>
@@ -682,7 +891,7 @@
             <b>msoScreenSize640x480</b>
           </para>
           <para>
-            <b>msoScreenSize800x600</b>既定</para>
+            <b>msoScreenSize800x600</b>既定値</para>
           <para></para>
         </remarks>
       </Docs>
@@ -716,15 +925,20 @@
         <summary>ブラウザーのバージョンを示す定数を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
+          <para>使用できる定数は、次に示す 
+            <b>MsoTargetBrowser</b> クラスの定数のいずれかです。<b></b></para>
           <para>
-            <b>MsoTargetBrowser</b>には、これらの<b>MsoTargetBrowser</b>定数のいずれかを指定できます。</para>
+            <b>msoTargetBrowserIE4</b>Microsoft Internet Explorer 4.0 またはそれ以降です。</para>
           <para>
-            <b>msoTargetBrowserIE4</b> 4.0 またはそれ以降の Microsoft Internet Explorer</para> 。
-          <para><b>msoTargetBrowserIE5</b> 5.0 またはそれ以降の Microsoft Internet Explorer</para> 。
-          <para><b>msoTargetBrowserIE6</b>またはそれ以降の Microsoft Internet Explorer</para> 。
-          <para><b>msoTargetBrowserV3</b> Microsoft Internet Explorer 3.0 では、3.0、またはそれ以降、Netscape Navigator</para> 。
-          <para><b>msoTargetBrowserV4</b> Microsoft Internet Explorer 4.0、4.0、またはそれ以降、Netscape Navigator</para> 。
-          <para></para></remarks>
+            <b>msoTargetBrowserIE5</b>Microsoft Internet Explorer 5.0 またはそれ以降です。</para>
+          <para>
+            <b>msoTargetBrowserIE6</b>Microsoft Internet Explorer 6.0 またはそれ以降です。</para>
+          <para>
+            <b>msoTargetBrowserV3</b>Microsoft Internet Explorer 3.0 では、Netscape Navigator の 3.0、またはそれ以降です。</para>
+          <para>
+            <b>msoTargetBrowserV4</b>Microsoft Internet Explorer 4.0、4.0、またはそれ以降、Netscape Navigator。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UpdateLinksOnSave">
@@ -757,8 +971,10 @@
           <b>True</b>ハイパーリンクおよびすべての関連ファイルへのパス、自動的に更新される場合のリンクは、文書を保存する時点で最新の状態を確保する、Web ページとして文書を保存する前にします。 <b>False</b>場合は、リンクは更新されません。 既定値は <b>True</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>場合は、ドキュメントの保存場所とは異なる Web サーバー上の最終的な場所を<b>False</b>にこのプロパティを設定する必要があり、サポート ファイルには最初の場所には使用できません</para>。
-          <para></para></remarks>
+          <para>
+            <b>False</b>にこのプロパティを設定する必要がある場合は、ドキュメントの保存場所とは異なる Web サーバー上の最終的な場所と、最初の場所で関連ファイルがご利用いただけません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="UseLongFileNames">
@@ -791,8 +1007,9 @@
           <b>True</b>を Web ページとして文書を保存するときに長いファイル名を使用する場合。 <b>False</b>場合は長いファイル名を使用しないと、DOS ファイル名形式 (8.3) が使用されます。 既定値は <b>True</b> です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>の場合は長いファイル名を使用せず、文書と関連ファイル、Microsoft Excel はこれらのファイルを別のフォルダーに自動的に整理します。それ以外の場合を使用して、<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" />の関連ファイルが別のフォルダーに配置するかどうかを決定するプロパティ</para>。
-          <para></para></remarks>
+          <para>長いファイル名を使用せずに、文書にサポート ファイルがあると、Microsoft Excel は自動的に別のフォルダーにそれらのファイルを整理します。 それ以外の場合を使用して、<see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.OrganizeInFolder" />の関連ファイルが別のフォルダーに配置するかどうかを確認するにします。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

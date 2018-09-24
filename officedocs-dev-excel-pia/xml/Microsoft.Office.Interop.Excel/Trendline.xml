@@ -1,10 +1,10 @@
 <Type Name="Trendline" FullName="Microsoft.Office.Interop.Excel.Trendline">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c9024644c20463eaf6b1c272ed45234658b8e5de" />
+    <Meta Name="ms.openlocfilehash" Value="43cabd68ae83576c2d2f307683fffd5d099fc7d7" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20575734" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Trendline" />
@@ -32,10 +32,12 @@
     <summary>グラフの近似曲線を表します。 近似曲線は、データ系列のデータの傾向や方向を示します。</summary>
     <remarks>
       <para>
-        <b>近似曲線</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.Trendlines" />コレクションです。<b>近似曲線</b>のコレクションには、1 つのデータ系列の<b>近似曲線</b>オブジェクトすべてにはが含まれています</para>。
-      <para>使用して<b>近似曲線</b>(<paramref name="index" />)、どこで<paramref name="index" />は、近似曲線のインデックス番号で、1 つの<b>近似曲線</b>オブジェクトを取得する</para>。
-      <para>インデックス番号は、データ系列に近似曲線が追加された順序を表します。Trendlines(1) シリーズに追加された最初の近似曲線は、Trendlines(Trendlines.Count) 最後の 1 つを追加します</para>。
-      <para></para></remarks>
+        <b>近似曲線</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.Trendlines" />コレクションです。 <b>Trendlines</b> コレクションには、1 つのデータ系列にあるすべての <b>Trendline</b> オブジェクトが含まれています。</para>
+      <para>
+        <b>近似曲線</b>を使用して (<paramref name="index" />)、どこで<paramref name="index" />は、近似曲線のインデックス番号で、1 つの<b>近似曲線</b>オブジェクトを取得します。</para>
+      <para>近似曲線のインデックス番号は、データ系列に追加された順序に対応します。Trendlines(1) はデータ系列に最初に追加された近似曲線で、Trendlines(Trendlines.Count) は最後に追加された近似曲線です。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -216,10 +218,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabel">
@@ -248,8 +251,9 @@
         <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> 、要素または近似曲線に関連付けられたデータ ラベルを表すオブジェクト。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>を設定する必要があります近似曲線のデータ ラベルを有効にするには、<see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayEquation" />プロパティまたは<see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayRSquared" />プロパティを<b>True</b>にします。</para> 。
-          <para></para></remarks>
+          <para>設定する必要があります。 近似曲線のデータ ラベルを有効にするには、<see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayEquation" />プロパティまたは<see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayRSquared" />プロパティを<b>True</b>にします。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -498,8 +502,9 @@
         <summary>近似曲線が数値軸と交差するポイントを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティの設定の設定、<see cref="P:Microsoft.Office.Interop.Excel.Trendline.InterceptIsAuto" />プロパティに<b>false を指定</b>します</para>。
-          <para></para></remarks>
+          <para>このプロパティの設定の設定、<see cref="P:Microsoft.Office.Interop.Excel.Trendline.InterceptIsAuto" />プロパティを<b>False</b>にします。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InterceptIsAuto">
@@ -532,8 +537,9 @@
           <b>True の</b>場合、近似曲線が数値軸と交差する点は回帰計算によって自動的に決定します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>を設定します<see cref="P:Microsoft.Office.Interop.Excel.Trendline.Intercept" />プロパティは、このプロパティを<b>False</b>に設定します</para>。
-          <para></para></remarks>
+          <para>設定、<see cref="P:Microsoft.Office.Interop.Excel.Trendline.Intercept" />プロパティは、このプロパティを<b>False</b>に設定します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">

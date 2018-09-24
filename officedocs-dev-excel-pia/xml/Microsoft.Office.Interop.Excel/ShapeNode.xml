@@ -1,10 +1,10 @@
 <Type Name="ShapeNode" FullName="Microsoft.Office.Interop.Excel.ShapeNode">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4fdacdabf56342fb3f89aa5ab8888abf01f9989b" />
+    <Meta Name="ms.openlocfilehash" Value="fa83a8cb318b1dacf1a4becb1cd2c657c30e27e3" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20580914" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ShapeNode : Microsoft.Office.Core._IMsoDispObj" />
@@ -32,9 +32,11 @@
   <Docs>
     <summary>ユーザーが定義したフリーフォームの節点の形と節点部分の編集プロパティを表します。</summary>
     <remarks>
-      <para>ノードには、フリー フォームのセグメントと曲線セグメントのコントロール ポイントの間の頂点が含まれます。<b>ShapeNode</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" />コレクションです。<b>ShapeNodes</b>コレクションには、フリー フォームのすべてのノードが含まれています</para>。
-      <para><b>ノード</b>の使用 (<paramref name="index" />)、<paramref name="index" />は、ノードのインデックス番号で、単一の<b>ShapeNode</b>オブジェクトを取得する</para>。
-      <para></para></remarks>
+      <para>節点には、フリーフォームのセグメント間の頂点および曲線の部分のコントロール ポイントが含まれます。 <b>ShapeNode</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" />コレクションです。 <b>ShapeNodes</b> コレクションには、フリーフォームのすべての節点が含まれます。</para>
+      <para>
+        <b>ノード</b>を使用する (<paramref name="index" />)、<paramref name="index" />は、ノードのインデックス番号で、単一の<b>ShapeNode</b>オブジェクトを取得します。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -98,8 +100,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="EditingType">
@@ -128,8 +131,9 @@
         <summary>指定された節点が頂点の場合は、節点に対する変更が節点に接続された 2 つのセグメントに与える影響を示す値を取得します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetEditingType(System.Int32,Microsoft.Office.Core.MsoEditingType)" />このプロパティの値を設定します</para>。
-          <para></para></remarks>
+          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetEditingType(System.Int32,Microsoft.Office.Core.MsoEditingType)" />このプロパティの値を設定します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -186,8 +190,9 @@
         <summary>座標ペアで指定されたノードの位置を返します。 各座標は、ポイント単位で表されます。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" />このプロパティの値を設定します</para>。
-          <para></para></remarks>
+          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" />このプロパティの値を設定します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SegmentType">

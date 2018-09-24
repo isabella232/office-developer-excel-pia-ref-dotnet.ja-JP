@@ -1,10 +1,10 @@
 <Type Name="SlicerCacheLevel" FullName="Microsoft.Office.Interop.Excel.SlicerCacheLevel">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="43900a2e801ac6164f29d0632611e43dbce1a178" />
+    <Meta Name="ms.openlocfilehash" Value="3e50741c9a2b1462398bc2cd7a9e64c639d93725" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587270" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface SlicerCacheLevel" />
@@ -30,8 +30,10 @@
   </Attributes>
   <Docs>
     <summary>スライサーでフィルター処理する OLAP データ ソース内の階層レベルを表します。</summary>
-    <remarks>スライサーを使用して OLAP データ ソースにフィルターを適用する場合は、<para>とそれに関連付けられたスライサー キャッシュは、データ ソースからの複数の階層レベルを含めることができます。使用して、 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> 、親のコレクション<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />オブジェクトのアクセスを<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />これらの階層レベルを表すオブジェクト</para>。
-      <para></para></remarks>
+    <remarks>
+      <para>OLAP データ ソースをフィルター処理するスライサーを使用する場合とそれに関連付けられたスライサー キャッシュは、データ ソースからの複数の階層レベルを含めることができます。 使用して、 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevels" /> 、親のコレクション<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />オブジェクトのアクセスを<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />これらの階層レベルを表すオブジェクト。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,8 +63,9 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.Application" />オブジェクトです。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -91,8 +94,9 @@
         <summary>数を取得する<see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" />オブジェクトで指定された<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />オブジェクトです。</summary>
         <value>数<see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" />オブジェクトで指定された<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />オブジェクトです。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -121,9 +125,10 @@
         <summary>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>を取得します。</summary>
         <value>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>。</value>
         <remarks>
-          <para>読み取り専用<b>long</b></para> 。
-          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+          <para>読み取り専用<b>long</b>です。</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="CrossFilterType">
@@ -155,11 +160,12 @@
         <summary>取得またはスライサーは、スライサーの同じキャッシュを共有する他のスライサーのフィルター間に参加しているかどうかとクロス フィルターの表示方法を設定します。</summary>
         <value>同じスライサー キャッシュを共有し、どのようにフィルターを通過する他のスライサーとクロス フィルターが表示されますにスライサーが参加しているかどうかを指定します。</value>
         <remarks>
-          <para>読み取り/書き込み</para>。
-          <para>場合は、1 つ以上のスライサーは、または複数のアイテムの 1 つのスライサーでフィルター処理するデータが含まれてない対応するもう 1 つのスライサーの場合、既定では、同じピボット テーブルに関連付けられている、これらの項目が淡色表示されます。などの国のスライサーと状態のスライサーでは、ある国のスライサーの国をクリックする場合は、状態のスライサー内のすべての状態であるしないという点で国は淡色表示されます。この機能が「クロス フィルター処理」しますと呼ばれる</para>。
-          <para>ユーザー インターフェイスの設定の設定に対応する、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />プロパティは、視覚的に示し、データなしでアイテムなしデータ最後のチェック ボックス、[スライサーの設定] ダイアログ ボックスで項目を表示します。設定、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />を<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithDataAtTop" />両方の選択に対応、データのないアイテムを視覚的に示すし、最後のチェック ボックスをデータなしでアイテムを表示します。設定、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />を<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithNoData" />のみを選択することに対応して、なしのデータ] チェック ボックスを持つ項目を視覚的に示します。両方のチェック ボックスをオフにする設定に対応して、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />を<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerNoCrossFilter" />です</para>。非 OLAP データ ソースをフィルター処理する
-          <para>スライサー (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />です<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" />。 =  <b>false</b>) でサポートされていない、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />オブジェクトです。ベースの範囲、リスト、およびリレーショナル データ ソースが OLAP 以外のピボット テーブルをフィルター処理するスライサーを使用して、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />オブジェクトの代わりにします</para>。
-          <para></para></remarks>
+          <para>値の取得および設定が可能です。</para>
+          <para>複数のスライサーが同じピボットテーブルに関連付けられている場合、既定では、1 つのスライサーでフィルター処理した 1 つまたは複数のアイテムに対応するデータが他のスライサーにないとき、これらのアイテムは淡色表示になります。たとえば、"Country" スライサーと "State" スライサーがある場合、"Country" スライサーで国をクリックすると、"State" スライサー内でその国に存在しないすべての州は淡色表示になります。この機能は、"クロス フィルター"と呼ばれます。</para>
+          <para>ユーザー インターフェイスの設定の設定に対応する、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />プロパティは、視覚的に示し、データなしでアイテムなしデータ最後のチェック ボックス、[スライサーの設定] ダイアログ ボックスで項目を表示します。 設定、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />を<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithDataAtTop" />両方の選択に対応、データのないアイテムを視覚的に示すし、最後のチェック ボックスをデータなしでアイテムを表示します。 設定、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />を<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerCrossFilterShowItemsWithNoData" />のみを選択することに対応して、なしのデータ] チェック ボックスを持つ項目を視覚的に示します。 両方のチェック ボックスをオフにする設定に対応して、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />を<see cref="F:Microsoft.Office.Interop.Excel.XlSlicerCrossFilterType.xlSlicerNoCrossFilter" />。</para>
+          <para>非 OLAP データ ソースをフィルター処理するスライサー (<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />。<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.OLAP" /> = <b>false</b>)サポートされていない、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />オブジェクトです。 ベースの範囲、リスト、およびリレーショナル データ ソースが OLAP 以外のピボット テーブルをフィルター処理するスライサーを使用して、<see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />オブジェクトの代わりにします。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -216,8 +222,9 @@
         <summary>指定されたによって表される階層レベルの 1 から始まる序数値を取得する<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />オブジェクトです。</summary>
         <value>1 から始まる序数値の指定によって表される階層レベルの<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />オブジェクトです。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -247,8 +254,9 @@
         <value>
           <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />の指定されたオブジェクト<see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" />オブジェクトです。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SlicerItems">
@@ -277,8 +285,9 @@
         <summary>取得、<see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" />を指定したレベルのすべてのスライサー項目のコレクションを含むコレクションです。</summary>
         <value>A<see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" />を指定したレベルのすべてのスライサー項目のコレクションを含むコレクションです。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SortItems">
@@ -310,9 +319,10 @@
         <summary>スライサー内の項目が並べ替えられたかどうかを設定を取得または取得します。</summary>
         <value>スライサー内の項目が並べ替えられたかどうかを指定します。</value>
         <remarks>
-          <para>読み取り/書き込み</para>。
-          <para><b>XlDataSourceOrder</b> (1) は、このプロパティの既定の設定です</para>。
-          <para></para></remarks>
+          <para>値の取得および設定が可能です。</para>
+          <para>このプロパティの既定の設定は、 <b>xlDataSourceOrder</b> (1) です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleSlicerItemsList">
@@ -341,9 +351,10 @@
         <summary>スライサーの一覧に、スライサーのフィルターに含まれる現在の項目を取得します。</summary>
         <value>スライサーのフィルターに現在含まれているスライサーの項目の一覧です。</value>
         <remarks>
-          <para>読み取り専用</para>。
-          <para>スライサーの項目の一覧は、MDX 一意な名前の文字列として返されます。このリストが空の場合は、スライサーには、データ ソースがフィルター処理されていないと、すべてのスライサーがタイルとして表示されますが選択されています</para>。
-          <para></para></remarks>
+          <para>読み取り専用。</para>
+          <para>スライサー アイテムの一覧は、一意の MDX 名の文字列として返されます。この一覧が空である場合、スライサーによってデータ ソースがフィルター処理されていないため、すべてのスライサーが選択された状態で表示されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

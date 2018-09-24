@@ -1,10 +1,10 @@
 <Type Name="Interior" FullName="Microsoft.Office.Interop.Excel.Interior">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="84509cfb8129326d031763fb72114f30f66959dd" />
+    <Meta Name="ms.openlocfilehash" Value="c71701c9d8836ca465988c9e2fec16d9b1bf8ddb" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582258" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Interior" />
@@ -32,8 +32,9 @@
     <summary>オブジェクトの内部を表します。</summary>
     <remarks>
       <para>
-        <b>Interior</b>オブジェクトを取得する<b>内部</b>プロパティを使用します</para>。
-      <para></para></remarks>
+        <b>Interior</b>オブジェクトを取得するのにには、<b>内部</b>プロパティを使用します。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -124,11 +125,13 @@
         <summary>内部の色を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>現在のカラー パレットのインデックス値として、次のいずれかの色が指定された<see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />定数</para>。
-          <para>の
-            <b>番号</b>です。使用してオブジェクトを描画するための自動塗りつぶしを指定します</para>。
-          <para><b>定数</b>です。内部の塗りつぶしを指定しない場合に使用します</para>。
-          <para></para></remarks>
+          <para>現在のカラー パレットのインデックス値として、次のいずれかの色が指定された<see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />定数。</para>
+          <para>
+            <b>番号</b>です。 自動描画オブジェクトの塗りつぶしを指定する場合に使用します。</para>
+          <para>
+            <b>定数で表します</b>。 内部の塗りつぶしを指定しない場合に使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -157,10 +160,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Gradient">
@@ -189,8 +193,9 @@
         <summary>取得または選択範囲の<b>内部</b>オブジェクトの<b>グラデーション</b>のプロパティを設定します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>LinearGradient または RectangularGradient のいずれかを使用します</para>。
-          <para></para></remarks>
+          <para>LinearGradient または RectangularGradient のいずれかを使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="InvertIfNegative">
@@ -283,8 +288,69 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>パターン</b>プロパティには、次のいずれかを指定できる<see cref="T:Microsoft.Office.Interop.Excel.XlPattern" />定数</para>。
-          <para><b>xlPatternAutomatic</b></para><para><b>xlPatternChecker</b></para><para><b>xlPatternCrissCross</b></para><para><b>xlPatternDown</b></para><para><b>xlPatternGray16</b></para><para><b>xlPatternGray25</b></para><para><b>xlPatternGray50</b></para><para><b>xlPatternGray75</b></para><para><b>xlPatternGray8</b></para><para><b>xlPatternGrid</b></para><para><b>xlPatternHorizontal</b></para><para><b>xlPatternLightDown</b></para><para><b>xlPatternLightHorizontal</b></para><para><b>xlPatternLightUp</b></para><para><b>xlPatternLightVertical</b></para><para><b>xlPatternNone</b></para><para><b>xlPatternSemiGray75</b></para><para><b>xlPatternSolid</b></para><para><b>xlPatternUp</b></para><para><b>xlPatternVertical</b></para><para></para></remarks>
+            <b>パターン</b>プロパティには、次のいずれかを指定できる<see cref="T:Microsoft.Office.Interop.Excel.XlPattern" />定数。</para>
+          <para>
+            <b>xlPatternAutomatic</b>
+          </para>
+          <para>
+            <b>xlPatternChecker</b>
+          </para>
+          <para>
+            <b>xlPatternCrissCross</b>
+          </para>
+          <para>
+            <b>xlPatternDown</b>
+          </para>
+          <para>
+            <b>xlPatternGray16</b>
+          </para>
+          <para>
+            <b>xlPatternGray25</b>
+          </para>
+          <para>
+            <b>xlPatternGray50</b>
+          </para>
+          <para>
+            <b>xlPatternGray75</b>
+          </para>
+          <para>
+            <b>xlPatternGray8</b>
+          </para>
+          <para>
+            <b>xlPatternGrid</b>
+          </para>
+          <para>
+            <b>xlPatternHorizontal</b>
+          </para>
+          <para>
+            <b>xlPatternLightDown</b>
+          </para>
+          <para>
+            <b>xlPatternLightHorizontal</b>
+          </para>
+          <para>
+            <b>xlPatternLightUp</b>
+          </para>
+          <para>
+            <b>xlPatternLightVertical</b>
+          </para>
+          <para>
+            <b>xlPatternNone</b>
+          </para>
+          <para>
+            <b>xlPatternSemiGray75</b>
+          </para>
+          <para>
+            <b>xlPatternSolid</b>
+          </para>
+          <para>
+            <b>xlPatternUp</b>
+          </para>
+          <para>
+            <b>xlPatternVertical</b>
+          </para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PatternColor">
@@ -347,8 +413,9 @@
         <summary>値を取得または設定塗りつぶし属性のパターンの色を現在のカラー パレットのインデックスとして、次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />定数:<b>番号</b>または<b>定数</b>です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>では、セルのパターンを自動またはオブジェクトを描画するための自動塗りつぶしのスタイルを指定する<b>オブジェクト</b>にこのプロパティを設定します。パターンをしないことを指定する<b>定数</b>をこのプロパティを設定 (これは、設定と同じ、<see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.Interior" /><b>xlPatternNone</b>オブジェクト) です</para>。
-          <para></para></remarks>
+          <para>セルのパターンを自動またはオブジェクトを描画するための自動塗りつぶしのスタイルを指定する<b>オブジェクト</b>にこのプロパティを設定します。 パターンをしないことを指定する<b>定数</b>をこのプロパティを設定 (これは、設定と同じ、<see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.Interior" /><b>xlPatternNone</b>オブジェクト)。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PatternThemeColor">
@@ -444,8 +511,9 @@
         <summary>取得または指定したオブジェクトに関連付けられている適用する配色のテーマの色を設定します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>色はテーマが適用されていないオブジェクトは無効な要求実行時エラーが発生のテーマ カラーにアクセスしようとしています</para>。
-          <para></para></remarks>
+          <para>色にテーマが適用されていないオブジェクトのテーマ カラーにアクセスしようとすると、無効な要求の実行時エラーとなります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TintAndShade">
@@ -478,9 +546,10 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>TintAndShade</b>プロパティには 1 (最も明るい) に、-1 (最も暗い) から数値を入力できます。ゼロ (0) はニュートラルです</para>。
-          <para>実行時エラーが-1 未満または 1 より大きい値にこのプロパティを設定しようとしています:「指定された値は範囲外です」。このプロパティはテーマの色とテーマの色の両方で機能します</para>。
-          <para></para></remarks>
+            <b>TintAndShade</b>プロパティには 1 (最も明るい) に、-1 (最も暗い) から数値を入力できます。 ゼロ (0) は、中立的なです。</para>
+          <para>このプロパティに -1 より小さい値、または 1 より大きい値を設定すると、「指定された値は境界を超えています」という実行時エラーとなります。このプロパティは、テーマ カラーとテーマ以外の色の両方に適用されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

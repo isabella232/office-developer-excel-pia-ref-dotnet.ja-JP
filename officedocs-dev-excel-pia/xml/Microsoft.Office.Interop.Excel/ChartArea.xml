@@ -1,10 +1,10 @@
 <Type Name="ChartArea" FullName="Microsoft.Office.Interop.Excel.ChartArea">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7f6a03655956cbc8e577e22d879e9b866891a1ab" />
+    <Meta Name="ms.openlocfilehash" Value="8707be5e24dec82e4b5526b2fd741c4c8a846d77" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20582377" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartArea" />
@@ -31,8 +31,9 @@
   <Docs>
     <summary>グラフのグラフ エリアを表します。 2-D グラフのグラフ エリアには、軸、グラフ タイトル、軸ラベル、および凡例が含まれます。 グラフ タイトルと凡例です。 3-D グラフのグラフ エリアが含まれていますプロット エリア (データがプロットされるグラフ エリアの内側の領域) が含まれていないこと。 プロット エリアの書式設定方法の詳細についてを参照してください、<see cref="T:Microsoft.Office.Interop.Excel.PlotArea" />オブジェクトです。</summary>
     <remarks>
-      <para>、角の丸いを使用して、<see cref="P:Microsoft.Office.Interop.Excel._Chart.ChartArea" /> 、 <b>ChartArea</b>オブジェクトを取得するプロパティ</para>。
-      <para></para></remarks>
+      <para>角の丸いを使用して、<see cref="P:Microsoft.Office.Interop.Excel._Chart.ChartArea" /> 、 <b>ChartArea</b>オブジェクトを取得するプロパティです。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -262,10 +263,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -358,8 +360,10 @@
           <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
         </value>
         <remarks>
-          <para>、<see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />オブジェクトには、線、塗りつぶし、およびエフェクトのグラフ エリアの書式設定が含まれています</para>。
-          <para></para></remarks>
+          <para>
+            <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />オブジェクトには、線、塗りつぶし、およびエフェクトのグラフ エリアの書式設定が含まれています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -453,8 +457,9 @@
         <summary>グラフ エリアの左端からのオブジェクトの左端からポイント単位での距離です。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>ウィンドウが最大化されている場合、このプロパティは、ウィンドウの境界線の幅に基づいて、変化する負の数を返します。このプロパティを 0 (ゼロ) に設定すると、ウィンドウがアプリケーション ウィンドウを最大表示したかどうかはそれよりも少し小さくなります。つまり、このプロパティが 0 (ゼロ) の場合は、Microsoft Excel のメイン ウィンドウの左枠線だけではほとんど表示されません、画面にします</para>。
-          <para></para></remarks>
+          <para>ウィンドウを最大化すると、このプロパティはウィンドウの境界線の幅に基づいて、変化する負の数を返します。 このプロパティを 0 (ゼロ) に設定すると、ウィンドウがアプリケーション ウィンドウを最大表示したかどうかはそれよりも少し小さくなります。 つまり、このプロパティが 0 (ゼロ) の場合は、Microsoft Excel のメイン ウィンドウの左側の境界線はかろうじて画面に表示されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">

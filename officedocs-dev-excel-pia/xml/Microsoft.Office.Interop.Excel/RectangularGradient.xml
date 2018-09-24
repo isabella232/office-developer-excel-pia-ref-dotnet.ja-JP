@@ -1,10 +1,10 @@
 <Type Name="RectangularGradient" FullName="Microsoft.Office.Interop.Excel.RectangularGradient">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4cba2599f80d4b3a1cd4ad4d3fcc0d4672314334" />
+    <Meta Name="ms.openlocfilehash" Value="32bd8a6a6080dd51d08bba085fda72e6b6f51462" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584449" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface RectangularGradient" />
@@ -36,10 +36,14 @@
         <b>注</b>: を使用する場合の考慮事項<see cref="T:Microsoft.Office.Interop.Excel.RectangularGradient" />オブジェクト</para>
       <list type="bullet">
         <item>
-          <description>にアクセスしようとしています、<see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.Interior" />オブジェクトに既存のグラデーションの塗りつぶしがないと、実行時エラーです。 注意してください、<see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" />プロパティにアクセスする前に、<see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" />プロパティ</description>
-        </item>。
-        <item><description>場合<see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" />以外のグラデーションの種類では、グラデーションの種類から変更は、<see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" />オブジェクトは、既定値が表示されます</description></item></list>。
-      <para></para></remarks>
+          <description>アクセスしようとしたとき、<see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.Interior" />オブジェクトに既存のグラデーションの塗りつぶしがないと、実行時エラーが発生します。  注意してください、<see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" />プロパティにアクセスする前に、<see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" />プロパティ。</description>
+        </item>
+        <item>
+          <description>場合<see cref="P:Microsoft.Office.Interop.Excel.Interior.Pattern" />以外のグラデーションの種類では、グラデーションの種類から変更は、<see cref="P:Microsoft.Office.Interop.Excel.Interior.Gradient" />オブジェクトは、既定値が表示されます。</description>
+        </item>
+      </list>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -130,7 +134,7 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。<b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します、文字列 XCEL を 16 進数の 5843454c に相当 <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。 </para>
           <para></para>
         </remarks>
       </Docs>
@@ -197,12 +201,35 @@
         </value>
         <remarks>
           <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />、<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />と<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />。 有効な値は、次の表に記載されています</para>。
-          <list type="table"><item><term><see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" /></term>0-1
-            </item><item><term><see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" /></term>0-1
-            </item><item><term><see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" /></term>0-1
-            </item><item><term><see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" /></term>0-1
-            </item></list><para></para></remarks>
+            <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />、<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />と<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />。  有効な値は、次の表に表示されます。</para>
+          <list type="table">
+            <item>
+              <term>
+                <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />
+              </term>
+              <description>0 ～ 1</description>
+            </item>
+            <item>
+              <term>
+                <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />
+              </term>
+              <description>0 ～ 1</description>
+            </item>
+            <item>
+              <term>
+                <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />
+              </term>
+              <description>0 ～ 1</description>
+            </item>
+            <item>
+              <term>
+                <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />
+              </term>
+              <description>0 ～ 1</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RectangleLeft">
@@ -237,12 +264,35 @@
         </value>
         <remarks>
           <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />、<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />と<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />。 有効な値は、次の表に記載されています</para>。
-          <list type="table"><item><term><see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" /></term>0-1
-            </item><item><term><see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" /></term>0-1
-            </item><item><term><see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" /></term>0-1
-            </item><item><term><see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" /></term>0-1
-            </item></list><para></para></remarks>
+            <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />、<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />と<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />。  有効な値は、次の表に表示されます。</para>
+          <list type="table">
+            <item>
+              <term>
+                <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />
+              </term>
+              <description>0 ～ 1</description>
+            </item>
+            <item>
+              <term>
+                <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />
+              </term>
+              <description>0 ～ 1</description>
+            </item>
+            <item>
+              <term>
+                <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />
+              </term>
+              <description>0 ～ 1</description>
+            </item>
+            <item>
+              <term>
+                <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />
+              </term>
+              <description>0 ～ 1</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RectangleRight">
@@ -277,12 +327,35 @@
         </value>
         <remarks>
           <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />、<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />と<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />。 有効な値は、次の表に記載されています</para>。
-          <list type="table"><item><term><see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" /></term>0-1
-            </item><item><term><see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" /></term>0-1
-            </item><item><term><see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" /></term>0-1
-            </item><item><term><see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" /></term>0-1
-            </item></list><para></para></remarks>
+            <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />、<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />と<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />。  有効な値は、次の表に表示されます。</para>
+          <list type="table">
+            <item>
+              <term>
+                <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />
+              </term>
+              <description>0 ～ 1</description>
+            </item>
+            <item>
+              <term>
+                <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />
+              </term>
+              <description>0 ～ 1</description>
+            </item>
+            <item>
+              <term>
+                <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />
+              </term>
+              <description>0 ～ 1</description>
+            </item>
+            <item>
+              <term>
+                <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />
+              </term>
+              <description>0 ～ 1</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RectangleTop">
@@ -317,12 +390,35 @@
         </value>
         <remarks>
           <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />、<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />と<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />。 有効な値は、次の表に記載されています</para>。
-          <list type="table"><item><term><see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" /></term>0-1
-            </item><item><term><see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" /></term>0-1
-            </item><item><term><see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" /></term>0-1
-            </item><item><term><see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" /></term>0-1
-            </item></list><para></para></remarks>
+            <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />、<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />と<see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />。  有効な値は、次の表に表示されます。</para>
+          <list type="table">
+            <item>
+              <term>
+                <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleLeft" />
+              </term>
+              <description>0 ～ 1</description>
+            </item>
+            <item>
+              <term>
+                <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleRight" />
+              </term>
+              <description>0 ～ 1</description>
+            </item>
+            <item>
+              <term>
+                <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleTop" />
+              </term>
+              <description>0 ～ 1</description>
+            </item>
+            <item>
+              <term>
+                <see cref="P:Microsoft.Office.Interop.Excel.RectangularGradient.RectangleBottom" />
+              </term>
+              <description>0 ～ 1</description>
+            </item>
+          </list>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

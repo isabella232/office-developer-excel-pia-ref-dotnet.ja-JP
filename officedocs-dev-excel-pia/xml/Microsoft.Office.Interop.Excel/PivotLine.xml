@@ -1,10 +1,10 @@
 <Type Name="PivotLine" FullName="Microsoft.Office.Interop.Excel.PivotLine">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="faab37ebc4b3b290ea4607c750c1d34bb78dba8c" />
+    <Meta Name="ms.openlocfilehash" Value="218e5c301b310120d854394926abc0c2c7c92f5a" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585205" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotLine" />
@@ -31,8 +31,10 @@
   <Docs>
     <summary>A<see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />オブジェクトは、Excel の行または列の行を<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</summary>
     <remarks>
-      <para>A<see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />アイテムと非表示のレベル内のアイテムの折りたたまれている子には表示されませんので、表示される項目だけが含まれています、<see cref="T:Microsoft.Office.Interop.Excel.PivotLines" />コレクションです</para>。
-      <para>A<see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />は、常に、<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />すべての位置にします。つまり、<see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />での小計を表す s、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />以下が含まれている<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />通常よりも s <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />s.</para><para></para></remarks>
+      <para>A<see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />アイテムと非表示のレベル内のアイテムの折りたたまれている子には表示されませんので、表示される項目だけが含まれています、<see cref="T:Microsoft.Office.Interop.Excel.PivotLines" />コレクションです。</para>
+      <para>A<see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />は、常に、<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />すべての位置にします。 つまり、<see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />での小計を表す s、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />以下が含まれている<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />通常よりも s <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />s。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,8 +65,9 @@
           <see cref="T:Microsoft.Office.Interop.Excel._Application" />
         </value>
         <remarks>
-          <para>そのオブジェクトのアプリケーションを取得するのには OLE オートメーション オブジェクトに対してこのプロパティを使用することができます</para>。
-          <para></para></remarks>
+          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクト用のアプリケーションを取得できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -95,8 +98,9 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。 <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当  <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LineType">

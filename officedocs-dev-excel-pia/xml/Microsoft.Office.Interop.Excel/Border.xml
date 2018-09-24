@@ -1,10 +1,10 @@
 <Type Name="Border" FullName="Microsoft.Office.Interop.Excel.Border">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="30183a3a980c964f6c89cba76995fed1732880ce" />
+    <Meta Name="ms.openlocfilehash" Value="615b6d793dd88e23d55febf94b9549b59f9d20c5" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20576784" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Border" />
@@ -31,11 +31,15 @@
   <Docs>
     <summary>オブジェクトの輪郭を表します。</summary>
     <remarks>
-      <para>オブジェクトの輪郭 (すべて以外の<see cref="T:Microsoft.Office.Interop.Excel.Range" />と<see cref="T:Microsoft.Office.Interop.Excel.Style" />オブジェクト) の単一のエンティティとして扱われる輪郭があるが、辺の数に関係なく。境界全体を単位として返す必要があります。この種類のオブジェクトの<b>境界線</b>のオブジェクトを取得する<b>枠線</b>のプロパティを使用します</para>。
-      <para>の
-        <b>範囲</b>と<b>スタイル</b>のオブジェクトがある 4 つの個別の枠線: 左、右、上と下-個別にまたはグループを返すことができます。<b>範囲</b>の<b>枠線</b>のプロパティを使用して、または、4 つすべてが含まれている<b>Borders</b>コレクションを取得する<b>スタイル</b>オブジェクトの枠線し、単位として</para><para>使用<b>罫線</b>(<paramref name="index" />)、 <paramref name="index" /> 1 つの<b>Border</b>オブジェクトを取得するのには、枠線を指定します</para>。
-      <para><paramref name="Index" /> 、次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" />定数: <b>xlDiagonalDown</b>、 <b>xlDiagonalUp</b>、 <b>xlEdgeBottom</b>、 <b>xlEdgeLeft</b>、 <b>xlEdgeRight</b>、 <b>xlEdgeTop</b>、 <b>xlInsideHorizontal</b>、または<b>xlInsideVertical</b></para> 。
-      <para></para></remarks>
+      <para>オブジェクトの輪郭 (すべて以外の<see cref="T:Microsoft.Office.Interop.Excel.Range" />と<see cref="T:Microsoft.Office.Interop.Excel.Style" />オブジェクト) の単一のエンティティとして扱われる輪郭があるが、辺の数に関係なく。 境界全体を単位として返す必要があります。 この種類のオブジェクトの<b>境界線</b>のオブジェクトを取得するのにには、<b>枠線</b>のプロパティを使用します。</para>
+      <para>
+        <b>範囲</b>と<b>スタイル</b>のオブジェクトがある 4 つの個別の枠線: 左、右、上と下-個別にまたはグループを返すことができます。 4 つの罫線し、罫線を単位として扱われます<b>Borders</b>コレクションを取得するのにには、<b>セル範囲</b>または<b>スタイル</b>のオブジェクトの<b>枠線</b>のプロパティを使用します。</para>
+      <para>
+        <b>枠</b>を使用 (<paramref name="index" />)、 <paramref name="index" /> 1 つの<b>Border</b>オブジェクトを取得するのには、枠線を識別します。</para>
+      <para>
+        <paramref name="Index" />次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" />定数: <b>xlDiagonalDown</b>、 <b>xlDiagonalUp</b>、 <b>xlEdgeBottom</b>、 <b>xlEdgeLeft</b>、 <b>xlEdgeRight</b>、 <b>xlEdgeTop</b>、 <b>xlInsideHorizontal</b>、または<b>xlInsideVertical</b>。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -95,8 +99,9 @@
         <summary>枠線の色を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>カラー値を作成するのには、 <b>RGB</b>関数を使用します</para>。
-          <para></para></remarks>
+          <para>カラー値を作成するのにには、 <b>RGB</b>関数を使用します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ColorIndex">
@@ -128,11 +133,15 @@
         <summary>枠線の色を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>現在のカラー パレットのインデックス値、または次のいずれかとして指定された色<see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />定数:</para>
+          <para>現在のカラー パレットのインデックス値、または次のいずれかとして指定された色<see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />定数。</para>
           <para>
-            <b>オブジェクト</b>
-          </para>の
-          <para><b>定数</b></para><para></para></remarks>
+            <b>番号</b>
+          </para>
+          <para>
+            <b>定数</b>
+          </para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -161,10 +170,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LineStyle">
@@ -198,7 +208,7 @@
         <remarks>
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlLineStyle" />
-            <b>XlLineStyle</b>定数のいずれか:</para>
+            <b>XlLineStyle</b>定数のいずれかできます。</para>
           <para>
             <b>xlContinuous</b>
           </para>
@@ -286,8 +296,9 @@
           <b>オブジェクト</b>
         </value>
         <remarks>
-          <para>色はテーマが適用されていないオブジェクトは無効な要求実行時エラーが発生のテーマ カラーにアクセスしようとしています</para>。
-          <para></para></remarks>
+          <para>色にテーマが適用されていないオブジェクトのテーマ カラーにアクセスしようとすると、無効な要求の実行時エラーとなります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TintAndShade">
@@ -322,9 +333,10 @@
           <b>Single</b>
         </value>
         <remarks>
-          <para>-1 (最も暗い) から 1 (最も明るい部分) の番号を入力することができます、<see cref="P:Microsoft.Office.Interop.Excel.Border.TintAndShade" />プロパティ。ゼロ (0) はニュートラルです</para>。
-          <para>実行時エラーが-1 未満または 1 より大きい値にこのプロパティを設定しようとしています:「指定された値は範囲外です」。 このプロパティはテーマの色とテーマの色の両方で機能します</para>。
-          <para></para></remarks>
+          <para>-1 (最も暗い) から 1 (最も明るい部分) の番号を入力することができます、<see cref="P:Microsoft.Office.Interop.Excel.Border.TintAndShade" />プロパティ。 ゼロ (0) は、中立的なです。</para>
+          <para>このプロパティに -1 より小さい値、または 1 より大きい値を設定すると、「指定された値は境界を超えています。」という実行時エラーとなります。このプロパティは、テーマ カラーとテーマ以外の色の両方に適用されます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Weight">
@@ -358,7 +370,7 @@
         <remarks>
           <para>
             <see cref="T:Microsoft.Office.Interop.Excel.XlBorderWeight" />
-            <b>XlBorderWeight</b>定数のいずれか:</para>
+            <b>XlBorderWeight</b>定数のいずれかできます。</para>
           <para>
             <b>xlHairline</b>
           </para>

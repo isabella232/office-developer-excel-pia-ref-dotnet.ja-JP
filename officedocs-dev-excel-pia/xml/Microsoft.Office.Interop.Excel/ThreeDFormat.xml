@@ -1,10 +1,10 @@
 <Type Name="ThreeDFormat" FullName="Microsoft.Office.Interop.Excel.ThreeDFormat">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4d21b65911fea75417444605a0fe5b47bd944918" />
+    <Meta Name="ms.openlocfilehash" Value="a7446cb76912959213bb4dcc1c28dae6c32fcad1" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585947" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ThreeDFormat : Microsoft.Office.Core._IMsoDispObj" />
@@ -32,9 +32,10 @@
   <Docs>
     <summary>図形の 3-D の書式を表します。</summary>
     <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.Shape.ThreeD" />プロパティを<b>ThreeDFormat</b>オブジェクトを取得します</para>。
-      <para>傾斜した図形またはパスの途切れたなどの図形の一部の種類を 3-d の書式設定を適用できません。ほとんどのプロパティとメソッド<b>ThreeDFormat</b>のオブジェクトのため、このような形で失敗します</para>。
-      <para></para></remarks>
+      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Shape.ThreeD" /> 、 <b>ThreeDFormat</b>オブジェクトを返すプロパティです。</para>
+      <para>傾斜した図形、または 2 か所以上のパスの途切れた部分がある図形に、3-D の書式を設定することはできません。その図形で <b>ThreeDFormat</b> オブジェクトのプロパティやメソッドを使用しても、ほとんどが失敗します。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -359,10 +360,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Depth">
@@ -395,8 +397,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>Depth</b>プロパティは、-600 ~ 9600 から値を指定できます (正の値は、-600 の前面には、元の図形負の値が元の図形は、3-d の図形を作成します。</para> 。
-          <para></para></remarks>
+            <b>Depth</b>プロパティは、-600 ~ 9600 から値を指定できます (正の値は、-600 は、元の図形の前面; 負の値は元の図形に 3-d 効果を作成する)。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ExtrusionColor">
@@ -574,10 +577,11 @@
           <b>1 つ</b>が必要です。 図形の x 軸回りの回転角度 (度単位で) どのくらいを変更するかを指定します。 -90 ~ 90 の値を指定できます。 正の値では、図形を傾けます。負の値ではそれを傾けます。</param>
         <summary>指定した図形の x 軸回りの回転角度を、指定した角度だけ変更します。</summary>
         <remarks>
-          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> 、x 軸回りの図形の絶対回転角度を設定するプロパティ</para>。
-          <para>は (-90 度に 90 度) の<b>RotationX</b>プロパティの上限または下限を超えて x 軸回りの図形の回転を調整することはできません。たとえば、 <b>RotationX</b>プロパティが 80 に設定されて最初の 40 を指定した場合、<paramref name="Increment" />引数を回転角度は 120 90 ( <b>RotationX</b>プロパティの上限値) になります</para>。Y 軸回りの図形の回転角度を変更するを使用して、 
-          <para>、<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" />メソッドです。Z 軸回りの回転角度を変更するのにを使用して、<see cref="M:Microsoft.Office.Interop.Excel.Shape.IncrementRotation(System.Single)" />メソッドです</para>。
-          <para></para></remarks>
+          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> 、x 軸回りの図形の絶対回転角度を設定するプロパティです。</para>
+          <para>(-90 度に 90 度) の<b>RotationX</b>プロパティの上限または下限を超えて x 軸回りの図形の回転を調整することはできません。 たとえば、 <b>RotationX</b>プロパティが 80 に設定されて最初の 40 を指定した場合、<paramref name="Increment" />引数を回転角度は 120 90 ( <b>RotationX</b>プロパティの上限値) になります。</para>
+          <para>Y 軸回りの図形の回転角度を変更するのにを使用して、<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" />メソッドです。 Z 軸回りの回転角度を変更するのにを使用して、<see cref="M:Microsoft.Office.Interop.Excel.Shape.IncrementRotation(System.Single)" />メソッドです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementRotationY">
@@ -607,10 +611,11 @@
           <b>1 つ</b>が必要です。 図形の y 軸回りの回転角度 (度単位で) どのくらいを変更するかを指定します。 -90 ~ 90 の値を指定できます。 正の値が左側に図形を傾けます負の値は、右に傾けます。</param>
         <summary>指定した図形の y 軸回りの回転角度を、指定した角度だけ変更します。</summary>
         <remarks>
-          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> 、y 軸回りの図形の絶対回転角度を設定するプロパティ</para>。X 軸回りの図形の回転角度を変更するを使用して、 
-          <para>、<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" />メソッドです。Z 軸回りの回転角度を変更するのにを使用して、<see cref="M:Microsoft.Office.Interop.Excel.Shape.IncrementRotation(System.Single)" />メソッドです</para>。
-          <para>は (-90 度に 90 度) の<b>RotationY</b>プロパティの上限または下限を超えて y 軸の周りの図形の回転角度を調整することはできません。たとえば、 <b>RotationY</b>プロパティが 80 に設定されて最初の 40 を指定した場合、<paramref name="Increment" />引数を回転角度は 120 90 ( <b>RotationY</b>プロパティの上限値) になります</para>。
-          <para></para></remarks>
+          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" /> 、y 軸回りの図形の絶対回転角度を設定するプロパティです。</para>
+          <para>X 軸回りの図形の回転角度を変更するのにを使用して、<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" />メソッドです。 Z 軸回りの回転角度を変更するのにを使用して、<see cref="M:Microsoft.Office.Interop.Excel.Shape.IncrementRotation(System.Single)" />メソッドです。</para>
+          <para>(-90 度に 90 度) の<b>RotationY</b>プロパティの上限または下限を超えて y 軸の周りの図形の回転角度を調整することはできません。 たとえば、 <b>RotationY</b>プロパティが 80 に設定されて最初の 40 を指定した場合、<paramref name="Increment" />引数を回転角度は 120 90 ( <b>RotationY</b>プロパティの上限値) になります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementRotationZ">
@@ -639,10 +644,12 @@
         <param name="Increment">図形の z 軸回りの回転角度 (度単位で) どのくらいを変更するかを指定します。 -90 ~ 90 の値を指定できます。 正の値が左側に図形を傾けます負の値は、右に傾けます。</param>
         <summary>図形の z 軸を中心とした回転角度を、指定した度数だけ変更します。</summary>
         <remarks>
-          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationZ" /> 、z 軸回りの図形の絶対回転角度を設定するプロパティ</para>。
-          <para>、図形の z 軸回りの回転角度を変更するのにを使用して、<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationZ(System.Single)" />メソッドです</para>。
-          <para>(90 度から 90 度) の<b>RotationZ</b>プロパティの下限または上限を z 軸回りの回転角度を調整することはできません。<b>RotationZ</b>プロパティが 80 に設定されて最初の 40 を指定した場合など、<paramref name="Increment" />の引数、回転角度は 120 90 ( <b>RotationZ</b>プロパティの上限値) になります</para>。
-          <para></para></remarks>
+          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationZ" /> 、z 軸回りの図形の絶対回転角度を設定するプロパティです。</para>
+          <para>Z 軸回りの図形の回転角度を変更するのにを使用して、<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationZ(System.Single)" />メソッドです。</para>
+          <para>
+            <b>RotationZ</b>プロパティ (90 度から 90 度) の下限または上限を z 軸回りの回転角度を調整することはできません。 <b>RotationZ</b>プロパティが 80 に設定されて最初の 40 を指定した場合など、<paramref name="Increment" />の引数、回転角度は 120 90 ( <b>RotationZ</b>プロパティの上限値) になります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LightAngle">
@@ -793,8 +800,9 @@
         <summary>3-D 図形の前面から奥行きへの方向を取得します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティの値を設定するのにを使用して、<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" />メソッドです</para>。
-          <para></para></remarks>
+          <para>このプロパティの値を設定するのにを使用して、<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" />メソッドです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PresetLighting">
@@ -861,8 +869,9 @@
           <see cref="T:Microsoft.Office.Core.MsoLightRigType" />
         </value>
         <remarks>
-          <para>浮き出しの表面がワイヤ フレームの場合に設定する光源の効果は表示されません</para>。
-          <para></para></remarks>
+          <para>3-D の図形の表面がワイヤー フレームに設定されている場合、光源の効果を確認することはできません。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="PresetLightingSoftness">
@@ -953,9 +962,10 @@
         <summary>既定の 3-d 書式を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>各既定の 3-d 書式には、3-d の各種プロパティの既定値のセットが含まれています。3-d 効果の方向があらかじめ設定されている形式ではなくカスタム書式指定、このプロパティを返します<see cref="F:Microsoft.Office.Core.MsoPresetThreeDFormat.msoPresetThreeDFormatMixed" />。このプロパティの値は、[図形描画] ツールバーの [3-D] をクリックしたときに表示されるオプション (左から右、上下からに番号が付けられます) に対応します</para>。
-          <para>既定の 3-d 書式を設定するのにを使用して、<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetThreeDFormat(Microsoft.Office.Core.MsoPresetThreeDFormat)" />メソッドです</para>。
-          <para></para></remarks>
+          <para>各既定の 3-d 書式には、3-d の各種プロパティの既定値のセットが含まれています。 3-d 効果の方向があらかじめ設定されている形式ではなくカスタム書式指定、このプロパティを返します<see cref="F:Microsoft.Office.Core.MsoPresetThreeDFormat.msoPresetThreeDFormatMixed" />。 このプロパティの値は、[図形描画] ツールバーの [3-D スタイル] ボタンをクリックしたときに表示されるオプション (左から右に、上から下に番号付けされています) に対応します。</para>
+          <para>既定の 3-d 書式を設定するのにを使用して、<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetThreeDFormat(Microsoft.Office.Core.MsoPresetThreeDFormat)" />メソッドです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ProjectText">
@@ -1014,9 +1024,10 @@
       <Docs>
         <summary>3-D 図形の前面が前方を向くように、x 軸および y 軸回りの回転角度を 0 に戻します。</summary>
         <remarks>
-          <para>Z 軸回りの回転角度はリセットしません</para>。X 軸とすべて 0 (ゼロ) 以外を使用するのには y 軸回りの回転角度を設定するのには
-          <para>、<see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" />と<see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" />オブジェクトです。Z 軸回りの回転角度を設定するのにを使用して、<see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 3-d の図形を表すオブジェクト</para>。
-          <para></para></remarks>
+          <para>Z 軸回りの回転角度はリセットしません。</para>
+          <para>0 (ゼロ) 以外の値に x 軸と y 軸回りの回転角度を設定するを使用して、<see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" />と<see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" />オブジェクトです。 Z 軸回りの回転角度を設定するのにを使用して、<see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 3-d の図形を表すオブジェクト。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RotationX">
@@ -1049,9 +1060,10 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>RotationX</b>プロパティには、-90 ~ 90 の値を指定できます。正の値は上向きの回転を示します負の値は下向きの回転を示します</para>。Y 軸回りの 3-d 図形の回転角度を設定しを使用して、 
-          <para>、<see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" />オブジェクトです。3-d 図形の z 軸回りの回転角度を設定するには、「回転」プロパティを使用して、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />オブジェクトです。浮き出しのスイープ パスの方向を変更するには、3-d 図形の前面を回転せずを使用して、<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" />メソッドです</para>。
-          <para></para></remarks>
+            <b>RotationX</b>プロパティには、-90 ~ 90 の値を指定できます。 正の値は上向きの回転を示します負の値は、下向きの回転を示します。</para>
+          <para>Y 軸回りの 3-d 図形の回転角度を設定するのにを使用して、<see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" />オブジェクトです。 3-d 図形の z 軸回りの回転角度を設定するには、「回転」プロパティを使用して、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />オブジェクトです。 浮き出しのスイープ パスの方向を変更するには、3-d 図形の前面を回転せずを使用して、<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" />メソッドです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RotationY">
@@ -1084,9 +1096,10 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>RotationY</b>プロパティには、-90 ~ 90 の値を指定できます。正の値が左に回転を示します負の値が右に回転を示します</para>。3-d 図形の x 軸回りの回転角度を設定しを使用して、 
-          <para>、<see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" />オブジェクトです。3-d 図形の z 軸回りの回転角度を設定するには、「回転」プロパティを使用して、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />オブジェクトです。浮き出しのスイープ パスの方向を変更するには、3-d 図形の前面を回転せずを使用して、<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" />メソッドです</para>。
-          <para></para></remarks>
+            <b>RotationY</b>プロパティには、-90 ~ 90 の値を指定できます。 正の値が左に回転を示します負の値では、右に回転を示します。</para>
+          <para>3-d 図形の x 軸回りの回転角度を設定するのにを使用して、<see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" />オブジェクトです。 3-d 図形の z 軸回りの回転角度を設定するには、「回転」プロパティを使用して、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />オブジェクトです。 浮き出しのスイープ パスの方向を変更するには、3-d 図形の前面を回転せずを使用して、<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" />メソッドです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="RotationZ">
@@ -1121,9 +1134,10 @@
         </value>
         <remarks>
           <para>
-            <b>RotationZ</b>プロパティには、-90 ~ 90 の値を指定できます。正の値は上向きの回転を示します負の値は下向きの回転を示します</para>。Y 軸回りの 3-d 図形の回転角度を設定しを使用して、 
-          <para>、<see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" />オブジェクトです。3-d 図形の x 軸回りの回転角度を設定するのにを使用して、 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> 、 <b>ThreeDFormat</b>オブジェクトのプロパティです。浮き出しのスイープのパスの方向を変更するには、3-d 図形の前面を回転せずを使用して、<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" />メソッドです</para>。
-          <para></para></remarks>
+            <b>RotationZ</b>プロパティには、-90 ~ 90 の値を指定できます。 正の値は上向きの回転を示します負の値は、下向きの回転を示します。</para>
+          <para>Y 軸回りの 3-d 図形の回転角度を設定するのにを使用して、<see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationY" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" />オブジェクトです。 3-d 図形の x 軸回りの回転角度を設定するのにを使用して、 <see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.RotationX" /> 、 <b>ThreeDFormat</b>オブジェクトのプロパティです。 浮き出しのスイープのパスの方向を変更するには、3-d 図形の前面を回転せずを使用して、<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.SetExtrusionDirection(Microsoft.Office.Core.MsoPresetExtrusionDirection)" />メソッドです。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetExtrusionDirection">
@@ -1152,8 +1166,9 @@
         <param name="PresetExtrusionDirection">必要な<see cref="T:Microsoft.Office.Core.MsoPresetExtrusionDirection" />。 3-D 図形の奥行を指定します。</param>
         <summary>図形の 3-D 効果の方向を設定します。</summary>
         <remarks>
-          <para>このメソッドは、設定、<see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.PresetExtrusionDirection" />プロパティで指定した方向に、<paramref name="PresetExtrusionDirection" />の引数です</para>。
-          <para></para></remarks>
+          <para>このメソッドは、設定、<see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.PresetExtrusionDirection" />プロパティで指定した方向に、<paramref name="PresetExtrusionDirection" />の引数です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetPresetCamera">
@@ -1211,8 +1226,9 @@
           <b>MsoPresetThreeDFormat</b>をが必要です。 [ 図形描画 ] ツールバーの [ 3-D ] をクリックすると表示されるオプション (左から右、上から下) に対応する既定の 3-D 書式を指定します。</param>
         <summary>既定の 3-D の書式を設定します。各既定の 3-D の書式には、3-D に関するそれぞれのプロパティの既定値のセットが設定されています。</summary>
         <remarks>
-          <para>このメソッドは、設定、<see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.PresetThreeDFormat" />プロパティで指定された形式を<paramref name="PresetThreeDFormat" />の引数です</para>。
-          <para></para></remarks>
+          <para>このメソッドは、設定、<see cref="P:Microsoft.Office.Interop.Excel.ThreeDFormat.PresetThreeDFormat" />プロパティで指定された形式を<paramref name="PresetThreeDFormat" />の引数です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">

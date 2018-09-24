@@ -1,10 +1,10 @@
 <Type Name="PivotTables" FullName="Microsoft.Office.Interop.Excel.PivotTables">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fec2de78dcf640219cb44f66becd0a0dbc77878e" />
+    <Meta Name="ms.openlocfilehash" Value="b1b870f7e0d404abd82b95ed4e0d3df8f815f25c" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578023" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotTables : System.Collections.IEnumerable" />
@@ -35,11 +35,13 @@
   <Docs>
     <summary>すべてのコレクション、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 、指定したワークシート上のオブジェクトです。</summary>
     <remarks>
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTables(System.Object)" /><b>のピボット テーブル</b>のコレクションを返します</para>。
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTableWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />メソッドは、新しいピボット テーブル レポートを作成し、コレクションに追加します</para>。
-      <para><b>ピボット テーブル</b>の使用 (<paramref name="index" />)、<paramref name="index" />は、ピボット テーブルのインデックス番号または名前、単一の<b>ピボット テーブル</b>オブジェクトを取得する</para>。
-      <para>のためのピボット テーブル レポートのプログラミングは複雑になることができますが、ピボット テーブル レポートの操作を記録し、記録されたコードを修正し、一般的に最も簡単です。マクロを記録するには、[ツール] メニューの [マクロ] をポイントし、[新しいマクロの記録] をクリックします</para>。
-      <para></para></remarks>
+      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTables(System.Object)" /><b>のピボット テーブル</b>のコレクションを返します。</para>
+      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.PivotTableWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />新しいピボット テーブル レポートを作成し、コレクションに追加する方法です。</para>
+      <para>
+        <b>ピボット テーブル</b>を使用して (<paramref name="index" />)、<paramref name="index" />は、ピボット テーブルのインデックス番号または名前、単一の<b>ピボット テーブル</b>オブジェクトを取得します。</para>
+      <para>ピボットテーブル レポートのプログラミングは複雑になることが多いので、一般的には、ピボットテーブル レポートに対する操作を記録して修正をする方が簡単です。 マクロを記録するには、[ツール] メニューの [マクロ] をポイントし、[新しいマクロの記録] をクリックします。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -162,8 +164,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">

@@ -1,10 +1,10 @@
 <Type Name="UpBars" FullName="Microsoft.Office.Interop.Excel.UpBars">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="2102b0c94092cbe2a371d9f9d39bd08ab9098932" />
+    <Meta Name="ms.openlocfilehash" Value="1799535564fd8f2becbda2fb64ca5ee08b7a5a44" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20577589" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface UpBars" />
@@ -30,9 +30,12 @@
   </Attributes>
   <Docs>
     <summary>グラフ種類グループの陽線を表します。 陽線は、グラフ種類グループに含まれる 1 番目のデータ系列のデータ要素の値よりも、最後のデータ系列のデータ要素の値が大きいときに、その 2 つのデータ要素を結ぶ縦棒です。</summary>
-    <remarks>少なくとも 2 つの系列が含まれている<para>2 次元の行のみのグループは、バーを設定できます。このオブジェクトでは、コレクションはありません。1 つを表すオブジェクトがないバーです。いずれかのバーをオンにして、グラフ種類グループのすべてのポイントのまたはオフになっていることがある</para><para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.UpBars" />を<b>返すプロパティ</b>のオブジェクトを返すプロパティです</para>。
-      <para>場合、 <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.HasUpDownBars" /><b>プロパティは</b>、<b>返すプロパティ</b>オブジェクトのプロパティのほとんどは無効になります</para>。
-      <para></para></remarks>
+    <remarks>
+      <para>縦棒は 1 番目のデータ系列から上へ伸びるように描かれます。 このオブジェクトでは、コレクションはありません。 1 つを表すオブジェクトがないバーです。いずれかのバーをオンにしたグラフ種類グループのすべてのポイントにすることもオフになっていること。</para>
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.UpBars" />を<b>返すプロパティ</b>のオブジェクトを返すプロパティです。</para>
+      <para>場合、 <see cref="P:Microsoft.Office.Interop.Excel.ChartGroup.HasUpDownBars" /><b>プロパティは</b>、<b>返すプロパティ</b>オブジェクトのプロパティのほとんどは無効になります。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -120,10 +123,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">

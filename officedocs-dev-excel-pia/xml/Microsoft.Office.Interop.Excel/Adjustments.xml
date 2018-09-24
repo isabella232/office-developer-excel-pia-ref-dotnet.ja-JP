@@ -1,10 +1,10 @@
 <Type Name="Adjustments" FullName="Microsoft.Office.Interop.Excel.Adjustments">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="55c03b5083f29e8896f86dd16915d59d3c798ec9" />
+    <Meta Name="ms.openlocfilehash" Value="5fbb3122486169cf5cb93352c3646bc1cdd1c0b4" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20584141" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Adjustments : Microsoft.Office.Core._IMsoDispObj" />
@@ -32,15 +32,26 @@
   <Docs>
     <summary>指定されたオートシェイプ オブジェクト、ワードアート オブジェクト、またはコネクタの調整値のコレクションを含んでいます。</summary>
     <remarks>
-      <para>各調整値は、調整ハンドルを調整する方法の 1 つを表します。2 つの方法でいくつかの調整ハンドルを調整できるため、水平方向および垂直方向にハンドルを調整することができます-図形は調整ハンドルの数よりも多くの調整値を持つことができます。図形は最大 8 つの調整値を持つことができます</para>。使用の
-      <para>、 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Adjustments" /><b>Adjustments</b>オブジェクトを返すプロパティです。<b>調整</b>(<paramref name="index" />)、<paramref name="index" />調整値のインデックス番号では、単一の調整値を返すには、</para> 。
-      <para>の異なる図形を調整値の数が異なる、調整の種類は、さまざまな図形の形状を変更してさまざまな種類の調整の有効な値の範囲が異なります</para>。
-      <para>次の表は、異なる種類の調整の有効な調整値の範囲をまとめたものです。ほとんどの場合、有効値の範囲を超える値を指定する場合、最も近い有効な値割り当てられます調整にします</para>。
-      <list type="table"><item><term>(水平方向または垂直方向) の線形</term><description>一般に、値 0.0 は、図形の左端または上端を表し、値 1.0 は図形の右端または下端を表します。有効な値は、手動で図形を調整することに対応します。たとえば、のみをプルする、調整ハンドルの半分の方法、図形の間で手動で場合、対応する調整の最大値は、0.5 をされます。図形のコネクタや吹き出し、0.0 と 1.0 の値は、開始と、コネクタまたは引き出し線の終点で定義されている四角形の限界値を表し、負の数値より大きい数値など、1.0 が有効な値です</description></item>。
-        <item><term>放射状</term><description>調整値 1.0 は、図形の幅に対応します。図形の最大値は、0.5 のとき、または半分の方法です</description></item>。
-        <item><description>の
-          <term>角度</term>の値は度で表されます。180 –180 の範囲外の値を指定する場合は、その範囲に収まるように正規化されます</description></item></list>。
-      <para></para></remarks>
+      <para>調整値は、各調整ハンドルで調整を行うために図形が持つ値です。水平および垂直の両方で調整できるハンドルのように、2 つの調整を行うことができる場合もあるので、図形は調整ハンドルの数よりも多い調整値を持つ場合があります。図形は、最大で 8 つまでの調整値を持ちます。</para>
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.Shape.Adjustments" />プロパティを<b>Adjustments</b>オブジェクトを取得します。 <b>調整</b>(<paramref name="index" />)、<paramref name="index" />調整値のインデックス番号では、単一の調整値を返すには。</para>
+      <para>図形によって調整値の数が異なり、調整の種類によって図形の形状の変更方法が異なり、調整の種類によって有効値の範囲が異なります。</para>
+      <para>次に、異なる種類の調整の有効な調整値の範囲をまとめたものを示します。通常、有効値の範囲を超える値を指定すると、最も近い有効値が調整に割り当てられます。</para>
+      <list type="table">
+        <item>
+          <term>線型 (水平または垂直)</term>
+          <description>通常、値 0.0 は、図形の左端または上端を表し、値 1.0 は図形の右端または下端を表します。 有効な値は、手動で図形を調整することができる範囲と同じです。 たとえば、調整ハンドルを手動で図形の中間までしか移動できない場合、対応する調整の最大値は 0.5 となります。 コネクタや吹き出しなどの図形では、調整値 0.0 および 1.0 は、コネクタまたは引き出し線の始点と終点で定義される四角形の制限値を表し、負の値と 1.0 を超える値が有効な値となります。</description>
+        </item>
+        <item>
+          <term>放射状</term>
+          <description>調整値 1.0 は、図形の幅に相当します。最大値は 0.5 で、図形の中間を表します。</description>
+        </item>
+        <item>
+          <term>角度</term>
+          <description>値は度で表されます。 180 –180 の範囲外の値を指定する場合は、その範囲に収まるように正規化されます。</description>
+        </item>
+      </list>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -131,10 +142,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -171,9 +183,10 @@
         <summary>指定された調整値を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>線型の調整では、通常、調整値 0.0 は、図形の左端または上端に対応し、1.0 は図形の右端または下端に対応します。ただし、調整は、一部の図形の図形の境界を越えて渡すことができます。放射状の調整で、調整値 1.0 は図形の幅に対応しています。角度の調整は、調整値は度で指定されました。<b>項目</b>プロパティは、調整値を持つ図形にのみ適用されます</para>。
-          <para>オートシェイプ、コネクタ、およびワードアート オブジェクトは最大 8 つの調整値を持つことができます</para>。
-          <para></para></remarks>
+          <para>有効な調整値の範囲は、0.0 ～ 1.0 です。線型の調整では、通常、調整値 0.0 は図形の左端または上端に対応し、1.0 は図形の右端または下端に対応します。ただし、図形によっては、図形の境界を超えて調整することができます。放射状の調整では、調整値 1.0 は図形の幅に相当します。角度の調整では、調整値が角度 (°) で指定されます。 <b>Item</b> プロパティは、調整値を持つ図形だけに使用できます。</para>
+          <para>オートシェイプ、コネクタ、およびワードアート オブジェクトは最大 8 つの調整値を持つことができます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

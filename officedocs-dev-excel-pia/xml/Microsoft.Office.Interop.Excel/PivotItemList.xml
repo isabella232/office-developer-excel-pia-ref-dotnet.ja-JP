@@ -1,10 +1,10 @@
 <Type Name="PivotItemList" FullName="Microsoft.Office.Interop.Excel.PivotItemList">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9882efd50f7d60caf4d2b0447588c860d5797548" />
+    <Meta Name="ms.openlocfilehash" Value="262aa442811c81a69cf1d71e4b2a4d52c05f86c0" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585163" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotItemList : System.Collections.IEnumerable" />
@@ -35,9 +35,11 @@
   <Docs>
     <summary>すべてのコレクション、<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />指定されたピボット テーブル内のオブジェクト。 各 <b>PivotItem</b> は、ピボットテーブル フィールド内のアイテムを表します。</summary>
     <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" />または<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /><b>PivotItemList</b>コレクションを取得するオブジェクトです</para>。
-      <para><b>PivotItemList</b>コレクションが返されると、使用できます、 <see cref="M:Microsoft.Office.Interop.Excel.PivotItemList.Item(System.Object)" /> 、特定の<b>PivotItem</b>リストを識別する方法です</para>。
-      <para></para></remarks>
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" />または<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /><b>PivotItemList</b>コレクションを取得するオブジェクトです。</para>
+      <para>
+        <b>PivotItemList</b>コレクションを取得したらを使って、 <see cref="M:Microsoft.Office.Interop.Excel.PivotItemList.Item(System.Object)" /> 、特定の<b>PivotItem</b>リストを識別する方法。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -158,8 +160,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -221,8 +224,10 @@
           <b>オブジェクト</b>が必要です。 オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>値は、<para>オブジェクトの名前は、<see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Name" />と<see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Value" />のプロパティです。オンライン分析処理 (OLAP) データ ソースの値の値に、<see cref="P:Microsoft.Office.Interop.Excel._OLEObject.SourceName" />プロパティ。他のデータ ソースの値の値に、<see cref="P:Microsoft.Office.Interop.Excel._Application.Caption" />プロパティ</para>。
-          <para></para></remarks>
+        <remarks>
+          <para>値は、オブジェクトの名前は、<see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Name" />と<see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Value" />のプロパティです。 オンライン分析処理 (OLAP) データ ソースの値の値に、<see cref="P:Microsoft.Office.Interop.Excel._OLEObject.SourceName" />プロパティ。 他のデータ ソースの値の値に、<see cref="P:Microsoft.Office.Interop.Excel._Application.Caption" />プロパティ。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

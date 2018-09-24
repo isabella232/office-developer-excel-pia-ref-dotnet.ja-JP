@@ -1,10 +1,10 @@
 <Type Name="ChartGroup" FullName="Microsoft.Office.Interop.Excel.ChartGroup">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="91aeed6a7dfc46c2d925ce34ca5aa8b7e1be919f" />
+    <Meta Name="ms.openlocfilehash" Value="d867c9c484716da4b2528f8d662af2030b791599" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20578247" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface ChartGroup" />
@@ -31,9 +31,38 @@
   <Docs>
     <summary>同じ形式のグラフにプロットされた 1 つまたは複数のデータ系列を表します。 オブジェクトを<b>返すプロパティ</b>のメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" />コレクションです。</summary>
     <remarks>
-      <para>グラフには、1 つ以上のグラフ グループが含まれています、各グラフ種類グループには、1 つまたは複数の系列が含まれている系列ごとに 1 つまたは複数のポイントが含まれています。グループ、すべてのデータ系列を折れ線グラフ形式でプロットとすべてのデータ系列を横棒グラフ形式でプロット、横棒グラフ グループの両方など、1 つのグラフを含む可能性があります</para>。
-      <para>の使用を<b>指定しないで、ChartGroups</b>(<paramref name="index" />)、<paramref name="index" />は、グラフ種類グループのインデックス番号で、1 つの<b>ChartGroup</b>オブジェクトを取得します。使用するグラフがアクティブにされた場合、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />プロパティ</para>。
-      <para>特定のグラフ グループのインデックス番号は、そのグループに使用されるグラフの形式が変更された場合に変更することがありますグラフ グループ専用のメソッドのいずれかを使用して特定のグラフ グループを取得するのには容易になります。<see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />メソッドは、グラフでは、円グラフ グループのコレクションを返します、<see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />メソッド、折れ線グラフ グループのコレクションを返します。これらの各メソッドは、1 つの<b>ChartGroup</b>オブジェクトをインデックス番号を持つか、インデックス番号を<b>指定しないで、ChartGroups</b>コレクションを取得することがなく使用できます。次のグラフ グループ メソッドは、利用可能な:</para><list type="bullet"><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" />メソッド</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" />メソッド</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" />メソッド</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" />メソッド</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />メソッド</description></item><item><description><see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />メソッド</description></item></list><para></para></remarks>
+      <para>1 つのグラフには、1 つ以上のグラフ グループが含まれ、各グラフ グループには 1 つ以上のデータ系列が、そして各データ系列には、1 つ以上のポイントが含まれています。 たとえば、1 つのグラフに、すべてのデータ系列を折れ線グラフ形式でプロットした折れ線グラフ グループと、すべてのデータ系列を横棒グラフ形式でプロットした横棒グラフ グループの両方を含めることができます。</para>
+      <para>
+        <b>指定しないで、ChartGroups</b>を使用して (<paramref name="index" />)、<paramref name="index" />は、グラフ種類グループのインデックス番号で、1 つの<b>ChartGroup</b>オブジェクトを取得します。 使用するグラフがアクティブにされた場合、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />プロパティ。</para>
+      <para>特定のグラフ グループのインデックス番号は、そのグループに使用されるグラフの形式が変更された場合に変更するためは、グラフ グループ専用のメソッドのいずれかを使用して特定のグラフ グループを取得しやすい場合があります。 <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />メソッドは、グラフでは、円グラフ グループのコレクションを返します、<see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />メソッド、折れ線グラフ グループのコレクションを返します。 これらの各メソッドは、1 つの<b>ChartGroup</b>オブジェクトをインデックス番号を持つか、インデックス番号を<b>指定しないで、ChartGroups</b>コレクションを取得することがなく使用できます。 次のグラフ グループ メソッドは、使用できます。</para>
+      <list type="bullet">
+        <item>
+          <description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" />メソッド</description>
+        </item>
+        <item>
+          <description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" />メソッド</description>
+        </item>
+        <item>
+          <description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" />メソッド</description>
+        </item>
+        <item>
+          <description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" />メソッド</description>
+        </item>
+        <item>
+          <description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />メソッド</description>
+        </item>
+        <item>
+          <description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />メソッド</description>
+        </item>
+      </list>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -93,8 +122,10 @@
         <summary>指定されたグラフ種類グループやデータ系列のグループを返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>3-D グラフの<b>xlPrimary</b>が有効なだけにします</para>。
-          <para></para></remarks>
+          <para>
+            <b>XlPrimary</b>だけは、3-D グラフでは、有効です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="BubbleScale">
@@ -183,8 +214,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="DoughnutHoleSize">
@@ -362,8 +394,9 @@
         <summary>棒グラフ: の間のスペースの設定を取得または横棒グラフまたは縦棒横棒グラフまたは縦棒の割合としてクラスター幅です。 円グラフおよび円グラフの円グラフ: グラフのプライマリおよびセカンダリのセクション間の間隔の設定を取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>このプロパティの値は 0 から 500 の間である必要があります</para>。
-          <para></para></remarks>
+          <para>このプロパティに使用できる範囲は 5 ～ 200 の値です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Has3DShading">
@@ -640,8 +673,9 @@
         <summary>バーと列を配置する方法を指定します。 –100 と 100 の間で値を指定できます。 2-d 横棒グラフと 2-d 縦棒グラフにのみ適用されます。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>棒の間に 1 つを使用する必要があるになるようにバーを配置は、このプロパティは、-100 に設定されている場合。重なりが 0 (ゼロ) の場合は、空き領域がない (1 つのバーの上のバーの直後後から開始) のバーの間です。重なっている部分が 100 の場合は、バーは、互いに配置します</para>。
-          <para></para></remarks>
+          <para>このプロパティは、-100 に設定されている場合、バーは、棒の間に 1 つを使用する必要があるように配置されます。 重なりが 0 (ゼロ) の場合は、空き領域がない (1 つのバーの上のバーの直後後から開始) のバーの間です。 100 を指定すると、各棒が重なり合います。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

@@ -1,10 +1,10 @@
 <Type Name="TableStyleElement" FullName="Microsoft.Office.Interop.Excel.TableStyleElement">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3ef48e92360930b8c099562e42fcdf9e8386893b" />
+    <Meta Name="ms.openlocfilehash" Value="4539961ebad2a3fc05442269d4ef16529e67948a" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20587221" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface TableStyleElement" />
@@ -31,9 +31,10 @@
   <Docs>
     <summary>単一の表スタイル要素を表します。</summary>
     <remarks>
-      <para>テーブル スタイルは、1 つまたはすべてのテーブルまたはピボット テーブルの要素の書式設定を定義します。 たとえば、ヘッダー行は、テーブルの要素です。ヘッダー行の塗りつぶしの色が赤である表のスタイルを定義できます。 </para>
-      <para>テーブル内の各表スタイル要素は、要素に適用される表スタイルで指定した書式設定を持つことができます</para>。
-      <para></para></remarks>
+      <para>テーブル スタイルは、1 つまたはすべてのテーブルまたはピボット テーブルの要素の書式設定を定義します。  たとえば、ヘッダー行は、テーブルの要素です。 ヘッダー行の塗りつぶしの色が赤である表のスタイルを定義できます。  </para>
+      <para>表内の各表スタイル要素には、要素に適用する表スタイルで指定した書式を設定できます。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -64,8 +65,9 @@
           <see cref="T:Microsoft.Office.Interop.Excel._Application" />
         </value>
         <remarks>
-          <para>そのオブジェクトのアプリケーションを取得するのには OLE オートメーション オブジェクトに対してこのプロパティを使用することができます</para>。
-          <para></para></remarks>
+          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクト用のアプリケーションを取得できます。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Borders">
@@ -151,8 +153,9 @@
           <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
         </value>
         <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成された場合、このプロパティを返します文字列 XCEL を 16 進数の 5843454c と等価であります。 <see cref="P:Microsoft.Office.Interop.Excel.TableStyleElement.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当  <see cref="P:Microsoft.Office.Interop.Excel.TableStyleElement.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -306,8 +309,9 @@
           <b>Integer</b>
         </value>
         <remarks>
-          <para>すべてにこのプロパティは適用されません<see cref="T:Microsoft.Office.Interop.Excel.TableStyleElement" />オブジェクトです。のみに適用される<see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlColumnStripe1" />、 <see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlColumnStripe2" />、<see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlRowStripe1" />と<see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlRowStripe2" />の種類</para>。
-          <para></para></remarks>
+          <para>すべてにこのプロパティが適用されない<see cref="T:Microsoft.Office.Interop.Excel.TableStyleElement" />オブジェクトです。 のみに適用される<see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlColumnStripe1" />、 <see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlColumnStripe2" />、<see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlRowStripe1" />と<see cref="F:Microsoft.Office.Interop.Excel.XlTableStyleElementType.xlRowStripe2" />の種類。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

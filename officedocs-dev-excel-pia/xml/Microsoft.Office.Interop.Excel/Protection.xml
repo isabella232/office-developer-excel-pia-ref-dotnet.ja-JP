@@ -1,10 +1,10 @@
 <Type Name="Protection" FullName="Microsoft.Office.Interop.Excel.Protection">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="eb4842f02045899e4df285db2b98dfe149fa3820" />
+    <Meta Name="ms.openlocfilehash" Value="f9996163076ffe6bcb7674a54fe7b673141d992b" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20585191" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface Protection" />
@@ -31,8 +31,68 @@
   <Docs>
     <summary>ワークシートに使用できる保護オプションのさまざまな種類を表します。</summary>
     <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Protection" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /><b>保護</b>オブジェクトを返すオブジェクト</para>。
-      <para>保護オプションを設定または次のプロパティを使用するには、<b>保護</b>オブジェクトが返されると、:</para><list type="bullet"><item><description><see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowDeletingColumns" /></description></item><item><description><see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowDeletingRows" /></description></item><item><description><see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowFiltering" /></description></item><item><description><see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowFormattingCells" /></description></item><item><description><see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowFormattingColumns" /></description></item><item><description><see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowFormattingRows" /></description></item><item><description><see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowInsertingColumns" /></description></item><item><description><see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowInsertingHyperlinks" /></description></item><item><description><see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowInsertingRows" /></description></item><item><description><see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowSorting" /></description></item></list><para></para></remarks>
+      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Protection" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /><b>保護</b>オブジェクトを返すオブジェクト。</para>
+      <para>
+        <b>Protection</b>オブジェクトが返されると、保護オプションを設定または次のプロパティを使用できます。</para>
+      <list type="bullet">
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowDeletingColumns" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowDeletingRows" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowFiltering" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowFormattingCells" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowFormattingColumns" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowFormattingRows" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowInsertingColumns" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowInsertingHyperlinks" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowInsertingRows" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowSorting" />
+          </description>
+        </item>
+        <item>
+          <description>
+            <see cref="P:Microsoft.Office.Interop.Excel.Protection.AllowUsingPivotTables" />
+          </description>
+        </item>
+      </list>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="AllowDeletingColumns">
@@ -62,9 +122,10 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>AllowDeletingColumns</b>プロパティを使用して設定することができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />メソッドの引数です</para>。
-          <para>シートが保護されているときに削除するセルを含む列がロックされているにする必要があります</para>。
-          <para></para></remarks>
+            <b>AllowDeletingColumns</b>プロパティを使用して設定することができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />メソッドの引数です。</para>
+          <para>削除されるセルを含む列は、シートが保護されるときにロック解除される必要があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowDeletingRows">
@@ -94,9 +155,10 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>AllowDeletingRows</b>プロパティを使用して設定することができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />メソッドの引数です</para>。
-          <para>シートが保護されているときに削除するセルを含む行がロックされているにする必要があります</para>。
-          <para></para></remarks>
+            <b>AllowDeletingRows</b>プロパティを使用して設定することができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />メソッドの引数です。</para>
+          <para>削除されるセルを含む行は、シートが保護されるときにロック解除される必要があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowEditRanges">
@@ -154,10 +216,12 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>AllowFiltering</b>プロパティを使用して設定することができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />メソッドの引数です</para>。
-          <para><b>AllowFiltering</b>プロパティは、既存のオート フィルターのフィルター条件を変更するユーザーを使用できます。ユーザーが作成または保護されたワークシートでオート フィルターを削除することはできません</para>。
-          <para>シートが保護されているときにフィルターを適用するセルがロックされているにする必要があります</para>。
-          <para></para></remarks>
+            <b>AllowFiltering</b>プロパティを使用して設定することができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />メソッドの引数です。</para>
+          <para>
+            <b>AllowFiltering</b>プロパティは、既存のオート フィルターのフィルター条件を変更するユーザーを使用できます。 ユーザーは、作成したり、保護されたワークシートでオート フィルターを削除できません。</para>
+          <para>フィルターの対象となるセルは、シートが保護されるときにロック解除される必要があります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowFormattingCells">
@@ -187,9 +251,10 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>AllowFormattingCells</b>プロパティを使用して設定することができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />メソッドの引数です</para>。
-          <para>このプロパティを使用可能にするすべての書式を変更するがないロックを解除するか、範囲を非表示、[保護] タブが無効になります</para>。
-          <para></para></remarks>
+            <b>AllowFormattingCells</b>プロパティを使用して設定することができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />メソッドの引数です。</para>
+          <para>このプロパティを使用するには、可能にするすべての書式を変更するがないロックを解除するか、範囲を非表示、[保護] タブが無効になります。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowFormattingColumns">
@@ -219,8 +284,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>AllowFormattingColumns</b>プロパティを使用して設定することができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />メソッドの引数です</para>。
-          <para></para></remarks>
+            <b>AllowFormattingColumns</b>プロパティを使用して設定することができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />メソッドの引数です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowFormattingRows">
@@ -250,8 +316,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>AllowFormattingRows</b>プロパティを使用して設定することができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />メソッドの引数です</para>。
-          <para></para></remarks>
+            <b>AllowFormattingRows</b>プロパティを使用して設定することができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />メソッドの引数です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowInsertingColumns">
@@ -279,9 +346,12 @@
       <Docs>
         <summary>保護されたワークシートで列の挿入が許可されている場合は<b>True</b>を返します。</summary>
         <value>To be added.</value>
-        <remarks>書式 (デフォルト) で、列からその可能性がありますがロックされているセルは、左側に<para>を挿入した列を継承します。つまり、ユーザーできないことがあります挿入した列を削除します</para>。
-          <para><b>AllowInsertingColumns</b>プロパティを使用して設定することができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />メソッドの引数です</para>。
-          <para></para></remarks>
+        <remarks>
+          <para>挿入された列は、既定値として左側の列の書式を受け継ぐため、その列のセルがロックされる場合があります。つまり、ユーザーは挿入した列を削除できない場合があります。</para>
+          <para>
+            <b>AllowInsertingColumns</b>プロパティを使用して設定することができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />メソッドの引数です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowInsertingHyperlinks">
@@ -310,9 +380,11 @@
         <summary>保護されたワークシートでハイパーリンクの挿入が許可されている場合は<b>True</b>を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>保護されたワークシート上のロックを解除または保護されていないセルにハイパーリンクを挿入することです</para>。
-          <para><b>AllowInsertingHyperlinks</b>プロパティを使用して設定することができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />メソッドの引数です</para>。
-          <para></para></remarks>
+          <para>保護されたワークシートで、ロック解除されたセルまたは保護解除されたセルには、ハイパーリンクを挿入することができます。</para>
+          <para>
+            <b>AllowInsertingHyperlinks</b>プロパティを使用して設定することができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />メソッドの引数です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowInsertingRows">
@@ -342,8 +414,9 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>AllowInsertingRows</b>プロパティを使用して設定することができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />メソッドの引数です</para>。
-          <para></para></remarks>
+            <b>AllowInsertingRows</b>プロパティを使用して設定することができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />メソッドの引数です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowSorting">
@@ -372,9 +445,11 @@
         <summary>保護されたワークシートで並べ替えのオプションが許可されている場合は<b>True</b>を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>、保護されたワークシートで並べ替えのみ実行できますまたは保護解除されたセルにします</para>。
-          <para><b>AllowSorting</b>プロパティを使用して設定することができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />メソッドの引数です</para>。
-          <para></para></remarks>
+          <para>保護されたワークシートで並べ替えのみ実行できますまたは保護解除されたセルにします。</para>
+          <para>
+            <b>AllowSorting</b>プロパティを使用して設定することができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />メソッドの引数です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowUsingPivotTables">
@@ -404,9 +479,11 @@
         <value>To be added.</value>
         <remarks>
           <para>
-            <b>AllowUsingPivotTables</b>プロパティは、非 olap の集計元データに適用されます</para>。
-          <para><b>AllowUsingPivotTables</b>プロパティを使用して設定することができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />メソッドの引数です</para>。
-          <para></para></remarks>
+            <b>AllowUsingPivotTables</b>プロパティは、非 olap の集計元データに適用されます。</para>
+          <para>
+            <b>AllowUsingPivotTables</b>プロパティを使用して設定することができます、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" />メソッドの引数です。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
   </Members>

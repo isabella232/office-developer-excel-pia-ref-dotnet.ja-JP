@@ -1,10 +1,10 @@
 <Type Name="PivotCaches" FullName="Microsoft.Office.Interop.Excel.PivotCaches">
   <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="30d8a53aca6b1b693a8acc184b1d71d6cd486ceb" />
+    <Meta Name="ms.openlocfilehash" Value="a96fa5538045c8441266412dcd431b316fe7edd6" />
     <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
     <Meta Name="ms.translationtype" Value="MT" />
     <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/03/2018" />
+    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
     <Meta Name="ms.locfileid" Value="20586878" />
   </Metadata>
   <TypeSignature Language="C#" Value="public interface PivotCaches : System.Collections.IEnumerable" />
@@ -35,9 +35,10 @@
   <Docs>
     <summary>ブックにあるピボットテーブル レポートからのキャッシュ メモリのコレクションを表します。</summary>
     <remarks>
-      <para>各メモリ キャッシュは、<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />オブジェクトです</para>。
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.PivotCaches" /><b>PivotCaches</b>コレクションを返します</para>。
-      <para></para></remarks>
+      <para>各メモリ キャッシュは、<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />オブジェクトです。</para>
+      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.PivotCaches" /><b>PivotCaches</b>コレクションを返します。</para>
+      <para></para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -106,8 +107,9 @@
         <summary>新しいピボット テーブル キャッシュを追加する<see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" />コレクションです。</summary>
         <returns>To be added.</returns>
         <remarks>
-          <para>によって、ピボット テーブル キャッシュが参照されない場合、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />オブジェクトの場合、ブックが保存される前に、ピボット テーブルのキャッシュが自動的に削除します</para>。
-          <para></para></remarks>
+          <para>ピボット テーブル キャッシュが参照されない場合、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />オブジェクトの場合、ブックが保存される前に、ピボット テーブルのキャッシュが自動的に削除します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -198,10 +200,12 @@
           <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />
         </returns>
         <remarks>
-          <para>次の 2 つ<see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" />このメソッドを使用する場合、定数はサポートされていません: <b>xlPivotTable</b>と<b>xlScenario</b>。これら 2 つの定数のいずれかを指定した場合、実行時エラーが返されます</para>。
-          <para>、<paramref name="SourceData" />場合は、引数が必要な<paramref name="SourceType" />xlExternal はありません。できます、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクト (と<paramref name="SourceType" />xlConsolidation または xlDatabase) または Excel<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />オブジェクト (と<paramref name="SourceType" />が xlExternal) です</para>。
-          <para>ならない時が指定のバージョン、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> xlPivotTableVersion12 になります。 <b>XlPivotTableVersionCurrent</b>定数の使用は許可されていませんし、それを指定した場合、実行時エラーを返します</para>。
-          <para></para></remarks>
+          <para>次の 2 つ<see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" />このメソッドを使用する場合、定数はサポートされていません: <b>xlPivotTable</b>と<b>xlScenario</b>。 これら 2 つの定数のいずれかを指定した場合は、実行時エラーが返されます。</para>
+          <para>
+            <paramref name="SourceData" />場合は、引数が必要な<paramref name="SourceType" />xlExternal はありません。 できます、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクト (場合<paramref name="SourceType" />xlConsolidation または xlDatabase) または Excel<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />オブジェクト (と<paramref name="SourceType" />が xlExternal)。</para>
+          <para>バージョンを指定しない場合、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> xlPivotTableVersion12 になります。  <b>XlPivotTableVersionCurrent</b>定数の使用は許可されていません、指定する場合は、実行時エラーを返します。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -230,10 +234,11 @@
         <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
         <value>To be added.</value>
         <remarks>
-          <para>オブジェクトを Microsoft excel で作成した場合、このプロパティは文字列 XCEL を 16 進数の番号 5843454 C を返します</para>
+          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
           <para>
-            <b>作成者</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。たとえば、Excel では、クリエーター コード</para>。
-          <para></para></remarks>
+            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
+          <para></para>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
