@@ -1,13 +1,5 @@
 <Type Name="ChartEvents_Event" FullName="Microsoft.Office.Interop.Excel.ChartEvents_Event">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8fa24bd36a40b86e1c8eda5d1c429fc248c390f6" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576644" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8fa24bd36a40b86e1c8eda5d1c429fc248c390f6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005916" /></Metadata><TypeSignature Language="C#" Value="public interface ChartEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartEvents_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartEvents_Event" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Microsoft Excel のインターフェイスのイベント<see cref="T:Microsoft.Office.Interop.Excel.Chart" />オブジェクトのイベント。</summary>
+    <summary>Microsoft Excel オブジェクト イベントの <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> イベント インターフェイス。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,7 +40,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartEvents_ActivateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフ シートまたは埋め込みグラフがアクティブになったときに発生します。</summary>
+        <summary>グラフ シートまたは埋め込みグラフがアクティブ化されると発生します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,13 +59,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartEvents_BeforeDoubleClickEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>既定のダブルクリック操作の前に、埋め込みグラフをダブルクリックしたときに発生します。</summary>
-        <remarks>
-          <para>
-            <see cref="M:Microsoft.Office.Interop.Excel._Application.DoubleClick" />メソッドが原因でこのイベントは発生しません。</para>
+        <summary>埋め込みグラフがダブルクリックされ、既定のダブルクリック操作の前に発生します。</summary>
+        <remarks><para>この <see cref="M:Microsoft.Office.Interop.Excel._Application.DoubleClick" /> メソッドでは、このイベントは発生しません。</para>
           <para>ユーザーがセルの境界をダブルクリックしたとき、このイベントは発生しません。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BeforeRightClick">
@@ -91,11 +80,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartEvents_BeforeRightClickEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>埋め込みグラフは、既定のアクションを右クリックする前に、右クリックしたときに発生します。</summary>
-        <remarks>
-          <para>他のワークシート イベントと同様に、ポインターが図形またはコマンド バー (ツールバーまたはメニュー バー) の上にある場合、右クリックしてもこのイベントは発生しません。</para>
-          <para></para>
-        </remarks>
+        <summary>埋め込みグラフが右クリックされ、既定の右クリック操作の前に発生します。</summary>
+        <remarks><para>他のワークシート イベントと同様に、ポインターが図形またはコマンド バー (ツールバーまたはメニュー バー) の上にある場合、右クリックしてもこのイベントは発生しません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Calculate">
@@ -113,7 +100,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartEvents_CalculateEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>新しいまたは変更されたデータをグラフがプロットした後に発生します。</summary>
+        <summary>グラフが新規または変更されたデータをプロットした後に発生します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,7 +138,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartEvents_DragOverEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフ上のセル範囲がドラッグされたときに発生します。</summary>
+        <summary>セル範囲をグラフの上にドラッグすると発生します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,7 +157,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartEvents_DragPlotEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>セル範囲をドラッグし、グラフにドロップしたときに発生します。</summary>
+        <summary>グラフ上でセル範囲をドラッグ アンド ドロップすると発生します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -284,7 +271,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartEvents_SeriesChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ユーザーがグラフのデータ要素の値を変更するときに発生します。</summary>
+        <summary>ユーザーがグラフのデータ ポイントの値を変更すると発生します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

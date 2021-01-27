@@ -1,13 +1,5 @@
 <Type Name="Axis" FullName="Microsoft.Office.Interop.Excel.Axis">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d10d4e8e1ee2a7c304ba94c879df8f19e1748061" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20572934" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Axis" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d10d4e8e1ee2a7c304ba94c879df8f19e1748061" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006168" /></Metadata><TypeSignature Language="C#" Value="public interface Axis" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Axis" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Axis" />
   <TypeSignature Language="VB.NET" Value="Public Interface Axis" />
@@ -30,13 +22,9 @@
   </Attributes>
   <Docs>
     <summary>グラフの 1 つの軸を表します。</summary>
-    <remarks>
-      <para>
-        <b>Axis</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.Axes" />コレクションです。</para>
-      <para>
-        <b>軸</b>を使用して (<paramref name="type, group" />) の種類が軸型であり、グループは 1 つの<b>Axis</b>オブジェクトを取得する軸のグループです。 <paramref name="Type" />次のいずれかの<see cref="ff" />定数:<b>引数</b>、<b>引数</b>、または<b>軸</b>です。 <paramref name="Group" />次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" />定数: <b>xlPrimary</b>または<b>xlSecondary</b>です。 詳細についてを参照してください、<see cref="M:Microsoft.Office.Interop.Excel._Chart.Axes(System.Object,Microsoft.Office.Interop.Excel.XlAxisGroup)" />メソッドです。</para>
-      <para></para>
-    </remarks>
+    <remarks><para><b>Axis オブジェクト</b>はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.Axes" /> です。</para>
+      <para>軸<b></b>( ) を使用して 1 つの Axis オブジェクトを取得するには、軸の種類を指定し、グループを <paramref name="type, group" /> 軸グループ<b></b>とします。 <paramref name="Type" />使用できる定数は <see cref="ff" /> <b>、xlCategory、xlSeries、</b><b>または</b> <b>xlValue です</b>。 <paramref name="Group" /> 使用できる定数は <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> <b>、xlPrimary</b> または <b>xlSecondary です</b>。 詳細については、メソッドを参照 <see cref="M:Microsoft.Office.Interop.Excel._Chart.Axes(System.Object,Microsoft.Office.Interop.Excel.XlAxisGroup)" /> してください。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,13 +81,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>値軸の項目間のカテゴリ軸と交差している場合です。</summary>
+        <summary><b>True の</b> 場合は、数値軸は、項目間の項目軸と交差します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティの対象は項目軸だけで、3-D グラフには使用できません。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティの対象は項目軸だけで、3-D グラフには使用できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AxisGroup">
@@ -125,13 +110,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAxisGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された軸のグループを返します。</summary>
+        <summary>指定した軸のグループを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>XlPrimary</b>だけは、3-D グラフの場合、有効です。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>3-D グラフに使用できる定数は、<b>xlPrimary</b> だけです。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AxisTitle">
@@ -157,7 +139,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.AxisTitle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.AxisTitle" /> 、指定した軸のタイトルを表すオブジェクト。</summary>
+        <summary>指定された軸 <see cref="T:Microsoft.Office.Interop.Excel.AxisTitle" /> のタイトルを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -188,13 +170,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlTimeUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された項目軸の基本単位を設定または返します。</summary>
+        <summary>指定された項目軸の基本単位を返すか設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティを設定、表示されている場合は無効、 <see cref="P:Microsoft.Office.Interop.Excel.Axis.CategoryType" /><b>xlCategoryScale</b>を指定した軸のプロパティを設定します。 ただし、設定値は保持され、 <b>CategoryType</b> プロパティの設定値が <b>xlTimeScale</b> の場合に有効になります。</para>
+        <remarks><para>指定した軸のプロパティが <see cref="P:Microsoft.Office.Interop.Excel.Axis.CategoryType" /> <b>xlCategoryScale</b>に設定されている場合、このプロパティを設定すると、表示効果はありません。 ただし、設定値は保持され、 <b>CategoryType</b> プロパティの設定値が <b>xlTimeScale</b> の場合に有効になります。</para>
           <para>このプロパティは数値軸には設定できません。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BaseUnitIsAuto">
@@ -223,13 +203,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、指定された項目軸の基本単位の適切な選択です。 既定値は <b>True</b> です。</summary>
+        <summary><b>True の</b> 場合は、Microsoft Excel は、指定した項目軸の適切な基本単位を選択します。 既定値は <b>True</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは数値軸には設定できません。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティは数値軸には設定できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -255,7 +232,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 、オブジェクトの枠線を表すオブジェクト。</summary>
+        <summary>オブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 境界線を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -286,13 +263,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>文字列配列として指定した軸のすべてのカテゴリ名を設定または返します。</summary>
+        <summary>指定した軸のすべての項目名を文字列配列として取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティを設定するとできるに設定するか、配列、または<see cref="T:Microsoft.Office.Interop.Excel.Range" />カテゴリの名前を格納しているオブジェクト。</para>
+        <remarks><para>このプロパティを設定する場合は、配列またはカテゴリ名を含む <see cref="T:Microsoft.Office.Interop.Excel.Range" /> オブジェクトに設定できます。</para>
           <para>このプロパティは、項目軸にのみ使用できます。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CategoryType">
@@ -321,12 +296,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCategoryType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>項目軸の種類を設定または返します。</summary>
+        <summary>項目軸の種類を返すか設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは数値軸には設定できません。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティは数値軸には設定できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -352,14 +325,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Crosses">
@@ -388,17 +358,15 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAxisCrosses</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された軸と他の軸と交差する位置を設定または返します。</summary>
+        <summary>指定された軸と他の軸との交点を取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>交差する</b>プロパティには、いずれかを指定できる、<see cref="T:Microsoft.Office.Interop.Excel.XlAxisCrosses" />定数は、次の表に記載されています。</para>
+        <remarks><para><b>Crosses</b>プロパティには、次の表 <see cref="T:Microsoft.Office.Interop.Excel.XlAxisCrosses" /> に示す定数のいずれかを指定できます。</para>
           <list type="table">
             <item>
               <term>
                 <b>xlAxisCrossesAutomatic</b>
               </term>
-              <description>自動的に軸の交点が決められます。</description>
+              <description>自動的に交点が決められます。</description>
             </item>
             <item>
               <term>
@@ -416,16 +384,13 @@
               <term>
                 <b>xlAxisCrossesCustom</b>
               </term>
-              <description>
-                <see cref="P:Microsoft.Office.Interop.Excel.Axis.CrossesAt" />プロパティは軸の交点を指定します。</description>
+              <description>この <see cref="P:Microsoft.Office.Interop.Excel.Axis.CrossesAt" /> プロパティは、軸の交差ポイントを指定します。</description>
             </item>
           </list>
           <para>レーダー チャートでは、このプロパティを使用できません。3-D 表示のグラフの場合、このプロパティは数値軸に対してのみ適用でき、数値軸と項目軸が交差して定義される平面を示します。</para>
-          <para>カテゴリと値の両方の軸では、このプロパティを使用できます。 カテゴリ軸に <b>xlMinimum</b> 最初のカテゴリに交差する数値軸を設定して <b>xlMaximum</b> は、最後の項目に交差する数値軸を設定します。</para>
-          <para>
-            <b>xlMinimum</b> 定数と <b>xlMaximum</b> 定数は、対象となる軸によって機能が異なります。</para>
-          <para></para>
-        </remarks>
+          <para>このプロパティは、項目軸と数値軸の両方に設定できます。たとえば、項目軸を対象とする Crosses プロパティを <b>xlMinimum</b> に設定すると、項目軸は最初の項目で数値軸と交差し、<b>xlMaximum</b> に設定すると、項目軸は最後の項目で数値軸と交差します。</para>
+          <para><b>xlMinimum</b> 定数と <b>xlMaximum</b> 定数は、対象となる軸によって機能が異なります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CrossesAt">
@@ -454,13 +419,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>数値軸と項目軸と交差する位置を設定または返します。 数値軸にのみ適用されます。</summary>
+        <summary>項目軸と数値軸の交点を取得または設定します。 数値軸にのみ適用されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティにより、設定、 <see cref="P:Microsoft.Office.Interop.Excel.Axis.Crosses" /><b>xlAxisCrossesCustom</b>に変更するプロパティです。</para>
+        <remarks><para>このプロパティを設定すると、プロパティ <see cref="P:Microsoft.Office.Interop.Excel.Axis.Crosses" /> が <b>xlAxisCrossesCustom に変更されます</b>。</para>
           <para>レーダー チャートでは、このプロパティを使用できません。3-D 表示のグラフの場合、このプロパティは数値軸と項目軸が交差して定義される平面を示します。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -517,10 +480,9 @@
       <Docs>
         <summary>数値軸の単位ラベルを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>大きな値のグラフを作成する場合に単位ラベルを使用すると、グラフを読みやすくすることができます。たとえば、百、千、万単位の数値軸にラベルを付けると、軸上の目盛に小さな値を使用できます。</para>
+        <remarks><para>大きな値のグラフを作成する場合に単位ラベルを使用すると、グラフを読みやすくすることができます。たとえば、百、千、万単位の数値軸にラベルを付けると、軸上の目盛に小さな値を使用できます。</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayUnit" />これら<b>の取得</b>のいずれかのことができます。</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlDisplayUnit" /> 使用できる定数は、 <b>次に示す XlDisplayUnit</b> 定数の 1 つです。</para>
           <para>
             <b>xlHundredMillions</b>
           </para>
@@ -548,15 +510,14 @@
           <para>
             <b>xlThousandMillions</b>
           </para>
-          <para>単位ラベル以下の定数のいずれかのこともできます。</para>
+          <para>単位ラベルには、次のいずれかの定数を使用できます。</para>
           <para>
-            <b>可能です。</b>
+            <b>xlCustom</b>
           </para>
           <para>
             <b>xlNone</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayUnitCustom">
@@ -585,12 +546,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>場合の値、<see cref="P:Microsoft.Office.Interop.Excel.Axis.DisplayUnit" />プロパティ<b>が可能です</b>、 <b>DisplayUnitCustom</b>プロパティを取得または表示されている単位の値を設定します。 0 ~ 10E307 の値でなければなりません。</summary>
+        <summary>プロパティの値が <see cref="P:Microsoft.Office.Interop.Excel.Axis.DisplayUnit" /> <b>xlCustom</b>の場合 <b>、DisplayUnitCustom</b> プロパティは表示単位の値を取得または設定します。 値は 0 ~ 10E307 である必要があります。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>大きな値のグラフを作成する場合に単位ラベルを使用すると、グラフを読みやすくすることができます。たとえば、百、千、万単位の数値軸にラベルを付けると、軸上の目盛に小さな値を使用できます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>大きな値のグラフを作成する場合に単位ラベルを使用すると、グラフを読みやすくすることができます。たとえば、百、千、万単位の数値軸にラベルを付けると、軸上の目盛に小さな値を使用できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayUnitLabel">
@@ -616,7 +575,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DisplayUnitLabel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.DisplayUnitLabel" />指定した軸のオブジェクト。 場合<b>Null</b>を返します、<see cref="P:Microsoft.Office.Interop.Excel.Axis.HasDisplayUnitLabel" />プロパティが False に設定します。</summary>
+        <summary>指定された軸 <see cref="T:Microsoft.Office.Interop.Excel.DisplayUnitLabel" /> のオブジェクトを返します。 プロパティが <b>False に</b> 設定されている場合は Null <see cref="P:Microsoft.Office.Interop.Excel.Axis.HasDisplayUnitLabel" /> を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -644,10 +603,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />オブジェクトです。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
+        <summary>オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -677,8 +634,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>で、ラベルが指定された場合、<see cref="P:Microsoft.Office.Interop.Excel.Axis.DisplayUnit" />または<see cref="P:Microsoft.Office.Interop.Excel.Axis.DisplayUnitCustom" />プロパティは、指定した軸に表示されます。 既定値は <b>True</b> です。</summary>
+        <summary><b>True</b> の 場合は、指定した軸に、 <see cref="P:Microsoft.Office.Interop.Excel.Axis.DisplayUnit" /> またはプロパティで指定 <see cref="P:Microsoft.Office.Interop.Excel.Axis.DisplayUnitCustom" /> したラベルが表示されます。 既定値は <b>True</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -709,8 +665,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合、軸に目盛線を表示します。 目盛線が付けられるのは主軸だけです。</summary>
+        <summary><b>True の</b> 場合、軸に目盛線を表示します。 目盛線が付けられるのは主軸だけです。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -741,8 +696,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>真</b> 軸に補助目盛線がある場合。 目盛線が付けられるのは主軸だけです。</summary>
+        <summary>軸に補助目盛線がある場合は <b>True</b>。 目盛線は主軸グループの軸のみにあります。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -773,14 +727,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、軸やグラフのタイトルを表示します。</summary>
+        <summary>軸やグラフのタイトルを表示する場合は <b>True</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>軸のタイトルは、<see cref="T:Microsoft.Office.Interop.Excel.AxisTitle" />オブジェクトです。</para>
-          <para>グラフのタイトルは、<see cref="T:Microsoft.Office.Interop.Excel.ChartTitle" />オブジェクトです。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>軸のタイトルはオブジェクトで表 <see cref="T:Microsoft.Office.Interop.Excel.AxisTitle" /> されます。</para>
+          <para>グラフタイトルはオブジェクトによって表 <see cref="T:Microsoft.Office.Interop.Excel.ChartTitle" /> されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -834,7 +785,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフ エリアの左端からのオブジェクトの左端からポイント単位での距離です。</summary>
+        <summary>オブジェクトの左端からグラフ エリアの左側までの距離をポイント数で指定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -865,14 +816,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>対数目盛を使用している場合に対数の底を取得または設定します。値の取得および設定が可能です。倍精度浮動小数点型 ( <b>Double</b> ) の値を使用します。</summary>
-        <value>
-          <b>Double</b>
-        </value>
-        <remarks>
-          <para>このプロパティをゼロ以下に設定しようとするとエラーが生じます。既定値は 10 です。</para>
-          <para></para>
-        </remarks>
+        <summary>対数目盛りを使用する場合の対数の基数を取得または設定します。 取得/設定が可能な <b>Double</b> 値です。</summary>
+        <value><b>Double</b></value>
+        <remarks><para>このプロパティをゼロ (0) 以下の値に設定しようとすると、エラーが発生します。 既定値は 10 です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MajorGridlines">
@@ -898,7 +845,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Gridlines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Gridlines" /> 、指定した軸の目盛を表すオブジェクト。 目盛線が付けられるのは主軸だけです。</summary>
+        <summary>指定された軸 <see cref="T:Microsoft.Office.Interop.Excel.Gridlines" /> の主な枠線を表すオブジェクトを返します。 目盛線が付けられるのは主軸だけです。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -929,11 +876,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlTickMark</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定した軸の目盛の種類を設定します。</summary>
+        <summary>指定された軸の目盛の種類を返すか設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlTickMark" />これら<b>が可能</b>のいずれかのことができます。</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlTickMark" /> 使用できる定数は、 <b>次に示す XlTickMark</b> 定数です。</para>
           <para>
             <b>xlTickMarkInside</b>
           </para>
@@ -946,8 +892,7 @@
           <para>
             <b>xlTickMarkNone</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MajorUnit">
@@ -976,13 +921,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>数値軸の目盛間隔を設定または返します。</summary>
+        <summary>数値軸の主な単位を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティの設定の設定、<see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnitIsAuto" />プロパティを<b>False</b>にします。</para>
-          <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.Axis.TickMarkSpacing" />間隔、軸に目盛を設定するプロパティです。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティを設定すると、プロパティ <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnitIsAuto" /> が False に <b>設定されます</b>。</para>
+          <para>項目軸 <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickMarkSpacing" /> の目盛間隔を設定するには、このプロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MajorUnitIsAuto">
@@ -1011,13 +954,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>真</b>数値軸の目盛間隔を自動的に決定する場合です。</summary>
+        <summary><b>True</b> の 場合は、数値軸のメジャー単位が計算されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>設定、<see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" />プロパティは、このプロパティを<b>False</b>に設定します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>プロパティを設定 <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" /> すると、このプロパティは False に <b>設定されます</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MajorUnitScale">
@@ -1046,11 +986,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlTimeUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>項目軸の目盛間隔のスケールの値を設定を取得または設定すると、<see cref="P:Microsoft.Office.Interop.Excel.Axis.CategoryType" />プロパティが<b>xlTimeScale</b>に設定。</summary>
+        <summary>取得またはプロパティが xlTimeScale に設定されている場合に、項目軸の目盛り単位のスケール値 <see cref="P:Microsoft.Office.Interop.Excel.Axis.CategoryType" /> <b>を設定します</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlTimeUnit" />これらの<b>基</b>の定数のいずれかできます。</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlTimeUnit" /> 使用できる定数は、 <b>次に示す XlTimeUnit</b> 定数の 1 つです。</para>
           <para>
             <b>xlMonths</b>
           </para>
@@ -1060,8 +999,7 @@
           <para>
             <b>xlYears</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumScale">
@@ -1090,12 +1028,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または値軸の最大値を設定します。</summary>
+        <summary>数値軸の最大値を返すか設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティの設定の設定、<see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScaleIsAuto" />プロパティを<b>False</b>にします。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティを設定すると、プロパティ <see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScaleIsAuto" /> が False に <b>設定されます</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MaximumScaleIsAuto">
@@ -1124,13 +1060,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>Microsoft Excel が数値軸の最大値を計算した場合です。</summary>
+        <summary>Microsoft Excel が数値軸の最大値を計算する場合は <b>True</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>設定、<see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" />プロパティは、このプロパティを<b>False</b>に設定します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>プロパティを設定 <see cref="P:Microsoft.Office.Interop.Excel.Axis.MaximumScale" /> すると、このプロパティは False に <b>設定されます</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimumScale">
@@ -1159,12 +1092,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>数値軸の最小値を設定を取得または取得します。</summary>
+        <summary>数値軸の最小値を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティの設定の設定、<see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScaleIsAuto" />プロパティを<b>False</b>にします。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティを設定すると、プロパティ <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScaleIsAuto" /> が False に <b>設定されます</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MinimumScaleIsAuto">
@@ -1193,13 +1124,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>Microsoft Excel が数値軸の最小値を計算した場合です。</summary>
+        <summary><b>True</b> の 場合は、数値軸の最小値が計算されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>設定、<see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" />プロパティは、このプロパティを<b>False</b>に設定します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>プロパティを設定 <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinimumScale" /> すると、このプロパティは False に <b>設定されます</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MinorGridlines">
@@ -1225,7 +1153,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Gridlines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Gridlines" />を指定した軸の補助目盛線を表すオブジェクト。 目盛線が付けられるのは主軸だけです。</summary>
+        <summary>指定された軸 <see cref="T:Microsoft.Office.Interop.Excel.Gridlines" /> の小さい枠線を表すオブジェクトを返します。 目盛線が付けられるのは主軸だけです。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1256,11 +1184,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlTickMark</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定された軸の補助目盛の種類を設定します。</summary>
+        <summary>指定された軸の補助目盛の種類を返すか設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlTickMark" />これら<b>が可能</b>のいずれかのことができます。</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlTickMark" /> 使用できる定数は、 <b>次に示す XlTickMark</b> 定数です。</para>
           <para>
             <b>xlTickMarkInside</b>
           </para>
@@ -1273,8 +1200,7 @@
           <para>
             <b>xlTickMarkNone</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MinorUnit">
@@ -1303,13 +1229,11 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>数値軸の補助目盛間隔を設定または返します。</summary>
+        <summary>数値軸の補助単位を返すか設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティの設定の設定、<see cref="P:Microsoft.Office.Interop.Excel.Axis.MinorUnitIsAuto" />プロパティを<b>False</b>にします。</para>
-          <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.Axis.TickMarkSpacing" />間隔、軸に目盛を設定するプロパティです。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティを設定すると、プロパティ <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinorUnitIsAuto" /> が False に <b>設定されます</b>。</para>
+          <para>項目軸 <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickMarkSpacing" /> の目盛間隔を設定するには、このプロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MinorUnitIsAuto">
@@ -1338,13 +1262,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>真</b>数値軸の補助目盛間隔を自動的に決定する場合です。</summary>
+        <summary>Microsoft Excel が数値軸の補助単位を計算する場合は <b>True</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>設定、<see cref="P:Microsoft.Office.Interop.Excel.Axis.MinorUnit" />プロパティは、このプロパティを<b>False</b>に設定します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>プロパティを設定 <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinorUnit" /> すると、このプロパティは False に <b>設定されます</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MinorUnitScale">
@@ -1373,11 +1294,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlTimeUnit</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>項目軸の補助目盛間隔のスケールの値を設定を取得または設定すると、<see cref="P:Microsoft.Office.Interop.Excel.Axis.CategoryType" />プロパティが<b>xlTimeScale</b>に設定します。</summary>
+        <summary>取得またはプロパティが xlTimeScale に設定されている場合に、項目軸のマイナー 単位のスケール値を <see cref="P:Microsoft.Office.Interop.Excel.Axis.CategoryType" /> <b>設定します</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlTimeUnit" />これらの<b>基</b>の定数のいずれかできます。</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlTimeUnit" /> 使用できる定数は、 <b>次に示す XlTimeUnit</b> 定数の 1 つです。</para>
           <para>
             <b>xlMonths</b>
           </para>
@@ -1387,8 +1307,7 @@
           <para>
             <b>xlYears</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1445,13 +1364,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、Microsoft Excel がデータをプロット ポイント最後から最初にします。</summary>
+        <summary><b>True の</b> 場合は、最後から最初のデータポイントをプロットします。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>レーダー チャートでは、このプロパティを使用できません。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>レーダー チャートでは、このプロパティを使用できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScaleType">
@@ -1480,19 +1396,17 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlScaleType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>数値軸の目盛の種類を設定または返します。</summary>
+        <summary>数値軸の目盛の種類を返すか設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlScaleType" />これら<b>が可能</b>のいずれかのことができます。</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlScaleType" /> 使用できる定数は、 <b>次に示す XlScaleType</b> 定数の 1 つです。</para>
           <para>
             <b>xlScaleLinear</b>
           </para>
           <para>
             <b>xlScaleLogarithmic</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -1518,10 +1432,8 @@
       <Docs>
         <summary>オブジェクトを選択します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>セルまたはセル範囲を選択するには、 <b>Select</b>メソッドを使用します。 1 つのセルをアクティブ セルにするを使用して、<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" />メソッドです。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>セルまたはセル範囲を選択するには、<b>Select</b> メソッドを使用します。 1 つのセルをアクティブ セルにする場合は、このメソッドを使用 <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TickLabelPosition">
@@ -1550,11 +1462,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlTickLabelPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された軸の目盛ラベルの位置について説明します。</summary>
+        <summary>指定された軸での目盛ラベルの位置を示します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlTickLabelPosition" />これら<b>が可能</b>のいずれかのことができます。</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlTickLabelPosition" /> 使用できる定数は、 <b>次に示す XlTickLabelPosition</b> 定数です。</para>
           <para>
             <b>xlTickLabelPositionLow</b>
           </para>
@@ -1567,9 +1478,8 @@
           <para>
             <b>xlTickLabelPositionNextToAxis</b>
           </para>
-          <para>3-D グラフには<b>xlTickLabelPositionHigh</b>定数を使うことはできません。</para>
-          <para></para>
-        </remarks>
+          <para>3-D グラフ <b>では、xlTickLabelPositionHigh</b> 定数は使用できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TickLabels">
@@ -1595,7 +1505,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TickLabels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.TickLabels" />を指定した軸の目盛ラベルを表すオブジェクト。</summary>
+        <summary>指定された軸 <see cref="T:Microsoft.Office.Interop.Excel.TickLabels" /> の目盛ラベルを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1626,12 +1536,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または項目または目盛ラベル間でデータ系列の数を設定します。 カテゴリおよび系列の軸にのみ適用されます。</summary>
+        <summary>目盛ラベルの間の項目または系列の数を返すか設定します。 項目軸と系列軸にのみ適用されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>数値軸のラベル間隔は、Excel で常に計算されます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>数値軸のラベル間隔は、Excel で常に計算されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TickLabelSpacingIsAuto">
@@ -1660,15 +1568,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>目盛ラベルの間隔が自動であるかどうかを設定または返します。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" />の設定が自動であるかどうか、プロパティが現在の目盛ラベルの間隔を返します。</para>
-          <para></para>
-        </remarks>
+        <summary>目盛ラベルの間隔を自動で設定します。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>この <see cref="P:Microsoft.Office.Interop.Excel.Axis.TickLabelSpacing" /> プロパティは、設定が自動かどうかに関限り、現在の目盛ラベルの間隔を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TickMarkSpacing">
@@ -1697,12 +1600,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または項目または系列の目盛りの間の数を設定します。 カテゴリおよび系列の軸にのみ適用されます。</summary>
+        <summary>目盛の間の項目または系列の数を返すか設定します。 項目軸と系列軸にのみ適用されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" />と<see cref="P:Microsoft.Office.Interop.Excel.Axis.MinorUnit" />を設定するプロパティの目盛数値軸の間隔。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>数値軸 <see cref="P:Microsoft.Office.Interop.Excel.Axis.MajorUnit" /> の目盛間隔を設定するには、プロパティ <see cref="P:Microsoft.Office.Interop.Excel.Axis.MinorUnit" /> とプロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -1728,7 +1629,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>(ワークシート) の行 1 の上端、または、グラフ エリア (グラフの場合) の一番上のオブジェクトの上端からポイント単位での距離です。</summary>
+        <summary>オブジェクトの上端から行 1 の上端 (ワークシート上) またはグラフ エリアの上端 (グラフの場合) までの距離をポイント数で指定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1761,22 +1662,19 @@
       <Docs>
         <summary>軸の種類を返します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> 使用できる定数は、 <b>次に示す XlAxisType</b> クラスの定数です。</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" />
-            <b>XlAxisType</b>定数のいずれかできます。</para>
-          <para>
-            <b>引数</b>
+            <b>xlCategory</b>
           </para>
           <para>
             <b>xlSeriesAxis</b>
           </para>
           <para>
-            <b>軸</b>
+            <b>xlValue</b>
           </para>
-          <para>散布図の水平方向の軸のこのプロパティを使用している場合、<b>引数</b>は軸の種類として返されます。</para>
-          <para></para>
-        </remarks>
+          <para>このプロパティを散布図の横軸に対して使用すると、<b>xlCategory</b> が軸の種類として返されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">

@@ -1,13 +1,5 @@
 <Type Name="AutoFilter" FullName="Microsoft.Office.Interop.Excel.AutoFilter">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="085dbe03cc8ab153375e03745f01e25010542104" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580529" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoFilter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="085dbe03cc8ab153375e03745f01e25010542104" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006203" /></Metadata><TypeSignature Language="C#" Value="public interface AutoFilter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoFilter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AutoFilter" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoFilter" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>指定されたワークシートのオートフィルターを示します。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.AutoFilter" /> 、<b>オート フィルター</b>のオブジェクトを返すプロパティです。 使用して、<see cref="P:Microsoft.Office.Interop.Excel.AutoFilter.Filters" />の各列のフィルターのコレクションを返すプロパティです。 使用して、<see cref="P:Microsoft.Office.Interop.Excel.AutoFilter.Range" />を返すプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.Range" />全体のフィルターのセル範囲を表すオブジェクト。</para>
-      <para>ワークシートの<b>オート フィルター</b>オブジェクトを作成する必要がありますを有効にするオート フィルター、ワークシート上の範囲のか、手動でまたはを使用して、 <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> 、 <b>Range</b>オブジェクトのメソッドです。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.AutoFilter" /> を使用して <b>AutoFilter オブジェクトを取得</b> します。 このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.AutoFilter.Filters" /> を使用して、個々の列フィルターのコレクションを取得します。 このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.AutoFilter.Range" /> を使用して、フィルター <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 処理された範囲全体を表すオブジェクトを取得します。</para>
+      <para>ワークシートの <b>AutoFilter</b> オブジェクトを作成するには、手動で、または Range オブジェクトのメソッドを使用して、ワークシートの範囲のオートフィルターを有効にする <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> <b>必要</b> があります。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> (ことができますこのプロパティを使用する OLE オートメーション オブジェクトとそのオブジェクトのアプリケーションを取得)、指定したオブジェクトの作成者を表すオブジェクト。 読み取り専用。</summary>
+        <summary>指定したオブジェクトの作成元を表すオブジェクトを返します (OLE オートメーション オブジェクトでこのプロパティを使用すると、そのオブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Application" /> アプリケーションを取得できます)。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,7 +76,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定が適用される<see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" />オブジェクトです。</summary>
+        <summary>指定されたオブジェクトを適用 <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" /> します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,13 +103,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 読み取り専用 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FilterMode">
@@ -145,10 +132,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ワークシートがオート フィルター フィルター モードの場合は<b>True</b>を返します。 読み取り専用の <b>ブール値</b> です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>ワークシートが <b>オート</b> フィルター フィルター モードの場合は True を返します。 読み取り専用の <b>Boolean</b> です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,7 +160,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Filters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Filters" /> 、オート フィルター範囲のすべてのフィルターを表すコレクション。 読み取り専用。</summary>
+        <summary>オートフィルター <see cref="T:Microsoft.Office.Interop.Excel.Filters" /> 範囲のすべてのフィルターを表すコレクションを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -203,7 +188,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -231,7 +216,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />を指定したオート フィルターを適用する範囲を表すオブジェクト。</summary>
+        <summary>指定したオート <see cref="T:Microsoft.Office.Interop.Excel.Range" /> フィルターを適用する範囲を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -257,7 +242,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>によって返されるすべてのデータを表示します<see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" />オブジェクトです。</summary>
+        <summary>オブジェクトによって返されるデータを表示 <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" /> します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -284,10 +269,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Sort</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>列または列、および並べ替えの順序の並べ替えを取得、<see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" />コレクションです。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Sort" />
-        </value>
+        <summary>コレクションの並べ替えの列と並べ替え順序を取得 <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" /> します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Sort" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

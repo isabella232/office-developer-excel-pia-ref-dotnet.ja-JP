@@ -1,13 +1,5 @@
 <Type Name="AutoCorrect" FullName="Microsoft.Office.Interop.Excel.AutoCorrect">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="782c79cfc9bebcca05b2fc4c4e554571d4077391" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20572724" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AutoCorrect" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="782c79cfc9bebcca05b2fc4c4e554571d4077391" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006231" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCorrect" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoCorrect" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AutoCorrect" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoCorrect" />
@@ -30,10 +22,8 @@
   </Attributes>
   <Docs>
     <summary>曜日の先頭文字を大文字にするかどうか、2 文字目を小文字にするかどうかの設定と、置き換えを行う文字列など、Excel のオートコレクトの設定全体を表します。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Application.AutoCorrect" /> 、<b>オート コレクト</b>オブジェクトを返すプロパティです。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel._Application.AutoCorrect" /> を使用して <b>、AutoCorrect オブジェクトを取得</b> します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddReplacement">
@@ -60,10 +50,8 @@
         <Parameter Name="Replacement" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="What">
-          <b>文字列</b> が必要です。 置き換えられるテキストです。 この文字列がオート コレクト項目の配列に既に存在する場合は、新しいテキストで既存の代替テキストが置き換えられます。</param>
-        <param name="Replacement">
-          <b>文字列</b> が必要です。 置換文字列を指定します。</param>
+        <param name="What">文字列型 (<b>String</b>) の値を使用します。 修正する文字列を指定します。 指定した文字列が既にオートコレクト項目の配列に含まれている場合、既存の項目は無効になります。</param>
+        <param name="Replacement">文字列型 (<b>String</b>) の値を使用します。 置換後の文字列を指定します。</param>
         <summary>オートコレクト項目の配列に、新しい項目を追加します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -92,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel._Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,12 +111,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>リストの自動拡張が有効になっているかどうかを示す<b>ブール</b>値です。</summary>
+        <summary>リスト <b>に</b> 対して自動拡張が有効かどうかを示すブール値。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>空の行またはリストの横の列のセルに入力すると一覧が自動拡張が有効になっている場合、その行または列を含めるために展開されます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>自動展開が有効になっている場合は、リストの横にある空の行または列のセルに入力すると、リストが展開され、その行または列が含まれます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoFillFormulasInLists">
@@ -157,14 +143,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>自動入力一覧で作成された集計列の作成に影響します。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>このプロパティは、既存の集計列や自動入力を使わずに作成された集計列には影響しません。</para>
-          <para></para>
-        </remarks>
+        <summary>自動入力リストによって作成される集計列の作成に影響します。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>このプロパティは、既存の集計列や自動入力を使わずに作成された集計列には影響しません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CapitalizeNamesOfDays">
@@ -193,8 +175,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、曜日の先頭文字が大文字に自動的に。</summary>
+        <summary>曜日名の最初の文字が自動的に大文字になる場合は <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -225,8 +206,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は、CAPSLOCK キーの偶発的な使用を Microsoft Excel が自動的に修正します。</summary>
+        <summary>自動的に CAPS LOCK キーの偶発的な使用を修正する場合は <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -257,8 +237,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、Microsoft Excel が自動的に文を修正 (先頭文字大文字と小文字。</summary>
+        <summary>Microsoft Excel が自動的に文 (最初の単語) を大文字に修正する場合は <b>True</b> を指定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -286,14 +265,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DeleteReplacement">
@@ -319,8 +295,7 @@
         <Parameter Name="What" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="What">
-          <b>文字列</b> が必要です。 交換、オート コレクト項目の配列から削除する行に表示されるテキストです。 この文字列がオート コレクト項目の配列に存在しない場合このメソッドは失敗します。</param>
+        <param name="What">文字列型 (<b>String</b>) の値を使用します。 オートコレクト項目の配列から削除する項目の修正文字列を指定します。 指定した文字列がオートコレクト項目の配列に含まれていない場合、このメソッドは失敗します。</param>
         <summary>オートコレクト項目の配列から、指定した項目を削除します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -352,14 +327,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オート コレクトのオプション ボタンを表示または非表示にできます。 既定値は <b>True</b> です。</summary>
+        <summary>ユーザーが [オートコレクト オプション] ボタンを表示または非表示にできます。 既定値は <b>True</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>DisplayAutoCorrectOptions</b>プロパティは、Microsoft Office の設定です。 Microsoft Excel では、このプロパティを変更することは、他の Office アプリケーションにも影響します。</para>
-          <para>Excel のオート コレクトのオプションではボタンのみ表示されます、ハイパーリンクが自動的に作成するとします。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>DisplayAutoCorrectOptions</b> プロパティは、Office 全体についての設定です。 Excel でこのプロパティを変更すると、他の Office アプリケーションにも反映されます。</para>
+          <para>Excel では、ハイパーリンクが自動的に作成された場合にのみ、[オートコレクト オプション] ボタンが表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -419,14 +391,13 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">省略可能な<b>オブジェクト</b>です。 取得するオート コレクト項目の配列の行のインデックスです。 行は 2 つの要素を持つ 1 次元配列として返されます: 1、列内のテキストは、最初の要素と 2 番目の要素は、2 列目のテキストです。</param>
+        <param name="Index">省略 <b>可能なオブジェクト</b>です。 返されるオートコレクト項目の配列の行インデックスを指定します。 行は 2 つの要素を持つ 1 次元配列として返されます。最初の要素は列 1 のテキストで、2 番目の要素は列 2 のテキストです。</param>
         <summary>オートコレクト項目の配列を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>場合<paramref name="Index" />が指定されていない、このメソッドは、2 次元の配列を返します。 配列内の各行には、次の表に示すように、1 つの交換が含まれています。</para>
+        <remarks><para>指定 <paramref name="Index" /> しない場合、このメソッドは 2 次元配列を返します。 配列内の各行には、次の表に示すように、1 つの置換が含まれます。</para>
           <list type="table">
             <item>
-              <term>1</term>
+              <term>1 </term>
               <description>置換される文字列</description>
             </item>
             <item>
@@ -434,9 +405,8 @@
               <description>置換文字列</description>
             </item>
           </list>
-          <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.AutoCorrect.AddReplacement(System.String,System.String)" /> 、[置換] ボックスの一覧にエントリを追加する方法です。</para>
-          <para></para>
-        </remarks>
+          <para>置換後 <see cref="M:Microsoft.Office.Interop.Excel.AutoCorrect.AddReplacement(System.String,System.String)" /> のリストにエントリを追加するには、このメソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ReplaceText">
@@ -465,8 +435,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、オート コレクト項目のリスト内のテキストが自動的に置き換えられます。</summary>
+        <summary><b>True の</b> 場合は、オート コレクトの置換の一覧内のテキストが自動的に置き換えられる場合です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -497,8 +466,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は 2 文字が大文字で始まる単語が自動的に修正します。</summary>
+        <summary><b>True の</b> 場合は、2 文字の大文字で始まる単語が自動的に修正されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

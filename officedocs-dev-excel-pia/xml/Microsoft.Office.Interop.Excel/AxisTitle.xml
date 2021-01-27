@@ -1,13 +1,5 @@
 <Type Name="AxisTitle" FullName="Microsoft.Office.Interop.Excel.AxisTitle">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a15f79446668c559f53e688a0b4742e909d6504f" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578744" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AxisTitle" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a15f79446668c559f53e688a0b4742e909d6504f" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006154" /></Metadata><TypeSignature Language="C#" Value="public interface AxisTitle" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AxisTitle" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AxisTitle" />
   <TypeSignature Language="VB.NET" Value="Public Interface AxisTitle" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>グラフの軸ラベルを表します。</summary>
-    <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.Axis.AxisTitle" />を<b>返すプロパティ</b>オブジェクトを返すプロパティです。</para>
-      <para>オブジェクトを<b>返すプロパティ</b>が存在しないし、しない限り、使用することはできません、 <see cref="P:Microsoft.Office.Interop.Excel.Axis.HasTitle" /> 、軸のプロパティは<b>True</b>にします。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>プロパティを <see cref="P:Microsoft.Office.Interop.Excel.Axis.AxisTitle" /> 使用して <b>AxisTitle オブジェクトを取得</b> します。</para>
+      <para><b>AxisTitle オブジェクト</b>は存在しないし、軸のプロパティがTrue を指定しない限 <see cref="P:Microsoft.Office.Interop.Excel.Axis.HasTitle" /> り使用<b>できません</b>。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -60,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -97,8 +87,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>場合は、オブジェクト内のテキストは、オブジェクトのサイズを変更したときにフォント サイズを変更します。 既定値は <b>True</b> です。</summary>
+        <summary><b>True</b> の 場合は、オブジェクトのテキストは、オブジェクトのサイズが変更すると、フォント サイズが変更されます。 既定値は <b>True</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,7 +118,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 、オブジェクトの枠線を表すオブジェクト。</summary>
+        <summary>オブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 境界線を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -160,7 +149,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>軸ラベルの文字列です。</summary>
+        <summary>軸のタイトル テキストを指定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -192,17 +181,13 @@
         <Parameter Name="Length" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Start">省略可能な<b>オブジェクト</b>です。 返す先頭文字を指定します。 この引数に 1 を指定するか、省略すると、このプロパティは先頭文字から始まる文字列範囲を返します。</param>
-        <param name="Length">省略可能な<b>オブジェクト</b>です。 返す文字数を指定します。 この引数を省略した場合、このプロパティは、文字列の残りの部分を返します (以降後のすべての<paramref name="Start" />の文字)。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Characters" />オブジェクトのテキスト内の文字の範囲を表すオブジェクト。 テキスト文字列内の書式指定文字を<b>文字</b>オブジェクトを使用することができます。</summary>
+        <param name="Start">省略 <b>可能なオブジェクト</b>です。 返す先頭文字を指定します。 この引数に 1 を指定するか、省略すると、このプロパティは先頭文字から始まる文字列範囲を返します。</param>
+        <param name="Length">省略 <b>可能なオブジェクト</b>です。 返す文字数を指定します。 この引数を省略すると、このプロパティは文字列の残りの部分 (文字の後のすべて) を返 <paramref name="Start" /> します。</param>
+        <summary>オブジェクト テキスト内 <see cref="T:Microsoft.Office.Interop.Excel.Characters" /> の文字範囲を表すオブジェクトを返します。 <b>Characters</b> オブジェクトを使用して、テキスト文字列内の文字の書式を設定できます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Characters</b>オブジェクトは、コレクションはありません。</para>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" />オブジェクト、<see cref="M:Microsoft.Office.Interop.Excel.TextFrame.Characters(System.Object,System.Object)" />は、メソッドです。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Characters</b> オブジェクトはコレクションではありません。</para>
+          <para>オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> の場合 <see cref="M:Microsoft.Office.Interop.Excel.TextFrame.Characters(System.Object,System.Object)" /> はメソッドです。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -228,14 +213,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -290,7 +272,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.FillFormat" />塗りつぶしの書式指定されたグラフのプロパティを格納しているオブジェクト。</summary>
+        <summary>指定されたグラフ <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> の塗りつぶしの書式プロパティを含むオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -321,7 +303,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Font" />を指定したオブジェクトのフォントを表すオブジェクト。</summary>
+        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.Font" /> オブジェクトのフォントを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -349,10 +331,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />オブジェクトです。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
+        <summary>オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -382,12 +362,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または英語で、A1 形式の表記法を使用して、オブジェクトの数式を表す値を設定します。</summary>
-        <value>英語で、A1 形式の表記法を使用して、オブジェクトの数式です。</value>
-        <remarks>
-          <para>値の取得および設定が可能です。</para>
-          <para></para>
-        </remarks>
+        <summary>A1 参照形式のオブジェクトの数式を英語で表す値を取得または設定します。</summary>
+        <value>A1 参照形式のオブジェクトの数式を英語で指定します。</value>
+        <remarks><para>値の取得と設定が可能です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaLocal">
@@ -416,12 +394,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはユーザーの言語で、A1 形式の表記法を使用して、オブジェクトの数式を表す値を設定します。</summary>
-        <value>ユーザーの言語で、A1 形式の表記法を使用して、オブジェクトの数式です。</value>
-        <remarks>
-          <para>値の取得および設定が可能です。</para>
-          <para></para>
-        </remarks>
+        <summary>A1 参照形式のオブジェクトの数式をユーザーの言語で表す値を取得または設定します。</summary>
+        <value>ユーザーの言語で、A1 形式の表記を使用するオブジェクトの数式。</value>
+        <remarks><para>値の取得と設定が可能です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaR1C1">
@@ -450,12 +426,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または英語で、r1c1 形式の表記法を使用して、オブジェクトの数式を表す値を設定します。</summary>
-        <value>英語で、r1c1 形式の表記法を使用して、オブジェクトの数式です。</value>
-        <remarks>
-          <para>値の取得および設定が可能です。</para>
-          <para></para>
-        </remarks>
+        <summary>R1C1 参照形式のオブジェクトの数式を英語で表す値を取得または設定します。</summary>
+        <value>R1C1 形式の表記法を使用するオブジェクトの数式を英語で指定します。</value>
+        <remarks><para>値の取得と設定が可能です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FormulaR1C1Local">
@@ -484,12 +458,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはユーザーの言語で、r1c1 形式の表記法を使用して、オブジェクトの数式を表す値を設定します。</summary>
-        <value>ユーザーの言語で、r1c1 形式の表記法を使用して、オブジェクトの数式です。</value>
-        <remarks>
-          <para>値の取得および設定が可能です。</para>
-          <para></para>
-        </remarks>
+        <summary>R1C1 形式の表記法を使用して、ユーザーの言語でオブジェクトの数式を表す値を取得または設定します。</summary>
+        <value>ユーザーの言語で R1C1 形式の表記を使用するオブジェクトの数式。</value>
+        <remarks><para>値の取得と設定が可能です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -515,12 +487,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの高さを取得します。</summary>
+        <summary>オブジェクトの高さをポイント数で取得します。</summary>
         <value>オブジェクトのポイント単位の高さです。</value>
-        <remarks>
-          <para>読み取り専用。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HorizontalAlignment">
@@ -551,8 +521,7 @@
       <Docs>
         <summary>指定したオブジェクトの水平方向の配置を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>次の定数を使用することができます。</para>
+        <remarks><para>使用できる定数は次のとおりです。</para>
           <para>
             <b>xlCenter</b>
           </para>
@@ -569,8 +538,7 @@
             <b>xlRight</b>
           </para>
           <para>[!メモ] 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeInLayout">
@@ -599,15 +567,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>の軸ラベルはグラフのレイアウトと、グラフ レイアウト領域を占有する場合が決定します。 既定値は <b>True</b> です。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>このプロパティは、グラフが自動レイアウト モードであるかどうかに影響しません。  ユーザーは、グラフの上コマンドを使用してタイトルを追加する場合、グラフはサイズを変更するより小さい、Microsoft Office Excel 2003 のように。  タイトルを削除し、またはいずれかのタイトル オーバーレイ オプションを選択、グラフはグラフのタイトルが設定されていない場合と同様、大きいのサイズを変更します。</para>
-          <para></para>
-        </remarks>
+        <summary><b>True</b> を指定すると、グラフ レイアウトが決定された場合に軸タイトルがグラフ レイアウト領域を占領します。既定値は、<b>True</b> です。値の取得および設定が可能です。ブール型 (<b>Boolean</b>) の値を使用します。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>このプロパティは、グラフが自動レイアウト モードであるかどうかに影響しません。  ユーザーがグラフの上コマンドを使用してタイトルを追加した場合は、Microsoft Office Excel 2003 と同様に、グラフのサイズは小さく変更されます。  その後、ユーザーがタイトルを削除するか、いずれかのタイトル オーバーレイ オプションを選択した場合、グラフにタイトルが設定されていなかったときの状態まで、グラフのサイズは大きくなります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -636,7 +599,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Interior" />を指定したオブジェクトの内部を表すオブジェクト。</summary>
+        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> オブジェクトの内部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -667,7 +630,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフ エリアの左端からのオブジェクトの左端からポイント単位での距離です。</summary>
+        <summary>オブジェクトの左端からグラフ エリアの左側までの距離をポイント数で指定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -726,11 +689,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>テキストの方向。 90 度に –90 から整数値を指定できます。</summary>
+        <summary>テキストの向きを指定します。 -90 ~ 90°の整数値を指定できます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>方向</b>プロパティには、以下の定数のいずれかを指定できます。</para>
+        <remarks><para><b>Orientation プロパティ</b>には、次の定数のいずれかを指定できます。</para>
           <para>
             <b>xlDownward</b>
           </para>
@@ -743,9 +704,8 @@
           <para>
             <b>xlVertical</b>
           </para>
-          <para>OLAP データ ソースの階層の 1 つのフィールドに対してこのプロパティを設定する他のフィールドの方向同じ階層に設定します。 ディメンション フィールドは、行、列、およびピボット テーブル レポートのページ フィールド エリアにのみ配置できます。 メジャー フィールドは、データ エリアにのみ配置できます。 階層、またはデータ フィールドに<b>xlHidden</b>を設定、ピボット テーブル レポートから、階層、またはフィールドを削除します。</para>
-          <para></para>
-        </remarks>
+          <para>OLAP データ ソースの場合、ある階層の 1 つのフィールドに対してこのプロパティを設定すると、同じ階層のその他のフィールドにも同じ値が設定されます。ディメンション フィールドは、ピボットテーブル レポートの行フィールド、列フィールド、またはページ フィールドの各領域にのみ配置できます。メジャー フィールドは、データ エリアにのみ配置できます。階層、またはデータ フィールドに <b>xlHidden</b> を設定すると、ピボットテーブル レポートから削除されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -802,10 +762,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlChartElementPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフの軸タイトルの位置を設定または返します。 読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Excel.XlChartElementPosition" />。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlChartElementPosition" />
-        </value>
+        <summary>グラフ上の軸ラベルの位置を取得または設定します。 読み取り/書き込み <see cref="T:Microsoft.Office.Interop.Excel.XlChartElementPosition" /> 。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlChartElementPosition" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -835,14 +793,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの読み取り順序を設定または返します。</summary>
+        <summary>指定されたオブジェクトの読みの順序を返すか設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>ReadingOrder</b>プロパティには、以下の定数のいずれかを指定できます: <b>xlRTL</b> (右から左へ)、 <b>xlLTR</b> (左から右)、または<b>xlContext</b>。</para>
+        <remarks><para><b>ReadingOrder</b>プロパティには、次の定数のいずれかを指定できます: <b>xlRTL</b> (右から左<b>)、xlLTR</b> (左から右)、<b>または xlContext</b>。</para>
           <para>[!メモ] 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -897,8 +852,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>フォントが影付きフォントの場合、またはオブジェクトに影がある場合。</summary>
+        <summary><b>True</b> の 場合は、フォントが影付きフォントまたはオブジェクトに影がある場合です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -929,7 +883,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトのテキストを設定または返します。</summary>
+        <summary>指定されたオブジェクトのテキストを返すか設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -960,7 +914,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフ エリアの上端からポイント単位での距離です。</summary>
+        <summary>グラフ エリアの上からの距離をポイント数で指定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -993,9 +947,7 @@
       <Docs>
         <summary>指定したオブジェクトの垂直方向の配置を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>VerticalAlignment</b>プロパティには、以下の定数のいずれかを指定できます。</para>
+        <remarks><para><b>VerticalAlignment</b>プロパティには、次の定数のいずれかを指定できます。</para>
           <para>
             <b>xlBottom</b>
           </para>
@@ -1009,10 +961,9 @@
             <b>xlJustify</b>
           </para>
           <para>
-            <b>表示する、xlTop</b>
+            <b>xlTop</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Width">
@@ -1038,12 +989,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの幅を取得します。</summary>
+        <summary>オブジェクトの幅をポイント単位で取得します。</summary>
         <value>オブジェクトのポイント単位の高さです。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>値の取得のみ可能です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,13 +1,5 @@
 <Type Name="Databar" FullName="Microsoft.Office.Interop.Excel.Databar">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="5af0ef6023d3a14611c655e4cb96ffc4b3bf17c5" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587417" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Databar" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5af0ef6023d3a14611c655e4cb96ffc4b3bf17c5" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005650" /></Metadata><TypeSignature Language="C#" Value="public interface Databar" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Databar" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Databar" />
   <TypeSignature Language="VB.NET" Value="Public Interface Databar" />
@@ -30,14 +22,10 @@
   </Attributes>
   <Docs>
     <summary>データ バーの条件付き書式設定ルールを表します。範囲にデータ バーを使用すると、他のセルと相対的にセルの値を確認できます。</summary>
-    <remarks>
-      <para>すべての条件付き書式設定オブジェクトが含まれる、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />の子であるコレクション オブジェクトの<see cref="T:Microsoft.Office.Interop.Excel.Range" />コレクション。 データ バーのいずれかの方法を使用して書式指定規則を作成することができます、<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />または<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddDatabar" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />コレクションです。</para>
-      <para>使用する、<see cref="P:Microsoft.Office.Interop.Excel.Databar.MinPoint" />と<see cref="P:Microsoft.Office.Interop.Excel.Databar.MaxPoint" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> 、最短の棒と最長の棒のデータの範囲の値を設定するオブジェクト。 これらのプロパティを返す、<see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" />オブジェクト、しきい値を評価する方法を指定できます。</para>
-      <para></para>
-    </remarks>
-    <example>
-      <para>次の例では、データの範囲を作成し、範囲にデータ バーを適用します。 範囲内に、非常に低い値と高い値があるため、中間値があるような長さのデータ バーが表示されます。 サンプル コードを使用して、中間値を明確に区別する、 <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> 、しきい値が百分位に評価される方法を変更するオブジェクトです。</para>
-    </example>
+    <remarks><para>すべての条件付き書式オブジェクトは、コレクション <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> の子であるコレクション オブジェクト内に含 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> まれます。 データ バーの書式設定ルールは、コレクションのまたはメソッド <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> を使用 <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddDatabar" /> して作成 <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> できます。</para>
+      <para>オブジェクトのプロパティとプロパティを使用して、データ範囲の最短の棒と最長の棒の値 <see cref="P:Microsoft.Office.Interop.Excel.Databar.MinPoint" /> <see cref="P:Microsoft.Office.Interop.Excel.Databar.MaxPoint" /> <see cref="T:Microsoft.Office.Interop.Excel.Databar" /> を設定します。 これらのプロパティは、しきい値の評価方法を指定できるオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> を返します。</para>
+      <para> </para></remarks>
+    <example><para>次の例は、データの範囲を作成し、範囲にデータ バーを適用します。 範囲に非常に低い値と高い値があるため、中間値は同じような長さのデータ バーになることがわかります。 中間値をあいまいにするために、サンプル コードはオブジェクトを使用して、しきい値をパーセントに評価する方法 <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> を変更します。</para></example>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,13 +51,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Office Excel アプリケーションを表すオブジェクト。 オブジェクト修飾子を使用する場合、このプロパティは、指定したオブジェクトの作成元を表す <b>Application</b> オブジェクトを返します。 読み取り専用です。</summary>
-        <value>
-          <b>アプリケーション</b>(上記参照)</value>
-        <remarks>
-          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクト用のアプリケーションを取得できます。</para>
-          <para></para>
-        </remarks>
+        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Excel アプリケーションのオブジェクトをMicrosoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> します。 オブジェクト修飾子を指定した場合、指定したオブジェクトを作成した <b>Application</b> オブジェクトを取得します。 値の取得のみ可能です。</summary>
+        <value><b>アプリケーション</b> (上記を参照)</value>
+        <remarks><para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、オブジェクトのアプリケーションを取得できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AppliesTo">
@@ -95,10 +80,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの書式設定ルールを適用するセル範囲を指定します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Range" />
-        </value>
+        <summary>書式設定ルール <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を適用するセル範囲を指定するオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Range" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,12 +108,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>データ バーの条件付き書式を持つセルの軸の色を取得します。</summary>
-        <value>データ バーの条件付き書式を持つセルの軸の色。</value>
-        <remarks>
-          <para>読み取り専用。</para>
-          <para></para>
-        </remarks>
+        <summary>条件付き書式をデータ バーとして持つセルの軸の色を取得します。</summary>
+        <value>条件付き書式をデータ バーとして使用するセルの軸の色を指定します。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AxisPosition">
@@ -159,13 +140,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlDataBarAxisPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または条件付き書式ルールで指定されたデータ バーの軸の位置を設定します。</summary>
+        <summary>条件付き書式ルールで指定されたデータ バーの軸の位置を取得または設定します。</summary>
         <value>条件付き書式ルールで指定されたデータ バーの軸の位置を指定します。</value>
-        <remarks>
-          <para>値の取得および設定が可能です。</para>
-          <para>データ バーの軸が表示される場合にのみ、<see cref="P:Microsoft.Office.Interop.Excel.Databar.AxisPosition" />プロパティは、いずれかの<see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisAutomatic" />または<see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisMidpoint" />、データ バーの条件付き書式ルールで指定された値の範囲内に負の値が存在する場合とします。 既定値、<see cref="P:Microsoft.Office.Interop.Excel.Databar.AxisPosition" />プロパティは、 <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisAutomatic" />。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>値の取得と設定が可能です。</para>
+          <para>データ バーの軸は、プロパティがいずれかの場合、または、データ バーの条件付き書式ルールで指定された値の範囲に負の値がある場合 <see cref="P:Microsoft.Office.Interop.Excel.Databar.AxisPosition" /> <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisAutomatic" /> <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisMidpoint" /> にのみ表示されます。 プロパティの既定値 <see cref="P:Microsoft.Office.Interop.Excel.Databar.AxisPosition" /> は次の値です <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarAxisPosition.xlDataBarAxisAutomatic" /> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BarBorder">
@@ -191,12 +170,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DataBarBorder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>データ バーの境界線を指定するオブジェクトを取得します。</summary>
-        <value>データ バーの境界線を指定するオブジェクト。</value>
-        <remarks>
-          <para>読み取り専用。</para>
-          <para></para>
-        </remarks>
+        <summary>データ バーの罫線を指定するオブジェクトを取得します。</summary>
+        <value>データ バーの罫線を指定するオブジェクト。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BarColor">
@@ -222,10 +199,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.FormatColor" />オブジェクトのデータ バーの条件付き書式でバーの色を変更するのには使用することできます。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>データ バーの <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> 条件付き書式でバーの色を変更するために使用できるオブジェクトを返します。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,13 +230,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlDataBarFillType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定の方法、データ バーは、色で塗りつぶされます。</summary>
+        <summary>データ バーの色の塗りつぶし方法を取得または設定します。</summary>
         <value>データ バーを色で塗りつぶす方法を指定します。</value>
-        <remarks>
-          <para>値の取得および設定が可能です。</para>
-          <para>既定値、<see cref="P:Microsoft.Office.Interop.Excel.Databar.BarFillType" />プロパティは、 <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarFillType.xlDataBarFillGradient" />。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>値の取得と設定が可能です。</para>
+          <para>プロパティの既定値 <see cref="P:Microsoft.Office.Interop.Excel.Databar.BarFillType" /> は次の値です <see cref="F:Microsoft.Office.Interop.Excel.XlDataBarFillType.xlDataBarFillGradient" /> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -287,14 +260,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>定数、<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />をこのオブジェクトの作成元アプリケーションを示す列挙型。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 <see cref="P:Microsoft.Office.Interop.Excel.Databar.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <summary>このオブジェクトが作成されたアプリケーション <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> を示す列挙の定数を返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ <see cref="P:Microsoft.Office.Interop.Excel.Databar.Creator" /> Macintosh 用の Microsoft Excel で使用するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -348,13 +317,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または、databar の表示方向を設定します。</summary>
-        <value>Databar の方向が表示されます。</value>
-        <remarks>
-          <para>値の取得および設定が可能です。</para>
-          <para>次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.Constants" />: <see cref="F:Microsoft.Office.Interop.Excel.Constants.xlContext" />、 <see cref="F:Microsoft.Office.Interop.Excel.Constants.xlLTR" /> (左から右)、または<see cref="F:Microsoft.Office.Interop.Excel.Constants.xlRTL" />(右から左へ)。</para>
-          <para></para>
-        </remarks>
+        <summary>データ バーが表示される方向を取得または設定します。</summary>
+        <value>データ バーを表示する方向を指定します。</value>
+        <remarks><para>値の取得と設定が可能です。</para>
+          <para>使用できる値は、次のとおりです。(左から右)、または <see cref="T:Microsoft.Office.Interop.Excel.Constants" /> <see cref="F:Microsoft.Office.Interop.Excel.Constants.xlContext" /> <see cref="F:Microsoft.Office.Interop.Excel.Constants.xlLTR" /> <see cref="F:Microsoft.Office.Interop.Excel.Constants.xlRTL" /> (右から左)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Formula">
@@ -383,14 +350,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>アイコン セットの適用対象となる値を決定する数式を表す<b>文字列</b>を設定または返します。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
-        <remarks>
-          <para>プロパティは、条件フォーマットを表示する値の範囲を限定するときに便利です。一般的には、数値範囲に正の値と負の値の両方が含まれる場合です。この数値範囲の条件フォーマットを複数作成し、1 つを正の値用、もう 1 つを負の値用とします。</para>
-          <para></para>
-        </remarks>
+        <summary>アイコン セットが適用される値を決定する数式を表す文字列型 (<b>String</b>) の値を取得または設定します。</summary>
+        <value><b>String</b></value>
+        <remarks><para>プロパティは、条件フォーマットを表示する値の範囲を限定するときに便利です。一般的には、数値範囲に正の値と負の値の両方が含まれる場合です。この数値範囲の条件フォーマットを複数作成し、1 つを正の値用、もう 1 つを負の値用とします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxPoint">
@@ -416,14 +379,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ConditionValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" />データ バーの条件付き書式の最長の棒が評価される方法を指定するオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" />
-        </value>
-        <remarks>
-          <para>型との評価の値を指定するにを使用して、<see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" />と<see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Value" />のプロパティです。</para>
-          <para></para>
-        </remarks>
+        <summary>データ バーの <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> 条件付き書式に対して最長の棒を評価する方法を指定するオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /></value>
+        <remarks><para>評価の種類と値は、プロパティを使用して <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" /> 指定 <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Value" /> できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MinPoint">
@@ -449,14 +408,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ConditionValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" />データ バーの条件付き書式に対する最短の棒を評価する方法を指定するオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" />
-        </value>
-        <remarks>
-          <para>型との評価の値を指定するにを使用して、<see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" />と<see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Value" />のプロパティです。</para>
-          <para></para>
-        </remarks>
+        <summary>データ バーの <see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /> 条件付き書式に対して最短のバーを評価する方法を指定するオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ConditionValue" /></value>
+        <remarks><para>評価の種類と値は、プロパティを使用して <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Type" /> 指定 <see cref="P:Microsoft.Office.Interop.Excel.ConditionValue.Value" /> できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ModifyAppliesToRange">
@@ -483,11 +438,9 @@
       <Docs>
         <param name="Range">書式のルールが適用される範囲を指定します。</param>
         <summary>書式のルールが適用されるセル範囲を設定します。</summary>
-        <remarks>
-          <para>範囲が A1 参照形式にする必要がありの親であるシート内で完全に収まること、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />コレクションです。 それは、範囲演算子 (コロン)、交差演算子 (スペース)、または union 演算子 (コンマ) を含めることができます。 ドル記号も使用できますが、それらは無視されます。</para>
+        <remarks><para>範囲は A1 参照スタイルで、コレクションの親であるシート内に完全に含まれている必要 <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> があります。 セル範囲には、範囲を表す演算子 (:)、共通部分を表す演算子 (スペース)、または複数の範囲を表す演算子 (,) を含めることができます。 ドル記号 ($) は含めることはできますが、無視されます。</para>
           <para>セル範囲の一部にローカルに定義した名前を使用できますが、その名前はコード記述時の言語で定義された名前である必要があります。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NegativeBarFormat">
@@ -513,13 +466,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.NegativeBarFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:Microsoft.Office.Interop.Excel.NegativeBarFormat" />データ バーの条件付き書式ルールに関連付けられているオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.NegativeBarFormat" />データ バーの条件付き書式ルールに関連付けられているオブジェクト。</value>
-        <remarks>
-          <para>読み取り専用。</para>
-          <para></para>
-        </remarks>
+        <summary>データ バー <see cref="T:Microsoft.Office.Interop.Excel.NegativeBarFormat" /> の条件付き書式ルールに関連付けられているオブジェクトを取得します。</summary>
+        <value>データ <see cref="T:Microsoft.Office.Interop.Excel.NegativeBarFormat" /> バーの条件付き書式ルールに関連付けられているオブジェクト。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -545,10 +495,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -578,14 +526,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはセルの幅に対する割合として、最長のデータ バーの長さを指定する<b>整数</b>値を設定します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>値は 0 から 100 までの整数である必要があります。</para>
-          <para></para>
-        </remarks>
+        <summary>最長のデータ バーの長さをセルの幅に対する割合として指定する整数型 <b>(Integer)</b> の値を取得または設定します。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>この値には、0 から 100 までの整数を指定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PercentMin">
@@ -614,14 +558,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>最短データ バーの長さをセルの幅のパーセンテージで指定する<b>整数</b>値を設定を取得または取得します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>値は 0 から 100 までの整数である必要があります。</para>
-          <para></para>
-        </remarks>
+        <summary>最短のデータ バーの長さをセルの幅に対する割合で指定する整数型 <b>(Integer)</b> の値を取得または設定します。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>この値には、0 から 100 までの整数を指定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Priority">
@@ -651,13 +591,9 @@
       </ReturnValue>
       <Docs>
         <summary>条件付き書式ルールの優先度の値を取得、または設定します。優先度は、ワークシート内に複数の条件付き書式ルールが存在する場合、その評価の順序を決定します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>優先度の値は、1 からワークシート上の条件付き書式ルールの合計数までの正の整数を設定する必要があります。優先度の値は、ワークシート上のすべてのルールに対して固有である必要があるので、特定の条件付き書式ルールの優先度の値を変更すると、ワークシート上のほかのルールの値も変更される可能性があります。</para>
-          <para></para>
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>優先度の値は、1 からワークシート上の条件付き書式ルールの合計数までの正の整数を設定する必要があります。優先度の値は、ワークシート上のすべてのルールに対して固有である必要があるので、特定の条件付き書式ルールの優先度の値を変更すると、ワークシート上のほかのルールの値も変更される可能性があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PTCondition">
@@ -683,10 +619,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>条件付き書式がピボットテーブル チャートに適用されるかどうかを表すブール型 (<b>Boolean</b>) の値を返します。値の取得のみ可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>条件付き書式がピボットテーブル チャートに適用されるかどうかを表すブール型 (<b>Boolean</b>) の値を返します。 読み取り専用です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -716,14 +650,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotConditionScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定の定数のいずれか、<see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />列挙値は、ピボット テーブル チャートに適用されるときに、条件付き書式の範囲を決定します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
-        </value>
-        <remarks>
-          <para>既定値は、<see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />を使用して、スコープを設定する、<see cref="P:Microsoft.Office.Interop.Excel.Databar.AppliesTo" />プロパティ。</para>
-          <para></para>
-        </remarks>
+        <summary>ピボットテーブル グラフに適用される条件付き書式の範囲を決定する、列挙の定数の 1 つを取得または <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> 設定します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /></value>
+        <remarks><para>既定値は、 <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" /> プロパティを使用して範囲を設定 <see cref="P:Microsoft.Office.Interop.Excel.Databar.AppliesTo" /> します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetFirstPriority">
@@ -748,12 +678,10 @@
       <Parameters />
       <Docs>
         <summary>条件付き書式ルールの優先度の値を "1" に設定し、ワークシート内の他のルールより先に評価されるようにします。</summary>
-        <remarks>
-          <para>ワークシート内に複数の条件付き書式ルールがあり、指定したルールがもともと優先度 "1" に設定されていなかった場合、このメソッドを使用すると、優先度にこのルールより小さい値が設定されていたルールは、優先順位が 1 つ下がります。</para>
+        <remarks><para>ワークシート内に複数の条件付き書式ルールがあり、指定したルールがもともと優先度 "1" に設定されていなかった場合、このメソッドを使用すると、優先度にこのルールより小さい値が設定されていたルールは、優先順位が 1 つ下がります。</para>
           <para>
             <b>注</b>: 条件付き書式ルールの優先度レベルは、ワークシート レベルで適用されます。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetLastPriority">
@@ -778,12 +706,10 @@
       <Parameters />
       <Docs>
         <summary>条件付き書式ルールの順位を設定し、ワークシート上の他のすべてのルールの後に評価されるようにします。</summary>
-        <remarks>
-          <para>優先度の実際の値は、ワークシート上の条件付き書式ルールの合計数と同じになります。 ワークシート内に複数の条件付き書式ルールがある場合、このメソッドに優先度の値を 1 つずつ増やすには、このルールよりも大きい必要があった規則の優先順位が発生します。</para>
+        <remarks><para>このメソッドで設定される実際の優先度の値は、ワークシート上の条件付き書式ルールの数と一致します。 ワークシート内に複数の条件付き書式ルールがある場合、このメソッドを使用すると、優先度にこのルールより大きい値が設定されていたルールは、優先順位が 1 つ上がります。</para>
           <para>
             <b>注</b>: 条件付き書式ルールの優先度レベルは、ワークシート レベルで適用されます。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowValue">
@@ -812,10 +738,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または範囲にデータ バーの条件付き書式が適用されている場合、セルの値が表示されるかどうかを指定する<b>ブール</b>値を設定します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>データ バーの条件付き書式が範囲に適用されるかどうかをセルの値が表示するかどうかを指定するブール型 (<b>Boolean</b>) の値を取得または設定します。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -842,14 +766,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、現在のルールが<b>True</b>と評価された場合にセルに追加の書式設定ルールを評価するかどうかを決定する<b>ブール</b>値を設定します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>下位互換性をサポートするためにこのプロパティの既定値は<b>False</b>、書式の反対側の動作は、ユーザー インターフェイスで作成されたルールです。</para>
-          <para></para>
-        </remarks>
+        <summary>現在のルールが <b>True</b> に評価された場合、そのセルの書式ルールをさらに評価するかどうかを表すブール型 (<b>Boolean</b>) の値を取得、または設定します。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>以前のバージョンとの互換性を保つために、このプロパティの既定値は、<b>False</b> に設定されています。これは、ユーザー インターフェイスで書式ルールを作成した場合と逆の状態となります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -875,14 +795,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>定数のいずれかを取得、<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />列挙体は、条件付き書式の種類を指定します。 読み取り専用。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>このプロパティが常と同等である「4」は、<b>整数</b>値を返します<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlDatabar" />。</para>
-          <para></para>
-        </remarks>
+        <summary>条件付き書式の種類を指定する列挙の <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> 定数の 1 つを返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>このプロパティは常に整数 <b>値</b> "4" を返します。これは、 <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlDatabar" /> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
