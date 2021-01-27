@@ -1,13 +1,5 @@
 <Type Name="ModelConnection" FullName="Microsoft.Office.Interop.Excel.ModelConnection">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fd5c31aae4d45548f7153f5488725dde8ae8c9ee" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587494" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ModelConnection" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fd5c31aae4d45548f7153f5488725dde8ae8c9ee" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011684" /></Metadata><TypeSignature Language="C#" Value="public interface ModelConnection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ModelConnection" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ModelConnection" />
   <TypeSignature Language="VB.NET" Value="Public Interface ModelConnection" />
@@ -30,10 +22,8 @@
   </Attributes>
   <Docs>
     <summary>統合データ モデルと連動する、Excel 2013 で導入された新しいモデル接続タイプの情報を含みます。</summary>
-    <remarks>
-      <para>モデルに接続されているすべてのピボット テーブルを使用して、ある必要が新しい「特殊な」ブック接続常に存在する (および削除することはできません) データ モデルを持つブックであります。 ブックのモデルが最初に作成されたときに作成されます。 この特別なブック接続でのすべてのプロパティは、読み取り専用です。 名前: ブックのデータ モデルです。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>モデルに接続されているピボットテーブルすべてで使用するには、データ モデルを持つブックに常に存在する (削除できない) 新しい "特殊な" ブック接続があります。 モデルがブックに最初に作成されると、そのモデルが作成されます。 この特別なブック接続のすべてのプロパティは読み取り専用です。 その名前はブック データ モデルです。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ADOConnection">
@@ -59,7 +49,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ADO 接続オブジェクトを使用して、データ ソースへの開いた接続を作成できます。 Powerview、エンジンへの直接接続を作成するなど、アドインを有効にし、したがってデータ モデルです。 <b>ADOConnection</b>オブジェクト読み取り専用です。</summary>
+        <summary>ADO Connection オブジェクトは、データ ソースへの開いている接続を作成するために使用されます。 Powerview などのアドインで、エンジンとデータ モデルとの直接接続を作成できます。 <b>ADOConnection オブジェクト</b> 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Excel アプリケーションを表すオブジェクト。 読み取り専用。</summary>
+        <summary>Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,12 +136,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したデータ ソースにコマンド文字列を設定または返します。 <b>オブジェクト</b>(C# での<b>オブジェクト</b>を)読み取り/書き込み</summary>
+        <summary>指定したデータ ソース用のコマンド文字列を返すか設定します。 <b>オブジェクト</b> (C#<b>の</b> オブジェクト) 読み取り/書き込み</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>これは、テーブル (テーブルの名前、モデル) またはテーブルに評価される、DAX 式です。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>これは、(モデル テーブルの) テーブル名またはテーブルに評価される DAX 式のいずれかです。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CommandType">
@@ -180,13 +168,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCmdType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定のいずれか、<see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" />定数。 読み取り/書き込み</summary>
+        <summary>定数の 1 つを取得または <see cref="T:Microsoft.Office.Interop.Excel.XlCmdType" /> 設定します。 読み取り/書き込み</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>ModelConnection</b>オブジェクトでは、この型は、 <b>xlCmdTable</b>または<b>xlCmdDAX</b>のいずれかに設定されます。 <b>XlCmdCube</b>の種類のデータ モデルには、 <b>ThisWorkbookDataModel</b>の分離の接続になります。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>ModelConnection</b> オブジェクトの場合、この種類は <b>xlCmdTable</b> または <b>xlCmdDAX</b> のいずれかに設定されます。データ モデルに対する分離された接続 <b>ThisWorkbookDataModel</b> の種類は <b>xlCmdCube</b> です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -212,12 +197,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。 読み取り専用の<b>整数値</b>(C# では<b>int</b> )。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 読み取り<b>専用の整数</b><b>(C#</b>の整数)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Excel で作成された、ために、このプロパティは、5843454 C は、文字列「クリエーター」を表す 16 進値を返します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>オブジェクトは Excel で作成されたため、このプロパティは文字列 "XCEL" を表す 16 進数の値 5843454C を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -243,7 +226,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した<b>ModelConnection</b>オブジェクトの親オブジェクトを表す<b>オブジェクト</b>を返します。 読み取り専用です。</summary>
+        <summary>指定した <b>ModelConnection</b> オブジェクトの親オブジェクトを表すオブジェクト型 (<b>Object</b>) の値を取得します。 値の取得のみ可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

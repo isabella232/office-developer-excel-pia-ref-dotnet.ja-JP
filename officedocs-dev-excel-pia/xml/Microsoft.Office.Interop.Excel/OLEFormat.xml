@@ -1,13 +1,5 @@
 <Type Name="OLEFormat" FullName="Microsoft.Office.Interop.Excel.OLEFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="61a7c8fcda1ae1bb96bf7ac4ce6f4954d1baef24" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584372" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OLEFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="61a7c8fcda1ae1bb96bf7ac4ce6f4954d1baef24" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011334" /></Metadata><TypeSignature Language="C#" Value="public interface OLEFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OLEFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.OLEFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface OLEFormat" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>OLE オブジェクト プロパティを含みます。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Shape.OLEFormat" /><b>OLEFormat</b>オブジェクトを取得するプロパティです。</para>
-      <para>場合、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />オブジェクトは、リンクまたは埋め込みオブジェクトの<b>OLEFormat</b>プロパティは失敗を表していません。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>OLEFormat <see cref="P:Microsoft.Office.Interop.Excel.Shape.OLEFormat" /> オブジェクトを取得するには、 <b>このプロパティを使用</b> します。</para>
+      <para>オブジェクトが <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> リンク オブジェクトまたは埋め込みオブジェクトを表す場合 <b>、OLEFormat</b> プロパティは失敗します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Activate">
@@ -85,7 +75,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,14 +103,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Object">
@@ -146,7 +133,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>この OLE オブジェクトに関連付けられた OLE オートメーション オブジェクトを返します。</summary>
+        <summary>この OLE オブジェクトに関連付けられている OLE オートメーション オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -202,7 +189,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトのプログラム id を返します。</summary>
+        <summary>オブジェクトのプログラム ID を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -229,7 +216,7 @@
         <Parameter Name="Verb" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Verb">省略可能な<b>オブジェクト</b>です。 この動詞は、OLE オブジェクトのサーバーが処理する必要があります。 この引数を省略すると、既定の動詞が送信されます。 使用できる動詞は、オブジェクトのソース アプリケーションによって決定されます。 OLE オブジェクトの一般的な動詞は、Open と Primary (によって表される、<see cref="T:Microsoft.Office.Interop.Excel.XlOLEVerb" />の定数<b>xlOpen</b>および<b>xlPrimary</b>)。</param>
+        <param name="Verb">省略 <b>可能なオブジェクト</b>です。 OLE オブジェクトのサーバーの動作を指定します。 この引数を省略すると、既定の OLE 動詞が送られます。 使用できる OLE 動詞は、オブジェクトのソース アプリケーションによって異なります。 OLE オブジェクトの一般的な動詞は、Open および Primary (定数 xlOpen および <see cref="T:Microsoft.Office.Interop.Excel.XlOLEVerb" /> <b>xlPrimary</b>で表されます) です。 <b></b></param>
         <summary>指定した OLE オブジェクトのサーバーに対して OLE 動詞を送ります。</summary>
         <remarks>To be added.</remarks>
       </Docs>

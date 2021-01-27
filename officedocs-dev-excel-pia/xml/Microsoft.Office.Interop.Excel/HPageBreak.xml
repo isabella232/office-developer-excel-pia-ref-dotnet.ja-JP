@@ -1,13 +1,5 @@
 <Type Name="HPageBreak" FullName="Microsoft.Office.Interop.Excel.HPageBreak">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="810cb48a90322f18dd49494e6eee45563ac06ba7" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585450" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface HPageBreak" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="810cb48a90322f18dd49494e6eee45563ac06ba7" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012118" /></Metadata><TypeSignature Language="C#" Value="public interface HPageBreak" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract HPageBreak" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.HPageBreak" />
   <TypeSignature Language="VB.NET" Value="Public Interface HPageBreak" />
@@ -30,15 +22,11 @@
   </Attributes>
   <Docs>
     <summary>水平な改ページを表します。</summary>
-    <remarks>
+    <remarks><para><b>HPageBreak オブジェクト</b>はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> です。</para>
+      <para><b>HPageBreak オブジェクトを取得するには、HPageBreaks</b>( ) を使用します。ページ切り取りのインデックス <paramref name="index" /> <paramref name="index" /> 番号を<b>指定</b>します。</para>
       <para>
-        <b>HPageBreak</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" />コレクションです。</para>
-      <para>
-        <b>返すプロパティ</b>を使用して (<paramref name="index" />)、 <paramref name="index" /><b>HPageBreak</b>オブジェクトを返すため、改ページのインデックス番号です。</para>
-      <para>
-        <b>メモ</b> 海抜 1,026 水平な改ページ 1 枚の制限があります。</para>
-      <para></para>
-    </remarks>
+        <b>注</b>  シートごとに水平方向の改ページは 1,026 に制限されています。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -64,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,14 +80,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -151,14 +136,11 @@
         <Parameter Name="RegionIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Direction">必要な<see cref="T:Microsoft.Office.Interop.Excel.XlDirection" />。 改ページをドラッグする方向を指定します。 <b>可能</b>には、これらの定数のいずれかを指定できます:<b>xlDown</b><b>xlToRight</b><b>xlToLeft</b><b>xlUp</b></param>
-        <param name="RegionIndex">
-          <b>整数</b>が必要です。 (マウス ポインターのあるユーザーが改ページをドラッグする場合、マウス ボタンが押されたときに、領域) 改ページの印刷領域インデックスです。 印刷領域が連続している場合は、1 つだけの印刷領域を設定することはできます。 印刷領域が連続していない場合は、1 つ以上の印刷領域を設定することはできます。</param>
+        <param name="Direction">必須 <see cref="T:Microsoft.Office.Interop.Excel.XlDirection" /> 。 改ページをドラッグする方向を指定します。 <b>使用できる定数</b>は、次に示す<b>xlDown</b><b>xlToRight xlToLeft</b><b></b><b>xlUp です。</b></param>
+        <param name="RegionIndex">整数型 (<b>Integer</b>) の値を使用します。 改ページの印刷領域インデックスを指定します (ユーザーが改ページをドラッグする場合、マウス ボタンを押すときにマウス ポインターが位置する領域)。 印刷領域が連続している場合、印刷領域は 1 つのみです。 印刷領域が同じでない場合は、複数の印刷領域があります。</param>
         <summary>改ページ プレビューで表示されている場合、改ページを印刷領域の外にドラッグします。</summary>
-        <remarks>
-          <para>このメソッドは、主にマクロの記録に存在します。 使用することができます、<see cref="M:Microsoft.Office.Interop.Excel.HPageBreak.Delete" />プログラムを使用してページ区切りを削除する方法です。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このメソッドは主にマクロ記録用です。 このメソッドを使用 <see cref="M:Microsoft.Office.Interop.Excel.HPageBreak.Delete" /> すると、プログラムによってページ切りを削除できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Extent">
@@ -184,13 +166,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPageBreakExtent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したページ区切りの種類を返します: 全画面表示または印刷領域内でのみです。</summary>
+        <summary>指定したページ切り取り (全画面または印刷領域内のみ) の種類を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>エクステント</b>プロパティには、次のいずれかを指定できる<see cref="T:Microsoft.Office.Interop.Excel.XlPageBreakExtent" />定数: <b>xlPageBreakFull</b>または<b>xlPageBreakPartial</b>です。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Extent プロパティ</b>には、次の定数のいずれかを指定 <see cref="T:Microsoft.Office.Interop.Excel.XlPageBreakExtent" /> できます: <b>xlPageBreakFull</b>または<b>xlPageBreakPartial</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -219,12 +198,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>セルの設定を取得または設定 (、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクト) 改ページ位置を定義します。</summary>
+        <summary>ページ切り取り位置を定義するセル (オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Range" /> ) を取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>水平な改ページは、位置のセルの上端に揃えて配置されます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>水平な改ページは、位置セルの上端に揃えて配置されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -281,11 +258,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPageBreak</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>改ページの種類を設定または返します。</summary>
+        <summary>ページ割り当ての種類を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlPageBreak" />これらの定数のいずれかできます。</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlPageBreak" /> 使用できる定数は、次に示す定数の 1 つです。</para>
           <para>
             <b>xlPageBreakAutomatic</b>
           </para>
@@ -295,8 +271,7 @@
           <para>
             <b>xlPageBreakNone</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

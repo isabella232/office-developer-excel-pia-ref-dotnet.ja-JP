@@ -1,13 +1,5 @@
 <Type Name="XmlNamespaces" FullName="Microsoft.Office.Interop.Excel.XmlNamespaces">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ac6aaff6a7a94436f8945b52b3a9d34e20f3ae1c" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20574089" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XmlNamespaces : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ac6aaff6a7a94436f8945b52b3a9d34e20f3ae1c" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012720" /></Metadata><TypeSignature Language="C#" Value="public interface XmlNamespaces : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XmlNamespaces implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.XmlNamespaces" />
   <TypeSignature Language="VB.NET" Value="Public Interface XmlNamespaces&#xA;Implements IEnumerable" />
@@ -33,13 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションを表す<see cref="T:Microsoft.Office.Interop.Excel.XmlNamespace" />ブック内のオブジェクト。</summary>
-    <remarks>
-      <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.XmlNamespaces.Item(System.Object)" /> 、特定の<b>XmlNamespace</b>オブジェクトにアクセスするプロパティ。</para>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.XmlNamespaces.Value" />のブックに追加されている名前空間を一覧表示する<b>文字列</b>を返すプロパティです。</para>
-      <para></para>
-    </remarks>
+    <summary>ブック内のオブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.XmlNamespace" /> コレクションを表します。</summary>
+    <remarks><para>XML 機能は、ファイルを XML スプレッドシート形式で保存する場合を除き、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用できます。</para>
+      <para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.XmlNamespaces.Item(System.Object)" /> を使用して、特定の <b>XmlNamespace オブジェクトにアクセス</b> します。</para>
+      <para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.XmlNamespaces.Value" /> を使用して、ブックに追加された名前空間の一覧を示す文字列 型 <b>(String)</b> の値を取得します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,7 +90,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 読み取り専用。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,13 +146,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 読み取り専用 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -220,15 +207,12 @@
         <Parameter Name="InstallForAllUsers" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Path">
-          <b>文字列</b> が必要です。 XML 拡張パックのパスとファイル名を指定します。</param>
-        <param name="InstallForAllUsers">オプションの <b>Boolean</b>。 <b>True</b>では、XML 拡張パックをインストールや、コンピューター上のすべてのユーザーが利用できるようにします。 現在のユーザーのみ使用可能 XML 拡張パックを<b>false</b>になります。 既定では <b>false を指定</b> します。</param>
+        <param name="Path"><b>文字列</b> が必要です。 XML 拡張パックのパスとファイル名を指定します。</param>
+        <param name="InstallForAllUsers">オプション <b>のブール値 です</b>。 <b>True</b> の場合は、XML 拡張パックをインストールし、そのマシンを使用するすべてのユーザーが XML 拡張パックを使用できます。 <b>False</b> の場合は、現在のユーザーだけが XML 拡張パックを使用できます。 既定の値は <b>False</b> です。</param>
         <summary>指定された XML 拡張パックをユーザーのコンピューターにインストールし、1 人または複数のユーザーが XML スマート ドキュメント ソリューションを使用できるようにします。</summary>
-        <remarks>
-          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
+        <remarks><para>XML 機能は、ファイルを XML スプレッドシート形式で保存する場合を除き、Microsoft Office Professional Edition 2003 および excel 2003 Microsoft Officeでのみ使用できます。</para>
           <para>セキュリティの目的で、署名されていないマニフェストをインストールすることはできません。マニフェストの詳細については、Microsoft Developer Network (MSDN) Web サイトにある「Smart Document Software Development Kit (SDK)」を参照してください。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -257,8 +241,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -287,7 +270,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -315,12 +298,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ブックに追加されている XML 名前空間を表す<b>文字列</b>を返します。</summary>
+        <summary>ブックに <b>追加</b> された XML 名前空間を表す文字列 を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ブックに複数の名前空間が含まれている場合、名前空間は、 <b>Value</b>プロパティによって返される文字列に空白で区切られます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>ブックに複数の名前空間が含まれている場合、名前空間は Value プロパティによって返される文字列内の空白スペースで <b>区切</b> ります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

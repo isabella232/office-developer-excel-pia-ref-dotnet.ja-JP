@@ -1,13 +1,5 @@
 <Type Name="DiagramNodes" FullName="Microsoft.Office.Interop.Excel.DiagramNodes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8b783198df288a3b7154523a089925c4fe1d17c2" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578275" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface DiagramNodes : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8b783198df288a3b7154523a089925c4fe1d17c2" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012517" /></Metadata><TypeSignature Language="C#" Value="public interface DiagramNodes : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DiagramNodes implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DiagramNodes" />
   <TypeSignature Language="VB.NET" Value="Public Interface DiagramNodes&#xA;Implements _IMsoDispObj, IEnumerable" />
@@ -33,12 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" />、ダイアグラム内のすべてのノードを表すオブジェクト。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Diagram.Nodes" /><b>DiagramNodes</b>コレクションを取得するのには<b>図</b>オブジェクトのプロパティです。 使用して、<see cref="M:Microsoft.Office.Interop.Excel.DiagramNodes.Item(System.Object)" />を選択し、図の 1 つの図表ノードを操作するメソッドです。</para>
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.DiagramNodes.SelectAll" />を選択し、図のすべてのノードを操作するメソッドです。</para>
-      <para></para>
-    </remarks>
+    <summary>図内 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> のすべてのノードを表すオブジェクトのコレクションです。</summary>
+    <remarks><para><see cref="P:Microsoft.Office.Interop.Excel.Diagram.Nodes" />DiagramNodes コレクションを<b>取得するには、Diagram</b>オブジェクト<b>のプロパティを使用</b>します。 このメソッド <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodes.Item(System.Object)" /> を使用して、図内の 1 つの図ノードを選択して処理します。</para>
+      <para>このメソッド <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodes.SelectAll" /> を使用して、図内のすべてのノードを選択して処理します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -67,7 +57,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -126,14 +116,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -191,8 +178,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

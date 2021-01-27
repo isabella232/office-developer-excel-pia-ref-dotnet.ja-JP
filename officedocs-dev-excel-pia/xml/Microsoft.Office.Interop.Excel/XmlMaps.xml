@@ -1,13 +1,5 @@
 <Type Name="XmlMaps" FullName="Microsoft.Office.Interop.Excel.XmlMaps">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3ab4ebaec8ea4dc2dcf83b59eb5f055efa1f1359" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20583679" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XmlMaps : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3ab4ebaec8ea4dc2dcf83b59eb5f055efa1f1359" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012755" /></Metadata><TypeSignature Language="C#" Value="public interface XmlMaps : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XmlMaps implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.XmlMaps" />
   <TypeSignature Language="VB.NET" Value="Public Interface XmlMaps&#xA;Implements IEnumerable" />
@@ -33,12 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションを表す<see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />ブックに追加されているオブジェクト。</summary>
-    <remarks>
-      <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.XmlMaps.Add(System.String,System.Object)" /> XML の対応付けをブックに追加する方法です。</para>
-      <para></para>
-    </remarks>
+    <summary>ブックに追加 <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> されたオブジェクトのコレクションを表します。</summary>
+    <remarks><para>XML 機能は、ファイルを XML スプレッドシート形式で保存する場合を除き、Microsoft Office Professional Edition 2003 および excel 2003 Microsoft Officeでのみ使用できます。</para>
+      <para>このメソッド <see cref="M:Microsoft.Office.Interop.Excel.XmlMaps.Add(System.String,System.Object)" /> を使用して、ブックに XML マップを追加します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -99,15 +89,12 @@
         <Parameter Name="RootElementName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Schema">
-          <b>文字列</b> が必要です。 XML マップとして追加されるスキーマです。 文字列は、スキーマ ファイル、またはスキーマ自体にパスを指定できます。 汎用名前付け規則 (UNC) または (URL) の形式でパスを指定することができます。</param>
-        <param name="RootElementName">省略可能な<b>文字列</b>です。 ルート要素の名前。 スキーマにルート要素が 1 つだけが含まれている場合、この引数を無視できます。</param>
-        <summary>指定されたブックに XML マップを追加します。 返します、<see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />オブジェクトです。</summary>
+        <param name="Schema"><b>文字列</b> が必要です。 XML マップとして追加されるスキーマを指定します。 文字列には、スキーマ ファイルへのパス、またはスキーマ自体へのパスを指定できます。 パスは、汎用名前付け規則 (UNC) または Uniform Resource Locator (URL) の形式で指定できます。</param>
+        <param name="RootElementName">文字列型 (<b>String</b>) の値を使用します。 ルート要素の名前を指定します。 スキーマにルート要素が 1 つしか含まれていない場合は、この引数は省略してもかまいません。</param>
+        <summary>指定されたブックに XML マップを追加します。 オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>XML 機能は、ファイルを XML スプレッドシート形式で保存する場合を除き、Microsoft Office Professional Edition 2003 および excel 2003 Microsoft Officeでのみ使用できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -133,7 +120,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 読み取り専用。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -189,13 +176,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 読み取り専用 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -256,8 +240,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -286,7 +269,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="_OLEObject" FullName="Microsoft.Office.Interop.Excel._OLEObject">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="af49a80aff9121295165535f61d74b6cd1d1256b" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20579976" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface _OLEObject" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="af49a80aff9121295165535f61d74b6cd1d1256b" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012685" /></Metadata><TypeSignature Language="C#" Value="public interface _OLEObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _OLEObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel._OLEObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface _OLEObject" />
@@ -29,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>これは、対応する COM オブジェクトと相互運用するためのマネージ コードで必要とされる COM コクラス内のプライマリ インターフェイスです。 メソッドを使用する COM オブジェクトのイベントと同じ名前を共有する場合にのみ、この主要なインタ フェースを使用します。メソッドを呼び出すには、このインターフェイスにこの例では、キャストし、イベントに接続するための最新のイベント インターフェイスにキャストします。 それ以外の場合、メソッド、プロパティ、および COM オブジェクトのイベントにアクセスする COM コクラスから派生した .NET インターフェイスを使用します。 COM オブジェクトの詳細についてを参照してください<see cref="T:Microsoft.Office.Interop.Excel.OLEObject" />。</summary>
+    <summary>これは、対応する COM オブジェクトとの相互運用性を得る目的でマネージ コードで必要とされる COM コクラスのプライマリ インターフェイスです。 このプライマリ インターフェイスは、使用するメソッドが COM オブジェクトのイベントと同じ名前を共有している場合にのみ使用します。この場合は、このインターフェイスにキャストしてメソッドを呼び出し、最新のイベント インターフェイスにキャストしてイベントに接続します。 それ以外の場合は、COM コクラスから派生した .NET インターフェイスを使用して、COM オブジェクトのメソッド、プロパティ、およびイベントにアクセスします。 COM オブジェクトの詳細については、以下を参照してください <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> 。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -119,7 +111,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティを取得、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> (ことができますこのプロパティを使用する OLE オートメーション オブジェクトとそのオブジェクトのアプリケーションを取得)、指定したオブジェクトの作成者を表すオブジェクト。 読み取り専用。</summary>
+        <summary>このプロパティは、指定したオブジェクトの作成元を表すオブジェクトを返します (OLE オートメーション オブジェクトでこのプロパティを使用すると、そのオブジェクトのアプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を取得できます)。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,14 +142,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、OLE オブジェクトが含まれているブックが開かれると、自動的にそのオブジェクトを読み込みます。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <summary><b>True</b> の場合は、OLE オブジェクトを含んでいるブックを開くと、そのオブジェクトが自動的にロードされます。 取得/設定が可能な <b>Boolean</b> 値です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ActiveX コントロールの場合、このプロパティの設定は無視されます。ブックが開かれるときは、常に ActiveX コントロールが自動的に読み込まれます。</para>
-          <para>ほとんどの種類の OLE オブジェクトには、このプロパティを<b>True</b>に設定する必要はありません。 既定では、 <b>AutoLoad</b>プロパティは<b>False</b>に設定新しい OLE オブジェクトこれによって保存時間とメモリは、Microsoft Excel のブックの読み込み時にします。 OLE オブジェクトを自動的に読み込むメリットは、揮発性データを表すオブジェクトのソース データへのリンクをすぐに再確立することができ、必要な場合にオブジェクトを再度表示可能です。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>ActiveX コントロールの場合、このプロパティの設定は無視されます。 ブックが開かれるときは、常に ActiveX コントロールが自動的に読み込まれます。</para>
+          <para>ほとんどの OLE オブジェクトの種類では、このプロパティをTrue に設定する <b>必要があります</b>。 既定では、新しい OLE オブジェクトに対して <b>AutoLoad</b> プロパティが <b>False</b> に設定されています。これにより、Microsoft Excel がブックを読み込む際の時間とメモリが節約されます。 OLE オブジェクトを自動的に読み込む利点は、揮発性データを表すオブジェクトの場合、ソース データへのリンクをすぐに再確立し、必要に応じてオブジェクトを再びレンダリングできるという利点があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AutoUpdate">
@@ -186,8 +175,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は、OLE オブジェクトが自動的に更新、ソースが変更されたとき。 オブジェクトがリンクされている場合にのみ有効です (その<see cref="P:Microsoft.Office.Interop.Excel._OLEObject.OLEType" />プロパティは、<b>対象となる</b>をする必要があります)。 読み取り専用の <b>ブール値</b> です。</summary>
+        <summary><b>True</b> の 場合は、ソースが変更すると、OLE オブジェクトが自動的に更新されます。 オブジェクトがリンクされている場合にのみ有効です (プロパティ <see cref="P:Microsoft.Office.Interop.Excel._OLEObject.OLEType" /> は <b>xlOLELink である必要があります</b>)。 読み取り専用の <b>Boolean</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -215,7 +203,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 、オブジェクトの枠線を表すオブジェクト。</summary>
+        <summary>オブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 境界線を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -243,7 +231,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの右下隅にあるセルを表すオブジェクト。 読み取り専用。</summary>
+        <summary>オブジェクトの右下隅にあるセルを表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -323,9 +311,9 @@
         <Parameter Name="Format" Type="Microsoft.Office.Interop.Excel.XlCopyPictureFormat" />
       </Parameters>
       <Docs>
-        <param name="Appearance">省略可能な<see cref="T:Microsoft.Office.Interop.Excel.XlPictureAppearance" />。 図をコピーする方法を指定します。</param>
-        <param name="Format">省略可能な<see cref="T:Microsoft.Office.Interop.Excel.XlCopyPictureFormat" />。 画像の形式です。</param>
-        <summary>選択しているオブジェクトを図としてクリップボードにコピーします。 <b>オブジェクト</b>です。</summary>
+        <param name="Appearance">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlPictureAppearance" /> 可能です。 図をコピーする方法を指定します。</param>
+        <param name="Format">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlCopyPictureFormat" /> 可能です。 ピクチャの形式を指定します。</param>
+        <summary>選択しているオブジェクトを図としてクリップボードにコピーします。 <b>オブジェクト 。</b></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -353,13 +341,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 読み取り専用<b>xlCreatorCode</b>。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 読み取り専用 <b>xlCreatorCode</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -385,10 +370,8 @@
       <Docs>
         <summary>オブジェクトを切り取り、クリップボードまたは指定された範囲に貼り付けます。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>対象がグラフのときは、埋め込みグラフのみを切り取ることができます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>対象がグラフのときは、埋め込みグラフのみを切り取ることができます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -438,7 +421,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>オブジェクトを複製し、その複製への参照を返します。</summary>
+        <summary>オブジェクトを複製し、複製されたオブジェクトへの参照を返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -469,8 +452,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、オブジェクトを使用できます。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <summary>オブジェクトが有効な場合は <b>True</b> です。 取得/設定が可能な <b>Boolean</b> 値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -501,7 +483,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトのポイント単位の高さです。 読み取り/書き込み <b>二重</b> です。</summary>
+        <summary>オブジェクトのポイント単位の高さです。 取得/設定が可能な <b>Double</b> 値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -529,7 +511,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ようなオブジェクトのコレクション内のオブジェクトのインデックス番号を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <summary>類似するオブジェクトのコレクション内のオブジェクトのインデックス番号を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -557,7 +539,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Interior" />を指定したオブジェクトの内部を表すオブジェクト。</summary>
+        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> オブジェクトの内部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -588,12 +570,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>列 A の左端 (ワークシートの場合)、またはグラフ エリアの左端 (グラフの場合) からオブジェクトの左端までのポイント単位の距離です。 読み取り/書き込み <b>二重</b> です。</summary>
+        <summary>列 A の左端 (ワークシートの場合)、またはグラフ エリアの左端 (グラフの場合) からオブジェクトの左端までのポイント単位の距離です。 取得/設定が可能な <b>Double</b> 値です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ウィンドウを最大化すると、このプロパティはウィンドウの境界線の幅に基づいて、変化する負の数を返します。 このプロパティを 0 (ゼロ) に設定すると、ウィンドウがアプリケーション ウィンドウを最大表示したかどうかはそれよりも少し小さくなります。 つまり、 <b>Left</b>プロパティに 0 (ゼロ) がある場合、Microsoft Excel のメイン ウィンドウの左側の境界線はかろうじて画面に表示されます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>ウィンドウが最大化されている場合、このプロパティはウィンドウ枠の幅に基づいて変化する負の数を返します。 このプロパティを 0 (ゼロ) に設定すると、アプリケーション ウィンドウが最大化された場合よりもウィンドウが小さくて少し小さになります。 つまり <b>、Left</b> プロパティが 0 (ゼロ) の場合、メインの Microsoft Excel ウィンドウの左罫線は画面にはほとんど表示されません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkedCell">
@@ -622,12 +602,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コントロールの値にリンクされているワークシートのセル範囲を設定または返します。 セルに値を設定する場合、コントロールはこのような値を使用します。 同様に、コントロールの値を変更すると、その値はまたセルに配置されます。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <summary>コントロールの値にリンクしたワークシートのセル範囲を示す文字列を設定します。セルに値を設定すると、コントロールもその値を取得します。同様に、コントロールの値を変更すると、その値がセルに設定されます。値の取得および設定が可能です。文字列型 (<b>String</b>) の値を使用します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>複数の項目を選択できるリスト ボックスでは、このプロパティを使用できません。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>複数の項目を選択できるリスト ボックスでは、このプロパティを使用できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListFillRange">
@@ -656,13 +634,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたリスト ボックスの塗りつぶしに使用するワークシートの範囲を設定または返します。 このプロパティを設定すると、リスト ボックス内の既存のリストが破棄されます。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <summary>指定されたリスト ボックスの設定に使用するワークシートのセル範囲を設定します。このプロパティを設定すると、リスト ボックス内の既存のリストはすべて破棄されます。値の取得および設定が可能です。文字列型 (<b>String</b>) の値を使用します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Excel では、指定したセル範囲に含まれる各セルの内容を読み込み、読み込んだ値をリスト ボックスに挿入します。指定したセル範囲内のセルに加えられた変更は、リスト ボックスにも反映されます。</para>
-          <para>リスト ボックスの一覧が作成されたかどうか、<see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" />メソッドでは、このプロパティが空の文字列を返します ("")。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel では、指定したセル範囲に含まれる各セルの内容を読み込み、読み込んだ値をリスト ボックスに挿入します。指定したセル範囲内のセルに加えられた変更は、リスト ボックスにも反映されます。</para>
+          <para>リスト ボックス内のリストがメソッドで作成された場合、このプロパティは空の文字列 <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" /> ("") を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -691,8 +667,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>オブジェクトがロックされている場合は<b>False</b>場合は、シートが保護されている場合、オブジェクトを変更できます。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
+        <summary><b>オブジェクト</b> がロックされている場合は <b>True、False</b> の場合は、シートが保護されているときにオブジェクトを変更できます。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -723,7 +698,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの名前を設定します。値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <summary>オブジェクトの名前を設定または返します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -751,7 +726,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>この OLE オブジェクトに関連付けられた OLE オートメーション オブジェクトを返します。 読み取り専用 <b>オブジェクト</b> 。</summary>
+        <summary>この OLE オブジェクトに関連付けられている OLE オートメーション オブジェクトを返します。 読み取り専用 <b>オブジェクト</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -779,7 +754,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>OLE オブジェクトの種類を返します。 <b>XlOLEType</b>定数は、次のいずれか:<b>対象となる</b>または<b>xlOLEEmbed</b>です。 オブジェクトがリンクされている場合は、<b>対象となる</b>を返します (ファイルの外部に存在する) か、オブジェクトが埋め込まれている場合は、 <b>xlOLEEmbed</b>を返します (に完全に含まれるファイル)。 読み取り専用 <b>オブジェクト</b> 。</summary>
+        <summary>OLE オブジェクトの種類を返します。 使用できる定数は <b>、XlOLEType</b> 定数である <b>xlOLELink</b> または <b>xlOLEEmbed です</b>。 オブジェクトがリンクされている (ファイルの外部に存在する) 場合は <b>xlOLELink</b> を返し、オブジェクトが埋め込まれている場合は <b>xlOLEEmbed</b> を返します (オブジェクトはファイル内に完全に含まれている)。 読み取り専用 <b>オブジェクト</b> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -816,30 +791,22 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトがクリックされたときに実行されるマクロの名前を設定または返します。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <summary>指定したオブジェクトがクリックされた場合に実行されるマクロの名前を取得または設定します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>メニュー項目にこのプロパティを設定すると、メニュー項目に登録されていたヘルプの設定が、登録したマクロのヘルプ設定に置き換えられます。</para>
-          <para></para>
-        </remarks>
-        <example>
-          <para>次の使用例は、図形 1 をクリックしたときに、ShapeClick プロシージャを実行するようにします。</para>
+        <remarks><para>メニュー項目にこのプロパティを設定すると、メニュー項目に登録されていたヘルプの設定が、登録したマクロのヘルプ設定に置き換えられます。</para>
+          <para> </para></remarks>
+        <example><para>次の使用例は、図形 1 をクリックしたときに、ShapeClick プロシージャを実行するようにします。</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(1).&lt;/span&gt;
 &lt;span class="label"&gt;OnAction&lt;/span&gt;
-&lt;span class="label"&gt;= "ShapeClick"&lt;/span&gt;</code>
-        </example>
-        <example>
-          <para>次の使用例は、図形 1 をクリックしたときに、ShapeClick プロシージャを実行するようにします。</para>
+&lt;span class="label"&gt;= "ShapeClick"&lt;/span&gt;</code></example>
+        <example><para>次の使用例は、図形 1 をクリックしたときに、ShapeClick プロシージャを実行するようにします。</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(1).&lt;/span&gt;
 &lt;span class="label"&gt;OnAction&lt;/span&gt;
-&lt;span class="label"&gt;= "ShapeClick"&lt;/span&gt;</code>
-        </example>
-        <example>
-          <para>次の使用例は、図形 1 をクリックしたときに、ShapeClick プロシージャを実行するようにします。</para>
+&lt;span class="label"&gt;= "ShapeClick"&lt;/span&gt;</code></example>
+        <example><para>次の使用例は、図形 1 をクリックしたときに、ShapeClick プロシージャを実行するようにします。</para>
           <code>&lt;span class="label"&gt;Worksheets(1).Shapes(1).&lt;/span&gt;
 &lt;span class="label"&gt;OnAction&lt;/span&gt;
-&lt;span class="label"&gt;= "ShapeClick"&lt;/span&gt;</code>
-        </example>
+&lt;span class="label"&gt;= "ShapeClick"&lt;/span&gt;</code></example>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -865,7 +832,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -896,10 +863,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトがその下のセルに関連付けられている方法を設定または返します。 読み取り/書き込みの<b>オブジェクト</b>です。</summary>
+        <summary>オブジェクトをその下のセルに接続する方法を設定または返します。 読み取り/書き込み <b>オブジェクト です</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>以下の定数のいずれかを使用します。</para>
+        <remarks><para>次のいずれかの定数を使用します。</para>
           <para>
             <b>xlFreeFloating</b>
           </para>
@@ -909,8 +875,7 @@
           <para>
             <b>xlMoveAndSize</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintObject">
@@ -939,8 +904,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、シートの印刷時にオブジェクトも印刷します。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <summary>ドキュメントを印刷するときにオブジェクトを印刷する場合は <b>True</b>。 取得/設定が可能な <b>Boolean</b> 値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -968,7 +932,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトのプログラム id を返します。 読み取り専用 <b>文字列</b> です。</summary>
+        <summary>オブジェクトのプログラム ID を返します。 読み取りのみ可能な <b>String</b> 値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -995,7 +959,7 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">省略可能な<b>オブジェクト</b>です。 <b>True</b> を指定したオブジェクトで現在の選択範囲を置き換えます。 <b>False を指定</b> する現在の選択範囲を拡張する選択したオブジェクトと指定したオブジェクトです。</param>
+        <param name="Replace">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定したオブジェクトで現在の選択範囲を置き換えます。 <b>False を指定</b> する現在の選択範囲を拡張する選択したオブジェクトと指定したオブジェクトです。</param>
         <summary>オブジェクトを選択します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1053,8 +1017,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>フォントが影付きフォントの場合、またはオブジェクトに影がある場合。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
+        <summary><b>True</b> の 場合は、フォントが影付きフォントまたはオブジェクトに影がある場合です。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1082,7 +1045,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ShapeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />を指定したオブジェクトまたはオブジェクトを表すオブジェクト。 読み取り専用。</summary>
+        <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1113,7 +1076,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトのリンク ソース名を設定または返します。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <summary>指定したオブジェクトのリンク ソース名を取得または設定します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1144,7 +1107,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>(ワークシート) の行 1 の上端、または、グラフ エリア (グラフの場合) の一番上のオブジェクトの上端からポイント単位での距離です。 読み取り/書き込み <b>二重</b> です。</summary>
+        <summary>オブジェクトの上端から行 1 の上端 (ワークシート上) またはグラフ エリアの上端 (グラフの場合) までの距離をポイント数で指定します。 取得/設定が可能な <b>Double</b> 値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1172,7 +1135,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />を指定したオブジェクトの左上隅にあるセルを表すオブジェクト。 読み取り専用。</summary>
+        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.Range" /> オブジェクトの左上隅にあるセルを表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1225,8 +1188,7 @@
         <Parameter Name="Verb" Type="Microsoft.Office.Interop.Excel.XlOLEVerb" />
       </Parameters>
       <Docs>
-        <param name="Verb">
-          <b>XlOLEVerb</b>は省略可能です。 この動詞は、OLE オブジェクトのサーバーが処理する必要があります。 この引数を省略すると、既定の動詞が送信されます。 使用できる動詞は、オブジェクトのソース アプリケーションによって決定されます。 OLE オブジェクトの一般的な動詞とは、開くと ( <b>XlOLEVerb</b>定数<b>xlOpen</b>および<b>xlPrimary</b>によって表される) プライマリです。</param>
+        <param name="Verb">オプション <b>の XlOLEVerb</b>。 OLE オブジェクトのサーバーの動作を指定します。 この引数を省略すると、既定の OLE 動詞が送られます。 使用できる OLE 動詞は、オブジェクトのソース アプリケーションによって異なります。 OLE オブジェクトでよく使われる動詞は Open と Primary (<b>XlOLEVerb</b> クラスの定数 <b>xlOpen</b> および <b>xlPrimary</b> によって指定) です。</param>
         <summary>指定した OLE オブジェクトのサーバーに対して OLE 動詞を送ります。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1258,7 +1220,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトを表示するかどうかを決定します。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
+        <summary>オブジェクトを表示するかどうかを指定します。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1289,7 +1251,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトのポイント単位の高さです。 読み取り/書き込み <b>二重</b> です。</summary>
+        <summary>オブジェクトのポイント単位の高さです。 取得/設定が可能な <b>Double</b> 値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1319,10 +1281,8 @@
       <Docs>
         <summary>オブジェクトの z オーダーの位置を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトのコレクション、オブジェクトの z オーダーの背面には、 <paramref name="collection" />(1)、z オーダーの前面にあるオブジェクトは、 <paramref name="collection" />(<paramref name="collection" />です<b>。カウント</b>)。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>オブジェクトのコレクションでは、z オーダーの最背面にあるオブジェクトは <paramref name="collection" /> (1)、z オーダーの最前面にあるオブジェクトは <paramref name="collection" /> ( <paramref name="collection" /> .<b>Count )。</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

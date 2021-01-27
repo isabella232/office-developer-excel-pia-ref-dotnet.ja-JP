@@ -1,13 +1,5 @@
 <Type Name="ModuleView" FullName="Microsoft.Office.Interop.Excel.ModuleView">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="19cb4ef15ded6d881e2d623f856debafb90eb693" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581418" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ModuleView" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="19cb4ef15ded6d881e2d623f856debafb90eb693" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011495" /></Metadata><TypeSignature Language="C#" Value="public interface ModuleView" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ModuleView" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ModuleView" />
   <TypeSignature Language="VB.NET" Value="Public Interface ModuleView" />
@@ -29,11 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>既存を表す<see cref="T:Microsoft.Office.Interop.Excel.Module" />ブックのビューです。</summary>
-    <remarks>
-      <para>モジュールの領域には、グラフのプロット エリアを含むすべてが含まれています。 ただし、プロット エリアでは、プロット エリアの塗りつぶしは、モジュール領域を塗りつぶすしないように独自の塗りつぶしがあります。</para>
-      <para></para>
-    </remarks>
+    <summary>ブック内の既存 <see cref="T:Microsoft.Office.Interop.Excel.Module" /> のビューを表します。</summary>
+    <remarks><para>モジュールエリアには、グラフのプロット エリアを含むすべてのデータが含まれます。 ただし、プロット エリアは独自の塗りつぶしを持つので、プロット エリアを埋めるのはモジュール エリアを埋め込むわけではありません。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,13 +49,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Office Excel アプリケーションを表すオブジェクト。 オブジェクト修飾子を使用する場合、このプロパティは、指定したオブジェクトの作成元を表す <b>Application</b> オブジェクトを返します。 読み取り専用です。</summary>
-        <value>
-          <b>アプリケーション</b>(上記参照)</value>
-        <remarks>
-          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクト用のアプリケーションを取得できます。</para>
-          <para></para>
-        </remarks>
+        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Excel アプリケーションのMicrosoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> を返します。 オブジェクト修飾子を指定した場合、指定したオブジェクトを作成した <b>Application</b> オブジェクトを取得します。 値の取得のみ可能です。</summary>
+        <value><b>アプリケーション</b> (上記を参照)</value>
+        <remarks><para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、オブジェクトのアプリケーションを取得できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -91,14 +78,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>等価の 32 ビット整数を返します、<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />をこのオブジェクトの作成元アプリケーションを示す定数です。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当  <see cref="P:Microsoft.Office.Interop.Excel.ModuleView.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <summary>このオブジェクトが作成されたアプリケーションを示す定数と同等の 32 ビット <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 整数を返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ <see cref="P:Microsoft.Office.Interop.Excel.ModuleView.Creator" /> Macintosh 用の Microsoft Excel で使用するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -124,10 +107,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,10 +135,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたシートの名前を返します<see cref="T:Microsoft.Office.Interop.Excel.ModuleView" />オブジェクトです。 読み取り専用。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトのシート名を返 <see cref="T:Microsoft.Office.Interop.Excel.ModuleView" /> します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

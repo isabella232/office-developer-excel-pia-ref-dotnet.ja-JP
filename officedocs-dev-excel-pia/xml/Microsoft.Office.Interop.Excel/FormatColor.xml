@@ -1,13 +1,5 @@
 <Type Name="FormatColor" FullName="Microsoft.Office.Interop.Excel.FormatColor">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f57d49748d62286fafce20d40a1880d5eeb2e6ca" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580830" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FormatColor" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f57d49748d62286fafce20d40a1880d5eeb2e6ca" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012209" /></Metadata><TypeSignature Language="C#" Value="public interface FormatColor" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FormatColor" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.FormatColor" />
   <TypeSignature Language="VB.NET" Value="Public Interface FormatColor" />
@@ -30,10 +22,8 @@
   </Attributes>
   <Docs>
     <summary>カラー スケールの条件付き書式のしきい値またはデータ バーの条件付き書式のバーの色に指定された塗りつぶし色を表します。</summary>
-    <remarks>
-      <para>RGB 値を渡すことによって色を選択することができます、<see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Color" />プロパティの色を指定するには、使用してテーマ カラー パレットにインデックスを付けるか、<see cref="P:Microsoft.Office.Interop.Excel.FormatColor.ThemeColor" />プロパティ。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>プロパティに RGB 値を渡して色を選択するか、プロパティを使用してテーマカラー パレットにインデックスを付け、色 <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Color" /> を指定 <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.ThemeColor" /> できます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -59,13 +49,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Office Excel アプリケーションを表すオブジェクト。 オブジェクト修飾子を使用する場合、このプロパティは、指定したオブジェクトの作成元を表す <b>Application</b> オブジェクトを返します。 読み取り専用です。</summary>
-        <value>
-          <b>アプリケーション</b>(上記参照)</value>
-        <remarks>
-          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクト用のアプリケーションを取得できます。</para>
-          <para></para>
-        </remarks>
+        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Excel アプリケーションのMicrosoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> を返します。 オブジェクト修飾子を指定した場合、指定したオブジェクトを作成した <b>Application</b> オブジェクトを取得します。 値の取得のみ可能です。</summary>
+        <value><b>アプリケーション</b> (上記を参照)</value>
+        <remarks><para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、オブジェクトのアプリケーションを取得できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Color">
@@ -95,13 +82,9 @@
       </ReturnValue>
       <Docs>
         <summary>データ バーまたはカラー スケールの条件付き書式ルールのしきい値に関連付けられた塗りつぶし色を取得または設定します。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
-        <remarks>
-          <para>書式の色を表した、<see cref="P:Microsoft.Office.Core.ColorFormat.RGB" />関数です。 たとえば、色を赤に設定するには、RGB(255,0,0) を使用します。</para>
-          <para></para>
-        </remarks>
+        <value><b>Object</b></value>
+        <remarks><para>書式の色は、関数として表 <see cref="P:Microsoft.Office.Core.ColorFormat.RGB" /> されます。 たとえば、色を赤に設定するには、RGB(255,0,0) を使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ColorIndex">
@@ -130,14 +113,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定の定数のいずれか、 <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> 、塗りつぶしの色が現在のカラー パレットにインデックス値として表されるかどうかを指定する列挙体です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />
-        </value>
-        <remarks>
-          <para>このプロパティは、カラー スケールの各しきい値またはデータ バーの条件付き書式ルールで使用されます。</para>
-          <para></para>
-        </remarks>
+        <summary>塗りつぶしの色を現在のカラー パレットのインデックス値として表す場合に指定する、列挙の定数の 1 つを取得 <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> または設定します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /></value>
+        <remarks><para>このプロパティは、カラー スケールの各しきい値またはデータ バーの条件付き書式ルールで使用されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -163,14 +142,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当  <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.Creator" /> Macintosh 用の Microsoft Excel で使用するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -196,10 +171,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -229,10 +202,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定の定数のいずれか、 <see cref="T:Microsoft.Office.Interop.Excel.XlThemeColor" /> 、データ バーまたはカラーのしきい値で使用されているテーマの色を指定する列挙体は、スケールの条件付き書式。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>データ バーまたはカラー スケールの条件付き書式のしきい値で使用されるテーマの色を指定する、列挙の定数の 1 つを取得 <see cref="T:Microsoft.Office.Interop.Excel.XlThemeColor" /> または設定します。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,15 +233,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>1 つ</b>を明るく、またはデータ バーまたはカラーのしきい値のセルの塗りつぶしの色を暗くを取得または設定は、条件付き書式ルールを拡張できます。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
-        <remarks>
-          <para>-1 (最も暗い) から 1 (最も明るい部分) の番号を入力することができます、<see cref="P:Microsoft.Office.Interop.Excel.FormatColor.TintAndShade" />プロパティ。 ゼロ (0) は、中立的なです。</para>
-          <para></para>
-        </remarks>
+        <summary>データ バーまたはカラー スケールの条件付き書式ルールのしきい値に対するセルの塗りつぶし色の明るさ、または暗さを決める単精度浮動小数点型 (<b>Single</b>) の値を設定します。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>プロパティには、-1 (最も暗い) から 1 (最も明るい) の数値を入力 <see cref="P:Microsoft.Office.Interop.Excel.FormatColor.TintAndShade" /> できます。 0 (ゼロ) はニュートラルです。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

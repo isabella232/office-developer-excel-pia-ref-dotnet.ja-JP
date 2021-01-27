@@ -1,13 +1,5 @@
 <Type Name="Filter" FullName="Microsoft.Office.Interop.Excel.Filter">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0a55068feedec78d62f267ca39e674ead9d7d9f3" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576329" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Filter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0a55068feedec78d62f267ca39e674ead9d7d9f3" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012244" /></Metadata><TypeSignature Language="C#" Value="public interface Filter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Filter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Filter" />
   <TypeSignature Language="VB.NET" Value="Public Interface Filter" />
@@ -29,14 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>一列に対するフィルターを表します。 <b>フィルター</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.Filters" />コレクションです。 <b>Filters</b>コレクションには、オート フィルター範囲のすべてのフィルターが含まれています。</summary>
-    <remarks>
-      <para>
-        <b>フィルター</b>を使用して (<paramref name="index" />)、<paramref name="index" />は、フィルターのタイトルまたはインデックス番号を 1 つの<b>フィルター</b>オブジェクトを取得します。</para>
-      <para>
-        <b>Filter</b>オブジェクトのすべてのプロパティは読み取り専用であることを注意してください。 これらのプロパティを設定するには、手動でオート フィルターを適用またはを使用して、<see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" />のメソッドの<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトです。</para>
-      <para></para>
-    </remarks>
+    <summary>一列に対するフィルターを表します。 <b>Filter オブジェクト</b>はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.Filters" /> です。 <b>Filters</b> コレクションには、オートフィルター範囲のすべてのフィルターが含まれています。</summary>
+    <remarks><para>Use <b>Filters</b>( <paramref name="index" /> ), where is the filter title or index <paramref name="index" /> number, to return a single <b>Filter</b> object.</para>
+      <para><b>Filter</b> オブジェクトのすべてのプロパティは取得のみ可能であることに注意してください。 これらのプロパティを設定するには、手動でオートフィルターを適用するか、オブジェクトの <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFilter(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlAutoFilterOperator,System.Object,System.Object)" /> メソッドを使用 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Operator">
@@ -93,7 +81,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -122,9 +110,7 @@
       </ReturnValue>
       <Docs>
         <summary>コレクション内にあるオブジェクトの数を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,13 +137,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator プロパティ</b>は、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh 用の Microsoft Excel で使用するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Criteria1">
@@ -183,7 +166,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>フィルターのセル範囲で指定した列の最初のフィルター処理された値を返します。</summary>
+        <summary>フィルター処理される範囲内で指定された列に対して最初にフィルター処理される値を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -211,12 +194,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>フィルターのセル範囲で指定した列の 2 番目のフィルターが適用された値を返します。</summary>
+        <summary>フィルター処理される範囲内で指定の列に対して 2 番目にフィルター処理される値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>2 つの条件を使用していないフィルターの<b>Criteria2</b>プロパティにアクセスしようとすると、エラーが発生します。 確認、<see cref="P:Microsoft.Office.Interop.Excel.Filter.Operator" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Filter" />オブジェクト値の<b>Criteria2</b>プロパティにアクセスする前にゼロ (0) が一致しません。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>2 番目の検索条件が指定されていないフィルターに対し、<b>Criteria2</b> プロパティにアクセスしようとするとエラーが発生します。 Criteria2 プロパティにアクセスする前に、オブジェクトのプロパティが <see cref="P:Microsoft.Office.Interop.Excel.Filter.Operator" /> <see cref="T:Microsoft.Office.Interop.Excel.Filter" /> ゼロ (0) と等しくない <b>ことを確認</b> してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="On">
@@ -242,8 +223,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>の場合は指定されたフィルターです。</summary>
+        <summary>指定のフィルターがオンの場合は <b>True</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

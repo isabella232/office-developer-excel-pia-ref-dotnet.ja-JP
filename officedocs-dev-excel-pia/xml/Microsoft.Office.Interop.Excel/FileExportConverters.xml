@@ -1,13 +1,5 @@
 <Type Name="FileExportConverters" FullName="Microsoft.Office.Interop.Excel.FileExportConverters">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d9d15ade86de30f26a8ffa76c4393a2b02abadaa" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20572458" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FileExportConverters : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d9d15ade86de30f26a8ffa76c4393a2b02abadaa" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012265" /></Metadata><TypeSignature Language="C#" Value="public interface FileExportConverters : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FileExportConverters implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.FileExportConverters" />
   <TypeSignature Language="VB.NET" Value="Public Interface FileExportConverters&#xA;Implements IEnumerable" />
@@ -33,14 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" />ファイルを保存するために使用できるすべてのファイル コンバーターを表すオブジェクト。</summary>
-    <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Application.FileExportConverters" />を返すプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" />コレクションです。</para>
-      <para>
-        <b>Add</b>メソッドでは使用できません、<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" />コレクションです。 <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" />オブジェクトは、補足的なコンバーターをインストールすることによって Microsoft Office のインストール中に追加されます。</para>
-      <para>使用<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" />(インデックス) 1 つの FileExportConverter オブジェクトを取得するのには、整数インデックスであります。 インデックス番号は、FileExportConverters コレクション内のファイル コンバーターの位置を表します。</para>
-      <para></para>
-    </remarks>
+    <summary>ファイルの保存 <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> に使用できるすべてのファイル コンバーターを表すオブジェクトのコレクションです。</summary>
+    <remarks><para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel._Application.FileExportConverters" /> を使用してコレクションを取得 <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> します。</para>
+      <para>コレクション <b>で Add</b> メソッドを使用 <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> できません。 <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> オブジェクトが追加されるのは、Microsoft Officeのインストール時、または補助コンバーターのインストールによって行います。</para>
+      <para>引数 Index に整数を指定し、単一の <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> FileExportConverter オブジェクトを取得するには、(Index) を使用します。 インデックス番号は、FileExportConverters コレクションでのファイル コンバーターの位置を表します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -74,9 +63,7 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>To be added.</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,10 +90,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Application" />
-        </value>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Application" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -133,10 +118,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内のファイル コンバーターの数を表す<b>整数</b>を返します。 読み取り専用。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>コレクション内のファイル コンバーターの数を表す整数型 <b>(Integer)</b> の値を取得します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -163,14 +146,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />を指定したオブジェクトが作成されたアプリケーションを示す定数です。 長整数型 (Long) の値を使用します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合、このプロパティは、5843454 C は、文字列「クリエーター」を表す 16 進値を返します。 Creator プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> が作成されたアプリケーションを示す定数を返します。 長整数型 (Long) の値を使用します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>オブジェクトが Microsoft Excel で作成された場合、このプロパティは文字列 "XCEL" を表す 16 進値 5843454C を返します。 Creator プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 用の Excel で使用するように設計されました。 たとえば、Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -201,9 +180,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>
-          <see cref="T:System.Collections.IEnumerator" />
-        </returns>
+        <returns><see cref="T:System.Collections.IEnumerator" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -234,10 +211,8 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>個人を返します<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" />コレクションからのオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" />
-        </value>
+        <summary>コレクションから個別 <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /> のオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.FileExportConverter" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,10 +239,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した親オブジェクトを表す<b>オブジェクト</b>を返します。<see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" />コレクションです。 読み取り専用。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したコレクション <b>の</b> 親オブジェクトを表すオブジェクト を返 <see cref="T:Microsoft.Office.Interop.Excel.FileExportConverters" /> します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

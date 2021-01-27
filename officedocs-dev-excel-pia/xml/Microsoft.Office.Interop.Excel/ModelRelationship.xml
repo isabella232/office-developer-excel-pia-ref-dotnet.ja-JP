@@ -1,13 +1,5 @@
 <Type Name="ModelRelationship" FullName="Microsoft.Office.Interop.Excel.ModelRelationship">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="6fc648eea32b62003d9ee49c3b39d35edfe74844" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575580" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ModelRelationship" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6fc648eea32b62003d9ee49c3b39d35edfe74844" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011635" /></Metadata><TypeSignature Language="C#" Value="public interface ModelRelationship" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ModelRelationship" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ModelRelationship" />
   <TypeSignature Language="VB.NET" Value="Public Interface ModelRelationship" />
@@ -59,7 +51,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>場合<b>は True</b>関係は、作業中。 場合<b>False</b>この関係動作していません。 <b>ブール値</b>(<b>bool</b>では C#) です。 読み取り/書き込み</summary>
+        <summary><b>True</b> の場合、リレーションはアクティブです。 <b>False</b> の場合、このリレーションは非アクティブです。 <b>ブール</b>値<b></b> ( C# のブール値)。 読み取り/書き込み</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Excel アプリケーションを表すオブジェクト。 読み取り専用。</summary>
+        <summary>Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -115,12 +107,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。 読み取り専用の<b>整数値</b>(C# では<b>int</b> )。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 読み取り<b>専用の整数</b><b>(C#</b>の整数)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Excel で作成された、ために、このプロパティは、5843454 C は、文字列「クリエーター」を表す 16 進値を返します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>オブジェクトは Excel で作成されたため、このプロパティは文字列 "XCEL" を表す 16 進数の値 5843454C を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -171,7 +161,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTableColumn</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>含まれています、 <see cref="T:Microsoft.Office.Interop.Excel.ModelTableColumn" /> 、一対多リレーションシップの多側の外部キー列を表すオブジェクト。 読み取り専用</summary>
+        <summary>一対多リレーションシップの "多" 側の外部キー列を表す <see cref="T:Microsoft.Office.Interop.Excel.ModelTableColumn" /> オブジェクトを格納します。 読み取り専用</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -199,7 +189,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>含まれています、 <see cref="T:Microsoft.Office.Interop.Excel.ModelTable" /> 、一対多リレーションシップの多側のテーブルを表すオブジェクト。 読み取り専用</summary>
+        <summary>一対多リレーションシップの "多" 側のテーブルを表す <see cref="T:Microsoft.Office.Interop.Excel.ModelTable" /> オブジェクトを格納します。 読み取り専用</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -227,8 +217,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>オブジェクト</b>(C# での<b>オブジェクト</b>) を指定した親オブジェクトを表す<see cref="T:Microsoft.Office.Interop.Excel.ModelRelationship" />オブジェクトです。 読み取り専用。</summary>
+        <summary>指定したオブジェクト <b>の</b> 親<b>オブジェクト</b> を表すオブジェクト (C# のオブジェクト) を返 <see cref="T:Microsoft.Office.Interop.Excel.ModelRelationship" /> します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -256,7 +245,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTableColumn</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>含まれています、 <see cref="T:Microsoft.Office.Interop.Excel.ModelTableColumn" /> 、一対多リレーションシップの一側テーブルの主キー列を表すオブジェクト。</summary>
+        <summary>一対多リレーションシップの一方の側にあるテーブルの主キー列を表す <see cref="T:Microsoft.Office.Interop.Excel.ModelTableColumn" /> オブジェクトを格納します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -284,7 +273,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>含まれています、 <see cref="T:Microsoft.Office.Interop.Excel.ModelTable" /> 、一対多リレーションシップの一側のテーブルを表すオブジェクト。</summary>
+        <summary>一対多リレーションシップの一方側のテーブルを表す <see cref="T:Microsoft.Office.Interop.Excel.ModelTable" /> オブジェクトを格納します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
