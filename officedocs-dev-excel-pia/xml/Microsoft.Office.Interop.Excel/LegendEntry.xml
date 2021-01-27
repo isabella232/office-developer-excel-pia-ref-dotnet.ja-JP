@@ -1,13 +1,5 @@
 <Type Name="LegendEntry" FullName="Microsoft.Office.Interop.Excel.LegendEntry">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="983427dff3c6cf28781fdc671025f8966ca21207" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576945" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface LegendEntry" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="983427dff3c6cf28781fdc671025f8966ca21207" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50000093" /></Metadata><TypeSignature Language="C#" Value="public interface LegendEntry" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract LegendEntry" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.LegendEntry" />
   <TypeSignature Language="VB.NET" Value="Public Interface LegendEntry" />
@@ -29,77 +21,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="9ee61-101">グラフの凡例の凡例文字列を表します。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="9ee61-101">Represents a legend entry in a chart legend.</span>
-      </span>
-    </summary>
-    <remarks>
-      <para>
-        <span data-ttu-id="9ee61-102">
-          <b>凡例</b>のオブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.LegendEntries" />コレクションです。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="9ee61-102">The <b>LegendEntry</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.LegendEntries" /> collection.</span>
-        </span>
-        <span data-ttu-id="9ee61-103">
-          <b>LegendEntries</b> コレクションには、凡例のすべての <b>LegendEntry</b> オブジェクトが含まれています。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="9ee61-103">The <b>LegendEntries</b> collection contains all the <b>LegendEntry</b> objects in the legend.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="9ee61-104">各凡例文字列には 2 つの部分: 凡例の項目と、凡例マーカーは、凡例文字列に、関連付けられたデータ系列またはグラフの近似曲線を視覚的にリンクに関連付けられている一連の名前のエントリのテキストです。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="9ee61-104">Each legend entry has two parts: the text of the entry, which is the name of the series associated with the legend entry, and an entry marker, which visually links the legend entry with its associated series or trendline in the chart.</span>
-        </span>
-        <span data-ttu-id="9ee61-105">凡例マーカーとその関連付けられたデータ系列または近似曲線の書式設定プロパティは、<see cref="T:Microsoft.Office.Interop.Excel.LegendKey" />オブジェクトです。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="9ee61-105">Formatting properties for the entry marker and its associated series or trendline are contained in the <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> object.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="9ee61-p103">
-          <b>LegendEntry</b> オブジェクトは、フォントの設定およびオブジェクトの削除が可能です。しかし、凡例文字列の文字列は変更できません。凡例文字列にパターンを設定したり、位置やサイズを変更することもできません。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="9ee61-p103">The text of a legend entry cannot be changed. <b>LegendEntry</b> objects support font formatting, and they can be deleted. No pattern formatting is supported for legend entries. The position and size of entries is fixed.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="9ee61-110">
-          <b>返すメソッド</b>を使用して (<paramref name="index" />)、<paramref name="index" />の凡例エントリのインデックス番号、1 つの<b>凡例</b>オブジェクトを取得するには。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="9ee61-110">Use <b>LegendEntries</b>(<paramref name="index" />), where <paramref name="index" /> is the legend entry index number, to return a single <b>LegendEntry</b> object.</span>
-        </span>
-        <span data-ttu-id="9ee61-111">名前で、凡例のエントリを返すことはできません。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="9ee61-111">You cannot return legend entries by name.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="9ee61-112">インデックス番号は、凡例内での凡例文字列の位置と対応します。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="9ee61-112">The index number represents the position of the legend entry in the legend.</span>
-        </span>
-        <span data-ttu-id="9ee61-113">LegendEntries(1)、凡例の一番上には、1 の凡例の一番下にあります。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="9ee61-113">LegendEntries(1) is at the top of the legend, and LegendEntries(LegendEntries.Count) is at the bottom.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="9ee61-114">LegendEntry オブジェクトから、凡例文字列に対応しているデータ系列または近似曲線を直接返す方法はありません。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="9ee61-114">There’s no direct way to return the series or trendline corresponding to the legend entry.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="9ee61-115">削除し、凡例を設定してそれらを再作成してそれらを復元する唯一の方法は、凡例のエントリが削除された後、<see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" />のグラフの<b>場合は False</b>と<b>True</b>に戻ります。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="9ee61-115">After legend entries have been deleted, the only way to restore them is to remove and recreate the legend that contained them by setting the <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" /> property for the chart to <b>False</b> and then back to <b>True</b>.</span>
-        </span>
-      </para>
-      <para></para>
-    </remarks>
+    <summary><span data-ttu-id="1668b-101">グラフの凡例の凡例文字列を表します。</span><span class="sxs-lookup"><span data-stu-id="1668b-101">Represents a legend entry in a chart legend.</span></span></summary>
+    <remarks><para><span data-ttu-id="1668b-102"><b>LegendEntry オブジェクト</b>はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.LegendEntries" /> です。</span><span class="sxs-lookup"><span data-stu-id="1668b-102">The <b>LegendEntry</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.LegendEntries" /> collection.</span></span> <span data-ttu-id="1668b-103"><b>LegendEntries</b> コレクションには、凡例のすべての <b>LegendEntry</b> オブジェクトが含まれています。</span><span class="sxs-lookup"><span data-stu-id="1668b-103">The <b>LegendEntries</b> collection contains all the <b>LegendEntry</b> objects in the legend.</span></span></para>
+      <para><span data-ttu-id="1668b-104">各凡例文字列には、凡例文字列の文字列 (凡例文字列に関連付けられたデータ系列の名前) と凡例マーカーの 2 つの部分があります。凡例マーカーは、凡例文字列をグラフのデータ系列または傾向線に視覚的にリンクします。</span><span class="sxs-lookup"><span data-stu-id="1668b-104">Each legend entry has two parts: the text of the entry, which is the name of the series associated with the legend entry, and an entry marker, which visually links the legend entry with its associated series or trendline in the chart.</span></span> <span data-ttu-id="1668b-105">エントリ マーカーとその関連するデータ系列または傾向線の書式設定プロパティは、オブジェクトに含 <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> まれる。</span><span class="sxs-lookup"><span data-stu-id="1668b-105">Formatting properties for the entry marker and its associated series or trendline are contained in the <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> object.</span></span></para>
+      <para><span data-ttu-id="1668b-p103"><b>LegendEntry</b> オブジェクトは、フォントの設定およびオブジェクトの削除が可能です。しかし、凡例文字列の文字列は変更できません。凡例文字列にパターンを設定したり、位置やサイズを変更することもできません。</span><span class="sxs-lookup"><span data-stu-id="1668b-p103">The text of a legend entry cannot be changed. <b>LegendEntry</b> objects support font formatting, and they can be deleted. No pattern formatting is supported for legend entries. The position and size of entries is fixed.</span></span></para>
+      <para><span data-ttu-id="1668b-110">1 <b>つの LegendEntry</b>オブジェクト <paramref name="index" /> を取得するには、凡例エントリのインデックス番号を <paramref name="index" /> <b>指定する LegendEntries</b> ( ) を使用します。</span><span class="sxs-lookup"><span data-stu-id="1668b-110">Use <b>LegendEntries</b>(<paramref name="index" />), where <paramref name="index" /> is the legend entry index number, to return a single <b>LegendEntry</b> object.</span></span> <span data-ttu-id="1668b-111">名前で、凡例のエントリを返すことはできません。</span><span class="sxs-lookup"><span data-stu-id="1668b-111">You cannot return legend entries by name.</span></span></para>
+      <para><span data-ttu-id="1668b-112">インデックス番号は、凡例内での凡例項目の位置と対応します。</span><span class="sxs-lookup"><span data-stu-id="1668b-112">The index number represents the position of the legend entry in the legend.</span></span> <span data-ttu-id="1668b-113">LegendEntries(1) は凡例の一番上の凡例項目で、LegendEntries(LegendEntries.Count) は一番下の凡例項目です。</span><span class="sxs-lookup"><span data-stu-id="1668b-113">LegendEntries(1) is at the top of the legend, and LegendEntries(LegendEntries.Count) is at the bottom.</span></span></para>
+      <para><span data-ttu-id="1668b-114">LegendEntry オブジェクトから、凡例文字列に対応しているデータ系列または近似曲線を直接返す方法はありません。</span><span class="sxs-lookup"><span data-stu-id="1668b-114">There’s no direct way to return the series or trendline corresponding to the legend entry.</span></span></para>
+      <para><span data-ttu-id="1668b-115">凡例項目を削除した後、凡例項目を復元する唯一の方法は、グラフのプロパティを False に設定し <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" /> <b>、True</b>に戻して<b></b>、それらを含む凡例を削除して再作成する方法です。</span><span class="sxs-lookup"><span data-stu-id="1668b-115">After legend entries have been deleted, the only way to restore them is to remove and recreate the legend that contained them by setting the <see cref="P:Microsoft.Office.Interop.Excel._Chart.HasLegend" /> property for the chart to <b>False</b> and then back to <b>True</b>.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -125,12 +55,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="9ee61-116">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9ee61-116">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1668b-116">Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="1668b-116">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -167,18 +92,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="9ee61-117">
-            <b>True</b>場合は、オブジェクト内のテキストは、オブジェクトのサイズを変更したときにフォント サイズを変更します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9ee61-117">
-              <b>True</b> if the text in the object changes font size when the object size changes.</span>
-          </span>
-          <span data-ttu-id="9ee61-118">既定値は <b>True</b> です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9ee61-118">The default value is <b>True</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1668b-117"><b>True</b> の 場合は、オブジェクトのテキストは、オブジェクトのサイズが変更された場合にフォント サイズが変更されます。</span><span class="sxs-lookup"><span data-stu-id="1668b-117"><b>True</b> if the text in the object changes font size when the object size changes.</span></span> <span data-ttu-id="1668b-118">既定値は <b>True</b> です。</span><span class="sxs-lookup"><span data-stu-id="1668b-118">The default value is <b>True</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -206,33 +120,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="9ee61-119">現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9ee61-119">Returns a 32-bit integer that indicates the application in which this object was created.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1668b-119">このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</span><span class="sxs-lookup"><span data-stu-id="1668b-119">Returns a 32-bit integer that indicates the application in which this object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="9ee61-120">オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="9ee61-120">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="9ee61-121">
-              <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="9ee61-121">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
-            </span>
-            <span data-ttu-id="9ee61-122">たとえば、Microsoft Excel は、クリエーター コードを持っています。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="9ee61-122">For example, Microsoft Excel has the creator code XCEL.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="1668b-120">Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</span><span class="sxs-lookup"><span data-stu-id="1668b-120">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span></span></para>
+          <para><span data-ttu-id="1668b-121"><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。</span><span class="sxs-lookup"><span data-stu-id="1668b-121">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="1668b-122">たとえば、Microsoft Excel の作成元コードは XCEL です。</span><span class="sxs-lookup"><span data-stu-id="1668b-122">For example, Microsoft Excel has the creator code XCEL.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -256,12 +148,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="9ee61-123">オブジェクトを削除します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9ee61-123">Deletes the object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1668b-123">オブジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="1668b-123">Deletes the object.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -289,12 +176,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="9ee61-124">返します、<see cref="T:Microsoft.Office.Interop.Excel.Font" />を指定したオブジェクトのフォントを表すオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9ee61-124">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object that represents the font of the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1668b-124">指定した <see cref="T:Microsoft.Office.Interop.Excel.Font" /> オブジェクトのフォントを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="1668b-124">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Font" /> object that represents the font of the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -322,19 +204,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="9ee61-125">返します、<see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />オブジェクトです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9ee61-125">Returns the <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> object.</span>
-          </span>
-          <span data-ttu-id="9ee61-126">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9ee61-126">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
+        <summary><span data-ttu-id="1668b-125">オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> します。</span><span class="sxs-lookup"><span data-stu-id="1668b-125">Returns the <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> object.</span></span> <span data-ttu-id="1668b-126">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="1668b-126">Read-only.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -361,12 +232,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="9ee61-127">オブジェクトのポイント単位の高さです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9ee61-127">The height, in points, of the object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1668b-127">オブジェクトのポイント単位の高さです。</span><span class="sxs-lookup"><span data-stu-id="1668b-127">The height, in points, of the object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -394,12 +260,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="9ee61-128">ようなオブジェクトのコレクション内のオブジェクトのインデックス番号を返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9ee61-128">Returns the index number of the object within the collection of similar objects.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1668b-128">類似するオブジェクトのコレクション内のオブジェクトのインデックス番号を返します。</span><span class="sxs-lookup"><span data-stu-id="1668b-128">Returns the index number of the object within the collection of similar objects.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -427,12 +288,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="9ee61-129">グラフ エリアの左端からのオブジェクトの左端からポイント単位での距離です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9ee61-129">The distance, in points, from the left edge of the object to the left edge of the chart area.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1668b-129">オブジェクトの左側からグラフ エリアの左側までの距離をポイント数で指定します。</span><span class="sxs-lookup"><span data-stu-id="1668b-129">The distance, in points, from the left edge of the object to the left edge of the chart area.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -460,12 +316,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.LegendKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="9ee61-130">返します、 <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> 、凡例マーカーを表すオブジェクトがエントリに関連付けられています。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9ee61-130">Returns a <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> object that represents the legend key associated with the entry.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1668b-130">エントリに関連 <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> 付けられている凡例キーを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="1668b-130">Returns a <see cref="T:Microsoft.Office.Interop.Excel.LegendKey" /> object that represents the legend key associated with the entry.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -493,12 +344,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="9ee61-131">指定されたオブジェクトの親オブジェクトを返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9ee61-131">Returns the parent object for the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1668b-131">指定されたオブジェクトの親オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="1668b-131">Returns the parent object for the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -524,12 +370,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="9ee61-132">オブジェクトを選択します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9ee61-132">Selects the object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1668b-132">オブジェクトを選択します。</span><span class="sxs-lookup"><span data-stu-id="1668b-132">Selects the object.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -557,12 +398,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="9ee61-133">グラフ エリアの最上部にオブジェクトの上端からポイント単位での距離です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9ee61-133">The distance, in points, from the top edge of the object to the top of the chart area.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1668b-133">オブジェクトの上端からグラフ エリアの上端までの距離をポイント数で指定します。</span><span class="sxs-lookup"><span data-stu-id="1668b-133">The distance, in points, from the top edge of the object to the top of the chart area.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -590,12 +426,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="9ee61-134">オブジェクトのポイント単位の高さです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="9ee61-134">The width, in points, of the object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="1668b-134">オブジェクトのポイント単位の高さです。</span><span class="sxs-lookup"><span data-stu-id="1668b-134">The width, in points, of the object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
