@@ -1,13 +1,5 @@
 <Type Name="Comment" FullName="Microsoft.Office.Interop.Excel.Comment">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="aee055e9a2656dedc02e66bab44aba17d315d4f9" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585849" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Comment" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="aee055e9a2656dedc02e66bab44aba17d315d4f9" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003984" /></Metadata><TypeSignature Language="C#" Value="public interface Comment" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Comment" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Comment" />
   <TypeSignature Language="VB.NET" Value="Public Interface Comment" />
@@ -30,15 +22,11 @@
   </Attributes>
   <Docs>
     <summary>セルのコメントを表します。</summary>
-    <remarks>
-      <para>
-        <b>コメント</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.Comments" />コレクションです。</para>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Range.Comment" /> 、<b>コメント</b>オブジェクトを返すプロパティです。</para>
-      <para>
-        <b>コメント</b>を使用して (<paramref name="index" />)、 <paramref name="index" /><b>Comments</b>コレクションから 1 つのコメントを取得する、コメント番号を指定します。</para>
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.Range.AddComment(System.Object)" />の範囲にコメントを追加する方法です。</para>
-      <para></para>
-    </remarks>
+    <remarks><para><b>Comment オブジェクト</b>はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.Comments" /> です。</para>
+      <para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.Range.Comment" /> を使用して Comment オブジェクト <b>を取得</b> します。</para>
+      <para>Comments コレクション <b>から</b>1 つのコメントを取得するには、コメント番号 ( ) <paramref name="index" /> <paramref name="index" /> を <b>使用</b> します。</para>
+      <para>範囲に <see cref="M:Microsoft.Office.Interop.Excel.Range.AddComment(System.Object)" /> コメントを追加するには、このメソッドを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -64,7 +52,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,14 +108,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -176,12 +161,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Comment" />の次のコメントを表すオブジェクト。</summary>
+        <summary>次のコメント <see cref="T:Microsoft.Office.Interop.Excel.Comment" /> を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは、1 つのシート上でのみ機能します。 シートの最後のコメントでこのメソッドを使用して<b>Null</b> (いないは、次のシート上の次のコメント) を返します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このメソッドは、1 つのシートだけで実行されます。シートの最後のコメントでこのメソッドを使用すると、次のシートのコメントではなく、<b>Null</b> 値が返されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -233,12 +216,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Comment" />の前のコメントを表すオブジェクト。</summary>
+        <summary>前のコメント <see cref="T:Microsoft.Office.Interop.Excel.Comment" /> を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>このメソッドは、1 つのシート上でのみ機能します。 シート上の最初のコメントでこのメソッドを使用して<b>Null</b> (前回コメントではなく、前のシート) を返します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このメソッドは 1 つのシートだけで実行されます。このメソッドをシートの最初のコメントで使用すると、前のシートの最後のコメントではなく <b>Null</b> 値が返されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Shape">
@@ -264,7 +245,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />図形を表すオブジェクトが、指定されたコメントを添付します。</summary>
+        <summary>指定したコメント <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> に添付されている図形を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -293,9 +274,9 @@
         <Parameter Name="Overwrite" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Text">省略可能な<b>オブジェクト</b>です。 追加するテキストを指定します。</param>
-        <param name="Start">省略可能な<b>オブジェクト</b>です。 追加したテキストをどこに配置する文字数です。 この引数を省略した場合は、コメント内の既存のテキストが削除されます。</param>
-        <param name="Overwrite">省略可能な<b>オブジェクト</b>です。 <b>True</b>を既存のテキストを上書きします。 既定値は<b>False</b> (テキストが挿入されます)。</param>
+        <param name="Text">省略 <b>可能なオブジェクト</b>です。 追加するテキストを指定します。</param>
+        <param name="Start">省略 <b>可能なオブジェクト</b>です。 文字列を配置する文字の位置番号を指定します。 この引数を省略すると、コメントの既存の文字列は削除されます。</param>
+        <param name="Overwrite">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、既存の文字列が指定した文字列に置き換えられます。 既定の設定の <b>False</b> を指定すると、既存の文字列に指定した文字列が追加されます。</param>
         <summary>コメントの文字列を設定します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -327,7 +308,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトを表示するかどうかを決定します。</summary>
+        <summary>オブジェクトを表示するかどうかを指定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

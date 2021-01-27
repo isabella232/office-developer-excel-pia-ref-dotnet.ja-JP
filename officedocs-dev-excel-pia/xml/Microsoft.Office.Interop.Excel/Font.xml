@@ -1,13 +1,5 @@
 <Type Name="Font" FullName="Microsoft.Office.Interop.Excel.Font">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a8ba6992514b1438faa9fc74351cb46d6d8e0551" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585695" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Font" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a8ba6992514b1438faa9fc74351cb46d6d8e0551" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003578" /></Metadata><TypeSignature Language="C#" Value="public interface Font" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Font" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Font" />
   <TypeSignature Language="VB.NET" Value="Public Interface Font" />
@@ -30,12 +22,9 @@
   </Attributes>
   <Docs>
     <summary>オブジェクトのフォント属性 (フォント名、フォント サイズ、色など) の全体を表します。</summary>
-    <remarks>
-      <para>
-        <b>Font</b> オブジェクトを取得するのにには、 <b>Font</b> プロパティを使用します。</para>
-      <para>セルまたは画像内のすべてのテキストと同様の書式を設定しない場合を使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Range.Characters(System.Object,System.Object)" /> 、テキストのサブセットを返すプロパティです。</para>
-      <para></para>
-    </remarks>
+    <remarks><para><b>Font</b> オブジェクトを取得するには、<b>Font</b> プロパティを使用します。</para>
+      <para>セルまたはグラフィック内のすべてのテキストの書式を同じ方法で設定しない場合は、このプロパティを使用してテキストのサブセット <see cref="P:Microsoft.Office.Interop.Excel.Range.Characters(System.Object,System.Object)" /> を返します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -92,10 +81,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、グラフで使用されるテキストの背景の種類を設定します。 いずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlBackground" />定数。</summary>
+        <summary>返すまたは、グラフで使用されるテキストの背景の種類を設定します。 使用できる定数は、 <see cref="T:Microsoft.Office.Interop.Excel.XlBackground" /> 次に示す定数の 1 つです。</summary>
         <value>To be added.</value>
-        <remarks>
-          <list type="table">
+        <remarks><list type="table">
             <item>
               <term>
                 <b>xlBackgroundAutomatic</b>
@@ -106,7 +94,7 @@
               <term>
                 <b>xlBackgroundOpaque</b>
               </term>
-              <description>フォントの背景は黒に設定、フォントの背景、テキストの色と塗りつぶしの色、テキストの下には非常に近い、または同じ色でテキストが表示されないように</description>
+              <description>テキストの色とテキストの下の塗りつぶしの色が非常に近い場合、またはテキストが表示されない場合、フォントの背景は黒に設定されます。</description>
             </item>
             <item>
               <term>
@@ -115,8 +103,7 @@
               <description>フォントの背景は透明に設定されます。文字列とその背景の色が酷似している場合でも、文字列の背景は変化しません。</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Bold">
@@ -145,8 +132,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、フォントが太字。</summary>
+        <summary><b>True の</b> 場合は、フォントが太字。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -177,7 +163,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>フォントの色を設定または返します。</summary>
+        <summary>フォントの主色を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -210,14 +196,12 @@
       <Docs>
         <summary>フォントの色を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>現在のカラー パレットのインデックス値、または次のいずれかとして指定された色<see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />定数。</para>
+        <remarks><para>色は、現在のカラー パレットのインデックス値として指定するか、次の定数のいずれかを <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> 使用して指定します。</para>
           <para>
-            <b>番号</b>です。 自動設定の色を指定する場合に使用します。</para>
+            <b>xlColorIndexAutomatic</b>. 自動色を指定するために使用します。</para>
           <para>
-            <b>定数で表します</b>。</para>
-          <para></para>
-        </remarks>
+            <b>xlColorIndexNone</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -243,14 +227,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FontStyle">
@@ -279,12 +260,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>フォント スタイルを設定または返します。</summary>
+        <summary>フォント スタイルを返すか設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティを変更することがありますに影響を与える他の<see cref="T:Microsoft.Office.Interop.Excel.Font" />オブジェクトのプロパティ (次のように<see cref="P:Microsoft.Office.Interop.Excel.Font.Bold" />と<see cref="P:Microsoft.Office.Interop.Excel.Font.Italic" />)。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティを変更すると、他の <see cref="T:Microsoft.Office.Interop.Excel.Font" /> オブジェクト プロパティ (およびなど) に影響を与 <see cref="P:Microsoft.Office.Interop.Excel.Font.Bold" /> える可能性があります <see cref="P:Microsoft.Office.Interop.Excel.Font.Italic" /> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Italic">
@@ -313,8 +292,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、フォント スタイルを斜体。</summary>
+        <summary><b>True</b> の 場合は、フォント スタイルが italic です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -347,19 +325,18 @@
       <Docs>
         <summary>オブジェクトの名前を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>次の表は、 <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a>を与え、関連するプロパティ、 <b>Name</b>プロパティの値の例を示しています。</para>
+        <remarks><para>次の表に、OLAP で指定された <b>Name</b> プロパティおよび関連プロパティの値の例 <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">を示します。</a></para>
           <list type="table">
             <item>
               <term>
-                <b>キャプション</b>
+                <b>Caption</b>
               </term>
               <description>東京</description>
               <description>東京</description>
             </item>
             <item>
               <term>
-                <b>名</b>
+                <b>名前</b>
               </term>
               <description>[都道府県].[東京都].[東京] (読み取り専用)</description>
               <description>東京</description>
@@ -379,15 +356,14 @@
               <description>東京</description>
             </item>
           </list>
-          <para>インデックスを指定する場合、<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />コレクションでは、次の表に示すように構文を使用することができます。</para>
+          <para>コレクションにインデックスを指定する場合 <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> は、次の表に示す構文を使用できます。</para>
           <list type="table">
             <item>
-              <term>式です。返すプロパティ (「[ヨーロッパ]。 [東京都] です。[東京]")</term>
-              <description>式です。PivotItems("Paris")</description>
+              <term>式を使用します。PivotItems("[Europe].[フランス]。[パリ]")</term>
+              <description>式を使用します。PivotItems("Paris")</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OutlineFont">
@@ -422,12 +398,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>フォントがアウトライン フォントである場合は true です。</summary>
+        <summary>フォントがアウトライン フォントの場合は、True です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>OutlineFont プロパティは Windows では無効ですが、値は保持されます。つまり、値の取得および設定は可能です。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>This property has no effect in Windows, but its value is retained (it can be set and returned).</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -490,13 +464,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>フォントが影付きフォントの場合、またはオブジェクトに影がある場合。</summary>
+        <summary><b>True</b> の 場合は、フォントが影付きフォントまたはオブジェクトに影がある場合です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、Windows では、影響ありませんが、その値は保持されます (に設定し、返される)。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティは、Microsoft Windows では効果がありませんが、その値は保持されます (設定および取得できます)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -525,7 +496,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>フォントのサイズを設定または返します。</summary>
+        <summary>フォントのサイズを返すか設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -556,8 +527,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、フォントが水平の線で線を。</summary>
+        <summary><b>True</b> の 場合は、フォントが水平方向の線で分割します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -588,8 +558,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、フォントが下付き文字として書式設定します。 <b>False</b>既定します。</summary>
+        <summary><b>True の</b> 場合は、フォントが下付き文字として書式設定します。 <b>既定では False。</b></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -620,8 +589,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合は、フォントが上付き文字として書式設定します。 <b>False</b>既定します。</summary>
+        <summary><b>True の</b> 場合は、フォントが上付き文字として書式設定します。 <b>既定では False。</b></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -652,14 +620,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトに関連付けられている適用する配色のテーマの色を設定または返します。  読み取り/書き込みの<b>オブジェクト</b>です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>色にテーマが適用されていないオブジェクトのテーマ カラーにアクセスしようとすると、無効な要求の実行時エラーとなります。</para>
-          <para></para>
-        </remarks>
+        <summary>指定のオブジェクトに適用する配色のテーマの色を取得または設定します。  読み取り/書き込み <b>オブジェクト です</b>。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>色にテーマが適用されていないオブジェクトのテーマ カラーにアクセスしようとすると、無効な要求の実行時エラーとなります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ThemeFont">
@@ -688,10 +652,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlThemeFont</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトに関連付けられているフォントが適用されている配色のテーマ フォントを設定または返します。  読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Excel.XlThemeFont" />。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlThemeFont" />
-        </value>
+        <summary>指定したオブジェクトに関連付けられている適用されたフォント パターンのテーマのフォントを設定または返します。  読み取り/書き込み <see cref="T:Microsoft.Office.Interop.Excel.XlThemeFont" /> 。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlThemeFont" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -721,16 +683,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>1 つ</b>を明るく、または暗く、色を設定または返します。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
-        <remarks>
-          <para>-1 (最も暗い) から 1 (最も明るい部分) の番号を入力することができます、<see cref="P:Microsoft.Office.Interop.Excel.Font.TintAndShade" />プロパティ。 ゼロ (0) は、中立的なです。</para>
-          <para>このプロパティに -1 より小さい値、または 1 より大きい値を設定すると、「指定された値は境界を超えています。」という実行時エラーとなります。このプロパティは、テーマ カラーとテーマ以外の色の両方に適用されます。</para>
-          <para></para>
-        </remarks>
+        <summary>色を明るく、または暗くする単精度浮動小数点型 (<b>Single</b>) の値を取得または設定します。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>プロパティには、-1 (最も暗い) から 1 (最も明るい) の数値を入力 <see cref="P:Microsoft.Office.Interop.Excel.Font.TintAndShade" /> できます。 0 (ゼロ) はニュートラルです。</para>
+          <para>このプロパティに -1 より小さい値、または 1 より大きい値を設定すると、「指定された値は境界を超えています」という実行時エラーとなります。このプロパティは、テーマ カラーとテーマ以外の色の両方に適用されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Underline">
@@ -761,8 +718,7 @@
       <Docs>
         <summary>取得またはフォントに適用する下線の種類を設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlUnderlineStyle" />定数。</para>
+        <remarks><para>使用できる定数は、次 <see cref="T:Microsoft.Office.Interop.Excel.XlUnderlineStyle" /> に示す定数です。</para>
           <para>
             <b>xlUnderlineStyleNone</b>
           </para>
@@ -778,8 +734,7 @@
           <para>
             <b>xlUnderlineStyleDoubleAccounting</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

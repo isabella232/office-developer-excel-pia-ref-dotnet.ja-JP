@@ -1,13 +1,5 @@
 <Type Name="FormatCondition" FullName="Microsoft.Office.Interop.Excel.FormatCondition">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="06db90663108615d83dc620b65e7671be2f3d791" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584414" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FormatCondition" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="06db90663108615d83dc620b65e7671be2f3d791" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003564" /></Metadata><TypeSignature Language="C#" Value="public interface FormatCondition" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FormatCondition" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.FormatCondition" />
   <TypeSignature Language="VB.NET" Value="Public Interface FormatCondition" />
@@ -30,13 +22,10 @@
   </Attributes>
   <Docs>
     <summary>条件付き書式を表します。</summary>
-    <remarks>
-      <para>
-        <b>FormatCondition</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />コレクションです。 <b>FormatConditions</b>コレクションには、特定の範囲の最大 3 つの条件付き書式を含めることができます。</para>
-      <para>
-        <b>FormatConditions</b>を使用 (<paramref name="index" />)、インデックスは、 <b>FormatCondition</b>オブジェクトを取得するのには、条件付き書式のインデックス番号です。</para>
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> 、新しい条件付き書式を作成します。 1 つの範囲の複数の 3 つの条件付き書式を作成しようとすると、 <b>Add</b>メソッドは失敗します。 範囲は、3 つの形式を使って、<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" />の形式のいずれかを変更する方法を使用することができます、<see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" />フォーマットを削除し、新しい書式を作成するのには<b>Add</b>メソッドを使用する方法。</para>
-      <para>使用、 <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Font" />、 <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Borders" />、および<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Interior" />の<b>FormatCondition</b>オブジェクトの外観を制御するには、セルを書式設定します。 これらのオブジェクトの一部のプロパティは、条件付き書式オブジェクト モデルでサポートされていません。 条件付き書式で使用できるプロパティは次の表に一覧表示されます。</para>
+    <remarks><para><b>FormatCondition</b>オブジェクトはコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> です。 <b>FormatConditions コレクションには、</b>指定した範囲に対して最大 3 つの条件付き書式を含めることもできます。</para>
+      <para><b>FormatCondition オブジェクトを取得するには、FormatConditions</b>( ) を使用します 。index には、条件付き書式の <paramref name="index" /> インデックス番号を<b>指定</b>します。</para>
+      <para>このメソッドを <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> 使用して、新しい条件付き書式を作成します。 1 つの範囲に対して 3 つ以上の条件付き書式を作成すると <b>、Add メソッドは</b> 失敗します。 範囲に 3 つの書式がある場合は、このメソッドを使用して書式の 1 つを変更するか、メソッドを使用して書式を削除し <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Modify(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.FormatCondition.Delete" /> <b>、Add</b> メソッドを使用して新しい書式を作成できます。</para>
+      <para>書式設定された <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Font" /> セル <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Borders" /> の外観 <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Interior" /> を制御するには <b>、FormatCondition</b> オブジェクトの "、"プロパティ" を使用します。 これらのオブジェクトの一部のプロパティは、条件付き書式オブジェクト モデルではサポートされていません。 条件付き書式で使用できるプロパティを次の表に示します。</para>
       <list type="table">
         <item>
           <term>
@@ -44,38 +33,37 @@
           </term>
           <description>
             <b>太字</b>
-            <b>色</b>
+            <b>の</b>
             <b>ColorIndex</b>
             <b>FontStyle</b>
             <b>斜体</b>
-            <b>取り消し線</b>
-            <b>下線を引く</b>会計の下線のスタイルを使用することはできません。</description>
+            <b>取り消</b>し
+            <b>線の下線</b>。会計下線スタイルは使用できません。</description>
         </item>
         <item>
           <term>
-            <b>枠線</b>
+            <b>罫線</b>
           </term>
           <description>
-            <b>下</b>
-            <b>色</b>
-            <b>左</b>
-            <b>右</b>
-            <b>スタイル</b>次の枠線のスタイルを使用することができます (他のユーザーがすべてサポートされていません): <b>xlNone</b>、 <b>xlSolid</b>、 <b>xlDash</b>、 <b>xlDot</b>、 <b>xlDashDot</b>、 <b>xlDashDotDot</b>、 <b>xlGray50</b>、 <b>xlGray75</b>、<b>および xlGray25</b>.<b>トップ</b><b>重量</b>次の枠線の重みを使用することができます (他のユーザーがすべてサポートされていません): <b>xlWeightHairline</b>および<b>xlWeightThin</b>です。</description>
+            <b></b>下
+            <b>の</b>
+            <b></b>
+            <b></b>
+            <b></b>色の左右のスタイル次の罫線スタイルを使用できます (その他のスタイルはすべてサポートされていません):xlNone、xlSolid、xlDash、xlDot、xlDashDot、xlDashDotDot、xlGray50、xlGray75、および<b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b>xlGray25</b>。<b>Top</b><b>Weight</b>The following border weights can be used (all others aren't supported): <b>xlWeightHairline</b> and <b>xlWeightThin</b>.</description>
         </item>
         <item>
           <term>
-            <b>内部</b>
+            <b>Interior</b>
           </term>
           <description>
-            <b>色</b>
+            <b>Color</b>
             <b>ColorIndex</b>
             <b>パターン</b>
             <b>PatternColorIndex</b>
           </description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -101,7 +89,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,10 +117,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの書式設定ルールを適用するセル範囲を指定します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Range" />
-        </value>
+        <summary>書式設定ルール <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を適用するセル範囲を指定するオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Range" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -159,7 +145,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Borders" />スタイルの枠線または、セル範囲 (条件付き書式の一部として定義されている範囲を含む) を表すコレクション。</summary>
+        <summary>スタイルまたはセル範囲 (条件付き書式の一部として定義された範囲を含む) の罫線を表すコレクション <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -187,14 +173,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DateOperator">
@@ -223,10 +206,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlTimePeriods</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定します<see cref="T:Microsoft.Office.Interop.Excel.XlTimePeriods" />書式の条件に使用される日付演算子です。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlTimePeriods" />
-        </value>
+        <summary>書式条件で <see cref="T:Microsoft.Office.Interop.Excel.XlTimePeriods" /> 使用する日付演算子を指定します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlTimePeriods" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -278,7 +259,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Font" />を指定したオブジェクトのフォントを表すオブジェクト。</summary>
+        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.Font" /> オブジェクトのフォントを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -306,13 +287,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値または条件付き書式または入力規則に関連付けられた式を返します。</summary>
+        <summary>条件付き書式またはデータの入力規則に関連付けられた、値または式を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Formula1</b>プロパティには、定数値、文字列値、セル参照、または数式ができます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Formula1 プロパティ</b>には、定数値、文字列値、セル参照、または数式を指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Formula2">
@@ -338,13 +316,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値または条件付き書式または入力規則の 2 番目の部分に関連付けられた式を返します。</summary>
+        <summary>条件付き書式またはデータ入力規則の 2 番目の部分に関連付けられている値または式を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Formula2</b>プロパティが専用に使用されるためデータの入力規則の条件付き書式を設定すると<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Operator" />プロパティには、<b><b>規則での条件</b></b>です。 定数値、文字列値、セル参照、または数式を指定できます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Formula2 プロパティ</b>は、データの入力規則の条件付き書式プロパティが <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Operator" /> <b>xlBetween</b>または<b>xlNotBetween の場合にのみ使用されます</b>。 定数値、文字列値、セル参照、または数式を指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -370,7 +345,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Interior" />を指定したオブジェクトの内部を表すオブジェクト。</summary>
+        <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> の内部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -403,10 +378,10 @@
         <Parameter Name="Formula2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">必要な<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />。 セル値または演算式のどちらを基に条件付き書式を設定するかを指定します。 <b>XlFormatCondition</b>定数は、次のいずれか:<b>xlCellValue</b><b>xlExpression</b></param>
-        <param name="Operator">省略可能な<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />。 条件付き書式の演算子です。 <b>XlFormatConditionOperator</b>定数は、次のいずれか:<b>で</b><b>xlEqual</b><b>xlGreater</b><b>xlGreaterEqual</b><b>xlLess</b><b>xlLessEqua</b>l<b>xlNotBetween</b><b>xlNotEqual</b>場合<paramref name="Type" />、 <b>xlExpression</b>では、<paramref name="Operator" />引数は無視されます。</param>
-        <param name="Formula1">省略可能な<b>オブジェクト</b>です。 値または条件付き書式が関連付けられている式です。 定数値、文字列値、セル参照、または数式を指定できます。</param>
-        <param name="Formula2">省略可能な<b>オブジェクト</b>です。 値または条件付き書式が関連付けられている式です。 定数値、文字列値、セル参照、または数式を指定できます。</param>
+        <param name="Type">必須 <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> 。 セル値または演算式のどちらを基に条件付き書式を設定するかを指定します。 使用できる定数は <b>、XlFormatCondition</b> の定数である<b>xlCellValue</b><b>xlExpression です。</b></param>
+        <param name="Operator">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> 可能です。 条件付き書式の演算子です。 使用できる定数は<b>、XlFormatConditionOperator</b>定数です<b>。xlBetween</b><b>xlEqual</b><b>xlGreaterEqual</b><b></b><b>xlLess xlLess</b><b>xlLessEqua</b>l<b>xlNotBetween</b><b>xlNotEqual</b>If <paramref name="Type" /> , is <b>xlExpression</b>, the <paramref name="Operator" /> argument is ignored.</param>
+        <param name="Formula1">省略 <b>可能なオブジェクト</b>です。 条件付き書式に関連付けられる値または式。 定数値、文字列値、セル参照、または数式を指定できます。</param>
+        <param name="Formula2">省略 <b>可能なオブジェクト</b>です。 条件付き書式に関連付けられる値または式。 定数値、文字列値、セル参照、または数式を指定できます。</param>
         <summary>既存の条件付き書式を変更します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -435,11 +410,9 @@
       <Docs>
         <param name="Range">書式のルールが適用される範囲を指定します。</param>
         <summary>書式のルールが適用されるセル範囲を設定します。</summary>
-        <remarks>
-          <para>範囲が A1 参照形式にする必要がありの親であるシート内で完全に収まること、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />コレクションです。 それは、範囲演算子 (コロン)、交差演算子 (スペース)、または union 演算子 (コンマ) を含めることができます。 ドル記号も使用できますが、それらは無視されます。</para>
+        <remarks><para>範囲は A1 参照スタイルで、コレクションの親であるシート内に完全に含まれている必要 <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> があります。 セル範囲には、範囲を表す演算子 (:)、共通部分を表す演算子 (スペース)、または複数の範囲を表す演算子 (,) を含めることができます。 ドル記号 ($) は含めることはできますが、無視されます。</para>
           <para>セル範囲の一部にローカルに定義した名前を使用できますが、その名前はコード記述時の言語で定義された名前である必要があります。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ModifyEx">
@@ -505,14 +478,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>条件付き書式設定ルールが<b>True</b>と評価された場合に、セルに適用される表示形式を設定または返します。 読み取り/書き込みの<b>オブジェクト</b>です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
-        <remarks>
-          <para>表示形式は、[セルの書式設定] ダイアログ ボックスの [表示形式] タブに表示されるのと同じ書式コードを使用して指定します。"標準" などの組み込みの表示形式を使用するか、またはユーザー設定の表示形式を作成することができます。</para>
-          <para></para>
-        </remarks>
+        <summary>条件付き書式ルールが True に評価された場合にセルに適用される数値の書式を設定または返 <b>します</b>。 読み取り/書き込み <b>オブジェクト です</b>。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>数値書式は、[セルの書式設定] ダイアログ ボックスの [数値] タブに表示されるのと同じ書式コードを使用して指定します。 組み込みの数値書式 ("General" など) を使用したり、ユーザー設定の数値書式を作成することができます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Operator">
@@ -598,13 +567,9 @@
       </ReturnValue>
       <Docs>
         <summary>条件付き書式ルールの優先度の値を取得、または設定します。優先度は、ワークシート内に複数の条件付き書式ルールが存在する場合、その評価の順序を決定します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>優先度の値は、1 からワークシート上の条件付き書式ルールの合計数までの正の整数を設定する必要があります。優先度の値は、ワークシート上のすべてのルールに対して固有である必要があるので、特定の条件付き書式ルールの優先度の値を変更すると、ワークシート上のほかのルールの値も変更される可能性があります。</para>
-          <para></para>
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>優先度の値は、1 からワークシート上の条件付き書式ルールの合計数までの正の整数を設定する必要があります。優先度の値は、ワークシート上のすべてのルールに対して固有である必要があるので、特定の条件付き書式ルールの優先度の値を変更すると、ワークシート上のほかのルールの値も変更される可能性があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PTCondition">
@@ -630,10 +595,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>条件付き書式がピボットテーブル チャートに適用されるかどうかを表すブール型 (<b>Boolean</b>) の値を返します。値の取得のみ可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>条件付き書式がピボットテーブル チャートに適用されるかどうかを表すブール型 (<b>Boolean</b>) の値を返します。 読み取り専用です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -663,14 +626,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotConditionScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定の定数のいずれか、<see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />列挙値は、ピボット テーブル チャートに適用されるときに、条件付き書式の範囲を決定します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
-        </value>
-        <remarks>
-          <para>既定値は、<see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />を使用して、スコープを設定する、<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" />プロパティ。</para>
-          <para></para>
-        </remarks>
+        <summary>ピボットテーブル グラフに適用される条件付き書式の範囲を決定する、列挙の定数の 1 つを <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> 取得または設定します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /></value>
+        <remarks><para>既定値は、プロパティ <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" /> を使用して範囲を設定 <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.AppliesTo" /> します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetFirstPriority">
@@ -695,12 +654,10 @@
       <Parameters />
       <Docs>
         <summary>条件付き書式ルールの優先度の値を "1" に設定し、ワークシート内の他のルールより先に評価されるようにします。</summary>
-        <remarks>
-          <para>ワークシート内に複数の条件付き書式ルールがあり、指定したルールがもともと優先度 "1" に設定されていなかった場合、このメソッドを使用すると、優先度にこのルールより小さい値が設定されていたルールは、優先順位が 1 つ下がります。</para>
+        <remarks><para>ワークシート内に複数の条件付き書式ルールがあり、指定したルールがもともと優先度 "1" に設定されていなかった場合、このメソッドを使用すると、優先度にこのルールより小さい値が設定されていたルールは、優先順位が 1 つ下がります。</para>
           <para>
             <b>注</b>: 条件付き書式ルールの優先度レベルは、ワークシート レベルで適用されます。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetLastPriority">
@@ -725,12 +682,10 @@
       <Parameters />
       <Docs>
         <summary>条件付き書式ルールの順位を設定し、ワークシート上の他のすべてのルールの後に評価されるようにします。</summary>
-        <remarks>
-          <para>このメソッドで設定される実際の優先度の値は、ワークシート上の条件付き書式ルールの数と一致します。ワークシート内に複数の条件付き書式ルールがある場合、このメソッドを使用すると、優先度にこのルールより大きい値が設定されていたルールは、優先順位が 1 つ上がります。</para>
+        <remarks><para>このメソッドで設定される実際の優先度の値は、ワークシート上の条件付き書式ルールの数と一致します。ワークシート内に複数の条件付き書式ルールがある場合、このメソッドを使用すると、優先度にこのルールより大きい値が設定されていたルールは、優先順位が 1 つ上がります。</para>
           <para>
             <b>注</b>: 条件付き書式ルールの優先度レベルは、ワークシート レベルで適用されます。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StopIfTrue">
@@ -759,14 +714,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、現在のルールが<b>True</b>と評価された場合にセルに追加の書式設定ルールを評価するかどうかを決定する<b>ブール</b>値を設定します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>下位互換性をサポートするためにこのプロパティの既定値は<b>True</b>、書式の反対の動作をユーザー インターフェイスで作成されたルールです。</para>
-          <para></para>
-        </remarks>
+        <summary>現在のルールが <b>True</b> に評価された場合、そのセルの書式ルールをさらに評価するかどうかを表すブール型 (<b>Boolean</b>) の値を取得、または設定します。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>以前のバージョンとの互換性を保つために、このプロパティの既定値は、<b>True</b> に設定されています。これは、ユーザー インターフェイスで書式ルールを作成した場合と逆の状態となります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -795,14 +746,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>条件付き書式ルールで使用するテキストを指定する<b>文字列</b>値を設定または返します。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
-        <remarks>
-          <para>このプロパティは、<see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Type" />にプロパティが設定されていない<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlTextString" />。</para>
-          <para></para>
-        </remarks>
+        <summary>条件付き書式ルールで <b>使用される</b> テキストを指定する文字列 値を設定または返します。</summary>
+        <value><b>String</b></value>
+        <remarks><para>このプロパティが設定されていない場合、 <see cref="P:Microsoft.Office.Interop.Excel.FormatCondition.Type" /> このプロパティは無視されます <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlTextString" /> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextOperator">
@@ -831,10 +778,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlContainsOperator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定の定数のいずれか、 <see cref="T:Microsoft.Office.Interop.Excel.XlContainsOperator" /> 、条件付き書式ルールによって実行されるテキスト検索を指定する列挙です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlContainsOperator" />
-        </value>
+        <summary>条件付き書式ルールによって実行されるテキスト検索を指定する、列挙の定数の <see cref="T:Microsoft.Office.Interop.Excel.XlContainsOperator" /> 1 つを取得または設定します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlContainsOperator" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -861,18 +806,16 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの種類を取得します。</summary>
+        <summary>オブジェクトの種類を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトの種類には、次のいずれかを指定できます<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />定数。</para>
+        <remarks><para>オブジェクトの種類には、次のいずれかの定数 <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> を指定できます。</para>
           <para>
             <b>xlCellValue</b>
           </para>
           <para>
             <b>xlExpression</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

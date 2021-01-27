@@ -1,13 +1,5 @@
 <Type Name="ColorFormat" FullName="Microsoft.Office.Interop.Excel.ColorFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3d031f52b238ec46211ddb6bca7295480f58f00f" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584477" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ColorFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3d031f52b238ec46211ddb6bca7295480f58f00f" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004012" /></Metadata><TypeSignature Language="C#" Value="public interface ColorFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ColorFormat&#xA;Implements _IMsoDispObj" />
@@ -31,8 +23,7 @@
   </Attributes>
   <Docs>
     <summary>単色のオブジェクト、グラデーションやパターンの塗りつぶしを持つオブジェクトの前景色または背景色、またはポインターの色を表します。</summary>
-    <remarks>
-      <para>明示的な赤、緑、青値に色を設定することができます (を使用して、<see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" />プロパティ) または配色パターンの色に (を使用して、<see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" />プロパティ)。</para>
+    <remarks><para>色は、(プロパティを使用して) 赤、緑、青の明示的な値、または配色の色 (プロパティを使用 <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.RGB" /> ) に設定 <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.SchemeColor" /> できます。</para>
       <para>次に示すオブジェクトおよびプロパティによって取得する <b>ColorFormat</b> オブジェクトの表す内容が異なります。</para>
       <list type="table">
         <item>
@@ -90,8 +81,7 @@
           <description>3-D オブジェクトの側面の色</description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -120,7 +110,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -151,13 +141,11 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定したオブジェクトの明るさを設定します。</summary>
-        <value>指定したオブジェクトの明るさです。</value>
-        <remarks>
-          <para>値の取得および設定が可能です。</para>
-          <para>このプロパティの値は、0.0 (最も暗い) から 1.0 (最も明るい) までの数値である必要があります。</para>
-          <para></para>
-        </remarks>
+        <summary>指定したオブジェクトの明度を取得または設定します。</summary>
+        <value>指定したオブジェクトの明度を指定します。</value>
+        <remarks><para>値の取得と設定が可能です。</para>
+          <para>このプロパティの値は、0.0 (最も暗い) から 1.0 (最も明るい) までの数値で指定する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -186,16 +174,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。 参照してください<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</para>
-          <para></para>
-        </remarks>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para>このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ <see cref="P:Microsoft.Office.Interop.Excel.ColorFormat.Creator" /> Macintosh 用の Microsoft Excel で使用するように設計されています。 たとえば、Excel の作成元コードは XCEL です。 「」も参照 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ObjectThemeColor">
@@ -224,10 +207,8 @@
         <ReturnType>Microsoft.Office.Core.MsoThemeColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>テーマの配色パターンにマップされている色を設定または返します。 読み取り/書き込み<see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" />。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" />
-        </value>
+        <summary>テーマの配色にマップされる色を設定または返します。 読み取り/書き込み <see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" /> 。</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoThemeColorIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -255,9 +236,7 @@
       </ReturnValue>
       <Docs>
         <summary>指定されたオブジェクトの親オブジェクトを返します。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -321,7 +300,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在の配色でのインデックスとして、カラー オブジェクトの色を設定または返します。</summary>
+        <summary>現在の配色パターンのインデックスとして色オブジェクトの色を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -352,13 +331,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定、 <b>1 つ</b>を明るく、または指定した図形の色を暗きます。</summary>
+        <summary>1 つ 指定 <b>した図形の</b> 色を明るくまたは暗くする設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>TintAndShade</b> プロパティは、0 (ゼロ) がニュートラル (最も明るい) 1、-1 (最も暗い) から数値を入力できます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>TintAndShade</b> プロパティは、0 (ゼロ) がニュートラル (最も明るい) 1、-1 (最も暗い) から数値を入力できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -384,10 +360,9 @@
         <ReturnType>Microsoft.Office.Core.MsoColorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>吹き出し書式の種類を設定または返します。</summary>
+        <summary>吹き出しの書式の種類を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
+        <remarks><para>
             <b>MsoCalloutType</b> は、次に示すいずれかの <b>MsoCalloutType</b> 定数になります。</para>
           <para>
             <b>msoCalloutFour</b>
@@ -404,8 +379,7 @@
           <para>
             <b>msoCalloutTwo</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

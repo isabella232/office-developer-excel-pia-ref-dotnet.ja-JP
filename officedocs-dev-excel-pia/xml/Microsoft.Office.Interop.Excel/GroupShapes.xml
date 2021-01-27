@@ -1,13 +1,5 @@
 <Type Name="GroupShapes" FullName="Microsoft.Office.Interop.Excel.GroupShapes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="ebe63e575d737f035f42220903f1e7f1ac5fd0cc" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20586654" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface GroupShapes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ebe63e575d737f035f42220903f1e7f1ac5fd0cc" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003473" /></Metadata><TypeSignature Language="C#" Value="public interface GroupShapes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract GroupShapes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.GroupShapes" />
   <TypeSignature Language="VB.NET" Value="Public Interface GroupShapes&#xA;Implements IEnumerable" />
@@ -34,11 +26,9 @@
   </Attributes>
   <Docs>
     <summary>グループ化した図形を表します。</summary>
-    <remarks>
-      <para>各図形は、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />オブジェクトです。 使用して、<see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" />メソッド グループ化を解除することがなくこのオブジェクトでは、グループ内の 1 つの図形を操作できます。</para>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Shape.GroupItems" /><b>グループ形状</b>のコレクションを返すプロパティです。 <b>GroupItems</b>を使用 (<paramref name="index" />)、 <paramref name="index" /><b>グループ形状</b>のコレクションから単一の図形を取得するのには、グループ化された図形内の個々 の図形の番号です。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>各図形はオブジェクトによって表 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> されます。 このオブジェクトでメソッドを使用すると、グループ化を解除することなく、グループ内の単一の図形 <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> を処理できます。</para>
+      <para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.Shape.GroupItems" /> を使用して <b>GroupShapes コレクションを取得</b> します。 <b>GroupShapes</b>コレクションから 1 つの図形を取得するには、グループ化された図形内の個々の図形の番号を示す GroupItems ( ) <paramref name="index" /> <paramref name="index" /> <b>を使用</b>します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -96,7 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -152,14 +142,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -217,8 +204,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -278,15 +264,12 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 範囲に含まれる個々 の図形です。 図形、図形の名前を指定する文字列または整数か文字列を格納する配列のインデックス番号を指定する整数であることができます。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />内の図形のサブセットを表すオブジェクトを<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />コレクションです。</summary>
+        <param name="Index">Required <b>Object</b>. 図形範囲に含む、各図形を指定します。 図形のインデックス番号を指定する整数、図形の名前を指定する文字列、あるいは整数または文字列を含む配列を使用できます。</param>
+        <summary>コレクション内 <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> の図形のサブセットを表すオブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用できますが、 <see cref="P:Microsoft.Office.Interop.Excel.GroupShapes.Range(System.Object)" /> 、図形の数を取得するプロパティを使用する方が簡単、<see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" />メソッドは、コレクションの単一のメンバーを取得する場合。</para>
-          <para>整数または文字列の配列を指定する<paramref name="Index" />、 <b>Array</b>関数を使用することができます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティを使用して任意の数の図形を取得することもできますが、コレクションの 1 つのメンバーのみを取得する場合は、このメソッドを使用する方 <see cref="P:Microsoft.Office.Interop.Excel.GroupShapes.Range(System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> が簡単です。</para>
+          <para>整数または文字列の配列を指定するには <paramref name="Index" /> <b>、Array</b> 関数を使用できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

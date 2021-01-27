@@ -1,13 +1,5 @@
 <Type Name="FillFormat" FullName="Microsoft.Office.Interop.Excel.FillFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d51378ea225e992f908efc9e6730e1e261e2887c" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20577274" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface FillFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d51378ea225e992f908efc9e6730e1e261e2887c" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003592" /></Metadata><TypeSignature Language="C#" Value="public interface FillFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract FillFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.FillFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface FillFormat&#xA;Implements _IMsoDispObj" />
@@ -31,12 +23,10 @@
   </Attributes>
   <Docs>
     <summary>図形の塗りつぶしの書式設定を表します。</summary>
-    <remarks>
-      <para>図形には、単一な色、グラデーション、テクスチャ、パターン、図、または半透明の塗りつぶしを設定できます。</para>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.Shape.Fill" />を返すプロパティの<see cref="T:Microsoft.Office.Interop.Excel.FillFormat" />オブジェクトです。</para>
-      <para>プロパティの多くの<see cref="T:Microsoft.Office.Interop.Excel.FillFormat" />オブジェクトは読み取り専用です。 これらのプロパティを設定するには、対応するメソッドを適用する必要があります。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>図形には、均一な色、グラデーション、テクスチャ、パターン、図、半透明の塗りつぶしのいずれかを設定できます。</para>
+      <para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.Shape.Fill" /> を使用してオブジェクトを取得 <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> します。</para>
+      <para>オブジェクトのプロパティの多くは <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> 読み取り専用です。 これらのプロパティを設定するには、対応するメソッドを適用する必要があります。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -65,7 +55,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,7 +86,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.ColorFormat" />を指定した塗りつぶしの背景色を表すオブジェクト。</summary>
+        <summary>指定した塗 <see cref="T:Microsoft.Office.Interop.Excel.ColorFormat" /> りつぶしの背景色を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -155,14 +145,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -191,7 +178,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ColorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.ColorFormat" /> 、塗りつぶしの指定した前景色または均一な色を表すオブジェクト。</summary>
+        <summary>指定した前 <see cref="T:Microsoft.Office.Interop.Excel.ColorFormat" /> 景の塗りつぶしまたは単色を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -222,13 +209,11 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定された塗りつぶしのグラデーションの塗りつぶしの角度を設定します。</summary>
-        <value>指定された塗りつぶしのグラデーションの塗りつぶしの角度。</value>
-        <remarks>
-          <para>値の取得および設定が可能です。</para>
-          <para>グラフのさまざまな要素 (図形) の書式設定では、グラデーションの塗りつぶしを指定できます。 たとえば、 データ系列の書式設定] ダイアログ ボックスを使用すると、グラデーションの塗りつぶしに、 縦棒グラフ内の列の書式を設定します。 ここで、<see cref="P:Microsoft.Office.Interop.Excel.FillFormat.GradientAngle" />プロパティは、データ系列の書式設定] ダイアログ ボックスの [角度] ボックス、[塗りつぶし] カテゴリでの設定に対応します。 値の有効な範囲の<see cref="P:Microsoft.Office.Interop.Excel.FillFormat.GradientAngle" />プロパティは、0 から 359.9。</para>
-          <para></para>
-        </remarks>
+        <summary>指定した塗りつぶし書式のグラデーションの塗りつぶしの角度を取得または設定します。</summary>
+        <value>指定した塗りつぶし書式のグラデーションの塗りつぶしの角度を指定します。</value>
+        <remarks><para>値の取得と設定が可能です。</para>
+          <para>グラデーションの塗りつぶしは、グラフのさまざまな要素 (図形) に書式として指定できます。 たとえば、[ データ系列の書式設定 ] ダイアログ ボックスを使用して、[ 縦棒] グラフの縦棒にグラデーションの塗りつぶしを書式として設定できます。 この場合、[データ系列の書式設定] ダイアログ ボックスの [塗りつぶし] カテゴリの [角度] ボックスの設定に <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.GradientAngle" /> 対応します。 プロパティの有効な値の範囲 <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.GradientAngle" /> は 0 ~ 359.9 です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GradientColorType">
@@ -256,10 +241,8 @@
       <Docs>
         <summary>指定した塗りつぶしのグラデーションの色の種類を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Core.MsoGradientColorType" />
-            <b>可能</b>定数は、次のいずれかできます。</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoGradientColorType" /> 使用できる定数は、 <b>次に示す MsoGradientColorType</b> 定数です。</para>
           <para>
             <b>msoGradientColorMixed</b>
           </para>
@@ -273,9 +256,8 @@
             <b>msoGradientTwoColors</b>
           </para>
           <para>
-            <b>MsoGradientColorMixed</b>は、戻り値を指定した範囲内の他の状態の組み合わせのみを示します。 使用して、 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />、 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" />、または<see cref="M:Microsoft.Office.Interop.Excel.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" />塗りつぶしのグラデーションの種類を設定します。</para>
-          <para></para>
-        </remarks>
+            <b>MsoGradientColorMixed</b> は、指定された範囲内で他の状態との組み合わせを示す戻り値です。 塗りつぶし <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> の <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" /> グラデーションの種類 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> を設定するには、またはメソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GradientDegree">
@@ -301,13 +283,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します指定された 1 色網かけの塗りつぶしのグラデーションの明度を浮動小数点値として 0.0 (暗) から 1.0 (明)。</summary>
+        <summary>指定された 1 色網かけの塗りつぶしのグラデーションの明度を 0.0 (暗) から 1.0 (明) までの範囲で返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>GradiantDegree</b>プロパティは読み取り専用です。 使用して、 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> 、塗りつぶしのグラデーションの明度を設定します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>GradiantDegree</b>プロパティは読み取り専用です。 塗りつぶし <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> のグラデーションの程度を設定するには、このメソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GradientStops">
@@ -333,10 +312,8 @@
         <ReturnType>Microsoft.Office.Core.GradientStops</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>塗りつぶし (グラデーション) の終点を取得します。値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.GradientStops" />
-        </value>
+        <summary>塗りつぶし (グラデーション) の終点を取得します。 値の取得のみ可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Core.GradientStops" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -365,10 +342,8 @@
       <Docs>
         <summary>指定された塗りつぶしのグラデーションのスタイルを取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />
-            <b>可能</b>定数は、次のいずれかできます。</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoGradientStyle" /> 使用できる定数は、 <b>次に示す MsoGradientStyle</b> クラスの定数です。</para>
           <para>
             <b>msoGradientDiagonalDown</b>
           </para>
@@ -376,7 +351,7 @@
             <b>msoGradientDiagonalUp</b>
           </para>
           <para>
-            <b>バリエーション</b>
+            <b>msoGradientFromCenter</b>
           </para>
           <para>
             <b>msoGradientFromCorner</b>
@@ -393,8 +368,7 @@
           <para>
             <b>msoGradientVertical</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GradientVariant">
@@ -420,13 +394,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>1 から 4 までの整数値として指定された塗りつぶしのグラデーションのバリエーションを返します。</summary>
+        <summary>指定された塗りつぶしのグラデーションのバリエーションを 1 ～ 4 の整数で返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティの値は、[塗りつぶし効果] ダイアログ ボックスの [グラデーション] タブのバリエーション (左右からおよび上から下に番号が付けられます) に対応しています。</para>
-          <para>このプロパティは値の取得のみ可能です。 使用して、<see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" />または<see cref="M:Microsoft.Office.Interop.Excel.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" />、塗りつぶしのグラデーションのバリエーションを設定します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティの値は、[塗りつぶし効果] ダイアログ ボックスの [グラデーション] タブのバリエーション (左右からおよび上から下に番号が付けられます) に対応しています。</para>
+          <para>このプロパティに値を設定するには、 SetExtrusionDirection メソッドを適用します。 塗りつぶしの <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.OneColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,System.Single)" /> グラデーション <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.TwoColorGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32)" /> のバリエーションを設定するには、またはメソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OneColorGradient">
@@ -454,12 +426,10 @@
         <Parameter Name="Degree" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Style">必要な<see cref="T:Microsoft.Office.Core.MsoGradientStyle" />。<b>可能</b>定数は、次のいずれか:<b>msoGradientDiagonalDown</b><b>msoGradientDiagonalUp</b><b>バリエーション</b><b>msoGradientFromCorner</b><b>msoGradientFromTitle</b><b>msoGradientHorizontal</b><b>msoGradientMixed</b><b>msoGradientVertical</b></param>
-        <param name="Variant">
-          <b>整数</b>が必要です。 グラデーションのバリエーションです。 1 ~ 4、[塗りつぶし効果] ダイアログ ボックスの [グラデーション] タブの 4 つのバリエーションの 1 つに対応する値を指定できます。 場合<paramref name="GradientStyle" />は、<b>バリエーション</b>を<paramref name="Variant" />のみに、引数に 1 または 2 を指定できます。</param>
-        <param name="Degree">
-          <b>1 つ</b>が必要です。 グラデーションの明るさを指定します。 使用できる値は 0.0 (暗) ~ 1.0 (明) です。</param>
-        <summary>指定した塗りつぶしに 1 色のグラデーションを設定します。</summary>
+        <param name="Style">必須 <see cref="T:Microsoft.Office.Core.MsoGradientStyle" /> 。使用できる定数は<b>、MsoGradientDiagonalDown msoGradientDiagonalDown</b> <b></b> <b>msoGradientFromCenter msoGradientFromCorner</b><b>msoGradientFromTitle</b><b></b><b>msoGradientHorizontal</b><b>msoGradientMixed msoGradientVertical</b><b></b>です。<b></b></param>
+        <param name="Variant">整数型 (<b>Integer</b>) の値を使用します。 グラデーションのバリエーションです。 [塗りつぶし効果] ダイアログ ボックスの [グラデーション] タブの 4 つのバリエーションに対応する 1 ～ 4 の値を指定できます。 <paramref name="GradientStyle" /> <b>msoGradientFromCenter</b>の場合、引数に指定できるのは 1 または <paramref name="Variant" /> 2 のみです。</param>
+        <param name="Degree">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 グラデーションの明度を指定します。 使用できる範囲は、0.0 (暗) ～ 1.0 (明) です。</param>
+        <summary>指定した塗りつぶしに、1 色のグラデーションを設定します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -516,12 +486,9 @@
       <Docs>
         <summary>塗りつぶしのパターンを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>パターン</b>のプロパティには、いずれかを指定できます、<see cref="T:Microsoft.Office.Core.MsoPatternType" />定数。</para>
-          <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.Patterned(Microsoft.Office.Core.MsoPatternType)" /> 、塗りつぶしのパターンの種類を設定します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Pattern プロパティ</b>には、定数のいずれかを <see cref="T:Microsoft.Office.Core.MsoPatternType" /> 指定できます。</para>
+          <para>塗りつぶし <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.Patterned(Microsoft.Office.Core.MsoPatternType)" /> のパターンの種類を設定するには、このメソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Patterned">
@@ -547,7 +514,7 @@
         <Parameter Name="Pattern" Type="Microsoft.Office.Core.MsoPatternType" />
       </Parameters>
       <Docs>
-        <param name="Pattern">必要な<see cref="T:Microsoft.Office.Core.MsoPatternType" />。</param>
+        <param name="Pattern">必須 <see cref="T:Microsoft.Office.Core.MsoPatternType" /> 。</param>
         <summary>指定した塗りつぶしのパターンを設定します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -575,13 +542,11 @@
         <ReturnType>Microsoft.Office.Core.PictureEffects</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された塗りつぶし形式の図またはテクスチャの塗りつぶしを表すオブジェクトを取得します。</summary>
-        <value>指定された塗りつぶし形式の図またはテクスチャの塗りつぶしを表します。</value>
-        <remarks>
-          <para>読み取り専用。</para>
-          <para>図またはテクスチャの塗りつぶしは、グラフのさまざまな要素 (図形) の書式で指定できます。 たとえば、 データ系列の書式設定] ダイアログ ボックスを使用すると、図またはテクスチャの塗りつぶしに、 縦棒グラフ内の列の書式を設定します。 ここで、<see cref="P:Microsoft.Office.Interop.Excel.FillFormat.PictureEffects" />を<see cref="T:Microsoft.Office.Core.PictureEffects" />データ系列の書式設定] ダイアログ ボックスの [塗りつぶし] カテゴリで、図またはテクスチャの塗りつぶしオプションに関連付けられている設定に対応するコレクション。</para>
-          <para></para>
-        </remarks>
+        <summary>指定した塗りつぶし書式の図またはテクスチャの塗りつぶしを表すオブジェクトを取得します。</summary>
+        <value>指定した塗りつぶし書式の図またはテクスチャの塗りつぶしを表します。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para>図またはテクスチャの塗りつぶしは、グラフのさまざまな要素 (図形) の書式で指定できます。 たとえば、 データ系列の書式設定] ダイアログ ボックスを使用すると、図またはテクスチャの塗りつぶしに、 縦棒グラフ内の列の書式を設定します。 この場合、[データ系列の書式設定] ダイアログ ボックスの [塗りつぶし] カテゴリの [図またはテクスチャの塗りつぶし] オプションに関連付けられている設定に対応するコレクションを <see cref="P:Microsoft.Office.Interop.Excel.FillFormat.PictureEffects" /> <see cref="T:Microsoft.Office.Core.PictureEffects" /> 取得します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PresetGradient">
@@ -609,11 +574,10 @@
         <Parameter Name="PresetGradientType" Type="Microsoft.Office.Core.MsoPresetGradientType" />
       </Parameters>
       <Docs>
-        <param name="Style">必要な<see cref="T:Microsoft.Office.Core.MsoGradientStyle" />。<b>可能</b>定数は、次のいずれか:<b>msoGradientDiagonalDown</b><b>msoGradientDiagonalUp</b><b>バリエーション</b><b>msoGradientFromCorner</b><b>msoGradientFromTitle</b><b>msoGradientHorizontal</b><b>msoGradientMixed</b><b>msoGradientVertical</b></param>
-        <param name="Variant">
-          <b>整数</b>が必要です。 グラデーションのバリエーションです。 1 ~ 4、[塗りつぶし効果] ダイアログ ボックスの [グラデーション] タブの 4 つのバリエーションの 1 つに対応する値を指定できます。 場合<paramref name="GradientStyle" />は、<b>バリエーション</b>を<paramref name="Variant" />のみに、引数に 1 または 2 を指定できます。</param>
-        <param name="PresetGradientType">必要な<see cref="T:Microsoft.Office.Core.MsoPresetGradientType" />。</param>
-        <summary>指定した塗りつぶしを既定のグラデーションに設定します。</summary>
+        <param name="Style">必須 <see cref="T:Microsoft.Office.Core.MsoGradientStyle" /> 。使用できる定数は<b>、MsoGradientDiagonalDown msoGradientDiagonalDown</b> <b></b> <b>msoGradientFromCenter msoGradientFromCorner</b><b>msoGradientFromTitle</b><b></b><b>msoGradientHorizontal</b><b>msoGradientMixed msoGradientVertical</b><b></b>です。<b></b></param>
+        <param name="Variant">整数型 (<b>Integer</b>) の値を使用します。 グラデーションのバリエーションです。 [塗りつぶし効果] ダイアログ ボックスの [グラデーション] タブの 4 つのバリエーションに対応する 1 ～ 4 の値を指定できます。 <paramref name="GradientStyle" /> <b>msoGradientFromCenter</b>の場合、引数に指定できるのは 1 または <paramref name="Variant" /> 2 のみです。</param>
+        <param name="PresetGradientType">必須 <see cref="T:Microsoft.Office.Core.MsoPresetGradientType" /> 。</param>
+        <summary>指定した塗りつぶしに、既定のグラデーションを設定します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -642,12 +606,9 @@
       <Docs>
         <summary>指定した塗りつぶしの既定のグラデーションの種類を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>PresetGradiantType</b>プロパティには、いずれかを指定できる、<see cref="T:Microsoft.Office.Core.MsoPresetGradientType" />定数。</para>
-          <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" /> 、塗りつぶしの既定のグラデーションの種類を設定します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>PresetGradiantType</b>プロパティには、定数のいずれかを <see cref="T:Microsoft.Office.Core.MsoPresetGradientType" /> 指定できます。</para>
+          <para>このメソッド <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.PresetGradient(Microsoft.Office.Core.MsoGradientStyle,System.Int32,Microsoft.Office.Core.MsoPresetGradientType)" /> を使用して、塗りつぶしの事前設定されたグラデーションの種類を設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PresetTexture">
@@ -675,12 +636,9 @@
       <Docs>
         <summary>指定した塗りつぶしの既定のテクスチャを取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>PresetTexture</b>プロパティには、いずれかを指定できる、<see cref="T:Microsoft.Office.Core.MsoPresetTexture" />定数。</para>
-          <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" /> 、塗りつぶしの既定のテクスチャを設定します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>PresetTexture</b>プロパティには、定数のいずれかを <see cref="T:Microsoft.Office.Core.MsoPresetTexture" /> 指定できます。</para>
+          <para>このメソッド <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.PresetTextured(Microsoft.Office.Core.MsoPresetTexture)" /> を使用して、塗りつぶしの事前設定テクスチャを設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PresetTextured">
@@ -706,7 +664,7 @@
         <Parameter Name="PresetTexture" Type="Microsoft.Office.Core.MsoPresetTexture" />
       </Parameters>
       <Docs>
-        <param name="PresetTexture">必要な<see cref="T:Microsoft.Office.Core.MsoPresetTexture" />。</param>
+        <param name="PresetTexture">必須 <see cref="T:Microsoft.Office.Core.MsoPresetTexture" /> 。</param>
         <summary>指定された塗りつぶしに既定のテクスチャを設定します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -737,12 +695,11 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定の場合は、塗りつぶしのスタイルは、オブジェクトを回転する必要があります。 読み取り/書き込み<see cref="T:Microsoft.Office.Core.MsoTriState" />。</summary>
-        <value>返します。 <see cref="T:Microsoft.Office.Core.MsoTriState" />。</value>
-        <remarks>
-          <list type="table">
+        <summary>塗りつぶしのスタイルをオブジェクトで回転するかどうかを返すか設定します。 読み取り/書き込み <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoTriState" /> を返します。</value>
+        <remarks><list type="table">
             <item>
-              <term>MsoTriState は、次のいずれかの <b>MsoTriState</b> 定数にできます。</term>
+              <term>使用できる定数は、次に示す <b>MsoTriState</b> クラスの定数のいずれかです。</term>
             </item>
             <item>
               <term>
@@ -770,8 +727,7 @@
               </term>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Solid">
@@ -796,10 +752,8 @@
       <Parameters />
       <Docs>
         <summary>指定した塗りつぶしを均一な色に設定します。</summary>
-        <remarks>
-          <para>グラデーション、テクスチャ、パターン、または背景の付いた塗りつぶしを均一な塗りつぶしに変換します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>グラデーション、テクスチャ、パターン、または背景の付いた塗りつぶしを均一な塗りつぶしに変換します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureAlignment">
@@ -828,10 +782,8 @@
         <ReturnType>Microsoft.Office.Core.MsoTextureAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または指定されたテキストの配置を設定する<see cref="T:Microsoft.Office.Interop.Excel.FillFormat" />オブジェクトです。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" />
-        </value>
+        <summary>指定したオブジェクトのテキストの配置を設定または返 <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -861,10 +813,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>テキストの水平方向拡張の値を設定を取得または設定します<see cref="T:Microsoft.Office.Interop.Excel.FillFormat" />オブジェクトです。 読み取り/書き込み <b>1 つ</b> です。</summary>
-        <value>
-          <b>Single</b>
-        </value>
+        <summary>オブジェクトのテキストを水平方向に拡大または縮小する値を設定または返 <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> します。 読み取り/書き込み <b>1 つ</b> です。</summary>
+        <value><b>Single</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -893,10 +843,8 @@
       <Docs>
         <summary>指定された塗りつぶしのユーザー設定のテクスチャ ファイルの名前を取得します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserPicture(System.String)" />または<see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserTextured(System.String)" />塗りつぶしのテクスチャ ファイルを設定します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>塗りつぶし <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserPicture(System.String)" /> のテクスチャ <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserTextured(System.String)" /> ファイルを設定するには、or メソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureOffsetX">
@@ -925,10 +873,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された塗りつぶしの X オフセットの値を返します。 読み取り/書き込み <b>1 つ</b> です。</summary>
-        <value>
-          <b>Single</b>
-        </value>
+        <summary>指定された塗りつぶしのオフセットの X の値を返します。 読み取り/書き込み <b>1 つ</b> です。</summary>
+        <value><b>Single</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -958,10 +904,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された塗りつぶしの Y オフセットの値を返します。 読み取り/書き込み <b>1 つ</b> です。</summary>
-        <value>
-          <b>Single</b>
-        </value>
+        <summary>指定された塗りつぶしのオフセットの Y の値を返します。 読み取り/書き込み <b>1 つ</b> です。</summary>
+        <value><b>Single</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -991,12 +935,11 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した塗りつぶしのテクスチャ タイルのスタイルを返します。 読み取り/書き込み<see cref="T:Microsoft.Office.Core.MsoTriState" />。</summary>
-        <value>返します。 <see cref="T:Microsoft.Office.Core.MsoTriState" />。</value>
-        <remarks>
-          <list type="table">
+        <summary>指定された塗りつぶしのテクスチャのタイル スタイルを返します。 読み取り/書き込み <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoTriState" /> を返します。</value>
+        <remarks><list type="table">
             <item>
-              <term>MsoTriState は、次のいずれかの <b>MsoTriState</b> 定数にできます。</term>
+              <term>使用できる定数は、次に示す <b>MsoTriState</b> クラスの定数のいずれかです。</term>
             </item>
             <item>
               <term>
@@ -1024,8 +967,7 @@
               </term>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureType">
@@ -1051,14 +993,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTextureType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された塗りつぶしのテクスチャの種類を取得します。値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoTextureType" />
-        </value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Core.MsoTextureType" />
-            <b>可能</b>定数は、次のいずれかできます。</para>
+        <summary>指定された塗りつぶしのテクスチャの種類を取得します。 値の取得のみ可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoTextureType" /></value>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTextureType" /> 使用できる定数は、 <b>次に示す MsoTextureType</b> 定数です。</para>
           <para>
             <see cref="F:Microsoft.Office.Core.MsoTextureType.msoTexturePreset" />
           </para>
@@ -1068,9 +1006,8 @@
           <para>
             <see cref="F:Microsoft.Office.Core.MsoTextureType.msoTextureUserDefined" />
           </para>
-          <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserTextured(System.String)" /> 、塗りつぶしのテクスチャの種類を設定します。</para>
-          <para></para>
-        </remarks>
+          <para>塗りつぶし <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserTextured(System.String)" /> のテクスチャの種類を設定するには、このメソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TextureVerticalScale">
@@ -1099,10 +1036,8 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した塗りつぶしのテクスチャの垂直のスケールを返します。 読み取り/書き込み <b>1 つ</b> です。</summary>
-        <value>
-          <b>Single</b>
-        </value>
+        <summary>指定した塗りつぶしのテクスチャの垂直方向のスケールを返します。 読み取り/書き込み <b>1 つ</b> です。</summary>
+        <value><b>Single</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1132,12 +1067,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定した塗りつぶしの透明度値として設定 0.0 (不透明) から 1.0 (透明) です。</summary>
+        <summary>指定された塗りつぶしの透明度を示す 0.0 (不透明) から 1.0 (透明) までの値を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Transparency プロパティの値は、単一な色の塗りつぶしと線にしか設定できません。パターンが設定された線、塗りつぶしのパターン、グラデーション、図、およびテクスチャを半透明にすることはできません。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Transparency プロパティの値は、単一な色の塗りつぶしと線にしか設定できません。パターンが設定された線、塗りつぶしのパターン、グラデーション、図、およびテクスチャを半透明にすることはできません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TwoColorGradient">
@@ -1164,9 +1097,8 @@
         <Parameter Name="Variant" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Style">必要な<see cref="T:Microsoft.Office.Core.MsoGradientStyle" />。<b>可能</b>定数は、次のいずれか:<b>msoGradientDiagonalDown</b><b>msoGradientDiagonalUp</b><b>バリエーション</b><b>msoGradientFromCorner</b><b>msoGradientFromTitle</b><b>msoGradientHorizontal</b><b>msoGradientMixed</b><b>msoGradientVertical</b></param>
-        <param name="Variant">
-          <b>整数</b>が必要です。 グラデーションのバリエーションです。 1 ~ 4、[塗りつぶし効果] ダイアログ ボックスの [グラデーション] タブの 4 つのバリエーションの 1 つに対応する値を指定できます。 場合<paramref name="Style" />は、<b>バリエーション</b>を<paramref name="Variant" />のみに、引数に 1 または 2 を指定できます。</param>
+        <param name="Style">必須 <see cref="T:Microsoft.Office.Core.MsoGradientStyle" /> 。使用できる定数は<b>、MsoGradientDiagonalDown msoGradientDiagonalDown</b> <b></b> <b>msoGradientFromCenter msoGradientFromCorner</b><b>msoGradientFromTitle</b><b></b><b>msoGradientHorizontal</b><b>msoGradientMixed msoGradientVertical</b><b></b>です。<b></b></param>
+        <param name="Variant">整数型 (<b>Integer</b>) の値を使用します。 グラデーションのバリエーションです。 [塗りつぶし効果] ダイアログ ボックスの [グラデーション] タブの 4 つのバリエーションに対応する 1 ～ 4 の値を指定できます。 <paramref name="Style" /> <b>msoGradientFromCenter</b>の場合、引数に指定できるのは 1 または <paramref name="Variant" /> 2 のみです。</param>
         <summary>指定された塗りつぶしを 2 色のグラデーションに設定します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1196,9 +1128,8 @@
       <Docs>
         <summary>塗りつぶしの種類を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Core.MsoFillType" />以下の定数のいずれかできます。</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoFillType" /> 使用できる定数は、次に示す定数です。</para>
           <para>
             <b>msoFillGradient</b>
           </para>
@@ -1223,8 +1154,7 @@
           <para>
             <b>xlNone</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="UserPicture">
@@ -1250,8 +1180,7 @@
         <Parameter Name="PictureFile" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="PictureFile">
-          <b>文字列</b> が必要です。 図のファイル名を指定します。</param>
+        <param name="PictureFile"><b>文字列</b> が必要です。 図のファイル名を指定します。</param>
         <summary>指定された図形をイメージで塗りつぶします。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1279,13 +1208,10 @@
         <Parameter Name="TextureFile" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="TextureFile">
-          <b>文字列</b> が必要です。 図のファイル名を指定します。</param>
+        <param name="TextureFile"><b>文字列</b> が必要です。 図のファイル名を指定します。</param>
         <summary>指定した図形を小さなタイル状の画像で塗りつぶします。</summary>
-        <remarks>
-          <para>1 つの大きな画像で図形を塗りつぶす場合を使用して、<see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserPicture(System.String)" />メソッドです。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>1 つの大きなイメージで図形を塗りつぶしる場合は、このメソッドを使用 <see cref="M:Microsoft.Office.Interop.Excel.FillFormat.UserPicture(System.String)" /> します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -1314,31 +1240,27 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトを表示するかどうかを決定します。</summary>
+        <summary>オブジェクトを表示するかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" />以下の<b>msotristate クラス</b>の定数のいずれかできます。</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" /> 使用できる定数は、 <b>次に示す MsoTriState</b> 定数です。</para>
           <para>
             <b>msoCTrue</b>
           </para>
           <para>
-            <b>msofalse を設定します。</b>
+            <b>msoFalse</b>
           </para>
           <para>
             <b>msoTriStateMixed</b>
           </para>
           <para>
-            <b>msoTriStateToggle</b>
+            <b>msoTriStateToggle </b>
           </para>
           <para>
             <b>msoTrue</b> オブジェクトは表示されます。</para>
-          <para>
-            <b>アイテムがテーブルに表示されている場合、ピボット テーブル アイテムの<b>Visible</b>プロパティは</b>
-          </para>
-          <para>名前の<b>Visible</b>プロパティを<b>False</b>に設定する場合、[名前の定義] ダイアログ ボックスで名前が表示されません。</para>
-          <para></para>
-        </remarks>
+          <para>ピボットテーブルの各アイテムの <b>Visible</b> プロパティは、現在そのアイテムがテーブルに表示されている場合は <b>True</b> です。</para>
+          <para>名前の <b>Visible</b> プロパティを <b>False</b>に設定すると、[名前の定義] ダイアログ ボックスに名前は表示されません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

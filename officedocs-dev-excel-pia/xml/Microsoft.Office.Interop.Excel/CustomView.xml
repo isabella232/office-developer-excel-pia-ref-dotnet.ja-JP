@@ -1,13 +1,5 @@
 <Type Name="CustomView" FullName="Microsoft.Office.Interop.Excel.CustomView">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="182293052e1d394361c3727427d11e41a3a372bd" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576056" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CustomView" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="182293052e1d394361c3727427d11e41a3a372bd" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003879" /></Metadata><TypeSignature Language="C#" Value="public interface CustomView" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CustomView" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CustomView" />
   <TypeSignature Language="VB.NET" Value="Public Interface CustomView" />
@@ -30,13 +22,9 @@
   </Attributes>
   <Docs>
     <summary>ブックのユーザー設定のビューを表します。</summary>
-    <remarks>
-      <para>
-        <b>CustomView</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.CustomViews" />コレクションです。</para>
-      <para>
-        <b>CustomViews</b>を使用 (<paramref name="index" />)、 <paramref name="index" /><b>CustomView</b>オブジェクトを取得する、ユーザー設定のビューのインデックス番号または名前。</para>
-      <para></para>
-    </remarks>
+    <remarks><para><b>CustomView オブジェクト</b>は、コレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.CustomViews" /> です。</para>
+      <para><b>CustomView オブジェクトを取得するには、CustomViews</b>( )、カスタム ビューの名前またはインデックス番号 <paramref name="index" /> <paramref name="index" /> を<b>使用</b>します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -62,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,14 +78,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -150,19 +135,18 @@
       <Docs>
         <summary>オブジェクトの名前を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>次の表は、 <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">OLAP</a>を与え、関連するプロパティ、 <b>Name</b>プロパティの値の例を示しています。</para>
+        <remarks><para>次の表に、OLAP で指定された <b>Name</b> プロパティおよび関連プロパティの値の例 <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproName1.htm">を示します。</a></para>
           <list type="table">
             <item>
               <term>
-                <b>キャプション</b>
+                <b>Caption</b>
               </term>
               <description>東京</description>
               <description>東京</description>
             </item>
             <item>
               <term>
-                <b>名</b>
+                <b>名前</b>
               </term>
               <description>[都道府県].[東京都].[東京] (読み取り専用)</description>
               <description>東京</description>
@@ -182,15 +166,14 @@
               <description>東京</description>
             </item>
           </list>
-          <para>インデックスを指定する場合、<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />コレクションでは、次の表に示すように構文を使用することができます。</para>
+          <para>コレクションにインデックスを指定する場合 <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> は、次の表に示す構文を使用できます。</para>
           <list type="table">
             <item>
-              <term>式です。返すプロパティ (「[ヨーロッパ]。 [東京都] です。[東京]")</term>
-              <description>式です。PivotItems("Paris")</description>
+              <term>式を使用します。PivotItems("[Europe].[フランス]。[パリ]")</term>
+              <description>式を使用します。PivotItems("Paris")</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -244,8 +227,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>印刷設定は、ユーザー設定のビューに含まれている場合です。</summary>
+        <summary><b>True の</b> 印刷設定がカスタム ビューに含まれている場合です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -273,8 +255,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>場合は、カスタム ビューに非表示の行と列 (フィルター情報を含む) の設定が含まれています。</summary>
+        <summary><b>True</b> の 場合(フィルター情報を含む) 非表示の行と列の設定がカスタム ビューに含まれています。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

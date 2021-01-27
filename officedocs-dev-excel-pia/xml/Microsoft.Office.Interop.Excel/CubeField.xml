@@ -1,13 +1,5 @@
 <Type Name="CubeField" FullName="Microsoft.Office.Interop.Excel.CubeField">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="bf16f6175f71fd20e3da730314c01f3723f6ca55" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582419" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface CubeField" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bf16f6175f71fd20e3da730314c01f3723f6ca55" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003900" /></Metadata><TypeSignature Language="C#" Value="public interface CubeField" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CubeField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CubeField" />
   <TypeSignature Language="VB.NET" Value="Public Interface CubeField" />
@@ -27,14 +19,10 @@
   </Attributes>
   <Docs>
     <summary>OLAP キューブの階層フィールドまたはメジャー フィールドを表します。</summary>
-    <remarks>
-      <para>
-        <b>CubeField</b>オブジェクト、ピボット テーブル内のメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.CubeFields" />コレクションです。</para>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.PivotField.CubeField" /> 、 <b>CubeField</b>オブジェクトを取得するプロパティです。</para>
-      <para>
-        <b>表します</b>を使用して (<paramref name="index" />)、<paramref name="index" />は、キューブ フィールドのインデックス番号を 1 つの<b>CubeField</b>オブジェクトを取得します。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>ピボットテーブル レポートでは <b>、CubeField</b> オブジェクトはコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.CubeFields" /> です。</para>
+      <para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.PivotField.CubeField" /> を使用して <b>CubeField オブジェクトを取得</b> します。</para>
+      <para>1 つの CubeField オブジェクトを取得するには、キューブ フィールドのインデックス番号を指定する <b>CubeFields</b>( ) <paramref name="index" /> <paramref name="index" /> <b>を使用</b> します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Caption">
@@ -63,10 +51,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>キューブ フィールドのラベルの文字列を表す<b>文字列</b>値を返します。</summary>
-        <value>
-          <b>String</b>
-        </value>
+        <summary>キューブ フィールドのラベルの文字列を表す文字列型 (<b>String</b>) の値を返します。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,15 +82,12 @@
         <Parameter Name="PropertyOrder" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Property">
-          <b>文字列</b> が必要です。 メンバー プロパティの一意の名前。 安定した階層のメンバー プロパティが関連付けられているレベルの一意の名前に「引用符で囲まれた」のメンバーのプロパティ名を追加して一意の名前を作成できます。 不均等な階層では、一意の名前は、階層の一意の名前を引用符で囲み"メンバー プロパティの名前を追加することによって作成できます。</param>
-        <param name="PropertyOrder">省略可能な<b>オブジェクト</b>です。 セット、<see cref="P:Microsoft.Office.Interop.Excel.PivotField.PropertyOrder" />のプロパティの値を<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />オブジェクトです。 現在同じ設定されているピボット テーブル フィールドの直前に、コレクション内の実際の位置になります<paramref name="PropertyOrder" />引数で指定された値です。 順序の指定したプロパティ値フィールドがない場合は、許容可能な値の範囲、1 に 1 を加えた、階層で表示されているメンバー プロパティの数です。 この引数では、1 から始まります。 省略すると、プロパティは、リストの末尾に移動します。</param>
+        <param name="Property"><b>文字列</b> が必要です。 メンバー プロパティの一意な名前を指定します。 バランスの取れた階層では、メンバー プロパティが関連付けられているレベルの一意の名前に "quoted" メンバー プロパティ名を付加することで、一意の名前を作成できます。 不均等な階層では、メンバー プロパティ名を引用符で囲み、階層の一意な名前の後に付加することによって作成します。</param>
+        <param name="PropertyOrder">省略 <b>可能なオブジェクト</b>です。 オブジェクトの <see cref="P:Microsoft.Office.Interop.Excel.PivotField.PropertyOrder" /> プロパティ値を設定 <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> します。 コレクション内の実際の位置は、現在引数に指定されている値と同じ値を持つピボットテーブル フィールドの直前 <paramref name="PropertyOrder" /> になります。 指定されたプロパティの順序の値を持つフィールドがない場合、許容される値の範囲は、1 から、階層に対して既に表示されているメンバー プロパティの数と 1 です。 この引数は 1 から始まる値です。 この引数が省略されると、メンバー プロパティの位置はリストの末尾になります。</param>
         <summary>キューブ フィールドの表示画面にメンバー プロパティのフィールドを追加します。</summary>
-        <remarks>
-          <para>ピボットテーブルのビューにフィールドがない場合、指定されたプロパティのフィールドは表示されません。</para>
-          <para>メンバー プロパティを削除するを使用して、<see cref="M:Microsoft.Office.Interop.Excel.PivotField.Delete" />メソッドを削除する、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />オブジェクトから、<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />コレクションです。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>ピボットテーブルのビューにフィールドがない場合、指定されたプロパティのフィールドは表示されません。</para>
+          <para>メンバー プロパティを削除するには、この <see cref="M:Microsoft.Office.Interop.Excel.PivotField.Delete" /> メソッドを使用してコレクション <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> からオブジェクトを削除 <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddMemberPropertyFieldEx">
@@ -161,18 +144,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="P:Microsoft.Office.Interop.Excel.CubeField.AllItemsVisible" />プロパティは、ピボット フィールドまたはキューブ フィールドに手動フィルターを適用するかどうかをチェックします。 読み取り専用の <b>ブール値</b> です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>既定値は<b>True</b>で使用できる、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />と<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />のオブジェクトです。</para>
-          <para>OLAP ピボット テーブルの場合、このプロパティはのみの<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />オブジェクトです。 取得または設定にしようとして、 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> OLAP ピボット テーブル内のオブジェクトは実行時エラーを返します。</para>
-          <para>ピボット テーブルの場合、このプロパティは、の使用、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />オブジェクトです。</para>
-          <para>手動フィルターが適用されない場合、このプロパティは<b>True</b>に設定に自動的には (かどうかに関係なく、<see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" />プロパティが true または false)。 それが自動的に<b>False</b>に設定すべての手動フィルターが適用されたとき (かどうかに関係なく、<see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" />プロパティが true または false)。</para>
-          <para></para>
-        </remarks>
+        <summary>この <see cref="P:Microsoft.Office.Interop.Excel.CubeField.AllItemsVisible" /> プロパティは、ピボットフィールドまたはキューブフィールドに手動フィルターが適用されているかどうかを確認します。 読み取り専用の <b>Boolean</b> です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>既定値は <b>True で</b> 、オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> に対して使用 <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> できます。</para>
+          <para>OLAP ピボットテーブルの場合、このプロパティはオブジェクトでのみ使用 <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> できます。 OLAP ピボットテーブルのオブジェクトで取得または設定を試みようと <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> すると、実行時エラーが返されます。</para>
+          <para>ピボットテーブルの場合、このプロパティはオブジェクトに対して使用 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> できます。</para>
+          <para>手動フィルターが適用されな場合、このプロパティは自動的に <b>True</b> に設定されます (プロパティが true または false のかどうか <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> に依存しない)。 このプロパティは、手動フィルターが適用されると自動的に <b>False</b> に設定されます (プロパティが true または false のかどうか <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> に依存しない)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -198,9 +176,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 値の取得のみ可能です。</summary>
-        <value>
-          <b>アプリケーション</b>(上記参照)</value>
+        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Microsoft Excel アプリケーションを表 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> すオブジェクトを返します。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
+        <value><b>アプリケーション</b> (上記を参照)</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,10 +207,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>キューブ フィールドのラベルの文字列です。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
+        <summary>キューブ フィールドのラベル テキスト。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,14 +233,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <see cref="M:Microsoft.Office.Interop.Excel.CubeField.ClearManualFilter" />メソッドには、 <b>HiddenItemsInList</b>を空にして、ピボット テーブルでピボット フィールドのすべての項目の<b>Visible</b>プロパティを<b>True</b>に設定する簡単な方法が用意されています/OLAP ピボット テーブルで<b>返さ</b>コレクションです。</summary>
-        <remarks>
-          <para>このメソッドは、の使用、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />オブジェクトの<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />と、 <see cref="T:Microsoft.Office.Interop.Excel.CubeField" />OLAP ピボット テーブル内のオブジェクト。 OLAP ピボット テーブルでピボット フィールドに対して呼び出すと、実行時エラーを返します。</para>
-          <para>
-            <b>HiddenItemsList</b>は、このメソッドを呼び出した後に/<b>HiddenItems</b>と<b>返さ</b>/<b>れます</b>コレクションは空です。</para>
-          <para></para>
-        </remarks>
+        <summary>このメソッドは、ピボットテーブル内のピボットフィールドのすべてのアイテムに対して Visible プロパティを True に設定し、OLAP ピボットテーブルの <see cref="M:Microsoft.Office.Interop.Excel.CubeField.ClearManualFilter" /> <b>HiddenItemsInList</b> <b></b> <b></b> / <b>VisibleItemsList</b>コレクションを空にする簡単な方法を提供します。</summary>
+        <remarks><para>このメソッドは、OLAP ピボットテーブル内のオブジェクトおよび OLAP ピボットテーブル内のオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> に対して使用できます。 このメソッドを OLAP ピボットテーブル内のピボットフィールドに対して呼び出すと、実行時エラーが返されます。</para>
+          <para>このメソッドを呼び出した後<b>、HiddenItemsList</b> / <b>HiddenItems</b>コレクションと<b>VisibleItemsList</b> / <b>VisibleItems</b>コレクションは空になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CreatePivotFields">
@@ -289,12 +260,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <see cref="M:Microsoft.Office.Interop.Excel.CubeField.CreatePivotFields" />メソッドは、Microsoft Office Excel 2007 の新機能です。 対応を作成して、ピボット テーブルに追加されていないピボット フィールドにフィルターを適用することができます<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />オブジェクトです。</summary>
-        <remarks>
-          <para>OLAP のピボット テーブルで<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />、対応するまでは存在しない<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />に追加されます、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 <see cref="M:Microsoft.Office.Interop.Excel.CubeField.CreatePivotFields" />メソッドにより、ユーザーがすべてを作成する<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />の<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />。  ユーザーもピボット フィールドにフィルターを追加でき、プロパティを設定するキューブに追加する前に、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</para>
-          <para></para>
-        </remarks>
+        <summary>この  <see cref="M:Microsoft.Office.Interop.Excel.CubeField.CreatePivotFields" /> メソッドは、新しいMicrosoft Office Excel 2007。 ユーザーは、対応するオブジェクトを作成して、ピボットテーブルにまだ追加されていないピボットフィールドにフィルターを適用 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> できます。</summary>
+        <remarks><para>OLAP ピボットテーブルでは、 <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> 対応するピボットテーブルが追加されるまで <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> 存在しません <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 この <see cref="M:Microsoft.Office.Interop.Excel.CubeField.CreatePivotFields" /> メソッドを使用すると、ユーザーは、すべてのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> を作成できます <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> 。  ユーザーは、キューブフィールドをピボットフィールドに追加する前に、ピボットフィールドにフィルターを追加し、プロパティを設定することもできます <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -320,14 +288,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CubeFieldSubType">
@@ -353,13 +318,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCubeFieldSubType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>種類を指定する<see cref="P:Microsoft.Office.Interop.Excel.CubeField" />。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCubeFieldSubType" />
-        </value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.CubeField.CubeFieldSubType" /> 、次の列挙型の値のいずれか </para>
+        <summary>の種類を指定します <see cref="P:Microsoft.Office.Interop.Excel.CubeField" /> 。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCubeFieldSubType" /></value>
+        <remarks><para>次 <see cref="P:Microsoft.Office.Interop.Excel.CubeField.CubeFieldSubType" /> の列挙の任意の値を指定できます。 </para>
           <list type="bullet">
             <item>
               <description>
@@ -412,8 +373,7 @@
               </description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CubeFieldType">
@@ -439,12 +399,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCubeFieldType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>OLAP キューブ フィールドが階層フィールドまたはメジャー フィールドかどうかを示します。</summary>
+        <summary>OLAP キューブ フィールドが階層フィールドかメジャー フィールドかを示します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlCubeFieldType" />定数:<b>階層フィールド</b>または<b>メジャー</b>です。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>使用できる定数は <see cref="T:Microsoft.Office.Interop.Excel.XlCubeFieldType" /> <b>、xlHierarchy</b> または <b>xlMeasure です</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CurrentPageName">
@@ -473,10 +431,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>キューブ フィールドのページ名を設定または返します。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
+        <summary>CubeField のページ名を設定または返します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -502,10 +458,8 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトを削除します。</summary>
-        <remarks>
-          <para>キューブ フィールドを削除するには、キューブ自分のフィールドを使用して作成した場合のみ、<see cref="M:Microsoft.Office.Interop.Excel.CalculatedMembers.Add(System.String,System.String,System.Object,System.Object)" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" />オブジェクトは、<paramref name="xlCalculatedSet" />の引数。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>キューブ フィールドは、オブジェクトのメソッドと引数を使用してキューブ フィールドを自分で作成した場合 <see cref="M:Microsoft.Office.Interop.Excel.CalculatedMembers.Add(System.String,System.String,System.Object,System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> にのみ削除 <paramref name="xlCalculatedSet" /> できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DragToColumn">
@@ -534,14 +488,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、指定したフィールドを列位置にドラッグできます。</summary>
+        <summary>指定されたフィールドを列の位置にドラッグできる場合は <b>True</b> を指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>既定値は <b>True</b> です。</para>
-          <para>OLAP データ ソースの値は、メジャー フィールドの<b>場合は False</b> 。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>既定値は <b>True</b> です。</para>
+          <para>OLAP データ ソースの場合、メジャー フィールド <b>の値は False</b> です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DragToData">
@@ -570,14 +521,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、指定したフィールドをデータ位置にドラッグできます。</summary>
+        <summary>指定されたフィールドをデータの位置にドラッグできる場合は <b>True</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>既定値は <b>True</b> です。</para>
-          <para>OLAP データ ソースの値は、メジャー フィールドの<b>場合は False</b> 。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>既定値は <b>True</b> です。</para>
+          <para>OLAP データ ソースの場合、メジャー フィールド <b>の値は False</b> です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DragToHide">
@@ -606,13 +554,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、ピボット テーブル レポートからドラッグすることにより、フィールドを非表示にすることができます。</summary>
+        <summary>ピボットテーブル レポートからドラッグすることにより、フィールドを非表示にする場合は <b>True</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>既定値は <b>True</b> です。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>既定値は <b>True</b> です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DragToPage">
@@ -641,14 +586,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、フィールドをページ位置にドラッグできます。</summary>
+        <summary>フィールドをページ位置にドラッグできる場合は <b>True</b> を指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>既定値は <b>True</b> です。</para>
-          <para>OLAP データ ソースの値は、メジャー フィールドの<b>場合は False</b> 。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>既定値は <b>True</b> です。</para>
+          <para>OLAP データ ソースの場合、メジャー フィールド <b>の値は False</b> です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DragToRow">
@@ -677,14 +619,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、フィールドを行位置にドラッグできます。</summary>
+        <summary>フィールドを行の位置にドラッグできる場合は <b>True</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>既定値は <b>True</b> です。</para>
-          <para>OLAP データ ソースの値は、メジャー フィールドの<b>場合は False</b> 。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>既定値は <b>True</b> です。</para>
+          <para>OLAP データ ソースの場合、メジャー フィールド <b>の値は False</b> です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableMultiplePageItems">
@@ -713,14 +652,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>を選択する OLAP ピボット テーブルのページ フィールド エリアで複数のアイテムを許可します。</summary>
+        <summary><b>True</b> を指定すると、OLAP ピボットテーブルのページ フィールド領域内の複数のアイテムを選択できます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>既定値は <b>False</b> です。</para>
-          <para>このプロパティは、オンライン分析処理 (OLAP) ピボット テーブルにのみ適用されます。 照会、または、非 OLAP ピボット テーブルの設定は、実行時エラーになります。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>既定値は <b>False</b> です。</para>
+          <para>このプロパティは、OLAP (Online Analytical Processing) ピボットテーブルにのみ適用されます。 OLAP 以外のピボットテーブルをクエリまたは設定すると、実行時エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FlattenHierarchies">
@@ -749,17 +685,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または名前付きセットのキューブ フィールドの階層のすべてのレベルのアイテムは、OLAP キューブに基づくピボット テーブル レポートの同じフィールドに表示されるかどうかを設定します。</summary>
-        <value>
-          <b>true の</b>場合は、OLAP キューブに基づくピボット テーブル レポートの同じフィールドに名前付きセットのキューブ フィールドの階層のすべてのレベルの項目が表示されます。それ以外の場合、 <b>false を指定</b>します。</value>
-        <remarks>
-          <para>値の取得および設定が可能です。</para>
+        <summary>名前付きセット キューブ フィールドのすべての階層レベルのアイテムを OLAP キューブに基づくピボットテーブル レポートの同じフィールドに表示するかどうかを取得または設定します。</summary>
+        <value><b>true</b> の場合、名前付きセット キューブ フィールドのすべての階層レベルのアイテムが、OLAP キューブに基づくピボットテーブル レポートの同じフィールドに表示されます。それ以外の場合は <b>false です</b>。</value>
+        <remarks><para>値の取得と設定が可能です。</para>
           <para>
-            <b>true の</b>場合は、同じフィールドに指定した名前付きセットのすべての階層が表示されます。それ以外の場合は<b>false を指定</b>します。</para>
-          <para>このプロパティの値は、レイアウトのチェック ボックスを個別のフィールドで異なるレベルの表示項目の設定に対応して&amp;の OLAP キューブに基づくピボット テーブル レポートで名前付きセットのフィールドの設定] ダイアログ ボックスの [印刷] タブ。</para>
-          <para>場合、このプロパティはエラーを返します、<see cref="P:Microsoft.Office.Interop.Excel.CubeField.CubeFieldType" />の指定したプロパティ<see cref="T:Microsoft.Office.Interop.Excel.CubeField" /><b>xlSet</b>オブジェクトではありません。</para>
-          <para></para>
-        </remarks>
+            <b>指定した</b> 名前付きセットのすべての階層が同じフィールドに表示される場合は true。それ以外の場合 <b>は false です</b>。</para>
+          <para>このプロパティの値は、OLAP キューブに基づくピボットテーブル レポートの名前付きセットの [フィールドの設定] ダイアログ ボックスの [レイアウト印刷] タブの [別のフィールドの異なるレベルのアイテムを表示する] チェック ボックスの設定に対応します。 &amp;</para>
+          <para>指定したオブジェクトのプロパティが xlSet ではない場合、このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.CubeField.CubeFieldType" /> <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> はエラー <b>を返します</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HasMemberProperties">
@@ -785,7 +718,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>キューブ フィールドに表示される指定したメンバー プロパティがある場合に<b>True</b>を返します。</summary>
+        <summary>キューブ フィールド <b>に表示</b> するメンバー プロパティが指定されている場合はTrue を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -822,13 +755,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>非表示に指定した階層の最上位のレベルを設定または返します。</summary>
+        <summary>非表示の指定した階層の上位レベルを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>既定値は、0 (ゼロ)、レベルが非表示されないことを示します。</para>
-          <para>0 より大きい整数値にこのプロパティの値を設定するには、最初 0 に値を設定する必要があります。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>既定値は 0 (ゼロ) で、レベルが非表示でなことを示します。</para>
+          <para>このプロパティの値を 0 より大きい整数に設定するには、最初に値を 0 に設定する必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HierarchizeDistinct">
@@ -857,17 +788,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>という名前の OLAP キューブに基づくピボット テーブル レポートのセットを注文し、指定されたを表示するときに、重複を削除するかどうかを設定を取得または取得します。</summary>
-        <value>
-          <b>true の</b>場合、重複を注文し、指定した名前付きセットが OLAP キューブに基づくピボット テーブル レポートを表示するときに削除する必要があります。それ以外の場合、 <b>false を指定</b>します。</value>
-        <remarks>
-          <para>値の取得および設定が可能です。</para>
+        <summary>OLAP キューブに基づくピボットテーブル レポートに指定された名前付きセットを表示するときに、重複の順序付けと削除を行うかどうかを取得または設定します。</summary>
+        <value><b>oLAP</b> キューブに基づくピボットテーブル レポートに指定された名前付きセットを表示するときに重複を並べ替え、削除する場合は true。それ以外の場合は <b>false です</b>。</value>
+        <remarks><para>値の取得と設定が可能です。</para>
           <para>
-            <b>true</b>として名前付きセットが表示されている場合の順序と同じものを削除します。それ以外の場合は<b>false を指定</b>します。</para>
-          <para>このプロパティの値が自動的に注文し、削除の設定に対応、レイアウトの設定] チェック ボックスと重複&amp;ピボット テーブル レポート内の名前付きセットのフィールドの設定] ダイアログ ボックスの [印刷] タブは、OLAP キューブに基づきます。</para>
-          <para>場合、このプロパティはエラーを返します、<see cref="P:Microsoft.Office.Interop.Excel.CubeField.CubeFieldType" />の指定したプロパティ<see cref="T:Microsoft.Office.Interop.Excel.CubeField" /><b>xlSet</b>オブジェクトではありません。</para>
-          <para></para>
-        </remarks>
+            <b>名前付き</b> セットが重複を削除した順序で表示される場合は true。それ以外の場合 <b>は false です</b>。</para>
+          <para>このプロパティの値は、OLAP キューブに基づくピボットテーブル レポートの名前付きセットの [フィールド設定] ダイアログ ボックスの [レイアウト印刷] タブの [セットから重複を自動的に順序付けして削除する] の設定に対応します。 &amp;</para>
+          <para>指定したオブジェクトのプロパティが xlSet ではない場合、このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.CubeField.CubeFieldType" /> <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> はエラー <b>を返します</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncludeNewItemsInFilter">
@@ -896,20 +824,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" />プロパティは、OLAP ピボット テーブルに含まれているか、除外の項目を追跡するために使用します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>既定値は、 <b>false を指定</b> します。</para>
-          <para>この設定は、 <b>True</b>に設定されている場合、手動フィルターを適用すると除外したアイテムが追跡されます。 この設定は、 <b>False</b>に設定されている場合、手動フィルターを適用するときに含まれるアイテムが追跡されます。</para>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" />設定は、 <b>HiddenItemsList</b> 、 <b>HiddenItems</b>コレクションは空に<b>false を指定</b>して、アイテムを追加できません。</para>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" />設定が<b>返さ</b><b>れます</b>コレクションは空にする<b>場合は True</b>、および項目を追加できません。</para>
-          <para></para>
-        </remarks>
+        <summary>この <see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> プロパティは、OLAP ピボットテーブル内の含まれるアイテムまたは除外されたアイテムを追跡するために使用されます。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>既定値は <b>False</b> です。</para>
+          <para>これを <b>True</b> に設定した場合、手動フィルターを適用すると除外したアイテムが追跡されます。これを <b>False</b> に設定した場合、手動フィルターを適用すると選択したアイテムが追跡されます。</para>
+          <para><see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> <b>False</b>に設定されている場合<b>、HiddenItemsList</b>コレクションと<b>HiddenItems</b>コレクションは空であり、アイテムを追加できません。</para>
+          <para><see cref="P:Microsoft.Office.Interop.Excel.CubeField.IncludeNewItemsInFilter" /> <b>True</b>に設定されている場合<b>、VisibleItemsList</b>コレクションと<b>VisibleItems</b>コレクションは空であり、アイテムを追加できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsDate">
@@ -935,10 +856,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>キューブ フィールドが日付の場合は<b>True</b>を返します。 読み取り専用の <b>ブール値</b> です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>CubeField <b>が日付</b> の場合はTrue を返します。 読み取り専用の <b>Boolean</b> です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -968,19 +887,16 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlLayoutFormType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたピボット テーブル項目を表示する方法の設定を取得または設定、表形式またはアウトライン形式で。</summary>
+        <summary>指定したピボットテーブル アイテムの表示方法 (表形式またはアウトライン形式) を取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutFormType" /> 使用できる定数は、 <b>次に示す XlLayoutFormType</b> 定数の 1 つです。</para>
           <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutFormType" />これら<b>が可能</b>のいずれかのことができます。</para>
+            <b>xlTabular</b> 既定値です。</para>
           <para>
-            <b>xlTabular</b>既定値です。</para>
-          <para>
-            <b>xlOutline</b>
-            <see cref="P:Microsoft.Office.Interop.Excel.CubeField.LayoutSubtotalLocation" />プロパティは、ピボット テーブル レポートに小計が表示される場所を指定します。</para>
+            <b>xlOutline</b> この <see cref="P:Microsoft.Office.Interop.Excel.CubeField.LayoutSubtotalLocation" /> プロパティは、ピボットテーブル レポートで小計を表示する場所を指定します。</para>
           <para>このプロパティは、任意のピボットテーブル フィールドで設定できますが、書式が表示されるのは、指定のフィールドが最も内側 (一番低いレベル) ではない行フィールドの場合のみです。OLAP データソース以外では、フィールドが並べ替えられたり、ピボットテーブル レポートに追加、またはピボットテーブル レポートから削除されても、このプロパティの値は変化しません。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LayoutSubtotalLocation">
@@ -1009,21 +925,18 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSubtototalLocationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>(いずれかの上または下) を基準にしてピボット テーブル フィールド集計の位置を設定を取得または指定したフィールドです。</summary>
+        <summary>指定したフィールドを基準にしたピボットテーブル フィールドの小計の位置 (上または下) を取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlSubtototalLocationType" />これら<b>が可能</b>のいずれかのことができます。</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlSubtototalLocationType" /> 使用できる定数は、 <b>次に示す XlSubtototalLocationType</b> 定数です。</para>
           <para>
             <b>xlAtTop</b>
           </para>
           <para>
-            <b>xlAtBottom</b>既定値</para>
-          <para>アウトライン形式で任意のピボット テーブル フィールドに対してこのプロパティを設定することができます。ただし、書式設定は、指定したフィールドは、フィールドを行フィールドが最も内側 (最下位レベル) の行のフィールド以外の場合にのみが表示されます。 非 OLAP データ ソースのフィールドが並べ替えられたりを追加、または、レポートから削除されて、このプロパティの値は変更されません。</para>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.CubeField.LayoutForm" />プロパティは、表形式またはアウトライン形式でレポートを表示するかどうかを決定します。</para>
-          <para></para>
-        </remarks>
+            <b>xlAtBottom</b> 既定値</para>
+          <para>このプロパティは、アウトライン形式の任意のピボットテーブル フィールドで設定できますが、書式が表示されるのは、指定のフィールドが最も内側 (一番低いレベル) ではない行フィールドの場合のみです。 OLAP 以外のデータ ソースの場合、フィールドが並べ替えまたはレポートに追加またはレポートから削除された場合、このプロパティの値は変更されません。</para>
+          <para>この <see cref="P:Microsoft.Office.Interop.Excel.CubeField.LayoutForm" /> プロパティは、レポートを表形式で表示するか、アウトライン形式で表示するか決定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -1080,12 +993,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotFieldOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたピボット テーブル レポート内のフィールドの場所です。</summary>
+        <summary>指定されたピボットテーブル レポート内のフィールドの位置を指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" />
-            <b>XlPivotFieldOrientation</b>定数のいずれかできます。</para>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFieldOrientation" /> 使用できる定数は、 <b>次に示す XlPivotFieldOrientation</b> 定数です。</para>
           <para>
             <b>xlColumnField</b>
           </para>
@@ -1101,9 +1012,8 @@
           <para>
             <b>xlRowField</b>
           </para>
-          <para>OLAP データ ソースの階層の 1 つのフィールドに対してこのプロパティを設定する他のフィールドの方向同じ階層に設定します。 ディメンション フィールドは、行、列、およびピボット テーブル レポートのページ フィールド エリアにのみ配置できます。 メジャー フィールドは、データ エリアにのみ配置できます。 階層、またはデータ フィールドに<b>xlHidden</b>を設定、ピボット テーブル レポートから、階層、またはフィールドを削除します。</para>
-          <para></para>
-        </remarks>
+          <para>OLAP データ ソースの場合、ある階層の 1 つのフィールドに対してこのプロパティを設定すると、同じ階層のその他のフィールドにも同じ値が設定されます。ディメンション フィールドは、ピボットテーブル レポートの行フィールド、列フィールド、またはページ フィールドの各領域にのみ配置できます。メジャー フィールドは、データ エリアにのみ配置できます。階層、またはデータ フィールドに <b>xlHidden</b> を設定すると、ピボットテーブル レポートから削除されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1157,12 +1067,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotFields</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />コレクションです。 このコレクションには、画面上に表示されていないものも含めて、すべてのピボット テーブル フィールドが含まれています。</summary>
+        <summary>コレクションを返 <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> します。 このコレクションには、現在画面に表示されていないピボットテーブル フィールドも含めて、すべてのピボットテーブル フィールドが含まれます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>非表示フィールドがない、OLAP データ ソースのオブジェクトまたはコレクションに対してこのメソッドを使用すると、現在の表示を返します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>非表示フィールドがない、OLAP データ ソースのオブジェクトまたはコレクションに対してこのメソッドを使用すると、現在の表示を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -1191,7 +1099,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>項目が表示されている場合は、そのフィールド内の項目の位置。</summary>
+        <summary>アイテムが現在表示されている場合の、フィールド内のアイテムの位置。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1222,8 +1130,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> (既定値) に設定すると、<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />オブジェクトは、[フィールド] ボックスの一覧で表示されます。</summary>
+        <summary>True ( <b>既定値</b> ) に設定すると、フィールド リストに <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> オブジェクトが表示されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1251,12 +1158,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TreeviewControl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.TreeviewControl" /> 、OLAP ベースのピボット テーブル レポートのキューブ操作コントロールを表すオブジェクト。</summary>
+        <summary><see cref="T:Microsoft.Office.Interop.Excel.TreeviewControl" />OLAP ベースのピボットテーブル レポートのキューブ操作コントロールを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、コントロールが表示されている場合にのみ使用できます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティは、コントロールが表示されている場合にのみ使用できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">

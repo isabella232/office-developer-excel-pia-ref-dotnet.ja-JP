@@ -1,13 +1,5 @@
 <Type Name="ChartGroups" FullName="Microsoft.Office.Interop.Excel.ChartGroups">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d05b335ff2ac16ca069b154e14a4f4ac9e9eb27d" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582769" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ChartGroups : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d05b335ff2ac16ca069b154e14a4f4ac9e9eb27d" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004040" /></Metadata><TypeSignature Language="C#" Value="public interface ChartGroups : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartGroups implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartGroups" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartGroups&#xA;Implements IEnumerable" />
@@ -33,39 +25,37 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>すべてのコレクション、<see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" />指定されたグラフ内のオブジェクト。</summary>
-    <remarks>
-      <para>各<see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" />オブジェクトを表す 1 つまたは複数の系列が同じ形式のグラフにプロットします。 1 つのグラフには、1 つ以上のグラフ グループが含まれ、各グラフ グループには 1 つ以上のデータ系列が、そして各データ系列には、1 つ以上のポイントが含まれています。 たとえば、1 つのグラフに、すべてのデータ系列を折れ線グラフ形式でプロットした折れ線グラフ グループと、すべてのデータ系列を横棒グラフ形式でプロットした横棒グラフ グループの両方を含めることができます。</para>
-      <para>使用して、<see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" />メソッドを<b>指定しないで、ChartGroups</b>コレクションを取得します。 <b>指定しないで、ChartGroups</b>を使用して (<paramref name="index" />)、<paramref name="index" />は、グラフ種類グループのインデックス番号で、1 つの<b>ChartGroup</b>オブジェクトを取得します。 使用することができる場合は、グラフがアクティブ化されて、 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" />。</para>
-      <para>特定のグラフ グループのインデックス番号は、そのグループに使用されるグラフの形式が変更された場合に変更するためは、グラフ グループ専用のメソッドのいずれかを使用して特定のグラフ グループを取得しやすい場合があります。 <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />メソッドは、グラフでは、円グラフ グループのコレクションを返します、<see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />メソッド、折れ線グラフ グループのコレクションを返します。 これらの各メソッドは、1 つの<b>ChartGroup</b>オブジェクトをインデックス番号を持つか、インデックス番号を<b>指定しないで、ChartGroups</b>コレクションを取得することがなく使用できます。 次のグラフ グループ メソッドは、使用できます。</para>
+    <summary>指定されたグラフのすべての <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> オブジェクトのコレクションです。</summary>
+    <remarks><para>各 <see cref="T:Microsoft.Office.Interop.Excel.ChartGroup" /> オブジェクトは、同じ形式のグラフにプロットされた 1 つ以上のデータ系列を表します。 1 つのグラフには、1 つ以上のグラフ グループが含まれ、各グラフ グループには 1 つ以上のデータ系列が、そして各データ系列には、1 つ以上のポイントが含まれています。 たとえば、1 つのグラフに、すべてのデータ系列を折れ線グラフ形式でプロットした折れ線グラフ グループと、すべてのデータ系列を横棒グラフ形式でプロットした横棒グラフ グループの両方を含めることができます。</para>
+      <para><see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" />ChartGroups コレクションを取得するには<b>、このメソッドを使用</b>します。 Use <b>ChartGroups</b>( <paramref name="index" /> ) where the <paramref name="index" /> chart-group index number, to return a single <b>ChartGroup</b> object. If the chart has been activated, you can use <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" /> .</para>
+      <para>あるグラフ グループのグラフの形式を変更すると、そのグラフ グループのインデックス番号が変わることがあるため、特定のグラフ グループを取得するには、そのグラフ グループ専用のメソッドを使用した方が簡単な場合があります。 メソッド <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> は、グラフ内の円グラフ グループのコレクションを返し、メソッドは、線グラフ グループのコレクションを返します <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> 。 これらの各メソッドにインデックス番号を指定して使用し、1 つの <b>ChartGroup</b> オブジェクトを取得することも、インデックス番号を指定しないで、 <b>ChartGroups</b> コレクションを取得することもできます。 次のグラフ 種類グループメソッドを使用できます。</para>
       <list type="bullet">
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" />メソッド</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" /> method</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" />メソッド</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" /> method</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" />メソッド</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" /> method</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" />メソッド</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" /> method</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" />メソッド</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> method</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" />メソッド</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> method</description>
         </item>
       </list>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -91,7 +81,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> (ことができますこのプロパティを使用する OLE オートメーション オブジェクトとそのオブジェクトのアプリケーションを取得)、指定したオブジェクトの作成者を表すオブジェクト。 読み取り専用。</summary>
+        <summary>指定したオブジェクトの作成元を表すオブジェクトを返します (OLE オートメーション オブジェクトでこのプロパティを使用すると、そのオブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Application" /> アプリケーションを取得できます)。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -147,13 +137,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 読み取り専用です <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -211,8 +198,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -241,7 +227,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

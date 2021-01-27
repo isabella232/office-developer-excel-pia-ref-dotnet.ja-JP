@@ -1,13 +1,5 @@
 <Type Name="Dialogs" FullName="Microsoft.Office.Interop.Excel.Dialogs">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="65b059ad8c2b31f5ebb0e015a1b9611b6b82e3e3" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582349" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Dialogs : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="65b059ad8c2b31f5ebb0e015a1b9611b6b82e3e3" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003830" /></Metadata><TypeSignature Language="C#" Value="public interface Dialogs : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Dialogs implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Dialogs" />
   <TypeSignature Language="VB.NET" Value="Public Interface Dialogs&#xA;Implements IEnumerable" />
@@ -33,15 +25,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>すべてのコレクション、<see cref="T:Microsoft.Office.Interop.Excel.Dialog" />では、Microsoft Excel のオブジェクトです。</summary>
-    <remarks>
-      <para>各<b>Dialog</b>オブジェクトは、組み込みのダイアログ ボックスを表します。 新しい組み込みのダイアログ ボックスを作成したり、コレクションに追加できません。 唯一の有効な<b>ダイアログ</b>オブジェクトを使用して行うことができますと組み合わせて使うとき、<see cref="M:Microsoft.Office.Interop.Excel.Dialog.Show(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />ダイアログの対応するダイアログ ボックスを表示する方法です。</para>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Application.Dialogs" /> 、 <b>Dialogs</b>コレクション オブジェクトを返すプロパティです。</para>
-      <para>
-        <b>ダイアログ ボックス</b>を使用して、(<paramref name="index" />)、 <paramref name="index" /> 、1 つの<b>ダイアログ</b>オブジェクトを取得する] ダイアログ ボックスは、組み込み定数を識別します。</para>
-      <para>Microsoft Excel には、組み込みダイアログ ボックスの多くの組み込み定数が含まれます。 各定数は、プレフィックス] ダイアログ ボックスの名前の後に、"xlDialog"で形成されます。 などの名前の引用] ダイアログ ボックスの定数は<b>xlDialogApplyNames</b>で、ファイルの検索] ダイアログ ボックスの定数は<b>xlDialogFindFile</b>を これらの定数のメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.XlBuiltInDialog" />の種類を列挙します。</para>
-      <para></para>
-    </remarks>
+    <summary>Microsoft Excel のすべての <see cref="T:Microsoft.Office.Interop.Excel.Dialog" /> オブジェクトのコレクションです。</summary>
+    <remarks><para>各 <b>Dialog</b> オブジェクトは、組み込みダイアログ ボックスを表します。 新しい組み込みダイアログ ボックスを作成したり、コレクションに追加したりすることはできません。 <b>Dialog</b>オブジェクトで実行できる唯一の便利な操作は、ダイアログに対応するダイアログ ボックスを表示する <see cref="M:Microsoft.Office.Interop.Excel.Dialog.Show(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> メソッドと一緒に使用する方法です。</para>
+      <para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel._Application.Dialogs" /> を使用して <b>Dialogs コレクションを取得</b> します。</para>
+      <para>単 <b>一の Dialog オブジェクト</b>を取得するには、ダイアログ ボックスを識別する組み込みの定数である Dialogs ( ) <paramref name="index" /> <paramref name="index" /> を <b>使用</b> します。</para>
+      <para>Microsoft Excel には、多くの組み込みダイアログ ボックス用の組み込み定数が含まれています。 各定数の名前は、"xlDialog" という文字列の後に英語のダイアログ ボックス名を付けたものです。 たとえば、[名前の引用] ダイアログ ボックスの定数は <b>xlDialogApplyNames</b> であり、[ファイル検索] ダイアログ ボックスの定数は <b>xlDialogFindFile</b> です。 これらの定数は、列挙型 <see cref="T:Microsoft.Office.Interop.Excel.XlBuiltInDialog" /> のメンバーです。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -102,7 +91,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -158,14 +147,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -226,8 +212,7 @@
         <Parameter Name="Index" Type="Microsoft.Office.Interop.Excel.XlBuiltInDialog" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
