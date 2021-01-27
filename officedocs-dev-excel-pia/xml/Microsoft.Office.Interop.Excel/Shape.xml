@@ -1,13 +1,5 @@
 <Type Name="Shape" FullName="Microsoft.Office.Interop.Excel.Shape">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="79407cc874dc91aaa0bdd4a827ab38f1c0fb6b0b" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585086" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Shape" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="79407cc874dc91aaa0bdd4a827ab38f1c0fb6b0b" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010368" /></Metadata><TypeSignature Language="C#" Value="public interface Shape" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Shape" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Shape" />
   <TypeSignature Language="VB.NET" Value="Public Interface Shape" />
@@ -29,180 +21,43 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="ee20d-101">オートシェイプ、フリーフォーム、OLE オブジェクト、図などの描画オブジェクトを表します。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="ee20d-101">Represents an object in the drawing layer, such as an AutoShape, freeform, OLE object, or picture.</span>
-      </span>
-      <span data-ttu-id="ee20d-102">
-        <b>Shape</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />コレクションです。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="ee20d-102">The <b>Shape</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection.</span>
-      </span>
-      <span data-ttu-id="ee20d-103">
-        <b>Shapes</b>コレクションには、スライド上のすべての図形が含まれています。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="ee20d-103">The <b>Shapes</b> collection contains all the shapes on a slide.</span>
-      </span>
-    </summary>
-    <remarks>
-      <para>
-        <span data-ttu-id="ee20d-104">図形を表す 3 つのオブジェクト: ドキュメントのすべての図形を表す<b>Shapes</b>コレクションは、<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />コレクションを指定した文書の図形のサブセットを表します ( <b>ShapeRange</b>オブジェクトは、ドキュメント上にある図形 1 と 4 を表すことがなど、ドキュメントで選択したすべての図形を表すことがあります)。文書の 1 つの図形を表す<b>Shape</b>オブジェクトです。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ee20d-104">There are three objects that represent shapes: the <b>Shapes</b> collection, which represents all the shapes on a document; the <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> collection, which represents a specified subset of the shapes on a document (for example, a <b>ShapeRange</b> object could represent shapes one and four on the document, or it could represent all the selected shapes on the document); and the <b>Shape</b> object, which represents a single shape on a document.</span>
-        </span>
-        <span data-ttu-id="ee20d-105">同時に、または選択範囲内の図形には、いくつかの図形を操作する場合は、 <b>ShapeRange</b>コレクションを使用します。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ee20d-105">If you want to work with several shapes at the same time or with shapes within the selection, use a <b>ShapeRange</b> collection.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="ee20d-106">このセクションで説明する方法。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ee20d-106">This section describes how to:</span>
-        </span>
-      </para>
+    <summary><span data-ttu-id="3c3e9-101">オートシェイプ、フリーフォーム、OLE オブジェクト、図などの描画オブジェクトを表します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-101">Represents an object in the drawing layer, such as an AutoShape, freeform, OLE object, or picture.</span></span> <span data-ttu-id="3c3e9-102"><b>Shape オブジェクト</b>はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-102">The <b>Shape</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection.</span></span> <span data-ttu-id="3c3e9-103"><b>Shapes コレクション</b>には、スライド上のすべての図形が含まれる。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-103">The <b>Shapes</b> collection contains all the shapes on a slide.</span></span></summary>
+    <remarks><para><span data-ttu-id="3c3e9-104">図形を表すオブジェクトには、文書上のすべての図形を表す<b>Shapes</b>コレクションという 3 つのオブジェクトがあります。このコレクションは、文書上の図形の指定されたサブセットを表します <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> (<b>たとえば、ShapeRange</b>オブジェクトは文書の図形 1 と 4 を表したり、文書上で選択した図形を表<b></b>したり、文書上の 1 つの図形を表す Shape オブジェクトを表したりします)。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-104">There are three objects that represent shapes: the <b>Shapes</b> collection, which represents all the shapes on a document; the <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> collection, which represents a specified subset of the shapes on a document (for example, a <b>ShapeRange</b> object could represent shapes one and four on the document, or it could represent all the selected shapes on the document); and the <b>Shape</b> object, which represents a single shape on a document.</span></span> <span data-ttu-id="3c3e9-105">複数の図形を同時に、または選択範囲内の図形を使用する場合は <b>、ShapeRange コレクションを使用</b> します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-105">If you want to work with several shapes at the same time or with shapes within the selection, use a <b>ShapeRange</b> collection.</span></span></para>
+      <para><span data-ttu-id="3c3e9-106">このセクションで説明する方法。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-106">This section describes how to:</span></span></para>
       <list type="bullet">
         <item>
-          <description>
-            <span data-ttu-id="ee20d-107">既存の図形を取得する</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-107">Return an existing shape.</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="3c3e9-107">既存の図形を取得する</span><span class="sxs-lookup"><span data-stu-id="3c3e9-107">Return an existing shape.</span></span></description>
         </item>
         <item>
-          <description>
-            <span data-ttu-id="ee20d-108">選択範囲内の図形を取得する</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-108">Return a shape within the selection.</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="3c3e9-108">選択範囲内の図形を取得する</span><span class="sxs-lookup"><span data-stu-id="3c3e9-108">Return a shape within the selection.</span></span></description>
         </item>
         <item>
-          <description>
-            <span data-ttu-id="ee20d-109">コネクタの両端が接続された図形を取得する</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-109">Return the shapes attached to the ends of a connector.</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="3c3e9-109">コネクタの両端が接続された図形を取得する</span><span class="sxs-lookup"><span data-stu-id="3c3e9-109">Return the shapes attached to the ends of a connector.</span></span></description>
         </item>
         <item>
-          <description>
-            <span data-ttu-id="ee20d-110">新しく作成したフリーフォームを取得する</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-110">Return a newly created freeform.</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="3c3e9-110">新しく作成したフリーフォームを取得する</span><span class="sxs-lookup"><span data-stu-id="3c3e9-110">Return a newly created freeform.</span></span></description>
         </item>
         <item>
-          <description>
-            <span data-ttu-id="ee20d-111">グループ化した図形の中から単一の図形を取得する</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-111">Return a single shape from within a group.</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="3c3e9-111">グループ化した図形の中から単一の図形を取得する</span><span class="sxs-lookup"><span data-stu-id="3c3e9-111">Return a single shape from within a group.</span></span></description>
         </item>
         <item>
-          <description>
-            <span data-ttu-id="ee20d-112">新しく形成した図形グループを取得する</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-112">Return a newly formed group of shapes.</span>
-            </span>
-          </description>
+          <description><span data-ttu-id="3c3e9-112">新しく形成した図形グループを取得する</span><span class="sxs-lookup"><span data-stu-id="3c3e9-112">Return a newly formed group of shapes.</span></span></description>
         </item>
       </list>
-      <para>
-        <span data-ttu-id="ee20d-113">既存の図形を取得する</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ee20d-113">Returning an Existing Shape</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="ee20d-114">
-          <b>図形</b>を使用する (<paramref name="index" />)、<paramref name="index" />は、図形の名前またはインデックス番号の図形を表す<b>Shape</b>オブジェクトを取得するのには。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ee20d-114">Use <b>Shapes</b>(<paramref name="index" />), where <paramref name="index" /> is the shape name or the index number, to return a <b>Shape</b> object that represents a shape.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="ee20d-115">各図形は、 <b>Shapes</b>コレクションに追加すると、既定の名前を割り当てられますがします。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ee20d-115">Each shape is assigned a default name when you add it to the <b>Shapes</b> collection.</span>
-        </span>
-        <span data-ttu-id="ee20d-116">図形にわかりやすい名前を付けるを使用して、<see cref="P:Microsoft.Office.Interop.Excel.Shape.Name" />プロパティ。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ee20d-116">To give the shape a more meaningful name, use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.Name" /> property.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="ee20d-117">選択範囲内の図形を取得する</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ee20d-117">Returning a Shape Within the Selection</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="ee20d-118">
-          <b>Selection.ShapeRange</b>を使用 (<paramref name="index" />)、<paramref name="index" />は、図形の名前またはインデックス番号で、選択範囲内の図形を表す<b>Shape</b>オブジェクトを取得するのには。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ee20d-118">Use <b>Selection.ShapeRange</b>(<paramref name="index" />), where <paramref name="index" /> is the shape name or the index number, to return a <b>Shape</b> object that represents a shape within the selection.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="ee20d-119">コネクタの両端が接続された図形を取得する</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ee20d-119">Returning the Shapes Attached to the Ends of a Connector</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="ee20d-120">コネクタで接続された図形の 1 つを表す<b>Shape</b>オブジェクトを返すを使用して、<see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnectedShape" />または<see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnectedShape" />プロパティ。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ee20d-120">To return a <b>Shape</b> object that represents one of the shapes attached by a connector, use the <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnectedShape" /> or <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnectedShape" /> property.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="ee20d-121">新しく作成したフリーフォームを取得する</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ee20d-121">Returning a newly created freeform</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="ee20d-122">使用して、<see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" />と<see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" />フリー フォーム、新しいジオメトリを定義して使用する方法、 <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> 、フリー フォームを作成し、それを表す<b>Shape</b>オブジェクトを取得するメソッドです。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ee20d-122">Use the <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> and <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> methods to define the geometry of a new freeform, and use the <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> method to create the freeform and return the <b>Shape</b> object that represents it.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="ee20d-123">グループ内から単一の図形を取得する</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ee20d-123">Returning a Single Shape from Within a Group</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="ee20d-124">
-          <b>GroupItems</b>を使用 (<paramref name="index" />)、<paramref name="index" />は、図形の名前またはインデックス番号をグループ化された図形の 1 つの図形を表す<b>Shape</b>オブジェクトを取得するのには、グループ内で。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ee20d-124">Use <b>GroupItems</b>(<paramref name="index" />), where <paramref name="index" /> is the shape name or the index number within the group, to return a <b>Shape</b> object that represents a single shape in a grouped shape.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="ee20d-125">新しく形成した図形グループを取得する</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ee20d-125">Returning a Newly Formed Group of Shapes</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="ee20d-126">使用して、<see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Group" />または<see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Regroup" />範囲の図形をグループ化し、新しく形成されたグループを表す 1 つの<b>Shape</b>オブジェクトを返すメソッドです。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ee20d-126">Use the <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Group" /> or <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Regroup" /> method to group a range of shapes and return a single <b>Shape</b> object that represents the newly formed group.</span>
-        </span>
-        <span data-ttu-id="ee20d-127">グループの作成後は、他の図形を操作する場合と同じようにグループを操作できます。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="ee20d-127">After a group has been formed, you can work with the group the same way you work with any other shape.</span>
-        </span>
-      </para>
-      <para></para>
-    </remarks>
+      <para><span data-ttu-id="3c3e9-113">既存の図形を取得する</span><span class="sxs-lookup"><span data-stu-id="3c3e9-113">Returning an Existing Shape</span></span></para>
+      <para><span data-ttu-id="3c3e9-114">図形<b>を</b>表す Shape オブジェクトを取得するには、図形 ( ) を使用します。図形名またはインデックス番号を <paramref name="index" /> <paramref name="index" /> 指定します。 <b></b></span><span class="sxs-lookup"><span data-stu-id="3c3e9-114">Use <b>Shapes</b>(<paramref name="index" />), where <paramref name="index" /> is the shape name or the index number, to return a <b>Shape</b> object that represents a shape.</span></span></para>
+      <para><span data-ttu-id="3c3e9-115"><b>Shapes</b> コレクションに図形を追加すると、各図形には既定の名前が割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-115">Each shape is assigned a default name when you add it to the <b>Shapes</b> collection.</span></span> <span data-ttu-id="3c3e9-116">図形にわかりやすい名前を付けます。プロパティを使用 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Name" /> します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-116">To give the shape a more meaningful name, use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.Name" /> property.</span></span></para>
+      <para><span data-ttu-id="3c3e9-117">選択範囲内の図形を取得する</span><span class="sxs-lookup"><span data-stu-id="3c3e9-117">Returning a Shape Within the Selection</span></span></para>
+      <para><span data-ttu-id="3c3e9-118">選択<b>範囲内の図形を</b>表す Shape オブジェクトを取得するには、Selection.ShapeRange ( ) プロパティを使用します。図形名またはインデックス番号を <paramref name="index" /> <paramref name="index" /> 指定します。 <b></b></span><span class="sxs-lookup"><span data-stu-id="3c3e9-118">Use <b>Selection.ShapeRange</b>(<paramref name="index" />), where <paramref name="index" /> is the shape name or the index number, to return a <b>Shape</b> object that represents a shape within the selection.</span></span></para>
+      <para><span data-ttu-id="3c3e9-119">コネクタの両端が接続された図形を取得する</span><span class="sxs-lookup"><span data-stu-id="3c3e9-119">Returning the Shapes Attached to the Ends of a Connector</span></span></para>
+      <para><span data-ttu-id="3c3e9-120">コネクタに接続 <b>されている</b> 図形の 1 つを表す Shape オブジェクトを取得するには、またはプロパティを <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnectedShape" /> 使用 <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnectedShape" /> します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-120">To return a <b>Shape</b> object that represents one of the shapes attached by a connector, use the <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnectedShape" /> or <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnectedShape" /> property.</span></span></para>
+      <para><span data-ttu-id="3c3e9-121">新しく作成したフリーフォームを取得する</span><span class="sxs-lookup"><span data-stu-id="3c3e9-121">Returning a newly created freeform</span></span></para>
+      <para><span data-ttu-id="3c3e9-122">新しいフリーフォームの形状を定義するには、このメソッドとメソッドを使用し、フリーフォームを作成してそれを表す Shape オブジェクトを <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> 取得します。 <b></b></span><span class="sxs-lookup"><span data-stu-id="3c3e9-122">Use the <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> and <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> methods to define the geometry of a new freeform, and use the <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> method to create the freeform and return the <b>Shape</b> object that represents it.</span></span></para>
+      <para><span data-ttu-id="3c3e9-123">グループ内から単一の図形を取得する</span><span class="sxs-lookup"><span data-stu-id="3c3e9-123">Returning a Single Shape from Within a Group</span></span></para>
+      <para><span data-ttu-id="3c3e9-124">グループ<b>化された</b>図形の 1 つの図形を表す Shape オブジェクトを取得するには、GroupItems ( ) を使用します。グループ内の図形名またはインデックス番号を <paramref name="index" /> <paramref name="index" /> 指定します。 <b></b></span><span class="sxs-lookup"><span data-stu-id="3c3e9-124">Use <b>GroupItems</b>(<paramref name="index" />), where <paramref name="index" /> is the shape name or the index number within the group, to return a <b>Shape</b> object that represents a single shape in a grouped shape.</span></span></para>
+      <para><span data-ttu-id="3c3e9-125">新しく形成した図形グループを取得する</span><span class="sxs-lookup"><span data-stu-id="3c3e9-125">Returning a Newly Formed Group of Shapes</span></span></para>
+      <para><span data-ttu-id="3c3e9-126">図形範囲をグループ化し、新しく形成されたグループを表す 1 つの Shape オブジェクト <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Group" /> を取得するには、or メソッド <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Regroup" /> を使用します。 <b></b></span><span class="sxs-lookup"><span data-stu-id="3c3e9-126">Use the <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Group" /> or <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Regroup" /> method to group a range of shapes and return a single <b>Shape</b> object that represents the newly formed group.</span></span> <span data-ttu-id="3c3e9-127">グループを形成すると、他の図形を処理するのと同じようにグループを処理できます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-127">After a group has been formed, you can work with the group the same way you work with any other shape.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Adjustments">
@@ -228,26 +83,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Adjustments</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-128">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Adjustments" /> 、指定した図形のすべての調整項目に対する調整値を格納しているオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-128">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Adjustments" /> object that contains adjustment values for all the adjustments in the specified shape.</span>
-          </span>
-          <span data-ttu-id="ee20d-129">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-129">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-128">指定した図形 <see cref="T:Microsoft.Office.Interop.Excel.Adjustments" /> のすべての調整値を含むオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-128">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Adjustments" /> object that contains adjustment values for all the adjustments in the specified shape.</span></span> <span data-ttu-id="3c3e9-129">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-129">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="ee20d-130">このプロパティは、すべてに適用されます。<see cref="T:Microsoft.Office.Interop.Excel.Shape" />または<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />、オートシェイプ、ワードアート、またはコネクタを表すオブジェクト。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-130">This property applies to any <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> or <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> object that represents an AutoShape, WordArt, or a connector.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="3c3e9-130">このプロパティは、オートShape、ワードアート、またはコネクタを表す任意のオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> またはオブジェクトに適用されます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-130">This property applies to any <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> or <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> object that represents an AutoShape, WordArt, or a connector.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AlternativeText">
@@ -276,26 +115,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-131">説明 (代替) テキスト文字列を設定を取得または設定、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />オブジェクトは Web ページに保存されるとします。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-131">Returns or sets the descriptive (alternative) text string for a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object when the object is saved to a Web page.</span>
-          </span>
-          <span data-ttu-id="ee20d-132">値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-132">Read/write <b>String</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-131">オブジェクトを Web ページに保存するときに、オブジェクトの説明 (代替) テキスト文字列 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-131">Returns or sets the descriptive (alternative) text string for a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object when the object is saved to a Web page.</span></span> <span data-ttu-id="3c3e9-132">値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-132">Read/write <b>String</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="ee20d-133">代替テキストを表示できるか、またはイメージの上に直接、Web ブラウザーでの図形のイメージの代わりにイメージのこれらの機能をサポートしているブラウザーの場合) 上にマウス ポインターを置くとき。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-133">The alternative text can be displayed either in place of the shape’s image in the Web browser or directly over the image when the mouse pointer hovers over the image (in browsers that support these features).</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="3c3e9-133">代替テキストは、Web ブラウザーで図形のイメージの代わりに表示するか、マウス ポインターをイメージの上に置くと (これらの機能をサポートするブラウザーで) イメージの上に直接表示できます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-133">The alternative text can be displayed either in place of the shape’s image in the Web browser or directly over the image when the mouse pointer hovers over the image (in browsers that support these features).</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -321,16 +144,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-134">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-134">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span>
-          </span>
-          <span data-ttu-id="ee20d-135">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-135">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-134">Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-134">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Microsoft Excel application.</span></span> <span data-ttu-id="3c3e9-135">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-135">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -356,12 +170,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-136">使用してコピーされている指定した図形の書式設定に適用されます、<see cref="M:Microsoft.Office.Interop.Excel.Shape.PickUp" />メソッドです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-136">Applies to the specified shape formatting that’s been copied by using the <see cref="M:Microsoft.Office.Interop.Excel.Shape.PickUp" /> method.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-136">メソッドを使用してコピーされた指定した図形の書式設定に適用 <see cref="M:Microsoft.Office.Interop.Excel.Shape.PickUp" /> されます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-136">Applies to the specified shape formatting that’s been copied by using the <see cref="M:Microsoft.Office.Interop.Excel.Shape.PickUp" /> method.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -391,32 +200,11 @@
         <ReturnType>Microsoft.Office.Core.MsoAutoShapeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-137">指定された図形の種類を取得または<see cref="T:Microsoft.Office.Interop.Excel.Shape" />オブジェクトで、線、フリー フォーム、またはコネクタ以外のオートシェイプを表す必要があります。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-137">Returns or sets the shape type for the specified <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object, which must represent an AutoShape other than a line, freeform drawing, or connector.</span>
-          </span>
-          <span data-ttu-id="ee20d-138">読み取り/書き込み<see cref="T:Microsoft.Office.Core.MsoAutoShapeType" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-138">Read/write <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-137">指定したオブジェクトの図形の種類を設定します。このオブジェクトは、線、フリーフォーム、またはコネクタ以外のオートシェイプを表す <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 必要があります。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-137">Returns or sets the shape type for the specified <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object, which must represent an AutoShape other than a line, freeform drawing, or connector.</span></span> <span data-ttu-id="3c3e9-138">読み取り/書き込み <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" /> 。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-138">Read/write <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" />.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="ee20d-139">[!メモ] 図形の種類を変更しても、図形の大きさや色などの属性は保持されます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-139">When you change the type of a shape, the shape retains its size, color, and other attributes.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="ee20d-140">使用、<see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.Type" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" />オブジェクトを設定またはコネクタの種類を取得します。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-140">Use the <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.Type" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> object to set or return the connector type.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="3c3e9-139">図形の種類を変更しても、図形の大きさ、色などの属性は保持されます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-139">When you change the type of a shape, the shape retains its size, color, and other attributes.</span></span></para>
+          <para><span data-ttu-id="3c3e9-140">コネクタの <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.Type" /> 種類を設定 <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> または取得するには、オブジェクトのプロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-140">Use the <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.Type" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> object to set or return the connector type.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BackgroundStyle">
@@ -445,19 +233,8 @@
         <ReturnType>Microsoft.Office.Core.MsoBackgroundStyleIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-141">背景のスタイルを設定または返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-141">Returns or sets the background style.</span>
-          </span>
-          <span data-ttu-id="ee20d-142">値の取得および設定が可能です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-142">Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoBackgroundStyleIndex" />
-        </value>
+        <summary><span data-ttu-id="3c3e9-141">背景のスタイルを返すか設定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-141">Returns or sets the background style.</span></span> <span data-ttu-id="3c3e9-142">値の取得と設定が可能です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-142">Read/write.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoBackgroundStyleIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -487,16 +264,7 @@
         <ReturnType>Microsoft.Office.Core.MsoBlackWhiteMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-143">プレゼンテーションを白黒表示モードにした場合に、指定した図形の表示方法を示す値を設定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-143">Returns or sets a value that indicates how the specified shape appears when the presentation is viewed in black-and-white mode.</span>
-          </span>
-          <span data-ttu-id="ee20d-144">読み取り/書き込み<see cref="T:Microsoft.Office.Core.MsoBlackWhiteMode" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-144">Read/write <see cref="T:Microsoft.Office.Core.MsoBlackWhiteMode" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-143">プレゼンテーションを白黒表示モードにした場合に、指定した図形の表示方法を示す値を設定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-143">Returns or sets a value that indicates how the specified shape appears when the presentation is viewed in black-and-white mode.</span></span> <span data-ttu-id="3c3e9-144">読み取り/書き込み <see cref="T:Microsoft.Office.Core.MsoBlackWhiteMode" /> 。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-144">Read/write <see cref="T:Microsoft.Office.Core.MsoBlackWhiteMode" />.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -524,16 +292,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-145">返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの右下隅にあるセルを表すオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-145">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the cell that lies under the lower-right corner of the object.</span>
-          </span>
-          <span data-ttu-id="ee20d-146">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-146">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-145">オブジェクトの右下隅にあるセルを表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-145">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the cell that lies under the lower-right corner of the object.</span></span> <span data-ttu-id="3c3e9-146">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-146">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -561,20 +320,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.CalloutFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-147">返します、<see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" />引き出し線の書式指定した図形のプロパティを格納しているオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-147">Returns a <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> object that contains callout formatting properties for the specified shape.</span>
-          </span>
-          <span data-ttu-id="ee20d-148">適用される<see cref="T:Microsoft.Office.Interop.Excel.Shape" />線吹き出しを表すオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-148">Applies to <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objects that represent line callouts.</span>
-          </span>
-          <span data-ttu-id="ee20d-149">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-149">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-147">指定した図形 <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> の吹き出しの書式プロパティを含むオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-147">Returns a <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> object that contains callout formatting properties for the specified shape.</span></span> <span data-ttu-id="3c3e9-148">線吹き <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 出しを表すオブジェクトに適用されます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-148">Applies to <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objects that represent line callouts.</span></span> <span data-ttu-id="3c3e9-149">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-149">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -606,12 +352,7 @@
       </Parameters>
       <Docs>
         <param name="Increment">To be added.</param>
-        <summary>
-          <span data-ttu-id="ee20d-150">内部使用のため予約済みです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-150">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-150">内部使用のために予約されています。 </span><span class="sxs-lookup"><span data-stu-id="3c3e9-150">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -642,12 +383,7 @@
       </Parameters>
       <Docs>
         <param name="Increment">To be added.</param>
-        <summary>
-          <span data-ttu-id="ee20d-151">内部使用のため予約済みです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-151">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-151">内部使用のために予約されています。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-151">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -678,12 +414,7 @@
       </Parameters>
       <Docs>
         <param name="Increment">To be added.</param>
-        <summary>
-          <span data-ttu-id="ee20d-152">内部使用のため予約済みです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-152">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-152">内部使用のために予約されています。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-152">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -714,12 +445,7 @@
       </Parameters>
       <Docs>
         <param name="Increment">To be added.</param>
-        <summary>
-          <span data-ttu-id="ee20d-153">内部使用のため予約済みです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-153">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-153">内部使用のために予約されています。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-153">Reserved for internal use.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -749,12 +475,7 @@
         <ReturnType>Microsoft.Office.Core.CanvasShapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-154">内部使用のため予約済みです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-154">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-154">内部使用のために予約されています。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-154">Reserved for internal use.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -782,19 +503,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Chart</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-155">表すオブジェクトを取得、<see cref="T:Microsoft.Office.Interop.Excel._Chart" />に含まれている、 <see cref="T:Microsoft.Office.Interop.Excel.Shape" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-155">Returns an object that represents the <see cref="T:Microsoft.Office.Interop.Excel._Chart" /> contained in the <see cref="T:Microsoft.Office.Interop.Excel.Shape" />.</span>
-          </span>
-          <span data-ttu-id="ee20d-156">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-156">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Chart" />
-        </value>
+        <summary><span data-ttu-id="3c3e9-155">に含まれているを表す <see cref="T:Microsoft.Office.Interop.Excel._Chart" /> オブジェクトを返します <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-155">Returns an object that represents the <see cref="T:Microsoft.Office.Interop.Excel._Chart" /> contained in the <see cref="T:Microsoft.Office.Interop.Excel.Shape" />.</span></span> <span data-ttu-id="3c3e9-156">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-156">Read-only.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Chart" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -821,16 +531,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-157">指定した図形が子図形または図形範囲のすべての図形が同じ親の子図形である場合は、 <b>msoTrue</b>を返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-157">Returns <b>msoTrue</b> if the specified shape is a child shape or if all shapes in a shape range are child shapes of the same parent.</span>
-          </span>
-          <span data-ttu-id="ee20d-158">読み取り専用<see cref="T:Microsoft.Office.Core.MsoTriState" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-158">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-157">指定した図形が子図形である場合、または図形範囲内のすべての図形が同じ親の子図形である場合は <b>、msoTrue</b> を返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-157">Returns <b>msoTrue</b> if the specified shape is a child shape or if all shapes in a shape range are child shapes of the same parent.</span></span> <span data-ttu-id="3c3e9-158">読み取り専用です <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-158">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -858,16 +559,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-159">指定した図形の結合点の数を取得します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-159">Returns the number of connection sites on the specified shape.</span>
-          </span>
-          <span data-ttu-id="ee20d-160">整数型 ( <b>Integer</b>) の値を使用します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-160">Read-only <b>Integer</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-159">指定した図形の結合点の数を取得します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-159">Returns the number of connection sites on the specified shape.</span></span> <span data-ttu-id="3c3e9-160">整数型 ( <b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-160">Read-only <b>Integer</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -895,18 +587,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-161">
-            <b>True</b>指定した図形がコネクタの場合です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-161">
-              <b>True</b> if the specified shape is a connector.</span>
-          </span>
-          <span data-ttu-id="ee20d-162">読み取り専用<see cref="T:Microsoft.Office.Core.MsoTriState" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-162">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-161">指定された図形がコネクタの場合は <b>True</b>。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-161"><b>True</b> if the specified shape is a connector.</span></span> <span data-ttu-id="3c3e9-162">読み取り専用です <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-162">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -934,20 +615,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ConnectorFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-163">返します、<see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" />コネクタの書式設定プロパティを含むオブジェクトです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-163">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> object that contains connector formatting properties.</span>
-          </span>
-          <span data-ttu-id="ee20d-164">適用される<see cref="T:Microsoft.Office.Interop.Excel.Shape" />コネクタを表すオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-164">Applies to <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objects that represent connectors.</span>
-          </span>
-          <span data-ttu-id="ee20d-165">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-165">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-163">コネクタの書式設定 <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> プロパティを含むオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-163">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> object that contains connector formatting properties.</span></span> <span data-ttu-id="3c3e9-164">コネクタを表 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> すオブジェクトに適用されます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-164">Applies to <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objects that represent connectors.</span></span> <span data-ttu-id="3c3e9-165">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-165">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -975,16 +643,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ControlFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-166">返します、 <see cref="T:Microsoft.Office.Interop.Excel.ControlFormat" /> Excel コントロールのプロパティを格納しているオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-166">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ControlFormat" /> object that contains Microsoft Excel control properties.</span>
-          </span>
-          <span data-ttu-id="ee20d-167">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-167">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-166">Microsoft Excel コントロール <see cref="T:Microsoft.Office.Interop.Excel.ControlFormat" /> のプロパティを含むオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-166">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ControlFormat" /> object that contains Microsoft Excel control properties.</span></span> <span data-ttu-id="3c3e9-167">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-167">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1010,12 +669,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-168">オブジェクトをクリップボードにコピーします。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-168">Copies the object to the Clipboard.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-168">オブジェクトをクリップボードにコピーします。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-168">Copies the object to the Clipboard.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1042,32 +696,9 @@
         <Parameter Name="Format" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Appearance">
-          <span data-ttu-id="ee20d-169">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-169">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="ee20d-170">図をコピーする方法を指定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-170">Specifies how the picture should be copied.</span>
-          </span>
-        </param>
-        <param name="Format">
-          <span data-ttu-id="ee20d-171">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-171">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="ee20d-172">画像の形式です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-172">The format of the picture.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="ee20d-173">選択しているオブジェクトを図としてクリップボードにコピーします。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-173">Copies the selected object to the Clipboard as a picture.</span>
-          </span>
-        </summary>
+        <param name="Appearance"><span data-ttu-id="3c3e9-169">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-169">Optional <b>Object</b>.</span></span> <span data-ttu-id="3c3e9-170">図をコピーする方法を指定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-170">Specifies how the picture should be copied.</span></span></param>
+        <param name="Format"><span data-ttu-id="3c3e9-171">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-171">Optional <b>Object</b>.</span></span> <span data-ttu-id="3c3e9-172">ピクチャの形式を指定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-172">The format of the picture.</span></span></param>
+        <summary><span data-ttu-id="3c3e9-173">選択しているオブジェクトを図としてクリップボードにコピーします。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-173">Copies the selected object to the Clipboard as a picture.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1094,35 +725,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-174">現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-174">Returns a 32-bit integer that indicates the application in which this object was created.</span>
-          </span>
-          <span data-ttu-id="ee20d-175">オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-175">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
-          </span>
-          <span data-ttu-id="ee20d-176">読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-176">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-174">このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-174">Returns a 32-bit integer that indicates the application in which this object was created.</span></span> <span data-ttu-id="3c3e9-175">Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-175">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span></span> <span data-ttu-id="3c3e9-176">読み取り専用です <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-176">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="ee20d-177">
-              <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-177">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
-            </span>
-            <span data-ttu-id="ee20d-178">たとえば、Microsoft Excel は、クリエーター コードを持っています。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-178">For example, Microsoft Excel has the creator code XCEL.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="3c3e9-177"><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-177">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="3c3e9-178">たとえば、Microsoft Excel の作成元コードは XCEL です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-178">For example, Microsoft Excel has the creator code XCEL.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -1146,27 +752,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-179">オブジェクトを切り取り、クリップボードまたは指定された範囲に貼り付けます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-179">Cuts the object to the Clipboard or pastes it into a specified destination.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="ee20d-180">セル範囲を切り取るときは、連続しているセルを対象とする必要があります。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-180">The cut range must be made up of adjacent cells.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="ee20d-181">対象がグラフのときは、埋め込みグラフのみを切り取ることができます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-181">Only embedded charts can be cut.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="3c3e9-179">オブジェクトを切り取り、クリップボードまたは指定された範囲に貼り付けます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-179">Cuts the object to the Clipboard or pastes it into a specified destination.</span></span></summary>
+        <remarks><para><span data-ttu-id="3c3e9-180">セル範囲を切り取るときは、連続しているセルを対象とする必要があります。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-180">The cut range must be made up of adjacent cells.</span></span></para>
+          <para><span data-ttu-id="3c3e9-181">対象がグラフのときは、埋め込みグラフのみを切り取ることができます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-181">Only embedded charts can be cut.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -1190,12 +779,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-182">オブジェクトを削除します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-182">Deletes the object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-182">オブジェクトを削除します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-182">Deletes the object.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1225,12 +809,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Diagram</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-183">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Diagram" /> 、図を表すオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-183">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Diagram" /> object representing a diagram.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-183">図を表 <see cref="T:Microsoft.Office.Interop.Excel.Diagram" /> すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-183">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Diagram" /> object representing a diagram.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1261,12 +840,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-184">返します、 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> 、ダイアグラム内のノードを表すオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-184">Returns a <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object that represents a node in a diagram.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-184">図内 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> のノードを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-184">Returns a <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> object that represents a node in a diagram.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1297,12 +871,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-185">内部使用のため予約済みです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-185">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-185">内部使用のため予約済みです。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-185">Reserved for internal use.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1328,12 +897,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-186">オブジェクトを複製し、その複製への参照を返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-186">Duplicates the object and returns a reference to the new copy.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-186">オブジェクトを複製し、複製されたオブジェクトへの参照を返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-186">Duplicates the object and returns a reference to the new copy.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1361,16 +925,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.FillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-187">返します、 <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> 、指定したグラフまたは図形のプロパティを格納しているオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-187">Returns a <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> object that contains fill formatting properties for the specified chart or shape.</span>
-          </span>
-          <span data-ttu-id="ee20d-188">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-188">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-187">指定したグラフ <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> または図形の塗りつぶしの書式プロパティを含むオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-187">Returns a <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> object that contains fill formatting properties for the specified chart or shape.</span></span> <span data-ttu-id="3c3e9-188">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-188">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1398,22 +953,8 @@
         <Parameter Name="FlipCmd" Type="Microsoft.Office.Core.MsoFlipCmd" />
       </Parameters>
       <Docs>
-        <param name="FlipCmd">
-          <span data-ttu-id="ee20d-189">必要な<see cref="T:Microsoft.Office.Core.MsoFlipCmd" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-189">Required <see cref="T:Microsoft.Office.Core.MsoFlipCmd" />.</span>
-          </span>
-          <span data-ttu-id="ee20d-190">図形を水平軸と垂直軸のいずれを中心として反転するかを指定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-190">Specifies whether the shape is to be flipped horizontally or vertically.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="ee20d-191">指定した図形を、水平軸または垂直軸を中心として反転します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-191">Flips the specified shape around its horizontal or vertical axis.</span>
-          </span>
-        </summary>
+        <param name="FlipCmd"><span data-ttu-id="3c3e9-189">必須 <see cref="T:Microsoft.Office.Core.MsoFlipCmd" /> 。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-189">Required <see cref="T:Microsoft.Office.Core.MsoFlipCmd" />.</span></span> <span data-ttu-id="3c3e9-190">図形を水平軸と垂直軸のいずれを中心として反転するかを指定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-190">Specifies whether the shape is to be flipped horizontally or vertically.</span></span></param>
+        <summary><span data-ttu-id="3c3e9-191">指定した図形を、水平軸または垂直軸を中心として反転します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-191">Flips the specified shape around its horizontal or vertical axis.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1440,26 +981,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlFormControl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-192">Microsoft Excel コントロールの種類を返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-192">Returns the Microsoft Excel control type.</span>
-          </span>
-          <span data-ttu-id="ee20d-193">読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlFormControl" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-193">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlFormControl" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-192">Microsoft Excel コントロールの種類を返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-192">Returns the Microsoft Excel control type.</span></span> <span data-ttu-id="3c3e9-193">読み取り専用 <see cref="T:Microsoft.Office.Interop.Excel.XlFormControl" /> です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-193">Read-only <see cref="T:Microsoft.Office.Interop.Excel.XlFormControl" />.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="ee20d-194">ActiveX コントロールでこのプロパティを使用することはできません (、<see cref="P:Microsoft.Office.Interop.Excel.Shape.Type" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Shape" />オブジェクトは<b>msoFormControl</b>を返す必要があります)。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-194">You cannot use this property with ActiveX controls (the <see cref="P:Microsoft.Office.Interop.Excel.Shape.Type" /> property for the <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object must return <b>msoFormControl</b>).</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="3c3e9-194">You cannot use this property with ActiveX controls (the <see cref="P:Microsoft.Office.Interop.Excel.Shape.Type" /> property for the object must return <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <b>msoFormControl).</b></span><span class="sxs-lookup"><span data-stu-id="3c3e9-194">You cannot use this property with ActiveX controls (the <see cref="P:Microsoft.Office.Interop.Excel.Shape.Type" /> property for the <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object must return <b>msoFormControl</b>).</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Glow">
@@ -1485,28 +1010,10 @@
         <ReturnType>Microsoft.Office.Core.GlowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-195">光彩の書式を図形のプロパティを含む指定された図形のオブジェクトを返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-195">Returns an object for a specified shape that contains glow formatting properties for that shape.</span>
-          </span>
-          <span data-ttu-id="ee20d-196">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-196">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.GlowFormat" />
-        </value>
-        <remarks>
-          <para>
-            <span data-ttu-id="ee20d-197">光彩効果は、画像のエッジに鮮やかな色を適用します。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-197">The glow effect adds a vibrant colored edge to graphics.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="3c3e9-195">その図形の光彩の書式設定プロパティを含む指定した図形のオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-195">Returns an object for a specified shape that contains glow formatting properties for that shape.</span></span> <span data-ttu-id="3c3e9-196">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-196">Read-only.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Core.GlowFormat" /></value>
+        <remarks><para><span data-ttu-id="3c3e9-197">光彩効果は、画像のエッジに鮮やかな色を適用します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-197">The glow effect adds a vibrant colored edge to graphics.</span></span>  </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GroupItems">
@@ -1532,24 +1039,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.GroupShapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-198">返します、<see cref="T:Microsoft.Office.Interop.Excel.GroupShapes" />指定されたグループ内の個々 の図形を表すオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-198">Returns a <see cref="T:Microsoft.Office.Interop.Excel.GroupShapes" /> object that represents the individual shapes in the specified group.</span>
-          </span>
-          <span data-ttu-id="ee20d-199">使用して、 <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> 、<b>グループ形状</b>にオブジェクトのメソッド グループから 1 つの図形を取得します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-199">Use the <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> method of the <b>GroupShapes</b> object to return a single shape from the group.</span>
-          </span>
-          <span data-ttu-id="ee20d-200">適用される<see cref="T:Microsoft.Office.Interop.Excel.Shape" />グループ化された図形を表すオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-200">Applies to <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objects that represent grouped shapes.</span>
-          </span>
-          <span data-ttu-id="ee20d-201">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-201">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-198">指定したグループ <see cref="T:Microsoft.Office.Interop.Excel.GroupShapes" /> 内の各図形を表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-198">Returns a <see cref="T:Microsoft.Office.Interop.Excel.GroupShapes" /> object that represents the individual shapes in the specified group.</span></span> <span data-ttu-id="3c3e9-199">グループから <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> 1 つの図形 <b>を取得するには、GroupShapes</b> オブジェクトのメソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-199">Use the <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> method of the <b>GroupShapes</b> object to return a single shape from the group.</span></span> <span data-ttu-id="3c3e9-200">グループ化された <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 図形を表すオブジェクトに適用されます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-200">Applies to <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objects that represent grouped shapes.</span></span> <span data-ttu-id="3c3e9-201">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-201">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1577,19 +1067,8 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-202">情報を返す場合に、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />グラフが含まれています。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-202">Returns information on if a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> contains a chart.</span>
-          </span>
-          <span data-ttu-id="ee20d-203">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-203">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoTriState" />
-        </value>
+        <summary><span data-ttu-id="3c3e9-202">グラフが含まれている場合に関 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> する情報を返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-202">Returns information on if a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> contains a chart.</span></span> <span data-ttu-id="3c3e9-203">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-203">Read-only.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoTriState" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1619,16 +1098,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-204">図形または図形範囲に図表が含まれているかどうかを返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-204">Returns whether a shape or shape range contains a diagram.</span>
-          </span>
-          <span data-ttu-id="ee20d-205">読み取り専用<see cref="T:Microsoft.Office.Core.MsoTriState" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-205">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-204">図形または図形範囲に図が含まれているかどうかを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-204">Returns whether a shape or shape range contains a diagram.</span></span> <span data-ttu-id="3c3e9-205">読み取り専用 <see cref="T:Microsoft.Office.Core.MsoTriState" /> です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-205">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1659,16 +1129,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-206">指定した図形または図形範囲に図表ノードが存在するかどうかを示す値を返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-206">Returns a value indicating whether a diagram node exists in a given shape or shape range.</span>
-          </span>
-          <span data-ttu-id="ee20d-207">読み取り専用<see cref="T:Microsoft.Office.Core.MsoTriState" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-207">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-206">指定した図形または図形範囲にダイアグラム ノードが存在するかどうかを示す値を返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-206">Returns a value indicating whether a diagram node exists in a given shape or shape range.</span></span> <span data-ttu-id="3c3e9-207">読み取り専用 <see cref="T:Microsoft.Office.Core.MsoTriState" /> です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-207">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1696,35 +1157,13 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-208">SmartArt 図の指定した図形に存在するかどうかを取得します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-208">Gets whether there is a SmartArt diagram present on the specified shape.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="ee20d-209">A<see cref="T:Microsoft.Office.Core.MsoTriState" />オブジェクトです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-209">A <see cref="T:Microsoft.Office.Core.MsoTriState" /> object.</span>
-          </span>
-        </value>
-        <remarks>
-          <para>
-            <span data-ttu-id="ee20d-210">読み取り専用。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-210">Read-only.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="ee20d-211">図表上に SmartArt 図がある場合は  
-            <b>msoTrue</b> (-1)、それ以外の場合は <b>msoFalse</b> (0)。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-211">
-                <b>msoTrue</b> (-1) if there is a SmartArt diagram present on the shape; otherwise <b>msoFalse</b> (0).</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="3c3e9-208">指定した図形に SmartArt 図が存在するかどうかを取得します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-208">Gets whether there is a SmartArt diagram present on the specified shape.</span></span></summary>
+        <value><span data-ttu-id="3c3e9-209"><see cref="T:Microsoft.Office.Core.MsoTriState" /> オブジェクト。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-209">A <see cref="T:Microsoft.Office.Core.MsoTriState" /> object.</span></span></value>
+        <remarks><para><span data-ttu-id="3c3e9-210">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-210">Read-only.</span></span></para>
+          <para><span data-ttu-id="3c3e9-211">図表上に SmartArt 図がある場合は  
+            <b>msoTrue</b> (-1)、それ以外の場合は <b>msoFalse</b> (0)。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-211">
+            <b>msoTrue</b> (-1) if there is a SmartArt diagram present on the shape; otherwise <b>msoFalse</b> (0).</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -1753,16 +1192,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-212">オブジェクトの高さ。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-212">The height of the object.</span>
-          </span>
-          <span data-ttu-id="ee20d-213">読み取り/書き込み <b>1 つ</b> です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-213">Read/write <b>Single</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-212">オブジェクトの高さを指定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-212">The height of the object.</span></span> <span data-ttu-id="3c3e9-213">読み取り/書き込み <b>1 つ</b> です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-213">Read/write <b>Single</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1790,18 +1220,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-214">
-            <b>True の</b>場合は、指定した図形が水平軸を中心として反転します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-214">
-              <b>True</b> if the specified shape is flipped around the horizontal axis.</span>
-          </span>
-          <span data-ttu-id="ee20d-215">読み取り専用<see cref="T:Microsoft.Office.Core.MsoTriState" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-215">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-214">指定された図形が横軸で反転されている場合は <b>True</b> を指定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-214"><b>True</b> if the specified shape is flipped around the horizontal axis.</span></span> <span data-ttu-id="3c3e9-215">読み取り専用 <see cref="T:Microsoft.Office.Core.MsoTriState" /> です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-215">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1829,12 +1248,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Hyperlink</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-216">返します、<see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" />の図形のハイパーリンクを表すオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-216">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" /> object that represents the hyperlink for the shape.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-216">図形の <see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" /> ハイパーリンクを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-216">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Hyperlink" /> object that represents the hyperlink for the shape.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1862,26 +1276,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-217">指定したオブジェクトの型を返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-217">Returns the type for the specified object.</span>
-          </span>
-          <span data-ttu-id="ee20d-218">整数型 ( <b>Integer</b>) の値を使用します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-218">Read-only <b>Integer</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-217">指定したオブジェクトの種類を返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-217">Returns the type for the specified object.</span></span> <span data-ttu-id="3c3e9-218">整数型 ( <b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-218">Read-only <b>Integer</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="ee20d-219">ID ラベルは、別の HTML ドキュメントや同じ Web ページでハイパーリンクの参照先として使用できます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-219">You can use an ID label as a hyperlink reference in other HTML documents or on the same Web page.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="3c3e9-219">ID ラベルは、別の HTML ドキュメントや同じ Web ページでハイパーリンクの参照先として使用できます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-219">You can use an ID label as a hyperlink reference in other HTML documents or on the same Web page.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementLeft">
@@ -1907,27 +1305,8 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <span data-ttu-id="ee20d-220">
-            <b>1 つ</b>が必要です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-220">Required <b>Single</b>.</span>
-          </span>
-          <span data-ttu-id="ee20d-221">図形の移動を水平方向にポイント単位で指定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-221">Specifies how far the shape is to be moved horizontally in points.</span>
-          </span>
-          <span data-ttu-id="ee20d-222">正の値を指定すると図形は右に移動し、負の値を指定すると左に移動します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-222">A positive value moves the shape to the right; a negative value moves it to the left.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="ee20d-223">指定された図形を、指定したポイント数だけ水平方向に移動します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-223">Moves the specified shape horizontally by the specified number of points.</span>
-          </span>
-        </summary>
+        <param name="Increment"><span data-ttu-id="3c3e9-220">単精度浮動小数点型 (<b>Single</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-220">Required <b>Single</b>.</span></span> <span data-ttu-id="3c3e9-221">図形を水平方向に移動するポイント数を指定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-221">Specifies how far the shape is to be moved horizontally in points.</span></span> <span data-ttu-id="3c3e9-222">正の値を指定すると図形は右方向に移動し、負の値を指定すると左方向に移動します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-222">A positive value moves the shape to the right; a negative value moves it to the left.</span></span></param>
+        <summary><span data-ttu-id="3c3e9-223">指定した図形を、指定したポイント数だけ水平方向に移動します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-223">Moves the specified shape horizontally by the specified number of points.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1954,40 +1333,10 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <span data-ttu-id="ee20d-224">
-            <b>1 つ</b>が必要です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-224">Required <b>Single</b>.</span>
-          </span>
-          <span data-ttu-id="ee20d-225">図形の角度で水平方向に回転する指定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-225">Specifies how far the shape is to be rotated horizontally in degrees.</span>
-          </span>
-          <span data-ttu-id="ee20d-226">正の値を指定すると図形は時計回りに回転し、負の値を指定すると反時計回りに回転します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-226">A positive value rotates the shape clockwise; a negative value rotates it counterclockwise.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="ee20d-227">図形の z 軸を中心とした回転角度を、指定した度数だけ変更します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-227">Changes the rotation of the specified shape around the z-axis by the specified number of degrees.</span>
-          </span>
-          <span data-ttu-id="ee20d-228">使用して、<see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" />の図形の絶対回転角度を設定するプロパティです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-228">Use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> property to set the absolute rotation of the shape.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="ee20d-229">3 次元の図形の x 軸または y 軸の周りを回転するにを使用して、<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" />メソッドです。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-229">To rotate a three-dimensional shape around the x-axis or the y-axis, use the <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> method or the <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> method.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <param name="Increment"><span data-ttu-id="3c3e9-224">単精度浮動小数点型 (<b>Single</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-224">Required <b>Single</b>.</span></span> <span data-ttu-id="3c3e9-225">図形を水平方向に回転する角度を指定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-225">Specifies how far the shape is to be rotated horizontally in degrees.</span></span> <span data-ttu-id="3c3e9-226">正の値を指定すると図形は時計回りに回転し、負の値を指定すると反時計回りに回転します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-226">A positive value rotates the shape clockwise; a negative value rotates it counterclockwise.</span></span></param>
+        <summary><span data-ttu-id="3c3e9-227">指定した図形の z 軸回りの回転を、指定した角度だけ変更します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-227">Changes the rotation of the specified shape around the z-axis by the specified number of degrees.</span></span> <span data-ttu-id="3c3e9-228">図形の <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> 絶対回転角度を設定するには、このプロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-228">Use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> property to set the absolute rotation of the shape.</span></span></summary>
+        <remarks><para><span data-ttu-id="3c3e9-229">x 軸または y 軸を中心に 3 次元図形を回転するには、メソッド <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> またはメソッドを使用 <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-229">To rotate a three-dimensional shape around the x-axis or the y-axis, use the <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> method or the <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> method.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IncrementTop">
@@ -2013,27 +1362,8 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">
-          <span data-ttu-id="ee20d-230">
-            <b>1 つ</b>が必要です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-230">Required <b>Single</b>.</span>
-          </span>
-          <span data-ttu-id="ee20d-231">Shape オブジェクトの移動を垂直方向にポイント単位で指定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-231">Specifies how far the shape object is to be moved vertically in points.</span>
-          </span>
-          <span data-ttu-id="ee20d-232">正の値を指定すると図形は下に移動し、負の値を指定すると上に移動します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-232">A positive value moves the shape down; a negative value moves it up.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="ee20d-233">指定した図形を、指定したポイント数だけ垂直に移動します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-233">Moves the specified shape vertically by the specified number of points.</span>
-          </span>
-        </summary>
+        <param name="Increment"><span data-ttu-id="3c3e9-230">単精度浮動小数点型 (<b>Single</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-230">Required <b>Single</b>.</span></span> <span data-ttu-id="3c3e9-231">図形オブジェクトを垂直方向に移動するポイント数を指定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-231">Specifies how far the shape object is to be moved vertically in points.</span></span> <span data-ttu-id="3c3e9-232">正の値を指定すると図形は下方向に移動し、負の値を指定すると上方向に移動します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-232">A positive value moves the shape down; a negative value moves it up.</span></span></param>
+        <summary><span data-ttu-id="3c3e9-233">指定した図形を、指定したポイント数だけ垂直方向に移動します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-233">Moves the specified shape vertically by the specified number of points.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2063,16 +1393,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-234">(ワークシートの列 A の左端をグラフ エリア (グラフの場合) の左端から、オブジェクトの左端からの距離。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-234">The distance from the left edge of the object to the left edge of column A (on a worksheet) or the left edge of the chart area (on a chart).</span>
-          </span>
-          <span data-ttu-id="ee20d-235">読み取り/書き込み <b>1 つ</b> です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-235">Read/write <b>Single</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-234">オブジェクトの左側から列 A の左側 (ワークシート) またはグラフ エリアの左側 (グラフの場合) までの距離です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-234">The distance from the left edge of the object to the left edge of column A (on a worksheet) or the left edge of the chart area (on a chart).</span></span> <span data-ttu-id="3c3e9-235">読み取り/書き込み <b>1 つ</b> です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-235">Read/write <b>Single</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2100,26 +1421,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.LineFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-236">返します、<see cref="T:Microsoft.Office.Interop.Excel.LineFormat" />オブジェクトを指定した図形のプロパティを書式設定の行が含まれています。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-236">Returns a <see cref="T:Microsoft.Office.Interop.Excel.LineFormat" /> object that contains line formatting properties for the specified shape.</span>
-          </span>
-          <span data-ttu-id="ee20d-237">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-237">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-236">指定した図形 <see cref="T:Microsoft.Office.Interop.Excel.LineFormat" /> の線の書式設定プロパティを含むオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-236">Returns a <see cref="T:Microsoft.Office.Interop.Excel.LineFormat" /> object that contains line formatting properties for the specified shape.</span></span> <span data-ttu-id="3c3e9-237">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-237">Read-only.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="ee20d-238">線は、 <b>LineFormat</b> オブジェクトは線自体を表します。外枠で囲まれた図形の場合、 <b>LineFormat</b> オブジェクトは輪郭を表します。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-238">For a line, the <b>LineFormat</b> object represents the line itself; for a shape with a border, the <b>LineFormat</b> object represents the border.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="3c3e9-238">線は、 <b>LineFormat</b> オブジェクトは線自体を表します。外枠で囲まれた図形の場合、 <b>LineFormat</b> オブジェクトは輪郭を表します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-238">For a line, the <b>LineFormat</b> object represents the line itself; for a shape with a border, the <b>LineFormat</b> object represents the border.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LinkFormat">
@@ -2145,16 +1450,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.LinkFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-239">返します、<see cref="T:Microsoft.Office.Interop.Excel.LinkFormat" />リンクされた OLE オブジェクトのプロパティを格納しているオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-239">Returns a <see cref="T:Microsoft.Office.Interop.Excel.LinkFormat" /> object that contains linked OLE object properties.</span>
-          </span>
-          <span data-ttu-id="ee20d-240">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-240">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-239">リンクされた <see cref="T:Microsoft.Office.Interop.Excel.LinkFormat" /> OLE オブジェクト のプロパティを含むオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-239">Returns a <see cref="T:Microsoft.Office.Interop.Excel.LinkFormat" /> object that contains linked OLE object properties.</span></span> <span data-ttu-id="3c3e9-240">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-240">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2185,24 +1481,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-241">
-            <b>True の</b>場合、指定した図形では、サイズを変更するときの元の縦横比が保持されます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-241">
-              <b>True</b> if the specified shape retains its original proportions when you resize it.</span>
-          </span>
-          <span data-ttu-id="ee20d-242">
-            <b>False</b>場合は、サイズを変更するときに個別に図形の幅と高さを変更することができます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-242">
-              <b>False</b> if you can change the height and width of the shape independently of one another when you resize it.</span>
-          </span>
-          <span data-ttu-id="ee20d-243">読み取り/書き込み<see cref="T:Microsoft.Office.Core.MsoTriState" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-243">Read/write <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-241">指定された図形が、サイズを変更しても元の比率を保持している場合は <b>True</b> です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-241"><b>True</b> if the specified shape retains its original proportions when you resize it.</span></span> <span data-ttu-id="3c3e9-242">サイズを変更するときに、図形の高さと幅を個別に変更できる場合は <b>False</b> です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-242"><b>False</b> if you can change the height and width of the shape independently of one another when you resize it.</span></span> <span data-ttu-id="3c3e9-243">読み取り/書き込み <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-243">Read/write <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2233,18 +1512,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-244">
-            <b>True</b>オブジェクトがロックされている場合は<b>False</b>場合は、シートが保護されている場合、オブジェクトを変更できます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-244">
-              <b>True</b> if the object is locked, <b>False</b> if the object can be modified when the sheet is protected.</span>
-          </span>
-          <span data-ttu-id="ee20d-245">ブール型 ( <b>Boolean</b>) の値を使用します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-245">Read/write <b>Boolean</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-244"><b>オブジェクト</b> がロックされている場合は <b>True、False</b> の場合は、シートが保護されているときにオブジェクトを変更できます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-244"><b>True</b> if the object is locked, <b>False</b> if the object can be modified when the sheet is protected.</span></span> <span data-ttu-id="3c3e9-245">読み取り/書き込みが可能な <b>Boolean</b> です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-245">Read/write <b>Boolean</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2275,164 +1543,62 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-p143">指定されたオブジェクトの名前を設定します。値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-p143">Returns or sets the name of the object. Read/write <b>String</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-246">オブジェクトの名前を設定または返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-246">Returns or sets the name of the object.</span></span> <span data-ttu-id="3c3e9-247">値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-247">Read/write <b>String</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="ee20d-248">次の表に、値の例の<b>Name</b>プロパティと関連するプロパティの指定、OLAP データ ソースの一意の名前] [ヨーロッパ] です。[東京都] です。[東京]"OLAP 以外のデータ ソースのアイテム名が「東京」とします。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-248">The following table shows example values of the <b>Name</b> property and related properties given an OLAP data source with the unique name "[Europe].[France].[Paris]" and a non-OLAP data source with the item name "Paris".</span>
-            </span>
-          </para>
+        <remarks><para><span data-ttu-id="3c3e9-248">OLAP データ ソースの一意な名前が "[都道府県].[東京都].[東京]"、OLAP 以外のデータ ソースのアイテム名が "東京" とされた場合、<b>Name</b> プロパティ、および関連するプロパティの値を次に示します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-248">The following table shows example values of the <b>Name</b> property and related properties given an OLAP data source with the unique name "[Europe].[France].[Paris]" and a non-OLAP data source with the item name "Paris".</span></span></para>
           <list type="table">
             <item>
-              <term>
-                <span data-ttu-id="ee20d-249">
-                  <b>キャプション</b>
-                </span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-249">
-                    <b>Caption</b>
-                  </span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="ee20d-250">東京</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-250">Paris</span>
-                </span>
-              </description>
-              <description>
-                <span data-ttu-id="ee20d-251">東京</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-251">Paris</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="3c3e9-249">
+                <b>Caption</b>
+              </span><span class="sxs-lookup"><span data-stu-id="3c3e9-249">
+                <b>Caption</b>
+              </span></span></term>
+              <description><span data-ttu-id="3c3e9-250">東京</span><span class="sxs-lookup"><span data-stu-id="3c3e9-250">Paris</span></span></description>
+              <description><span data-ttu-id="3c3e9-251">東京</span><span class="sxs-lookup"><span data-stu-id="3c3e9-251">Paris</span></span></description>
             </item>
             <item>
-              <term>
-                <span data-ttu-id="ee20d-252">
-                  <b>名</b>
-                </span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-252">
-                    <b>Name</b>
-                  </span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="ee20d-253">[都道府県].[東京都].[東京] (読み取り専用)</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-253">[Europe].[France].[Paris] (read-only)</span>
-                </span>
-              </description>
-              <description>
-                <span data-ttu-id="ee20d-254">東京</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-254">Paris</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="3c3e9-252">
+                <b>名前</b>
+              </span><span class="sxs-lookup"><span data-stu-id="3c3e9-252">
+                <b>Name</b>
+              </span></span></term>
+              <description><span data-ttu-id="3c3e9-253">[都道府県].[東京都].[東京] (読み取り専用)</span><span class="sxs-lookup"><span data-stu-id="3c3e9-253">[Europe].[France].[Paris] (read-only)</span></span></description>
+              <description><span data-ttu-id="3c3e9-254">東京</span><span class="sxs-lookup"><span data-stu-id="3c3e9-254">Paris</span></span></description>
             </item>
             <item>
-              <term>
-                <span data-ttu-id="ee20d-255">
-                  <b>SourceName</b>
-                </span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-255">
-                    <b>SourceName</b>
-                  </span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="ee20d-256">[都道府県].[東京都].[東京] (読み取り専用)</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-256">[Europe].[France].[Paris] (read-only)</span>
-                </span>
-              </description>
-              <description>
-                <span data-ttu-id="ee20d-257">(SQL プロパティと同じ値、読み取り専用)</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-257">(Same as SQL property value, read-only)</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="3c3e9-255">
+                <b>SourceName</b>
+              </span><span class="sxs-lookup"><span data-stu-id="3c3e9-255">
+                <b>SourceName</b>
+              </span></span></term>
+              <description><span data-ttu-id="3c3e9-256">[都道府県].[東京都].[東京] (読み取り専用)</span><span class="sxs-lookup"><span data-stu-id="3c3e9-256">[Europe].[France].[Paris] (read-only)</span></span></description>
+              <description><span data-ttu-id="3c3e9-257">(SQL プロパティと同じ値、読み取り専用)</span><span class="sxs-lookup"><span data-stu-id="3c3e9-257">(Same as SQL property value, read-only)</span></span></description>
             </item>
             <item>
-              <term>
-                <span data-ttu-id="ee20d-258">
-                  <b>値</b>
-                </span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-258">
-                    <b>Value</b>
-                  </span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="ee20d-259">[都道府県].[東京都].[東京] (読み取り専用)</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-259">[Europe].[France].[Paris] (read-only)</span>
-                </span>
-              </description>
-              <description>
-                <span data-ttu-id="ee20d-260">東京</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-260">Paris</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="3c3e9-258">
+                <b>値</b>
+              </span><span class="sxs-lookup"><span data-stu-id="3c3e9-258">
+                <b>Value</b>
+              </span></span></term>
+              <description><span data-ttu-id="3c3e9-259">[都道府県].[東京都].[東京] (読み取り専用)</span><span class="sxs-lookup"><span data-stu-id="3c3e9-259">[Europe].[France].[Paris] (read-only)</span></span></description>
+              <description><span data-ttu-id="3c3e9-260">東京</span><span class="sxs-lookup"><span data-stu-id="3c3e9-260">Paris</span></span></description>
             </item>
           </list>
-          <para>
-            <span data-ttu-id="ee20d-261">インデックスを指定する場合、<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />コレクションでは、次の表に示すように構文を使用することができます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-261">When specifying an index into the <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, you can use the syntax shown in the following table.</span>
-            </span>
-          </para>
+          <para><span data-ttu-id="3c3e9-261">コレクションにインデックスを指定する場合は、次の表 <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> に示す構文を使用できます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-261">When specifying an index into the <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> collection, you can use the syntax shown in the following table.</span></span></para>
           <list type="table">
             <item>
-              <term>
-                <span data-ttu-id="ee20d-262">式です。返すプロパティ (「[ヨーロッパ]。 [東京都] です。[東京]")</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-262">expression.PivotItems("[Europe].[France].[Paris]")</span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="ee20d-263">Expression.PivotItems("Paris")</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-263">Expression.PivotItems("Paris")</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="3c3e9-262">式を使用します。PivotItems("[Europe].[フランス]。[パリ]")</span><span class="sxs-lookup"><span data-stu-id="3c3e9-262">expression.PivotItems("[Europe].[France].[Paris]")</span></span></term>
+              <description><span data-ttu-id="3c3e9-263">Expression.PivotItems("Paris")</span><span class="sxs-lookup"><span data-stu-id="3c3e9-263">Expression.PivotItems("Paris")</span></span></description>
             </item>
           </list>
-          <para>
-            <span data-ttu-id="ee20d-264">使用する場合、<see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" />プロパティ、コレクションの特定のメンバーを参照するには、次の表に示すようにテキストをインデックス名を使用することができます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-264">When using the <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> property to reference a specific member of a collection, you can use the text index name as shown in the following table.</span>
-            </span>
-          </para>
+          <para><span data-ttu-id="3c3e9-264">このプロパティを使用してコレクションの特定のメンバーを参照する場合は、次の表に示すように、テキスト インデックス <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> 名を使用できます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-264">When using the <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> property to reference a specific member of a collection, you can use the text index name as shown in the following table.</span></span></para>
           <list type="table">
             <item>
-              <term>
-                <span data-ttu-id="ee20d-265">[ヨーロッパ] です。[東京都] です。[東京]</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-265">[Europe].[France].[Paris]</span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="ee20d-266">東京</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-266">Paris</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="3c3e9-265">[ヨーロッパ].[フランス].[パリ]</span><span class="sxs-lookup"><span data-stu-id="3c3e9-265">[Europe].[France].[Paris]</span></span></term>
+              <description><span data-ttu-id="3c3e9-266">東京</span><span class="sxs-lookup"><span data-stu-id="3c3e9-266">Paris</span></span></description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Nodes">
@@ -2458,16 +1624,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ShapeNodes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-267">返します、 <see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" /> 、指定した図形の幾何学的な説明を表すコレクション。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-267">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" /> collection that represents the geometric description of the specified shape.</span>
-          </span>
-          <span data-ttu-id="ee20d-268">適用される<see cref="T:Microsoft.Office.Interop.Excel.Shape" />フリー フォームの描画を表すオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-268">Applies to <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objects that represent freeform drawings.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-267">指定した図形 <see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" /> の幾何学的な説明を表すコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-267">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" /> collection that represents the geometric description of the specified shape.</span></span> <span data-ttu-id="3c3e9-268">フリーフォーム図面 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> を表すオブジェクトに適用されます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-268">Applies to <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objects that represent freeform drawings.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2495,16 +1652,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.OLEFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-269">返します、 <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> OLE オブジェクトのプロパティを格納しているオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-269">Returns an <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> object that contains OLE object properties.</span>
-          </span>
-          <span data-ttu-id="ee20d-270">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-270">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-269">OLE オブジェクト の <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> プロパティを含むオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-269">Returns an <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> object that contains OLE object properties.</span></span> <span data-ttu-id="3c3e9-270">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-270">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2535,26 +1683,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-271">指定したオブジェクトがクリックされたときに実行されるマクロの名前を設定または返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-271">Returns or sets the name of a macro that’s run when the specified object is clicked.</span>
-          </span>
-          <span data-ttu-id="ee20d-272">値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-272">Read/write <b>String</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-271">指定したオブジェクトがクリックされた場合に実行されるマクロの名前を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-271">Returns or sets the name of a macro that’s run when the specified object is clicked.</span></span> <span data-ttu-id="3c3e9-272">値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-272">Read/write <b>String</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="ee20d-273">メニュー項目にこのプロパティを設定すると、メニュー項目に登録されていたヘルプの設定が、登録したマクロのヘルプ設定に置き換えられます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-273">Setting this property for a menu item overrides any custom help information set up for the menu item with the information set up for the assigned macro.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="3c3e9-273">メニュー項目にこのプロパティを設定すると、メニュー項目に登録されていたヘルプの設定が、登録したマクロのヘルプ設定に置き換えられます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-273">Setting this property for a menu item overrides any custom help information set up for the menu item with the information set up for the assigned macro.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -2580,12 +1712,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-p147">指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-p147">Returns the parent object for the specified object. Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-274">指定されたオブジェクトの親オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-274">Returns the parent object for the specified object.</span></span> <span data-ttu-id="3c3e9-275">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-275">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2613,12 +1740,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-276">返します、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />を共通の親図形の子図形または子図形の範囲を表すオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-276">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object that represents the common parent shape of a child shape or a range of child shapes.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-276">子図形 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> または子図形の範囲の共通の親図形を表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-276">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> object that represents the common parent shape of a child shape or a range of child shapes.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2644,16 +1766,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-277">図形の書式をコピーします。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-277">Copies the formatting of the specified shape.</span>
-          </span>
-          <span data-ttu-id="ee20d-278">使用して、<see cref="M:Microsoft.Office.Interop.Excel.Shape.Apply" />を別の図形にコピーした書式を適用する方法です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-278">Use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.Apply" /> method to apply the copied formatting to another shape.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-277">指定された図形の書式をコピーします。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-277">Copies the formatting of the specified shape.</span></span> <span data-ttu-id="3c3e9-278">コピーした <see cref="M:Microsoft.Office.Interop.Excel.Shape.Apply" /> 書式を別の図形に適用するには、このメソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-278">Use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.Apply" /> method to apply the copied formatting to another shape.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2680,20 +1793,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PictureFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-279">返します、<see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" />図の指定した図形のプロパティを書式設定を格納しているオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-279">Returns a <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> object that contains picture formatting properties for the specified shape.</span>
-          </span>
-          <span data-ttu-id="ee20d-280">適用される<see cref="T:Microsoft.Office.Interop.Excel.Shape" />図または OLE オブジェクトを表すオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-280">Applies to <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objects that represent pictures or OLE objects.</span>
-          </span>
-          <span data-ttu-id="ee20d-281">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-281">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-279">指定した図形 <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> の図の書式プロパティを含むオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-279">Returns a <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> object that contains picture formatting properties for the specified shape.</span></span> <span data-ttu-id="3c3e9-280">ピクチャまたは <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> OLE オブジェクトを表すオブジェクトに適用されます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-280">Applies to <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> objects that represent pictures or OLE objects.</span></span> <span data-ttu-id="3c3e9-281">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-281">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2724,16 +1824,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-282">オブジェクトがその下のセルに関連付けられている方法を設定または返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-282">Returns or sets the way the object is attached to the cells below it.</span>
-          </span>
-          <span data-ttu-id="ee20d-283">読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Excel.XlPlacement" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-283">Read/write <see cref="T:Microsoft.Office.Interop.Excel.XlPlacement" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-282">オブジェクトをその下のセルに接続する方法を設定または返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-282">Returns or sets the way the object is attached to the cells below it.</span></span> <span data-ttu-id="3c3e9-283">読み取り/書き込み <see cref="T:Microsoft.Office.Interop.Excel.XlPlacement" /> 。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-283">Read/write <see cref="T:Microsoft.Office.Interop.Excel.XlPlacement" />.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2761,19 +1852,8 @@
         <ReturnType>Microsoft.Office.Core.ReflectionFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-284">リフレクションの書式設定、図形のプロパティを格納しているオブジェクトを返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-284">Returns an object that contains reflection formatting properties for the shape.</span>
-          </span>
-          <span data-ttu-id="ee20d-285">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-285">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.ReflectionFormat" />
-        </value>
+        <summary><span data-ttu-id="3c3e9-284">図形の反射書式プロパティを含むオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-284">Returns an object that contains reflection formatting properties for the shape.</span></span> <span data-ttu-id="3c3e9-285">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-285">Read-only.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Core.ReflectionFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2798,31 +1878,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-286">RerouteConnections メソッドは、図形間を結ぶ線 (コネクタ) の経路が最短になるように、そのコネクタを再接続します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-286">Reroutes connectors so that they take the shortest possible path between the shapes they connect.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="ee20d-287">最短パスを使用するには、 <b>RerouteConnections</b>メソッド可能性があります、コネクタの端を切り離すし、接続された図形に接続している別のサイトには、それらに接続し直します。。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-287">To use the shortest path, the <b>RerouteConnections</b> method may detach the ends of a connector and reattach them to different connecting sites on the connected shapes.</span>
-            </span>
-            <span data-ttu-id="ee20d-288">図形に接続されたすべてのコネクタを再接続します。図形がコネクタの場合、そのコネクタを再接続します。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-288">This method reroutes all connectors attached to the specified shape; if the specified shape is a connector, it’s rerouted.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="ee20d-p153">RerouteConnections メソッドをコネクタに適用すると、そのコネクタの経路だけが再作成されます。このメソッドを結合した図形に適用すると、その図形のすべてのコネクタの経路が再作成されます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-p153">If this method is applied to a connector, only that connector will be rerouted. If this method is applied to a connected shape, all connectors to that shape will be rerouted.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="3c3e9-286">RerouteConnections メソッドは、図形間を結ぶ線 (コネクタ) の経路が最短になるように、そのコネクタを再接続します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-286">Reroutes connectors so that they take the shortest possible path between the shapes they connect.</span></span></summary>
+        <remarks><para><span data-ttu-id="3c3e9-287">最短のパスを使用するために <b>、RerouteConnections</b> メソッドはコネクタの端を切り離し、接続された図形上の別の接続サイトに接続し再び接続できます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-287">To use the shortest path, the <b>RerouteConnections</b> method may detach the ends of a connector and reattach them to different connecting sites on the connected shapes.</span></span> <span data-ttu-id="3c3e9-288">図形に接続されたすべてのコネクタを再接続します。図形がコネクタの場合、そのコネクタを再接続します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-288">This method reroutes all connectors attached to the specified shape; if the specified shape is a connector, it’s rerouted.</span></span></para>
+          <para><span data-ttu-id="3c3e9-p153">RerouteConnections メソッドをコネクタに適用すると、そのコネクタの経路だけが再作成されます。このメソッドを結合した図形に適用すると、その図形のすべてのコネクタの経路が再作成されます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-p153">If this method is applied to a connector, only that connector will be rerouted. If this method is applied to a connected shape, all connectors to that shape will be rerouted.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Rotation">
@@ -2851,16 +1910,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-291">度単位で図形の回転角度を設定または返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-291">Returns or sets the rotation of the shape in degrees.</span>
-          </span>
-          <span data-ttu-id="ee20d-292">読み取り/書き込み <b>1 つ</b> です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-292">Read/write <b>Single</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-291">図形の回転角度を設定または返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-291">Returns or sets the rotation of the shape in degrees.</span></span> <span data-ttu-id="3c3e9-292">読み取り/書き込み <b>1 つ</b> です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-292">Read/write <b>Single</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2889,72 +1939,12 @@
         <Parameter Name="Scale" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Factor">
-          <span data-ttu-id="ee20d-293">
-            <b>1 つ</b>が必要です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-293">Required <b>Single</b>.</span>
-          </span>
-          <span data-ttu-id="ee20d-294">変更後の図形の幅と現在の幅の比率、または変更後の図形の幅と元の幅との比率を指定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-294">Specifies the ratio between the height of the shape after you resize it and the current or original height.</span>
-          </span>
-          <span data-ttu-id="ee20d-295">たとえば、四角形を 50% 拡大するには、この引数に 1.5 を指定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-295">For example, to make a rectangle 50 percent larger, specify 1.5 for this argument.</span>
-          </span>
-        </param>
-        <param name="RelativeToOriginalSize">
-          <span data-ttu-id="ee20d-296">必要な<see cref="T:Microsoft.Office.Core.MsoTriState" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-296">Required <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
-          </span>
-          <span data-ttu-id="ee20d-297">
-            <b>msotrue を設定</b>を元のサイズに対して図形を拡大または縮小します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-297">
-              <b>msoTrue</b> to scale the shape relative to its original size.</span>
-          </span>
-          <span data-ttu-id="ee20d-298">
-            <b>msofalse を設定する</b>、現在のサイズに対して拡大または縮小します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-298">
-              <b>msoFalse</b> to scale it relative to its current size.</span>
-          </span>
-          <span data-ttu-id="ee20d-299">指定した図形が図または OLE オブジェクトである場合にのみ、この引数に<b>msotrue を設定する</b>を指定することができます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-299">You can specify <b>msoTrue</b> for this argument only if the specified shape is a picture or an OLE object.</span>
-          </span>
-        </param>
-        <param name="Scale">
-          <span data-ttu-id="ee20d-300">省略可能な<see cref="T:Microsoft.Office.Core.MsoScaleFrom" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-300">Optional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />.</span>
-          </span>
-          <span data-ttu-id="ee20d-301">図形を拡大縮小する場合、図形の位置を保持する部分を指定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-301">Specifies which part of the shape retains its position when the shape is scaled.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="ee20d-302">図形の高さを指定した係数で拡大または縮小します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-302">Scales the height of the shape by a specified factor.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="ee20d-303">図または OLE オブジェクトでは、元のコンピューターまたは現在のサイズを基準にして図形を拡大または縮小するかどうかを指定できます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-303">For pictures and OLE objects, you can indicate whether you want to scale the shape relative to the original or the current size.</span>
-            </span>
-            <span data-ttu-id="ee20d-304">図または OLE オブジェクト以外の図形の場合は、常に現在の高さに対して拡大または縮小されます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-304">Shapes other than pictures and OLE objects are always scaled relative to their current height.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <param name="Factor"><span data-ttu-id="3c3e9-293">単精度浮動小数点型 (<b>Single</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-293">Required <b>Single</b>.</span></span> <span data-ttu-id="3c3e9-294">現在の高さと変更後の高さの比率、または元の高さと変更後の高さの比率を指定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-294">Specifies the ratio between the height of the shape after you resize it and the current or original height.</span></span> <span data-ttu-id="3c3e9-295">たとえば、四角形を 50% 拡大する場合は、この引数に 1.5 を指定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-295">For example, to make a rectangle 50 percent larger, specify 1.5 for this argument.</span></span></param>
+        <param name="RelativeToOriginalSize"><span data-ttu-id="3c3e9-296">必須 <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-296">Required <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span></span> <span data-ttu-id="3c3e9-297">元のサイズを基準にして図形を拡大または縮小する場合は  <b>msoTrue</b> 。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-297"><b>msoTrue</b> to scale the shape relative to its original size.</span></span> <span data-ttu-id="3c3e9-298">現在のサイズを基準にして拡大または縮小する場合は <b>msoFalse</b> を指定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-298"><b>msoFalse</b> to scale it relative to its current size.</span></span> <span data-ttu-id="3c3e9-299"><b>msoTrue</b> を指定できるのは、図形が図または OLE オブジェクトのときだけです。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-299">You can specify <b>msoTrue</b> for this argument only if the specified shape is a picture or an OLE object.</span></span></param>
+        <param name="Scale"><span data-ttu-id="3c3e9-300">省略 <see cref="T:Microsoft.Office.Core.MsoScaleFrom" /> 可能です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-300">Optional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />.</span></span> <span data-ttu-id="3c3e9-301">図形を拡大縮小する場合、図形の位置を保持する部分を指定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-301">Specifies which part of the shape retains its position when the shape is scaled.</span></span></param>
+        <summary><span data-ttu-id="3c3e9-302">指定された倍率で図形の高さを拡大または縮小します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-302">Scales the height of the shape by a specified factor.</span></span></summary>
+        <remarks><para><span data-ttu-id="3c3e9-303">図または OLE オブジェクトの場合は、図形の元のサイズを基準に拡大または縮小するのか、現在のサイズを基準に拡大または縮小するのかを指定できます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-303">For pictures and OLE objects, you can indicate whether you want to scale the shape relative to the original or the current size.</span></span> <span data-ttu-id="3c3e9-304">図または OLE オブジェクト以外の図形は、常に現在の高さを基準に拡大または縮小されます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-304">Shapes other than pictures and OLE objects are always scaled relative to their current height.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScaleWidth">
@@ -2981,64 +1971,12 @@
         <Parameter Name="Scale" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Factor">
-          <span data-ttu-id="ee20d-305">
-            <b>1 つ</b>が必要です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-305">Required <b>Single</b>.</span>
-          </span>
-          <span data-ttu-id="ee20d-306">変更後の図形の幅と現在の幅の比率、または変更後の図形の幅と元の幅との比率を指定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-306">Specifies the ratio between the width of the shape after you resize it and the current or original width.</span>
-          </span>
-          <span data-ttu-id="ee20d-307">たとえば、四角形を 50% 拡大するには、この引数に 1.5 を指定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-307">For example, to make a rectangle 50 percent larger, specify 1.5 for this argument.</span>
-          </span>
-        </param>
-        <param name="RelativeToOriginalSize">
-          <span data-ttu-id="ee20d-308">必要な<see cref="T:Microsoft.Office.Core.MsoTriState" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-308">Required <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
-          </span>
-          <span data-ttu-id="ee20d-309">False 現在のサイズに対して拡大または縮小します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-309">False to scale it relative to its current size.</span>
-          </span>
-          <span data-ttu-id="ee20d-310">True この引数を指定できるは指定した図形が図または OLE オブジェクトである場合にのみです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-310">You can specify True for this argument only if the specified shape is a picture or an OLE object.</span>
-          </span>
-        </param>
-        <param name="Scale">
-          <span data-ttu-id="ee20d-311">省略可能な<see cref="T:Microsoft.Office.Core.MsoScaleFrom" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-311">Optional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />.</span>
-          </span>
-          <span data-ttu-id="ee20d-312">図形を拡大縮小する場合、図形の位置を保持する部分を指定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-312">Specifies which part of the shape retains its position when the shape is scaled.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="ee20d-313">図形の幅を、指定した係数で拡大または縮小します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-313">Scales the width of the shape by a specified factor.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="ee20d-314">図または OLE オブジェクトでは、元のコンピューターまたは現在のサイズを基準にして図形を拡大または縮小するかどうかを指定できます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-314">For pictures and OLE objects, you can indicate whether you want to scale the shape relative to the original or the current size.</span>
-            </span>
-            <span data-ttu-id="ee20d-315">図または OLE オブジェクト以外の図形の場合は、常に現在の幅に対して拡大または縮小されます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-315">Shapes other than pictures and OLE objects are always scaled relative to their current width.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <param name="Factor"><span data-ttu-id="3c3e9-305">単精度浮動小数点型 (<b>Single</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-305">Required <b>Single</b>.</span></span> <span data-ttu-id="3c3e9-306">現在の幅と変更後の幅の比率、または元の幅と変更後の幅の比率を指定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-306">Specifies the ratio between the width of the shape after you resize it and the current or original width.</span></span> <span data-ttu-id="3c3e9-307">たとえば、四角形を 50% 拡大する場合は、この引数に 1.5 を指定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-307">For example, to make a rectangle 50 percent larger, specify 1.5 for this argument.</span></span></param>
+        <param name="RelativeToOriginalSize"><span data-ttu-id="3c3e9-308">必須 <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-308">Required <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span></span> <span data-ttu-id="3c3e9-309">False 現在のサイズに対して拡大または縮小します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-309">False to scale it relative to its current size.</span></span> <span data-ttu-id="3c3e9-310">True この引数を指定できるは指定した図形が図または OLE オブジェクトである場合にのみです。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-310">You can specify True for this argument only if the specified shape is a picture or an OLE object.</span></span></param>
+        <param name="Scale"><span data-ttu-id="3c3e9-311">省略 <see cref="T:Microsoft.Office.Core.MsoScaleFrom" /> 可能です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-311">Optional <see cref="T:Microsoft.Office.Core.MsoScaleFrom" />.</span></span> <span data-ttu-id="3c3e9-312">図形を拡大縮小する場合、図形の位置を保持する部分を指定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-312">Specifies which part of the shape retains its position when the shape is scaled.</span></span></param>
+        <summary><span data-ttu-id="3c3e9-313">指定された倍率で図形の幅を拡大または縮小します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-313">Scales the width of the shape by a specified factor.</span></span></summary>
+        <remarks><para><span data-ttu-id="3c3e9-314">図または OLE オブジェクトの場合は、図形の元のサイズを基準に拡大または縮小するのか、現在のサイズを基準に拡大または縮小するのかを指定できます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-314">For pictures and OLE objects, you can indicate whether you want to scale the shape relative to the original or the current size.</span></span> <span data-ttu-id="3c3e9-315">図または OLE オブジェクト以外の図形は、常に現在の幅を基準に拡大または縮小されます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-315">Shapes other than pictures and OLE objects are always scaled relative to their current width.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Script">
@@ -3067,12 +2005,7 @@
         <ReturnType>Microsoft.Office.Core.Script</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-p163">指定された Web ページ上のスクリプト ブロックまたはコード ブロックを表す <b>Script</b> オブジェクトを返します。指定のページにスクリプトが含まれない場合、何も取得されません。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-p163">Returns the <b>Script</b> object, which represents a block of script or code on the specified Web page. If the page contains no script, nothing is returned.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-316">指定された Web ページ上のスクリプト ブロックまたはコード ブロックを表す <b>Script</b> オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-316">Returns the <b>Script</b> object, which represents a block of script or code on the specified Web page.</span></span> <span data-ttu-id="3c3e9-317">ページにスクリプトが記述されていない場合は、何も返されません。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-317">If the page contains no script, nothing is returned.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3099,35 +2032,10 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">
-          <span data-ttu-id="ee20d-318">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-318">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="ee20d-319">置換するオブジェクトです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-319">The object to replace.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="ee20d-320">オブジェクトを選択します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-320">Selects the object.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="ee20d-321">セルまたはセル範囲を選択するには、 <b>Select</b>メソッドを使用します。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-321">To select a cell or a range of cells, use the <b>Select</b> method.</span>
-            </span>
-            <span data-ttu-id="ee20d-322">1 つのセルをアクティブ セルにするを使用して、<see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" />メソッドです。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-322">To make a single cell the active cell, use the <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> method.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <param name="Replace"><span data-ttu-id="3c3e9-318">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-318">Optional <b>Object</b>.</span></span> <span data-ttu-id="3c3e9-319">置換するオブジェクトを指定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-319">The object to replace.</span></span></param>
+        <summary><span data-ttu-id="3c3e9-320">オブジェクトを選択します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-320">Selects the object.</span></span></summary>
+        <remarks><para><span data-ttu-id="3c3e9-321">セルまたはセル範囲を選択するには、<b>Select</b> メソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-321">To select a cell or a range of cells, use the <b>Select</b> method.</span></span> <span data-ttu-id="3c3e9-322">1 つのセルをアクティブ セルにする場合は、このメソッドを使用 <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-322">To make a single cell the active cell, use the <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> method.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetShapesDefaultProperties">
@@ -3151,12 +2059,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-323">指定された図形の書式を、その図形の既定の書式にします。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-323">Makes the formatting of the specified shape the default formatting for the shape.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-323">指定された図形の書式を、その図形の既定の書式にします。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-323">Makes the formatting of the specified shape the default formatting for the shape.</span></span></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3183,18 +2086,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ShadowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-324">
-            <b>True を指定</b>のオブジェクトに影がある場合。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-324">
-              <b>True</b> if the object has a shadow.</span>
-          </span>
-          <span data-ttu-id="ee20d-325">ブール型 ( <b>Boolean</b>) の値を使用します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-325">Read/write <b>Boolean</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-324"><b>True オブジェクト</b> に影がある場合です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-324"><b>True</b> if the object has a shadow.</span></span> <span data-ttu-id="3c3e9-325">読み取り/書き込みが可能な <b>Boolean</b> です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-325">Read/write <b>Boolean</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3225,19 +2117,8 @@
         <ReturnType>Microsoft.Office.Core.MsoShapeStyleIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-326">値を取得または設定、 <see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" /> 、図形の図形のスタイルを表します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-326">Returns or sets a <see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" /> that represents the shape style of the shape.</span>
-          </span>
-          <span data-ttu-id="ee20d-327">値の取得および設定が可能です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-327">Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" />
-        </value>
+        <summary><span data-ttu-id="3c3e9-326">図形の図形スタイル <see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" /> を表す a を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-326">Returns or sets a <see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" /> that represents the shape style of the shape.</span></span> <span data-ttu-id="3c3e9-327">値の取得と設定が可能です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-327">Read/write.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3264,27 +2145,10 @@
         <ReturnType>Microsoft.Office.Core.SmartArt</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-328">図形に関連付けられている SmartArt を表すオブジェクトを取得します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-328">Gets an object that represents the SmartArt associated with the shape.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="ee20d-329">図形に関連付けられている SmartArt を表すオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-329">An object that represents the SmartArt associated with the shape.</span>
-          </span>
-        </value>
-        <remarks>
-          <para>
-            <span data-ttu-id="ee20d-330">読み取り専用。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-330">Read-only.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="3c3e9-328">図形に関連付けられている SmartArt を表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-328">Gets an object that represents the SmartArt associated with the shape.</span></span></summary>
+        <value><span data-ttu-id="3c3e9-329">図形に関連付けられている SmartArt を表すオブジェクト。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-329">An object that represents the SmartArt associated with the shape.</span></span></value>
+        <remarks><para><span data-ttu-id="3c3e9-330">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-330">Read-only.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SoftEdge">
@@ -3310,19 +2174,8 @@
         <ReturnType>Microsoft.Office.Core.SoftEdgeFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-331">返します、<see cref="T:Microsoft.Office.Core.SoftEdgeFormat" />のぼかしの書式設定、図形のプロパティを含む指定された図形のオブジェクトです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-331">Returns a <see cref="T:Microsoft.Office.Core.SoftEdgeFormat" /> object for a specified shape that contains soft edge formatting properties for the shape.</span>
-          </span>
-          <span data-ttu-id="ee20d-332">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-332">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Core.SoftEdgeFormat" />
-        </value>
+        <summary><span data-ttu-id="3c3e9-331">図形のソフト <see cref="T:Microsoft.Office.Core.SoftEdgeFormat" /> エッジの書式設定プロパティを含む指定した図形のオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-331">Returns a <see cref="T:Microsoft.Office.Core.SoftEdgeFormat" /> object for a specified shape that contains soft edge formatting properties for the shape.</span></span> <span data-ttu-id="3c3e9-332">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-332">Read-only.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Core.SoftEdgeFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3349,20 +2202,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TextEffectFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-333">返します、 <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> 、指定した図形のテキスト効果の書式プロパティを含むオブジェクトです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-333">Returns a <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> object that contains text-effect formatting properties for the specified shape.</span>
-          </span>
-          <span data-ttu-id="ee20d-334">ワードアートを表す<b>T:Microsoft.Office.Interop.Excel.Shape</b>オブジェクトに適用されます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-334">Applies to <b>T:Microsoft.Office.Interop.Excel.Shape</b> objects that represent WordArt.</span>
-          </span>
-          <span data-ttu-id="ee20d-335">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-335">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-333">指定した図形 <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> のテキスト効果の書式設定プロパティを含むオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-333">Returns a <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> object that contains text-effect formatting properties for the specified shape.</span></span> <span data-ttu-id="3c3e9-334">ワードアートを <b>表す T:Microsoft.Office.Interop.Excel.Shape</b> オブジェクトに適用されます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-334">Applies to <b>T:Microsoft.Office.Interop.Excel.Shape</b> objects that represent WordArt.</span></span> <span data-ttu-id="3c3e9-335">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-335">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3390,16 +2230,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TextFrame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-336">返します、<see cref="T:Microsoft.Office.Interop.Excel.TextFrame" />の配置およびアンカーの指定した図形のプロパティを格納しているオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-336">Returns a <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> object that contains the alignment and anchoring properties for the specified shape.</span>
-          </span>
-          <span data-ttu-id="ee20d-337">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-337">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-336">指定した図形 <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> の配置およびアンカーのプロパティを含むオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-336">Returns a <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> object that contains the alignment and anchoring properties for the specified shape.</span></span> <span data-ttu-id="3c3e9-337">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-337">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3427,19 +2258,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TextFrame2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-338">テキストの指定した図形の書式設定を格納しているオブジェクトを返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-338">Returns an object that contains text formatting for the specified shape.</span>
-          </span>
-          <span data-ttu-id="ee20d-339">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-339">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.TextFrame2" />
-        </value>
+        <summary><span data-ttu-id="3c3e9-338">指定した図形のテキスト書式を含むオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-338">Returns an object that contains text formatting for the specified shape.</span></span> <span data-ttu-id="3c3e9-339">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-339">Read-only.</span></span></summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.TextFrame2" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3466,16 +2286,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ThreeDFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-340">返します、 <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> 3-d スタイル: 書式設定プロパティを指定した図形の効果を含むオブジェクトです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-340">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> object that contains 3-D – effect formatting properties for the specified shape.</span>
-          </span>
-          <span data-ttu-id="ee20d-341">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-341">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-340">指定した図形 <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> の 3-D 効果の書式プロパティを含むオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-340">Returns a <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> object that contains 3-D – effect formatting properties for the specified shape.</span></span> <span data-ttu-id="3c3e9-341">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-341">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3506,33 +2317,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-342">取得または指定した図形に関連付けられている代替テキストのタイトルを設定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-342">Gets or sets the title of the alternative text associated with the specified shape.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="ee20d-343">指定した図形に関連付けられている代替テキストのタイトルです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-343">The title of the alternative text associated with the specified shape.</span>
-          </span>
-        </value>
-        <remarks>
-          <para>
-            <span data-ttu-id="ee20d-344">値の取得および設定が可能です。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-344">Read/write.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="ee20d-345">図形の代替テキストの説明テキスト文字列を設定するのにを使用して、<see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" />プロパティ。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-345">To set the descriptive text string of the alternative text for a shape, use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> property.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="3c3e9-342">指定した図形に関連付けられている代替テキストのタイトルを取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-342">Gets or sets the title of the alternative text associated with the specified shape.</span></span></summary>
+        <value><span data-ttu-id="3c3e9-343">指定した図形に関連付けられている代替テキストのタイトル。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-343">The title of the alternative text associated with the specified shape.</span></span></value>
+        <remarks><para><span data-ttu-id="3c3e9-344">値の取得と設定が可能です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-344">Read/write.</span></span></para>
+          <para><span data-ttu-id="3c3e9-345">図形の代替テキストの説明テキスト文字列を設定するには、プロパティを使用 <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-345">To set the descriptive text string of the alternative text for a shape, use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> property.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -3561,16 +2350,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-346">図形範囲の最上位の図形の上端からワークシートの上端までの距離。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-346">The distance from the top edge of the topmost shape in the shape range to the top edge of the worksheet.</span>
-          </span>
-          <span data-ttu-id="ee20d-347">読み取り/書き込み <b>1 つ</b> です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-347">Read/write <b>Single</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-346">図形範囲の一番上の図形の上端からワークシートの上端までの距離です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-346">The distance from the top edge of the topmost shape in the shape range to the top edge of the worksheet.</span></span> <span data-ttu-id="3c3e9-347">読み取り/書き込み <b>1 つ</b> です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-347">Read/write <b>Single</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3598,16 +2378,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-348">返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />を指定したオブジェクトの左上隅にあるセルを表すオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-348">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the cell that lies under the upper-left corner of the specified object.</span>
-          </span>
-          <span data-ttu-id="ee20d-349">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-349">Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-348">指定した <see cref="T:Microsoft.Office.Interop.Excel.Range" /> オブジェクトの左上隅にあるセルを表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-348">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the cell that lies under the upper-left corner of the specified object.</span></span> <span data-ttu-id="3c3e9-349">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-349">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3635,16 +2406,7 @@
         <ReturnType>Microsoft.Office.Core.MsoShapeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-350">図形の種類を設定または返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-350">Returns or sets the shape type.</span>
-          </span>
-          <span data-ttu-id="ee20d-351">読み取り専用<see cref="T:Microsoft.Office.Core.MsoShapeType" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-351">Read-only <see cref="T:Microsoft.Office.Core.MsoShapeType" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-350">図形の種類を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-350">Returns or sets the shape type.</span></span> <span data-ttu-id="3c3e9-351">読み取り専用です <see cref="T:Microsoft.Office.Core.MsoShapeType" /> 。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-351">Read-only <see cref="T:Microsoft.Office.Core.MsoShapeType" />.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3670,30 +2432,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-352">指定した図形または図形範囲の図形のグループ化を解除します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-352">Ungroups any grouped shapes in the specified shape or range of shapes.</span>
-          </span>
-          <span data-ttu-id="ee20d-353">図および OLE オブジェクトを指定した図形内を逆アセンブルします。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-353">Disassembles pictures and OLE objects within the specified shape.</span>
-          </span>
-          <span data-ttu-id="ee20d-354">1 つとしてグループ化されていない図形を返します<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />オブジェクトです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-354">Returns the ungrouped shapes as a single <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-352">指定した図形または図形範囲の図形のグループ化を解除します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-352">Ungroups any grouped shapes in the specified shape or range of shapes.</span></span> <span data-ttu-id="3c3e9-353">指定した図形内の図と OLE オブジェクトを逆アセンブルします。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-353">Disassembles pictures and OLE objects within the specified shape.</span></span> <span data-ttu-id="3c3e9-354">グループ化されていない図形を 1 つのオブジェクトとして返 <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-354">Returns the ungrouped shapes as a single <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> object.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <span data-ttu-id="ee20d-355">図形のグループでは、1 つのオブジェクト、グループ化して、 <b>Shapes</b> コレクション内の項目の数の図形の変更をグループ解除として扱われ、コレクション内の影響を受ける項目の後にある項目のインデックス番号を変更します。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-355">Because a group of shapes is treated as a single object, grouping and ungrouping shapes changes the number of items in the <b>Shapes</b> collection and changes the index numbers of items that come after the affected items in the collection.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="3c3e9-355">グループ化された図形は 1 つの図形として扱われるため、図形をグループ化したりグループを解除したりすると、 <b>Shapes</b> コレクション内のオブジェクトの数、およびコレクション内の影響を受ける項目の後にある項目のインデックス番号が変わります。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-355">Because a group of shapes is treated as a single object, grouping and ungrouping shapes changes the number of items in the <b>Shapes</b> collection and changes the index numbers of items that come after the affected items in the collection.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VerticalFlip">
@@ -3719,18 +2461,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-356">
-            <b>True の</b>場合指定した図形が垂直軸を中心に反転します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-356">
-              <b>True</b> if the specified shape is flipped around the vertical axis.</span>
-          </span>
-          <span data-ttu-id="ee20d-357">読み取り専用<see cref="T:Microsoft.Office.Core.MsoTriState" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-357">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-356">指定された図形が縦軸で反転されている場合は <b>True</b> を指定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-356"><b>True</b> if the specified shape is flipped around the vertical axis.</span></span> <span data-ttu-id="3c3e9-357">読み取り専用 <see cref="T:Microsoft.Office.Core.MsoTriState" /> です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-357">Read-only <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3758,118 +2489,37 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-358">一連の座標のペアとして指定されたフリー フォームの頂点 (およびベジェ曲線のコントロール ポイント) の座標を返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-358">Returns the coordinates of the specified freeform drawing's vertices (and control points for Bézier curves) as a series of coordinate pairs.</span>
-          </span>
-          <span data-ttu-id="ee20d-359">読み取り専用 <b>オブジェクト</b> 。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-359">Read-only <b>Object</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-358">指定したフリーフォームの頂点 (およびベジェ曲線のコントロール ポイント) の座標を、一連の 2 次元の座標として取得します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-358">Returns the coordinates of the specified freeform drawing's vertices (and control points for Bézier curves) as a series of coordinate pairs.</span></span> <span data-ttu-id="3c3e9-359">読み取り専用 <b>オブジェクト</b> 。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-359">Read-only <b>Object</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="ee20d-360">引数として、このプロパティによって返される配列を使用することができます、<see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddCurve(System.Object)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddPolyline(System.Object)" />メソッドです。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-360">You can use the array returned by this property as an argument to the <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddCurve(System.Object)" /> method or <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddPolyline(System.Object)" /> method.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="ee20d-361">次の表は <b>Vertices</b> プロパティと、三角形の頂点の座標を含む配列 vertArray() との関係を示しています。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-361">The following table shows how the <b>Vertices</b> property associates the values in the array vertArray() with the coordinates of a triangle's vertices.</span>
-            </span>
-          </para>
+        <remarks><para><span data-ttu-id="3c3e9-360">このプロパティで返される配列を、メソッドまたはメソッドの引数 <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddCurve(System.Object)" /> として使用 <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddPolyline(System.Object)" /> できます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-360">You can use the array returned by this property as an argument to the <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddCurve(System.Object)" /> method or <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddPolyline(System.Object)" /> method.</span></span></para>
+          <para><span data-ttu-id="3c3e9-361">次の表は <b>Vertices</b> プロパティと、三角形の頂点の座標を含む配列 vertArray() との関係を示しています。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-361">The following table shows how the <b>Vertices</b> property associates the values in the array vertArray() with the coordinates of a triangle's vertices.</span></span></para>
           <list type="table">
             <item>
-              <term>
-                <span data-ttu-id="ee20d-362">vertArray (1, 1)</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-362">vertArray(1, 1)</span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="ee20d-363">最初の頂点から文書の左端までの水平方向の距離</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-363">The horizontal distance from the first vertex to the left side of the document</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="3c3e9-362">vertArray(1, 1)</span><span class="sxs-lookup"><span data-stu-id="3c3e9-362">vertArray(1, 1)</span></span></term>
+              <description><span data-ttu-id="3c3e9-363">最初の頂点から文書の左端までの水平方向の距離</span><span class="sxs-lookup"><span data-stu-id="3c3e9-363">The horizontal distance from the first vertex to the left side of the document</span></span></description>
             </item>
             <item>
-              <term>
-                <span data-ttu-id="ee20d-364">vertArray (1, 2)</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-364">vertArray(1, 2)</span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="ee20d-365">最初の頂点から文書の上端までの垂直方向の距離</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-365">The vertical distance from the first vertex to the top of the document</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="3c3e9-364">vertArray(1, 2)</span><span class="sxs-lookup"><span data-stu-id="3c3e9-364">vertArray(1, 2)</span></span></term>
+              <description><span data-ttu-id="3c3e9-365">最初の頂点から文書の上端までの垂直方向の距離</span><span class="sxs-lookup"><span data-stu-id="3c3e9-365">The vertical distance from the first vertex to the top of the document</span></span></description>
             </item>
             <item>
-              <term>
-                <span data-ttu-id="ee20d-366">vertArray (2, 1)</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-366">vertArray(2, 1)</span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="ee20d-367">2 番目の頂点から文書の左端までの水平方向の距離</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-367">The horizontal distance from the second vertex to the left side of the document</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="3c3e9-366">vertArray(2, 1)</span><span class="sxs-lookup"><span data-stu-id="3c3e9-366">vertArray(2, 1)</span></span></term>
+              <description><span data-ttu-id="3c3e9-367">2 番目の頂点から文書の左端までの水平方向の距離</span><span class="sxs-lookup"><span data-stu-id="3c3e9-367">The horizontal distance from the second vertex to the left side of the document</span></span></description>
             </item>
             <item>
-              <term>
-                <span data-ttu-id="ee20d-368">vertArray (2, 2)</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-368">vertArray(2, 2)</span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="ee20d-369">2 番目の頂点から文書の上端までの垂直方向の距離</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-369">The vertical distance from the second vertex to the top of the document</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="3c3e9-368">vertArray(2, 2)</span><span class="sxs-lookup"><span data-stu-id="3c3e9-368">vertArray(2, 2)</span></span></term>
+              <description><span data-ttu-id="3c3e9-369">2 番目の頂点から文書の上端までの垂直方向の距離</span><span class="sxs-lookup"><span data-stu-id="3c3e9-369">The vertical distance from the second vertex to the top of the document</span></span></description>
             </item>
             <item>
-              <term>
-                <span data-ttu-id="ee20d-370">vertArray (3, 1)</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-370">vertArray(3, 1)</span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="ee20d-371">3 番目の頂点から文書の左端までの水平方向の距離</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-371">The horizontal distance from the third vertex to the left side of the document</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="3c3e9-370">vertArray(3, 1)</span><span class="sxs-lookup"><span data-stu-id="3c3e9-370">vertArray(3, 1)</span></span></term>
+              <description><span data-ttu-id="3c3e9-371">3 番目の頂点から文書の左端までの水平方向の距離</span><span class="sxs-lookup"><span data-stu-id="3c3e9-371">The horizontal distance from the third vertex to the left side of the document</span></span></description>
             </item>
             <item>
-              <term>
-                <span data-ttu-id="ee20d-372">vertArray (3, 2)</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-372">vertArray(3, 2)</span>
-                </span>
-              </term>
-              <description>
-                <span data-ttu-id="ee20d-373">3 番目の頂点から文書の上端までの垂直方向の距離</span>
-                <span class="sxs-lookup">
-                  <span data-stu-id="ee20d-373">The vertical distance from the third vertex to the top of the document</span>
-                </span>
-              </description>
+              <term><span data-ttu-id="3c3e9-372">vertArray(3, 2)</span><span class="sxs-lookup"><span data-stu-id="3c3e9-372">vertArray(3, 2)</span></span></term>
+              <description><span data-ttu-id="3c3e9-373">3 番目の頂点から文書の上端までの垂直方向の距離</span><span class="sxs-lookup"><span data-stu-id="3c3e9-373">The vertical distance from the third vertex to the top of the document</span></span></description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -3898,16 +2548,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-374">オブジェクトを表示するかどうかを決定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-374">Determines whether the object is visible.</span>
-          </span>
-          <span data-ttu-id="ee20d-375">読み取り/書き込み<see cref="T:Microsoft.Office.Core.MsoTriState" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-375">Read/write <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-374">オブジェクトを表示するかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-374">Determines whether the object is visible.</span></span> <span data-ttu-id="3c3e9-375">読み取り/書き込み <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-375">Read/write <see cref="T:Microsoft.Office.Core.MsoTriState" />.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3938,16 +2579,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-376">オブジェクトの幅。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-376">The width of the object.</span>
-          </span>
-          <span data-ttu-id="ee20d-377">読み取り/書き込み <b>1 つ</b> です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-377">Read/write <b>Single</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-376">オブジェクトの幅を指定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-376">The width of the object.</span></span> <span data-ttu-id="3c3e9-377">読み取り/書き込み <b>1 つ</b> です。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-377">Read/write <b>Single</b>.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3975,31 +2607,10 @@
         <Parameter Name="ZOrderCmd" Type="Microsoft.Office.Core.MsoZOrderCmd" />
       </Parameters>
       <Docs>
-        <param name="ZOrderCmd">
-          <span data-ttu-id="ee20d-378">必要な<see cref="T:Microsoft.Office.Core.MsoZOrderCmd" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-378">Required <see cref="T:Microsoft.Office.Core.MsoZOrderCmd" />.</span>
-          </span>
-          <span data-ttu-id="ee20d-379">他の図形を基準に、指定した図形を移動する位置を指定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-379">Specifies where to move the specified shape relative to the other shapes.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="ee20d-380">指定された図形をコレクションの他の図形の前面または背面に移動します。つまり、図形の z 方向における順序を変更します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-380">Moves the specified shape in front of or behind other shapes in the collection (that is, changes the shape's position in the z-order).</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="ee20d-381">使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Shape.ZOrderPosition" /> 、z オーダーでの図形の現在の位置を決定するプロパティです。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-381">Use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.ZOrderPosition" /> property to determine a shape's current position in the z-order.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <param name="ZOrderCmd"><span data-ttu-id="3c3e9-378">必須 <see cref="T:Microsoft.Office.Core.MsoZOrderCmd" /> 。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-378">Required <see cref="T:Microsoft.Office.Core.MsoZOrderCmd" />.</span></span> <span data-ttu-id="3c3e9-379">別の図形を基準にして、対象の図形の移動先を指定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-379">Specifies where to move the specified shape relative to the other shapes.</span></span></param>
+        <summary><span data-ttu-id="3c3e9-380">コレクションの他の図形の前面または背後に指定の図形を移動させます (つまり、図形の位置を z オーダーで変更します)。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-380">Moves the specified shape in front of or behind other shapes in the collection (that is, changes the shape's position in the z-order).</span></span></summary>
+        <remarks><para><span data-ttu-id="3c3e9-381">このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.Shape.ZOrderPosition" /> を使用して、z オーダーでの図形の現在の位置を決定します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-381">Use the <see cref="P:Microsoft.Office.Interop.Excel.Shape.ZOrderPosition" /> property to determine a shape's current position in the z-order.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ZOrderPosition">
@@ -4025,42 +2636,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="ee20d-382">指定した図形の z 方向の位置を取得します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-382">Returns the position of the specified shape in the z-order.</span>
-          </span>
-          <span data-ttu-id="ee20d-383">整数型 ( <b>Integer</b>) の値を使用します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="ee20d-383">Read-only <b>Integer</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="3c3e9-382">指定した図形の z 方向の位置を取得します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-382">Returns the position of the specified shape in the z-order.</span></span> <span data-ttu-id="3c3e9-383">整数型 ( <b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-383">Read-only <b>Integer</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="ee20d-384">図形の z オーダーの位置を設定するのにを使用して、<see cref="M:Microsoft.Office.Interop.Excel.Shape.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" />メソッドです。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-384">To set the shape's position in the z-order, use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" /> method.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="ee20d-385">図形の z オーダーの位置が図形のインデックス番号に対応して、<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />コレクションです。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-385">A shape's position in the z-order corresponds to the shape's index number in the <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection.</span>
-            </span>
-            <span data-ttu-id="ee20d-386">などの shapes (1) は、z オーダーの背面にある図形を取得し、Shapes(4) は、z オーダーの前面にある図形を返します。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-386">For example, Shapes(1) returns the shape at the back of the z-order, and Shapes(4) returns the shape at the front of the z-order.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="ee20d-387">コレクションに新しい図形を追加すると、既定では、必ず z 方向の前面に追加されます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="ee20d-387">Whenever you add a new shape to a collection, it’s added to the front of the z-order by default.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="3c3e9-384">図形の z オーダーの位置を設定するには、このメソッドを使用 <see cref="M:Microsoft.Office.Interop.Excel.Shape.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" /> します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-384">To set the shape's position in the z-order, use the <see cref="M:Microsoft.Office.Interop.Excel.Shape.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" /> method.</span></span></para>
+          <para><span data-ttu-id="3c3e9-385">Z オーダーでの図形の位置は、コレクション内の図形のインデックス番号に対応 <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-385">A shape's position in the z-order corresponds to the shape's index number in the <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> collection.</span></span> <span data-ttu-id="3c3e9-386">たとえば、Shapes(1) は z オーダーの最背面にある図形を返し、Shapes(4) は z オーダーの最前面にある図形を返します。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-386">For example, Shapes(1) returns the shape at the back of the z-order, and Shapes(4) returns the shape at the front of the z-order.</span></span></para>
+          <para><span data-ttu-id="3c3e9-387">コレクションに新しい図形を追加すると、既定では、必ず z 方向の前面に追加されます。</span><span class="sxs-lookup"><span data-stu-id="3c3e9-387">Whenever you add a new shape to a collection, it’s added to the front of the z-order by default.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
