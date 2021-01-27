@@ -1,13 +1,5 @@
 <Type Name="XlAutoFillType" FullName="Microsoft.Office.Interop.Excel.XlAutoFillType">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="47872086612ee372703200cd8a60d01035be66c1" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20573669" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public enum XlAutoFillType" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="47872086612ee372703200cd8a60d01035be66c1" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50008303" /></Metadata><TypeSignature Language="C#" Value="public enum XlAutoFillType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XlAutoFillType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.XlAutoFillType" />
   <TypeSignature Language="VB.NET" Value="Public Enum XlAutoFillType" />
@@ -135,7 +127,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>一連のターゲット範囲にソース範囲の値を拡張する (例: 1、2' は拡張」' 3、4、5)。 形式は、繰り返しの必要な場合は、対象範囲をソース範囲からコピーされます。</summary>
+        <summary>ソース範囲の値をターゲット範囲に系列として拡張します ('1, 2' は '3, 4, 5' のように拡張されます)。 形式はソース範囲からターゲット範囲にコピーされ、必要に応じて繰り返されます。</summary>
       </Docs>
     </Member>
     <Member MemberName="xlFillValues">
@@ -230,7 +222,7 @@
       </ReturnValue>
       <MemberValue>10</MemberValue>
       <Docs>
-        <summary>ソース範囲からターゲット範囲をソース範囲内の数値間の関係が乗法であると仮定した場合に数値を適用 (例: 1, 2、拡張として ' 4、8、16' それぞれの番号が前乗算の結果であると仮定した場合数であるもの) です。 形式は、繰り返しの必要な場合は、対象範囲をソース範囲からコピーされます。</summary>
+        <summary>ソース範囲の数値間の関係が乗算対象である場合は、ソース範囲の数値をターゲット範囲に拡張します (例: '1, 2,' は、各数値が前の数値に何らかの値を乗算した結果と仮定して、'4, 8, 16' として拡張されます)。 形式はソース範囲からターゲット範囲にコピーされ、必要に応じて繰り返されます。</summary>
       </Docs>
     </Member>
     <Member MemberName="xlLinearTrend">
@@ -249,7 +241,7 @@
       </ReturnValue>
       <MemberValue>9</MemberValue>
       <Docs>
-        <summary>ソース範囲の数字間の関係があると仮定した場合、ターゲット範囲に数値を適用付加的な (など、'1, 2,' 拡張 ' 3、4、5' それぞれの番号が前にいくつかの値を追加した結果であると仮定した場合)。 形式は、繰り返しの必要な場合は、対象範囲をソース範囲からコピーされます。</summary>
+        <summary>ソース範囲の数値をターゲット範囲に拡張します。数値間の関係が加算的である場合 (例: '1, 2,' は、各数値が前の数値に値を追加した結果と仮定して '3, 4, 5' として拡張されます)。 形式はソース範囲からターゲット範囲にコピーされ、必要に応じて繰り返されます。</summary>
       </Docs>
     </Member>
   </Members>

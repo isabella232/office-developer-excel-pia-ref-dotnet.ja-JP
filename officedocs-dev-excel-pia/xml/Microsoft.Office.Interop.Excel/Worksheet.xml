@@ -1,13 +1,5 @@
 <Type Name="Worksheet" FullName="Microsoft.Office.Interop.Excel.Worksheet">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f8af3c130d8cd9b8102e484a18e8b5c0f9ce9942" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20577736" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Worksheet : Microsoft.Office.Interop.Excel._Worksheet, Microsoft.Office.Interop.Excel.DocEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f8af3c130d8cd9b8102e484a18e8b5c0f9ce9942" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50008590" /></Metadata><TypeSignature Language="C#" Value="public interface Worksheet : Microsoft.Office.Interop.Excel._Worksheet, Microsoft.Office.Interop.Excel.DocEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Worksheet implements class Microsoft.Office.Interop.Excel._Worksheet, class Microsoft.Office.Interop.Excel.DocEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Worksheet" />
   <TypeSignature Language="VB.NET" Value="Public Interface Worksheet&#xA;Implements _Worksheet, DocEvents_Event" />
@@ -34,33 +26,27 @@
   </Attributes>
   <Docs>
     <summary>ワークシートを表します。</summary>
-    <remarks>
-      <para>これは、対応する COM オブジェクトと相互運用するためのマネージ コードで必要とされる COM コクラスから派生した .NET インターフェイスです。 COM オブジェクトのすべてのメソッド、プロパティ、およびイベント メンバーにアクセスするのにには、この派生インターフェイスを使用します。 ただし、メソッドまたはイベントを使用する、同じ COM オブジェクトの下にある同じ名前を共有する場合は、メソッドを呼び出し、およびイベントに接続するための最新のイベント インターフェイスにキャストする場合は、対応するプライマリ インターフェイスにキャストします。 COM オブジェクトについての情報は、このトピックを参照してください。 COM オブジェクトのメソッドおよびプロパティ メンバーについてを参照してください<see cref="T:Microsoft.Office.Interop.Excel._Worksheet" />。</para>
-      <para>
-        <b>ワークシート</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.Worksheets" />コレクションです。 <b>ワークシート</b>のコレクションには、ブック内のすべての<b>ワークシート</b>オブジェクトが含まれています。</para>
-      <para>
-        <b>ワークシート</b>オブジェクトを取得する次のプロパティは、このセクションで説明されます。</para>
+    <remarks><para>これは、対応する COM オブジェクトとの相互運用性を得るためにマネージ コードが必要とする COM コクラスから派生する .NET インターフェイスです。 COM オブジェクトのすべてのメソッド、プロパティ、およびイベント メンバにアクセスするには、この派生インターフェイスを使用します。 ただし、使用するメソッドまたはイベントが、1 つの COM オブジェクトに基づいて同じ名前を共有する場合は、該当するプライマリ インターフェイスにキャストしてメソッドを呼び出し、最新のイベント インターフェイスにキャストしてイベントに接続します。 COM オブジェクトの詳細については、このトピックを参照してください。 COM オブジェクトのメソッドとプロパティメンバーの詳細については、以下を参照してください <see cref="T:Microsoft.Office.Interop.Excel._Worksheet" /> 。</para>
+      <para><b>Worksheet オブジェクト</b>はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.Worksheets" /> です。 <b>Worksheets</b> コレクションには、ブックにあるすべての <b>Worksheet</b> オブジェクトが含まれています。</para>
+      <para>このセクションでは <b>、Worksheet</b> オブジェクトを返す次のプロパティについて説明します。</para>
       <list type="bullet">
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Worksheets" />プロパティ</description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Worksheets" /> property</description>
         </item>
         <item>
           <description>
-            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" />プロパティ</description>
+            <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveSheet" /> property</description>
         </item>
       </list>
       <para>Worksheets プロパティ</para>
-      <para>
-        <b>ワークシート</b>を使用して (<paramref name="index" />)、 <paramref name="index" /> 、ワークシートのインデックス番号または名前、1 つの<b>ワークシート</b>オブジェクトを取得するには。</para>
-      <para>ワークシートのインデックス番号は、ブックのシート見出しの並び順に対応します。Worksheets(1) はブックの最初、つまりシート見出しが最も左側にあるワークシートであり、Worksheets(Worksheets.Count) は最後のワークシートです。非表示のワークシートにもインデックス番号が付けられるので、注意してください。</para>
-      <para>ワークシートの名前は、ワークシートのタブに表示されます。 使用して、<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Name" />プロパティを設定またはワークシート名を取得します。</para>
-      <para>
-        <b>ワークシート</b>オブジェクトのメンバーでも、<see cref="T:Microsoft.Office.Interop.Excel.Sheets" />コレクションです。 <b>Sheets</b>コレクションには、(グラフ シートとワークシートの両方) のブックのすべてのシートが含まれています。</para>
+      <para>Use <b>Worksheets</b>( <paramref name="index" /> ), where is the worksheet index number or <paramref name="index" /> name, to return a single <b>Worksheet</b> object.</para>
+      <para>ワークシートのインデックス番号は、ブックのシート見出しの並び順に対応します。 Worksheets(1) はブックの最初、つまりシート見出しが最も左側にあるワークシートであり、Worksheets(Worksheets.Count) は最後のワークシートです。 非表示のワークシートにもインデックス番号が付けられるので、注意してください。</para>
+      <para>ワークシート名はシート見出しに表示されます。 このプロパティ <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Name" /> を使用して、ワークシート名を設定または取得します。</para>
+      <para><b>Worksheet オブジェクト</b>もコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> です。 <b>Sheets コレクション</b>には、ブック内のすべてのシート (グラフ シートとワークシートの両方) が含まれます。</para>
       <para>ActiveSheet プロパティ</para>
-      <para>ワークシートが作業中のシートの場合を参照するのには、 <b>ActiveSheet</b>プロパティを使用できます。</para>
-      <para></para>
-    </remarks>
+      <para>ワークシートがアクティブ シートの場合は <b>、ActiveSheet プロパティ</b> を使用して参照できます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members />
 </Type>

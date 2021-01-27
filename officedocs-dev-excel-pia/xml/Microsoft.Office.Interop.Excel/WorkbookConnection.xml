@@ -1,13 +1,5 @@
 <Type Name="WorkbookConnection" FullName="Microsoft.Office.Interop.Excel.WorkbookConnection">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a6d1fef0add7e32139d0f7d1970c0354fbd328c7" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581068" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface WorkbookConnection" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a6d1fef0add7e32139d0f7d1970c0354fbd328c7" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009213" /></Metadata><TypeSignature Language="C#" Value="public interface WorkbookConnection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WorkbookConnection" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />
   <TypeSignature Language="VB.NET" Value="Public Interface WorkbookConnection" />
@@ -29,15 +21,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>接続は、1st_Excel12 ブック以外の外部データ ソースからデータを取得するために必要な情報のセットです。</summary>
-    <remarks>
-      <para>接続は、Excel ブックに保存できます。ブックを開くと、接続オブジェクトと呼ばれる接続のメモリ内コピーが作成されます。接続オブジェクトには、サーバー名やそのサーバー上で開くオブジェクトの名前などの情報が含まれています。また、接続オブジェクトには、認証資格情報やサーバーに渡されて実行されるコマンド (SQL Server で実行される SELECT ステートメントなど) が含まれている場合もあります。</para>
+    <summary>接続とは、ブックの外部データ ソース以外の外部データ ソースからデータを取得するために必要1st_Excel12セットです。</summary>
+    <remarks><para>接続は、Excel ブックに保存できます。ブックを開くと、接続オブジェクトと呼ばれる接続のメモリ内コピーが作成されます。接続オブジェクトには、サーバー名やそのサーバー上で開くオブジェクトの名前などの情報が含まれています。また、接続オブジェクトには、認証資格情報やサーバーに渡されて実行されるコマンド (SQL Server で実行される SELECT ステートメントなど) が含まれている場合もあります。</para>
       <para>
-        <b>注</b>: 接続の正確な形式は、ODBC 接続、OLEDB 接続の場合は、データを取得するために使用されているメカニズムによって異なり、Web クエリには、さまざまな情報が含まれています。</para>
+        <b>注</b>: 接続の正確な形式は、データの取得に使用されているメカニズムによって異なります。ODBC 接続、OLEDB 接続、および Web クエリには異なる情報が含まれる場合があります。</para>
       <para>接続は、個別の接続ファイルに保存される場合もあります。Excel ブックの接続のほとんどに外部接続ファイルへのポインターが含まれています。接続ファイルには、接続ファイルと明示する拡張子 (*.ODC、*.IQY、など) が付いており、ユーザーのローカル コンピューターまたは WSS (データ接続ライブラリ) などのその他のよく知られたまたは信頼された場所、その他の企業サーバーに置かれています。接続ファイルによって、同じ組織の複数のユーザーが接続を再使用できます。ネットワーク管理者は接続ファイルを 1 つ変えるだけで、組織全体がバックエンド データ ソースに接続する方法を変更できます。接続ファイルは、外部データ ソースへの接続時に必ずしも必要ではありません。</para>
       <para>接続名は、使用されるブック内の接続を特定する文字列です。その他の一意ではない接続のプロパティもあります。Excel の数式が接続の引数を使用するたびに、直接 (文字列として) または間接的に (接続名を文字列として含むセルを参照して) その接続の名前を参照するだけで十分です。</para>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,12 +90,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Office Excel アプリケーションを表すオブジェクト。 オブジェクト修飾子を使用する場合、このプロパティは、指定したオブジェクトの作成元を表す <b>Application</b> オブジェクトを返します。 読み取り専用です。</summary>
+        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Excel アプリケーションのMicrosoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> を返します。 オブジェクト修飾子を指定した場合、指定したオブジェクトを作成した <b>Application</b> オブジェクトを取得します。 値の取得のみ可能です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクト用のアプリケーションを取得できます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、オブジェクトのアプリケーションを取得できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -131,12 +119,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当  <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Microsoft Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。<b>Creator</b> プロパティは、Macintosh 版 Excel でのみ使用できます。Macintosh では各アプリケーションに 4 文字のシグネチャが定められています。たとえば、Excel のシグネチャは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataFeedConnection">
@@ -162,7 +148,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DataFeedConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>データとデータ フィードへの接続に必要な機能を含む<b>DataFeedConnection</b>オブジェクトを返します。 読み取り専用</summary>
+        <summary>データ フィードに接続するために必要なデータと機能を含む <b>DataFeedConnection</b> オブジェクトを返します。 読み取り専用</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -189,14 +175,12 @@
       <Parameters />
       <Docs>
         <summary>ブックの接続を削除します。</summary>
-        <remarks>
-          <para>このメソッドを使用して外部データ接続を削除します。このメソッドは他のブックのリンクには適用されません。 </para>
-          <para>接続を削除してはいない削除またはその接続を使用していたすべてのオブジェクトを削除します。
+        <remarks><para>このメソッドを使用して外部データ接続を削除します。 このメソッドは他のブックのリンクには適用されません。 </para>
+          <para>接続を削除しても、その接続を使用していたオブジェクトは削除されません。
 
-接続の削除の場合、ファイル システムから削除する接続ファイルのいずれか、行われません。  別の接続を使用するこれらのオブジェクトのいずれかを編集する場合は、再度正常に動作すべて開始されます。</para>
+接続を削除しても、接続ファイルはファイル システムから削除されません。  別の接続を使用するようこれらのオブジェクトを編集すると、すべて再び機能し始めます。</para>
           <para>削除された接続を使用するオブジェクトは、接続が確立できなかった場合と同じように動作します。  </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -225,13 +209,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定の簡単な説明、<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />オブジェクトです。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <summary>オブジェクトの簡単な説明を設定または返 <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>[接続のプロパティ] ダイアログ ボックスで、ユーザーは接続の名前や説明を編集できます。このダイアログ ボックスで名前や説明を変更すると、Excel 接続オブジェクト内のこれらのフィールドのみが変更されます。</para>
+        <remarks><para>[接続のプロパティ] ダイアログ ボックスで、接続の名前や説明を編集できます。  このダイアログ ボックスで名前や説明を変更すると、Excel 接続オブジェクト内のこれらのフィールドのみが変更されます。</para>
           <para>説明の最大サイズは、255 文字です。ユーザーが接続ファイル内で 255 文字以上の説明を指定すると、説明は 255 文字の制限に合わせて切り捨てられます。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InModel">
@@ -257,13 +239,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>WorkbookConnection</b>オブジェクトがモデルに追加されているかどうかを指定します。 <b>ブール値</b>(C# では<b>bool</b> )読み取り専用です。</summary>
+        <summary><b>WorkbookConnection</b>オブジェクトがモデルに追加されているかどうかを指定します。 <b>ブール</b> 値 ( C#<b>の</b> ブール値) 読み取り専用。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>従来の接続の場合は False になります。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>従来の接続の場合は False になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ModelConnection">
@@ -289,7 +268,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>統合データ モデルを操作するために Excel 2013 で導入された、新しいモデル接続の種類についての情報を含むオブジェクトを返します。値の取得のみ可能です。</summary>
+        <summary>統合データ モデルを操作するために Excel 2013 で導入された、新しいモデル接続の種類についての情報を含むオブジェクトを返します。 値の取得のみ可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -317,7 +296,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTables</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.ModelTables" /> 、特定の接続に関連付けられているオブジェクト。 読み取り専用</summary>
+        <summary>特定の接続 <see cref="T:Microsoft.Office.Interop.Excel.ModelTables" /> に関連付けられているオブジェクトを返します。 読み取り専用</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -348,7 +327,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ブック接続オブジェクトの名前を設定または返します。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <summary>ブック接続オブジェクトの名前を返すか設定します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -376,7 +355,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ODBCConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ODBC 接続値を返すの詳細を指定した<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />オブジェクトです。 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" />。</summary>
+        <summary>指定されたオブジェクトの ODBC 接続の詳細を返 <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> します。 読み取り専用 <see cref="T:Microsoft.Office.Interop.Excel.ODBCConnection" /> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -404,7 +383,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.OLEDBConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>OLEDB 接続値を返すの詳細を指定した<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />オブジェクトです。 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" />。</summary>
+        <summary>指定したオブジェクトの OLEDB 接続の詳細を返 <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> します。 読み取り専用 <see cref="T:Microsoft.Office.Interop.Excel.OLEDBConnection" /> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -432,7 +411,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -460,7 +439,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Ranges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの範囲を返します<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />オブジェクトです。 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.Ranges" />。</summary>
+        <summary>指定したオブジェクトのオブジェクトの範囲を返 <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> します。 読み取り専用 <see cref="T:Microsoft.Office.Interop.Excel.Ranges" /> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -487,12 +466,10 @@
       <Parameters />
       <Docs>
         <summary>ブックの接続を更新します。</summary>
-        <remarks>
-          <para>場合、<see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" />プロパティは<b>False</b>に、ダイアログ ボックスは表示されませんが不足している接続情報の例外で<b>Refresh</b>メソッドが失敗しました。</para>
-          <para>1 つの接続の更新に失敗では、他の接続の更新操作に影響を及ぼすを必要はありません。 
+        <remarks><para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> が <b>False の</b>場合、ダイアログ ボックスは表示されません <b>。Refresh</b> メソッドは不十分な接続情報の例外で失敗します。</para>
+          <para>接続の更新に失敗しても、他の接続の更新操作には影響ありません。 
 </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshWithRefreshAll">
@@ -521,7 +498,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>すべての更新の実行時の接続を更新する必要がある場合を決定します。 <b>ブール値</b>(<b>bool</b>では C#) です。 読み取り/書き込み。</summary>
+        <summary>[すべて更新] が実行されるときに、接続を更新するかどうかを設定します。 <b>ブール</b>値<b></b> ( C# のブール値)。 読み取り/書き込み可能。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -549,7 +526,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TextConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.TextConnection" />クエリをテキスト ファイルに情報を格納します。 読み取り専用。</summary>
+        <summary>テキスト ファイル <see cref="T:Microsoft.Office.Interop.Excel.TextConnection" /> に対するクエリの情報を含むオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -577,7 +554,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlConnectionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ブックの接続の種類を返します。 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlConnectionType" />。</summary>
+        <summary>ブックの接続の種類を返します。 読み取り専用です <see cref="T:Microsoft.Office.Interop.Excel.XlConnectionType" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -605,7 +582,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorksheetDataConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>PowerPivot モデルからの範囲、名前付き範囲は、テーブルなど、ブック内のデータへの接続に関する情報を格納しているオブジェクトを返します。 読み取り専用です。</summary>
+        <summary>範囲、名前を付けた範囲、テーブルなど、PowerPivot モデルからブック内のデータへの接続のための情報が含まれるオブジェクトを取得します。 値の取得のみ可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

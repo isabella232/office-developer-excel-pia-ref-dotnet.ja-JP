@@ -1,13 +1,5 @@
 <Type Name="Worksheets" FullName="Microsoft.Office.Interop.Excel.Worksheets">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a754235a311170e13d0d4825decb297f28a9fa27" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581502" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Worksheets : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a754235a311170e13d0d4825decb297f28a9fa27" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50008506" /></Metadata><TypeSignature Language="C#" Value="public interface Worksheets : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Worksheets implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Worksheets" />
   <TypeSignature Language="VB.NET" Value="Public Interface Worksheets&#xA;Implements IEnumerable" />
@@ -33,16 +25,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>すべてのコレクション、 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> 、または指定されたアクティブなブック内のオブジェクト。 各<b>Worksheet</b>オブジェクトはワークシートを表します。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Application.Worksheets" /><b>のワークシート</b>のコレクションを返すプロパティです。</para>
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.Worksheets.Add(System.Object,System.Object,System.Object,System.Object)" />メソッドは、新しいワークシートを作成し、コレクションに追加します。</para>
-      <para>
-        <b>ワークシート</b>を使用して (<paramref name="index" />)、 <paramref name="index" /> 、ワークシートのインデックス番号または名前、1 つの<b>ワークシート</b>オブジェクトを取得するには。</para>
-      <para>
-        <b>ワークシート</b>オブジェクトのメンバーでも、<see cref="T:Microsoft.Office.Interop.Excel.Sheets" />コレクションです。 <b>Sheets</b>コレクションには、(グラフ シートとワークシートの両方) のブックのすべてのシートが含まれています。</para>
-      <para></para>
-    </remarks>
+    <summary>指定されたブックまたはアクティブ <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> なブック内のすべてのオブジェクトのコレクションです。 各 <b>Worksheet</b> オブジェクトはワークシートを表します。</summary>
+    <remarks><para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel._Application.Worksheets" /> を使用して <b>Worksheets コレクションを取得</b> します。</para>
+      <para>このメソッド <see cref="M:Microsoft.Office.Interop.Excel.Worksheets.Add(System.Object,System.Object,System.Object,System.Object)" /> を使用して新しいワークシートを作成し、コレクションに追加します。</para>
+      <para>Use <b>Worksheets</b>( <paramref name="index" /> ), where is the worksheet index number or <paramref name="index" /> name, to return a single <b>Worksheet</b> object.</para>
+      <para><b>Worksheet オブジェクト</b>もコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> です。 <b>Sheets</b> コレクションには、ブックにあるすべてのシート (グラフ シート、ワークシートの両方) が含まれています。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -75,7 +63,7 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。 </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,7 +106,7 @@
         <param name="ActivePrinter">To be added.</param>
         <param name="PrintToFile">To be added.</param>
         <param name="Collate">To be added.</param>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -147,16 +135,14 @@
         <Parameter Name="Type" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">省略可能な<b>オブジェクト</b>です。 指定したオブジェクトのシートの直前に、新しいグラフ シートを追加します。</param>
-        <param name="After">省略可能な<b>オブジェクト</b>です。 指定したオブジェクトのシートの直後に、新しいグラフ シートを追加します。</param>
-        <param name="Count">省略可能な<b>オブジェクト</b>です。 追加するシートの数です。 既定値は 1 です。</param>
-        <param name="Type">省略可能な<b>オブジェクト</b>です。 シートの種類を指定します。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlSheetType" />定数: <b>xlWorksheet</b>、 <b>xlChart</b>、 <b>xlExcel4MacroSheet</b>、 <b>xlExcel4IntlMacroSheet</b>。 既存のテンプレートに基いたシートを挿入する場合は、テンプレートへのパスを指定します。 既定値は<b>xlWorksheet</b>です。</param>
+        <param name="Before">省略 <b>可能なオブジェクト</b>です。 指定したオブジェクトのシートの直前に、新しいグラフ シートを追加します。</param>
+        <param name="After">省略 <b>可能なオブジェクト</b>です。 指定したオブジェクトのシートの直後に、新しいグラフ シートを追加します。</param>
+        <param name="Count">省略 <b>可能なオブジェクト</b>です。 追加するシートの数を指定します。 既定値は 1 です。</param>
+        <param name="Type">省略 <b>可能なオブジェクト</b>です。 ワークシートの種類を指定します。 使用できる定数 <see cref="T:Microsoft.Office.Interop.Excel.XlSheetType" /> は、xlWorksheet、xlChart、xlExcel4MacroSheet、xlExcel4IntlMacroSheet<b>です</b>。 <b></b> <b></b> <b></b> 既存のテンプレートに基づいたシートを挿入する場合は、そのテンプレートのパスを指定します。 既定値は <b>xlWorksheet</b> です。</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>場合<paramref name="Before" />と<paramref name="After" />は、両方とも省略すると、新しいシートがアクティブ シートの直前に挿入します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>両方 <paramref name="Before" /> を <paramref name="After" /> 省略すると、新しいシートがアクティブ シートの前に挿入されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Add2">
@@ -184,16 +170,14 @@
         <Parameter Name="NewLayout" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">省略可能な<b>オブジェクト</b>です。 指定したオブジェクトのシートの直前に、新しいグラフ シートを追加します。</param>
-        <param name="After">省略可能な<b>オブジェクト</b>です。 指定したオブジェクトのシートの直後に、新しいグラフ シートを追加します。</param>
-        <param name="Count">省略可能な<b>オブジェクト</b>です。 追加するシートの数です。 既定値は、1 つ</param>
-        <param name="NewLayout">省略可能な<b>オブジェクト</b>です。 新しいワークシートに使用するレイアウトを指定するオブジェクト。</param>
-        <summary>このメソッドは、<b>グラフ</b>は、コレクション オブジェクトの実装は、のみ、<b>シート</b>や<b>ワークシート</b>のオブジェクトで使用する場合は、実行時エラーが生成されます。</summary>
+        <param name="Before">省略 <b>可能なオブジェクト</b>です。 指定したオブジェクトのシートの直前に、新しいグラフ シートを追加します。</param>
+        <param name="After">省略 <b>可能なオブジェクト</b>です。 指定したオブジェクトのシートの直後に、新しいグラフ シートを追加します。</param>
+        <param name="Count">省略 <b>可能なオブジェクト</b>です。 追加するシートの数を指定します。 既定値は 1 です。</param>
+        <param name="NewLayout">省略 <b>可能なオブジェクト</b>です。 新しいワークシートに使用するレイアウトを指定するオブジェクト。</param>
+        <summary>このメソッドは Charts コレクション <b>オブジェクトにのみ</b> 実装され、Sheets オブジェクトと <b>Worksheets</b> オブジェクトで使用すると実行時エラー <b>が発生</b> します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>場合<paramref name="Before" />と<paramref name="After" />は、両方とも省略すると、新しいシートがアクティブ シートの直前に挿入します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>両方 <paramref name="Before" /> を <paramref name="After" /> 省略すると、新しいシートがアクティブ シートの前に挿入されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -219,7 +203,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 読み取り専用。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -247,13 +231,11 @@
         <Parameter Name="After" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">省略可能な<b>オブジェクト</b>です。 コピーしたシートを配置する前にあるシートです。 指定することはできません<paramref name="Before" />を指定する場合は、 <paramref name="After" />。</param>
-        <param name="After">省略可能な<b>オブジェクト</b>です。 その後、コピーしたシートを配置するシートです。 指定することはできません<paramref name="After" />を指定する場合は、 <paramref name="Before" />。</param>
+        <param name="Before">省略 <b>可能なオブジェクト</b>です。 コピーしたシートを特定のシートの直前の位置に挿入するときに、そのシートを指定します。 指定する場合 <paramref name="Before" /> は指定できません <paramref name="After" /> 。</param>
+        <param name="After">省略 <b>可能なオブジェクト</b>です。 コピーしたシートを特定のシートの直後の位置に挿入するときに、そのシートを指定します。 指定する場合 <paramref name="After" /> は指定できません <paramref name="Before" /> 。</param>
         <summary>シートをブック内の他の場所にコピーします。</summary>
-        <remarks>
-          <para>いずれかの方法を指定しない場合は、<paramref name="Before" />または<paramref name="After" />、コピーしたシートを含む新しいブックを作成します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>どちらかを指定しない場合、コピーしたシートを含む新しいブック <paramref name="Before" /> <paramref name="After" /> が作成されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -307,13 +289,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 読み取り専用です <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -338,10 +317,8 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトを削除します。</summary>
-        <remarks>
-          <para>削除すると、<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />または<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />、このメソッドは、削除を確認するのにはユーザーの入力を求めるダイアログ ボックスを表示します。 既定では、このダイアログ ボックスが表示されます。 <b>Delete</b>メソッドは、ユーザーがクリックした] ダイアログ ボックスで [キャンセル] または<b>True</b>の場合、クリックしたユーザーを削除する場合は<b>False</b>の<b>ブール</b>値を返します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>削除または削除すると、削除の確認を求めるダイアログ ボックス <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> が表示されます。 このダイアログ ボックスは既定で表示されます。 <b>Delete メソッド</b>は、ユーザー<b></b>がダイアログ ボックスで [キャンセル] をクリックした場合は<b>False</b>のブール値を返し、ユーザーが [削除] をクリックした場合は<b>True</b>を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FillAcrossSheets">
@@ -366,8 +343,8 @@
         <Parameter Name="Type" Type="Microsoft.Office.Interop.Excel.XlFillWith" />
       </Parameters>
       <Docs>
-        <param name="Range">必要な<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトです。 コレクション内のすべてのワークシート上のセル範囲。 コレクション内のワークシートの範囲でなければなりません。</param>
-        <param name="Type">省略可能な<see cref="T:Microsoft.Office.Interop.Excel.XlFillWith" />。 セル範囲のコピー方法を指定します。</param>
+        <param name="Range">必須 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> オブジェクト。 コレクション内のすべてのワークシートに指定するセル範囲です。 セル範囲は、コレクション内のワークシートの 1 つに存在する必要があります。</param>
+        <param name="Type">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlFillWith" /> 可能です。 セル範囲のコピー方法を指定します。</param>
         <summary>指定されたセル範囲を、コレクション内の他のすべてのワークシートの同じ領域にコピーします。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -427,12 +404,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.HPageBreaks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" />シートの水平方向のページを表すコレクションを中断します。 読み取り専用。</summary>
+        <summary>シートの <see cref="T:Microsoft.Office.Interop.Excel.HPageBreaks" /> 水平な改ページを表すコレクションを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>1 つのシートに使用できる水平な改ページの数は 1026 です。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>1 つのシートに使用できる水平な改ページの数は 1026 です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -461,8 +436,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -491,13 +465,11 @@
         <Parameter Name="After" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">省略可能な<b>オブジェクト</b>です。 移動したシートを配置する前にあるシートです。 指定することはできません<paramref name="Before" />を指定する場合は、 <paramref name="After" />。</param>
-        <param name="After">省略可能な<b>オブジェクト</b>です。 配置移動したシートです。 指定することはできません<paramref name="After" /><b>する前に</b>指定した場合。</param>
+        <param name="Before">省略 <b>可能なオブジェクト</b>です。 移動したシートを特定のシートの直前の位置に挿入するときに、そのシートを指定します。 指定する場合 <paramref name="Before" /> は指定できません <paramref name="After" /> 。</param>
+        <param name="After">省略 <b>可能なオブジェクト</b>です。 移動したシートを特定のシートの直後の位置に挿入するときに、そのシートを指定します。 Before を指定 <paramref name="After" /> する場合は指定 <b>できません</b>。</param>
         <summary>シートをブック内の他の場所に移動します。</summary>
-        <remarks>
-          <para>いずれかの方法を指定しない場合は、<paramref name="Before" />または<paramref name="After" />、移動するワークシートを含む新しいブックを作成します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>どちらかを指定しない場合、移動したシートを含む新しい <paramref name="Before" /> <paramref name="After" /> ブックが作成されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -523,7 +495,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -560,19 +532,17 @@
         <Parameter Name="PrToFileName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="From">省略可能な<b>オブジェクト</b>です。 印刷を開始するページの数です。 この引数を省略すると、印刷は先頭から開始します。</param>
-        <param name="To">省略可能な<b>オブジェクト</b>です。 印刷する最終ページの数です。 この引数を省略すると、最後のページで印刷が終了します。</param>
-        <param name="Copies">省略可能な<b>オブジェクト</b>です。 印刷部数を指定します。 この引数を省略すると、1 つのコピーが印刷されます。</param>
-        <param name="Preview">省略可能な<b>オブジェクト</b>です。 <b>True</b>オブジェクトを印刷する前に印刷プレビューを実行します。 <b>False</b>(または省略した場合)、オブジェクトをすぐに印刷します。</param>
-        <param name="ActivePrinter">省略可能な<b>オブジェクト</b>です。 アクティブなプリンターの名前を指定します。</param>
-        <param name="PrintToFile">省略可能な<b>オブジェクト</b>です。 <b>True</b>ファイルに出力します。 場合<paramref name="PrToFileName" />が指定されていない、Microsoft Excel には、出力ファイルの名前を入力するように求めます。</param>
-        <param name="Collate">省略可能な<b>オブジェクト</b>です。 <b>True</b> の場合、部単位で印刷します。</param>
-        <param name="PrToFileName">省略可能な<b>オブジェクト</b>です。 場合<paramref name="PrintToFile" />は、設定に<b>は True</b>、この引数を指定して印刷しファイルの名前です。</param>
+        <param name="From">省略 <b>可能なオブジェクト</b>です。 印刷を開始するページの番号を指定します。 この引数を省略すると、最初のページから印刷します。</param>
+        <param name="To">省略 <b>可能なオブジェクト</b>です。 印刷を終了するページの番号を指定します。 この引数を省略すると、最後のページまで印刷します。</param>
+        <param name="Copies">省略 <b>可能なオブジェクト</b>です。 印刷部数を指定します。 この引数を省略すると、印刷部数は 1 部になります。</param>
+        <param name="Preview">省略 <b>可能なオブジェクト</b>です。 <b>True</b> の場合、印刷をする前に印刷プレビューを実行します。 <b>False</b>、または省略した場合、直ちに印刷を行います。</param>
+        <param name="ActivePrinter">省略 <b>可能なオブジェクト</b>です。 アクティブなプリンターの名前を指定します。</param>
+        <param name="PrintToFile">省略 <b>可能なオブジェクト</b>です。 <b>True</b> の場合、ファイルへ出力します。 指定 <paramref name="PrToFileName" /> しない場合は、出力ファイルの名前を入力するように求めるメッセージが表示されます。</param>
+        <param name="Collate">省略 <b>可能なオブジェクト</b>です。 <b>True</b> の場合、部単位で印刷します。</param>
+        <param name="PrToFileName">省略 <b>可能なオブジェクト</b>です。 <paramref name="PrintToFile" />True に設定<b>されている</b>場合、この引数は印刷するファイルの名前を指定します。</param>
         <summary>オブジェクトを印刷します。</summary>
-        <remarks>
-          <para>説明における「ページ」<paramref name="From" />と<paramref name="To" />印刷されるページを参照して、ない全体のページでは、シートまたはブックです。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>シートまたはブックの全体的なページではなく、印刷されたページの説明と参照の "ページ" <paramref name="From" /> <paramref name="To" /> です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintOutEx">
@@ -640,7 +610,7 @@
         <Parameter Name="EnableChanges" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="EnableChanges">オブジェクトへの変更を有効にします。</param>
+        <param name="EnableChanges">オブジェクトに対する変更を有効にします。</param>
         <summary>オブジェクトの印刷プレビュー (印刷時のイメージ) を表示します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -667,12 +637,10 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">省略可能な<b>オブジェクト</b>(シートでのみ使用されます)。 <b>True</b> を指定したオブジェクトで現在の選択範囲を置き換えます。 <b>False を指定</b> する現在の選択範囲を拡張する選択したオブジェクトと指定したオブジェクトです。</param>
+        <param name="Replace">省略 <b>可能なオブジェクト</b> (シートでのみ使用)。 <b>True</b> を指定したオブジェクトで現在の選択範囲を置き換えます。 <b>False を指定</b> する現在の選択範囲を拡張する選択したオブジェクトと指定したオブジェクトです。</param>
         <summary>オブジェクトを選択します。</summary>
-        <remarks>
-          <para>セルまたはセル範囲を選択するには、 <b>Select</b>メソッドを使用します。 1 つのセルをアクティブ セルにするを使用して、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.Activate" />メソッドです。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>セルまたはセル範囲を選択するには、<b>Select</b> メソッドを使用します。 1 つのセルをアクティブ セルにする場合は、このメソッドを使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Activate" /> します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -701,7 +669,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトを表示するかどうかを決定します。 読み取り/書き込みの<b>オブジェクト</b>です。</summary>
+        <summary>オブジェクトを表示するかどうかを指定します。 読み取り/書き込み <b>オブジェクト です</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -729,7 +697,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.VPageBreaks</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.VPageBreaks" />シートの垂直方向のページを表すコレクションを中断します。 読み取り専用です。</summary>
+        <summary>シートの <see cref="T:Microsoft.Office.Interop.Excel.VPageBreaks" /> 垂直な改ページを表すコレクションを返します。 値の取得のみ可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

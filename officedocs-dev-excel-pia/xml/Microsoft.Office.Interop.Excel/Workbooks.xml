@@ -1,13 +1,5 @@
 <Type Name="Workbooks" FullName="Microsoft.Office.Interop.Excel.Workbooks">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="e216142f85071dc6b33c9b1eb3c9ddffaa7369de" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20574936" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Workbooks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e216142f85071dc6b33c9b1eb3c9ddffaa7369de" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50008617" /></Metadata><TypeSignature Language="C#" Value="public interface Workbooks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Workbooks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Workbooks" />
   <TypeSignature Language="VB.NET" Value="Public Interface Workbooks&#xA;Implements IEnumerable" />
@@ -30,14 +22,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>すべてのコレクション、 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> Microsoft Excel アプリケーションでは、現在のオブジェクトを開きます。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /><b>ブック</b>のコレクションを返すプロパティです。</para>
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Add(System.Object)" /> 、新しい空のブックを作成し、コレクションに追加する方法です。</para>
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />ファイルを開くためのメソッドです。</para>
-      <para>1 つの<b>ブック</b>オブジェクトの使い方の詳細についてを参照してください、<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />オブジェクトです。</para>
-      <para></para>
-    </remarks>
+    <summary>Microsoft Excel アプリケーションで <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> 現在開いているすべてのオブジェクトのコレクションです。</summary>
+    <remarks><para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel._Application.Workbooks" /> を使用して <b>Workbooks コレクションを取得</b> します。</para>
+      <para>新しい <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Add(System.Object)" /> 空のブックを作成し、コレクションに追加するには、このメソッドを使用します。</para>
+      <para>このメソッド <see cref="M:Microsoft.Office.Interop.Excel.Workbooks.Open(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> を使用してファイルを開きます。</para>
+      <para>1 つの Workbook オブジェクトの使用の詳細 <b>については</b> 、オブジェクトを参照 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> してください。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="__OpenText">
@@ -95,7 +85,7 @@
         <param name="OtherChar">To be added.</param>
         <param name="FieldInfo">To be added.</param>
         <param name="TextVisualLayout">To be added.</param>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。 </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,7 +119,7 @@
       </Parameters>
       <Docs>
         <param name="Index">To be added.</param>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -187,7 +177,7 @@
         <param name="Notify">To be added.</param>
         <param name="Converter">To be added.</param>
         <param name="AddToMru">To be added.</param>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -283,7 +273,7 @@
       <Docs>
         <param name="Filename">To be added.</param>
         <param name="Stylesheets">To be added.</param>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -313,13 +303,11 @@
         <Parameter Name="Template" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Template">省略可能な<b>オブジェクト</b>です。 新しいブックを作成する方法を決定します。 この引数が既存の Microsoft Excel ファイルの名前を指定する文字列の場合は、指定のファイルをテンプレートとして新しいブックが作成されます。 この引数が定数の場合は、新しいブックには、指定した型の 1 つのシートが含まれています。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlWBATemplate" />定数: <b>xlWBATChart</b>、 <b>xlWBATExcel4IntlMacroSheet</b>、 <b>xlWBATExcel4MacroSheet</b>、 <b>xlWBATWorksheet</b>。 この引数を省略すると、Microsoft Excel の空白のシート (<b>か</b>シートの数が設定されます) で新しいブックを作成します。</param>
-        <summary>新しいブックを作成します。 作業中のブックを新しいブックになります。 返します、<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />オブジェクトです。</summary>
+        <param name="Template">省略 <b>可能なオブジェクト</b>です。 新しいブックの作成方法を指定します。 この引数が既存の Microsoft Excel ファイルの名前を指定する文字列の場合、指定したファイルをテンプレートとして使用して新しいブックが作成されます。 この引数が定数の場合、新しいブックには指定された種類のシートが 1 つ含まれます。 使用できる定数 <see cref="T:Microsoft.Office.Interop.Excel.XlWBATemplate" /> は<b>、xlWBATChart</b> <b>、xlWBATExcel4IntlMacroSheet、xlWBATExcel4MacroSheet、xlWBATWorksheet</b><b>です</b>。 <b></b> この引数を省略すると、多数の空白シートを含む新しいブックが作成されます (シート数は <b>SheetsInNewWorkbook</b> プロパティによって設定されます)。</param>
+        <summary>新しいブックを作成します。 新しいブックが作業中のブックになります。 オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>場合、<paramref name="Template" />の引数は、ファイルを指定、ファイル名にパスを含めることができます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>引数に <paramref name="Template" /> ファイルを指定する場合は、ファイル名にパスを含めることができるようになりました。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -345,7 +333,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 読み取り専用。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -373,10 +361,8 @@
         <Parameter Name="Filename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Filename">
-          <b>文字列</b> が必要です。 チェックアウトするファイル名を指定します。</param>
-        <summary>
-          <b>True</b> の場合、指定したブックをサーバーからチェックアウトできます。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <param name="Filename"><b>文字列</b> が必要です。 チェックアウトするファイルの名前を指定します。</param>
+        <summary>Microsoft Excel によって指定したブックをサーバーからチェックアウトできる場合は <b>True</b> です。 取得/設定が可能な <b>Boolean</b> 値です。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -404,9 +390,8 @@
         <Parameter Name="Filename" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Filename">
-          <b>文字列</b> が必要です。 チェックアウトするファイル名を指定します。</param>
-        <summary>サーバーから指定されたブックを編集するためのローカル コンピューターにコピーします。</summary>
+        <param name="Filename"><b>文字列</b> が必要です。 チェックアウトするファイルの名前を指定します。</param>
+        <summary>指定されたブックをサーバーからローカル コンピューターにコピーして編集します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -435,11 +420,8 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトを閉じます。</summary>
-        <remarks>
-          <para>
-            <b>Close</b>メソッドを使用してブックを閉じると、ブック内の Auto_Close マクロが実行されません。 使用して、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" />自動を実行するメソッドは、マクロを閉じます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Close</b>メソッドを使用してブックを閉じても、ブックAuto_Closeマクロは実行されません。 このメソッド <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> を使用して、自動閉じるマクロを実行します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -493,13 +475,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 読み取り専用 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -560,8 +539,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -606,28 +584,25 @@
         <Parameter Name="CorruptLoad" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Filename">
-          <b>文字列</b> が必要です。 開くブックのファイル名です。</param>
-        <param name="UpdateLinks">省略可能な<b>オブジェクト</b>です。 ファイル内の方法のリンクが更新されるかを指定します。 この引数を省略すると、リンクの更新方法を指定する入力が求められます。 それ以外の場合、この引数は、次の表に記載されている値のいずれかです。WKS でファイルを開く、Microsoft Excel の場合、[WK1 または WK3 の書式を設定し、<paramref name="UpdateLinks" />の引数が 2 で、Microsoft Excel ファイルに接続されているグラフからグラフが生成されます。 引数が 0 の場合は、グラフは作成されません。</param>
-        <param name="ReadOnly">省略可能な<b>オブジェクト</b>です。 ブックを読み取り専用モードで開くには、True を指定します。</param>
-        <param name="Format">省略可能な<b>オブジェクト</b>です。 この引数に Excel は、テキスト ファイルを開くときは、次の表に示すように、区切り文字を指定します。 この引数を省略すると、現在の区切り記号が使用されます。</param>
-        <param name="Password">省略可能な<b>オブジェクト</b>です。 保護されたブックを開くためのパスワードを含む文字列です。 この引数を省略するし、ブックにパスワードが必要です、パスワードの入力が求められます。</param>
-        <param name="WriteResPassword">省略可能な<b>オブジェクト</b>です。 読み取り専用のブックへの書き込みに必要なパスワードを含む文字列です。 この引数を省略するし、ブックにパスワードが必要です、ユーザーはパスワードを求められます。</param>
-        <param name="IgnoreReadOnlyRecommended">省略可能な<b>オブジェクト</b>です。 [ <b>読み取り専用を推奨する</b>] チェック ボックスをオンにして保存されたブックを開くときでも、読み取り専用を推奨するメッセージを非表示にするには、 <b>True</b> を指定します。</param>
-        <param name="Origin">省略可能な<b>オブジェクト</b>です。 ファイルがテキスト ファイルの場合は、この引数では、発生元、コード ページとキャリッジ リターンとライン フィード (CR-LF) を正しくマップすることができます) ことを示します。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlPlatform" />定数:<b>コード ページと</b>、 <b>xlWindows</b>、または<b>するために必要</b>です。 この引数を省略すると、現在のオペレーティング システムが使用されます。</param>
-        <param name="Delimiter">省略可能な<b>オブジェクト</b>です。 場合は、ファイルは、テキスト ファイルで、引数<b>Format</b>には、6、この引数は、区切り記号として使用する文字を指定する文字列です。 たとえば、タブの Chr(9) を使用して、使用、セミコロン、またはカスタムの文字を使用してコンマを使用しての「;」です。 文字列の最初の文字のみが使用されます。</param>
-        <param name="Editable">省略可能な<b>オブジェクト</b>です。 ファイルが Microsoft Excel 4.0 のアドインの場合、この引数に<b>True</b>を表示可能なウィンドウになるようにアドインを開きます。 この引数が<b>False</b>または省略すると、アドインを開くと、非表示、再表示にすることはできません。 Microsoft Excel 5.0 以降で作成されたアドインには、このオプションは適用されません。 ファイルが Excel テンプレートの場合は、 <b>True</b>を使いますを編集用に指定されたテンプレートを開くまたは<b>False</b>を指定したテンプレートに基づく新しいブックを開きます。 既定値は <b>False</b> です。</param>
-        <param name="Notify">省略可能な<b>オブジェクト</b>です。 場合ファイルは、読み取り/書き込みモードで開くことができません、この引数に<b>true を指定</b>ファイルを通知リストに追加するのには。 Microsoft Excel ファイルを読み取り専用として開くには、ポーリング通知リストに、ファイルが利用可能になったらユーザーに通知されます。 この引数が<b>False</b>か省略すると、通知を行わず、ファイルへのアクセスは失敗します。</param>
-        <param name="Converter">省略可能な<b>オブジェクト</b>です。 ファイルを開くときの最初のファイル コンバーターのインデックス。 指定したファイル コンバーターが試みられます。このコンバーターがファイルを認識しない場合は、他のすべてのコンバーターが試行されます。 コンバーターのインデックスは、によって返されるコンバーターの行番号で構成されています、<see cref="P:Microsoft.Office.Interop.Excel._Application.FileConverters(System.Object,System.Object)" />プロパティ。</param>
-        <param name="AddToMru">省略可能な<b>オブジェクト</b>です。 最近使用したファイルの<b>場合は true</b>の一覧にこのブックを追加するのには。 既定値は <b>False</b> です。</param>
-        <param name="Local">省略可能な<b>オブジェクト</b>です。 <b>True の場合</b>は、(コントロール パネルの設定を含む)、Microsoft Excel の言語ファイルを保存します。 <b>False</b>(既定値) ファイルを保存する Visual Basic for Applications の言語 (VBA) では英語 (米国) から Workbooks.Open を実行している VBA プロジェクトが以前の国際化 XL5/95 VBA プロジェクトでない限り)。</param>
-        <param name="CorruptLoad">省略可能な<b>オブジェクト</b>です。 使用できる定数は、次のいずれか: <b>xlNormalLoad</b>、 <b>xlRepairFile</b>、および<b>xlExtractData</b>。 値が指定されていない場合の既定の動作は、通常は標準ですが、Excel のファイルを開くことが既に実行しようとしている場合、読み込みやデータの修復があります。 最初の試行は、正常です。 Excel は、ファイルを開くときに動作を停止する場合、2 回目の試行は、安全な負荷です。 場合は再度、Excel には、動作が停止した、次の試行は、データ リカバリです。</param>
+        <param name="Filename"><b>文字列</b> が必要です。 開くブックのファイル名です。</param>
+        <param name="UpdateLinks">省略 <b>可能なオブジェクト</b>です。 ファイル内のリンクの更新方法を指定します。 この引数を省略すると、リンクの更新方法を指定するように求めるメッセージが表示されます。 それ以外の場合、この引数は次の表に示す値の 1 つになります。WKS、WK1、または WK3 形式のファイルを開き、引数が 2 の場合、ファイルに添付されたグラフからグラフが生成されます。 <paramref name="UpdateLinks" /> 引数に 0 を指定すると、グラフは作成されません。</param>
+        <param name="ReadOnly">省略 <b>可能なオブジェクト</b>です。 ブックを読み取り専用モードで開くには、True を指定します。</param>
+        <param name="Format">省略 <b>可能なオブジェクト</b>です。 テキスト ファイルを開く場合は、次の表に示すように、この引数で区切り文字を指定します。 この引数を省略すると、現在の区切り文字が使用されます。</param>
+        <param name="Password">省略 <b>可能なオブジェクト</b>です。 パスワード保護されたブックを開くのに必要なパスワードを指定します。 この引数を省略した場合、パスワードが必要なブックでは、パスワードの入力を促すダイアログ ボックスがユーザーに表示されます。</param>
+        <param name="WriteResPassword">省略 <b>可能なオブジェクト</b>です。 書き込み保護されたブックに書き込みをするために必要なパスワードを指定します。 この引数を省略した場合、パスワードが必要なブックでは、パスワードの入力を促すダイアログ ボックスがユーザーに表示されます。</param>
+        <param name="IgnoreReadOnlyRecommended">省略 <b>可能なオブジェクト</b>です。 [ <b>読み取り専用を推奨する</b>] チェック ボックスをオンにして保存されたブックを開くときでも、読み取り専用を推奨するメッセージを非表示にするには、 <b>True</b> を指定します。</param>
+        <param name="Origin">省略 <b>可能なオブジェクト</b>です。 ファイルがテキスト ファイルの場合、この引数は発生元を示します (コード ページとキャリッジ リターン/ライン フィード (CR/LF) を正しくマップできます)。 使用できる定数は <see cref="T:Microsoft.Office.Interop.Excel.XlPlatform" /> <b>、xlMacintosh</b> <b>、xlWindows、または</b> <b>xlMSDOS です</b>。 この引数を省略すると、現在のオペレーティング システムが使用されます。</param>
+        <param name="Delimiter">省略 <b>可能なオブジェクト</b>です。 ファイルがテキスト ファイルで、引数 <b>Format</b> が 6 の場合、この引数は区切り文字として使用する文字を指定する文字列です。 たとえば、タブには Chr(9) を使用し、コンマには "," を使用し、セミコロンには ";" を使用し、ユーザー設定の文字を使用します。 文字列の最初の文字だけが使用されます。</param>
+        <param name="Editable">省略 <b>可能なオブジェクト</b>です。 ファイルが Microsoft Excel 4.0 アドインの場合、この引数 <b>は True</b> に設定され、アドインが表示ウィンドウで開きます。 この引数に <b>False</b> を指定するか、この引数を省略すると、アドインは非表示の状態で開かれ、ウィンドウとして表示することはできません。 このオプションは、Microsoft Excel 5.0 以降で作成されたアドインには適用されません。 ファイルが Excel テンプレートの場合は <b>、True</b> を使用して指定したテンプレートを編集用に開き <b>、False</b> を使用して、指定したテンプレートに基づいて新しいブックを開きます。 既定値は <b>False</b> です。</param>
+        <param name="Notify">省略 <b>可能なオブジェクト</b>です。 ファイルが読み取り/書き込みモードで開けない場合に、ファイルを通知リストに追加するには、<b>True</b> を指定します。 ファイルが読み取り専用モードで開かれて通知リストに追加され、ファイルが編集可能になった時点でユーザーに通知されます。 ファイルが開けない場合に、このような通知を行わずにエラーを発生させるには、 <b>False</b> を指定するか省略します。</param>
+        <param name="Converter">省略 <b>可能なオブジェクト</b>です。 ファイルを開く際に最初に試すファイル コンバーターのインデックスを指定します。 指定されたファイル コンバーターが最初に試みされます。このコンバータがファイルを認識しない場合は、他のすべてのコンバータが試みされます。 コンバータ インデックスは、プロパティによって返されるコンバータの行番号で構成 <see cref="P:Microsoft.Office.Interop.Excel._Application.FileConverters(System.Object,System.Object)" /> されます。</param>
+        <param name="AddToMru">省略 <b>可能なオブジェクト</b>です。 最近使用したファイルの一覧にブックを追加するには、<b>True</b> を指定します。 既定値は <b>False</b> です。</param>
+        <param name="Local">省略 <b>可能なオブジェクト</b>です。 <b>True を</b> 指定すると、Excel の言語 (コントロール パネルの設定を含む) に対してファイルが保存されます。 <b>False</b> (既定値) を指定すると、Visual Basic for Applications (VBA) の言語 (Workbooks.Open を実行する VBA プロジェクトが国際化された古い XL5/95 VBA プロジェクトではない限り、通常は英語 (米国)) に対してファイルを保存します。</param>
+        <param name="CorruptLoad">省略 <b>可能なオブジェクト</b>です。 使用できる定数は<b>、xlNormalLoad</b> <b>、xlRepairFile、</b><b>および xlExtractData です</b>。 通常、値が指定されていない場合の既定の動作は正常ですが、Excel がファイルを開く試みを既に試みた場合は、安全な読み込みまたはデータ回復である可能性があります。 最初の試行は正常です。 Excel がファイルを開く間に動作を停止した場合、2 回目の試行は安全な読み込みです。 Excel が再び動作を停止した場合、次の試行はデータ回復です。</param>
         <summary>ブックを開きます。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>既定では、プログラムでファイルを開くときにマクロが有効にします。 使用して、<see cref="P:Microsoft.Office.Interop.Excel._Application.AutomationSecurity" />プログラムを使用してファイルを開くときに使用するマクロのセキュリティ モードを設定するプロパティです。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>既定では、ファイルをプログラムで開くとき、マクロは有効です。 このプロパティ <see cref="P:Microsoft.Office.Interop.Excel._Application.AutomationSecurity" /> を使用して、プログラムでファイルを開く際に使用するマクロ セキュリティ モードを設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OpenDatabase">
@@ -656,13 +631,12 @@
         <Parameter Name="ImportDataAs" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Filename">
-          <b>文字列</b> が必要です。 接続文字列を指定します。</param>
-        <param name="CommandText">省略可能な<b>オブジェクト</b>です。 クエリのコマンド テキストを指定します。</param>
-        <param name="CommandType">省略可能な<b>オブジェクト</b>です。 クエリのコマンドの種類です。 利用できる次のコマンドの種類: 既定、SQL、およびテーブル。</param>
-        <param name="BackgroundQuery">省略可能な<b>オブジェクト</b>です。 クエリのバック グラウンドです。</param>
-        <param name="ImportDataAs">省略可能な<b>オブジェクト</b>です。 クエリの形式を決定します。</param>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> 、データベースを表すオブジェクト。</summary>
+        <param name="Filename"><b>文字列</b> が必要です。 接続文字列を指定します。</param>
+        <param name="CommandText">省略 <b>可能なオブジェクト</b>です。 クエリのコマンド テキストを指定します。</param>
+        <param name="CommandType">省略 <b>可能なオブジェクト</b>です。 クエリのコマンド タイプを指定します。 使用できるコマンドの種類は、Default、SQL、Table です。</param>
+        <param name="BackgroundQuery">省略 <b>可能なオブジェクト</b>です。 クエリの背景。</param>
+        <param name="ImportDataAs">省略 <b>可能なオブジェクト</b>です。 クエリの形式を指定します。</param>
+        <summary>データベースを表 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -709,25 +683,24 @@
         <Parameter Name="Local" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Filename">
-          <b>文字列</b> が必要です。 読み込まれるテキスト ファイルの名前を指定します。</param>
-        <param name="Origin">省略可能な<b>オブジェクト</b>です。 テキスト ファイルの原点を指定します。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlPlatform" />定数:<b>コード ページと</b>、 <b>xlWindows</b>、または<b>するために必要</b>です。 さらに、適切なコード ページのコード ページ番号を表す整数値可能性があります。 たとえば、「1256」では、ソース テキスト ファイルのエンコーディングは、アラビア語 (Windows) であることは指定します。 この引数を省略した場合、メソッドは、<b>テキスト インポート ウィザード</b>で、元のファイル オプションの現在の設定を使用します。</param>
-        <param name="StartRow">省略可能な<b>オブジェクト</b>です。 テキストの解析を開始する行の数です。 既定値は 1 です。</param>
-        <param name="DataType">省略可能な<b>オブジェクト</b>です。 ファイル内のデータの列の形式を指定します。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlTextParsingType" />定数: <b>xlDelimited</b>または<b>xlFixedWidth</b>です。 この引数を指定しない場合、Microsoft Excel はファイルを開いたときに列の形式を決定しようとします。</param>
-        <param name="TextQualifier">省略可能な<see cref="T:Microsoft.Office.Interop.Excel.XlTextQualifier" />。 文字列の引用符を指定します。 これらのいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlTextQualifier" />定数。<b>xlTextQualifierDoubleQuote</b><paramref name="default" /><b>xlTextQualifierNone</b><b>xlTextQualifierSingleQuote</b></param>
-        <param name="ConsecutiveDelimiter">省略可能な<b>オブジェクト</b>です。 <b>True を指定</b>して、連続する区切り文字では、1 つの区切り記号と見なされます。 既定では <b>False です</b> 。</param>
-        <param name="Tab">省略可能な<b>オブジェクト</b>です。 True を設定するタブ文字を区切り文字 (<paramref name="DataType" /><b>xlDelimited</b>をする必要があります)。 既定値は <b>False</b> です。</param>
-        <param name="Semicolon">省略可能な<b>オブジェクト</b>です。 <b>True を指定</b>するセミコロンの文字があること、区切り記号 (<paramref name="DataType" /><b>xlDelimited</b>をする必要があります)。 既定値は <b>False</b> です。</param>
-        <param name="Comma">省略可能な<b>オブジェクト</b>です。 <b>True</b>コンマ文字にする、区切り文字 (<paramref name="DataType" /><b>xlDelimited</b>をする必要があります)。 既定値は <b>False</b> です。</param>
-        <param name="Space">省略可能な<b>オブジェクト</b>です。 の<b>真</b>の空白文字、区切り文字 (<paramref name="DataType" /><b>xlDelimited</b>をする必要があります)。 既定値は <b>False</b> です。</param>
-        <param name="Other">省略可能な<b>オブジェクト</b>です。 <b>True</b>で指定された文字を使用して、<paramref name="OtherChar" />引数は、区切り記号である (<paramref name="DataType" /><b>xlDelimited</b>をする必要があります)。 既定値は <b>False</b> です。</param>
-        <param name="OtherChar">省略可能な<b>オブジェクト</b>(必要な場合<paramref name="Other" />が<b>True</b>)。 区切り文字を指定文字の場合<paramref name="Other" />が<b>true を指定</b>します。 複数の文字を 1 つ指定すると、文字列の最初の文字のみが使用されます。残りの文字は無視されます。</param>
-        <param name="FieldInfo">省略可能な<see cref="T:Microsoft.Office.Interop.Excel.XlColumnDataType" />。 各列のデータの解析情報を格納する配列。 解釈の値に依存する<paramref name="DataType" />。 データが区切られている場合、この引数は、各 2 要素配列は特定の列の変換オプションを指定すると、2 つの要素の配列をします。 最初の要素は、列の番号 (1 から始まる値) と、2 番目の要素は、列を解析する方法を指定する<b>XlColumnDataType</b>定数のいずれかです。<b>xlGeneralFormat</b>一般的な<b>xlTextFormat</b>文字列<b>xlMDYFormat</b> MDY 日<b>xlDMYFormat</b>式日付<b>xlYMDFormat</b> YMD 日<b>xlMYDFormat</b>を日付<b>xlDYMFormat</b> DYM 日付<b>xlYDMFormat</b> YDM<b>xlEMDFormat</b> EMD の日付を日します。<b>xlSkipColumn</b><b>XlEMDFormat</b>は、スキップ ColumnYou がインストールして、台湾語の言語サポートを選択した場合にのみ使用できます。 定数<b>xlEMDFormat</b>は、台湾が使用されていることを指定します。任意の順序で列の指定ができます。 入力データの特定の列の列指定子がない場合、その列は標準設定で。<b>メモ</b>列はスキップすることを指定する場合と残りのすべての列の型を明示的に記述する必要がありますか、データが正しく解析されません。データの認識可能な日付がある場合、列の設定が [全般] の場合でもセルは、ワークシートの日付としてフォーマットされます。 さらに、列の上の日付の形式のいずれかを指定して、データを含まない日付として認識すると、ワークシートのセルの書式は General.If になりますし、ソース データは固定幅の列、各 2 要素配列の最初の要素列内の先頭の文字の位置の指定 (整数で 0 (ゼロ) の文字は、最初の文字)。 2 要素配列の 2 番目の要素は、上記の表に記載されている、0 から 9 までの数値として列の解析オプションを指定します。</param>
-        <param name="TextVisualLayout">省略可能な<b>オブジェクト</b>です。 テキストの視覚的な配置を指定します。</param>
-        <param name="DecimalSeparator">省略可能な<b>オブジェクト</b>です。 数値を認識するときに Excel で使用する小数点の記号。 既定の設定は、システム設定です。</param>
-        <param name="ThousandsSeparator">省略可能な<b>オブジェクト</b>です。 何千も Excel が数値を認識するときに使用する区切り記号。 既定の設定は、システム設定です。次の表は、さまざまなインポート設定で Excel にテキストをインポートの結果を示しています。 数値の結果は、右端の列に表示されます。</param>
-        <param name="TrailingMinusNumbers">省略可能な<b>オブジェクト</b>です。</param>
-        <param name="Local">省略可能な<b>オブジェクト</b>です。</param>
+        <param name="Filename"><b>文字列</b> が必要です。 読み込まれるテキスト ファイルの名前を指定します。</param>
+        <param name="Origin">省略 <b>可能なオブジェクト</b>です。 テキスト ファイルの元のプラットフォームを指定します。 使用できる定数は <see cref="T:Microsoft.Office.Interop.Excel.XlPlatform" /> <b>、xlMacintosh</b> <b>、xlWindows、または</b> <b>xlMSDOS です</b>。 また、目的のコード ページのコード ページ番号を表す整数値を指定することもできます。 たとえば、"1256" の場合、ソース テキスト ファイルのエンコードは "アラビア語 (Windows)" であることを示します。 この引数を省略すると、このメソッドは、 テキスト インポート ウィザードの [ <b>元のファイル</b>] の現在の設定値を使用します。</param>
+        <param name="StartRow">省略 <b>可能なオブジェクト</b>です。 テキストの解析を開始する行番号を指定します。 既定値は 1 です。</param>
+        <param name="DataType">省略 <b>可能なオブジェクト</b>です。 ファイルに含まれるデータの形式を指定します。 使用できる定数は <see cref="T:Microsoft.Office.Interop.Excel.XlTextParsingType" /> <b>、xlDelimited</b> または <b>xlFixedWidth です</b>。 この引数を省略すると、ファイルを開いたときにデータの形式が自動的に決められます。</param>
+        <param name="TextQualifier">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlTextQualifier" /> 可能です。 文字列の引用符を指定します。 使用できる定数は、 <see cref="T:Microsoft.Office.Interop.Excel.XlTextQualifier" /> 次に示す定数の 1 つです。<b>xlTextQualifierDoubleQuote</b> <paramref name="default" /> <b>xlTextQualifierNone</b><b>xlTextQualifierSingleQuote</b></param>
+        <param name="ConsecutiveDelimiter">省略 <b>可能なオブジェクト</b>です。 連続した区切り文字を 1 文字として扱うときは  <b>True</b> を指定します。 既定値は <b>False</b> です。</param>
+        <param name="Tab">省略 <b>可能なオブジェクト</b>です。 True の 区切り記号にタブ文字を設定する ( <paramref name="DataType" /> <b>xlDelimited</b>) 必要があります。 既定値は <b>False</b> です。</param>
+        <param name="Semicolon">省略 <b>可能なオブジェクト</b>です。 <b>True</b> の 区切り記号にセミコロンを付けます ( <paramref name="DataType" /> <b>xlDelimited を指定する必要があります</b>)。 既定値は <b>False</b> です。</param>
+        <param name="Comma">省略 <b>可能なオブジェクト</b>です。 <b>True</b> の 区切り記号にコンマ文字を設定する ( <paramref name="DataType" /> <b>xlDelimited</b>) 必要があります。 既定値は <b>False</b> です。</param>
+        <param name="Space">省略 <b>可能なオブジェクト</b>です。 <b>True</b> の 区切り記号にスペース文字を設定する ( <paramref name="DataType" /> <b>xlDelimited</b>) 必要があります。 既定値は <b>False</b> です。</param>
+        <param name="Other">省略 <b>可能なオブジェクト</b>です。 <b>引数で</b> 指定した文字を区切り文字 <paramref name="OtherChar" /> <paramref name="DataType" /> <b>(xlDelimited ) に設定するには、True を指定します</b>。 既定値は <b>False</b> です。</param>
+        <param name="OtherChar">省略 <b>可能なオブジェクト</b> (True の <paramref name="Other" /> 場合は <b>必須</b>)。 True の場合、区切り文字 <paramref name="Other" /> を指定 <b>します</b>。 If more than one character is specified, only the first character of the string is used; the remaining characters are ignored.</param>
+        <param name="FieldInfo">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlColumnDataType" /> 可能です。 各列のデータ形式を示す配列を指定します。 解釈は、 <paramref name="DataType" /> . データが区切り記号で区切られている場合は、この引数に 2 要素配列の配列を使用して、配列内の各 2 要素配列が特定の列の変換オプションを指定するようにします。 最初の要素は列番号 (1 から始)、2 番目の要素は列の解析方法を指定する<b>XlColumnDataType</b> 定数の 1 つです。<b>xlGeneralFormat</b> General<b>xlTextFormat</b> Text<b>xlMDYFormat</b> MDY date<b>xlDMYFormat</b> DMY date<b>xlYMDFormat</b> YMD date<b>xlMYDFormat</b> MYD date<b>xlDYMFormat</b> DYM date<b>xlYDMFormat</b> YDM date<b>xlEMDFormat</b> EMD date<b>xlSkipColumn</b> Skip ColumnYou can use <b>xlEMDFormat</b> only if you have installed and selected taiwanese language support. <b>定数 xlEMDFormat</b>は、台湾の元号の日付を使用します。列指定子は任意の順序で指定できます。 入力データに特定の列の列指定子がない場合、その列は [全般] 設定で解析されます。<b>メモ</b>列をスキップするように指定した場合は、残りのすべての列の種類を明示的に指定する必要があります。そうしない場合、データは正しく解析されません。データに認識可能な日付がある場合、列の設定が [全般] の場合でも、セルはワークシートの日付として書式設定されます。 さらに、列に上記のいずれかの日付形式を指定し、データに認識可能な日付が含まれている場合、ワークシートのセル形式は General になります。ソース データに固定幅列がある場合、各 2 要素配列の最初の要素は、列内の開始文字の位置を整数で指定し、文字 0 (ゼロ) が最初の文字です。 The second element in the two-element array specifies the parse option for the column as a number between 0 and 9, as listed in the preceding table.</param>
+        <param name="TextVisualLayout">省略 <b>可能なオブジェクト</b>です。 テキストの視覚的な配置を指定します。</param>
+        <param name="DecimalSeparator">省略 <b>可能なオブジェクト</b>です。 Excel で数値を認識する場合に使う小数点の記号です。 既定はシステム設定です。</param>
+        <param name="ThousandsSeparator">省略 <b>可能なオブジェクト</b>です。 Excel で数値を認識する場合に使う桁区切り記号です。 既定の設定はシステム設定です。次の表は、さまざまなインポート設定で Excel にテキストをインポートした結果を示しています。 数値の結果は右詰めで表示します。</param>
+        <param name="TrailingMinusNumbers">省略 <b>可能なオブジェクト</b>です。</param>
+        <param name="Local">省略 <b>可能なオブジェクト</b>です。</param>
         <summary>テキスト ファイルを分析して読み込みます。テキスト ファイルを 1 枚のシートとして、それを含む新しいブックを開きます。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -756,16 +729,13 @@
         <Parameter Name="LoadOption" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Filename">
-          <b>文字列</b> が必要です。 開くファイル名を指定します。</param>
-        <param name="Stylesheets">省略可能な<b>オブジェクト</b>です。 1 つの値かを適用するには、どの XSLT (XSL 変換) スタイル シート処理命令を指定する値の配列。</param>
-        <param name="LoadOption">省略可能な<b>オブジェクト</b>です。 Excel が XML データ ファイルを開く方法を指定します。 これらのいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlXmlLoadOption" />定数:<b>xlXmlLoadImportToList</b> XML リストの XML データ ファイルの内容を配置します。<b>xlXmlLoadMapXml</b>[ <b>XML データ構造</b>] 作業ウィンドウには、XML データ ファイルのスキーマを表示します。<b>xlXmlLoadOpenXml</b>XML データ ファイルを開きます。 ファイルの内容を平坦化されます。<b>xlXmlLoadPromptUser</b>ファイルを開く方法を選択するように求めます。</param>
-        <summary>XML データ ファイルを開きます。 返します、<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />オブジェクトです。</summary>
+        <param name="Filename"><b>文字列</b> が必要です。 開くファイル名を指定します。</param>
+        <param name="Stylesheets">省略 <b>可能なオブジェクト</b>です。 適用する XSL 変換 (XSLT) スタイル シート処理命令を指定する単一の値または値の配列。</param>
+        <param name="LoadOption">省略 <b>可能なオブジェクト</b>です。 Excel が XML データ ファイルを開く方法を指定します。 使用できる定数は、 <see cref="T:Microsoft.Office.Interop.Excel.XlXmlLoadOption" /> <b>次のいずれかの定数です。xlXmlLoadImportToList</b> XML データ ファイルの内容を XML リストに格納します。<b>xlXmlLoadMapXml</b> XML データ ファイルのスキーマを <b>[XML データ</b> 構造] 作業ウィンドウに表示します。<b>xlXmlLoadOpenXml</b> XML データ ファイルを開きます。 ファイルの内容はフラット化されます。<b>xlXmlLoadPromptUser</b> ファイルを開く方法を選択するようにユーザーに求めるメッセージが表示されます。</param>
+        <summary>XML データ ファイルを開きます。 オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>XML 機能は、ファイルを XML スプレッドシート形式で保存する場合を除き、Microsoft Office Professional Edition 2003 および excel 2003 Microsoft Officeでのみ使用できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -791,7 +761,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
