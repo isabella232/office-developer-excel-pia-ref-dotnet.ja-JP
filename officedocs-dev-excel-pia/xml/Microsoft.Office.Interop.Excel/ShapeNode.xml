@@ -1,13 +1,5 @@
 <Type Name="ShapeNode" FullName="Microsoft.Office.Interop.Excel.ShapeNode">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fa83a8cb318b1dacf1a4becb1cd2c657c30e27e3" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580914" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ShapeNode : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fa83a8cb318b1dacf1a4becb1cd2c657c30e27e3" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010340" /></Metadata><TypeSignature Language="C#" Value="public interface ShapeNode : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShapeNode implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ShapeNode" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShapeNode&#xA;Implements _IMsoDispObj" />
@@ -31,12 +23,9 @@
   </Attributes>
   <Docs>
     <summary>ユーザーが定義したフリーフォームの節点の形と節点部分の編集プロパティを表します。</summary>
-    <remarks>
-      <para>節点には、フリーフォームのセグメント間の頂点および曲線の部分のコントロール ポイントが含まれます。 <b>ShapeNode</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" />コレクションです。 <b>ShapeNodes</b> コレクションには、フリーフォームのすべての節点が含まれます。</para>
-      <para>
-        <b>ノード</b>を使用する (<paramref name="index" />)、<paramref name="index" />は、ノードのインデックス番号で、単一の<b>ShapeNode</b>オブジェクトを取得します。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>節点には、フリーフォームのセグメント間の頂点および曲線の部分のコントロール ポイントが含まれます。 <b>ShapeNode オブジェクト</b>はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.ShapeNodes" /> です。 <b>ShapeNodes</b> コレクションには、フリー フォームのすべてのノードが含まれています。</para>
+      <para>ノード<b></b>( ) <paramref name="index" /> ノード <paramref name="index" /> のインデックス番号を使用して、1 つの<b>ShapeNode オブジェクトを取得</b>します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -65,7 +54,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -96,13 +85,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EditingType">
@@ -128,12 +114,10 @@
         <ReturnType>Microsoft.Office.Core.MsoEditingType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された節点が頂点の場合は、節点に対する変更が節点に接続された 2 つのセグメントに与える影響を示す値を取得します。</summary>
+        <summary>指定された節点が頂点の場合、節点に加える変更が、その節点に接続される 2 つのセグメントに対してどのように影響するかを示す値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetEditingType(System.Int32,Microsoft.Office.Core.MsoEditingType)" />このプロパティの値を設定します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティ <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetEditingType(System.Int32,Microsoft.Office.Core.MsoEditingType)" /> の値を設定するには、このメソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -187,12 +171,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>座標ペアで指定されたノードの位置を返します。 各座標は、ポイント単位で表されます。</summary>
+        <summary>指定された節点の位置を座標値として返します。 値の取得のみ可能です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" />このプロパティの値を設定します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティ <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.SetPosition(System.Int32,System.Single,System.Single)" /> の値を設定するには、このメソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SegmentType">
@@ -218,7 +200,7 @@
         <ReturnType>Microsoft.Office.Core.MsoSegmentType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した節点に関連するセグメントが直線または曲線であるかを示す値を取得します。 指定したノードが曲線セグメントのコントロール ポイントの場合は、このプロパティは<b>msoSegmentCurve</b>を返します。</summary>
+        <summary>指定した節点に関連するセグメントが直線または曲線であるかを示す値を取得します。 If the specified node is a control point for a curved segment, this property returns <b>msoSegmentCurve</b>.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

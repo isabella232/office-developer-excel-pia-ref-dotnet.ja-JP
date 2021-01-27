@@ -1,13 +1,5 @@
 <Type Name="PivotItemList" FullName="Microsoft.Office.Interop.Excel.PivotItemList">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="262aa442811c81a69cf1d71e4b2a4d52c05f86c0" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20585163" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotItemList : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="262aa442811c81a69cf1d71e4b2a4d52c05f86c0" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010802" /></Metadata><TypeSignature Language="C#" Value="public interface PivotItemList : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotItemList implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotItemList" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotItemList&#xA;Implements IEnumerable" />
@@ -33,13 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>すべてのコレクション、<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />指定されたピボット テーブル内のオブジェクト。 各 <b>PivotItem</b> は、ピボットテーブル フィールド内のアイテムを表します。</summary>
-    <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" />または<see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /><b>PivotItemList</b>コレクションを取得するオブジェクトです。</para>
-      <para>
-        <b>PivotItemList</b>コレクションを取得したらを使って、 <see cref="M:Microsoft.Office.Interop.Excel.PivotItemList.Item(System.Object)" /> 、特定の<b>PivotItem</b>リストを識別する方法。</para>
-      <para></para>
-    </remarks>
+    <summary>指定されたピボットテーブル <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> 内のすべてのオブジェクトのコレクションです。 各 <b>PivotItem</b> は、ピボットテーブル フィールド内のアイテムを表します。</summary>
+    <remarks><para>オブジェクトの <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" /> プロパティ <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" /> を使用して <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> <b>PivotItemList コレクションを取得</b> します。</para>
+      <para><b>PivotItemList コレクション</b>が返された後、このメソッドを使用して特定の <see cref="M:Microsoft.Office.Interop.Excel.PivotItemList.Item(System.Object)" /> <b>PivotItem リストを識別</b>できます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,7 +89,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 読み取り専用。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,13 +145,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 読み取り専用 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -220,14 +206,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>値は、オブジェクトの名前は、<see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Name" />と<see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Value" />のプロパティです。 オンライン分析処理 (OLAP) データ ソースの値の値に、<see cref="P:Microsoft.Office.Interop.Excel._OLEObject.SourceName" />プロパティ。 他のデータ ソースの値の値に、<see cref="P:Microsoft.Office.Interop.Excel._Application.Caption" />プロパティ。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>オブジェクトのテキスト名は、プロパティの値 <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Name" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Value" /> です。 OLAP (Online Analytical Processing) データ ソースの場合、値はプロパティの値と同 <see cref="P:Microsoft.Office.Interop.Excel._OLEObject.SourceName" /> じになります。 その他のデータ ソースの場合、値はプロパティの値と同 <see cref="P:Microsoft.Office.Interop.Excel._Application.Caption" /> じになります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -253,7 +236,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="ShapeNodes" FullName="Microsoft.Office.Interop.Excel.ShapeNodes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="fcefaa651f73c2e96e8b51711d14e2e3ee8df786" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578100" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ShapeNodes : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fcefaa651f73c2e96e8b51711d14e2e3ee8df786" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010326" /></Metadata><TypeSignature Language="C#" Value="public interface ShapeNodes : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ShapeNodes implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ShapeNodes" />
   <TypeSignature Language="VB.NET" Value="Public Interface ShapeNodes&#xA;Implements _IMsoDispObj, IEnumerable" />
@@ -33,15 +25,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>すべてのコレクション、<see cref="T:Microsoft.Office.Interop.Excel.ShapeNode" />が指定されたフリー フォームのオブジェクトです。</summary>
-    <remarks>
-      <para>各 <b>ShapeNode</b> オブジェクトは、フリーフォームのセグメント間の節点、またはフリーフォームの曲線セグメントのコントロール ポイントを表します。 作成するフリー フォームを手動でまたはを使用して、<see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" />と<see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" />の方法です。</para>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Nodes" /> 、 <b>ShapeNodes</b>コレクションを返すプロパティです。</para>
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> 、新しいノードを作成し、 <b>ShapeNodes</b>コレクションに追加する方法です。</para>
-      <para>
-        <b>ノード</b>を使用する (<paramref name="index" />)、<paramref name="index" />は、ノードのインデックス番号で、単一の<b>ShapeNode</b>オブジェクトを取得します。</para>
-      <para></para>
-    </remarks>
+    <summary>指定されたフリーフォーム <see cref="T:Microsoft.Office.Interop.Excel.ShapeNode" /> 内のすべてのオブジェクトのコレクションです。</summary>
+    <remarks><para>各 <b>ShapeNode</b> オブジェクトは、フリーフォームのセグメント間の節点、またはフリーフォームの曲線の部分のコントロール ポイントを表します。 フリーフォームは、手動で作成するか、メソッド <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> を使用して <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> 作成できます。</para>
+      <para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.Shape.Nodes" /> を使用して <b>ShapeNodes コレクションを取得</b> します。</para>
+      <para>新しい <see cref="M:Microsoft.Office.Interop.Excel.ShapeNodes.Insert(System.Int32,Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" /> ノードを作成し <b>、ShapeNodes コレクションに追加するには、このメソッドを使用</b> します。</para>
+      <para>ノード<b></b>( ) <paramref name="index" /> ノード <paramref name="index" /> のインデックス番号を使用して、1 つの<b>ShapeNode オブジェクトを取得</b>します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -70,7 +59,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 読み取り専用。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,13 +118,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -161,8 +147,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>整数</b>が必要です。</param>
+        <param name="Index">整数型 (<b>Integer</b>) の値を使用します。</param>
         <summary>オブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -229,18 +214,15 @@
         <Parameter Name="Y3" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>整数</b>が必要です。 新しいノードを挿入する位置の後にある図形ノードの個数を指定します。</param>
-        <param name="SegmentType">必要な<see cref="T:Microsoft.Office.Core.MsoSegmentType" />。 線分の種類。</param>
-        <param name="EditingType">必要な<see cref="T:Microsoft.Office.Core.MsoEditingType" />。 編集タイプを指定します。</param>
-        <param name="X1">
-          <b>1 つ</b>が必要です。 場合、 <paramref name="EditingType" /><b>msoEditingAuto</b>は、新しいセグメントのこの引数は、新しいセグメントの終点をドキュメントの左上隅からのポイント単位で、水平方向の距離を指定します。 場合、 <paramref name="EditingType" /> 、新しいノードの<b>msoEditingCorner</b>は、この引数は、新しいセグメントの最初のコントロール ポイントをドキュメントの左上隅からのポイント単位での水平距離を指定します。</param>
-        <param name="Y1">
-          <b>1 つ</b>が必要です。 場合、 <paramref name="EditingType" /><b>msoEditingAuto</b>は、新しいセグメントのこの引数は、新しいセグメントの終点をドキュメントの左上隅からのポイント単位で垂直方向の距離を指定します。 場合、 <paramref name="EditingType" /> 、新しいノードの<b>msoEditingCorner</b>は、この引数は、新しいセグメントの最初のコントロール ポイントをドキュメントの左上隅からのポイント単位で垂直方向の距離を指定します。</param>
-        <param name="X2">省略可能な<b>1 つ</b>です。 場合、 <paramref name="EditingType" /><b>msoEditingCorner</b>で新しいセグメントは、この引数は、新しいセグメントの 2 番目の制御点をドキュメントの左上隅からのポイント単位での水平距離を指定します。 場合、<paramref name="EditingType" />の新しいセグメントが<b>msoEditingAuto</b>で、この引数に値を指定しません。</param>
-        <param name="Y2">省略可能な<b>1 つ</b>です。 場合、 <paramref name="EditingType" /><b>msoEditingCorner</b>で新しいセグメントは、この引数は、新しいセグメントの 2 番目の制御点をドキュメントの左上隅からのポイント単位で垂直方向の距離を指定します。 場合、<paramref name="EditingType" />の新しいセグメントが<b>msoEditingAuto</b>で、この引数に値を指定しません。</param>
-        <param name="X3">省略可能な<b>1 つ</b>です。 場合、 <paramref name="EditingType" /><b>msoEditingCorner</b>で新しいセグメントは、この引数は、新しいセグメントの終点をドキュメントの左上隅からのポイント単位での水平距離を指定します。 場合、<paramref name="EditingType" />の新しいセグメントが<b>msoEditingAuto</b>で、この引数に値を指定しません。</param>
-        <param name="Y3">省略可能な<b>1 つ</b>です。 場合、 <paramref name="EditingType" /><b>msoEditingCorner</b>で新しいセグメントは、この引数は、新しいセグメントの終点をドキュメントの左上隅からのポイント単位で垂直方向の距離を指定します。 場合、<paramref name="EditingType" />の新しいセグメントが<b>msoEditingAuto</b>で、この引数に値を指定しません。</param>
+        <param name="Index">整数型 (<b>Integer</b>) の値を使用します。 新しいノードを挿入する位置の後にある図形ノードの個数を指定します。</param>
+        <param name="SegmentType">必須 <see cref="T:Microsoft.Office.Core.MsoSegmentType" /> 。 線分の種類。</param>
+        <param name="EditingType">必須 <see cref="T:Microsoft.Office.Core.MsoEditingType" /> 。 編集タイプを指定します。</param>
+        <param name="X1">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 新しいセグメントの引数 <paramref name="EditingType" /> が <b>msoEditingAuto</b>の場合、文書の左上隅から新しいセグメントの端点までの水平距離をポイント単位で指定します。 新しい節点の位置が <paramref name="EditingType" /> <b>msoEditingCorner</b>の場合、この引数は、文書の左上隅から新しいセグメントの最初のコントロール ポイントまでの水平距離をポイント単位で指定します。</param>
+        <param name="Y1">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 新しいセグメントの端点が <paramref name="EditingType" /> <b>msoEditingAuto</b>の場合、この引数は、文書の左上隅から新しいセグメントの端点までの垂直方向の距離をポイント単位で指定します。 新しい節点の位置が <paramref name="EditingType" /> <b>msoEditingCorner</b>の場合、この引数は、文書の左上隅から新しいセグメントの最初のコントロール ポイントまでの垂直距離をポイント単位で指定します。</param>
+        <param name="X2">オプション <b>の 1 つ です</b>。 新しいセグメントの引数 <paramref name="EditingType" /> が <b>msoEditingCorner</b>の場合、文書の左上隅から新しいセグメントの 2 番目のコントロール ポイントまでの水平距離をポイント単位で指定します。 新しい <paramref name="EditingType" /> セグメントの引数が <b>msoEditingAuto</b>の場合は、この引数に値を指定しない必要があります。</param>
+        <param name="Y2">オプション <b>の 1 つ です</b>。 新しいセグメントの長さが <paramref name="EditingType" /> <b>msoEditingCorner</b>の場合、この引数は、文書の左上隅から新しいセグメントの 2 番目のコントロール ポイントまでの垂直距離をポイント単位で指定します。 新しい <paramref name="EditingType" /> セグメントの引数が <b>msoEditingAuto</b>の場合は、この引数に値を指定しない必要があります。</param>
+        <param name="X3">オプション <b>の 1 つ です</b>。 新しいセグメントの引数 <paramref name="EditingType" /> が <b>msoEditingCorner</b>の場合、文書の左上隅から新しいセグメントの端点までの水平距離をポイント単位で指定します。 新しい <paramref name="EditingType" /> セグメントの引数が <b>msoEditingAuto</b>の場合は、この引数に値を指定しない必要があります。</param>
+        <param name="Y3">オプション <b>の 1 つ です</b>。 新しいセグメントの引数 <paramref name="EditingType" /> が <b>msoEditingCorner</b>の場合、この引数は、文書の左上隅から新しいセグメントの端点までの垂直距離をポイント単位で指定します。 新しい <paramref name="EditingType" /> セグメントの引数が <b>msoEditingAuto</b>の場合は、この引数に値を指定しない必要があります。</param>
         <summary>フリー フォーム図形にノードを挿入します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -268,8 +250,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -298,7 +279,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -327,14 +308,11 @@
         <Parameter Name="EditingType" Type="Microsoft.Office.Core.MsoEditingType" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>整数</b>が必要です。 編集タイプを設定する節点を指定します。</param>
-        <param name="EditingType">必要な<see cref="T:Microsoft.Office.Core.MsoEditingType" />。 頂点の編集プロパティを指定します。</param>
+        <param name="Index">整数型 (<b>Integer</b>) の値を使用します。 編集タイプを設定する節点を指定します。</param>
+        <param name="EditingType">必須 <see cref="T:Microsoft.Office.Core.MsoEditingType" /> 。 頂点の編集対象のプロパティを指定します。</param>
         <summary>指定された節点の編集タイプを設定します。</summary>
-        <remarks>
-          <para>節点が曲線セグメントのコントロール ポイントの場合、このメソッドは、2 つのセグメントを結合する節点に隣接する節点の編集タイプを設定します。 編集タイプによっては、このメソッドは隣接する節点の位置に影響を与える場合があります。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>節点が曲線セグメントのコントロール ポイントの場合、このメソッドは、2 つのセグメントを結合する節点に隣接する節点の編集タイプを設定します。 設定した編集の種類によって、隣接する節点の位置に影響することに注意してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetPosition">
@@ -362,17 +340,12 @@
         <Parameter Name="Y1" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>整数</b>が必要です。 位置を設定する節点を指定します。</param>
-        <param name="X1">
-          <b>1 つ</b>が必要です。 文書の左上隅を基準にして、新しい節点の位置をポイント単位で指定します。</param>
-        <param name="Y1">
-          <b>1 つ</b>が必要です。 文書の左上隅を基準にして、新しい節点の位置をポイント単位で指定します。</param>
+        <param name="Index">整数型 (<b>Integer</b>) の値を使用します。 位置を設定する節点を指定します。</param>
+        <param name="X1">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の左上隅を基準にして、新しい節点の位置をポイント単位で指定します。</param>
+        <param name="Y1">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の左上隅を基準にして、新しい節点の位置をポイント単位で指定します。</param>
         <summary>指定したノードの場所を設定します。</summary>
-        <remarks>
-          <para>、ノードの編集タイプによってはこの方法に影響を与えます隣接する節点の位置に注意してください。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>、ノードの編集タイプによってはこの方法に影響を与えます隣接する節点の位置に注意してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetSegmentType">
@@ -399,14 +372,11 @@
         <Parameter Name="SegmentType" Type="Microsoft.Office.Core.MsoSegmentType" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>整数</b>が必要です。 セグメントの種類を設定する節点を指定します。</param>
-        <param name="SegmentType">必要な<see cref="T:Microsoft.Office.Core.MsoSegmentType" />。 セグメントが直線か曲線かを指定します。 <b>MsoSegmentType</b>定数のいずれか:<b>MsoSegmentType</b><b>msoSegmentCurve</b><b>msoSegmentLine</b></param>
+        <param name="Index">整数型 (<b>Integer</b>) の値を使用します。 セグメントの種類を設定する節点を指定します。</param>
+        <param name="SegmentType">必須 <see cref="T:Microsoft.Office.Core.MsoSegmentType" /> 。 セグメントが直線か曲線かを指定します。 使用できる定数は、次に示す <b>MsoSegmentType</b> 定数です<b>。MsoSegmentType</b><b>msoSegmentCurve</b><b>msoSegmentLine</b></param>
         <summary>指定された節点に続くセグメントの種類を設定します。</summary>
-        <remarks>
-          <para>節点が曲線セグメントのコントロール ポイントである場合、その曲線セグメントの種類を設定します。これによって、隣接する節点が挿入または削除され、節点の総数が変わる場合があります。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>節点が曲線セグメントのコントロール ポイントである場合、その曲線セグメントの種類を設定します。これによって、隣接する節点が挿入または削除され、節点の総数が変わる場合があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

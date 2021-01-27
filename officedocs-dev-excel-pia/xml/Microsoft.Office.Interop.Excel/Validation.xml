@@ -1,13 +1,5 @@
 <Type Name="Validation" FullName="Microsoft.Office.Interop.Excel.Validation">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="64490ccfa07c156fb946aaf6fbcab62bd0310122" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575804" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Validation" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="64490ccfa07c156fb946aaf6fbcab62bd0310122" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009353" /></Metadata><TypeSignature Language="C#" Value="public interface Validation" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Validation" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Validation" />
   <TypeSignature Language="VB.NET" Value="Public Interface Validation" />
@@ -30,11 +22,9 @@
   </Attributes>
   <Docs>
     <summary>ワークシート範囲の入力規則を表します。</summary>
-    <remarks>
-      <para>使用の<see cref="P:Microsoft.Office.Interop.Excel.Range.Validation" /><b>オブジェクト</b>を返すプロパティです。</para>
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />を範囲にデータの入力規則を追加し、新しい<b>検証</b>オブジェクトを作成します。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Validation オブジェクト <see cref="P:Microsoft.Office.Interop.Excel.Range.Validation" /> を取得するには、この <b>プロパティを使用</b> します。</para>
+      <para>このメソッド <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> を使用して、範囲にデータの入力規則を追加し、新しい Validation オブジェクト <b>を作成</b> します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -63,44 +53,42 @@
         <Parameter Name="Formula2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">必要な<see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />。 入力規則の種類を指定します。</param>
-        <param name="AlertStyle">省略可能な<b>オブジェクト</b>です。 検証エラーのスタイルです。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />定数: <b>xlValidAlertInformation</b><b>xlValidAlertStop</b>、 <b>xlValidAlertWarning</b>。</param>
-        <param name="Operator">省略可能な<b>オブジェクト</b>です。 データ入力規則の演算子です。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />定数:<b>で</b>、 <b>xlEqual</b>、 <b>xlGreater</b>、 <b>xlGreaterEqual</b>、 <b>xlLess</b>、 <b>xlLessEqual</b>、 <b>xlNotBetween</b>、 <b>xlNotEqual</b>か。</param>
-        <param name="Formula1">省略可能な<b>オブジェクト</b>です。 データ入力規則での条件式の最初の部分を指定します。</param>
-        <param name="Formula2">省略可能な<b>オブジェクト</b>です。 データの入力規則の 2 番目の部分と、<paramref name="Operator" />は、<b><b>規則での条件</b></b>(それ以外の場合、この引数は無視されます)。</param>
+        <param name="Type">必須 <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" /> 。 入力規則の種類を指定します。</param>
+        <param name="AlertStyle">省略 <b>可能なオブジェクト</b>です。 入力規則でのエラーのスタイルを指定します。 使用できる定数 <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> は<b>、xlValidAlertInformation、xlValidAlertStop、</b><b>または xlValidAlertWarning です</b>。 <b></b></param>
+        <param name="Operator">省略 <b>可能なオブジェクト</b>です。 データ入力規則の演算子を指定します。 使用できる定数 <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> は、xlBetween、xlEqual、xlGreater、xlGreaterEqual、xlLess、xlLessEqual、xlNotBetween、xlNotEqual<b></b>です。 <b></b> <b></b> <b></b> <b></b> <b></b> <b></b> <b></b></param>
+        <param name="Formula1">省略 <b>可能なオブジェクト</b>です。 データ入力規則での条件式の最初の部分を指定します。</param>
+        <param name="Formula2">省略 <b>可能なオブジェクト</b>です。 データ入力規則の 2 番目の部分が <paramref name="Operator" /> <b>xlBetween</b> または <b>xlNotBetween</b> の場合 (それ以外の場合、この引数は無視されます)。</param>
         <summary>指定された範囲に入力規則を追加します。</summary>
-        <remarks>
-          <para>Add メソッドでは、次の表に示すように、入力規則の種類に応じて、さまざまな引数が必要です。</para>
+        <remarks><para>Add メソッドでは、次の表に示すように、検証の種類に応じて異なる引数が必要です。</para>
           <list type="table">
             <item>
               <term>
                 <b>xlValidateCustom</b>
               </term>
               <description>
-                <paramref name="Formula1" />必要です。<paramref name="Formula2" />は無視されます。 <paramref name="Formula1" />データの入力が無効である場合、<b><b>該当</b>データの入力が有効である場合</b>に評価される式を含める必要があります。</description>
+                <paramref name="Formula1" /> は必須です。 <paramref name="Formula2" /> は無視されます。 <paramref name="Formula1" /> データ入力が有効な場合は <b>True</b> に評価され、データ入力が無効な場合は <b>False</b> に評価される式を含む必要があります。</description>
             </item>
             <item>
               <term>
                 <b>xlInputOnly</b>
               </term>
               <description>
-                <paramref name="AlertStyle" />、 <paramref name="Formula1" />、または<paramref name="Formula2" />を使用します。</description>
+                <paramref name="AlertStyle" />、 <paramref name="Formula1" /> または <paramref name="Formula2" /> 使用されます。</description>
             </item>
             <item>
               <term>
                 <b>xlValidateList</b>
               </term>
               <description>
-                <paramref name="Formula1" />必要です。<paramref name="Formula2" />は無視されます。 <paramref name="Formula1" />値のコンマ区切りの一覧またはこの一覧へのシート参照のいずれかを含める必要があります。</description>
+                <paramref name="Formula1" /> は必須です。 <paramref name="Formula2" /> は無視されます。 <paramref name="Formula1" /> 値のコンマ区切りリストまたはこのリストへのワークシート参照を含む必要があります。</description>
             </item>
             <item>
               <term>
                 <b>xlValidateWholeNumber</b>、<b>xlValidateDate</b>、<b>xlValidateDecimal</b>、<b>xlValidateTextLength</b>、または <b>xlValidateTime</b></term>
-              <description>いずれかの方法のいずれかの<paramref name="Formula1" />または<paramref name="Formula2" />を指定する必要があります、または両方の月を指定します。</description>
+              <description>どちらか一方 <paramref name="Formula1" /> または <paramref name="Formula2" /> 指定する必要があります。または、両方を指定できます。</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AlertStyle">
@@ -126,12 +114,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>検証エラーのスタイルを返します。 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />。</summary>
+        <summary>検証通知のスタイルを返します。 読み取り専用 <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />の範囲のエラーのスタイルを設定します。 範囲には、データの入力規則が割り当てられている場合を使用して、<see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" />エラーのスタイルを変更するメソッドです。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>範囲の <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> 通知のスタイルを設定するには、このメソッドを使用します。 範囲に既にデータの入力規則がある場合は、このメソッドを使用 <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> して通知のスタイルを変更します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -157,7 +143,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -185,13 +171,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 読み取り専用 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -245,7 +228,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>データ検証エラー メッセージを設定または返します。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <summary>データの入力規則のエラー メッセージを返すか設定します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -276,7 +259,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>データ検証エラー ダイアログ ボックスのタイトルを設定または返します。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <summary>データ検証エラー ダイアログ ボックスのタイトルを設定または返します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -304,7 +287,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値または条件付き書式または入力規則に関連付けられた式を返します。 定数値、文字列値、セル参照、または数式を指定できます。 読み取り専用 <b>文字列</b> です。</summary>
+        <summary>条件付き書式または入力規則に使用されている値またはオブジェクト式を返します。定数値、文字列値、セル参照、または数式を使用できます。値の取得のみ可能です。文字列型 (<b>String</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -332,12 +315,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値または条件付き書式または入力規則の 2 番目の部分に関連付けられた式を返します。 読み取り専用 <b>文字列</b> です。</summary>
+        <summary>条件付き書式またはデータ入力規則の 2 番目の部分に関連付けられている値または式を返します。 読み取りのみ可能な <b>String</b> 値です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>のみこのプロパティが使用されるデータの入力規則の条件付き書式を設定すると<see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" />プロパティには、<b><b>規則での条件</b></b>です。 定数値、文字列値、セル参照、または数式を指定できます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティは、データの入力規則の条件付き書式プロパティが <see cref="P:Microsoft.Office.Interop.Excel.Validation.Operator" /> <b>xlBetween</b> または <b>xlNotBetween の場合にのみ使用されます</b>。 定数値、文字列値、セル参照、または数式を指定できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IgnoreBlank">
@@ -366,14 +347,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、入力規則において特定のセル範囲への空白値の入力を許可します。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <summary><b>True の</b> 場合は空白の値が範囲データの入力規則で許可されます。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>IgnoreBlank</b>プロパティが<b>True</b>の場合は、セルのデータと見なされます有効な場合はいずれかの方法で参照されているセルまたはセルが空白の場合、<see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" />または<see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" />プロパティが空白です。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>IgnoreBlank</b>プロパティが<b>True</b>の場合、セルが空白の場合、またはプロパティによって参照されるセルが空白の場合、セル データは <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MinNumber" /> 有効と <see cref="P:Microsoft.Office.Interop.Excel.ListDataFormat.MaxNumber" /> 見なされます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IMEMode">
@@ -402,12 +379,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>日本語の入力規則の説明を設定または返します。 いずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" />定数。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
+        <summary>日本語の入力規則の説明を設定または返します。 使用できる定数は、 <see cref="T:Microsoft.Office.Interop.Excel.XlIMEMode" /> 次に示す定数の 1 つです。 読み取り/書き込みの <b>整数</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティを設定できるのは、言語の設定に日本語が選択またはセットアップされている場合だけです。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティを設定できるのは、言語の設定に日本語が選択またはセットアップされている場合だけです。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InCellDropdown">
@@ -436,14 +411,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、入力規則で可能な値を含むドロップダウン リストを表示します。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <summary><b>True</b> の 場合は、データの入力規則には、受け入れ可能な値を含むドロップダウン リストが表示されます。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>入力規則の種類が<b>xlValidateList</b>でない場合、このプロパティは無視されます。</para>
-          <para>使用、<paramref name="Minimum" />の引数、<see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" />または<see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.Validation" />が有効なデータが含まれる範囲を指定するオブジェクト。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>入力規則の種類が <b>xlValidateList</b> ではない場合、このプロパティは無視されます。</para>
+          <para>オブジェクトの <paramref name="Minimum" /> or メソッド <see cref="M:Microsoft.Office.Interop.Excel.Validation.Add(Microsoft.Office.Interop.Excel.XlDVType,System.Object,System.Object,System.Object,System.Object)" /> の引数 <see cref="M:Microsoft.Office.Interop.Excel.Validation.Modify(System.Object,System.Object,System.Object,System.Object,System.Object)" /> を使用して <see cref="T:Microsoft.Office.Interop.Excel.Validation" /> 、有効なデータを含む範囲を指定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InputMessage">
@@ -472,7 +444,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>データ検証入力メッセージを設定または返します。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <summary>データの入力規則の入力メッセージを返すか設定します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -503,7 +475,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>データ検証入力ダイアログ ボックスのタイトルを設定または返します。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <summary>データ検証入力ダイアログ ボックスのタイトルを設定または返します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -534,46 +506,43 @@
         <Parameter Name="Formula2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">必要な<see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />。 入力規則の種類を指定します。</param>
-        <param name="AlertStyle">省略可能な<see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" />。 検証エラーのスタイルです。</param>
-        <param name="Operator">省略可能な<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" />。 データ入力規則の演算子です。</param>
-        <param name="Formula1">省略可能な<b>オブジェクト</b>です。 データ入力規則での条件式の最初の部分を指定します。</param>
-        <param name="Formula2">省略可能な<b>オブジェクト</b>です。 データの入力規則の 2 番目の部分と、<paramref name="Operator" />は、<b><b>規則での条件</b></b>(それ以外の場合、この引数は無視されます)。</param>
+        <param name="Type">必須 <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" /> 。 入力規則の種類を指定します。</param>
+        <param name="AlertStyle">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlDVAlertStyle" /> 可能です。 入力規則でのエラーのスタイルを指定します。</param>
+        <param name="Operator">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionOperator" /> 可能です。 データ入力規則の演算子を指定します。</param>
+        <param name="Formula1">省略 <b>可能なオブジェクト</b>です。 データ入力規則での条件式の最初の部分を指定します。</param>
+        <param name="Formula2">省略 <b>可能なオブジェクト</b>です。 データ入力規則の 2 番目の部分が <paramref name="Operator" /> <b>xlBetween</b> または <b>xlNotBetween</b> の場合 (それ以外の場合、この引数は無視されます)。</param>
         <summary>セル範囲のデータの入力規則を変更します。</summary>
-        <remarks>
-          <para>
-            <b>Modify</b>メソッドでは、次の表に示すように、入力規則の種類に応じて、さまざまな引数が必要です。</para>
+        <remarks><para><b>Modify</b> メソッドに必要な引数は、入力規則の種類によって異なります。入力規則の種類を表す定数と必要な引数は次のとおりです。</para>
           <list type="table">
             <item>
               <term>
                 <b>xlInputOnly</b>
               </term>
               <description>
-                <paramref name="AlertStyle" />、 <paramref name="Formula1" />、および<paramref name="Formula2" />は使用されません。</description>
+                <paramref name="AlertStyle" />、 <paramref name="Formula1" /> および <paramref name="Formula2" /> 使用されません。</description>
             </item>
             <item>
               <term>
                 <b>xlValidateCustom</b>
               </term>
               <description>
-                <paramref name="Formula1" />必要です。<paramref name="Formula2" />は無視されます。 <paramref name="Formula1" />データの入力が無効である場合、<b><b>該当</b>データの入力が有効である場合</b>に評価される式を含める必要があります。</description>
+                <paramref name="Formula1" /> は必須です。 <paramref name="Formula2" /> は無視されます。 <paramref name="Formula1" /> データ入力が有効な場合は <b>True</b> に評価され、データ入力が無効な場合は <b>False</b> に評価される式を含む必要があります。</description>
             </item>
             <item>
               <term>
                 <b>xlValidateList</b>
               </term>
               <description>
-                <paramref name="Formula1" />必要です。<paramref name="Formula2" />は無視されます。 <paramref name="Formula1" />値のコンマ区切りのリストまたはリストへのシート参照のいずれかを含める必要があります。</description>
+                <paramref name="Formula1" /> は必須です。 <paramref name="Formula2" /> は無視されます。 <paramref name="Formula1" /> 値のコンマ区切りリストまたはリストへのワークシート参照を含む必要があります。</description>
             </item>
             <item>
               <term>
                 <b>xlValidateDate</b> 、 <b>xlValidateDecimal</b> 、 <b>xlValidateTextLength</b> 、 <b>xlValidateTime</b> 、または <b>xlValidateWholeNumber</b></term>
               <description>
-                <paramref name="Formula1" />または<paramref name="Formula2" />、両方を指定する必要がありますか。</description>
+                <paramref name="Formula1" /> または <paramref name="Formula2" /> 、両方を指定する必要があります。</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Operator">
@@ -599,7 +568,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>条件付き書式または入力規則の演算子を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <summary>条件付き書式またはデータの入力規則の演算子を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -627,7 +596,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -658,8 +627,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、ユーザーが無効なデータを入力すると、入力規則でのエラー メッセージが必ず表示されます。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <summary>ユーザーが無効なデータを入力するたびにデータの入力規則のエラー メッセージが表示される場合は <b>True</b>。 取得/設定が可能な <b>Boolean</b> 値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -690,8 +658,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、ユーザーが入力規則のセル範囲を選択すると、入力規則での入力メッセージが必ず表示されます。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <summary><b>True</b> の 場合は、ユーザーがデータの入力規則の範囲内のセルを選択するたびに、データの入力規則の入力メッセージが表示されます。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -719,7 +686,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>範囲の入力規則を取得します。 読み取り専用の<b>整数</b>の定数のいずれかを<see cref="T:Microsoft.Office.Interop.Excel.XlDVType" />。</summary>
+        <summary>範囲のデータ型検証を返します。 の <b>定数のいずれかをすることができます</b> 読み取り専用の整数 です <see cref="T:Microsoft.Office.Interop.Excel.XlDVType" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -747,8 +714,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>の場合 (つまり、範囲には、有効なデータが含まれています)、すべての入力規則の条件が満たされた場合です。 読み取り専用の <b>ブール値</b> です。</summary>
+        <summary><b>True</b> の 場合は、すべての入力規則の条件が満たされます (つまり、範囲に有効なデータが含まれている場合)。 読み取り専用の <b>Boolean</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

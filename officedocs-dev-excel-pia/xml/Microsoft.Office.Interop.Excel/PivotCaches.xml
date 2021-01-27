@@ -1,13 +1,5 @@
 <Type Name="PivotCaches" FullName="Microsoft.Office.Interop.Excel.PivotCaches">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="a96fa5538045c8441266412dcd431b316fe7edd6" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20586878" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotCaches : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a96fa5538045c8441266412dcd431b316fe7edd6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010928" /></Metadata><TypeSignature Language="C#" Value="public interface PivotCaches : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotCaches implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotCaches" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotCaches&#xA;Implements IEnumerable" />
@@ -34,11 +26,9 @@
   </Attributes>
   <Docs>
     <summary>ブックにあるピボットテーブル レポートからのキャッシュ メモリのコレクションを表します。</summary>
-    <remarks>
-      <para>各メモリ キャッシュは、<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />オブジェクトです。</para>
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.PivotCaches" /><b>PivotCaches</b>コレクションを返します。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>各メモリ キャッシュはオブジェクトによって表 <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> されます。</para>
+      <para><see cref="M:Microsoft.Office.Interop.Excel._Workbook.PivotCaches" />PivotCaches コレクションを取得するには<b>、このメソッドを使用</b>します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -102,14 +92,12 @@
         <Parameter Name="SourceData" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SourceType">必要な<see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" />。 ピボット テーブル キャッシュのデータのソースです。 <b>XlPivotTableSourceType</b>定数は、次のいずれか:<b>xlConsolidation</b><b>xlDatabase</b><b>xlExternal</b><b>xlPivotTable</b><b>xlScenario</b></param>
-        <param name="SourceData">省略可能な<b>オブジェクト</b>です。 新しいピボットテーブル キャッシュのデータを指定します。 この引数は、必要な場合<paramref name="SourceType" /><b>xlExternal</b>はありません。 ことができます、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクト、セル範囲の配列、または既存のピボット テーブル レポートの名前を表す文字列定数です。 外部データベースの場合、これは、2 つの要素の配列です。 最初の要素は、データのプロバイダーを指定する接続文字列です。 2 番目の要素は、データを取得するために使用する SQL クエリ文字列です。 この引数を指定するかどうかでも指定してください<paramref name="SourceType" />。</param>
-        <summary>新しいピボット テーブル キャッシュを追加する<see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" />コレクションです。</summary>
+        <param name="SourceType">必須 <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> 。 ピボットテーブル キャッシュ データのソース。 使用できる定数は<b>、XlPivotTableSourceType</b>クラスの定数である<b>xlConsolidation</b><b>xlDatabase</b><b>xlExternal</b><b>xlPivotTable</b><b>xlScenario です</b>。</param>
+        <param name="SourceData">省略 <b>可能なオブジェクト</b>です。 新しいピボットテーブル キャッシュのデータを指定します。 <paramref name="SourceType" />xlExternal ではない場合、この<b>引数は必須です</b>。 オブジェクト、範囲の配列、または既存のピボットテーブル レポートの名前を表すテキスト <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 定数を指定できます。 外部データベースの場合、これは 2 要素の配列です。 最初の要素は、データのプロバイダーを指定する接続文字列です。 2 番目の要素はデータの取得に使用する SQL のクエリ文字列です。 この引数を指定する場合は、指定する必要があります <paramref name="SourceType" /> 。</param>
+        <summary>新しいピボットテーブル キャッシュをコレクションに追加 <see cref="T:Microsoft.Office.Interop.Excel.PivotCaches" /> します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>ピボット テーブル キャッシュが参照されない場合、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />オブジェクトの場合、ブックが保存される前に、ピボット テーブルのキャッシュが自動的に削除します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>ピボットテーブル キャッシュがオブジェクトによって参照されていない場合、ピボットテーブル キャッシュはブックが保存される前に自動的 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> に削除されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -135,7 +123,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -192,20 +180,15 @@
         <Parameter Name="Version" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SourceType">必要な<paramref name="SourceType" />、次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" />定数: <b>xlConsolidation</b><b>xlDatabase</b>、 <b>xlExternal</b>。</param>
-        <param name="SourceData">省略可能な<b>オブジェクト</b>の新しいデータ<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />キャッシュします。</param>
-        <param name="Version">省略可能な<b>オブジェクト</b>のバージョンの<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。  バージョンには、いずれかを指定できます、<see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" />定数。</param>
-        <summary>新しい<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />。</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />
-        </returns>
-        <remarks>
-          <para>次の 2 つ<see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" />このメソッドを使用する場合、定数はサポートされていません: <b>xlPivotTable</b>と<b>xlScenario</b>。 これら 2 つの定数のいずれかを指定した場合は、実行時エラーが返されます。</para>
-          <para>
-            <paramref name="SourceData" />場合は、引数が必要な<paramref name="SourceType" />xlExternal はありません。 できます、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクト (場合<paramref name="SourceType" />xlConsolidation または xlDatabase) または Excel<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />オブジェクト (と<paramref name="SourceType" />が xlExternal)。</para>
-          <para>バージョンを指定しない場合、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> xlPivotTableVersion12 になります。  <b>XlPivotTableVersionCurrent</b>定数の使用は許可されていません、指定する場合は、実行時エラーを返します。</para>
-          <para></para>
-        </remarks>
+        <param name="SourceType">必須 <paramref name="SourceType" /> の定数は <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> <b>、xlConsolidation</b> <b>、xlDatabase、または</b> <b>xlExternal です</b>。</param>
+        <param name="SourceData">オプション <b>オブジェクト</b> 新しいキャッシュの <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> データ。</param>
+        <param name="Version">省略 <b>可能な</b> オブジェクトのバージョン <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。  バージョンには、定数のいずれかを <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" /> 指定できます。</param>
+        <summary>新しいオブジェクトを作成します <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> 。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /></returns>
+        <remarks><para>このメソッドを使用する場合、次の 2 つの定数はサポートされていません <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> : <b>xlPivotTable</b> と <b>xlScenario</b>。 これら 2 つの定数のどちらかを指定すると、実行時エラーが返されます。</para>
+          <para><paramref name="SourceData" />引数が <paramref name="SourceType" /> xlExternal ではない場合は必須です。 オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Range" /> <paramref name="SourceType" /> (xlConsolidation または xlDatabase のいずれか) または Excel オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> <paramref name="SourceType" /> (xlExternal の場合) を指定できます。</para>
+          <para>指定しない場合、バージョンは <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> xlPivotTableVersion12 です。  <b>xlPivotTableVersionCurrent</b> 定数の使用は許可されておらず、指定すると実行時エラーが返されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -231,14 +214,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -296,8 +276,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 オブジェクトのインデックス番号を指定します。</param>
+        <param name="Index">Required <b>Object</b>. オブジェクトのインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

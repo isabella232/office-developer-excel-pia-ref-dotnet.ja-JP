@@ -1,13 +1,5 @@
 <Type Name="PivotAxis" FullName="Microsoft.Office.Interop.Excel.PivotAxis">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="08bf5bf7a2d5eda201ce9d51f0e389a930532f6b" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20586815" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotAxis" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="08bf5bf7a2d5eda201ce9d51f0e389a930532f6b" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010963" /></Metadata><TypeSignature Language="C#" Value="public interface PivotAxis" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotAxis" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotAxis" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotAxis" />
@@ -56,14 +48,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Office Excel アプリケーションを表すオブジェクト。 オブジェクト修飾子を使用する場合、このプロパティは、指定したオブジェクトの作成元を表す <b>Application</b> オブジェクトを返します。 読み取り専用です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
-        </value>
-        <remarks>
-          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクト用のアプリケーションを取得できます。</para>
-          <para></para>
-        </remarks>
+        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Excel アプリケーションのオブジェクトをMicrosoft Office <see cref="T:Microsoft.Office.Interop.Excel._Application" /> します。 オブジェクト修飾子を指定した場合、指定したオブジェクトを作成した <b>Application</b> オブジェクトを取得します。 値の取得のみ可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
+        <remarks><para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、オブジェクトのアプリケーションを取得できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -89,14 +77,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトを作成したアプリケーションを 32 ビットの整数値として取得します。値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当  <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 値の取得のみ可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Microsoft Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。<b>Creator</b> プロパティは、Macintosh 版 Excel でのみ使用できます。Macintosh では各アプリケーションに 4 文字のシグネチャが定められています。たとえば、Excel のシグネチャは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -122,10 +106,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された親を返します<see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" />オブジェクトです。 読み取り専用。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトの親オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" /> します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -152,10 +134,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.PivotLines" />に指定した接続されている<see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" />オブジェクトです。 読み取り専用です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.PivotLines" />
-        </value>
+        <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.PivotLines" /> に添付されたオブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" /> します。 値の取得のみ可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.PivotLines" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

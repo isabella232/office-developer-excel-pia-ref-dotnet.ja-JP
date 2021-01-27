@@ -1,13 +1,5 @@
 <Type Name="UserAccessList" FullName="Microsoft.Office.Interop.Excel.UserAccessList">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="71430eea5453407e668e836ef8751c08d9fe2160" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20577617" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface UserAccessList : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="71430eea5453407e668e836ef8751c08d9fe2160" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009402" /></Metadata><TypeSignature Language="C#" Value="public interface UserAccessList : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UserAccessList implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.UserAccessList" />
   <TypeSignature Language="VB.NET" Value="Public Interface UserAccessList&#xA;Implements IEnumerable" />
@@ -33,13 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Excel.UserAccess" />に対するユーザーのアクセス権を表すオブジェクトの範囲を保護します。</summary>
-    <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.AllowEditRange.Users" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.AllowEditRange" /><b>UserAccessList</b>コレクションを取得するオブジェクトです。</para>
-      <para>
-        <b>UserAccessList</b>コレクションが返されると使用することができます、<see cref="P:Microsoft.Office.Interop.Excel.UserAccessList.Count" />保護された範囲へのアクセス権を持っているユーザーの数を決定するプロパティです。</para>
-      <para></para>
-    </remarks>
+    <summary>保護された範囲 <see cref="T:Microsoft.Office.Interop.Excel.UserAccess" /> のユーザー アクセスを表すオブジェクトのコレクション。</summary>
+    <remarks><para><see cref="P:Microsoft.Office.Interop.Excel.AllowEditRange.Users" /> <see cref="T:Microsoft.Office.Interop.Excel.AllowEditRange" /> UserAccessList コレクションを取得するには、オブジェクト<b>のプロパティを使用</b>します。</para>
+      <para><b>UserAccessList コレクション</b>を取得すると、このプロパティを使用して、保護された範囲にアクセスできるユーザー <see cref="P:Microsoft.Office.Interop.Excel.UserAccessList.Count" /> の数を確認できます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -101,11 +90,9 @@
         <Parameter Name="AllowEdit" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>文字列</b> が必要です。 ユーザー アクセス リストの名前。</param>
-        <param name="AllowEdit">
-          <b>ブール値</b>が必要です。 <b>True</b> の場合、アクセス リスト上のユーザーは、保護されているワークシートの編集可能な範囲を編集することができます。</param>
-        <summary>ユーザー アクセス リストを追加します。 返します、<see cref="T:Microsoft.Office.Interop.Excel.UserAccess" />オブジェクトです。</summary>
+        <param name="Name"><b>文字列</b> が必要です。 ユーザー アクセス リストの名前。</param>
+        <param name="AllowEdit">必須 <b>のブール値 です</b>。 <b>True</b> の場合、アクセス リスト上のユーザーは、保護されているワークシートの編集可能な範囲を編集することができます。</param>
+        <summary>ユーザー アクセス リストを追加します。 オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.UserAccess" /> します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -159,7 +146,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>ワークシート上の保護された範囲へのアクセスに関連付けられているすべてのユーザーを削除します。</summary>
+        <summary>ワークシートの保護された範囲へのアクセスに関連付けられているすべてのユーザーを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,8 +208,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

@@ -1,13 +1,5 @@
 <Type Name="TableStyles" FullName="Microsoft.Office.Interop.Excel.TableStyles">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="70d5a69d0e4e826dda6e82f38beab66614060a9a" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20579598" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TableStyles : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="70d5a69d0e4e826dda6e82f38beab66614060a9a" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009717" /></Metadata><TypeSignature Language="C#" Value="public interface TableStyles : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TableStyles implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TableStyles" />
   <TypeSignature Language="VB.NET" Value="Public Interface TableStyles&#xA;Implements IEnumerable" />
@@ -34,32 +26,30 @@
   </Attributes>
   <Docs>
     <summary>表に適用できるスタイルを表します。</summary>
-    <remarks>
-      <para>表スタイルによって、表またはピボットテーブル全体を書式設定できます。表スタイルは、表全体の書式を設定する既存のオートフォーマット機能に置き換わります。</para>
+    <remarks><para>表スタイルによって、表またはピボットテーブル全体を書式設定できます。表スタイルは、表全体の書式を設定する既存のオートフォーマット機能に置き換わります。</para>
       <para>表スタイルは、次の点でオートフォーマットとは異なります。</para>
-      <para></para>
+      <para> </para>
       <list type="bullet">
         <item>
-          <description>作成し、独自のユーザー設定のテーブル スタイルを再利用できます。
+          <description>独自のカスタム 表スタイルを作成して再使用できます。
 </description>
         </item>
         <item>
           <description>表スタイルはテーマと共に機能します。  </description>
         </item>
         <item>
-          <description>ドキュメントのテーマの配色パターンやフォント パターンを変更すると、組み込みの表スタイルの外観が変更されます。 </description>
+          <description>ドキュメント テーマの配色やフォント パターンを変更すると、組み込みの表スタイルの外観が変更されます。 </description>
         </item>
         <item>
           <description>表スタイルは、オブジェクトが変更されても、ピボットテーブルや表のようなオブジェクトにスタイルを再適用できます。表は、テーマに適用されたスタイルを記憶し、セルが追加、削除、非表示、表示されると適切に再表示します。</description>
         </item>
         <item>
-          <description>表のスタイルには、リボン内のビジュアルなユーザー インターフェイスがあります。
+          <description>表スタイルは、リボンに視覚的なユーザー インターフェイスを持っています。
 </description>
         </item>
       </list>
-      <para></para>
-      <para></para>
-    </remarks>
+      <para> </para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -121,7 +111,7 @@
       </Parameters>
       <Docs>
         <param name="TableStyleName">表スタイルの名前を指定します。</param>
-        <summary>新しい<see cref="T:Microsoft.Office.Interop.Excel.TableStyle" />オブジェクトおよびコレクションに追加します。</summary>
+        <summary>新しいオブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.TableStyle" /> 作成し、コレクションに追加します。</summary>
         <returns>TableStyle</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,14 +139,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Office Excel アプリケーションを表すオブジェクト。 このプロパティが返すオブジェクト修飾子を使用する場合、<see cref="T:Microsoft.Office.Interop.Excel._Application" />を指定したオブジェクトの作成者を表すオブジェクト。 読み取り専用。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
-        <remarks>
-          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクト用のアプリケーションを取得できます。</para>
-          <para></para>
-        </remarks>
+        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Excel アプリケーションのオブジェクトをMicrosoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> します。 オブジェクト修飾子と一緒に使用する場合、このプロパティは指定されたオブジェクトの作成元を表 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> すオブジェクトを返します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、オブジェクトのアプリケーションを取得できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -182,10 +168,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内にあるオブジェクトの数を取得します。値の取得のみ可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>コレクション内にあるオブジェクトの数を取得します。 値の取得のみ可能です。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,14 +196,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトを作成したアプリケーションを 32 ビットの整数値として取得します。値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当  <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 値の取得のみ可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Microsoft Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。<b>Creator</b> プロパティは、Macintosh 版 Excel でのみ使用できます。Macintosh では各アプリケーションに 4 文字のシグネチャが定められています。たとえば、Excel のシグネチャは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -279,9 +259,7 @@
       <Docs>
         <param name="Index">オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Excel.TableStyle" />
-        </returns>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.TableStyle" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -308,10 +286,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

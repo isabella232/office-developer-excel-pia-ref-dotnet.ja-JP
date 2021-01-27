@@ -1,13 +1,5 @@
 <Type Name="PageSetup" FullName="Microsoft.Office.Interop.Excel.PageSetup">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="50c5531a9636ff8479dc8d559960466d2a73af0f" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578954" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PageSetup" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="50c5531a9636ff8479dc8d559960466d2a73af0f" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011124" /></Metadata><TypeSignature Language="C#" Value="public interface PageSetup" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PageSetup" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PageSetup" />
   <TypeSignature Language="VB.NET" Value="Public Interface PageSetup" />
@@ -29,11 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>ページ レイアウトの設定全体を表します。 <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" />オブジェクトがすべてのページ設定属性 (左余白、下余白、用紙サイズ、およびなど) のプロパティとして含まれています。</summary>
-    <remarks>
-      <para>使用、<see cref="T:Microsoft.Office.Interop.Excel.PageSetup" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />または<see cref="T:Microsoft.Office.Interop.Excel.Chart" />を返すオブジェクトの<see cref="T:Microsoft.Office.Interop.Excel.PageSetup" />オブジェクト。</para>
-      <para></para>
-    </remarks>
+    <summary>ページ レイアウトの設定全体を表します。 オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> には、ページ設定のすべての属性 (左余白、下余白、用紙サイズなど) がプロパティとして含まれます。</summary>
+    <remarks><para>オブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> 取得するには、 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> オブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> プロパティを使用 <see cref="T:Microsoft.Office.Interop.Excel.PageSetup" /> します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AlignMarginsHeaderFooter">
@@ -62,10 +52,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>を返す<b>場合は True。</b> excel のページ設定オプションの設定の余白にヘッダーとフッターを配置します。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>Excel で <b>ヘッダーと</b> フッターをページ設定オプションで設定された余白に揃える場合は True を返します。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,7 +111,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>の<b>場合は true</b>ドキュメントの要素は、白黒で印刷する場合は。</summary>
+        <summary>文書の要素が白黒で印刷される場合は <b>True</b> を指定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,12 +142,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または下余白のサイズをポイント単位で設定します。</summary>
+        <summary>下余白のサイズをポイント数で設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>余白は、ポイント単位で返されます。 いずれかの方法を使用して、<see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" />に変換を行う方法です。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>余白は、ポイント単位です。 変換を行 <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> うには、メソッド <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> またはメソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CenterFooter">
@@ -188,7 +174,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>フッターの中央部分を設定または返します。</summary>
+        <summary>フッターの中央の部分を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -216,7 +202,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Graphic</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Graphic" /> 、フッターの中央のセクションの図を表すオブジェクト。 画像についての属性を設定するために使用します。</summary>
+        <summary>フッターの <see cref="T:Microsoft.Office.Interop.Excel.Graphic" /> 中央のセクションの図を表すオブジェクトを返します。 画像についての属性を設定するために使用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -275,7 +261,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Graphic</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Graphic" /> 、ヘッダーの中央のセクションの図を表すオブジェクト。 画像についての属性を設定するために使用します。</summary>
+        <summary>ヘッダーの <see cref="T:Microsoft.Office.Interop.Excel.Graphic" /> 中央のセクションの図を表すオブジェクトを返します。 画像についての属性を設定するために使用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -306,8 +292,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は、シートが水平方向にページの中央に印刷されます。</summary>
+        <summary>印刷時にシートがページ上の横方向の中央位置に配置されている場合は <b>True</b> を指定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -338,8 +323,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は、シートが垂直方向にページの中央に印刷されます。</summary>
+        <summary><b>True</b> の 場合は、印刷時に、シートがページの垂直方向に中央に配置されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -376,12 +360,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlObjectSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフがページに収まるように拡大または縮小する方法を設定または返します。</summary>
+        <summary>グラフをページに合わせて拡大または縮小する方法を設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>(埋め込みグラフに使用できません)、グラフ シートのみにこのプロパティが適用されます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティはグラフ シートにのみ適用されます (埋め込みグラフでは使用できません)。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -407,14 +389,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DifferentFirstPageHeaderFooter">
@@ -443,11 +422,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> に設定すると、先頭ページでは他のページと異なるヘッダーとフッターが使用されます。値の取得および設定が可能です。長整数型 ( <b>Boolean</b> ) の値を使用します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary><b>True の</b> 場合、別のヘッダーやフッターが先頭ページに使用されます。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -477,13 +453,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合画像なし、シートが印刷されます。</summary>
+        <summary>グラフィックスなしでシートが印刷される場合は <b>True</b> を指定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>(ただし、グラフィックスを印刷しない印刷が高速<b>は True</b>にこのプロパティを設定します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティを <b>True</b> に設定すると、グラフィックスを印刷しないため、印刷が高速化されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EvenPage">
@@ -510,9 +483,7 @@
       </ReturnValue>
       <Docs>
         <summary>ブックまたはセクション内の偶数ページで、文字列の配置を取得または設定します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Page" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Page" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -540,9 +511,7 @@
       </ReturnValue>
       <Docs>
         <summary>ブックまたはセクション内の先頭ページで、文字列の配置を取得または設定します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Page" />
-        </value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Page" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -572,7 +541,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、このシートを印刷するときに使用される最初のページ番号を設定します。 場合は、 <b>xlAutomatic</b>を Microsoft Excel では、最初のページ番号を選択します。 デフォルトは、 <b>xlAutomatic</b>です。</summary>
+        <summary>このシートの印刷時に使用される最初のページ番号を返すか設定します。 <b>xlAutomatic の場合</b>、最初のページ番号が選択されます。 既定値は <b>xlAutomatic</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -603,13 +572,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、ページの高さが印刷時に調整されるワークシートの数を設定します。 ワークシートにのみ適用されます。</summary>
+        <summary>ワークシートの印刷時に拡大縮小するワークシートのページの高さを返すか設定します。 ワークシートにのみ適用されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Microsoft Excel に合わせてワークシートを拡大または縮小このプロパティが<b>False</b>の場合、<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesWide" />プロパティ。</para>
-          <para>場合、<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.Zoom" />プロパティが<b>true の場合</b>、 <b>FitToPagesTall</b>プロパティは無視されます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティが <b>False の</b>場合、ワークシートはプロパティに従って拡大 <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesWide" /> または縮小されます。</para>
+          <para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.Zoom" /> が<b>True の場合</b><b>、FitToPagesTall</b>プロパティは無視されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FitToPagesWide">
@@ -638,13 +605,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、ページの幅が印刷時に調整されるワークシートの数を設定します。 ワークシートにのみ適用されます。</summary>
+        <summary>ワークシートを印刷するときに拡大または縮小するページの幅を設定します。 ワークシートにのみ適用されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Microsoft Excel に合わせてワークシートを拡大または縮小このプロパティが<b>False</b>の場合、<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesTall" />プロパティ。</para>
-          <para>場合、<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.Zoom" />プロパティが<b>true の場合</b>、 <b>FitToPagesWide</b>プロパティは無視されます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティが <b>False の</b>場合、ワークシートはプロパティに従って拡大 <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesTall" /> または縮小されます。</para>
+          <para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.Zoom" /> が<b>True の場合</b><b>、FitToPagesWide</b>プロパティは無視されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FooterMargin">
@@ -673,7 +638,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ポイント単位で、フッターに、ページの下端からの距離を設定または返します。</summary>
+        <summary>ページの下部からフッターまでの距離をポイント数で設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -704,12 +669,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ポイント単位で、ヘッダーに、ページの上端からの距離を設定または返します。</summary>
+        <summary>ページの上からヘッダーまでの距離をポイント数で設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>余白は、ポイント単位で返されます。 使用して、<see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" />インチまたはセンチメートルの測定値に変換します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>余白は、ポイント単位です。 単位をインチまたはセンチメートルから変換するには、この <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> メソッドまたはメソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LeftFooter">
@@ -766,7 +729,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Graphic</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Graphic" /> 、フッターの左のセクションの図を表すオブジェクト。 画像についての属性を設定するために使用します。</summary>
+        <summary>フッターの <see cref="T:Microsoft.Office.Interop.Excel.Graphic" /> 左セクションの図を表すオブジェクトを返します。 画像についての属性を設定するために使用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -825,7 +788,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Graphic</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Graphic" /> 、ヘッダーの左のセクションの図を表すオブジェクト。 画像についての属性を設定するために使用します。</summary>
+        <summary>ヘッダーの <see cref="T:Microsoft.Office.Interop.Excel.Graphic" /> 左セクションの図を表すオブジェクトを返します。 画像についての属性を設定するために使用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -856,12 +819,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>左余白のサイズをポイント単位で設定を取得または取得します。</summary>
+        <summary>左余白のサイズをポイント数で設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>余白は、ポイント単位で返されます。 使用して、<see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" />インチまたはセンチメートルの測定値に変換します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>余白は、ポイント単位です。 単位をインチまたはセンチメートルから変換するには、この <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> メソッドまたはメソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="OddAndEvenPagesHeaderFooter">
@@ -890,11 +851,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> を設定すると、指定した <b>PageSetup</b> オブジェクトの奇数ページと偶数ページに異なるヘッダーとフッターを設定できます。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary><b>True の</b> 場合、指定した <b>PageSetup</b> オブジェクトの奇数ページと偶数ページに異なるヘッダーとフッターします。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -924,7 +882,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlOrder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>いつページを Microsoft Excel が番号に使用する順序を取得または設定は、大きなワークシートを印刷しています。</summary>
+        <summary>大きなワークシートを印刷するときにページ番号を付けするときに使用する順序を取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -955,12 +913,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPageOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>縦向きまたは横向き印刷モードです。</summary>
+        <summary>縦または横の印刷モード。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>OLAP データ ソースの階層の 1 つのフィールドに対してこのプロパティを設定する他のフィールドの方向同じ階層に設定します。 ディメンション フィールドは、行、列、およびピボット テーブル レポートのページ フィールド エリアにのみ配置できます。 メジャー フィールドは、データ エリアにのみ配置できます。 階層、またはデータ フィールドに<b>xlHidden</b>を設定、ピボット テーブル レポートから、階層、またはフィールドを削除します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>OLAP データ ソースの場合、ある階層の 1 つのフィールドに対してこのプロパティを設定すると、同じ階層のその他のフィールドにも同じ値が設定されます。ディメンション フィールドは、ピボットテーブル レポートの行フィールド、列フィールド、またはページ フィールドの各領域にのみ配置できます。メジャー フィールドは、データ エリアにのみ配置できます。階層、またはデータ フィールドに <b>xlHidden</b> を設定すると、ピボットテーブル レポートから削除されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Pages">
@@ -986,10 +942,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Pages</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定のページ数のカウントまたはアイテム<see cref="T:Microsoft.Office.Interop.Excel.Pages" />コレクションです。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Pages" />
-        </value>
+        <summary>コレクション内のページの数またはアイテム番号を設定または返 <see cref="T:Microsoft.Office.Interop.Excel.Pages" /> します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Pages" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1078,13 +1032,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>マクロの言語の A1 形式の参照を使用して文字列として、印刷する範囲を設定または返します。</summary>
+        <summary>マクロの言語で A1 形式の参照を使用する文字列として、印刷範囲を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティを <b>False</b> または空の文字列 ("") に設定すると、シート全体が印刷範囲となります。</para>
+        <remarks><para>このプロパティを <b>False</b> または空の文字列 ("") に設定すると、シート全体が印刷範囲となります。</para>
           <para>このプロパティは、ワークシートのページにのみ使用できます。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintComments">
@@ -1113,7 +1065,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPrintLocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>シートのコメントの印刷方法を設定または返します。</summary>
+        <summary>シートにコメントを印刷する方法を返すか設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1144,7 +1096,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPrintErrors</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または設定、<see cref="T:Microsoft.Office.Interop.Excel.XlPrintErrors" />表示される印刷エラーの種類を指定する定数です。 この機能では、ワークシートの印刷時にエラー値の表示を非表示にすることができます。</summary>
+        <summary>表示される印刷エラーの <see cref="T:Microsoft.Office.Interop.Excel.XlPrintErrors" /> 種類を指定する定数を設定または取得します。 この機能を使用して、ユーザーはワークシートの印刷時にエラー値の表示を抑止することができます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1175,8 +1127,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>セルの枠線をページに印刷される場合。 ワークシートにのみ適用されます。</summary>
+        <summary>セルの枠線をページ上に印刷する場合は <b>True</b> です。 ワークシートにのみ適用されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1207,14 +1158,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>行と列見出しは、このページに印刷する場合です。 ワークシートにのみ適用されます。</summary>
+        <summary><b>True</b> の 場合、行と列の見出しは、このページで印刷されます。 ワークシートにのみ適用されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayHeadings" />コントロールのプロパティ、画面上の見出しを表示します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>この <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayHeadings" /> プロパティは、見出しの画面表示を制御します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintNotes">
@@ -1243,13 +1190,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>場合は、セルのメモを印刷するシートの文末脚注のようです。 ワークシートにのみ適用されます。</summary>
+        <summary><b>True</b> の 場合は、シートの終了ノートとしてセルのノートを印刷します。 ワークシートにのみ適用されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintComments" />のテキスト ボックスや文末脚注としてコメントを印刷します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>コメントを <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintComments" /> テキスト ボックスとして印刷したり、コメントを終了したりするには、このプロパティを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintQuality">
@@ -1281,7 +1225,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">省略可能な<b>オブジェクト</b>です。 水平方向の印刷品質 (1) または垂直方向の印刷品質 (2)。 プリンターによっては、垂直方向の印刷品質をサポートしていません。 <b>返します</b>、この引数を指定しない (またはに設定することができます) 場合は、水平方向および垂直方向の印刷品質を含む 2 つの要素の配列。</param>
+        <param name="Index">省略 <b>可能なオブジェクト</b>です。 水平方向の印刷品質 (1) または垂直方向の印刷品質 (2) を指定します。 プリンターによっては、垂直方向の印刷品質をサポートしていない場合があります。 この引数を指定しない場合 <b>、PrintQuality</b> プロパティは水平方向と垂直方向の両方の印刷品質を含む 2 要素の配列を返します (または設定できます)。</param>
         <summary>印刷品質を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -1313,15 +1257,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>各ページの左側にあるマクロの言語で、A1 スタイルの表記で文字列として常に表示するセルを含む列を設定または返します。</summary>
+        <summary>各ページの左側で繰り返されるセルを含む列を、マクロの言語で A1 形式の文字列として取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>列の一部だけを指定しても、列全体が選択されます。</para>
-          <para>
-            <b>False</b>または空の文字列には、このプロパティを設定 ("") 列のタイトルをオフにします。</para>
+        <remarks><para>列の一部だけを指定しても、列全体が選択されます。</para>
+          <para>このプロパティを <b>False</b> または空の文字列 ("") に設定すると、列のタイトルは非表示になります。</para>
           <para>このプロパティは、ワークシートのページにのみ使用できます。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintTitleRows">
@@ -1350,15 +1291,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>各ページの上部にあるマクロの言語で、A1 スタイルの表記で文字列として常に表示するセルを含む行を設定または返します。</summary>
+        <summary>各ページの上部で繰り返されるセルを含む行を、マクロの言語で A1 形式の文字列として取得または設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>行の一部だけを指定しても、行全体が選択されます。</para>
-          <para>
-            <b>False</b>または空の文字列には、このプロパティを設定 ("") 行のタイトルを無効にします。</para>
+        <remarks><para>行の一部だけを指定しても、行全体が選択されます。</para>
+          <para>このプロパティを <b>False</b> または空の文字列 ("") に設定すると、行のタイトルは非表示になります。</para>
           <para>このプロパティは、ワークシートのページにのみ使用できます。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RightFooter">
@@ -1387,7 +1325,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>フッターの右側の部分を設定または返します。</summary>
+        <summary>フッターの右の部分を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1415,7 +1353,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Graphic</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Graphic" /> 、フッターの右のセクションの図を表すオブジェクト。 画像の属性を設定する場合に使用されます。</summary>
+        <summary>フッターの <see cref="T:Microsoft.Office.Interop.Excel.Graphic" /> 右側のセクションの図を表すオブジェクトを返します。 画像の属性を設定するために使用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1474,7 +1412,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Graphic</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Graphic" /> 、ヘッダーの右のセクションの図を表すオブジェクト。 画像についての属性を設定するために使用します。</summary>
+        <summary>ヘッダーの <see cref="T:Microsoft.Office.Interop.Excel.Graphic" /> 右側のセクションの図を表すオブジェクトを返します。 画像についての属性を設定するために使用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1505,12 +1443,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または右余白のサイズをポイント単位で設定します。</summary>
+        <summary>右余白のサイズをポイント数で設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>余白は、ポイント単位で返されます。 使用して、<see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" />インチまたはセンチメートルの測定値に変換します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>余白は、ポイント単位です。 単位をインチまたはセンチメートルから変換するには、この <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> メソッドまたはメソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScaleWithDocHeaderFooter">
@@ -1539,10 +1475,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ヘッダーとフッターの大きさをドキュメントにドキュメントのサイズが変更される場合を設定または返します。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>文書のサイズが変更された場合に、ヘッダーとフッターを文書に合ったサイズに調整する必要がある場合に設定または返します。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1572,12 +1506,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>上余白のサイズをポイント単位で設定を取得または取得します。</summary>
+        <summary>上余白のサイズをポイント数で設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>余白は、ポイント単位で返されます。 使用して、<see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" />インチまたはセンチメートルの測定値に変換します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>余白は、ポイント単位です。 単位をインチまたはセンチメートルから変換するには、この <see cref="M:Microsoft.Office.Interop.Excel._Application.InchesToPoints(System.Double)" /> <see cref="M:Microsoft.Office.Interop.Excel._Application.CentimetersToPoints(System.Double)" /> メソッドまたはメソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Zoom">
@@ -1606,13 +1538,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>(10 ~ 400%) ワークシートを印刷するための拡大縮小のパーセント値を設定または返します。 ワークシートにのみ適用されます。</summary>
+        <summary>ワークシートを印刷用に拡大または縮小する割合 (10 ~ 400%) を設定します。 ワークシートにのみ適用されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティが<b>False</b>の場合、<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesWide" />と<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesTall" />のプロパティは、ワークシートの縮尺を変更する方法を制御します。</para>
+        <remarks><para>このプロパティが <b>False の場合</b>、ワークシート <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesWide" /> の拡大/縮小方法は <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.FitToPagesTall" /> プロパティによって制御されます。</para>
           <para>拡大または縮小する方法にかかわらず、元の文書の縦横比は保持されます。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

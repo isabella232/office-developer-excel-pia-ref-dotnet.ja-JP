@@ -1,13 +1,5 @@
 <Type Name="VPageBreaks" FullName="Microsoft.Office.Interop.Excel.VPageBreaks">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9f1ccf11f0bbaf483e28c650605da8bce1726a26" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581957" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface VPageBreaks : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9f1ccf11f0bbaf483e28c650605da8bce1726a26" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009367" /></Metadata><TypeSignature Language="C#" Value="public interface VPageBreaks : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract VPageBreaks implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.VPageBreaks" />
   <TypeSignature Language="VB.NET" Value="Public Interface VPageBreaks&#xA;Implements IEnumerable" />
@@ -33,16 +25,13 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>印刷領域での垂直な改ページのコレクションです。 各垂直改ページは、<see cref="T:Microsoft.Office.Interop.Excel.VPageBreak" />オブジェクトです。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.VPageBreaks" /><b>VPageBreaks</b>コレクションを返すプロパティです。 使用して、 <see cref="M:Microsoft.Office.Interop.Excel.VPageBreaks.Add(System.Object)" /> 、垂直な改ページを追加します。</para>
-      <para>印刷範囲を交差しない改ページを追加すると、 <b>VPageBreaks</b>コレクションの印刷範囲に新たに追加された<b>VPageBreak</b>オブジェクトは表示されません。 印刷範囲のサイズを変更または再定義する場合、コレクションの内容を変更できます。</para>
-      <para>
-        <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Application" />プロパティでは、<see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Count" />プロパティ、<see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Creator" />プロパティでは、<see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Item(System.Int32)" />プロパティ、<see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Parent" />プロパティまたは<see cref="M:Microsoft.Office.Interop.Excel.VPageBreaks.Add(System.Object)" />メソッドを<b>VPageBreaks</b>プロパティと共に使用します。</para>
-      <para>印刷範囲の場合、 <b>VPageBreaks</b>プロパティは印刷範囲内の改ページにのみ適用されます。</para>
-      <para>ユーザー定義印刷の領域の同じ範囲、 <b>VPageBreaks</b>プロパティはすべての改ページには。</para>
-      <para></para>
-    </remarks>
+    <summary>印刷領域での垂直な改ページのコレクションです。 垂直方向の各ページブレークは、オブジェクトによって表 <see cref="T:Microsoft.Office.Interop.Excel.VPageBreak" /> されます。</summary>
+    <remarks><para><see cref="P:Microsoft.Office.Interop.Excel._Worksheet.VPageBreaks" />VPageBreaks コレクションを取得するには<b>、このプロパティを使用</b>します。 垂直方向の <see cref="M:Microsoft.Office.Interop.Excel.VPageBreaks.Add(System.Object)" /> ページ分割を追加するには、このメソッドを使用します。</para>
+      <para>印刷範囲外に垂直な改ページを追加すると、対応する <b>VPageBreak</b> オブジェクトは <b>VPageBreaks</b> コレクションには追加されますが、その印刷範囲では有効ではありません。このオブジェクトを有効にするには、印刷範囲を変更し、追加した改ページが含まれるようにします。</para>
+      <para>プロパティ、プロパティ、プロパティ、またはメソッドを <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Application" /> <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Count" /> <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Creator" /> <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Item(System.Int32)" /> <see cref="P:Microsoft.Office.Interop.Excel.VPageBreaks.Parent" /> <see cref="M:Microsoft.Office.Interop.Excel.VPageBreaks.Add(System.Object)" /> <b>VPageBreaks プロパティと組み合わせて使用</b> する場合:</para>
+      <para>自動的に決められた印刷範囲の場合、<b>VPageBreaks</b> プロパティは印刷範囲内の改ページにのみ使用できます。</para>
+      <para>ユーザーが指定した印刷範囲の場合、<b>VPageBreaks</b> プロパティはすべての改ページに使用できます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -103,9 +92,8 @@
         <Parameter Name="Before" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Before">
-          <b>オブジェクト</b>が必要です。 A<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトです。 新しい改ページを追加する先の左側の範囲です。</param>
-        <summary>垂直な改ページを追加します。 返します、<see cref="T:Microsoft.Office.Interop.Excel.VPageBreak" />オブジェクトです。</summary>
+        <param name="Before">Required <b>Object</b>. <see cref="T:Microsoft.Office.Interop.Excel.Range" /> オブジェクト。 この範囲の左側に新しい改ページが追加されます。</param>
+        <summary>垂直な改ページを追加します。 オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.VPageBreak" /> します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -133,7 +121,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -189,14 +177,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -257,8 +242,7 @@
         <Parameter Name="Index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

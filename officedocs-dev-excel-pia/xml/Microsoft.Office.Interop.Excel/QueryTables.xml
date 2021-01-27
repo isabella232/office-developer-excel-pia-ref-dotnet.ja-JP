@@ -1,13 +1,5 @@
 <Type Name="QueryTables" FullName="Microsoft.Office.Interop.Excel.QueryTables">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="243a843ba48be5881f9e62bc2223ea6860624c17" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20586941" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface QueryTables : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="243a843ba48be5881f9e62bc2223ea6860624c17" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010725" /></Metadata><TypeSignature Language="C#" Value="public interface QueryTables : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract QueryTables implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.QueryTables" />
   <TypeSignature Language="VB.NET" Value="Public Interface QueryTables&#xA;Implements IEnumerable" />
@@ -33,12 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Excel.QueryTable" />オブジェクトです。 各  <b>QueryTable</b> オブジェクトは、外部データ ソースから返されるデータに基づいて作成されるワークシート テーブルを表します。</summary>
-    <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Worksheet.QueryTables" />に、<b>クエリ テーブルで使用</b>のコレクションを返すプロパティです。</para>
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" /> 、新しいクエリ テーブルを作成し、<b>クエリ テーブルで使用</b>のコレクションに追加する方法です。</para>
-      <para></para>
-    </remarks>
+    <summary>オブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> コレクション。 各 <b>QueryTable</b> オブジェクトは、外部データ ソースから返されるデータに基づいて作成されるワークシート テーブルを表します。</summary>
+    <remarks><para><see cref="P:Microsoft.Office.Interop.Excel._Worksheet.QueryTables" />QueryTables コレクションを<b>取得するには、このプロパティを使用</b>します。</para>
+      <para>このメソッド <see cref="M:Microsoft.Office.Interop.Excel.QueryTables.Add(System.Object,Microsoft.Office.Interop.Excel.Range,System.Object)" /> を使用して、新しいクエリ テーブルを作成し <b>、QueryTables コレクションに追加</b> します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -100,17 +90,13 @@
         <Parameter Name="Sql" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Connection">
-          <b>オブジェクト</b>が必要です。 クエリ テーブルのデータ ソースです。 使用できる、OLE DB または ODBC 接続文字列が含まれている: A の次の文字列のいずれかです。 ODBC 接続文字列には、フォームの"ODBC;&lt;接続文字列&gt;」です。<b>QueryTable</b>オブジェクトをクエリの情報が最初にコピー元、接続文字列と、SQL テキストを含むが、<paramref name="Destination" />の範囲です。 <b>QueryTable</b>オブジェクトを指定すると、<paramref name="Sql" />引数は無視されます。ADO または DAO<b>レコード セット</b>オブジェクト。 ADO または DAO レコード セットからデータが読み取られます。 Microsoft Excel では、クエリ テーブルを削除したり変更したり、接続するまで、レコード セットが保持されます。 結果のクエリ テーブルを編集することはできません。Web クエリです。 "URL にフォーム内の文字列&lt;url&gt;"、"URL;"はローカライズされませんが必要ですが、文字列の残りの部分は、Web クエリの URL を使用し、。データ ファインダー。 "FINDER; フォーム内の文字列&lt;データ ファインダー ファイルのパス&gt;"、"FINDER;"が必要ですがローカライズされていません。 文字列の残りの部分は、データ ファインダー ファイル (*.dqy または *.iqy) のパスとファイル名です。 ファイルを読み取るとき、 <b>Add</b>メソッドが実行されます。以降の呼び出し、 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> 、クエリ テーブルのプロパティは"ODBC;"または"URL;"で始まる文字列を返します必要に応じてします。テキスト ファイルです。 "テキスト フォーム内の文字列&lt;テキスト ファイル パスとファイル名&gt;"のテキストが必要ですが、ローカライズされていない場合は、します。</param>
-        <param name="Destination">
-          <b>範囲</b>が必要です。 クエリ テーブルの配置先範囲 (結果のクエリ テーブルが配置される場所の範囲) の左上隅のセルです。 貼り付け先の範囲が含まれているワークシートにする必要があります、<see cref="T:Microsoft.Office.Interop.Excel.QueryTables" />オブジェクトです。</param>
-        <param name="Sql">省略可能な<b>オブジェクト</b>です。 ODBC データ ソース上で実行する SQL クエリ文字列です。 <b>QueryTable</b>オブジェクト、テキスト ファイル、または ADO または DAO<b>レコード セット</b>オブジェクトがデータ ソースとして指定した場合、この引数を使うことはできません、ODBC データ ソースを使用している場合、この引数はオプションです。</param>
-        <summary>新しいクエリ テーブルを作成します。 返します、 <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> 、新しいクエリ テーブルを表すオブジェクト。</summary>
+        <param name="Connection">Required <b>Object</b>. クエリ テーブルのデータ ソース。 OLE DB または ODBC 接続文字列を含む文字列を指定します。 ODBC 接続文字列の形式は "ODBC; &lt;接続文字列 &gt; ".クエリ <b>情報の</b> 最初のコピーに使用される QueryTable オブジェクト 。接続文字列と SQL テキストを含むが、範囲は含 <paramref name="Destination" /> めない。 <b>QueryTable オブジェクトを指定</b>すると、引数 <paramref name="Sql" /> は無視されます。ADO オブジェクトまたは DAO <b>Recordset</b>オブジェクト。 データは ADO または DAO レコードセットから読み取られます。 クエリ テーブルを削除するか、または接続を変更するまで、レコードセットは保持されます。 結果のクエリ テーブルは編集できません。Web クエリ。 "URL" の形式の文字列。 &lt;url "。"URL;" は必須ですがローカライズされません。文字列の残りの部分は Web クエリ &gt; の URL に使用されます。データ検索。 "FINDER; &lt;data finder file path &gt; " where "FINDER;" is required but not localized. The rest of the string is the path and file name of a Data Finder file (*.dqy or *.iqy). Add メソッドを実行すると、ファイル <b>が</b> 読み取りされます。以降のクエリ テーブルのプロパティの呼び出しでは、必要に応じて <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Connection" /> "ODBC;" または "URL;" で始まる文字列が返されます。テキスト ファイル。 "TEXT; &lt;text file path and name &gt; ", where TEXT is required but not localized.</param>
+        <param name="Destination">必須 <b>の範囲です</b>。 クエリ テーブルの配置先の (結果のクエリ テーブルを配置する) セル範囲の左上端のセル。 コピー先の範囲は、オブジェクトを含むワークシート上にある必要 <see cref="T:Microsoft.Office.Interop.Excel.QueryTables" /> があります。</param>
+        <param name="Sql">省略 <b>可能なオブジェクト</b>です。 ODBC SQLで実行するクエリ文字列を指定します。 ODBC データ ソースを使用している場合、この引数は省略可能です <b>。QueryTable</b> オブジェクト、テキスト ファイル、または ADO または DAO <b>Recordset</b> オブジェクトがデータ ソースとして指定されている場合、この引数は使用できません。</param>
+        <summary>新しいクエリ テーブルを作成します。 新しいクエリ <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> テーブルを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>までこのメソッドによって作成されたクエリが実行されていない、<see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" />メソッドが呼び出されます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このメソッドによって作成されたクエリは、メソッドが呼び出 <see cref="M:Microsoft.Office.Interop.Excel._QueryTable.Refresh(System.Object)" /> されるまで実行されません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -136,7 +122,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 読み取り専用。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -192,13 +178,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 読み取り専用です <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -256,14 +239,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>値は、オブジェクトの名前は、<see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Name" />プロパティ。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>オブジェクトのテキスト名はプロパティの値 <see cref="P:Microsoft.Office.Interop.Excel._QueryTable.Name" /> です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -289,7 +269,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

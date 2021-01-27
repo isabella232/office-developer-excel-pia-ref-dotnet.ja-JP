@@ -1,13 +1,5 @@
 <Type Name="TreeviewControl" FullName="Microsoft.Office.Interop.Excel.TreeviewControl">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1afb6b42e9222ca9571894f88d24856a84c5f717" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587123" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TreeviewControl" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1afb6b42e9222ca9571894f88d24856a84c5f717" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009493" /></Metadata><TypeSignature Language="C#" Value="public interface TreeviewControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TreeviewControl" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TreeviewControl" />
   <TypeSignature Language="VB.NET" Value="Public Interface TreeviewControl" />
@@ -27,10 +19,8 @@
   </Attributes>
   <Docs>
     <summary>キューブ フィールドの階層メンバー選択コントロールを表します。 このオブジェクトは、主にマクロ記録のために使用し、その他の有用性はありません。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.CubeField.TreeviewControl" /> 、 <b>TreeviewControl</b>オブジェクトを返すプロパティです。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.CubeField.TreeviewControl" /> を使用して <b>TreeviewControl オブジェクトを取得</b> します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -56,7 +46,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,14 +74,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Drilled">
@@ -120,15 +107,12 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>キューブ フィールドの階層メンバー選択コントロールで、「ドリルされた」(展開表示) 状態キューブ フィールドのメンバーを設定します。 このプロパティは、マクロの記録で主に使用され、その他のものではありません。</summary>
+        <summary>キューブ フィールドの階層メンバー選択コントロールのキューブ フィールド メンバーに "ドリルされた" (展開表示) 状態を設定します。 このプロパティは主にマクロ記録のために使用され、その他の有用性はありません。</summary>
         <value>To be added.</value>
-        <remarks>
+        <remarks><para><b>Drilled</b> プロパティは配列を設定します。 配列の各要素は、展開されるキューブ フィールドのレベルに対応しています。 要素の最大数は、キューブ フィールド内のレベル数です。 配列の要素は文字列型 ( <b>String</b> ) で、コントロールの各レベルで表示される一意なメンバー名を含みます。 展開されたビューでメンバーが明示的に非表示にされている場合は、オブジェクトのプロパティ <see cref="T:Microsoft.Office.Interop.Excel.TreeviewControl" /> <see cref="P:Microsoft.Office.Interop.Excel.TreeviewControl.Hidden" /> を参照してください。</para>
           <para>
-            <b>ドリル</b>プロパティは、配列を受け取ります。 配列の各要素は、展開されているキューブ フィールドのレベルに対応します。 要素の最大数は、キューブ フィールド内のレベルの数です。 配列の各要素は、<b>文字列</b>コントロールの対応するレベルでは、(展開) 表示される一意なメンバー名を格納している型の配列です。 参照してください、<see cref="T:Microsoft.Office.Interop.Excel.TreeviewControl" />オブジェクトの<see cref="P:Microsoft.Office.Interop.Excel.TreeviewControl.Hidden" />とメンバーを明示的に非表示が展開された状態にするかを決定するプロパティです。</para>
-          <para>
-            <b>注</b>: このプロパティは、キューブ フィールドの階層メンバー選択コントロールのキューブ フィールドのメンバーのドリル状態を表す配列を返しません。</para>
-          <para></para>
-        </remarks>
+            <b>メモ</b>: このプロパティは、キューブ フィールドの階層メンバー選択コントロール内のキューブ フィールド メンバーのドリルされた状態を表す配列を返すのではありません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Hidden">
@@ -157,13 +141,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはキューブ フィールドの階層メンバー選択コントロールのキューブの非表示の状態フィールドのメンバーを設定します。</summary>
+        <summary>キューブ フィールドの階層メンバー選択コントロール内のキューブ フィールド メンバーの非表示状態を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Hidden</b>プロパティを取得または配列を設定します。 配列の各要素は非表示のキューブ フィールドのレベルに対応しています。 要素の最大数は、キューブ フィールド内のレベルの数です。 配列の各要素は、<b>文字列</b>コントロールのレベルと対応する、非表示には、一意なメンバー名を格納している型の配列です。 参照してください、<see cref="P:Microsoft.Office.Interop.Excel.PivotItem.DrilledDown" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> (拡張) コントロールのメンバーの表示を決定するオブジェクトです。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Hidden</b> プロパティは配列を取得、または設定します。 配列の各要素は非表示のキューブ フィールドのレベルと対応します。 要素の最大数は、キューブ フィールド内のレベルの数です。 配列の各要素は、文字列型 ( <b>String</b> ) の配列で、コントロールのレベルと対応する、非表示の一意なメンバーの名前が保存されています。 オブジェクトの <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.DrilledDown" /> プロパティを参照して、メンバーがコントロール内で表示 <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> (展開) される時間を確認します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">

@@ -1,13 +1,5 @@
 <Type Name="OLEObjects" FullName="Microsoft.Office.Interop.Excel.OLEObjects">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c7a55aea3278bf57d03536464456af6c54d9afe8" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575636" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface OLEObjects : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c7a55aea3278bf57d03536464456af6c54d9afe8" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011208" /></Metadata><TypeSignature Language="C#" Value="public interface OLEObjects : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OLEObjects implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.OLEObjects" />
   <TypeSignature Language="VB.NET" Value="Public Interface OLEObjects&#xA;Implements IEnumerable" />
@@ -33,14 +25,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>すべてのコレクション、 <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> 、指定したワークシート上のオブジェクトです。 各 <b>OLEObject</b> オブジェクトは、ActiveX コントロール、リンクされた OLE オブジェクト、または埋め込まれている OLE オブジェクトを表します。</summary>
-    <remarks>
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.OLEObjects(System.Object)" /> 、 <b>OLEObjects</b>コレクションを返します。</para>
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 、新しい OLE オブジェクトを作成し、 <b>OLEObjects</b>コレクションに追加する方法です。</para>
-      <para>シート上の ActiveX コントロールには 2 つの名前: 表示される [名前] ボックスで、シートと、コードの名前 (名) のプロパティ] ウィンドウの右側のセルに表示するコントロールを表示すると、コントロールが含まれている図形の名前です。 最初に、シートにコントロールを追加すると、図形の名前とコード名が一致します。 ただし、図形の名前またはコード名を変更すると、他のない自動的に変更と一致します。</para>
-      <para>イベント プロシージャの名前には、コントロールのコード名を使用します。 コントロールを取得するときに、<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />シートの<b>OLEObjects</b>コレクション、コントロールを名前で参照するのには、コード名ではなく、図形の名前を使用する必要がありますか。 たとえば、既定の図形の名前とコード名の両方の checkbox1 というシートには、チェック ボックスを追加することとします。 ChkFinished を使用して、イベント プロシージャの名前にする必要がありますが、ハンドラーは、まだ CheckBox1 を使用して<b>Shapes</b>または<b>OLEObjects</b>からコントロールを取得する場合は、[プロパティ] ウィンドウで (名前) の横にある chkFinished を入力して、コントロールのコード名を変更します。コレクションです。</para>
-      <para></para>
-    </remarks>
+    <summary>指定されたワークシートのすべての <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> オブジェクトのコレクションです。 各 <b>OLEObject</b> オブジェクトは、ActiveX コントロール、リンクされた OLE オブジェクト、または埋め込まれている OLE オブジェクトを表します。</summary>
+    <remarks><para><see cref="M:Microsoft.Office.Interop.Excel._Worksheet.OLEObjects(System.Object)" />OLEObjects コレクションを取得するには<b>、このメソッドを使用</b>します。</para>
+      <para>新しい <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> OLE オブジェクトを作成し、OLEObjects コレクションに <b>追加するには、このメソッドを使用</b> します。</para>
+      <para>シートの ActiveX コントロールには、コントロールを含む図形の名前と、シートを表示するときに [名前] ボックスに表示される 2 つの名前があります。コントロールのコード名は、[プロパティ] ウィンドウのセルの右側 (名前) に表示されます。 最初にコントロールをシートに追加すると、図形名とコード名が一致します。 ただし、図形名またはコード名を変更した場合、もう一方の図形は自動的に一致する名前に変更されません。</para>
+      <para>You use the code name of a control in the names of its event procedures. ただし、シートのコントロールまたは OLEObjects コレクションからコントロールを取得する場合は、コード名ではなく図形名を使用して、コントロールを名前で <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> 参照する必要があります。 <b></b> たとえば、コード名および図形の名前が既定の CheckBox1 というチェック ボックスを追加したと仮定します。 その後、[プロパティ] ウィンドウの [名前] の横に「chkFinished」と入力してコントロールのコード名を変更する場合は、イベント プロシージャ名で chkFinished を使用する必要がありますが、 <b>それでも</b> 、CheckBox1 を使用して Shapes または <b>OLEObjects</b> コレクションからコントロールを取得する必要があります。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Dummy12">
@@ -67,7 +57,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。 </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,7 +85,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,7 +113,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,7 +141,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,7 +169,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,7 +197,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -235,7 +225,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -263,7 +253,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -291,7 +281,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -319,7 +309,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -347,7 +337,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -375,7 +365,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -403,7 +393,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -431,7 +421,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -467,18 +457,18 @@
         <Parameter Name="Height" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ClassType">省略可能な<b>オブジェクト</b>です。 (どちらかを指定する必要があります<paramref name="ClassType" />または<paramref name="FileName" />.)作成するオブジェクトのプログラム id を含む文字列です。 場合<paramref name="ClassType" />が指定されている<paramref name="FileName" />と<paramref name="Link" />は無視されます。</param>
-        <param name="Filename">省略可能な<b>オブジェクト</b>です。 (どちらかを指定する必要があります<paramref name="ClassType" />または<paramref name="FileName" />.)OLE オブジェクトの作成に使用するファイルを指定する文字列です。</param>
-        <param name="Link">省略可能な<b>オブジェクト</b>です。 <b>True</b>に基づく新しい OLE オブジェクトを使用して<paramref name="FileName" />そのファイルにリンクします。 オブジェクトをリンクしない場合、オブジェクトは、ファイルのコピーとして作成されます。 既定値は <b>False</b> です。</param>
-        <param name="DisplayAsIcon">省略可能な<b>オブジェクト</b>です。 <b>True</b>新しい OLE オブジェクトをアイコンとして、または通常のピクチャとして表示します。 この引数が<b>True の</b>場合<paramref name="IconFileName" />と<paramref name="IconIndex" />のアイコンを指定する使用することができます。</param>
-        <param name="IconFileName">省略可能な<b>オブジェクト</b>です。 表示するアイコンを含むファイルを指定する文字列です。 場合にのみ、この引数を使用<paramref name="DisplayAsIcon" />が<b>true を指定</b>します。 OLE クラスの既定のアイコンが使用される場合、この引数が指定されていない、またはファイルにアイコンが含まれていない、</param>
-        <param name="IconIndex">省略可能な<b>オブジェクト</b>です。 アイコン ファイルのアイコンの数です。 場合にのみに使用されます<paramref name="DisplayAsIcon" /><b>は</b>、<paramref name="IconFileName" />アイコンを含む有効なファイルを参照します。 指定されたファイルで指定したインデックス番号のアイコンが存在しない場合は<paramref name="IconFileName" />、ファイルの最初のアイコンを使用します。</param>
-        <param name="IconLabel">省略可能な<b>オブジェクト</b>です。 アイコンの下に表示するラベルを指定する文字列です。 場合にのみに使用されます<paramref name="DisplayAsIcon" />が<b>true を指定</b>します。 場合はこの引数を省略するか空の文字列 ("")、キャプションは表示されません。</param>
-        <param name="Left">省略可能な<b>オブジェクト</b>です。 ワークシートのセル A1 の左上隅またはグラフの左上端を基準として、新しいオブジェクトの初期座標をポイント単位で指定します。</param>
-        <param name="Top">省略可能な<b>オブジェクト</b>です。 ワークシートのセル A1 の左上隅またはグラフの左上端を基準として、新しいオブジェクトの初期座標をポイント単位で指定します。</param>
-        <param name="Width">省略可能な<b>オブジェクト</b>です。 ポイントで新しいオブジェクトの初期サイズです。</param>
-        <param name="Height">省略可能な<b>オブジェクト</b>です。 新しいオブジェクトの初期サイズをポイント単位で指定します。</param>
-        <summary>ワークシートに新しい OLE オブジェクトを追加します。 返します、<see cref="T:Microsoft.Office.Interop.Excel.OLEObject" />オブジェクトです。</summary>
+        <param name="ClassType">省略 <b>可能なオブジェクト</b>です。 (または <paramref name="ClassType" /> <paramref name="FileName" /> .)作成するオブジェクトのプログラム識別子を含む文字列。 指定 <paramref name="ClassType" /> した場合は <paramref name="FileName" /> 無視 <paramref name="Link" /> されます。</param>
+        <param name="Filename">省略 <b>可能なオブジェクト</b>です。 (または <paramref name="ClassType" /> <paramref name="FileName" /> .)OLE オブジェクトの作成に使用するファイルを指定する文字列。</param>
+        <param name="Link">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、そのファイルにリンクされた新しい OLE <paramref name="FileName" /> オブジェクトが作成されます。 オブジェクトをリンクしない場合は、オブジェクトはそのファイルのコピーとして作成されます。 既定値は、 <b>False</b> です。</param>
+        <param name="DisplayAsIcon">省略 <b>可能なオブジェクト</b>です。 新しい OLE オブジェクトをアイコンまたは通常のピクチャで表示するには、 <b>True</b> を指定します。 この引数が <b>True の</b>場合 <paramref name="IconFileName" /> <paramref name="IconIndex" /> 、アイコンを指定するために使用できます。</param>
+        <param name="IconFileName">省略 <b>可能なオブジェクト</b>です。 表示するアイコンのファイルを示す文字列を指定します。 この引数は、 True の <paramref name="DisplayAsIcon" /> 場合にのみ使用 <b>されます</b>。 この引数を指定しない場合、またはファイルにアイコンが含まれている場合は、OLE クラスの既定のアイコンが使用されます。</param>
+        <param name="IconIndex">省略 <b>可能なオブジェクト</b>です。 アイコン ファイルに含まれるアイコンの番号を指定します。 これは、True で、アイコンを含む有効なファイルを参照している <paramref name="DisplayAsIcon" /> <b></b> <paramref name="IconFileName" /> 場合にのみ使用されます。 指定されたインデックス番号のアイコンが、指定されたファイルに存在しない場合は、ファイル内の最初の <paramref name="IconFileName" /> アイコンが使用されます。</param>
+        <param name="IconLabel">省略 <b>可能なオブジェクト</b>です。 アイコンの下に表示するタイトルを示す文字列を指定します。 This is used only if <paramref name="DisplayAsIcon" /> is <b>True</b>. この引数を省略するか空の文字列 ("") を指定すると、タイトルは表示されません。</param>
+        <param name="Left">省略 <b>可能なオブジェクト</b>です。 ワークシートのセル A1 の左上隅またはグラフの左上端を基準として、新しいオブジェクトの初期座標をポイント単位で指定します。</param>
+        <param name="Top">省略 <b>可能なオブジェクト</b>です。 ワークシートのセル A1 の左上隅またはグラフの左上端を基準として、新しいオブジェクトの初期座標をポイント単位で指定します。</param>
+        <param name="Width">省略 <b>可能なオブジェクト</b>です。 新しいオブジェクトの初期サイズをポイント数で指定します。</param>
+        <param name="Height">省略 <b>可能なオブジェクト</b>です。 新しいオブジェクトの初期サイズをポイント単位で指定します。</param>
+        <summary>ワークシートに新しい OLE オブジェクトを追加します。 オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -506,7 +496,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -537,14 +527,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>ブックに含まれている場合、OLE オブジェクトが自動的に読み込まれている場合は、開かれます。</summary>
+        <summary><b>True</b> の場合は、OLE オブジェクトを含んでいるブックを開くと、そのオブジェクトが自動的にロードされます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ActiveX コントロールの場合、このプロパティの設定は無視されます。ブックが開かれるときは、常に ActiveX コントロールが自動的に読み込まれます。</para>
-          <para>ほとんどの種類の OLE オブジェクトには、このプロパティを<b>True</b>に設定する必要はありません。 既定では、 <b>AutoLoad</b>プロパティは<b>False</b>に設定新しい OLE オブジェクトこれによって保存時間とメモリは、Microsoft Excel のブックの読み込み時にします。 OLE オブジェクトを自動的に読み込むメリットは、必要な場合は、揮発性データを表すオブジェクトでは、ソース データへのリンクをすぐに再確立することができ、もう一度オブジェクトをレンダリングすることができます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>ActiveX コントロールの場合、このプロパティの設定は無視されます。 ブックが開かれるときは、常に ActiveX コントロールが自動的に読み込まれます。</para>
+          <para>ほとんどの種類の OLE オブジェクトでは、このプロパティを <b>True</b> に設定する必要はありません。既定の設定では、新しい OLE オブジェクトの <b>AutoLoad</b> プロパティは <b>False</b> で、ブックの読み込みにかかる時間とメモリを節約できるようになっています。このプロパティを True に設定しておくと便利なのは、たびたび変更が生じるデータを表す OLE オブジェクトです。すぐに元になるデータと再びリンクされ、必要であればオブジェクトが再表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Border">
@@ -570,7 +557,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 、オブジェクトの枠線を表すオブジェクト。</summary>
+        <summary>オブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 境界線を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -650,8 +637,8 @@
         <Parameter Name="Format" Type="Microsoft.Office.Interop.Excel.XlCopyPictureFormat" />
       </Parameters>
       <Docs>
-        <param name="Appearance">省略可能な<see cref="T:Microsoft.Office.Interop.Excel.XlPictureAppearance" />。 図をコピーする方法を指定します。</param>
-        <param name="Format">省略可能な<see cref="T:Microsoft.Office.Interop.Excel.XlCopyPictureFormat" />。 画像の形式です。</param>
+        <param name="Appearance">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlPictureAppearance" /> 可能です。 図をコピーする方法を指定します。</param>
+        <param name="Format">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlCopyPictureFormat" /> 可能です。 ピクチャの形式を指定します。</param>
         <summary>選択しているオブジェクトを図としてクリップボードにコピーします。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -708,14 +695,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Cut">
@@ -741,11 +725,9 @@
       <Docs>
         <summary>オブジェクトを切り取り、クリップボードまたは指定された範囲に貼り付けます。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>セル範囲を切り取るときは、連続しているセルを対象とする必要があります。</para>
+        <remarks><para>セル範囲を切り取るときは、連続しているセルを対象とする必要があります。</para>
           <para>対象がグラフのときは、埋め込みグラフのみを切り取ることができます。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -795,7 +777,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>オブジェクトを複製し、その複製への参照を返します。</summary>
+        <summary>オブジェクトを複製し、複製されたオブジェクトへの参照を返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -826,8 +808,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>オブジェクトが有効になっている場合です。</summary>
+        <summary>オブジェクトが有効な場合は <b>True</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -947,7 +928,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Interior" />を指定したオブジェクトの内部を表すオブジェクト。</summary>
+        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> オブジェクトの内部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -975,8 +956,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1039,8 +1019,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は、オブジェクトがロックされています。<b>False</b>場合は、シートが保護されている場合、オブジェクトを変更できます。</summary>
+        <summary><b>True</b> の 場合は、オブジェクトがロックされています。 <b>False</b> の 場合は、シートが保護されているときにオブジェクトを変更できます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1136,10 +1115,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトがその下のセルに関連付けられている方法を設定または返します。</summary>
+        <summary>オブジェクトをその下のセルに接続する方法を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>以下の定数のいずれかを使用します。</para>
+        <remarks><para>次のいずれかの定数を使用します。</para>
           <para>
             <b>xlFreeFloating</b>
           </para>
@@ -1149,8 +1127,7 @@
           <para>
             <b>xlMoveAndSize</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintObject">
@@ -1179,8 +1156,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>オブジェクトは、ドキュメントを印刷するときに印刷する場合です。</summary>
+        <summary>ドキュメントを印刷するときにオブジェクトを印刷する場合は <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1207,7 +1183,7 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">省略可能な<b>オブジェクト</b>です。 <b>True</b> を指定したオブジェクトで現在の選択範囲を置き換えます。 <b>False を指定</b> する現在の選択範囲を拡張する選択したオブジェクトと指定したオブジェクトです。</param>
+        <param name="Replace">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定したオブジェクトで現在の選択範囲を置き換えます。 <b>False を指定</b> する現在の選択範囲を拡張する選択したオブジェクトと指定したオブジェクトです。</param>
         <summary>オブジェクトを選択します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1265,8 +1241,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>フォントが影付きフォントの場合、またはオブジェクトに影がある場合。</summary>
+        <summary><b>True</b> の 場合は、フォントが影付きフォントまたはオブジェクトに影がある場合です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1294,7 +1269,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ShapeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />を指定したオブジェクトまたはオブジェクトを表すオブジェクト。</summary>
+        <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1325,7 +1300,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトのリンク ソース名を設定または返します。</summary>
+        <summary>指定したオブジェクトのリンク ソース名を取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1356,7 +1331,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>(ワークシート) の行 1 の上端、または、グラフ エリア (グラフの場合) の一番上のオブジェクトの上端からポイント単位での距離です。</summary>
+        <summary>オブジェクトの上端から行 1 の上端 (ワークシート上) またはグラフ エリアの上端 (グラフの場合) までの距離をポイント数で指定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1387,7 +1362,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトを表示するかどうかを決定します。</summary>
+        <summary>オブジェクトを表示するかどうかを指定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1448,10 +1423,8 @@
       <Docs>
         <summary>オブジェクトの z オーダーの位置を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトのコレクション、オブジェクトの z オーダーの背面には、 <paramref name="collection" />(1)、z オーダーの前面にあるオブジェクトは、 <paramref name="collection" />(<paramref name="collection" />です<b>。カウント</b>)。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>オブジェクトのコレクションでは、z オーダーの最背面にあるオブジェクトは <paramref name="collection" /> (1)、z オーダーの最前面のオブジェクトは <paramref name="collection" /> ( <paramref name="collection" /> .<b>Count )。</b></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

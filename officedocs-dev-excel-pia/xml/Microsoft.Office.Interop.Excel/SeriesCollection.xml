@@ -1,13 +1,5 @@
 <Type Name="SeriesCollection" FullName="Microsoft.Office.Interop.Excel.SeriesCollection">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9b503045ebef3ddb75466923708250f026284484" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578968" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface SeriesCollection : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9b503045ebef3ddb75466923708250f026284484" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010417" /></Metadata><TypeSignature Language="C#" Value="public interface SeriesCollection : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SeriesCollection implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SeriesCollection" />
   <TypeSignature Language="VB.NET" Value="Public Interface SeriesCollection&#xA;Implements IEnumerable" />
@@ -33,14 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>すべてのコレクション、 <see cref="T:Microsoft.Office.Interop.Excel.Series" /> 、指定したグラフまたはグラフ種類グループ内のオブジェクト。</summary>
-    <remarks>
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel._Chart.SeriesCollection(System.Object)" />を<b>返すプロパティ</b>のコレクションを返すメソッドです。</para>
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.SeriesCollection.Add(System.Object,Microsoft.Office.Interop.Excel.XlRowCol,System.Object,System.Object,System.Object)" />を新しい系列を作成し、グラフに追加する方法です。</para>
-      <para>
-        <b>返すプロパティ</b>を使用して (<paramref name="index" />)、インデックス、データ系列のインデックス番号または名前、オブジェクトを取得する 1 つ<b>の系列</b>に。</para>
-      <para></para>
-    </remarks>
+    <summary>指定されたグラフまたはグラフ <see cref="T:Microsoft.Office.Interop.Excel.Series" /> 種類グループ内のすべてのオブジェクトのコレクションです。</summary>
+    <remarks><para><see cref="M:Microsoft.Office.Interop.Excel._Chart.SeriesCollection(System.Object)" /> <b>SeriesCollection コレクションを取得するには、このメソッドを使用</b>します。</para>
+      <para>このメソッド <see cref="M:Microsoft.Office.Interop.Excel.SeriesCollection.Add(System.Object,Microsoft.Office.Interop.Excel.XlRowCol,System.Object,System.Object,System.Object)" /> を使用して、新しいデータ系列を作成し、グラフに追加します。</para>
+      <para><b>SeriesCollection</b>( ) を使用して 1 つの Series オブジェクトを取得します (index には、データ系列のインデックス番号 <paramref name="index" /> または名前を<b>指定</b>)。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -101,18 +90,15 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">
-          <b>オブジェクト</b>が必要です。 新しいデータを Range オブジェクトまたはデータ要素の配列として。</param>
-        <param name="Rowcol">省略可能な<see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" />。 新しい値が行または列の指定した範囲内かどうかを指定します。</param>
-        <param name="SeriesLabels">省略可能な<b>オブジェクト</b>です。 無視されます<paramref name="Source" />配列です。 <b>True</b> 場合は、最初の行または列にデータ系列の名前が含まれています。 <b>False</b> 場合は、最初の行または列にデータ系列の最初のデータ ポイントが含まれています。 この引数を省略すると、Microsoft Excel は、最初の行または列の内容をデータ系列の名前の場所を特定しようとします。</param>
-        <param name="CategoryLabels">省略可能な<b>オブジェクト</b>です。 無視されます<paramref name="Source" />配列です。 <b>True</b> 場合は、最初の行または列に項目ラベルの名前が含まれています。 <b>False</b> 場合は、最初の行または列にデータ系列の最初のデータ ポイントが含まれています。 この引数を省略すると、Microsoft Excel は、最初の行または列の内容によって、項目ラベルの位置を確認しようとします。</param>
-        <param name="Replace">省略可能な<b>オブジェクト</b>です。 場合<paramref name="CategoryLabels" /><b>は</b>、<paramref name="Replace" />が<b>True の</b>系列のカテゴリが存在している指定したカテゴリの置換後の文字列。 場合<paramref name="Replace" />が<b>False</b>、既存のカテゴリは置き換えられません。 既定値は <b>False</b> です。</param>
-        <summary>1 つまたは複数の新しい系列を追加、<see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" />コレクションです。</summary>
+        <param name="Source">Required <b>Object</b>. Range オブジェクトまたはデータ要素の配列として新しいデータを指定します。</param>
+        <param name="Rowcol">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" /> 可能です。 指定した範囲の行または列に新しい値を含むかどうかを指定します。</param>
+        <param name="SeriesLabels">省略 <b>可能なオブジェクト</b>です。 配列の場合 <paramref name="Source" /> は無視されます。 <b>True</b> 場合は、最初の行または列にデータ系列の名前が含まれています。 最初の行または列に、データ系列の最初のデータ要素が含まれている場合は <b>False</b> を指定します。 この引数を省略すると、最初の行または列の内容によって、データ系列の名前の位置が自動的に決定されます。</param>
+        <param name="CategoryLabels">省略 <b>可能なオブジェクト</b>です。 配列の場合 <paramref name="Source" /> は無視されます。 <b>True</b> 場合は、最初の行または列に項目ラベルの名前が含まれています。 最初の行または列に、データ系列の最初のデータ要素が含まれている場合は <b>False</b> を指定します。 この引数を省略すると、最初の行または列の内容によって、項目ラベルの位置が自動的に決定されます。</param>
+        <param name="Replace">省略 <b>可能なオブジェクト</b>です。 True <paramref name="CategoryLabels" /> で<b>、True</b>の場合は、指定したカテゴリは、系列に現在存在 <paramref name="Replace" /> するカテゴリを置き換える。 <b></b> False <paramref name="Replace" /> の <b>場合</b>、既存のカテゴリは置き換えされません。 既定値は <b>False</b> です。</param>
+        <summary>コレクションに 1 つ以上の新しいデータ系列を追加 <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>ピボットグラフ レポートでは、このプロパティを使用できません。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>ピボットグラフ レポートでは、このプロパティを使用できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -138,7 +124,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -194,14 +180,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Extend">
@@ -228,16 +211,13 @@
         <Parameter Name="CategoryLabels" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">
-          <b>オブジェクト</b>が必要です。 追加する新しいデータの<see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" />オブジェクトは、いずれかの方法として、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトまたはデータ ポイントの配列。</param>
-        <param name="Rowcol">省略可能な<b>オブジェクト</b>です。 無視されます<paramref name="Source" />配列です。 行または特定の範囲の元の列に新しい値がかどうかを指定します。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" />定数: <b>xlRows</b>または<b>xlColumns</b>です。 この引数を省略すると、Microsoft Excel は、値がサイズおよび方向の選択範囲または配列の次元で判断しようとします。</param>
-        <param name="CategoryLabels">省略可能な<b>オブジェクト</b>です。 無視されます<paramref name="Source" />配列です。 <b>True を指定</b> して、最初の行または列には、項目軸ラベルの名前が含まれています。 <b>False を指定</b> して、最初の行または列には、シリーズの最初のデータ ポイントが含まれています。 この引数を省略すると、Microsoft Excel は、最初の行または列の内容によって、項目ラベルの位置を確認しようとします。</param>
+        <param name="Source">Required <b>Object</b>. オブジェクトに追加する新しいデータを、オブジェクトまたはデータ要素 <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> <see cref="T:Microsoft.Office.Interop.Excel.Range" /> の配列として指定します。</param>
+        <param name="Rowcol">省略 <b>可能なオブジェクト</b>です。 配列の場合 <paramref name="Source" /> は無視されます。 新しい値が、対象範囲の行にあるか、列にあるかを指定します。 使用できる定数は <see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" /> <b>、xlRows</b> または <b>xlColumns です</b>。 この引数を省略すると、選択範囲のサイズと方向、または配列の次元により、新しい値が行と列のいずれにあるかが決まります。</param>
+        <param name="CategoryLabels">省略 <b>可能なオブジェクト</b>です。 配列の場合 <paramref name="Source" /> は無視されます。 <b>True を指定</b> して、最初の行または列には、項目軸ラベルの名前が含まれています。 最初の行または列がデータ系列の最初のデータ要素のときは、 <b>False</b> を指定します。 この引数を省略すると、最初の行または列の内容により、項目ラベルの位置が自動的に判断されます。</param>
         <summary>既存のデータ系列のコレクションに新しいデータ要素を追加します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>ピボットグラフ レポートでは、このプロパティを使用できません。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>ピボットグラフ レポートでは、このプロパティを使用できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -295,8 +275,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -323,12 +302,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>新しいデータ系列を作成します。 返します、 <see cref="T:Microsoft.Office.Interop.Excel.Series" /> 、新しいデータ系列を表すオブジェクト。</summary>
+        <summary>新しいデータ系列を作成します。 新しいデータ <see cref="T:Microsoft.Office.Interop.Excel.Series" /> 系列を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>ピボットグラフ レポートに対して、このメソッドは使用できません。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>ピボットグラフ レポートに対して、このメソッドは使用できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -385,11 +362,11 @@
         <Parameter Name="NewSeries" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Rowcol">省略可能な<see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" />。 特定のデータ系列に対応する値が行と列のどちらにあるかを指定します。 <b>XlRowCol</b>定数のいずれか:<b>xlColumns</b>既定の<b>xlRows</b></param>
-        <param name="SeriesLabels">省略可能な<b>オブジェクト</b>です。 <b>True</b>を各行または各列の最初の行) の最初の列のセルの内容をその行 (または列) のデータ系列の名前として使用されます。 <b>偽</b>のデータ系列の最初のデータ要素としては、各行または各列の最初の行) の最初の列のセルの内容を使用します。 既定値は <b>False</b> です。</param>
-        <param name="CategoryLabels">省略可能な<b>オブジェクト</b>です。 <b>True の</b>グラフのカテゴリとして、選択範囲の最初の行 (または列) の内容を使用します。 <b>False を指定</b>最初のデータ系列としてグラフの最初の行 (または列) の内容を使用します。 既定値は <b>False</b> です。</param>
-        <param name="Replace">省略可能な<b>オブジェクト</b>です。 <b>True の</b>コピー範囲の情報を使用して既存の項目を置換中にカテゴリを適用します。 <b>False</b>を置き換えずに新しい項目を挿入します。 既定値は <b>True</b> です。</param>
-        <param name="NewSeries">省略可能な<b>オブジェクト</b>です。 <b>True</b>新しい系列としてデータを貼り付ける。 <b>False を指定</b>するデータを既存の系列の新しい要素として貼り付けます。 既定値は <b>True</b> です。</param>
+        <param name="Rowcol">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlRowCol" /> 可能です。 特定のデータ系列に対応する値が行と列のどちらにあるかを指定します。 使用できる定数は、 <b>次に示す XlRowCol</b> 定数の 1 つです<b>。xlColumns default</b> <b>xlRows</b></param>
+        <param name="SeriesLabels">省略 <b>可能なオブジェクト</b>です。 各行の最初の列 (または各列の最初の行) をその行 (または列) のデータ系列の名前として使用するには、 <b>True</b> を指定します。 各行の最初の列 (または各列の最初の行) をデータ系列の先頭のデータ要素として使用するには、 <b>False</b> を指定します。 既定値は <b>False</b> です。</param>
+        <param name="CategoryLabels">省略 <b>可能なオブジェクト</b>です。 選択範囲の最初の行 (または最初の列) の内容をグラフの項目として使用するには、 <b>True</b> を指定します。 最初の行 (または最初の列) の内容をグラフの先頭のデータ系列として使用するには、 <b>False</b> を指定します。 既定値は <b>False</b> です。</param>
+        <param name="Replace">省略 <b>可能なオブジェクト</b>です。 項目を適用するとき、既存の項目をコピー範囲の情報に置き換えるには、 <b>True</b> を指定します。 既存の項目を置き換えずに新しい項目を挿入するには、 <b>False</b> を指定します。 既定値は <b>True</b> です。</param>
+        <param name="NewSeries">省略 <b>可能なオブジェクト</b>です。 貼り付けるデータを新しい系列とするには、 <b>True</b> を指定します。 データを既存の系列の新しい要素として貼り付けるには、 <b>False</b> を指定します。 既定値は <b>True</b> です。</param>
         <summary>クリップボードから、指定されたデータ系列のコレクションにデータを貼り付けます。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

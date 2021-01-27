@@ -1,13 +1,5 @@
 <Type Name="Slicers" FullName="Microsoft.Office.Interop.Excel.Slicers">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="05cbedda2d8d91112708ccf7b57d8cc47f56c8f7" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575643" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Slicers : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="05cbedda2d8d91112708ccf7b57d8cc47f56c8f7" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010151" /></Metadata><TypeSignature Language="C#" Value="public interface Slicers : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Slicers implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Slicers" />
   <TypeSignature Language="VB.NET" Value="Public Interface Slicers&#xA;Implements IEnumerable" />
@@ -33,11 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />オブジェクトです。</summary>
-    <remarks>
-      <para>各<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />オブジェクトは、ブックでスライサーを表します。 スライサーを使用して、データをフィルター処理します。</para>
-      <para></para>
-    </remarks>
+    <summary>オブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> コレクション。</summary>
+    <remarks><para>各 <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> オブジェクトは、ブック内のスライサーを表します。 スライサーは、データをフィルター処理するために使用されます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -71,7 +61,7 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>内部使用のため予約済みです。</summary>
-        <value>返します。 <see cref="T:Microsoft.Office.Interop.Excel.Slicer" />。</value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> を返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,7 +94,7 @@
         <Parameter Name="Height" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SlicerDestination">シートの名前を指定する文字列を選択しても<see cref="T:Microsoft.Office.Interop.Excel.Worksheet" />のシートは、結果のスライサーが配置される場所を表すオブジェクト。 指定したシートが含まれているブックにする必要があります、<see cref="T:Microsoft.Office.Interop.Excel.Slicers" />式で指定されたオブジェクトです。</param>
+        <param name="SlicerDestination">シートの名前を指定する文字列、または作成されるスライサーが配置されるシートを表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> 。 コピー先シートは、式で指定されたオブジェクトを含むブック <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> 内に含まれている必要があります。</param>
         <param name="Level">OLAP データ ソースの場合、スライサーの作成の基になるレベルの序数またはマルチ ディメンション式 (MDX) の名前を指定します。OLAP データ ソース以外ではサポートされていません。</param>
         <param name="Name">スライサーの名前を指定します。指定しない場合は Excel で自動的に生成されます。名前は、ブック内のすべてのスライサーの中で一意である必要があります。</param>
         <param name="Caption">スライサーのキャプションを指定します。</param>
@@ -112,8 +102,8 @@
         <param name="Left">スライサーの水平方向の位置の初期値 (ポイント単位) を指定します。ワークシートのセル A1 の左上隅からの相対的な位置で表されます。</param>
         <param name="Width">スライサー コントロールの初期幅 (ポイント単位) を指定します。</param>
         <param name="Height">スライサー コントロールの初期高さ (ポイント単位) を指定します。</param>
-        <summary>新しいスライサーを作成して返します、<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />オブジェクトです。</summary>
-        <returns>A<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />オブジェクトです。</returns>
+        <summary>新しいスライサーを作成し、オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> します。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> オブジェクト。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,13 +130,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 このプロパティが返すオブジェクト修飾子を使用する場合、<see cref="T:Microsoft.Office.Interop.Excel.Application" />を指定したオブジェクトの作成者を表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Application" />オブジェクトです。</value>
-        <remarks>
-          <para>読み取り専用。</para>
-          <para></para>
-        </remarks>
+        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Microsoft Excel アプリケーションを表 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> すオブジェクトを返します。 オブジェクト修飾子と一緒に使用する場合、このプロパティは指定されたオブジェクトの作成元を表 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> すオブジェクトを返します。</summary>
+        <value>オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -172,7 +159,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクション内のオブジェクトの数を取得します。 </summary>
+        <summary>コレクション内のオブジェクトの数を取得します。</summary>
         <value>コレクション内のオブジェクトの数。</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -200,13 +187,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>を取得します。</summary>
-        <value>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>。</value>
-        <remarks>
-          <para>読み取り専用<b>long</b>です。</para>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 <see cref="P:Microsoft.Office.Interop.Excel.Slicers.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <summary>このオブジェクトが作成されたアプリケーションを<b></b>示す 32 ビット整数を取得します。</summary>
+        <value>このオブジェクトが <b>作成されたアプリケーション</b> を示す 32 ビットの整数。</value>
+        <remarks><para>読み取り専用 <b>時間 です</b>。</para>
+          <para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ <see cref="P:Microsoft.Office.Interop.Excel.Slicers.Creator" /> Macintosh 用の Microsoft Excel で使用するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -237,7 +222,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>返します。 <see cref="T:System.Collections.IEnumerator" />。</returns>
+        <returns><see cref="T:System.Collections.IEnumerator" /> を返します。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -267,9 +252,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">名前またはインデックス番号の<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />オブジェクトです。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />コレクションからのオブジェクト。</summary>
-        <value>返します。 <see cref="T:Microsoft.Office.Interop.Excel.Slicer" />。</value>
+        <param name="Index">オブジェクトの名前またはインデックス <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> 番号を指定します。</param>
+        <summary>コレクションから <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> オブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> を返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -296,12 +281,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>親を取得します<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />指定されたオブジェクト<see cref="T:Microsoft.Office.Interop.Excel.Slicers" />コレクションです。</summary>
-        <value>親<see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" />指定されたオブジェクト<see cref="T:Microsoft.Office.Interop.Excel.Slicers" />コレクションです。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para></para>
-        </remarks>
+        <summary>指定したコレクション <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> の親オブジェクトを取得 <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> します。</summary>
+        <value>指定された <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> コレクションの親 <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> オブジェクト。</value>
+        <remarks><para>値の取得のみ可能です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

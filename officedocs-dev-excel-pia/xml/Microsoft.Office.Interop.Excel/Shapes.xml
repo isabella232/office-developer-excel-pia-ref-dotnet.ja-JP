@@ -1,13 +1,5 @@
 <Type Name="Shapes" FullName="Microsoft.Office.Interop.Excel.Shapes">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="7d8f4259d10e89624f92628ba847b174395cf289" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581817" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Shapes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7d8f4259d10e89624f92628ba847b174395cf289" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010312" /></Metadata><TypeSignature Language="C#" Value="public interface Shapes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Shapes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Shapes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Shapes&#xA;Implements IEnumerable" />
@@ -33,13 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>すべてのコレクション、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />指定されたシート上のオブジェクトです。</summary>
-    <remarks>
-      <para>各<see cref="T:Microsoft.Office.Interop.Excel.Shape" />オブジェクトは、オートシェイプ、フリー フォームの描画レイヤーのオブジェクト、OLE オブジェクト、または図を表します。</para>
+    <summary>指定されたシートのすべての <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> オブジェクトのコレクションです。</summary>
+    <remarks><para>各 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> オブジェクトは、オートShape、フリーフォーム、OLE オブジェクト、図などの描画レイヤーのオブジェクトを表します。</para>
       <para>
-        <b>注</b>: 文書の図形のサブセットを処理するかどうか-たとえば、文書のオートシェイプだけを処理したり、選択した図形のみを処理する-を構築する必要があります、<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />を操作する図形が含まれているコレクション。</para>
-      <para></para>
-    </remarks>
+        <b>メモ</b>: 文書上の図形のサブセットを操作する場合 (たとえば、文書のオートシェイプだけを操作したり、選択した図形のみを操作したりするには)、操作する図形を含むコレクションを作成する必要があります。 <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -101,21 +91,15 @@
         <Parameter Name="Height" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Type">必要な<see cref="T:Microsoft.Office.Core.MsoCalloutType" />。 引き出し線の種類を指定します。 <b>MsoCalloutType</b>定数のいずれか:<b>msoCalloutOne</b>。 水平方向または垂直方向のいずれかは、単一セグメントの引き出し線です。<b>msoCalloutTwo</b>。 自由に回転する単一セグメントの引き出し線です。<b>msoCalloutMixed</b>。<b>msoCalloutThree</b>。 2 つのセグメントの線です。<b>msoCalloutFour</b>。 3 つのセグメントの線です。</param>
-        <param name="Left">
-          <b>1 つ</b>が必要です。 文書の左端を基準にして吹き出しのテキスト ボックスの左端の位置をポイント単位で指定します。</param>
-        <param name="Top">
-          <b>1 つ</b>が必要です。 文書の左端を基準にして吹き出しのテキスト ボックスの左端の位置をポイント単位で指定します。</param>
-        <param name="Width">
-          <b>1 つ</b>が必要です。 吹き出しのテキスト ボックスの幅をポイント単位で指定します。</param>
-        <param name="Height">
-          <b>1 つ</b>が必要です。 吹き出しのテキスト ボックスの高さをポイント単位で指定します。</param>
-        <summary>輪郭なしの吹き出しを作成します。 返します、 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 、新しい吹き出しを表すオブジェクト。</summary>
+        <param name="Type">必須 <see cref="T:Microsoft.Office.Core.MsoCalloutType" /> 。 引き出し線の種類を指定します。 使用できる定数は、次に示す <b>MsoCalloutType</b> 定数である<b>msoCalloutOne です</b>。 水平または垂直の単一セグメントの引き出し線。<b>msoCalloutTwo</b>. 自由に回転する単一セグメントの引き出し線。<b>msoCalloutMixed</b>.<b>msoCalloutThree</b>. 2 つのセグメントを持つ線。<b>msoCalloutFour</b>. 3 つのセグメントの線。</param>
+        <param name="Left">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の左端を基準にして吹き出しのテキスト ボックスの左端の位置をポイント単位で指定します。</param>
+        <param name="Top">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の左端を基準にして吹き出しのテキスト ボックスの左端の位置をポイント単位で指定します。</param>
+        <param name="Width">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 吹き出しのテキスト ボックスの幅をポイント単位で指定します。</param>
+        <param name="Height">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 吹き出しのテキスト ボックスの高さをポイント単位で指定します。</param>
+        <summary>輪郭なしの吹き出しを作成します。 新しい吹 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> き出しを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>使用して、各種の吹き出しを挿入することができます、<see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddShape(Microsoft.Office.Core.MsoAutoShapeType,System.Single,System.Single,System.Single,System.Single)" />メソッドです。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このメソッドを使用すると、さまざまな吹き出しを挿入 <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddShape(Microsoft.Office.Core.MsoAutoShapeType,System.Single,System.Single,System.Single,System.Single)" /> できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddCanvas">
@@ -223,14 +207,14 @@
         <Parameter Name="NewLayout" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Style">グラフのスタイルです。 <b>可能</b>で指定されたグラフの種類の既定のスタイルを取得するのには-1 を使用してください。</param>
-        <param name="XlChartType">グラフの種類を指定します。</param>
+        <param name="Style">グラフのスタイルです。 XlChartType で指定されたグラフの種類の既定のスタイルを取得するには、-1 <b>を使用します。</b></param>
+        <param name="XlChartType">グラフの種類です。</param>
         <param name="Left">アンカーを基準にして、グラフの左端の位置をポイント単位で示します。</param>
         <param name="Top">アンカーを基準にして、グラフの上端の位置をポイント単位で示します。</param>
         <param name="Width">グラフのポイント単位の幅です。</param>
         <param name="Height">グラフのポイント単位の高さです。</param>
-        <param name="NewLayout">場合<paramref name="NewLayout" />が true の場合、新しい動的な書式設定ルールを使用してグラフが挿入されます (タイトルで、凡例にのみ複数の系列があるかどうか)。</param>
-        <summary>文書にグラフを追加します。 返します、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />グラフを表し、指定したコレクションに追加するオブジェクト。</summary>
+        <param name="NewLayout">true の場合、新しい動的書式ルールを使用してグラフが挿入されます (タイトルがオンで、複数のデータ系列がある場合にのみ凡例 <paramref name="NewLayout" /> がオンになります)。</param>
+        <summary>ドキュメントにグラフを追加します。 グラフを <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 表すオブジェクトを返し、指定したコレクションに追加します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -262,22 +246,16 @@
         <Parameter Name="EndY" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Type">必要な<see cref="T:Microsoft.Office.Core.MsoConnectorType" />。 追加するコネクタの種類を指定します。 <b>MsoConnectorType</b>定数のいずれか:<b>msoConnectorElbow</b><b>msoConnectorTypeMixed</b><b>msoConnectorCurve</b><b>msoConnectorStraight</b></param>
-        <param name="BeginX">
-          <b>1 つ</b>が必要です。 文書の左上隅を基準にしてコネクタの始点の水平位置をポイント単位で指定します。</param>
-        <param name="BeginY">
-          <b>1 つ</b>が必要です。 文書の左上隅を基準にしてコネクタの始点の垂直位置をポイント単位で指定します。</param>
-        <param name="EndX">
-          <b>1 つ</b>が必要です。 文書の左上隅を基準にしてコネクタの終点の水平位置をポイント単位で指定します。</param>
-        <param name="EndY">
-          <b>1 つ</b>が必要です。 文書の左上隅を基準にしてコネクタの終点の垂直位置をポイント単位で指定します。</param>
-        <summary>コネクタを作成します。 返します、 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 、新しいコネクタを表すオブジェクト。</summary>
+        <param name="Type">必須 <see cref="T:Microsoft.Office.Core.MsoConnectorType" /> 。 追加するコネクタの種類を指定します。 使用できる定数は、 <b>次の MsoConnectorType</b> 定数です<b>。msoConnectorElbow</b><b>msoConnectorTypeMixed</b><b>msoConnectorCurve</b><b>msoConnectorStraight</b></param>
+        <param name="BeginX">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の左上隅を基準にしてコネクタの始点の水平位置をポイント単位で指定します。</param>
+        <param name="BeginY">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の左上隅を基準にしてコネクタの始点の垂直位置をポイント単位で指定します。</param>
+        <param name="EndX">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の左上隅を基準にしてコネクタの終点の水平位置をポイント単位で指定します。</param>
+        <param name="EndY">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の左上隅を基準にしてコネクタの終点の垂直位置をポイント単位で指定します。</param>
+        <summary>コネクタを作成します。 新しいコネクタ <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>コネクタを追加するときに何も接続されていません。 使用、<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" />と<see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" />の文書の他の図形に始点と、コネクタの終点を接続する方法です。</para>
-          <para>コネクタを図形に接続すると、必要に応じて自動的にコネクタの大きさと位置が調整されます。したがって、コネクタをほかの図形に接続すると、コネクタの追加時に指定した位置や大きさは無効になります。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>コネクタを追加しても、すべてのものに接続されるわけではありません。 コネクタの開始と終了を文書内の他の図形に接続するには、このメソッド <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> を使用します。</para>
+          <para>コネクタを図形につなげる場合、コネクタの大きさと位置は、必要に応じて自動的に調整されます。 したがって、コネクタを他の図形に接続する場合、コネクタを追加するときに指定する位置と寸法は関係ありません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddCurve">
@@ -303,9 +281,8 @@
         <Parameter Name="SafeArrayOfPoints" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SafeArrayOfPoints">
-          <b>オブジェクト</b>が必要です。 配列では、座標の頂点を指定して、カーブの点を制御します。 最初に指定した点は、始点と、最初のベジェ セグメントのコントロール ポイントは、次の 2 つのポイントです。 その他、各セグメントの曲線の中継点と 2 つのコントロール ポイントを指定します。 最後に指定する点は、曲線の終点です。 指定すること必要があります常に 3n+1、n は、曲線のセグメントの数に注意してください。</param>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 、ワークシート内のベジェ曲線を表すオブジェクト。</summary>
+        <param name="SafeArrayOfPoints">Required <b>Object</b>. 曲線の両端とコントロール ポイントを指定する 2 次元の座標の配列を指定します。 最初に指定した点が始点となり、次に指定した 2 つの点が最初のベジェ セグメントのコントロール ポイントとなります。 次に、この曲線に追加するセグメントごとに、1 つの中継点と 2 つのコントロール ポイントを指定します。 最後に指定した点が、曲線の終点になります。 曲線のセグメントの数を n とすると、常に 3n + 1 個の点を指定する必要があります。</param>
+        <summary>ワークシートの <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> ベジエ曲線を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -340,16 +317,12 @@
         <Parameter Name="Height" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Type">必要な<see cref="T:Microsoft.Office.Core.MsoDiagramType" />。 ダイアグラムの型。 <b>MsoDiagramType</b>定数のいずれか: 継続的なサイクルのダイヤグラム タイプの<b>msoDiagramCycle</b> A のプロセス図です。<b>msoDiagramMixed</b>混合の図の種類です。<b>msoDiagramOrgChart</b>階層関係図の種類です。<b>msoDiagramPyramid</b>図表の種類の関係を基盤に基づいています。<b>msoDiagramRadial</b>中核となる要素の関係を示す図の種類です。<b>msoDiagramTarget</b>目標に向けた手順を示す図の種類です。<b>msoDiagramVenn</b>要素の重なる領域を表示する図の種類です。</param>
-        <param name="Left">
-          <b>1 つ</b>が必要です。 ワークシートの左上隅を基準に図表の左上隅の位置をポイント単位で。</param>
-        <param name="Top">
-          <b>1 つ</b>が必要です。 ワークシートの左上隅を基準に図表の左端と上端の位置をポイント単位で。</param>
-        <param name="Width">
-          <b>1 つ</b>が必要です。 ポイント単位で、図の幅。</param>
-        <param name="Height">
-          <b>1 つ</b>が必要です。 ポイント単位で、図の高さ。</param>
-        <summary>図を作成します。 返します、 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 、新しい図を表すオブジェクト。</summary>
+        <param name="Type">必須 <see cref="T:Microsoft.Office.Core.MsoDiagramType" /> 。 図の種類を指定します。 使用できる定数は <b>、MsoDiagramType</b> 定数である<b>msoDiagramCycle</b> A プロセスダイアグラムで、連続サイクルの図の種類です。<b>msoDiagramMixed</b> 図の種類が混在しています。<b>msoDiagramOrgChart</b> 階層関係図の種類。<b>msoDiagramPyramid</b> 基礎ベースの関係図の種類。<b>msoDiagramRadial</b> コア要素の関係を示す図の種類。<b>msoDiagramTarget</b> 目標に向けた手順を示す図の種類。<b>msoDiagramVenn</b> 要素間の重なり合う領域を示す図の種類。</param>
+        <param name="Left">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 ワークシートの左上隅を基準に図の左上隅の位置をポイント数で指定します。</param>
+        <param name="Top">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 ワークシートの左上隅を基準に、図の左上隅の位置をポイント数で指定します。</param>
+        <param name="Width">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 図の幅をポイント単位で指定します。</param>
+        <param name="Height">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 図の高さをポイント数で指定します。</param>
+        <summary>図を作成します。 新しい図 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -381,21 +354,15 @@
         <Parameter Name="Height" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Type">必要な<see cref="T:Microsoft.Office.Interop.Excel.XlFormControl" />。 Microsoft Excel コントロールの種類。 ワークシートには、エディット ボックスを作成できません。 <b>可能</b>定数のいずれか:<b>xlButtonControl</b><b>xlCheckBox</b><b>xlDropDown</b><b>xlEditBox</b><b>xlGroupBox</b><b>xlLabel</b><b>xlListBox</b><b>xlOptionButton</b><b>xlScrollBar</b><b>xlSpinner</b></param>
-        <param name="Left">
-          <b>整数</b>が必要です。 ワークシートのセル A1 の左上隅またはグラフの左上端を基準として、新しいオブジェクトの初期座標をポイント単位で指定します。</param>
-        <param name="Top">
-          <b>整数</b>が必要です。 ワークシートのセル A1 の左上隅またはグラフの左上端を基準として、新しいオブジェクトの初期座標をポイント単位で指定します。</param>
-        <param name="Width">
-          <b>整数</b>が必要です。 新しいオブジェクトの初期サイズをポイント単位で指定します。</param>
-        <param name="Height">
-          <b>整数</b>が必要です。 新しいオブジェクトの初期サイズをポイント単位で指定します。</param>
-        <summary>Microsoft Excel コントロールを作成します。 返します、 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 、新しいコントロールを表すオブジェクト。</summary>
+        <param name="Type">必須 <see cref="T:Microsoft.Office.Interop.Excel.XlFormControl" /> 。 Microsoft Excel コントロールの種類を指定します。 ワークシートでは編集ボックスを作成できません。 使用できる定数は、次に示す<b>XlFormControl</b>クラスの定数です<b>。xlButtonControl</b><b>xlCheckBox</b><b>xlDropDown</b><b>xlEditBox xlGroupBox</b><b></b><b>xlLabel</b><b>xlListBox</b><b>xlOptionButton</b><b>xlScrollBar</b><b>xlSpinner</b></param>
+        <param name="Left">整数型 (<b>Integer</b>) の値を使用します。 ワークシートのセル A1 の左上隅またはグラフの左上端を基準として、新しいオブジェクトの初期座標をポイント単位で指定します。</param>
+        <param name="Top">整数型 (<b>Integer</b>) の値を使用します。 ワークシートのセル A1 の左上隅またはグラフの左上端を基準として、新しいオブジェクトの初期座標をポイント単位で指定します。</param>
+        <param name="Width">整数型 (<b>Integer</b>) の値を使用します。 新しいオブジェクトの初期サイズをポイント単位で指定します。</param>
+        <param name="Height">整数型 (<b>Integer</b>) の値を使用します。 新しいオブジェクトの初期サイズをポイント単位で指定します。</param>
+        <summary>Microsoft Excel コントロールを作成します。 新しいコントロール <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddOLEObject(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />メソッドまたは<see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />の ActiveX コントロールを作成して返すメソッドです。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddOLEObject(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />OLEObjects コレクションのメソッドまたはメソッドを使用して、コントロール <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> を作成ActiveXします。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddLabel">
@@ -425,16 +392,12 @@
         <Parameter Name="Height" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Orientation">必要な<see cref="T:Microsoft.Office.Core.MsoTextOrientation" />。 ラベル内のテキストの向きを指定します。 これら<b>が可能</b>のいずれかのことができます:<b>msoTextOrientationDownward</b><b>msoTextOrientationHorizontal</b><b>msoTextOrientationHorizontalRotatedFarEast</b><b>msoTextOrientationMixed</b><b>msoTextOrientationUpward</b><b>msoTextOrientationVertical</b><b>msoTextOrientationVerticalFarEast</b>が選択した言語サポート (たとえば、日本語) によっては使用できない可能性がありますこれらの定数のいくつかまたはインストールされています。</param>
-        <param name="Left">
-          <b>1 つ</b>が必要です。 文書の左上隅を基準にしてラベルの左上隅の位置をポイント単位で指定します。</param>
-        <param name="Top">
-          <b>1 つ</b>が必要です。 文書の上端を基準にしてラベルの左上端の位置をポイント単位で指定します。</param>
-        <param name="Width">
-          <b>1 つ</b>が必要です。 ラベルの幅をポイント単位で指定します。</param>
-        <param name="Height">
-          <b>1 つ</b>が必要です。 ラベルの高さをポイント単位で指定します。</param>
-        <summary>ラベルを作成します。 返します、 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 、新しいラベルを表すオブジェクト。</summary>
+        <param name="Orientation">必須 <see cref="T:Microsoft.Office.Core.MsoTextOrientation" /> 。 ラベル内のテキストの向きを指定します。 使用できる定数は、次に示す<b>MsoTextOrientationDownward</b> <b>msoTextOrientationHorizontal</b><b>msoTextOrientationHorizontalRotatedFarEast</b><b>msoTextOrientationMixed</b><b>msoTextOrientationUpward msoTextOrientationVertical</b><b></b><b>msoTextOrientationVerticalFarEast</b>です。これらの定数の一部は使用できない場合があります。 選択またはインストールされている言語サポート (たとえば、日本語) に応じて異なる場合があります。<b></b></param>
+        <param name="Left">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の左上隅を基準にしてラベルの左上隅の位置をポイント単位で指定します。</param>
+        <param name="Top">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の上端を基準にしてラベルの左上端の位置をポイント単位で指定します。</param>
+        <param name="Width">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 ラベルの幅をポイント単位で指定します。</param>
+        <param name="Height">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 ラベルの高さをポイント単位で指定します。</param>
+        <summary>ラベルを作成します。 新しいラベル <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -465,15 +428,11 @@
         <Parameter Name="EndY" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="BeginX">
-          <b>1 つ</b>が必要です。 文書の左上隅を基準に線の終点の位置をポイント単位で指定します。</param>
-        <param name="BeginY">
-          <b>1 つ</b>が必要です。 文書の左上隅を基準に線の終点の位置をポイント単位で指定します。</param>
-        <param name="EndX">
-          <b>1 つ</b>が必要です。 文書の左上隅を基準に線の終点の位置をポイント単位で指定します。</param>
-        <param name="EndY">
-          <b>1 つ</b>が必要です。 文書の左上隅を基準に線の終点の位置をポイント単位で指定します。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />ワークシートに新しい行を表すオブジェクト。</summary>
+        <param name="BeginX">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の左上隅を基準に線の終点の位置をポイント単位で指定します。</param>
+        <param name="BeginY">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の左上隅を基準に線の終点の位置をポイント単位で指定します。</param>
+        <param name="EndX">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の左上隅を基準に線の終点の位置をポイント単位で指定します。</param>
+        <param name="EndY">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の左上隅を基準に線の終点の位置をポイント単位で指定します。</param>
+        <summary>ワークシートの <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 新しい行を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -510,18 +469,18 @@
         <Parameter Name="Height" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ClassType">省略可能な<b>オブジェクト</b>です。 (どちらかを指定する必要があります<paramref name="ClassType" />または<paramref name="FileName" />)。 作成するオブジェクトのプログラム id を含む文字列です。 場合<paramref name="ClassType" />が指定されている<paramref name="FileName" />と<paramref name="Link" />は無視されます。</param>
-        <param name="Filename">省略可能な<b>オブジェクト</b>です。 オブジェクトの作成元ファイルを指定します。 パスを指定しない場合は、現在の作業フォルダーが使用されます。 どちらかを指定する必要があります、<paramref name="ClassType" />または<paramref name="FileName" />が、オブジェクトの両方の引数です。</param>
-        <param name="Link">省略可能な<b>オブジェクト</b>です。 <b>True の</b> 作成元ファイルに OLE オブジェクトをリンクします。 <b>False を指定</b> するには、OLE オブジェクトは、ファイルの独立したコピーです。 値を指定した場合は<paramref name="ClassType" />、この引数を<b>False</b>にする必要があります。 既定値は <b>False</b> です。</param>
-        <param name="DisplayAsIcon">省略可能な<b>オブジェクト</b>です。 <b>True</b> を設定すると、OLE オブジェクトをアイコンで表示します。 既定値は <b>False</b> です。</param>
-        <param name="IconFileName">省略可能な<b>オブジェクト</b>です。 表示するアイコンを含むファイル名を指定します。</param>
-        <param name="IconIndex">省略可能な<b>オブジェクト</b>です。 内のアイコンのインデックス<paramref name="IconFileName" />。 指定したファイル内のアイコンの順序は、アイコンの変更] ダイアログ ボックス ([オブジェクト] ダイアログ ボックスから表示] チェック ボックスが選択されている) アイコンが表示される順序に対応します。 ファイルの最初のアイコンは、インデックス番号が 0 となります。 指定したインデックス番号のアイコンが存在しないかどうかは<paramref name="IconFileName" />、インデックス番号 1 (ファイルの 2 つ目のアイコン) のアイコンを使用します。 既定値は 0 です。</param>
-        <param name="IconLabel">省略可能な<b>オブジェクト</b>です。 アイコンの下に表示するラベル (標題) を指定します。</param>
-        <param name="Left">省略可能な<b>オブジェクト</b>です。 ドキュメントの左上隅を基準にして新しいオブジェクトの左上隅の位置をポイント単位で。 既定値は 0 です。</param>
-        <param name="Top">省略可能な<b>オブジェクト</b>です。 ドキュメントの左上隅を基準にして新しいオブジェクトの左上隅の位置をポイント単位で。 既定値は 0 です。</param>
-        <param name="Width">省略可能な<b>オブジェクト</b>です。 OLE オブジェクトの初期サイズをポイント単位で指定します。</param>
-        <param name="Height">省略可能な<b>オブジェクト</b>です。 OLE オブジェクトの初期サイズをポイント単位で指定します。</param>
-        <summary>OLE オブジェクトを作成します。 返します、 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 、新しい OLE オブジェクトを表すオブジェクト。</summary>
+        <param name="ClassType">省略 <b>可能なオブジェクト</b>です。 (または) を指定する <paramref name="ClassType" /> 必要があります <paramref name="FileName" /> 。 オブジェクトを作成するためのプログラム ID を含む文字列を指定します。 指定 <paramref name="ClassType" /> した場合は <paramref name="FileName" /> 無視 <paramref name="Link" /> されます。</param>
+        <param name="Filename">省略 <b>可能なオブジェクト</b>です。 オブジェクトの作成元ファイルを指定します。 パスを指定しない場合は、現在の作業フォルダーが使用されます。 オブジェクトに対して 1 <paramref name="ClassType" /> つ以上 <paramref name="FileName" /> の引数を指定する必要がありますが、両方を指定する必要はありません。</param>
+        <param name="Link">省略 <b>可能なオブジェクト</b>です。 <b>True の</b> 作成元ファイルに OLE オブジェクトをリンクします。 <b>False を指定</b> するには、OLE オブジェクトは、ファイルの独立したコピーです。 If you specified a value <paramref name="ClassType" /> for, this argument must be <b>False</b>. 既定値は <b>False</b> です。</param>
+        <param name="DisplayAsIcon">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を設定すると、OLE オブジェクトをアイコンで表示します。 既定値は <b>False</b> です。</param>
+        <param name="IconFileName">省略 <b>可能なオブジェクト</b>です。 表示するアイコンを含むファイルを指定します。</param>
+        <param name="IconIndex">省略 <b>可能なオブジェクト</b>です。 内のアイコンのインデックス <paramref name="IconFileName" /> です。 指定したファイル内のアイコンの順序は、[アイコンの変更] ダイアログ ボックス ([アイコンとして表示] チェック ボックスがオンの場合は [オブジェクト] ダイアログ ボックスからアクセス) に表示されるアイコンの順序に対応します。 ファイルの最初のアイコンは、インデックス番号は 0 (ゼロ) です。 指定されたインデックス番号のアイコンが存在しない場合は、インデックス番号 1 (ファイル内の 2 番目のアイコン) を持つアイコン <paramref name="IconFileName" /> が使用されます。 既定値は 0 (ゼロ) です。</param>
+        <param name="IconLabel">省略 <b>可能なオブジェクト</b>です。 アイコンの下に表示するラベル (図表番号) を指定します。</param>
+        <param name="Left">省略 <b>可能なオブジェクト</b>です。 文書の左上隅を基準に新規に作成するオブジェクトの左端と上端の位置をポイント単位で指定します。 既定値は 0 です。</param>
+        <param name="Top">省略 <b>可能なオブジェクト</b>です。 文書の左上隅を基準に新規に作成するオブジェクトの左端と上端の位置をポイント単位で指定します。 既定値は 0 です。</param>
+        <param name="Width">省略 <b>可能なオブジェクト</b>です。 OLE オブジェクトの初期サイズをポイント単位で指定します。</param>
+        <param name="Height">省略 <b>可能なオブジェクト</b>です。 OLE オブジェクトの初期サイズをポイント単位で指定します。</param>
+        <summary>OLE オブジェクトを作成します。 新しい <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> OLE オブジェクトを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -555,20 +514,14 @@
         <Parameter Name="Height" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Filename">
-          <b>文字列</b> が必要です。 OLE オブジェクトを作成するファイル名を指定します。</param>
-        <param name="LinkToFile">必要な<see cref="T:Microsoft.Office.Core.MsoTriState" />。 図をグラフィック ファイルとリンクするかどうかを指定します。 これら<b>msotristate クラス</b>の定数のいずれか: 画像のファイルの独立したコピーを作成する<b>msoCTrue</b><b>msofalse を設定</b>します。<b>msoTriStateMixed</b><b>msoTriStateToggle</b><b>msotrue を設定します。</b>作成元ファイルにリンクを設定します。</param>
-        <param name="SaveWithDocument">
-          <b>Msotristate クラス</b>をが必要です。 文書を保存するときに図も一緒に保存するかどうかを指定します。</param>
-        <param name="Left">
-          <b>1 つ</b>が必要です。 文書の左上隅を基準にして図の左上隅の位置をポイント単位で指定します。</param>
-        <param name="Top">
-          <b>1 つ</b>が必要です。 文書の上端を基準にして図の左上隅の位置をポイント単位で指定します。</param>
-        <param name="Width">
-          <b>1 つ</b>が必要です。 図の幅をポイント単位で指定します。</param>
-        <param name="Height">
-          <b>1 つ</b>が必要です。 図の高さをポイント単位で指定します。</param>
-        <summary>既存のファイルから図オブジェクトを作成します。 返します、 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 、新しい図を表すオブジェクト。</summary>
+        <param name="Filename"><b>文字列</b> が必要です。 OLE オブジェクトを作成するファイル名を指定します。</param>
+        <param name="LinkToFile">必須 <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。 図をグラフィック ファイルとリンクするかどうかを指定します。 使用できる定数は、次に示す <b>msoTriState</b> 定数です<b>。msoCTrue</b><b>msoFalse</b> 画像をファイルの独立したコピーに設定します。<b>msoTriStateMixed</b><b>msoTriStateToggle</b><b>msoTrue</b> を設定すると、画像が作成されたファイルにリンクされます。</param>
+        <param name="SaveWithDocument">必須<b>の MsoTriState 。</b> 文書を保存するときに図も一緒に保存するかどうかを指定します。</param>
+        <param name="Left">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の左上隅を基準にして図の左上隅の位置をポイント単位で指定します。</param>
+        <param name="Top">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の上端を基準にして図の左上隅の位置をポイント単位で指定します。</param>
+        <param name="Width">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 図の幅をポイント単位で指定します。</param>
+        <param name="Height">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 図の高さをポイント単位で指定します。</param>
+        <summary>既存のファイルから図オブジェクトを作成します。 新しい図 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -605,14 +558,14 @@
       <Docs>
         <param name="Filename">OLE オブジェクトを作成するファイル名を指定します。</param>
         <param name="LinkToFile">図を作成元のファイルにリンクするかどうかを指定します。</param>
-        <param name="SaveWithDocument">リンクされた図が、挿入先のドキュメントと共に保存されるかどうかを指定します。引数 LinkToFile を msoFalse に設定する場合、この引数は msoTrue に設定する必要があります。 </param>
+        <param name="SaveWithDocument">リンクされた図が、挿入先のドキュメントと共に保存されるかどうかを指定します。 もし LinkToFile が msoFalse の場合、この引数は msoTrue に設定する必要があります。</param>
         <param name="Left">図の左端の位置を、ワークシートの左端からの相対的なポイント単位で指定します。</param>
         <param name="Top">図の上端の位置を、ワークシートの上端から相対的なポイント単位で指定します。</param>
         <param name="Width">図の幅をポイント単位で指定します。</param>
         <param name="Height">図の高さをポイント単位で指定します。</param>
         <param name="Compress">画像を挿入するときに圧縮するかどうかを指定します。</param>
-        <summary>既存のファイルから図オブジェクトを作成します。 返します、 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 、新しい図を表すオブジェクト。</summary>
-        <returns>形</returns>
+        <summary>既存のファイルから図オブジェクトを作成します。 新しい図 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> を表すオブジェクトを返します。</summary>
+        <returns>Shape</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -639,14 +592,11 @@
         <Parameter Name="SafeArrayOfPoints" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SafeArrayOfPoints">
-          <b>オブジェクト</b>が必要です。 折れ線の描画オブジェクトの頂点を指定する 2 次元の座標の配列を指定します。</param>
-        <summary>折れ線または閉じた多角形の描画を作成します。 返します、 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 、新しい折れ線または多角形を表すオブジェクト。</summary>
+        <param name="SafeArrayOfPoints">Required <b>Object</b>. 折れ線の頂点を指定する座標値の配列を指定します。</param>
+        <summary>折れ線または閉じた多角形の描画を作成します。 新しい折 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> れ線または多角形を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>閉じた多角形を作成するには、折れ線の始点と終点に同じ座標値を割り当てます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>閉じた多角形を作成するには、折れ線の始点と終点に同じ座標値を指定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddShape">
@@ -676,21 +626,15 @@
         <Parameter Name="Height" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Type">必要な<see cref="T:Microsoft.Office.Core.MsoAutoShapeType" />。 作成するオートシェイプの種類を指定します。</param>
-        <param name="Left">
-          <b>1 つ</b>が必要です。 文書の左上隅を基準に、オートシェイプの境界ボックスの左上隅となる位置をポイント単位で指定します。</param>
-        <param name="Top">
-          <b>1 つ</b>が必要です。 文書の左上隅を基準に、オートシェイプの境界ボックスの左上隅となる位置をポイント単位で指定します。</param>
-        <param name="Width">
-          <b>1 つ</b>が必要です。 幅と高さをポイント単位で、オートシェイプの境界ボックスのします。</param>
-        <param name="Height">
-          <b>1 つ</b>が必要です。 幅と高さをポイント単位で、オートシェイプの境界ボックスのします。</param>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 、ワークシートの新しいオートシェイプを表すオブジェクト。</summary>
+        <param name="Type">必須 <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" /> 。 作成するオートシェイプの種類を指定します。</param>
+        <param name="Left">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の左上隅を基準に、オートシェイプの境界ボックスの左上隅となる位置をポイント単位で指定します。</param>
+        <param name="Top">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の左上隅を基準に、オートシェイプの境界ボックスの左上隅となる位置をポイント単位で指定します。</param>
+        <param name="Width">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 オートShape の境界ボックスの幅と高さをポイント単位で指定します。</param>
+        <param name="Height">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 オートShape の境界ボックスの幅と高さをポイント単位で指定します。</param>
+        <summary>ワークシート内 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> の新しいオートShape を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>追加したオートシェイプの種類を変更するには、設定、<see cref="P:Microsoft.Office.Interop.Excel.Shape.AutoShapeType" />プロパティ。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>追加したオートShapeの種類を変更するには、プロパティを設定 <see cref="P:Microsoft.Office.Interop.Excel.Shape.AutoShapeType" /> します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddSmartArt">
@@ -725,7 +669,7 @@
         <param name="Width">オブジェクトのポイント単位の高さです。</param>
         <param name="Height">オブジェクトのポイント単位の高さです。</param>
         <summary>指定されたレイアウトを使用して新しい SmartArt グラフィックを作成します。</summary>
-        <returns>A<see cref="T:Microsoft.Office.Interop.Excel.Shape" />オブジェクトです。</returns>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.Shape" /> オブジェクト。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -756,16 +700,12 @@
         <Parameter Name="Height" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Orientation">必要な<see cref="T:Microsoft.Office.Core.MsoTextOrientation" />。 テキスト ボックス内の文字列の向きを指定します。</param>
-        <param name="Left">
-          <b>1 つ</b>が必要です。 文書の左上隅を基準にしてテキスト ボックスの左上隅の位置をポイント単位で指定します。</param>
-        <param name="Top">
-          <b>1 つ</b>が必要です。 文書の上端を基準にしてテキスト ボックスの左上隅の位置をポイント単位で指定します。</param>
-        <param name="Width">
-          <b>1 つ</b>が必要です。 テキスト ボックスの幅をポイント単位で指定します。</param>
-        <param name="Height">
-          <b>1 つ</b>が必要です。 テキスト ボックスの高さをポイント単位で指定します。</param>
-        <summary>テキスト ボックスを作成します。 返します、 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 、新しいテキスト ボックスを表すオブジェクト。</summary>
+        <param name="Orientation">必須 <see cref="T:Microsoft.Office.Core.MsoTextOrientation" /> 。 テキスト ボックス内の文字列の向きを指定します。</param>
+        <param name="Left">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の左上隅を基準にしてテキスト ボックスの左上隅の位置をポイント単位で指定します。</param>
+        <param name="Top">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の上端を基準にしてテキスト ボックスの左上隅の位置をポイント単位で指定します。</param>
+        <param name="Width">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 テキスト ボックスの幅をポイント単位で指定します。</param>
+        <param name="Height">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 テキスト ボックスの高さをポイント単位で指定します。</param>
+        <summary>テキスト ボックスを作成します。 新しいテキスト <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> ボックスを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -800,26 +740,18 @@
         <Parameter Name="Top" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="PresetTextEffect">必要な<see cref="T:Microsoft.Office.Core.MsoPresetTextEffect" />。 既定のテキスト効果を指定します。</param>
-        <param name="Text">
-          <b>文字列</b> が必要です。 ワードアートのテキストを指定します。</param>
-        <param name="FontName">
-          <b>文字列</b> が必要です。 ワードアートで使用するフォント名を指定します。</param>
-        <param name="FontSize">
-          <b>1 つ</b>が必要です。 ワードアートで使用するフォントの大きさをポイント単位で指定します。</param>
-        <param name="FontBold">必要な<see cref="T:Microsoft.Office.Core.MsoTriState" />。 ワードアートで使用するフォント スタイルを太字にするかどうかを設定します。</param>
-        <param name="FontItalic">
-          <b>Msotristate クラス</b>をが必要です。 ワードアートで使用するフォント スタイルを斜体にするかどうかを設定します。</param>
-        <param name="Left">
-          <b>1 つ</b>が必要です。 文書の左上隅を基準にして、ワードアートの境界ボックスの左上隅の位置をポイント単位で指定します。</param>
-        <param name="Top">
-          <b>1 つ</b>が必要です。 文書の上端を基準にして、ワードアートの境界ボックスの左上隅の位置をポイント単位で指定します。</param>
-        <summary>ワードアート オブジェクトを作成します。 返します、 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 、新しいワードアート オブジェクトを表すオブジェクト。</summary>
+        <param name="PresetTextEffect">必須 <see cref="T:Microsoft.Office.Core.MsoPresetTextEffect" /> 。 既定のテキスト効果を指定します。</param>
+        <param name="Text"><b>文字列</b> が必要です。 ワードアートの文字列を指定します。</param>
+        <param name="FontName"><b>文字列</b> が必要です。 ワードアートで使用するフォントの名前を指定します。</param>
+        <param name="FontSize">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 ワードアートで使用するフォントの大きさをポイント単位で指定します。</param>
+        <param name="FontBold">必須 <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。 ワードアートで使用するフォント スタイルを太字にするかどうかを設定します。</param>
+        <param name="FontItalic">必要 <b>な MsoTriState</b>。 ワードアートで使用するフォント スタイルを斜体にするかどうかを設定します。</param>
+        <param name="Left">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の左上隅を基準にして、ワードアートの境界ボックスの左上隅の位置をポイント単位で指定します。</param>
+        <param name="Top">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の上端を基準にして、ワードアートの境界ボックスの左上隅の位置をポイント単位で指定します。</param>
+        <summary>ワードアート オブジェクトを作成します。 新しいワード <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> アート オブジェクトを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>スライドにワードアートを挿入すると、ワードアートの高さと幅は指定したテキストの大きさと文字数を基に自動的に設定されます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>ワードアートを文書に追加すると、ユーザーが指定した文字列の文字数と大きさに合わせて、ワードアートの幅と高さが自動的に設定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -845,7 +777,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -875,17 +807,13 @@
         <Parameter Name="Y1" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="EditingType">必要な<see cref="T:Microsoft.Office.Core.MsoEditingType" />。 最初の節点の編集プロパティを指定します。</param>
-        <param name="X1">
-          <b>1 つ</b>が必要です。 文書の左上隅を基準にフリーフォームの最初の節点の位置をポイント単位で指定します。</param>
-        <param name="Y1">
-          <b>1 つ</b>が必要です。 文書の左上隅を基準にフリーフォームの最初の節点の位置をポイント単位で指定します。</param>
-        <summary>フリー フォーム オブジェクトを作成します。 返します、<see cref="T:Microsoft.Office.Interop.Excel.FreeformBuilder" />を表すフリーのようにビルドされているオブジェクトします。</summary>
+        <param name="EditingType">必須 <see cref="T:Microsoft.Office.Core.MsoEditingType" /> 。 最初の節点の編集プロパティを指定します。</param>
+        <param name="X1">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の左上隅を基準にフリーフォームの最初の節点の位置をポイント単位で指定します。</param>
+        <param name="Y1">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 文書の左上隅を基準にフリーフォームの最初の節点の位置をポイント単位で指定します。</param>
+        <summary>フリーフォーム オブジェクトを作成します。 作成中 <see cref="T:Microsoft.Office.Interop.Excel.FreeformBuilder" /> のフリーフォームを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> 、フリー フォームにセグメントを追加する方法です。 フリー フォームに 1 つ以上のセグメントを追加した後を使用して、<see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" />に<b>FreeformBuilder</b>オブジェクトを変換するメソッド、 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 、 <b>FreeformBuilder</b>オブジェクトで定義されている幾何学的特徴を持つオブジェクトです。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>フリーフォーム <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> にセグメントを追加するには、このメソッドを使用します。 フリーフォームに少なくとも 1 つのセグメントを追加した後、このメソッドを使用して <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> <b>FreeformBuilder</b> オブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <b>FreeformBuilder</b> オブジェクトで定義した幾何学的な特徴を持つオブジェクトに変換できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -939,14 +867,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -1004,8 +929,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1065,9 +989,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 範囲に含まれる個々 の図形です。 図形、図形の名前を指定する文字列または整数か文字列を格納する配列のインデックス番号を指定する整数であることができます。</param>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" />内の図形のサブセットを表すオブジェクトを<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />コレクションです。</summary>
+        <param name="Index">Required <b>Object</b>. 図形範囲に含む、各図形を指定します。 図形のインデックス番号を指定する整数、図形の名前を指定する文字列、あるいは整数または文字列を含む配列を使用できます。</param>
+        <summary>コレクション内 <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> の図形のサブセットを表すオブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1093,7 +1016,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定されたすべての図形を選択する<see cref="T:Microsoft.Office.Interop.Excel.Shapes" />コレクションです。</summary>
+        <summary>指定したコレクション内のすべての図形を選択 <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

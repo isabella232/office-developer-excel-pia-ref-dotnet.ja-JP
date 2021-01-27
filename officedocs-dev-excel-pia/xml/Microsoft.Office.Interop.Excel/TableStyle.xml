@@ -1,13 +1,5 @@
 <Type Name="TableStyle" FullName="Microsoft.Office.Interop.Excel.TableStyle">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4195e3f6ef14d553a26ff7dba570149f82c6b4a9" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20583525" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TableStyle" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4195e3f6ef14d553a26ff7dba570149f82c6b4a9" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009766" /></Metadata><TypeSignature Language="C#" Value="public interface TableStyle" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TableStyle" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TableStyle" />
   <TypeSignature Language="VB.NET" Value="Public Interface TableStyle" />
@@ -30,10 +22,8 @@
   </Attributes>
   <Docs>
     <summary>表に適用できる単一のスタイルを表します。</summary>
-    <remarks>
-      <para>テーブル スタイルは、1 つまたはすべてのテーブルまたはピボット テーブルの要素の書式設定を定義します。 たとえば、列は、テーブルの要素です。 テーブル内の列が書式 (とも呼ばれる縞模様またはストライプ) を交互にフォーマットされている表のスタイルを定義できます。  </para>
-      <para></para>
-    </remarks>
+    <remarks><para>表スタイルは、表またはピボットテーブルの 1 つ以上の要素の書式を定義します。 たとえば、列は表の要素です。 表スタイルは、表内の列が (縞模様またはストライプとも呼ばれる) 代替書式で書式設定されるよう定義できます。  </para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -63,7 +53,7 @@
       </ReturnValue>
       <Docs>
         <summary>To be added.</summary>
-        <value>返します。 <see cref="T:System.String" />。</value>
+        <value><see cref="T:System.String" /> を返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,14 +80,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Office Excel アプリケーションを表すオブジェクト。 このプロパティが返すオブジェクト修飾子を使用する場合、<see cref="T:Microsoft.Office.Interop.Excel._Application" />を指定したオブジェクトの作成者を表すオブジェクト。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
-        </value>
-        <remarks>
-          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクト用のアプリケーションを取得できます。</para>
-          <para></para>
-        </remarks>
+        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Excel アプリケーションのMicrosoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> を返します。 オブジェクト修飾子と一緒に使用する場合、このプロパティは指定されたオブジェクトの作成元を表 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> すオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
+        <remarks><para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、オブジェクトのアプリケーションを取得できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="BuiltIn">
@@ -123,11 +109,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>スタイルが組み込みのスタイルである場合。 読み取り専用。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>スタイルが組み込みのスタイルの場合は <b>True</b>。 読み取り専用です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,14 +137,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトを作成したアプリケーションを 32 ビットの整数値として取得します。値の取得のみ可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当  <see cref="P:Microsoft.Office.Interop.Excel.TableStyle.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 値の取得のみ可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ <see cref="P:Microsoft.Office.Interop.Excel.TableStyle.Creator" /> Macintosh 用の Microsoft Excel で使用するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -185,7 +164,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>削除の<see cref="T:Microsoft.Office.Interop.Excel.TableStyle" />オブジェクトです。</summary>
+        <summary>オブジェクトを削除 <see cref="T:Microsoft.Office.Interop.Excel.TableStyle" /> します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,14 +191,10 @@
       </Parameters>
       <Docs>
         <param name="NewTableStyleName">新しい表スタイルの名前を指定します。</param>
-        <summary>重複の<see cref="T:Microsoft.Office.Interop.Excel.TableStyle" />オブジェクトし、新しいコピーへの参照を返します。</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Excel.TableStyle" />
-        </returns>
-        <remarks>
-          <para>名が指定されていない場合、<see cref="M:Microsoft.Office.Interop.Excel.TableStyle.Duplicate(System.Object)" />メソッドは、ユーザー インターフェイスと同じ既定の名前を使用します。</para>
-          <para></para>
-        </remarks>
+        <summary>オブジェクトを複製 <see cref="T:Microsoft.Office.Interop.Excel.TableStyle" /> し、新しいコピーへの参照を返します。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.TableStyle" /></returns>
+        <remarks><para>名前を指定しない場合、メソッド <see cref="M:Microsoft.Office.Interop.Excel.TableStyle.Duplicate(System.Object)" /> はユーザー インターフェイスと同じ既定の名前を使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -245,10 +220,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの名前を返します。 読み取り専用。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
+        <summary>オブジェクトの名前を返します。 読み取り専用です。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -275,14 +248,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはユーザーの言語では、オブジェクトの名前を設定します。 読み取り専用。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
-        <remarks>
-          <para>このプロパティは、組み込みスタイルのときに、現在の地域情報で設定されている言語でのスタイル名を返します。</para>
-          <para></para>
-        </remarks>
+        <summary>ユーザーの言語でオブジェクトの名前を返すか設定します。 読み取り専用です。</summary>
+        <value><b>String</b></value>
+        <remarks><para>このプロパティは、組み込みスタイルのときに、現在の地域情報で設定されている言語でのスタイル名を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -308,10 +277,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -341,16 +308,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>か、ピボット テーブル スタイルのギャラリーにスタイルを表示するかどうかを取得または設定します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>プロパティは、スタイルは、ピボット テーブル スタイルのギャラリーに表示されている場合に True を返します。</para>
+        <summary>ピボットテーブル スタイルのギャラリーにスタイルが表示される場合に設定または取得します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>ピボットテーブル スタイルのギャラリーにスタイルが表示されている場合、このプロパティは True を返します。</para>
           <para>
-            <b>注</b>: ユーザーが設定できる、<see cref="P:Microsoft.Office.Interop.Excel.TableStyle.ShowAsAvailableTableStyle" />または<see cref="P:Microsoft.Office.Interop.Excel.TableStyle.ShowAsAvailablePivotTableStyle" />スタイルがテーブルに既に適用されている場合でも、False、またはピボット テーブルのプロパティです。  この例では、テーブルまたはピボット テーブルで、アクティブ セルがあるときに、ギャラリーとして表示されているスタイルおよびスタイルを表示しないが選択されます。</para>
-          <para></para>
-        </remarks>
+            <b>注</b>: スタイルがテーブルまたはピボットテーブルに既に適用されている場合でも、ユーザーはプロパティを <see cref="P:Microsoft.Office.Interop.Excel.TableStyle.ShowAsAvailableTableStyle" /> <see cref="P:Microsoft.Office.Interop.Excel.TableStyle.ShowAsAvailablePivotTableStyle" /> False に設定できます。  この場合、ギャラリーはスタイルを表示せず、アクティブなセルが表またはピボットテーブル内にある場合、どのスタイルも選択されていると表示されません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowAsAvailableSlicerStyle">
@@ -379,13 +342,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定したテーブル スタイルがスライサーのスタイル ギャラリーに使用可能と表示するかどうかを設定します。</summary>
-        <value>
-          <b>true の</b>場合は指定したテーブル スタイルに示すように使用可能とスライサー スタイルのギャラリーです。それ以外の場合、 <b>false を指定</b>します。</value>
-        <remarks>
-          <para>値の取得および設定が可能です。</para>
-          <para></para>
-        </remarks>
+        <summary>指定した表スタイルがスライサー スタイル ギャラリーで使用可能と表示されるかどうかを取得または設定します。</summary>
+        <value>指定した表スタイルがスライサー スタイル ギャラリーで使用可能と表示される場合は<b>true。</b>それ以外の場合、 <b>false です</b>。</value>
+        <remarks><para>値の取得と設定が可能です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowAsAvailableTableStyle">
@@ -414,16 +374,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>表スタイル ギャラリーで使用可能と表示スタイルを設定または返します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>場合<b>は True</b>、このスタイルはテーブル スタイルのギャラリーで表示されます。</para>
-          <para>
-            <b>False</b>にこのプロパティを設定するには、テーブルにスタイルが既に適用されている場合でも。  ここでは、ギャラリーはスタイルを表示しないと、スタイルが表示されない場合、アクティブ セルは、そのテーブルでは、選択されています。</para>
-          <para></para>
-        </remarks>
+        <summary>表スタイル ギャラリーで使用可能と表示される表スタイルを設定または返します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para><b>True</b> の場合、このスタイルは表スタイルのギャラリーに表示されます。</para>
+          <para>表にスタイルがすでに適用されていても、このプロパティを <b>False</b> に設定できます。この場合、ギャラリーはスタイルを表示せず、アクティブなセルがその表にある場合、どのスタイルも選択されていると表示されません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowAsAvailableTimelineStyle">
@@ -452,7 +407,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>タイムラインのスタイル ギャラリーに指定した表のスタイルが表示可能とするかどうかを設定または返します。 <b>ブール値</b>(<b>bool</b>では C#) です。 値の取得および設定が可能です。</summary>
+        <summary>指定した表スタイルをタイムライン スタイル ギャラリーで使用可能と表示するかどうかを取得または設定します。 <b>ブール</b>値<b></b> ( C# のブール値)。 読み取り/書き込み</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -480,8 +435,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TableStyleElements</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.TableStyleElements" />オブジェクトです。 読み取り専用。</summary>
-        <value>返します。 <see cref="T:Microsoft.Office.Interop.Excel.TableStyleElements" />。</value>
+        <summary>オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.TableStyleElements" /> します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.TableStyleElements" /> を返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

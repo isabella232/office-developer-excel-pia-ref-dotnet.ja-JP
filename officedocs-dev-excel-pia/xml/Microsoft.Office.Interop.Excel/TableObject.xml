@@ -1,13 +1,5 @@
 <Type Name="TableObject" FullName="Microsoft.Office.Interop.Excel.TableObject">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="0e083aa43c5aa4dac5d58ee3a90f965dfd50e41a" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20579584" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface TableObject" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0e083aa43c5aa4dac5d58ee3a90f965dfd50e41a" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009773" /></Metadata><TypeSignature Language="C#" Value="public interface TableObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TableObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TableObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface TableObject" />
@@ -59,7 +51,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>かどうか、列幅を自動調節、最適指定されたクエリ テーブルを更新するたびを指定します。 既定値は <b>True</b> です。 <b>ブール値</b>(C# では<b>bool</b> )読み取り/書き込み</summary>
+        <summary>指定したクエリ テーブルの更新ごとに列幅を自動調節するかどうかを指定します。 既定値は <b>True</b> です。 <b>ブール</b> 型 (C#<b>のブール</b> 値) の値の取得および設定が可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Excel アプリケーションを表すオブジェクト。 読み取り専用。</summary>
+        <summary>Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -115,12 +107,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを 32 ビットの整数値として返します。 読み取り専用の<b>整数値</b>(C# では<b>int</b> )。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 読み取り<b>専用の整数</b><b>(C#</b>の整数)。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Excel で作成された、ために、このプロパティは、5843454 C は、文字列「クリエーター」を表す 16 進値を返します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>オブジェクトは Excel で作成されたため、このプロパティは文字列 "XCEL" を表す 16 進数の値 5843454C を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -144,8 +134,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <b>大域オフセットテーブルオブジェクトファイル</b>オブジェクトを削除します。</summary>
+        <summary><b>TableObject</b> オブジェクトを削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -172,7 +161,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>クエリ テーブルの配置先範囲 (結果のクエリ テーブルが配置される場所の範囲) の左上隅のセルを返します。 貼り付け先の範囲は、<b>大域オフセットテーブルオブジェクトファイル</b>オブジェクトを含むワークシートにする必要があります。 <b>範囲</b>です。 読み取り専用</summary>
+        <summary>クエリ テーブルの配置先の (結果のクエリ テーブルを配置する) セル範囲の左上端のセルを返します。配置先のセル範囲は、<b>TableObject</b> オブジェクトを含むワークシート上にある必要があります。セル範囲 (<b>Range</b> オブジェクト) を示す値を使用します。値の取得のみ可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -203,8 +192,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、ユーザーが指定されたクエリ テーブルを編集できます。 <b>False</b>場合は、クエリ テーブルの更新のみ可能です。 <b>ブール値</b>(C# では<b>bool</b> )読み取り/書き込み</summary>
+        <summary><b>True</b> の場合、ユーザーは指定したクエリ テーブルを編集できます。 <b>False</b> の場合、クエリ テーブルの更新のみ可能です。 <b>ブール</b> 型 (C#<b>のブール</b> 値) の値の取得および設定が可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -235,7 +223,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ユーザーが、クエリ テーブルを更新できるかどうかを指定します。 <b>ブール値</b>(C# では<b>bool</b> )読み取り/書き込み</summary>
+        <summary>ユーザーがクエリ テーブルを更新できるかどうかを指定します。 <b>ブール</b> 型 (C#<b>のブール</b> 値) の値の取得および設定が可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -263,7 +251,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Refresh メソッドの最後に使用によって返される行の数が、ワークシートで使用可能な行数より大きいかどうかを指定します。 <b>ブール値</b>(C# では<b>bool</b> )読み取り専用</summary>
+        <summary>Refresh メソッドを最後に使用したときに返される行数が、ワークシート上で使用可能な行数を超えているかどうかを指定します。 <b>ブール</b> 値 ( C#<b>のブール</b> 値) 読み取り専用</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -291,7 +279,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ListObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />のオブジェクトの<see cref="T:Microsoft.Office.Interop.Excel.TableObject" />オブジェクトです。 読み取り専用</summary>
+        <summary>オブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.TableObject" /> します。 読み取り専用</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -319,7 +307,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した <b>TableObject</b> オブジェクトの親オブジェクトを表すオブジェクト型 (<b>Object</b>) の値を取得します。値の取得のみ可能です。</summary>
+        <summary>指定した <b>TableObject</b> オブジェクトの親オブジェクトを表すオブジェクト型 (<b>Object</b>) の値を取得します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -350,7 +338,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>クエリ テーブルを更新するときに列の並べ替え、フィルター、およびレイアウト情報を保持かどうかを指定します。 既定値は <b>False</b> です。 <b>ブール値</b>(C# では<b>bool</b> )読み取り/書き込み</summary>
+        <summary>クエリ テーブルが更新されるごとに列の並べ替え、フィルター設定、およびレイアウトに関する情報を保存するかどうかを指定します。 既定値は <b>False</b> です。 <b>ブール</b> 型 (C#<b>のブール</b> 値) の値の取得および設定が可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -381,8 +369,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>クエリ テーブル内のデータの新しい行に共通する最初の 5 行のデータ書式を適用する場合です。 使用されていないセルの書式が設定されません。 プロパティは、 <b>False</b>最後のオート フォーマットがクエリ テーブルに適用されている場合データの新しい行に適用されます。 既定値は <b>True</b> です。 <b>ブール値</b>(C# では<b>bool</b> )読み取り/書き込み</summary>
+        <summary><b>True</b> の場合、先頭の 5 行のデータに共通する書式をクエリ テーブルの新しい行のデータに適用します。 未使用のセルは書式設定されません。 このプロパティが <b>False</b> の場合、クエリ テーブルに最後に適用したオートフォーマットがクエリ テーブルの新しい行のデータに適用されます。 既定値は <b>True</b> です。 <b>ブール</b> 型 (C#<b>のブール</b> 値) の値の取得および設定が可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -408,7 +395,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>このメソッドでは、<b>大域オフセットテーブルオブジェクトファイル</b>オブジェクトを更新します。</summary>
+        <summary>このメソッドは <b>TableObject</b> オブジェクトを更新します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -439,7 +426,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCellInsertionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたワークシートに行を追加または削除、クエリによって返されるレコード セット内の行の数に対応するための方法を設定または返します。 <see cref="T:Microsoft.Office.Interop.Excel.XlCellInsertionMode" />読み取り/書き込み</summary>
+        <summary>クエリで返されるレコード セット数に応じて、指定したワークシートの行を追加または削除する方法を取得または設定します。 <see cref="T:Microsoft.Office.Interop.Excel.XlCellInsertionMode" /> 読み取り/書き込み</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -467,7 +454,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />指定されたクエリ テーブルが占有するワークシートの領域を表すオブジェクト。 読み取り専用</summary>
+        <summary>指定された <see cref="T:Microsoft.Office.Interop.Excel.Range" /> クエリ テーブルが占有するワークシートの領域を表すオブジェクトを返します。 読み取り専用</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -498,7 +485,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>行番号は指定されたクエリ テーブルの最初の列として追加されているかどうかを指定します。 <b>ブール値</b>(C# では<b>bool</b> )読み取り/書き込み</summary>
+        <summary>指定されたクエリ テーブルの最初の列として行番号を追加するかどうかを指定します。 <b>ブール</b> 型 (C#<b>のブール</b> 値) の値の取得および設定が可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -526,7 +513,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookConnection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /><b>大域オフセットテーブルオブジェクトファイル</b>がモデルに接続するために使用します。 <see cref="P:Microsoft.Office.Interop.Excel.WorkbookConnection.ModelConnection" /><b>WorkbookConnection</b>オブジェクトのプロパティを取得し、DAX などの編集に使用できます。読み取り専用</summary>
+        <summary>TableObject <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> がモデルに接続 <b>するために使用</b> する値を返します。 <see cref="P:Microsoft.Office.Interop.Excel.WorkbookConnection.ModelConnection" /> <b>WorkbookConnection オブジェクトの</b>プロパティを使用して、DAX などを取得および編集できます。読み取り専用</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

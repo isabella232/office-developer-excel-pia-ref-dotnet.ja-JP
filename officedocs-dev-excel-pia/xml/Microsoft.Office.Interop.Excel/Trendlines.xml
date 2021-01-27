@@ -1,13 +1,5 @@
 <Type Name="Trendlines" FullName="Microsoft.Office.Interop.Excel.Trendlines">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="16729ecd05466f30367a2ad9f0440647d5e8ade1" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20581733" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Trendlines : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="16729ecd05466f30367a2ad9f0440647d5e8ade1" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009472" /></Metadata><TypeSignature Language="C#" Value="public interface Trendlines : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Trendlines implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Trendlines" />
   <TypeSignature Language="VB.NET" Value="Public Interface Trendlines&#xA;Implements IEnumerable" />
@@ -33,15 +25,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>すべてのコレクション、 <see cref="T:Microsoft.Office.Interop.Excel.Trendline" /> 、指定した一連のオブジェクトです。 各 <b>Trendline</b> オブジェクトは、グラフにある近似曲線を表します。 近似曲線は、データ系列のデータの傾向または方向を示します。</summary>
-    <remarks>
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.Series.Trendlines(System.Object)" /><b>の近似曲線</b>のコレクションを返します。</para>
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.Trendlines.Add(Microsoft.Office.Interop.Excel.XlTrendlineType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />新しい近似曲線を作成し、データ系列に追加する方法です。</para>
-      <para>
-        <b>近似曲線</b>を使用して (<paramref name="index" />)、どこで<paramref name="index" />は、近似曲線のインデックス番号で、1 つの<b>近似曲線</b>オブジェクトを取得します。</para>
-      <para>近似曲線のインデックス番号は、データ系列に追加された順序に対応します。Trendlines(1) はデータ系列に最初に追加された近似曲線で、Trendlines(Trendlines.Count) は最後に追加された近似曲線です。</para>
-      <para></para>
-    </remarks>
+    <summary>指定されたデータ系列のすべての <see cref="T:Microsoft.Office.Interop.Excel.Trendline" /> オブジェクトのコレクションです。 各 <b>Trendline</b> オブジェクトは、グラフにある近似曲線を表します。 近似曲線は、データ系列のデータの傾向または方向を示します。</summary>
+    <remarks><para>Trendlines <see cref="M:Microsoft.Office.Interop.Excel.Series.Trendlines(System.Object)" /> コレクションを取得するには、 <b>このメソッドを使用</b> します。</para>
+      <para>このメソッド <see cref="M:Microsoft.Office.Interop.Excel.Trendlines.Add(Microsoft.Office.Interop.Excel.XlTrendlineType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> を使用して、新しい trendline を作成し、データ系列に追加します。</para>
+      <para>1 <b>つの TrendLine</b>オブジェクト <paramref name="index" /> を取得するには、Trendlines ( ) プロパティを使用します。ここで、Trendline のインデックス番号 <paramref name="index" /> <b>を指定</b> します。</para>
+      <para>近似曲線のインデックス番号は、データ系列に追加された順序に対応します。 Trendlines(1) はデータ系列に最初に追加された近似曲線で、Trendlines(Trendlines.Count) は最後に追加された近似曲線です。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -105,16 +94,16 @@
         <Parameter Name="Name" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">省略可能な<see cref="T:Microsoft.Office.Interop.Excel.XlTrendlineType" />。 近似曲線の種類を指定します。</param>
-        <param name="Order">省略可能な<b>オブジェクト</b>です。 必要な場合<paramref name="Type" />は、<b>次数</b>です。 近似曲線の次数。 6、包括的に 2 の整数でなければなりません。</param>
-        <param name="Period">省略可能な<b>オブジェクト</b>です。 必要な場合<paramref name="Type" /><b>xlMovingAvg</b>のです。 近似曲線の期間です。 1 より大きいとする近似曲線を追加するデータ系列のデータ ポイントの数より小さい整数値をする必要があります。</param>
-        <param name="Forward">省略可能な<b>オブジェクト</b>です。 近似曲線を前方へ拡張するときの区間数 (散布図の場合は単位数) を指定します。</param>
-        <param name="Backward">省略可能な<b>オブジェクト</b>です。 近似曲線を後方へ拡張するときの区間数 (散布図の場合は単位数) を指定します。</param>
-        <param name="Intercept">省略可能な<b>オブジェクト</b>です。 近似曲線の切片です。 この引数を省略すると、切片は回帰計算によって自動的に設定します。</param>
-        <param name="DisplayEquation">省略可能な<b>オブジェクト</b>です。 <b>True</b> (R 2 乗値と同じデータ ラベル) でグラフに近似曲線の方程式を表示します。 既定値は <b>False</b> です。</param>
-        <param name="DisplayRSquared">省略可能な<b>オブジェクト</b>です。 <b>True</b> (式と同じデータ ラベル) でグラフに近似曲線の R 2 乗値を表示します。 既定値は <b>False</b> です。</param>
-        <param name="Name">省略可能な<b>オブジェクト</b>です。 テキストとして近似曲線の名前です。 この引数を省略すると、Microsoft Excel には、名前が生成されます。</param>
-        <summary>新しい近似曲線を作成します。 返します、<see cref="T:Microsoft.Office.Interop.Excel.Trendline" />オブジェクトです。</summary>
+        <param name="Type">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlTrendlineType" /> 可能です。 近似曲線の種類を指定します。</param>
+        <param name="Order">省略 <b>可能なオブジェクト</b>です。 <paramref name="Type" /> <b>xlPolynomial の場合は必須です</b>。 近似曲線の次数を指定します。 使用できる値の範囲は、2 ～ 6 の整数です。</param>
+        <param name="Period">省略 <b>可能なオブジェクト</b>です。 <paramref name="Type" /> <b>xlMovingAvg の場合は必須です</b>。 移動平均の計算に使用する区間数を指定します。 1 より大きく、移動平均を追加するデータ系列のデータ要素数未満の整数を指定します。</param>
+        <param name="Forward">省略 <b>可能なオブジェクト</b>です。 近似曲線を前方へ拡張するときの区間数 (散布図の場合は単位数) を指定します。</param>
+        <param name="Backward">省略 <b>可能なオブジェクト</b>です。 近似曲線を後方へ拡張するときの区間数 (散布図の場合は単位数) を指定します。</param>
+        <param name="Intercept">省略 <b>可能なオブジェクト</b>です。 近似曲線の切片を指定します。 この引数を省略すると、切片は回帰計算により自動的に設定されます。</param>
+        <param name="DisplayEquation">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、近似曲線の式をグラフに表示します (R-2 乗値と同じデータ ラベル内に表示します)。 既定値は <b>False</b> です。</param>
+        <param name="DisplayRSquared">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、近似曲線の R-2 乗値をグラフに表示します (式と同じデータ ラベル内に表示します)。 既定値は <b>False</b> です。</param>
+        <param name="Name">省略 <b>可能なオブジェクト</b>です。 近似曲線の名前を示す文字列を指定します。 この引数を省略すると、名前が自動的に作成されます。</param>
+        <summary>新しい近似曲線を作成します。 オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.Trendline" /> します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -142,7 +131,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -198,14 +187,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -262,8 +248,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

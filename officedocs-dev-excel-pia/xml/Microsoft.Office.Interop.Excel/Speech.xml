@@ -1,13 +1,5 @@
 <Type Name="Speech" FullName="Microsoft.Office.Interop.Excel.Speech">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1a463e61ce556cdcc28ee34539e04ed33852d6ca" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20576224" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Speech" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1a463e61ce556cdcc28ee34539e04ed33852d6ca" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009878" /></Metadata><TypeSignature Language="C#" Value="public interface Speech" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Speech" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Speech" />
   <TypeSignature Language="VB.NET" Value="Public Interface Speech" />
@@ -30,14 +22,11 @@
   </Attributes>
   <Docs>
     <summary>音声機能に関するメソッドとプロパティを持っています。</summary>
-    <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Application.Speech" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、 <b>Speech</b>オブジェクトを返すオブジェクト。</para>
+    <remarks><para>Speech オブジェクト <see cref="P:Microsoft.Office.Interop.Excel._Application.Speech" /> を取得 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> するには、オブジェクトのプロパティ <b>を使用</b> します。</para>
+      <para><b>Speech</b>オブジェクトが返された後は、Speech オブジェクトのメソッドを使用して文字列の内容 <see cref="M:Microsoft.Office.Interop.Excel.Speech.Speak(System.String,System.Object,System.Object,System.Object)" /> を再生できます。 <b></b></para>
       <para>
-        <b>Speech</b>オブジェクトを取得したらを使って、 <see cref="M:Microsoft.Office.Interop.Excel.Speech.Speak(System.String,System.Object,System.Object,System.Object)" /> 、文字列の内容を再生する<b>音声</b>オブジェクトのメソッドです。</para>
-      <para>
-        <b>注</b>: ディクテーション モードとコマンドに関連するセットアップ ツリーに音声機能がある&amp;コントロールをインストールする必要はありません。</para>
-      <para></para>
-    </remarks>
+        <b>注</b>: セットアップ ツリーには、インストールする必要はないディクテーションとコマンド コントロールに関連する音声 &amp; 機能があります。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Direction">
@@ -66,13 +55,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSpeakDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>セルが読み上げられる順序を設定または返します。</summary>
+        <summary>セルが読み上げられる順序を設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Direction</b>プロパティの値は、<see cref="T:Microsoft.Office.Interop.Excel.XlSpeakDirection" />定数。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Direction プロパティの <b>値</b> は定数 <see cref="T:Microsoft.Office.Interop.Excel.XlSpeakDirection" /> です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Speak">
@@ -100,12 +86,11 @@
         <Parameter Name="Purge" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Text">
-          <b>文字列</b> が必要です。 再生するテキスト。</param>
-        <param name="SpeakAsync">省略可能な<b>オブジェクト</b>です。 <b>True の場合</b>、<paramref name="Text" />非同期的に再生する (メソッドがを待たず、<paramref name="Text" />を読み上げる)。 <b>False を指定</b>すると、<paramref name="Text" />同期的に再生する (待機メソッド、<paramref name="Text" />を続行する前に読み上げる)。 既定では <b>False です</b> 。</param>
-        <param name="SpeakXML">オプションの <b>Boolean</b>。 <b>True の場合</b>、 <paramref name="Text" /> XML として解釈されます。 <b>False を指定</b>すると、<paramref name="Text" />の XML タグが読まれ、解釈ではないため、XML として解釈しないようにします。 既定では <b>False です</b> 。</param>
-        <param name="Purge">省略可能な<b>オブジェクト</b>です。 <b>True を指定</b>すると、現在の読み上げが終了して、前に削除するテキストをバッファーされている<paramref name="Text" />読み上げられます。 <b>False</b>は、現在の読み上げを終了するのには発生せず、消去されるわけでバッファーに格納された文字列の前に<paramref name="Text" />読み上げられます。 既定では <b>False です</b> 。</param>
-        <summary>Microsoft Excel は、指定されたテキスト文字列を再生します。</summary>
+        <param name="Text"><b>文字列</b> が必要です。 再生するテキスト。</param>
+        <param name="SpeakAsync">省略 <b>可能なオブジェクト</b>です。 <b>True</b> の場合、非同期的に読み上がります (メソッドは音声が読み上がる <paramref name="Text" /> の <paramref name="Text" /> を待つ必要があります)。 <b>False</b> を指定すると、同期的に読み上がります (メソッドは、継続する前に音声が読み上が <paramref name="Text" /> <paramref name="Text" /> るのを待機します)。 既定値は <b>False</b> です。</param>
+        <param name="SpeakXML">オプション <b>のブール値 です</b>。 <b>True</b> を指定すると <paramref name="Text" /> 、XML として解釈されます。 <b>False</b> を指定すると XML として解釈されないので、XML タグは読み取り、解釈 <paramref name="Text" /> されません。 既定値は <b>False</b> です。</param>
+        <param name="Purge">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、現在の音声が終了し、バッファーに入ったテキストが読み上げされる前 <paramref name="Text" /> に消去されます。 <b>False</b> を指定すると、現在の音声が終了し、バッファーに入ったテキストが消去されません <paramref name="Text" /> 。 既定値は <b>False</b> です。</param>
+        <summary>Microsoft Excel では、指定したテキスト文字列を再生します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,7 +120,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ENTER キーが押されたとき、またはアクティブ セルが終了したときにアクティブ セルが読み上げられるモード、Microsoft Excel をサポートしていますが編集されています。 <b>SpeakCellOnEnter</b>プロパティを<b>True</b>に設定が有効にするこのモードします。 <b>False を指定</b>するとこのモードをオフにします。</summary>
+        <summary>Excel では、Enter キーが押された場合、またはアクティブ セルの編集が完了すると、アクティブ セルが音声で表示されるモードがサポートされています。 <b>SpeakCellOnEnter プロパティを</b> <b>True</b>に設定すると、このモードが有効になります。 <b>False を</b> 指定すると、このモードはオフになります。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

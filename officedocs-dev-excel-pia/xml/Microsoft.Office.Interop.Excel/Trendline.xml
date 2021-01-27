@@ -1,13 +1,5 @@
 <Type Name="Trendline" FullName="Microsoft.Office.Interop.Excel.Trendline">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="43cabd68ae83576c2d2f307683fffd5d099fc7d7" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575734" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Trendline" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="43cabd68ae83576c2d2f307683fffd5d099fc7d7" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009479" /></Metadata><TypeSignature Language="C#" Value="public interface Trendline" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Trendline" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Trendline" />
   <TypeSignature Language="VB.NET" Value="Public Interface Trendline" />
@@ -30,14 +22,10 @@
   </Attributes>
   <Docs>
     <summary>グラフの近似曲線を表します。 近似曲線は、データ系列のデータの傾向や方向を示します。</summary>
-    <remarks>
-      <para>
-        <b>近似曲線</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.Trendlines" />コレクションです。 <b>Trendlines</b> コレクションには、1 つのデータ系列にあるすべての <b>Trendline</b> オブジェクトが含まれています。</para>
-      <para>
-        <b>近似曲線</b>を使用して (<paramref name="index" />)、どこで<paramref name="index" />は、近似曲線のインデックス番号で、1 つの<b>近似曲線</b>オブジェクトを取得します。</para>
-      <para>近似曲線のインデックス番号は、データ系列に追加された順序に対応します。Trendlines(1) はデータ系列に最初に追加された近似曲線で、Trendlines(Trendlines.Count) は最後に追加された近似曲線です。</para>
-      <para></para>
-    </remarks>
+    <remarks><para><b>Trendline オブジェクト</b>はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.Trendlines" /> です。 <b>Trendlines</b> コレクションには、1 つのデータ系列にあるすべての <b>Trendline</b> オブジェクトが含まれています。</para>
+      <para>1 <b>つの Trendline</b>オブジェクト <paramref name="index" /> を取得するには、Trendlines ( ) プロパティを使用します。ここで、Trendline のインデックス <paramref name="index" /> 番号 <b>を指定</b> します。</para>
+      <para>近似曲線のインデックス番号は、データ系列に追加された順序に対応します。 Trendlines(1) はデータ系列に最初に追加された近似曲線で、Trendlines(Trendlines.Count) は最後に追加された近似曲線です。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -100,7 +88,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または近似曲線を後方に延長される期間 (または散布図の単位) の数を設定します。</summary>
+        <summary>返すまたは、傾向線を後方に延長する期間 (散布図の単位) の数を設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -131,10 +119,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または近似曲線を後方に延長される期間 (または散布図の単位) の数を設定します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>返すまたは、傾向線を後方に延長する期間 (散布図の単位) の数を設定します。 値の取得と設定が可能です。</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,7 +147,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 、オブジェクトの枠線を表すオブジェクト。</summary>
+        <summary>オブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 境界線を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -215,14 +201,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataLabel">
@@ -248,12 +231,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DataLabel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> 、要素または近似曲線に関連付けられたデータ ラベルを表すオブジェクト。</summary>
+        <summary>点または傾向 <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> 線に関連付けられているデータ ラベルを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>設定する必要があります。 近似曲線のデータ ラベルを有効にするには、<see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayEquation" />プロパティまたは<see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayRSquared" />プロパティを<b>True</b>にします。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>To turn on data labels for a trendline you need to set the <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayEquation" /> property or the property to <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayRSquared" /> <b>True</b>.</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -308,8 +289,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b> 場合 (R 2 乗値と同じデータ ラベル) のグラフに近似曲線の数式が表示されます。 このプロパティを <b>True</b> に設定に自動的にオンにデータ ラベルに。</summary>
+        <summary><b>True</b> if the equation for the trendline is displayed on the chart (in the same data label as the R-squared value). Setting this property to <b>True</b> automatically turns on data labels.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -368,10 +348,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフ要素の書式を返します。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" />
-        </value>
+        <summary>グラフ要素の書式を返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -407,7 +385,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または近似曲線を前方に拡張する期間 (または散布図のユニット) の数を設定します。</summary>
+        <summary>傾向線を前方に延長する期間 (散布図の場合は単位数) を取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -438,10 +416,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または近似曲線を前方に拡張する期間 (または散布図のユニット) の数を設定します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>Double</b>
-        </value>
+        <summary>傾向線を前方に延長する期間 (散布図の場合は単位数) を取得または設定します。 値の取得と設定が可能です。</summary>
+        <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -468,7 +444,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ようなオブジェクトのコレクション内のオブジェクトのインデックス番号を返します。</summary>
+        <summary>類似するオブジェクトのコレクション内のオブジェクトのインデックス番号を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -499,12 +475,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>近似曲線が数値軸と交差するポイントを設定または返します。</summary>
+        <summary>返すまたは、数値軸と交差する trendline のポイントを設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティの設定の設定、<see cref="P:Microsoft.Office.Interop.Excel.Trendline.InterceptIsAuto" />プロパティを<b>False</b>にします。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティを設定すると、プロパティ <see cref="P:Microsoft.Office.Interop.Excel.Trendline.InterceptIsAuto" /> が False に <b>設定されます</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InterceptIsAuto">
@@ -533,13 +507,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、近似曲線が数値軸と交差する点は回帰計算によって自動的に決定します。</summary>
+        <summary><b>True</b> の 場合は、数値軸と交差する点が回帰によって自動的に決定されます。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>設定、<see cref="P:Microsoft.Office.Interop.Excel.Trendline.Intercept" />プロパティは、このプロパティを<b>False</b>に設定します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>プロパティを設定 <see cref="P:Microsoft.Office.Interop.Excel.Trendline.Intercept" /> すると、このプロパティは False に <b>設定されます</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -599,8 +570,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>場合は Microsoft Excel が自動的に近似曲線の名前を決定します。</summary>
+        <summary>近似曲線の名前を自動的に決定する場合は <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -631,7 +601,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>近似曲線の次数 (1 より大きい整数) の設定を取得または設定すると、近似曲線の<b>次数</b>の範囲は。</summary>
+        <summary>返すまたは、傾向線の種類が <b>xlPolynomial</b>の場合、trendline の順序 (1 より大きい整数) を設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -690,7 +660,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>移動平均近似曲線の期間を設定または返します。</summary>
+        <summary>移動平均の傾向線の期間を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -747,7 +717,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlTrendlineType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>近似曲線の種類を設定または返します。</summary>
+        <summary>Trendline の種類を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,13 +1,5 @@
 <Type Name="PublishObjects" FullName="Microsoft.Office.Interop.Excel.PublishObjects">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="f387dc9c018dbd0378441a0c44743179b7b5fb9c" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20574040" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PublishObjects : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f387dc9c018dbd0378441a0c44743179b7b5fb9c" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010753" /></Metadata><TypeSignature Language="C#" Value="public interface PublishObjects : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PublishObjects implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PublishObjects" />
   <TypeSignature Language="VB.NET" Value="Public Interface PublishObjects&#xA;Implements IEnumerable" />
@@ -33,13 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>すべての<see cref="T:Microsoft.Office.Interop.Excel.PublishObject" />、ブック内のオブジェクト。 各 <b>PublishObject</b> オブジェクトは、Web ページとして保存されたブック内のアイテムを表し、オブジェクトのプロパティやメソッドで指定された値に従って更新されます。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.PublishObjects" /> 、 <b>PublishObjects</b>コレクションを返すプロパティです。</para>
-      <para>
-        <b>PublishObjects</b>を使用 (<paramref name="index" />)、<paramref name="index" />は、1 つの<b>PublishObject</b>オブジェクトを取得するのには、ブック内の指定された項目のインデックス番号です。</para>
-      <para></para>
-    </remarks>
+    <summary>ブック内のすべての <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> オブジェクトのコレクションです。 各 <b>PublishObject</b> オブジェクトは、Web ページとして保存されたブック内のアイテムを表し、オブジェクトのプロパティやメソッドで指定された値に従って更新されます。</summary>
+    <remarks><para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel._Workbook.PublishObjects" /> を使用して <b>PublishObjects コレクションを取得</b> します。</para>
+      <para><b>PublishObjects</b>( ) を使用して 1 つの PublishObject オブジェクトを取得します (ブック内の指定されたアイテムのインデックス <paramref name="index" /> <paramref name="index" /> 番号)。 <b></b></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -105,15 +94,14 @@
         <Parameter Name="Title" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SourceType">必要な<see cref="T:Microsoft.Office.Interop.Excel.XlSourceType" />。 ソースの種類を指定します。</param>
-        <param name="Filename">
-          <b>文字列</b> が必要です。 URL (イントラネットまたは Web) またはパス (ローカルまたはネットワーク) に、ソース オブジェクトが保存されました。</param>
-        <param name="Sheet">省略可能な<b>オブジェクト</b>です。 Web ページとして保存されたワークシートの名前を指定します。</param>
-        <param name="Source">省略可能な<b>オブジェクト</b>です。 として次のいずれかの項目を識別する一意の名前、<paramref name="SourceType" />の引数: <b>xlSourceAutoFilter</b>、<b>場合</b>、<b>範囲</b>、<b>する一意</b>の、<b>名前</b>、または<b>指定</b>。 場合<paramref name="SourceType" />は、<b>指定</b>ソースが定義された名前にすることができる範囲を指定します。 場合<paramref name="SourceType" /><b>場合</b>、<b>範囲</b>、または<b>名前</b>を<paramref name="Source" />グラフ、ピボット テーブル レポートまたはクエリ テーブルの名前を指定します。</param>
-        <param name="HtmlType">省略可能な<b>オブジェクト</b>です。 対話型の Microsoft Office Web コンポーネント、または静的テキストとイメージとしてアイテムを保存するかどうかを指定します。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" />定数。ConstantDescription<b>xlHtmlCalc</b>アイテムは、対話型の Microsoft Office スプレッドシート コンポーネントとして保存されます。<b>xlHtmlChart</b>項目が対話型の Microsoft Office グラフ コンポーネントとして保存します。<b>xlHtmlList</b>項目が対話型の Microsoft Office ピボット テーブル コンポーネントとして保存します。<b>定数</b>項目が静的テキストと画像として保存します。</param>
-        <param name="DivID">省略可能な<b>オブジェクト</b>です。 HTML の DIV タグで Web ページのアイテムを識別するために使用する一意識別子を指定します。</param>
-        <param name="Title">省略可能な<b>オブジェクト</b>です。 Web ページのタイトルを指定します。</param>
-        <summary>Web ページに保存された文書内の項目を表すオブジェクトを作成します。 このようなオブジェクトでは、Microsoft Excel のドキュメントに自動変更が行われるときに、Web ページへの以降の更新が容易になります。 返します、<see cref="T:Microsoft.Office.Interop.Excel.PublishObject" />オブジェクトです。</summary>
+        <param name="SourceType">必須 <see cref="T:Microsoft.Office.Interop.Excel.XlSourceType" /> 。 ソースの種類を指定します。</param>
+        <param name="Filename"><b>文字列</b> が必要です。 ソース オブジェクトが保存されたイントラネットまたは Web の URL、あるいはローカルまたはネットワークのパスを指定します。</param>
+        <param name="Sheet">省略 <b>可能なオブジェクト</b>です。 Web ページとして保存されたワークシートの名前を指定します。</param>
+        <param name="Source">省略 <b>可能なオブジェクト</b>です。 引数 <paramref name="SourceType" /> xlSourceAutoFilter、xlSourceChart、xlSourcePivotTable、xlSourcePrintArea、xlSourceQuery、<b></b>または<b></b><b></b><b></b><b>xlSourceRange</b>のいずれかの定数を持つアイテムを識別するために使用される一<b></b>意の名前です。 <paramref name="SourceType" /> <b>xlSourceRange の場合、Source</b>は範囲を指定します。定義された名前を使用できます。 if <paramref name="SourceType" /> is <b>xlSourceChart</b>, <b>xlSourcePivotTable</b>, or <b>xlSourceQuery</b>, <paramref name="Source" /> specifies the name of a chart, PivotTable report, or query table.</param>
+        <param name="HtmlType">省略 <b>可能なオブジェクト</b>です。 アイテムを対話型の Microsoft Office Web コンポーネントとして保存するか、静的な文字列および画像として保存するかを指定します。 使用できる定数は、次 <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> に示す定数です。スプレッドシート コンポーネントの対話形式で保存された<b>ConstantDescription xlHtmlCalc</b>Microsoft Office。<b>xlHtmlChart</b>対話型のグラフ コンポーネントとしてMicrosoft Officeされるアイテム。<b>xlHtmlList</b>ピボットテーブル コンポーネントの対話型Microsoft Office保存されたアイテム。<b>xlHtmlStatic</b>静的テキストと画像として保存されたアイテム。</param>
+        <param name="DivID">省略 <b>可能なオブジェクト</b>です。 HTML の DIV タグで Web ページのアイテムを識別するために使用する一意識別子を指定します。</param>
+        <param name="Title">省略 <b>可能なオブジェクト</b>です。 Web ページのタイトルを指定します。</param>
+        <summary>Web ページとして保存されるドキュメント内でのアイテムを表すオブジェクトを作成します。 このようなオブジェクトを使用することにより、Excel のドキュメントへの変更を自動化でき、これ以降に行う Web ページの更新が容易になります。 オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -141,7 +129,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -197,14 +185,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -290,8 +275,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

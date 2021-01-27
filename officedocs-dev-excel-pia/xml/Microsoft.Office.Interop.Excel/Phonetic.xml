@@ -1,13 +1,5 @@
 <Type Name="Phonetic" FullName="Microsoft.Office.Interop.Excel.Phonetic">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="968b33512b8ee5525d7c2fa249064b898613c020" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587648" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Phonetic" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="968b33512b8ee5525d7c2fa249064b898613c020" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011019" /></Metadata><TypeSignature Language="C#" Value="public interface Phonetic" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Phonetic" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Phonetic" />
   <TypeSignature Language="VB.NET" Value="Public Interface Phonetic" />
@@ -30,14 +22,10 @@
   </Attributes>
   <Docs>
     <summary>セルの指定されたふりがなテキスト文字列についての情報を表します。</summary>
-    <remarks>
-      <para>Microsoft Excel 97 では、指定されたセル範囲のすべてのふりがなテキストの書式の属性が含まれています。</para>
-      <para>
-        <b>表音</b>を使用する (<paramref name="index" />)、<paramref name="index" />は、1 つの<b>Phonetic</b>オブジェクトを取得するのには、ふりがなテキストのインデックス番号です。</para>
-      <para>
-        <see cref="P:Microsoft.Office.Interop.Excel.Range.Phonetic" />プロパティは、Microsoft Excel の以前のバージョンとの互換性を提供します。 <b>[ふりがな]</b>を使用する必要があります (<paramref name="index" />)、<paramref name="index" />は、1 つの<b>Phonetic</b>オブジェクトを取得するのには、ふりがなテキストのインデックス番号です。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>Microsoft Excel 97 では、指定されたセル範囲のすべてのふりがなテキストの書式の属性が含まれています。</para>
+      <para>単 <b>一の Phonetic オブジェクト</b>を取得するには <paramref name="index" /> <paramref name="index" /> 、Phonetics ( ) を <b>使用</b> します。この値は、読み取り文字列のインデックス番号です。</para>
+      <para>この <see cref="P:Microsoft.Office.Interop.Excel.Range.Phonetic" /> プロパティは、以前のバージョンの Microsoft Excel との互換性を提供します。 単一の <b>Phonetic オブジェクトを取得するには、Phonetics</b>( ) を使用する必要があります。この値には、読み取り文字列のインデックス番号を <paramref name="index" /> <paramref name="index" /> <b>指定</b> します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Alignment">
@@ -66,11 +54,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したルビ文字の配置を設定または返します。</summary>
+        <summary>指定した読み上がり文字列の配置を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>配置</b>プロパティには、次のいずれかを指定できる<see cref="T:Microsoft.Office.Interop.Excel.XlPhoneticAlignment" />定数。</para>
+        <remarks><para><b>Alignment プロパティ</b>には、次の定数 <see cref="T:Microsoft.Office.Interop.Excel.XlPhoneticAlignment" /> のいずれかを指定できます。</para>
           <para>
             <b>XlPhoneticAlignCenter</b>
           </para>
@@ -83,8 +69,7 @@
           <para>
             <b>XlPhoneticAlignNoControl</b>
           </para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -110,7 +95,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -141,7 +126,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定したセルのふりがなの種類を設定します。</summary>
+        <summary>指定したセルの読み上がり文字列の種類を設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -169,14 +154,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -202,7 +184,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Font" />を指定したオブジェクトのフォントを表すオブジェクト。</summary>
+        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.Font" /> オブジェクトのフォントを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -261,12 +243,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトのテキストを設定または返します。</summary>
+        <summary>指定されたオブジェクトのテキストを返すか設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティを取得または設定のふりがなテキストを設定する<see cref="T:Microsoft.Office.Interop.Excel.Phonetic" />オブジェクトです。 <b>Null</b>には、このプロパティを設定することはできません。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティは、オブジェクトの読み方を表す文字列を取得または設定 <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> します。 このプロパティを <b>Null</b> 値に設定できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -295,7 +275,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトを表示するかどうかを決定します。</summary>
+        <summary>オブジェクトを表示するかどうかを指定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

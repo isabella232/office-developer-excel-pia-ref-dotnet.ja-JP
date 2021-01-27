@@ -1,13 +1,5 @@
 <Type Name="PivotFilter" FullName="Microsoft.Office.Interop.Excel.PivotFilter">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8ca490d3d62655bdb53770e1be334fbb762008fb" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20579493" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotFilter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8ca490d3d62655bdb53770e1be334fbb762008fb" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010872" /></Metadata><TypeSignature Language="C#" Value="public interface PivotFilter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotFilter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotFilter" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotFilter" />
@@ -29,11 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A<see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" />に適用される、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />オブジェクトです。</summary>
-    <remarks>
-      <para>開発者には、信頼性の高いインデックスは参照用のフィルターの名前を付けるオプションがあります。 <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.DataField" />プロパティを指定します<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />値フィルターの基になります。</para>
-      <para></para>
-    </remarks>
+    <summary>A <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> はオブジェクトに適用 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> されます。</summary>
+    <remarks><para>インデックスは信頼できないため、開発者は参照のためにフィルターに名前を付けることができます。 プロパティ <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.DataField" /> は、値フィルター <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> の基に設定する値を指定します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Active">
@@ -59,14 +49,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すかどうか、指定した<see cref="P:Microsoft.Office.Interop.Excel.PivotFilter" />がアクティブです。 読み取り専用。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>このプロパティは<b>True</b>を返しますと、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />では、フィルターの<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />フィルターが評価されると、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />が更新されます。 <b>False</b>を返しますと、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />のフィルターではありません、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />影響を与えませんし、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />計算します。</para>
-          <para></para>
-        </remarks>
+        <summary>指定されたオブジェクトがアクティブかどうかを <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter" /> 示す値を取得します。 読み取り専用です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>このプロパティは、 <b>フィルター</b> のフィルターが含まれる場合に True を返し、更新時にフィルター <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> が評価されます。 フィルターの <b>フィルターが</b> 計算に影響を与えがない場合は <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> False を返 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -92,14 +78,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクト修飾子を指定しない場合に使用する場合、このプロパティは、Microsoft Office Excel を返します<see cref="T:Microsoft.Office.Interop.Excel._Application" />。 オブジェクト修飾子を使用する場合、このプロパティは、指定したオブジェクトの作成者を返します。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
-        </value>
-        <remarks>
-          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクト用のアプリケーションを取得できます。</para>
-          <para></para>
-        </remarks>
+        <summary>オブジェクト修飾子を指定せずに使用する場合、このプロパティは Excel のMicrosoft Officeします <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 。 オブジェクト修飾子を指定した場合、このプロパティは指定されたオブジェクトの作成元を返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
+        <remarks><para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、オブジェクトのアプリケーションを取得できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -125,14 +107,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>の整数</b>を返します。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当  <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <summary>このオブジェクトが作成されたアプリケーションを示<b></b>す 32 ビット整数を返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Microsoft Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。<b>Creator</b> プロパティは、Macintosh 版 Excel でのみ使用できます。Macintosh では各アプリケーションに 4 文字のシグネチャが定められています。たとえば、Excel のシグネチャは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataCubeField">
@@ -158,10 +136,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.CubeField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティは、OLAP にのみ適用<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />を提供し、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Value" />フィールド (<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />値領域内) を値フィルターによってフィルター処理されています。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.CubeField" />
-        </value>
+        <summary>このプロパティは OLAP にのみ適用され、値フィルターでフィルター処理されるフィールド ([値] 領域 <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Value" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 内) を提供します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.CubeField" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,10 +164,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティは、OLAP 以外にのみ適用<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />を提供し、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Value" />フィールド (<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />値領域内) を値フィルターによってフィルター処理されています。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />
-        </value>
+        <summary>このプロパティは OLAP 以外にのみ適用され、値フィルターでフィルター処理されるフィールド ([値] 領域 <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Value" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 内) を提供します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.PivotField" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,7 +190,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>フィルターを削除し、フィルターのコレクションから削除される、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />と<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</summary>
+        <summary>フィルターを削除し、 . <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /></summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,14 +217,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オプションの説明を提供します<see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" />オブジェクトです。 読み取り専用。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
-        <remarks>
-          <para>説明<b>の文字列</b>の最大長は、255 文字です。</para>
-          <para></para>
-        </remarks>
+        <summary>オブジェクトのオプションの説明を提供 <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> します。 読み取り専用です。</summary>
+        <value><b>String</b></value>
+        <remarks><para>説明文字列の <b>最大長は</b> 255 文字です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="FilterType">
@@ -276,12 +246,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotFilterType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>適用するフィルターの種類を指定します。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFilterType" />
-        </value>
-        <remarks>
-          <para>次の表に追加できるフィルターの種類を示します、 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />。 引数を指定する必要がありますが、<see cref="T:Microsoft.Office.Interop.Excel.xlPivotFilters.Add" />そのフィルターの種類のメソッドに「必須」とマークされている場合は、「使用できません」をマークを使うことはできません。</para>
+        <summary>適用するフィルターの種類を指定します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlPivotFilterType" /></value>
+        <remarks><para>次の表に、追加できるフィルターの種類を示します <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 。 そのフィルターの種類のメソッドに指定する必要がある引数は "必須" とマークされ、指定できない引数は <see cref="T:Microsoft.Office.Interop.Excel.xlPivotFilters.Add" /> "Unavailable" とマークされます。</para>
           <list type="table">
             <item>
               <term>
@@ -305,51 +272,51 @@
             </item>
             <item>
               <term>xlPivotFilterType</term>
-              <description>データ フィールド</description>
+              <description>DataField</description>
               <description>DataCubeField (OLAP)</description>
-              <description>値 1</description>
+              <description>Value1</description>
               <description>Value2</description>
             </item>
             <item>
               <term>xlTopCount</term>
-              <description>必須である</description>
-              <description>必須である</description>
-              <description>必須である</description>
+              <description>必須</description>
+              <description>必須</description>
+              <description>必須</description>
               <description>使用できない</description>
             </item>
             <item>
               <term>xlBottomCount</term>
-              <description>必須である</description>
-              <description>必須である</description>
-              <description>必須である</description>
+              <description>必須</description>
+              <description>必須</description>
+              <description>必須</description>
               <description>使用できない</description>
             </item>
             <item>
               <term>xlTopPercent</term>
-              <description>必須である</description>
-              <description>必須である</description>
-              <description>必須である</description>
+              <description>必須</description>
+              <description>必須</description>
+              <description>必須</description>
               <description>使用できない</description>
             </item>
             <item>
               <term>xlBottomPercent</term>
-              <description>必須である</description>
-              <description>必須である</description>
-              <description>必須である</description>
+              <description>必須</description>
+              <description>必須</description>
+              <description>必須</description>
               <description>使用できない</description>
             </item>
             <item>
               <term>xlTopSum</term>
-              <description>必須である</description>
-              <description>必須である</description>
-              <description>必須である</description>
+              <description>必須</description>
+              <description>必須</description>
+              <description>必須</description>
               <description>使用できない</description>
             </item>
             <item>
               <term>xlBottomSum</term>
-              <description>必須である</description>
-              <description>必須である</description>
-              <description>必須である</description>
+              <description>必須</description>
+              <description>必須</description>
+              <description>必須</description>
               <description>使用できない</description>
             </item>
             <item>
@@ -440,71 +407,71 @@
               <term>xlCaptionIsBetween</term>
               <description>使用できない</description>
               <description>使用できない</description>
-              <description>必須である</description>
-              <description>必須である</description>
+              <description>必須</description>
+              <description>必須</description>
             </item>
             <item>
               <term>xlCaptionIsNotBetween</term>
               <description>使用できない</description>
               <description>使用できない</description>
-              <description>必須である</description>
-              <description>必須である</description>
+              <description>必須</description>
+              <description>必須</description>
             </item>
             <item>
               <term>xlValueEquals</term>
-              <description>必須である</description>
-              <description>必須である</description>
-              <description>必須である</description>
+              <description>必須</description>
+              <description>必須</description>
+              <description>必須</description>
               <description>使用できない</description>
             </item>
             <item>
               <term>xlValueDoesNotEqual</term>
-              <description>必須である</description>
-              <description>必須である</description>
-              <description>必須である</description>
+              <description>必須</description>
+              <description>必須</description>
+              <description>必須</description>
               <description>使用できない</description>
             </item>
             <item>
               <term>xlValueIsGreaterThan</term>
-              <description>必須である</description>
-              <description>必須である</description>
-              <description>必須である</description>
+              <description>必須</description>
+              <description>必須</description>
+              <description>必須</description>
               <description>使用できない</description>
             </item>
             <item>
               <term>xlValueIsGreaterThanOrEqualTo</term>
-              <description>必須である</description>
-              <description>必須である</description>
-              <description>必須である</description>
+              <description>必須</description>
+              <description>必須</description>
+              <description>必須</description>
               <description>使用できない</description>
             </item>
             <item>
               <term>xlValueIsLessThan</term>
-              <description>必須である</description>
-              <description>必須である</description>
-              <description>必須である</description>
+              <description>必須</description>
+              <description>必須</description>
+              <description>必須</description>
               <description>使用できない</description>
             </item>
             <item>
               <term>xlValueIsLessThanOrEqualTo</term>
-              <description>必須である</description>
-              <description>必須である</description>
-              <description>必須である</description>
+              <description>必須</description>
+              <description>必須</description>
+              <description>必須</description>
               <description>使用できない</description>
             </item>
             <item>
               <term>xlValueIsBetween</term>
-              <description>必須である</description>
-              <description>必須である</description>
-              <description>必須である</description>
-              <description>必須である</description>
+              <description>必須</description>
+              <description>必須</description>
+              <description>必須</description>
+              <description>必須</description>
             </item>
             <item>
               <term>xlValueIsNotBetween</term>
-              <description>必須である</description>
-              <description>必須である</description>
-              <description>必須である</description>
-              <description>必須である</description>
+              <description>必須</description>
+              <description>必須</description>
+              <description>必須</description>
+              <description>必須</description>
             </item>
             <item>
               <term>xlSpecificDate</term>
@@ -549,7 +516,7 @@
               <description>使用できない</description>
             </item>
             <item>
-              <term>規則での条件</term>
+              <term>xlBetween</term>
               <description>使用できない</description>
               <description>使用できない</description>
               <description>必須である</description>
@@ -787,8 +754,7 @@
               <description>使用できない</description>
             </item>
           </list>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsMemberPropertyFilter">
@@ -814,15 +780,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ラベル フィルターに基づくかどうかを指定します<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />のフィールドまたはメンバー プロパティのキャプション、<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />のキャプション、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />自体。 読み取り専用。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>このプロパティの既定値は、 <b>false を指定</b> します。</para>
-          <para>ラベル フィルターに基づいている場合<b>は True</b>を返します。<see cref="T:Microsoft.Office.Interop.Excel.PivotItem" />のメンバー プロパティのキャプション、 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />。フィルターに基づいている場合は、<b>False</b>を返すか、 <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> 、c のキャプションです。 このプロパティは、ラベル フィルターおよび OLAP に対してのみ有効な<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />には、少なくとも 1 つのメンバー プロパティがあります。</para>
-          <para></para>
-        </remarks>
+        <summary>ラベル フィルターが、フィールドのメンバー プロパティのキャプションまたはそれ自体のキャプションに基 <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> づくかどうかを <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 指定します。 読み取り専用です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>このプロパティの既定値は、 <b>false を指定</b> します。</para>
+          <para>ラベル フィルター <b>が</b> メンバー プロパティのキャプションに基づく場合はTrue を返します。または、フィルターが c のキャプションに基づく場合は <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <b>False</b> を返します <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> 。 このプロパティはラベル フィルターでのみ有効で、少なくとも 1 つのメンバー プロパティを持つ OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> に対してだけ有効です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MemberPropertyField">
@@ -848,14 +810,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティは、メンバー プロパティを指定します。<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />ラベル フィルターを基にします。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />
-        </value>
-        <remarks>
-          <para>このプロパティは、OLAP およびラベルのフィルターに対してのみ有効な<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />には、少なくとも 1 つのメンバー プロパティがあります。</para>
-          <para></para>
-        </remarks>
+        <summary>このプロパティは、ラベル フィルター <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> の基づくメンバー プロパティを指定します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.PivotField" /></value>
+        <remarks><para>このプロパティは、ラベル フィルターと、少なくとも 1 つのメンバー プロパティを持つ OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> でのみ有効です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -882,9 +840,7 @@
       </ReturnValue>
       <Docs>
         <summary>このプロパティは、参照の名前付けフィルターのオプションを提供します。インデックス値は変更される可能性があるため、正確な参照のために使用することはできません。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -914,17 +870,14 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>全体に適用されるすべての値フィルターでフィルターの評価順序を指定する<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>整数</b>です。</value>
-        <remarks>
-          <para>このプロパティの<b>値</b>と<b>一番上</b>でのみ有効です<paramref name="n" />型<see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" />秒です。 <b>ラベル</b>と<b>日付</b>のフィルターにこのプロパティを取得または設定をしようとした場合に、実行時エラーが返されます。 1 が最初に評価されるフィルターを表します、2 は評価されたとに、までは、次のフィルターを表す、<paramref name="n" />番目の値に達するとします。 フィルターを表し、-1 です。</para>
-          <para>場合、 <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> 、新しいフィルターを追加するときにプロパティを指定しない場合設定されます<paramref name="N+1" />(、<paramref name="N" />は、現在の最高<see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" />フィルター コレクション内の番号)。</para>
-          <para>プロパティを指定することができます、<see cref="T:Microsoft.Office.Interop.Excel.PivotFilters.Add" />メソッドまたは設定できます後でフィールドのプロパティを変更します。</para>
+        <summary>すべての値フィルター全体に適用されるフィルターの評価順序を指定します <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 読み取り/書き込み</summary>
+        <value>整数型 ( <b>Integer</b> ) を使用します。</value>
+        <remarks><para>このプロパティは、Value 型と<b>Top</b> <b>型</b> <paramref name="n" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> でのみ有効です。 Label フィルターと Date フィルターに対してこのプロパティを設定または取得しようとすると、実行時 <b>エラー</b> が <b>返</b> されます。 1 は評価された最初のフィルターを表し、2 は評価された次のフィルターを表し、2 番目の値に達するまでは次に評価されるフィルターを <paramref name="n" /> 表します。 -1 represents an inactive filter.</para>
+          <para>新しいフィルターを追加するときにプロパティを指定しない場合、プロパティは (フィルター コレクション内の現在の最高の番号) <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> <paramref name="N+1" /> <paramref name="N" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> に設定されます。</para>
+          <para>プロパティは、メソッドで指定するか、後でプロパティを変更してフィールド <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters.Add" /> に設定できます。</para>
           <para>フィールドの評価順序を下げると、以前にその評価順位を保持していたフィールドと 2 つのフィールド間のフィールドはすべて 1 つずつ評価順序が上がります。評価順序を以前と同じに設定すると、影響はありません。フィールドの評価順序を上げると、以前にその評価順位を保持していたフィールドと 2 つのフィールド間のフィールドはすべて 1 つずつ評価順序が下がります。</para>
-          <para>順序<see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" />コレクションでは、それらが評価される順序と同じです。 開発者が順序を変更できるように、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />が評価されます。 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> (非 OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />)、または<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />(OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />) から削除されます、<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />コレクションでは、このプロパティが-1 に設定値または上の<paramref name="n" />フィールドにフィルターを適用します。 フィールドを戻すに設定されます、<see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" />プロパティを<paramref name="N+1" />の値] または [上の<paramref name="n" />値が明示的に指定されていない場合に適用されるフィルターです。</para>
-          <para></para>
-        </remarks>
+          <para>コレクション内 <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> の順序は、評価される順序と同じです。 そのため、開発者は a が評価される順序 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> を変更できます。 (OLAP 以外の) フィルターまたは <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> OLAP ( OLAP) がコレクションから削除されると、フィールドに適用される値フィルターまたは上位フィルターの場合、このプロパティは <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> -1 に設定 <paramref name="n" /> されます。 フィールドを再度追加すると、値が明示的に指定されていない場合に適用される Value フィルターまたは Top フィルターのプロパティ <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.Order" /> <paramref name="N+1" /> <paramref name="n" /> が設定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -950,10 +903,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された親を返します<see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" />。 読み取り専用。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定されたオブジェクトの親を返します <see cref="T:Microsoft.Office.Interop.Excel.PivotFilter" /> 。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -980,10 +931,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定の<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />にフィルターを適用します。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />
-        </value>
+        <summary>フィルターを <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 適用するターゲットを指定します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.PivotField" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1010,10 +959,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティは、ユーザーが指定したパラメーターのフィルターを定義するのには、 <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.PivotField" />。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>このプロパティは、ユーザーが指定するパラメーターで、フィルターを定義します <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.PivotField" /> 。 値の取得と設定が可能です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1040,10 +987,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティは、ユーザーが指定したパラメーターのフィルターを定義するのには、 <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.PivotField" />。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>このプロパティは、ユーザーが指定するパラメーターで、フィルターを定義します <see cref="P:Microsoft.Office.Interop.Excel.PivotFilter.PivotField" /> 。 値の取得と設定が可能です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1073,22 +1018,20 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>設定または日付フィルターのフィルター処理のセマンティクスを取得します。 <b>ブール値</b>(<b>bool</b>では C#) です。 読み取り/書き込み</summary>
+        <summary>日付フィルターのフィルタリング セマンティクスを設定または取得します。 <b>ブール</b>値<b></b> ( C# のブール値)。 読み取り/書き込み</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>以前のプロパティ設定と現在のプロパティ設定の結果は次のとおりです。</para>
+        <remarks><para>以前のプロパティ設定と現在のプロパティ設定の結果は次のとおりです。</para>
           <list type="bullet">
             <item>
-              <description>False (Office 2010 の動作): すべての時間を指定できます。日付は、(指定した日付の午前 0 時) の時間での正確なポイントです。 日付範囲のフィルター処理を開始または午前 0 時に終了します。</description>
+              <description>False (Office 2010 の動作): いつでも指定できます。日付は、時刻の正確なポイント (指定された日付の午前 0 時) です。 日付範囲のフィルター処理は、午前 0 時に開始または終了します。</description>
             </item>
             <item>
-              <description>True を設定する (Office 2013 の動作): タイムラインのコントロールにこの動作が適用されます。 日付だけを指定するとします。すべて時間帯までと、翌日の午前 0 時直前に日付が含まれます。</description>
+              <description>True (Office 2013動作): この動作はタイムライン コントロールに適用されます。 日付全体のみを指定でき、日付には翌日の午前 0 時まで (午前 0 時は含まない) のすべての時刻が含まれます。</description>
             </item>
           </list>
-          <para>タイムラインは、常に返す<b>場合は True</b>です。これを<b>False</b>に設定する場合は、実行時エラーを返します。</para>
+          <para>Timeline の場合は、常に <b>True</b> が返されます。<b>False</b> に設定すると実行時エラーが返されます。</para>
           <para>日付以外のフィルターの場合は、すべてのアクセスで実行時エラーが返されます。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

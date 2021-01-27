@@ -1,13 +1,5 @@
 <Type Name="Research" FullName="Microsoft.Office.Interop.Excel.Research">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="9be1c3837417559efad8122d95ed57c6ba7ef60e" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584750" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Research" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9be1c3837417559efad8122d95ed57c6ba7ef60e" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010515" /></Metadata><TypeSignature Language="C#" Value="public interface Research" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Research" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Research" />
   <TypeSignature Language="VB.NET" Value="Public Interface Research" />
@@ -29,13 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <b>Research</b> クエリのコントロールを表します。</summary>
-    <remarks>
-      <para>
-        <b>リサーチ</b>クエリを使用する場合は、ライブ データ ソースに対応する既存<b>の GUID</b>が必要です。  データ ソースが使用できないか、存在しません、する場合は、実行時エラーが発生します。</para>
-      <para></para>
-    </remarks>
+    <summary><b>Research</b> クエリのコントロールを表します。</summary>
+    <remarks><para>Research クエリ <b>を操作</b> する場合は、ライブ データ ソースに対応する <b>既存の GUID</b> が必要です。  データ ソースが使用できないか存在しない場合は、実行時エラーが発生します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -61,14 +49,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Office Excel アプリケーションを表すオブジェクト。 オブジェクト修飾子を使用する場合、このプロパティは、指定したオブジェクトの作成者を表す<b>Application</b>オブジェクトを返します。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
-        </value>
-        <remarks>
-          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクト用のアプリケーションを取得できます。</para>
-          <para></para>
-        </remarks>
+        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Excel アプリケーションのMicrosoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> を返します。 オブジェクト修飾子を使用する場合、このプロパティは指定されたオブジェクトの作成元を表す <b>Application</b> オブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
+        <remarks><para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、オブジェクトのアプリケーションを取得できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -94,14 +78,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>の整数</b>を返します。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当  <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <summary>このオブジェクトが作成されたアプリケーションを示<b></b>す 32 ビット整数を返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Microsoft Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。<b>Creator</b> プロパティは、Macintosh 版 Excel でのみ使用できます。Macintosh では各アプリケーションに 4 文字のシグネチャが定められています。たとえば、Excel のシグネチャは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="IsResearchService">
@@ -127,8 +107,8 @@
         <Parameter Name="ServiceID" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="ServiceID">リサーチ サービスを識別する<b>GUID</b>を指定するオブジェクトの<b>文字列</b>が必要です。</param>
-        <summary>ServiceID パラメーターで指定された<b>GUID</b>は、現在構成されているサービスに対応するかどうかを示します。</summary>
+        <param name="ServiceID">リサーチ <b>サービス</b> を識別する <b>GUID</b> を指定するオブジェクトを必須の文字列。</param>
+        <summary>ServiceID パラメーターで <b>指定された GUID</b> が、現在構成されているサービスに対応するかどうかを示します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,10 +136,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの親を返します。 読み取り専用。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトの親を返します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,15 +167,13 @@
         <Parameter Name="LaunchQuery" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ServiceID">リサーチ サービスを識別する<b>GUID</b><b>文字列</b>を指定が必要です。</param>
-        <param name="QueryString">省略可能な<b>オブジェクト</b>は、クエリ文字列を指定します。</param>
-        <param name="QueryLanguage">省略可能な<b>オブジェクト</b>は、クエリ文字列のクエリ言語を指定します。</param>
-        <param name="UseSelection">省略可能な<b>ブール値</b><b>は True</b>にクエリ文字列として現在の選択範囲を使用します。  これを上書き、<paramref name="QueryString" />パラメーター場合に設定します。 既定値は、 <b>false を指定</b> します。</param>
-        <param name="LaunchQuery">省略可能な<b>ブール値</b><b>は True</b>に、クエリを起動します。 <b>False</b>には、スコープ指定されたリサーチ サービスを検索するのには、[リサーチ] 作業ウィンドウが表示されます。</param>
+        <param name="ServiceID">必須 <b>の文字列</b> リサーチ サービス <b>を識別</b> する GUID を指定します。</param>
+        <param name="QueryString">省略 <b>可能なオブジェクト</b> クエリ文字列を指定します。</param>
+        <param name="QueryLanguage">Optional <b>Object</b> クエリ文字列のクエリ言語を指定します。</param>
+        <param name="UseSelection">オプション <b>の Boolean</b><b>True</b> を指定すると、現在の選択範囲がクエリ文字列として使用されます。  設定されている場合、 <paramref name="QueryString" /> このパラメーターは上書きされます。 既定値は、 <b>false を指定</b> します。</param>
+        <param name="LaunchQuery">オプション <b>の Boolean</b><b>True が</b> クエリを起動します。 <b>False</b> を指定すると、指定したリサーチ サービスを検索する範囲の [リサーチ] 作業ウィンドウが表示されます。</param>
         <summary>リサーチ クエリを指定します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,14 +201,10 @@
         <Parameter Name="LanguageTo" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="LanguageFrom">
-          <b>整数</b>を指定の言語に変換する必要があります。</param>
-        <param name="LanguageTo">
-          <b>整数</b>を指定の言語に翻訳する必要があります。</param>
+        <param name="LanguageFrom">必須 <b>の整数</b> 翻訳の言語を指定します。</param>
+        <param name="LanguageTo">必須 <b>の整数</b> 翻訳する言語を指定します。</param>
         <summary>翻訳サービス用の言語を設定します。</summary>
-        <returns>
-          <b>オブジェクト</b>
-        </returns>
+        <returns><b>Object</b></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
