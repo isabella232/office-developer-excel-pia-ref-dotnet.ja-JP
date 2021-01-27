@@ -1,13 +1,5 @@
 <Type Name="AboveAverage" FullName="Microsoft.Office.Interop.Excel.AboveAverage">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="1a21e926b51408a1d10155a1a8f623c34f2f9726" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20584099" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AboveAverage" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1a21e926b51408a1d10155a1a8f623c34f2f9726" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999792" /></Metadata><TypeSignature Language="C#" Value="public interface AboveAverage" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AboveAverage" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AboveAverage" />
   <TypeSignature Language="VB.NET" Value="Public Interface AboveAverage" />
@@ -30,10 +22,8 @@
   </Attributes>
   <Docs>
     <summary>標準規定以上の条件付き書式ルールを表します。セルの値をそれとは別のセルと相対的に表示できるようにすることを目的とした、色または塗りつぶしの領域や選択範囲への適用。</summary>
-    <remarks>
-      <para>すべての条件付き書式設定オブジェクトが含まれる、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />の子であるコレクション オブジェクトの<see cref="T:Microsoft.Office.Interop.Excel.Range" />コレクション。 上記の平均の書式設定ルールを作成するにはいずれかの方法を使用して、<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />または<see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddAboveAverage" />のメソッド、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />コレクションです。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>すべての条件付き書式オブジェクトは、コレクション <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> の子であるコレクション オブジェクト内に含 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> まれます。 コレクションの 1 つ以上のメソッドを使用して、平均以上 <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> の書式設定 <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddAboveAverage" /> ルールを作成 <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> できます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="AboveBelow">
@@ -62,10 +52,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAboveBelow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定の定数のいずれか、 <see cref="T:Microsoft.Office.Interop.Excel.XlAboveBelow" /> 、条件付き書式ルール検索の上のセルの値または範囲の平均または標準偏差を指定する列挙です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlAboveBelow" />
-        </value>
+        <summary>条件付き書式ルールが範囲の平均または標準偏差の上または下のセル値を検索する場合に指定する、列挙の定数の 1 つを取得または <see cref="T:Microsoft.Office.Interop.Excel.XlAboveBelow" /> 設定します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlAboveBelow" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,13 +80,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Office Excel アプリケーションを表すオブジェクト。 オブジェクト修飾子を使用する場合、このプロパティは、指定したオブジェクトの作成元を表す <b>Application</b> オブジェクトを返します。 読み取り専用です。</summary>
-        <value>
-          <b>アプリケーション</b>(上記参照)</value>
-        <remarks>
-          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクト用のアプリケーションを取得できます。</para>
-          <para></para>
-        </remarks>
+        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Excel アプリケーションのオブジェクトをMicrosoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> します。 オブジェクト修飾子を指定した場合、指定したオブジェクトを作成した <b>Application</b> オブジェクトを取得します。 値の取得のみ可能です。</summary>
+        <value><b>アプリケーション</b> (上記を参照)</value>
+        <remarks><para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、オブジェクトのアプリケーションを取得できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AppliesTo">
@@ -124,10 +109,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトの書式設定ルールを適用するセル範囲を指定します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Range" />
-        </value>
+        <summary>書式設定ルール <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を適用するセル範囲を指定するオブジェクトを返します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Range" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,14 +137,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> 、条件付き書式ルールが<b>True</b>と評価された場合、セルの罫線の書式を指定するコレクションです。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Borders" />
-        </value>
-        <remarks>
-          <para>条件付き書式オブジェクトで設定できるのは、セルの上下左右の罫線のプロパティだけです。</para>
-          <para></para>
-        </remarks>
+        <summary>条件付き書式ルールがTrue に評価される場合は、セルの罫線の書式を <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> 指定するコレクションを返 <b>します</b>。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Borders" /></value>
+        <remarks><para>条件付き書式オブジェクトで設定できるのは、セルの上下左右の罫線のプロパティだけです。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CalcFor">
@@ -190,15 +169,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCalcFor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定の定数のいずれか、<see cref="T:Microsoft.Office.Interop.Excel.XlCalcFor" />列挙値は、ピボット テーブル レポートに条件付き書式の評価に使用するデータの範囲を指定します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCalcFor" />
-        </value>
-        <remarks>
-          <para>このプロパティは、PivotTable レポートのデータに条件付き書式が適用されている場合にのみ有効です。</para>
-          <para>このプロパティに設定することができます<see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlAllValues" />、 <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlColGroups" />、または<see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlRowGroups" />場合にのみ、<see cref="P:Microsoft.Office.Interop.Excel.AboveAverage.ScopeType" />プロパティが<see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlFieldsScope" />。 </para>
-          <para></para>
-        </remarks>
+        <summary>ピボットテーブル レポートの条件付き書式に対して評価されるデータの範囲を指定する、列挙の定数の 1 つを <see cref="T:Microsoft.Office.Interop.Excel.XlCalcFor" /> 取得または設定します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCalcFor" /></value>
+        <remarks><para>このプロパティは、PivotTable レポートのデータに条件付き書式が適用されている場合にのみ有効です。</para>
+          <para>このプロパティは、プロパティが <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlAllValues" /> 設定されている場合にのみ、または設定 <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlColGroups" /> <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlRowGroups" /> <see cref="P:Microsoft.Office.Interop.Excel.AboveAverage.ScopeType" /> できます <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlFieldsScope" /> 。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -224,19 +199,13 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>定数、<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />をこのオブジェクトの作成元アプリケーションを示す列挙型。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当  <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
-        <example>
-          <para>次のコード例は、Excel ブックを作成したアプリケーションに関するメッセージを表示します。
+        <summary>このオブジェクトが作成されたアプリケーション <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> を示す列挙の定数を返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Microsoft Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。<b>Creator</b> プロパティは、Macintosh 版 Excel でのみ使用できます。Macintosh では各アプリケーションに 4 文字のシグネチャが定められています。たとえば、Excel のシグネチャは XCEL です。</para>
+          <para> </para></remarks>
+        <example><para>次のコード例は、Excel ブックを作成したアプリケーションに関するメッセージを表示します。
 
-</para>
-        </example>
+</para></example>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -287,14 +256,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Font" /> 、条件付き書式ルールが<b>True</b>に評価された場合にフォントを指定するオブジェクト。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Font" />
-        </value>
-        <remarks>
-          <para>条件付き書式設定オブジェクトは、<b>フォント</b>オブジェクトのすべてのプロパティがサポートされています。 フォント スタイル、下線、色、および取り消し線属性を設定できます。</para>
-          <para></para>
-        </remarks>
+        <summary>条件付き書式ルールがTrue に評価される場合にフォントの書式設定を <see cref="T:Microsoft.Office.Interop.Excel.Font" /> 指定するオブジェクトを返 <b>します</b>。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Font" /></value>
+        <remarks><para>条件付き書式オブジェクトでは、<b>Font</b> オブジェクトの一部のプロパティがサポートされません。設定できるのは、フォント スタイル、下線、色、取り消し線の各属性です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Interior">
@@ -320,10 +285,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Interior" />ルールの条件付き書式のセルの塗りつぶしの属性を指定するオブジェクトは、 <b>True</b>に評価します。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Interior" />
-        </value>
+        <summary>True に評価される条件付き書式ルールのセルの内部属性を指定する <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> オブジェクトを返 <b>します</b>。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Interior" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -351,11 +314,9 @@
       <Docs>
         <param name="Range">書式のルールが適用される範囲を指定します。</param>
         <summary>書式のルールが適用されるセル範囲を設定します。</summary>
-        <remarks>
-          <para>範囲が A1 参照形式にする必要がありの親であるシート内で完全に収まること、<see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" />コレクションです。 それは、範囲演算子 (コロン)、交差演算子 (スペース)、または union 演算子 (コンマ) を含めることができます。 ドル記号も使用できますが、それらは無視されます。</para>
+        <remarks><para>範囲は A1 参照スタイルで、コレクションの親であるシート内に完全に含まれている必要 <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> があります。 セル範囲には、範囲を表す演算子 (:)、共通部分を表す演算子 (スペース)、または複数の範囲を表す演算子 (,) を含めることができます。 ドル記号 ($) は含めることはできますが、無視されます。</para>
           <para>セル範囲の一部にローカルに定義した名前を使用できますが、その名前はコード記述時の言語で定義された名前である必要があります。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumberFormat">
@@ -384,14 +345,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>条件付き書式設定ルールが<b>True</b>と評価された場合に、セルに適用される表示形式を設定または返します。 読み取り/書き込みの<b>オブジェクト</b>です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
-        <remarks>
-          <para>数値の表示形式を指定するには、セルの書式設定] ダイアログ ボックスのタブに表示される同じ書式コードを使用します。 「標準」などの組み込みの表示形式を使用することができますまたは<see cref="createacustomnumberformat#CrossCollection" />。</para>
-          <para></para>
-        </remarks>
+        <summary>条件付き書式ルールが True に評価された場合にセルに適用される数値の書式を設定または返 <b>します</b>。 読み取り/書き込み <b>オブジェクト です</b>。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>数値書式は、[セルの書式設定] ダイアログ ボックスの [数値] タブに表示されるのと同じ書式コードを使用して指定します。 組み込みの数値書式 ("General" など) を使用できます <see cref="createacustomnumberformat#CrossCollection" /> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="NumStdDev">
@@ -420,11 +377,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>AboveAverage</b>オブジェクトの数値の標準偏差を設定または返します。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>AboveAverage オブジェクトの数値の標準偏差 <b>を設定または返</b> します。 読み取り/書き込みの <b>整数</b> です。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -451,10 +405,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -485,13 +437,9 @@
       </ReturnValue>
       <Docs>
         <summary>条件付き書式ルールの優先度の値を取得、または設定します。優先度は、ワークシート内に複数の条件付き書式ルールが存在する場合、その評価の順序を決定します。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>優先度の値は、1 からワークシート上の条件付き書式ルールの合計数までの正の整数を設定する必要があります。優先度の値は、ワークシート上のすべてのルールに対して固有である必要があるので、特定の条件付き書式ルールの優先度の値を変更すると、ワークシート上のほかのルールの値も変更される可能性があります。</para>
-          <para></para>
-        </remarks>
+        <value><b>Integer</b></value>
+        <remarks><para>優先度の値は、1 からワークシート上の条件付き書式ルールの合計数までの正の整数を設定する必要があります。優先度の値は、ワークシート上のすべてのルールに対して固有である必要があるので、特定の条件付き書式ルールの優先度の値を変更すると、ワークシート上のほかのルールの値も変更される可能性があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PTCondition">
@@ -517,10 +465,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>条件付き書式がピボットテーブル チャートに適用されるかどうかを表すブール型 (<b>Boolean</b>) の値を返します。値の取得のみ可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
+        <summary>条件付き書式がピボットテーブル チャートに適用されるかどうかを表すブール型 (<b>Boolean</b>) の値を返します。 読み取り専用です。</summary>
+        <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -550,14 +496,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotConditionScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値を取得または設定の定数のいずれか、<see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />列挙値は、ピボット テーブル チャートに適用されるときに、条件付き書式の範囲を決定します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" />
-        </value>
-        <remarks>
-          <para>既定値は、<see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" />を使用して、スコープを設定する、<see cref="P:Microsoft.Office.Interop.Excel.AboveAverage.AppliesTo" />プロパティ。</para>
-          <para></para>
-        </remarks>
+        <summary>ピボットテーブル グラフに適用される条件付き書式の範囲を決定する、列挙の定数の 1 つを取得または <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> 設定します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /></value>
+        <remarks><para>既定値は、 <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" /> プロパティを使用して範囲を設定 <see cref="P:Microsoft.Office.Interop.Excel.AboveAverage.AppliesTo" /> します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetFirstPriority">
@@ -582,12 +524,10 @@
       <Parameters />
       <Docs>
         <summary>条件付き書式ルールの優先度の値を "1" に設定し、ワークシート内の他のルールより先に評価されるようにします。</summary>
-        <remarks>
-          <para>ワークシート内に複数の条件付き書式ルールがあり、指定したルールがもともと優先度 "1" に設定されていなかった場合、このメソッドを使用すると、優先度にこのルールより小さい値が設定されていたルールは、優先順位が 1 つ下がります。</para>
+        <remarks><para>ワークシート内に複数の条件付き書式ルールがあり、指定したルールがもともと優先度 "1" に設定されていなかった場合、このメソッドを使用すると、優先度にこのルールより小さい値が設定されていたルールは、優先順位が 1 つ下がります。</para>
           <para>
             <b>注</b>: 条件付き書式ルールの優先度レベルは、ワークシート レベルで適用されます。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SetLastPriority">
@@ -612,12 +552,10 @@
       <Parameters />
       <Docs>
         <summary>条件付き書式ルールの順位を設定し、ワークシート上の他のすべてのルールの後に評価されるようにします。</summary>
-        <remarks>
-          <para>このメソッドで設定される実際の優先度の値は、ワークシート上の条件付き書式ルールの数と一致します。ワークシート内に複数の条件付き書式ルールがある場合、このメソッドを使用すると、優先度にこのルールより大きい値が設定されていたルールは、優先順位が 1 つ上がります。</para>
+        <remarks><para>このメソッドで設定される実際の優先度の値は、ワークシート上の条件付き書式ルールの数と一致します。ワークシート内に複数の条件付き書式ルールがある場合、このメソッドを使用すると、優先度にこのルールより大きい値が設定されていたルールは、優先順位が 1 つ上がります。</para>
           <para>
             <b>注</b>: 条件付き書式ルールの優先度レベルは、ワークシート レベルで適用されます。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="StopIfTrue">
@@ -646,14 +584,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、現在のルールが<b>True</b>と評価された場合にセルに追加の書式設定ルールを評価するかどうかを決定する<b>ブール</b>値を設定します。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>下位互換性をサポートするためにこのプロパティの既定値は<b>True</b>、書式の反対の動作をユーザー インターフェイスで作成されたルールです。</para>
-          <para></para>
-        </remarks>
+        <summary>現在のルールが <b>True</b> に評価された場合、そのセルの書式ルールをさらに評価するかどうかを表すブール型 (<b>Boolean</b>) の値を取得、または設定します。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>以前のバージョンとの互換性を保つために、このプロパティの既定値は、<b>True</b> に設定されています。これは、ユーザー インターフェイスで書式ルールを作成した場合と逆の状態となります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -679,14 +613,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>定数のいずれかを取得、<see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />列挙体は、条件付き書式の種類を指定します。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" />
-        </value>
-        <remarks>
-          <para>このプロパティは<b>整数</b>値「12」をするのと同じである常に返します<see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlAboveAverageCondition" />。</para>
-          <para></para>
-        </remarks>
+        <summary>条件付き書式の種類を指定する列挙の <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> 定数の 1 つを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /></value>
+        <remarks><para>このプロパティは常に整数 <b>値</b> "12" を返します。これは、 <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlAboveAverageCondition" /> .</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

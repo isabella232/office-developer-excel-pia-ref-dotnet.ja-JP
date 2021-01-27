@@ -1,13 +1,5 @@
 <Type Name="ListRows" FullName="Microsoft.Office.Interop.Excel.ListRows">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="bcb7462c451d383da63cf1f64ce9cc9fb82f3c41" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575517" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListRows : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bcb7462c451d383da63cf1f64ce9cc9fb82f3c41" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999904" /></Metadata><TypeSignature Language="C#" Value="public interface ListRows : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListRows implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ListRows" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListRows&#xA;Implements IEnumerable" />
@@ -33,7 +25,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>すべてのコレクションの<see cref="T:Microsoft.Office.Interop.Excel.ListRow" />オブジェクトで指定された<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />オブジェクトです。 各<b>ListRow</b>オブジェクトは、リスト内の行を表します。</summary>
+    <summary>指定されたオブジェクト内 <see cref="T:Microsoft.Office.Interop.Excel.ListRow" /> のすべてのオブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> コレクションです。 各 <b>ListRow</b> オブジェクトは、リスト内の行を表します。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -98,12 +90,10 @@
       </Parameters>
       <Docs>
         <param name="Position">オプションの <b>Integer</b>。 新しい行の相対位置を指定します。</param>
-        <summary>リスト オブジェクトに新しい行を追加します。 返します、<see cref="T:Microsoft.Office.Interop.Excel.ListRow" />オブジェクトです。</summary>
+        <summary>リスト オブジェクトに新しい行を追加します。 オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.ListRow" /> します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>場合<paramref name="Position" />は、このオプションを指定しないと、下の新しい行が追加されます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>指定 <paramref name="Position" /> しない場合は、新しい一番下の行が追加されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddEx">
@@ -159,7 +149,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 読み取り専用。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -215,13 +205,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 読み取り専用です <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -282,8 +269,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -312,7 +298,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

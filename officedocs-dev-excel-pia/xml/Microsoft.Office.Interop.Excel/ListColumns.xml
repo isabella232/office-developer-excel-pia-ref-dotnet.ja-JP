@@ -1,13 +1,5 @@
 <Type Name="ListColumns" FullName="Microsoft.Office.Interop.Excel.ListColumns">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="c9878777ca72bbe0bad9be0800853eff332794ab" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575930" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListColumns : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c9878777ca72bbe0bad9be0800853eff332794ab" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999953" /></Metadata><TypeSignature Language="C#" Value="public interface ListColumns : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListColumns implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ListColumns" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListColumns&#xA;Implements IEnumerable" />
@@ -33,11 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>すべてのコレクションの<see cref="T:Microsoft.Office.Interop.Excel.ListColumn" />オブジェクトで指定された<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />オブジェクトです。 各<b>ListColumn</b>オブジェクトは、リスト内の列を表します。</summary>
-    <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel.ListObject.ListColumns" />のプロパティ、 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /><b>ListColumns</b>コレクションを取得するオブジェクトです。</para>
-      <para></para>
-    </remarks>
+    <summary>指定されたオブジェクト内 <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> のすべてのオブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> コレクションです。 各 <b>ListColumn オブジェクト</b> は、リスト内の列を表します。</summary>
+    <remarks><para><see cref="P:Microsoft.Office.Interop.Excel.ListObject.ListColumns" /> <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> <b>ListColumns</b>コレクションを取得するには、オブジェクトのプロパティを使用します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -97,13 +87,11 @@
         <Parameter Name="Position" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Position">省略可能な<b>オブジェクト</b>です。 1 から開始する新しい列の相対位置を指定します。 この位置の前の列は、外向きにシフトされます。</param>
-        <summary>リスト オブジェクトに新しい列を追加します。 返します、<see cref="T:Microsoft.Office.Interop.Excel.ListColumn" />オブジェクトです。</summary>
+        <param name="Position">省略 <b>可能なオブジェクト</b>です。 1 から始まる新しい列の相対位置を指定します。 この位置の前の列は、外側にシフトされます。</param>
+        <summary>リスト オブジェクトに新しい列を追加します。 オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>場合<paramref name="Position" />が指定されていない新しい右端の列が追加されます。 列の名前が自動的に生成されます。 列を追加した後、新しい列の名前を変更できます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>指定 <paramref name="Position" /> しない場合は、右端に新しい列が追加されます。 その列に対して名前が自動的に生成されます。 その列を追加した後で、名前を変更することができます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -129,7 +117,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -185,13 +173,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -252,8 +237,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>が必要です。 オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

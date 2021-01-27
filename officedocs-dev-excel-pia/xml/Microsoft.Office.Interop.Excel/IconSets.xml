@@ -1,13 +1,5 @@
 <Type Name="IconSets" FullName="Microsoft.Office.Interop.Excel.IconSets">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="54197f255684d8e7bdb06e06b9a6a514287fe80d" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20577183" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface IconSets : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="54197f255684d8e7bdb06e06b9a6a514287fe80d" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50000205" /></Metadata><TypeSignature Language="C#" Value="public interface IconSets : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IconSets implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IconSets" />
   <TypeSignature Language="VB.NET" Value="Public Interface IconSets&#xA;Implements IEnumerable" />
@@ -34,10 +26,8 @@
   </Attributes>
   <Docs>
     <summary>アイコン セットの条件付き書式ルールで使用するアイコン セットのコレクションを表します。</summary>
-    <remarks>
-      <para>アイコン セットを使用して条件付き書式が割り当てられた、<see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconSet" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" />オブジェクトです。 組み込みアイコン セットのいずれかの定数のいずれかを渡すことによってこのプロパティを設定する、<see cref="T:Microsoft.Office.Interop.Excel.XlIconSet" />のインデックスとして列挙型の<see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel._Workbook" />オブジェクトです。 詳細については例を参照してください。 </para>
-      <para></para>
-    </remarks>
+    <remarks><para>条件付き書式のアイコン セットは、オブジェクトのプロパティを使用 <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.IconSet" /> して割り当 <see cref="T:Microsoft.Office.Interop.Excel.IconSetCondition" /> てられます。 このプロパティを組み込みのアイコン セットの 1 つに設定するには、列挙の定数の 1 つをオブジェクトのプロパティのインデックスとして <see cref="T:Microsoft.Office.Interop.Excel.XlIconSet" /> <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> 渡 <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> します。 詳細は使用例を参照してください。 </para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -98,13 +88,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Office Excel アプリケーションを表すオブジェクト。 オブジェクト修飾子を使用する場合、このプロパティは、指定したオブジェクトの作成元を表す <b>Application</b> オブジェクトを返します。 読み取り専用です。</summary>
-        <value>
-          <b>アプリケーション</b>(上記参照)</value>
-        <remarks>
-          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクト用のアプリケーションを取得できます。</para>
-          <para></para>
-        </remarks>
+        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Excel アプリケーションのMicrosoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> を返します。 オブジェクト修飾子を指定した場合、指定したオブジェクトを作成した <b>Application</b> オブジェクトを取得します。 値の取得のみ可能です。</summary>
+        <value><b>アプリケーション</b> (上記を参照)</value>
+        <remarks><para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、オブジェクトのアプリケーションを取得できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -130,10 +117,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>アイコンの数を指定する<b>整数</b>値は、ブックで使用可能なセットを返します。 読み取り専用。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>ブックで使用可能 <b>な</b> アイコン セットの数を指定する整数値を返します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,14 +145,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当  <see cref="P:Microsoft.Office.Interop.Excel.IconSets.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ <see cref="P:Microsoft.Office.Interop.Excel.IconSets.Creator" /> Macintosh 用の Microsoft Excel で使用するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -228,15 +209,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">インデックス番号、<see cref="T:Microsoft.Office.Interop.Excel.IconSet" />オブジェクトです。</param>
-        <summary>1 つを返します<see cref="T:Microsoft.Office.Interop.Excel.IconSet" />オブジェクトから、<see cref="T:Microsoft.Office.Interop.Excel.IconSets" />コレクションです。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.IconSet" />
-        </value>
-        <remarks>
-          <para>値、<paramref name="Index" />パラメーターを使用できるアイコン セットの数より大きい値にすることはできません。 ブックで使用できるアイコンの数を設定するには、検索するには、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" />プロパティ。</para>
-          <para></para>
-        </remarks>
+        <param name="Index">オブジェクトのインデックス <see cref="T:Microsoft.Office.Interop.Excel.IconSet" /> 番号を指定します。</param>
+        <summary>コレクションから 1 <see cref="T:Microsoft.Office.Interop.Excel.IconSet" /> つのオブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.IconSets" /> します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.IconSet" /></value>
+        <remarks><para>パラメーターの値 <paramref name="Index" /> は、使用可能なアイコン セットの数より大きくすることはできません。 ブックで使用できるアイコン セットの数を確認するには、プロパティを使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -262,10 +239,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

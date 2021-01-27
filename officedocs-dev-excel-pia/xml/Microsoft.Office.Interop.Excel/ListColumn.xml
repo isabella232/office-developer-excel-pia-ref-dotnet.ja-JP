@@ -1,13 +1,5 @@
 <Type Name="ListColumn" FullName="Microsoft.Office.Interop.Excel.ListColumn">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="08d4b05d05d4520afef5aa08e764c83df4bcd655" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20575573" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ListColumn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="08d4b05d05d4520afef5aa08e764c83df4bcd655" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999960" /></Metadata><TypeSignature Language="C#" Value="public interface ListColumn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListColumn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ListColumn" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListColumn" />
@@ -29,11 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>リスト内の列を表します。 <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" />オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.ListColumns" />コレクションです。 <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" />コレクションには、リスト内のすべての列が含まれています (<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />オブジェクト)。</summary>
-    <remarks>
-      <para>使用、<see cref="P:Microsoft.Office.Interop.Excel.ListObject.ListColumns" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.ListObject" />オブジェクトを返す、<see cref="T:Microsoft.Office.Interop.Excel.ListColumns" />コレクションです。</para>
-      <para></para>
-    </remarks>
+    <summary>リスト内の列を表します。 オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> です。 コレクション <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> には、リスト ( オブジェクト) 内のすべての列が含 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> まれます。</summary>
+    <remarks><para>コレクションを <see cref="P:Microsoft.Office.Interop.Excel.ListObject.ListColumns" /> 取得するには、 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> オブジェクトのプロパティを使用 <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -90,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 読み取り専用。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -118,15 +108,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 読み取り専用です <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DataBodyRange">
@@ -152,14 +137,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトは、列のデータ部分のサイズです。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Range" />
-        </value>
-        <remarks>
-          <para>取得されたオブジェクトは、ヘッダーと集計セルを除外します。</para>
-          <para></para>
-        </remarks>
+        <summary>列の <see cref="T:Microsoft.Office.Interop.Excel.Range" /> データ部分のサイズを表すオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Range" /></value>
+        <remarks><para>取得されたオブジェクトは、ヘッダーと集計セルを除外します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -183,7 +164,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>リスト内の列のデータを削除します。 シートの列は削除されません。 リストが Microsoft Windows SharePoint Services サイトにリンクされている場合、サーバーから列を削除することはできず、エラーが生成します。</summary>
+        <summary>リスト内の列のデータを削除します。 シートから列を削除しない。 リストが Microsoft Windows SharePoint Services サイトにリンクされている場合、列をサーバーから削除することはできません。エラーが生成されます。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -210,7 +191,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>インデックス番号を取得、<see cref="T:Microsoft.Office.Interop.Excel.ListColumn" />オブジェクト内で、<see cref="T:Microsoft.Office.Interop.Excel.ListColumns" />コレクションです。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <summary>コレクション内のオブジェクトのインデックス <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> 番号を返 <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -241,7 +222,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ListDataFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.ListDataFormat" />のオブジェクトの<see cref="T:Microsoft.Office.Interop.Excel.ListColumn" />オブジェクトです。 読み取り専用。</summary>
+        <summary>オブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.ListDataFormat" /> オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -272,7 +253,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>リストの列の名前を設定または返します。 これは、リストの列の表示名としても使用されます。 この名前は、リスト内で一意である必要があります。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <summary>リスト列の名前を設定または返します。 これは、リスト列の表示名にも使用されます。 この名前はリスト内で一意である必要があります。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -300,7 +281,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -328,7 +309,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 、上記の一覧で指定されたリスト オブジェクトが適用される範囲を表すオブジェクト。 読み取り専用。</summary>
+        <summary>上のリスト <see cref="T:Microsoft.Office.Interop.Excel.Range" /> の指定したリスト オブジェクトを適用する範囲を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -359,14 +340,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>集計列の数式を表す<b>文字列</b>を返します。 数式は、Excel の構文 (米国英語ロケール、A1 形式の参照) で表されます。 読み取り専用 <b>文字列</b> です。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
-        <remarks>
-          <para>場合、<see cref="T:Microsoft.Office.Interop.Excel.ListColumn" />オブジェクトが SharePoint サイトにリンクされているリストに属していない、または SharePoint サイト上の計算された列として指定された列ではない場合、実行時エラーが表示されます。</para>
-          <para></para>
-        </remarks>
+        <summary>集計列の <b>数式</b> を表す文字列 を返します。 式は、Excel 構文 (米国英語ロケール、A1 表記法) で表されます。 読み取りのみ可能な <b>String</b> 値です。</summary>
+        <value><b>String</b></value>
+        <remarks><para>オブジェクトが SharePoint サイトにリンクされているリストに属していない場合、または SharePoint サイトの集計列として指定された列ではない場合は、実行時エラーが発生します。 <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Total">
@@ -392,10 +369,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>合計の行を返す、<see cref="T:Microsoft.Office.Interop.Excel.ListColumn" />オブジェクトです。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Range" />
-        </value>
+        <summary>オブジェクトの合計行を返 <see cref="T:Microsoft.Office.Interop.Excel.ListColumn" /> します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.Range" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -425,12 +400,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlTotalsCalculation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>値に基づいて、リストの列の集計行の計算の種類を決定、<see cref="T:Microsoft.Office.Interop.Excel.XlTotalsCalculation" />列挙体です。 値の取得および設定が可能です。</summary>
+        <summary>列挙体の値に基づいて、リスト列の [合計] 行の計算の種類を決定 <see cref="T:Microsoft.Office.Interop.Excel.XlTotalsCalculation" /> します。 値の取得と設定が可能です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>[集計] 行は、このプロパティを設定するために表示されている必要がありません。 このプロパティの決まった「既定」値ではありません。 Excel は、他の列を追加または削除されたら、このプロパティの状態を変更できます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティを設定する際に、集計行が表示されている必要はありません。 また、このプロパティの決まった "既定値" は存在しません。 Excel では、他の列が追加または削除されるに応じ、このプロパティの状態が変更される場合があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="XPath">
@@ -456,12 +429,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XPath</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.XPath" />に、指定したマップ要素の Xpath を表す<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトです。 読み取り専用。</summary>
+        <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> にマップされている要素の Xpath を表すオブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> します。 読み取り専用です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>XML 機能は、ファイルを XML スプレッドシート形式で保存する場合を除き、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
