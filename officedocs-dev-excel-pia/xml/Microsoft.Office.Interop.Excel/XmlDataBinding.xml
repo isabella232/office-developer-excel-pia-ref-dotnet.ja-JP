@@ -1,13 +1,5 @@
 <Type Name="XmlDataBinding" FullName="Microsoft.Office.Interop.Excel.XmlDataBinding">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="4f7f0721b007f05a4518137e9c9c41ee20b9ad49" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20574117" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface XmlDataBinding" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4f7f0721b007f05a4518137e9c9c41ee20b9ad49" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50002312" /></Metadata><TypeSignature Language="C#" Value="public interface XmlDataBinding" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract XmlDataBinding" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.XmlDataBinding" />
   <TypeSignature Language="VB.NET" Value="Public Interface XmlDataBinding" />
@@ -29,14 +21,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>ソース データへの接続を表す、<see cref="T:Microsoft.Office.Interop.Excel.XmlMap" />オブジェクトです。</summary>
-    <remarks>
-      <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
-      <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.XmlDataBinding.LoadSettings(System.String)" /><b>XmlDataBinding</b>オブジェクトの設定を初期化します。</para>
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.XmlDataBinding.Refresh" />のデータ バインディングを更新する方法です。</para>
-      <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.XmlDataBinding.ClearSettings" />のデータ バインディングを削除します。</para>
-      <para></para>
-    </remarks>
+    <summary>オブジェクトのソース データへの接続を表 <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> します。</summary>
+    <remarks><para>XML 機能は、ファイルを XML スプレッドシート形式で保存する場合を除き、Microsoft Office Professional Edition 2003 および excel 2003 Microsoft Officeでのみ使用できます。</para>
+      <para>このメソッド <see cref="M:Microsoft.Office.Interop.Excel.XmlDataBinding.LoadSettings(System.String)" /> を使用して <b>、XmlDataBinding オブジェクトの設定を初期化</b> します。</para>
+      <para>このメソッドを <see cref="M:Microsoft.Office.Interop.Excel.XmlDataBinding.Refresh" /> 使用して、データ バインディングを更新します。</para>
+      <para>このメソッド <see cref="M:Microsoft.Office.Interop.Excel.XmlDataBinding.ClearSettings" /> を使用して、データ バインディングを削除します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -93,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 読み取り専用。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,10 +110,8 @@
       <Parameters />
       <Docs>
         <summary>指定されたデータ バインドを削除します。</summary>
-        <remarks>
-          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>XML 機能は、ファイルを XML スプレッドシート形式で保存する場合を除き、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -149,13 +137,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 読み取り専用 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadSettings">
@@ -181,13 +166,10 @@
         <Parameter Name="Url" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Url">
-          <b>文字列</b> が必要です。 XML データまたは Microsoft Office XML データ ソース (.uxdc) ファイルへのパス。 パスは、統一されたリソース ロケーター (URL) または汎用名前付け規則 (UNC) の形式で指定されます。</param>
+        <param name="Url"><b>文字列</b> が必要です。 XML データへのパス、または XML Microsoft Office (.uxdc) ファイルへのパス。 このパスは、Uniform Resource Locator (URL) または汎用名前付け規則 (UNC) の形式で指定します。</param>
         <summary>XML データ ファイルまたはデータ取得サービス接続 (.uxdc) ファイルから得られた設定値を使用して、指定されたデータ バインドを初期化します。</summary>
-        <remarks>
-          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>XML 機能は、ファイルを XML スプレッドシート形式で保存する場合を除き、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -213,7 +195,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。値の取得のみ可能です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -239,7 +221,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定された現在の接続の設定を使用して XML データを取得する<see cref="T:Microsoft.Office.Interop.Excel.XmlDataBinding" />オブジェクトです。 返します。 <see cref="T:Microsoft.Office.Interop.Excel.XlXmlImportResult" />。</summary>
+        <summary>指定されたオブジェクトの現在の接続設定を使用して XML データを取得 <see cref="T:Microsoft.Office.Interop.Excel.XmlDataBinding" /> します。 <see cref="T:Microsoft.Office.Interop.Excel.XlXmlImportResult" /> を返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -267,12 +249,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>XML データ ファイル、データ取得サービス接続 (.uxdc) ファイル、または指定したデータ バインディングのソース データを提供する Web サービスへのパスを表す<b>文字列</b>を返します。 読み取り専用。</summary>
+        <summary>XML データ<b></b>ファイル、データ取得サービス接続 (.uxdc) ファイル、または指定されたデータ バインドのソース データを提供する Web サービスへのパスを表す文字列 を返します。 読み取り専用です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>XML スプレッドシート形式でファイルを保存する以外の XML 機能は、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>XML 機能は、ファイルを XML スプレッドシート形式で保存する場合を除き、Microsoft Office Professional Edition 2003 および excel 2003 Microsoft Officeでのみ使用できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

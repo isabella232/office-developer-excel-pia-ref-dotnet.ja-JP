@@ -1,13 +1,5 @@
 <Type Name="AddIns2" FullName="Microsoft.Office.Interop.Excel.AddIns2">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d290e5057bbb26e2361ba5782d2258e77753d8fd" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20580130" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface AddIns2 : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d290e5057bbb26e2361ba5782d2258e77753d8fd" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50002305" /></Metadata><TypeSignature Language="C#" Value="public interface AddIns2 : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIns2 implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AddIns2" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddIns2&#xA;Implements IEnumerable" />
@@ -33,11 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Excel.AddIn" />すべてのアドインがインストールされているかどうかに関係なく、Microsoft Excel で開く] または [使用していることを表すオブジェクト。</summary>
-    <remarks>
-      <para>内容、<see cref="T:Microsoft.Office.Interop.Excel.AddIns2" />コレクションは、[アドイン] ダイアログ ボックス ([開発] タブの [アドイン] コマンド) と、アドインは現在開いているで表示されるアドインの一覧に対応します。</para>
-      <para></para>
-    </remarks>
+    <summary>インストールされているかどうかに関係なく、Microsoft Excel で現在使用可能または開いているすべてのアドインを表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.AddIn" /> のコレクションです。</summary>
+    <remarks><para>コレクションの内容は、[Add-Ins] ダイアログ ボックス ([開発] タブの [アドイン] コマンド) に表示されるアドインの一覧と、現在開いているすべてのアドインに対応しています。 <see cref="T:Microsoft.Office.Interop.Excel.AddIns2" /></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -71,7 +61,7 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>To be added.</summary>
-        <value>返します。 <see cref="T:Microsoft.Office.Interop.Excel.AddIn" />。</value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.AddIn" /> を返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,11 +88,10 @@
         <Parameter Name="CopyFile" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Filename">アドインを [アドイン] ダイアログ ボックスの一覧に追加] を含むファイルの名前。</param>
-        <param name="CopyFile">アドイン ファイルがリムーバブル メディア上にある場合は、アドインをローカルのハード ディスクにコピーするかどうかを指定します。 <b>True の</b>アドインがハード ディスクにコピーするを指定します。 <b>False を指定</b>して、アドインをリムーバブル メディアに指定します。 このパラメーターを省略すると、Microsoft Excel] ダイアログ ボックスが表示され、アドイン ファイルをコピーするかどうかを選択するようユーザーに要求します。 アドイン ファイルがハード_ディスク上の場合、このパラメーターは無視されます。</param>
+        <param name="Filename">[アドイン] ダイアログ ボックスの一覧に追加するアドインを含むAdd-Ins名。</param>
+        <param name="CopyFile">アドイン ファイルがリムーバブル メディア上にあるときに、アドインをローカル ハード ディスクにコピーするかどうかを指定します。 アドイン <b>を</b> ハード ディスクにコピーする場合は true を指定します。 アドイン <b>をリムーバブル</b> メディアに保持するには、false を指定します。 このパラメーターを省略すると、ダイアログ ボックスが表示され、アドイン ファイルをコピーするかどうかをユーザーに確認します。 アドイン ファイルが既にハード ディスク上にある場合、このパラメーターは無視されます。</param>
         <summary>新しいアドインをアドインの一覧に追加します。</summary>
-        <returns>
-          <see cref="T:Microsoft.Office.Interop.Excel.AddIn" />オブジェクトです。</returns>
+        <returns>オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.AddIn" /> 。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,13 +118,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 このプロパティが返すオブジェクト修飾子を使用する場合、<see cref="T:Microsoft.Office.Interop.Excel.Application" />を指定したオブジェクトの作成者を表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Application" />オブジェクトです。</value>
-        <remarks>
-          <para>読み取り専用。</para>
-          <para></para>
-        </remarks>
+        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Microsoft Excel アプリケーションを表 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> すオブジェクトを返します。 オブジェクト修飾子と一緒に使用する場合、このプロパティは指定されたオブジェクトの作成元 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <value>オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -189,13 +175,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>を取得します。</summary>
-        <value>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>。</value>
-        <remarks>
-          <para>読み取り専用<b>long</b>です。</para>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 <see cref="P:Microsoft.Office.Interop.Excel.AddIns2.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <summary>このオブジェクトが作成されたアプリケーションを<b></b>示す 32 ビット整数を取得します。</summary>
+        <value>このオブジェクトが <b>作成されたアプリケーション</b> を示す 32 ビットの整数。</value>
+        <remarks><para>読み取り専用 <b>時間 です</b>。</para>
+          <para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ <see cref="P:Microsoft.Office.Interop.Excel.AddIns2.Creator" /> Macintosh 用の Microsoft Excel で使用するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -226,7 +210,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>返します。 <see cref="T:System.Collections.IEnumerator" />。</returns>
+        <returns><see cref="T:System.Collections.IEnumerator" /> を返します。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,8 +241,8 @@
       </Parameters>
       <Docs>
         <param name="Index">オブジェクトの名前またはインデックス番号を指定します。</param>
-        <summary>コレクションから単一のオブジェクトを取得します。</summary>
-        <value>返します。 <see cref="T:Microsoft.Office.Interop.Excel.AddIn" />。</value>
+        <summary>コレクションから 1 つのオブジェクトを取得します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.AddIn" /> を返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,11 +270,9 @@
       </ReturnValue>
       <Docs>
         <summary>指定したオブジェクトの親オブジェクトを取得します。</summary>
-        <value>指定したオブジェクトの親オブジェクトです。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para></para>
-        </remarks>
+        <value>指定されたオブジェクトの親オブジェクト。</value>
+        <remarks><para>値の取得のみ可能です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
