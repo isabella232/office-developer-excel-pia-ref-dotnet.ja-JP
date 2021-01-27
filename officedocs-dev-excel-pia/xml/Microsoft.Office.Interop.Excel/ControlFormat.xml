@@ -1,13 +1,5 @@
 <Type Name="ControlFormat" FullName="Microsoft.Office.Interop.Excel.ControlFormat">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="d88e80486b6e3c8db83afbc148105146372d3b01" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578282" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ControlFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d88e80486b6e3c8db83afbc148105146372d3b01" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003921" /></Metadata><TypeSignature Language="C#" Value="public interface ControlFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ControlFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ControlFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ControlFormat" />
@@ -30,12 +22,9 @@
   </Attributes>
   <Docs>
     <summary>Excel コントロールのプロパティを含みます。</summary>
-    <remarks>
-      <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Shape.ControlFormat" /> 、 <b>ControlFormat</b>オブジェクトを返すプロパティです。</para>
-      <para>
-        <b>ControlFormat</b>プロパティが失敗した場合は、図形には、コントロールがない場合は、コントロールは、リスト ボックスでない場合や、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" />プロパティは失敗します。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.Shape.ControlFormat" /> を使用して <b>ControlFormat オブジェクトを取得</b> します。</para>
+      <para>図形がコントロールではない場合 <b>、ControlFormat</b> プロパティは失敗し、コントロールがリスト ボックスではない場合、 <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> プロパティは失敗します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -98,14 +87,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Text">
-          <b>文字列</b> が必要です。 テキストを追加します。</param>
-        <param name="Index">省略可能な<b>オブジェクト</b>です。 新しい項目の位置を指定します。 一覧の項目数を指定したインデックスを超える場合は、指定した位置にリストの末尾から空白の項目が追加されます。 この引数を省略すると、既存のリストに項目が追加されます。</param>
+        <param name="Text"><b>文字列</b> が必要です。 追加するテキスト</param>
+        <param name="Index">省略 <b>可能なオブジェクト</b>です。 新しい項目の位置を指定します。 この引数に指定した位置よりもリスト内の項目数が少ない場合、リストの末尾から指定位置までの間に、空の項目が追加されます。 また、この引数を省略したときは、既存のリストの末尾に項目が追加されます。</param>
         <summary>リスト ボックスまたはコンボ ボックスに項目を追加します。</summary>
-        <remarks>
-          <para>指定された任意のセル範囲をクリアするこのメソッドを使用して、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" />プロパティ。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このメソッドを使用すると、プロパティで指定された範囲がクリア <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -131,7 +117,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -159,14 +145,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DropDownLines">
@@ -195,7 +178,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、コンボ ボックスのドロップダウン部分に表示されるリストの行数を設定します。</summary>
+        <summary>コンボ ボックスの下向き矢印部分に表示されるリストの行数を返すか設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -226,8 +209,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>オブジェクトが有効になっている場合です。</summary>
+        <summary>オブジェクトが有効な場合は <b>True</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -258,7 +240,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>(ユーザーをクリックしたときに、スクロール バー) にスクロール、ページのスクロール ボックスずつ増減する量を設定または返します。</summary>
+        <summary>(ユーザーがスクロール バーの本文領域をクリックすると) ページスクロールのスクロール ボックスが増加または減る量を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -289,13 +271,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コントロールの値にリンクされているワークシートのセル範囲を設定または返します。</summary>
+        <summary>コントロールの値にリンクされているワークシートの範囲を設定します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>セルに値を設定する場合、コントロールはこのような値を使用します。 同様に、コントロールの値を変更すると、その値はまたセルに配置されます。</para>
+        <remarks><para>セルに値を配置すると、コントロールにこの値が設定されます。 同様に、コントロールの値を変更すると、その値もセルに配置されます。</para>
           <para>複数の項目を選択できるリスト ボックスでは、このプロパティを使用できません。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -324,13 +304,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">省略可能な<b>オブジェクト</b>です。 設定または取得する単一の項目のインデックス番号です。 この引数を省略すると、全体のリストが返されるか、文字列の配列として設定します。</param>
+        <param name="Index">省略 <b>可能なオブジェクト</b>です。 項目のインデックス番号を指定します。 この引数を省略すると、リスト全体の項目が文字列配列として返されます。</param>
         <summary>指定されたリスト ボックスまたはコンボ ボックスの項目を文字列配列または単一の項目で返します。リストに項目がない場合、エラーになります。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティ設定で指定された任意のセル範囲をクリア、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" />プロパティ。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティを設定すると、プロパティで指定された範囲がクリア <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListFillRange" /> されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListCount">
@@ -359,7 +337,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>リスト ボックスまたはコンボ ボックスのエントリの数を返します。 一覧にエントリがない場合は、0 (ゼロ) を返します。</summary>
+        <summary>リスト ボックスまたはコンボ ボックスのエントリ数を返します。 リストにエントリがない場合は、0 (ゼロ) を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -390,14 +368,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたリスト ボックスの塗りつぶしに使用するワークシートの範囲を設定または返します。</summary>
+        <summary>指定したリスト ボックスの塗りつぶしに使用するワークシートの範囲を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティを設定すると、リスト ボックス内の既存のリストが破棄されます。</para>
+        <remarks><para>このプロパティを設定すると、リスト ボックス内の既存のリストが破棄されます。</para>
           <para>Excel では、指定したセル範囲に含まれる各セルの内容を読み込み、読み込んだ値をリスト ボックスに挿入します。指定したセル範囲内のセルに加えられた変更は、リスト ボックスにも反映されます。</para>
-          <para>リスト ボックスの一覧が作成されたかどうか、<see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" />メソッドでは、このプロパティが空の文字列を返します ("")。</para>
-          <para></para>
-        </remarks>
+          <para>リスト ボックス内のリストがメソッドで作成された場合、このプロパティは空の文字列 <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.AddItem(System.String,System.Object)" /> ("") を返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListIndex">
@@ -426,7 +402,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、リスト ボックスまたはコンボ ボックスで現在選択されている項目のインデックス番号を設定します。</summary>
+        <summary>リスト ボックスまたはコンボ ボックスで現在選択されている項目のインデックス番号を取得または設定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -457,8 +433,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合は、指定したオブジェクト内のテキストは、ブックが保護されている場合は、変更を防ぐためにロックされます。</summary>
+        <summary>ブックが保護されているときに、指定したオブジェクト内のテキストが変更防止のためにロックされる場合は <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -489,13 +464,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スクロール バーまたはスピン ボタンの最大値を設定を取得または設定範囲です。 スクロール バーまたはスピン ボタンは、この最大値より大きい値をとることはできません。</summary>
+        <summary>スクロール バーまたはスピン ボタンの範囲の最大値を設定または返します。 スクロール バーまたはスピン ボタンは、この最大値を超える値を受け取る必要があります。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Max</b>プロパティの値は、の値より大きい値である必要があります、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Min" />プロパティ。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Max プロパティの <b>値</b> は、プロパティの値より大きい必要 <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Min" /> があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Min">
@@ -524,13 +496,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スクロール バーまたはスピン ボタンの最小値を設定を取得または設定範囲です。 スクロール バーまたはスピン ボタンは、この最小値より小さい値をとることはできません。</summary>
+        <summary>スクロール バーまたはスピン ボタンの範囲の最小値を設定または返します。 スクロール バーまたはスピン ボタンは、この最小値より小さい値を受け取る必要があります。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Min</b>プロパティの値がの値より小さい値にする必要があります、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Max" />プロパティ。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Min プロパティの <b>値</b> は、プロパティの値より小さい値である必要 <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Max" /> があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MultiSelect">
@@ -559,17 +528,14 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたリスト ボックスの選択モードを設定または返します。 使用できる定数は、次のいずれか: <b>xlNone</b>、 <b>xlSimple</b>、または<b>xlExtended</b>。</summary>
+        <summary>指定したリスト ボックスの選択モードを設定または返します。 使用できる定数は<b>、xlNone、xlSimple、</b><b>または xlExtended です</b>。 <b></b></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>xlNone</b> (単独選択) を指定すると、一度に 1 項目だけ選択できます。マウスをクリックするか Space キーを押すと、選択していた項目を選択解除し、クリックした項目が選択されます。</para>
-          <para>(<b>XlSimple</b>) 複数の選択項目を切り替えますリストの項目をマウスでクリックしてまたは項目にフォーカスがあるときに space キーを押します。 このモードの選択リストでは、適切ないますが、多くの場合で複数の項目が選択されます。</para>
-          <para>Multiselect (<b>xlExtended</b>) を拡張する通常、単一選択リスト ボックスのように動作します。 アイテムをクリックすると、他のすべての選択をキャンセルします。 Shift キーを押しながらマウスをクリックするか、矢印キーを押すと、それに応じて選択する項目の順番にします。 Ctrl キーを押しながらマウスをクリックすると、1 つの項目が一覧に追加します。 このモードは、複数の項目は使用できますが、使用しないことが多い場合に適しています。</para>
-          <para>使用することができます、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Value" />または<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListIndex" />プロパティを取得して、単一選択リスト ボックスで選択した項目を設定します。</para>
-          <para>使用して、複数選択リスト ボックスをリンクすることはできません、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.LinkedCell" />プロパティ。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>xlNone</b> (単独選択) を指定すると、一度に 1 項目だけ選択できます。マウスをクリックするか Space キーを押すと、選択していた項目を選択解除し、クリックした項目が選択されます。</para>
+          <para>単純な複数選択 (<b>xlSimple)</b>は、項目にフォーカスがあるときに、マウスでクリックするか SPACE キーを押して、リスト内の項目の選択を切り替える。 このモードは、常に複数の項目を選択する場合に適しています。</para>
+          <para>拡張複数選択 (<b>xlExtended</b>) は、通常、単一選択リスト ボックスのように機能します。 アイテムをクリックすると、他のすべての選択が取り消されます。 しかし、Shift キーを押しながら、クリックしたり方向キーを押したりすると、それに応じて選択する項目の範囲が拡張されます。 Ctrl キーを押しながらマウスをクリックすると、クリックした項目だけが選択項目に追加されます。 このモードは、あまり複数の項目を選択しない場合に適しています。</para>
+          <para>1 つ以上のプロパティを使用して、選択した項目を単一選択のリスト <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.Value" /> <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListIndex" /> ボックスで取得および設定できます。</para>
+          <para>プロパティを使用して複数選択リスト ボックスをリンク <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.LinkedCell" /> することはできません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -626,8 +592,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b>オブジェクトは、ドキュメントを印刷するときに印刷する場合です。</summary>
+        <summary>ドキュメントを印刷するときにオブジェクトを印刷する場合は <b>True</b>。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -680,15 +645,12 @@
         <Parameter Name="Count" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>整数</b>が必要です。 削除する最初の項目の数。 有効な値が 1 からリスト内の項目の数には (によって返される、<see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListCount" />プロパティ)。</param>
-        <param name="Count">省略可能な<b>オブジェクト</b>です。 削除する項目の数の項目に<paramref name="Index" />。 この引数を省略すると、1 つの項目が削除されます。 場合<paramref name="Index" />  +  <paramref name="Count" />からすべての項目] の一覧で項目の数を超えています<paramref name="Index" />一覧の末尾までは、エラーなしで削除されます。</param>
+        <param name="Index">整数型 (<b>Integer</b>) の値を使用します。 削除する最初のアイテムの番号を指定します。 有効な値は 1 からリスト内の項目数 (プロパティによって返されます <see cref="P:Microsoft.Office.Interop.Excel.ControlFormat.ListCount" /> ) です。</param>
+        <param name="Count">省略 <b>可能なオブジェクト</b>です。 項目から始まる、削除するアイテムの数 <paramref name="Index" /> です。 If this argument is omitted, one item is removed. リスト <paramref name="Index" /> 内のアイテム数を超えると、リストの末尾からすべてのアイテムがエラーなしで  +  <paramref name="Count" /> <paramref name="Index" /> 削除されます。</param>
         <summary>リスト ボックスまたはコンボ ボックスから 1 つまたは複数のアイテムを削除します。</summary>
-        <remarks>
-          <para>指定されたオブジェクトがセル範囲の内容で定義されているときは、このメソッドは失敗します。</para>
-          <para>使用して、 <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.RemoveAllItems" /> 、Microsoft Excel のリスト ボックスまたはコンボ ボックスからすべてのエントリを削除する方法です。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>指定されたオブジェクトがセル範囲の内容で定義されているときは、このメソッドは失敗します。</para>
+          <para>Microsoft Excel のリスト ボックスまたはコンボ ボックスからすべてのエントリを削除するには <see cref="M:Microsoft.Office.Interop.Excel.ControlFormat.RemoveAllItems" /> 、このメソッドを使用します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallChange">
@@ -717,7 +679,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スクロール バーまたはスピン ボタンをインクリメントまたはデクリメントの行にスクロール (ユーザーは、矢印をクリックする) と金額を設定または返します。</summary>
+        <summary>(ユーザーが矢印をクリックすると) 行スクロールのスクロール バーまたはスピン ボタンがインクリメントまたはデクリメントされる量を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -748,7 +710,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたコントロール書式の名前です。</summary>
+        <summary>指定したコントロール形式の名前を指定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

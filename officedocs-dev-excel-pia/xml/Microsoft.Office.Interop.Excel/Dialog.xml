@@ -1,13 +1,5 @@
 <Type Name="Dialog" FullName="Microsoft.Office.Interop.Excel.Dialog">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="274e93847efbe2121de825e75c0a66505c3899d3" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20582867" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Dialog" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="274e93847efbe2121de825e75c0a66505c3899d3" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003858" /></Metadata><TypeSignature Language="C#" Value="public interface Dialog" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Dialog" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Dialog" />
   <TypeSignature Language="VB.NET" Value="Public Interface Dialog" />
@@ -30,14 +22,10 @@
   </Attributes>
   <Docs>
     <summary>Excel の組み込みダイアログ ボックスを表します。</summary>
-    <remarks>
-      <para>
-        <b>ダイアログ</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.Dialogs" />コレクションです。 <b>Dialogs</b>コレクションには、Microsoft Excel でのすべての組み込みのダイアログ ボックスが含まれています。 新しい組み込みのダイアログ ボックスを作成したり、コレクションに追加できません。 唯一の有効な<b>ダイアログ</b>オブジェクトを使用して行うことができますと組み合わせて使うとき、<see cref="M:Microsoft.Office.Interop.Excel.Dialog.Show(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" />を対応するダイアログ ボックスを表示する方法です。</para>
-      <para>
-        <b>ダイアログ ボックス</b>を使用して、(<paramref name="index" />)、 <paramref name="index" /> 、1 つの<b>ダイアログ</b>オブジェクトを取得する] ダイアログ ボックスは、組み込み定数を識別します。</para>
-      <para>Microsoft Excel には、組み込みダイアログ ボックスの多くの組み込み定数が含まれます。 各定数は、プレフィックス] ダイアログ ボックスの名前の後に、"xlDialog"で形成されます。 などの名前の引用] ダイアログ ボックスの定数は<b>xlDialogApplyNames</b>で、ファイルの検索] ダイアログ ボックスの定数は<b>xlDialogFindFile</b>を これらの定数のメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.XlBuiltInDialog" />の種類を列挙します。</para>
-      <para></para>
-    </remarks>
+    <remarks><para><b>Dialog オブジェクト</b>はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.Dialogs" /> です。 <b>Dialogs</b> コレクションには、Excel のすべての組み込みダイアログ ボックスが含まれています。 組み込みダイアログ ボックスを新しく作成したり、コレクションに追加したりすることはできません。 <b>Dialog</b>オブジェクトで実行できる唯一の便利な操作は、対応するダイアログ ボックスを表示するメソッドと一 <see cref="M:Microsoft.Office.Interop.Excel.Dialog.Show(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 緒に使用する方法です。</para>
+      <para>単 <b>一の Dialog オブジェクト</b>を取得するには、ダイアログ ボックスを識別する組み込みの定数である Dialogs ( ) <paramref name="index" /> <paramref name="index" /> を <b>使用</b> します。</para>
+      <para>Microsoft Excel には、多くの組み込みダイアログ ボックス用の組み込み定数が含まれています。 各定数の名前は、"xlDialog" という文字列の後に英語のダイアログ ボックス名を付けたものです。 たとえば、[名前の引用] ダイアログ ボックスの定数は <b>xlDialogApplyNames</b> であり、[ファイル検索] ダイアログ ボックスの定数は <b>xlDialogFindFile</b> です。 これらの定数は、列挙型 <see cref="T:Microsoft.Office.Interop.Excel.XlBuiltInDialog" /> のメンバーです。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -63,7 +51,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,14 +79,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</para>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</para>
+          <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -180,44 +165,42 @@
         <Parameter Name="Arg30" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Arg1">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg2">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg3">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg4">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg5">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg6">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg7">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg8">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg9">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg10">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg11">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg12">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg13">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg14">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg15">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg16">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg17">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg18">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg19">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg20">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg21">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg22">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg23">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg24">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg25">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg26">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg27">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg28">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg29">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <param name="Arg30">省略可能な<b>オブジェクト</b>です。 コマンドの最初の引数。</param>
-        <summary>組み込みダイアログ ボックスを表示し、ユーザーにデータの入力を待ちます。</summary>
+        <param name="Arg1">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg2">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg3">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg4">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg5">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg6">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg7">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg8">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg9">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg10">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg11">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg12">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg13">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg14">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg15">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg16">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg17">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg18">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg19">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg20">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg21">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg22">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg23">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg24">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg25">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg26">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg27">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg28">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg29">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <param name="Arg30">省略 <b>可能なオブジェクト</b>です。 コマンドの最初の引数。</param>
+        <summary>組み込みのダイアログ ボックスを表示し、ユーザーがデータを入力するまで待機します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>組み込みダイアログ ボックスのこの方法ユーザーは、[ok] をクリックするか、 <b>False</b>を返し、ユーザーが [キャンセル] をクリックした場合<b>True</b>を返します。</para>
-          <para>1 つのダイアログ ボックスを使用すると、同時に多くのプロパティを変更します。 すべてのプロパティを変更するのには、[セルの書式設定] ダイアログ ボックスを使用するなど、<see cref="T:Microsoft.Office.Interop.Excel.Font" />オブジェクトです。</para>
-          <para>組み込みダイアログ ボックス ([開く] ダイアログ ボックス、たとえば)、初期値 arg1、arg2、...、arg30 を設定できます。 組み込みダイアログ ボックスの詳細についてを参照してください、<see cref="T:Microsoft.Office.Interop.Excel.Dialogs" />コレクションです。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>組み込みのダイアログ ボックスの場合、このメソッドはユーザーが [OK] をクリックした場合は <b>True</b> を返し、ユーザーが [キャンセル] をクリックすると <b>False</b> を返します。</para>
+          <para>単独のダイアログ ボックスで多数のプロパティを同時に変更できます。 たとえば、[セルの書式設定] ダイアログ ボックスを使用して、オブジェクトのすべてのプロパティを変更 <see cref="T:Microsoft.Office.Interop.Excel.Font" /> できます。</para>
+          <para>一部の組み込みダイアログ ボックス ([開く] ダイアログ ボックスなど) では、arg1、arg2、...、arg30 を使用して初期値を設定できます。 組み込みのダイアログ ボックスの詳細については、コレクションを参照 <see cref="T:Microsoft.Office.Interop.Excel.Dialogs" /> してください。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
