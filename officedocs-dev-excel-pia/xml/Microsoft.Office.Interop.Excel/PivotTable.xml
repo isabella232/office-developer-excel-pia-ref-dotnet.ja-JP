@@ -1,13 +1,5 @@
 <Type Name="PivotTable" FullName="Microsoft.Office.Interop.Excel.PivotTable">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="364b8d02df1ff32fe7432d4ed2dd804098003fda" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20587711" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotTable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="364b8d02df1ff32fe7432d4ed2dd804098003fda" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997314" /></Metadata><TypeSignature Language="C#" Value="public interface PivotTable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotTable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotTable" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotTable" />
@@ -29,13 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>ワークシートにあるピボットテーブル レポートを表します。 <b>ピボット テーブル</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />コレクションです。 <b>PivotTables</b>コレクションには、1 つのワークシート上のすべての<b>ピボット テーブル</b>オブジェクトが含まれています。</summary>
-    <remarks>
-      <para>
-        <b>ピボット テーブル</b>を使用して (<paramref name="index" />)、<paramref name="index" />は、ピボット テーブルのインデックス番号または名前、単一の<b>ピボット テーブル</b>オブジェクトを取得します。</para>
+    <summary>ワークシートにあるピボットテーブル レポートを表します。 ピボット <b>テーブル オブジェクト</b> はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> です。 <b>PivotTables</b> コレクションには、1 つのワークシートにあるすべての <b>PivotTable</b> オブジェクトが含まれています。</summary>
+    <remarks><para>単 <b>一のピボットテーブル</b>オブジェクトを取得するには、ピボットテーブルのインデックス番号または名前にピボットテーブル ( <paramref name="index" /> <paramref name="index" /> ) <b>を使用</b> します。</para>
       <para>ピボットテーブル レポートのプログラミングは複雑になることが多いので、一般的には、ピボットテーブル レポートに対する操作を記録して修正をする方が簡単です。 マクロを記録するには、[ツール] メニューの [マクロ] をポイントし、[新しいマクロの記録] をクリックします。</para>
-      <para></para>
-    </remarks>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -70,7 +59,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。 </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -103,7 +92,7 @@
       <Docs>
         <param name="Name">To be added.</param>
         <param name="Mode">To be added.</param>
-        <summary>内部使用のため予約済みです。</summary>
+        <summary>内部使用のために予約されています。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,10 +119,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotFilters</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された現在アクティブなフィルターを示します<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" />
-        </value>
+        <summary>指定したフィルターで現在アクティブなフィルターを示します <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,11 +148,10 @@
         <Parameter Name="Function" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Field">
-          <b>オブジェクト</b>が必要です。 サーバー上の一意なフィールドです。 ソース データがオンライン分析処理 (OLAP) の場合は、一意なフィールドは、キューブ フィールドです。 元データが OLAP (OLAP 以外のソースのデータ) の場合は、一意なフィールドは、ピボット テーブル フィールドです。</param>
-        <param name="Caption">省略可能な<b>オブジェクト</b>です。 ピボットテーブル レポートで使用する、新しいデータ フィールドの名前を指定します。</param>
-        <param name="Function">省略可能な<b>オブジェクト</b>です。 追加したデータ フィールドで実行する関数を指定します。</param>
-        <summary>データ フィールドをピボット テーブル レポートに追加します。 返します、 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 、新しいデータ フィールドを表すオブジェクト。</summary>
+        <param name="Field">Required <b>Object</b>. サーバー上の一意のフィールド。 ソース データがオンライン分析処理 (OLAP) の場合、一意のフィールドはキューブ フィールドです。 ソース データが OLAP 以外 (OLAP 以外のソース データ) の場合、一意のフィールドはピボットテーブル フィールドです。</param>
+        <param name="Caption">省略 <b>可能なオブジェクト</b>です。 ピボットテーブル レポートで使用する、新しいデータ フィールドの名前を指定します。</param>
+        <param name="Function">省略 <b>可能なオブジェクト</b>です。 追加したデータ フィールドで実行する関数を指定します。</param>
+        <summary>データ フィールドをピボットテーブル レポートに追加します。 新しいデータ <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> フィールドを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -195,18 +181,16 @@
         <Parameter Name="AddToTable" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="RowFields">省略可能な<b>オブジェクト</b>です。 フィールドの名前 (またはフィールド名の配列) の行として追加するか、項目軸に追加するを指定します。</param>
-        <param name="ColumnFields">省略可能な<b>オブジェクト</b>です。 フィールドの名前 (またはフィールド名の配列) を列として追加する、または系列軸に追加するを指定します。</param>
-        <param name="PageFields">省略可能な<b>オブジェクト</b>です。 フィールドの名前 (またはフィールド名の配列) のページとして追加する、またはページの領域に追加するを指定します。</param>
-        <param name="AddToTable">省略可能な<b>オブジェクト</b>です。 ピボット テーブル レポートにのみ適用されます。 <b>True</b> (既存のフィールドの [なし] は、交換してください)、レポートに指定したフィールドを追加します。 <b>False を指定</b>する既存のフィールドを新しいフィールドに置き換えます。 既定値は <b>False</b> です。</param>
+        <param name="RowFields">省略 <b>可能なオブジェクト</b>です。 行として追加するか、項目軸に追加するフィールド名 (またはフィールド名の配列) を指定します。</param>
+        <param name="ColumnFields">省略 <b>可能なオブジェクト</b>です。 列として追加するか、系列軸に追加するフィールド名 (またはフィールド名の配列) を指定します。</param>
+        <param name="PageFields">省略 <b>可能なオブジェクト</b>です。 ページとして追加するか、ページ領域に追加するフィールド名 (またはフィールド名の配列) を指定します。</param>
+        <param name="AddToTable">省略 <b>可能なオブジェクト</b>です。 ピボットテーブル レポートにのみ適用されます。 <b>True</b> を指定したフィールドをレポートに追加します (既存のフィールドは置き換えされません)。 <b>既存の</b> フィールドを新しいフィールドに置き換える場合は False。 既定値は <b>False</b> です。</param>
         <summary>ピボットテーブル レポートまたはピボットグラフ レポートに行フィールド、列フィールド、およびページ フィールドを追加します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>省略可能な引数 RowFields、ColumnFields、PageFields、AddToTable、AppendField のいずれか 1 つは必ず指定してください。</para>
-          <para>によって返される一意の名前を指定するフィールド名、<see cref="P:Microsoft.Office.Interop.Excel.PivotField.SourceName" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />オブジェクトです。</para>
+        <remarks><para>省略可能な引数 RowFields、ColumnFields、PageFields、AddToTable、AppendField のいずれか 1 つは必ず指定してください。</para>
+          <para>フィールド名は、オブジェクトのプロパティによって返される一 <see cref="P:Microsoft.Office.Interop.Excel.PivotField.SourceName" /> 意の名前を指定 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> します。</para>
           <para>OLAP データ ソースに対して、このメソッドは使用できません。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllocateChanges">
@@ -231,11 +215,8 @@
       <Parameters />
       <Docs>
         <summary>OLAP データ ソースに基づくピボットテーブル レポートの編集されたすべてのセルで書き戻し操作を実行します。</summary>
-        <remarks>
-          <para>
-            <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.AllocateChanges" />メソッドは、UPDATE CUBE ステートメントの最後の適用の変更操作がコミットされた場合、または適用をコミットする場合、ピボット テーブルの作成後の変更は実行されていませんので、ピボット テーブルの値の領域に加えられたすべての変更を実行します。 このメソッドでは、OLAP 以外のデータ ソースに基づくピボット テーブル レポートで実行される場合、実行時エラーが生成されます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このメソッドは、最後の変更の適用操作がコミットされた後、または適用の変更をコミットしたことがない場合にピボットテーブルが作成された後に、ピボットテーブルの値領域で行われたすべての変更に対して UPDATE CUBE ステートメントを実行します。 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.AllocateChanges" /> このメソッドは、OLAP 以外のデータ ソースに基づくピボットテーブル レポートで実行すると、実行時エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Allocation">
@@ -264,15 +245,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAllocation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または、<b>キューブの更新プログラム</b>を実行するステートメントの各セルを編集したかどうか、またはユーザーが OLAP データ ソースに基づくピボット テーブルの what-if 分析を実行するときに変更を計算する場合にのみを設定します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlAllocation" />オブジェクトです。</value>
-        <remarks>
-          <para>値の取得および設定が可能です。</para>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Allocation" />プロパティは、What-If 分析の設定] ダイアログ ボックスで設定の変更で、計算に対応します。 既定の設定は、<see cref="F:Microsoft.Office.Interop.Excel.XlAllocation.xlManualAllocation" />に対応する、手動で (ときに変更をピボット テーブルの計算を選択する) 設定します。</para>
-          <para></para>
-        </remarks>
+        <summary>OLAP データ ソースに基づくピボットテーブルで What-If 分析を実行するときに、ユーザーが変更の計算を選択した場合にのみ、各セルに対して <b>UPDATE CUBE</b> ステートメントを実行するかどうかを取得または設定します。</summary>
+        <value>オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.XlAllocation" /> 。</value>
+        <remarks><para>値の取得と設定が可能です。</para>
+          <para>この <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Allocation" /> プロパティは、[分析の設定] ダイアログ ボックスの [変更をWhat-If設定に対応します。 既定の設定は、手動 (変更を含むピボットテーブルの計算を選択する場合 <see cref="F:Microsoft.Office.Interop.Excel.XlAllocation.xlManualAllocation" /> ) の設定に対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllocationMethod">
@@ -301,15 +278,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAllocationMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または OLAP データ ソースに基づくピボット テーブル レポートの what-if 分析を実行するときに値を割り当てるために使用するのにはどのような方法を設定します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlAllocationMethod" />オブジェクトです。</value>
-        <remarks>
-          <para>値の取得および設定が可能です。</para>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" />プロパティは、What-If 分析の設定] ダイアログ ボックスでの割り当て方法の設定に対応します。 既定の設定は、 <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlEqualAllocation" />、均等割り当ての設定に対応します。 場合、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" />プロパティに設定されて<see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" />重み付け割り当ての設定に対応する、必要に応じて式を指定できます、重量を設定して使用するのには、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" />プロパティ。 相当する重量式、重量式を指定しないかどうかは&lt;リーフ セルの値&gt; / &lt;既存の値&gt;を使用します。</para>
-          <para></para>
-        </remarks>
+        <summary>OLAP データ ソースに基づくピボットテーブル レポートで What-If 分析を実行するときに値を割り当てるときに使用するメソッドを取得または設定します。</summary>
+        <value>オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.XlAllocationMethod" /> 。</value>
+        <remarks><para>値の取得と設定が可能です。</para>
+          <para>この <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> プロパティは、[分析の設定] ダイアログ ボックスの [割り当What-If設定に対応します。 既定の設定は <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlEqualAllocation" /> 、等しい割り当て設定に対応します。 プロパティが [Weighted Allocation] の設定に対応する場合は、プロパティを設定することで、必要に応じて使用する weight <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" /> 式を指定 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> できます。 重み式を指定しない場合は、既存の値のリーフ セル値と同等 &lt; の重 &gt;  /  &lt; み式が &gt; 使用されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllocationValue">
@@ -338,15 +311,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAllocationValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または OLAP データ ソースに基づくピボット テーブル レポートの what-if 分析を実行する場合、割り当てには、どのような値を設定します。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlAllocationValue" />オブジェクトです。</value>
-        <remarks>
-          <para>値の取得および設定が可能です。</para>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationValue" />プロパティは、What-If 分析の設定] ダイアログ ボックスで割り当ての設定値に対応します。 既定の設定は、<see cref="F:Microsoft.Office.Interop.Excel.XlAllocationValue.xlAllocateValue" />に対応する、割り当ての設定の数で分割された値を入力します。</para>
-          <para></para>
-        </remarks>
+        <summary>OLAP データ ソースに基づくピボットテーブル レポートで What-If 分析を実行するときに割り当てる値を取得または設定します。</summary>
+        <value>オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.XlAllocationValue" /> 。</value>
+        <remarks><para>値の取得と設定が可能です。</para>
+          <para>この <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationValue" /> プロパティは、[分析の設定] ダイアログ ボックスの [割りWhat-Ifに対応します。 既定の設定は、入力した値を割り当ての数で割った <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationValue.xlAllocateValue" /> 値に対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllocationWeightExpression">
@@ -375,14 +344,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または OLAP データ ソースに基づくピボット テーブル レポートの what-if 分析を実行するときに使用する重量の MDX 式を設定します。</summary>
-        <value>OLAP データ ソースに基づくピボット テーブル レポートの what-if 分析を実行するときに使用する MDX 重量式です。</value>
-        <remarks>
-          <para>値の取得および設定が可能です。</para>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" />プロパティは、What-If 分析の設定] ダイアログ ボックスで、重量式の設定に対応します。 前に、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" />プロパティを設定する、設定する必要があります、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" />を<see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" />。</para>
-          <para></para>
-        </remarks>
+        <summary>OLAP データ ソースに基づくピボットテーブル レポートで What-If 分析を実行するときに使用する MDX ウェイト式を取得または設定します。</summary>
+        <value>OLAP データ ソースに基づくピボットテーブル レポートで What-If 分析を実行するときに使用する MDX ウェイト式。</value>
+        <remarks><para>値の取得と設定が可能です。</para>
+          <para>この <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> プロパティは、[分析の設定] ダイアログ ボックスの [重What-If設定に対応します。 プロパティを <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationWeightExpression" /> 設定する前に、プロパティを設定する <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AllocationMethod" /> 必要があります <see cref="F:Microsoft.Office.Interop.Excel.XlAllocationMethod.xlWeightedAllocation" /> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowMultipleFilters">
@@ -411,18 +377,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>示す値を取得または設定するかどうか、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />を同時に適用された複数のフィルターを持つことができます。
-値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>既定値は、 <b>false を指定</b> します。</para>
-          <para>複数のフィルターを 1 つに適用できるこのプロパティが<b>True</b>に設定、 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" />。 <b>False</b>に設定されている場合にフィルターを適用する、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />は既にフィルターが適用されたが、既存のフィルターを削除し、新しいものを適用します。
+        <summary>複数のフィルターを同時に適用できるかどうかを示す値 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> を設定または取得します。
+値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>既定値は、 <b>false を指定</b> します。</para>
+          <para>このプロパティを True に設定 <b>すると、複数</b>のフィルターを 1 つのフィルターに適用できます <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 。 <b>False</b>に設定されている場合、既にフィルターが適用されているフィルターを適用すると、既存のフィルターが削除され、新しいフィルター <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> が適用されます。
 
-このプロパティを<b>False</b>に設定すると、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />がフィールドに 1 つ以上のフィルターの適用はなしに削除のすべてのフィルター、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />のアラートは表示されません。 ただしは、警告がユーザー インターフェイスから行うことができます。</para>
-          <para></para>
-        </remarks>
+複数のフィルターが <b>適用</b> されたフィールドがある場合、このプロパティを False に設定すると、警告を表示せずに、メッセージなしですべてのフィルター <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />  が削除されます。 ただし、この処理をユーザー インターフェイスを使用して実行した場合は、警告が表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="AlternativeText">
@@ -451,13 +413,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定したピボット テーブルの説明 (代替) テキスト文字列を設定します。</summary>
-        <value>指定されたピボット テーブルの説明 (代替) テキスト文字列です。</value>
-        <remarks>
-          <para>値の取得および設定が可能です。</para>
-          <para>値、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AlternativeText" />プロパティは、[代替テキスト] タブで、[ピボット テーブル オプション] ダイアログ ボックスのタイトル] ボックスの値に対応します。</para>
-          <para></para>
-        </remarks>
+        <summary>指定したピボットテーブルの説明 (代替) テキスト文字列を取得または設定します。</summary>
+        <value>指定されたピボットテーブルの説明 (代替) テキスト文字列。</value>
+        <remarks><para>値の取得と設定が可能です。</para>
+          <para>プロパティの値は、[ピボットテーブル オプション] ダイアログ ボックスの [代替テキスト] タブの [タイトル] ボックスの値 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.AlternativeText" /> に対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -483,7 +443,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 読み取り専用。</summary>
+        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -514,13 +474,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、ピボット テーブル キャッシュのインデックス番号を設定します。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
+        <summary>ピボットテーブルのキャッシュのインデックス番号を返すか設定します。 読み取り/書き込みの <b>整数</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>CacheIndex</b>プロパティを 1 つのピボット テーブル レポートは、2 番目のピボット テーブル レポートのキャッシュを使用するように設定する場合、最初のレポートのフィールドは 2 番目のレポートのフィールドの有効なサブセットである必要があります。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>他のピボットテーブル レポートのキャッシュを対象となるピボットテーブル レポートに割り当てるには、<b>CacheIndex</b> プロパティを使用します。この場合、割り当て先のレポートのフィールドは、割り当て元のレポートのフィールドの有効なサブセットである必要があります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CalculatedFields">
@@ -544,7 +501,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.CalculatedFields" /> 、指定されたピボット テーブル レポート内のすべての集計フィールドを表すコレクション。 読み取り専用。</summary>
+        <summary>指定された <see cref="T:Microsoft.Office.Interop.Excel.CalculatedFields" /> ピボットテーブル レポートのすべての集計フィールドを表すコレクションを返します。 読み取り専用です。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -572,12 +529,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.CalculatedMembers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> OLAP ピボット テーブルのすべての計算されるメンバーと計算されるメジャーを表すコレクション。</summary>
+        <summary>OLAP ピボットテーブルのすべての集計メンバーと計算メジャーを表す <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> コレクションを返します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティは、OLAP ソースの場合に使用します。非 OLAP ソースでは、実行時エラーが返されます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティは、OLAP ソースの場合に使用します。非 OLAP ソースでは、実行時エラーが返されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CalculatedMembersInFilters">
@@ -606,16 +561,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはフィルターで OLAP サーバーから計算されるメンバーを評価するかどうかを設定します。</summary>
-        <value>
-          <b>true の</b>場合は、OLAP サーバーから計算されるメンバーをフィルターで評価する必要があります。それ以外の場合、 <b>false を指定</b>します。</value>
-        <remarks>
-          <para>値の取得および設定が可能です。</para>
+        <summary>OLAP サーバーの計算メンバーをフィルターで評価するかどうかを取得または設定します。</summary>
+        <value><b>OLAP</b> サーバーの計算メンバーをフィルターで評価する必要がある場合は true。それ以外の場合、 <b>false です</b>。</value>
+        <remarks><para>値の取得と設定が可能です。</para>
           <para>
-            <b>true の</b>場合、計算されるメンバーは、フィルターの評価それ以外の場合は<b>false を指定</b>します。</para>
-          <para>合計 [フィルター] チェック ボックスで、OLAP サーバーから、このプロパティの値が評価の計算されるメンバーの設定に対応&amp;ピボット テーブル レポートのピボット テーブル オプション] ダイアログ ボックスの [フィルター] タブは、OLAP データ ソースに基づいています。</para>
-          <para></para>
-        </remarks>
+            <b>計算メンバー</b> がフィルターで評価される場合は true。それ以外の場合 <b>は false です</b>。</para>
+          <para>このプロパティの値は、OLAP データ ソースに基づくピボットテーブル レポートの [ピボットテーブル オプション] ダイアログ ボックスの [集計フィルター] タブの [フィルターで OLAP サーバーの計算メンバーを評価する] チェック ボックスの設定に対応します。 &amp;</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChangeConnection">
@@ -641,13 +593,10 @@
         <Parameter Name="conn" Type="Microsoft.Office.Interop.Excel.WorkbookConnection" />
       </Parameters>
       <Docs>
-        <param name="conn">必要な<see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" />の新しい接続を表すオブジェクト、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</param>
-        <summary>指定した接続が変更された<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</summary>
-        <remarks>
-          <para>
-            <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangeConnection(Microsoft.Office.Interop.Excel.WorkbookConnection)" />メソッドでのみ使用できます、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 、外部データ ソースに接続されています。 場合実行時エラーが発生、<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangeConnection(Microsoft.Office.Interop.Excel.WorkbookConnection)" />メソッドを使用する<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />のデータ ソースとしてワークシートに保存されているデータを使用します。</para>
-          <para></para>
-        </remarks>
+        <param name="conn">の <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> 新しい接続を表す必須のオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> です。</param>
+        <summary>指定された接続を変更します <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。</summary>
+        <remarks><para>この <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangeConnection(Microsoft.Office.Interop.Excel.WorkbookConnection)" /> メソッドは、外部データ ソース <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />  に接続されているメソッドでのみ使用できます。 ワークシートに格納されているデータをデータ ソースとして使用するメソッドでメソッドを使用すると、実行時 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangeConnection(Microsoft.Office.Interop.Excel.WorkbookConnection)" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChangeList">
@@ -673,13 +622,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotTableChangeList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 、OLAP データ ソースに基づいて、指定されたピボット テーブルに加えられた変更のリストを表すコレクション。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 、OLAP データ ソースに基づいて、指定されたピボット テーブルに加えられた変更のリストを表すコレクション。</value>
-        <remarks>
-          <para>読み取り専用。</para>
-          <para></para>
-        </remarks>
+        <summary>OLAP データ ソースに基づいて指定されたピボットテーブルに加えた変更のリストを表すコレクション <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> を取得します。</summary>
+        <value>OLAP データ ソースに基づいて指定されたピボットテーブルに対して行われた変更のリストを表 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> すコレクション。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ChangePivotCache">
@@ -705,14 +651,10 @@
         <Parameter Name="PivotCache" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="PivotCache">
-          <b>文字列</b>に必要な<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />または<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />を表す、新しい<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />指定された<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</param>
-        <summary>変更、<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />の指定された<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</summary>
-        <remarks>
-          <para>
-            <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangePivotCache(System.Object)" />メソッドでのみ使用できます、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 、データ ソースとしてワークシートに保存されているデータを使用します。 場合実行時エラーが発生、<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangePivotCache(System.Object)" />メソッドを使用、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 、外部データ ソースに接続されています。</para>
-          <para></para>
-        </remarks>
+        <param name="PivotCache">Required <b>String</b> a <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> or object that <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />  represents the new for the <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />  specified <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> .</param>
+        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> オブジェクトの変更を行います <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。</summary>
+        <remarks><para>この <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangePivotCache(System.Object)" /> メソッドは、ワークシートに格納されたデータをデータ ソースとして使用するメソッド <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />  でのみ使用できます。 外部データ ソースに接続されているメソッドを使用すると、実行時エラー <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ChangePivotCache(System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> が発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearAllFilters">
@@ -736,12 +678,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearAllFilters" />に現在適用されているすべてのフィルターを削除する方法、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 内のすべてのフィルターの削除が含まれます、<see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" />のコレクションの<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />オブジェクトは、適用された手動フィルターおよびすべての設定を削除する<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />、レポート フィルター領域の既定の項目で。</summary>
-        <remarks>
-          <para>呼び出した後に、 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearAllFilters" /> 、メソッド、<see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" />コレクションは空になります。</para>
-          <para></para>
-        </remarks>
+        <summary>この <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearAllFilters" /> メソッドは、現在適用されているフィルターを削除します <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 これには、オブジェクトのコレクション内のすべてのフィルターの削除、適用された手動フィルターの削除、およびレポート フィルター領域のすべてのフィルターを既定のアイテムに設定する操作が <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 含まれます。</summary>
+        <remarks><para>メソッドを呼び <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearAllFilters" /> 出した後、 <see cref="T:Microsoft.Office.Interop.Excel.PivotFilters" /> コレクションは空になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearTable">
@@ -765,13 +704,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearTable" />メソッドは、クリアの使用、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 オフにする<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s には、すべてのフィールドを削除して、すべてのフィルターと並べ替えの適用を削除するが含まれています、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />。 このメソッドは、リセット、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />の状態にあること、前に作成されたすべてのフィールドを追加した直後にします。</summary>
-        <remarks>
-          <para>
-            <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearTable" />関数は、引数を受け取らないし、リレーショナルの両方を利用し、OLAP <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />s。 </para>
-          <para></para>
-        </remarks>
+        <summary>メソッド <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearTable" /> は、次の値をクリアするために使用されます <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 S <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> のクリアには、すべてのフィールドの削除と、適用されているフィルター処理と並べ替えの削除が含まれます <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> 。 このメソッドは、フィールドが追加される直前の状態に <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> リセットされます。</summary>
+        <remarks><para>この <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ClearTable" /> 関数は引数を受け取り、リレーショナル関数と OLAP 関数の両方で <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 使用できます。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ColumnFields">
@@ -800,8 +735,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">省略可能な<b>オブジェクト</b>です。 フィールド名またはインデックス番号を指定します。複数の指定をする場合は、配列を使うことができます。</param>
-        <summary>単一のピボット テーブル フィールドのいずれかを表すオブジェクトを返します (、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />オブジェクト) またはすべてのフィールドのコレクション (、<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />オブジェクト) の列フィールドとして現在表示されていること。 読み取り専用。</summary>
+        <param name="Index">省略 <b>可能なオブジェクト</b>です。 フィールド名またはインデックス番号を指定します。複数の指定をする場合は、配列を使うことができます。</param>
+        <summary>1 つのピボットテーブル フィールド (オブジェクト) または現在列フィールドとして表示されているすべてのフィールド (オブジェクト) のコレクションを表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> を返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -832,8 +767,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、ピボットテーブル レポートの列の総計を表示します。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <summary><b>True の</b> 場合、ピボットテーブル レポートには、列の総計が表示されます。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -861,7 +795,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 、ピボット テーブル レポートの列エリアを含むセル範囲を表すオブジェクト。 読み取り専用。</summary>
+        <summary>ピボットテーブル <see cref="T:Microsoft.Office.Interop.Excel.Range" /> レポートの列領域を含む範囲を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -888,11 +822,8 @@
       <Parameters />
       <Docs>
         <summary>OLAP データ ソースに基づくピボットテーブル レポートのデータ ソースに対して変更の確定操作を実行します。</summary>
-        <remarks>
-          <para>
-            <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CommitChanges" />メソッドは、COMMIT TRANSACTION ステートメントを OLAP サーバーに送信し、値を入力して編集したが、値のセルに数式をオフにはすべてのセルをクリアします。 このメソッドでは、OLAP 以外のデータ ソースに基づくピボット テーブル レポートで実行される場合、実行時エラーが生成されます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このメソッドは COMMIT TRANSACTION ステートメントを OLAP サーバーに送信し、値を入力して編集されたセルはすべてクリアしますが、値セルの数式は <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CommitChanges" /> クリアしません。 このメソッドは、OLAP 以外のデータ ソースに基づくピボットテーブル レポートで実行すると、実行時エラーが発生します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CompactLayoutColumnHeader">
@@ -921,12 +852,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>列ヘッダーに表示されるキャプションを指定する<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />コンパクトな行のレイアウト形式にする場合。 値の取得および設定が可能です。</summary>
+        <summary>コンパクトな行レイアウト形式の場合の列ヘッダー <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> に表示されるキャプションを指定します。 値の取得と設定が可能です。</summary>
         <value>String</value>
-        <remarks>
-          <para>ユーザーがグリッドでキャプションをカスタマイズすると、これらのプロパティにも反映されます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>ユーザーがグリッドでキャプションをカスタマイズすると、これらのプロパティにも反映されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CompactLayoutRowHeader">
@@ -955,14 +884,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>行ヘッダーに表示されるキャプションを指定する<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />コンパクトな行のレイアウト形式にする場合。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
-        <remarks>
-          <para>ユーザーがグリッドでキャプションをカスタマイズすると、これらのプロパティにも反映されます。</para>
-          <para></para>
-        </remarks>
+        <summary>コンパクトな行レイアウト形式の場合の行ヘッダー <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> に表示されるキャプションを指定します。 値の取得と設定が可能です。</summary>
+        <value><b>String</b></value>
+        <remarks><para>ユーザーがグリッドでキャプションをカスタマイズすると、これらのプロパティにも反映されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CompactRowIndent">
@@ -991,14 +916,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>設定のインデントの増分値を取得または<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />とコンパクトな行のレイアウト形式をオンにします。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
-        <remarks>
-          <para>既定値は 1 です。この設定の有効値は、0 から、Microsoft Excel で指定された最大インデントまでです。</para>
-          <para></para>
-        </remarks>
+        <summary>コンパクトな行レイアウト フォームが有効になっている場合 <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> のインデントの増分を設定または返します。 値の取得と設定が可能です。</summary>
+        <value><b>Integer</b></value>
+        <remarks><para>既定値は 1 です。 この設定の有効値は、0 から、Microsoft Excel で指定された最大インデントまでです。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ConvertToFormulas">
@@ -1024,14 +945,10 @@
         <Parameter Name="ConvertFilters" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="ConvertFilters">
-          <b>ブール値</b>が含まれます<b>場合は True</b>または<b>False</b>を領域の状態を示す必要があります。</param>
-        <summary>
-          <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ConvertToFormulas(System.Boolean)" />メソッドは 1st_Excel12 の新しいであり、変換に使用されます、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />キューブの数式にします。</summary>
-        <remarks>
-          <para>引数にコントロールを領域に変換するかどうか、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 </para>
-          <para></para>
-        </remarks>
+        <param name="ConvertFilters">Required <b>Boolean</b> Contains <b>True</b> or <b>False</b> to indicate the state of the ReportFilter area.</param>
+        <summary>この <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.ConvertToFormulas(System.Boolean)" /> メソッドは、1st_Excel12の新しいメソッドで、キューブ数式への変換 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> に使用されます。</summary>
+        <remarks><para>引数は、引数 ReportFilter 領域を変換するかどうかを制御します <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateCubeFile">
@@ -1060,13 +977,13 @@
         <Parameter Name="Properties" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="File">
-          <b>文字列</b> が必要です。 作成するキューブ ファイルの名前です。 既に存在する場合、ファイルが上書きされます。</param>
-        <param name="Measures">省略可能な<b>オブジェクト</b>です。 スライスの一部となるメジャーの一意な名前の配列を指定します。</param>
-        <param name="Levels">省略可能な<b>オブジェクト</b>です。 文字列の配列を指定します。 配列の各要素は、レベルの一意の名前です。 スライスに含まれる階層の最下位レベルを表します。</param>
-        <param name="Members">省略可能な<b>オブジェクト</b>です。 文字列配列の配列です。 表される階層の順序での要素が対応して、<paramref name="Levels" />の配列です。 各要素は、スライスに含まれるディメンションの最上位レベルのメンバーの一意な名前で構成される文字列配列の配列です。</param>
-        <param name="Properties">オプションの <b>Boolean</b>。 <b>False</b>は、スライスに含まれるメンバーのプロパティになります。 既定値は <b>True</b> です。</param>
-        <summary>オンライン分析処理 (OLAP) データ ソースに接続されたピボットテーブル レポートからキューブ ファイルを作成します。</summary>
+        <param name="File"><b>文字列</b> が必要です。 作成するキューブ ファイルの名前を指定します。 ファイルが既に存在する場合は上書きされます。</param>
+        <param name="Measures">省略 <b>可能なオブジェクト</b>です。 スライスの一部となるメジャーの一意な名前の配列を指定します。</param>
+        <param name="Levels">省略 <b>可能なオブジェクト</b>です。 文字列の配列を指定します。 配列の各要素には、一意なレベルの名前を指定します。 これらの名前は、スライスに含まれる階層の一番低いレベルを表します。</param>
+        <param name="Members">省略 <b>可能なオブジェクト</b>です。 文字列配列の配列を指定します。 要素は、配列で表される階層に順番に対応 <paramref name="Levels" /> します。 各要素は文字列配列の配列で、スライスに含まれるディメンションの一番高いレベルのメンバーの一意な名前を指定します。</param>
+        <param name="Properties">オプション <b>のブール値 です</b>。 <b>False</b> を指定すると、スライスにはメンバーのプロパティは含まれません。 既定値は <b>True</b> です。</param>
+        <summary>オンライン分析処理
+ (OLAP) データ ソースに接続されたピボットテーブル レポートからキューブ ファイルを作成します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1094,13 +1011,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 読み取り専用 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="CubeFields">
@@ -1126,7 +1040,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.CubeFields</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.CubeFields" />コレクションです。 各<see cref="T:Microsoft.Office.Interop.Excel.CubeField" />オブジェクトには、キューブ フィールドの要素のプロパティが含まれています。 読み取り専用。</summary>
+        <summary>コレクションを返 <see cref="T:Microsoft.Office.Interop.Excel.CubeFields" /> します。 各 <see cref="T:Microsoft.Office.Interop.Excel.CubeField" /> オブジェクトには、キューブ フィールド要素のプロパティが含まれる。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1154,7 +1068,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 、ヘッダー行と挿入行の間、リスト内のデータ領域を含む範囲を表すオブジェクト。 読み取り専用。</summary>
+        <summary>ヘッダー行と挿入行の間のリスト内のデータ領域を含む範囲を表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1185,8 +1099,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">省略可能な<b>オブジェクト</b>です。 フィールド名またはインデックス番号を指定します。複数の指定をする場合は、配列を使うことができます。</param>
-        <summary>単一のピボット テーブル フィールドのいずれかを表すオブジェクトを返します (、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />オブジェクト) またはすべてのフィールドのコレクション (、<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />オブジェクト) データ フィールドとして現在表示されています。 読み取り専用。</summary>
+        <param name="Index">省略 <b>可能なオブジェクト</b>です。 フィールド名またはインデックス番号を指定します。複数の指定をする場合は、配列を使うことができます。</param>
+        <summary>1 つのピボットテーブル フィールド (オブジェクト) または現在データ フィールドとして表示されているすべてのフィールド (オブジェクト) のコレクションを表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> を返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1214,7 +1128,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 、ピボット テーブル レポート内のデータ フィールドのラベルを含む範囲を表すオブジェクト。 読み取り専用。</summary>
+        <summary>ピボットテーブル レポートのデータ フィールドのラベルを含む範囲を表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1242,7 +1156,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 、ピボット テーブル内のすべてのデータ フィールドを表すオブジェクト。 読み取り専用。</summary>
+        <summary>ピボットテーブル内 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> のすべてのデータ フィールドを表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1269,11 +1183,9 @@
       <Parameters />
       <Docs>
         <summary>OLAP データ ソースに基づくピボットテーブル レポートの編集されたセル内のすべての変更を破棄します。</summary>
-        <remarks>
-          <para>OLAP データ ソースに基づくピボット テーブル レポートでは、メソッドは、すべての値と値のセルに数式を入力を削除し、データ ソースから最新の値を取得するためにピボット テーブルの更新操作が実行されます。 Null 参照 (Visual Basic では Nothing) を編集したし、も、OLAP サーバーに対してトランザクションをロールバック ステートメントを実行するすべての値のセルのデータ ソースの値を設定します。</para>
+        <remarks><para>OLAP データ ソースに基づくピボットテーブル レポートの場合、このメソッドは、値セルに入力されたすべての値と数式を削除し、ピボットテーブルの更新操作を実行して、データ ソースから最新の値を取得します。 このメソッドは、編集された全値セルのデータ ソース値を null 参照 (Visual Basic では Nothing) に設定し、OLAP サーバーに対して ROLLBACK TRANSACTION ステートメントを実行します。</para>
           <para>OLAP 以外のデータ ソースに基づくピボットテーブル レポートの場合、このメソッドを実行しようとすると、メソッドによって実行時エラーが生成されます。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayContextTooltips">
@@ -1302,14 +1214,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ツールヒントを表示するかどうかを制御する<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />のセルです。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>場合<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DisplayContextTooltips" />が<b>False</b>の操作に応じたヒントを設定<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />セルは表示されません。 <b>True</b>のツール ヒントに設定されているかどうかは<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />の行、列、およびデータ領域内のセルが表示されます。</para>
-          <para></para>
-        </remarks>
+        <summary>セルのヒントを表示するかどうかを制御 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DisplayContextTooltips" /> <b>False</b>に設定されている場合、セルのコンテキスト ヒント <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> は表示されません。 <b>True</b>に設定されている場合、行、列、およびデータ領域のセルのヒント <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> が表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayEmptyColumn">
@@ -1338,12 +1246,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>数値軸について、OLAP プロバイダーへのクエリに空白でない MDX キーワードが含まれている場合は<b>True</b>を返します。 OLAP プロバイダーは結果セット内の空の列を返されません。 空白でないキーワードが省略された場合は<b>False</b>を返します。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
+        <summary>数値軸について、OLAP プロバイダーへのクエリに空白でない MDX キーワードが含まれる場合は、<b>True</b> を返します。OLAP プロバイダーは、結果セットには空の列を返しません。空白でないキーワードが含まれない場合は <b>False</b> を返します。値の取得および設定が可能です。ブール型 (<b>Boolean</b>) の値を使用します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ピボットテーブルは OLAP データ ソースに接続している必要があります。そうでない場合は、実行時エラーになります。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>ピボットテーブルは OLAP データ ソースに接続している必要があります。そうでない場合は、実行時エラーになります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayEmptyRow">
@@ -1372,12 +1278,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>項目軸について、OLAP プロバイダーへのクエリに、空でない MDX キーワードが含まれている場合は<b>True</b>を返します。 OLAP プロバイダーは結果セット内の空の行を返しません。 空白でないキーワードが省略された場合は<b>False</b>を返します。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
+        <summary>項目軸について、OLAP プロバイダーへのクエリに空白でない MDX キーワードが含まれる場合は、<b>True</b> を返します。OLAP プロバイダーは、結果セットには空の行を返しません。空白でないキーワードが含まれない場合は <b>False</b> を返します。値の取得および設定が可能です。ブール型 (<b>Boolean</b>) の値を使用します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ピボットテーブルは OLAP データ ソースに接続している必要があります。そうでない場合は、実行時エラーになります。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>ピボットテーブルは OLAP データ ソースに接続している必要があります。そうでない場合は、実行時エラーになります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayErrorString">
@@ -1406,14 +1310,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、ピボットテーブル レポート内のエラーとなるセルに対して、独自のエラー文字列を表示します。既定値は <b>False</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <summary><b>True</b> の 場合、ピボットテーブル レポートには、エラーを含むセルにユーザー設定のエラー文字列が表示されます。 既定値は、 <b>false を指定</b> します。 読み取り/書き込み <b>ブール値</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ErrorString" /> 、独自のエラー文字列を設定するプロパティです。</para>
+        <remarks><para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ErrorString" /> を使用して、カスタム エラー文字列を設定します。</para>
           <para>このプロパティを使用すると、ピボットテーブルに集計フィールドを作成するときに、0 による除算エラーが表示されないようにすることができます。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayFieldCaptions">
@@ -1442,14 +1343,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>フィルター ボタンかどうかをコントロールし、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />グリッドの行と列のキャプションが表示されます。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>既定値は <b>True</b> です。</para>
-          <para></para>
-        </remarks>
+        <summary>行と列のフィルター ボタンとキャプションをグリッドに表示 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> するかどうかを制御します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>既定値は <b>True</b> です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayImmediateItems">
@@ -1478,8 +1375,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>ブール値</b>を示すピボット テーブルのデータ領域が空の場合、行および列エリア内の項目が表示されるかどうかを設定または返します。 <b>False を指定</b>する、ピボット テーブルのデータ領域が空の場合に、行および列エリア内の項目を非表示にするには、このプロパティを設定します。 既定値は <b>True</b> です。</summary>
+        <summary>ピボットテーブルのデータ エリアに配置されたフィールドがない場合、行エリアおよび列エリアのアイテムが表示されているかどうかを示す値を返します。値の取得および設定が可能です。ブール型 (<b>Boolean</b>) の値を使用します。ピボットテーブルのデータ エリアに配置されたフィールドがない場合に、行エリアおよび列エリアのアイテムを非表示にするときは、このプロパティを <b>False</b> に指定します。既定値は <b>True</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1510,14 +1406,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ツール ヒントにメンバー プロパティを表示するかどうかを制御します。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>場合<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DisplayMemberPropertyTooltips" />に設定されて<b>False</b>でないメンバーのプロパティがツールヒントに表示されます。 <b>True</b>に設定されている場合、メンバー プロパティはヒントに表示されます。</para>
-          <para></para>
-        </remarks>
+        <summary>メンバー プロパティをツールヒントに表示するかどうかを制御します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para><see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DisplayMemberPropertyTooltips" />False に設定<b>されている</b>場合、メンバー プロパティはヒントに表示されません。 <b>True</b> に設定すると、メンバー プロパティはヒントに表示されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayNullString">
@@ -1546,13 +1438,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、ピボットテーブル レポートで、空の文字列 ("") のセルに対して、独自の文字列を表示します。既定値は <b>True</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <summary><b>True の</b> 場合は、ピボットテーブル レポートは、null 値を含むセルにカスタム文字列を表示します。 既定値は <b>True</b> です。 取得/設定が可能な <b>Boolean</b> 値です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>使用して、 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.NullString" /> 、カスタムの null 文字列を設定するプロパティです。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティを <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.NullString" /> 使用して、カスタムの null 文字列を設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DrillDown">
@@ -1578,7 +1467,7 @@
       </Parameters>
       <Docs>
         <param name="PivotItem">ドリル ダウンの実行を開始するメンバーを指定します。</param>
-        <param name="PivotLine">操作開始メンバーが含まれているピボットテーブルの行を指定します。PivotLine を指定しない場合は、メンバーが含まれている先頭の PivotLine が既定で設定されます。</param>
+        <param name="PivotLine">操作開始メンバーが含まれているピボットテーブルの行を指定します。PivotLine を指定しない場合は、既定でメンバーが含まれている先頭の PivotLine が設定されます。</param>
         <summary>OLAP または PowerPivot ベースのキューブ階層内でデータをドリル ダウンできます。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1608,7 +1497,7 @@
       <Docs>
         <param name="PivotItem">ドリル操作の実行元のメンバー。</param>
         <param name="CubeField">ドリル先の階層。</param>
-        <param name="PivotLine">操作開始メンバーが含まれているピボットテーブルの行を指定します。PivotLine を指定しない場合は、メンバーが含まれている先頭の PivotLine が既定で設定されます。</param>
+        <param name="PivotLine">操作開始メンバーが含まれているピボットテーブルの行を指定します。PivotLine を指定しない場合は、既定でメンバーが含まれている先頭の PivotLine が設定されます。</param>
         <summary>キューブ階層に基づいて OLAP または PowerPivot 内の場所にドリルできます。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1637,8 +1526,8 @@
       </Parameters>
       <Docs>
         <param name="PivotItem">ドリル アップの実行を開始するメンバーを指定します。</param>
-        <param name="PivotLine">操作開始メンバーが含まれているピボットテーブルの行を指定します。PivotLine を指定しない場合は、メンバーが含まれている先頭の PivotLine が既定で設定されます。</param>
-        <param name="LevelUniqueName">複数レベルのドリル アップの対象を指定します。既定では、指定しない場合は 1 レベルのドリル アップが実行されます。</param>
+        <param name="PivotLine">操作開始メンバーが含まれているピボットテーブルの行を指定します。PivotLine を指定しない場合は、既定でメンバーが含まれている先頭の PivotLine が設定されます。</param>
+        <param name="LevelUniqueName">複数レベルのドリル アップの対象を指定します。 既定では、指定しない場合は 1 レベルのドリル アップが実行されます。</param>
         <summary>OLAP または PowerPivot ベースのキューブ階層内でデータをドリル アップできます。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1795,13 +1684,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、ピボットテーブルのデータ エリアでユーザーが値を上書きするときの警告が無効になります。また <b>True</b> の場合、以前は変更できなかったデータをユーザーが変更することができます。既定値は <b>False</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <summary><b>True</b> の場合、ピボットテーブルのデータ エリアでユーザーが値を上書きするときの警告が無効になります。また <b>True</b> の場合、以前は変更できなかったデータをユーザーが変更することができます。既定値は <b>False</b> です。値の取得および設定が可能です。ブール型 (<b>Boolean</b>) の値を使用します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>更新時に、データ値に対して実行中の編集は無効になります。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>更新時に、データ値に対して実行中の編集は無効になります。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableDrilldown">
@@ -1830,14 +1716,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、ドリルダウンが使用可能になります。既定値は <b>True</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <summary>ドリル ダウンが有効になっている場合は <b>True</b>。 既定値は <b>True</b> です。 取得/設定が可能な <b>Boolean</b> 値です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ピボットテーブル レポートのこのプロパティを設定すると、そのレポートのすべてのフィールドのプロパティも設定されます。</para>
-          <para>OLAP データ ソースの値は常に<b>True</b>です。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>ピボットテーブル レポートの場合、このプロパティを設定すると、そのレポートのすべてのフィールドのプロパティも設定されます。</para>
+          <para>OLAP データ ソースの場合、このプロパティは常に <b>True</b> です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableFieldDialog">
@@ -1866,13 +1749,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、ピボットテーブル フィールドをダブルクリックすることにより、[ <b>ピボットテーブル フィールド</b>] ダイアログ ボックスを使用できます。既定値は  <b>True</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <summary><b>True</b> の 場合、 <b>ユーザーがピボット</b> テーブル フィールドをダブルクリックすると、[ピボットテーブル フィールド] ダイアログ ボックスを使用できます。 既定値は <b>True</b> です。 取得/設定が可能な <b>Boolean</b> 値です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ピボットテーブル レポートのこのプロパティを設定すると、そのレポートのすべてのフィールドのプロパティも設定されます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>ピボットテーブル レポートのこのプロパティを設定すると、そのレポートのすべてのフィールドのプロパティも設定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableFieldList">
@@ -1901,8 +1781,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>False</b> の場合、ピボットテーブルのフィールド リストを表示する機能が無効になります。フィールド リストが既に表示されている場合は、非表示になります。既定値は <b>True</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <summary><b>False</b> の場合、ピボットテーブルのフィールド リストを表示する機能が無効になります。フィールド リストが既に表示されている場合は、非表示になります。既定値は <b>True</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1933,13 +1812,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、 ピボットテーブル ウィザードを使用できます。既定値は  <b>True</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <summary><b>True の</b> 場合は、ピボットテーブル ウィザードを使用できます。 既定値は <b>True</b> です。 取得/設定が可能な <b>Boolean</b> 値です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このプロパティを False に設定すると、ピボットテーブルのフィールドの一覧が表示されません。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティを False に設定すると、ピボットテーブルのフィールドの一覧が表示されません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableWriteback">
@@ -1968,18 +1844,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定したピボット テーブルのデータ ソースへの書き戻しが有効になっているかどうかを設定します。</summary>
-        <value>指定されたピボット テーブルの場合は<b>true</b>データ ソースへの書き戻しが有効にそれ以外の場合、 <b>false を指定</b>します。 既定値は、 <b>false を指定</b>します。</value>
-        <remarks>
-          <para>値の取得および設定が可能です。</para>
-          <para>OLAP データ ソースを設定するのは、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />プロパティを<b>true</b>には、書き戻しを有効にし、ユーザーがピボット テーブルのデータ領域の値を上書きするときの警告を無効にします。 非 OLAP データ ソースの設定、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />プロパティを<b>true</b>にはコードでは、書き戻しを有効にし、ユーザーが以前は変更されないデータの値を変更することもできます。</para>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />と<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />オブジェクトは、同時に<b>true</b>に設定できません。</para>
-          <para>場合、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" />プロパティが<b>true</b>に設定し、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />プロパティが<b>true</b>に設定、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" />プロパティを<b>false</b>に自動的に、ピボット テーブルが更新され、データ値を実行中の編集が失われます。</para>
-          <para>場合、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />プロパティが<b>true</b>に設定し、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" />プロパティが<b>true</b>に設定、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />プロパティを<b>false</b>に自動的に、ピボット テーブルは更新されませんが、データ ソースの値が復元されます。</para>
+        <summary>指定したピボットテーブルに対してデータ ソースへの書き戻しが有効になっているかどうかを取得または設定します。</summary>
+        <value><b>true を</b> 指定したピボットテーブルに対してデータ ソースへの書き戻しが有効になっている場合です。それ以外の場合、 <b>false です</b>。 規定値は<b> false </b>です。</value>
+        <remarks><para>値の取得と設定が可能です。</para>
+          <para>OLAP データ ソースの場合、プロパティを true に設定すると書き戻しが有効になります。また、ユーザーがピボットテーブルのデータ領域の値を上書きした場合の通知を無効にします <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> 。 <b></b> OLAP 以外のデータ ソースの場合、プロパティを true に設定すると、コードの書き戻しが有効になります。また、以前は変更できないデータ値をユーザーが <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> 変更することもできます。 <b></b></para>
+          <para>オブジェクト <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> の <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> プロパティと <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> プロパティを同時に <b>true</b> に設定することはできません。</para>
+          <para>プロパティが true に設定され、そのプロパティが true に設定されている場合、プロパティは自動的に <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> <b>false</b>に設定され、ピボットテーブルが更新され、データ値に対して実行された編集は失われます。</para>
+          <para>プロパティが true に設定され、そのプロパティが true に設定されている場合、プロパティは自動的に false に設定され、ピボットテーブルは更新されません。データ ソースの値が <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> 復元<b></b>されます。</para>
           <para>OLAP 以外のデータ ソースの場合、このプロパティを設定すると、実行時エラーが生成されます。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ErrorString">
@@ -2008,7 +1881,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>エラーを含むセルに表示される文字列を設定すると、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DisplayErrorString" />プロパティが<b>True</b>の。 既定値は空の文字列 ("") です。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <summary>プロパティがTrue の場合、エラーを含むセルに表示される文字列 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DisplayErrorString" /> を設定または返 <b>します</b>。 既定値は空の文字列 ("") です。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2039,15 +1912,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>内のフィールドの並べ替え順序を制御する、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />フィールド] ボックスの一覧です。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>このプロパティが<b>True</b>に設定、フィールドが昇順で並べ替えられます。 <b>False</b>に設定されている場合は、フィールドがデータ ソースの順序に並べ替えられます。 </para>
-          <para>適用されません<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />OLAP データ ソースに接続します。</para>
-          <para></para>
-        </remarks>
+        <summary>フィールド リスト内のフィールドの並べ替え順序 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> を制御します。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>このプロパティが <b>True</b> に設定されている場合、フィールドは昇順に並べ替えられます。 <b>False</b> に設定されている場合、フィールドはデータ ソースの順序で並べ替えられます。 </para>
+          <para>OLAP データ <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> ソースに接続されている場合には適用されません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -2076,8 +1945,8 @@
         <Parameter Name="Format" Type="Microsoft.Office.Interop.Excel.XlPivotFormatType" />
       </Parameters>
       <Docs>
-        <param name="Format">必要な<see cref="T:Microsoft.Office.Interop.Excel.XlPivotFormatType" />。 指定のピボットテーブル レポートに適用するレポート書式の種類を指定します。</param>
-        <summary>ピボット テーブル レポートをインデント付きまたはインデントなし、クロス集計の定義済み書式のいずれかに設定します。</summary>
+        <param name="Format">必須 <see cref="T:Microsoft.Office.Interop.Excel.XlPivotFormatType" /> 。 指定のピボットテーブル レポートに適用するレポート書式の種類を指定します。</param>
+        <summary>ピボットテーブル レポートを、定義済みのインデント、非割り当て、またはクロスタブ形式の 1 つに設定します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2104,9 +1973,8 @@
         <Parameter Name="Name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>文字列</b> が必要です。 ような構文を使用して、ピボット テーブル レポート内の単一のセル、<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotSelect(System.String,Microsoft.Office.Interop.Excel.XlPTSelectionMode,System.Object)" />メソッドまたはピボット テーブル レポートの参照の集計アイテムの数式です。</param>
-        <summary>指定されたピボット テーブルのセルからデータを返します。</summary>
+        <param name="Name"><b>文字列</b> が必要です。 ピボットテーブル レポートの 1 つのセルを、計算アイテムの数式のメソッドまたはピボットテーブル レポートの参照に似た構文を使用 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotSelect(System.String,Microsoft.Office.Interop.Excel.XlPTSelectionMode,System.Object)" /> して記述します。</param>
+        <summary>指定されたピボットテーブル セルからデータを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2161,36 +2029,36 @@
         <Parameter Name="Item14" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="DataField">省略可能な<b>オブジェクト</b>です。 ピボットテーブルのデータを含むフィールド名を指定します。</param>
-        <param name="Field1">省略可能な<b>オブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
-        <param name="Item1">省略可能な<b>オブジェクト</b>です。 内のアイテムの名前<paramref name="Field1" />。</param>
-        <param name="Field2">省略可能な<b>オブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
-        <param name="Item2">省略可能な<b>オブジェクト</b>です。 内のアイテムの名前<paramref name="Field2" />。</param>
-        <param name="Field3">省略可能な<b>オブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
-        <param name="Item3">省略可能な<b>オブジェクト</b>です。 内のアイテムの名前<paramref name="Field3" />。</param>
-        <param name="Field4">省略可能な<b>オブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
-        <param name="Item4">省略可能な<b>オブジェクト</b>です。 内のアイテムの名前<paramref name="Field4" />。</param>
-        <param name="Field5">省略可能な<b>オブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
-        <param name="Item5">省略可能な<b>オブジェクト</b>です。 内のアイテムの名前<paramref name="Field5" />。</param>
-        <param name="Field6">省略可能な<b>オブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
-        <param name="Item6">省略可能な<b>オブジェクト</b>です。 内のアイテムの名前<paramref name="Field6" />。</param>
-        <param name="Field7">省略可能な<b>オブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
-        <param name="Item7">省略可能な<b>オブジェクト</b>です。 内のアイテムの名前<paramref name="Field7" />。</param>
-        <param name="Field8">省略可能な<b>オブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
-        <param name="Item8">省略可能な<b>オブジェクト</b>です。 内のアイテムの名前<paramref name="Field8" />。</param>
-        <param name="Field9">省略可能な<b>オブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
-        <param name="Item9">省略可能な<b>オブジェクト</b>です。 内のアイテムの名前<paramref name="Field9" />。</param>
-        <param name="Field10">省略可能な<b>オブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
-        <param name="Item10">省略可能な<b>オブジェクト</b>です。 内のアイテムの名前<paramref name="Field10" />。</param>
-        <param name="Field11">省略可能な<b>オブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
-        <param name="Item11">省略可能な<b>オブジェクト</b>です。 内のアイテムの名前<paramref name="Field11" />。</param>
-        <param name="Field12">省略可能な<b>オブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
-        <param name="Item12">省略可能な<b>オブジェクト</b>です。 内のアイテムの名前<paramref name="Field12" />。</param>
-        <param name="Field13">省略可能な<b>オブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
-        <param name="Item13">省略可能な<b>オブジェクト</b>です。 内のアイテムの名前<paramref name="Field13" />。</param>
-        <param name="Field14">省略可能な<b>オブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
-        <param name="Item14">省略可能な<b>オブジェクト</b>です。 内のアイテムの名前<paramref name="Field14" />。</param>
-        <summary>ピボット テーブル レポート内のデータ アイテムに関する情報を含む<b>Range</b>オブジェクトを返します。</summary>
+        <param name="DataField">省略 <b>可能なオブジェクト</b>です。 ピボットテーブルのデータを含むフィールド名を指定します。</param>
+        <param name="Field1">省略 <b>可能なオブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
+        <param name="Item1">省略 <b>可能なオブジェクト</b>です。 内のアイテムの名前 <paramref name="Field1" /> 。</param>
+        <param name="Field2">省略 <b>可能なオブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
+        <param name="Item2">省略 <b>可能なオブジェクト</b>です。 内のアイテムの名前 <paramref name="Field2" /> 。</param>
+        <param name="Field3">省略 <b>可能なオブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
+        <param name="Item3">省略 <b>可能なオブジェクト</b>です。 内のアイテムの名前 <paramref name="Field3" /> 。</param>
+        <param name="Field4">省略 <b>可能なオブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
+        <param name="Item4">省略 <b>可能なオブジェクト</b>です。 内のアイテムの名前 <paramref name="Field4" /> 。</param>
+        <param name="Field5">省略 <b>可能なオブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
+        <param name="Item5">省略 <b>可能なオブジェクト</b>です。 内のアイテムの名前 <paramref name="Field5" /> 。</param>
+        <param name="Field6">省略 <b>可能なオブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
+        <param name="Item6">省略 <b>可能なオブジェクト</b>です。 内のアイテムの名前 <paramref name="Field6" /> 。</param>
+        <param name="Field7">省略 <b>可能なオブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
+        <param name="Item7">省略 <b>可能なオブジェクト</b>です。 内のアイテムの名前 <paramref name="Field7" /> 。</param>
+        <param name="Field8">省略 <b>可能なオブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
+        <param name="Item8">省略 <b>可能なオブジェクト</b>です。 内のアイテムの名前 <paramref name="Field8" /> 。</param>
+        <param name="Field9">省略 <b>可能なオブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
+        <param name="Item9">省略 <b>可能なオブジェクト</b>です。 内のアイテムの名前 <paramref name="Field9" /> 。</param>
+        <param name="Field10">省略 <b>可能なオブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
+        <param name="Item10">省略 <b>可能なオブジェクト</b>です。 内のアイテムの名前 <paramref name="Field10" /> 。</param>
+        <param name="Field11">省略 <b>可能なオブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
+        <param name="Item11">省略 <b>可能なオブジェクト</b>です。 内のアイテムの名前 <paramref name="Field11" /> 。</param>
+        <param name="Field12">省略 <b>可能なオブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
+        <param name="Item12">省略 <b>可能なオブジェクト</b>です。 内のアイテムの名前 <paramref name="Field12" /> 。</param>
+        <param name="Field13">省略 <b>可能なオブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
+        <param name="Item13">省略 <b>可能なオブジェクト</b>です。 内のアイテムの名前 <paramref name="Field13" /> 。</param>
+        <param name="Field14">省略 <b>可能なオブジェクト</b>です。 ピボットテーブル レポートの行フィールドまたは列フィールドの名前を指定します。</param>
+        <param name="Item14">省略 <b>可能なオブジェクト</b>です。 内のアイテムの名前 <paramref name="Field14" /> 。</param>
+        <summary>ピボットテーブル レポート <b>のデータ</b> アイテムに関する情報を含む Range オブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2221,7 +2089,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>総計列または行見出しで指定されたピボット テーブル レポートに表示されるテキスト文字列ラベルを設定または返します。 既定値は、「総計」の文字列です。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <summary>指定されたピボットテーブル レポートでの総計列または行見出しとして表示するテキスト文字列ラベルを設定します。既定の文字列値は "総計" です。値の取得および設定が可能です。文字列型 (<b>String</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2252,7 +2120,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>の<b>場合は true</b>ピボット テーブル レポートは、それが更新されたとき、またはフィールドが移動されたときに自動的にフォーマットされている場合。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
+        <summary>PivotTable レポートの更新時やフィールドが移動されたときに、PivotTable レポートのオート フォーマットを実行するには、<b>True</b> を指定します。 値の取得および設定が可能で、ブール型 (<b>Boolean</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2280,13 +2148,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ワークシート レベルで、ピボット テーブルが存在するかどうかをチェックします。 <b>ブール値</b>(<b>bool</b>では C#) です。 読み取り専用</summary>
+        <summary>ワークシート レベルにピボット テーブルが存在するかどうかをチェックします。 <b>ブール</b>値<b></b> ( C# のブール値)。 読み取り専用</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>Hidden</b>プロパティを<b>True</b>に設定すると、<b>ピボット テーブル</b>オブジェクトは、ワークシート レベルで表示されません。 プロパティを<b>False</b>に設定すると、ピボット テーブルは、ワークシートに存在します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Hidden プロパティ <b>が</b> <b>True</b>に設定されている場合、 <b>ピボットテーブル</b> オブジェクトはワークシート レベルで非表示になります。 このプロパティが <b>False</b> に設定されると、ピボット テーブルがワークシートに存在します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="HiddenFields">
@@ -2315,13 +2180,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">省略可能な<b>オブジェクト</b>です。 フィールドの名前またはインデックス番号を指定します。複数の指定をする場合は、配列を使うことができます。</param>
-        <summary>単一のピボット テーブル フィールドのいずれかを表すオブジェクトを返します (、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />オブジェクト) またはすべてのフィールドのコレクション (、<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />オブジェクト) 現在表示されていない行、列、ページ、またはデータ フィールドとして。 読み取り専用。</summary>
+        <param name="Index">省略 <b>可能なオブジェクト</b>です。 フィールドの名前またはインデックス番号を指定します。複数の指定をする場合は、配列を使うことができます。</param>
+        <summary>1 つのピボットテーブル フィールド (オブジェクト) または行、列、ページ、またはデータ フィールドとして現在表示されていないすべてのフィールド <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> (オブジェクト) のコレクションを表すオブジェクトを返します。 <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> 読み取り専用です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>OLAP データ ソースの場合、このプロパティは常に空のコレクションを返します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>OLAP データ ソースの場合、このプロパティは常に空のコレクションを返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InGridDropZones">
@@ -2350,15 +2213,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティを使用してグリッド内のドロップ ゾーンを切り替えるには、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />オブジェクトです。  いくつかの場合にも影響のレイアウト、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.InGridDropZones" />プロパティが<b>True</b>で、グリッド内の表現、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />は、Excel 2003 のと同じです。 プロパティは<b>False</b>に設定、グリッド内のドロップ ゾーンがありません。 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />のレイアウトは、このプロパティを使用しても変わります。</para>
-          <para></para>
-        </remarks>
+        <summary>このプロパティは、オブジェクトのグリッド内のドロップ ゾーンを切り替える場合に使用 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> します。  場合によっては、レイアウトにも影響します <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>プロパティが True に設定されている場合、グリッド内の表現は <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.InGridDropZones" /> Excel <b></b>2003 の場合と同じです <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 <b>False</b> に設定すると、グリッド内のドロップ ゾーンは表示されません。 この <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> プロパティによってレイアウトも変更されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="InnerDetail">
@@ -2387,12 +2245,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>状況を詳細に表示されるフィールドの名前を設定を取得または設定、 <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.ShowDetail" /> 、最も内側の行または列フィールドのプロパティが<b>True</b>です。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <summary>最も内側の行または列フィールドのプロパティが True の場合に詳細として表示されるフィールドの名前を <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.ShowDetail" /> 設定または返します。 <b></b> 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>OLAP データ ソースでは、このプロパティを使用できません。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>OLAP データ ソースでは、このプロパティを使用できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="LayoutRowDefault">
@@ -2421,15 +2277,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlLayoutRowType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティのレイアウト設定を指定する<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />に追加されると、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />を最初にします。 値の取得および設定が可能です。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutRowType" />
-        </value>
-        <remarks>
-          <para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutRowType" />xlCompactRow、xlTabularRow、または xlOutlineRow のいずれかを指定できます。</para>
-          <para></para>
-        </remarks>
+        <summary>このプロパティは、初めて追加する場合のレイアウト設定 <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> を指定します。 値の取得と設定が可能です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlLayoutRowType" /></value>
+        <remarks><para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutRowType" /> 使用できる値は、xlCompactRow、xlTabularRow、または xlOutlineRow のいずれかです。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ListFormulas">
@@ -2454,10 +2306,8 @@
       <Parameters />
       <Docs>
         <summary>集計ピボットテーブルのアイテムとフィールドのリストを別のワークシートに作成します。</summary>
-        <remarks>
-          <para>OLAP データ ソースに対して、このメソッドは使用できません。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>OLAP データ ソースに対して、このメソッドは使用できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Location">
@@ -2486,10 +2336,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された本文の左上のセルを表す<b>文字列</b>を取得または<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>文字列型 (String)</b>
-        </value>
+        <summary>取得または指定した <b>本文</b> で左上のセルを表す文字列 を設定します <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 値の取得と設定が可能です。</summary>
+        <value><b>String</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2519,13 +2367,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、ピボットテーブル レポートの再計算はユーザーからの要求によってのみ行われます。既定値は <b>False</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <summary><b>True</b> の 場合、ピボットテーブル レポートは、ユーザーの要求でのみ再計算されます。 既定値は、 <b>false を指定</b> します。 読み取り/書き込み <b>ブール値</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>プログラムを終了した直後に、このプロパティは<b>False</b>に設定します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティは、プログラム <b>の終了直後</b> に False に設定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MDX">
@@ -2551,12 +2396,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のピボット テーブル ビューを作成するプロバイダーに送られる MDX (多次元式) を示す<b>文字列</b>を返します。 読み取り専用。</summary>
+        <summary>現在のピボットテーブル ビューにデータを設定するためにプロバイダーに送信される MDX (多次元式) を示す文字列 型 <b>(String)</b> の値を取得します。 読み取り専用です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>非 OLAP ピボットテーブルでこの値を問い合わせると、実行時エラーが返されます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>非 OLAP ピボットテーブルでこの値を問い合わせると、実行時エラーが返されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="MergeLabels">
@@ -2585,8 +2428,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、指定されたピボット テーブル レポートの外側にある行、列、小計、または総計のラベルは、結合されたセルを使用します。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
+        <summary><b>True</b> の 場合は、指定したピボットテーブル レポートの外側の行の項目、列項目、小計、および総計のラベルは、結合されたセルを使用します。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2617,7 +2459,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの名前を設定します。値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <summary>オブジェクトの名前を設定または返します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2648,7 +2490,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Null が含まれているセルに表示する文字列値を取得または設定します<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DisplayNullString" />プロパティが<b>True</b>です。 既定値は空の文字列 ("") です。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <summary>プロパティがTrue の場合、null 値を含むセルに表示される文字列 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.DisplayNullString" /> を設定または返 <b>します</b>。 既定値は空の文字列 ("") です。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2679,7 +2521,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ピボット テーブル レポートのレイアウトに追加するページ フィールドの順序を設定または返します。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlOrder" />定数: <b>xlDownThenOver</b>または<b>xlOverThenDown</b>です。 既定の定数値は<b>xlDownThenOver</b>です。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
+        <summary>ピボットテーブル レポートのレイアウトにページ フィールドを追加する順序を設定します。 使用できる定数は <see cref="T:Microsoft.Office.Interop.Excel.XlOrder" /> <b>、xlDownThenOver</b> または <b>xlOverThenDown です</b>。 既定の定数は <b>、xlDownThenOver です</b>。 読み取り/書き込みの <b>整数</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2710,14 +2552,12 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">省略可能な<b>オブジェクト</b>です。 フィールドの名前またはインデックス番号を指定します。複数の指定をする場合は、配列を使うことができます。</param>
-        <summary>単一のピボット テーブル フィールドのいずれかを表すオブジェクトを返します (、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />オブジェクト) またはすべてのフィールドのコレクション (、<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />オブジェクト) を現在表示されているページ フィールドです。 読み取り専用。</summary>
+        <param name="Index">省略 <b>可能なオブジェクト</b>です。 フィールドの名前またはインデックス番号を指定します。複数の指定をする場合は、配列を使うことができます。</param>
+        <summary>1 つのピボットテーブル フィールド (オブジェクト) またはページ フィールドとして現在表示されているすべてのフィールド (オブジェクト) のコレクションを表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> を返します。 読み取り専用です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>階層には 1 つのページ フィールドのみが含まれます。</para>
-          <para>ピボットテーブル キャッシュを基にピボットテーブルを作成すると、返されたピボットテーブル フィールドのコレクションには、現在のキャッシュの内容が設定されます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>階層には 1 つのページ フィールドのみが含まれます。</para>
+          <para>ピボットテーブル キャッシュに基づくピボットテーブル レポートの場合、返されるピボットテーブル フィールドのコレクションは、キャッシュ内の現在のデータを反映します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageFieldStyle">
@@ -2746,12 +2586,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ページ フィールド領域で使用するスタイルを設定または返します。 既定値は、null 文字列 (スタイルは未設定) です。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <summary>ページ フィールド領域で使用されているスタイルを設定します。既定値は空の文字列 (スタイルは未設定) です。値の取得および設定が可能です。文字列型 (<b>String</b>) の値を使用します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このスタイルは、既定のスタイルとして使用され、書式を設定する前に適用されます。ページ フィールド領域から別の場所にフィールドを移動しても、移動元のセルのスタイルは変わりません。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このスタイルは、既定のスタイルとして使用され、書式を設定する前に適用されます。ページ フィールド領域から別の場所にフィールドを移動しても、移動元のセルのスタイルは変わりません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PageFieldWrapCount">
@@ -2780,7 +2618,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはピボット テーブル レポート内の各行または各列のページ フィールドの数を設定します。 値の取得および設定が可能です。整数型 ( <b>Integer</b> ) の値を使用します。</summary>
+        <summary>ピボットテーブル レポートの各列または行のページ フィールド数を設定します。 読み取り/書き込みの <b>整数</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2808,7 +2646,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />の範囲をピボット テーブル レポートにページの領域を表すオブジェクト。 読み取り専用。</summary>
+        <summary>ピボットテーブル <see cref="T:Microsoft.Office.Interop.Excel.Range" /> レポートのページエリアを含む範囲を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2836,7 +2674,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />ページ フィールドが含まれているし、ドロップ ダウン リストの項目を指定されたピボット テーブル レポートのセルだけを表すオブジェクト。</summary>
+        <summary>ページ フィールドとアイテムドロップダウン リストを含む、指定されたピボットテーブル レポートのセルのみを表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2864,7 +2702,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2890,7 +2728,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> 、指定されたピボット テーブル レポートのキャッシュを表すオブジェクト。 読み取り専用。</summary>
+        <summary>指定されたピボット <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> テーブル レポートのキャッシュを表すオブジェクトを返します。 読み取り専用です。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2918,7 +2756,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />をスタンドアロンの非表示ピボット テーブル レポートのピボット グラフを表すオブジェクト。 読み取り専用。</summary>
+        <summary>指定された非表示 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> のピボットテーブル レポートのスタンドアロン ピボットグラフを表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2946,10 +2784,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotAxis</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" /> 、全体の列軸を表すオブジェクト。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" />
-        </value>
+        <summary>列軸全体 <see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" /> を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2975,13 +2811,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">省略可能な<b>オブジェクト</b>です。 フィールドの名前またはインデックス番号を指定します。</param>
-        <summary>単一のピボット テーブル フィールドのいずれかを表すオブジェクトを返します (、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />オブジェクト)、または表示と非表示の両方のフィールドのコレクション (、<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />オブジェクト) のピボット テーブル レポート。 読み取り専用。</summary>
+        <param name="Index">省略 <b>可能なオブジェクト</b>です。 フィールドの名前またはインデックス番号を指定します。</param>
+        <summary>1 つのピボットテーブル フィールド (オブジェクト) またはピボットテーブル レポートの表示フィールドと非表示フィールド (オブジェクト) の両方のコレクションを表すオブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> 返します。 読み取り専用です。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>OLAP データ ソースのない非表示のフィールドと、オブジェクトまたは返されるコレクションの現在の表示を反映します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>OLAP データ ソースには非表示フィールドはありません。返されるオブジェクトまたはコレクションは、現在表示されている項目を反映します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotFormulas">
@@ -3007,12 +2841,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotFormulas</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.PivotFormulas" />指定された数式のコレクションを表す<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />レポートします。 読み取り専用。</summary>
+        <summary>指定された <see cref="T:Microsoft.Office.Interop.Excel.PivotFormulas" /> レポートの数式のコレクションを表すオブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> します。 読み取り専用です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>OLAP データ ソースの場合、このプロパティは空のコレクションを取得します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>OLAP データ ソースの場合、このプロパティは空のコレクションを取得します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotRowAxis">
@@ -3038,10 +2870,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotAxis</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" /> 、行全体の軸を表すオブジェクト。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" />
-        </value>
+        <summary>行軸全体 <see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" /> を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.PivotAxis" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3069,15 +2899,12 @@
         <Parameter Name="UseStandardName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">
-          <b>文字列</b> が必要です。 標準ピボット テーブル レポートの選択書式で選択します。</param>
-        <param name="Mode">省略可能な<see cref="T:Microsoft.Office.Interop.Excel.XlPTSelectionMode" />。 有効な選択範囲を指定します。</param>
-        <param name="UseStandardName">省略可能な<b>オブジェクト</b>です。 記録したマクロを別のロケールで実行する場合は、 <b>True</b> を指定します。</param>
+        <param name="Name"><b>文字列</b> が必要です。 標準のピボットテーブル レポート選択形式での選択。</param>
+        <param name="Mode">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlPTSelectionMode" /> 可能です。 有効な選択範囲を指定します。</param>
+        <param name="UseStandardName">省略 <b>可能なオブジェクト</b>です。 記録したマクロを別のロケールで実行する場合は、 <b>True</b> を指定します。</param>
         <summary>ピボットテーブル レポートの一部を選択します。</summary>
-        <remarks>
-          <para>指定したモードを使用するには、ピボット テーブル レポート内の対応する項目を選択するだけです。 たとえば、ことはできませんを選択するデータとラベル<b>xlButton</b>モードを使用して同様に、 <b>xlDataOnly</b>モードを使用してボタンを選択することはできません。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>指定したモードを使って、該当するピボットテーブル レポートのアイテムだけを選択することが可能です。たとえば、<b>xlButton</b> モードが使われていると、データやラベルは選択できません。同様に、<b>xlDataOnly</b> モードが使われていると、ボタンを選択できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotSelection">
@@ -3106,12 +2933,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>標準ピボット テーブル レポートの選択書式でピボット テーブルの選択を設定または返します。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <summary>ピボットテーブルの選択範囲を標準のピボットテーブル レポート選択形式で設定します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>通話はこのプロパティを設定、<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotSelect(System.String,Microsoft.Office.Interop.Excel.XlPTSelectionMode,System.Object)" />を持つメソッド、 <paramref name="Mode" /><b>xlDataAndLabel</b>引数に設定します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティを設定すると、引数を xlDataAndLabel に設定してメソッドを呼び <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.PivotSelect(System.String,Microsoft.Office.Interop.Excel.XlPTSelectionMode,System.Object)" /> <paramref name="Mode" /> <b>出すのと同じになります</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotSelectionStandard">
@@ -3140,13 +2965,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>英語 (米国) の設定を使用して標準のピボット テーブル レポートの形式でピボット テーブルの選択を示す<b>文字列</b>を設定または返します。 値の取得および設定が可能です。</summary>
+        <summary>ピボットテーブルの選択を示す文字列型 (<b>String</b>) の値を、英語 (U.S.) の設定を使用して、標準のピボットテーブル レポートの書式で設定します。 値の取得と設定が可能です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>PivotSelectionStandard</b>プロパティは、[国際対応の"は、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PivotSelection" />プロパティではありません。</para>
-          <para></para>
-        </remarks>
+        <remarks><para><b>PivotSelectionStandard</b>プロパティは "国際対応" ですが、この <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PivotSelection" /> プロパティは国際対応ではありません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PivotTableWizard">
@@ -3186,23 +3008,23 @@
         <Parameter Name="Connection" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SourceType">省略可能な<see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" />。 レポート データのソースです。</param>
-        <param name="SourceData">省略可能な<b>オブジェクト</b>です。 新しいレポートのデータです。 ことができます、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクト、セル範囲の配列、または別のレポートの名前を表す文字列定数です。 外部データベースの場合は、<paramref name="SourceData" />の各要素が 255 文字までの長さを SQL クエリ文字列を含む文字列の配列です。 使用する必要があります、 <paramref name="Connection" /> 、ODBC 接続文字列を指定する引数です。 以前のバージョンの Excel と互換性のため<paramref name="SourceData" />2 つの要素配列にすることができます。 最初の要素は、データの ODBC ソースを指定する接続文字列です。 2 番目の要素は、データを取得するために使用する SQL クエリ文字列です。 指定する場合は、<paramref name="SourceData" />も指定する必要があります<paramref name="SourceType" />。 内にアクティブ セルがある場合、<paramref name="SourceData" />の範囲を指定してください<paramref name="TableDestination" />も同様です。</param>
-        <param name="TableDestination">省略可能な<b>オブジェクト</b>です。 レポートの配置場所を指定する<b>Range</b>オブジェクトを返します。 この引数を省略した場合、レポートは、アクティブ セルに配置されます。</param>
-        <param name="TableName">省略可能な<b>オブジェクト</b>です。 新しいレポートの名前を指定します。</param>
-        <param name="RowGrand">省略可能な<b>オブジェクト</b>です。 レポートに行の総計を表示するには、 <b>True</b> を指定します。</param>
-        <param name="ColumnGrand">省略可能な<b>オブジェクト</b>です。 レポートに列の総計を表示するには、 <b>True</b> を指定します。</param>
-        <param name="SaveData">省略可能な<b>オブジェクト</b>です。 <b>真</b>レポートと共にデータを保存します。 <b>False</b>レポートの定義のみを保存します。</param>
-        <param name="HasAutoFormat">省略可能な<b>オブジェクト</b>です。 <b>True を指定</b>すると自動的にレポートのフォーマットをそれが更新されたとき、またはフィールドが移動します。</param>
-        <param name="AutoPage">省略可能な<b>オブジェクト</b>です。 有効な場合にのみ<paramref name="SourceType" />が<b>xlConsolidation</b>。 <b>True</b>統合のページ フィールドを自動的に作成します。 場合<paramref name="AutoPage" />が<b>False</b>、または複数のページ フィールドを作成する必要があります。</param>
-        <param name="Reserved">省略可能な<b>オブジェクト</b>です。 Excel では、この引数は使用できません。</param>
-        <param name="BackgroundQuery">省略可能な<b>オブジェクト</b>です。 <b>True を指定</b>すると、Excel が非同期 (バック グラウンド) でレポートのクエリを実行します。 既定値は <b>False</b> です。</param>
-        <param name="OptimizeCache">省略可能な<b>オブジェクト</b>です。 <b>True の</b>構成時に、ピボット テーブルのキャッシュを最適化するためにします。 既定値は <b>False</b> です。</param>
-        <param name="PageFieldOrder">省略可能な<b>オブジェクト</b>です。 ピボット テーブル レポートのレイアウトに追加するページ フィールドの順序です。 次のいずれかの<see cref="T:Microsoft.Office.Interop.Excel.XlOrder" />定数: <b>xlDownThenOver</b>または<b>xlOverThenDown</b>です。 既定値は<b>xlDownThenOver</b>です。</param>
-        <param name="PageFieldWrapCount">省略可能な<b>オブジェクト</b>です。 各列のページ フィールド ピボット テーブル レポート内の行の数です。 既定値は 0 です。</param>
-        <param name="ReadData">省略可能な<b>オブジェクト</b>です。 <b>True</b>外部データベースからすべてのレコードを含むピボット テーブル キャッシュを作成するにはこのキャッシュは非常に大きくなることができます。 場合<paramref name="ReadData" />の<b>場合は False</b>を設定できます、フィールドのいくつかのサーバー ベースのページ フィールドとして、データが実際に読み取られる前にします。</param>
-        <param name="Connection">省略可能な<b>オブジェクト</b>です。 ODBC データ ソースに接続できるようにする ODBC 設定を含む文字列です。 接続文字列には、フォームの"ODBC;&lt;接続文字列&gt;」です。 この引数の以前の設定をオーバーライドする、<see cref="T:Microsoft.Office.Interop.Excel.PivotCache" />オブジェクトの<see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" />プロパティ。</param>
-        <summary>作成、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />オブジェクトです。 このメソッドは、ピボット テーブル ウィザードを表示しません。 このメソッドは、OLE DB データ ソースで利用できます。 使用して、 <see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" /> 、ピボット テーブル キャッシュを追加し、ピボット テーブル レポートを作成する方法、キャッシュを基にします。</summary>
+        <param name="SourceType">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableSourceType" /> 可能です。 レポート データのソース。</param>
+        <param name="SourceData">省略 <b>可能なオブジェクト</b>です。 レポートの作成に使うデータを指定します。 オブジェクト、範囲の配列、または別のレポートの名前を表すテキスト定数 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を指定できます。 外部データベースの場合は、SQL クエリ文字列を含む文字列の配列で、各要素の長さは <paramref name="SourceData" /> 最大 255 文字です。 引数を使用して <paramref name="Connection" /> ODBC 接続文字列を指定する必要があります。 以前のバージョンの Excel との互換性を保つには <paramref name="SourceData" /> 、2 要素の配列を指定できます。 1 番目の要素はデータの ODBC ソースを指定した接続文字列です。 2 番目の要素はデータの取得に使用する SQL のクエリ文字列です。 指定する場合 <paramref name="SourceData" /> は、指定する必要があります <paramref name="SourceType" /> 。 アクティブ セルが範囲内にある場合は <paramref name="SourceData" /> 、指定する <paramref name="TableDestination" /> 必要もあります。</param>
+        <param name="TableDestination">省略 <b>可能なオブジェクト</b>です。 レポートの配置場所を表す <b>Range</b> オブジェクトを指定します。 この引数を省略すると、レポートはアクティブ セルに配置されます。</param>
+        <param name="TableName">省略 <b>可能なオブジェクト</b>です。 新しいレポートの名前を指定します。</param>
+        <param name="RowGrand">省略 <b>可能なオブジェクト</b>です。 レポートに行の総計を表示するには、 <b>True</b> を指定します。</param>
+        <param name="ColumnGrand">省略 <b>可能なオブジェクト</b>です。 レポートに列の総計を表示するには、 <b>True</b> を指定します。</param>
+        <param name="SaveData">省略 <b>可能なオブジェクト</b>です。 レポートと共にデータを保存するには、 <b>True</b> を指定します。 レポートの定義のみを保存するには、 <b>False</b> を指定します。</param>
+        <param name="HasAutoFormat">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を設定すると、更新時またはフィールドの移動時にレポートの書式が自動的に設定されます。</param>
+        <param name="AutoPage">省略 <b>可能なオブジェクト</b>です。 <paramref name="SourceType" /> <b>xlConsolidation の場合にのみ有効です</b>。 <b>True を</b> 指定すると、統合用のページ フィールドが作成されます。 False <paramref name="AutoPage" /> の <b>場合</b>は、ページ フィールドを作成する必要があります。</param>
+        <param name="Reserved">省略 <b>可能なオブジェクト</b>です。 Excel では、この引数は使用できません。</param>
+        <param name="BackgroundQuery">省略 <b>可能なオブジェクト</b>です。 <b>True</b> の場合、Excel はレポートのクエリをバック グラウンド (非同期) で実行します。 既定値は <b>False</b> です。</param>
+        <param name="OptimizeCache">省略 <b>可能なオブジェクト</b>です。 <b>True</b> の場合、ピボットテーブルのキャッシュの構成時に最適化を行います。 既定値は <b>False</b> です。</param>
+        <param name="PageFieldOrder">省略 <b>可能なオブジェクト</b>です。 ピボットテーブル レポートのレイアウトにページ フィールドを追加する順序を指定します。 使用できる定数は <see cref="T:Microsoft.Office.Interop.Excel.XlOrder" /> <b>、xlDownThenOver</b> または <b>xlOverThenDown です</b>。 既定値は <b>xlDownThenOver</b> です。</param>
+        <param name="PageFieldWrapCount">省略 <b>可能なオブジェクト</b>です。 ピボットテーブルの各列または各行のページ フィールドの数を指定します。 既定値は 0 (ゼロ) です。</param>
+        <param name="ReadData">省略 <b>可能なオブジェクト</b>です。 <b>True</b> 外部データベースのすべてのレコードを含むピボットテーブル キャッシュを作成します。このキャッシュは非常に大きい可能性があります。 False <paramref name="ReadData" /> の <b>場合</b>、データが実際に読み取る前に、一部のフィールドをサーバー ベースのページ フィールドとして設定できます。</param>
+        <param name="Connection">省略 <b>可能なオブジェクト</b>です。 A string that contains ODBC settings that allow Excel to connect to an ODBC data source. 接続文字列の形式は "ODBC; &lt;接続文字列 &gt; ". この引数は、オブジェクトのプロパティに対する以前の <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> 設定を上書き <see cref="P:Microsoft.Office.Interop.Excel.PivotCache.Connection" /> します。</param>
+        <summary>オブジェクトを作成 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> します。 このメソッドでは、ピボットテーブル ウィザードは表示されません。 このメソッドは、OLE DB データ ソースでは使用できません。 このメソッド <see cref="M:Microsoft.Office.Interop.Excel.PivotTables.Add(Microsoft.Office.Interop.Excel.PivotCache,System.Object,System.Object,System.Object,System.Object)" /> を使用してピボットテーブル キャッシュを追加し、そのキャッシュに基づいてピボットテーブル レポートを作成します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3229,11 +3051,9 @@
         <Parameter Name="columnline" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="rowline">
-          <b>された</b>型の場合に、 <b>PivotValueCell</b>の配置を行エリアに<b>された</b>を指定します。 <b>Int</b>型の場合、 <b>PivotValueCell</b>の配置を行エリアに<b>された</b>の位置を指定します。 いない場合、空、Null、または 0 は、総計の行を指定します。</param>
-        <param name="columnline">
-          <b>された</b>型の場合に、 <b>PivotValueCell</b>で配置される列の領域に<b>された</b>を指定します。 <b>Int</b>型の場合、 <b>PivotValueCell</b>で配置される列の領域に<b>された</b>の位置を指定します。 いない場合、空、Null または 0 では、総計列を指定します。</param>
-        <summary>取得の<see cref="T:Microsoft.Office.Interop.Excel.PivotValueCell" />オブジェクトの指定されたピボット テーブルが特定の行と列のインデックスを提供します。</summary>
+        <param name="rowline"><b>PivotLine</b> 型の場合、<b>PivotValueCell</b> が配置されている行フィールドの <b>PivotLine</b> を指定します。<b>Int</b> 型の場合、<b>PivotValueCell</b> が配置されている行フィールドの <b>PivotLine</b> の位置を指定します。指定なし、Empty、Null、または 0 の場合は、総計行を指定します。</param>
+        <param name="columnline"><b>PivotLine</b> 型の場合、<b>PivotValueCell</b> が配置されている列フィールドの <b>PivotLine</b> を指定します。<b>Int</b> 型の場合、<b>PivotValueCell</b> が配置されている列フィールドの <b>PivotLine</b> の位置を指定します。指定なし、Empty、Null、または 0 の場合は、総計列を指定します。</param>
+        <summary>指定された <see cref="T:Microsoft.Office.Interop.Excel.PivotValueCell" /> ピボットテーブルの特定の行インデックスと列インデックスのオブジェクトを取得します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3264,7 +3084,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが<b>True の</b>場合、書式設定は保持されます、レポートが更新またはピボット、並べ替え、またはページ フィールドのアイテムを変更するなどの操作で再計算するときは ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
+        <summary>ピボット、並べ替え、ページ フィールド項目の変更などの操作によってレポートを更新または再計算するときに書式設定が保持される場合、このプロパティは <b>True</b> です。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3295,16 +3115,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ドリル インジケーターで印刷するかどうかを指定します<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>ドリル インジケーターに印刷する場合は<b>True</b>を返します、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />の印刷がない場合は<b>False</b>を返します、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</para>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowDrillIndicators" />プロパティが<b>False</b>に設定します<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowDrillIndicators" />プロパティは影響を与えません。 ドリル インジケーターされるときに表示されない場合、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</para>
-          <para></para>
-        </remarks>
+        <summary>ドリル インジケーターを印刷するかどうかを指定します <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>ドリル インジケーター<b>が印刷</b>されている場合はTrue を返し、ドリル インジケーターが印刷されない場合は <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> False を返します<b></b> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。</para>
+          <para>プロパティが <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowDrillIndicators" /> False に<b></b>設定されている場合、 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowDrillIndicators" /> プロパティは効果がありません。 ドリル インジケーターは、表示されていない場合は印刷されません <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintTitles">
@@ -3333,14 +3148,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、ピボットテーブル レポートを基にしてワークシートの印刷タイトルを設定します。 <b>False</b> の場合、ワークシートの印刷タイトルを使用します。既定値は <b>False</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <summary><b>True</b> の場合、ピボットテーブル レポートを基にしてワークシートの印刷タイトルを設定します。 <b>False</b> の場合、ワークシートの印刷タイトルを使用します。既定値は <b>False</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>行の印刷タイトルには、ピボットテーブル レポートの列フィールド アイテムを含む行を設定します。列の印刷タイトルには、行アイテムを含む列を設定します。</para>
-          <para>ピボット テーブル レポートは、印刷範囲の 1 つのみである必要があります。 ピボット テーブル レポートをインデント付きの書式を設定するのにを使用して、<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.Format(Microsoft.Office.Interop.Excel.XlPivotFormatType)" />メソッドです。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>行の印刷タイトルには、ピボットテーブル レポートの列フィールド アイテムを含む行を設定します。列の印刷タイトルには、行アイテムを含む列を設定します。</para>
+          <para>ピボットテーブル レポートは、印刷領域内で唯一のレポートである必要があります。 ピボットテーブル レポートのインデント書式を設定するには、このメソッドを使用 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.Format(Microsoft.Office.Interop.Excel.XlPivotFormatType)" /> します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshDataSourceValues">
@@ -3365,12 +3177,10 @@
       <Parameters />
       <Docs>
         <summary>書き戻しモード状態にあるピボットテーブル レポートで編集されたすべてのセルのデータ ソースから現在の値を取得します。</summary>
-        <remarks>
-          <para>かどうか、ピボット テーブル レポートは書き戻しモードを確認するに、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" />または<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />オブジェクトのうちいずれかの方法は True を返します。 書き戻しモードではありません。 ピボット テーブル レポートの場合は、このメソッドを実行しようとして、実行時エラーが生成されます。</para>
-          <para>ピボット テーブル レポートで OLAP データ ソースを実行すると、<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RefreshDataSourceValues" />メソッドは、OLAP サーバーに別の接続を作成し、すべての MDX クエリを実行します (の値、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.MDX" /> プロパティ)、ピボット テーブル レポートを作成する更新操作を実行するために使用されます。 Excel はピボット テーブル ビューで、編集されたすべてのセルの値を抽出し、それらに格納されます、 <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> 、セルのプロパティです。</para>
+        <remarks><para>ピボットテーブル レポートが書き戻しモードかどうかを確認するには、オブジェクトのプロパティを確認します。どちらのプロパティも True を <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableWriteback" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.EnableDataValueEditing" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 返します。 書き戻しモードではないピボットテーブル レポートでは、このメソッドを実行しようとすると、実行時エラーが生成されます。</para>
+          <para>OLAP データ ソースを含むピボットテーブル レポートの場合、メソッドを実行すると、OLAP サーバーへの個別の接続が作成され、 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RefreshDataSourceValues" /> 完全な MDX クエリ (. <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /><see cref="P:Microsoft.Office.Interop.Excel.PivotTable.MDX" /> プロパティ) を取得します。このプロパティは、ピボットテーブル レポートにデータを設定するための更新操作を実行するために使用されます。 Excel は、ピボットテーブル ビューで編集されたセルすべてについて返された値を抽出し、それらのセルの <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> プロパティに格納します。</para>
           <para>このメソッドは、OLAP データ ソースを使用するピボットテーブル レポートでのみ使用できます。OLAP 以外のデータ ソースを使用するピボットテーブル レポートに対してこのメソッドを実行しようとすると、実行時エラーが生成されます。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshDate">
@@ -3396,12 +3206,10 @@
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ピボット テーブル レポートが最後に更新された日付を返します。 読み取り専用で<b>DateTime</b>。</summary>
+        <summary>ピボットテーブル レポートが最後に更新された日付を返します。 読み取り専用 <b>DateTime</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>OLAP データ ソースでは、このプロパティは各クエリ実行後に更新されます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>OLAP データ ソースでは、このプロパティは各クエリ実行後に更新されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshName">
@@ -3427,12 +3235,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ピボット テーブル レポートのデータまたはピボット テーブル キャッシュを最後に更新した人の名前を返します。 読み取り専用 <b>文字列</b> です。</summary>
+        <summary>ピボットテーブル レポート データまたはピボットテーブル キャッシュを最後に更新したユーザーの名前を返します。 読み取りのみ可能な <b>String</b> 値です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>OLAP データ ソースでは、このプロパティは各クエリ実行後に更新されます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>OLAP データ ソースでは、このプロパティは各クエリ実行後に更新されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshTable">
@@ -3456,7 +3262,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>ソース データからピボット テーブル レポートを更新します。 それが成功した場合は<b>True</b>を返します。</summary>
+        <summary>元データを基に、ピボットテーブル レポートを更新します。 更新が成功すると <b>True</b> を返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3485,12 +3291,10 @@
       </Parameters>
       <Docs>
         <param name="Repeat">指定したピボットテーブル内のすべてのピボットフィールドに対してアイテムのラベルを繰り返すかどうかを指定します。</param>
-        <summary>指定されたピボット テーブル内のすべてのピボット フィールドのアイテムのラベルを印刷するかどうかを設定します。</summary>
-        <remarks>
-          <para>使用して、<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RepeatAllLabels(Microsoft.Office.Interop.Excel.XlPivotFieldRepeatLabels)" />メソッドは、[ピボット テーブル ツールのデザイン タブのレポートのレイアウトのドロップダウン リストでアイテムのラベルをすべて繰り返すとアイテムのラベルを繰り返し行うコマンドに対応します。</para>
-          <para>単一のピボット フィールドのアイテムのラベルを印刷するかどうかを指定するを使用して、<see cref="P:Microsoft.Office.Interop.Excel.PivotField.RepeatLabels" />プロパティ。</para>
-          <para></para>
-        </remarks>
+        <summary>指定されたピボットテーブル内のすべてのピボットフィールドに対してアイテム ラベルを繰り返すかどうかを設定します。</summary>
+        <remarks><para>このメソッドを使用すると、[ピボットテーブル ツールのデザイン] タブの [レポート レイアウト] ボックスの一覧にある [すべてのアイテム ラベルの繰り返し] コマンドと [アイテム ラベルを繰り返し実行しない] コマンドに <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.RepeatAllLabels(Microsoft.Office.Interop.Excel.XlPivotFieldRepeatLabels)" /> 対応します。</para>
+          <para>単一のピボットフィールドに対してアイテムラベルを繰り返すかどうかを指定するには、プロパティを使用 <see cref="P:Microsoft.Office.Interop.Excel.PivotField.RepeatLabels" /> します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RepeatItemsOnEachPrintedPage">
@@ -3519,14 +3323,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、指定されたピボットテーブル レポートを印刷するときに、行、列、およびアイテムのラベルを各ページの先頭行に印刷します。 <b>False</b> の場合、ラベルを先頭ページにのみ印刷します。既定値は <b>True</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <summary><b>True</b> の場合、指定されたピボットテーブル レポートを印刷するときに、行、列、およびアイテムのラベルを各ページの先頭行に印刷します。 <b>False</b> の場合、ラベルを先頭ページにのみ印刷します。既定値は <b>True</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ピボット テーブル レポートは、印刷範囲の 1 つのみである必要があります。 ピボット テーブル レポートをインデント付きの書式を設定するのにを使用して、<see cref="M:Microsoft.Office.Interop.Excel.PivotTable.Format(Microsoft.Office.Interop.Excel.XlPivotFormatType)" />メソッドです。</para>
-          <para>Microsoft Excel は、ワークシートに設定された印刷タイトルの代わりに、行と列のラベルを印刷します。 使用して、 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PrintTitles" /> 、ピボット テーブル レポートの印刷タイトルを設定するかどうかを確認するにします。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>ピボットテーブル レポートは、印刷領域内で唯一のレポートである必要があります。 ピボットテーブル レポートのインデント書式を設定するには、このメソッドを使用 <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.Format(Microsoft.Office.Interop.Excel.XlPivotFormatType)" /> します。</para>
+          <para>Excel では、ワークシートに設定された印刷タイトルの代わりに行や列のラベルを印刷します。 このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.PrintTitles" /> を使用して、ピボットテーブル レポートに印刷タイトルが設定されているかどうかを確認します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RowAxisLayout">
@@ -3552,12 +3353,10 @@
         <Parameter Name="RowLayout" Type="Microsoft.Office.Interop.Excel.XlLayoutRowType" />
       </Parameters>
       <Docs>
-        <param name="RowLayout">必要な<see cref="T:Microsoft.Office.Interop.Excel.XlLayoutRowType" /><b>xlCompactRow</b>、 <b>xlTabularRow</b>、または<b>xlOutlineRow</b>にすることができます。</param>
-        <summary>このメソッドは、同時にすべての既存のレイアウト オプションを設定するために使用<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />秒です。</summary>
-        <remarks>
-          <para>そのことを確認しているいずれかのレイアウト オプションを設定できない場合、このメソッドは分割不可能な<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />、フィールドのレイアウト オプションが変更され、変更なしに、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。</para>
-          <para></para>
-        </remarks>
+        <param name="RowLayout">Required <see cref="T:Microsoft.Office.Interop.Excel.XlLayoutRowType" /> Can be <b>xlCompactRow</b>, <b>xlTabularRow</b>, or <b>xlOutlineRow</b>.</param>
+        <summary>このメソッドは、すべての既存のレイアウト オプションを同時に設定するために使用 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> されます。</summary>
+        <remarks><para>このメソッドはアトミックなので、レイアウト オプションを設定できない場合、どのフィールドもレイアウト オプションは変更されません。また、 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RowFields">
@@ -3586,8 +3385,8 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">省略可能な<b>オブジェクト</b>です。 フィールドの名前またはインデックス番号を指定します。複数の指定をする場合は、配列を使うことができます。</param>
-        <summary>ピボット テーブル レポートで 1 つのフィールドのいずれかを表すオブジェクトを返します (、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />オブジェクト) またはすべてのフィールドのコレクション (、<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />オブジェクト) を現在表示されている行フィールドです。 読み取り専用。</summary>
+        <param name="Index">省略 <b>可能なオブジェクト</b>です。 フィールドの名前またはインデックス番号を指定します。複数の指定をする場合は、配列を使うことができます。</param>
+        <summary>ピボットテーブル レポート (オブジェクト) 内の単一のフィールド、または現在行フィールドとして表示されているすべてのフィールド (オブジェクト) のコレクションを表すオブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> 返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3618,8 +3417,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、ピボットテーブル レポートの行の総計を表示します。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <summary><b>True の</b> 場合、ピボットテーブル レポートには、行の総計が表示されます。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3647,7 +3445,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 、ピボット テーブル レポートの行エリアを含むセル範囲を表すオブジェクト。 読み取り専用。</summary>
+        <summary>ピボットテーブル レポート <see cref="T:Microsoft.Office.Interop.Excel.Range" /> の行エリアを含む範囲を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3678,13 +3476,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、ピボットテーブル レポートのデータをブックと共に保存します。 <b>False</b> の場合、レポートの定義のみを保存します。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <summary><b>True の</b> 場合は、ピボットテーブル レポートのデータがブックと一緒に保存されます。 <b>False</b> レポート定義のみを保存する場合です。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>OLAP データ ソースの場合、このプロパティは常に<b>False</b>に設定します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>OLAP データ ソースの場合、このプロパティは常に <b>False</b> に設定されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectionMode">
@@ -3713,12 +3508,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPTSelectionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ピボット テーブル レポートの構造化された選択モードを設定または返します。 読み取り/書き込み<see cref="T:Microsoft.Office.Interop.Excel.XlPTSelectionMode" />。</summary>
+        <summary>ピボットテーブル レポートの構造化選択モードを取得または設定します。 読み取り/書き込み <see cref="T:Microsoft.Office.Interop.Excel.XlPTSelectionMode" /> 。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>ピボット テーブルのフィールドがアウトライン形式ではありません、いずれかの定数と<b>定数 xlFirstRow</b>の合計を指定することが単独の定数を指定するのと同じです。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>ピボットテーブルのフィールドがアウトライン形式ではない場合、任意の定数と定数 <b>xlFirstRow</b> の合計での指定は、単独の定数を指定するのと同等です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowCellBackgroundFromOLAP">
@@ -3753,13 +3546,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>場合、Microsoft Excel がサーバーに送信される MDX (多次元式) が含まれています、 <see cref="P:Microsoft.Office.Interop.Excel.ChartFillFormat.BackColor" /> 、オンライン分析処理 (OLAP) データ セット内のセルに対応するデータ領域内の各セルのプロパティです。 既定値は、 <b>false を指定</b> します。 読み取り/書き込み <b>ブール値</b> です。</summary>
+        <summary><b>True</b>の 場合、Microsoft Excel がサーバーに送信する MDX (多次元式) には、オンライン分析処理 (OLAP) データ セット内のセルに対応するデータ領域内の各セルのプロパティが含まれています。 <see cref="P:Microsoft.Office.Interop.Excel.ChartFillFormat.BackColor" /> 既定値は、 <b>false を指定</b> します。 読み取り/書き込み <b>ブール値</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>OLAP データ セットには、 <b>BackColor</b>プロパティの値が返された場合、セルの塗りつぶしの色は、そのワークシートの Excel のパレットで最も近い色に設定されています。 ユーザーがセル パターン書式を手動でのセルに適用される場合は、OLAP データ セットからすべての書式が上書きされます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>OLAP データ セットが <b>BackColor</b> プロパティ値を返す場合、セルの塗りつぶしの色は、そのワークシートの Microsoft Excel のパレットで最も近い色に設定されます。 ユーザーがセルにセル パターンの書式を手動で適用すると、OLAP データ セットの書式設定が上書きされます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowDrillIndicators">
@@ -3788,15 +3578,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowDrillIndicators" />のドリル インジケーターの表示を切り替えるプロパティを使用します<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>ドリル インジケーターで表示される場合は<b>True</b>を返します、<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />にドリル インジケーターが表示されない場合は<b>False</b>を返します、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 </para>
-          <para></para>
-        </remarks>
+        <summary>この <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowDrillIndicators" /> プロパティは、 . <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>ドリル インジケーター<b>が表示</b>されている場合はTrue を返し、ドリル インジケーターが表示されていない場合は <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> False を返します<b></b> <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 </para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowPageMultipleItemLabel">
@@ -3825,7 +3610,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>アイテムが非表示にするたびに、ワークシートで非表示アイテムの集計のピボット テーブルのセルに<b>True</b> (既定値)、「(複数アイテム)」に設定が表示される場合は、ピボット テーブル ビューに表示されます。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
+        <summary><b>True</b> (既定値) に設定した場合、ピボットテーブル ビューでアイテムが非表示で、表示アイテムの集計が表示されるときには、ワークシートのピボットテーブル セルに "(複数のアイテム)" と表示されます。値の取得および設定が可能です。ブール型 (<b>Boolean</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3852,13 +3637,11 @@
         <Parameter Name="PageField" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="PageField">省略可能な<b>オブジェクト</b>です。 レポートの 1 つのページ フィールドを示す文字列を指定します。</param>
-        <summary>ページ エリアの各フィールドに対応するピボットテーブル レポートを新しく作成します。新しいレポートが、新規ワークシートに作成されます。</summary>
+        <param name="PageField">省略 <b>可能なオブジェクト</b>です。 レポートの 1 つのページ フィールドを示す文字列を指定します。</param>
+        <summary>ページ エリアの各フィールドに対応するピボットテーブル レポートを新しく作成します。 新しいレポートが、新規ワークシートに作成されます。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>OLAP データ ソースに対して、このメソッドは使用できません。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>OLAP データ ソースに対して、このメソッドは使用できません。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ShowTableStyleColumnHeaders">
@@ -3887,9 +3670,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowTableStyleColumnHeaders" />に coulmn ヘッダーを表示する必要がある場合、プロパティが True に設定されて、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 値の取得および設定が可能です。</summary>
-        <value>ブール型</value>
+        <summary>The <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowTableStyleColumnHeaders" /> property is set to True if the coulmn headers should be displayed in the <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> . 値の取得と設定が可能です。</summary>
+        <value>Boolean</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3919,8 +3701,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ブール型のプロパティは、偶数の列と奇数の列を異なる書式にしている、バンド設定された列を表示します。 これにより、<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />を読みやすくします。 値の取得および設定が可能です。</summary>
-        <value>ブール型</value>
+        <summary>Boolean プロパティは、偶数列と奇数列の書式が異なる、バンド列を表示します。 これにより、読 <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> みやすくなります。 値の取得と設定が可能です。</summary>
+        <value>Boolean</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3951,7 +3733,7 @@
       </ReturnValue>
       <Docs>
         <summary>内部使用のため予約済みです。</summary>
-        <value>返します。 <see cref="T:System.Boolean" />。</value>
+        <value><see cref="T:System.Boolean" /> を返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3981,9 +3763,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowTableStyleRowHeaders" />の行ヘッダーを表示する場合、プロパティが True に設定されて、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 値の取得および設定が可能です。</summary>
-        <value>ブール型</value>
+        <summary>行 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowTableStyleRowHeaders" /> ヘッダーを表示する場合、このプロパティは True に設定されます <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 値の取得と設定が可能です。</summary>
+        <value>Boolean</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4013,9 +3794,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowTableStyleRowStripes" />プロパティには、偶数行と奇数の行を異なる書式にして、縞模様の行が表示されます。 これにより、<see cref="T:Microsoft.Office.Interop.Excel.PivotTables" />を読みやすくします。 値の取得および設定が可能です。</summary>
-        <value>ブール型</value>
+        <summary>この <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ShowTableStyleRowStripes" /> プロパティは、偶数行と奇数行の書式が異なる、バンドされた行を表示します。 これにより、読 <see cref="T:Microsoft.Office.Interop.Excel.PivotTables" /> みやすくなります。 値の取得と設定が可能です。</summary>
+        <value>Boolean</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4045,14 +3825,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または値の行が表示されるかどうかを設定します。</summary>
-        <value>
-          <b>true の</b>場合、値の行が表示されます。それ以外の場合、 <b>false を指定</b>します。</value>
-        <remarks>
-          <para>値の取得および設定が可能です。</para>
-          <para>このプロパティは、ピボット テーブル オプション] ダイアログ ボックスの [表示] タブで、値の行] チェック ボックスを表示の設定に対応します。</para>
-          <para></para>
-        </remarks>
+        <summary>値の行を表示するかどうかを取得または設定します。</summary>
+        <value><b>値の</b> 行が表示される場合は true。それ以外の場合、 <b>false です</b>。</value>
+        <remarks><para>値の取得と設定が可能です。</para>
+          <para>このプロパティは、[ピボットテーブル オプション] ダイアログ ボックスの [表示] タブの [値の行を表示する] チェック ボックスの設定に対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Slicers">
@@ -4078,14 +3855,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Slicers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得、<see cref="T:Microsoft.Office.Interop.Excel.Slicers" />指定されたピボット テーブルのコレクションです。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Slicers" />指定されたピボット テーブルのコレクションです。</value>
-        <remarks>
-          <para>読み取り専用。</para>
-          <para>スライサーは、ピボット テーブル レポート内のデータをフィルター処理に使用できます。 <see cref="T:Microsoft.Office.Interop.Excel.Slicers" />コレクションが含まれています<see cref="T:Microsoft.Office.Interop.Excel.Slicer" />指定されたピボット テーブルに関連付けられているスライサーを表すオブジェクト。</para>
-          <para></para>
-        </remarks>
+        <summary>指定された <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> ピボットテーブルのコレクションを取得します。</summary>
+        <value>指定 <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> されたピボットテーブルのコレクションです。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para>Slicers を使用すると、ピボットテーブル レポートのデータをフィルター処理できます。 コレクション <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> には、指定 <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> したピボットテーブルに関連付けられているスライサーを表すオブジェクトが含まれます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SmallGrid">
@@ -4114,13 +3888,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True の</b>幅の 2 つのセルと 2 つのセルを新規に作成されたピボット テーブル レポートの高度なグリッドを使用する場合。 <b>False</b>場合は、空白のステンシル アウトラインを使用します。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
+        <summary><b>True</b> の場合、新しく作成するピボットテーブル レポートにセル 2 つ分の幅と高さを持つグリッドを使用します。<b>False</b> の場合、空白のステンシル アウトラインを使用します。値の取得および設定が可能です。ブール型 (<b>Boolean</b>) の値を使用します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>通常は、ステンシル アウトラインを使用します。枠線は、以前のバージョンの Excel との互換性を保つためにのみ提供されます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>通常は、ステンシル アウトラインを使用します。 枠線は、以前のバージョンの Excel との互換性を保つためにのみ提供されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SortUsingCustomLists">
@@ -4149,15 +3920,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.SortUsingCustomLists" />コントロールのプロパティのアイテムの並べ替えのユーザー設定リストを使用するかどうかフィールドを両方とも最初にすると、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />が初期化されると、<see cref="T:Microsoft.Office.Interop.Excel.PivotItems" />順に並べ替え、キャプションおよびユーザーには、並べ替えが適用されます。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>ブール型 (Boolean)</b>
-        </value>
-        <remarks>
-          <para>多くのアイテムでフィールドのパフォーマンスを最適化できますこのプロパティを<b>False</b>に設定し、カスタム リスト ベースの並べ替えを避ける必要がないユーザーができます。</para>
-          <para></para>
-        </remarks>
+        <summary>このプロパティは、フィールドのアイテムの並べ替えにユーザー設定リストを使用するかどうかを制御します。最初は初期化時とキャプション順に並べ替え、後でユーザーが並べ替えを適用した場合の両方です。 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.SortUsingCustomLists" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> 値の取得と設定が可能です。</summary>
+        <value><b>Boolean</b></value>
+        <remarks><para>このプロパティを <b>False</b> に設定すると、多くのアイテムでフィールドのパフォーマンスを最適化できます。また、ユーザー設定リストに基づいた並べ替えを望まないユーザーはこれを回避できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SourceData">
@@ -4186,10 +3952,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ピボット テーブル レポートのデータ ソースを返します。 読み取り/書き込みの<b>オブジェクト</b>です。</summary>
+        <summary>ピボットテーブル レポートのデータ ソースを返します。 読み取り/書き込 <b>みオブジェクト です</b>。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>返される値は、次のように、データ ソースに依存します。</para>
+        <remarks><para>返される値は、次のようにデータ ソースによって異なります。</para>
           <list type="table">
             <item>
               <term>Excel のリストまたはデータベース</term>
@@ -4197,7 +3962,7 @@
             </item>
             <item>
               <term>外部データ ソース</term>
-              <description>配列です。 各行は、255 文字のセグメントに分けるクエリ文字列として、SQL 接続文字列で、残りの要素で構成されます。</description>
+              <description>配列を返します。 各行は、255 SQLセグメントに分割された、クエリ文字列として残りの要素を持つ 1 つの接続文字列で構成されます。</description>
             </item>
             <item>
               <term>複数のワークシート範囲</term>
@@ -4209,8 +3974,7 @@
             </item>
           </list>
           <para>OLE DB データ ソースでは、このプロパティを使用できません。</para>
-          <para></para>
-        </remarks>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SubtotalHiddenPageItems">
@@ -4239,13 +4003,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、ピボットテーブル レポートの隠しページ フィールド項目を、行や列の小集計、ブロック集計、および大集計に含みます。既定値は <b>False</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <summary><b>True</b> の場合、ピボットテーブル レポートの隠しページ フィールド項目を、行や列の小集計、ブロック集計、および大集計に含みます。既定値は <b>False</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>OLAP データ ソースの値は常に<b>True</b>です。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>OLAP データ ソースの場合、このプロパティは常に <b>True</b> です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SubtotalLocation">
@@ -4271,13 +4032,10 @@
         <Parameter Name="Location" Type="Microsoft.Office.Interop.Excel.XlSubtototalLocationType" />
       </Parameters>
       <Docs>
-        <param name="Location">必要な<see cref="T:Microsoft.Office.Interop.Excel.XlSubtototalLocationType" /><b>xlAtTop</b>または<b>xlAtBottom</b>のいずれかにすることができます。</param>
-        <summary>このメソッドは、既存のすべての小計の場所を変更<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />。 小計の場所を変更するアウトライン形式のフィールドだけで即時の視覚効果ですがフィールドを表形式にも設定されます。</summary>
-        <remarks>
-          <para>
-            <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.SubtotalLocation(Microsoft.Office.Interop.Excel.XlSubtototalLocationType)" />メソッドのセット、<see cref="P:Microsoft.Office.Interop.Excel.PivotField.LayoutSubtotalLocation" />のすべての既存のプロパティ<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />s に自動的にします。</para>
-          <para></para>
-        </remarks>
+        <param name="Location">Required <see cref="T:Microsoft.Office.Interop.Excel.XlSubtototalLocationType" /> can be either <b>xlAtTop</b> or <b>xlAtBottom</b>.</param>
+        <summary>このメソッドは、すべての既存の小計の場所を変更します <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> 。 小計の場所の変更は、アウトライン形式のフィールドの表示にのみ素早く反映されますが、表形式でもフィードに対して同じように設定されます。</summary>
+        <remarks><para>この <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.SubtotalLocation(Microsoft.Office.Interop.Excel.XlSubtototalLocationType)" /> メソッドは、 <see cref="P:Microsoft.Office.Interop.Excel.PivotField.LayoutSubtotalLocation" /> 既存のすべてのプロパティを自動的に <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 設定します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Summary">
@@ -4306,13 +4064,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定されたピボット テーブルの別のテキスト文字列に関連付けられた説明を設定します。</summary>
-        <value>指定されたピボット テーブルの別のテキスト文字列に関連付けられた説明です。</value>
-        <remarks>
-          <para>値の取得および設定が可能です。</para>
-          <para>値、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Summary" />プロパティは、[ピボット テーブル オプション] ダイアログ ボックスの [代替テキスト] タブで [説明] ボックスの値に対応します。</para>
-          <para></para>
-        </remarks>
+        <summary>指定したピボットテーブルの代替テキスト文字列に関連付けられた説明を取得または設定します。</summary>
+        <value>指定されたピボットテーブルの代替テキスト文字列に関連付けられている説明。</value>
+        <remarks><para>値の取得と設定が可能です。</para>
+          <para>プロパティの値は、[ピボットテーブル オプション] ダイアログ ボックスの [代替テキスト] タブの [説明] ボックスの値 <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.Summary" /> に対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TableRange1">
@@ -4338,13 +4094,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 、ピボット テーブル レポート全体を含む範囲を表しますが、ページ フィールドが含まれていないオブジェクトです。 読み取り専用。</summary>
+        <summary>ピボットテーブル レポート全体を含む範囲を表すオブジェクトを返しますが、ページ フィールド <see cref="T:Microsoft.Office.Interop.Excel.Range" /> は含めはありません。 読み取り専用です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableRange2" />プロパティには、ページ フィールドが含まれています。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>プロパティ <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableRange2" /> にはページ フィールドが含まれます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TableRange2">
@@ -4370,13 +4123,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />のページ フィールドを含むピボット テーブル レポート全体を含む範囲を表すオブジェクト。 読み取り専用。</summary>
+        <summary>ページ フィールドを <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 含むピボットテーブル レポート全体を含む範囲を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableRange1" />プロパティにページ フィールドが含まれていません。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>この <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableRange1" /> プロパティにはページ フィールドは含まれます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TableStyle">
@@ -4411,12 +4161,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ピボット テーブル レポートの本文に使用するスタイルを設定または返します。 既定値は、null 文字列 (スタイルは未設定) です。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <summary>ピボットテーブル レポートの本文で使用されるスタイルを取得または設定します。 既定値は null 文字列です (既定ではスタイルは適用されません)。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>このスタイルは、背景領域の既定のスタイルとして使用し、書式を設定する前に適用されます。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>このスタイルは、既定のスタイルとして使用され、書式を設定する前に適用されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="TableStyle2">
@@ -4445,15 +4193,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableStyle2" />プロパティを指定します<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />に現在適用されているスタイル、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />。 値の取得および設定が可能です。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
-        <remarks>
-          <para>プロパティが呼び出される<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableStyle2" />という名前の既存のプロパティがあるため<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableStyle" />。</para>
-          <para></para>
-        </remarks>
+        <summary>この <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableStyle2" /> プロパティは、現在 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 適用されているスタイルを指定します <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 。 値の取得と設定が可能です。</summary>
+        <value><b>Object</b></value>
+        <remarks><para>という名前の既存のプロパティ <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableStyle2" /> が使用されている場合、このプロパティが呼び出されます <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.TableStyle" /> 。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Tag">
@@ -4482,7 +4225,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ピボット テーブル レポートを保存する文字列を設定または返します。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <summary>ピボットテーブル レポートと一緒に保存される文字列を設定または返します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4513,17 +4256,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> の場合、指定されたピボットテーブル レポートが OLAP データ ソースに基づいているとき、レポートの各集計と総計値の横にアスタリスク (*) 記号を表示します。既定値は <b>True</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
+        <summary><b>True</b> の場合、指定されたピボットテーブル レポートが OLAP データ ソースに基づいているとき、レポートの各集計と総計値の横にアスタリスク (*) 記号を表示します。既定値は <b>True</b> です。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <b>このプロパティが</b>アスタリスクでは、合計に非表示のアイテムが含まれていることを示します。 レポート内のすべての項目が隠されたかどうかに関係なく、アスタリスクが表示されます。</para>
-          <para>
-            <b>非 OLAP データ ソースに対してこのプロパティの値は常に</b>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para>このプロパティが <b>True</b> の場合、アスタリスクは、集計に非表示のアイテムが含まれていることを示します。アスタリスクは、レポート内のどのアイテムが非表示になっているかに関係なく表示されます。</para>
+          <para>OLAP データ ソースを使用しない場合、このプロパティの値は常に <b>False</b> です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -4547,7 +4284,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>リンクまたはピボット テーブル レポートを更新します。</summary>
+        <summary>リンクまたはピボットテーブル レポートを更新します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4577,7 +4314,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ピボット テーブル レポートが更新されたときに空のセルに適用するスタイルを設定または返します。 既定値は、null 文字列 (スタイルは未設定) です。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <summary>ピボットテーブル レポートが更新されるときに空のセルに適用するスタイルを設定します。既定値は空の文字列 (スタイルは未設定) です。値の取得および設定が可能です。文字列型 (<b>String</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4608,7 +4345,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ピボット テーブル レポートの名前です。 値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <summary>ピボットテーブル レポートの名前を指定します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4636,7 +4373,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotTableVersionList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel のバージョン番号を返します。 読み取り専用<see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" />。</summary>
+        <summary>Microsoft Excel のバージョン番号を返します。 読み取り専用です <see cref="T:Microsoft.Office.Interop.Excel.XlPivotTableVersionList" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4667,8 +4404,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>True</b> (既定値) に設定すると、オンライン分析処理 (OLAP) ピボット テーブルの計算されるメンバーを表示できます。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
+        <summary><b>True</b> (既定値) に設定すると、OLAP (Online Analytical Processing) ピボットテーブルの集計メンバーを表示できます。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4699,13 +4435,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">省略可能な<b>オブジェクト</b>です。 フィールドの名前またはインデックス番号を指定します。複数の指定をする場合は、配列を使うことができます。</param>
-        <summary>ピボット テーブル レポートで 1 つのフィールドのいずれかを表すオブジェクトを返します (、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />オブジェクト)、または表示されるすべてのフィールドのコレクション (、<see cref="T:Microsoft.Office.Interop.Excel.PivotFields" />オブジェクト)。 表示されるフィールドは、行、列、ページ、またはデータ フィールドとして表示されます。 読み取り専用。</summary>
+        <param name="Index">省略 <b>可能なオブジェクト</b>です。 フィールドの名前またはインデックス番号を指定します。複数の指定をする場合は、配列を使うことができます。</param>
+        <summary>ピボットテーブル レポート内の単一のフィールド (オブジェクト) またはすべての表示フィールド (オブジェクト) のコレクションを表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> を返 <see cref="T:Microsoft.Office.Interop.Excel.PivotFields" /> します。 表示可能なフィールドは、行、列、ページ、またはデータ フィールドとして表示されます。 読み取り専用です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>Olap データ ソースにあるフィールドがない非表示と、このプロパティは、ピボット テーブル キャッシュのすべてのフィールドを返します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>OLAP データ ソースには非表示フィールドはありません。このプロパティはピボットテーブル キャッシュ内のすべてのフィールドを返します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VisualTotals">
@@ -4734,16 +4468,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <b>場合は true。</b>(既定値) の場合、オンライン分析処理 (OLAP) ピボット テーブルのアイテムがビューから非表示にされた後の合計を再計算を有効にします。 ブール型 ( <b>Boolean</b>) の値を使用します。</summary>
+        <summary><b>True</b> (既定値) を指定すると、OLAP (Online Analytical Processing) ピボットテーブルでアイテムが非表示にされた後に合計が再計算されます。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value>To be added.</value>
-        <remarks>
-          <para>非 OLAP ピボット テーブル、項目を非表示にする場合、ピボット テーブルで表示されているアイテムのみを反映するために合計が再計算されます。 OLAP ピボット テーブルでは、合計はサーバーが計算され、影響がないため、ピボット テーブル ビューでアイテムが非表示かどうかによって。 ただし、 <b>VisualTotals</b>プロパティは、OLAP ピボット テーブルを<b>False</b>に設定されて、する場合、OLAP ピボット テーブルの結果と一致の非 OLAP ピボット テーブル。</para>
-          <para>OLAP ピボット テーブルの場合、 <b>VisualTotals</b>プロパティの設定値<b>は True</b> (既定値) も同様の非 OLAP ピボット テーブルを説明するようです。</para>
-          <para>
-            <b>VisualTotals</b>プロパティは、すべて新しいピボット テーブルの場合に<b>True</b>を返します。 ただし、現在のバージョンの Excel でブックを開くし、Excel の以前のバージョンで作成したピボット テーブル、 <b>VisualTotals</b>プロパティは<b>False</b>を返します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>非 OLAP ピボットテーブルでは、アイテムを非表示にした場合、合計の再計算にはピボットテーブルで表示されているアイテムだけが反映されます。OLAP ピボットテーブルでは、合計はサーバーで計算されるため、ピボットテーブル ビューでアイテムが非表示であっても影響を受けません。ただし、OLAP ピボットテーブルで <b>VisualTotals</b> プロパティが <b>False</b> に設定されている場合、OLAP ピボットテーブルの結果は非 OLAP ピボットテーブルでの結果と同じになります。</para>
+          <para>OLAP ピボットテーブルでは、<b>VisualTotals</b> プロパティが <b>True</b> (既定値) に設定されている場合、上記の非 OLAP ピボットテーブルについての説明と同じように動作します。</para>
+          <para><b>VisualTotals</b> プロパティは、新しいピボットテーブルについてはすべて <b>True</b> を返します。 ただし、現在のバージョンの Excel でブックを開き、ピボットテーブルが以前のバージョンの Excel で作成されている場合 <b>、VisualTotals</b> プロパティは False を返 <b>します</b>。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="VisualTotalsForSets">
@@ -4772,16 +4502,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得または指定したピボット テーブルの名前付きセットの合計の項目をフィルターに含めるかどうかを設定します。</summary>
-        <value>
-          <b>true の</b>場合、指定されたピボット テーブルの名前付きセットの合計の項目をフィルター処理が含まれます。それ以外の場合、 <b>false を指定</b>します。 既定<b>値</b>は</value>
-        <remarks>
-          <para>値の取得および設定が可能です。</para>
+        <summary>指定されたピボットテーブルの名前付きセットの合計にフィルター処理されたアイテムを含めるかどうかを取得または設定します。</summary>
+        <value><b>true</b> の 場合は、指定したピボットテーブルの名前付きセットの合計でフィルターされたアイテムが含まれています。それ以外の場合、 <b>false です</b>。 既定値は <b>false です。</b></value>
+        <remarks><para>値の取得と設定が可能です。</para>
           <para>
-            <b>true</b>フィルターされたアイテムは、名前付きセットの合計に含まれている場合それ以外の場合は<b>false を指定</b>します。 このプロパティの既定値は、 <b>false を指定</b>します。</para>
-          <para>OLAP データ ソースに基づくピボット テーブル、ピボット テーブルの名前付きセットの合計には、フィルターが適用されたアイテムが含まれますかどうかを設定できます。 設定、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.VisualTotalsForSets" />プロパティは、フィルター処理されたアイテムを含む、合計の合計] チェック ボックスをセットに対応&amp;、[ピボット テーブル オプション] ダイアログ ボックスの [フィルター] タブ。</para>
-          <para></para>
-        </remarks>
+            <b>フィルター処理</b> されたアイテムが名前付きセットの合計に含まれる場合は true。それ以外の場合 <b>は false です</b>。 このプロパティの既定値は false <b>です</b>。</para>
+          <para>In a PivotTable based on an OLAP data source, you can configure whether totals for named sets in the PivotTable will include items that have been filtered. このプロパティの設定は、[ピボットテーブル のオプション] ダイアログ ボックスの [合計フィルター] タブの [セット合計にフィルター処理されたアイテムを含める] チェック ボックスに <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.VisualTotalsForSets" /> &amp; 対応します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

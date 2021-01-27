@@ -1,13 +1,5 @@
 <Type Name="PivotTableChangeList" FullName="Microsoft.Office.Interop.Excel.PivotTableChangeList">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="636cf57ba1c7b70d9eb9e8e8297d99ac0acff5dc" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20574719" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotTableChangeList : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="636cf57ba1c7b70d9eb9e8e8297d99ac0acff5dc" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997229" /></Metadata><TypeSignature Language="C#" Value="public interface PivotTableChangeList : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotTableChangeList implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotTableChangeList&#xA;Implements IEnumerable" />
@@ -34,11 +26,8 @@
   </Attributes>
   <Docs>
     <summary>OLAP データ ソースに基づくピボットテーブル レポートの値セルに対してユーザーが行った変更の一覧を表します。</summary>
-    <remarks>
-      <para>
-        <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />コレクションが含まれています<see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />ユーザーがピボット テーブル レポート内の値のセルに行われた変更内容を表すオブジェクト。 返す、<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />使用して、ピボット テーブルのコレクション、<see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ChangeList" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />オブジェクト。</para>
-      <para></para>
-    </remarks>
+    <remarks><para>コレクションには、ピボットテーブル レポートの値セルに対してユーザーが行った変更を表す <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> オブジェクトが含まれます。 ピボットテーブルの <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> コレクションを取得するには、オブジェクト <see cref="P:Microsoft.Office.Interop.Excel.PivotTable.ChangeList" /> のプロパティを使用 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -72,7 +61,7 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>To be added.</summary>
-        <value>返します。 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />。</value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> を返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -107,13 +96,10 @@
         <param name="AllocationValue">What-If 分析を実行するときに割り当てる値です。このパラメーターを指定しない場合は、OLAP サーバーの既定の割り当て値が使用されます。</param>
         <param name="AllocationMethod">What-If 分析を実行するときに値の割り当てに使用するメソッドです。このパラメーターを指定しない場合は、OLAP サーバーの既定の割り当てメソッドが使用されます。</param>
         <param name="AllocationWeightExpression">What-If 分析を実行するときに、この値に使用する MDX Weight 式です。このパラメーターを指定しない場合は、OLAP サーバーの既定の割り当て Weight 式が使用されます。</param>
-        <summary>追加の<see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />オブジェクトを指定された<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />コレクションです。</summary>
-        <returns>返します。 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />。</returns>
-        <remarks>
-          <para>
-            <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" />メソッドを使用する追加するのには<see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />コードをピボット テーブル レポートに変更を表すオブジェクトです。 これは、この変更の一覧を基に Excel を構築する UPDATE CUBE ステートメントを追加します。 すべての変更は、同じ設定を持つように、ユーザーは割り当ての設定を変更する場合 Excel は同じ設定が適用されたときに行われた変更のグループごとに 1 つ、複数の UPDATE CUBE ステートメントを実行するはことに注意してください。</para>
-          <para></para>
-        </remarks>
+        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> コレクションにオブジェクトを追加 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> します。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> を返します。</returns>
+        <remarks><para>この <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> メソッドを使用すると、コードを使用してピボットテーブル レポートに変更 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> を表すオブジェクトを追加できます。 これに基づいて Excel では UPDATE CUBE ステートメントを構成します。 ユーザーが割り当て設定を変更するたびに設定が少しずつ異なる変更が生じた場合、Excel では同一の設定が該当する変更のグループごとに UPDATE CUBE ステートメントを 1 回ずつ実行します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Application">
@@ -139,13 +125,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 このプロパティが返すオブジェクト修飾子を使用する場合、<see cref="T:Microsoft.Office.Interop.Excel.Application" />を指定したオブジェクトの作成者を表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Application" />オブジェクトです。</value>
-        <remarks>
-          <para>読み取り専用。</para>
-          <para></para>
-        </remarks>
+        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Microsoft Excel アプリケーションを表 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> すオブジェクトを返します。 オブジェクト修飾子と一緒に使用する場合、このプロパティは指定されたオブジェクトの作成元 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <value>オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -199,13 +182,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>を取得します。</summary>
-        <value>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>。</value>
-        <remarks>
-          <para>読み取り専用<b>long</b>です。</para>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 <see cref="P:Microsoft.Office.Interop.Excel.PivotTableChangeList.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <summary>このオブジェクトが作成されたアプリケーションを<b></b>示す 32 ビット整数を取得します。</summary>
+        <value>このオブジェクトが <b>作成されたアプリケーション</b> を示す 32 ビットの整数。</value>
+        <remarks><para>読み取り専用 <b>時間 です</b>。</para>
+          <para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ <see cref="P:Microsoft.Office.Interop.Excel.PivotTableChangeList.Creator" /> Macintosh 用の Microsoft Excel で使用するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -236,7 +217,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>返します。 <see cref="T:System.Collections.IEnumerator" />。</returns>
+        <returns><see cref="T:System.Collections.IEnumerator" /> を返します。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -267,8 +248,8 @@
       </Parameters>
       <Docs>
         <param name="Index">オブジェクトの MDX 名 (組) またはインデックス番号。</param>
-        <summary>1 つを返します<see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /><b>PivotTableChangeList</b>の指定したコレクションからオブジェクトです。</summary>
-        <value>返します。 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />。</value>
+        <summary>指定された <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <b>PivotTableChangeList コレクションから 1 つのオブジェクトを返</b> します。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> を返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,12 +276,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>親を取得します<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />指定されたオブジェクト<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />コレクションです。</summary>
-        <value>親<see cref="T:Microsoft.Office.Interop.Excel.PivotTable" />指定されたオブジェクト<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />コレクションです。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para></para>
-        </remarks>
+        <summary>指定したコレクション <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> の親オブジェクトを取得 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> します。</summary>
+        <value>指定された <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> コレクションの親 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> オブジェクト。</value>
+        <remarks><para>値の取得のみ可能です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

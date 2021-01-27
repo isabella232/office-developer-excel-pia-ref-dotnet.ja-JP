@@ -1,13 +1,5 @@
 <Type Name="PivotLineCells" FullName="Microsoft.Office.Interop.Excel.PivotLineCells">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="3e17fefb12ab29fe0f0cdb70ed58c6f881230fa3" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20574691" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface PivotLineCells : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3e17fefb12ab29fe0f0cdb70ed58c6f881230fa3" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997342" /></Metadata><TypeSignature Language="C#" Value="public interface PivotLineCells : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotLineCells implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotLineCells" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotLineCells&#xA;Implements IEnumerable" />
@@ -33,11 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクションの<see cref="T:Microsoft.Office.Interop.Excel.PivotCell" />オブジェクトが特定の<see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />。</summary>
-    <remarks>
-      <para>使用して、 <see cref="T:Microsoft.Office.Interop.Excel.PivotLineCells" /> (<paramref name="index" />) メソッドを取得または特定の場所を指定する<see cref="T:Microsoft.Office.Interop.Excel.PivotCell" />コレクション内のオブジェクト。 指定することも、<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />オブジェクト、または<see cref="T:Microsoft.Office.Interop.Excel.PivotField" />名を返す 1 つの<see cref="T:Microsoft.Office.Interop.Excel.PivotCell" />オブジェクトです。</para>
-      <para></para>
-    </remarks>
+    <summary>特定の <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> オブジェクトのコレクション <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> です。</summary>
+    <remarks><para>コレクション内 <see cref="T:Microsoft.Office.Interop.Excel.PivotLineCells" /> の特定のオブジェクトの位置を取得または指定するには、 ( <paramref name="index" /> ) メソッド <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> を使用します。 オブジェクトまたは名前を <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 指定して <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> 、1 つのオブジェクトを取得 <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> できます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -98,14 +88,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 、Microsoft Office Excel アプリケーションを表すオブジェクト。 オブジェクト修飾子を使用する場合、このプロパティは、指定したオブジェクトの作成者を返します。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel._Application" />
-        </value>
-        <remarks>
-          <para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、そのオブジェクト用のアプリケーションを取得できます。</para>
-          <para></para>
-        </remarks>
+        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Excel アプリケーションのMicrosoft Office <see cref="T:Microsoft.Office.Interop.Excel._Application" /> を返します。 オブジェクト修飾子と一緒に使用する場合、このプロパティは指定されたオブジェクトの作成元を返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
+        <remarks><para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、オブジェクトのアプリケーションを取得できます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -131,10 +117,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>内の項目数を取得、<see cref="T:Microsoft.Office.Interop.Excel.PivotLineCells" />コレクションです。 読み取り専用。</summary>
-        <value>
-          <b>Integer</b>
-        </value>
+        <summary>コレクション内の項目数を返 <see cref="T:Microsoft.Office.Interop.Excel.PivotLineCells" /> します。 読み取り専用です。</summary>
+        <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,14 +145,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>の整数</b>を返します。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" />
-        </value>
-        <remarks>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当  <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <summary>このオブジェクトが作成されたアプリケーションを示す 32 ビット整数型 <b>(Integer)</b> の値を取得します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
+        <remarks><para>Microsoft Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。<b>Creator</b> プロパティは、Macintosh 版 Excel でのみ使用できます。Macintosh では各アプリケーションに 4 文字のシグネチャが定められています。たとえば、Excel のシグネチャは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Full">
@@ -194,7 +174,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>場合<b>は True</b>で (を含む非表示には、コンパクト形式で)<b>された</b><b>PivotLineCells</b>のすべてが取得されます。 <b>ブール値</b>(C# では<b>bool</b> )読み取り専用</summary>
+        <summary><b>True</b> の場合、<b>PivotLine</b> のすべての <b>PivotLineCells</b> (コンパクトな形式で非表示になっているものを含む) が取得されます。 <b>ブール</b> 値 ( C#<b>ではブール</b> ) 読み取り専用</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -257,12 +237,9 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">
-          <b>オブジェクト</b>コレクションの要素の位置を指定する必要があります。</param>
-        <summary>特定の要素を返します、<see cref="T:Microsoft.Office.Interop.Excel.PivotLineCells" />コレクション オブジェクトのコレクション内の位置によって識別されます。 読み取り専用。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" />
-        </value>
+        <param name="Index">Required <b>Object</b> コレクションの要素の位置を指定します。</param>
+        <summary>コレクション内での位置で識別される <see cref="T:Microsoft.Office.Interop.Excel.PivotLineCells" /> コレクション オブジェクトの特定の要素を返します。 読み取り専用です。</summary>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -289,10 +266,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した親オブジェクトを返します。<see cref="T:Microsoft.Office.Interop.Excel.PivotLineCells" />オブジェクトです。 読み取り専用。</summary>
-        <value>
-          <b>オブジェクト</b>
-        </value>
+        <summary>指定したオブジェクトの親オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.PivotLineCells" /> します。 読み取り専用です。</summary>
+        <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

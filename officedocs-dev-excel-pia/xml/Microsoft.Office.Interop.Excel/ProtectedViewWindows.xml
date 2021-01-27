@@ -1,13 +1,5 @@
 <Type Name="ProtectedViewWindows" FullName="Microsoft.Office.Interop.Excel.ProtectedViewWindows">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="66b22fff8688e9bbf701a61d74932c01a62ad6e6" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20578919" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface ProtectedViewWindows : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="66b22fff8688e9bbf701a61d74932c01a62ad6e6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997188" /></Metadata><TypeSignature Language="C#" Value="public interface ProtectedViewWindows : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ProtectedViewWindows implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" />
   <TypeSignature Language="VB.NET" Value="Public Interface ProtectedViewWindows&#xA;Implements IEnumerable" />
@@ -33,11 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>コレクション、<see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" />アプリケーションでは、現在すべての保護されたビュー ウィンドウを表すオブジェクトを開きます。</summary>
-    <remarks>
-      <para>使用して、<see cref="P:Microsoft.Office.Interop.Excel._Application.ProtectedViewWindows" />を返すプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" />コレクションです。</para>
-      <para></para>
-    </remarks>
+    <summary>アプリケーションで現在開いているすべての保護ビュー ウィンドウを表 <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> すオブジェクトのコレクションです。</summary>
+    <remarks><para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel._Application.ProtectedViewWindows" /> を使用してコレクションを取得 <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" /> します。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_Default">
@@ -71,7 +61,7 @@
       <Docs>
         <param name="Index">To be added.</param>
         <summary>To be added.</summary>
-        <value>返します。 <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" />。</value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> を返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,13 +88,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティが返すオブジェクト修飾子を指定しない場合に使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Microsoft Excel アプリケーションを表すオブジェクト。 このプロパティが返すオブジェクト修飾子を使用する場合、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> (ことができますこのプロパティを使用する OLE オートメーション オブジェクトとそのオブジェクトのアプリケーションを取得)、指定したオブジェクトの作成者を表すオブジェクト。</summary>
-        <value>
-          <see cref="T:Microsoft.Office.Interop.Excel.Application" />オブジェクトです。</value>
-        <remarks>
-          <para>読み取り専用。</para>
-          <para></para>
-        </remarks>
+        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Microsoft Excel アプリケーションを表 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> すオブジェクトを返します。 オブジェクト修飾子を使用する場合、このプロパティは指定されたオブジェクトの作成元を表すオブジェクトを返します (OLE オートメーション オブジェクトでこのプロパティを使用すると、そのオブジェクトのアプリケーションを <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 取得できます)。</summary>
+        <value>オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 。</value>
+        <remarks><para>読み取り専用です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -158,13 +145,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>を取得します。</summary>
-        <value>このオブジェクトが作成されたアプリケーションを示す 32 ビット<b>整数</b>。</value>
-        <remarks>
-          <para>読み取り専用<b>long</b>です。</para>
-          <para>オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当 <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindows.Creator" />プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するように設計されています。 たとえば、Microsoft Excel は、クリエーター コードを持っています。</para>
-          <para></para>
-        </remarks>
+        <summary>このオブジェクトが作成されたアプリケーションを<b></b>示す 32 ビット整数を取得します。</summary>
+        <value>このオブジェクトが <b>作成されたアプリケーション</b> を示す 32 ビットの整数。</value>
+        <remarks><para>読み取り専用 <b>時間 です</b>。</para>
+          <para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindows.Creator" /> Macintosh 用の Microsoft Excel で使用するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -195,7 +180,7 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
-        <returns>返します。 <see cref="T:System.Collections.IEnumerator" />。</returns>
+        <returns><see cref="T:System.Collections.IEnumerator" /> を返します。</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -227,7 +212,7 @@
       <Docs>
         <param name="Index">オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
-        <value>返します。 <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" />。</value>
+        <value><see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> を返します。</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,15 +243,12 @@
       <Docs>
         <param name="Filename">ブックの名前です。パスを指定することもできます。</param>
         <param name="Password">ブックを開くためのパスワードです。</param>
-        <param name="AddToMru">最近使用したファイル、Backstage ビューの [最近] タブで<b>該当</b>の一覧にファイル名を追加するのには。</param>
-        <param name="RepairMode">
-          <b>true</b>ファイルの破損を防ぐためにブックを修復します。</param>
-        <summary>新しい保護されたビュー ウィンドウで、指定されたブックを開きます。</summary>
-        <returns>A<see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" />オブジェクトです。</returns>
-        <remarks>
-          <para>アプリケーションにハードコードされたパスワードを使わないでください。プロシージャでパスワードが必要な場合は、ユーザーに要求したパスワードを変数に格納し、プログラムでその変数を使います。</para>
-          <para></para>
-        </remarks>
+        <param name="AddToMru"><b>Backstage</b> ビューの [最近使用したファイル] タブの最近使用したファイルの一覧にファイル名を追加する場合は true。</param>
+        <param name="RepairMode"><b>true を</b> 指定すると、ブックを修復してファイルの破損を防止します。</param>
+        <summary>指定されたブックを新しい [保護されたビュー] ウィンドウで開きます。</summary>
+        <returns><see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> オブジェクト。</returns>
+        <remarks><para>アプリケーションにハードコードされたパスワードを使わないでください。プロシージャでパスワードが必要な場合は、ユーザーに要求したパスワードを変数に格納し、プログラムでその変数を使います。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -293,11 +275,9 @@
       </ReturnValue>
       <Docs>
         <summary>指定したオブジェクトの親オブジェクトを取得します。</summary>
-        <value>指定したオブジェクトの親オブジェクトです。</value>
-        <remarks>
-          <para>読み取り専用です。</para>
-          <para></para>
-        </remarks>
+        <value>指定されたオブジェクトの親オブジェクト。</value>
+        <remarks><para>値の取得のみ可能です。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>

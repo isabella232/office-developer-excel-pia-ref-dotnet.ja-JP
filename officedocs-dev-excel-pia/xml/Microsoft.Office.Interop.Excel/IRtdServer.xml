@@ -1,13 +1,5 @@
 <Type Name="IRtdServer" FullName="Microsoft.Office.Interop.Excel.IRtdServer">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="91b1868ee8a3354dc6036654d8402e4aad54ba45" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20579129" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface IRtdServer" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="91b1868ee8a3354dc6036654d8402e4aad54ba45" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997657" /></Metadata><TypeSignature Language="C#" Value="public interface IRtdServer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRtdServer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IRtdServer" />
   <TypeSignature Language="VB.NET" Value="Public Interface IRtdServer" />
@@ -27,11 +19,8 @@
   </Attributes>
   <Docs>
     <summary>リアルタイム データ サーバーのインターフェイスを表します。</summary>
-    <remarks>
-      <para>
-        <b>IRTDServer</b>オブジェクトをインスタンス化または<b>Implements</b>キーワードを使用して<b>IRTDServer</b>インターフェイスを実装することによってのみ作成できます。</para>
-      <para></para>
-    </remarks>
+    <remarks><para><b>IRTDServer</b> オブジェクトは、キーワード <b>Implements</b> を使用して <b>IRTDServer</b> インターフェイスを実装することによってのみ、インスタンス化または作成できます。</para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="ConnectData">
@@ -59,13 +48,10 @@
         <Parameter Name="GetNewValues" Type="System.Boolean&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="TopicID">
-          <b>整数</b>が必要です。 トピックを識別する固有の値を指定します。</param>
-        <param name="Strings">
-          <b>オブジェクト</b>が必要です。 トピックを識別する文字列の 1 次元配列を指定します。</param>
-        <param name="GetNewValues">
-          <b>ブール値</b>が必要です。 <b>True</b> を設定すると、新しい値を取得します。</param>
-        <summary>リアルタイム データ サーバーから新しいトピックを追加します。 <b>ConnectData</b>メソッドには、リアルタイム データ関数を含むファイルを開くとき、またはユーザーが<b>RTD</b>関数を含む新しい数式と呼ばれます。</summary>
+        <param name="TopicID">整数型 (<b>Integer</b>) の値を使用します。 トピックを識別する固有の値を指定します。</param>
+        <param name="Strings">Required <b>Object</b>. トピックを識別する文字列の 1 次元配列を指定します。</param>
+        <param name="GetNewValues">必須 <b>のブール値 です</b>。 <b>True</b> を設定すると、新しい値を取得します。</param>
+        <summary>リアルタイム データ サーバーから新しいトピックを追加します。 <b>ConnectData メソッド</b>は、リアルタイム データ関数を含むファイルを開く場合、またはユーザーが<b>RTD</b>関数を含む新しい数式を入力するときに呼び出されます。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -93,8 +79,7 @@
         <Parameter Name="TopicID" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="TopicID">
-          <b>整数</b>が必要です。 Microsoft Excel がトピックに対して割り当てた一意の値を指定します。</param>
+        <param name="TopicID">整数型 (<b>Integer</b>) の値を使用します。 Microsoft Excel がトピックに対して割り当てた一意の値を指定します。</param>
         <summary>リアルタイム データ (RTD) サーバー アプリケーションに、トピックが使用できなくなったことを通知します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -120,12 +105,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>リアルタイム データ サーバーがまだアクティブなかどうかを決定します。 ゼロまたは負の数の障害を示す正の数は、サーバーがアクティブであることを示します。</summary>
+        <summary>リアルタイム データ サーバーが引き続きアクティブかどうかを判断します。 ゼロまたは負の値は失敗を示し、正の値はサーバーがアクティブであることを示します。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>ハートビート メソッドが Microsoft Excel を使用して場合は、<see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" />プロパティと Excel が呼び出された最後の時間が経過、<see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" />メソッドです。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Heartbeat メソッドは、前回 Excel がメソッドで呼び出されてからプロパティが経過した場合に <see cref="P:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.HeartbeatInterval" /> 、Microsoft Excel によって呼び出 <see cref="M:Microsoft.Office.Interop.Excel.IRTDUpdateEvent.UpdateNotify" /> されます。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="RefreshData">
@@ -151,14 +134,11 @@
         <Parameter Name="TopicCount" Type="System.Int32&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="TopicCount">
-          <b>整数</b>が必要です。 RTD サーバーの値を変更する必要があります、 <paramref name="TopicCount" /> 、配列の要素数が返されます。</param>
-        <summary>このメソッドは、新しいデータを取得するのには Microsoft Excel によって呼び出されます。</summary>
+        <param name="TopicCount">整数型 (<b>Integer</b>) の値を使用します。 RTD サーバーは、値を返される配列内の要素数 <paramref name="TopicCount" /> に変更する必要があります。</param>
+        <summary>このメソッドは、Microsoft Excel が新規データを取得するときに呼び出されます。</summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>Excel に返されるデータは、2 次元の配列を含む<b>オブジェクト</b>です。 最初の次元はトピック Id のリストを表します。 2 番目の次元はトピック Id に関連付けられている値を表します。</para>
-          <para></para>
-        </remarks>
+        <remarks><para>Excel に返されるデータは <b>、2</b> 次元配列を含むオブジェクトです。 最初の次元はトピック ID のリストを表します。 2 番目の次元はトピック ID に関連付けられた値を表します。</para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ServerStart">
@@ -184,9 +164,8 @@
         <Parameter Name="CallbackObject" Type="Microsoft.Office.Interop.Excel.IRTDUpdateEvent" />
       </Parameters>
       <Docs>
-        <param name="CallbackObject">必要な<see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" />オブジェクトです。 コールバック オブジェクトを指定します。</param>
-        <summary>
-          <b>ServerStart</b>メソッドは、リアルタイム データ サーバーがインスタンス化された直後後に呼び出されます。 負の値または 0 はサーバーの起動に失敗したことを示します正の値は、成功を示します。</summary>
+        <param name="CallbackObject">必須 <see cref="T:Microsoft.Office.Interop.Excel.IRTDUpdateEvent" /> オブジェクト。 コールバック オブジェクトを指定します。</param>
+        <summary><b>ServerStart メソッドは</b>、リアルタイム データ サーバーがインスタンス化された直後に呼び出されます。 負の値またはゼロは、サーバーの起動に失敗した場合を示します。正の値は成功を示します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
