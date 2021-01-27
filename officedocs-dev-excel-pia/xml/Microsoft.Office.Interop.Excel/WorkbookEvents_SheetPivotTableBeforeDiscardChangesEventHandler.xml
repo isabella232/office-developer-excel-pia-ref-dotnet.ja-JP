@@ -1,13 +1,5 @@
 <Type Name="WorkbookEvents_SheetPivotTableBeforeDiscardChangesEventHandler" FullName="Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableBeforeDiscardChangesEventHandler">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="8ec85a08f2733325701cc66159a088d6d0e9f3f2" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20577078" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public delegate void WorkbookEvents_SheetPivotTableBeforeDiscardChangesEventHandler(object Sh, PivotTable TargetPivotTable, int ValueChangeStart, int ValueChangeEnd);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8ec85a08f2733325701cc66159a088d6d0e9f3f2" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50008751" /></Metadata><TypeSignature Language="C#" Value="public delegate void WorkbookEvents_SheetPivotTableBeforeDiscardChangesEventHandler(object Sh, PivotTable TargetPivotTable, int ValueChangeStart, int ValueChangeEnd);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WorkbookEvents_SheetPivotTableBeforeDiscardChangesEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WorkbookEvents_SheetPivotTableBeforeDiscardChangesEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub WorkbookEvents_SheetPivotTableBeforeDiscardChangesEventHandler(Sh As Object, TargetPivotTable As PivotTable, ValueChangeStart As Integer, ValueChangeEnd As Integer)" />
@@ -37,49 +29,11 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="Sh">
-      <span data-ttu-id="7cc4b-101">ピボットテーブルを含むワークシートです。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="7cc4b-101">The worksheet that contains the PivotTable.</span>
-      </span>
-    </param>
-    <param name="TargetPivotTable">
-      <span data-ttu-id="7cc4b-102">破棄する変更を含むピボットテーブルです。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="7cc4b-102">The PivotTable that contains the changes to discard.</span>
-      </span>
-    </param>
-    <param name="ValueChangeStart">
-      <span data-ttu-id="7cc4b-103">インデックスに関連付けられている最初の変更を<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />オブジェクトです。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="7cc4b-103">The index to the first change in the associated <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> object.</span>
-      </span>
-      <span data-ttu-id="7cc4b-104">によってインデックスが指定されて、<see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />オブジェクトで、<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />コレクション。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="7cc4b-104">The index is specified by the <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> object in the <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> collection.</span>
-      </span>
-    </param>
-    <param name="ValueChangeEnd">
-      <span data-ttu-id="7cc4b-105">インデックスに関連付けられている最後の変更を<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />オブジェクトです。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="7cc4b-105">The index to the last change in the associated <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> object.</span>
-      </span>
-      <span data-ttu-id="7cc4b-106">によってインデックスが指定されて、<see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.ValueChange" />オブジェクトで、<see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" />コレクション。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="7cc4b-106">The index is specified by the <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> object in the <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> collection.</span>
-      </span>
-    </param>
-    <summary>
-      <span data-ttu-id="7cc4b-107">
-        <b>デリゲート</b>型のイベント ハンドラーを追加するために使用します<see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeDiscardChanges" />イベントです。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="7cc4b-107">A <b>Delegate</b> type used to add an event handler for the <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeDiscardChanges" /> event.</span>
-      </span>
-      <span data-ttu-id="7cc4b-108">ピボット テーブルへの変更が破棄される前に、 <b>SheetPivotTableBeforeDiscardChanges</b>イベントが発生します。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="7cc4b-108">The <b>SheetPivotTableBeforeDiscardChanges</b> event occurs before changes to a PivotTable are discarded.</span>
-      </span>
-    </summary>
+    <param name="Sh"><span data-ttu-id="9ac2c-101">ピボットテーブルを含むワークシートです。</span><span class="sxs-lookup"><span data-stu-id="9ac2c-101">The worksheet that contains the PivotTable.</span></span></param>
+    <param name="TargetPivotTable"><span data-ttu-id="9ac2c-102">破棄する変更を含むピボットテーブルです。</span><span class="sxs-lookup"><span data-stu-id="9ac2c-102">The PivotTable that contains the changes to discard.</span></span></param>
+    <param name="ValueChangeStart"><span data-ttu-id="9ac2c-103">関連付けられたオブジェクトの最初の変更に対する <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> インデックス。</span><span class="sxs-lookup"><span data-stu-id="9ac2c-103">The index to the first change in the associated <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> object.</span></span> <span data-ttu-id="9ac2c-104">インデックスは、コレクション内 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> のオブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> プロパティによって指定 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> されます。</span><span class="sxs-lookup"><span data-stu-id="9ac2c-104">The index is specified by the <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> object in the <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> collection.</span></span></param>
+    <param name="ValueChangeEnd"><span data-ttu-id="9ac2c-105">関連付けられたオブジェクトの最後の変更に対する <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> インデックス。</span><span class="sxs-lookup"><span data-stu-id="9ac2c-105">The index to the last change in the associated <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> object.</span></span> <span data-ttu-id="9ac2c-106">インデックスは、コレクション内 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> のオブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> プロパティによって指定 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> されます。</span><span class="sxs-lookup"><span data-stu-id="9ac2c-106">The index is specified by the <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> object in the <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> collection.</span></span></param>
+    <summary><span data-ttu-id="9ac2c-107">イベント <b>の</b> イベント ハンドラーを追加するために使用されるデリゲート <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeDiscardChanges" /> 型。</span><span class="sxs-lookup"><span data-stu-id="9ac2c-107">A <b>Delegate</b> type used to add an event handler for the <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeDiscardChanges" /> event.</span></span> <span data-ttu-id="9ac2c-108"><b>SheetPivotTableBeforeDiscardChanges</b>イベントは、ピボットテーブルへの変更が破棄される前に発生します。</span><span class="sxs-lookup"><span data-stu-id="9ac2c-108">The <b>SheetPivotTableBeforeDiscardChanges</b> event occurs before changes to a PivotTable are discarded.</span></span></summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

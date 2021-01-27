@@ -1,13 +1,5 @@
 <Type Name="Window" FullName="Microsoft.Office.Interop.Excel.Window">
-  <Metadata>
-    <Meta Name="ms.openlocfilehash" Value="628d319ce41e267cd4a082a94f976467ed8bebe1" />
-    <Meta Name="ms.sourcegitcommit" Value="e7d3480b6ad64431c29c74a1b422c662de0b511d" />
-    <Meta Name="ms.translationtype" Value="MT" />
-    <Meta Name="ms.contentlocale" Value="ja-JP" />
-    <Meta Name="ms.lasthandoff" Value="09/24/2018" />
-    <Meta Name="ms.locfileid" Value="20577771" />
-  </Metadata>
-  <TypeSignature Language="C#" Value="public interface Window" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="628d319ce41e267cd4a082a94f976467ed8bebe1" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009262" /></Metadata><TypeSignature Language="C#" Value="public interface Window" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Window" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Window" />
   <TypeSignature Language="VB.NET" Value="Public Interface Window" />
@@ -29,61 +21,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>
-      <span data-ttu-id="122c2-101">ウィンドウを表します。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="122c2-101">Represents a window.</span>
-      </span>
-      <span data-ttu-id="122c2-102">スクロール バーや枠線など、ワークシートの特性の多くは、実際には、ウィンドウのプロパティです。</span>
-      <span class="sxs-lookup">
-        <span data-stu-id="122c2-102">Many worksheet characteristics, such as scroll bars and gridlines, are actually properties of the window.</span>
-      </span>
-    </summary>
-    <remarks>
-      <para>
-        <span data-ttu-id="122c2-103">
-          <b>Window</b>オブジェクトのメンバーである、<see cref="T:Microsoft.Office.Interop.Excel.Windows" />コレクションです。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="122c2-103">The <b>Window</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> collection.</span>
-        </span>
-        <span data-ttu-id="122c2-104">によって返される<b>ウィンドウ</b>のコレクション、<see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" />のプロパティ、<see cref="T:Microsoft.Office.Interop.Excel.Application" />で<b>ウィンドウ</b>のコレクションが返されますが、オブジェクトがすべての windows アプリケーションでは、含まれています、<see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Workbook" />オブジェクトには、ウィンドウのウィンドウだけが含まれています。指定されたブックです。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="122c2-104">The <b>Windows</b> collection returned by the <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object contains all the windows in the application, whereas the <b>Windows</b> collection returned by the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> object contains only the windows in the specified workbook.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="122c2-105">
-          <b>Windows</b>を使用して、(<paramref name="index" />)、<paramref name="index" />のウィンドウ名またはインデックス番号を 1 つの<b>ウィンドウ</b>オブジェクトを取得するには。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="122c2-105">Use <b>Windows</b>(<paramref name="index" />), where <paramref name="index" /> is the window name or index number, to return a single <b>Window</b> object.</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="122c2-106">アクティブ ウィンドウは常に Windows(1) と記述します。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="122c2-106">Note that the active window is always Windows(1).</span>
-        </span>
-      </para>
-      <para>
-        <span data-ttu-id="122c2-107">ウィンドウのタイトル バーは、ウィンドウを最大化されていないとき、ウィンドウの上部にタイトル バーに表示されるテキストです。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="122c2-107">The window caption is the text shown in the title bar at the top of the window when the window isn’t maximized.</span>
-        </span>
-        <span data-ttu-id="122c2-108">キャプションは、[ウィンドウ] メニューの一番下で開いているファイルの一覧にも表示されます。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="122c2-108">The caption is also shown in the list of open files on the bottom of the Windows menu.</span>
-        </span>
-        <span data-ttu-id="122c2-109">使用して、<see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" />プロパティを設定またはウィンドウのキャプションを取得します。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="122c2-109">Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" /> property to set or return the window caption.</span>
-        </span>
-        <span data-ttu-id="122c2-110">ウィンドウのキャプションを変更すると、ブックの名前が変更されません。</span>
-        <span class="sxs-lookup">
-          <span data-stu-id="122c2-110">Changing the window caption doesn’t change the name of the workbook.</span>
-        </span>
-      </para>
-      <para></para>
-    </remarks>
+    <summary><span data-ttu-id="59203-101">ウィンドウを表します。</span><span class="sxs-lookup"><span data-stu-id="59203-101">Represents a window.</span></span> <span data-ttu-id="59203-102">スクロール バーやグリッド線など、多くのワークシート特性は、実際にはウィンドウのプロパティです。</span><span class="sxs-lookup"><span data-stu-id="59203-102">Many worksheet characteristics, such as scroll bars and gridlines, are actually properties of the window.</span></span></summary>
+    <remarks><para><span data-ttu-id="59203-103"><b>Window オブジェクト</b>はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> です。</span><span class="sxs-lookup"><span data-stu-id="59203-103">The <b>Window</b> object is a member of the <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> collection.</span></span> <span data-ttu-id="59203-104">オブジェクトのプロパティによって返される<b>Windows</b>コレクションには、アプリケーション内のすべてのウィンドウが含まれますが、オブジェクトのプロパティによって返される Windows コレクションには、指定されたブック内のウィンドウだけが含まれます <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> 。</span><span class="sxs-lookup"><span data-stu-id="59203-104">The <b>Windows</b> collection returned by the <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object contains all the windows in the application, whereas the <b>Windows</b> collection returned by the <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> object contains only the windows in the specified workbook.</span></span></para>
+      <para><span data-ttu-id="59203-105">単 <b>一の Window</b>オブジェクトを取得するには、Windows ( ) を使用します。ウィンドウ名またはインデックス番号 <paramref name="index" /> <paramref name="index" /> を <b>指定</b> します。</span><span class="sxs-lookup"><span data-stu-id="59203-105">Use <b>Windows</b>(<paramref name="index" />), where <paramref name="index" /> is the window name or index number, to return a single <b>Window</b> object.</span></span></para>
+      <para><span data-ttu-id="59203-106">アクティブ ウィンドウは常に Windows(1) と記述します。</span><span class="sxs-lookup"><span data-stu-id="59203-106">Note that the active window is always Windows(1).</span></span></para>
+      <para><span data-ttu-id="59203-107">ウィンドウ名は、ウィンドウを最大化していないときにウィンドウの一番上のタイトル バーに表示される名前です。</span><span class="sxs-lookup"><span data-stu-id="59203-107">The window caption is the text shown in the title bar at the top of the window when the window isn’t maximized.</span></span> <span data-ttu-id="59203-108">ウィンドウ名は、[ウィンドウ] メニューの下の部分で、開いているファイルの一覧にも表示されます。</span><span class="sxs-lookup"><span data-stu-id="59203-108">The caption is also shown in the list of open files on the bottom of the Windows menu.</span></span> <span data-ttu-id="59203-109">このプロパティを <see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" /> 使用して、ウィンドウのキャプションを設定または取得します。</span><span class="sxs-lookup"><span data-stu-id="59203-109">Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.Caption" /> property to set or return the window caption.</span></span> <span data-ttu-id="59203-110">ウィンドウ名を変更しても、ブックの名前は変更されません。</span><span class="sxs-lookup"><span data-stu-id="59203-110">Changing the window caption doesn’t change the name of the workbook.</span></span></para>
+      <para> </para></remarks>
   </Docs>
   <Members>
     <Member MemberName="_DisplayRightToLeft">
@@ -118,12 +61,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-111">内部使用のため予約済みです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-111">Reserved for internal use.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-111">内部使用のため予約済みです。</span><span class="sxs-lookup"><span data-stu-id="59203-111">Reserved for internal use.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -194,27 +132,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-112">ウィンドウを Z オーダーの前面に移動します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-112">Brings the window to the front of the z-order.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-112">ウィンドウを Z オーダーの前面に移動します。</span><span class="sxs-lookup"><span data-stu-id="59203-112">Brings the window to the front of the z-order.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-113">
-              <b>Activate</b>メソッドは、複数、または最初のマクロをブックに接続する可能性がありますを実行できません。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-113">The <b>Activate</b> method won't run any Auto_Activate or Auto_Deactivate macros that might be attached to the workbook.</span>
-            </span>
-            <span data-ttu-id="122c2-114">使用して、 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> 、マクロを実行するメソッドです。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-114">Use the <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> method to run those macros.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-113"><b>Activate メソッド</b>は、ブックにAuto_ActivateされるAuto_Deactivateマクロを実行したり、マクロを実行したりしない。</span><span class="sxs-lookup"><span data-stu-id="59203-113">The <b>Activate</b> method won't run any Auto_Activate or Auto_Deactivate macros that might be attached to the workbook.</span></span> <span data-ttu-id="59203-114">これらのマクロ <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> を実行するには、このメソッドを使用します。</span><span class="sxs-lookup"><span data-stu-id="59203-114">Use the <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> method to run those macros.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActivateNext">
@@ -238,12 +159,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-115">指定されたウィンドウをアクティブにし、ウィンドウの z オーダーの背面に送信されます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-115">Activates the specified window, and then sends it to the back of the window z-order.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-115">指定されたウィンドウをアクティブにし、z オーダーでウィンドウの最背面に送信します。</span><span class="sxs-lookup"><span data-stu-id="59203-115">Activates the specified window, and then sends it to the back of the window z-order.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -269,12 +185,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-116">指定されたウィンドウをアクティブにし、次に Z オーダーで一番後ろにあるウィンドウをアクティブにします。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-116">Activates the specified window and then activates the window at the back of the window z-order.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-116">指定されたウィンドウをアクティブにし、次に Z オーダーで一番後ろにあるウィンドウをアクティブにします。</span><span class="sxs-lookup"><span data-stu-id="59203-116">Activates the specified window and then activates the window at the back of the window z-order.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -302,32 +213,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-117">返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />作業中のウィンドウ (一番上にあるウィンドウ) 内のアクティブ セルを表すオブジェクトまたは指定されたウィンドウです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-117">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the active cell in the active window (the window on top) or in the specified window.</span>
-          </span>
-          <span data-ttu-id="122c2-118">ウィンドウは、ワークシートに表示されない、このプロパティは失敗します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-118">If the window isn't displaying a worksheet, this property fails.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-117">アクティブ ウィンドウ (一番上のウィンドウ) または指定したウィンドウのアクティブ セルを表す <see cref="T:Microsoft.Office.Interop.Excel.Range" /> オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="59203-117">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the active cell in the active window (the window on top) or in the specified window.</span></span> <span data-ttu-id="59203-118">ウィンドウに表示されているワークシートが表示されていない場合は、このプロパティは失敗します。</span><span class="sxs-lookup"><span data-stu-id="59203-118">If the window isn't displaying a worksheet, this property fails.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-119">対象となるオブジェクトを指定しない場合は、アクティブ ウィンドウのアクティブ セルが返されます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-119">If you don't specify an object qualifier, this property returns the active cell in the active window.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="122c2-p106">アクティブ セルと選択セル範囲を混同しないように注意してください。アクティブ セルは、現在の選択セル範囲内の単一セルを指します。選択セル範囲には、複数のセルが含まれる場合がありますが、アクティブ セルはその中の 1 つだけを指します。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-p106">Be careful to distinguish between the active cell and the selection. The active cell is a single cell inside the current selection. The selection may contain more than one cell, but only one is the active cell.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-119">対象となるオブジェクトを指定しない場合は、アクティブ ウィンドウのアクティブ セルが返されます。</span><span class="sxs-lookup"><span data-stu-id="59203-119">If you don't specify an object qualifier, this property returns the active cell in the active window.</span></span></para>
+          <para><span data-ttu-id="59203-p106">アクティブ セルと選択セル範囲を混同しないように注意してください。アクティブ セルは、現在の選択セル範囲内の単一セルを指します。選択セル範囲には、複数のセルが含まれる場合がありますが、アクティブ セルはその中の 1 つだけを指します。</span><span class="sxs-lookup"><span data-stu-id="59203-p106">Be careful to distinguish between the active cell and the selection. The active cell is a single cell inside the current selection. The selection may contain more than one cell, but only one is the active cell.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveChart">
@@ -353,30 +243,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Chart</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-123">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> 、アクティブなグラフ (埋め込みグラフまたはグラフ シート) を表すオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-123">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> object that represents the active chart (either an embedded chart or a chart sheet).</span>
-          </span>
-          <span data-ttu-id="122c2-124">埋め込みグラフは選択されているまたは、アクティブと見なされます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-124">An embedded chart is considered active when it's either selected or activated.</span>
-          </span>
-          <span data-ttu-id="122c2-125">アクティブなグラフがないときは、このプロパティは<b>Nothing</b>を返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-125">When no chart is active, this property returns <b>Nothing</b>.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-123">アクティブなグラフ (埋め込みグラフまたはグラフ シート) を表す <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="59203-123">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> object that represents the active chart (either an embedded chart or a chart sheet).</span></span> <span data-ttu-id="59203-124">埋め込みグラフは、アクティブにされている状態だけではなく、選択されただけの状態でもアクティブと見なされます。</span><span class="sxs-lookup"><span data-stu-id="59203-124">An embedded chart is considered active when it's either selected or activated.</span></span> <span data-ttu-id="59203-125">アクティブなグラフがないときは、 <b>Nothing</b> を返します。</span><span class="sxs-lookup"><span data-stu-id="59203-125">When no chart is active, this property returns <b>Nothing</b>.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-126">対象となるオブジェクトを指定しない場合、このプロパティでは作業中のブックのアクティブなグラフが返されます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-126">If you don't specify an object qualifier, this property returns the active chart in the active workbook.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-126">対象となるオブジェクトを指定しない場合、このプロパティでは作業中のブックのアクティブなグラフが返されます。</span><span class="sxs-lookup"><span data-stu-id="59203-126">If you don't specify an object qualifier, this property returns the active chart in the active workbook.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActivePane">
@@ -402,28 +272,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Pane</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-127">返します、<see cref="T:Microsoft.Office.Interop.Excel.Pane" />ウィンドウ内のアクティブなウィンドウを表すオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-127">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> object that represents the active pane in the window.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-127">ウィンドウ内の <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> アクティブなウィンドウ枠を表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="59203-127">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Pane" /> object that represents the active pane in the window.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-128">このプロパティは、ワークシートとマクロ シートにだけ使用できます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-128">This property can be used only on worksheets and macro sheets.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="122c2-129">使用して、<see cref="P:Microsoft.Office.Interop.Excel.Window.Index" />アクティブなペインのインデックスを取得するプロパティです。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-129">Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> property to obtain the index of the active pane.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-128">このプロパティは、ワークシートとマクロ シートにだけ使用できます。</span><span class="sxs-lookup"><span data-stu-id="59203-128">This property can be used only on worksheets and macro sheets.</span></span></para>
+          <para><span data-ttu-id="59203-129">このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> を使用して、アクティブなウィンドウ枠のインデックスを取得します。</span><span class="sxs-lookup"><span data-stu-id="59203-129">Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> property to obtain the index of the active pane.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveSheet">
@@ -449,41 +302,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-130">作業中のブック、または指定されたウィンドウまたはブックのアクティブ シート (一番手前のシート) を表すオブジェクトを返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-130">Returns an object that represents the active sheet (the sheet on top) in the active workbook or in the specified window or workbook.</span>
-          </span>
-          <span data-ttu-id="122c2-131">アクティブ シートがない場合は、 <b>Nothing</b>を返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-131">Returns <b>Nothing</b> if no sheet is active.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="122c2-132">
-            <b>オブジェクト</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-132">
-              <b>Object</b>
-            </span>
-          </span>
-        </value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-133">対象となるオブジェクトを指定しない場合は、作業中のブックのアクティブ シートが返されます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-133">If you don’t specify an object qualifier, this property returns the active sheet in the active workbook.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="122c2-134">ブックを複数のウィンドウで表示している場合、異なるウィンドウでは <b>ActiveSheet</b> プロパティの値が異なることがあります。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-134">If a workbook appears in more than one window, the <b>ActiveSheet</b> property may be different in different windows.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <summary><span data-ttu-id="59203-p108">作業中のブックまたは指定したウィンドウやブックにあるアクティブ シート (一番手前のシート) を表すオブジェクトを返します。アクティブ シートが存在しないときは <b>Nothing</b> を返します。</span><span class="sxs-lookup"><span data-stu-id="59203-p108">Returns an object that represents the active sheet (the sheet on top) in the active workbook or in the specified window or workbook. Returns <b>Nothing</b> if no sheet is active.</span></span></summary>
+        <value><span data-ttu-id="59203-132"><b>Object</b></span><span class="sxs-lookup"><span data-stu-id="59203-132"><b>Object</b></span></span></value>
+        <remarks><para><span data-ttu-id="59203-133">対象となるオブジェクトを指定しない場合は、作業中のブックのアクティブ シートが返されます。</span><span class="sxs-lookup"><span data-stu-id="59203-133">If you don’t specify an object qualifier, this property returns the active sheet in the active workbook.</span></span></para>
+          <para><span data-ttu-id="59203-134">ブックを複数のウィンドウで表示している場合、異なるウィンドウでは <b>ActiveSheet</b> プロパティの値が異なることがあります。</span><span class="sxs-lookup"><span data-stu-id="59203-134">If a workbook appears in more than one window, the <b>ActiveSheet</b> property may be different in different windows.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ActiveSheetView">
@@ -509,12 +332,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-p109">指定されたウィンドウでのアクティブ シートの表示モードを表すオブジェクトを取得します。値の取得のみ可能です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-p109">Returns an object that represents the view of the active sheet in the specified window. Read-only.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-135">指定されたウィンドウでのアクティブ シートの表示モードを表すオブジェクトを取得します。</span><span class="sxs-lookup"><span data-stu-id="59203-135">Returns an object that represents the view of the active sheet in the specified window.</span></span> <span data-ttu-id="59203-136">値の取得のみ可能です。</span><span class="sxs-lookup"><span data-stu-id="59203-136">Read-only.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -542,12 +360,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-137">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 、Excel アプリケーションを表すオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-137">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Excel application.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-137">Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="59203-137">Returns an <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object that represents the Excel application.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -578,28 +391,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-138">
-            <b>True の</b>場合、日付のグループ化のための自動フィルターに現在表示されて、指定されたウィンドウです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-138">
-              <b>True</b> if the auto filter for date grouping is currently displayed in the specified window.</span>
-          </span>
-          <span data-ttu-id="122c2-139">値の取得および設定が可能です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-139">Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="122c2-140">
-            <b>ブール型 (Boolean)</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-140">
-              <b>Boolean</b>
-            </span>
-          </span>
-        </value>
+        <summary><span data-ttu-id="59203-138"><b>True</b> の 場合は、日付のグループ化の自動フィルターが現在、指定したウィンドウに表示されます。</span><span class="sxs-lookup"><span data-stu-id="59203-138"><b>True</b> if the auto filter for date grouping is currently displayed in the specified window.</span></span> <span data-ttu-id="59203-139">値の取得と設定が可能です。</span><span class="sxs-lookup"><span data-stu-id="59203-139">Read/write.</span></span></summary>
+        <value><span data-ttu-id="59203-140"><b>Boolean</b></span><span class="sxs-lookup"><span data-stu-id="59203-140"><b>Boolean</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -629,12 +422,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-141">ドキュメント ウィンドウのタイトル バーに表示される名前です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-141">The name that appears in the title bar of the document window.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-141">ドキュメント ウィンドウのタイトル バーに表示される名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="59203-141">The name that appears in the title bar of the document window.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -663,77 +451,13 @@
         <Parameter Name="RouteWorkbook" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="SaveChanges">
-          <span data-ttu-id="122c2-142">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-142">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-143">ブックに変更がない場合、この引数は無視されます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-143">If there are no changes to the workbook, this argument is ignored.</span>
-          </span>
-          <span data-ttu-id="122c2-144">ブックへの変更があり、他の開いているウィンドウにブックが表示されます、この引数は無視されます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-144">If there are changes to the workbook and the workbook appears in other open windows, this argument is ignored.</span>
-          </span>
-          <span data-ttu-id="122c2-145">ブックに変更が加えられた他の任意の開いているウィンドウにブックが表示されない場合は、この引数を指定の変更を保存するかどうか次の表に示すようにします。ValueAction の<b>場合は True</b>ブックに変更を保存します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-145">If there are changes to the workbook but the workbook doesn't appear in any other open windows, this argument specifies whether changes should be saved, as shown in the following table.ValueAction<b>True</b>Saves the changes to the workbook.</span>
-          </span>
-          <span data-ttu-id="122c2-146">まだし、ブックに関連付けられているファイル名がない場合は、<paramref name="FileName" />を使用します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-146">If there is not yet a file name associated with the workbook, then <paramref name="FileName" /> is used.</span>
-          </span>
-          <span data-ttu-id="122c2-147">場合<paramref name="FileName" />は、ファイル名を指定する省略すると、ユーザーに求めています。<b>False</b>このファイルへの変更は保存されません。OmittedDisplays ユーザーに変更を保存するかどうかを確認するダイアログ ボックスです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-147">If <paramref name="FileName" /> is omitted, the user is asked to supply a file name.<b>False</b>Does not save the changes to this file.OmittedDisplays a dialog box asking the user whether or not to save changes.</span>
-          </span>
-        </param>
-        <param name="Filename">
-          <span data-ttu-id="122c2-148">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-148">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-149">変更後のブックのファイル名。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-149">Save changes under this file name.</span>
-          </span>
-        </param>
-        <param name="RouteWorkbook">
-          <span data-ttu-id="122c2-150">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-150">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-151">ブックが (回覧先がないか、既に回覧されている) 場合は、次の受信者にルーティングする必要がある場合、この引数は無視されます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-151">If the workbook doesn't need to be routed to the next recipient (if it has no routing slip or has already been routed), this argument is ignored.</span>
-          </span>
-          <span data-ttu-id="122c2-152">それ以外の場合、Microsoft Excel は、次の表に示すように、ブックをルーティングします。値の意味 1<b>は True</b>は、次の受信者にブックを送信します。<b>False</b>ブックを送りません。OmittedDisplays ブックを送信するかどうかをユーザーに確認するダイアログ ボックスです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-152">Otherwise, Microsoft Excel routes the workbook as shown in the following table.ValueMeaning<b>True</b>Sends the workbook to the next recipient.<b>False</b>Doesn't send the workbook.OmittedDisplays a dialog box asking the user whether the workbook should be sent.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="122c2-153">オブジェクトを閉じます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-153">Closes the object.</span>
-          </span>
-        </summary>
+        <param name="SaveChanges"><span data-ttu-id="59203-142">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="59203-142">Optional <b>Object</b>.</span></span> <span data-ttu-id="59203-143">ブックに変更がない場合、この引数は無視されます。</span><span class="sxs-lookup"><span data-stu-id="59203-143">If there are no changes to the workbook, this argument is ignored.</span></span> <span data-ttu-id="59203-144">ブックに変更があり、開いている他のウィンドウに表示されている場合、この引数は無視されます。</span><span class="sxs-lookup"><span data-stu-id="59203-144">If there are changes to the workbook and the workbook appears in other open windows, this argument is ignored.</span></span> <span data-ttu-id="59203-145">ブックに変更があるが、ブックが他の開いているウィンドウに表示されない場合は、次の表に示すように、この引数は変更を保存するかどうかを指定します。ValueAction<b>True 変更</b>をブックに保存します。</span><span class="sxs-lookup"><span data-stu-id="59203-145">If there are changes to the workbook but the workbook doesn't appear in any other open windows, this argument specifies whether changes should be saved, as shown in the following table.ValueAction<b>True</b>Saves the changes to the workbook.</span></span> <span data-ttu-id="59203-146">ブックに関連付けられているファイル名がまだない場合は、そのファイル名が <paramref name="FileName" /> 使用されます。</span><span class="sxs-lookup"><span data-stu-id="59203-146">If there is not yet a file name associated with the workbook, then <paramref name="FileName" /> is used.</span></span> <span data-ttu-id="59203-147">省略 <paramref name="FileName" /> すると、ユーザーはファイル名を指定する必要があります。<b>False</b>このファイルに対する変更を保存します。Omitted ユーザーに変更を保存するかどうかを確認するダイアログ ボックスを表示します。</span><span class="sxs-lookup"><span data-stu-id="59203-147">If <paramref name="FileName" /> is omitted, the user is asked to supply a file name.<b>False</b>Does not save the changes to this file.OmittedDisplays a dialog box asking the user whether or not to save changes.</span></span></param>
+        <param name="Filename"><span data-ttu-id="59203-148">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="59203-148">Optional <b>Object</b>.</span></span> <span data-ttu-id="59203-149">変更後のブックのファイル名。</span><span class="sxs-lookup"><span data-stu-id="59203-149">Save changes under this file name.</span></span></param>
+        <param name="RouteWorkbook"><span data-ttu-id="59203-150">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="59203-150">Optional <b>Object</b>.</span></span> <span data-ttu-id="59203-151">ブックを次の受信者に回覧する必要がない場合 (回覧用紙がないか、既に回覧されている場合)、この引数は無視されます。</span><span class="sxs-lookup"><span data-stu-id="59203-151">If the workbook doesn't need to be routed to the next recipient (if it has no routing slip or has already been routed), this argument is ignored.</span></span> <span data-ttu-id="59203-152">それ以外の場合は、次の表に示すようにブックが回覧されます。ValueMeaning<b>True ブックを</b>次の受信者に送信します。<b>False</b>ブックを送信しない。Omitted ブックを送信するかどうかをユーザーに確認するダイアログ ボックスを表示します。</span><span class="sxs-lookup"><span data-stu-id="59203-152">Otherwise, Microsoft Excel routes the workbook as shown in the following table.ValueMeaning<b>True</b>Sends the workbook to the next recipient.<b>False</b>Doesn't send the workbook.OmittedDisplays a dialog box asking the user whether the workbook should be sent.</span></span></param>
+        <summary><span data-ttu-id="59203-153">オブジェクトを閉じます。</span><span class="sxs-lookup"><span data-stu-id="59203-153">Closes the object.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-154">
-              <b>Close</b>メソッドは、ブック内の Auto_Close マクロを実行しません。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-154">The <b>Close</b> method doesn't run any Auto_Close macros in the workbook.</span>
-            </span>
-            <span data-ttu-id="122c2-155">使用して、<see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" />自動を実行するメソッドは、マクロを閉じます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-155">Use the <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> method to run the auto close macros.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-154">Close <b>メソッド</b> は、ブック内のマクロAuto_Close実行されません。</span><span class="sxs-lookup"><span data-stu-id="59203-154">The <b>Close</b> method doesn't run any Auto_Close macros in the workbook.</span></span> <span data-ttu-id="59203-155">このメソッド <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> を使用して、自動閉じるマクロを実行します。</span><span class="sxs-lookup"><span data-stu-id="59203-155">Use the <see cref="M:Microsoft.Office.Interop.Excel._Workbook.RunAutoMacros(Microsoft.Office.Interop.Excel.XlRunAutoMacro)" /> method to run the auto close macros.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Creator">
@@ -759,33 +483,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-156">現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-156">Returns a 32-bit integer that indicates the application in which this object was created.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-156">このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</span><span class="sxs-lookup"><span data-stu-id="59203-156">Returns a 32-bit integer that indicates the application in which this object was created.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-157">オブジェクトは、Microsoft Excel で作成されている場合を返します文字列 XCEL を 16 進数の 5843454c に相当</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-157">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="122c2-158">
-              <b>Creator</b>プロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh の Excel で使用するよう設計されています。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-158">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span>
-            </span>
-            <span data-ttu-id="122c2-159">たとえば、Microsoft Excel は、クリエーター コードを持っています。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-159">For example, Microsoft Excel has the creator code XCEL.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-157">Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。</span><span class="sxs-lookup"><span data-stu-id="59203-157">If the object was created in Microsoft Excel, this property returns the string XCEL, which is equivalent to the hexadecimal number 5843454C.</span></span></para>
+          <para><span data-ttu-id="59203-158"><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。</span><span class="sxs-lookup"><span data-stu-id="59203-158">The <b>Creator</b> property is designed to be used in Microsoft Excel for the Macintosh, where each application has a four-character creator code.</span></span> <span data-ttu-id="59203-159">たとえば、Microsoft Excel の作成元コードは XCEL です。</span><span class="sxs-lookup"><span data-stu-id="59203-159">For example, Microsoft Excel has the creator code XCEL.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayFormulas">
@@ -814,24 +516,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-160">
-            <b>True の</b>場合は、ウィンドウは数式を表示します。<b>False</b>場合は、ウィンドウが値を表示します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-160">
-              <b>True</b> if the window is displaying formulas; <b>False</b> if the window is displaying values.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-160">ウィンドウに数式が表示されている場合は <b>True</b>、ウィンドウに値が表示されている場合は <b>False</b>。</span><span class="sxs-lookup"><span data-stu-id="59203-160"><b>True</b> if the window is displaying formulas; <b>False</b> if the window is displaying values.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-161">このプロパティは、ワークシートとマクロ シートにだけ使用できます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-161">This property applies only to worksheets and macro sheets.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-161">このプロパティは、ワークシートとマクロ シートにだけ使用できます。</span><span class="sxs-lookup"><span data-stu-id="59203-161">This property applies only to worksheets and macro sheets.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayGridlines">
@@ -860,34 +548,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-162">
-            <b>True</b>とグリッド線が表示されます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-162">
-              <b>True</b> if gridlines are displayed.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-162"><b>True の</b> 場合は、グリッド線が表示されます。</span><span class="sxs-lookup"><span data-stu-id="59203-162"><b>True</b> if gridlines are displayed.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-163">このプロパティは、ワークシートとマクロ シートにだけ使用できます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-163">This property applies only to worksheets and macro sheets.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="122c2-164">このプロパティは、グリッド線の表示だけに影響します。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-164">This property affects only displayed gridlines.</span>
-            </span>
-            <span data-ttu-id="122c2-165">使用して、<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" />のグリッド線の印刷を制御するプロパティです。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-165">Use the <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" /> property to control the printing of gridlines.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-163">このプロパティは、ワークシートとマクロ シートにだけ使用できます。</span><span class="sxs-lookup"><span data-stu-id="59203-163">This property applies only to worksheets and macro sheets.</span></span></para>
+          <para><span data-ttu-id="59203-164">このプロパティが制御できるのは、枠線の表示/非表示の設定だけです。</span><span class="sxs-lookup"><span data-stu-id="59203-164">This property affects only displayed gridlines.</span></span> <span data-ttu-id="59203-165">グリッド線 <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" /> の印刷を制御するには、このプロパティを使用します。</span><span class="sxs-lookup"><span data-stu-id="59203-165">Use the <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintGridlines" /> property to control the printing of gridlines.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayHeadings">
@@ -916,34 +581,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-166">
-            <b>True の</b>場合、両方の行と列見出しが表示されます。<b>False</b>に表示されるヘッダーがない場合。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-166">
-              <b>True</b> if both row and column headings are displayed; <b>False</b> if there are no headings displayed.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-166"><b>True の</b> 場合は、行と列の見出しの両方が表示されます。 <b>False</b> 見出しが表示されない場合です。</span><span class="sxs-lookup"><span data-stu-id="59203-166"><b>True</b> if both row and column headings are displayed; <b>False</b> if there are no headings displayed.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-167">このプロパティは、ワークシートとマクロ シートにだけ使用できます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-167">This property applies only to worksheets and macro sheets.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="122c2-168">このプロパティは、見出しの表示だけに影響します。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-168">This property affects only displayed headings.</span>
-            </span>
-            <span data-ttu-id="122c2-169">使用して、<see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" />の番号を印刷を制御するプロパティです。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-169">Use the <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" /> property to control the printing of headings.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-167">このプロパティは、ワークシートとマクロ シートにだけ使用できます。</span><span class="sxs-lookup"><span data-stu-id="59203-167">This property applies only to worksheets and macro sheets.</span></span></para>
+          <para><span data-ttu-id="59203-168">このプロパティが制御できるのは、行列番号の表示/非表示の設定だけです。</span><span class="sxs-lookup"><span data-stu-id="59203-168">This property affects only displayed headings.</span></span> <span data-ttu-id="59203-169">このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" /> を使用して、見出しの印刷を制御します。</span><span class="sxs-lookup"><span data-stu-id="59203-169">Use the <see cref="P:Microsoft.Office.Interop.Excel.PageSetup.PrintHeadings" /> property to control the printing of headings.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayHorizontalScrollBar">
@@ -972,14 +614,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-170">
-            <b>True</b>場合は、水平スクロール バーが表示されます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-170">
-              <b>True</b> if the horizontal scroll bar is displayed.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-170">水平スクロール バーが表示される場合は <b>True</b>。</span><span class="sxs-lookup"><span data-stu-id="59203-170"><b>True</b> if the horizontal scroll bar is displayed.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1010,24 +645,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-171">
-            <b>True</b>と、アウトライン記号が表示されます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-171">
-              <b>True</b> if outline symbols are displayed.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-171">アウトライン記号を表示する場合は <b>True</b>。</span><span class="sxs-lookup"><span data-stu-id="59203-171"><b>True</b> if outline symbols are displayed.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-172">このプロパティは、ワークシートとマクロ シートにだけ使用できます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-172">This property applies only to worksheets and macro sheets.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-172">このプロパティは、ワークシートとマクロ シートにだけ使用できます。</span><span class="sxs-lookup"><span data-stu-id="59203-172">This property applies only to worksheets and macro sheets.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="DisplayRightToLeft">
@@ -1056,20 +677,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-173">
-            <b>True の</b>場合は右から左への代わりに左から右に指定したウィンドウが表示されます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-173">
-              <b>True</b> if the specified window is displayed from right to left instead of from left to right.</span>
-          </span>
-          <span data-ttu-id="122c2-174">
-            <b>False</b>場合は、オブジェクトが左から右に表示されます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-174">
-              <b>False</b> if the object is displayed from left to right.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-173"><b>True</b> の 場合は、指定したウィンドウが左から右ではなく右から左に表示されます。</span><span class="sxs-lookup"><span data-stu-id="59203-173"><b>True</b> if the specified window is displayed from right to left instead of from left to right.</span></span> <span data-ttu-id="59203-174"><b>False</b> の 場合は、オブジェクトが左から右に表示されます。</span><span class="sxs-lookup"><span data-stu-id="59203-174"><b>False</b> if the object is displayed from left to right.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1100,28 +708,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-175">
-            <b>True</b>と指定されたウィンドウのルーラーが表示されます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-175">
-              <b>True</b> if a ruler is displayed for the specified window.</span>
-          </span>
-          <span data-ttu-id="122c2-176">値の取得および設定が可能です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-176">Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="122c2-177">
-            <b>ブール型 (Boolean)</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-177">
-              <b>Boolean</b>
-            </span>
-          </span>
-        </value>
+        <summary><span data-ttu-id="59203-175">指定したウィンドウにルーラーが表示される場合は <b>True</b> です。</span><span class="sxs-lookup"><span data-stu-id="59203-175"><b>True</b> if a ruler is displayed for the specified window.</span></span> <span data-ttu-id="59203-176">値の取得と設定が可能です。</span><span class="sxs-lookup"><span data-stu-id="59203-176">Read/write.</span></span></summary>
+        <value><span data-ttu-id="59203-177"><b>Boolean</b></span><span class="sxs-lookup"><span data-stu-id="59203-177"><b>Boolean</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1151,14 +739,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-178">
-            <b>True</b>場合は、垂直スクロール バーが表示されます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-178">
-              <b>True</b> if the vertical scroll bar is displayed.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-178">垂直スクロール バーが表示される場合は <b>True</b>。</span><span class="sxs-lookup"><span data-stu-id="59203-178"><b>True</b> if the vertical scroll bar is displayed.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1189,28 +770,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-179">
-            <b>True</b>場合は空白が表示されます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-179">
-              <b>True</b> if whitespace is displayed.</span>
-          </span>
-          <span data-ttu-id="122c2-180">値の取得および設定が可能です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-180">Read/write.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="122c2-181">
-            <b>ブール型 (Boolean)</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-181">
-              <b>Boolean</b>
-            </span>
-          </span>
-        </value>
+        <summary><span data-ttu-id="59203-179">空白が表示されている場合は <b>True</b> を指定します。</span><span class="sxs-lookup"><span data-stu-id="59203-179"><b>True</b> if whitespace is displayed.</span></span> <span data-ttu-id="59203-180">値の取得と設定が可能です。</span><span class="sxs-lookup"><span data-stu-id="59203-180">Read/write.</span></span></summary>
+        <value><span data-ttu-id="59203-181"><b>Boolean</b></span><span class="sxs-lookup"><span data-stu-id="59203-181"><b>Boolean</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1240,14 +801,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-182">
-            <b>True の</b>場合は、ブックのタブが表示されます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-182">
-              <b>True</b> if the workbook tabs are displayed.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-182"><b>True の</b> 場合、ブックのタブが表示されます。</span><span class="sxs-lookup"><span data-stu-id="59203-182"><b>True</b> if the workbook tabs are displayed.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1278,24 +832,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-183">
-            <b>True</b>と 0 の値が表示されます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-183">
-              <b>True</b> if zero values are displayed.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-183">ゼロ値が表示されている場合は <b>True</b> を指定します。</span><span class="sxs-lookup"><span data-stu-id="59203-183"><b>True</b> if zero values are displayed.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-184">このプロパティは、ワークシートとマクロ シートにだけ使用できます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-184">This property applies only to worksheets and macro sheets.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-184">このプロパティは、ワークシートとマクロ シートにだけ使用できます。</span><span class="sxs-lookup"><span data-stu-id="59203-184">This property applies only to worksheets and macro sheets.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="EnableResize">
@@ -1324,14 +864,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-185">
-            <b>True の</b>場合は、ウィンドウのサイズを変更できます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-185">
-              <b>True</b> if the window can be resized.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-185">ウィンドウのサイズが変更可能な場合は <b>True</b> を指定します。</span><span class="sxs-lookup"><span data-stu-id="59203-185"><b>True</b> if the window can be resized.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1362,31 +895,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-186">
-            <b>True の</b>場合、分割ウィンドウ枠を固定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-186">
-              <b>True</b> if split panes are frozen.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-186"><b>True の</b> 分割ウィンドウが固定されている場合です。</span><span class="sxs-lookup"><span data-stu-id="59203-186"><b>True</b> if split panes are frozen.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-187">
-              <b>真</b>である<b>場合</b>と<see cref="P:Microsoft.Office.Interop.Excel.Window.Split" />である<b>場合は False</b>、またはその逆。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-187">It’s possible for <b>FreezePanes </b>to be <b>True</b> and <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> to be <b>False</b>, or vice versa.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="122c2-188">このプロパティは、ワークシートとマクロ シートにだけ使用できます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-188">This property applies only to worksheets and macro sheets.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-187"><b>FreezePanes</b>を True にしたり<b>、False</b>にしたり、False にしたり <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> することもできます。 <b></b></span><span class="sxs-lookup"><span data-stu-id="59203-187">It’s possible for <b>FreezePanes </b>to be <b>True</b> and <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> to be <b>False</b>, or vice versa.</span></span></para>
+          <para><span data-ttu-id="59203-188">このプロパティは、ワークシートとマクロ シートにだけ使用できます。</span><span class="sxs-lookup"><span data-stu-id="59203-188">This property applies only to worksheets and macro sheets.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="GridlineColor">
@@ -1415,12 +928,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-189">枠線の色を RGB 値として設定または返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-189">Returns or sets the gridline color as an RGB value.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-189">枠線の色を RGB 値で設定または返します。</span><span class="sxs-lookup"><span data-stu-id="59203-189">Returns or sets the gridline color as an RGB value.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1451,22 +959,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-190">設定グリッド線の色のインデックスとして、現在のカラー パレットを取得または設定、<see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" />定数。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-190">Returns or sets the gridline color as an index into the current color palette or as an <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constant.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-190">現在のカラー パレットのインデックスまたは定数として、枠線の色を設定または返 <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> します。</span><span class="sxs-lookup"><span data-stu-id="59203-190">Returns or sets the gridline color as an index into the current color palette or as an <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> constant.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-191">色の自動設定を指定する<b>番号</b>にこのプロパティを設定します。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-191">Set this property to <b>xlColorIndexAutomatic</b> to specify the automatic color.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-191">自動的に設定するには、定数 <b>xlColorIndexAutomatic</b> を指定します。</span><span class="sxs-lookup"><span data-stu-id="59203-191">Set this property to <b>xlColorIndexAutomatic</b> to specify the automatic color.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -1495,30 +991,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-192">ポイント単位でウィンドウの高さ。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-192">The height of the window in points.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-192">ウィンドウの高さをポイント数で指定します。</span><span class="sxs-lookup"><span data-stu-id="59203-192">The height of the window in points.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-193">使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" /> 、ウィンドウの最大サイズを決定するプロパティです。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-193">Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" /> property to determine the maximum size for the window.</span>
-            </span>
-            <span data-ttu-id="122c2-194">ウィンドウを最大化または最小化されている場合は、このプロパティを設定することはできません。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-194">You cannot set this property if the window is maximized or minimized.</span>
-            </span>
-            <span data-ttu-id="122c2-195">使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> 、ウィンドウの状態を確認するにします。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-195">Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> property to determine the window state.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-193">このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" /> を使用して、ウィンドウの最大サイズを決定します。</span><span class="sxs-lookup"><span data-stu-id="59203-193">Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableHeight" /> property to determine the maximum size for the window.</span></span> <span data-ttu-id="59203-194">ウィンドウを最大化または最小化されている場合は、このプロパティを設定することはできません。</span><span class="sxs-lookup"><span data-stu-id="59203-194">You cannot set this property if the window is maximized or minimized.</span></span> <span data-ttu-id="59203-195">このプロパティを <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> 使用してウィンドウの状態を確認します。</span><span class="sxs-lookup"><span data-stu-id="59203-195">Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> property to determine the window state.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Hwnd">
@@ -1544,18 +1020,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-196">指定したウィンドウのウィンドウ ハンドルを返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-196">Returns the window handle of the specified window.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="122c2-197">整数値 (C# では int)</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-197">Integer (int in C#)</span>
-          </span>
-        </value>
+        <summary><span data-ttu-id="59203-196">指定されたウィンドウのウィンドウ ハンドルを返します。</span><span class="sxs-lookup"><span data-stu-id="59203-196">Returns the window handle of the specified window.</span></span></summary>
+        <value><span data-ttu-id="59203-197">整数 (C# の整数)</span><span class="sxs-lookup"><span data-stu-id="59203-197">Integer (int in C#)</span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1582,12 +1048,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-198">ようなオブジェクトのコレクション内のオブジェクトのインデックス番号を返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-198">Returns the index number of the object within the collection of similar objects.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-198">類似するオブジェクトのコレクション内のオブジェクトのインデックス番号を返します。</span><span class="sxs-lookup"><span data-stu-id="59203-198">Returns the index number of the object within the collection of similar objects.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1617,82 +1078,16 @@
         <Parameter Name="ToLeft" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Down">
-          <span data-ttu-id="122c2-199">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-199">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-200">文字列を下にスクロールするページ数。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-200">The number of pages to scroll the contents down.</span>
-          </span>
-        </param>
-        <param name="Up">
-          <span data-ttu-id="122c2-201">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-201">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-202">文字列を上にスクロールするページ数。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-202">The number of pages to scroll the contents up.</span>
-          </span>
-        </param>
-        <param name="ToRight">
-          <span data-ttu-id="122c2-203">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-203">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-204">文字列を右にスクロールするページ数。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-204">The number of pages to scroll the contents to the right.</span>
-          </span>
-        </param>
-        <param name="ToLeft">
-          <span data-ttu-id="122c2-205">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-205">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-206">文字列を左にスクロールするページ数。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-206">The number of pages to scroll the contents to the left.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="122c2-207">指定されたページ数分だけ、ウィンドウの文字列をスクロールします。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-207">Scrolls the contents of the window by pages.</span>
-          </span>
-        </summary>
+        <param name="Down"><span data-ttu-id="59203-199">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="59203-199">Optional <b>Object</b>.</span></span> <span data-ttu-id="59203-200">文字列を下にスクロールするページ数。</span><span class="sxs-lookup"><span data-stu-id="59203-200">The number of pages to scroll the contents down.</span></span></param>
+        <param name="Up"><span data-ttu-id="59203-201">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="59203-201">Optional <b>Object</b>.</span></span> <span data-ttu-id="59203-202">文字列を上にスクロールするページ数。</span><span class="sxs-lookup"><span data-stu-id="59203-202">The number of pages to scroll the contents up.</span></span></param>
+        <param name="ToRight"><span data-ttu-id="59203-203">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="59203-203">Optional <b>Object</b>.</span></span> <span data-ttu-id="59203-204">文字列を右にスクロールするページ数。</span><span class="sxs-lookup"><span data-stu-id="59203-204">The number of pages to scroll the contents to the right.</span></span></param>
+        <param name="ToLeft"><span data-ttu-id="59203-205">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="59203-205">Optional <b>Object</b>.</span></span> <span data-ttu-id="59203-206">文字列を左にスクロールするページ数。</span><span class="sxs-lookup"><span data-stu-id="59203-206">The number of pages to scroll the contents to the left.</span></span></param>
+        <summary><span data-ttu-id="59203-207">指定されたページ数分だけ、ウィンドウの文字列をスクロールします。</span><span class="sxs-lookup"><span data-stu-id="59203-207">Scrolls the contents of the window by pages.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-208">場合<paramref name="Down" />と<paramref name="Up" />を指定した、ウィンドウの内容は、引数の差だけスクロールします。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-208">If <paramref name="Down" /> and <paramref name="Up" /> are both specified, the contents of the window are scrolled by the difference of the arguments.</span>
-            </span>
-            <span data-ttu-id="122c2-209">などの場合は<paramref name="Down" />3 と<paramref name="Up" />6 では、内容は上に 3 ページ分スクロールします。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-209">For example, if <paramref name="Down" /> is 3 and <paramref name="Up" /> is 6, the contents are scrolled up three pages.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="122c2-210">場合<paramref name="ToLeft" />と<paramref name="ToRight" />を指定した、ウィンドウの内容は、引数の差だけスクロールします。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-210">If <paramref name="ToLeft" /> and <paramref name="ToRight" /> are both specified, the contents of the window are scrolled by the difference of the arguments.</span>
-            </span>
-            <span data-ttu-id="122c2-211">などの場合<paramref name="ToLeft" />は、3 と<paramref name="ToRight" />6 では、内容が右に 3 ページ分スクロールします。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-211">For example, if <paramref name="ToLeft" /> is 3 and <paramref name="ToRight" /> is 6, the contents are scrolled to the right three pages.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="122c2-212">どの引数も負の値を指定できます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-212">Any of the arguments can be a negative number.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-208">両方を指定すると、ウィンドウの内容が引数の差 <paramref name="Down" /> <paramref name="Up" /> でスクロールされます。</span><span class="sxs-lookup"><span data-stu-id="59203-208">If <paramref name="Down" /> and <paramref name="Up" /> are both specified, the contents of the window are scrolled by the difference of the arguments.</span></span> <span data-ttu-id="59203-209">たとえば、3 で 6 の場合、コンテンツは <paramref name="Down" /> <paramref name="Up" /> 3 ページ上にスクロールされます。</span><span class="sxs-lookup"><span data-stu-id="59203-209">For example, if <paramref name="Down" /> is 3 and <paramref name="Up" /> is 6, the contents are scrolled up three pages.</span></span></para>
+          <para><span data-ttu-id="59203-210">両方を指定すると、ウィンドウの内容が引数の差 <paramref name="ToLeft" /> <paramref name="ToRight" /> でスクロールされます。</span><span class="sxs-lookup"><span data-stu-id="59203-210">If <paramref name="ToLeft" /> and <paramref name="ToRight" /> are both specified, the contents of the window are scrolled by the difference of the arguments.</span></span> <span data-ttu-id="59203-211">たとえば、3 で 6 の場合、コンテンツは右に <paramref name="ToLeft" /> <paramref name="ToRight" /> 3 ページ分スクロールされます。</span><span class="sxs-lookup"><span data-stu-id="59203-211">For example, if <paramref name="ToLeft" /> is 3 and <paramref name="ToRight" /> is 6, the contents are scrolled to the right three pages.</span></span></para>
+          <para><span data-ttu-id="59203-212">どの引数も負の値を指定できます。</span><span class="sxs-lookup"><span data-stu-id="59203-212">Any of the arguments can be a negative number.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -1721,12 +1116,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-213">クライアント領域の左端からウィンドウの左端までのポイントでの距離です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-213">The distance in points from the left edge of the client area to the left edge of the window.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-213">クライアント領域の左側からウィンドウの左側までの距離をポイント数で指定します。</span><span class="sxs-lookup"><span data-stu-id="59203-213">The distance in points from the left edge of the client area to the left edge of the window.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1752,12 +1142,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-214">新しいウィンドウ、または指定されたウィンドウのコピーを作成します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-214">Creates a new window or a copy of the specified window.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-214">新しいウィンドウ、または指定されたウィンドウのコピーを作成します。</span><span class="sxs-lookup"><span data-stu-id="59203-214">Creates a new window or a copy of the specified window.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1788,32 +1173,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-215">ウィンドウをアクティブにするたびに実行されるプロシージャの名前を設定または返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-215">Returns or sets the name of the procedure that’s run whenever you activate a window.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-215">ウィンドウをアクティブ化するたびに実行されるプロシージャの名前を設定します。</span><span class="sxs-lookup"><span data-stu-id="59203-215">Returns or sets the name of the procedure that’s run whenever you activate a window.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-216">他のプロシージャが、ウィンドウまたはウィンドウに切り替えるには、コマンドが DDE チャネルを通じて受信したときに切り替えると、このプロパティで指定したプロシージャは実行されません。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-216">The procedure specified by this property isn’t run when other procedures switch to the window or when a command to switch to a window is received through a DDE channel.</span>
-            </span>
-            <span data-ttu-id="122c2-217">代わりに、プロシージャは、ユーザーの操作、マウスでウィンドウをクリックするなどの編集] メニューの [ジャンプ] をクリックしてに応答します。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-217">Instead, the procedure responds to the user's actions, such as clicking a window with the mouse, clicking Go To on the Edit menu, and so on.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="122c2-218">ワークシートまたはマクロ シートに定義されて、複数、または最初のマクロがある場合は、 <b>OnWindow</b>プロパティで指定された手順の後、マクロが実行されます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-218">If a worksheet or macro sheet has an Auto_Activate or Auto_Deactivate macro defined for it, those macros will be run after the procedure specified by the <b>OnWindow</b> property.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-216">このプロパティで指定したプロシージャは、マウスでウィンドウをクリックした場合など、ユーザーの動作に応答して実行されます。</span><span class="sxs-lookup"><span data-stu-id="59203-216">The procedure specified by this property isn’t run when other procedures switch to the window or when a command to switch to a window is received through a DDE channel.</span></span> <span data-ttu-id="59203-217">代わりに、マウスでウィンドウをクリックしたり、[編集] メニューの [移動] をクリックしたりなど、ユーザーの操作に応答します。</span><span class="sxs-lookup"><span data-stu-id="59203-217">Instead, the procedure responds to the user's actions, such as clicking a window with the mouse, clicking Go To on the Edit menu, and so on.</span></span></para>
+          <para><span data-ttu-id="59203-218">ワークシートまたはマクロ シートに Auto_Activate または Auto_Deactivate マクロが定義されている場合、これらのマクロは <b>OnWindow</b> プロパティで指定されたプロシージャの後で実行されます。</span><span class="sxs-lookup"><span data-stu-id="59203-218">If a worksheet or macro sheet has an Auto_Activate or Auto_Deactivate macro defined for it, those macros will be run after the procedure specified by the <b>OnWindow</b> property.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Panes">
@@ -1839,22 +1203,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Panes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-219">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> 、指定したウィンドウのすべてのウィンドウ枠を表すコレクション。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-219">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> collection that represents all the panes in the specified window.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-219">指定した <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> ウィンドウのすべてのウィンドウ枠を表すコレクションを返します。</span><span class="sxs-lookup"><span data-stu-id="59203-219">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Panes" /> collection that represents all the panes in the specified window.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-220">このプロパティは、ウィンドウの場合にのみ使用可能なウィンドウの<see cref="P:Microsoft.Office.Interop.Excel.Window.Split" />プロパティを<b>True</b>に設定することができます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-220">This property is available for a window only if the window’s <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> property can be set to <b>True</b>.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-220">このプロパティは、ウィンドウのプロパティを True に設定できる場合にのみ <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> 使用 <b>できます</b>。</span><span class="sxs-lookup"><span data-stu-id="59203-220">This property is available for a window only if the window’s <see cref="P:Microsoft.Office.Interop.Excel.Window.Split" /> property can be set to <b>True</b>.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1880,12 +1232,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-221">指定されたオブジェクトの親オブジェクトを返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-221">Returns the parent object for the specified object.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-221">指定されたオブジェクトの親オブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="59203-221">Returns the parent object for the specified object.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1913,23 +1260,8 @@
         <Parameter Name="Points" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Points">
-          <span data-ttu-id="122c2-222">
-            <b>整数</b>が必要です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-222">Required <b>Integer</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-223">変換する横方向の長さを、ドキュメント ウィンドウの左端を基点としたポイント単位の値で指定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-223">The number of points horizontally along the top of the document window, starting from the left.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="122c2-224">幅の値をポイント (ドキュメント座標) からピクセル (画面座標) に変換します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-224">Converts a horizontal measurement from points (document coordinates) to screen pixels (screen coordinates).</span>
-          </span>
-        </summary>
+        <param name="Points"><span data-ttu-id="59203-222">整数型 (<b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="59203-222">Required <b>Integer</b>.</span></span> <span data-ttu-id="59203-223">変換する横方向の長さを、ドキュメント ウィンドウの左端を基点としたポイント単位の値で指定します。</span><span class="sxs-lookup"><span data-stu-id="59203-223">The number of points horizontally along the top of the document window, starting from the left.</span></span></param>
+        <summary><span data-ttu-id="59203-224">横方向の長さの値をポイント (ドキュメント座標) からピクセル (画面座標) に変換します。</span><span class="sxs-lookup"><span data-stu-id="59203-224">Converts a horizontal measurement from points (document coordinates) to screen pixels (screen coordinates).</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1957,23 +1289,8 @@
         <Parameter Name="Points" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="Points">
-          <span data-ttu-id="122c2-225">
-            <b>整数</b>が必要です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-225">Required <b>Integer</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-226">変換する縦方向の長さを、ドキュメント ウィンドウの上端を基点としたポイント単位の値で指定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-226">The number of points vertically along the left edge of the document window, starting from the top.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="122c2-227">高さの値をポイント (ドキュメント座標) からピクセル (画面座標) に変換します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-227">Converts a vertical measurement from points (document coordinates) to screen pixels (screen coordinates).</span>
-          </span>
-        </summary>
+        <param name="Points"><span data-ttu-id="59203-225">整数型 (<b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="59203-225">Required <b>Integer</b>.</span></span> <span data-ttu-id="59203-226">変換する縦方向の長さを、ドキュメント ウィンドウの上端を基点としたポイント単位の値で指定します。</span><span class="sxs-lookup"><span data-stu-id="59203-226">The number of points vertically along the left edge of the document window, starting from the top.</span></span></param>
+        <summary><span data-ttu-id="59203-227">縦方向の長さの値をポイント (ドキュメント座標) からピクセル (画面座標) に変換します。</span><span class="sxs-lookup"><span data-stu-id="59203-227">Converts a vertical measurement from points (document coordinates) to screen pixels (screen coordinates).</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2007,130 +1324,18 @@
         <Parameter Name="PrToFileName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="From">
-          <span data-ttu-id="122c2-228">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-228">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-229">印刷を開始するページの数です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-229">The number of the page at which to start printing.</span>
-          </span>
-          <span data-ttu-id="122c2-230">この引数を省略すると、印刷は先頭から開始します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-230">If this argument is omitted, printing starts at the beginning.</span>
-          </span>
-        </param>
-        <param name="To">
-          <span data-ttu-id="122c2-231">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-231">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-232">印刷する最終ページの数です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-232">The number of the last page to print.</span>
-          </span>
-          <span data-ttu-id="122c2-233">この引数を省略すると、最後のページで印刷が終了します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-233">If this argument is omitted, printing ends with the last page.</span>
-          </span>
-        </param>
-        <param name="Copies">
-          <span data-ttu-id="122c2-234">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-234">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-235">印刷部数を指定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-235">The number of copies to print.</span>
-          </span>
-          <span data-ttu-id="122c2-236">この引数を省略すると、1 つのコピーが印刷されます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-236">If this argument is omitted, one copy is printed.</span>
-          </span>
-        </param>
-        <param name="Preview">
-          <span data-ttu-id="122c2-237">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-237">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-238">
-            <b>True</b>オブジェクトを印刷する前に印刷プレビューを実行します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-238">
-              <b>True</b> to have Microsoft Excel invoke print preview before printing the object.</span>
-          </span>
-          <span data-ttu-id="122c2-239">
-            <b>False</b>(または省略した場合)、オブジェクトをすぐに印刷します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-239">
-              <b>False</b> (or omitted) to print the object immediately.</span>
-          </span>
-        </param>
-        <param name="ActivePrinter">
-          <span data-ttu-id="122c2-240">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-240">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-241">アクティブなプリンターの名前を指定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-241">Sets the name of the active printer.</span>
-          </span>
-        </param>
-        <param name="PrintToFile">
-          <span data-ttu-id="122c2-242">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-242">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-243">
-            <b>True</b>ファイルに出力します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-243">
-              <b>True</b> to print to a file.</span>
-          </span>
-          <span data-ttu-id="122c2-244">場合<paramref name="PrToFileName" />が指定されていない、Microsoft Excel には、出力ファイルの名前を入力するように求めます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-244">If <paramref name="PrToFileName" /> is not specified, Microsoft Excel prompts the user to enter the name of the output file.</span>
-          </span>
-        </param>
-        <param name="Collate">
-          <span data-ttu-id="122c2-245">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-245">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-246">
-            <b>True</b> の場合、部単位で印刷します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-246">
-              <b>True</b> to collate multiple copies.</span>
-          </span>
-        </param>
-        <param name="PrToFileName">
-          <span data-ttu-id="122c2-247">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-247">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-248">場合<paramref name="PrintToFile" />は、設定に<b>は True</b>、この引数を指定して印刷しファイルの名前です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-248">If <paramref name="PrintToFile" /> is set to <b>True</b>, this argument specifies the name of the file you want to print to.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="122c2-249">オブジェクトを印刷します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-249">Prints the object.</span>
-          </span>
-        </summary>
+        <param name="From"><span data-ttu-id="59203-228">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="59203-228">Optional <b>Object</b>.</span></span> <span data-ttu-id="59203-229">印刷を開始するページの番号を指定します。</span><span class="sxs-lookup"><span data-stu-id="59203-229">The number of the page at which to start printing.</span></span> <span data-ttu-id="59203-230">この引数を省略すると、最初のページから印刷します。</span><span class="sxs-lookup"><span data-stu-id="59203-230">If this argument is omitted, printing starts at the beginning.</span></span></param>
+        <param name="To"><span data-ttu-id="59203-231">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="59203-231">Optional <b>Object</b>.</span></span> <span data-ttu-id="59203-232">印刷を終了するページの番号を指定します。</span><span class="sxs-lookup"><span data-stu-id="59203-232">The number of the last page to print.</span></span> <span data-ttu-id="59203-233">この引数を省略すると、最後のページまで印刷します。</span><span class="sxs-lookup"><span data-stu-id="59203-233">If this argument is omitted, printing ends with the last page.</span></span></param>
+        <param name="Copies"><span data-ttu-id="59203-234">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="59203-234">Optional <b>Object</b>.</span></span> <span data-ttu-id="59203-235">印刷部数を指定します。</span><span class="sxs-lookup"><span data-stu-id="59203-235">The number of copies to print.</span></span> <span data-ttu-id="59203-236">この引数を省略すると、印刷部数は 1 部になります。</span><span class="sxs-lookup"><span data-stu-id="59203-236">If this argument is omitted, one copy is printed.</span></span></param>
+        <param name="Preview"><span data-ttu-id="59203-237">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="59203-237">Optional <b>Object</b>.</span></span> <span data-ttu-id="59203-238"><b>True</b> の場合、印刷をする前に印刷プレビューを実行します。</span><span class="sxs-lookup"><span data-stu-id="59203-238"><b>True</b> to have Microsoft Excel invoke print preview before printing the object.</span></span> <span data-ttu-id="59203-239"><b>False</b>、または省略した場合、直ちに印刷を行います。</span><span class="sxs-lookup"><span data-stu-id="59203-239"><b>False</b> (or omitted) to print the object immediately.</span></span></param>
+        <param name="ActivePrinter"><span data-ttu-id="59203-240">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="59203-240">Optional <b>Object</b>.</span></span> <span data-ttu-id="59203-241">アクティブなプリンターの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="59203-241">Sets the name of the active printer.</span></span></param>
+        <param name="PrintToFile"><span data-ttu-id="59203-242">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="59203-242">Optional <b>Object</b>.</span></span> <span data-ttu-id="59203-243"><b>True</b> の場合、ファイルへ出力します。</span><span class="sxs-lookup"><span data-stu-id="59203-243"><b>True</b> to print to a file.</span></span> <span data-ttu-id="59203-244">指定 <paramref name="PrToFileName" /> しない場合は、出力ファイルの名前を入力するように求めるメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="59203-244">If <paramref name="PrToFileName" /> is not specified, Microsoft Excel prompts the user to enter the name of the output file.</span></span></param>
+        <param name="Collate"><span data-ttu-id="59203-245">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="59203-245">Optional <b>Object</b>.</span></span> <span data-ttu-id="59203-246"><b>True</b> の場合、部単位で印刷します。</span><span class="sxs-lookup"><span data-stu-id="59203-246"><b>True</b> to collate multiple copies.</span></span></param>
+        <param name="PrToFileName"><span data-ttu-id="59203-247">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="59203-247">Optional <b>Object</b>.</span></span> <span data-ttu-id="59203-248"><paramref name="PrintToFile" />True に設定<b>されている</b>場合、この引数は印刷するファイルの名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="59203-248">If <paramref name="PrintToFile" /> is set to <b>True</b>, this argument specifies the name of the file you want to print to.</span></span></param>
+        <summary><span data-ttu-id="59203-249">オブジェクトを印刷します。</span><span class="sxs-lookup"><span data-stu-id="59203-249">Prints the object.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-250">説明における「ページ」<paramref name="From" />と<paramref name="To" />印刷されるページを参照して、ない全体のページでは、シートまたはブックです。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-250">"Pages" in the descriptions of <paramref name="From" /> and <paramref name="To" /> refers to printed pages — not overall pages in the sheet or workbook.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-250">シートまたはブックの全体的なページではなく、印刷されたページの説明と参照の "ページ" <paramref name="From" /> <paramref name="To" /> です。</span><span class="sxs-lookup"><span data-stu-id="59203-250">"Pages" in the descriptions of <paramref name="From" /> and <paramref name="To" /> refers to printed pages — not overall pages in the sheet or workbook.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="PrintPreview">
@@ -2155,18 +1360,8 @@
         <Parameter Name="EnableChanges" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="EnableChanges">
-          <span data-ttu-id="122c2-251">プレビュー中に、変更を有効にします。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-251">Enables changes during preview.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="122c2-252">オブジェクトの印刷プレビュー (印刷時のイメージ) を表示します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-252">Shows a preview of the object as it would look when printed.</span>
-          </span>
-        </summary>
+        <param name="EnableChanges"><span data-ttu-id="59203-251">プレビュー中の変更を有効にする。</span><span class="sxs-lookup"><span data-stu-id="59203-251">Enables changes during preview.</span></span></param>
+        <summary><span data-ttu-id="59203-252">オブジェクトの印刷プレビュー (印刷時のイメージ) を表示します。</span><span class="sxs-lookup"><span data-stu-id="59203-252">Shows a preview of the object as it would look when printed.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2195,38 +1390,9 @@
         <Parameter Name="y" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="x">
-          <span data-ttu-id="122c2-253">
-            <b>整数</b>が必要です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-253">Required <b>Integer</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-254">画面の左端から目的のポイントまでの横方向の距離をピクセル単位で指定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-254">The value (in pixels) that represents the horizontal distance from the left edge of the screen, starting at the top.</span>
-          </span>
-        </param>
-        <param name="y">
-          <span data-ttu-id="122c2-255">
-            <b>整数</b>が必要です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-255">Required <b>Integer</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-256">画面の上端から目的のポイントまでの縦方向の距離をピクセル単位で指定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-256">The value (in pixels) that represents the vertical distance from the top of the screen, starting on the left.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="122c2-257">返します、<see cref="T:Microsoft.Office.Interop.Excel.Shape" />または<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクトが、指定した画面座標のペアで置かれています。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-257">Returns the <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> or <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that is positioned at the specified pair of screen coordinates.</span>
-          </span>
-          <span data-ttu-id="122c2-258">指定した座標にある図形がない場合はこのメソッドは<b>Nothing</b>を返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-258">If there isn’t a shape located at the specified coordinates, this method returns <b>Nothing</b>.</span>
-          </span>
-        </summary>
+        <param name="x"><span data-ttu-id="59203-253">整数型 (<b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="59203-253">Required <b>Integer</b>.</span></span> <span data-ttu-id="59203-254">画面の左端から目的のポイントまでの横方向の距離をピクセル単位で指定します。</span><span class="sxs-lookup"><span data-stu-id="59203-254">The value (in pixels) that represents the horizontal distance from the left edge of the screen, starting at the top.</span></span></param>
+        <param name="y"><span data-ttu-id="59203-255">整数型 (<b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="59203-255">Required <b>Integer</b>.</span></span> <span data-ttu-id="59203-256">画面の上端から目的のポイントまでの縦方向の距離をピクセル単位で指定します。</span><span class="sxs-lookup"><span data-stu-id="59203-256">The value (in pixels) that represents the vertical distance from the top of the screen, starting on the left.</span></span></param>
+        <summary><span data-ttu-id="59203-257">指定した画面 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 座標 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> のペアに配置されているオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="59203-257">Returns the <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> or <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that is positioned at the specified pair of screen coordinates.</span></span> <span data-ttu-id="59203-258">指定した座標に図形が配置されていない場合、このメソッドは Nothing を返 <b>します</b>。</span><span class="sxs-lookup"><span data-stu-id="59203-258">If there isn’t a shape located at the specified coordinates, this method returns <b>Nothing</b>.</span></span></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2254,34 +1420,12 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-259">返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />グラフィック オブジェクトは、アクティブなワークシートで選択した場合でも、選択したシートのセルを指定されたウィンドウを表すオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-259">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the selected cells on the worksheet in the specified window even if a graphic object is active or selected on the worksheet.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-259">グラフィック オブジェクトがアクティブまたはワークシート上で選択されている場合でも、指定されたウィンドウのワークシートで選択されているセルを表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を返します。</span><span class="sxs-lookup"><span data-stu-id="59203-259">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the selected cells on the worksheet in the specified window even if a graphic object is active or selected on the worksheet.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-260">ワークシート上のグラフィック オブジェクトが選択されている場合、<see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" />プロパティは、 <b>Range</b>オブジェクトではなくグラフィック オブジェクトを返します。<b>RangeSelection</b>プロパティは、グラフィック オブジェクトを選択する前に選択したセル範囲を返します。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-260">When a graphic object is selected on a worksheet, the <see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" /> property returns the graphic object instead of a <b>Range</b> object; the <b>RangeSelection</b> property returns the range of cells that was selected before the graphic object was selected.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="122c2-261">描画オブジェクトではなく、セル範囲が選択されているワークシートの場合、このプロパティと <b>Selection</b> プロパティの取得する値は同じになります。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-261">This property and the <b>Selection</b> property return identical values when a range (not a graphic object) is selected on the worksheet.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="122c2-262">指定したウィンドウのアクティブ シートがワークシートではない場合、このプロパティは失敗します。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-262">If the active sheet in the specified window isn’t a worksheet, this property fails.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-260">ワークシートでグラフィック オブジェクトを選択すると、Range オブジェクトではなくグラフィック オブジェクトが返されます <see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" /> <b>。RangeSelection</b><b></b>プロパティは、グラフィック オブジェクトが選択される前に選択されたセル範囲を返します。</span><span class="sxs-lookup"><span data-stu-id="59203-260">When a graphic object is selected on a worksheet, the <see cref="P:Microsoft.Office.Interop.Excel.Window.Selection" /> property returns the graphic object instead of a <b>Range</b> object; the <b>RangeSelection</b> property returns the range of cells that was selected before the graphic object was selected.</span></span></para>
+          <para><span data-ttu-id="59203-261">描画オブジェクトではなく、セル範囲が選択されているワークシートの場合、このプロパティと <b>Selection</b> プロパティの取得する値は同じになります。</span><span class="sxs-lookup"><span data-stu-id="59203-261">This property and the <b>Selection</b> property return identical values when a range (not a graphic object) is selected on the worksheet.</span></span></para>
+          <para><span data-ttu-id="59203-262">指定したウィンドウのアクティブ シートがワークシートではない場合、このプロパティは失敗します。</span><span class="sxs-lookup"><span data-stu-id="59203-262">If the active sheet in the specified window isn’t a worksheet, this property fails.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollColumn">
@@ -2310,26 +1454,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-263">取得またはウィンドウまたはウィンドウの左端の列の数を設定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-263">Returns or sets the number of the leftmost column in the pane or window.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-263">ペインまたはウィンドウ内で左端に表示される列の番号を返すか設定します。</span><span class="sxs-lookup"><span data-stu-id="59203-263">Returns or sets the number of the leftmost column in the pane or window.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-264">かどうか、ウィンドウが分割されているの<b>ScrollColumn</b>プロパティは、の<see cref="T:Microsoft.Office.Interop.Excel.Window" />オブジェクトは、ウィンドウの左ペインを参照します。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-264">If the window is split, the <b>ScrollColumn</b> property of the <see cref="T:Microsoft.Office.Interop.Excel.Window" /> object refers to the upper-left pane.</span>
-            </span>
-            <span data-ttu-id="122c2-265">ウィンドウ枠を固定している場合、 <b>Window</b>オブジェクトの<b>ScrollColumn</b>プロパティは、マスク領域を除外します。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-265">If the panes are frozen, the <b>ScrollColumn</b> property of the <b>Window</b> object excludes the frozen areas.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-264">ウィンドウが分割されている場合、オブジェクト <b>の ScrollColumn</b> プロパティは左上の <see cref="T:Microsoft.Office.Interop.Excel.Window" /> ウィンドウ枠を参照します。</span><span class="sxs-lookup"><span data-stu-id="59203-264">If the window is split, the <b>ScrollColumn</b> property of the <see cref="T:Microsoft.Office.Interop.Excel.Window" /> object refers to the upper-left pane.</span></span> <span data-ttu-id="59203-265">ウィンドウ枠を固定している場合、 <b>Window</b> オブジェクトの <b>ScrollColumn</b> プロパティは固定領域を対象外とします。</span><span class="sxs-lookup"><span data-stu-id="59203-265">If the panes are frozen, the <b>ScrollColumn</b> property of the <b>Window</b> object excludes the frozen areas.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollIntoView">
@@ -2358,88 +1486,14 @@
         <Parameter Name="Start" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Left">
-          <span data-ttu-id="122c2-266">
-            <b>整数</b>が必要です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-266">Required <b>Integer</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-267">ドキュメント ウィンドウまたはペインの左端から四角形までの横方向の距離 (ポイント単位)。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-267">The horizontal position of the rectangle (in points) from the left edge of the document window or pane.</span>
-          </span>
-        </param>
-        <param name="Top">
-          <span data-ttu-id="122c2-268">
-            <b>整数</b>が必要です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-268">Required <b>Integer</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-269">ドキュメント ウィンドウまたはペインの上端から四角形までの縦方向の距離 (ポイント単位)。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-269">The vertical position of the rectangle (in points) from the top of the document window or pane.</span>
-          </span>
-        </param>
-        <param name="Width">
-          <span data-ttu-id="122c2-270">
-            <b>整数</b>が必要です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-270">Required <b>Integer</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-271">四角形の幅 (ポイント単位)。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-271">The width of the rectangle, in points.</span>
-          </span>
-        </param>
-        <param name="Height">
-          <span data-ttu-id="122c2-272">
-            <b>整数</b>が必要です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-272">Required <b>Integer</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-273">四角形の高さ (ポイント単位)。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-273">The height of the rectangle, in points.</span>
-          </span>
-        </param>
-        <param name="Start">
-          <span data-ttu-id="122c2-274">オプションの <b>Integer</b>。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-274">Optional <b>Integer</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-275">
-            <b>True を指定</b>する四角形の左上隅をドキュメント ウィンドウまたはペインの左上隅に表示されます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-275">
-              <b>True</b> to have the upper-left corner of the rectangle appear in the upper-left corner of the document window or pane.</span>
-          </span>
-          <span data-ttu-id="122c2-276">
-            <b>False を指定</b>する四角形の右下隅をドキュメント ウィンドウまたはペインの右下隅に表示されます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-276">
-              <b>False</b> to have the lower-right corner of the rectangle appear in the lower-right corner of the document window or pane.</span>
-          </span>
-          <span data-ttu-id="122c2-277">既定値は <b>True</b> です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-277">The default value is <b>True</b>.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="122c2-278">ドキュメント ウィンドウまたはペインの左上隅または右下の隅にある指定された四角形領域の内容が表示されるように、ドキュメント ウィンドウをスクロールします。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-278">Scrolls the document window so that the contents of a specified rectangular area are displayed in either the upper-left or lower-right corner of the document window or pane.</span>
-          </span>
-        </summary>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-279">
-              <paramref name="Start" />の引数は、四角形がドキュメント ウィンドウまたはペインより大きい場合、画面の表示領域を指定します。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-279">The <paramref name="Start" /> argument is useful for orienting the screen display when the rectangle is larger than the document window or pane.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <param name="Left"><span data-ttu-id="59203-266">整数型 (<b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="59203-266">Required <b>Integer</b>.</span></span> <span data-ttu-id="59203-267">ドキュメント ウィンドウまたはペインの左端から四角形までの横方向の距離 (ポイント単位)。</span><span class="sxs-lookup"><span data-stu-id="59203-267">The horizontal position of the rectangle (in points) from the left edge of the document window or pane.</span></span></param>
+        <param name="Top"><span data-ttu-id="59203-268">整数型 (<b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="59203-268">Required <b>Integer</b>.</span></span> <span data-ttu-id="59203-269">ドキュメント ウィンドウまたはペインの上端から四角形までの縦方向の距離 (ポイント単位)。</span><span class="sxs-lookup"><span data-stu-id="59203-269">The vertical position of the rectangle (in points) from the top of the document window or pane.</span></span></param>
+        <param name="Width"><span data-ttu-id="59203-270">整数型 (<b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="59203-270">Required <b>Integer</b>.</span></span> <span data-ttu-id="59203-271">四角形の幅 (ポイント単位)。</span><span class="sxs-lookup"><span data-stu-id="59203-271">The width of the rectangle, in points.</span></span></param>
+        <param name="Height"><span data-ttu-id="59203-272">整数型 (<b>Integer</b>) の値を使用します。</span><span class="sxs-lookup"><span data-stu-id="59203-272">Required <b>Integer</b>.</span></span> <span data-ttu-id="59203-273">四角形の高さ (ポイント単位)。</span><span class="sxs-lookup"><span data-stu-id="59203-273">The height of the rectangle, in points.</span></span></param>
+        <param name="Start"><span data-ttu-id="59203-274">オプションの <b>Integer</b>。</span><span class="sxs-lookup"><span data-stu-id="59203-274">Optional <b>Integer</b>.</span></span> <span data-ttu-id="59203-275">四角形の左上隅をドキュメント ウィンドウまたはペインの左上隅と一致するように表示する場合は  <b>True</b> 。</span><span class="sxs-lookup"><span data-stu-id="59203-275"><b>True</b> to have the upper-left corner of the rectangle appear in the upper-left corner of the document window or pane.</span></span> <span data-ttu-id="59203-276">四角形の右下隅をドキュメント ウィンドウまたはペインの右下隅と一致するように表示する場合は <b>False</b> を指定します。</span><span class="sxs-lookup"><span data-stu-id="59203-276"><b>False</b> to have the lower-right corner of the rectangle appear in the lower-right corner of the document window or pane.</span></span> <span data-ttu-id="59203-277">既定値は <b>True</b> です。</span><span class="sxs-lookup"><span data-stu-id="59203-277">The default value is <b>True</b>.</span></span></param>
+        <summary><span data-ttu-id="59203-278">文書ウィンドウをスクロールして、指定した四角形領域の内容が、文書ウィンドウまたはウィンドウ枠の左上隅または右下隅に表示されます。</span><span class="sxs-lookup"><span data-stu-id="59203-278">Scrolls the document window so that the contents of a specified rectangular area are displayed in either the upper-left or lower-right corner of the document window or pane.</span></span></summary>
+        <remarks><para><span data-ttu-id="59203-279">この引数は、四角形がドキュメント ウィンドウまたはウィンドウ枠よりも大きい場合に画面表示の向 <paramref name="Start" /> きを設定する場合に便利です。</span><span class="sxs-lookup"><span data-stu-id="59203-279">The <paramref name="Start" /> argument is useful for orienting the screen display when the rectangle is larger than the document window or pane.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollRow">
@@ -2468,26 +1522,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-280">取得またはウィンドウまたはウィンドウの上部に表示される行の数を設定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-280">Returns or sets the number of the row that appears at the top of the pane or window.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-280">ウィンドウ枠またはウィンドウの上部に表示される行の番号を設定します。</span><span class="sxs-lookup"><span data-stu-id="59203-280">Returns or sets the number of the row that appears at the top of the pane or window.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-281">かどうか、ウィンドウが分割されているの<b>ScrollRow</b>プロパティは、の<see cref="T:Microsoft.Office.Interop.Excel.Window" />オブジェクトは、ウィンドウの左ペインを参照します。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-281">If the window is split, the <b>ScrollRow</b> property of the <see cref="T:Microsoft.Office.Interop.Excel.Window" /> object refers to the upper-left pane.</span>
-            </span>
-            <span data-ttu-id="122c2-282">ウィンドウ枠を固定している場合、 <b>Window</b>オブジェクトの<b>ScrollRow</b>プロパティは、マスク領域を除外します。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-282">If the panes are frozen, the <b>ScrollRow</b> property of the <b>Window</b> object excludes the frozen areas.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-281">ウィンドウが分割されている場合、オブジェクト <b>の ScrollRow</b> プロパティは左上の <see cref="T:Microsoft.Office.Interop.Excel.Window" /> ウィンドウ枠を参照します。</span><span class="sxs-lookup"><span data-stu-id="59203-281">If the window is split, the <b>ScrollRow</b> property of the <see cref="T:Microsoft.Office.Interop.Excel.Window" /> object refers to the upper-left pane.</span></span> <span data-ttu-id="59203-282">ウィンドウ枠を固定している場合、 <b>Window</b> オブジェクトの <b>ScrollRow</b> プロパティは固定領域を対象外とします。</span><span class="sxs-lookup"><span data-stu-id="59203-282">If the panes are frozen, the <b>ScrollRow</b> property of the <b>Window</b> object excludes the frozen areas.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="ScrollWorkbookTabs">
@@ -2513,56 +1551,12 @@
         <Parameter Name="Position" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Sheets">
-          <span data-ttu-id="122c2-283">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-283">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-284">使ってスクロールするシートの数です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-284">The number of sheets to scroll by.</span>
-          </span>
-          <span data-ttu-id="122c2-285">前方スクロールするのには正の数、後方にスクロールするのには負の数または 0 (ゼロ) がすべてのスクロールを使用します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-285">Use a positive number to scroll forward, a negative number to scroll backward, or 0 (zero) not to scroll at all.</span>
-          </span>
-          <span data-ttu-id="122c2-286">指定する必要があります<paramref name="Sheets" />を指定しない場合は、 <paramref name="Position" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-286">You must specify <paramref name="Sheets" /> if you don't specify <paramref name="Position" />.</span>
-          </span>
-        </param>
-        <param name="Position">
-          <span data-ttu-id="122c2-287">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-287">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-288">
-            <b>XlFirst</b>を使用して、最初のワークシートをスクロールするか、 <b>xlLast</b>を使用して、最後のシートをスクロールします。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-288">Use <b>xlFirst</b> to scroll to the first sheet, or use <b>xlLast</b> to scroll to the last sheet.</span>
-          </span>
-          <span data-ttu-id="122c2-289">指定する必要があります<paramref name="Position" />を指定しない場合は、 <paramref name="Sheets" />。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-289">You must specify <paramref name="Position" /> if you don't specify <paramref name="Sheets" />.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="122c2-290">ウィンドウの下部にあるシート見出しをスクロールします。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-290">Scrolls through the workbook tabs at the bottom of the window.</span>
-          </span>
-        </summary>
+        <param name="Sheets"><span data-ttu-id="59203-283">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="59203-283">Optional <b>Object</b>.</span></span> <span data-ttu-id="59203-284">スクロールするシートの数を指定します。</span><span class="sxs-lookup"><span data-stu-id="59203-284">The number of sheets to scroll by.</span></span> <span data-ttu-id="59203-285">前方にスクロールするには正の数値を、後方にスクロールするには負の数を、スクロールしない場合は 0 (ゼロ) を使用します。</span><span class="sxs-lookup"><span data-stu-id="59203-285">Use a positive number to scroll forward, a negative number to scroll backward, or 0 (zero) not to scroll at all.</span></span> <span data-ttu-id="59203-286">指定しない <paramref name="Sheets" /> 場合は指定する必要があります <paramref name="Position" /> 。</span><span class="sxs-lookup"><span data-stu-id="59203-286">You must specify <paramref name="Sheets" /> if you don't specify <paramref name="Position" />.</span></span></param>
+        <param name="Position"><span data-ttu-id="59203-287">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="59203-287">Optional <b>Object</b>.</span></span> <span data-ttu-id="59203-288"><b>xlFirst</b> を指定すると先頭のシートまでスクロールされ、<b>xlLast</b> を指定すると最後のシートまでスクロールされます。</span><span class="sxs-lookup"><span data-stu-id="59203-288">Use <b>xlFirst</b> to scroll to the first sheet, or use <b>xlLast</b> to scroll to the last sheet.</span></span> <span data-ttu-id="59203-289">指定しない <paramref name="Position" /> 場合は指定する必要があります <paramref name="Sheets" /> 。</span><span class="sxs-lookup"><span data-stu-id="59203-289">You must specify <paramref name="Position" /> if you don't specify <paramref name="Sheets" />.</span></span></param>
+        <summary><span data-ttu-id="59203-290">ウィンドウ下部のシート見出しをスクロールします。</span><span class="sxs-lookup"><span data-stu-id="59203-290">Scrolls through the workbook tabs at the bottom of the window.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-291">
-              <b>ScrollWorkbookTabs</b>メソッドは、ブックのアクティブ シートに影響しません。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-291">The <b>ScrollWorkbookTabs</b> method doesn't affect the active sheet in the workbook.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-291"><b>ScrollWorkbookTabs</b>メソッドは、ブック内のアクティブ シートには影響を与えされません。</span><span class="sxs-lookup"><span data-stu-id="59203-291">The <b>ScrollWorkbookTabs</b> method doesn't affect the active sheet in the workbook.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SelectedSheets">
@@ -2588,12 +1582,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Sheets</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-292">返します、 <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> 、指定したウィンドウで選択したすべてのシートを表すコレクション。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-292">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection that represents all the selected sheets in the specified window.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-292">指定したウィンドウ <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> で選択されているシートを表すコレクションを取得します。</span><span class="sxs-lookup"><span data-stu-id="59203-292">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Sheets" /> collection that represents all the selected sheets in the specified window.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2621,32 +1610,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-293">指定されたウィンドウで選択したオブジェクトを返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-293">Returns the selected object in the specified window.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-293">指定したウィンドウで選択したオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="59203-293">Returns the selected object in the specified window.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-294">返されるオブジェクトの型は、現在の選択内容によって異なります。 (たとえば、セルが選択した場合、このプロパティを返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />オブジェクト)。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-294">The returned object type depends on the current selection (for example, if a cell is selected, this property returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object).</span>
-            </span>
-            <span data-ttu-id="122c2-295">選択されていない場合、 <b>Selection</b>プロパティは<b>Nothing</b>を返します。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-295">The <b>Selection</b> property returns <b>Nothing</b> if nothing is selected.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="122c2-296">使用するのと同じではないオブジェクト修飾子をこのプロパティを使用して、<see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" />のプロパティの<see cref="T:Microsoft.Office.Interop.Excel.Application" />オブジェクトです。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-296">Using this property with no object qualifier is equivalent to using the <see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-294">返されるオブジェクトの種類は、現在の選択範囲によって異なります (たとえば、セルが選択されている場合、このプロパティはオブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> します)。</span><span class="sxs-lookup"><span data-stu-id="59203-294">The returned object type depends on the current selection (for example, if a cell is selected, this property returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object).</span></span> <span data-ttu-id="59203-295">何も選択していないとき、<b>Selection</b> プロパティは <b>Nothing</b> を返します。</span><span class="sxs-lookup"><span data-stu-id="59203-295">The <b>Selection</b> property returns <b>Nothing</b> if nothing is selected.</span></span></para>
+          <para><span data-ttu-id="59203-296">オブジェクト修飾子を指定してこのプロパティを使用する方法は、オブジェクトの <see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" /> プロパティを使用するのと同 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> じです。</span><span class="sxs-lookup"><span data-stu-id="59203-296">Using this property with no object qualifier is equivalent to using the <see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" /> property of the <see cref="T:Microsoft.Office.Interop.Excel.Application" /> object.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SheetViews">
@@ -2672,26 +1640,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SheetViews</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-297">返します、<see cref="T:Microsoft.Office.Interop.Excel.SheetViews" />の指定されたウィンドウ オブジェクトです。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-297">Returns the <see cref="T:Microsoft.Office.Interop.Excel.SheetViews" /> object for the specified window.</span>
-          </span>
-          <span data-ttu-id="122c2-298">読み取り専用。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-298">Read-only.</span>
-          </span>
-        </summary>
-        <value>
-          <span data-ttu-id="122c2-299">
-            <b>SheetViews</b>
-          </span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-299">
-              <b>SheetViews</b>
-            </span>
-          </span>
-        </value>
+        <summary><span data-ttu-id="59203-297">指定したウィンドウ <see cref="T:Microsoft.Office.Interop.Excel.SheetViews" /> のオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="59203-297">Returns the <see cref="T:Microsoft.Office.Interop.Excel.SheetViews" /> object for the specified window.</span></span> <span data-ttu-id="59203-298">読み取り専用です。</span><span class="sxs-lookup"><span data-stu-id="59203-298">Read-only.</span></span></summary>
+        <value><span data-ttu-id="59203-299"><b>SheetViews</b></span><span class="sxs-lookup"><span data-stu-id="59203-299"><b>SheetViews</b></span></span></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2720,82 +1670,16 @@
         <Parameter Name="ToLeft" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Down">
-          <span data-ttu-id="122c2-300">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-300">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-301">文字列を下にスクロールする行数。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-301">The number of rows to scroll the contents down.</span>
-          </span>
-        </param>
-        <param name="Up">
-          <span data-ttu-id="122c2-302">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-302">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-303">文字列を上にスクロールする行数。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-303">The number of rows to scroll the contents up.</span>
-          </span>
-        </param>
-        <param name="ToRight">
-          <span data-ttu-id="122c2-304">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-304">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-305">文字列を右にスクロールする列数。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-305">The number of columns to scroll the contents to the right.</span>
-          </span>
-        </param>
-        <param name="ToLeft">
-          <span data-ttu-id="122c2-306">省略可能な<b>オブジェクト</b>です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-306">Optional <b>Object</b>.</span>
-          </span>
-          <span data-ttu-id="122c2-307">文字列を左にスクロールする列数。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-307">The number of columns to scroll the contents to the left.</span>
-          </span>
-        </param>
-        <summary>
-          <span data-ttu-id="122c2-308">指定した行数分または列数分だけ、ウィンドウの文字列をスクロールします。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-308">Scrolls the contents of the window by rows or columns.</span>
-          </span>
-        </summary>
+        <param name="Down"><span data-ttu-id="59203-300">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="59203-300">Optional <b>Object</b>.</span></span> <span data-ttu-id="59203-301">文字列を下にスクロールする行数。</span><span class="sxs-lookup"><span data-stu-id="59203-301">The number of rows to scroll the contents down.</span></span></param>
+        <param name="Up"><span data-ttu-id="59203-302">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="59203-302">Optional <b>Object</b>.</span></span> <span data-ttu-id="59203-303">文字列を上にスクロールする行数。</span><span class="sxs-lookup"><span data-stu-id="59203-303">The number of rows to scroll the contents up.</span></span></param>
+        <param name="ToRight"><span data-ttu-id="59203-304">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="59203-304">Optional <b>Object</b>.</span></span> <span data-ttu-id="59203-305">文字列を右にスクロールする列数。</span><span class="sxs-lookup"><span data-stu-id="59203-305">The number of columns to scroll the contents to the right.</span></span></param>
+        <param name="ToLeft"><span data-ttu-id="59203-306">省略 <b>可能なオブジェクト</b>です。</span><span class="sxs-lookup"><span data-stu-id="59203-306">Optional <b>Object</b>.</span></span> <span data-ttu-id="59203-307">文字列を左にスクロールする列数。</span><span class="sxs-lookup"><span data-stu-id="59203-307">The number of columns to scroll the contents to the left.</span></span></param>
+        <summary><span data-ttu-id="59203-308">指定した行数分または列数分だけ、ウィンドウの文字列をスクロールします。</span><span class="sxs-lookup"><span data-stu-id="59203-308">Scrolls the contents of the window by rows or columns.</span></span></summary>
         <returns>To be added.</returns>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-309">場合<paramref name="Down" />と<paramref name="Up" />を指定した、ウィンドウの内容は、引数の差だけスクロールします。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-309">If <paramref name="Down" /> and <paramref name="Up" /> are both specified, the contents of the window are scrolled by the difference of the arguments.</span>
-            </span>
-            <span data-ttu-id="122c2-310">などの場合<paramref name="Down" />は、3 と<paramref name="Up" />6 では、内容は上に 3 行分スクロールします。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-310">For example, if <paramref name="Down" /> is 3 and <paramref name="Up" /> is 6, the contents are scrolled up three rows.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="122c2-311">場合<paramref name="ToLeft" />と<paramref name="ToRight" />を指定した、ウィンドウの内容は、引数の差だけスクロールします。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-311">If <paramref name="ToLeft" /> and <paramref name="ToRight" /> are both specified, the contents of the window are scrolled by the difference of the arguments.</span>
-            </span>
-            <span data-ttu-id="122c2-312">などの場合<paramref name="ToLeft" />は、3 と<paramref name="ToRight" />6 では、内容が右に 3 列分スクロールします。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-312">For example, if <paramref name="ToLeft" /> is 3 and <paramref name="ToRight" /> is 6, the contents are scrolled to the right three columns.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="122c2-313">これらの引数には負数を指定できます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-313">Any of these arguments can be a negative number.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-309">両方を指定すると、ウィンドウの内容が引数の差 <paramref name="Down" /> <paramref name="Up" /> でスクロールされます。</span><span class="sxs-lookup"><span data-stu-id="59203-309">If <paramref name="Down" /> and <paramref name="Up" /> are both specified, the contents of the window are scrolled by the difference of the arguments.</span></span> <span data-ttu-id="59203-310">たとえば、3 で 6 の場合、内容は <paramref name="Down" /> <paramref name="Up" /> 3 行上にスクロールされます。</span><span class="sxs-lookup"><span data-stu-id="59203-310">For example, if <paramref name="Down" /> is 3 and <paramref name="Up" /> is 6, the contents are scrolled up three rows.</span></span></para>
+          <para><span data-ttu-id="59203-311">両方を指定すると、ウィンドウの内容が引数の差 <paramref name="ToLeft" /> <paramref name="ToRight" /> でスクロールされます。</span><span class="sxs-lookup"><span data-stu-id="59203-311">If <paramref name="ToLeft" /> and <paramref name="ToRight" /> are both specified, the contents of the window are scrolled by the difference of the arguments.</span></span> <span data-ttu-id="59203-312">たとえば、3 で 6 の場合、内容は右に <paramref name="ToLeft" /> <paramref name="ToRight" /> 3 列分スクロールされます。</span><span class="sxs-lookup"><span data-stu-id="59203-312">For example, if <paramref name="ToLeft" /> is 3 and <paramref name="ToRight" /> is 6, the contents are scrolled to the right three columns.</span></span></para>
+          <para><span data-ttu-id="59203-313">これらの引数には負数を指定できます。</span><span class="sxs-lookup"><span data-stu-id="59203-313">Any of these arguments can be a negative number.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Split">
@@ -2824,30 +1708,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-314">
-            <b>True の</b>場合、ウィンドウを分割します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-314">
-              <b>True</b> if the window is split.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-314"><b>True ウィンドウ</b> が分割されている場合です。</span><span class="sxs-lookup"><span data-stu-id="59203-314"><b>True</b> if the window is split.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-315">できます<see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" />を<b>True</b>と<b>分割</b>である<b>場合は False</b>、またはその逆。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-315">It’s possible for <see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" /> to be <b>True</b> and <b>Split</b> to be <b>False</b>, or vice versa.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="122c2-316">このプロパティは、ワークシートとマクロ シートにだけ使用できます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-316">This property applies only to worksheets and macro sheets.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-315">True と Split を False に設定するか、 <see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" /> <b>またはその</b>逆を<b></b>指定できます。 <b></b></span><span class="sxs-lookup"><span data-stu-id="59203-315">It’s possible for <see cref="P:Microsoft.Office.Interop.Excel.Window.FreezePanes" /> to be <b>True</b> and <b>Split</b> to be <b>False</b>, or vice versa.</span></span></para>
+          <para><span data-ttu-id="59203-316">このプロパティは、ワークシートとマクロ シートにだけ使用できます。</span><span class="sxs-lookup"><span data-stu-id="59203-316">This property applies only to worksheets and macro sheets.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="SplitColumn">
@@ -2876,12 +1741,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-317">(分割線の左側に列の数) のウィンドウにウィンドウを分割する位置の列番号を設定または返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-317">Returns or sets the column number where the window is split into panes (the number of columns to the left of the split line).</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-317">ウィンドウを分割する列番号 (分割線の左側の列数) を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="59203-317">Returns or sets the column number where the window is split into panes (the number of columns to the left of the split line).</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2912,12 +1772,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-318">取得またはウィンドウの水平方向の分割位置をポイント単位で設定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-318">Returns or sets the location of the horizontal window split in points.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-318">水平ウィンドウの分割位置をポイント数で設定します。</span><span class="sxs-lookup"><span data-stu-id="59203-318">Returns or sets the location of the horizontal window split in points.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2948,12 +1803,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-319">(分割線の上の行の数) のウィンドウにウィンドウを分割する位置の行番号を設定または返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-319">Returns or sets the row number where the window is split into panes (the number of rows above the split).</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-319">ウィンドウを分割する行番号 (分割の上の行数) を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="59203-319">Returns or sets the row number where the window is split into panes (the number of rows above the split).</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2984,12 +1834,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-320">取得またはウィンドウの垂直方向の分割位置をポイント単位で設定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-320">Returns or sets the location of the vertical window split in points.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-320">垂直ウィンドウの分割位置をポイント数で設定または返します。</span><span class="sxs-lookup"><span data-stu-id="59203-320">Returns or sets the location of the vertical window split in points.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3020,22 +1865,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-321">ウィンドウの水平スクロール バーの幅に対するブックのタブ領域の幅の比率を設定を取得または設定 (0 (ゼロ) と 1 の間の数値として、既定値は 0.6)。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-321">Returns or sets the ratio of the width of the workbook's tab area to the width of the window's horizontal scroll bar (as a number between 0 (zero) and 1; the default value is 0.6).</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-321">ウィンドウの水平スクロール バーの幅に対するブックのタブ領域の幅の比率 (0 ~1 の数値) を設定します。既定値は 0.6 です。</span><span class="sxs-lookup"><span data-stu-id="59203-321">Returns or sets the ratio of the width of the workbook's tab area to the width of the window's horizontal scroll bar (as a number between 0 (zero) and 1; the default value is 0.6).</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-322">このプロパティを持たない場合の影響を与える<see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" />が<b>False</b>に設定 (その値は保持されますが、表示には影響を与えません)。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-322">This property has no effect when <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" /> is set to <b>False</b> (its value is retained, but it has no effect on the display).</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-322">False に設定されている場合、このプロパティは影響しません (値は保持されますが、表示 <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" /> には影響しません)。 <b></b></span><span class="sxs-lookup"><span data-stu-id="59203-322">This property has no effect when <see cref="P:Microsoft.Office.Interop.Excel.Window.DisplayWorkbookTabs" /> is set to <b>False</b> (its value is retained, but it has no effect on the display).</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -3064,26 +1897,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-323">(メニュー、上部、および数式バーにある固定ツールバー) の下の使用可能な領域の上端をウィンドウの上端からのポイントでの距離です。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-323">The distance in points from the top edge of the window to the top edge of the usable area (below the menus, any toolbars docked at the top, and the formula bar).</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-323">ウィンドウの上端から使える領域の上端までの距離 (メニューの下、上部にドッキングされているツールバー、数式バー)。</span><span class="sxs-lookup"><span data-stu-id="59203-323">The distance in points from the top edge of the window to the top edge of the usable area (below the menus, any toolbars docked at the top, and the formula bar).</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-324">最大化したウィンドウに対してこのプロパティを設定することはできません。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-324">You cannot set this property for a maximized window.</span>
-            </span>
-            <span data-ttu-id="122c2-325">使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> 、ウィンドウの状態を設定するプロパティです。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-325">Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> property to return or set the state of the window.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-324">ウィンドウが最大化されている状態のときは、このプロパティに値を設定することはできません。</span><span class="sxs-lookup"><span data-stu-id="59203-324">You cannot set this property for a maximized window.</span></span> <span data-ttu-id="59203-325">このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> を使用して、ウィンドウの状態を取得または設定します。</span><span class="sxs-lookup"><span data-stu-id="59203-325">Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> property to return or set the state of the window.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -3109,12 +1926,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlWindowType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-326">ウィンドウの種類を設定または返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-326">Returns or sets the window type.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-326">ウィンドウの種類を設定または返します。</span><span class="sxs-lookup"><span data-stu-id="59203-326">Returns or sets the window type.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3142,12 +1954,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-327">ウィンドウがアプリケーションのウィンドウ領域で占有できる領域のポイントの高さの最大値を返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-327">Returns the maximum height in points of the space that a window can occupy in the application window area.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-327">アプリケーション ウィンドウ領域でウィンドウが占有できる領域の高さの最大値をポイント数で返します。</span><span class="sxs-lookup"><span data-stu-id="59203-327">Returns the maximum height in points of the space that a window can occupy in the application window area.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3175,12 +1982,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-328">ウィンドウでアプリケーションのウィンドウ領域で使用できる容量の点で最大の幅を返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-328">Returns the maximum width in points of the space that a window can occupy in the application window area.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-328">アプリケーション ウィンドウ領域でウィンドウが占有できる領域の幅の最大値をポイント単位で返します。</span><span class="sxs-lookup"><span data-stu-id="59203-328">Returns the maximum width in points of the space that a window can occupy in the application window area.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3211,12 +2013,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlWindowView</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-329">ウィンドウを表示するビューを設定または返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-329">Returns or sets the view showing in the window.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-329">ウィンドウに表示するビューを設定または返します。</span><span class="sxs-lookup"><span data-stu-id="59203-329">Returns or sets the view showing in the window.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3247,12 +2044,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-330">オブジェクトを表示するかどうかを決定します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-330">Determines whether the object is visible.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-330">オブジェクトを表示するかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="59203-330">Determines whether the object is visible.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3280,16 +2072,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-331">返します、<see cref="T:Microsoft.Office.Interop.Excel.Range" />のウィンドウまたはウィンドウ枠に表示されているセル範囲を表すオブジェクト。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-331">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the range of cells that are visible in the window or pane.</span>
-          </span>
-          <span data-ttu-id="122c2-332">列または行が部分的に表示されている場合、範囲に含まれます。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-332">If a column or row is partially visible, it's included in the range.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-331">ウィンドウまたはウィンドウ <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 枠に表示されるセルの範囲を表すオブジェクトを返します。</span><span class="sxs-lookup"><span data-stu-id="59203-331">Returns a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> object that represents the range of cells that are visible in the window or pane.</span></span> <span data-ttu-id="59203-332">一部しか表示されていない列や行も対象になります。</span><span class="sxs-lookup"><span data-stu-id="59203-332">If a column or row is partially visible, it's included in the range.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3320,30 +2103,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-333">ウィンドウのポイント単位の幅。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-333">The width in points of the window.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-333">ウィンドウの幅をポイント単位で指定します。</span><span class="sxs-lookup"><span data-stu-id="59203-333">The width in points of the window.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-334">使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" /> 、ウィンドウの最大サイズを決定するプロパティです。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-334">Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" /> property to determine the maximum size for the window.</span>
-            </span>
-            <span data-ttu-id="122c2-335">ウィンドウを最大化または最小化されている場合は、このプロパティを設定することはできません。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-335">You cannot set this property if the window is maximized or minimized.</span>
-            </span>
-            <span data-ttu-id="122c2-336">使用して、 <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> 、ウィンドウの状態を確認するにします。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-336">Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> property to determine the window state.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-334">このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" /> を使用して、ウィンドウの最大サイズを決定します。</span><span class="sxs-lookup"><span data-stu-id="59203-334">Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.UsableWidth" /> property to determine the maximum size for the window.</span></span> <span data-ttu-id="59203-335">ウィンドウを最大化または最小化されている場合は、このプロパティを設定することはできません。</span><span class="sxs-lookup"><span data-stu-id="59203-335">You cannot set this property if the window is maximized or minimized.</span></span> <span data-ttu-id="59203-336">このプロパティを <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> 使用してウィンドウの状態を確認します。</span><span class="sxs-lookup"><span data-stu-id="59203-336">Use the <see cref="P:Microsoft.Office.Interop.Excel.Window.WindowState" /> property to determine the window state.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowNumber">
@@ -3369,30 +2132,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-337">ウィンドウ番号を返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-337">Returns the window number.</span>
-          </span>
-          <span data-ttu-id="122c2-338">たとえば、"Book1.xls:2"をという名前のウィンドウは、そのウィンドウ番号として 2 を持っています。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-338">For example, a window named "Book1.xls:2" has 2 as its window number.</span>
-          </span>
-          <span data-ttu-id="122c2-339">ほとんどのウィンドウには、ウィンドウ番号 1 があります。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-339">Most windows have the window number 1.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-337">ウィンドウ番号を返します。</span><span class="sxs-lookup"><span data-stu-id="59203-337">Returns the window number.</span></span> <span data-ttu-id="59203-338">たとえば、"Book1.xls:2" という名前のウィンドウのウィンドウ番号は 2 です。</span><span class="sxs-lookup"><span data-stu-id="59203-338">For example, a window named "Book1.xls:2" has 2 as its window number.</span></span> <span data-ttu-id="59203-339">ほとんどのウィンドウのウィンドウ番号は 1 です。</span><span class="sxs-lookup"><span data-stu-id="59203-339">Most windows have the window number 1.</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-340">ウィンドウ番号とは異なり、ウィンドウのインデックス (の戻り値、<see cref="P:Microsoft.Office.Interop.Excel.Window.Index" />プロパティ)、ウィンドウ内の位置は、<see cref="T:Microsoft.Office.Interop.Excel.Windows" />コレクションです。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-340">The window number isn't the same as the window index (the return value of the <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> property), which is the position of the window within the <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> collection.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-340">ウィンドウ番号は、コレクション内でのウィンドウの位置であるウィンドウインデックス (プロパティの戻り値 <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> ) と同じ <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> ではありません。</span><span class="sxs-lookup"><span data-stu-id="59203-340">The window number isn't the same as the window index (the return value of the <see cref="P:Microsoft.Office.Interop.Excel.Window.Index" /> property), which is the position of the window within the <see cref="T:Microsoft.Office.Interop.Excel.Windows" /> collection.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
     <Member MemberName="WindowState">
@@ -3421,12 +2164,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlWindowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-341">ウィンドウの状態を設定または返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-341">Returns or sets the state of the window.</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-341">ウィンドウの状態を返すか設定します。</span><span class="sxs-lookup"><span data-stu-id="59203-341">Returns or sets the state of the window.</span></span></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3457,29 +2195,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>
-          <span data-ttu-id="122c2-342">(100 は通常の大きさや、200 は 2 倍のサイズ) の割合として、ウィンドウの表示サイズを設定または返します。</span>
-          <span class="sxs-lookup">
-            <span data-stu-id="122c2-342">Returns or sets the display size of the window as a percentage (100 equals normal size, 200 equals double size, and so on).</span>
-          </span>
-        </summary>
+        <summary><span data-ttu-id="59203-342">ウィンドウの表示サイズをパーセントで設定します (100 は標準サイズ、200 は倍のサイズなど)。</span><span class="sxs-lookup"><span data-stu-id="59203-342">Returns or sets the display size of the window as a percentage (100 equals normal size, 200 equals double size, and so on).</span></span></summary>
         <value>To be added.</value>
-        <remarks>
-          <para>
-            <span data-ttu-id="122c2-343">
-              <b>True を指定</b>するには現在の選択範囲に合わせてウィンドウのサイズをこのプロパティを設定することもできます。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-343">You can also set this property to <b>True</b> to make the window size fit the current selection.</span>
-            </span>
-          </para>
-          <para>
-            <span data-ttu-id="122c2-p163">現在のウィンドウでのアクティブ シートだけを対象にします。このプロパティを他のシートに対して使用するには、最初にそのシートをアクティブにする必要があります。</span>
-            <span class="sxs-lookup">
-              <span data-stu-id="122c2-p163">This function affects only the sheet that's currently active in the window. To use this property on other sheets, you must first activate them.</span>
-            </span>
-          </para>
-          <para></para>
-        </remarks>
+        <remarks><para><span data-ttu-id="59203-343">また、このプロパティに <b>True</b> を設定すると、現在の選択範囲に適したウィンドウ サイズを設定することができます。</span><span class="sxs-lookup"><span data-stu-id="59203-343">You can also set this property to <b>True</b> to make the window size fit the current selection.</span></span></para>
+          <para><span data-ttu-id="59203-p163">現在のウィンドウでのアクティブ シートだけを対象にします。このプロパティを他のシートに対して使用するには、最初にそのシートをアクティブにする必要があります。</span><span class="sxs-lookup"><span data-stu-id="59203-p163">This function affects only the sheet that's currently active in the window. To use this property on other sheets, you must first activate them.</span></span></para>
+          <para> </para></remarks>
       </Docs>
     </Member>
   </Members>
