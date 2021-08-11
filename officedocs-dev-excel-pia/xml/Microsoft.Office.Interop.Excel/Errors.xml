@@ -1,5 +1,5 @@
 <Type Name="Errors" FullName="Microsoft.Office.Interop.Excel.Errors">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="73bd6a9f765a75f5056ac06000a5ad65696c4627" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012258" /></Metadata><TypeSignature Language="C#" Value="public interface Errors" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fc8badcab1ccb5e6d14b4f9a67574fe02ed3f716590c9537965e1c63cba7b10a" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54509236" /></Metadata><TypeSignature Language="C#" Value="public interface Errors" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Errors" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Errors" />
   <TypeSignature Language="VB.NET" Value="Public Interface Errors" />
@@ -22,8 +22,8 @@
   </Attributes>
   <Docs>
     <summary>セル範囲のさまざまなエラーを表します。</summary>
-    <remarks><para>Errors オブジェクト <see cref="P:Microsoft.Office.Interop.Excel.Range.Errors" /> を取得 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> するには、コレクションのプロパティ <b>を使用</b> します。</para>
-      <para>Errors オブジェクト <b>が返</b> された後は、オブジェクトのプロパティを使用して、特定のエラー チェック <see cref="P:Microsoft.Office.Interop.Excel.Error.Value" /> <see cref="T:Microsoft.Office.Interop.Excel.Error" /> 条件を確認できます。</para>
+    <remarks><para>Errors オブジェクト <see cref="P:Microsoft.Office.Interop.Excel.Range.Errors" /> を取得するには <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 、コレクションのプロパティ <b>を使用</b> します。</para>
+      <para>Errors オブジェクト <b>が返</b> された後は、オブジェクトのプロパティを使用して、特定のエラーチェック <see cref="P:Microsoft.Office.Interop.Excel.Error.Value" /> <see cref="T:Microsoft.Office.Interop.Excel.Error" /> 条件を確認できます。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -59,7 +59,7 @@
         <param name="Index">To be added.</param>
         <summary>エラー チェックの各オプションの状態を取得することができます。</summary>
         <value>To be added.</value>
-        <remarks><para>オブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.Errors" /> 参照して、エラー チェック オプションに関連付けられているインデックス値の一覧を表示します。</para>
+        <remarks><para>オブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.Errors" /> 参照して、エラー チェック オプションに関連付けられたインデックス値の一覧を表示します。</para>
           <para> </para></remarks>
         <example><para>次の使用例では、セル A1 に数値を文字列として設定します。その数値が文字列として記述されているかどうか判別し、その結果に応じて、メッセージを表示します。</para>
           <code>&lt;span class="label"&gt;Sub CheckForErrors()
@@ -1114,7 +1114,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1175,7 +1175,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>Object</b>. 次 <paramref name="Index" /> の定数のいずれかを指定できます<b>。xlEvaluateToError</b> セルがエラー値に評価されます。<b>xlTextDate</b> セルには、2 桁の年のテキスト日付が含まれる。<b>xlNumberAsText</b> セルには、テキストとして格納された数値が含まれる。<b>xlInconsistentFormula</b> セルに、領域の矛盾した数式が含まれている。<b>xlOmittedCells</b> セルには、領域のセルを省略する数式が含まれる。<b>xlUnlockedFormulaCells</b> ロック解除されたセルには数式が含まれている。<b>xlEmptyCellReferences</b> セルには、空のセルを参照する数式が含まれる。</param>
+        <param name="Index">必須<b>オブジェクト 。</b> また <paramref name="Index" /> 、次のいずれかの定数を指定できます<b>。xlEvaluateToError</b> セルはエラー値に評価されます。<b>xlTextDate</b> セルには、2 桁の年のテキスト日付が含まれる。<b>xlNumberAsText</b> セルには、テキストとして格納された数値が含まれる。<b>xlInconsistentFormula</b> セルには、領域の不整合な数式が含まれている。<b>xlOmittedCells</b> セルには、領域のセルを省略する数式が含まれる。<b>xlUnlockedFormulaCells</b> ロック解除されたセルには、数式が含まれる。<b>xlEmptyCellReferences</b> セルには、空のセルを参照する数式が含まれる。</param>
         <summary>オブジェクトの 1 つのメンバーを返 <see cref="T:Microsoft.Office.Interop.Excel.Error" /> します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

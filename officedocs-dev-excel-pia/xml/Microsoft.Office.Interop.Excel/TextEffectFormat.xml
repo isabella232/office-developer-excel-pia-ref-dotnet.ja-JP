@@ -1,5 +1,5 @@
 <Type Name="TextEffectFormat" FullName="Microsoft.Office.Interop.Excel.TextEffectFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="fbb84779b82f0d04327c445fb2dede8ff19b5468" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009654" /></Metadata><TypeSignature Language="C#" Value="public interface TextEffectFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e8f3ae739158fd1702c8341c6ed61e782925c4b99779e9b46e91a0ada3d11532" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54517580" /></Metadata><TypeSignature Language="C#" Value="public interface TextEffectFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextEffectFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TextEffectFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextEffectFormat&#xA;Implements _IMsoDispObj" />
@@ -52,7 +52,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTextEffectAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ワードアートの配置を設定または返します。</summary>
+        <summary>WordArt の配置を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -83,7 +83,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -178,7 +178,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したワードアートのフォントが italic の場合は <b>、msoTrue</b> を返します。</summary>
+        <summary>指定した WordArt のフォントが <b>italic</b> の場合は、msoTrue を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -271,7 +271,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> の 場合は、指定したワードアートの文字のペアがカーニングされます。</summary>
+        <summary><b>True</b> を指定した WordArt の文字ペアがカーニングされている場合。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -363,7 +363,7 @@
       <Docs>
         <summary>指定したワードアートの形状を設定します。</summary>
         <value>To be added.</value>
-        <remarks><para>このプロパティを <see cref="P:Microsoft.Office.Interop.Excel.TextEffectFormat.PresetTextEffect" /> 設定すると <b>、PresetShape プロパティが自動的に設定</b> されます。</para>
+        <remarks><para>プロパティを設定 <see cref="P:Microsoft.Office.Interop.Excel.TextEffectFormat.PresetTextEffect" /> すると <b>、PresetShape プロパティが自動的に設定</b> されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -395,7 +395,7 @@
       <Docs>
         <summary>指定したワードアートのスタイルを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para>このプロパティの値は、[ワードアート ギャラリー] ダイアログ ボックスの書式に対応しています (左から右、上から下に番号が付きます)。</para>
+        <remarks><para>このプロパティの値は、WordArt ギャラリー ダイアログ ボックスの形式に対応します (左から右、上から下に番号が付きます)。</para>
           <para><b>PresetTextEffect</b> プロパティを設定すると、他のほとんどの書式設定のプロパティも、指定した図形に自動的に設定されます。</para>
           <para> </para></remarks>
       </Docs>
@@ -426,10 +426,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> の 場合は、指定したワードアートの文字は、ワードアートの境界図形を基準に 90 度回転します。 <b>False</b> の 場合は、指定したワードアートの文字は、境界図形を基準に元の向きを保持します。</summary>
+        <summary><b>True</b> の場合、指定した WordArt の文字は、WordArt の境界図形に対して 90 度回転します。 <b>False</b> を指定した WordArt の文字が境界図形を基準に元の方向を保持する場合。</summary>
         <value>To be added.</value>
-        <remarks><para>ワードアートに横書きテキストが含まれている場合、 <b>RotatedChars</b> プロパティを <b>msoTrue</b> に設定すると、文字は反時計方向に 90°回転します。 ワードアートに垂直なテキストが含まれている場合、 <b>RotatedChars</b> プロパティを <b>msoFalse</b> に設定すると、文字は時計方向に 90°回転します。 水平方向と <see cref="M:Microsoft.Office.Interop.Excel.TextEffectFormat.ToggleVerticalText" /> 垂直方向のテキストフローを切り替える場合は、このメソッドを使用します。</para>
-          <para>オブジェクトのメソッドとプロパティ、および <see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <b>オブジェクトの RotatedChars</b> <see cref="M:Microsoft.Office.Interop.Excel.TextEffectFormat.ToggleVerticalText" /> <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> <b></b>プロパティとメソッドはすべて、ワードアートを表す Shape オブジェクトのテキスト フローの文字の向きと方向に影響します。 これらのプロパティとを必要と結果を取得するメソッドの効果を結合する方法を確認する必要があります。</para>
+        <remarks><para>ワードアートに横書きテキストが含まれている場合、 <b>RotatedChars</b> プロパティを <b>msoTrue</b> に設定すると、文字は反時計方向に 90°回転します。 ワードアートに垂直なテキストが含まれている場合、 <b>RotatedChars</b> プロパティを <b>msoFalse</b> に設定すると、文字は時計方向に 90°回転します。 水平方向と <see cref="M:Microsoft.Office.Interop.Excel.TextEffectFormat.ToggleVerticalText" /> 垂直方向のテキスト フローを切り替える方法を使用します。</para>
+          <para>オブジェクトのメソッドとプロパティ、および <see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <b>オブジェクトの RotatedChars</b> プロパティとメソッドはすべて <see cref="M:Microsoft.Office.Interop.Excel.TextEffectFormat.ToggleVerticalText" /> <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> <b>、WordArt</b> を表す Shape オブジェクトの文字の向きと方向に影響します。 これらのプロパティとを必要と結果を取得するメソッドの効果を結合する方法を確認する必要があります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -486,8 +486,8 @@
       <Parameters />
       <Docs>
         <summary>指定したワードアートの横書きと縦書きを切り替えます。</summary>
-        <remarks><para><b>ToggleVerticalText</b>メソッドを使用すると、ワードアートを表す Shape オブジェクトの値とプロパティが入れ替わるので、プロパティは変更 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Width" /> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Height" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Left" /> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Top" /> されません。</para>
-          <para>オブジェクトのメソッドとプロパティ、およびオブジェクトの <see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <see cref="P:Microsoft.Office.Interop.Excel.TextEffectFormat.RotatedChars" /> <b>ToggleVerticalText</b> <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> <b></b>メソッドはすべて、ワードアートを表す Shape オブジェクトの文字の向きとテキスト フローの方向に影響します。 これらのプロパティとを必要と結果を取得するメソッドの効果を結合する方法を確認する必要があります。</para>
+        <remarks><para><b>ToggleVerticalText</b>メソッドを使用すると、WordArt を表す Shape オブジェクトの値とプロパティを入れ替え、プロパティは <see cref="P:Microsoft.Office.Interop.Excel.Shape.Width" /> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Height" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Left" /> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Top" /> 変更されません。</para>
+          <para>オブジェクトのメソッドとプロパティ、オブジェクトのプロパティと <see cref="M:Microsoft.Office.Interop.Excel.Shape.Flip(Microsoft.Office.Core.MsoFlipCmd)" /> <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <see cref="P:Microsoft.Office.Interop.Excel.TextEffectFormat.RotatedChars" /> <b>ToggleVerticalText</b> メソッドはすべて <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> <b>、WordArt</b> を表す Shape オブジェクトの文字の向きとテキスト フローの方向に影響します。 これらのプロパティとを必要と結果を取得するメソッドの効果を結合する方法を確認する必要があります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -519,7 +519,7 @@
       <Docs>
         <summary>指定したワードアート内の各文字に割り当てられる文字の幅に対する水平方向の空間の比率を取得または設定します。 0 (ゼロ) から 5 までの値が有効です。</summary>
         <value>To be added.</value>
-        <remarks><para>このプロパティに大きな値を設定すると、文字間に十分なスペースが設定されます。値が 1 未満の場合、文字が重なっている可能性があります。</para>
+        <remarks><para>このプロパティの大きな値は、文字間に十分なスペースを指定します。値が 1 未満の場合、文字の重複が発生する可能性があります。</para>
           <para>次に、画面上で文字の間隔を設定する場合の設定項目と、それに対応する <b>Tracking</b> プロパティの値を示します。</para>
           <list type="table">
             <item>

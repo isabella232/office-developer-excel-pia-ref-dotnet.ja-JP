@@ -1,5 +1,5 @@
 <Type Name="Diagram" FullName="Microsoft.Office.Interop.Excel.Diagram">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9a421c6b190452977e49a87c2df60fb4cf93d756" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005629" /></Metadata><TypeSignature Language="C#" Value="public interface Diagram" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8f23e88bc435fafb03c88a3768f511496656666559e1cc38d9b9bfaee6a4d380" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54509481" /></Metadata><TypeSignature Language="C#" Value="public interface Diagram" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Diagram" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Diagram" />
   <TypeSignature Language="VB.NET" Value="Public Interface Diagram" />
@@ -22,11 +22,11 @@
   </Attributes>
   <Docs>
     <summary>図を表します。</summary>
-    <remarks><para>取得する <b>Diagram</b> オブジェクトを取得 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> するには、オブジェクトまたはコレクションの Diagram <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> プロパティ <b>を使用</b> します。</para>
+    <remarks><para>オブジェクトまたは <b>コレクションの Diagram</b> プロパティ <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> を使用 <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> して <b>、Diagram</b> オブジェクトを返します。</para>
       <para>メソッドを使用して、現在の図を別の図に変換 <see cref="M:Microsoft.Office.Interop.Excel.Diagram.Convert(Microsoft.Office.Core.MsoDiagramType)" /> できます。</para>
       <para>
-        <b>注</b>   現在の図が組織図 (<b>msoDiagramOrgChart</b>) の場合は、実行時エラーが発生します。</para>
-      <para><b>Diagram</b>オブジェクトを操作するときに選択できる図には、いくつかの種類があります。 使用できる図表 <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddDiagram(Microsoft.Office.Core.MsoDiagramType,System.Single,System.Single,System.Single,System.Single)" /> の種類の一覧を表示するには、メソッドを参照してください。</para>
+        <b>メモ</b>   現在の図が組織図<b>(msoDiagramOrgChart)</b>の場合、実行時エラーが発生します。</para>
+      <para><b>Diagram</b>オブジェクトを操作するときに選択するダイアグラムには、いくつかの種類があります。 使用可能なダイアグラム <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddDiagram(Microsoft.Office.Core.MsoDiagramType,System.Single,System.Single,System.Single,System.Single)" /> の種類の一覧を表示するには、メソッドを参照してください。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -53,7 +53,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -84,10 +84,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図の自動書式設定状態を示す定数を設定または取得します。</summary>
+        <summary>図の自動書式設定状態を示す定数を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para>AutoFormat <b>を</b> <b>msoFalse に設定すると、</b> 図の自動書式設定が無効になります。 AutoFormat <b>を</b> <b>msoTrue に設定すると</b> 、図の自動書式設定が有効になります。</para>
-          <para>次の<b>msotristate</b>定数は、このプロパティには適用されません: <b>msoCTrue、msoTriStateMixed</b> <b>、msoTriStateToggle</b>。 <b></b></para>
+        <remarks><para><b>AutoFormat を</b> <b>msoFalse に設定すると</b>、ダイアグラムの自動書式設定が無効になります。 <b>AutoFormat を</b> <b>msoTrue に設定すると</b>、図の自動書式設定が有効になります。</para>
+          <para>このプロパティ<b>に適用されない MsoTriState</b>定数は<b>、msoCTrue、msoTriStateMixed、msoTriStateToggle</b>です。 <b></b> <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -119,8 +119,8 @@
       <Docs>
         <summary>図内のノードとコネクタの自動配置を決定する定数を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para><b>AutoLayout を</b> <b>msoFalse に設定すると、</b>図の自動書式設定が無効になります。 <b>AutoLayout を</b> <b>msoTrue に設定すると</b>、図の自動書式設定が有効になります。</para>
-          <para>次の<b>msotristate</b>定数は、このプロパティには適用されません: <b>msoCTrue、msoTriStateMixed</b> <b>、msoTriStateToggle</b>。 <b></b></para>
+        <remarks><para><b>AutoLayout を</b> <b>msoFalse に設定すると</b>、図の自動書式設定が無効になります。 <b>AutoLayout を</b> <b>msoTrue に設定すると</b>、図の自動書式設定が有効になります。</para>
+          <para>このプロパティ<b>に適用されない MsoTriState</b>定数は<b>、msoCTrue、msoTriStateMixed、msoTriStateToggle</b>です。 <b></b> <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -147,7 +147,7 @@
         <Parameter Name="Type" Type="Microsoft.Office.Core.MsoDiagramType" />
       </Parameters>
       <Docs>
-        <param name="Type">必須 <see cref="T:Microsoft.Office.Core.MsoDiagramType" /> 。 変換する図の種類を指定します。<b>使用できる定数</b> は、次に示す定数の 1 つです。 <b>msoDiagramCycle</b> 連続サイクル図の種類を含むプロセス図。<b>msoDiagramMixed</b> 図の種類が混在しています。<b>msoDiagramOrgChart</b> 階層関係図の種類。<b>msoDiagramPyramid</b> 基礎ベースの関係図の種類。<b>msoDiagramRadial</b> コア要素の関係を示す図の種類。<b>msoDiagramTarget</b> 目標に向けた手順を示す図の種類。<b>msoDiagramVenn</b> 要素間の重なり合う領域を示す図の種類。</param>
+        <param name="Type">必須 <see cref="T:Microsoft.Office.Core.MsoDiagramType" /> 。 変換するダイアグラムの種類。<b>MsoDiagramType</b> は、これらの定数の 1 つを指定できます。 <b>msoDiagramCycle</b> 連続サイクル図の種類を持つプロセス図。<b>msoDiagramMixed</b> 混合ダイアグラムの種類。<b>msoDiagramOrgChart</b> 階層リレーションシップ ダイアグラムの種類。<b>msoDiagramPyramid</b> 基礎ベースのリレーションシップダイアグラムの種類。<b>msoDiagramRadial</b> コア要素のリレーションシップを示す図の種類。<b>msoDiagramTarget</b> 目標に向けた手順を示す図の種類。<b>msoDiagramVenn</b> 要素間の重なりの領域を示す図の種類。</param>
         <summary>現在の図を別の図に変換します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -203,8 +203,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>図内のノード内のテキストのサイズを、ノードの境界内に収まるサイズに調整します。</summary>
-        <remarks><para>このメソッドは、PowerPoint 2003 Microsoft Officeでのみ機能します。</para>
+        <summary>ダイアグラム内のノード内のテキストのサイズを、ノードの境界内に収まるサイズに調整します。</summary>
+        <remarks><para>このメソッドは、2003 Microsoft Office PowerPointでのみ機能します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -231,7 +231,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DiagramNodes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された図のすべてのノードのフラット リストを含むオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodes" /> を返します。</summary>
+        <summary>指定した図 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodes" /> のすべてのノードのフラット リストを含むオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -290,10 +290,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図のノードを反転します。</summary>
+        <summary>図内のノードを反転します。</summary>
         <value>To be added.</value>
-        <remarks><para><b>Reverse を</b> <b>msoFalse に設定すると、</b>図のノードは変更されません。 <b>Reverse を</b> <b>msoTrue に設定</b>すると、図のノードが反転します。</para>
-          <para>次の<b>msotristate</b>定数は、このプロパティには適用されません: <b>msoCTrue、msoTriStateMixed</b> <b>、msoTriStateToggle</b>。 <b></b></para>
+        <remarks><para>[ <b>リバース]</b> <b>を msoFalse に設定すると</b> 、ダイアグラム ノードは残ります。 [ <b>反転]</b> <b>を msoTrue に設定すると</b> 、図のノードが反転します。</para>
+          <para>このプロパティ<b>に適用されない MsoTriState</b>定数は<b>、msoCTrue、msoTriStateMixed、msoTriStateToggle</b>です。 <b></b> <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -320,10 +320,10 @@
         <ReturnType>Microsoft.Office.Core.MsoDiagramType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図の種類を設定または返します。</summary>
+        <summary>ダイアグラムの種類を設定または返します。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Core.MsoDiagramType" /> 使用できる定数は、 <b>次に示す MsoDiagramType</b> 定数です。</para>
+            <see cref="T:Microsoft.Office.Core.MsoDiagramType" /> 次に示す <b>MsoDiagramType 定数のいずれかを</b> 指定できます。</para>
           <para>
             <b>msoDiagramCycle</b>
           </para>

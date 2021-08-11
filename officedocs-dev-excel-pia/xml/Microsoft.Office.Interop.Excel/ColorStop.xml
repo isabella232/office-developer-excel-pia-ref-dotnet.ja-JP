@@ -1,5 +1,5 @@
 <Type Name="ColorStop" FullName="Microsoft.Office.Interop.Excel.ColorStop">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="67429240a1c19e773a20f35e2f6194267fff416e" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003998" /></Metadata><TypeSignature Language="C#" Value="public interface ColorStop" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="863cb3d88b2d2a63c78dec4f318bee7b4ac4cb9d0905efbac157497fa25d6c90" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508753" /></Metadata><TypeSignature Language="C#" Value="public interface ColorStop" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorStop" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorStop" />
   <TypeSignature Language="VB.NET" Value="Public Interface ColorStop" />
@@ -21,8 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>指定範囲または選択範囲のグラデーションの塗りつぶしの色の停止点を表します。</summary>
-    <remarks><para>ColorStop コレクションを使用すると、セルの塗りつぶし (, , ) などのプロパティ <see cref="P:Microsoft.Office.Interop.Excel.Border.Color" /> を <see cref="P:Microsoft.Office.Interop.Excel.Border.ThemeColor" /> 設定 <see cref="P:Microsoft.Office.Interop.Excel.Border.TintAndShade" /> できます。</para>
+    <summary>範囲または選択範囲のグラデーション塗りつぶしの色の停止点を表します。</summary>
+    <remarks><para>ColorStop コレクションを使用すると、セル塗りつぶしのプロパティを <see cref="P:Microsoft.Office.Interop.Excel.Border.Color" /> 設定 <see cref="P:Microsoft.Office.Interop.Excel.Border.ThemeColor" /> できます <see cref="P:Microsoft.Office.Interop.Excel.Border.TintAndShade" /> 。</para>
       <para> </para></remarks>
     <example><para>次の例は、ColorStop にプロパティを適用する方法を示しています。</para></example>
   </Docs>
@@ -50,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Microsoft Excel アプリケーションを表 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> すオブジェクトを返します。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
+        <summary>オブジェクト修飾子なしで使用すると、このプロパティは、アプリケーションのオブジェクトを <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 表すオブジェクトMicrosoft Excelします。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
         <value><b>アプリケーション</b> (上記を参照)</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -81,7 +81,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>表示されたオブジェクトの色を取得または設定します。 値の取得および設定が可能です。</summary>
+        <summary>表示されたオブジェクトの色を取得または設定します。値の取得および設定が可能です。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -109,7 +109,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このオブジェクトが作成されたアプリケーション <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> を示す列挙の定数を返します。 読み取り専用です。</summary>
+        <summary>このオブジェクトが作成されたアプリケーションを示す列挙体 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> の定数を返します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
         <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。Creator プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 用の Excel で使用するように設計されました。たとえば、Excel の作成元コードは XCEL です。 </para>
           <para> </para></remarks>
@@ -163,7 +163,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -225,7 +225,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>表示されたオブジェクトのテーマの色を取得または設定します。 値の設定および取得が可能です。</summary>
+        <summary>表示されたオブジェクトのテーマの色を取得または設定します。値の設定および取得が可能です。</summary>
         <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
         <example><para>テーマの色を作業中の領域に適用します。</para></example>
@@ -257,7 +257,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>表示されたオブジェクトの濃淡や網掛けの値を取得または設定します。 値の設定および取得が可能です。</summary>
+        <summary>表示されたオブジェクトの濃淡や網掛けの値を取得または設定します。値の設定および取得が可能です。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
         <example><para>作業中の領域に対して濃淡または網掛けを適用します。</para></example>

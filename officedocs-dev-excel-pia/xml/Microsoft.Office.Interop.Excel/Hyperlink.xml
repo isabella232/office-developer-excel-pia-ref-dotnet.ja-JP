@@ -1,5 +1,5 @@
 <Type Name="Hyperlink" FullName="Microsoft.Office.Interop.Excel.Hyperlink">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="0dfd3a08d223fb5d9858e759d9369366737cb84c" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012076" /></Metadata><TypeSignature Language="C#" Value="public interface Hyperlink" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4ddef5c28ce4220915cbb6915b0dba5b10e71c8d04c4f13e46c5888eb3931f62" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54509152" /></Metadata><TypeSignature Language="C#" Value="public interface Hyperlink" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Hyperlink" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Hyperlink" />
   <TypeSignature Language="VB.NET" Value="Public Interface Hyperlink" />
@@ -22,9 +22,9 @@
   </Attributes>
   <Docs>
     <summary>ハイパーリンクを表します。</summary>
-    <remarks><para>Hyperlink <b>オブジェクト</b> はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.Hyperlinks" /> です。</para>
-      <para>図形のハイパーリンクを取得するには、このプロパティを使用します (図形に設定できるハイパーリンクは <see cref="P:Microsoft.Office.Interop.Excel.Shape.Hyperlink" /> 1 つのみです)。</para>
-      <para>範囲またはワークシートには、複数のハイパーリンクを設定できます。 Use <b>Hyperlinks</b>( <paramref name="index" /> ), where is the hyperlink <paramref name="index" /> number, to return a single <b>Hyperlink</b> object.</para>
+    <remarks><para><b>Hyperlink オブジェクト</b>は、コレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.Hyperlinks" /> です。</para>
+      <para>プロパティを <see cref="P:Microsoft.Office.Interop.Excel.Shape.Hyperlink" /> 使用して、図形のハイパーリンクを返します (図形にはハイパーリンクを 1 つしか含めない場合があります)。</para>
+      <para>範囲またはワークシートに複数のハイパーリンクを設定できます。 1 <b>つの Hyperlink オブジェクト</b> <paramref name="index" /> を取得するには、ハイパーリンク番号を指定するハイパーリンク ( ) <paramref name="index" /> <b>を使用</b> します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -54,7 +54,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>対象の文書のアドレスを設定または返します。</summary>
+        <summary>ターゲット ドキュメントのアドレスを設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -107,7 +107,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -138,8 +138,8 @@
       </Parameters>
       <Docs>
         <param name="Filename"><b>文字列</b> が必要です。 ドキュメントのファイル名を指定します。</param>
-        <param name="EditNow">必須 <b>のブール値 です</b>。 <b>True を</b> 指定したドキュメントは、関連付けられた編集環境ですぐに開きます。 既定値は True です。</param>
-        <param name="Overwrite">必須 <b>のブール値 です</b>。 <b>True</b> の場合は、同じフォルダー内にある同じ名前の既存のファイルを上書きします。 <b>False</b> を指定すると、同じ名前の既存のファイルが保持され、引数に新しいファイル <paramref name="Filename" /> 名が指定されます。 既定値は <b>False</b> です。</param>
+        <param name="EditNow">必須 <b>のブール値</b>です。 <b>True</b> を指定すると、指定したドキュメントが関連付けられた編集環境ですぐに開きます。 既定値は True です。</param>
+        <param name="Overwrite">必須 <b>のブール値</b>です。 <b>True</b> の場合は、同じフォルダー内にある同じ名前の既存のファイルを上書きします。 <b>False</b> を指定すると、同じ名前の既存のファイルが保持され、引数 <paramref name="Filename" /> に新しいファイル名が指定されます。 既定値は <b>False</b> です。</param>
         <summary>指定したハイパーリンクにリンクされた新しいドキュメントを作成します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -225,10 +225,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したハイパーリンクの電子メールの件名行のテキスト文字列を設定または返します。 件名はハイパーリンクのアドレスに追加されます。</summary>
+        <summary>指定したハイパーリンクの電子メール件名行のテキスト文字列を設定または返します。 件名は、ハイパーリンクのアドレスに追加されます。</summary>
         <value>To be added.</value>
         <remarks><para>このプロパティは主に、電子メールへのハイパーリンクで使用されます。</para>
-          <para>このプロパティの値は、同じ Hyperlink オブジェクトのプロパティを使用して指定した電子メールの件名行 <see cref="P:Microsoft.Office.Interop.Excel.Hyperlink.Address" /> よりも <b>優先</b> されます。</para>
+          <para>このプロパティの値は、同じ Hyperlink オブジェクトのプロパティを使用して指定した電子メールの件名よりも <see cref="P:Microsoft.Office.Interop.Excel.Hyperlink.Address" /> <b>優先</b> されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -260,10 +260,10 @@
       <Docs>
         <param name="NewWindow">省略 <b>可能なオブジェクト</b>です。 新しいウィンドウに目的のアプリケーションを表示するには、この引数に  <b>True</b> を設定します。 既定値は <b>False</b> です。</param>
         <param name="AddHistory">省略 <b>可能なオブジェクト</b>です。 不使用。 将来使用するために予約されています。</param>
-        <param name="ExtraInfo">省略 <b>可能なオブジェクト</b>です。 ハイパーリンクを解決するための HTTP の追加情報を指定する文字列 (<b>String</b>)、またはバイト配列を指定します。 たとえば、イメージ マップの座標、フォームの内容、FAT ファイル名を <paramref name="ExtraInfo" /> 指定できます。</param>
-        <param name="Method">省略 <b>可能なオブジェクト</b>です。 接続方法 <paramref name="ExtraInfo" /> を指定します。 使用できる定数は、次 <see cref="T:Microsoft.Office.Core.MsoExtraInfoMethod" /> に示す定数です。</param>
+        <param name="ExtraInfo">省略 <b>可能なオブジェクト</b>です。 ハイパーリンクを解決するための HTTP の追加情報を指定する文字列 (<b>String</b>)、またはバイト配列を指定します。 たとえば、画像マップの座標、フォームの内容、または FAT ファイル名 <paramref name="ExtraInfo" /> を指定できます。</param>
+        <param name="Method">省略 <b>可能なオブジェクト</b>です。 接続方法 <paramref name="ExtraInfo" /> を指定します。 次のいずれかの定数を <see cref="T:Microsoft.Office.Core.MsoExtraInfoMethod" /> 指定できます。</param>
         <param name="HeaderInfo">省略 <b>可能なオブジェクト</b>です。 HTTP 要求のヘッダー情報を指定する文字列 (<b>String</b>) を指定します。 既定値は空の文字列です。</param>
-        <summary>キャッシュされたドキュメントが既にダウンロードされている場合は、そのドキュメントを表示します。 ダウンロードされていない場合は、ハイパーリンク先の目的の文書をダウンロードして、適切なアプリケーションで文書を表示します。</summary>
+        <summary>既にダウンロードされている場合は、キャッシュされたドキュメントを表示します。 ダウンロードされていない場合は、ハイパーリンク先の目的の文書をダウンロードして、適切なアプリケーションで文書を表示します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -290,7 +290,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの名前を返します。 読み取りのみ可能な <b>String</b> 値です。</summary>
+        <summary>指定されたオブジェクトの名前を返します。値の取得のみ可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -346,7 +346,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.Range" /> ハイパーリンクが接続されている範囲を表すオブジェクトを返します。</summary>
+        <summary>指定したハイパーリンク <see cref="T:Microsoft.Office.Interop.Excel.Range" /> が接続されている範囲を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -377,7 +377,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したハイパーリンクのヒントテキストを設定または返します。</summary>
+        <summary>指定したハイパーリンクの ScreenTip テキストを設定または返します。</summary>
         <value>To be added.</value>
         <remarks><para>Web ページとして保存したドキュメントを Web ブラウザーで表示し、ハイパーリンクの上にマウス ポインターをしばらく置いた場合などに、ヒントが表示されます。一部のブラウザーは、ヒントをサポートしていません。</para>
           <para> </para></remarks>
@@ -406,7 +406,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したコメント <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 、図表ノード、またはハイパーリンクに接続されている図形を表すオブジェクトを返します。</summary>
+        <summary>指定したコメント、ダイアグラム ノード、またはハイパーリンクに接続されている図形を表 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -468,7 +468,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したハイパーリンクに表示するテキストを設定または返します。 既定値はハイパーリンクのアドレスです。</summary>
+        <summary>指定したハイパーリンクに対して表示するテキストを設定または返します。 既定値はハイパーリンクのアドレスです。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -498,7 +498,7 @@
       <Docs>
         <summary>HTML フレームの場所を返します。</summary>
         <value>To be added.</value>
-        <remarks><para><b>Type プロパティ</b>に使用できる定数 <see cref="T:Microsoft.Office.Core.MsoHyperlinkType" /> は<b>、msoHyperlinkInlineShape、msoHyperlinkRange、</b>または<b>msoHyperlinkShape です</b>。 <b></b></para>
+        <remarks><para><b>Type プロパティ</b>には <see cref="T:Microsoft.Office.Core.MsoHyperlinkType" /> <b>、msoHyperlinkInlineShape、msoHyperlinkRange、</b>または<b>msoHyperlinkShape のいずれかの定数を指定できます</b>。 <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>

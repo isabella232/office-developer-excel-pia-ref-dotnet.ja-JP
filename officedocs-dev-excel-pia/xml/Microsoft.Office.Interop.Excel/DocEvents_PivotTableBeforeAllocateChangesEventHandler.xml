@@ -1,5 +1,5 @@
 <Type Name="DocEvents_PivotTableBeforeAllocateChangesEventHandler" FullName="Microsoft.Office.Interop.Excel.DocEvents_PivotTableBeforeAllocateChangesEventHandler">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="b5f51a6bf090756cfddf79335f2ec3cdced04ad8" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003753" /></Metadata><TypeSignature Language="C#" Value="public delegate void DocEvents_PivotTableBeforeAllocateChangesEventHandler(PivotTable TargetPivotTable, int ValueChangeStart, int ValueChangeEnd, out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8bedd8c4afed4c9a051ef5eb19cdd22f6cd56d0f4df039b4ee3332a02d1006ad" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54509327" /></Metadata><TypeSignature Language="C#" Value="public delegate void DocEvents_PivotTableBeforeAllocateChangesEventHandler(PivotTable TargetPivotTable, int ValueChangeStart, int ValueChangeEnd, out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DocEvents_PivotTableBeforeAllocateChangesEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DocEvents_PivotTableBeforeAllocateChangesEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DocEvents_PivotTableBeforeAllocateChangesEventHandler(TargetPivotTable As PivotTable, ValueChangeStart As Integer, ValueChangeEnd As Integer, ByRef Cancel As Boolean)" />
@@ -30,10 +30,10 @@
   </ReturnValue>
   <Docs>
     <param name="TargetPivotTable">適用する変更を含むピボットテーブルです。</param>
-    <param name="ValueChangeStart">関連付けられたコレクション内の最初の変更に対する <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> インデックス。 インデックスは、コレクション内 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> のオブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> プロパティによって指定 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> されます。</param>
-    <param name="ValueChangeEnd">関連付けられたコレクション内の最後の変更に対する <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> インデックス。 インデックスは、コレクション内 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> のオブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> プロパティによって指定 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> されます。</param>
-    <param name="Cancel"><b>イベントが</b> 発生した場合は false。 イベント プロシージャでこのパラメーターを <b>true</b>に設定すると、変更はピボットテーブルに適用されません。すべての編集内容が失われます。</param>
-    <summary>イベント <b>の</b> イベント ハンドラーを追加するために使用されるデリゲート <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeAllocateChanges" /> 型。 <b>PivotTableBeforeAllocateChanges</b>イベントは、変更がピボットテーブルに適用される前に発生します。</summary>
+    <param name="ValueChangeStart">関連付けられたコレクションの最初の変更に対する <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> インデックス。 インデックスは、コレクション内 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> のオブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> プロパティによって指定 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> されます。</param>
+    <param name="ValueChangeEnd">関連付けられたコレクションの最後の変更に対する <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> インデックス。 インデックスは、コレクション内 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> のオブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> プロパティによって指定 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> されます。</param>
+    <param name="Cancel"><b>false</b> イベントが発生した場合。 イベント プロシージャでこのパラメーターを <b>true</b>に設定すると、ピボットテーブルに変更が適用されるのではなく、すべての編集内容が失われます。</param>
+    <summary>イベント <b>の</b> イベント ハンドラーを追加するために使用されるデリゲート <see cref="E:Microsoft.Office.Interop.Excel.DocEvents_Event.PivotTableBeforeAllocateChanges" /> 型。 <b>PivotTableBeforeAllocateChanges</b>イベントは、ピボットテーブルに変更が適用される前に発生します。</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

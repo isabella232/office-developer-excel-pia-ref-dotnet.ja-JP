@@ -1,5 +1,5 @@
 <Type Name="AutoCorrect" FullName="Microsoft.Office.Interop.Excel.AutoCorrect">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="782c79cfc9bebcca05b2fc4c4e554571d4077391" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006231" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCorrect" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="35dcac565514a9ae9dedbb2922b0f6e42ecdc23a946d510190b6725ab509a1b5" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506723" /></Metadata><TypeSignature Language="C#" Value="public interface AutoCorrect" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AutoCorrect" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AutoCorrect" />
   <TypeSignature Language="VB.NET" Value="Public Interface AutoCorrect" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>曜日の先頭文字を大文字にするかどうか、2 文字目を小文字にするかどうかの設定と、置き換えを行う文字列など、Excel のオートコレクトの設定全体を表します。</summary>
-    <remarks><para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel._Application.AutoCorrect" /> を使用して <b>、AutoCorrect オブジェクトを取得</b> します。</para>
+    <remarks><para>プロパティを <see cref="P:Microsoft.Office.Interop.Excel._Application.AutoCorrect" /> 使用して <b>、AutoCorrect オブジェクトを取得</b> します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -80,7 +80,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel._Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel._Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -111,7 +111,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>リスト <b>に</b> 対して自動拡張が有効かどうかを示すブール値。</summary>
+        <summary>リスト <b>に</b> 対して自動展開が有効かどうかを示すブール値。</summary>
         <value>To be added.</value>
         <remarks><para>自動展開が有効になっている場合は、リストの横にある空の行または列のセルに入力すると、リストが展開され、その行または列が含まれます。</para>
           <para> </para></remarks>
@@ -143,7 +143,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>自動入力リストによって作成される集計列の作成に影響します。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
+        <summary>自動入力一覧で作成された集計列の作成に影響します。値の取得および設定が可能です。ブール型 (<b>Boolean</b>) の値を使用します。</summary>
         <value><b>Boolean</b></value>
         <remarks><para>このプロパティは、既存の集計列や自動入力を使わずに作成された集計列には影響しません。</para>
           <para> </para></remarks>
@@ -329,8 +329,8 @@
       <Docs>
         <summary>ユーザーが [オートコレクト オプション] ボタンを表示または非表示にできます。 既定値は <b>True</b> です。</summary>
         <value>To be added.</value>
-        <remarks><para><b>DisplayAutoCorrectOptions</b> プロパティは、Office 全体についての設定です。 Excel でこのプロパティを変更すると、他の Office アプリケーションにも反映されます。</para>
-          <para>Excel では、ハイパーリンクが自動的に作成された場合にのみ、[オートコレクト オプション] ボタンが表示されます。</para>
+        <remarks><para><b>DisplayAutoCorrectOptions</b> プロパティは、Office 全体についての設定です。Excel でこのプロパティを変更すると、他の Office アプリケーションにも反映されます。</para>
+          <para>[Excelオートコレクト オプション] ボタンは、ハイパーリンクが自動的に作成された場合にのみ表示されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -391,13 +391,13 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">省略 <b>可能なオブジェクト</b>です。 返されるオートコレクト項目の配列の行インデックスを指定します。 行は 2 つの要素を持つ 1 次元配列として返されます。最初の要素は列 1 のテキストで、2 番目の要素は列 2 のテキストです。</param>
+        <param name="Index">省略 <b>可能なオブジェクト</b>です。 返される AutoCorrect 置換の配列の行インデックス。 行は 2 つの要素を持つ 1 次元配列として返されます。最初の要素は 1 列目のテキストで、2 番目の要素は 2 列目のテキストです。</param>
         <summary>オートコレクト項目の配列を返します。</summary>
         <value>To be added.</value>
-        <remarks><para>指定 <paramref name="Index" /> しない場合、このメソッドは 2 次元配列を返します。 配列内の各行には、次の表に示すように、1 つの置換が含まれます。</para>
+        <remarks><para>指定 <paramref name="Index" /> しない場合、このメソッドは 2 次元配列を返します。 配列内の各行には、次の表に示すように、置換が 1 つ含まれます。</para>
           <list type="table">
             <item>
-              <term>1 </term>
+              <term>1</term>
               <description>置換される文字列</description>
             </item>
             <item>
@@ -405,7 +405,7 @@
               <description>置換文字列</description>
             </item>
           </list>
-          <para>置換後 <see cref="M:Microsoft.Office.Interop.Excel.AutoCorrect.AddReplacement(System.String,System.String)" /> のリストにエントリを追加するには、このメソッドを使用します。</para>
+          <para>置換リスト <see cref="M:Microsoft.Office.Interop.Excel.AutoCorrect.AddReplacement(System.String,System.String)" /> にエントリを追加するには、このメソッドを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -435,7 +435,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True の</b> 場合は、オート コレクトの置換の一覧内のテキストが自動的に置き換えられる場合です。</summary>
+        <summary><b>True</b> の場合は、オートコレクト置換のリスト内のテキストが自動的に置き換えられる。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -466,7 +466,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True の</b> 場合は、2 文字の大文字で始まる単語が自動的に修正されます。</summary>
+        <summary><b>True</b> の場合は、2 つの大文字で始まる単語が自動的に修正されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,5 +1,5 @@
 <Type Name="ColorScaleCriteria" FullName="Microsoft.Office.Interop.Excel.ColorScaleCriteria">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="589e9e7df115b961e73fd7901c8f7f0502669047" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004005" /></Metadata><TypeSignature Language="C#" Value="public interface ColorScaleCriteria : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1581185a66fc48145cfdbcd414ff92b4cdcc0e6027747f35e83ebc18d04c48cc" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508767" /></Metadata><TypeSignature Language="C#" Value="public interface ColorScaleCriteria : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ColorScaleCriteria implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" />
   <TypeSignature Language="VB.NET" Value="Public Interface ColorScaleCriteria&#xA;Implements IEnumerable" />
@@ -25,7 +25,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>カラー スケールの <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> 条件付き書式のすべての条件を表すオブジェクトのコレクションです。 各条件は、カラー スケールの最小、中間、最高しきい値を指定します。</summary>
+    <summary>色スケールの <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> 条件付き書式のすべての条件を表すオブジェクトのコレクション。 各条件は、カラー スケールの最小、中間、最高しきい値を指定します。</summary>
     <remarks><para><b>ColorScaleCriteria コレクションを取得</b>するには、オブジェクト <see cref="P:Microsoft.Office.Interop.Excel.ColorScale.ColorScaleCriteria" /> のプロパティを使用 <see cref="T:Microsoft.Office.Interop.Excel.ColorScale" /> します。</para>
       <para> </para></remarks>
     <example><para>次のコード例は、数値の範囲を作成し、2 色スケールの条件付き書式ルールをその範囲に適用します。その後、<b>ColorScaleCriteria</b> コレクションにインデックスを作成し、最小しきい値の色を赤に割り当て、最高しきい値の色を青に割り当て、個別の条件を設定します。</para>
@@ -4446,7 +4446,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>カラー スケールの条件付 <b>き</b> 書式ルールの条件の数を指定する整数値を返します。 読み取り専用です。</summary>
+        <summary>色スケールの条件付き書式ルールの条件の数を指定する整数型 <b>(Integer)</b> の値を返します。 読み取り専用です。</summary>
         <value><b>Integer</b></value>
         <remarks><para>条件の数はカラー スケールに割り当てられたしきい値の数と同じです。これは、条件付き書式ルールに 2 色スケールと 3 色スケールのどちらを使用するのかに応じて 2 または 3 になります。</para>
           <para> </para></remarks>
@@ -4510,10 +4510,10 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">オブジェクトのインデックス <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> 番号を指定します。</param>
+        <param name="Index">オブジェクトのインデックス <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> 番号。</param>
         <summary>コレクションから 1 <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /> つのオブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriteria" /> します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.ColorScaleCriterion" /></value>
-        <remarks><para>パラメーターの値 <paramref name="Index" /> は、カラー スケールの条件付き書式に設定された条件の数より大きくすることはできません。 条件は、カラー スケールに割り当てられるしきい値と同数じです。 しきい値の数を確認するには、プロパティを使用 <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriteria.Count" /> します。</para>
+        <remarks><para>パラメーターの値は、色スケールの条件付き書式に設定された条件の <paramref name="Index" /> 数より大きくすることはできません。 条件は、カラー スケールに割り当てられるしきい値と同数じです。 しきい値の数を確認するには、プロパティを使用 <see cref="P:Microsoft.Office.Interop.Excel.ColorScaleCriteria.Count" /> します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

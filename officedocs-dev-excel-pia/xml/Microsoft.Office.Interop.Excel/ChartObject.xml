@@ -1,5 +1,5 @@
 <Type Name="ChartObject" FullName="Microsoft.Office.Interop.Excel.ChartObject">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="6a46bae59a2c5593efb705b20c2aca39fc1b0090" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005846" /></Metadata><TypeSignature Language="C#" Value="public interface ChartObject" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a80e8b9de2038313fa43831dc33e4fcd04222810467a9149cfeeef72e4a60b81" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508858" /></Metadata><TypeSignature Language="C#" Value="public interface ChartObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartObject" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>ワークシートの埋め込みグラフを表します。</summary>
-    <remarks><para><b>ChartObject オブジェクト</b>は、オブジェクトのコンテナーとして機能 <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> します。 <b>ChartObject</b> オブジェクトのプロパティとメソッドは、シートにある埋め込みグラフの外観と大きさを制御します。 <b>ChartObject オブジェクト</b>はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.ChartObjects" /> です。 <b>ChartObjects</b> コレクションは単一のシートにすべての埋め込みグラフを含んでいます。</para>
+    <remarks><para><b>ChartObject オブジェクト</b>は、オブジェクトのコンテナーとして機能 <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> します。 <b>ChartObject</b> オブジェクトのプロパティとメソッドは、シートにある埋め込みグラフの外観と大きさを制御します。 <b>ChartObject オブジェクト</b>は、コレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.ChartObjects" /> です。 <b>ChartObjects</b> コレクションは単一のシートにすべての埋め込みグラフを含んでいます。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -104,7 +104,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの作成元を表すオブジェクトを返します (OLE オートメーション オブジェクトでこのプロパティを使用すると、そのオブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Application" /> アプリケーションを取得できます)。</summary>
+        <summary>指定したオブジェクトの作成者を表すオブジェクトを返します (このプロパティを OLE Automation オブジェクトと一緒に使用して、そのオブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Application" /> アプリケーションを取得できます)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -135,7 +135,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 境界線を表すオブジェクトを返します。</summary>
+        <summary>オブジェクトの罫 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 線を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -217,7 +217,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Chart</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトに <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> 含まれるグラフを表すオブジェクトを返します。</summary>
+        <summary>オブジェクトに含 <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> まれるグラフを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -449,7 +449,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの高さを指定します。</summary>
+        <summary>オブジェクトの高さ。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -508,7 +508,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> オブジェクトの内部を表すオブジェクトを返します。</summary>
+        <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> の内部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -539,9 +539,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの左側から列 A の左側 (ワークシート) またはグラフ エリアの左側 (グラフの場合) までの距離です。</summary>
+        <summary>オブジェクトの左端から列 A の左端 (ワークシート上) またはグラフ領域の左端 (グラフ上) までの距離です。</summary>
         <value>To be added.</value>
-        <remarks><para>ウィンドウが最大化されている場合、このプロパティはウィンドウ枠の幅に基づいて変化する負の数を返します。 このプロパティを 0 (ゼロ) に設定すると、アプリケーション ウィンドウが最大化されている場合よりもウィンドウが小さくて少し小さになります。 つまり、このプロパティが 0 (ゼロ) の場合、メインの Microsoft Excel ウィンドウの左罫線は画面にはほとんど表示されません。</para>
+        <remarks><para>ウィンドウが最大化されている場合、このプロパティは、ウィンドウの枠線の幅に基づいて変化する負の数を返します。 このプロパティを 0 (ゼロ) に設定すると、アプリケーション ウィンドウが最大化された場合よりも小さいウィンドウになります。 つまり、このプロパティが 0 (ゼロ) の場合、メイン ウィンドウの左側の境界線Microsoft Excel画面にはほとんど表示されません。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -571,7 +571,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>オブジェクト</b> がロックされている場合は <b>True、シート</b> が保護されているときにオブジェクトを変更できる場合は False です。</summary>
+        <summary><b>オブジェクト</b> がロックされている場合は True、 <b>シート</b> が保護されているときにオブジェクトを変更できる場合は False です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -760,7 +760,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> の 埋め込みグラフフレームを移動、サイズ変更、または削除できない場合です。</summary>
+        <summary><b>True</b> の場合は、埋め込みグラフ フレームを移動、サイズ変更、または削除できません。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -821,7 +821,7 @@
         <param name="Replace">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定したオブジェクトで現在の選択範囲を置き換えます。 <b>False を指定</b> する現在の選択範囲を拡張する選択したオブジェクトと指定したオブジェクトです。</param>
         <summary>オブジェクトを選択します。</summary>
         <returns>To be added.</returns>
-        <remarks><para>セルまたはセル範囲を選択するには、<b>Select</b> メソッドを使用します。 1 つのセルをアクティブ セルにする場合は、このメソッドを使用 <see cref="M:Microsoft.Office.Interop.Excel.ChartObject.Activate" /> します。</para>
+        <remarks><para>セルまたはセル範囲を選択するには、<b>Select</b> メソッドを使用します。 1 つのセルをアクティブ セルにする場合は、メソッドを使用 <see cref="M:Microsoft.Office.Interop.Excel.ChartObject.Activate" /> します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -877,7 +877,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> の 場合は、フォントが影付きフォントまたはオブジェクトに影がある場合です。</summary>
+        <summary><b>True</b> の場合は、フォントがシャドウ フォントか、オブジェクトに影が付く場合。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -905,7 +905,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ShapeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> を表すオブジェクトを返します。</summary>
+        <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> またはオブジェクトを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -936,7 +936,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの上端から行 1 の上端 (ワークシートの場合) またはグラフ エリアの上端 (グラフの場合) までの距離です。</summary>
+        <summary>オブジェクトの上端から行 1 の上端 (ワークシート上) またはグラフ領域の上部 (グラフ上) までの距離。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -964,7 +964,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.Range" /> オブジェクトの左上隅にあるセルを表すオブジェクトを返します。</summary>
+        <summary>指定したオブジェクトの左上隅にあるセルを表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1026,7 +1026,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの幅を指定します。</summary>
+        <summary>オブジェクトの幅。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1054,9 +1054,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの z オーダーの位置を返します。</summary>
+        <summary>オブジェクトの z オーダー位置を返します。</summary>
         <value>To be added.</value>
-        <remarks><para>オブジェクトのコレクションでは、z オーダーの最背面にあるオブジェクトはコレクション(1)、z オーダーの最前面のオブジェクトは collection(collection) です。カウント)。</para>
+        <remarks><para>オブジェクトの任意のコレクションでは、z オーダーの背面にあるオブジェクトは collection(1)、z オーダーの前面にあるオブジェクトは collection(collection) です。Count)。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -1,5 +1,5 @@
 <Type Name="SparkPoints" FullName="Microsoft.Office.Interop.Excel.SparkPoints">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="e5a9199cd752c599cbd9222cae79f2248af65580" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009941" /></Metadata><TypeSignature Language="C#" Value="public interface SparkPoints" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="603170c2f7acb3a89f7e9efefeab5fc1da020af5317cd260f6dd4356b765c0bc" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54517146" /></Metadata><TypeSignature Language="C#" Value="public interface SparkPoints" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SparkPoints" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SparkPoints" />
   <TypeSignature Language="VB.NET" Value="Public Interface SparkPoints" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>スパークライン上のデータのポイントに対するマーカーの設定を表します。</summary>
-    <remarks><para>スパークライン上のデータポイントのマーカーの色と表示/非表示を設定するには、オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /> を使用します。 オブジェクトを <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Points" /> 取得するには、 <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> オブジェクトのプロパティを使用 <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /> します。 オブジェクトのプロパティは、[表示] セクションの [高ポイント、低ポイント、負の点、最初の点、最後の点、およびマーカー] チェック ボックスの設定と、リボンの [スパークライン ツールのデザイン] タブの [スタイル] セクションの [マーカーの色] ボックスの一覧にある項目の設定に対応しています。 <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /></para>
+    <remarks><para>オブジェクトを使用して、スパークライン上のデータポイントのマーカーの <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /> 色と表示を設定します。 オブジェクトを <see cref="P:Microsoft.Office.Interop.Excel.SparklineGroup.Points" /> 取得するには、 <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> オブジェクトのプロパティを使用 <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /> します。 オブジェクトのプロパティは、[表示] セクションの [高点、低点、負の点、最初のポイント、最後のポイント、およびマーカー] チェック ボックスの設定、およびリボンの [スパークライン ツールのデザイン] タブの [スタイル] セクションの [マーカーの色] ドロップダウン リストの項目に対応します。 <see cref="T:Microsoft.Office.Interop.Excel.SparkPoints" /></para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Microsoft Excel アプリケーションを表 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> すオブジェクトを返します。 オブジェクト修飾子と一緒に使用する場合、このプロパティは指定されたオブジェクトの作成元を表 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> すオブジェクトを返します。</summary>
+        <summary>オブジェクト修飾子なしで使用すると、このプロパティは、アプリケーションのオブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 表すオブジェクトMicrosoft Excelします。 オブジェクト修飾子と一緒に使用すると、このプロパティは、指定したオブジェクトの作成者を表す <see cref="T:Microsoft.Office.Interop.Excel.Application" /> オブジェクトを返します。</summary>
         <value>オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 。</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
@@ -78,10 +78,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このオブジェクトが作成されたアプリケーションを<b></b>示す 32 ビット整数を取得します。</summary>
-        <value>このオブジェクトが <b>作成されたアプリケーション</b> を示す 32 ビットの整数。</value>
-        <remarks><para>読み取り専用 <b>時間 です</b>。</para>
-          <para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Creator" /> Macintosh 用の Microsoft Excel で使用するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
+        <summary>このオブジェクトが作成されたアプリケーションを <b>示す</b> 32 ビット整数を取得します。</summary>
+        <value>このオブジェクトが <b>作成されたアプリケーション</b> を示す 32 ビット整数。</value>
+        <remarks><para>長い読み取 <b>り専用です</b>。</para>
+          <para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 このプロパティは、各アプリケーションに 4 文字のMicrosoft Excelコードを持つ Macintosh のプロパティで使用 <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Creator" /> するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -108,10 +108,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SparkColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スパークライン上のデータの最初のポイントのマーカーの色と表示設定を表す <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> オブジェクトを取得します。</summary>
-        <value>スパークライン上のデータの最初のポイントのマーカーの色と可視性 <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> を表すオブジェクト。</value>
+        <summary>スパークライン上のデータの最初のポイントのマーカーの色と表示を表す <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> オブジェクトを取得します。</summary>
+        <value>スパークライン上のデータの最初のポイントのマーカーの色と表示を表す <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> オブジェクト。</value>
         <remarks><para>読み取り専用です。</para>
-          <para>このプロパティは、[表示] セクションの [最初のポイント] チェック ボックスの設定、およびリボンの [スパークライン ツールのデザイン] タブの [スタイル] セクションにある [マーカーの色] ドロップダウン リストの [最初のポイント] 項目の設定に対応します。 <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Firstpoint" /></para>
+          <para>プロパティは、[表示] セクションの [最初のポイント] チェック ボックスの設定と、リボンの [スパークライン ツールのデザイン] タブの [スタイル] セクションの [マーカーの色] ドロップダウン リストの [最初のポイント] 項目の設定に対応 <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Firstpoint" /> します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -138,10 +138,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SparkColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スパークライン上のデータの最高点のマーカーの色と表示設定を表す <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> オブジェクトを取得します。</summary>
-        <value>スパークライン上のデータの最高点のマーカーの色と可視性 <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> を表すオブジェクト。</value>
+        <summary>スパークライン上のデータの最も高いポイントのマーカーの色と表示を表す <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> オブジェクトを取得します。</summary>
+        <value>スパークライン上のデータの最も高いポイントのマーカーの色と表示を表す <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> オブジェクト。</value>
         <remarks><para>読み取り専用です。</para>
-          <para>このプロパティは、[表示] セクションの [High Point] チェック ボックスの設定、およびリボンの [Sparkline Tools Design] タブの [Style] セクションにある [Marker Color] ドロップダウン リストの [High Point] 項目の設定に対応します。 <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Highpoint" /></para>
+          <para>プロパティは、リボンの [スパークライン ツールのデザイン] タブの [スタイル] セクションの [マーカーの色] ドロップダウン リストの [表示] セクションの [高点] チェック ボックスの設定に対応 <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Highpoint" /> します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -168,10 +168,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SparkColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スパークライン上のデータの最後のポイントのマーカーの色と可視性を表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> を取得します。</summary>
-        <value>スパークライン上のデータの最後のポイントのマーカーの色と表示設定 <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> を表すオブジェクト。</value>
+        <summary>スパークライン上のデータの最後のポイントのマーカーの色と表示を表す <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> オブジェクトを取得します。</summary>
+        <value>スパークライン上のデータの最後のポイントのマーカーの色と表示を表す <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> オブジェクト。</value>
         <remarks><para>読み取り専用です。</para>
-          <para>このプロパティは、リボンの [スパークライン ツールのデザイン] タブの [スタイル] セクションにある [マーカーの色] ドロップダウン リストの [最後のポイント]、[表示] セクションのチェック ボックス、および [最後のポイント] 項目の設定に対応します。 <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Lastpoint" /></para>
+          <para>プロパティは、リボンの [Sparkline Tools Design] タブの [スタイル] セクションの [マーカーの色] ドロップダウン リストの [表示] セクションの [最後のポイント] チェック ボックス、および [最後のポイント] 項目の設定に対応 <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Lastpoint" /> します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -198,10 +198,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SparkColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スパークライン上のデータの最低点のマーカーの色と表示設定を表す <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> オブジェクトを取得します。</summary>
-        <value>スパークライン上のデータの最低点のマーカーの色と可視性 <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> を表すオブジェクト。</value>
+        <summary>スパークライン上のデータの最も低いポイントのマーカーの色と表示を表す <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> オブジェクトを取得します。</summary>
+        <value>スパークライン上のデータの最も低いポイントのマーカーの色と表示を表す <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> オブジェクト。</value>
         <remarks><para>読み取り専用です。</para>
-          <para>このプロパティは、[表示] セクションの [低ポイント] チェック ボックスの設定と、リボンの [スパークライン ツールのデザイン] タブの [スタイル] セクションにある [マーカーの色] ドロップダウン リストの [低ポイント] 項目の設定に対応します。 <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Lowpoint" /></para>
+          <para>プロパティは、[表示] セクションの [低点] チェック ボックスと、リボンの [スパークライン ツールのデザイン] タブの [スタイル] セクションの [マーカーの色] ドロップダウン リストの [低点] 項目の設定に対応 <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Lowpoint" /> します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -228,10 +228,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SparkColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スパークライン上のデータの正の点に対するマーカーの色と可視性を表す <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> オブジェクトを取得します。</summary>
-        <value>ス <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> パークライン上のデータの正の点に対するマーカーの色と可視性を表すオブジェクト。</value>
+        <summary>スパークライン上のデータの正のポイントのマーカーの色と表示を表す <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> オブジェクトを取得します。</summary>
+        <value>スパークライン上のデータの正のポイントのマーカーの色と表示 <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> を表すオブジェクト。</value>
         <remarks><para>読み取り専用です。</para>
-          <para>このプロパティは、[表示] セクションの [マーカー] チェック ボックスの設定、およびリボンの [スパークライン ツールのデザイン] タブの [スタイル] セクションにある [マーカーの色] ボックスの一覧にある [マーカー] 項目の設定に対応します。 <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Markers" /></para>
+          <para>プロパティは、[表示] セクションの [マーカー] チェック ボックスの設定と、リボンの [スパークライン ツールのデザイン] タブの [スタイル] セクションの [マーカーの色] ドロップダウン リストのマーカー アイテムの設定に対応 <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Markers" /> します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -258,10 +258,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SparkColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スパークライン上のデータの負の点に対するマーカーの色と可視性を表す <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> オブジェクトを取得します。</summary>
-        <value>スパークライン上のデータの負の点に対するマーカーの色と可視性 <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> を表すオブジェクト。</value>
+        <summary>スパークライン上のデータの負のポイントのマーカーの色と表示を表す <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> オブジェクトを取得します。</summary>
+        <value>スパークライン上のデータの負のポイントのマーカーの色と表示を表す <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> オブジェクト。</value>
         <remarks><para>読み取り専用です。</para>
-          <para>このプロパティは、[表示] セクションの [負の点] チェック ボックスの設定と、リボンの [スパークライン ツールのデザイン] タブの [スタイル] セクションにある [マーカーの色] ドロップダウン リストの [負の点] 項目の設定に対応します。 <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Negative" /></para>
+          <para>プロパティは、[表示] セクションの [負のポイント] チェック ボックスの設定と、リボンの [スパークライン ツールのデザイン] タブの [スタイル] セクションの [マーカーの色] ドロップダウン リストの負のポイントアイテムの設定に対応 <see cref="P:Microsoft.Office.Interop.Excel.SparkPoints.Negative" /> します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -289,7 +289,7 @@
       </ReturnValue>
       <Docs>
         <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> の親オブジェクトを取得します。</summary>
-        <value>指定された <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> オブジェクトの親オブジェクト。</value>
+        <value>指定した <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> オブジェクトの親オブジェクト。</value>
         <remarks><para>値の取得のみ可能です。</para>
           <para> </para></remarks>
       </Docs>

@@ -1,5 +1,5 @@
 <Type Name="DataBarBorder" FullName="Microsoft.Office.Interop.Excel.DataBarBorder">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="e6636975b025ffd82977c1b6d9a6f682b8f015e5" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003872" /></Metadata><TypeSignature Language="C#" Value="public interface DataBarBorder" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="018549b7cd94b964433f5f9453fe3b4bcde5ddaf4be6593a878703ac9a013a7a" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508648" /></Metadata><TypeSignature Language="C#" Value="public interface DataBarBorder" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DataBarBorder" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DataBarBorder" />
   <TypeSignature Language="VB.NET" Value="Public Interface DataBarBorder" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>条件付き書式ルールで指定したデータ バーの枠線を表します。</summary>
-    <remarks><para>オブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.DataBarBorder" /> 使用して、データ バーの色と罫線の種類を取得または設定します。 データ バーの <see cref="T:Microsoft.Office.Interop.Excel.DataBarBorder" /> 条件付き書式ルールに関連付けられているオブジェクトにアクセスするには、プロパティを使用 <see cref="P:Microsoft.Office.Interop.Excel.Databar.BarBorder" /> します。 オブジェクトを取得した後、そのプロパティを使用して、データ バーの色を設定するために使用できる <see cref="T:Microsoft.Office.Interop.Excel.DataBarBorder" /> <see cref="P:Microsoft.Office.Interop.Excel.DataBarBorder.Color" /> <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> オブジェクトを取得します。</para>
+    <remarks><para>オブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.DataBarBorder" /> 使用して、データ バーの色と罫線の種類を取得または設定します。 データ バーの <see cref="T:Microsoft.Office.Interop.Excel.DataBarBorder" /> 条件付き書式ルールに関連付けられているオブジェクトにアクセスするには、プロパティを使用 <see cref="P:Microsoft.Office.Interop.Excel.Databar.BarBorder" /> します。 オブジェクトを取得した後、そのプロパティを使用して、データ バーの色を設定するために使用できるオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.DataBarBorder" /> <see cref="P:Microsoft.Office.Interop.Excel.DataBarBorder.Color" /> <see cref="T:Microsoft.Office.Interop.Excel.FormatColor" /> を返します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Microsoft Excel アプリケーションを表 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> すオブジェクトを返します。 オブジェクト修飾子と一緒に使用する場合、このプロパティは指定されたオブジェクトの作成元 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>オブジェクト修飾子なしで使用すると、このプロパティは、アプリケーションのオブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 表すオブジェクトMicrosoft Excelします。 オブジェクト修飾子と一緒に使用すると、このプロパティは、指定したオブジェクトの作成者を表す <see cref="T:Microsoft.Office.Interop.Excel.Application" /> オブジェクトを返します。</summary>
         <value>オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 。</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
@@ -78,8 +78,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>条件付き書式ルールで指定されたデータ バーの枠線の色を指定するオブジェクトを取得します。</summary>
-        <value>条件付き書式ルールで指定されたデータ バーの枠線の色を指定するオブジェクト。</value>
+        <summary>条件付き書式ルールで指定されたデータ バーの罫線の色を指定するオブジェクトを取得します。</summary>
+        <value>条件付き書式ルールで指定されたデータ バーの罫線の色を指定するオブジェクト。</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
       </Docs>
@@ -107,10 +107,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このオブジェクトが作成されたアプリケーションを<b></b>示す 32 ビット整数を取得します。</summary>
-        <value>このオブジェクトが <b>作成されたアプリケーション</b> を示す 32 ビットの整数。</value>
-        <remarks><para>読み取り専用 <b>時間 です</b>。</para>
-          <para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ <see cref="P:Microsoft.Office.Interop.Excel.DataBarBorder.Creator" /> Macintosh 用の Microsoft Excel で使用するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
+        <summary>このオブジェクトが作成されたアプリケーションを <b>示す</b> 32 ビット整数を取得します。</summary>
+        <value>このオブジェクトが <b>作成されたアプリケーション</b> を示す 32 ビット整数。</value>
+        <remarks><para>長い読み取 <b>り専用です</b>。</para>
+          <para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 このプロパティは、各アプリケーションに 4 文字のMicrosoft Excelコードを持つ Macintosh のプロパティで使用 <see cref="P:Microsoft.Office.Interop.Excel.DataBarBorder.Creator" /> するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -138,7 +138,7 @@
       </ReturnValue>
       <Docs>
         <summary>指定したオブジェクトの親オブジェクトを取得します。</summary>
-        <value>指定されたオブジェクトの親オブジェクト。</value>
+        <value>指定したオブジェクトの親オブジェクト。</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
       </Docs>
@@ -169,7 +169,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlDataBarBorderType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>条件付き書式ルールで指定されたデータ バーの枠線の種類を取得または設定します。</summary>
+        <summary>条件付き書式ルールで指定されたデータ バーの罫線の種類を取得または設定します。</summary>
         <value>条件付き書式ルールで指定されたデータ バーの罫線の種類。</value>
         <remarks><para>値の取得と設定が可能です。</para>
           <para> </para></remarks>

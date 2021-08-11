@@ -1,5 +1,5 @@
 <Type Name="Axes" FullName="Microsoft.Office.Interop.Excel.Axes">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="16133b78fe6ef635f84e7e24582e31b62c79a469" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006189" /></Metadata><TypeSignature Language="C#" Value="public interface Axes : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="cf3d01496de9135526a5f8e9e2caa49d1b0ecd7f97371405cda3424d82709271" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506695" /></Metadata><TypeSignature Language="C#" Value="public interface Axes : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Axes implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Axes" />
   <TypeSignature Language="VB.NET" Value="Public Interface Axes&#xA;Implements IEnumerable" />
@@ -25,9 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>指定されたグラフのすべての <see cref="T:Microsoft.Office.Interop.Excel.Axis" /> オブジェクトのコレクションです。</summary>
-    <remarks><para>Axes コレクション <see cref="M:Microsoft.Office.Interop.Excel._Chart.Axes(System.Object,Microsoft.Office.Interop.Excel.XlAxisGroup)" /> を取得するには、このメソッド <b>を使用</b> します。</para>
-      <para>単<b>一の Axis</b> <paramref name="type" /> オブジェクト <paramref name="group" /> を取得 <paramref name="type" /> するには、 <paramref name="group" /> <b></b>軸の種類を指定し、軸グループを指定します。 <paramref name="Type" />使用できる定数は <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> <b>、xlCategory、xlSeries、</b><b>または</b> <b>xlValue です</b>。 <paramref name="Group" /> 使用できる定数は <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> <b>、xlPrimary</b> または <b>xlSecondary です</b>。 詳細については <b>、Axes</b> メソッドを参照してください。</para>
+    <summary>指定したグラフ内 <see cref="T:Microsoft.Office.Interop.Excel.Axis" /> のすべてのオブジェクトのコレクション。</summary>
+    <remarks><para>Axes コレクションを <see cref="M:Microsoft.Office.Interop.Excel._Chart.Axes(System.Object,Microsoft.Office.Interop.Excel.XlAxisGroup)" /> 取得するには、このメソッド <b>を使用</b> します。</para>
+      <para>単 <b>一の Axis</b>オブジェクトを取得するには、軸の種類であり、軸グループである軸 ( 、 ) <paramref name="type" /> <paramref name="group" /> <paramref name="type" /> <paramref name="group" /> <b>を使用</b> します。 <paramref name="Type" />定数は <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> <b>、xlCategory、xlSeries、</b><b>または xlValue</b>のいずれかの<b>定数です</b>。 <paramref name="Group" /> xlPrimary または <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> <b>xlSecondary</b> の定数のいずれかを <b>指定できます</b>。 詳細については、「Axes メソッド」 <b>を参照</b> してください。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -87,7 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -205,8 +205,8 @@
         <Parameter Name="AxisGroup" Type="Microsoft.Office.Interop.Excel.XlAxisGroup" />
       </Parameters>
       <Docs>
-        <param name="Type">必須 <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> 。 軸の種類を指定します。<b>使用できる定数</b> は<b>、xlCategory です</b>。<b>xlSeriesAxis</b> 3-D グラフでのみ有効です。<b>xlValue</b>.</param>
-        <param name="AxisGroup">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> 可能です。 軸を指定します。<b>使用できる定数</b>は、次に示す<b>xlPrimary</b> Default<b>xlSecondary です</b>。</param>
+        <param name="Type">必須 <see cref="T:Microsoft.Office.Interop.Excel.XlAxisType" /> 。 軸の種類。<b>XlAxisType には</b> 、次の定数の<b>1 つを指定できます。xlCategory</b>です。<b>xlSeriesAxis</b> 3-D グラフでのみ有効です。<b>xlValue</b>.</param>
+        <param name="AxisGroup">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlAxisGroup" /> 可能です。 軸。<b>XlAxisGroup には</b> 、次のいずれかの定数を指定できます<b>。xlPrimary</b> Default<b>xlSecondary</b></param>
         <summary>コレクションから 1 <see cref="T:Microsoft.Office.Interop.Excel.Axis" /> つのオブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.Axes" /> します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

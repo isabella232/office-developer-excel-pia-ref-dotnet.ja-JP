@@ -1,5 +1,5 @@
 <Type Name="ConnectorFormat" FullName="Microsoft.Office.Interop.Excel.ConnectorFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="6e2dfed647b41c630904642100343ae25d044efb" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003942" /></Metadata><TypeSignature Language="C#" Value="public interface ConnectorFormat" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e283043a88fbcde2990f89395c6426ec95d6105b056ebecbf1ca27a181d3d877" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508718" /></Metadata><TypeSignature Language="C#" Value="public interface ConnectorFormat" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ConnectorFormat" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ConnectorFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface ConnectorFormat" />
@@ -23,8 +23,8 @@
   <Docs>
     <summary>コネクタに設定されるプロパティとメソッドが含まれます。</summary>
     <remarks><para>コネクタは、結合点と呼ばれる点で 2 つの図形を接続する線です。接続された図形を再配置すると、コネクタの形は、図形が接続状態を維持するように自動的に調整されます。</para>
-      <para><see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectorFormat" />ConnectorFormat オブジェクトを取得するには、<b>このプロパティを使用</b>します。 コネクタの <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> 端 <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> を文書内の他の図形に接続するには、このメソッドを使用します。 コネクタで接続されている 2 つの図形間の最短パスを自動的 <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> に検索するには、このメソッドを使用します。 このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.Shape.Connector" /> を使用して、図形がコネクタであるかどうかを確認します。</para>
-      <para>コレクションにコネクタを追加するときにサイズと位置を割り当てるが、コレクション内の他の図形にコネクタの開始と終了を接続すると、サイズと位置が自動的に調整されます。 <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> したがって、他の図形にコネクタを接続する場合は、初期のサイズと位置を指定する、関係ありません。 同様に、コネクタを接続するときにコネクタを接続する図形を指定するが、コネクタを接続後、 <b>RerouteConnections</b> メソッドを使用すると、無関係なサイトの接続の選択を行う、コネクタを接続する接続サイトが変わる可能性があります。</para>
+      <para>ConnectorFormat <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectorFormat" /> オブジェクトを取得するには、 <b>このプロパティを使用</b> します。 ドキュメント内の他の図形にコネクタの端を接続するには、and <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> メソッドを使用します。 コネクタによって接続されている 2 つの図形の間の最短パスを自動的に検索するには <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> 、このメソッドを使用します。 プロパティを <see cref="P:Microsoft.Office.Interop.Excel.Shape.Connector" /> 使用して、図形がコネクタであるかどうかを確認します。</para>
+      <para>コレクションにコネクタを追加するときにサイズと位置を割り当て、コネクタの先頭と末尾をコレクション内の他の図形に接続すると、サイズと位置が自動的に調整されます。 <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> したがって、他の図形にコネクタを接続する場合は、初期のサイズと位置を指定する、関係ありません。 同様に、コネクタを接続するときにコネクタを接続する図形を指定するが、コネクタを接続後、 <b>RerouteConnections</b> メソッドを使用すると、無関係なサイトの接続の選択を行う、コネクタを接続する接続サイトが変わる可能性があります。</para>
       <para>通常、結合点は、次の表に示す規則に従って番号が付けられます。</para>
       <list type="table">
         <item>
@@ -62,7 +62,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -91,10 +91,10 @@
         <Parameter Name="ConnectionSite" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ConnectedShape">必須 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> オブジェクト。 コネクタの始点を接続する図形を指定します。 指定した <b>Shape オブジェクト</b> は、コネクタと同 <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> じコレクション内にある必要があります。</param>
-        <param name="ConnectionSite">整数型 (<b>Integer</b>) の値を使用します。 で指定した図形の接続サイト <paramref name="ConnectedShape" /> 。 1 から、指定した図形のプロパティによって返される整数までの整数 <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> を指定する必要があります。 コネクタが接続する 2 つの図形間の最短パスを自動的に検索する場合は、この引数に有効な整数を指定し、コネクタが両端にある図形に接続された後にメソッドを使用します。 <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /></param>
+        <param name="ConnectedShape">必須 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> オブジェクト。 コネクタの始点を接続する図形を指定します。 指定した <b>Shape</b> オブジェクトは、コネクタと同じ <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> コレクション内にある必要があります。</param>
+        <param name="ConnectionSite">整数型 (<b>Integer</b>) の値を使用します。 で指定された図形上の接続サイト <paramref name="ConnectedShape" /> 。 1 から指定した図形のプロパティによって返される整数を指定 <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> する必要があります。 コネクタが接続する 2 つの図形の間の最短パスを自動的に検索する場合は、この引数に有効な整数を指定し、コネクタが両端の図形に接続された後にメソッドを <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> 使用します。</param>
         <summary>指定されたコネクタの始点を指定された図形に接続します。</summary>
-        <remarks><para>コネクタの先頭と別の図形の間に既に接続がある場合、その接続は切れます。 コネクタの開始位置が指定した接続サイトにまだ配置されていない場合、このメソッドはコネクタの先頭を接続サイトに移動し、コネクタのサイズと位置を調整します。 コネクタの <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> 端を図形に接続するには、このメソッドを使用します。</para>
+        <remarks><para>コネクタの先頭と別の図形の間に接続が既に存在する場合、その接続は壊れています。 コネクタの先頭が指定された接続サイトにまだ配置されていない場合、このメソッドはコネクタの先頭を接続サイトに移動し、コネクタのサイズと位置を調整します。 コネクタの <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> 端を図形に接続するには、このメソッドを使用します。</para>
           <para>コネクタをオブジェクトに接続すると、必要に応じてコネクタの大きさと位置が自動的に調整されます。</para>
           <para> </para></remarks>
       </Docs>
@@ -122,10 +122,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> の 場合は、指定したコネクタの開始が図形に接続されています。</summary>
+        <summary><b>True</b> を指定したコネクタの先頭が図形に接続されている場合。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" /> 使用できる定数は、 <b>次に示す MsoTriState</b> 定数です。</para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" /> 次の <b>MsoTriState</b> 定数のいずれかを指定できます。</para>
           <para>
             <b>msoCTrue</b>
           </para>
@@ -139,7 +139,7 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> 指定されたコネクタの開始位置は図形に接続されています。</para>
+            <b>msoTrue</b> 指定したコネクタの先頭が図形に接続されています。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -166,7 +166,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> コネクタの開始位置が接続されている図形を表すオブジェクトを返します。</summary>
+        <summary>指定したコネクタ <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> の先頭が接続されている図形を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks><para>指定したコネクタの始点が図形に接続されていない場合、このプロパティはエラーとなります。</para>
           <para> </para></remarks>
@@ -222,8 +222,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>指定したコネクタの開始位置を、接続されている図形から切り離します。</summary>
-        <remarks><para><b>BeginDisconnect メソッドは</b>、コネクタのサイズや位置を変更します。 コネクタの開始位置は接続サイトに残りますが、接続されていません。 コネクタの <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndDisconnect" /> 端を図形から切り離す場合は、このメソッドを使用します。</para>
+        <summary>指定したコネクタの先頭を、接続されている図形から切り離します。</summary>
+        <remarks><para><b>BeginDisconnect メソッド</b>は、コネクタのサイズや位置を変更します。 コネクタの先頭は接続サイトに配置されたままですが、接続されなくなりました。 このメソッド <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.EndDisconnect" /> を使用して、コネクタの端を図形から切り離します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -281,10 +281,10 @@
         <Parameter Name="ConnectionSite" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="ConnectedShape">必須 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> オブジェクト。 コネクタの終点を接続する図形を指定します。 指定した <b>Shape オブジェクト</b> は、コネクタと同 <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> じコレクション内にある必要があります。</param>
-        <param name="ConnectionSite">整数型 (<b>Integer</b>) の値を使用します。 で指定した図形の接続サイト <paramref name="ConnectedShape" /> 。 1 から、指定した図形のプロパティによって返される整数までの整数 <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> を指定する必要があります。 コネクタが接続する 2 つの図形間の最短パスを自動的に検索する場合は、この引数に有効な整数を指定し、コネクタが両端にある図形に接続された後にメソッドを使用します。 <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /></param>
+        <param name="ConnectedShape">必須 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> オブジェクト。 コネクタの終点を接続する図形を指定します。 指定した <b>Shape</b> オブジェクトは、コネクタと同じ <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> コレクション内にある必要があります。</param>
+        <param name="ConnectionSite">整数型 (<b>Integer</b>) の値を使用します。 で指定された図形上の接続サイト <paramref name="ConnectedShape" /> 。 1 から指定した図形のプロパティによって返される整数を指定 <see cref="P:Microsoft.Office.Interop.Excel.Shape.ConnectionSiteCount" /> する必要があります。 コネクタが接続する 2 つの図形の間の最短パスを自動的に検索する場合は、この引数に有効な整数を指定し、コネクタが両端の図形に接続された後にメソッドを <see cref="M:Microsoft.Office.Interop.Excel.Shape.RerouteConnections" /> 使用します。</param>
         <summary>指定されたコネクタの終点を指定された図形に接続します。</summary>
-        <remarks><para>コネクタの端と別の図形の間に既に接続がある場合、その接続は切れます。 コネクタの端が指定された接続サイトにまだ配置されていない場合、このメソッドはコネクタの端を接続サイトに移動し、コネクタのサイズと位置を調整します。 コネクタの <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> 先頭を図形に接続するには、このメソッドを使用します。</para>
+        <remarks><para>コネクタの端と別の図形の間に接続が既に存在する場合、その接続は壊れています。 コネクタの端が指定された接続サイトにまだ配置されていない場合、このメソッドはコネクタの端を接続サイトに移動し、コネクタのサイズと位置を調整します。 コネクタの <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnect(Microsoft.Office.Interop.Excel.Shape,System.Int32)" /> 先頭を図形に接続するには、このメソッドを使用します。</para>
           <para>コネクタをオブジェクトに接続すると、必要に応じてコネクタの大きさと位置が自動的に調整されます。</para>
           <para> </para></remarks>
       </Docs>
@@ -312,14 +312,14 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>msoTrue</b> を指定したコネクタの端が図形に接続されている場合です。</summary>
+        <summary>指定したコネクタの端が図形に接続されている場合は<b>、msoTrue。</b></summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Core.MsoTriState" /> 使用できる定数は、 <b>次に示す MsoTriState</b> 定数です。</para>
+            <see cref="T:Microsoft.Office.Core.MsoTriState" /> 次の <b>MsoTriState</b> 定数のいずれかを指定できます。</para>
           <para>
-            <b>msoFalse</b> 指定されたコネクタの端が図形に接続されていません。</para>
+            <b>msoFalse</b> 指定したコネクタの端が図形に接続されていません。</para>
           <para>
-            <b>msoTrue</b> 指定したコネクタの端が図形に接続されています。</para>
+            <b>msoTrue</b> 指定したコネクタの端が図形に接続されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -403,7 +403,7 @@
       <Parameters />
       <Docs>
         <summary>指定したコネクタの端を、接続されている図形から切り離します。</summary>
-        <remarks><para>このメソッドでは、コネクタのサイズや位置は変更されます。コネクタの端は接続サイトに配置されたままですが、接続されていません。 コネクタの <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginDisconnect" /> 先頭を図形から切り離す場合は、このメソッドを使用します。</para>
+        <remarks><para>このメソッドは、コネクタのサイズや位置を変更しない。コネクタの端は接続サイトに配置されたままですが、接続されなくなりました。 図形から <see cref="M:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginDisconnect" /> コネクタの先頭を切り離す場合は、このメソッドを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -461,10 +461,10 @@
         <ReturnType>Microsoft.Office.Core.MsoConnectorType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コネクタの書式の種類を設定または返します。</summary>
+        <summary>コネクタの形式の種類を設定または返します。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Core.MsoConnectorType" /> 使用できる定数は、 <b>次に示す MsoConnectorType</b> 定数です。</para>
+            <see cref="T:Microsoft.Office.Core.MsoConnectorType" /> 次の <b>MsoConnectorType 定数のいずれかを指定</b> できます。</para>
           <para>
             <b>msoConnectorCurve</b>
           </para>

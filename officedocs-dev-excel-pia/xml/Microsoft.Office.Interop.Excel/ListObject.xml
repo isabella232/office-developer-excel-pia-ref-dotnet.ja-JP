@@ -1,5 +1,5 @@
 <Type Name="ListObject" FullName="Microsoft.Office.Interop.Excel.ListObject">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="1bb3f266b1d484c480fc364acfdb40b99ff98c94" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999932" /></Metadata><TypeSignature Language="C#" Value="public interface ListObject" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="12f6472b6bd5b554fef2d2f68d007059b90fb9312a991dd2c24941d07c7f55f8" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506408" /></Metadata><TypeSignature Language="C#" Value="public interface ListObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ListObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ListObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface ListObject" />
@@ -22,8 +22,8 @@
   </Attributes>
   <Docs>
     <summary>ワークシートのリスト オブジェクトを表します。</summary>
-    <remarks><para>オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> です。 コレクション <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> には、ワークシート上のすべてのリスト オブジェクトが含まれます。</para>
-      <para>コレクションを <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.ListObjects" /> 返すプロパティ <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> を使用 <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> します。</para>
+    <remarks><para>オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> です。 コレクション <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> には、ワークシート上のすべてのリスト オブジェクトが含まれています。</para>
+      <para>コレクションを <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.ListObjects" /> 取得するには、the <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> のプロパティを使用 <see cref="T:Microsoft.Office.Interop.Excel.ListObjects" /> します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -81,9 +81,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ワークシート内の <b>オブジェクト</b> がアクティブかどうか、つまり、アクティブ セルが ListObject オブジェクトの範囲内にあるかどうかを示すブール値を <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> <b>返</b> します。</summary>
+        <summary>ワークシート内の <b>オブジェクト</b> がアクティブかどうかを示すブール値 (つまり、アクティブ セルが ListObject オブジェクトの範囲内にあるかどうかを示す値) <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> <b>を返</b> します。</summary>
         <value>To be added.</value>
-        <remarks><para><b>ListObject</b>オブジェクトには<b>Activate</b>メソッドは存在しないので、リスト内のセル範囲をアクティブにすることでのみ<b>ListObject</b>オブジェクトをアクティブ化できます。</para>
+        <remarks><para><b>ListObject</b>オブジェクトには<b>Activate</b>メソッドが存在しないので、リスト内のセル範囲をアクティブ化することでのみ<b>ListObject</b>オブジェクトをアクティブ化できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -113,10 +113,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したテーブルの説明 (代替) テキスト文字列を取得または設定します。</summary>
-        <value>指定されたテーブルの説明 (代替) テキスト文字列。</value>
+        <summary>指定したテーブルのわかりやすい (代替) テキスト文字列を取得または設定します。</summary>
+        <value>指定したテーブルのわかりやすい (代替) テキスト文字列。</value>
         <remarks><para>値の取得と設定が可能です。</para>
-          <para>プロパティの値は、[代替テキスト] ダイアログ ボックスの [タイトル] ボックスの設定に対応します。このダイアログ ボックスは、テーブルを右クリックし、[テーブル] をポイントし、[代替テキスト] をクリックすると表示されます。 <see cref="P:Microsoft.Office.Interop.Excel.ListObject.AlternativeText" /></para>
+          <para>プロパティの値は、[代替テキスト] ダイアログ ボックスの [タイトル] ボックスの設定に対応します。これは、テーブルを右クリックし、[テーブル] をポイントし、[代替テキスト] をクリックすることで表示 <see cref="P:Microsoft.Office.Interop.Excel.ListObject.AlternativeText" /> されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -143,7 +143,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -203,7 +203,7 @@
       </ReturnValue>
       <Docs>
         <summary>リスト オブジェクトに関連付けられた列を返すか設定します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
-        <value><b>String</b></value>
+        <value><b>文字列型 (String)</b></value>
         <remarks><para>コメントの長さは、半角で 255 文字までの文字列です。</para>
           <para> </para></remarks>
       </Docs>
@@ -287,8 +287,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>オブジェクトを削除 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> し、ワークシートからセルデータをクリアします。</summary>
-        <remarks><para>リストが SharePoint サイトにリンクされている場合、リストを削除しても、そのリストを実行しているサーバー上のデータWindows SharePoint Services。 ローカル リストに対して行われたコミットされていない変更は、SharePoint リストには送信されません。 (コミットされていない変更が失われるという警告はありません。</para>
+        <summary>オブジェクトを削除 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> し、ワークシートからセル データをクリアします。</summary>
+        <remarks><para>リストがサイトにリンクされているSharePoint削除しても、そのリストを実行しているサーバー上のデータには影響Windows SharePoint Services。 ローカル リストに対して行われたコミットされていない変更は、そのリストにSharePointされません。 (これらのコミットされていない変更が失われるという警告はありません。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -319,7 +319,7 @@
       </ReturnValue>
       <Docs>
         <summary>指定したオブジェクトの表示名を設定または返 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
-        <value><b>String</b></value>
+        <value><b>文字列型 (String)</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -348,7 +348,7 @@
       <Docs>
         <summary>指定したウィンドウ、ワークシート、またはオブジェクトが左から右ではなく右から左に表示 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> されるかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks><para>このプロパティは、指定したウィンドウ、ワークシート、<b>または ListObject</b>が左から右ではなく右から左に表示される場合は<b>True</b>を返し、オブジェクトが左から右に表示される場合は<b>False</b>を返します。</para>
+        <remarks><para>このプロパティは、<b></b>指定したウィンドウ、ワークシート、<b>または ListObject</b>が左から右ではなく右から左に表示される場合は True を返し、オブジェクトが左から右に表示されている場合は<b>False</b>を返します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -373,7 +373,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>オブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> Visio にエクスポートします。</summary>
+        <summary>オブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> オブジェクトにエクスポートVisio。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -428,7 +428,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Range" /> の [挿入] 行がある場合は、その行を表すオブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。</summary>
+        <summary>指定したオブジェクトの Insert 行がある <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 場合は、その行を表すオブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。</summary>
         <value>To be added.</value>
         <remarks><para>リストがアクティブではないことが原因で、新しい行が非表示になっている場合は、<b>Nothing</b> オブジェクトが返されます。</para>
           <para> </para></remarks>
@@ -457,7 +457,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ListColumns</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクト内 <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> のすべての列を表すコレクションを返 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。</summary>
+        <summary>オブジェクト内のすべての <see cref="T:Microsoft.Office.Interop.Excel.ListColumns" /> 列を表すコレクションを返 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -485,7 +485,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ListRows</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクト内 <see cref="T:Microsoft.Office.Interop.Excel.ListRows" /> のすべてのデータ行を表すオブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。</summary>
+        <summary>オブジェクト内のすべての <see cref="T:Microsoft.Office.Interop.Excel.ListRows" /> データ行を表すオブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。</summary>
         <value>To be added.</value>
         <remarks><para>返された <b>ListRows</b> オブジェクト内には、ヘッダー、合計、挿入対象の行のいずれも含まれていません。</para>
           <para> </para></remarks>
@@ -574,12 +574,12 @@
         <Parameter Name="LinkSource" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="Target">Required <b>Object</b>. 文字列の <b>配列を</b> 含 <b>む</b>。 次の表では、この配列の要素について説明します。SharePoint server1ListName の Element#Contents0URL (表示名)2 リストの説明です。 省略可能。</param>
-        <param name="LinkSource">必須 <b>のブール値 です</b>。</param>
-        <summary>Microsoft Windows SharePoint Services を実行しているサーバーに <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> オブジェクトをWindows SharePoint Services。</summary>
+        <param name="Target">必須<b>オブジェクト 。</b> 文字列の <b>配列を</b> 格納 <b>します</b>。 次の表では、この配列の要素について説明します。SharePoint server1ListName (表示名)2一覧の記述。 省略可能。</param>
+        <param name="LinkSource">必須 <b>のブール値</b>です。</param>
+        <summary>オブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> 実行しているサーバーに発行Microsoft Windows SharePoint Services。</summary>
         <returns>To be added.</returns>
-        <remarks><para>このプロパティは、SharePoint サイトで発行されたリストの URL である S<b>tring</b> を返します。</para>
-          <para>オブジェクトが SharePoint サイトのリストに現在リンクされていない場合は、True に設定すると、指定した SharePoint サイトに新しいリスト <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> <paramref name="LinkSource" /> が作成されます。 <b></b> <b>ListObject オブジェクト</b>が現在 SharePoint サイトにリンクされている場合、引数 True を True に設定すると、既存のリンクが置き換されます (リストをリンクできるのは 1 つの SharePoint サイトのみです <paramref name="LinkSource" /> )。 <b></b> <b>ListObject オブジェクトが</b>現在リンクされていない場合 <paramref name="LinkSource" /> <b>、False</b>に設定すると<b>、ListObject</b>オブジェクトはリンク解除されたままになります。 <b>ListObject オブジェクトが</b>現在 SharePoint サイトにリンクされている場合、False に設定すると、ListObject オブジェクトは現在の SharePoint サイトに <paramref name="LinkSource" /> リンクされた状態を維持します。 <b></b> <b></b></para>
+        <remarks><para>このプロパティは、サイト上の発行済みリストの URL である S<b>tring</b>をSharePointします。</para>
+          <para>オブジェクトが現在、SharePoint サイトのリストにリンクされていない場合、True に設定すると、指定したサイトに新しいリスト <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> <paramref name="LinkSource" /> SharePointされます。 <b></b> <b>ListObject</b>オブジェクトが現在 SharePoint サイトにリンクされている場合、引数を True に設定すると、既存のリンクが置き換わる (リストを 1 つのサイト <paramref name="LinkSource" /> SharePointできます)。 <b></b> <b>ListObject オブジェクトが</b>現在リンクされていない場合 <paramref name="LinkSource" /> <b>、False</b>に設定すると<b>、ListObject</b>オブジェクトのリンクは解除されます。 <b>ListObject</b>オブジェクトが現在サイトにリンクされているSharePoint False に設定すると <paramref name="LinkSource" /> <b>、ListObject</b>オブジェクトは現在のサイトにリンクSharePointされます。 <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -606,7 +606,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.QueryTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>リスト サーバー <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> へのオブジェクトへのリンクを提供 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> するオブジェクトを返します。</summary>
+        <summary>リスト サーバーへの <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> オブジェクトのリンクを提供 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> するオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -634,7 +634,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したリスト <see cref="T:Microsoft.Office.Interop.Excel.Range" /> オブジェクトを適用する範囲を表すオブジェクトを返します。</summary>
+        <summary>指定したリスト <see cref="T:Microsoft.Office.Interop.Excel.Range" /> オブジェクトが適用される範囲を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -660,9 +660,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Microsoft Windows SharePoint Services を実行しているサーバーからリストの現在のデータとスキーマを返Windows SharePoint Services。</summary>
+        <summary>リストの現在のデータとスキーマを、サーバーで実行しているサーバーから取得Microsoft Windows SharePoint Services。</summary>
         <remarks><para>このメソッドは、リストが SharePoint サイトにリンクされている場合にだけ使用できます。 SharePoint サイトが利用できない場合は、このメソッドを呼び出すとエラーが返されます。</para>
-          <para><b>Refresh</b> メソッドを呼び出しても、Excel ブックのリストへの変更はコミットされません。 <b>Refresh</b> メソッドを呼び出すと、Excel のリスト内のコミットされていない変更は破棄されます。 コミットされていない変更が失うのを避けるために、Refresh メソッドを呼び出す前にオブジェクトの <see cref="M:Microsoft.Office.Interop.Excel.ListObject.UpdateChanges(Microsoft.Office.Interop.Excel.XlListConflict)" /> <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> メソッドを <b>呼び出</b> します。</para>
+          <para><b>Refresh</b> メソッドを呼び出しても、Excel ブックのリストへの変更はコミットされません。 <b>Refresh</b> メソッドを呼び出すと、Excel のリスト内のコミットされていない変更は破棄されます。 コミットされていない変更を失うことを避けるために、Refresh メソッドを呼び出す前にオブジェクトの <see cref="M:Microsoft.Office.Interop.Excel.ListObject.UpdateChanges(Microsoft.Office.Interop.Excel.XlListConflict)" /> <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> メソッドを <b>呼び出</b> します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -688,11 +688,11 @@
         <Parameter Name="Range" Type="Microsoft.Office.Interop.Excel.Range" />
       </Parameters>
       <Docs>
-        <param name="Range">必須 <b>の範囲です</b>。</param>
-        <summary><b>Resize メソッドを</b>使用すると、 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> オブジェクトのサイズを新しい範囲に合わせて変更できます。</summary>
+        <param name="Range">必須 <b>の範囲</b>です。</param>
+        <summary><b>Resize メソッド</b>を使用すると、 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> オブジェクトを新しい範囲でサイズ変更できます。</summary>
         <remarks><para>このプロパティによってセルが挿入または移動されません。</para>
-          <para>このプロパティは <b>、Nothing を返します</b>。</para>
-          <para>Microsoft Windows SharePoint Services を実行しているサーバーにリンクされているリストの場合、ListObject の現在の範囲とは異なる引数を指定して、リストに含まれる行数のみを指定することで、このメソッドを使用してリストのサイズを変更できます。 <paramref name="Range" /> 列を追加または削除して Windows SharePoint Servicesリストのサイズを変更しようとすると 、実行時エラー <paramref name="Range" /> が発生します。</para>
+          <para>このプロパティは Nothing を <b>返します</b>。</para>
+          <para>Microsoft Windows SharePoint Services を実行しているサーバーにリンクされているリストの場合は、ListObject の現在の範囲とは異なる引数を含む行数でのみ指定することで、このメソッドを使用してリストのサイズを変更できます。 <paramref name="Range" /> 引数に列を追加または削除Windows SharePoint Servicesリンクされているリストのサイズを変更しようとすると、実行時エラー <paramref name="Range" /> が発生します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -719,7 +719,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>特定のオブジェクトの SharePoint リストの URL を表す S<b>tring</b> を返 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。</summary>
+        <summary>指定したオブジェクトのリストの URL を表SharePoint S<b>tring</b>を返 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。</summary>
         <value>To be added.</value>
         <remarks><para>SharePoint サイトにリンクされていないリストでこのプロパティにアクセスすると、実行時エラーが生成されます。</para>
           <para> </para></remarks>
@@ -751,9 +751,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オートフィルターを <b>表示</b> するかどうかを示すブール 値を返します。</summary>
+        <summary>オートフィルターが <b>表示</b> されるかどうかを示すブール値を返します。</summary>
         <value>To be added.</value>
-        <remarks><para>新 <b>しいオブジェクトの ShowAutoFilter</b> プロパティの既定値は <b>True</b> <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> です。</para>
+        <remarks><para><b>ShowAutoFilter プロパティ</b>は、新しいオブジェクト<b>の既定値は True</b> <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> です。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -783,7 +783,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>ListObject</b> オブジェクトのオートフィルター ドロップダウンが表示されるときは <b>True</b> です。 <b>ブール</b> 型 (C#<b>のブール</b> 値) の値の取得および設定が可能です。</summary>
+        <summary><b>ListObject</b> オブジェクトのオートフィルター ドロップダウンが表示されるときは <b>True</b> です。 <b>Boolean</b> ( bool in<b>C#)</b> 読み取り/書き込み</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -845,7 +845,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトに列のストライプ の表スタイルを使用する場合に設定または返 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
+        <summary>指定したオブジェクトに Column Stripes テーブル スタイルを使用する場合に設定または返 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -876,7 +876,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの最初の列が書式設定される場合に設定または返 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
+        <summary>指定したオブジェクトの最初の列が書式設定されている場合に設定または返 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -907,7 +907,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの最後の列を表示する場合に設定または返 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
+        <summary>指定したオブジェクトの最後の列が表示される場合に設定または返 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -938,7 +938,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>行ストライプ の表スタイルを指定したオブジェクトに使用する場合を設定または返 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
+        <summary>指定したオブジェクトに Row Stripes テーブル スタイルを使用する場合に設定または返 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -969,7 +969,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>合計行が表示される <b>かどうかを</b> 示すブール値を設定または返します。</summary>
+        <summary>合計行が表示される <b>かどうかを</b> 示すブール型 (Boolean) の値を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -997,7 +997,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Slicers</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>ListObject</b> に関連付けられたテーブル スライサーのリストを返します。 読み取り専用</summary>
+        <summary><b>ListObject</b> に関連付けられたテーブル スライサーのリストを返します。値の取得のみ可能です。</summary>
         <value>To be added.</value>
         <remarks><para><b>ListObject</b> は基本的にテーブルです。</para>
           <para> </para></remarks>
@@ -1026,7 +1026,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Sort</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>コレクションの並べ替えの列と並べ替え順序を取得または設定 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。</summary>
+        <summary>コレクションの並べ替え列または並べ替え順序を取得または設定 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Sort" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1085,10 +1085,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したテーブルの代替テキスト文字列に関連付けられている説明を取得または設定します。</summary>
-        <value>指定されたテーブルの代替テキスト文字列に関連付けられている説明。</value>
+        <summary>指定したテーブルの代替テキスト文字列に関連付けられた説明を取得または設定します。</summary>
+        <value>指定したテーブルの代替テキスト文字列に関連付けられた説明。</value>
         <remarks><para>値の取得と設定が可能です。</para>
-          <para>プロパティの値は、[代替テキスト] ダイアログ ボックスの [説明] ボックスの設定に対応します。このダイアログ ボックスは、テーブルを右クリックし、[テーブル] をポイントし、[代替テキスト] をクリックすると表示されます。 <see cref="P:Microsoft.Office.Interop.Excel.ListObject.Summary" /></para>
+          <para>プロパティの値は、[代替テキスト] ダイアログ ボックスの [説明] ボックスの設定に対応します。これは、テーブルを右クリックし、[テーブル] をポイントし、[代替テキスト] をクリックすることで表示 <see cref="P:Microsoft.Office.Interop.Excel.ListObject.Summary" /> されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1147,7 +1147,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの表のスタイルを取得または設定 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。 読み取り/書き込み <b>オブジェクト です</b>。</summary>
+        <summary>指定したオブジェクトのテーブル スタイルを取得または設定 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。 読み取り/書き<b>込みオブジェクト 。</b></summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1175,7 +1175,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの [合計] 行がある場合は、 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> その行を表すオブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。</summary>
+        <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Range" /> から Total 行を表すオブジェクト (存在する場合) を返 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1201,8 +1201,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>リストから Microsoft Windows SharePoint Servicesサイトへのリンクを削除します。</summary>
-        <remarks><para>このプロパティは <b>、Nothing を返します</b>。</para>
+        <summary>リストからサイトへのリンクMicrosoft Windows SharePoint Services削除します。</summary>
+        <remarks><para>このプロパティは Nothing を <b>返します</b>。</para>
           <para>このメソッドを呼び出してリストのリンクを解除した場合、その操作を元に戻すことはできません。</para>
           <para> </para></remarks>
       </Docs>
@@ -1229,9 +1229,9 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトからリスト機能を削除 <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> します。</summary>
-        <remarks><para>このメソッドを使用すると、リストを作成したセルの範囲は通常のデータ範囲です。</para>
-          <para>このプロパティは <b>、Nothing を返します</b>。</para>
-          <para>このメソッドを実行しても、ワークシート内のセルのデータ、書式、および数式は残されます。 [合計] 行もそのまま残ります。 このメソッドは、Microsoft のサイトへのリンクWindows SharePoint Servicesします。 オートフィルターと [挿入] 行も一覧から削除されます。</para>
+        <remarks><para>このメソッドを使用した後、リストを作成するセルの範囲は、通常のデータ範囲です。</para>
+          <para>このプロパティは Nothing を <b>返します</b>。</para>
+          <para>このメソッドを実行しても、ワークシート内のセルのデータ、書式、および数式は残されます。 [合計] 行もそのまま残ります。 このメソッドは、サイトへのリンクをMicrosoft Windows SharePoint Servicesします。 オートフィルターと Insert 行も一覧から削除されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1261,9 +1261,9 @@
       </Parameters>
       <Docs>
         <param name="iConflictType">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlListConflict" /> 可能です。 競合解決オプション。</param>
-        <summary>ワークシート内のリストにWindows SharePoint Services変更を加え、Microsoft Web サイトのリストを更新します。</summary>
-        <remarks><para>このプロパティは <b>、Nothing を返します</b>。</para>
-          <para>このメソッドは、SharePoint サイトにリンクされたリストにのみ適用されます。 SharePoint サイトが使用できない場合は、エラーが生成されます。</para>
+        <summary>ワークシートのリストに加Microsoft Windows SharePoint Servicesを使用して、サイトのリストを更新します。</summary>
+        <remarks><para>このプロパティは Nothing を <b>返します</b>。</para>
+          <para>このメソッドは、サイトにリンクされているリストにのみSharePointされます。 このサイトSharePoint使用できない場合は、エラーが生成されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1290,9 +1290,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XmlMap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたリスト <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> に使用されるスキーマ マップを表すオブジェクトを返します。</summary>
+        <summary>指定したリスト <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> に使用されるスキーマ マップを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks><para>XML 機能は、ファイルを XML スプレッドシート形式で保存する場合を除き、Microsoft Office Professional Edition 2003 および excel 2003 Microsoft Officeでのみ使用できます。</para>
+        <remarks><para>XML 機能は、XML スプレッドシート形式でのファイルの保存を除き、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

@@ -1,5 +1,5 @@
 <Type Name="ChartObjects" FullName="Microsoft.Office.Interop.Excel.ChartObjects">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2c2b455b605d204bbd8ef7f4faf0116be7341efd" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004019" /></Metadata><TypeSignature Language="C#" Value="public interface ChartObjects : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a900d6d073f43a6c95f5ed18210ecc4933cd2bd3247b286873e08d4945f0bc15" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508851" /></Metadata><TypeSignature Language="C#" Value="public interface ChartObjects : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartObjects implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartObjects" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartObjects&#xA;Implements IEnumerable" />
@@ -25,10 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>指定されたグラフ シート、ダイアログ シート、またはワークシートのすべての <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> オブジェクトのコレクションです。</summary>
+    <summary>指定したグラフ シート、ダイアログ シート、またはワークシート上 <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> のすべてのオブジェクトのコレクション。</summary>
     <remarks><para>各 <b>ChartObject</b> オブジェクトは埋め込みグラフを表します。 <b>ChartObject オブジェクト</b>は、オブジェクトのコンテナーとして機能 <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> します。 <b>ChartObject</b> オブジェクトのプロパティとメソッドは、シートにある埋め込みグラフの外観と大きさを制御します。</para>
-      <para><see cref="M:Microsoft.Office.Interop.Excel._Worksheet.ChartObjects(System.Object)" />ChartObjects コレクションを取得するには<b>、このメソッドを使用</b>します。 このメソッド <see cref="M:Microsoft.Office.Interop.Excel.ChartObjects.Add(System.Double,System.Double,System.Double,System.Double)" /> を使用して、新しい空の埋め込みグラフを作成し、コレクションに追加します。 このメソッド <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> を使用して、データを追加し、新しいグラフの書式を設定します。</para>
-      <para>1 つの ChartObject オブジェクトを取得するには、埋め込みグラフのインデックス番号または名前を指定する <b>ChartObjects</b>( ) <paramref name="index" /> <paramref name="index" /> を <b>使用</b> します。</para>
+      <para>メソッドを <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.ChartObjects(System.Object)" /> 使用して <b>ChartObjects コレクションを取得</b> します。 メソッドを <see cref="M:Microsoft.Office.Interop.Excel.ChartObjects.Add(System.Double,System.Double,System.Double,System.Double)" /> 使用して、新しい空の埋め込みグラフを作成し、コレクションに追加します。 このメソッドを <see cref="M:Microsoft.Office.Interop.Excel._Chart.ChartWizard(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 使用して、データを追加し、新しいグラフの書式を設定します。</para>
+      <para>1 <b>つの ChartObject オブジェクト</b>を取得するには、ChartObjects ( ) を使用します。埋め込みグラフのインデックス番号または名前 <paramref name="index" /> <paramref name="index" /> を <b>指定</b> します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -315,10 +315,10 @@
         <Parameter Name="Height" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="Left">必須 <b>の二重</b>です。 ワークシートのセル A1 の左上隅またはグラフの左上端を基準として、新しいオブジェクトの初期座標をポイント単位で指定します。</param>
-        <param name="Top">必須 <b>の二重</b>です。 ワークシートのセル A1 の左上隅またはグラフの左上端を基準として、新しいオブジェクトの初期座標をポイント単位で指定します。</param>
-        <param name="Width">必須 <b>の二重</b>です。 新しいオブジェクトの初期サイズをポイント数で指定します。</param>
-        <param name="Height">必須 <b>の二重</b>です。 新しいオブジェクトの初期サイズをポイント数で指定します。</param>
+        <param name="Left">必須 <b>の Double</b>です。 ワークシートのセル A1 の左上隅またはグラフの左上端を基準として、新しいオブジェクトの初期座標をポイント単位で指定します。</param>
+        <param name="Top">必須 <b>の Double</b>です。 ワークシートのセル A1 の左上隅またはグラフの左上端を基準として、新しいオブジェクトの初期座標をポイント単位で指定します。</param>
+        <param name="Width">必須 <b>の Double</b>です。 新しいオブジェクトの初期サイズをポイント数で指定します。</param>
+        <param name="Height">必須 <b>の Double</b>です。 新しいオブジェクトの初期サイズをポイント数で指定します。</param>
         <summary>新しい埋め込みグラフを作成します。 オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.ChartObject" /> します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -347,7 +347,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -378,7 +378,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 境界線を表すオブジェクトを返します。</summary>
+        <summary>オブジェクトの罫 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 線を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -728,7 +728,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの高さを指定します。</summary>
+        <summary>オブジェクトの高さ。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -787,7 +787,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">必須<b>オブジェクト 。</b> オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -819,9 +819,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの左側から列 A の左側 (ワークシート) またはグラフ エリアの左側 (グラフの場合) までの距離です。</summary>
+        <summary>オブジェクトの左端から列 A の左端 (ワークシート上) またはグラフ領域の左端 (グラフ上) までの距離です。</summary>
         <value>To be added.</value>
-        <remarks><para>ウィンドウが最大化されている場合、このプロパティはウィンドウ枠の幅に基づいて変化する負の数を返します。 このプロパティを 0 (ゼロ) に設定すると、アプリケーション ウィンドウが最大化された場合よりもウィンドウが小さくて少し小さになります。 つまり、このプロパティが 0 (ゼロ) の場合、メインの Microsoft Excel ウィンドウの左罫線は画面にはほとんど表示されません。</para>
+        <remarks><para>ウィンドウが最大化されている場合、このプロパティは、ウィンドウの枠線の幅に基づいて変化する負の数を返します。 このプロパティを 0 (ゼロ) に設定すると、アプリケーション ウィンドウが最大化された場合よりも小さいウィンドウになります。 つまり、このプロパティが 0 (ゼロ) の場合、メイン ウィンドウの左側の境界線Microsoft Excel画面にはほとんど表示されません。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -851,7 +851,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> の 場合は、オブジェクトがロックされています。 <b>False</b> の 場合は、シートが保護されているときにオブジェクトを変更できます。</summary>
+        <summary><b>オブジェクト</b> がロックされている場合は True。 <b>False</b> を指定すると、シートが保護されているときにオブジェクトを変更できます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1009,7 +1009,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> の 埋め込みグラフ フレームを移動、サイズ変更、またはユーザー インターフェイスを使用して削除できない場合です。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
+        <summary><b>True</b> の場合、画面上で埋め込みグラフの移動、サイズの変更、または削除を行うことができません。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value><b>Boolean</b></value>
         <remarks><para>このプロパティを <b>True</b> に設定しても、オブジェクト モデルを使った変更からは保護されません。</para>
           <para> </para></remarks>
@@ -1141,7 +1141,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>オブジェクトに</b> 影がある場合は True</summary>
+        <summary><b>オブジェクト</b> に影がある場合は True</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1169,7 +1169,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ShapeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> を表すオブジェクトを返します。</summary>
+        <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> またはオブジェクトを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1200,7 +1200,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの上端から行 1 の上端 (ワークシート上) またはグラフ エリアの上端 (グラフの場合) までの距離です。</summary>
+        <summary>オブジェクトの上端から行 1 の上端 (ワークシート上) またはグラフ領域の上部 (グラフ上) までの距離。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1234,7 +1234,7 @@
         <summary>オブジェクトを表示するかどうかを指定します。</summary>
         <value>To be added.</value>
         <remarks><para>ピボットテーブルの各アイテムの <b>Visible</b> プロパティは、現在そのアイテムがテーブルに表示されている場合は <b>True</b> です。</para>
-          <para>名前の <b>Visible</b> プロパティを <b>False</b>に設定すると、[名前の定義] ダイアログ ボックスに名前は表示されません。</para>
+          <para>名前の Visible プロパティ<b>を False</b> <b></b>に設定した場合、名前は [名前の定義] ダイアログ ボックスに表示されません。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1264,7 +1264,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの幅を指定します。</summary>
+        <summary>オブジェクトの幅。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

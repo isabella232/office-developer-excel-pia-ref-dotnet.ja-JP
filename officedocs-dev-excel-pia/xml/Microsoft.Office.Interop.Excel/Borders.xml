@@ -1,5 +1,5 @@
 <Type Name="Borders" FullName="Microsoft.Office.Interop.Excel.Borders">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ac67cbe49f4367fa1e2be6aa391091c3d7ab6ce3" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006133" /></Metadata><TypeSignature Language="C#" Value="public interface Borders : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d8815aad86a3e9dcb3ed1cbcf17461a2a5d185cbdeec093ec22c53473f78a83f" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506688" /></Metadata><TypeSignature Language="C#" Value="public interface Borders : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Borders implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Borders" />
   <TypeSignature Language="VB.NET" Value="Public Interface Borders&#xA;Implements IEnumerable" />
@@ -25,10 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>1 つ以上の <see cref="T:Microsoft.Office.Interop.Excel.Border" /> オブジェクトの 4 つの境界線を表す 4 つのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Range" /> の <see cref="T:Microsoft.Office.Interop.Excel.Style" /> コレクションです。</summary>
+    <summary>a またはオブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 4 つの境界線を表す 4 つのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Range" /> の <see cref="T:Microsoft.Office.Interop.Excel.Style" /> コレクション。</summary>
     <remarks><para>Range オブジェクトまたは Style オブジェクトの<b></b> <b>Borders</b>プロパティを使用して<b>、4</b>つの罫線すべてが含まれる Borders コレクションを取得します。 <b></b></para>
-      <para>Use <b>Borders</b>( <paramref name="index" /> ), where <paramref name="index" /> identifies the border, to return a single <b>Border</b> object.</para>
-      <para>Index には、次の定数のいずれかを指定できます <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> 。 <b>xlDiagonalDown</b>、 <b>xlDiagonalUp</b>、 <b>xlEdgeBottom</b>、 <b>xlEdgeLeft</b>、 <b>xlEdgeRight</b>、 <b>xlEdgeTop</b>、 <b>xlInsideHorizontal</b>、 <b>xlInsideVertical</b>。</para>
+      <para>1 <b>つの Border オブジェクト</b> <paramref name="index" /> を取得するには、罫線を識別する罫線 ( <paramref name="index" /> ) <b>を使用</b> します。</para>
+      <para>Index には <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> <b>、xlDiagonalDown</b>、 <b>xlDiagonalUp</b>、 <b>xlEdgeBottom</b>、 <b>xlEdgeLeft</b>、 <b>xlEdgeRight 、 xlEdgeTop</b>、 <b>xlInsideHorizontal</b>、<b>または xlInsideVertical</b><b></b>のいずれかを指定できます。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -90,7 +90,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -121,7 +121,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>範囲の 4 つの罫線の色を設定または返します。 すべての色が同じではない場合は、0 (ゼロ) を返します。</summary>
+        <summary>範囲の 4 つの罫線の主な色を設定または返します。 すべて同じ色ではない場合は、0 (ゼロ) を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,7 +154,7 @@
       <Docs>
         <summary>4 つの罫線の色を設定または返します。 4 <b>つの罫</b> 線すべてが同じ色でない場合は Null を返します。</summary>
         <value>To be added.</value>
-        <remarks><para>色は、現在のカラー パレットのインデックス値として指定するか、次の定数のいずれかを <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> 使用して指定します。</para>
+        <remarks><para>色は、現在のカラー パレットのインデックス値として指定するか、次のいずれかの定数として <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> 指定します。</para>
           <para>
             <b>xlColorIndexAutomatic</b>
           </para>
@@ -280,8 +280,8 @@
         <Parameter Name="Index" Type="Microsoft.Office.Interop.Excel.XlBordersIndex" />
       </Parameters>
       <Docs>
-        <param name="Index">必須 <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> 。使用できる定数は、次の<b>XlBordersIndex</b>定数です<b>。xlDiagonalDown</b><b>xlDiagonalUp</b><b>xlEdgeBottom xlEdgeLeft</b><b></b><b>xlEdgeRight</b><b>xlEdgeTop xlInsideHorizontal</b><b></b><b>xlInsideVertical</b></param>
-        <summary>セル範囲またはスタイルのいずれかの罫線を表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Border" /> を返します。</summary>
+        <param name="Index">必須 <see cref="T:Microsoft.Office.Interop.Excel.XlBordersIndex" /> 。<b>XlBordersIndex</b>定数の 1 つを指定できます。<b>xlDiagonalDown</b><b>xlDiagonalUp</b><b>xlEdgeBottom xlEdgeLeft</b><b></b><b>xlEdgeRight xlEdgeTop</b><b>xlInsideHorizontal</b><b>xlInsideVertical</b> <b></b></param>
+        <summary>セル範囲またはスタイルのいずれかの罫線を表す <see cref="T:Microsoft.Office.Interop.Excel.Border" /> オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -315,7 +315,7 @@
         <summary>罫線または輪郭線の種類を設定します。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlLineStyle" /> 使用できる定数は、 <b>次に示す XlLineStyle</b> クラスの定数です。</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlLineStyle" /> 次に示す <b>XlLineStyle</b> クラスの定数のいずれかを指定できます。</para>
           <para>
             <b>xlContinuous</b>
           </para>
@@ -397,7 +397,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定のオブジェクトに適用する配色のテーマの色を取得または設定します。  読み取り/書き込み <b>オブジェクト です</b>。</summary>
+        <summary>指定のオブジェクトに適用する配色のテーマの色を取得または設定します。  読み取り/書き<b>込みオブジェクト 。</b></summary>
         <value><b>Object</b></value>
         <remarks><para>色にテーマが適用されていないオブジェクトのテーマ カラーにアクセスしようとすると、無効な要求の実行時エラーとなります。</para>
           <para> </para></remarks>
@@ -496,7 +496,7 @@
         <summary>罫線または輪郭線の太さを設定します。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlBorderWeight" /> 使用できる定数は、 <b>次に示す XlBorderWeight</b> 定数です。</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlBorderWeight" /> 次に示す <b>XlBorderWeight 定数のいずれかを</b> 指定できます。</para>
           <para>
             <b>xlHairline</b>
           </para>
