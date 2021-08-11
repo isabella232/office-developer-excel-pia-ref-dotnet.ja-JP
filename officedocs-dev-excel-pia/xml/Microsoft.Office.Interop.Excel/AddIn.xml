@@ -1,5 +1,5 @@
 <Type Name="AddIn" FullName="Microsoft.Office.Interop.Excel.AddIn">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ad740aac6b501b523017ffe9ffd52b91e10dd267" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999764" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7e8650ba6cb179a124139c37ac5fcf0524fd83bf176e8e6aa27ea8ab5c37af68" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54506275" /></Metadata><TypeSignature Language="C#" Value="public interface AddIn" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIn" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AddIn" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddIn" />
@@ -22,13 +22,13 @@
   </Attributes>
   <Docs>
     <summary>組み込まれているかどうかにかかわらず単一のアドインを表します。</summary>
-    <remarks><para><b>AddIn オブジェクト</b>はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.AddIns" /> です。 <b>AddIns</b> コレクションには、組み込まれているかどうかにかかわらず、Microsoft Excel で使用できるすべてのアドインが含まれます。 この一覧は、[ツール] ダイアログ ボックス ([ツール] メニュー) Add-Ins表示されるアドインの一覧に対応しています。</para>
-      <para>アドイン <b>のタイトルまたはインデックス</b>番号を表す AddIns ( ) を使用して、1 つの <paramref name="index" /> <paramref name="index" /> <b>AddIn オブジェクトを取得</b> します。</para>
-      <para>[アドイン] ダイアログ ボックスで表示されるアドイン タイトルを、アドインのファイル名と混同しないでください。 アドイン タイトルを直接入力する場合は、[アドイン] ダイアログ ボックスに表示されるタイトルを正確に入力する必要がありますが、英字の大文字と小文字は区別しなくてもかまいません。</para>
-      <para>インデックス番号は、[アドイン] ダイアログ ボックスの [使用可能なアドイン] ボックスでのアドインのAdd-Insします。</para>
-      <para>このメソッドは、使用可能なアドインの一覧にアドインを追加しますが、アドイン <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> はインストールされません。 アドインの <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> プロパティを <b>True</b> に設定して、アドインをインストールします。 使用可能なアドインの一覧に表示されないアドインをインストールするには、まず <b>Add</b> メソッドを使用してから Installed プロパティを <b>設定する必要</b> があります。 これは、1 つの手順で実行できます。</para>
-      <para>読 <b>み込まれたアドイン</b>に対応するブックへの参照を返すには、アドインのファイル名 (タイトルではない) にブック ( ) を <paramref name="index" /> <paramref name="index" /> 使用します。 読み込まれたアドインは通常、コレクションに表示されないので、ファイル名を使用する必要 <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> があります。</para>
-      <para>Installed プロパティ <b>が</b> <b>True</b>を返しますが、アドインの関数の呼び出しが失敗した場合、アドインは実際には読み込まれない可能性があります。 これは <b>、Addin オブジェクト</b> はアドインの存在状態とインストール状態を表しますが、アドイン ブックの実際の内容を表すのではないのでです。 インストールされているアドインが読み込まれるのを保証するには、アドイン ブックを開く必要があります。</para>
+    <remarks><para><b>AddIn</b>オブジェクトは、コレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.AddIns" /> です。 <b>AddIns</b> コレクションには、組み込まれているかどうかにかかわらず、Microsoft Excel で使用できるすべてのアドインが含まれます。 この一覧は、[ツール] ダイアログ ボックス ([ツール] メニュー) に表示Add-Ins一覧に対応します。</para>
+      <para><b>AddIns</b>( ) を使用して、アドインのタイトルまたはインデックス番号を指定して <paramref name="index" /> <paramref name="index" /> <b>、1</b>つの AddIn オブジェクトを取得します。</para>
+      <para>[アドイン] ダイアログ ボックスで表示されるアドイン タイトルを、アドインのファイル名と混同しないでください。アドイン タイトルを直接入力する場合は、[アドイン] ダイアログ ボックスに表示されるタイトルを正確に入力する必要がありますが、英字の大文字と小文字は区別しなくてもかまいません。</para>
+      <para>インデックス番号は、[アドイン] ダイアログ ボックスの [使用可能なアドイン] ボックス内のアドインAdd-Insします。</para>
+      <para>このメソッドは、使用可能なアドインの一覧にアドインを追加しますが、アドイン <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> はインストールされません。 アドインを <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> インストールするには、アドインのプロパティを <b>True</b> に設定します。 使用可能なアドインの一覧に表示されないアドインをインストールするには、まず <b>Add</b> メソッドを使用してから Installed プロパティを <b>設定する必要</b> があります。 これは 1 つの手順で実行できます。</para>
+      <para>ブック <b>(</b>) を使用して、読み込まれたアドインに対応するブックへの参照を返すアドインファイル名 (タイトルではありません <paramref name="index" /> ) <paramref name="index" /> を指定します。 読み込まれたアドインは通常、コレクションに表示されないので、ファイル名を使用する必要 <see cref="T:Microsoft.Office.Interop.Excel.Workbooks" /> があります。</para>
+      <para>Installed プロパティ<b>が</b>True<b></b>を返しますが、アドイン内の関数の呼び出しが失敗した場合、アドインは実際には読み込まれません。 これは <b>、Addin</b> オブジェクトはアドインの存在状態とインストール状態を表しますが、アドイン ブックの実際の内容を表すのではないのでです。 インストールされているアドインが読み込まれるのを保証するには、アドイン ブックを開く必要があります。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -55,7 +55,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -235,7 +235,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> アドインがインストールされている場合です。</summary>
+        <summary><b>True</b> の場合は、アドインがインストールされます。</summary>
         <value>To be added.</value>
         <remarks><para>このプロパティに <b>True</b> を設定すると、アドインが組み込まれ、Auto_Add 関数が呼び出されます。<b>False</b> を設定すると、アドインが解除され、Auto_Remove 関数が呼び出されます。</para>
           <para> </para></remarks>
@@ -265,9 +265,9 @@
       </ReturnValue>
       <Docs>
         <summary>アドインが現在開いているかどうかを取得します。</summary>
-        <value>アドインが現在開いている場合は<b>true。</b>それ以外の場合は<b>false です</b>。</value>
+        <value><b>アドイン</b> が現在開いている場合は true。それ以外の場合は <b>false です</b>。</value>
         <remarks><para>
-            <b>boolean</b> 読み取り専用です。</para>
+            <b>boolean</b> 読み取り専用。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

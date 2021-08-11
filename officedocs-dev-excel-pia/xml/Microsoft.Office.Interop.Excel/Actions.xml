@@ -1,5 +1,5 @@
 <Type Name="Actions" FullName="Microsoft.Office.Interop.Excel.Actions">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="1e669318d640f4c80af03eabb9ab57c19f140f85" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999778" /></Metadata><TypeSignature Language="C#" Value="public interface Actions : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3f5286e44665c874c38ff8cbd3f5fba44eba1eaf289ba58d77a87e8adc4e13b8" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54505967" /></Metadata><TypeSignature Language="C#" Value="public interface Actions : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Actions implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Actions" />
   <TypeSignature Language="VB.NET" Value="Public Interface Actions&#xA;Implements IEnumerable" />
@@ -25,7 +25,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>指定されたデータ系列 <see cref="T:Microsoft.Office.Interop.Excel.Action" /> のすべてのオブジェクトのコレクションです。</summary>
+    <summary>指定した系列のすべての <see cref="T:Microsoft.Office.Interop.Excel.Action" /> オブジェクトのコレクション。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -87,7 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Excel アプリケーションのオブジェクトをMicrosoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> します。 オブジェクト修飾子を指定した場合、指定したオブジェクトを作成した <b>Application</b> オブジェクトを取得します。 値の取得のみ可能です。</summary>
+        <summary>オブジェクト修飾子なしで使用すると、このプロパティは、アプリケーションのオブジェクトを <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 表すオブジェクトMicrosoft Office Excelします。 オブジェクト修飾子を指定した場合、指定したオブジェクトを作成した <b>Application</b> オブジェクトを取得します。 値の取得のみ可能です。</summary>
         <value><b>アプリケーション</b> (上記を参照)</value>
         <remarks><para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、オブジェクトのアプリケーションを取得できます。</para>
           <para> </para></remarks>
@@ -144,9 +144,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このオブジェクトが作成されたアプリケーション <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> を示す列挙の定数を返します。 読み取り専用です。</summary>
+        <summary>このオブジェクトが作成されたアプリケーションを示す列挙体 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> の定数を返します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
-        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。  このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ <see cref="P:Microsoft.Office.Interop.Excel.Actions.Creator" /> Macintosh 用の Microsoft Excel で使用するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。  このプロパティは、各アプリケーションに 4 文字のMicrosoft Excelコードを持つ Macintosh のプロパティで使用 <see cref="P:Microsoft.Office.Interop.Excel.Actions.Creator" /> するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -209,7 +209,7 @@
       </Parameters>
       <Docs>
         <param name="Index">アクションのインデックス値を指定します。</param>
-        <summary>ブック内 <see cref="T:Microsoft.Office.Interop.Excel.Action" /> のアクションを表すオブジェクトを返します。 読み取り専用です。</summary>
+        <summary>ブック内の <see cref="T:Microsoft.Office.Interop.Excel.Action" /> アクションを表すオブジェクトを返します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Action" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -237,7 +237,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>

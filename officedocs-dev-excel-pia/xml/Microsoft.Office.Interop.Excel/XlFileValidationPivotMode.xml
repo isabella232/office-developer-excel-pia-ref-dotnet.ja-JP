@@ -1,5 +1,5 @@
 <Type Name="XlFileValidationPivotMode" FullName="Microsoft.Office.Interop.Excel.XlFileValidationPivotMode">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="b2b09bda61eed0ec23579a26ff7207bf32c883e0" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50007232" /></Metadata><TypeSignature Language="C#" Value="public enum XlFileValidationPivotMode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="aa61c371e51a30287efbd99d69bd55b70b4432ca3510b61e72c355711127677c" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54514948" /></Metadata><TypeSignature Language="C#" Value="public enum XlFileValidationPivotMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XlFileValidationPivotMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.XlFileValidationPivotMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum XlFileValidationPivotMode" />
@@ -14,15 +14,15 @@
   <Docs>
     <summary>ピボットテーブル レポートのデータ キャッシュを検証する方法を指定します。</summary>
     <remarks><para>この列挙は、オブジェクトのプロパティの設定 <see cref="P:Microsoft.Office.Interop.Excel._Application.FileValidationPivot" /> を指定するために使用 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> されます。</para>
-      <para><b>xlFileValidationPivotDefault</b>設定の効果は、PivotOptions レジストリ値によって制御されます。このレジストリ サブキーは、次のレジストリ サブキーHKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Excel\Security\FileValidation。 PivotOptions 値は、次の表に示す DWORD 値で設定できます。</para>
+      <para><b>xlFileValidationPivotDefault</b>設定の効果は、PivotOptions レジストリ値によって制御されます。これは、次のレジストリ サブキー HKEY_CURRENT_USER\Software\Microsoft\Office\14.0\Excel\Security\FileValidation で設定されます。 PivotOptions 値は、次の表に示す DWORD 値です。</para>
       <list type="table">
         <item>
           <term>0</term>
           <description>ピボットテーブル レポートのデータ キャッシュを検証することはありません (推奨しません)。</description>
         </item>
         <item>
-          <term>1 </term>
-          <description>次の場合に、ピボットテーブル レポートのデータ キャッシュを検証します (既定の設定):ファイルはインターネットから開かれません。ファイルは電子メールの添付ファイルです。ファイルは、[開く] ダイアログ ボックスの [保護されたビューで開く] コマンドを使用して開かされました。このファイルは、インターネット コンテンツがローカルにキャッシュされている既知の安全でない場所から、またはユーザー定義の信頼されていない場所から開かれた。 ファイルが開かれるときに、読み込み時のデータ キャッシュが解析されている。</description>
+          <term>1</term>
+          <description>ピボットテーブル レポート のデータ キャッシュを次の場合に検証します (既定の設定):ファイルはインターネットから開かされました。ファイルは電子メールの添付ファイルです。ファイルは、[開く] ダイアログ ボックスの [保護されたビューで開く] コマンドを使用して開かされました。ファイルは、インターネット コンテンツがローカルにキャッシュされている既知の安全でない場所から、またはユーザー定義の信頼されていない場所から開かされました。 ファイルが開かれるときに、読み込み時のデータ キャッシュが解析されている。</description>
         </item>
         <item>
           <term>2</term>
@@ -48,7 +48,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>PivotOptions レジストリ設定で指定されているデータ キャッシュの内容を検証します (既定値)。</summary>
+        <summary>PivotOptions レジストリ設定 (既定値) で指定されたデータ キャッシュの内容を検証します。</summary>
       </Docs>
     </Member>
     <Member MemberName="xlFileValidationPivotRun">

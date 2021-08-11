@@ -1,5 +1,5 @@
 <Type Name="AddIns" FullName="Microsoft.Office.Interop.Excel.AddIns">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="08779fe0f93d595b31e4991956a1b4a5705a2268" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999757" /></Metadata><TypeSignature Language="C#" Value="public interface AddIns : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1224292c59888d95620f8f578cdf0fe379643b51bbee35bef7456d223b753c48" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54505960" /></Metadata><TypeSignature Language="C#" Value="public interface AddIns : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AddIns implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AddIns" />
   <TypeSignature Language="VB.NET" Value="Public Interface AddIns&#xA;Implements IEnumerable" />
@@ -25,11 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>インストールされているかどうかに関係なく、Microsoft Excel で使用できるすべてのアドインを表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.AddIn" /> のコレクションです。 この一覧は、[ツール] ダイアログ ボックス ([ツール] メニュー) Add-Ins表示されるアドインの一覧に対応しています。</summary>
-    <remarks><para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel._Application.AddIns" /> を使用して <b>AddIns コレクションを取得</b> します。</para>
-      <para>このメソッド <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> を使用して、使用可能なアドインの一覧にアドインを追加します。Add <b>メソッド</b> は、アドインをリストに追加しますが、アドインはインストールされません。 アドインの <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> プロパティを <b>True</b> に設定して、アドインをインストールします。 使用可能なアドインの一覧に表示されないアドインをインストールするには、まず <b>Add</b> メソッドを使用してから Installed プロパティを <b>設定する必要</b> があります。 これは、1 つの手順で実行できます。</para>
-      <para>アドイン <b>のタイトルまたはインデックス</b>番号を表す AddIns ( ) を使用して、1 つの <paramref name="index" /> <paramref name="index" /> <b>AddIn オブジェクトを取得</b> します。</para>
-      <para>[アドイン] ダイアログ ボックスで表示されるアドイン タイトルを、アドインのファイル名と混同しないでください。 アドイン タイトルを直接入力する場合は、[アドイン] ダイアログ ボックスに表示されるタイトルを正確に入力する必要がありますが、英字の大文字と小文字は区別しなくてもかまいません。</para>
+    <summary>インストールされているかどうかに関係なく、Microsoft Excelで使用できるすべてのアドインを表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.AddIn" /> のコレクション。 この一覧は、[ツール] ダイアログ ボックス ([ツール] メニュー) に表示Add-Ins一覧に対応します。</summary>
+    <remarks><para>プロパティを <see cref="P:Microsoft.Office.Interop.Excel._Application.AddIns" /> 使用して <b>AddIns コレクションを取得</b> します。</para>
+      <para>このメソッド <see cref="M:Microsoft.Office.Interop.Excel.AddIns.Add(System.String,System.Object)" /> を使用して、使用可能なアドインの一覧にアドインを追加します。 <b>Add メソッド</b> は一覧にアドインを追加しますが、アドインはインストールされません。 アドインを <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> インストールするには、アドインのプロパティを <b>True</b> に設定します。 使用可能なアドインの一覧に表示されないアドインをインストールするには、まず <b>Add</b> メソッドを使用してから Installed プロパティを <b>設定する必要</b> があります。 これは、1 つの手順で実行できます。</para>
+      <para><b>AddIns</b>( ) を使用して、アドインのタイトルまたはインデックス番号を指定して <paramref name="index" /> <paramref name="index" /> <b>、1</b>つの AddIn オブジェクトを取得します。</para>
+      <para>[アドイン] ダイアログ ボックスで表示されるアドイン タイトルを、アドインのファイル名と混同しないでください。アドイン タイトルを直接入力する場合は、[アドイン] ダイアログ ボックスに表示されるタイトルを正確に入力する必要がありますが、英字の大文字と小文字は区別しなくてもかまいません。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -92,10 +92,10 @@
       </Parameters>
       <Docs>
         <param name="Filename"><b>文字列</b> が必要です。 アドイン マネージャーのリストに追加するアドインを含むファイルの名前。</param>
-        <param name="CopyFile">省略 <b>可能なオブジェクト</b>です。 アドイン ファイルがハード ディスク上のファイルのとき、この引数は無視されます。 <b>True</b> を指定 すると、アドインがリムーバブル メディア (フロッピー ディスクまたはコンパクト ディスク) 上にある場合に、アドインをハード ディスクにコピーします。 <b>False</b> を指定すると、ハード ディスクへのコピーを行いません。 この引数を省略すると、コピーするかどうかを確認するダイアログ ボックスを表示します。</param>
-        <summary>アドインの一覧に新しいアドイン ファイルを追加します。オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.AddIn" /> します。</summary>
+        <param name="CopyFile">省略 <b>可能なオブジェクト</b>です。 アドイン ファイルがハード ディスク上のファイルのとき、この引数は無視されます。 <b>True</b> を指定すると、アドインがリムーバブル メディア (フロッピー ディスクまたはコンパクト ディスク) 上にある場合に、ハード ディスクにアドインをコピーします。 <b>False</b> を指定すると、ハード ディスクへのコピーを行いません。 この引数を省略すると、コピーするかどうかを確認するダイアログ ボックスを表示します。</param>
+        <summary>新しいアドイン ファイルをアドインの一覧に追加します。オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.AddIn" /> します。</summary>
         <returns>To be added.</returns>
-        <remarks><para>この方法では、新しいアドインはインストールされます。 アドインをインストール <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> するには、プロパティを設定する必要があります。</para>
+        <remarks><para>このメソッドは、新しいアドインをインストールしない。 アドインをインストール <see cref="P:Microsoft.Office.Interop.Excel.AddIn.Installed" /> するには、プロパティを設定する必要があります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -122,7 +122,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -243,7 +243,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">必須<b>オブジェクト 。</b> オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

@@ -1,5 +1,5 @@
 <Type Name="Action" FullName="Microsoft.Office.Interop.Excel.Action">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2161b566bfd02a2bafb42673b2e765964172c1df" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49999785" /></Metadata><TypeSignature Language="C#" Value="public interface Action" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dd0f08a29f414d3f675de4dd6ebfd05ec2a1bef30b4ce6829803b86d7f262cc6" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54505484" /></Metadata><TypeSignature Language="C#" Value="public interface Action" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Action" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Action" />
   <TypeSignature Language="VB.NET" Value="Public Interface Action" />
@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>実行されるアクションまたはデータを <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 表 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> します。</summary>
+    <summary>データ内で実行するアクションを <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 表 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> します。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Excel アプリケーションのオブジェクトをMicrosoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> します。 オブジェクト修飾子を指定した場合、指定したオブジェクトを作成した <b>Application</b> オブジェクトを取得します。 値の取得のみ可能です。</summary>
+        <summary>オブジェクト修飾子なしで使用すると、このプロパティは、アプリケーションのオブジェクトを <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 表すオブジェクトMicrosoft Office Excelします。 オブジェクト修飾子を指定した場合、指定したオブジェクトを作成した <b>Application</b> オブジェクトを取得します。 値の取得のみ可能です。</summary>
         <value><b>アプリケーション</b> (上記を参照)</value>
         <remarks><para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、オブジェクトのアプリケーションを取得できます。</para>
           <para> </para></remarks>
@@ -77,8 +77,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトに割り当てられているキャプションを返 <see cref="P:Microsoft.Office.Interop.Excel.Action" /> します。 読み取りのみ可能な <b>String</b> 値です。</summary>
-        <value><b>String</b></value>
+        <summary>オブジェクトに割り当てられたキャプションを返 <see cref="P:Microsoft.Office.Interop.Excel.Action" /> します。 読み取りのみ可能な <b>String</b> 値です。</summary>
+        <value><b>文字列型 (String)</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,7 +106,7 @@
       </ReturnValue>
       <Docs>
         <summary>オブジェクトに関連付けられているコンテンツを返 <see cref="P:Microsoft.Office.Interop.Excel.Action" /> します。 読み取りのみ可能な <b>String</b> 値です。</summary>
-        <value><b>String</b></value>
+        <value><b>文字列型 (String)</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -161,9 +161,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このオブジェクトが作成されたアプリケーション <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> を示す列挙の定数を返します。 読み取り専用です。</summary>
+        <summary>このオブジェクトが作成されたアプリケーションを示す列挙体 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> の定数を返します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
-        <remarks><para>オブジェクトが Microsoft Excel で作成された場合、このプロパティは文字列 XCEL を返します。これは、16 進数の 5843454C および 10 進数の 1480803660 に相当します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ <see cref="P:Microsoft.Office.Interop.Excel.Action.Creator" /> Macintosh 用の Microsoft Excel で使用するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
+        <remarks><para>オブジェクトが Microsoft Excel で作成された場合、このプロパティは文字列 XCEL を返します。これは 16 進数 5843454C と 10 進数1480803660。 このプロパティは、各アプリケーションに 4 文字のMicrosoft Excelコードを持つ Macintosh のプロパティで使用 <see cref="P:Microsoft.Office.Interop.Excel.Action.Creator" /> するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -215,8 +215,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの名前を返します。 読み取りのみ可能な <b>String</b> 値です。</summary>
-        <value><b>String</b></value>
+        <summary>指定されたオブジェクトの名前を返します。値の取得のみ可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
+        <value><b>文字列型 (String)</b></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -243,7 +243,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -271,7 +271,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlActionType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>アクションの種類を返します。 読み取り専用です <see cref="T:Microsoft.Office.Interop.Excel.XlActionType" /> 。</summary>
+        <summary>アクションの種類を返します。 読み取り専用 <see cref="T:Microsoft.Office.Interop.Excel.XlActionType" /> です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlActionType" /></value>
         <remarks>To be added.</remarks>
       </Docs>

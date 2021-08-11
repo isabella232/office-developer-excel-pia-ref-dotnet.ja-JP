@@ -1,5 +1,5 @@
 <Type Name="ModelChanges" FullName="Microsoft.Office.Interop.Excel.ModelChanges">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9f59d830c9bcb2ca9333087af48cbeb26d3d390d" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011761" /></Metadata><TypeSignature Language="C#" Value="public interface ModelChanges" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="eee83a62542a83e8646f09d1092e0b4d17f70147a5595e69fb18280950ee1dfd" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54514997" /></Metadata><TypeSignature Language="C#" Value="public interface ModelChanges" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ModelChanges" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ModelChanges" />
   <TypeSignature Language="VB.NET" Value="Public Interface ModelChanges" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>データ モデルに対して行われた変更を表します。</summary>
-    <remarks><para><b>ModelChanges オブジェクトには</b>、モデル操作後にイベントが発生した場合にデータ モデルに対して行われた変更に関する情報 <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.ModelChange" /> が含されます。 Excel がデータ モデルに変更を加えた場合、同じ操作で複数の変更を行えるので <b>、ModelChanges</b> オブジェクトには 1 つのモデル操作で行われたすべての変更に関する情報が含まれます。</para>
+    <remarks><para><b>ModelChanges オブジェクト</b>には、モデル操作後にイベントが発生した場合にデータ モデルに対して行われた変更 <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.ModelChange" /> に関する情報が含まれる。 データ Excel変更を加える場合、同じ操作で複数の変更を加え<b>、ModelChanges</b>オブジェクトには、1 つのモデル操作で行われたすべての変更に関する情報が含まれます。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトExcelします。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -77,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelColumnNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>モデル操作の <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnNames" /> 一部 <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnName" /> として追加された列を表すオブジェクトのコレクションを返します。 読み取り専用です。</summary>
+        <summary>モデル操作の <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnNames" /> 一部として <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnName" /> 追加された列を表すオブジェクトのコレクションを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -105,7 +105,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelColumnChanges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>モデル操作の一部として、データ型が変更されたすべてのテーブル列のテーブル名と列名を表すオブジェクトのコレクションを返します (今後、より多くの種類の変更が加わる可能性があります)。 <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnChanges" /> <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnChange" /> 読み取り専用です。</summary>
+        <summary>モデル操作の一環として、データ型が変更されたすべてのテーブル列のテーブル名と列名を表すオブジェクトのコレクションを返します (今後、さらに多くの種類の変更が加わる可能性があります <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnChanges" /> <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnChange" /> )。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -133,7 +133,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelColumnNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>モデル操作 <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnNames" /> の一部 <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnName" /> として削除された列を表すオブジェクトのコレクションを返します。 読み取り専用です。</summary>
+        <summary>モデル操作の一部として削除されたすべての列を表すオブジェクトのコレクション <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnNames" /> <see cref="T:Microsoft.Office.Interop.Excel.ModelColumnName" /> を返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -161,9 +161,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 読み取り<b>専用の整数</b><b>(C#</b>の整数)。</summary>
+        <summary>指定されたオブジェクトを作成したアプリケーションを示す 32 ビットの整数を取得します。 読み取り専用 <b>の Integer</b> (<b>int</b> C#)。</summary>
         <value>To be added.</value>
-        <remarks><para>オブジェクトは Excel で作成されたため、このプロパティは文字列 "XCEL" を表す 16 進数の値 5843454C を返します。</para>
+        <remarks><para>オブジェクトは Excel で作成されたため、このプロパティは文字列 "XCEL" を表す 16 進値 5843454C を返します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -190,7 +190,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelMeasureNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>モデル操作 <see cref="T:Microsoft.Office.Interop.Excel.ModelMeasureNames" /> の一部 <see cref="T:Microsoft.Office.Interop.Excel.ModelMeasureName" /> として削除された列を表すオブジェクトのコレクションを返します。 読み取り専用です。</summary>
+        <summary>モデル操作の一部として削除されたすべての列を表すオブジェクトのコレクション <see cref="T:Microsoft.Office.Interop.Excel.ModelMeasureNames" /> <see cref="T:Microsoft.Office.Interop.Excel.ModelMeasureName" /> を返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -218,7 +218,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した <b>ModelChanges</b> オブジェクトの親オブジェクトを表すオブジェクト型 (<b>Object</b>) の値を取得します。 読み取り専用です。</summary>
+        <summary>指定した <b>ModelChanges</b> オブジェクトの親オブジェクトを表すオブジェクト型 (<b>Object</b>) の値を取得します。値の取得のみ可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -246,7 +246,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> の場合、モデル内の 1 つ以上のリレーションシップがモデル操作において変更されました (追加、削除、または変更)。 <b>False</b> の場合、操作時にリレーションシップは変更されませんでした。 <b>ブール</b> 値 ( C#<b>の</b> ブール値) 読み取り専用。</summary>
+        <summary><b>True</b> の場合、モデル内の 1 つ以上のリレーションシップがモデル操作において変更されました (追加、削除、または変更)。 <b>False</b> の場合、操作時にリレーションシップは変更されませんでした。 <b>ブール</b> 型 (<b>ブール</b> 型C#) 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -303,7 +303,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTableNameChanges</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>モデル操作の一部としてモデル内で名前が変更されたすべてのテーブルの古い名前と新しい名前を表すオブジェクトのコレクション <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNameChanges" /> <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNameChange" /> を返します。 読み取り専用です。</summary>
+        <summary>モデル操作の一部としてモデルで名前が変更されたすべてのテーブルの古い名前と新しい名前を表すオブジェクトのコレクション <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNameChanges" /> <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNameChange" /> を返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -331,7 +331,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTableNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>モデル操作の一部としてモデルに追加された全テーブルを表す文字列としてテーブル名のコレクション <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" /> を返します。 読み取り専用です。</summary>
+        <summary>モデル操作の一部としてモデルに追加されたすべてのテーブルを表す文字列として、テーブル名のコレクション <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" /> を返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -359,7 +359,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTableNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>モデル操作の一部としてモデルから削除された、すべてのテーブルを表す文字列としてテーブル名のコレクション <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" /> を返します。 読み取り専用です。</summary>
+        <summary>モデル操作の一部としてモデルから削除されたすべてのテーブルを表す文字列として、テーブル名のコレクション <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" /> を返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -387,7 +387,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ModelTableNames</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>モデル操作の一部として更新または再計算された全テーブルを表す文字列としてテーブル名のコレクション <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" /> を返します。 読み取り専用です。</summary>
+        <summary>テーブル名のコレクションを、モデル操作の一部として更新または再計算されたすべてのテーブルを表す文字列 <see cref="T:Microsoft.Office.Interop.Excel.ModelTableNames" /> として返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -415,7 +415,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> の場合、モデル トランザクションの一部として、指定していない変更がモデルに対して行われています。 <b>ブール</b> 値 ( C#<b>ではブール</b> ) 読み取り専用</summary>
+        <summary><b>True</b> の場合、モデル トランザクションの一部として、指定していない変更がモデルに対して行われています。 <b>Boolean</b> ( bool in<b>C#)</b> 読み取り専用</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
