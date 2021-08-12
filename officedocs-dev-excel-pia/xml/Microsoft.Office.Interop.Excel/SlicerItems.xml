@@ -1,5 +1,5 @@
 <Type Name="SlicerItems" FullName="Microsoft.Office.Interop.Excel.SlicerItems">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="774e30c34e5d1fc1bfc66a2f61fafb0bf20e4cfb" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010179" /></Metadata><TypeSignature Language="C#" Value="public interface SlicerItems : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7c12260ec954cf7e8e8c50632078c3c16c862920a298c87f771ce9ce9225e3dd" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54513919" /></Metadata><TypeSignature Language="C#" Value="public interface SlicerItems : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SlicerItems implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SlicerItems" />
   <TypeSignature Language="VB.NET" Value="Public Interface SlicerItems&#xA;Implements IEnumerable" />
@@ -25,9 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>1 つ以上の <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> オブジェクトに含まれるオブジェクトのコレクションを <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> 表 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> します。</summary>
-    <remarks><para>ブックまたは OLAP 以外の外部データのデータに基づいてスライサー内のアイテムを表すコレクションにアクセスするには、スライサーに関連付けられているオブジェクトのプロパティを使用 <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> します。</para>
-      <para>OLAP データ接続に基づいてスライサー内のアイテムを表すコレクションにアクセスするには、階層のレベルを表すオブジェクトのプロパティ <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> を使用します。</para>
+    <summary>オブジェクトまたはオブジェクトに <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> 含まれるオブジェクトのコレクションを <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> 表 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> します。</summary>
+    <remarks><para>ブックまたは OLAP 以外の外部データのデータに基づいてスライサー内のアイテムを表すコレクションにアクセスするには、スライサーに関連付けられているオブジェクトのプロパティを <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> 使用します。</para>
+      <para>OLAP データ接続に基づいてスライサー内のアイテムを表すコレクションにアクセスするには、階層のレベルを表すオブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> プロパティを使用します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -89,7 +89,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Microsoft Excel アプリケーションを表 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> すオブジェクトを返します。 オブジェクト修飾子と一緒に使用する場合、このプロパティは指定されたオブジェクトの作成元を表 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> すオブジェクトを返します。</summary>
+        <summary>オブジェクト修飾子なしで使用すると、このプロパティは、アプリケーションのオブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 表すオブジェクトMicrosoft Excelします。 オブジェクト修飾子と一緒に使用すると、このプロパティは、指定したオブジェクトの作成者を表す <see cref="T:Microsoft.Office.Interop.Excel.Application" /> オブジェクトを返します。</summary>
         <value>オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 。</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
@@ -147,10 +147,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このオブジェクトが作成されたアプリケーションを<b></b>示す 32 ビット整数を取得します。</summary>
-        <value>このオブジェクトが <b>作成されたアプリケーション</b> を示す 32 ビットの整数。</value>
+        <summary>このオブジェクトが作成されたアプリケーションを <b>示す</b> 32 ビット整数を取得します。</summary>
+        <value>このオブジェクトが <b>作成されたアプリケーション</b> を示す 32 ビット整数。</value>
         <remarks><para>読み取り専用です。</para>
-          <para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ <see cref="P:Microsoft.Office.Interop.Excel.SlicerItems.Creator" /> Macintosh 用の Microsoft Excel で使用するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
+          <para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 このプロパティは、各アプリケーションに 4 文字のMicrosoft Excelコードを持つ Macintosh のプロパティで使用 <see cref="P:Microsoft.Office.Interop.Excel.SlicerItems.Creator" /> するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -212,7 +212,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">オブジェクトの名前またはインデックス <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> 番号を指定します。</param>
+        <param name="Index">オブジェクトの名前またはインデックス <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> 番号。</param>
         <summary>コレクションから <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> オブジェクトを取得します。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> を返します。</value>
         <remarks>To be added.</remarks>
@@ -242,7 +242,7 @@
       </ReturnValue>
       <Docs>
         <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> の親オブジェクトを取得します。</summary>
-        <value>指定された <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> オブジェクトの親オブジェクト。</value>
+        <value>指定した <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> オブジェクトの親オブジェクト。</value>
         <remarks><para>値の取得のみ可能です。</para>
           <para> </para></remarks>
       </Docs>

@@ -1,5 +1,5 @@
 <Type Name="Scenario" FullName="Microsoft.Office.Interop.Excel.Scenario">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="86d8d02ae441f3ac07255a45ae9cd0cf278fe5fe" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010480" /></Metadata><TypeSignature Language="C#" Value="public interface Scenario" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="942163ef79c471667dca1194a35577d8c25f3644b0ae61b52fa63454b55832ca" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54514213" /></Metadata><TypeSignature Language="C#" Value="public interface Scenario" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Scenario" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Scenario" />
   <TypeSignature Language="VB.NET" Value="Public Interface Scenario" />
@@ -21,9 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>ワークシートのシナリオを表します。 シナリオとは、名前を付け保存する入力値 (と呼 <paramref name="changing cells" /> ばれる) のグループです。</summary>
-    <remarks><para><b>Scenario オブジェクト</b>はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> です。 <b>Scenarios コレクション</b>には、ワークシートに定義されているシナリオすべてが含まれています。</para>
-      <para>Use <b>Scenarios</b>( <paramref name="index" /> ), where is the scenario name or index <paramref name="index" /> number, to return a single <b>Scenario</b> object.</para>
+    <summary>ワークシートのシナリオを表します。 シナリオは、名前が付いて保存されている入力値 ( <paramref name="changing cells" /> と呼ばれる) のグループです。</summary>
+    <remarks><para><b>Scenario オブジェクト</b>は、コレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> です。 <b>Scenarios コレクションには</b>、ワークシートに定義されているシナリオすべてが含まれています。</para>
+      <para>単<b>一の Scenario</b>オブジェクト <paramref name="index" /> を取得するには <paramref name="index" /> 、シナリオ名またはインデックス番号を<b></b>使用します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -50,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -78,11 +78,11 @@
         <Parameter Name="Values" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ChangingCells">Required <b>Object</b>. シナリオ <see cref="T:Microsoft.Office.Interop.Excel.Range" /> の変化させるセルの新しいセットを指定するオブジェクト。 変化させるセルは、シナリオと同じシートに存在する必要があります。</param>
+        <param name="ChangingCells">必須<b>オブジェクト 。</b> シナリオ <see cref="T:Microsoft.Office.Interop.Excel.Range" /> の変更セルの新しいセットを指定するオブジェクト。 変化させるセルは、シナリオと同じシートに存在する必要があります。</param>
         <param name="Values">省略 <b>可能なオブジェクト</b>です。 変化させるセルに対して使うシナリオの値を指定します。 この引数を省略すると、変化させるセルに現在設定されている値がシナリオの値として使われます。</param>
         <summary>シナリオを変更します。変化させるセル (セル範囲) を変えたり、必要に応じてシナリオの値を変更します。</summary>
         <returns>To be added.</returns>
-        <remarks><para>v を指定した場合、配列には範囲内の各セルの要素が含まれている必要があります。それ以外の場合は、 <paramref name="alues" /> <paramref name="ChangingCells" /> エラーが発生します。</para>
+        <remarks><para>v を指定する場合、配列には範囲内の各セルの要素が含まれている必要があります。それ以外の場合はMicrosoft Excel <paramref name="alues" /> <paramref name="ChangingCells" /> を生成します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -109,7 +109,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>シナリオの <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 変化するセルを表すオブジェクトを返します。</summary>
+        <summary>シナリオの <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 変更セルを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -140,7 +140,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>シナリオに関連付けられているコメントを設定または返します。 コメントの長さは、半角で 255 文字までの文字列です。</summary>
+        <summary>シナリオに関連付けられたコメントを設定または返します。 コメントの長さは、半角で 255 文字までの文字列です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -227,9 +227,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>シナリオが</b> 非表示の場合は True。 既定値は <b>False</b> です。</summary>
+        <summary><b>True</b> の場合は、シナリオが非表示です。 既定値は <b>False</b> です。</summary>
         <value>To be added.</value>
-        <remarks><para>このプロパティをプロパティと混同 <see cref="P:Microsoft.Office.Interop.Excel.Range.FormulaHidden" /> して使用してください。</para>
+        <remarks><para>このプロパティをプロパティと混同 <see cref="P:Microsoft.Office.Interop.Excel.Range.FormulaHidden" /> して使用しない。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -287,7 +287,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> の 場合は、オブジェクトがロックされています。 <b>False</b> の 場合は、シートが保護されているときにオブジェクトを変更できます。</summary>
+        <summary><b>オブジェクト</b> がロックされている場合は True。 <b>False</b> を指定すると、シートが保護されているときにオブジェクトを変更できます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -372,7 +372,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>ワークシートにシナリオの値を挿入して、シナリオを表示します。 影響を受けるセルは、シナリオの変化させるセルです。</summary>
+        <summary>ワークシートにシナリオの値を挿入して、シナリオを表示します。影響を受けるセルは、シナリオの変化させるセルです。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -404,7 +404,7 @@
       </Parameters>
       <Docs>
         <param name="Index">省略 <b>可能なオブジェクト</b>です。 値の位置を指定します。</param>
-        <summary>シナリオの変化させるセルの現在の値を含む配列を返します。</summary>
+        <summary>シナリオの変更セルの現在の値を含む配列を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

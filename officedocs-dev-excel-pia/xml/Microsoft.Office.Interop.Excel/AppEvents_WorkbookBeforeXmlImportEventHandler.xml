@@ -1,5 +1,5 @@
 <Type Name="AppEvents_WorkbookBeforeXmlImportEventHandler" FullName="Microsoft.Office.Interop.Excel.AppEvents_WorkbookBeforeXmlImportEventHandler">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="f90389f86fa49c46f8484bb870e4db187dc8cf28" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004432" /></Metadata><TypeSignature Language="C#" Value="public delegate void AppEvents_WorkbookBeforeXmlImportEventHandler(Workbook Wb, XmlMap Map, string Url, bool IsRefresh, out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d39346b5b3f85253e1e823e924f059fef1d15d56c79af7cf49c8b953cfaf4b7c" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54505071" /></Metadata><TypeSignature Language="C#" Value="public delegate void AppEvents_WorkbookBeforeXmlImportEventHandler(Workbook Wb, XmlMap Map, string Url, bool IsRefresh, out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AppEvents_WorkbookBeforeXmlImportEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AppEvents_WorkbookBeforeXmlImportEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub AppEvents_WorkbookBeforeXmlImportEventHandler(Wb As Workbook, Map As XmlMap, Url As String, IsRefresh As Boolean, ByRef Cancel As Boolean)" />
@@ -33,9 +33,9 @@
     <param name="Wb">必須 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> 。 対象となるブックを示します。</param>
     <param name="Map">必須 <see cref="T:Microsoft.Office.Interop.Excel.XmlMap" /> 。 データのインポートに使用される XML マップを示します。</param>
     <param name="Url"><b>文字列</b> が必要です。 XML ファイルのインポート先となる場所を指定します。</param>
-    <param name="IsRefresh">必須 <b>のブール値 です</b>。 <b>True</b> の 場合は、XML データへの既存の接続を更新することでイベントがトリガーされました。 <b>False</b> 場合は、新しいマッピングが作成されます。</param>
-    <param name="Cancel">必須 <b>のブール値 です</b>。 インポート操作または更新操作を取り消す場合は <b>True</b> に設定します。</param>
-    <summary>イベント <b>の</b> イベント ハンドラーを追加するために使用されるデリゲート <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeXmlImport" /> 型。 <b>WorkbookBeforeXmlImport</b>イベントは、既存の XML データ接続が更新される前、または開いている Microsoft Excel ブックに新しい XML データがインポートされる前に発生します。</summary>
+    <param name="IsRefresh">必須 <b>のブール値</b>です。 <b>True</b> の場合は、XML データへの既存の接続を更新してイベントがトリガーされました。 <b>新</b> しいマッピングが作成される場合は False。</param>
+    <param name="Cancel">必須 <b>のブール値</b>です。 インポート操作または更新操作を取り消す場合は <b>True</b> に設定します。</param>
+    <summary>イベント <b>の</b> イベント ハンドラーを追加するために使用されるデリゲート <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeXmlImport" /> 型。 <b>WorkbookBeforeXmlImport</b>イベントは、既存の XML データ接続が更新される前に発生するか、新しい XML データが開いているブックにMicrosoft Excelされます。</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>
