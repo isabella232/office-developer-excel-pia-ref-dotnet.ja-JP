@@ -1,5 +1,5 @@
 <Type Name="UniqueValues" FullName="Microsoft.Office.Interop.Excel.UniqueValues">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7327266440c4ce7862c175d5e4fbece11422832f" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009444" /></Metadata><TypeSignature Language="C#" Value="public interface UniqueValues" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d6fdcb48a5ac59a057a77056a37ea979aae4abe8423df35e0fb433a240204ce2" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54517923" /></Metadata><TypeSignature Language="C#" Value="public interface UniqueValues" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UniqueValues" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.UniqueValues" />
   <TypeSignature Language="VB.NET" Value="Public Interface UniqueValues" />
@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary><b>UniqueValues オブジェクト</b>は、このプロパティを使用して、ルールが範囲内の重複する値または一意の値を検索するかどうかを決定する列挙型を取得 <see cref="P:Microsoft.Office.Interop.Excel.UniqueValues.DupeUnique" /> または設定します。</summary>
+    <summary><b>UniqueValues オブジェクト</b>は、このプロパティを使用して、範囲内の重複する値または一意の値をルールが検索するかどうかを決定する列挙型を <see cref="P:Microsoft.Office.Interop.Excel.UniqueValues.DupeUnique" /> 取得または設定します。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Excel アプリケーションのオブジェクトをMicrosoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> します。 オブジェクト修飾子を指定した場合、指定したオブジェクトを作成した <b>Application</b> オブジェクトを取得します。 値の取得のみ可能です。</summary>
+        <summary>オブジェクト修飾子なしで使用すると、このプロパティは、アプリケーションのオブジェクトを <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 表すオブジェクトMicrosoft Office Excelします。 オブジェクト修飾子を指定した場合、指定したオブジェクトを作成した <b>Application</b> オブジェクトを取得します。 値の取得のみ可能です。</summary>
         <value><b>アプリケーション</b></value>
         <remarks><para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、オブジェクトのアプリケーションを取得できます。</para>
           <para> </para></remarks>
@@ -105,7 +105,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>条件付き書式ルールがTrue に評価される場合は、セルの罫線の書式設定を <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> 指定するコレクションを返 <b>します</b>。 読み取り専用です。</summary>
+        <summary>条件付き書式ルールが True に評価される場合、セルの罫線の書式設定を指定する <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> コレクションを返 <b>します</b>。 読み取り専用です。</summary>
         <value><b>Borders</b></value>
         <remarks><para>条件付き書式オブジェクトで設定できるのは、セルの上下左右の罫線のプロパティだけです。</para>
           <para> </para></remarks>
@@ -134,7 +134,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 値の取得のみ可能です。</summary>
+        <summary>現在のオブジェクトを作成したアプリケーションを 32 ビットの整数値として取得します。値の取得のみ可能です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
         <remarks><para>Microsoft Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。<b>Creator</b> プロパティは、Macintosh 版 Excel でのみ使用できます。Macintosh では各アプリケーションに 4 文字のシグネチャが定められています。たとえば、Excel のシグネチャは XCEL です。</para>
           <para> </para></remarks>
@@ -191,7 +191,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlDupeUnique</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>条件付き書式ルールが一意の値または重複する値を検索している場合に返すまたは設定します。</summary>
+        <summary>条件付き書式ルールが一意または重複する値を探している場合に設定または返します。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlDupeUnique" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -308,9 +308,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>条件付き書式ルールが True に評価された場合にセルに適用される数値の書式を設定または返 <b>します</b>。 値の取得と設定が可能です。</summary>
+        <summary>条件付き書式ルールが True に評価される場合、セルに適用される数値形式を設定または返 <b>します</b>。 値の取得と設定が可能です。</summary>
         <value><b>Object</b></value>
-        <remarks><para>数値書式は、[セルの書式設定] ダイアログ ボックスの [数値] タブに表示されるのと同じ書式コードを使用して指定します。 組み込みの数値書式 ("General" など) を使用するか、ユーザー設定の数値書式を作成できます。</para>
+        <remarks><para>数値の書式は、[セルの書式設定] ダイアログ ボックスの [数値] タブに表示されるのと同じ書式コードを使用して指定します。 組み込みの数値形式 ("General" など) を使用するか、カスタム番号形式を作成できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -337,7 +337,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -397,7 +397,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>条件付き書式がピボットテーブル チャートに適用されるかどうかを表すブール型 (<b>Boolean</b>) の値を返します。 読み取り専用です。</summary>
+        <summary>条件付き書式がピボットテーブル チャートに適用されるかどうかを表すブール型 (<b>Boolean</b>) の値を返します。値の取得のみ可能です。</summary>
         <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -428,9 +428,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotConditionScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ピボットテーブル グラフに適用される条件付き書式の範囲を取得または設定します。</summary>
+        <summary>ピボットテーブル グラフに適用される条件付き書式の範囲を設定または返します。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /></value>
-        <remarks><para>既定値は、 <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" /> プロパティを使用して範囲を設定 <see cref="P:Microsoft.Office.Interop.Excel.UniqueValues.AppliesTo" /> します。</para>
+        <remarks><para>既定値は、プロパティ <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" /> を使用してスコープを設定 <see cref="P:Microsoft.Office.Interop.Excel.UniqueValues.AppliesTo" /> します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -545,9 +545,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>条件付き書式の種類を指定する列挙の <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> 定数の 1 つを返します。 読み取り専用です。</summary>
+        <summary>条件付き書式の種類を指定する列挙の定数のいずれかを <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> 返します。 読み取り専用です。</summary>
         <value><b>XlFormatConditionType</b></value>
-        <remarks><para>このプロパティは常に整数 <b>値</b> "8" を返します。これは、 <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlUniqueValues" /> .</para>
+        <remarks><para>このプロパティは常に <b>、 に相当する</b> "8" の整数値を返します <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlUniqueValues" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

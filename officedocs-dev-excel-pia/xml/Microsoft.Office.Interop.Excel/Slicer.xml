@@ -1,5 +1,5 @@
 <Type Name="Slicer" FullName="Microsoft.Office.Interop.Excel.Slicer">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3a23eef4e7b55760a8f9b05aacbfcb4b526de165" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010256" /></Metadata><TypeSignature Language="C#" Value="public interface Slicer" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a314d84d4ce630b9d17f2ffd7f2528f65d638a507533fddde3e79a372d377e51" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54512687" /></Metadata><TypeSignature Language="C#" Value="public interface Slicer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Slicer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Slicer" />
   <TypeSignature Language="VB.NET" Value="Public Interface Slicer" />
@@ -23,7 +23,7 @@
   <Docs>
     <summary>ブック内のスライサーを表します。</summary>
     <remarks><para>各 <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> オブジェクトは、ブック内のスライサーを表します。 スライサーは、ピボットテーブル レポートのデータまたは OLAP データ ソースのデータをフィルター処理するために使用されます。</para>
-      <para>コレクションに <see cref="M:Microsoft.Office.Interop.Excel.Slicers.Add" /> オブジェクトを追加 <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> するには、このメソッドを使用 <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> します。 スライサーで現在選択されているボタンを表すオブジェクトにアクセスするには、オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" /> のプロパティを使用 <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> します。</para>
+      <para>コレクションに <see cref="M:Microsoft.Office.Interop.Excel.Slicers.Add" /> オブジェクトを追加するには <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> 、メソッドを使用 <see cref="T:Microsoft.Office.Interop.Excel.Slicers" /> します。 スライサーで現在選択されているボタンを表すオブジェクトにアクセスするには、 <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> オブジェクト <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" /> のプロパティを使用 <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -53,7 +53,7 @@
         <summary>指定したスライサーに現在フォーカスがあるスライサー ボタンを表す <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> オブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks><para><b>ActiveItem</b> プロパティは、指定したスライサーにフォーカスがあり、アクティブなコントロールがスライサー内のボタンである場合に、<b>SlicerItem</b> オブジェクトを取得します。たとえば、この状態でユーザーは、キーボードを使用してスライサー内のボタンを移動できます。</para>
-          <para><b>ActiveItem プロパティは</b>、次の状況では<b>Nothing</b> (C# では null 参照 (Visual Basic 内の Nothing) を返します。</para>
+          <para><b>ActiveItem プロパティは</b>、<b>次の状況</b>で Nothing (null 参照 (Visual Basic) C#) を返します。</para>
           <list type="bullet">
             <item>
               <description>指定したスライサーにフォーカスがない (選択されていないか、アクティブではない)。</description>
@@ -91,7 +91,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Microsoft Excel アプリケーションを表 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> すオブジェクトを返します。 オブジェクト修飾子と一緒に使用する場合、このプロパティは指定されたオブジェクトの作成元を表 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> すオブジェクトを返します。</summary>
+        <summary>オブジェクト修飾子なしで使用すると、このプロパティは、アプリケーションのオブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 表すオブジェクトMicrosoft Excelします。 オブジェクト修飾子と一緒に使用すると、このプロパティは、指定したオブジェクトの作成者を表す <see cref="T:Microsoft.Office.Interop.Excel.Application" /> オブジェクトを返します。</summary>
         <value>オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 。</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
@@ -126,7 +126,7 @@
         <summary>指定したスライサーのキャプションを取得または設定します。</summary>
         <value>指定したスライサーのキャプション。</value>
         <remarks><para>値の取得と設定が可能です。</para>
-          <para>プロパティに指定された値 <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> は、スライサーのヘッダーに表示されます。 プロパティを <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> 指定しない場合、Excel は基になるオブジェクト <see cref="P:Microsoft.Office.Interop.Excel.PivotField.Caption" /> のプロパティの値を使用 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> します。</para>
+          <para>プロパティに指定された値 <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> は、スライサーのヘッダーに表示されます。 プロパティを <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> 指定しない場合、Excelオブジェクトの <see cref="P:Microsoft.Office.Interop.Excel.PivotField.Caption" /> プロパティの値を使用 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -156,7 +156,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スライサーの各列の幅をポイント単位で取得または設定します。</summary>
+        <summary>スライサー内の各列の幅をポイント単位で取得または設定します。</summary>
         <value>スライサー内の各列の幅をポイント単位で指定します。</value>
         <remarks><para>値の取得と設定が可能です。</para>
           <para>オブジェクト <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> のプロパティは <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> 、プロパティとプロパティの値に基づいて <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ColumnWidth" /> 自動的に調整 <see cref="P:Microsoft.Office.Interop.Excel.Slicer.NumberOfColumns" /> されます。</para>
@@ -211,10 +211,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このオブジェクトが作成されたアプリケーションを<b></b>示す 32 ビット整数を取得します。</summary>
-        <value>このオブジェクトが <b>作成されたアプリケーション</b> を示す 32 ビットの整数。</value>
-        <remarks><para>読み取り専用 <b>時間 です</b>。</para>
-          <para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Creator" /> Macintosh 用の Microsoft Excel で使用するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
+        <summary>このオブジェクトが作成されたアプリケーションを <b>示す</b> 32 ビット整数を取得します。</summary>
+        <value>このオブジェクトが <b>作成されたアプリケーション</b> を示す 32 ビット整数。</value>
+        <remarks><para>長い読み取 <b>り専用です</b>。</para>
+          <para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 このプロパティは、各アプリケーションに 4 文字のMicrosoft Excelコードを持つ Macintosh のプロパティで使用 <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Creator" /> するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -294,11 +294,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したスライサーをユーザー インターフェイスを使用して移動またはサイズ変更できるかどうかを取得または設定します。</summary>
-        <value>指定したスライサーをユーザー インターフェイスを使用して移動またはサイズ変更できる場合は<b>true。</b>それ以外の場合、 <b>false です</b>。 既定値は <b>false</b> です。</value>
+        <summary>ユーザー インターフェイスを使用して、指定したスライサーを移動またはサイズ変更できるかどうかを取得または設定します。</summary>
+        <value><b>指定</b> したスライサーをユーザー インターフェイスを使用して移動またはサイズ変更できる場合は true。それ以外の場合は <b>false です</b>。 既定値は <b>false</b> です。</value>
         <remarks><para>値の取得と設定が可能です。</para>
-          <para>スライサーをユーザー インターフェイスで境界線またはハンドルを選択して移動またはサイズ変更できない場合は
-            <b>true。</b>それ以外の場合<b>は false です</b>。 規定値は<b> false </b>です。 プロパティを <see cref="P:Microsoft.Office.Interop.Excel.Slicer.DisableMoveResizeUI" /> true に設定 <b>すると</b> 、ユーザー インターフェイスだけが影響を受けます。 スライサーの移動またはサイズ変更を行う場合は、オブジェクトのプロパティ (コードのプロパティ、プロパティなど) を <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Top" /> <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Left" /> 設定することはできません <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Width" /> <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> 。</para>
+          <para>
+            <b>ユーザー</b>インターフェイスで罫線またはハンドルを選択してスライサーを移動またはサイズ変更できない場合は true。それ以外の場合<b>は false 。</b> 規定値は<b> false </b>です。 プロパティを <see cref="P:Microsoft.Office.Interop.Excel.Slicer.DisableMoveResizeUI" /> true に設定 <b>すると、</b> ユーザー インターフェイスにのみ影響します。 コードからオブジェクトのプロパティ 、などのプロパティを設定してスライサーを移動またはサイズ変更することはできません <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Top" /> <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Left" /> <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Width" /> <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -329,10 +329,10 @@
       </ReturnValue>
       <Docs>
         <summary>スライサーを表示するヘッダーが表示されるかどうかを取得または <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> 設定します。</summary>
-        <value>スライサーを表示するヘッダーが表示されている場合は<b>true、</b>それ以外 <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> の場合は<b>false。</b> The default is <b>true</b>.</value>
+        <value><b>ス</b>ライサーを表示するヘッダーが表示されている場合は true、それ以外 <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Caption" /> の場合は<b>false。</b> The default is <b>true</b>.</value>
         <remarks><para>値の取得と設定が可能です。</para>
           <para>
-            <b>ヘッダーが</b> 表示されている場合は true。それ以外の場合 <b>は false です</b>。 既定値は <b>true</b> です。</para>
+            <b>ヘッダーが</b>表示されている場合は true。それ以外の場合<b>は false 。</b> 既定値は <b>true</b> です。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -362,8 +362,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したスライサーの高さをポイント数で取得または設定します。</summary>
-        <value>指定したスライサーの高さをポイント数で指定します。</value>
+        <summary>指定したスライサーの高さをポイントで取得または設定します。</summary>
+        <value>指定したスライサーの高さ (ポイント)。</value>
         <remarks><para>値の取得と設定が可能です。</para>
           <para> </para></remarks>
       </Docs>
@@ -394,8 +394,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ワークシートのセル A1 の左上隅を基準に、指定したスライサーの水平方向の位置をポイント数で取得または設定します。</summary>
-        <value>ワークシートのセル A1 の左上隅を基準に、指定したスライサーの水平方向の位置をポイント数で指定します。</value>
+        <summary>ワークシート上のセル A1 の左上隅を基準に、指定したスライサーの水平方向の位置をポイントで取得または設定します。</summary>
+        <value>ワークシート上のセル A1 の左上隅を基準として、指定したスライサーの水平方向の位置をポイントで指定します。</value>
         <remarks><para>値の取得と設定が可能です。</para>
           <para> </para></remarks>
       </Docs>
@@ -426,11 +426,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したスライサーを含むシートが保護されている場合に、そのスライサーを変更できるかどうかを取得または設定します。</summary>
-        <value><b>true</b> を指定したスライサーを含むシートが保護されている場合に変更できます。それ以外の場合は <b>false です</b>。 既定値は <b>true です。</b></value>
+        <summary>指定したスライサーを含むシートを保護するときに変更できるかどうかを取得または設定します。</summary>
+        <value><b>指定</b> したスライサーを含むシートが保護されているときに変更できる場合は true。それ以外の場合は <b>false です</b>。 既定値は true <b>です</b></value>
         <remarks><para>値の取得と設定が可能です。</para>
-          <para>シートが保護されているときにスライサーがロックされている場合は
-            <b>true。</b> <b>false</b> を指定すると、シートが保護されているときにスライサーを変更できます。 既定値は <b>true</b> です。</para>
+          <para>
+            <b>シート</b> が保護されているときにスライサーがロックされている場合は true。 <b>シート</b> が保護されているときにスライサーを変更できる場合は false。 既定値は <b>true</b> です。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -463,7 +463,7 @@
         <summary>指定したスライサーの名前を取得または設定します。</summary>
         <value>指定したスライサーの名前。</value>
         <remarks><para>値の取得と設定が可能です。</para>
-          <para>名前は、ブック内のすべてのスライサーの中で一意である必要があります。 既定の名前は、スライサーが基づくピボットフィールドのフィールド名のテキストを使用し、必要に応じてスペースと番号を追加して名前を一意にします。</para>
+          <para>名前は、ブック内のすべてのスライサーの中で一意である必要があります。 既定の名前は、スライサーが基づく PivotField のフィールド名のテキストを使用し、必要に応じてスペースと番号を追加して名前を一意にします。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -493,8 +493,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したスライサーの列数を取得または設定します。</summary>
-        <value>指定したスライサーの列数。 既定値は 1 です。</value>
+        <summary>指定したスライサー内の列数を取得または設定します。</summary>
+        <value>指定したスライサー内の列数。 既定値は 1 です。</value>
         <remarks><para>値の取得と設定が可能です。</para>
           <para>既定値は 1 です。</para>
           <para> </para></remarks>
@@ -555,8 +555,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したスライサーの各行の高さをポイント数で取得または設定します。</summary>
-        <value>指定したスライサーの各行の高さをポイント数で指定します。</value>
+        <summary>指定したスライサー内の各行の高さをポイントで取得または設定します。</summary>
+        <value>指定したスライサー内の各行の高さ (ポイント数)。</value>
         <remarks><para>値の取得と設定が可能です。</para>
           <para>このプロパティは、スライサーの高さには影響しません。 スライ <see cref="P:Microsoft.Office.Interop.Excel.Slicer.Height" /> サーの高 <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> さを取得または設定するには、オブジェクトのプロパティを使用します。</para>
           <para> </para></remarks>
@@ -586,9 +586,9 @@
       </ReturnValue>
       <Docs>
         <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> スライサーに関連付けられているオブジェクトを取得します。</summary>
-        <value>指定 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> したスライサーに関連付けられているオブジェクト。</value>
+        <value>指定 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> したスライサーに関連付けられたオブジェクト。</value>
         <remarks><para>読み取り専用です。</para>
-          <para>プロパティなど、スライサーの一部のプロパティには、スライサーに関連付けられているオブジェクト <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> からのみアクセスできます。</para>
+          <para>スライサーの一部のプロパティ (プロパティなど) には、スライサーに関連付 <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> けられている <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> オブジェクトからのみアクセスできます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -674,7 +674,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSlicerCacheType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スライサー キャッシュの種類 (スライサーまたはタイムライン) を返します。 <b>XlSlicerCacheType</b> 読み取り専用</summary>
+        <summary>スライサー キャッシュの種類 (スライサーまたはタイムライン) を返します。<b>XlSlicerCacheType</b> です。値の取得のみ可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -734,7 +734,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TimelineViewState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スライサーのタイムライン固有の状態。 <b>TimelineViewState</b> 読み取り専用</summary>
+        <summary>スライサーのタイムライン固有の状態。<b>TimelineViewState</b> を使用します。値の取得のみ可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -765,8 +765,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ワークシートのセル A1 の左上隅を基準に、指定したスライサーの垂直方向の位置をポイント数で取得または設定します。</summary>
-        <value>ワークシートのセル A1 の左上隅を基準に、指定したスライサーの垂直方向の位置をポイント数で指定します。</value>
+        <summary>ワークシート上のセル A1 の左上隅を基準に、指定したスライサーの垂直方向の位置をポイントで取得または設定します。</summary>
+        <value>ワークシート上のセル A1 の左上隅を基準に、指定したスライサーの垂直方向の位置をポイントで指定します。</value>
         <remarks><para>値の取得と設定が可能です。</para>
           <para> </para></remarks>
       </Docs>

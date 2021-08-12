@@ -1,5 +1,5 @@
 <Type Name="Parameter" FullName="Microsoft.Office.Interop.Excel.Parameter">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="4cb6832911d3c4a327d4bf9eea8ec30d60695a98" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011061" /></Metadata><TypeSignature Language="C#" Value="public interface Parameter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ceb505505ad4c2424961ee3823c65f7e49efbd047f2dad227b0cd35b491ccad0" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54513310" /></Metadata><TypeSignature Language="C#" Value="public interface Parameter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Parameter" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Parameter" />
   <TypeSignature Language="VB.NET" Value="Public Interface Parameter" />
@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>パラメーター クエリで使用する単一のパラメーターを表します。 <b>Parameter オブジェクト</b>はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.Parameters" /> です。</summary>
+    <summary>パラメーター クエリで使用する単一のパラメーターを表します。 <b>Parameter オブジェクト</b>は、コレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.Parameters" /> です。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -108,7 +108,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlParameterDataType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したクエリ パラメーターのデータ型を取得または設定します。 読み取り/書き込み <see cref="T:Microsoft.Office.Interop.Excel.XlParameterDataType" /> 。</summary>
+        <summary>指定したクエリ パラメーターのデータ型を設定または返します。 読み取り/書き込み <see cref="T:Microsoft.Office.Interop.Excel.XlParameterDataType" /> 。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -139,7 +139,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの名前を設定または返します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
+        <summary>指定されたオブジェクトの名前を設定します。値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -167,7 +167,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -195,7 +195,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>パラメーター クエリのパラメーター値をユーザーに求める語句を返します。 読み取りのみ可能な <b>String</b> 値です。</summary>
+        <summary>パラメーター クエリのパラメーター値を入力するように促すプロンプトの文字列を返します。値の取得のみ可能です。文字列型 (<b>String</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -226,7 +226,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> の 場合は、パラメーター クエリのパラメーター値を変更するたびに、指定したクエリ テーブルが更新されます。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
+        <summary><b>True</b> の場合、パラメーター クエリのパラメーター値を変更するたびに指定されたクエリ テーブルを更新します。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks><para><b>xlRange</b> 型のパラメーターを使用する場合、および参照先パラメーター値が単一のセルに入っている場合、このプロパティに <b>True</b> を設定できます。セルの値を変更するたびに、テーブルが更新されます。</para>
           <para> </para></remarks>
@@ -257,7 +257,7 @@
       </Parameters>
       <Docs>
         <param name="Type">必須 <see cref="T:Microsoft.Office.Interop.Excel.XlParameterType" /> 。</param>
-        <param name="Value">Required <b>Object</b>. 引数の説明に示すように、指定されたパラメーターの <paramref name="Type" /> 値。</param>
+        <param name="Value">必須<b>オブジェクト 。</b> 引数の説明に示すように、指定したパラメーターの値 <paramref name="Type" /> 。</param>
         <summary>指定されたクエリ テーブルのパラメーターを定義します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -285,7 +285,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたクエリ <see cref="T:Microsoft.Office.Interop.Excel.Range" /> パラメーターの値を含むセルを表すオブジェクトを返します。 読み取り専用です。</summary>
+        <summary>指定したクエリ <see cref="T:Microsoft.Office.Interop.Excel.Range" /> パラメーターの値を含むセルを表すオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -313,7 +313,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlParameterType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>パラメーターの種類を取得または設定します。 読み取り専用です <see cref="T:Microsoft.Office.Interop.Excel.XlParameterType" /> 。</summary>
+        <summary>パラメーターの種類を設定または返します。 読み取り専用 <see cref="T:Microsoft.Office.Interop.Excel.XlParameterType" /> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

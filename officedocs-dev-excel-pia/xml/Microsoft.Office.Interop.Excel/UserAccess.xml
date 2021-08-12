@@ -1,5 +1,5 @@
 <Type Name="UserAccess" FullName="Microsoft.Office.Interop.Excel.UserAccess">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="5757d729f5b2ba76353f83174ceb6884fc95261d" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009395" /></Metadata><TypeSignature Language="C#" Value="public interface UserAccess" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e0fd6e8795f5aaa711cb5968cd2f40cd9979d3b9a4d15e6ec2b26021c5cca095" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54512673" /></Metadata><TypeSignature Language="C#" Value="public interface UserAccess" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UserAccess" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.UserAccess" />
   <TypeSignature Language="VB.NET" Value="Public Interface UserAccess" />
@@ -22,8 +22,8 @@
   </Attributes>
   <Docs>
     <summary>保護された範囲のユーザー アクセスを表します。</summary>
-    <remarks><para><see cref="M:Microsoft.Office.Interop.Excel.UserAccessList.Add(System.String,System.Boolean)" />UserAccess オブジェクトを取得 <see cref="P:Microsoft.Office.Interop.Excel.UserAccessList.Item(System.Object)" /> するには、コレクションの <see cref="T:Microsoft.Office.Interop.Excel.UserAccessList" /> メソッドまたは<b>プロパティを使用</b>します。</para>
-      <para><b>UserAccess オブジェクトが</b>返された後は、プロパティを使用して、ワークシート内の特定の範囲に対してアクセスが許可されるかどうかを判断 <see cref="P:Microsoft.Office.Interop.Excel.UserAccess.AllowEdit" /> できます。</para>
+    <remarks><para><see cref="M:Microsoft.Office.Interop.Excel.UserAccessList.Add(System.String,System.Boolean)" />UserAccess オブジェクトを取得 <see cref="P:Microsoft.Office.Interop.Excel.UserAccessList.Item(System.Object)" /> するには、コレクションの <see cref="T:Microsoft.Office.Interop.Excel.UserAccessList" /> メソッドまたはプロパティ<b>を使用</b>します。</para>
+      <para><b>UserAccess オブジェクトが</b>返された後、プロパティを使用して、ワークシート内の特定の範囲に対してアクセスが許可されるかどうかを判断 <see cref="P:Microsoft.Office.Interop.Excel.UserAccess.AllowEdit" /> できます。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -53,7 +53,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>ユーザー</b> が保護されたワークシートの指定範囲へのアクセスを許可されている場合は True。</summary>
+        <summary><b>True</b> の場合、ユーザーは、保護されたワークシートの指定した範囲へのアクセスを許可します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -108,7 +108,7 @@
       <Docs>
         <summary>オブジェクトの名前を返します。</summary>
         <value>To be added.</value>
-        <remarks><para>次の表に <b>、Name</b> プロパティの値の例と、一意の名前が "[Europe]" のデータ ソースに関連するプロパティを示します。[フランス].[パリ]" およびアイテム名が "Paris" の OLAP 以外のデータ ソース。</para>
+        <remarks><para>次の表に <b>、Name</b> プロパティの値の例と、一意の名前 "[Europe] を持つデータ ソースを指定した関連プロパティを示します。[フランス][Paris]" とアイテム名が "Paris" の OLAP 以外のデータ ソース。</para>
           <list type="table">
             <item>
               <term>
@@ -139,17 +139,17 @@
               <description>東京</description>
             </item>
           </list>
-          <para>コレクションにインデックスを指定する場合は、次の表 <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> に示す構文を使用できます。</para>
+          <para>コレクションにインデックスを指定する場合は <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> 、次の表に示す構文を使用できます。</para>
           <list type="table">
             <item>
-              <term>式を使用します。PivotItems("[Europe].[フランス]。[パリ]")</term>
-              <description>式を使用します。PivotItems("Paris")</description>
+              <term>式。PivotItems("[Europe].[フランス]。[パリ]")</term>
+              <description>式。PivotItems("Paris")</description>
             </item>
           </list>
-          <para>このプロパティを使用してコレクションの特定のメンバーを参照する場合は、次の表に示すように、テキスト インデックス <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> 名を使用できます。</para>
+          <para>プロパティを使用してコレクションの特定のメンバーを参照する場合は、次の表に示すように、テキスト インデックス名 <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> を使用できます。</para>
           <list type="table">
             <item>
-              <term>[ヨーロッパ].[フランス].[パリ]</term>
+              <term>[ヨーロッパ][フランス][パリ]</term>
               <description>東京</description>
             </item>
           </list>
