@@ -1,5 +1,5 @@
 <Type Name="Shape" FullName="Microsoft.Office.Interop.Excel.Shape">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="79407cc874dc91aaa0bdd4a827ab38f1c0fb6b0b" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010368" /></Metadata><TypeSignature Language="C#" Value="public interface Shape" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d86638fcef155bf5d6626b30f97fabfb8dab499efe5e761ec66682ff972a7143" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54507283" /></Metadata><TypeSignature Language="C#" Value="public interface Shape" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Shape" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Shape" />
   <TypeSignature Language="VB.NET" Value="Public Interface Shape" />
@@ -21,8 +21,8 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>オートシェイプ、フリーフォーム、OLE オブジェクト、図などの描画オブジェクトを表します。 <b>Shape オブジェクト</b>はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> です。 <b>Shapes コレクション</b>には、スライド上のすべての図形が含まれる。</summary>
-    <remarks><para>図形を表すオブジェクトには、文書上のすべての図形を表す<b>Shapes</b>コレクションという 3 つのオブジェクトがあります。このコレクションは、文書上の図形の指定されたサブセットを表します <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> (<b>たとえば、ShapeRange</b>オブジェクトは文書の図形 1 と 4 を表したり、文書上で選択した図形を表<b></b>したり、文書上の 1 つの図形を表す Shape オブジェクトを表したりします)。 複数の図形を同時に、または選択範囲内の図形を使用する場合は <b>、ShapeRange コレクションを使用</b> します。</para>
+    <summary>オートシェイプ、フリーフォーム、OLE オブジェクト、図などの描画オブジェクトを表します。 <b>Shape オブジェクト</b>は、コレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> です。 <b>Shapes コレクションには</b>、スライド上のすべての図形が含まれる。</summary>
+    <remarks><para>図形を表す 3 つのオブジェクトがあります。 <b>Shapes</b> コレクションは、ドキュメント上のすべての図形を表します。コレクションは、ドキュメント上の図形の指定されたサブセットを表します <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> (たとえば <b>、ShapeRange</b> オブジェクトは、ドキュメント上の図形 1 と 4 を表したり、ドキュメント上のすべての選択した図形を表したりできます <b>)。Shape</b> オブジェクトは、ドキュメント上の 1 つの図形を表します。 複数の図形を同時に、または選択範囲内の図形で作業する場合は <b>、ShapeRange コレクションを使用</b> します。</para>
       <para>このセクションで説明する方法。</para>
       <list type="bullet">
         <item>
@@ -45,18 +45,18 @@
         </item>
       </list>
       <para>既存の図形を取得する</para>
-      <para>図形<b>を</b>表す Shape オブジェクトを取得するには、図形 ( ) を使用します。図形名またはインデックス番号を <paramref name="index" /> <paramref name="index" /> 指定します。 <b></b></para>
-      <para><b>Shapes</b> コレクションに図形を追加すると、各図形には既定の名前が割り当てられます。 図形にわかりやすい名前を付けます。プロパティを使用 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Name" /> します。</para>
+      <para>図形<b>を</b>表す Shape オブジェクトを取得するには、図形名またはインデックス番号を使用 <paramref name="index" /> <paramref name="index" /> します。 <b></b></para>
+      <para><b>Shapes</b> コレクションに図形を追加すると、各図形には既定の名前が割り当てられます。 図形にわかりやすい名前を付けするには、プロパティを使用 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Name" /> します。</para>
       <para>選択範囲内の図形を取得する</para>
-      <para>選択<b>範囲内の図形を</b>表す Shape オブジェクトを取得するには、Selection.ShapeRange ( ) プロパティを使用します。図形名またはインデックス番号を <paramref name="index" /> <paramref name="index" /> 指定します。 <b></b></para>
+      <para><b>Selection.ShapeRange</b>( ) は、図形名またはインデックス番号を使用して、選択範囲内の図形を表す <paramref name="index" /> <paramref name="index" /> <b>Shape</b>オブジェクトを返します。</para>
       <para>コネクタの両端が接続された図形を取得する</para>
-      <para>コネクタに接続 <b>されている</b> 図形の 1 つを表す Shape オブジェクトを取得するには、またはプロパティを <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnectedShape" /> 使用 <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnectedShape" /> します。</para>
+      <para>コネクタによって接続 <b>されている図形</b> の 1 つを表す Shape オブジェクトを取得するには、or プロパティ <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.BeginConnectedShape" /> を使用 <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.EndConnectedShape" /> します。</para>
       <para>新しく作成したフリーフォームを取得する</para>
-      <para>新しいフリーフォームの形状を定義するには、このメソッドとメソッドを使用し、フリーフォームを作成してそれを表す Shape オブジェクトを <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> 取得します。 <b></b></para>
+      <para>and メソッドを使用して、新しいフリーフォームのジオメトリを定義し、メソッドを使用してフリーフォームを作成し、それを表す Shape オブジェクト <see cref="M:Microsoft.Office.Interop.Excel.Shapes.BuildFreeform(Microsoft.Office.Core.MsoEditingType,System.Single,System.Single)" /> <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.AddNodes(Microsoft.Office.Core.MsoSegmentType,Microsoft.Office.Core.MsoEditingType,System.Single,System.Single,System.Object,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.FreeformBuilder.ConvertToShape" /> を返します。 <b></b></para>
       <para>グループ内から単一の図形を取得する</para>
-      <para>グループ<b>化された</b>図形の 1 つの図形を表す Shape オブジェクトを取得するには、GroupItems ( ) を使用します。グループ内の図形名またはインデックス番号を <paramref name="index" /> <paramref name="index" /> 指定します。 <b></b></para>
+      <para><b>グループ化された</b>図形の 1 つの図形を表す Shape オブジェクトを取得するには、グループ内の図形名またはインデックス番号である GroupItems ( ) <paramref name="index" /> <paramref name="index" /> を使用します。 <b></b></para>
       <para>新しく形成した図形グループを取得する</para>
-      <para>図形範囲をグループ化し、新しく形成されたグループを表す 1 つの Shape オブジェクト <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Group" /> を取得するには、or メソッド <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Regroup" /> を使用します。 <b></b> グループを形成すると、他の図形を処理するのと同じようにグループを処理できます。</para>
+      <para>or メソッド <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Group" /> を使用して、図形の範囲をグループ化し、新しく形成されたグループを表す 1 つの <see cref="M:Microsoft.Office.Interop.Excel.ShapeRange.Regroup" /> <b>Shape</b> オブジェクトを取得します。 グループを形成すると、他の図形を処理するのと同じようにグループを処理できます。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -83,9 +83,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Adjustments</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した図形 <see cref="T:Microsoft.Office.Interop.Excel.Adjustments" /> のすべての調整値を含むオブジェクトを返します。 読み取り専用です。</summary>
+        <summary>指定した図形 <see cref="T:Microsoft.Office.Interop.Excel.Adjustments" /> のすべての調整の調整値を含むオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
-        <remarks><para>このプロパティは、オートShape、ワードアート、またはコネクタを表す任意のオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> またはオブジェクトに適用されます。</para>
+        <remarks><para>このプロパティは、AutoShape、WordArt、またはコネクタを表す任意のオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> またはオブジェクトに適用されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -115,9 +115,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトを Web ページに保存するときに、オブジェクトの説明 (代替) テキスト文字列 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> を取得または設定します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
+        <summary>オブジェクトを Web ページに保存するときに、オブジェクトのわかりやすい (代替) テキスト文字列を設定 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> または返します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
         <value>To be added.</value>
-        <remarks><para>代替テキストは、Web ブラウザーで図形のイメージの代わりに表示するか、マウス ポインターをイメージの上に置くと (これらの機能をサポートするブラウザーで) イメージの上に直接表示できます。</para>
+        <remarks><para>代替テキストは、Web ブラウザーで図形のイメージの代わりに表示するか、マウス ポインターがイメージの上にマウス ポインターを置いた場合 (これらの機能をサポートするブラウザーで) 画像の上に直接表示できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -144,7 +144,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -200,7 +200,7 @@
         <ReturnType>Microsoft.Office.Core.MsoAutoShapeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの図形の種類を設定します。このオブジェクトは、線、フリーフォーム、またはコネクタ以外のオートシェイプを表す <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 必要があります。 読み取り/書き込み <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" /> 。</summary>
+        <summary>指定したオブジェクトの図形の種類を設定または返します。これは、線、フリーフォーム図面、またはコネクタ以外の <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> AutoShape を表す必要があります。 読み取り/書き込み <see cref="T:Microsoft.Office.Core.MsoAutoShapeType" /> 。</summary>
         <value>To be added.</value>
         <remarks><para>図形の種類を変更しても、図形の大きさ、色などの属性は保持されます。</para>
           <para>コネクタの <see cref="P:Microsoft.Office.Interop.Excel.ConnectorFormat.Type" /> 種類を設定 <see cref="T:Microsoft.Office.Interop.Excel.ConnectorFormat" /> または取得するには、オブジェクトのプロパティを使用します。</para>
@@ -320,7 +320,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.CalloutFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した図形 <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> の吹き出しの書式プロパティを含むオブジェクトを返します。 線吹き <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 出しを表すオブジェクトに適用されます。 読み取り専用です。</summary>
+        <summary>指定した図形 <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> の吹き出し書式プロパティを含むオブジェクトを返します。 線引き <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 出しを表すオブジェクトに適用されます。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -503,7 +503,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Chart</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>に含まれているを表す <see cref="T:Microsoft.Office.Interop.Excel._Chart" /> オブジェクトを返します <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 。 読み取り専用です。</summary>
+        <summary>に含まれるオブジェクトを表 <see cref="T:Microsoft.Office.Interop.Excel._Chart" /> すオブジェクトを返します <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel._Chart" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -531,7 +531,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した図形が子図形である場合、または図形範囲内のすべての図形が同じ親の子図形である場合は <b>、msoTrue</b> を返します。 読み取り専用です <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。</summary>
+        <summary>指定した図形が子図形である場合、または図形範囲内のすべての図形が同じ親の子図形である場合は <b>、msoTrue</b> を返します。 読み取り専用 <see cref="T:Microsoft.Office.Core.MsoTriState" /> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -587,7 +587,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された図形がコネクタの場合は <b>True</b>。 読み取り専用です <see cref="T:Microsoft.Office.Core.MsoTriState" /> 。</summary>
+        <summary>指定された図形がコネクタの場合は <b>True</b>。 読み取り専用 <see cref="T:Microsoft.Office.Core.MsoTriState" /> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -643,7 +643,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ControlFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel コントロール <see cref="T:Microsoft.Office.Interop.Excel.ControlFormat" /> のプロパティを含むオブジェクトを返します。 読み取り専用です。</summary>
+        <summary>コントロールのプロパティ <see cref="T:Microsoft.Office.Interop.Excel.ControlFormat" /> を含むオブジェクトMicrosoft Excel返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -725,7 +725,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 読み取り専用です <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> 。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 読み取り専用 <see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /> です。</summary>
         <value>To be added.</value>
         <remarks><para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
           <para> </para></remarks>
@@ -840,7 +840,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DiagramNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図内 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> のノードを表すオブジェクトを返します。</summary>
+        <summary>図内の <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> ノードを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -925,7 +925,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.FillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したグラフ <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> または図形の塗りつぶしの書式プロパティを含むオブジェクトを返します。 読み取り専用です。</summary>
+        <summary>指定したグラフ <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> または図形の塗りつぶし書式プロパティを含むオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -981,9 +981,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlFormControl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel コントロールの種類を返します。 読み取り専用 <see cref="T:Microsoft.Office.Interop.Excel.XlFormControl" /> です。</summary>
+        <summary>コントロールの種類Microsoft Excel返します。 読み取り専用 <see cref="T:Microsoft.Office.Interop.Excel.XlFormControl" /> です。</summary>
         <value>To be added.</value>
-        <remarks><para>You cannot use this property with ActiveX controls (the <see cref="P:Microsoft.Office.Interop.Excel.Shape.Type" /> property for the object must return <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <b>msoFormControl).</b></para>
+        <remarks><para>このプロパティは、オブジェクト コントロールActiveX使用できません (オブジェクトのプロパティは <see cref="P:Microsoft.Office.Interop.Excel.Shape.Type" /> <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> <b>msoFormControl を返す必要があります</b>)。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1010,7 +1010,7 @@
         <ReturnType>Microsoft.Office.Core.GlowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>その図形の光彩の書式設定プロパティを含む指定した図形のオブジェクトを返します。 読み取り専用です。</summary>
+        <summary>指定した図形のオブジェクトで、その図形の光彩の書式設定プロパティを含むオブジェクトを返します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Core.GlowFormat" /></value>
         <remarks><para>光彩効果は、画像のエッジに鮮やかな色を適用します。  </para>
           <para> </para></remarks>
@@ -1039,7 +1039,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.GroupShapes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したグループ <see cref="T:Microsoft.Office.Interop.Excel.GroupShapes" /> 内の各図形を表すオブジェクトを返します。 グループから <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> 1 つの図形 <b>を取得するには、GroupShapes</b> オブジェクトのメソッドを使用します。 グループ化された <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 図形を表すオブジェクトに適用されます。 読み取り専用です。</summary>
+        <summary>指定したグループ <see cref="T:Microsoft.Office.Interop.Excel.GroupShapes" /> 内の個々の図形を表すオブジェクトを返します。 <see cref="M:Microsoft.Office.Interop.Excel.GroupShapes.Item(System.Object)" /> <b>GroupShapes オブジェクトのメソッドを使用して</b>、グループから 1 つの図形を取得します。 グループ化された <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 図形を表すオブジェクトに適用されます。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1067,7 +1067,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>グラフが含まれている場合に関 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> する情報を返します。 読み取り専用です。</summary>
+        <summary>グラフが含まれている場合の <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 情報を返します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Core.MsoTriState" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1157,7 +1157,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した図形に SmartArt 図が存在するかどうかを取得します。</summary>
+        <summary>指定した図形に SmartArt ダイアグラムが存在するかどうかを取得します。</summary>
         <value><see cref="T:Microsoft.Office.Core.MsoTriState" /> オブジェクト。</value>
         <remarks><para>読み取り専用です。</para>
           <para>図表上に SmartArt 図がある場合は  
@@ -1191,7 +1191,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの高さを指定します。 読み取り/書き込み <b>1 つ</b> です。</summary>
+        <summary>オブジェクトの高さ。 読み取り/書き込み <b>1 つ</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1275,7 +1275,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの種類を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
+        <summary>指定したオブジェクトの型を返します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks><para>ID ラベルは、別の HTML ドキュメントや同じ Web ページでハイパーリンクの参照先として使用できます。</para>
           <para> </para></remarks>
@@ -1304,7 +1304,7 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 図形を水平方向に移動するポイント数を指定します。 正の値を指定すると図形は右方向に移動し、負の値を指定すると左方向に移動します。</param>
+        <param name="Increment">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 図形をポイントで水平方向に移動する位置を指定します。 正の値を指定すると図形は右方向に移動し、負の値を指定すると左方向に移動します。</param>
         <summary>指定した図形を、指定したポイント数だけ水平方向に移動します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1332,9 +1332,9 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 図形を水平方向に回転する角度を指定します。 正の値を指定すると図形は時計回りに回転し、負の値を指定すると反時計回りに回転します。</param>
-        <summary>指定した図形の z 軸回りの回転を、指定した角度だけ変更します。 図形の <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> 絶対回転角度を設定するには、このプロパティを使用します。</summary>
-        <remarks><para>x 軸または y 軸を中心に 3 次元図形を回転するには、メソッド <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> またはメソッドを使用 <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> します。</para>
+        <param name="Increment">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 図形を度数で水平方向に回転する位置を指定します。 正の値を指定すると図形は時計回りに回転し、負の値を指定すると反時計回りに回転します。</param>
+        <summary>指定した図形の z 軸回りの回転を、指定した角度だけ変更します。 プロパティを <see cref="P:Microsoft.Office.Interop.Excel.Shape.Rotation" /> 使用して、図形の絶対回転を設定します。</summary>
+        <remarks><para>x 軸または y 軸を中心に 3 次元の図形を回転するには、メソッド <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationX(System.Single)" /> またはメソッドを使用 <see cref="M:Microsoft.Office.Interop.Excel.ThreeDFormat.IncrementRotationY(System.Single)" /> します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1361,7 +1361,7 @@
         <Parameter Name="Increment" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Increment">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 図形オブジェクトを垂直方向に移動するポイント数を指定します。 正の値を指定すると図形は下方向に移動し、負の値を指定すると上方向に移動します。</param>
+        <param name="Increment">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 図形オブジェクトをポイントで垂直方向に移動する位置を指定します。 正の値を指定すると図形は下方向に移動し、負の値を指定すると上方向に移動します。</param>
         <summary>指定した図形を、指定したポイント数だけ垂直方向に移動します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1392,7 +1392,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの左側から列 A の左側 (ワークシート) またはグラフ エリアの左側 (グラフの場合) までの距離です。 読み取り/書き込み <b>1 つ</b> です。</summary>
+        <summary>オブジェクトの左端から列 A の左端 (ワークシート上) またはグラフ領域の左端 (グラフ上) までの距離です。 読み取り/書き込み <b>1 つ</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1511,7 +1511,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>オブジェクト</b> がロックされている場合は <b>True、False</b> の場合は、シートが保護されているときにオブジェクトを変更できます。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
+        <summary><b>オブジェクト</b> がロックされている場合は True、 <b>シート</b> が保護されているときにオブジェクトを変更できる場合は False です。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1542,7 +1542,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの名前を設定または返します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
+        <summary>指定されたオブジェクトの名前を設定します。値の取得および設定が可能です。文字列型 ( <b>String</b> ) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks><para>OLAP データ ソースの一意な名前が "[都道府県].[東京都].[東京]"、OLAP 以外のデータ ソースのアイテム名が "東京" とされた場合、<b>Name</b> プロパティ、および関連するプロパティの値を次に示します。</para>
           <list type="table">
@@ -1575,17 +1575,17 @@
               <description>東京</description>
             </item>
           </list>
-          <para>コレクションにインデックスを指定する場合は、次の表 <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> に示す構文を使用できます。</para>
+          <para>コレクションにインデックスを指定する場合は <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> 、次の表に示す構文を使用できます。</para>
           <list type="table">
             <item>
-              <term>式を使用します。PivotItems("[Europe].[フランス]。[パリ]")</term>
+              <term>式。PivotItems("[Europe].[フランス]。[パリ]")</term>
               <description>Expression.PivotItems("Paris")</description>
             </item>
           </list>
-          <para>このプロパティを使用してコレクションの特定のメンバーを参照する場合は、次の表に示すように、テキスト インデックス <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> 名を使用できます。</para>
+          <para>プロパティを使用してコレクションの特定のメンバーを参照する場合は、次の表に示すように、テキスト インデックス名 <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> を使用できます。</para>
           <list type="table">
             <item>
-              <term>[ヨーロッパ].[フランス].[パリ]</term>
+              <term>[ヨーロッパ][フランス][パリ]</term>
               <description>東京</description>
             </item>
           </list>
@@ -1643,7 +1643,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.OLEFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>OLE オブジェクト の <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> プロパティを含むオブジェクトを返します。 読み取り専用です。</summary>
+        <summary>OLE オブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.OLEFormat" /> プロパティを含むオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1674,7 +1674,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトがクリックされた場合に実行されるマクロの名前を取得または設定します。 値の取得と設定が可能な文字列型 (<b>String</b>) の値です。</summary>
+        <summary>指定されたオブジェクトがクリックされたときに実行するマクロの名前を設定します。値の取得および設定が可能です。文字列型 (<b>String</b>) の値を使用します。</summary>
         <value>To be added.</value>
         <remarks><para>メニュー項目にこのプロパティを設定すると、メニュー項目に登録されていたヘルプの設定が、登録したマクロのヘルプ設定に置き換えられます。</para>
           <para> </para></remarks>
@@ -1703,7 +1703,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1731,7 +1731,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>子図形 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> または子図形の範囲の共通の親図形を表すオブジェクトを返します。</summary>
+        <summary>子図形または子図形の範囲の共通の親図形を表す <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1784,7 +1784,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PictureFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した図形 <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> の図の書式プロパティを含むオブジェクトを返します。 ピクチャまたは <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> OLE オブジェクトを表すオブジェクトに適用されます。 読み取り専用です。</summary>
+        <summary>指定した図形 <see cref="T:Microsoft.Office.Interop.Excel.PictureFormat" /> の画像書式プロパティを含むオブジェクトを返します。 画像または <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> OLE オブジェクトを表すオブジェクトに適用されます。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1870,7 +1870,7 @@
       <Parameters />
       <Docs>
         <summary>RerouteConnections メソッドは、図形間を結ぶ線 (コネクタ) の経路が最短になるように、そのコネクタを再接続します。</summary>
-        <remarks><para>最短のパスを使用するために <b>、RerouteConnections</b> メソッドはコネクタの端を切り離し、接続された図形上の別の接続サイトに接続し再び接続できます。 図形に接続されたすべてのコネクタを再接続します。図形がコネクタの場合、そのコネクタを再接続します。</para>
+        <remarks><para>最短パスを使用するために <b>、RerouteConnections</b> メソッドはコネクタの端を切り離し、接続された図形上の別の接続サイトに再接続できます。 図形に接続されたすべてのコネクタを再接続します。図形がコネクタの場合、そのコネクタを再接続します。</para>
           <para>RerouteConnections メソッドをコネクタに適用すると、そのコネクタの経路だけが再作成されます。このメソッドを結合した図形に適用すると、その図形のすべてのコネクタの経路が再作成されます。</para>
           <para> </para></remarks>
       </Docs>
@@ -1901,7 +1901,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図形の回転角度を設定または返します。 読み取り/書き込み <b>1 つ</b> です。</summary>
+        <summary>図形の回転角度を度数で設定または返します。 読み取り/書き込み <b>1 つ</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1996,7 +1996,7 @@
         <ReturnType>Microsoft.Office.Core.Script</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された Web ページ上のスクリプト ブロックまたはコード ブロックを表す <b>Script</b> オブジェクトを返します。 ページにスクリプトが記述されていない場合は、何も返されません。</summary>
+        <summary>指定された Web ページ上のスクリプト ブロックまたはコード ブロックを表す <b>Script</b> オブジェクトを返します。指定のページにスクリプトが含まれない場合、何も取得されません。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2023,9 +2023,9 @@
         <Parameter Name="Replace" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Replace">省略 <b>可能なオブジェクト</b>です。 置換するオブジェクトを指定します。</param>
+        <param name="Replace">省略 <b>可能なオブジェクト</b>です。 置換するオブジェクト。</param>
         <summary>オブジェクトを選択します。</summary>
-        <remarks><para>セルまたはセル範囲を選択するには、<b>Select</b> メソッドを使用します。 1 つのセルをアクティブ セルにする場合は、このメソッドを使用 <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> します。</para>
+        <remarks><para>セルまたはセル範囲を選択するには、<b>Select</b> メソッドを使用します。 1 つのセルをアクティブ セルにする場合は、メソッドを使用 <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Activate" /> します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2077,7 +2077,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ShadowFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True オブジェクト</b> に影がある場合です。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
+        <summary><b>オブジェクト</b> に影がある場合は True。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2108,7 +2108,7 @@
         <ReturnType>Microsoft.Office.Core.MsoShapeStyleIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図形の図形スタイル <see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" /> を表す a を取得または設定します。 値の取得と設定が可能です。</summary>
+        <summary>図形の図形のスタイル <see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" /> を表す a を設定または返します。 値の取得と設定が可能です。</summary>
         <value><see cref="T:Microsoft.Office.Core.MsoShapeStyleIndex" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2136,8 +2136,8 @@
         <ReturnType>Microsoft.Office.Core.SmartArt</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図形に関連付けられている SmartArt を表すオブジェクトを取得します。</summary>
-        <value>図形に関連付けられている SmartArt を表すオブジェクト。</value>
+        <summary>図形に関連付けられた SmartArt を表すオブジェクトを取得します。</summary>
+        <value>図形に関連付けられた SmartArt を表すオブジェクト。</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
       </Docs>
@@ -2165,7 +2165,7 @@
         <ReturnType>Microsoft.Office.Core.SoftEdgeFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図形のソフト <see cref="T:Microsoft.Office.Core.SoftEdgeFormat" /> エッジの書式設定プロパティを含む指定した図形のオブジェクトを返します。 読み取り専用です。</summary>
+        <summary>図形の <see cref="T:Microsoft.Office.Core.SoftEdgeFormat" /> ソフト エッジ書式設定プロパティを含む、指定した図形のオブジェクトを返します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Core.SoftEdgeFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2193,7 +2193,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TextEffectFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した図形 <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> のテキスト効果の書式設定プロパティを含むオブジェクトを返します。 ワードアートを <b>表す T:Microsoft.Office.Interop.Excel.Shape</b> オブジェクトに適用されます。 読み取り専用です。</summary>
+        <summary>指定した図形 <see cref="T:Microsoft.Office.Interop.Excel.TextEffectFormat" /> のテキスト効果の書式設定プロパティを含むオブジェクトを返します。 <b>T:Microsoft.Office に適用されます。相互運用。Excel。WordArt</b>を表す図形オブジェクト。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2221,7 +2221,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TextFrame</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した図形 <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> の配置およびアンカーのプロパティを含むオブジェクトを返します。 読み取り専用です。</summary>
+        <summary>指定した図形 <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> の配置プロパティとアンカー プロパティを含むオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2277,7 +2277,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ThreeDFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した図形 <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> の 3-D 効果の書式プロパティを含むオブジェクトを返します。 読み取り専用です。</summary>
+        <summary>指定した図形 <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> の 3-D 効果の書式設定プロパティを含むオブジェクトを返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2308,8 +2308,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した図形に関連付けられている代替テキストのタイトルを取得または設定します。</summary>
-        <value>指定した図形に関連付けられている代替テキストのタイトル。</value>
+        <summary>指定した図形に関連付けられた代替テキストのタイトルを取得または設定します。</summary>
+        <value>指定した図形に関連付けられた代替テキストのタイトル。</value>
         <remarks><para>値の取得と設定が可能です。</para>
           <para>図形の代替テキストの説明テキスト文字列を設定するには、プロパティを使用 <see cref="P:Microsoft.Office.Interop.Excel.Shape.AlternativeText" /> します。</para>
           <para> </para></remarks>
@@ -2341,7 +2341,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図形範囲の一番上の図形の上端からワークシートの上端までの距離です。 読み取り/書き込み <b>1 つ</b> です。</summary>
+        <summary>図形範囲の一番上の図形の上端からワークシートの上端までの距離。 読み取り/書き込み <b>1 つ</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2369,7 +2369,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.Range" /> オブジェクトの左上隅にあるセルを表すオブジェクトを返します。 読み取り専用です。</summary>
+        <summary>指定したオブジェクトの左上隅にあるセルを表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を返します。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2397,7 +2397,7 @@
         <ReturnType>Microsoft.Office.Core.MsoShapeType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図形の種類を取得または設定します。 読み取り専用です <see cref="T:Microsoft.Office.Core.MsoShapeType" /> 。</summary>
+        <summary>図形の種類を設定または返します。 読み取り専用 <see cref="T:Microsoft.Office.Core.MsoShapeType" /> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2482,7 +2482,7 @@
       <Docs>
         <summary>指定したフリーフォームの頂点 (およびベジェ曲線のコントロール ポイント) の座標を、一連の 2 次元の座標として取得します。 読み取り専用 <b>オブジェクト</b> 。</summary>
         <value>To be added.</value>
-        <remarks><para>このプロパティで返される配列を、メソッドまたはメソッドの引数 <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddCurve(System.Object)" /> として使用 <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddPolyline(System.Object)" /> できます。</para>
+        <remarks><para>このプロパティによって返される配列を、メソッドまたはメソッドの引数 <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddCurve(System.Object)" /> として使用 <see cref="M:Microsoft.Office.Interop.Excel.Shapes.AddPolyline(System.Object)" /> できます。</para>
           <para>次の表は <b>Vertices</b> プロパティと、三角形の頂点の座標を含む配列 vertArray() との関係を示しています。</para>
           <list type="table">
             <item>
@@ -2570,7 +2570,7 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの幅を指定します。 読み取り/書き込み <b>1 つ</b> です。</summary>
+        <summary>オブジェクトの幅。 読み取り/書き込み <b>1 つ</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2600,7 +2600,7 @@
       <Docs>
         <param name="ZOrderCmd">必須 <see cref="T:Microsoft.Office.Core.MsoZOrderCmd" /> 。 別の図形を基準にして、対象の図形の移動先を指定します。</param>
         <summary>コレクションの他の図形の前面または背後に指定の図形を移動させます (つまり、図形の位置を z オーダーで変更します)。</summary>
-        <remarks><para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.Shape.ZOrderPosition" /> を使用して、z オーダーでの図形の現在の位置を決定します。</para>
+        <remarks><para>プロパティを <see cref="P:Microsoft.Office.Interop.Excel.Shape.ZOrderPosition" /> 使用して、z オーダーでの図形の現在の位置を決定します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2629,8 +2629,8 @@
       <Docs>
         <summary>指定した図形の z 方向の位置を取得します。 整数型 ( <b>Integer</b>) の値を使用します。</summary>
         <value>To be added.</value>
-        <remarks><para>図形の z オーダーの位置を設定するには、このメソッドを使用 <see cref="M:Microsoft.Office.Interop.Excel.Shape.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" /> します。</para>
-          <para>Z オーダーでの図形の位置は、コレクション内の図形のインデックス番号に対応 <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> します。 たとえば、Shapes(1) は z オーダーの最背面にある図形を返し、Shapes(4) は z オーダーの最前面にある図形を返します。</para>
+        <remarks><para>z オーダーで図形の位置を設定するには、メソッドを使用 <see cref="M:Microsoft.Office.Interop.Excel.Shape.ZOrder(Microsoft.Office.Core.MsoZOrderCmd)" /> します。</para>
+          <para>Z オーダー内の図形の位置は、コレクション内の図形のインデックス番号に対応 <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> します。 たとえば、Shapes(1) は z オーダーの背面にある図形を返し、Shapes(4) は z オーダーの前に図形を返します。</para>
           <para>コレクションに新しい図形を追加すると、既定では、必ず z 方向の前面に追加されます。</para>
           <para> </para></remarks>
       </Docs>

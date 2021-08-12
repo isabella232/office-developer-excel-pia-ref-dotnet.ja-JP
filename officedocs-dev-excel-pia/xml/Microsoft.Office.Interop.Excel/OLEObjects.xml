@@ -1,5 +1,5 @@
 <Type Name="OLEObjects" FullName="Microsoft.Office.Interop.Excel.OLEObjects">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="c7a55aea3278bf57d03536464456af6c54d9afe8" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011208" /></Metadata><TypeSignature Language="C#" Value="public interface OLEObjects : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="04b47ec414e769c5bdc42b2e3d4aa24b967c992cd3df9ba188a3d4aed54c75db" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54510720" /></Metadata><TypeSignature Language="C#" Value="public interface OLEObjects : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract OLEObjects implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.OLEObjects" />
   <TypeSignature Language="VB.NET" Value="Public Interface OLEObjects&#xA;Implements IEnumerable" />
@@ -25,11 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>指定されたワークシートのすべての <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> オブジェクトのコレクションです。 各 <b>OLEObject</b> オブジェクトは、ActiveX コントロール、リンクされた OLE オブジェクト、または埋め込まれている OLE オブジェクトを表します。</summary>
+    <summary>指定したワークシート上のすべての <see cref="T:Microsoft.Office.Interop.Excel.OLEObject" /> オブジェクトのコレクション。 各 <b>OLEObject</b> オブジェクトは、ActiveX コントロール、リンクされた OLE オブジェクト、または埋め込まれている OLE オブジェクトを表します。</summary>
     <remarks><para><see cref="M:Microsoft.Office.Interop.Excel._Worksheet.OLEObjects(System.Object)" />OLEObjects コレクションを取得するには<b>、このメソッドを使用</b>します。</para>
-      <para>新しい <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> OLE オブジェクトを作成し、OLEObjects コレクションに <b>追加するには、このメソッドを使用</b> します。</para>
-      <para>シートの ActiveX コントロールには、コントロールを含む図形の名前と、シートを表示するときに [名前] ボックスに表示される 2 つの名前があります。コントロールのコード名は、[プロパティ] ウィンドウのセルの右側 (名前) に表示されます。 最初にコントロールをシートに追加すると、図形名とコード名が一致します。 ただし、図形名またはコード名を変更した場合、もう一方の図形は自動的に一致する名前に変更されません。</para>
-      <para>You use the code name of a control in the names of its event procedures. ただし、シートのコントロールまたは OLEObjects コレクションからコントロールを取得する場合は、コード名ではなく図形名を使用して、コントロールを名前で <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> 参照する必要があります。 <b></b> たとえば、コード名および図形の名前が既定の CheckBox1 というチェック ボックスを追加したと仮定します。 その後、[プロパティ] ウィンドウの [名前] の横に「chkFinished」と入力してコントロールのコード名を変更する場合は、イベント プロシージャ名で chkFinished を使用する必要がありますが、 <b>それでも</b> 、CheckBox1 を使用して Shapes または <b>OLEObjects</b> コレクションからコントロールを取得する必要があります。</para>
+      <para>メソッドを <see cref="M:Microsoft.Office.Interop.Excel.OLEObjects.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 使用して、新しい OLE オブジェクトを作成し <b>、OLEObjects コレクションに追加</b> します。</para>
+      <para>ワークシートの ActiveX コントロールは、2 つの名前を持ちます。シートを表示したときに [名前] ボックスでコントロールが含まれる図形の名前、および [プロパティ] ウィンドウの [(名前)] の右にあるセルでコントロールのコード名を確認できます。最初にワークシートに追加したコントロールでは、図形の名前とコード名が一致しています。しかし、図形の名前かコード名のどちらかを変更しても、もう片方の名前が一致するように自動的に変更されることはありません。</para>
+      <para>コントロールのイベント プロシージャの場合は、コントロールのコード名を使用します。 ただし、シートの or OLEObjects コレクションからコントロールを返す場合は、名前でコントロールを参照するには、コード名ではなく図形名を使用 <see cref="T:Microsoft.Office.Interop.Excel.Shapes" /> する必要があります。 <b></b> たとえば、コード名および図形の名前が既定の CheckBox1 というチェック ボックスを追加したと仮定します。 [プロパティ] ウィンドウの [名前] の横に chkFinished と入力してコントロール コード名を変更する場合は、イベント プロシージャ名で chkFinished を使用する必要がありますが <b>、Shapes</b> コレクションまたは <b>OLEObjects</b> コレクションからコントロールを取得するには、CheckBox1 を使用する必要があります。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -457,13 +457,13 @@
         <Parameter Name="Height" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ClassType">省略 <b>可能なオブジェクト</b>です。 (または <paramref name="ClassType" /> <paramref name="FileName" /> .)作成するオブジェクトのプログラム識別子を含む文字列。 指定 <paramref name="ClassType" /> した場合は <paramref name="FileName" /> 無視 <paramref name="Link" /> されます。</param>
-        <param name="Filename">省略 <b>可能なオブジェクト</b>です。 (または <paramref name="ClassType" /> <paramref name="FileName" /> .)OLE オブジェクトの作成に使用するファイルを指定する文字列。</param>
-        <param name="Link">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、そのファイルにリンクされた新しい OLE <paramref name="FileName" /> オブジェクトが作成されます。 オブジェクトをリンクしない場合は、オブジェクトはそのファイルのコピーとして作成されます。 既定値は、 <b>False</b> です。</param>
-        <param name="DisplayAsIcon">省略 <b>可能なオブジェクト</b>です。 新しい OLE オブジェクトをアイコンまたは通常のピクチャで表示するには、 <b>True</b> を指定します。 この引数が <b>True の</b>場合 <paramref name="IconFileName" /> <paramref name="IconIndex" /> 、アイコンを指定するために使用できます。</param>
-        <param name="IconFileName">省略 <b>可能なオブジェクト</b>です。 表示するアイコンのファイルを示す文字列を指定します。 この引数は、 True の <paramref name="DisplayAsIcon" /> 場合にのみ使用 <b>されます</b>。 この引数を指定しない場合、またはファイルにアイコンが含まれている場合は、OLE クラスの既定のアイコンが使用されます。</param>
-        <param name="IconIndex">省略 <b>可能なオブジェクト</b>です。 アイコン ファイルに含まれるアイコンの番号を指定します。 これは、True で、アイコンを含む有効なファイルを参照している <paramref name="DisplayAsIcon" /> <b></b> <paramref name="IconFileName" /> 場合にのみ使用されます。 指定されたインデックス番号のアイコンが、指定されたファイルに存在しない場合は、ファイル内の最初の <paramref name="IconFileName" /> アイコンが使用されます。</param>
-        <param name="IconLabel">省略 <b>可能なオブジェクト</b>です。 アイコンの下に表示するタイトルを示す文字列を指定します。 This is used only if <paramref name="DisplayAsIcon" /> is <b>True</b>. この引数を省略するか空の文字列 ("") を指定すると、タイトルは表示されません。</param>
+        <param name="ClassType">省略 <b>可能なオブジェクト</b>です。 (または <paramref name="ClassType" /> .) を指定 <paramref name="FileName" /> する必要があります。作成するオブジェクトのプログラム識別子を含む文字列。 If <paramref name="ClassType" /> を指定すると <paramref name="FileName" /> 、 <paramref name="Link" /> 無視されます。</param>
+        <param name="Filename">省略 <b>可能なオブジェクト</b>です。 (または <paramref name="ClassType" /> .) を指定 <paramref name="FileName" /> する必要があります。OLE オブジェクトの作成に使用するファイルを指定する文字列。</param>
+        <param name="Link">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、新しい OLE オブジェクトがファイル <paramref name="FileName" /> にリンクされます。 オブジェクトをリンクしない場合は、オブジェクトはそのファイルのコピーとして作成されます。 既定値は、 <b>False</b> です。</param>
+        <param name="DisplayAsIcon">省略 <b>可能なオブジェクト</b>です。 新しい OLE オブジェクトをアイコンまたは通常のピクチャで表示するには、 <b>True</b> を指定します。 この引数が <b>True の場合</b> <paramref name="IconFileName" /> 、 <paramref name="IconIndex" /> アイコンを指定するために使用できます。</param>
+        <param name="IconFileName">省略 <b>可能なオブジェクト</b>です。 表示するアイコンのファイルを示す文字列を指定します。 この引数は True の場合 <paramref name="DisplayAsIcon" /> にのみ <b>使用されます</b>。 この引数を指定しない場合、またはファイルにアイコンが含まれている場合は、OLE クラスの既定のアイコンが使用されます。</param>
+        <param name="IconIndex">省略 <b>可能なオブジェクト</b>です。 アイコン ファイルに含まれるアイコンの番号を指定します。 これは True の場合にのみ <paramref name="DisplayAsIcon" /> 使用 <b>され</b> 、 <paramref name="IconFileName" /> アイコンを含む有効なファイルを参照します。 指定されたインデックス番号を持つアイコンが指定されたファイルに存在しない場合は、ファイル内の最初の <paramref name="IconFileName" /> アイコンが使用されます。</param>
+        <param name="IconLabel">省略 <b>可能なオブジェクト</b>です。 アイコンの下に表示するタイトルを示す文字列を指定します。 これは True の場合 <paramref name="DisplayAsIcon" /> にのみ使用 <b>されます</b>。 この引数を省略するか空の文字列 ("") を指定すると、タイトルは表示されません。</param>
         <param name="Left">省略 <b>可能なオブジェクト</b>です。 ワークシートのセル A1 の左上隅またはグラフの左上端を基準として、新しいオブジェクトの初期座標をポイント単位で指定します。</param>
         <param name="Top">省略 <b>可能なオブジェクト</b>です。 ワークシートのセル A1 の左上隅またはグラフの左上端を基準として、新しいオブジェクトの初期座標をポイント単位で指定します。</param>
         <param name="Width">省略 <b>可能なオブジェクト</b>です。 新しいオブジェクトの初期サイズをポイント数で指定します。</param>
@@ -496,7 +496,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -529,7 +529,7 @@
       <Docs>
         <summary><b>True</b> の場合は、OLE オブジェクトを含んでいるブックを開くと、そのオブジェクトが自動的にロードされます。</summary>
         <value>To be added.</value>
-        <remarks><para>ActiveX コントロールの場合、このプロパティの設定は無視されます。 ブックが開かれるときは、常に ActiveX コントロールが自動的に読み込まれます。</para>
+        <remarks><para>ActiveX コントロールの場合、このプロパティの設定は無視されます。ブックが開かれるときは、常に ActiveX コントロールが自動的に読み込まれます。</para>
           <para>ほとんどの種類の OLE オブジェクトでは、このプロパティを <b>True</b> に設定する必要はありません。既定の設定では、新しい OLE オブジェクトの <b>AutoLoad</b> プロパティは <b>False</b> で、ブックの読み込みにかかる時間とメモリを節約できるようになっています。このプロパティを True に設定しておくと便利なのは、たびたび変更が生じるデータを表す OLE オブジェクトです。すぐに元になるデータと再びリンクされ、必要であればオブジェクトが再表示されます。</para>
           <para> </para></remarks>
       </Docs>
@@ -557,7 +557,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 境界線を表すオブジェクトを返します。</summary>
+        <summary>オブジェクトの罫 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 線を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -928,7 +928,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> オブジェクトの内部を表すオブジェクトを返します。</summary>
+        <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> の内部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -956,7 +956,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">必須<b>オブジェクト 。</b> オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1019,7 +1019,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> の 場合は、オブジェクトがロックされています。 <b>False</b> の 場合は、シートが保護されているときにオブジェクトを変更できます。</summary>
+        <summary><b>オブジェクト</b> がロックされている場合は True。 <b>False</b> を指定すると、シートが保護されているときにオブジェクトを変更できます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1241,7 +1241,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> の 場合は、フォントが影付きフォントまたはオブジェクトに影がある場合です。</summary>
+        <summary><b>True</b> の場合は、フォントがシャドウ フォントか、オブジェクトに影が付く場合。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1269,7 +1269,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ShapeRange</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> を表すオブジェクトを返します。</summary>
+        <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> またはオブジェクトを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1300,7 +1300,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトのリンク ソース名を取得または設定します。</summary>
+        <summary>指定したオブジェクトのリンク ソース名を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1331,7 +1331,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの上端から行 1 の上端 (ワークシート上) またはグラフ エリアの上端 (グラフの場合) までの距離をポイント数で指定します。</summary>
+        <summary>オブジェクトの上端から行 1 の上端 (ワークシート上) またはグラフ領域の上部 (グラフ上) までの距離をポイントで指定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1421,9 +1421,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの z オーダーの位置を返します。</summary>
+        <summary>オブジェクトの z オーダー位置を返します。</summary>
         <value>To be added.</value>
-        <remarks><para>オブジェクトのコレクションでは、z オーダーの最背面にあるオブジェクトは <paramref name="collection" /> (1)、z オーダーの最前面のオブジェクトは <paramref name="collection" /> ( <paramref name="collection" /> .<b>Count )。</b></para>
+        <remarks><para>オブジェクトのコレクションでは、z オーダーの背面にあるオブジェクトは (1) で、z オーダーの前面にあるオブジェクトは <paramref name="collection" /> <paramref name="collection" /> ( です <paramref name="collection" /> 。<b>Count</b>)。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

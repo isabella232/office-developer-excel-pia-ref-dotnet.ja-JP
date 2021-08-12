@@ -1,5 +1,5 @@
 <Type Name="SlicerCaches" FullName="Microsoft.Office.Interop.Excel.SlicerCaches">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d7eb213ba3f374c8e657b8b86922544743741125" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010200" /></Metadata><TypeSignature Language="C#" Value="public interface SlicerCaches : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8d773dddf4f4bae56a0af890a9003e10927aa5182e768cee5de3712b9a6769c0" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54519750" /></Metadata><TypeSignature Language="C#" Value="public interface SlicerCaches : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SlicerCaches implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SlicerCaches" />
   <TypeSignature Language="VB.NET" Value="Public Interface SlicerCaches&#xA;Implements IEnumerable" />
@@ -26,7 +26,7 @@
   </Attributes>
   <Docs>
     <summary>指定したブックに関連付けられたスライサー キャッシュのコレクションを表します。</summary>
-    <remarks><para>指定した <see cref="P:Microsoft.Office.Interop.Excel.SlicerCaches.Item(System.Object)" /> オブジェクトに関連付 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" /> けられているオブジェクトを取得するには、コレクション <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> のプロパティを使用 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> します。 オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> は、指定したオブジェクトのプロパティまたはプロパティの値を使用 <see cref="P:Microsoft.Office.Interop.Excel.SlicerCaches.Item(System.Object)" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.Name" /> して取得できます。</para>
+    <remarks><para>コレクションの <see cref="P:Microsoft.Office.Interop.Excel.SlicerCaches.Item(System.Object)" /> プロパティを使用して <see cref="T:Microsoft.Office.Interop.Excel.SlicerCaches" /> 、指定した <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> オブジェクトに関連付けられたオブジェクトを取得 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> します。 オブジェクトは、プロパティの値または指定したオブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerCaches.Item(System.Object)" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.Name" /> プロパティを使用して取得できます。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -125,9 +125,9 @@
         <Parameter Name="SlicerCacheType" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">新しい <b>SlicerCache</b> が基づくデータ ソースです。 Source パラメーターに渡される引数には、オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> 、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> オブジェクト、または文字列を指定できます。 ピボットテーブル <b>オブジェクトが渡</b> された場合、関連付けられた <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> オブジェクトがデータ ソースとして使用されます。 文字列が渡されると、 <b>WorkbookConnection</b> オブジェクトの名前として解釈されますが、 <b>WorkbookConnection</b> オブジェクトが存在しない場合は実行時エラーが発生します。</param>
-        <param name="SourceField">データ ソース内のフィルター処理するフィールドの名前です。 OLAP 以外のデータ ソースの場合は、スライサーが基づく PivotCache オブジェクトのオブジェクト、またはそのオブジェクトの一意の名前 (プロパティの値) を使用 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.PivotField.Name" /> します。 OLAP データ ソースの場合は、<b>SlicerCache</b> が基づく階層の MDX の一意の名前を使用します。 OLAP 階層のレベルを指定すると、Excel はそのレベルに対応する階層を使用します。</param>
-        <param name="Name">Excel がスライサー キャッシュを参照するために使用する名前 (SlicerCache.Name プロパティ)。 省略すると、Excel は名前を生成します。 既定では、Excel は "Slicer_" と、OLAP 以外のデータ ソースを持つスライサーの PivotField.Caption プロパティの値、または OLAP データ ソースを持つスライサーの CubeField.Caption プロパティの値を連結します。 名前をブック名前空間内で一意にする必要がある場合、Excel は生成した名前の最後に整数値を追加します。 既にブック名前空間に存在する名前を指定すると、 <b>Add</b> メソッドはエラーになります。</param>
+        <param name="Source">新しい <b>SlicerCache</b> が基づくデータ ソースです。 Source パラメーターに渡される引数には、オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.WorkbookConnection" /> 、オブジェクト、 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> または文字列を指定できます。 ピボットテーブル <b>オブジェクトが渡</b> された場合、関連付 <see cref="T:Microsoft.Office.Interop.Excel.PivotCache" /> けられたオブジェクトがデータ ソースとして使用されます。 文字列が渡されると、 <b>WorkbookConnection</b> オブジェクトの名前として解釈されますが、 <b>WorkbookConnection</b> オブジェクトが存在しない場合は実行時エラーが発生します。</param>
+        <param name="SourceField">データ ソース内のフィルター処理するフィールドの名前です。 OLAP 以外のデータ ソースの場合は、スライサーが基づく PivotCache オブジェクトのオブジェクト、またはそのオブジェクトの一意の名前 (プロパティの値) <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> を使用<b></b> <see cref="P:Microsoft.Office.Interop.Excel.PivotField.Name" /> します。 OLAP データ ソースの場合は、<b>SlicerCache</b> が基づく階層の MDX の一意の名前を使用します。 OLAP 階層のレベルを指定すると、Excel はそのレベルに対応する階層を使用します。</param>
+        <param name="Name">スライサー Excel (SlicerCache.Name プロパティの値) を参照するために使用する名前。 省略すると、Excel は名前を生成します。 既定では、Excel は"Slicer_" と非 OLAP データ ソースを持つスライサーの PivotField.Caption プロパティの値、または OLAP データ ソースを持つスライサーの CubeField.Caption プロパティの値を連結します。 名前をブック名前空間内で一意にする必要がある場合、Excel は生成した名前の最後に整数値を追加します。 既にブック名前空間に存在する名前を指定すると、 <b>Add</b> メソッドはエラーになります。</param>
         <param name="SlicerCacheType">スライサーまたはスライサー キャッシュの種類を指定します。</param>
         <summary>コレクションに新 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> しいオブジェクトを追加します。</summary>
         <returns>To be added.</returns>
@@ -157,7 +157,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Microsoft Excel アプリケーションを表 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> すオブジェクトを返します。 オブジェクト修飾子と一緒に使用する場合、このプロパティは指定されたオブジェクトの作成元 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>オブジェクト修飾子なしで使用すると、このプロパティは、アプリケーションのオブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 表すオブジェクトMicrosoft Excelします。 オブジェクト修飾子と一緒に使用すると、このプロパティは、指定したオブジェクトの作成者を表す <see cref="T:Microsoft.Office.Interop.Excel.Application" /> オブジェクトを返します。</summary>
         <value>オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 。</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
@@ -214,9 +214,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このオブジェクトが作成されたアプリケーションを<b></b>示す 32 ビット整数を取得します。</summary>
-        <value>このオブジェクトが <b>作成されたアプリケーション</b> を示す 32 ビットの整数。</value>
-        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ <see cref="P:Microsoft.Office.Interop.Excel.SlicerCaches.Creator" /> Macintosh 用の Microsoft Excel で使用するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
+        <summary>このオブジェクトが作成されたアプリケーションを <b>示す</b> 32 ビット整数を取得します。</summary>
+        <value>このオブジェクトが <b>作成されたアプリケーション</b> を示す 32 ビット整数。</value>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 このプロパティは、各アプリケーションに 4 文字のMicrosoft Excelコードを持つ Macintosh のプロパティで使用 <see cref="P:Microsoft.Office.Interop.Excel.SlicerCaches.Creator" /> するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

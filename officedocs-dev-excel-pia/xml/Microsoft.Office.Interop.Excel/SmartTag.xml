@@ -1,5 +1,5 @@
 <Type Name="SmartTag" FullName="Microsoft.Office.Interop.Excel.SmartTag">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="c097490d40a579edaf6a024de2d42f5d5c8fb233" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010130" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTag" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b6c389bf93a6c548b3842f5f8e9feae6ef2c408bd3a32e827962f659cd8a4924" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54519848" /></Metadata><TypeSignature Language="C#" Value="public interface SmartTag" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartTag" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SmartTag" />
   <TypeSignature Language="VB.NET" Value="Public Interface SmartTag" />
@@ -23,7 +23,7 @@
   <Docs>
     <summary>セルに割り当てられた識別子を表します。</summary>
     <remarks><para><see cref="M:Microsoft.Office.Interop.Excel.SmartTags.Add(System.String)" />SmartTag オブジェクトを取得 <see cref="T:Microsoft.Office.Interop.Excel.SmartTags" /> するには、コレクションの<b>メソッドを使用</b>します。</para>
-      <para><b>SmartTag オブジェクトが返</b>された後は、プロパティでメソッドを使用して、スマート タグに追加のメタデータ <see cref="M:Microsoft.Office.Interop.Excel.CustomProperties.Add(System.String,System.Object)" /> を格納 <see cref="P:Microsoft.Office.Interop.Excel.SmartTag.Properties" /> できます。</para>
+      <para><b>SmartTag オブジェクトが</b>返された後は、プロパティと一緒にメソッドを使用して、スマート タグに追加のメタデータ <see cref="M:Microsoft.Office.Interop.Excel.CustomProperties.Add(System.String,System.Object)" /> を格納 <see cref="P:Microsoft.Office.Interop.Excel.SmartTag.Properties" /> できます。</para>
       <para>追加のメタデータを表示するには <see cref="P:Microsoft.Office.Interop.Excel.SmartTag.XML" /> <b>、SmartTag</b> オブジェクトのプロパティを使用します。</para>
       <para> </para></remarks>
   </Docs>
@@ -82,7 +82,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -227,17 +227,17 @@
               <description>東京</description>
             </item>
           </list>
-          <para>コレクションにインデックスを指定する場合は、次の表 <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> に示す構文を使用できます。</para>
+          <para>コレクションにインデックスを指定する場合は <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> 、次の表に示す構文を使用できます。</para>
           <list type="table">
             <item>
-              <term>式を使用します。PivotItems("[Europe].[フランス]。[パリ]")</term>
-              <description>式を使用します。PivotItems("Paris")</description>
+              <term>式。PivotItems("[Europe].[フランス]。[パリ]")</term>
+              <description>式。PivotItems("Paris")</description>
             </item>
           </list>
-          <para>このプロパティを使用してコレクションの特定のメンバーを参照する場合は、次の表に示すように、テキスト インデックス <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> 名を使用できます。</para>
+          <para>プロパティを使用してコレクションの特定のメンバーを参照する場合は、次の表に示すように、テキスト インデックス名 <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> を使用できます。</para>
           <list type="table">
             <item>
-              <term>[ヨーロッパ].[フランス].[パリ]</term>
+              <term>[ヨーロッパ][フランス][パリ]</term>
               <description>東京</description>
             </item>
           </list>
@@ -352,7 +352,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SmartTagActions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>選択したスマート <see cref="T:Microsoft.Office.Interop.Excel.SmartTagActions" /> タグの動作の種類を設定するオブジェクトを返します。</summary>
+        <summary>選択したスマート <see cref="T:Microsoft.Office.Interop.Excel.SmartTagActions" /> タグのアクションの種類を設定するオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks><para>スマート タグの操作アイテムが認識できない場合は、実行時エラーを返します。</para>
           <para> </para></remarks>
@@ -381,7 +381,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>アクション ハンドラーに <b>渡</b> される XML のサンプルを表す文字列 を返します。</summary>
+        <summary>アクション ハンドラーに渡される XML のサンプルを表す文字列型 <b>(String)</b> の値を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

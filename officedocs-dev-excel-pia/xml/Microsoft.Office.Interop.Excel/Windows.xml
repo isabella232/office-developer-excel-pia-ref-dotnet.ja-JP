@@ -1,5 +1,5 @@
 <Type Name="Windows" FullName="Microsoft.Office.Interop.Excel.Windows">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="216071def9d8f4a2c63cf628170e2d5fcd646a71" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009255" /></Metadata><TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0fc3d6836588d6c65260a54d7ffab3ff33453b20c06f49f682c883304d7e1ab9" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54519246" /></Metadata><TypeSignature Language="C#" Value="public interface Windows : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Windows implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Windows" />
   <TypeSignature Language="VB.NET" Value="Public Interface Windows&#xA;Implements IEnumerable" />
@@ -25,10 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Microsoft Excel のすべての <see cref="T:Microsoft.Office.Interop.Excel.Window" /> オブジェクトのコレクションです。</summary>
-    <remarks><para>オブジェクト<b>の</b>プロパティによって返される Windows コレクションには、アプリケーションのすべてのウィンドウが含まれますが、オブジェクトのプロパティによって返される <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <b>Windows</b> <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> コレクションには、指定されたブック内のウィンドウだけが含まれます。 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /></para>
-      <para>新しい <b>ウィンドウを作成し</b> 、コレクションに追加するには <b>、Window</b> オブジェクトまたは <b>Workbook</b> オブジェクトの NewWindow メソッドを使用します。</para>
-      <para>単 <b>一の Window</b>オブジェクトを取得するには、Windows ( ) を使用します。ウィンドウ名またはインデックス番号 <paramref name="index" /> <paramref name="index" /> を <b>指定</b> します。</para>
+    <summary>オブジェクト内のすべてのオブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Window" /> コレクションMicrosoft Excel。</summary>
+    <remarks><para>オブジェクト<b>のWindows</b>によって返される Windows コレクションには、アプリケーション内のすべてのウィンドウが含まれますが、オブジェクトのプロパティによって返される Windows コレクションには、指定したブック内のウィンドウだけが <see cref="P:Microsoft.Office.Interop.Excel._Application.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Windows" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> 含まれます。</para>
+      <para>Window オブジェクトまたは Workbook オブジェクトの<b></b><b>NewWindow</b>メソッドを使用して、新しいウィンドウを作成し、コレクションに追加します。 <b></b></para>
+      <para>単<b>Windows</b>Window オブジェクトを <paramref name="index" /> 取得 <paramref name="index" /> するには、<b></b>ウィンドウ名またはインデックス番号を使用します。</para>
       <para>アクティブ ウィンドウは常に Windows(1) と記述します。</para>
       <para> </para></remarks>
   </Docs>
@@ -91,7 +91,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,8 +123,8 @@
       <Docs>
         <param name="ArrangeStyle">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlArrangeStyle" /> 可能です。</param>
         <param name="ActiveWorkbook">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、作業中のブックのウィンドウのうち、現在表示されているウィンドウだけが整列されます。 <b>False</b> を指定すると、Excel のすべてのウィンドウが整列されます。 既定値は <b>False</b> です。</param>
-        <param name="SyncHorizontal">省略 <b>可能なオブジェクト</b>です。 False または省略した場合 <paramref name="ActiveWorkbook" /> は無視されます。 <b></b> <b>True</b> を指定すると、作業中のブックのウィンドウのいずれかを左右にスクロールするときに、他のウィンドウも同時にスクロールします。 <b>False</b> ウィンドウを同期しない。 既定値は <b>False</b> です。</param>
-        <param name="SyncVertical">省略 <b>可能なオブジェクト</b>です。 False または省略した場合 <paramref name="ActiveWorkbook" /> は無視されます。 <b></b> <b>True</b> を指定すると、作業中のブックのウィンドウのいずれかを上下にスクロールするときに、他のウィンドウも同時にスクロールします。 <b>False</b> ウィンドウを同期しない。 既定値は <b>False</b> です。</param>
+        <param name="SyncHorizontal">省略 <b>可能なオブジェクト</b>です。 False または <paramref name="ActiveWorkbook" /> 省略 <b>された場合</b> は無視されます。 <b>True</b> を指定すると、作業中のブックのウィンドウのいずれかを左右にスクロールするときに、他のウィンドウも同時にスクロールします。 <b>False</b> を指定すると、ウィンドウが同期されます。 既定値は <b>False</b> です。</param>
+        <param name="SyncVertical">省略 <b>可能なオブジェクト</b>です。 False または <paramref name="ActiveWorkbook" /> 省略 <b>された場合</b> は無視されます。 <b>True</b> を指定すると、作業中のブックのウィンドウのいずれかを上下にスクロールするときに、他のウィンドウも同時にスクロールします。 <b>False</b> を指定すると、ウィンドウが同期されます。 既定値は <b>False</b> です。</param>
         <summary>開かれているすべてのウィンドウを並べ替えます。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -179,10 +179,10 @@
         <Parameter Name="WindowName" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="WindowName">開くウィンドウの名前を指定します。</param>
+        <param name="WindowName">開くウィンドウの名前。</param>
         <summary>2 つのウィンドウを開き、並べて表示モードで表示します。</summary>
         <returns>To be added.</returns>
-        <remarks><para><b>CompareSideBySideWith メソッド</b>をオブジェクトまたはプロパティ <see cref="T:Microsoft.Office.Interop.Excel._Application" /> と一緒に使用 <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" /> することはできません。</para>
+        <remarks><para><b>CompareSideBySideWith</b>メソッドをオブジェクトまたは <see cref="T:Microsoft.Office.Interop.Excel._Application" /> プロパティと一緒に使用 <see cref="P:Microsoft.Office.Interop.Excel._Application.ActiveWorkbook" /> することはできません。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -302,7 +302,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">必須<b>オブジェクト 。</b> オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -358,7 +358,7 @@
       <Parameters />
       <Docs>
         <summary>並べて比較している 2 つのワークシートのウィンドウの位置をリセットします。</summary>
-        <remarks><para>並べて比較する 2 つのワークシートの位置をリセットするには <b>、ResetPositionsSideBySide</b> メソッドを使用します。 たとえば、並べて比較している 2 つのワークシート ウィンドウのうちの 1 つを、ユーザーが最小化したり最大化したりした場合、 <b>ResetPositionsSideBySide</b> メソッドを呼び出すと、再び 2 つのウィンドウが並んで表示された状態に戻ります。</para>
+        <remarks><para><b>ResetPositionsSideBySide</b>メソッドを使用して、比較される 2 つのワークシートの位置を並べてリセットします。 たとえば、並べて比較している 2 つのワークシート ウィンドウのうちの 1 つを、ユーザーが最小化したり最大化したりした場合、 <b>ResetPositionsSideBySide</b> メソッドを呼び出すと、再び 2 つのウィンドウが並んで表示された状態に戻ります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

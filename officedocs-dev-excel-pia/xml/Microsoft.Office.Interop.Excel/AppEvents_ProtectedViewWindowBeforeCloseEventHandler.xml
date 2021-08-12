@@ -1,5 +1,5 @@
 <Type Name="AppEvents_ProtectedViewWindowBeforeCloseEventHandler" FullName="Microsoft.Office.Interop.Excel.AppEvents_ProtectedViewWindowBeforeCloseEventHandler">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="f6770db538522765ee8ce8845416a64151f90f38" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50002291" /></Metadata><TypeSignature Language="C#" Value="public delegate void AppEvents_ProtectedViewWindowBeforeCloseEventHandler(ProtectedViewWindow Pvw, XlProtectedViewCloseReason Reason, out bool Cancel);" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2572ad6691dbf7f0f6e798854c92cc3c0afb6b04f8bdbccafb52fe32ee062759" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54507143" /></Metadata><TypeSignature Language="C#" Value="public delegate void AppEvents_ProtectedViewWindowBeforeCloseEventHandler(ProtectedViewWindow Pvw, XlProtectedViewCloseReason Reason, out bool Cancel);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AppEvents_ProtectedViewWindowBeforeCloseEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.AppEvents_ProtectedViewWindowBeforeCloseEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub AppEvents_ProtectedViewWindowBeforeCloseEventHandler(Pvw As ProtectedViewWindow, Reason As XlProtectedViewCloseReason, ByRef Cancel As Boolean)" />
@@ -29,9 +29,9 @@
   </ReturnValue>
   <Docs>
     <param name="Pvw">閉じている [保護されたビュー] ウィンドウを表すオブジェクト。</param>
-    <param name="Reason">[保護されたビュー] ウィンドウを閉じる理由を指定する定数です。</param>
-    <param name="Cancel"><b>イベントが</b> 発生した場合は false。 イベント プロシージャでこのパラメーターを <b>true</b>に設定すると、プロシージャが終了してもウィンドウは閉じされません。</param>
-    <summary>イベント <b>の</b> イベント ハンドラーを追加するために使用されるデリゲート <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.ProtectedViewWindowBeforeClose" /> 型。 <b>ProtectedViewWindowBeforeClose</b>イベントは、[保護されたビュー] ウィンドウまたは [保護されたビュー] ウィンドウ内のブックが閉じる直前に発生します。</summary>
+    <param name="Reason">[保護されたビュー] ウィンドウが閉じる理由を指定する定数。</param>
+    <param name="Cancel"><b>false</b> イベントが発生した場合。 イベント プロシージャでこのパラメーターを <b>true</b>に設定すると、プロシージャが終了してもウィンドウは閉じされません。</param>
+    <summary>イベント <b>の</b> イベント ハンドラーを追加するために使用されるデリゲート <see cref="E:Microsoft.Office.Interop.Excel.AppEvents_Event.ProtectedViewWindowBeforeClose" /> 型。 <b>ProtectedViewWindowBeforeClose</b>イベントは、保護されたビュー ウィンドウまたは保護されたビュー ウィンドウ内のブックが閉じる直前に発生します。</summary>
     <remarks>To be added.</remarks>
   </Docs>
 </Type>

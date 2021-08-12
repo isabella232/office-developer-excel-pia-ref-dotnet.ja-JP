@@ -1,5 +1,5 @@
 <Type Name="ValueChange" FullName="Microsoft.Office.Interop.Excel.ValueChange">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="b2dce604b01b455e4f9c71554372a322f7c7c2fe" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009311" /></Metadata><TypeSignature Language="C#" Value="public interface ValueChange" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d9243c520a514e3662b0ffb78c0565edaaf8c69dd321a3d8fc69e5c126a8ab31" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54519722" /></Metadata><TypeSignature Language="C#" Value="public interface ValueChange" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ValueChange" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ValueChange" />
   <TypeSignature Language="VB.NET" Value="Public Interface ValueChange" />
@@ -22,8 +22,8 @@
   </Attributes>
   <Docs>
     <summary>OLAP データ ソースに基づくピボットテーブル レポートで変更された値を表します。</summary>
-    <remarks><para>コレクションには、ピボットテーブル レポートの値セルに対してユーザーが行った変更を表す <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> オブジェクトが含まれます。</para>
-      <para>オブジェクトのプロパティは、変更の値、変更されたセルに関連付けられた組、変更が他の変更に対して行われた順序、ピボットテーブルにセルが表示されるかどうかなど、行われた変更に関する詳細を指定します。 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> オブジェクトは、変更されたセルを表すオブジェクトを返すプロパティも提供し、変更されたセルに関する追加情報 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> を提供します。</para>
+    <remarks><para>コレクションには、ピボットテーブル レポートの値セルに対してユーザーが行った変更 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> を表すオブジェクトが含まれています。</para>
+      <para>オブジェクトのプロパティは、変更の値、変更されたセルに関連付けられたタプル、他の変更に対して変更が行われた順序、ピボットテーブルにセルが表示されるかどうかなど、行われた変更に関する詳細を指定します。 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> また、オブジェクトは、変更されたセルを表すオブジェクトを返すプロパティを提供し、変更されたセルに関する追加情報 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> を提供します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -50,10 +50,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAllocationMethod</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>What-If 分析を実行するときにこの値を割り当てるときに使用するメソッドを取得します。</summary>
+        <summary>what-if 分析を実行するときにこの値を割り当てるに使用するメソッドを取得します。</summary>
         <value>What-If 分析を実行するときに値の割り当てに使用するメソッドです。</value>
         <remarks><para>読み取り専用です。</para>
-          <para>このプロパティは、この変更が最初に適用された時点で設定された OLAP データ ソースに基づくピボットテーブル レポートの [What-If 分析の設定] ダイアログ ボックスの [割り当て方法] 設定に対応します。 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationMethod" /> 指定したオブジェクトがコレクションのメソッドを使用して作成され、対応するパラメータが指定されていない場合は、OLAP サーバーの既定の割り当て <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> <paramref name="AllocationMethod" /> 方法が返されます。</para>
+          <para>このプロパティは、この変更が最初に適用された時点で設定された OLAP データ ソースに基づくピボットテーブル レポートの What-If Analysis 設定 ダイアログ ボックスの [割り当て方法] 設定に対応します。 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationMethod" /> 指定したオブジェクトがコレクションのメソッドを使用して作成され、対応するパラメーターが指定されていない場合は、OLAP サーバーの既定の割り当て方法 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> <paramref name="AllocationMethod" /> が返されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -80,10 +80,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAllocationValue</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>What-If 分析を実行するときに割り当てる値を取得します。</summary>
+        <summary>what-if 分析を実行するときに割り当てる値を取得します。</summary>
         <value>What-If 分析を実行するときに割り当てる値です。</value>
         <remarks><para>読み取り専用です。</para>
-          <para>このプロパティは、この変更が最初に適用された時点で OLAP データ ソースに基づくピボットテーブル レポートの [What-If 分析の設定] ダイアログ ボックスの [割り当て値] 設定に対応します。 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationValue" /> 指定したオブジェクトがコレクションのメソッドを使用して作成され、対応するパラメーターが指定されていない場合は、OLAP サーバーの既定の割り当て値 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> <paramref name="AllocationValue" /> が返されます。</para>
+          <para>このプロパティは、この変更が最初に適用された時点で設定された OLAP データ ソースに基づくピボットテーブル レポートの What-If Analysis 設定 ダイアログ ボックスの [割り当てる値] 設定に対応します。 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationValue" /> 指定したオブジェクトがコレクションのメソッドを使用して作成され、対応するパラメーターが指定されていない場合は、OLAP サーバーの既定の割り当 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> て値 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> <paramref name="AllocationValue" /> が返されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -110,10 +110,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>What-If 分析を実行するときにこの値に使用する MDX 重み式を取得します。</summary>
+        <summary>what-if 分析を実行するときにこの値に使用する MDX ウェイト式を取得します。</summary>
         <value>What-If 分析を実行するときに、この値に使用する MDX Weight 式です。</value>
         <remarks><para>読み取り専用です。</para>
-          <para>このプロパティは、この変更が最初に適用された時点で設定された OLAP データ ソースに基づくピボットテーブル レポートの [What-If 分析の設定] ダイアログ ボックスの [重み式] 設定に対応します。 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationWeightExpression" /> 指定したオブジェクトがコレクションのメソッドを使用して作成され、対応するパラメーターが指定されていない場合は、OLAP サーバーの既定の重み式 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> <paramref name="AllocationWeightExpression" /> が返されます。</para>
+          <para>このプロパティは、この変更が最初に適用された時点で設定された OLAP データ ソースに基づくピボットテーブル レポートの What-If Analysis 設定 ダイアログ ボックスの Weight Expression 設定に対応します。 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.AllocationWeightExpression" /> 指定したオブジェクトがコレクションのメソッドを使用して作成され、対応するパラメーターが指定されていない場合は、OLAP サーバーの既定の重み式 <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Add(System.String,System.Double,System.Object,System.Object,System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> <paramref name="AllocationWeightExpression" /> が返されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -140,7 +140,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Microsoft Excel アプリケーションを表 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> すオブジェクトを返します。 オブジェクト修飾子と一緒に使用する場合、このプロパティは指定されたオブジェクトの作成元 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>オブジェクト修飾子なしで使用すると、このプロパティは、アプリケーションのオブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 表すオブジェクトMicrosoft Excelします。 オブジェクト修飾子と一緒に使用すると、このプロパティは、指定したオブジェクトの作成者を表す <see cref="T:Microsoft.Office.Interop.Excel.Application" /> オブジェクトを返します。</summary>
         <value>オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 。</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
@@ -169,10 +169,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このオブジェクトが作成されたアプリケーションを<b></b>示す 32 ビット整数を取得します。</summary>
-        <value>このオブジェクトが <b>作成されたアプリケーション</b> を示す 32 ビットの整数。</value>
-        <remarks><para>読み取り専用 <b>時間 です</b>。</para>
-          <para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Creator" /> Macintosh 用の Microsoft Excel で使用するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
+        <summary>このオブジェクトが作成されたアプリケーションを <b>示す</b> 32 ビット整数を取得します。</summary>
+        <value>このオブジェクトが <b>作成されたアプリケーション</b> を示す 32 ビット整数。</value>
+        <remarks><para>長い読み取 <b>り専用です</b>。</para>
+          <para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 このプロパティは、各アプリケーションに 4 文字のMicrosoft Excelコードを持つ Macintosh のプロパティで使用 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Creator" /> するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -198,7 +198,7 @@
       <Parameters />
       <Docs>
         <summary>指定したオブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> コレクションから削除 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> します。</summary>
-        <remarks><para>また、コレクションの <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> メソッドを使用して <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Delete" /> オブジェクトを削除 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> できます。</para>
+        <remarks><para>コレクションのメソッドを <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> 使用してオブジェクト <see cref="M:Microsoft.Office.Interop.Excel.PivotTableChangeList.Delete" /> を削除 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -228,7 +228,7 @@
         <summary>コレクション内の他の変更に対してこの変更が実行された順序を示す値を取得 <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> します。</summary>
         <value>コレクション内の他の変更に対してこの変更が実行された <see cref="T:Microsoft.Office.Interop.Excel.PivotTableChangeList" /> 順序。</value>
         <remarks><para>読み取り専用です。</para>
-          <para>プロパティの値は、ユーザーがピボットテーブル レポートの値セルに変更を適用した順序に基づいて、Excel によって自動的 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> に割り当てられます。 一度の操作で複数の変更を適用した場合、変更セット内の順序は任意に割り当てられます。</para>
+          <para>プロパティの値は、ピボットテーブル Excel値セルに変更を適用した順序に基づいて、ユーザーによって自動的に <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.Order" /> 割り当てられます。 一度の操作で複数の変更を適用した場合、変更セット内の順序は任意に割り当てられます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -256,7 +256,7 @@
       </ReturnValue>
       <Docs>
         <summary>指定したオブジェクトの親オブジェクトを取得します。</summary>
-        <value>指定されたオブジェクトの親オブジェクト。</value>
+        <value>指定したオブジェクトの親オブジェクト。</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
       </Docs>
@@ -284,10 +284,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotCell</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>変更された <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> セル (組) を表すオブジェクトを取得します。</summary>
-        <value>変更されたセル (組)。</value>
+        <summary>変更された <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> セル (タプル) を表すオブジェクトを取得します。</summary>
+        <value>変更されたセル (タプル)。</value>
         <remarks><para>読み取り専用です。</para>
-          <para>指定されたオブジェクトのプロパティの値が true の場合、プロパティは変更されたセル (組) のオブジェクト <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.VisibleInPivotTable" /> <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> を返します。 指定されたオブジェクトのプロパティの値が false の場合、このプロパティは null 参照 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.VisibleInPivotTable" /> <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> を返します<b></b> <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" /> (Nothing の値Visual Basic。</para>
+          <para>指定したオブジェクトのプロパティの値が true の場合、プロパティは変更されたセル (タプル) のオブジェクト <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.VisibleInPivotTable" /> <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> を返します。 指定したオブジェクトのプロパティの値が false の場合、プロパティは null 参照 <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.VisibleInPivotTable" /> <see cref="T:Microsoft.Office.Interop.Excel.ValueChange" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.ValueChange.PivotCell" /> (Nothing in Visual Basic) を返します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -343,7 +343,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ユーザーがセルに入力した値、または OLAP データ ソースに対して UPDATE CUBE ステートメントが最後に実行された際にセル内の数式が評価された値を取得します。</summary>
+        <summary>ユーザーがセルに入力した値、またはセル内の数式が、OLAP データ ソースに対して UPDATE CUBE ステートメントが最後に実行されたときに評価された値を取得します。</summary>
         <value>The value.</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
@@ -372,10 +372,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ピボットテーブル レポートにセル (組) が現在表示されているかどうかを取得します。</summary>
-        <value>セル (組) がピボットテーブル レポートに現在表示されている場合は<b>true。</b>それ以外の場合、 <b>false です</b>。</value>
+        <summary>ピボットテーブル レポートにセル (タプル) が現在表示されているかどうかを取得します。</summary>
+        <value><b>セル</b> (タプル) がピボットテーブル レポートに現在表示されている場合は true。それ以外の場合は <b>false です</b>。</value>
         <remarks><para>読み取り専用です。</para>
-          <para>セル (組) がピボットテーブル レポートに現在表示されている場合は <b>true</b> を返します。それ以外の場合 <b>は false です</b>。</para>
+          <para>セル (<b>タ</b>プル) がピボットテーブル レポートに現在表示されている場合は true を返します。それ以外の場合<b>は false 。</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
