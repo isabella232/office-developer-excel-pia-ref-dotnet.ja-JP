@@ -1,5 +1,5 @@
 <Type Name="WebOptions" FullName="Microsoft.Office.Interop.Excel.WebOptions">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="daab179c046c8ae3d7a70032ace37b8eb5d45e81" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009269" /></Metadata><TypeSignature Language="C#" Value="public interface WebOptions" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4931b180d1a90c7fc24a9cf3ce958feee9c52b65b4f90806444ef2b8410dbdda" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54512421" /></Metadata><TypeSignature Language="C#" Value="public interface WebOptions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WebOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WebOptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface WebOptions" />
@@ -19,8 +19,8 @@
   </Attributes>
   <Docs>
     <summary>ドキュメントを Web ページとして保存するとき、または Web ページを開くときに Microsoft Excel で使用する、ブック レベルでの属性が含まれています。</summary>
-    <remarks><para>設定可能な属性は、アプリケーション (全体) レベルの属性またはブック レベルの属性です。 (ブックの保存時の属性値に応じて、属性値はブックごとに異なる場合があります)。ブック レベルの属性設定は、アプリケーション レベルの属性設定より優先されます。 アプリケーション レベルの属性は、オブジェクトに含 <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> まれます。</para>
-      <para><see cref="P:Microsoft.Office.Interop.Excel._Workbook.WebOptions" /> <b>WebOptions オブジェクトを取得するには、このプロパティを使用</b>します。</para>
+    <remarks><para>設定可能な属性は、アプリケーション (全体) レベルの属性またはブック レベルの属性です。 (属性値は、ブックの保存時の属性値に応じて、ブック間で異なる場合があります。ブック レベルの属性設定は、アプリケーション レベルの属性設定を上書きします。 アプリケーション レベルの属性は、オブジェクトに含 <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> まれます。</para>
+      <para><see cref="P:Microsoft.Office.Interop.Excel._Workbook.WebOptions" />WebOptions オブジェクトを取得<b>するには、プロパティを使用</b>します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -79,7 +79,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -142,7 +142,7 @@
       <Docs>
         <summary><b>True</b> の場合は、保存したドキュメントを Web ブラウザーで表示するときに必要になる Microsoft Office Web コンポーネントがダウロードされます (ただし、コンポーネントがインストールされていない場合のみ)。 <b>False</b> の場合は、コンポーネントがダウンロードされません。 既定値は <b>False</b> です。</summary>
         <value>To be added.</value>
-        <remarks><para>保存したドキュメントを表示するときに、承認されたユーザーがコンポーネントをダウンロードできる場所への中央 URL (イントラネットまたは Web 上) またはパス (ローカルまたはネットワーク) にプロパティを設定 <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.LocationOfComponents" /> できます。 パスは、有効なものであることと必要なコンポーネントを格納している場所を指していることが必要です。また、ユーザーは有効な Microsoft Office ライセンスを所持している必要があります。</para>
+        <remarks><para>プロパティを中央 URL (イントラネットまたは Web 上) またはパス (ローカルまたはネットワーク) に設定して、承認されたユーザーが保存したドキュメントを表示するときにコンポーネントをダウンロードできる場所 <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.LocationOfComponents" /> に設定できます。 パスは、有効なものであることと必要なコンポーネントを格納している場所を指していることが必要です。また、ユーザーは有効な Microsoft Office ライセンスを所持している必要があります。</para>
           <para>Office Web コンポーネントにより、Web ページとして保存されるドキュメントに対話機能が加わります。必要なコンポーネントがインストールされていないコンピューターのブラウザーで Web ページを表示する場合、ページの対話部分は機能しません。</para>
           <para> </para></remarks>
       </Docs>
@@ -202,11 +202,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ドキュメントを Web ページとして保存し、長いファイル名を使用し、関連ファイルを別のフォルダーに保存する (つまり、プロパティが True に設定されている場合) に、Microsoft Excel が使用するフォルダーサフィックスを返します。 <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> <b></b></summary>
+        <summary>ドキュメントを Web ページとして保存し、長いファイル名を使用し、サポート ファイルを別のフォルダーに保存する (つまり、プロパティが True に設定されている場合) に、Microsoft Excel が使用するフォルダー サフィックスを返します。 <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> <b></b></summary>
         <value>To be added.</value>
-        <remarks><para>新しく作成されたドキュメントは、オブジェクトのプロパティによって返 <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" /> されるサフィックスを使用 <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> します。 ドキュメントが以前に別の言語バージョンの Microsoft Excel で編集されている場合、オブジェクトの <b>FolderSuffix</b> プロパティの値は <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> <b>DefaultWebOptions</b> オブジェクトの値と異なる場合があります。 このメソッドを使用すると、サフィックスを現在使用している言語に変更 <see cref="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" /> Microsoft Office。</para>
+        <remarks><para>新しく作成されたドキュメントは、オブジェクトのプロパティによって返 <see cref="P:Microsoft.Office.Interop.Excel.DefaultWebOptions.FolderSuffix" /> される接尾辞を使用 <see cref="T:Microsoft.Office.Interop.Excel.DefaultWebOptions" /> します。 オブジェクトの<b>FolderSuffix</b>プロパティの値は、ドキュメントが以前に別の言語バージョンの Microsoft Excel で編集されている場合 <see cref="T:Microsoft.Office.Interop.Excel.WebOptions" /> <b>、DefaultWebOptions</b>オブジェクトの値と異なる場合があります。 このメソッドを使用して、サフィックスを現在使用している言語に変更 <see cref="M:Microsoft.Office.Interop.Excel.WebOptions.UseDefaultFolderSuffix" /> Microsoft Office。</para>
           <para>特に指定しない限り、関連フォルダーの名前は、Web ページ名と "files" という単語をアンダスコア (_)、ピリオド (.)、ハイフン (-) のいずれかで結んだものになります。"files" の部分は、どの言語バージョンの Excel でファイルを Web ページとして保存するかによって異なります。たとえば、オランダ語バージョンの Excel で "Page1" というファイルを Web ページとして保存する場合、既定の関連フォルダー名は Page_bestanden となります。</para>
-          <para>次の表に、各言語バージョンの Office、対応するプロパティ値とフォルダー サフィックス <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> を示します。 テーブルに表示されていない言語では、サフィックス"として.files"が使用されます。</para>
+          <para>次の表に、各言語バージョンのOffice、対応するプロパティ値と <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> フォルダーサフィックスを示します。 テーブルに表示されていない言語では、サフィックス"として.files"が使用されます。</para>
           <list type="table">
             <item>
               <term>アラビア語</term>
@@ -214,7 +214,7 @@
               <description>.files</description>
             </item>
             <item>
-              <term>バスク語</term>
+              <term>Basque</term>
               <description>1069</description>
               <description>_fitxategiak</description>
             </item>
@@ -435,7 +435,7 @@
       <Docs>
         <summary>保存済みのドキュメントを表示するときに許可されたユーザーが Microsoft Office Web コンポーネントをダウンロードできる場所への中央 URL (イントラネットまたは Web) またはパス (ローカルまたはネットワーク) を取得または設定します。 既定値は、Microsoft Office のローカルまたはネットワークのインストール パスです。</summary>
         <value>To be added.</value>
-        <remarks><para>Officeが True に設定されている場合、Web コンポーネントは指定された Web ページと一緒に自動的にダウンロードされます。コンポーネントはまだインストールされていません。パスは有効で、必要なコンポーネントを含む場所をポイントし、ユーザーは有効な Microsoft Office ライセンスを持っています。 <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.DownloadComponents" /> <b></b></para>
+        <remarks><para>OfficeWeb コンポーネントは、プロパティが True に設定されている場合、コンポーネントが既にインストールされていない場合、指定された Web ページで自動的にダウンロードされ、パスは有効で、必要なコンポーネントが含まれる場所をポイントし、ユーザーは有効な Microsoft Office ライセンス <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.DownloadComponents" /> を持<b></b>っています。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -467,9 +467,9 @@
       <Docs>
         <summary><b>True</b> に設定すると、指定した文書を Web ページとして保存するときに、背景のテクスチャおよびグラフィックスをはじめとするすべての関連ファイルが別のフォルダーに保存されます。 <b>False</b> に設定すると、関連ファイルは Web ページと同じフォルダーに保存されます。 既定値は <b>True</b> です。</summary>
         <value>To be added.</value>
-        <remarks><para>新しいフォルダーは、Web ページを保存したフォルダーに作成され、ドキュメントの名前します。 長いファイル名を使用する場合は、フォルダー名にサフィックスが追加されます。 このプロパティは、選択またはインストールされている言語サポートのフォルダー サフィックス、または既定のフォルダー サフィックス <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> を返します。</para>
+        <remarks><para>新しいフォルダーは、Web ページを保存したフォルダーに作成され、ドキュメントの名前します。 長いファイル名を使用する場合は、フォルダー名にサフィックスが追加されます。 このプロパティは、選択またはインストールした言語サポートのフォルダー サフィックス、または既定のフォルダー サフィックス <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> を返します。</para>
           <para>保存するドキュメントの <b>OrganizeInFolder</b> プロパティの設定が以前に保存したときと異なる場合、Excel は設定に応じて自動的に関連ファイルをフォルダーの内外に移動します。</para>
-          <para>長いファイル名を使用しない場合 (つまり、プロパティが False に設定されている場合)、Excel は関連ファイルを別のフォルダー <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> に自動的に保存します。 <b></b> Web ページと同じフォルダーにファイルを保存できません。</para>
+          <para>長いファイル名 (つまり、プロパティが False に設定されている場合) を使用しない場合、Microsoft Excelファイルは自動的に別のフォルダー <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> に保存されます。 <b></b> Web ページと同じフォルダーにファイルを保存できません。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -530,7 +530,7 @@
         <summary>Web ページ上のグラフィック イメージおよび表のセルの密度 (1 インチあたりのピクセル数) を設定または返します。 通常の設定数値の範囲は 19 ～ 480 で、よく使用される画面のサイズに対する一般的な設定は、72、96、および 120 です。 既定値は 96 です。</summary>
         <value>To be added.</value>
         <remarks><para>保存した文書を Web ブラウザーで表示するときは、常に、指定した Web ページのイメージおよびセルのサイズが、文字列のサイズに応じてこのプロパティによって決定されます。設定後のイメージまたはセルの物理的な大きさは、元の大きさ (インチ単位) に 1 インチあたりのピクセル数を掛けると得られます。</para>
-          <para>このプロパティを <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.ScreenSize" /> 使用して、対象の Web ブラウザーに最適な画面サイズを設定します。</para>
+          <para>このプロパティを <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.ScreenSize" /> 使用して、対象となる Web ブラウザーの最適な画面サイズを設定します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -560,9 +560,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> に設定すると、保存した文書を Web ブラウザーで表示するときに、フォントの書式設定にカスケード スタイル シート (CSS) が使用されます。 <b>False</b> の 場合は、HTML &lt; FONT &gt; タグとカスケード スタイル シートが使用されます。 既定値は <b>True</b> です。</summary>
+        <summary><b>True</b> に設定すると、保存した文書を Web ブラウザーで表示するときに、フォントの書式設定にカスケード スタイル シート (CSS) が使用されます。 <b>False</b> の場合 &lt; は、HTML FONT &gt; タグとカスケード スタイル シートが使用されます。 既定値は <b>True</b> です。</summary>
         <value>To be added.</value>
-        <remarks><para>Microsoft Excel は、カスケード スタイル シート ファイルを作成し、プロパティの値に応じて、指定したフォルダーまたは Web ページと同じフォルダーに保存 <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> します。</para>
+        <remarks><para>Microsoft Excelスタイル シート ファイルを作成し、プロパティの値に応じて、指定したフォルダーまたは Web ページと同じフォルダーに保存 <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> します。</para>
           <para>CSS を使用すると、Web ページ上のレイアウトと書式設定制御がさらに正確になり、ドキュメント表示を Excel で表示した状態に近づけることができます。このため、使用する Web ブラウザーが CSS をサポートする場合は、このプロパティに <b>True</b> を設定します。</para>
           <para> </para></remarks>
       </Docs>
@@ -595,7 +595,7 @@
       <Docs>
         <summary><b>True</b> に設定すると、文書を Web ページとして保存するときに描画オブジェクトから画像ファイルが生成されません。 <b>False</b> に設定すると、画像が生成されます。 既定値は <b>False</b> です。</summary>
         <value>To be added.</value>
-        <remarks><para>Web ブラウザーでベクター マークアップ言語 (VML) がサポートされている場合は、描画オブジェクトの画像を生成しない方法でファイル サイズを小さくすることができます。 VML をサポートするブラウザーをターゲットとする場合は <b>、RelyOnVML</b> プロパティを <b>True</b> に設定する必要があります。 For browsers that do not support VML, the image will not appear when you view a Web page saved with this property enabled.</para>
+        <remarks><para>Web ブラウザーでベクター マークアップ言語 (VML) がサポートされている場合は、図面オブジェクトのイメージを生成しないことです。 VML をサポートするブラウザーを対象とする場合は <b>、RelyOnVML</b> プロパティを <b>True</b> に設定する必要があります。 For browsers that do not support VML, the image will not appear when you view a Web page saved with this property enabled.</para>
           <para>たとえば、以前に生成された画像ファイルを使用するときでも、Web サーバーでの運用時の位置と異なる場所にドキュメントを保存する場合、画像を生成しないようにします。</para>
           <para> </para></remarks>
       </Docs>
@@ -626,7 +626,7 @@
         <ReturnType>Microsoft.Office.Core.MsoScreenSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>保存したドキュメントを Web ブラウザーで表示するときに使用する理想的な最小画面サイズ (幅、高さ、ピクセル単位) を指定する定数を設定または返 <see cref="T:Microsoft.Office.Core.MsoScreenSize" /> します。 既定の定数は <b>msoScreenSize800x600</b> です。</summary>
+        <summary>Web ブラウザーで保存されたドキュメントを表示するときに使用する必要がある理想的な最小画面サイズ (高さによる幅、ピクセル単位) を指定する定数を設定または <see cref="T:Microsoft.Office.Core.MsoScreenSize" /> 返します。 既定の定数は <b>msoScreenSize800x600</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -684,8 +684,8 @@
       <Parameters />
       <Docs>
         <summary>指定されたドキュメントのフォルダーの接尾辞として、選択またはインストールした言語サポートの既定の接尾辞を設定します。</summary>
-        <remarks><para>Microsoft Excel では、ドキュメントを Web ページとして保存し、長いファイル名を使用し、関連ファイルを別のフォルダーに保存する (つまり、プロパティが True に設定されている場合) にフォルダー サフィックスを使用します。 <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> <b></b></para>
-          <para>フォルダー名の接尾辞は、ドキュメント名の後に表示されます。 たとえば、言語が英語のときにドキュメントの名前が "Book1" の場合、フォルダー名は Book1_files になります。 使用可能なフォルダー サフィックスは、プロパティのトピックに <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> 記載されています。</para>
+        <remarks><para>Microsoft Excelドキュメントを Web ページとして保存し、長いファイル名を使用し、サポート ファイルを別のフォルダーに保存する (つまり、プロパティが True に設定されている場合) にフォルダー サフィックスを使用します。 <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.UseLongFileNames" /> <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> <b></b></para>
+          <para>フォルダー名の接尾辞は、ドキュメント名の後に表示されます。 たとえば、言語が英語のときにドキュメントの名前が "Book1" の場合、フォルダー名は Book1_files になります。 使用可能なフォルダーサフィックスは、プロパティ のトピックに <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.FolderSuffix" /> 記載されています。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -717,7 +717,7 @@
       <Docs>
         <summary><b>True</b> に設定すると、文書を Web ページとして保存するときに長いファイル名が使用されます。 <b>False</b> に設定すると、長いファイル名が使用されずに、DOS ファイル名形式 (8.3) が使用されます。 既定値は <b>True</b> です。</summary>
         <value>To be added.</value>
-        <remarks><para>長いファイル名を使用しない場合、ドキュメントに関連ファイルが含まれていると、Excel では自動的に関連ファイルを別のフォルダーに配置します。 それ以外の場合は、このプロパティを使用して、関連ファイルが別のフォルダー <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> に整理されているかどうかを判断します。</para>
+        <remarks><para>長いファイル名を使用しない場合、ドキュメントに関連ファイルが含まれていると、Excel では自動的に関連ファイルを別のフォルダーに配置します。 それ以外の場合は、 <see cref="P:Microsoft.Office.Interop.Excel.WebOptions.OrganizeInFolder" /> プロパティを使用して、サポート ファイルが別のフォルダーに整理されているかどうかを判断します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

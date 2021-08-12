@@ -1,5 +1,5 @@
 <Type Name="ChartArea" FullName="Microsoft.Office.Interop.Excel.ChartArea">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="8707be5e24dec82e4b5526b2fd741c4c8a846d77" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004229" /></Metadata><TypeSignature Language="C#" Value="public interface ChartArea" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="cc2342f907477650cc2ed98d0d63ab46d615c0a13fa83e1b990043505f4a94c4" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508060" /></Metadata><TypeSignature Language="C#" Value="public interface ChartArea" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartArea" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartArea" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartArea" />
@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>グラフのグラフ エリアを表します。 2-D グラフのグラフ エリアには、軸、グラフ タイトル、軸ラベル、および凡例が含まれます。 3-D グラフのグラフ エリアには、グラフ タイトルと凡例が含まれる。プロット エリア (データをプロットするグラフ エリア内の領域) は含めされません。 プロット エリアの書式設定の詳細については、オブジェクトを参照 <see cref="T:Microsoft.Office.Interop.Excel.PlotArea" /> してください。</summary>
+    <summary>グラフのグラフ エリアを表します。 2-D グラフのグラフ エリアには、軸、グラフ タイトル、軸ラベル、および凡例が含まれます。 3-D グラフのグラフ領域には、グラフのタイトルと凡例が含まれる。プロット領域 (データがプロットされるグラフ領域内の領域) は含めされません。 プロット領域の書式設定の詳細については、オブジェクトを参照 <see cref="T:Microsoft.Office.Interop.Excel.PlotArea" /> してください。</summary>
     <remarks><para><see cref="P:Microsoft.Office.Interop.Excel._Chart.ChartArea" />ChartArea オブジェクトを取得するには<b>、Rounded プロパティを使用</b>します。</para>
       <para> </para></remarks>
   </Docs>
@@ -49,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの作成元を表すオブジェクトを返します (OLE オートメーション オブジェクトでこのプロパティを使用すると、そのオブジェクトのアプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を取得できます)。</summary>
+        <summary>指定したオブジェクトの作成者を表すオブジェクトを返します (このプロパティを OLE Automation オブジェクトと一緒に使用して、そのオブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Application" /> アプリケーションを取得できます)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,7 +86,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> の 場合は、オブジェクトのテキストは、オブジェクトのサイズが変更された場合にフォント サイズが変更されます。 既定値は <b>True</b> です。</summary>
+        <summary><b>True</b> の場合、オブジェクト内のテキストは、オブジェクトのサイズが変更するときにフォント サイズを変更します。 既定値は <b>True</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,7 +117,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 境界線を表すオブジェクトを返します。</summary>
+        <summary>オブジェクトの罫 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 線を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -282,7 +282,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した図形のオブジェクト、または図形またはグラフの塗りつぶしの書式プロパティを含む指定されたグラフのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> を返します。</summary>
+        <summary>指定した図形のオブジェクト、または図形またはグラフの塗りつぶし書式プロパティを含む指定したグラフの <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -313,7 +313,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.Font" /> オブジェクトのフォントを表すオブジェクトを返します。</summary>
+        <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Font" /> のフォントを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -343,7 +343,7 @@
       <Docs>
         <summary>オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /></value>
-        <remarks><para>オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> には、グラフ エリアの線、塗りつぶし、および効果の書式設定が含まれる。</para>
+        <remarks><para>オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> には、グラフ領域の線、塗りつぶし、効果の書式設定が含まれる。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -404,7 +404,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> オブジェクトの内部を表すオブジェクトを返します。</summary>
+        <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> の内部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -435,9 +435,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの左側からグラフ エリアの左側までの距離をポイント数で指定します。</summary>
+        <summary>オブジェクトの左端からグラフ領域の左端までの距離をポイントで指定します。</summary>
         <value>To be added.</value>
-        <remarks><para>ウィンドウが最大化されている場合、このプロパティはウィンドウ枠の幅に基づいて変化する負の数を返します。 このプロパティを 0 (ゼロ) に設定すると、アプリケーション ウィンドウが最大化されている場合よりもウィンドウが小さくて少し小さになります。 つまり、このプロパティが 0 (ゼロ) の場合、メインの Microsoft Excel ウィンドウの左罫線は画面にはほとんど表示されません。</para>
+        <remarks><para>ウィンドウが最大化されている場合、このプロパティは、ウィンドウの枠線の幅に基づいて変化する負の数を返します。 このプロパティを 0 (ゼロ) に設定すると、アプリケーション ウィンドウが最大化された場合よりも小さいウィンドウになります。 つまり、このプロパティが 0 (ゼロ) の場合、メイン ウィンドウの左側の境界線Microsoft Excel画面にはほとんど表示されません。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -523,7 +523,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>埋め込みグラフの角が丸くなる場合は True です。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
+        <summary>True の場合、埋め込みグラフの角が丸くなります。値の取得および設定が可能です。ブール型 ( <b>Boolean</b> ) の値を使用します。</summary>
         <value><b>ブール値</b> です。</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -580,7 +580,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> の 場合は、フォントが影付きフォントまたはオブジェクトに影がある場合です。</summary>
+        <summary><b>True</b> の場合は、フォントがシャドウ フォントか、オブジェクトに影が付く場合。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -611,7 +611,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの上端から行 1 の上端 (ワークシート上) またはグラフ エリアの上端 (グラフの場合) までの距離をポイント数で指定します。</summary>
+        <summary>オブジェクトの上端から行 1 の上端 (ワークシート上) またはグラフ領域の上部 (グラフ上) までの距離をポイントで指定します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,5 +1,5 @@
 <Type Name="CalloutFormat" FullName="Microsoft.Office.Interop.Excel.CalloutFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="144c12a51fd945c3e61defd5702f0c40849afc21" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006028" /></Metadata><TypeSignature Language="C#" Value="public interface CalloutFormat : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6233f9c3484fe7f0bc582770ce3c7a0f5a5300316b4270daaef13eed9b0f8926" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508123" /></Metadata><TypeSignature Language="C#" Value="public interface CalloutFormat : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CalloutFormat implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CalloutFormat" />
   <TypeSignature Language="VB.NET" Value="Public Interface CalloutFormat&#xA;Implements _IMsoDispObj" />
@@ -23,7 +23,7 @@
   </Attributes>
   <Docs>
     <summary>線吹き出しに適用されるプロパティとメソッドが含まれます。</summary>
-    <remarks><para>CalloutFormat <see cref="P:Microsoft.Office.Interop.Excel.Shape.Callout" /> オブジェクトを取得するには、 <b>このプロパティを使用</b> します。</para>
+    <remarks><para>プロパティを使用 <see cref="P:Microsoft.Office.Interop.Excel.Shape.Callout" /> して <b>、CalloutFormat オブジェクトを取得</b> します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -53,10 +53,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>引き出し線と引き出し線を分け、垂直の強調線を配置できます。</summary>
+        <summary>ユーザーが垂直アクセント バーを配置して、引き出し線から吹き出しテキストを分離できます。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>使用できる定数は</b> 、次に示す <b>MsoTriState</b> 定数です。</para>
+            <b>MsoTriState には</b> 、次のいずれかの <b>MsoTriState 定数</b> を指定できます。</para>
           <para>
             <b>msoCTrue</b>
           </para>
@@ -70,7 +70,7 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> 垂直の強調線は、吹き出しのテキストと引き出し線を分離します。</para>
+            <b>msoTrue</b> 垂直アクセント バーを使用すると、吹き出しテキストと引き出し線が分離されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -102,9 +102,9 @@
       <Docs>
         <summary>引き出し線の角度を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para>引き出し線に複数のセグメントが含まれている場合 <b>、Angle</b> プロパティは吹き出しのテキスト ボックスから最も遠いセグメントの角度を取得または設定します。</para>
+        <remarks><para>引き出し線に複数の線セグメントが含まれている場合 <b>、Angle</b> プロパティは吹き出しテキスト ボックスから最も遠いセグメントの角度を取得または設定します。</para>
           <para>
-            <b>使用できる定数</b> は、次に示す <b>MsoCalloutAngleType</b> 定数です。</para>
+            <b>MsoCalloutAngleType には</b> 、次のいずれかの <b>MsoCalloutAngleType</b> 定数を指定できます。</para>
           <para>
             <b>msoCalloutAngle30</b>
           </para>
@@ -153,7 +153,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -184,10 +184,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> の 吹き出しのテキスト ボックスに引き出し線を接続する場所は、(吹き出しがポイント) の引き出し線の原点が、吹き出しのテキスト ボックスの左側または右側にあるかどうかに応じて変更する場合です。</summary>
+        <summary><b>True</b> の場合は、引き出し線が吹き出しテキスト ボックスに接続する場所が、引き出し線の原点 (吹き出しがポイントする) が吹き出しテキスト ボックスの左または右にあるかどうかに応じて変更されます。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>使用できる定数は</b> 、次に示す <b>MsoTriState</b> 定数です。</para>
+            <b>MsoTriState には</b> 、次のいずれかの <b>MsoTriState 定数</b> を指定できます。</para>
           <para>
             <b>msoCTrue</b>
           </para>
@@ -201,9 +201,9 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> 吹き出しのテキスト ボックスに引き出し線を接続する場所は、引き出し線の原点 (引き出し線がポイントする場所) が吹き出しテキスト ボックスの左側または右側にあるかどうかによって変わります。</para>
-          <para><b>True</b> のとき、ドロップ値 (境界ボックスの端から、引き出し線の接続位置までの垂直距離) は、始点が境界ボックスの右側にある場合は境界ボックスの上端から測定され、左側にある場合は境界ボックスの下端から測定されます。 <b>False</b> のとき、境界ボックスと始点の相対位置に関係なく、ドロップ値は常に境界ボックスの上端から測定されます。 このメソッド <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> を使用してドロップ値を設定し、プロパティを使用してドロップ <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> 値を返します。</para>
-          <para>このプロパティの設定は、明示的に設定されたドロップ値がある場合にのみ吹き出しに影響します。つまり、プロパティの値が <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /> <b>msoCalloutDropCustom</b>の場合です。 引き出し線を作成すると、既定では明示的にドロップ値が設定されます。</para>
+            <b>msoTrue</b> 引き出し線が吹き出しテキスト ボックスに添付される場所は、引き出し線の原点 (吹き出しがポイントする) が吹き出しテキスト ボックスの左または右にあるかどうかによって変わります。</para>
+          <para><b>True</b> のとき、ドロップ値 (境界ボックスの端から、引き出し線の接続位置までの垂直距離) は、始点が境界ボックスの右側にある場合は境界ボックスの上端から測定され、左側にある場合は境界ボックスの下端から測定されます。 <b>False</b> のとき、境界ボックスと始点の相対位置に関係なく、ドロップ値は常に境界ボックスの上端から測定されます。 このメソッド <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> を使用してドロップ値を設定し、プロパティ <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> を使用してドロップ値を返します。</para>
+          <para>このプロパティを設定すると、明示的に設定されたドロップ値 (つまり、プロパティの値が <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /> <b>msoCalloutDropCustom</b>の場合) がある場合にのみ、吹き出しに影響します。 引き出し線を作成すると、既定では明示的にドロップ値が設定されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -233,12 +233,12 @@
         <summary>引き出し線が複数のセグメントで構成されている線吹き出し (<b>msoCalloutThree</b> および <b>msoCalloutFour</b>) にだけ適用できます。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>使用できる定数は</b> 、次に示す <b>MsoTriState</b> 定数です。</para>
+            <b>MsoTriState には</b> 、次のいずれかの <b>MsoTriState 定数</b> を指定できます。</para>
           <para>
             <b>msoCTrue</b>
           </para>
           <para>
-            <b>msoFalse</b> 吹き出しの最初のセグメントは、引き出し線が移動されるたびに、プロパティで <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> 指定された固定長を保持します。</para>
+            <b>msoFalse</b> 吹き出しの最初のセグメントは、吹き出しが移動されるたびに、プロパティで指定された固定 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> の長さを保持します。</para>
           <para>
             <b>msoTriStateMixed</b>
           </para>
@@ -246,8 +246,8 @@
             <b>msoTriStateToggle</b>
           </para>
           <para>
-            <b>msoTrue</b> 引き出し線の最初のセグメント (テキスト吹き出しボックスに接続されているセグメント) は、引き出し線が移動するたびに自動的に拡大または縮小されます。</para>
-          <para>このプロパティを msoTrue に設定し、メソッドを使用してこのプロパティを <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.AutomaticLength" /> <b></b> <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> <b>msoFalse</b>に設定するには、メソッドを使用します。</para>
+            <b>msoTrue</b> 引き出し線の最初のセグメント (テキスト吹き出しボックスに接続されているセグメント) は、引き出しが移動されるたびに自動的に拡大/縮小されます。</para>
+          <para>メソッドを <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.AutomaticLength" /> 使用して、このプロパティを <b>msoTrue</b>に設定し、このメソッドを使用してこのプロパティを <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> <b>msoFalse に設定します</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -273,9 +273,9 @@
       <Parameters />
       <Docs>
         <summary>指定された吹き出しが移動された場合、引き出し線の最初のセグメント (吹き出しのテキスト ボックスに接続されたセグメント) を自動的に拡大または縮小します。</summary>
-        <remarks><para><b>AutomaticLength</b>メソッドは、複数のセグメントで構成される線<b>(msoCalloutThree</b>および<b>msoCalloutFour</b>型) の吹き出しにのみ適用されます。</para>
-          <para>引き出し線を移動するたびに、引き出し線の最初のセグメントがプロパティによって返される固定長を保持 <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> するメソッドを使用します。</para>
-          <para>このメソッドを適用すると、プロパティ <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> が True に <b>設定されます</b>。</para>
+        <remarks><para><b>AutomaticLength</b>メソッドは、複数のセグメント<b>(msoCalloutThree</b>型と<b>msoCalloutFour</b>型) で構成される行を持つ吹き出しにのみ適用されます。</para>
+          <para>吹き出しを移動するたびに、引き出し線の最初のセグメントがプロパティによって返される固定長を保持する方法 <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> を指定します。</para>
+          <para>このメソッドを適用すると、プロパティ <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> は True に <b>設定されます</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -305,10 +305,10 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの境界線の表示/非表示オプションを表します。</summary>
+        <summary>オブジェクトの境界線の表示オプションを表します。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>使用できる定数は</b> 、次に示す <b>MsoTriState 定数</b> です。</para>
+            <b>MsoTriState には</b> 、次のいずれかの <b>MsoTriState 定数</b> を指定できます。</para>
           <para>
             <b>msoCTrue</b> このオブジェクトには適用できません。</para>
           <para>
@@ -318,7 +318,7 @@
           <para>
             <b>msoTriStateToggle</b> オブジェクトの輪郭を表示から非表示、またはその逆に切り替えます。</para>
           <para>
-            <b>msoTrue</b> 既定値です。 Sets the border visible.</para>
+            <b>msoTrue</b> 既定値。 Sets the border visible.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -380,7 +380,7 @@
       <Docs>
         <param name="Drop">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 ドロップ距離をポイント単位で指定します。</param>
         <summary>テキスト ボックスに引き出し線が接する位置に境界ボックスの左端から垂直方向の距離 (ポイント単位で) を設定します。</summary>
-        <remarks><para>この距離は、プロパティが True に設定され、テキスト ボックスが引き出し線の原点 (引き出し線がポイントする場所) の左側にある場合は、ドロップ距離がテキスト ボックスの下から測定される場合を限り、テキスト ボックスの上から測定されます。 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> <b></b></para>
+        <remarks><para>この距離は、プロパティが True に設定され、テキスト ボックスが引き出し線の原点の左側 (吹き出しがポイントする位置) に設定されていない限り、テキスト ボックスの上から測定されます。その場合、ドロップ距離はテキスト ボックスの下部から測定されます。 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -407,11 +407,11 @@
         <Parameter Name="Length" Type="System.Single" />
       </Parameters>
       <Docs>
-        <param name="Length">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 引き出し線の最初のセグメントの長さをポイント数で指定します。</param>
-        <summary>引き出し線の最初のセグメント (テキスト吹き出しボックスに接続されているセグメント) が引き出し線を移動するたびに固定長を保持します。</summary>
-        <remarks><para><b>CustomLength</b>メソッドは、複数のセグメントで構成される線<b>(msoCalloutThree</b>および<b>msoCalloutFour</b>型) の吹き出しにのみ適用されます。</para>
-          <para>引き出し線を移動するたびに、引き出し線の最初のセグメントを <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.AutomaticLength" /> 自動的に拡大または縮小する方法を使用します。</para>
-          <para>このメソッドを適用すると、プロパティが False に設定され、引数 Length に指定された <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> 値に<b>プロパティが設定</b>されます。</para>
+        <param name="Length">単精度浮動小数点型 (<b>Single</b>) の値を使用します。 ポイントでの吹き出しの最初のセグメントの長さ。</param>
+        <summary>引き出し線の最初のセグメント (テキスト吹き出しボックスに接続されているセグメント) が、引き出しを移動するたびに固定の長さを保持します。</summary>
+        <remarks><para><b>CustomLength</b>メソッドは、複数のセグメント<b>(msoCalloutThree</b>型と<b>msoCalloutFour</b>型) で構成される行を持つ吹き出しにのみ適用されます。</para>
+          <para>吹き出しを移動するたびに、引き出し線の最初のセグメントを自動的に拡大縮小 <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.AutomaticLength" /> する方法を指定します。</para>
+          <para>このメソッドを適用すると、プロパティは False に設定され、プロパティは Length 引数に指定 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Length" /> された値に<b>設定</b>されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -438,11 +438,11 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>明示的に設定されたドロップ値を持つ吹き出しの場合は、境界ボックスの端から引き出し線がテキスト ボックスに接続する位置までの垂直方向の距離 (ポイント数) を返します。</summary>
+        <summary>明示的に設定されたドロップ値を持つ吹き出しの場合は、テキスト境界ボックスの端からテキスト ボックスに引き出し線がアタッチされる位置までの垂直距離をポイントで返します。</summary>
         <value>To be added.</value>
-        <remarks><para>プロパティが True に設定され、テキスト ボックスが引き出し線の原点 (引き出し線がポイントする場所) の左側にある場合は、ドロップ距離がテキスト ボックスの下から測定される場合を限り、テキスト ボックスの上から距離が測定されます。 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> <b></b></para>
-          <para>このプロパティ <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> の値を設定するには、このメソッドを使用します。</para>
-          <para>このプロパティの値は、引き出し線のドロップ値が明示的に設定されている場合 、つまり、プロパティの値が <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /> <b>msoCalloutDropCustom</b>の場合にのみ、テキスト ボックスへの引き出し線の添付ファイルの位置を正確に反映します。</para>
+        <remarks><para>プロパティが True に設定され、テキスト ボックスが引き出し線の原点の左側 (吹き出しがポイントする位置) に設定されていない限り、テキスト ボックスの上から距離を測定します。その場合、ドロップ距離はテキスト ボックスの下部から測定されます。 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /> <b></b></para>
+          <para>メソッドを <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomDrop(System.Single)" /> 使用して、このプロパティの値を設定します。</para>
+          <para>このプロパティの値は、吹き出しに明示的に設定されたドロップ値 (つまり、プロパティの値が <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.DropType" /> <b>msoCalloutDropCustom</b>の場合) の場合にのみ、テキスト ボックスへの引き出し線添付ファイルの位置を正確に反映します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -472,7 +472,7 @@
         <summary>吹き出しの引き出し線がテキスト ボックスに接続されている場所を示す値を取得します。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>使用できる定数は</b> 、次に示す <b>MsoCalloutDropType</b> 定数です。</para>
+            <b>MsoCalloutDropType には</b> 、次のいずれかの <b>MsoCalloutDropType 定数</b> を指定できます。</para>
           <para>
             <b>msoCalloutDropCenter</b>
           </para>
@@ -488,8 +488,8 @@
           <para>
             <b>msoCalloutDropTop</b>
           </para>
-          <para>引き出し線のドロップの種類が<b>msoCalloutDropCustom</b>の場合、吹き出しのテキスト ボックスと引き出し線の原点 (引き出し線がポイントする場所) のプロパティと相対位置の値を使用して、引き出し線がテキスト ボックスに接続する位置を決定します。 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /></para>
-          <para>このプロパティ <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> の値を設定するには、このメソッドを使用します。</para>
+          <para>吹き出しドロップの種類が<b>msoCalloutDropCustom</b>の場合、吹き出しテキスト ボックスの値とプロパティの値と、引き出し線の原点 (吹き出しがポイントする場所) の相対位置を使用して、吹き出し線がテキスト ボックスにアタッチされる場所を決定します。 <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.Drop" /> <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoAttach" /></para>
+          <para>メソッドを <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.PresetDrop(Microsoft.Office.Core.MsoCalloutDropType)" /> 使用して、このプロパティの値を設定します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -547,10 +547,10 @@
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した吹き出しのプロパティが False に設定されている場合は、引き出し線の最初のセグメント (テキスト吹き出しボックスに接続されているセグメント) の長さをポイント数で <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> 返します。 <b></b></summary>
+        <summary>指定した吹き出しのプロパティが False に設定されている場合、引き出し線の最初のセグメント (テキスト吹き出しボックスに接続されているセグメント) の長さをポイントで <see cref="P:Microsoft.Office.Interop.Excel.CalloutFormat.AutoLength" /> 返します。 <b></b></summary>
         <value>To be added.</value>
-        <remarks><para><b>Length</b>プロパティは、線が複数のセグメントで構成される吹き出し<b>(msoCalloutThree</b>および<b>msoCalloutFour</b>型) にのみ適用されます。</para>
-          <para>このメソッド <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> を使用して、オブジェクトのこのプロパティの値を設定 <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> します。</para>
+        <remarks><para><b>Length プロパティ</b>は、行が複数のセグメント<b>(msoCalloutThree</b>型と<b>msoCalloutFour</b>型) の吹き出しにのみ適用されます。</para>
+          <para>オブジェクトの <see cref="M:Microsoft.Office.Interop.Excel.CalloutFormat.CustomLength(System.Single)" /> このプロパティの値を設定するには、このメソッドを使用 <see cref="T:Microsoft.Office.Interop.Excel.CalloutFormat" /> します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -605,8 +605,8 @@
         <Parameter Name="DropType" Type="Microsoft.Office.Core.MsoCalloutDropType" />
       </Parameters>
       <Docs>
-        <param name="DropType">必須 <see cref="T:Microsoft.Office.Interop.Office.MsoCalloutDropType" /> 。 境界ボックスを基準にして、引き出し線の開始位置。 使用できる定数は、 <b>次の MsoCalloutDropType</b> 定数です<b>。msoCalloutDropBottom</b><b>msoCalloutDropCenter</b><b>msoCalloutDropCustom</b> Specifying <b>msoCalloutDropCustom</b> for this argument will cause your code to fail.<b>msoCalloutDropMixed</b><b>msoCalloutDropTop</b></param>
-        <summary>吹き出しのテキスト ボックスの上、下、または中央に引き出し線を接続するか、またはテキスト ボックスの上または下から指定した距離の点に引き出し線を接続するかどうかを指定します。</summary>
+        <param name="DropType">必須 <see cref="T:Microsoft.Office.Interop.Office.MsoCalloutDropType" /> 。 境界ボックスを基準にして、引き出し線の開始位置。 これらの <b>MsoCalloutDropType</b> 定数のいずれかを指定できます<b>。msoCalloutDropBottom</b><b>msoCalloutDropCenter</b><b>msoCalloutDropCustom</b> この引数に <b>msoCalloutDropCustom</b> を指定すると、コードが失敗します。<b>msoCalloutDropMixed</b><b>msoCalloutDropTop</b></param>
+        <summary>吹き出し線を吹き出しテキスト ボックスの上、下、または中央に接続するか、テキスト ボックスの上または下から指定した距離のポイントにアタッチするかどうかを指定します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -636,10 +636,10 @@
         <ReturnType>Microsoft.Office.Core.MsoCalloutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>吹き出しの書式の種類を設定または返します。</summary>
+        <summary>吹き出し形式の種類を設定または返します。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>使用できる定数は、</b> 次に示す <b>MsoCalloutType</b> 定数です。</para>
+            <b>MsoCalloutType には</b> 、次のいずれかの <b>MsoCalloutType 定数</b> を指定できます。</para>
           <para>
             <b>msoCalloutFour</b>
           </para>

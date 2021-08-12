@@ -1,5 +1,5 @@
 <Type Name="CalculatedMember" FullName="Microsoft.Office.Interop.Excel.CalculatedMember">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7dbe58948b0a319d6163ef1a376e3134b0cce7cd" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006056" /></Metadata><TypeSignature Language="C#" Value="public interface CalculatedMember" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1c86f7dc26610f37d139c110969b898dc8368015b8738a8147643578eabe1ba9" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508130" /></Metadata><TypeSignature Language="C#" Value="public interface CalculatedMember" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CalculatedMember" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CalculatedMember" />
   <TypeSignature Language="VB.NET" Value="Public Interface CalculatedMember" />
@@ -21,11 +21,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>OLAP (Online Analytical Processing) データ ソースを使用するピボットテーブルの集計フィールドおよび集計アイテムを表します。</summary>
-    <remarks><para><see cref="M:Microsoft.Office.Interop.Excel.CalculatedMembers.Add(System.String,System.String,System.Object,System.Object)" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMembers.Item(System.Object)" /> CalculatedMember オブジェクトを取得するには、 <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> コレクションの<b>メソッドまたはプロパティを使用</b>します。</para>
-      <para><b>CalculatedMember</b>オブジェクトを使用すると、プロパティを使用してピボットテーブル内の集計フィールドまたはアイテムの有効性を確認 <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.IsValid" /> できます。</para>
+    <summary>オンライン分析処理 (OLAP) データ ソースを使用してピボットテーブルの計算フィールドと計算項目を表します。</summary>
+    <remarks><para><see cref="M:Microsoft.Office.Interop.Excel.CalculatedMembers.Add(System.String,System.String,System.Object,System.Object)" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMembers.Item(System.Object)" /> CalculatedMember オブジェクトを取得するには、コレクション <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMembers" /> の<b>メソッドまたはプロパティを使用</b>します。</para>
+      <para><b>CalculatedMember</b>オブジェクトを使用すると、プロパティを使用してピボットテーブル内の計算フィールドまたはアイテムの有効性を確認 <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.IsValid" /> できます。</para>
       <para>
-        <b>注</b>  ピボットテーブルが現在データ ソースに接続されていない場合 <b>、IsValid</b> プロパティは <b>True</b> を返します。 <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.MakeConnection" />IsValid プロパティをテストする<b>前に、このメソッドを使用</b>します。</para>
+        <b>メモ</b> <b>ピボットテーブルが現在</b> データ ソースに接続されていない場合 <b>、IsValid</b> プロパティは True を返します。 <see cref="M:Microsoft.Office.Interop.Excel.PivotCache.MakeConnection" />IsValid プロパティをテストする<b>前に、このメソッドを使用</b>します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -83,7 +83,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトExcelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,8 +113,8 @@
       <Docs>
         <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks><para>オブジェクトが Excel で作成された場合、このプロパティは文字列 XCEL を返します。これは 16 進数の 5843454C に相当します。</para>
-          <para><b>Creator プロパティ</b>は、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh 用の Excel で使用するように設計されています。 たとえば、Excel には作成者コード XCEL があります。</para>
+        <remarks><para>オブジェクトが 16 進数でExcel場合、このプロパティは、16 進数 5843454C と同じ文字列 XCEL を返します。</para>
+          <para><b>Creator プロパティ</b>は、各アプリケーションExcel 4 文字のクリエーター コードを持つ Macintosh のアプリケーションで使用するように設計されています。 たとえば、作成者Excel XCEL があります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -140,7 +140,7 @@
       <Parameters />
       <Docs>
         <summary>オブジェクトを削除します。</summary>
-        <remarks><para>キューブ フィールドは、引数 <b>に CalculatedMember.Add</b> メソッドを使用してキューブ フィールドを自分で作成した場合にのみ削除 <paramref name="xlCalculatedSet" /> できます。</para>
+        <remarks><para>キューブ フィールドは、引数に <b>CalculatedMember.Add</b> メソッドを使用してキューブ フィールドを自分で作成した場合にのみ削除 <paramref name="xlCalculatedSet" /> できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -170,8 +170,8 @@
         <summary>名前付きセットの表示フォルダー名を取得します。</summary>
         <value>名前付きセットの表示フォルダー名。</value>
         <remarks><para>読み取り専用です。</para>
-          <para>このプロパティの値は、名前付きセットを作成または編集するときに、[新規/設定の変更] ダイアログ ボックスの [表示フォルダー] テキスト ボックスに入力できるオプションの値に対応します。 OLAP データ ソースに基づくピボットテーブル内のデータから新しい名前付きセットを作成するには、ピボットテーブルをクリックし、リボンの [ピボットテーブル ツール オプション] タブで [フィールド]、[アイテム]、および [セットの管理] をクリックし、[マネージャーの設定] ダイアログ ボックスで [新規] をクリックして、[MDX を使用してセットを作成] をクリックします。 &amp; これにより、[表示フォルダー] テキスト ボックスを含む [新しい設定] ダイアログ ボックスが表示されます。 同様に、[Set Manager] ダイアログ ボックスで既存の名前付きセットを選択し、[編集] をクリックすると、[設定の変更] ダイアログ ボックスが表示されます。</para>
-          <para>このプロパティとプロパティは、名前付きセット (プロパティが等しいオブジェクトによって表されます) でのみ <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Dynamic" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.HierarchizeDistinct" /> 読み <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> 取ることができます <paramref name="xlCalculatedSet" /> 。 これらのプロパティは、計算メンバーまたはメジャー (プロパティが等しいオブジェクトで表されます) では読 <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> み取りできません <paramref name="xlCalculatedMember" /> 。 計算メンバーまたはメジャーのこれらのプロパティを読み取るしようとすると、実行時エラーが発生します。</para>
+          <para>このプロパティの値は、名前付きセットの作成または編集時に 、[新規/変更セット] ダイアログ ボックスの [フォルダーの表示] テキスト ボックスに入力できるオプションの値に対応します。 OLAP データ ソースに基づいてピボットテーブルのデータから新しい名前付きセットを作成するには、ピボットテーブルをクリックし、リボンの [ピボットテーブル ツール オプション] タブの [フィールド、アイテム、セット] をクリックし、[セットの管理] をクリックし、[Set Manager] ダイアログ ボックスで [新規] をクリックし、[MDX を使用してセットを作成] をクリックします。 &amp; [フォルダーの表示] テキスト ボックスを含む [新しいセット] ダイアログ ボックスが表示されます。 同様に、[マネージャーの設定] ダイアログ ボックスで既存の名前付きセットを選択し、[編集] をクリックすると、[セットの変更] ダイアログ ボックスが表示されます。</para>
+          <para>このプロパティとプロパティは、名前付きセットでのみ読み取ることができます (プロパティが等しいオブジェクト <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Dynamic" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.HierarchizeDistinct" /> <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> で表されます <paramref name="xlCalculatedSet" /> )。 これらのプロパティは、計算されたメンバーまたはメジャー (プロパティが等しいオブジェクトで表される) <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> に対して読み取りできません <paramref name="xlCalculatedMember" /> 。 計算されたメンバーまたはメジャーに対してこれらのプロパティを読み取る場合、実行時エラーが発生します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -198,13 +198,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された名前付きセットが更新の度に再計算されるかどうかを取得します。</summary>
-        <value><b>指定された</b> 名前付きセットが更新ごとに再計算される場合は true。それ以外の場合、 <b>false です</b>。</value>
+        <summary>指定した名前付きセットを更新ごとに再計算するかどうかを取得します。</summary>
+        <value><b>指定した</b> 名前付きセットが更新ごとに再計算される場合は true。それ以外の場合は <b>false です</b>。</value>
         <remarks><para>読み取り専用です。</para>
           <para>
-            <b>名前付き</b> セットが更新の度に再計算される場合は true。それ以外の場合 <b>は false です</b>。</para>
-          <para>このプロパティの値は、名前付きセットの作成または編集時に使用できる [新規/設定の変更] ダイアログ ボックスのすべての更新チェック ボックスで設定された再計算の設定に対応します。 OLAP データ ソースに基づくピボットテーブル内のデータから新しい名前付きセットを作成するには、ピボットテーブルをクリックし、リボンの [ピボットテーブル ツール オプション] タブで [フィールド]、[アイテム]、および [セットの管理] をクリックし、[マネージャーの設定] ダイアログ ボックスで [新規] をクリックして、[MDX を使用してセットを作成] をクリックします。 &amp; This will display the New Set dialog box, which contains the Recalculate set with every update check box. 同様に、[Set Manager] ダイアログ ボックスで既存の名前付きセットを選択し、[編集] をクリックすると、[設定の変更] ダイアログ ボックスが表示されます。</para>
-          <para>このプロパティとプロパティは、名前付きセット (プロパティが等しいオブジェクトによって表されます) でのみ <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.DisplayFolder" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.HierarchizeDistinct" /> 読み <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> 取ることができます <paramref name="xlCalculatedSet" /> 。 これらのプロパティは、計算メンバーまたはメジャー (プロパティが等しいオブジェクトで表されます) では読 <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> み取りできません <paramref name="xlCalculatedMember" /> 。 計算メンバーまたはメジャーのこれらのプロパティを読み取るしようとすると、実行時エラーが発生します。</para>
+            <b>名前付き</b>セットが更新ごとに再計算される場合は true。それ以外の場合<b>は false 。</b></para>
+          <para>このプロパティの値は、名前付きセットの作成または編集時に使用できる [新規/変更セット] ダイアログ ボックスの [すべての更新セットを含む再計算セット] チェック ボックスの設定に対応します。 OLAP データ ソースに基づいてピボットテーブルのデータから新しい名前付きセットを作成するには、ピボットテーブルをクリックし、リボンの [ピボットテーブル ツール オプション] タブの [フィールド、アイテム、セット] をクリックし、[セットの管理] をクリックし、[Set Manager] ダイアログ ボックスで [新規] をクリックし、[MDX を使用してセットを作成] をクリックします。 &amp; [新しいセット] ダイアログ ボックスが表示されます。このダイアログ ボックスには、[すべての更新プログラムを含む再計算セット] チェック ボックスが表示されます。 同様に、[マネージャーの設定] ダイアログ ボックスで既存の名前付きセットを選択し、[編集] をクリックすると、[セットの変更] ダイアログ ボックスが表示されます。</para>
+          <para>このプロパティとプロパティは、名前付きセットでのみ読み取ることができます (プロパティが等しいオブジェクト <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.DisplayFolder" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.HierarchizeDistinct" /> <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> で表されます <paramref name="xlCalculatedSet" /> )。 これらのプロパティは、計算されたメンバーまたはメジャー (プロパティが等しいオブジェクトで表される) <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> に対して読み取りできません <paramref name="xlCalculatedMember" /> 。 計算されたメンバーまたはメジャーに対してこれらのプロパティを読み取る場合、実行時エラーが発生します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -234,12 +234,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した名前付きセットのすべての階層レベルのアイテムを、OLAP キューブに基づくピボットテーブル レポートの同じフィールドに表示するかどうかを取得または設定します。</summary>
-        <value><b>true</b> 指定した名前付きセットの階層のすべてのレベルのアイテムが、OLAP キューブに基づくピボットテーブル レポートの同じフィールドに表示される場合です。それ以外の場合、 <b>false です</b>。</value>
+        <summary>指定した名前付きセットの階層のすべてのレベルのアイテムを、OLAP キューブに基づくピボットテーブル レポートの同じフィールドに表示するかどうかを取得または設定します。</summary>
+        <value><b>指定</b> した名前付きセットの階層のすべてのレベルのアイテムが OLAP キューブに基づくピボットテーブル レポートの同じフィールドに表示される場合は true。それ以外の場合は <b>false です</b>。</value>
         <remarks><para>値の取得と設定が可能です。</para>
           <para>
-            <b>名前付き</b> セットのすべての階層レベルのアイテムが同じフィールドに表示される場合は true。それ以外の場合 <b>は false です</b>。</para>
-          <para>このプロパティの値は、名前付きセットを作成または編集するときに、[新規/設定の変更] ダイアログ ボックスの [別のフィールドの異なるレベルのアイテムを表示する] チェック ボックスの設定に対応します。 OLAP データ ソースに基づくピボットテーブルのデータから新しい名前付きセットを作成するには、ピボットテーブルをクリックし、リボンの [ピボットテーブル ツール オプション] タブで [フィールド]、[アイテム]、および [ピボットテーブル ツール オプション] タブの [セット] をクリックし、[Set Manager] ダイアログ ボックスで [New] をクリックして、[MDX を使用してセットを作成] をクリックします。 &amp; This will display the New Set dialog box, which contains the Display items from different levels in separate fields check box. 同様に、[Set Manager] ダイアログ ボックスで既存の名前付きセットを選択し、[編集] をクリックすると、[設定の変更] ダイアログ ボックスが表示されます。</para>
+            <b>名前付</b>きセットのすべてのレベルのアイテムが同じフィールドに表示される場合は true。それ以外の場合<b>は false 。</b></para>
+          <para>このプロパティの値は、名前付きセットを作成または編集するときに、[新規/変更セット] ダイアログ ボックスの [別のフィールドに異なるレベルのアイテムを表示する] チェック ボックスの設定に対応します。 OLAP データ ソースに基づいてピボットテーブルのデータから新しい名前付きセットを作成するには、ピボットテーブルをクリックし、リボンの [ピボットテーブル ツール オプション] タブの [フィールド、アイテム、セット] をクリックし、[セットの管理] をクリックし、[Set Manager] ダイアログ ボックスで [新規] をクリックし、[MDX を使用してセットを作成] をクリックします。 &amp; これにより、[新しいセット] ダイアログ ボックスが表示されます。このダイアログ ボックスには、[別のフィールドに異なるレベルのアイテムを表示する] チェック ボックスが表示されます。 同様に、[マネージャーの設定] ダイアログ ボックスで既存の名前付きセットを選択し、[編集] をクリックすると、[セットの変更] ダイアログ ボックスが表示されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -266,12 +266,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>多次元式 (MDX) 構文でメンバーの数式を返します。</summary>
+        <summary>多次元式 (MDX) 構文のメンバーの数式を返します。</summary>
         <value>To be added.</value>
         <remarks><para>OLAP データ ソースでは、このプロパティを使用できません。</para>
           <para>セルに定数が入力されているときは、このプロパティはその定数を返します。 セルが空の場合 <b>、Formula</b> プロパティは空の文字列を返します。 セルに数式が入っているときは、数式バーでの表示と同じ形式で、等号を含む数式を文字列として返します。</para>
           <para>セルの値または数式に日付を設定すると、Excel はそのセルに日付書式または時刻書式が既に設定されているかどうかをチェックします。書式が設定されていないときは、数値書式は標準の日付の短い形式になります。</para>
-          <para>範囲が 1 次元または 2 次元の範囲である場合は、同じ次元の配列に数式を設定できます。 同様に、数式を配列に挿入できます。</para>
+          <para>範囲が 1 次元または 2 次元の範囲の場合は、数式を同じ次元の配列に設定できます。 同様に、数式を配列に挿入できます。</para>
           <para>セル範囲に数式を設定すると、範囲内のすべてのセルにその数式が入ります。</para>
           <para> </para></remarks>
       </Docs>
@@ -302,13 +302,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>OLAP キューブに基づくピボットテーブル レポートに指定された名前付きセットの階層を表示するときに、重複を順序付けおよび削除するかどうかを取得または設定します。</summary>
-        <value><b>oLAP</b> キューブに基づくピボットテーブル レポートに指定された名前付きセットの階層を表示するときに、重複を並べ替え、削除する場合は true。それ以外の場合、 <b>false です</b>。</value>
+        <summary>OLAP キューブに基づいてピボットテーブル レポートに指定された名前付きセットの階層を表示するときに、重複を順序付けおよび削除するかどうかを取得または設定します。</summary>
+        <value><b>OLAP</b> キューブに基づいてピボットテーブル レポートに指定された名前付きセットの階層を表示するときに、重複を順序付けして削除する必要がある場合は true。それ以外の場合は <b>false です</b>。</value>
         <remarks><para>値の取得と設定が可能です。</para>
           <para>
-            <b>true の</b> 場合、名前付きセットの階層が重複を削除した順序で表示されます。それ以外の場合 <b>は false です</b>。</para>
-          <para>このプロパティの値は、名前付きセットを作成または編集するときに、[新規/セットの変更] ダイアログ ボックスの [セットから自動的に順序付けされ、重複を削除する] チェック ボックスに対応します。 OLAP データ ソースに基づくピボットテーブル内のデータから新しい名前付きセットを作成するには、ピボットテーブルをクリックし、リボンの [ピボットテーブル ツール オプション] タブで [フィールド]、[アイテム]、および [セットの管理] をクリックし、[マネージャーの設定] ダイアログ ボックスで [新規] をクリックして、[MDX を使用してセットを作成] をクリックします。 &amp; This will display the New Set dialog box, which contains the Automatically order and remove duplicates from the set check box. 同様に、[Set Manager] ダイアログ ボックスで既存の名前付きセットを選択し、[編集] をクリックすると、[設定の変更] ダイアログ ボックスが表示されます。</para>
-          <para>このプロパティとプロパティは、名前付きセット (プロパティが等しいオブジェクトによって表されます) でのみ <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.DisplayFolder" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Dynamic" /> 読み <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> 取ることができます <paramref name="xlCalculatedSet" /> 。 これらのプロパティは、計算メンバーまたはメジャー (プロパティが等しいオブジェクトで表されます) では読 <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> み取りできません <paramref name="xlCalculatedMember" /> 。 計算メンバーまたはメジャーのこれらのプロパティを読み取るしようとすると、実行時エラーが発生します。</para>
+            <b>名前付</b>きセットの階層が重複が削除された順序で表示される場合は true。それ以外の場合<b>は false 。</b></para>
+          <para>このプロパティの値は、名前付きセットを作成または編集するときに、[新規/変更セット] ダイアログ ボックスの [セットから重複を自動的に順序付けして削除する] チェック ボックスに対応します。 OLAP データ ソースに基づいてピボットテーブルのデータから新しい名前付きセットを作成するには、ピボットテーブルをクリックし、リボンの [ピボットテーブル ツール オプション] タブの [フィールド、アイテム、セット] をクリックし、[セットの管理] をクリックし、[Set Manager] ダイアログ ボックスで [新規] をクリックし、[MDX を使用してセットを作成] をクリックします。 &amp; [新しいセット] ダイアログ ボックスが表示され、[セットから重複を自動的に順序付けして削除する] チェック ボックスが表示されます。 同様に、[マネージャーの設定] ダイアログ ボックスで既存の名前付きセットを選択し、[編集] をクリックすると、[セットの変更] ダイアログ ボックスが表示されます。</para>
+          <para>このプロパティとプロパティは、名前付きセットでのみ読み取ることができます (プロパティが等しいオブジェクト <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.DisplayFolder" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Dynamic" /> <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> で表されます <paramref name="xlCalculatedSet" /> )。 これらのプロパティは、計算されたメンバーまたはメジャー (プロパティが等しいオブジェクトで表される) <see cref="T:Microsoft.Office.Interop.Excel.CalculatedMember" /> <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMember.Type" /> に対して読み取りできません <paramref name="xlCalculatedMember" /> 。 計算されたメンバーまたはメジャーに対してこれらのプロパティを読み取る場合、実行時エラーが発生します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -335,7 +335,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ブール値 <b>指定した</b> 集計メンバーが現在のセッション中に OLAP プロバイダーで正常にインスタンス化されたかどうかを示す値を返します。</summary>
+        <summary>現在のセッション中に、指定した計算されたメンバーが OLAP プロバイダーで正常にインスタンス化されたかどうかを示すブール型 <b>(Boolean)</b> の値を返します。</summary>
         <value>To be added.</value>
         <remarks><para>このプロパティは、ピボットテーブルがデータ ソースに接続していない場合でも <b>True</b> を返します。<b>IsValid</b> プロパティの値を問い合わせる前に、ピボットテーブルが接続されていることを確認してください。</para>
           <para> </para></remarks>
@@ -420,7 +420,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCalcMemNumberFormatType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>集計メンバー <see cref="T:Microsoft.Office.Interop.Excel.XlCalcMemNumberFormatType" /> の数値書式を表す値を返します。 既定値は <b>xlNumberFormatTypeDefault</b> です。 値の取得のみ可能です。</summary>
+        <summary>計算されたメンバー <see cref="T:Microsoft.Office.Interop.Excel.XlCalcMemNumberFormatType" /> の数値形式を表す値を返します。 既定値は <b>xlNumberFormatTypeDefault</b> です。 値の取得のみ可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -534,7 +534,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>計算メンバーの解決順序 MDX (多次元式) 引数の値を指定する整数型 <b>(Integer)</b> の値を返します。 既定値はゼロです。</summary>
+        <summary>計算されたメンバーの解決順序 MDX (多次元式) 引数の値を指定する整数型 <b>(Integer)</b> の値を返します。 既定値はゼロです。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -562,10 +562,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたピボットテーブル レポートの元のソース データに表示される、指定されたオブジェクトの名前を返します。</summary>
+        <summary>指定したピボットテーブル レポートの元のソース データに表示される、指定したオブジェクトの名前を返します。</summary>
         <value>To be added.</value>
-        <remarks><para>ピボットテーブル レポートの作成後にユーザーがアイテムの名前を変更した場合 <b>、SourceName</b> プロパティは現在のアイテム名とは異なる場合があります。</para>
-          <para>次の表に、OLAP を指定した <b>SourceName</b> プロパティと関連プロパティの値の例 <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproSourceName1.htm">を示します。</a></para>
+        <remarks><para><b>ユーザーがピボットテーブル</b>レポートの作成後にアイテムの名前を変更した場合、SourceName プロパティは現在のアイテム名と異なる場合があります。</para>
+          <para>次の表に <b>、OLAP</b> を指定した SourceName プロパティと関連プロパティの値の <a href="mk:@MSITStore:C:\Program%20Files\Microsoft%20Office\OFFICE11\1033\VBAXL10.CHM::/html/xlproSourceName1.htm">例を示します。</a></para>
           <list type="table">
             <item>
               <term>
@@ -596,17 +596,17 @@
               <description>東京</description>
             </item>
           </list>
-          <para>コレクションにインデックスを指定する場合は、次の表 <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> に示す構文を使用できます。</para>
+          <para>コレクションにインデックスを指定する場合は <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> 、次の表に示す構文を使用できます。</para>
           <list type="table">
             <item>
-              <term>式を使用します。PivotItems("[Europe].[フランス]。[パリ]")</term>
-              <description>式を使用します。PivotItems("Paris")</description>
+              <term>式。PivotItems("[Europe].[フランス]。[パリ]")</term>
+              <description>式。PivotItems("Paris")</description>
             </item>
           </list>
-          <para>プロパティを使用してコレクションの特定のメンバーを参照する場合は、次の表に示すように、テキストインデックス名 <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMembers.Item(System.Object)" /> を使用できます。</para>
+          <para>プロパティを使用してコレクションの特定のメンバーを参照する場合は、次の表に示すように、テキスト インデックス名 <see cref="P:Microsoft.Office.Interop.Excel.CalculatedMembers.Item(System.Object)" /> を使用できます。</para>
           <list type="table">
             <item>
-              <term>[ヨーロッパ].[フランス].[パリ]</term>
+              <term>[ヨーロッパ][フランス][パリ]</term>
               <description>東京</description>
             </item>
           </list>
@@ -636,10 +636,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCalculatedMemberType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>集計メンバーの種類を返します。</summary>
+        <summary>計算されたメンバーの種類を返します。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlCalculatedMemberType" /> 使用できる定数は、 <b>次に示す XlCalculatedMemberType</b> 定数です。</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlCalculatedMemberType" /> 次に示す <b>XlCalculatedMemberType 定数のいずれかを</b> 指定できます。</para>
           <para>
             <b>xlCalculatedMember</b>
           </para>

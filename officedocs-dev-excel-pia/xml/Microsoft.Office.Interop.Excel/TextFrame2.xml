@@ -1,5 +1,5 @@
 <Type Name="TextFrame2" FullName="Microsoft.Office.Interop.Excel.TextFrame2">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ed2de645a61dfb227782869ab7a06f69f1159fde" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009633" /></Metadata><TypeSignature Language="C#" Value="public interface TextFrame2 : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6bf15328a4d34bac8fc1bc6dab0f3d286a13ce515390878d041089f310d6fb63" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54507486" /></Metadata><TypeSignature Language="C#" Value="public interface TextFrame2 : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract TextFrame2 implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.TextFrame2" />
   <TypeSignature Language="VB.NET" Value="Public Interface TextFrame2&#xA;Implements _IMsoDispObj" />
@@ -23,7 +23,7 @@
   </Attributes>
   <Docs>
     <summary>、またはオブジェクト内のテキスト <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> フレーム  <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> を表    <see cref="T:Microsoft.Office.Interop.Excel.ChartFormat" /> します。</summary>
-    <remarks><para>このオブジェクトには、レイアウト枠の配置や向きを制御するプロパティやメソッドだけでなく、レイアウト枠のテキストが含まれます。 <b>TextFrame2 プロパティを使用して</b>オブジェクトを取得 <see cref="T:Microsoft.Office.Interop.Excel.TextFrame2" /> します。</para>
+    <remarks><para>このオブジェクトには、レイアウト枠の配置や向きを制御するプロパティやメソッドだけでなく、レイアウト枠のテキストが含まれます。 オブジェクトを <b>取得するには、TextFrame2</b> プロパティを使用 <see cref="T:Microsoft.Office.Interop.Excel.TextFrame2" /> します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -55,7 +55,7 @@
       <Docs>
         <summary>オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel._Application" /></value>
-        <remarks><para>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Microsoft Excel アプリケーションを表 <see cref="T:Microsoft.Office.Interop.Excel._Application" /> すオブジェクトを返します。 オブジェクト修飾子を使用する場合、このプロパティは指定されたオブジェクトの作成元を表すオブジェクトを返します (OLE オートメーション オブジェクトでこのプロパティを使用すると、そのオブジェクトのアプリケーションを <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 取得できます)。 </para>
+        <remarks><para>オブジェクト修飾子なしで使用すると、このプロパティは、アプリケーションのオブジェクトを <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 表すオブジェクトMicrosoft Excelします。 オブジェクト修飾子と一緒に使用すると、このプロパティは、指定したオブジェクトの作成者を表すオブジェクトを返します (このプロパティを OLE Automation オブジェクトと一緒に使用して、そのオブジェクトのアプリケーションを <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 返します)。 </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -85,7 +85,7 @@
         <ReturnType>Microsoft.Office.Core.MsoAutoSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>境界内のテキストに合わせて自動的に変更される指定されたオブジェクトのサイズ。 値の取得と設定が可能です。</summary>
+        <summary>境界内のテキストに合わせて自動的に変更される、指定したオブジェクトのサイズ。 値の取得と設定が可能です。</summary>
         <value><see cref="T:Microsoft.Office.Core.MsoAutoSize" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,7 +113,7 @@
         <ReturnType>Microsoft.Office.Core.TextColumn2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>テキスト ボックス内 <see cref="T:Microsoft.Office.Core.TextColumn2" /> の列を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <summary>テキスト フレーム内 <see cref="T:Microsoft.Office.Core.TextColumn2" /> の列を表すオブジェクトを返します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Core.TextColumn2" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -144,9 +144,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 値の取得のみ可能です。</summary>
+        <summary>現在のオブジェクトを作成したアプリケーションを 32 ビットの整数値として取得します。値の取得のみ可能です。</summary>
         <value><b>Integer</b></value>
-        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ <see cref="P:Microsoft.Office.Interop.Excel.TextFrame2.Creator" /> Macintosh 用の Microsoft Excel で使用するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 このプロパティは、各アプリケーションに 4 文字のMicrosoft Excelコードを持つ Macintosh のプロパティで使用 <see cref="P:Microsoft.Office.Interop.Excel.TextFrame2.Creator" /> するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -172,7 +172,7 @@
       <Parameters />
       <Docs>
         <summary>テキスト ボックスと関連するすべてのテキスト プロパティからテキストを削除します。</summary>
-        <remarks><para>関連付けられたテキスト プロパティには、太字、下線などの <see cref="T:Microsoft.Office.Interop.Excel.Font" /> 属性が含まれます。</para>
+        <remarks><para>関連付けられたテキスト プロパティには <see cref="T:Microsoft.Office.Interop.Excel.Font" /> 、太字、下線などの属性が含まれます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -199,7 +199,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したテキスト フレームにテキストが含むかどうかを返します。 読み取り専用です。</summary>
+        <summary>指定したテキスト フレームにテキストが含されているかどうかを返します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Core.MsoTriState" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -385,7 +385,7 @@
         <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図形を回転したときに図形の上のテキストを回転させるかどうかを指定する値を取得または設定します。 値の取得および設定が可能です。</summary>
+        <summary>図形を回転したときに図形の上のテキストを回転させるかどうかを指定する値を取得または設定します。値の取得および設定が可能です。</summary>
         <value>To be added.</value>
         <remarks><para>値の取得と設定が可能です。</para>
           <para>次の値を含む MsoTriState 列挙型が返されるか、次の値を含む MsoTriState 列挙型を設定します。</para>
@@ -445,9 +445,9 @@
         <ReturnType>Microsoft.Office.Core.MsoTextOrientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>テキスト 枠の向きを表す値を取得または設定します。 値の取得と設定が可能です。</summary>
+        <summary>テキスト フレームの向きを表す値を設定または返します。 値の取得と設定が可能です。</summary>
         <value><see cref="T:Microsoft.Office.Core.MsoTextOrientation" /></value>
-        <remarks><para>このプロパティの値は、-90 ~ 90 度の整数値、または定数の 1 つを設定 <see cref="T:Microsoft.Office.Core.MsoTextOrientation" /> できます。</para>
+        <remarks><para>このプロパティの値は、-90 ~ 90 度の整数値、または定数のいずれかを <see cref="T:Microsoft.Office.Core.MsoTextOrientation" /> 設定できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -474,7 +474,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -505,7 +505,7 @@
         <ReturnType>Microsoft.Office.Core.MsoPathFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したテキストフレームのパスの種類を設定します。 値の取得および設定が可能です。</summary>
+        <summary>指定したテキストフレームのパスの種類を設定します。値の取得および設定が可能です。</summary>
         <value><see cref="T:Microsoft.Office.Core.MsoPathFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -561,7 +561,7 @@
         <ReturnType>Microsoft.Office.Core.TextRange2</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクト内 <see cref="T:Microsoft.Office.Core.TextRange2" /> のテキストを表すオブジェクトを返します。 読み取り専用です。</summary>
+        <summary>オブジェクト内の <see cref="T:Microsoft.Office.Core.TextRange2" /> テキストを表すオブジェクトを返します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Core.TextRange2" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -589,7 +589,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ThreeDFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したテキスト <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> の 3-D 表示効果の書式プロパティを含むオブジェクトを返します。 読み取り専用です。</summary>
+        <summary>指定したテキスト <see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /> の 3-D 効果の書式設定プロパティを含むオブジェクトを返します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.ThreeDFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -651,7 +651,7 @@
         <ReturnType>Microsoft.Office.Core.MsoWarpFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したテキスト フレームの変形の種類を設定または返します。 値の取得と設定が可能です。</summary>
+        <summary>指定したテキスト フレームのワープの種類を設定または返します。 値の取得と設定が可能です。</summary>
         <value><see cref="T:Microsoft.Office.Core.MsoWarpFormat" /></value>
         <remarks>To be added.</remarks>
       </Docs>

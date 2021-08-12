@@ -1,5 +1,5 @@
 <Type Name="CalculatedFields" FullName="Microsoft.Office.Interop.Excel.CalculatedFields">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="551200c74cbef27982489b80758fa22c187b61fe" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50006084" /></Metadata><TypeSignature Language="C#" Value="public interface CalculatedFields : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8adf1e1a33baa5b1116362e89bec6639d3953850cd5e98efa551cf80c400c48e" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54507717" /></Metadata><TypeSignature Language="C#" Value="public interface CalculatedFields : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CalculatedFields implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.CalculatedFields" />
   <TypeSignature Language="VB.NET" Value="Public Interface CalculatedFields&#xA;Implements IEnumerable" />
@@ -25,11 +25,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>指定されたピボット <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> テーブル レポートのすべての集計フィールドを表すオブジェクトのコレクションです。</summary>
-    <remarks><para>たとえば、[収益] フィールドと [経費] フィールドを含むレポートには、"Profit" という名前の集計フィールドを含め、"収益" フィールドの金額から経費フィールドの金額を引いた値として定義できます。</para>
+    <summary>指定したピボット <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> テーブル レポートのすべての計算フィールドを表すオブジェクトのコレクション。</summary>
+    <remarks><para>たとえば、[収益] フィールドと [経費] フィールドを含むレポートには、"Profit" という名前の計算フィールドを持ち、[収益] フィールドの金額から [経費] フィールドの金額を引いた値として定義できます。</para>
       <para>OLAP データ ソースの場合、このコレクションは設定できず、常に <b>Nothing</b> を返します。</para>
-      <para><see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CalculatedFields" /> <b>CalculatedFields コレクションを取得するには、このメソッドを使用</b>します。</para>
-      <para><b>CalculatedFields</b>コレクションから 1 つの PivotField オブジェクトを取得するには、指定されたフィールドの名前またはインデックス番号を指定した <paramref name="index" /> <paramref name="index" /> <b>CalculatedFields</b> ( ) を使用します。 <b></b></para>
+      <para>メソッドを <see cref="M:Microsoft.Office.Interop.Excel.PivotTable.CalculatedFields" /> 使用して <b>、CalculatedFields コレクションを取得</b> します。</para>
+      <para><b>CalculatedFields</b>コレクションから 1 つの PivotField オブジェクトを取得するには、指定したフィールドの名前またはインデックス番号である <paramref name="index" /> <paramref name="index" /> <b>CalculatedFields</b> <b></b> ( ) を使用します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -128,7 +128,7 @@
       <Docs>
         <param name="Name"><b>文字列</b> が必要です。 フィールド名を指定します。</param>
         <param name="Formula"><b>文字列</b> が必要です。 フィールドの数式を指定します。</param>
-        <param name="UseStandardFormula">省略 <b>可能なオブジェクト</b>です。 <b>False</b> (既定値) を指定すると、互換性が向上します。 <b>True</b> フィールド名である引数に含まれる文字列の場合 (ローカル設定ではなく、標準の米国英語で書式設定されたと解釈されます)。</param>
+        <param name="UseStandardFormula">省略 <b>可能なオブジェクト</b>です。 <b>上</b> 向きの互換性を保つ場合は False (既定値) です。 <b>フィールド</b> 名である引数に含まれる文字列の場合は True です (ローカル設定ではなく、標準の米国英語で書式設定されたと解釈されます)。</param>
         <summary>新しい集計フィールドを作成します。 オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -157,7 +157,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -275,7 +275,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">必須<b>オブジェクト 。</b> オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

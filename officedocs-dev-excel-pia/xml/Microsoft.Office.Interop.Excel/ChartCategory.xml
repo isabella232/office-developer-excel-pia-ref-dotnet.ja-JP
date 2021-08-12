@@ -1,5 +1,5 @@
 <Type Name="ChartCategory" FullName="Microsoft.Office.Interop.Excel.ChartCategory">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ed41bf1c7a500cfb1d489baf6c6a7d95610c380b" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50004201" /></Metadata><TypeSignature Language="C#" Value="public interface ChartCategory" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="12a4c11bae218b1f329b575ab0ef6b4d53bc6e9a2f6b2eabc1420e39b488d14b" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54507703" /></Metadata><TypeSignature Language="C#" Value="public interface ChartCategory" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartCategory" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartCategory" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartCategory" />
@@ -48,7 +48,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
+        <summary>オブジェクト修飾子なしで使用すると、このプロパティは、アプリケーションのオブジェクトを表 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> すオブジェクトExcelします。 対象となるオブジェクトが指定された場合は、指定されたオブジェクトを作成した <b>Application</b> オブジェクトを返します。OLE オートメーションを使っていて、オブジェクトのアプリケーションにアクセスするときなどに、このプロパティを使います。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -76,9 +76,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 読み取り<b>専用の整数</b><b>(C#</b>の整数)。</summary>
+        <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。 読み取り専用 <b>の Integer</b> (<b>int</b> C#)。</summary>
         <value>To be added.</value>
-        <remarks><para>オブジェクトが Excel で作成された場合、このプロパティは文字列 XCEL を返します。これは 16 進数の 5843454C に相当します。 <b>Creator プロパティ</b>は、各アプリケーションが 4 文字のクリエーター コードを持つ Macintosh 用の Excel で使用するように設計されています。 たとえば、Excel には作成者コード XCEL があります。</para>
+        <remarks><para>オブジェクトが 16 進数でExcel場合、このプロパティは、16 進数 5843454C と同じ文字列 XCEL を返します。 <b>Creator プロパティ</b>は、各アプリケーションExcel 4 文字のクリエーター コードを持つ Macintosh のアプリケーションで使用するように設計されています。 たとえば、作成者Excel XCEL があります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -108,7 +108,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ユーザーが系列をフィルターした場合は <b>TRUE</b> を返します。 <b>ブール</b> 値 ( C#<b>ではブール</b> ) 読み取り専用</summary>
+        <summary>ユーザーが系列をフィルターした場合は <b>TRUE</b> を返します。 <b>Boolean</b> ( bool in<b>C#)</b> 読み取り専用</summary>
         <value>To be added.</value>
         <remarks><para>系列を親の <b>SeriesCollection</b> から転送しても、その系列は親の <b>FullSeriesCollection</b> に残ります。ユーザーが系列のフィルター処理を解除すると、<b>SeriesCollection</b> の元の場所に戻ります。</para>
           <para> </para></remarks>
@@ -137,7 +137,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの名前を表<b>す</b><b>文字列</b>(C# の文字列) 値を返します。</summary>
+        <summary>オブジェクト <b>の名前を</b> 表<b>す</b> 文字列 (C#) の値を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -165,7 +165,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

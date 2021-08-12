@@ -1,5 +1,5 @@
 <Type Name="WorkbookEvents_Event" FullName="Microsoft.Office.Interop.Excel.WorkbookEvents_Event">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2c6690aaaabf5f77b79d72b8fb4094774b86969d" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009017" /></Metadata><TypeSignature Language="C#" Value="public interface WorkbookEvents_Event" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5c6c14cfb45f660b94bbb9a89f6cfaead100ae23f7c8de6e10ecefb588a5256b" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54511693" /></Metadata><TypeSignature Language="C#" Value="public interface WorkbookEvents_Event" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WorkbookEvents_Event" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.WorkbookEvents_Event" />
   <TypeSignature Language="VB.NET" Value="Public Interface WorkbookEvents_Event" />
@@ -21,7 +21,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Excel オブジェクト イベントの <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> イベント インターフェイス。</summary>
+    <summary>オブジェクト イベントのExcel <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> インターフェイス。</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,7 +41,7 @@
       </ReturnValue>
       <Docs>
         <summary>ブックがアクティブ化されると発生します。</summary>
-        <remarks><para>同じブックを表示している 2 つのウィンドウを切り替える場合 <b>、WindowActivate</b> イベントが発生しますが、ブックの <b>Activate</b> イベントは発生しません。</para>
+        <remarks><para>同じブックを表示する 2 つのウィンドウを切り替える場合 <b>、WindowActivate</b> イベントが発生しますが、ブックの <b>Activate</b> イベントは発生しません。</para>
           <para>このイベントは、新しいウィンドウを開いた場合にも発生しません。</para>
           <para> </para></remarks>
       </Docs>
@@ -61,7 +61,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_AddinInstallEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ブックがアドインとしてインストールされた場合に発生します。</summary>
+        <summary>ブックがアドインとしてインストールされている場合に発生します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,8 +119,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_AfterXmlExportEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたブックのデータを XML データ ファイルに保存またはエクスポートした後に発生します。</summary>
-        <remarks><para>XML 機能は、ファイルを XML スプレッドシート形式で保存する場合を除き、Microsoft Office Professional Edition 2003 および excel 2003 Microsoft Officeでのみ使用できます。</para>
+        <summary>指定したブックExcel XML データ ファイルにデータを保存またはエクスポートした後に発生します。</summary>
+        <remarks><para>XML 機能は、XML スプレッドシート形式でのファイルの保存を除き、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -139,8 +139,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_AfterXmlImportEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>既存の XML データ接続が更新された後、または指定された Excel ブックに新しい XML データがインポートされた後に発生します。</summary>
-        <remarks><para>XML 機能は、ファイルを XML スプレッドシート形式で保存する場合を除き、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用できます。</para>
+        <summary>既存の XML データ接続が更新された後、または新しい XML データが指定されたブックにインポートされた後Excelされます。</summary>
+        <remarks><para>XML 機能は、XML スプレッドシート形式でのファイルの保存を除き、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -159,7 +159,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeCloseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ブックを閉じる前に発生します。 ブックが変更された場合、ユーザーに変更内容の保存を要求する前に、このイベントが発生します。</summary>
+        <summary>ブックを閉じる前に発生します。ブックが変更された場合、ユーザーに変更内容の保存を要求する前に、このイベントが発生します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -216,8 +216,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeXmlExportEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたブックのデータを XML データ ファイルに保存またはエクスポートする前に発生します。</summary>
-        <remarks><para>XML 機能は、ファイルを XML スプレッドシート形式で保存する場合を除き、Microsoft Office Professional Edition 2003 および excel 2003 Microsoft Officeでのみ使用できます。</para>
+        <summary>指定したブックExcel XML データ ファイルにデータを保存またはエクスポートする前に発生します。</summary>
+        <remarks><para>XML 機能は、XML スプレッドシート形式でのファイルの保存を除き、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -236,8 +236,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_BeforeXmlImportEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>既存の XML データ接続が更新される前、または新しい XML データが Excel ブックにインポートされる前に発生します。</summary>
-        <remarks><para>XML 機能は、ファイルを XML スプレッドシート形式で保存する場合を除き、Microsoft Office Professional Edition 2003 および excel 2003 Microsoft Officeでのみ使用できます。</para>
+        <summary>既存の XML データ接続が更新される前、または新しい XML データがブックにインポートされる前Excelされます。</summary>
+        <remarks><para>XML 機能は、XML スプレッドシート形式でのファイルの保存を除き、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -295,8 +295,8 @@
       </ReturnValue>
       <Docs>
         <summary>新しいグラフをブックに作成したときに発生します。</summary>
-        <remarks><para>このイベントは、ワークシート、グラフ シート、その他の種類のシートに新しいグラフが挿入または貼り付けされるたびに <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /> 発生します。 複数のグラフを挿入または貼り付ける場合、イベントは挿入または貼り付ける順番でグラフごとに発生します。 グラフ オブジェクトまたはグラフ シートを別の場所に移動する場合、イベントは発生しません。 ただし、グラフがグラフ オブジェクトとグラフ シートの間で移動する場合は、新しいグラフを作成する必要があるため、イベントが発生します。</para>
-          <para>このイベントは、グラフ シートのコピーまたは貼り付け、グラフの種類の変更、グラフ データ ソースの変更、グラフの挿入または貼り付けの取り消しまたはやり直し、グラフを含むブックの読み込みでは発生しません。 <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /></para>
+        <remarks><para>このイベントは、ワークシート、グラフ シート、その他のシートの種類に新しいグラフが挿入または貼り付けされるたびに <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /> 発生します。 複数のグラフを挿入または貼り付ける場合、イベントは挿入または貼り付ける順番でグラフごとに発生します。 グラフ オブジェクトまたはグラフ シートを別の場所に移動する場合、イベントは発生しません。 ただし、グラフがグラフ オブジェクトとグラフ シートの間で移動する場合は、新しいグラフを作成する必要があるため、イベントが発生します。</para>
+          <para>このイベントは、グラフ シートのコピーまたは貼り付け、グラフの種類の変更、グラフ データ ソースの変更、グラフの挿入または貼り付けの元に戻すまたはやり直し、グラフを含むブックの読み込みというシナリオでは発生しません。 <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.NewChart" /></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -565,7 +565,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SheetLensGalleryRenderCompleteEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>吹き出しギャラリーのアイコン (動的および静的) がワークシートのレンダリングを完了すると発生します。</summary>
+        <summary>吹き出しギャラリーのアイコン (動的および静的) がワークシートのレンダリングを完了した場合に発生します。</summary>
         <remarks><para>このイベントは、画面の更新が再度有効になったことを示す場合や、追加のダイアログを表示する場合に使用できます。</para>
           <para> </para></remarks>
       </Docs>
@@ -606,7 +606,7 @@
       </ReturnValue>
       <Docs>
         <summary>ピボットテーブルに変更を適用する前に発生します。</summary>
-        <remarks><para>このイベントは、Excel が UPDATE CUBE ステートメントを実行してピボットテーブルの OLAP データ ソースに対してすべての変更を適用する直前、およびユーザーがユーザー インターフェイスに変更を適用した直後に発生します。 <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" /></para>
+        <remarks><para>イベントは、Excel が UPDATE CUBE ステートメントを実行してピボットテーブルの OLAP データ ソースに対してすべての変更を適用する直前、およびユーザーがユーザー インターフェイスに変更を適用する選択をした直後に発生します。 <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeAllocateChanges" /></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -626,7 +626,7 @@
       </ReturnValue>
       <Docs>
         <summary>ピボットテーブルの OLAP データ ソースに対して変更を確定する前に発生します。</summary>
-        <remarks><para>このイベントは、Excel がピボットテーブルの OLAP データ ソースに対して COMMIT TRANSACTION を実行する直前、およびユーザーがピボットテーブル全体の変更を保存した直後に発生します <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeCommitChanges" /> 。</para>
+        <remarks><para>イベントは、Excel がピボットテーブルの OLAP データ ソースに対して COMMIT TRANSACTION を実行する直前、およびピボットテーブル全体の変更を保存するためにユーザーが選択した直後に発生します。 <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableBeforeCommitChanges" /></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -646,7 +646,7 @@
       </ReturnValue>
       <Docs>
         <summary>ピボットテーブルに対する変更が破棄される前に発生します。</summary>
-        <remarks><para>トランザクションがまだアクティブな場合は、Excel が OLAP データ ソースに対して ROLLBACK TRANSACTION ステートメントを実行する直前に発生し、ユーザーが変更を破棄するように選択した後、ピボットテーブル内の編集された値はすべて破棄します。</para>
+        <remarks><para>トランザクションがまだアクティブな場合、Excel が OLAP データ ソースに対して ROLLBACK TRANSACTION ステートメントを実行する直前に発生し、ユーザーが変更を破棄するように選択した後、ピボットテーブル内のすべての編集された値を破棄します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -666,7 +666,7 @@
       </ReturnValue>
       <Docs>
         <summary>ピボットテーブルが変更された後に発生します。</summary>
-        <remarks><para>ピボットテーブルのほとんどの変更時に発生します。ピボットテーブル内のアイテムのクリア、グループ化、更新など、ユーザーの操作に応答するコードを記述 <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableChangeSync" /> できます。</para>
+        <remarks><para>ピボットテーブルに対するほとんどの変更時に発生し、ピボットテーブル内のアイテムのクリア、グループ化、更新など、ユーザーのアクションに応答するコードを記述 <see cref="E:Microsoft.Office.Interop.Excel.WorkbookEvents_Event.SheetPivotTableChangeSync" /> できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -742,7 +742,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.WorkbookEvents_SyncEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ドキュメント ワークスペースの一部であるワークシートのローカル コピーがサーバー上のコピーと同期するときに発生します。</summary>
+        <summary>ドキュメント ワークスペースの一部であるワークシートのローカル コピーがサーバー上のコピーと同期されている場合に発生します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
