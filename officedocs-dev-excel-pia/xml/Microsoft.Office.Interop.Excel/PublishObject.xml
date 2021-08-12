@@ -1,5 +1,5 @@
 <Type Name="PublishObject" FullName="Microsoft.Office.Interop.Excel.PublishObject">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="fcc61ded7b33a1797bd24a5447641b388b7f9f14" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010781" /></Metadata><TypeSignature Language="C#" Value="public interface PublishObject" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="25a70522ac930fee202381605c46a4549fd8193cfe61b4d688bc30b71c9ed0c6" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54519085" /></Metadata><TypeSignature Language="C#" Value="public interface PublishObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PublishObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PublishObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface PublishObject" />
@@ -19,8 +19,8 @@
   </Attributes>
   <Docs>
     <summary>Web ページとして保存されたブックのアイテムを表します。<b>PublishObject</b> のプロパティやメソッドで指定された値に従って更新されます。</summary>
-    <remarks><para><b>PublishObject オブジェクト</b>はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.PublishObjects" /> です。</para>
-      <para><b>PublishObjects</b>( ) を使用して 1 つの PublishObject オブジェクトを取得します(ブック内の指定されたアイテムのインデックス <paramref name="index" /> <paramref name="index" /> 番号)。 <b></b></para>
+    <remarks><para><b>PublishObject オブジェクト</b>は、コレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.PublishObjects" /> です。</para>
+      <para><b>PublishObjects</b>( ) を使用して、ブック内の指定したアイテムのインデックス番号を指定して、1 つの <paramref name="index" /> <paramref name="index" /> <b>PublishObject オブジェクトを取得</b>します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -47,7 +47,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -78,7 +78,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ブックを保存すると、コレクション内のアイテムの <see cref="T:Microsoft.Office.Interop.Excel.PublishObjects" /> <b>AutoRepublish</b> プロパティが <b>True</b> に設定されている場合は再発行されます。 既定値は <b>False</b> です。</summary>
+        <summary>ブックを保存すると、Microsoft Excel内のアイテムに <see cref="T:Microsoft.Office.Interop.Excel.PublishObjects" /> <b>AutoRepublish</b>プロパティが<b>True</b>に設定されているかどうかを判断し、その場合は再発行します。 既定値は <b>False</b> です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -161,7 +161,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Web ページで HTML DIV タグを識別するために使用される一 &lt; &gt; 意の識別子を返します。</summary>
+        <summary>Web ページで HTML DIV タグを識別するために使用される &lt; &gt; 一意の識別子を返します。</summary>
         <value>To be added.</value>
         <remarks><para>タグは、Web ページに保存したドキュメント内のアイテムに関連付けされます。 アイテムには、ブック全体、ワークシート、選択した印刷範囲、オートフィルター範囲、セル範囲、グラフ、ピボットテーブル レポート、またはクエリ テーブルを指定できます。</para>
           <para> </para></remarks>
@@ -195,7 +195,7 @@
       <Docs>
         <summary>指定したソース オブジェクトを保存する場所への URL (インターネットまたは Web) またはパス (ローカルまたはネットワーク) を返すか設定します。</summary>
         <value>To be added.</value>
-        <remarks><para>指定したパスにフォルダーが存在しない場合 <b>、Filename</b> プロパティはエラーを生成します。</para>
+        <remarks><para>Filename <b>プロパティ</b> は、指定したパス内のフォルダーが存在しない場合にエラーを生成します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -225,9 +225,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlHtmlType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したアイテムを Web ページに保存するときに Microsoft Excel によって生成される HTML の種類を設定または返します。</summary>
+        <summary>指定したアイテムを Web ページに保存するときに、Microsoft Excelによって生成される HTML の種類を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para><b>HtmlType プロパティには</b>、アイテムが Web ページで静的か対話型かを指定する定数のいずれかを <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> 指定できます。 既定値は <b>xlHtmlStatic です</b>。</para>
+        <remarks><para><b>HtmlType プロパティ</b>には、アイテムが Web ページで静的か対話型かを指定する定数 <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> のいずれかを指定できます。 既定値は <b>xlHtmlStatic です</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -281,9 +281,9 @@
         <Parameter Name="Create" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Create">省略 <b>可能なオブジェクト</b>です。 HTML ファイルが存在する場合、この引数を <b>True</b> に設定するとファイルが置き換わり、この引数を <b>False</b> に設定すると、ファイルの末尾にアイテムが挿入されます。 ファイルが存在しない場合は、引数の値に関係なくファイルが作成 <paramref name="Create" /> されます。</param>
+        <param name="Create">省略 <b>可能なオブジェクト</b>です。 HTML ファイルが存在する場合、この引数を <b>True</b> に設定するとファイルが置き換わり、この引数を <b>False</b> に設定すると、ファイルの末尾にアイテムまたはアイテムが挿入されます。 ファイルが存在しない場合は、引数の値に関係なくファイルが作成 <paramref name="Create" /> されます。</param>
         <summary>ドキュメント内のアイテムまたはアイテムのコレクションを Web ページ形式で保存します。</summary>
-        <remarks><para>この <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.Filename" /> プロパティは、HTML ファイルの場所と名前を取得または設定します。</para>
+        <remarks><para>プロパティ <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.Filename" /> は、HTML ファイルの場所と名前を取得または設定します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -338,7 +338,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>プロパティ値が <see cref="P:Microsoft.Office.Interop.Excel.PublishObject.SourceType" /> <b>xlSourceRange、</b> <b>xlSourceChart</b>、 <b>xlSourcePrintArea</b>、 <b>xlSourceAutoFilter</b>、 <b>xlSourcePivotTable</b>、または <b>xlSourceQuery</b>の項目を識別する一意の名前を返します。</summary>
+        <summary><see cref="P:Microsoft.Office.Interop.Excel.PublishObject.SourceType" /> <b>xlSourceRange</b>、xlSourceChart、xlSourcePrintArea、xlSourceAutoFilter、xlSourcePivotTable、または<b></b><b></b><b></b><b>xlSourceQuery</b>の<b></b>プロパティ値を持つアイテムを識別する一意の名前を返します。</summary>
         <value>To be added.</value>
         <remarks><para><b>SourceType</b> プロパティの設定が <b>xlSourceRange</b> の場合、範囲を取得します。この場合、範囲に定義された名前を使用できます。<b>SourceType</b> プロパティの設定が <b>xlSourceChart</b>、<b>xlSourcePivotTable</b>、または <b>xlSourceQuery</b> の場合、グラフ名、ピボットテーブル レポート名、クエリ テーブル名など、それぞれのオブジェクト名を取得します。</para>
           <para> </para></remarks>

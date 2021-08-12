@@ -1,5 +1,5 @@
 <Type Name="Point" FullName="Microsoft.Office.Interop.Excel.Point">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="41d76d059050993a028c8b26b1795b64c3e70e33" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997209" /></Metadata><TypeSignature Language="C#" Value="public interface Point" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="991fad0cf35ec6931cabde63ab81cdb20de16673502d2a78ec53178ea4f7a08d" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518483" /></Metadata><TypeSignature Language="C#" Value="public interface Point" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Point" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Point" />
   <TypeSignature Language="VB.NET" Value="Public Interface Point" />
@@ -22,8 +22,8 @@
   </Attributes>
   <Docs>
     <summary>グラフのデータ系列にある 1 つのデータ要素を表します。</summary>
-    <remarks><para><b>Point オブジェクト</b>はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.Points" /> です。 <b>Points</b> コレクションには、1 つのデータ系列にあるすべてのデータ要素が含まれています。</para>
-      <para>ポイント<b></b>( <paramref name="index" /> ) に <paramref name="index" /> ポイントのインデックス番号を使用して、1 つの Point オブジェクトを<b>返</b>します。 Points are numbered from left to right on the series. Points(1) は左端のデータ要素に対応し、Points(Points.Count) は右端のデータ要素に対応します。</para>
+    <remarks><para><b>Point オブジェクト</b>は、コレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.Points" /> です。 <b>Points</b> コレクションには、1 つのデータ系列にあるすべてのデータ要素が含まれています。</para>
+      <para>単 <b>一の Point</b>オブジェクト <paramref name="index" /> を取得するには、ポイントインデックス番号を指定します。ポイント ( ) <paramref name="index" /> <b>を使用</b> します。 Points are numbered from left to right on the series. Points(1) は左端のデータ要素に対応し、Points(Points.Count) は右端のデータ要素に対応します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -87,7 +87,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -123,17 +123,17 @@
         <Parameter Name="Separator" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlDataLabelsType" /> 可能です。 データ ラベルの種類を指定します。 使用できる定数は<b>、XlDataLabelsShowBubbleSizes</b><b>xlDataLabelsShowLabelAndPercent</b> Percentage of the total and category for the point です。 <b></b> 円グラフとドーナツ グラフでのみ使用できます。<b>xlDataLabelsShowPercent</b> 合計の割合。 円グラフとドーナツ グラフでのみ使用できます。<b>xlDataLabelsShowLabel</b> ポイントのカテゴリ。<b>xlDataLabelsShowNone</b> データ ラベルなし。<b>xlDataLabelsShowValue</b> 既定値です。 Value for the point (assumed if this argument isn't specified).</param>
+        <param name="Type">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlDataLabelsType" /> 可能です。 データ ラベルの種類を指定します。 <b>XlDataLabelsType</b>クラスの定数の 1 つを指定できます<b>。xlDataLabelsShowBubbleSizes</b><b>xlDataLabelsShowLabelAndPercent</b>ポイントの合計とカテゴリの割合です。 円グラフとドーナツ グラフでのみ使用できます。<b>xlDataLabelsShowPercent</b> 合計の割合。 円グラフとドーナツ グラフでのみ使用できます。<b>xlDataLabelsShowLabel</b> ポイントのカテゴリ。<b>xlDataLabelsShowNone</b> データ ラベルはありません。<b>xlDataLabelsShowValue</b> 既定値。 Value for the point (assumed if this argument isn't specified).</param>
         <param name="LegendKey">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、要素の隣に凡例マーカーが表示されます。 既定値は <b>False</b> です。</param>
         <param name="AutoText">省略 <b>可能なオブジェクト</b>です。 オブジェクトにより、内容を基にした適切な文字列を自動作成させる場合は <b>True</b> を指定します。</param>
-        <param name="HasLeaderLines">省略 <b>可能なオブジェクト</b>です。 オブジェクトと <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> データ <see cref="T:Microsoft.Office.Interop.Excel.Series" /> 系列に引き出し線がある場合は<b>True。</b></param>
+        <param name="HasLeaderLines">省略 <b>可能なオブジェクト</b>です。 とオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Chart" /> <see cref="T:Microsoft.Office.Interop.Excel.Series" /> の場合、 <b>系列に引き</b> 出し線がある場合は True です。</param>
         <param name="ShowSeriesName">省略 <b>可能なオブジェクト</b>です。 データ ラベルに系列名を表示するかどうかを指定します。</param>
         <param name="ShowCategoryName">省略 <b>可能なオブジェクト</b>です。 データ ラベルに分類名を表示するかどうかを指定します。</param>
         <param name="ShowValue">省略 <b>可能なオブジェクト</b>です。 データ ラベルに値を表示するかどうかを指定します。</param>
         <param name="ShowPercentage">省略 <b>可能なオブジェクト</b>です。 データ ラベルにパーセンテージを表示するかどうかを指定します。</param>
         <param name="ShowBubbleSize">省略 <b>可能なオブジェクト</b>です。 データ ラベルにバブル サイズを表示するかどうかを指定します。</param>
         <param name="Separator">省略 <b>可能なオブジェクト</b>です。 データ ラベルの区切り文字を指定します。</param>
-        <summary>グラフのデータ ポイントにデータ ラベルを適用します。</summary>
+        <summary>グラフ内のポイントにデータ ラベルを適用します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -196,7 +196,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> の 場合は、図は、データ系列内のすべてのポイントまたはポイントの前面に適用されます。</summary>
+        <summary><b>True</b> の場合は、図が系列内のポイントまたはすべてのポイントの前面に適用されます。</summary>
         <value>To be added.</value>
         <remarks><para>このプロパティは、3-D グラフにのみ適用されます。</para>
           <para> </para></remarks>
@@ -260,7 +260,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Border</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 境界線を表すオブジェクトを返します。</summary>
+        <summary>オブジェクトの罫 <see cref="T:Microsoft.Office.Interop.Excel.Border" /> 線を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -312,7 +312,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>データ系列に図の塗りつぶしがある場合は、図をクリップボードにコピーします。</summary>
+        <summary>ポイントまたは系列に画像の塗りつぶしがある場合は、図をクリップボードにコピーします。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -370,9 +370,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DataLabel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>点または傾向 <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> 線に関連付けられているデータ ラベルを表すオブジェクトを返します。</summary>
+        <summary>ポイントまたはトレンド <see cref="T:Microsoft.Office.Interop.Excel.DataLabel" /> ラインに関連付けられたデータ ラベルを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks><para>To turn on data labels for a trendline you need to set the <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayEquation" /> property or the property to <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayRSquared" /> <b>True</b>.</para>
+        <remarks><para>傾向線のデータ ラベルを有効にするには、プロパティまたはプロパティを True <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayEquation" /> <see cref="P:Microsoft.Office.Interop.Excel.Trendline.DisplayRSquared" /> に設定する必要 <b>があります</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -399,7 +399,7 @@
       <Docs>
         <summary>オブジェクトを削除します。</summary>
         <returns>To be added.</returns>
-        <remarks><para>オブジェクトを削除 <see cref="T:Microsoft.Office.Interop.Excel.Point" /> すると、データ系列全体が削除されます。</para>
+        <remarks><para>オブジェクトを削除 <see cref="T:Microsoft.Office.Interop.Excel.Point" /> すると、系列全体が削除されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -460,7 +460,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ChartFillFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した図形のオブジェクト、または図形またはグラフの塗りつぶしの書式プロパティを含む指定されたグラフのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> を返します。</summary>
+        <summary>指定した図形のオブジェクト、または図形またはグラフの塗りつぶし書式プロパティを含む指定したグラフの <see cref="T:Microsoft.Office.Interop.Excel.FillFormat" /> <see cref="T:Microsoft.Office.Interop.Excel.ChartFillFormat" /> オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -519,9 +519,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>点の外観が 3 次元の場合に示す値を設定します。 読み取り/書き込み可能。</summary>
-        <value>Boolean</value>
-        <remarks><para>点の外観が 3 次元の場合はTrue を返します。 </para>
+        <summary>ポイントの外観が 3 次元の場合に表示される値を設定します。 読み取り/書き込み可能。</summary>
+        <value>ブール値</value>
+        <remarks><para>ポイントの外観が 3 次元の場合は True を返します。 </para>
           <para>このプロパティは、バブルチャートにのみ使用できます。</para>
           <para> </para></remarks>
       </Docs>
@@ -580,7 +580,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの高さをポイント数で取得します。</summary>
+        <summary>オブジェクトの高さをポイントで取得します。</summary>
         <value>オブジェクトのポイント単位の高さです。</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
@@ -671,8 +671,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの左側からグラフ エリアの左側までの距離をポイント数で表す値を取得します。</summary>
-        <value>オブジェクトの左側からグラフ エリアの左側までの距離をポイント数で指定します。</value>
+        <summary>オブジェクトの左端からグラフ領域の左端までの距離をポイントで表す値を取得します。</summary>
+        <value>オブジェクトの左端からグラフ領域の左端までの距離をポイントで指定します。</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
       </Docs>
@@ -734,7 +734,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>マーカーの背景色を、現在のカラー パレットのインデックスとして、または定数 <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> <b>xlColorIndexAutomatic</b> または <b>xlColorIndexNone</b>として設定します。 折れ線グラフ、散布図、レーダー チャートにのみ適用されます。</summary>
+        <summary>マーカーの背景色をインデックスとして現在のカラー パレットに設定するか、または次の定数の 1 つとして設定します <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> <b>。xlColorIndexAutomatic</b> または <b>xlColorIndexNone を指定します</b>。 折れ線グラフ、散布図、レーダー チャートにのみ適用されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -796,7 +796,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlColorIndex</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>マーカーの前景色を、現在のカラー パレットのインデックスとして、または定数 <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> <b>xlColorIndexAutomatic</b> または <b>xlColorIndexNone</b>として設定します。 折れ線グラフ、散布図、レーダー チャートにのみ適用されます。</summary>
+        <summary>マーカーの前景色をインデックスとして現在のカラー パレットに設定するか、または次の定数の 1 つとして設定します <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> <b>。xlColorIndexAutomatic</b> または <b>xlColorIndexNone</b>。 折れ線グラフ、散布図、レーダー チャートにのみ適用されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -827,7 +827,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>データ マーカーのサイズをポイント数で設定または返します。</summary>
+        <summary>データ マーカーのサイズをポイントで設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -858,10 +858,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlMarkerStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、線グラフ、散布図、またはレーダー チャートのデータ系列またはデータ系列のマーカーのスタイルを設定します。</summary>
+        <summary>線グラフ、散布図、またはレーダー グラフのポイントまたは系列のマーカー スタイルを設定または返します。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlMarkerStyle" /> 使用できる定数は、次に示す <b>XlMarkerStyle</b> クラスの定数です。</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlMarkerStyle" /> 次の <b>XlMarkerStyle</b> クラスの定数のいずれかを指定できます。</para>
           <para>
             <b>xlMarkerStyleAutomatic</b> 自動マーカー</para>
           <para>
@@ -970,7 +970,7 @@
       <Docs>
         <summary>クリップボードの図をマーカーとして、選択された要素に貼り付けます。</summary>
         <returns>To be added.</returns>
-        <remarks><para><b>Paste</b>メソッドは、列グラフ、棒グラフ、線グラフ、またはレーダー チャートで使用できます。また、プロパティを <see cref="P:Microsoft.Office.Interop.Excel.Point.MarkerStyle" /> <b>xlMarkerStylePicture に設定します</b>。</para>
+        <remarks><para><b>Paste メソッド</b>は、列グラフ、棒グラフ、線グラフ、レーダー グラフで使用できます。プロパティを <see cref="P:Microsoft.Office.Interop.Excel.Point.MarkerStyle" /> <b>xlMarkerStylePicture に設定します</b>。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1000,10 +1000,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlChartPictureType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>列グラフまたは棒グラフにピクチャを表示する方法を設定または返します。</summary>
+        <summary>列または棒グラフに画像を表示する方法を設定または返します。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlChartPictureType" /> 使用できる定数は、 <b>次に示す XlChartPictureType</b> 定数です。</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlChartPictureType" /> 次の <b>XlChartPictureType 定数のいずれかを</b> 指定できます。</para>
           <para>
             <b>xlStack</b>
           </para>
@@ -1048,7 +1048,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>プロパティが xlStackScale に設定されている場合、グラフの各図の単位を取得または設定します (設定されていない場合、この <see cref="P:Microsoft.Office.Interop.Excel.Point.PictureType" /> プロパティは無視されます)。 <b></b></summary>
+        <summary>プロパティが xlStackScale に設定されている場合は、グラフの各図の単位を設定します (指定しない場合、この <see cref="P:Microsoft.Office.Interop.Excel.Point.PictureType" /> プロパティは無視されます)。 <b></b></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1079,7 +1079,7 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>プロパティが xlStackScale に設定されている場合、グラフの各図の単位を取得または設定します (設定されていない場合、この <see cref="P:Microsoft.Office.Interop.Excel.Point.PictureType" /> プロパティは無視されます)。 <b></b> 値の取得と設定が可能です。</summary>
+        <summary>プロパティが xlStackScale に設定されている場合は、グラフの各図の単位を設定します (指定しない場合、この <see cref="P:Microsoft.Office.Interop.Excel.Point.PictureType" /> プロパティは無視されます)。 <b></b> 値の取得と設定が可能です。</summary>
         <value><b>Double</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1110,7 +1110,7 @@
         <param name="loc">水平方向または垂直方向の座標を指定します。</param>
         <param name="Index">取得する扇形の位置の座標を指定します。 既定値は <see cref="F:Microsoft.Office.Interop.Excel.XlPieSliceIndex.xlOuterCenterPoint" /> です。</param>
         <summary>グラフ項目上の点の垂直方向または水平方向の位置を (オブジェクトの上端または左端からグラフ エリアの上端または左端までの) ポイント単位で返します。</summary>
-        <returns>オブジェクトの上端または左端からグラフ エリアの上端または左端まで、グラフ アイテムのポイントの垂直位置または水平位置をポイント数で指定します。</returns>
+        <returns>オブジェクトの上端または左端からグラフ領域の上端または左端まで、グラフ アイテム上のポイントの垂直方向または水平方向の位置をポイントで指定します。</returns>
         <remarks><para>このプロパティは、円グラフおよびドーナツ グラフにのみ使用できます。</para>
           <para> </para></remarks>
       </Docs>
@@ -1141,7 +1141,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> の 場合は、円グラフの円グラフまたは円グラフの棒の 2 番目のセクションにポイントがあります。 円グラフ付き円グラフまたは円グラフ付き円グラフのポイントにのみ適用されます。</summary>
+        <summary><b>True</b> の場合は、円グラフの円グラフまたは円グラフの棒グラフのいずれかのセカンダリ セクションにポイントがあります。 円グラフまたは円グラフの棒グラフの円グラフ上のポイントにのみ適用されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1198,7 +1198,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> の 場合は、フォントが影付きフォントまたはオブジェクトに影がある場合です。</summary>
+        <summary><b>True</b> の場合は、フォントがシャドウ フォントか、オブジェクトに影が付く場合。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1226,8 +1226,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの上端からグラフ エリアの上端までの距離をポイント数で表す値を取得します。</summary>
-        <value>オブジェクトの上端からグラフ エリアの上端までの距離をポイント数で指定します。</value>
+        <summary>オブジェクトの上端からグラフ領域の上端までの距離をポイントで表す値を取得します。</summary>
+        <value>オブジェクトの上端からグラフ領域の上端までの距離をポイントで指定します。</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
       </Docs>

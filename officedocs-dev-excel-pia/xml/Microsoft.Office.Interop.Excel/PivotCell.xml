@@ -1,5 +1,5 @@
 <Type Name="PivotCell" FullName="Microsoft.Office.Interop.Excel.PivotCell">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d2f870880113d0a92987ae33be86341048714031" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010935" /></Metadata><TypeSignature Language="C#" Value="public interface PivotCell" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fbbdae64cf7a054bab0c86aad763673fe235fd17db6bf4e764080c5fc2243be9" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518742" /></Metadata><TypeSignature Language="C#" Value="public interface PivotCell" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotCell" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotCell" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotCell" />
@@ -22,9 +22,9 @@
   </Attributes>
   <Docs>
     <summary>ピボットテーブル レポート内のセルを表します。</summary>
-    <remarks><para><see cref="P:Microsoft.Office.Interop.Excel.Range.PivotCell" />PivotCell オブジェクトを取得 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> するには、コレクション<b>のプロパティを使用</b>します。</para>
-      <para><b>PivotCell オブジェクトが</b>返された後、このプロパティを使用して、特定の範囲のセルの種類 <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.PivotCellType" /> を確認できます。</para>
-      <para>またはプロパティを使用すると、選択した数値を表す列軸または行軸の項目に対応するコレクション <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> を特定できます。</para>
+    <remarks><para>PivotCell <see cref="P:Microsoft.Office.Interop.Excel.Range.PivotCell" /> オブジェクトを取得 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> するには、コレクションの <b>プロパティを使用</b> します。</para>
+      <para><b>PivotCell オブジェクトが</b>返された後、プロパティを使用して、特定の範囲のセルの種類 <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.PivotCellType" /> を特定できます。</para>
+      <para>or プロパティを使用して、選択した番号を表す列軸または行軸の項目に対応するコレクション <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" /> <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> を決定できます。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -50,8 +50,8 @@
       <Parameters />
       <Docs>
         <summary>OLAP データ ソースに基づくピボットテーブル レポートの指定したセルで書き戻し操作を実行します。</summary>
-        <remarks><para>このメソッドは、UPDATE CUBE ステートメントを実行して、この特定のセルの変更を追加しますが、以前に適用された変更も含まれます。 UPDATE CUBE ステートメントの実行後は、ピボットテーブルの更新が実行され、次に ROLLBACK TRANSACTION ステートメントが実行されます。</para>
-          <para>OLAP 以外のデータ ソースに基づくピボットテーブル レポートのセルに対してメソッドを実行すると、実行時 <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.AllocateChange" /> エラーが発生します。</para>
+        <remarks><para>このメソッドは UPDATE CUBE ステートメントを実行して、この特定のセルに変更を追加しますが、以前に適用された変更も含まれます。 UPDATE CUBE ステートメントの実行後は、ピボットテーブルの更新が実行され、次に ROLLBACK TRANSACTION ステートメントが実行されます。</para>
+          <para><see cref="M:Microsoft.Office.Interop.Excel.PivotCell.AllocateChange" />OLAP 以外のデータ ソースに基づいてピボットテーブル レポート内のセルのメソッドを実行すると、実行時エラーが発生します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -78,7 +78,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -106,11 +106,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCellChangedState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ピボットテーブル レポートが作成された後、または最後のコミット操作が実行された後に、ピボットテーブル値セルが編集または再計算されたかどうかを取得します。</summary>
+        <summary>ピボットテーブル レポートが作成された後、または最後のコミット操作が実行された後にピボットテーブル値セルが編集または再計算されたかどうかを取得します。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCellChangedState" /> オブジェクト。</value>
-        <remarks><para>プロパティの値 <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> は既定 <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> で設定されています。</para>
-          <para>OLAP 以外のデータ ソースを持つピボットテーブル レポートの場合、このプロパティの値は次のいずれかまたは <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> のいずれかになります <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> 。 編集されていないセル用であり、編集されたセル <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> 用です。 変更を破棄すると、その値が設定されます <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> 。</para>
-          <para>変更の適用と保存は、OLAP データ ソースを使用しているピボットテーブルにのみ適用されます。 次に示すプロパティの状態の説明は、OLAP データ ソースを持つ <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> ピボットテーブルにのみ適用されます。</para>
+        <remarks><para>プロパティの値 <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> は既定 <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> です。</para>
+          <para>OLAP 以外のデータ ソースを持つピボットテーブル レポートの場合、このプロパティの値は、 または <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> のいずれかです。 編集されていないセル、および編集されたセル <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> 用です。 変更を破棄すると、その値はに設定されます <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> 。</para>
+          <para>変更の適用と保存は、OLAP データ ソースを使用しているピボットテーブルにのみ適用されます。 プロパティの可能な状態の次の説明は、OLAP データ ソースを持つ <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> ピボットテーブルにのみ適用されます。</para>
           <list type="bullet">
             <item>
               <description>
@@ -118,14 +118,14 @@
             </item>
             <item>
               <description>
-                <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> - ピボットテーブルの作成後、または最後の変更の適用または変更の保存操作が実行された後で、セルが編集または再計算されましたが、その変更はまだ適用されていません (UPDATE CUBE ステートメントは実行されていません)。</description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> - ピボットテーブルが作成された後、または変更の最後の適用操作または保存操作が実行された後、セルが編集または再計算されましたが、その変更がまだ適用されていません (UPDATE CUBE ステートメントは実行されていません)。</description>
             </item>
             <item>
               <description>
-                <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />- ピボットテーブルの作成後、または最後の変更の適用、変更の保存、または変更の破棄操作が実行され、その変更が適用された (UPDATE CUBE ステートメントが実行された) 以降、セルは編集または再計算されています。</description>
+                <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" />- ピボットテーブルが作成された後、または変更の最後の適用、変更の保存、または変更の破棄操作が実行された後で、セルが編集または再計算され、その変更が適用されています (UPDATE CUBE ステートメントが実行されています)。</description>
             </item>
           </list>
-          <para>次の表では、OLAP データ ソースを使用するピボットテーブルのプロパティの設定に対して、ユーザーによるさまざまなアクションがどのように影響を <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> 与えるのかについて説明します。</para>
+          <para>次の表は、OLAP データ ソースを使用したピボットテーブルのプロパティの設定にユーザーが異なるアクションを適用する方法 <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.CellChanged" /> を示しています。</para>
           <list type="table">
             <item>
               <term>単一のセルまたは複数のセルに値または数式を入力します。</term>
@@ -139,18 +139,18 @@
             </item>
             <item>
               <term>変更を保存 (確定) します。</term>
-              <description>数式を <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> 含めずに編集されたセルに設定します。</description>
-              <description>数式を <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> 含むすべての編集されたセルに設定します。</description>
+              <description>数式を <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> 含めずに編集したセルすべてに設定します。</description>
+              <description>数式を <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> 含むすべての編集セルに設定します。</description>
             </item>
             <item>
               <term>すべての変更を破棄します。</term>
-              <description>数式を <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> 含めずに編集されたセルに設定します。</description>
-              <description>数式を <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> 含むすべての編集されたセルに設定します。</description>
+              <description>数式を <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> 含めずに編集したセルすべてに設定します。</description>
+              <description>数式を <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> 含むすべての編集セルに設定します。</description>
             </item>
             <item>
               <term>単一のセルで変更を破棄します。</term>
-              <description>そのセル <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> に対してだけ設定します。</description>
-              <description>そのセル <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> に対してだけ設定します。</description>
+              <description>そのセル <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> にのみ設定します。</description>
+              <description>そのセル <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> にのみ設定します。</description>
             </item>
             <item>
               <term>1 回の操作で複数のセルをクリアします。</term>
@@ -159,18 +159,18 @@
             </item>
             <item>
               <term>単一のセルをクリアします。</term>
-              <description>そのセル <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> に対してだけ設定します。</description>
-              <description>そのセル <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> に対してだけ設定します。</description>
+              <description>そのセル <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> にのみ設定します。</description>
+              <description>そのセル <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellNotChanged" /> にのみ設定します。</description>
             </item>
             <item>
               <term>値を適用する前に元に戻す操作を実行して、以前に編集した値に戻します。</term>
-              <description>数式を <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> 含めずに編集されたセルすべてに設定します。</description>
-              <description>数式を <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> 含むすべての編集されたセルに設定します。</description>
+              <description>数式を <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> 含めずに編集したセルすべてに設定します。</description>
+              <description>数式を <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChanged" /> 含むすべての編集セルに設定します。</description>
             </item>
             <item>
               <term>値を適用した後で元に戻す操作を実行して、以前に編集した値に戻します。</term>
-              <description>数式を <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> 含めずに編集されたセルに設定します。</description>
-              <description>数式を <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> 含むすべての編集されたセルに設定します。</description>
+              <description>数式を <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> 含めずに編集したセルすべてに設定します。</description>
+              <description>数式を <see cref="F:Microsoft.Office.Interop.Excel.XlCellChangedState.xlCellChangeApplied" /> 含むすべての編集セルに設定します。</description>
             </item>
           </list>
           <para> </para></remarks>
@@ -199,7 +199,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotItemList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>選択した範囲 <see cref="T:Microsoft.Office.Interop.Excel.PivotItemList" /> を表す列軸の項目に対応するコレクションを返します。</summary>
+        <summary>選択した範囲 <see cref="T:Microsoft.Office.Interop.Excel.PivotItemList" /> を表す列軸上のアイテムに対応するコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -257,10 +257,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlConsolidationFunction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトのユーザー設定の小計関数フィールド設定を返 <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> します。</summary>
+        <summary>オブジェクトのカスタム小計関数フィールド設定を返 <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> します。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" /> 使用できる定数は、 <b>次に示す XlConsolidationFunction 定数</b> です。</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" /> 次の <b>XlConsolidationFunction 定数のいずれかを</b> 指定できます。</para>
           <para>
             <b>xlAverage</b>
           </para>
@@ -324,9 +324,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>選択した <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> データ フィールドに対応するオブジェクトを返します。</summary>
+        <summary>選択したデータ <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> フィールドに対応するオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks><para><b>PivotCell</b>オブジェクトが使用できる型の 1 つではない場合、このプロパティはエラーを返します: XlPivotCellTypeValue、XlPivotCellTypeDataField、XlPivotCellTypeSubtotal、または<b>XlPivotCellTypeGrandTotal</b>。 <b></b> <b></b> <b></b></para>
+        <remarks><para>PivotCell オブジェクトが許可される型<b></b>の 1 つではない場合、このプロパティはエラーを返します<b>。XlPivotCellTypeValue、XlPivotCellTypeDataField、XlPivotCellTypeSubtotal、</b><b>または XlPivotCellTypeGrandTotal</b>です。 <b></b> <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -353,11 +353,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ピボットテーブル レポートで編集されたセルのデータ ソースから最後に取得された値を取得します。</summary>
-        <value>ピボットテーブル レポートの編集されたセルのデータ ソースから最後に取得された値。</value>
+        <summary>ピボットテーブル レポートで編集されたセルのデータ ソースから最後に取得した値を取得します。</summary>
+        <value>ピボットテーブル レポートで編集されたセルのデータ ソースから最後に取得された値。</value>
         <remarks><para>読み取り専用です。</para>
-          <para>ピボットテーブル レポートの値領域内のセルが編集されると、プロパティには、編集が行う前にデータ ソースから最後に取得された値が <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> 保持されます。 編集されていない、またはデータ ソース値が明示的に取得されていないピボットテーブル レポート値のセルの場合、このプロパティは null 参照を返します (Nothing in Visual Basic)。 OLAP データ ソースを含むピボットテーブル レポートの場合、プロパティの値は別の接続から取得され、ユーザーが行った可能性のある書き戻し操作の値が含まれるのを確認します。 <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /></para>
-          <para>ピボットテーブル レポートの値領域の外部にあるセルのプロパティを読み取る場合は、実行時 <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> エラーが発生します。</para>
+          <para>ピボットテーブル レポートの値領域内のセルが編集されるたびに、プロパティは、編集が行う前にデータ ソースから最後に取得された値 <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> を保持します。 編集されていないピボットテーブル レポート値セル、またはデータ ソース値が明示的に取得されていない場合、このプロパティは null 参照を返します (Visual Basic では Nothing)。 OLAP データ ソースを含むピボットテーブル レポートの場合、プロパティの値は別の接続から取得され、ユーザーが行った可能性のある書き戻し操作の値が含まれている可能性があります <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> 。</para>
+          <para>ピボットテーブル レポートの値領域の外側にあるセルのプロパティを読み取る場合、実行時 <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.DataSourceValue" /> エラーが発生します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -383,7 +383,7 @@
       <Parameters />
       <Docs>
         <summary>ピボットテーブル レポート内の指定したセルの変更を破棄します。</summary>
-        <remarks><para>OLAP データ ソースに基づくピボットテーブルのセルの場合、メソッドは指定されたセルに入力された値または数式を削除し、ピボットテーブルの更新を実行してデータ ソースから最新の値を取得します。 <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" /> データ ソースの値は、指定されたセルに対してこのメソッドによって null 参照 (Visual Basic 内の Nothing) に設定されます。 また、このメソッドは、Excel の変更リストからこのセルに加えたすべての変更を削除し、データ ソースの UPDATE CUBE ステートメントに含めません。 このメソッドは、トランザクションで行われた他のすべての変更のセッション状態も再作成します。 これには、ROLLBACK TRANSACTION ステートメントの実行、指定したセルを除くすべての変更を含む UPDATE CUBE ステートメントの実行が含まれます。 OLAP 以外のデータ ソースに基づくピボットテーブル内のセルの場合、このメソッドは編集されたセルをクリアします。</para>
+        <remarks><para>OLAP データ ソースに基づくピボットテーブル内のセルの場合、メソッドは指定したセルに入力された値または数式を削除し、ピボットテーブル更新プログラムを実行してデータ ソースから最新の値を取得します。 <see cref="M:Microsoft.Office.Interop.Excel.PivotCell.DiscardChange" /> データ ソースの値は、指定したセルに対してこのメソッドによって null 参照 (Visual Basic 内の Nothing) に設定されます。 また、このメソッドは、Excel の変更リストからこのセルに加えたすべての変更を削除し、データ ソースの UPDATE CUBE ステートメントに含めなくなりました。 また、このメソッドは、トランザクションで行われた他のすべての変更に対してセッション状態を再作成します。 これには、ROLLBACK TRANSACTION ステートメントの実行、および指定したセルを除くすべての変更を含む UPDATE CUBE ステートメントの実行が含まれます。 OLAP 以外のデータ ソースに基づくピボットテーブル内のセルの場合、このメソッドは編集されたセルをクリアします。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -444,7 +444,7 @@
         <summary>OLAP データ ソースを持つピボットテーブルの指定された値セルの完全な MDX 座標を提供する組を取得します。</summary>
         <value>OLAP データ ソースを持つピボットテーブルの指定された値セルの完全な MDX 座標を提供する組。</value>
         <remarks><para>読み取り専用です。</para>
-          <para>プロパティによって組で返される次元には、行座標と列座標、およびレポート フィルター座標 <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.MDX" /> が含まれます。 ピボットテーブルの値の領域外のセルおよびピボットテーブル外のセルの場合、このプロパティにアクセスすると、実行時エラーが生成されます。 レポート フィルター フィールドに複数項目の選択肢があるピボットテーブルの場合も、このプロパティにアクセスすると、実行時エラーが生成されます。</para>
+          <para>プロパティによって組で返されるディメンションには、行座標と列座標、およびレポート フィルター <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.MDX" /> 座標が含まれます。 ピボットテーブルの値の領域外のセルおよびピボットテーブル外のセルの場合、このプロパティにアクセスすると、実行時エラーが生成されます。 レポート フィルター フィールドに複数項目の選択肢があるピボットテーブルの場合も、このプロパティにアクセスすると、実行時エラーが生成されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -502,7 +502,7 @@
         <summary>セルが対応するピボットテーブル エンティティを識別する定数を返します。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlPivotCellType" /> 使用できる定数は、 <b>次に示す XlPivotCellType</b> 定数です。</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlPivotCellType" /> 次の <b>XlPivotCellType 定数のいずれかを</b> 指定できます。</para>
           <para>
             <b>xlPivotCellBlankCell</b> ピボットテーブル内の構造空白セル。</para>
           <para>
@@ -549,11 +549,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotLine</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>特定の <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /> PivotCell オブジェクトの列上の  <b>列を返</b> します。 読み取り専用です。</summary>
+        <summary>特定の <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />  <b>PivotCell</b> オブジェクトの列の on を返します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /></value>
-        <remarks><para><b>PivotCell が行</b>にある場合<b>、PivotColumnLine</b>プロパティは実行時エラーを返します。</para>
-          <para><b>PivotCell が列</b>にある場合<b>、PivotColumnLine</b>プロパティは列<b>PivotLine オブジェクトを返</b>します。</para>
-          <para><b>PivotCell がデータ</b>エリア内にある場合<b>、PivotColumnLine</b>プロパティは対応する列<b>PivotLine オブジェクトを返</b>します。</para>
+        <remarks><para><b>PivotCell が行</b>の場合<b>、PivotColumnLine</b>プロパティは実行時エラーを返します。</para>
+          <para>PivotCell <b>が列</b> の場合 <b>、PivotColumnLine</b> プロパティは、PivotLine オブジェクトの列 <b>を返</b> します。</para>
+          <para>PivotCell <b>がデータ</b> 領域にある場合 <b>、PivotColumnLine</b> プロパティは、対応する列 <b>PivotLine オブジェクトを返</b> します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -580,7 +580,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した範囲の左上隅を含むピボットテーブル フィールドを表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> を返します。</summary>
+        <summary>指定した範囲の左上隅を含むピボットテーブル フィールドを表す <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -608,7 +608,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した範囲の左上隅を含むピボットテーブル アイテムを表 <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> すオブジェクトを返します。</summary>
+        <summary>指定した範囲の左上隅を含むピボットテーブル アイテムを表す <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -636,11 +636,11 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotLine</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>特定の <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />  <b>PivotCell</b> オブジェクトの行上のオブジェクトを返します。 取得のみ可能な <b>PivotLine</b> 値です。</summary>
+        <summary>特定の <see cref="T:Microsoft.Office.Interop.Excel.PivotLine" />  <b>PivotCell</b> オブジェクトの行の on を返します。 取得のみ可能な <b>PivotLine</b> 値です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.PivotLine" /></value>
-        <remarks><para><b>PivotCell が行</b>にある場合<b>、PivotRowLine</b>は行の<b>PivotLine オブジェクトを返</b>します。</para>
-          <para><b>PivotCell が列</b>にある場合<b>、PivotRowLine</b>は実行時エラーを返します。</para>
-          <para><b>PivotCell が</b>データエリア内にある場合<b>、PivotRowLine</b>は対応する行の<b>PivotLine オブジェクトを返</b>します。</para>
+        <remarks><para>PivotCell <b>が行</b> の場合 <b>、PivotRowLine は</b> 行の <b>PivotLine オブジェクトを返</b> します。</para>
+          <para>ピボットセル <b>が列</b> にある場合 <b>、PivotRowLine は</b>  実行時エラーを返します。</para>
+          <para>PivotCell <b>がデータ</b> 領域にある場合 <b>、PivotRowLine は</b> 対応する行の <b>PivotLine オブジェクトを返</b> します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -667,7 +667,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定範囲の左上隅を含むピボットテーブル レポート、またはピボットグラフ レポートに関連付けられたピボットテーブル レポートを表すオブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 返します。</summary>
+        <summary>指定した範囲の左上隅を含むピボットテーブル レポート、またはピボットテーブル レポートに関連付けられたピボットテーブル レポートを表すオブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> ピボットグラフします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -695,7 +695,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.Range" /> PivotCell が適用される範囲を表すオブジェクトを返します。</summary>
+        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.Range" /> PivotCell が適用する範囲を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -723,7 +723,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotItemList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>選択したセル <see cref="T:Microsoft.Office.Interop.Excel.PivotItemList" /> を表す項目軸の項目に対応するコレクションを返します。</summary>
+        <summary>選択したセルを表すカテゴリ軸上のアイテム <see cref="T:Microsoft.Office.Interop.Excel.PivotItemList" /> に対応するコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

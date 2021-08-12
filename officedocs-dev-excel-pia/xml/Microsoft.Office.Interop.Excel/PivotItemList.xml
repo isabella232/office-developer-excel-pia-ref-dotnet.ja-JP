@@ -1,5 +1,5 @@
 <Type Name="PivotItemList" FullName="Microsoft.Office.Interop.Excel.PivotItemList">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="262aa442811c81a69cf1d71e4b2a4d52c05f86c0" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010802" /></Metadata><TypeSignature Language="C#" Value="public interface PivotItemList : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="678999535a33acfb5578313326329fd9a90387d33099afd3b23de1ffa9314ac4" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518910" /></Metadata><TypeSignature Language="C#" Value="public interface PivotItemList : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PivotItemList implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PivotItemList" />
   <TypeSignature Language="VB.NET" Value="Public Interface PivotItemList&#xA;Implements IEnumerable" />
@@ -25,9 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>指定されたピボットテーブル <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> 内のすべてのオブジェクトのコレクションです。 各 <b>PivotItem</b> は、ピボットテーブル フィールド内のアイテムを表します。</summary>
-    <remarks><para>オブジェクトの <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" /> プロパティ <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" /> を使用して <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> <b>PivotItemList コレクションを取得</b> します。</para>
-      <para><b>PivotItemList コレクション</b>が返された後、このメソッドを使用して特定の <see cref="M:Microsoft.Office.Interop.Excel.PivotItemList.Item(System.Object)" /> <b>PivotItem リストを識別</b>できます。</para>
+    <summary>指定したピボットテーブル <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> 内のすべてのオブジェクトのコレクション。 各 <b>PivotItem</b> は、ピボットテーブル フィールド内のアイテムを表します。</summary>
+    <remarks><para><see cref="P:Microsoft.Office.Interop.Excel.PivotCell.RowItems" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotCell.ColumnItems" /> PivotItemList コレクションを取得 <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> するには、オブジェクトの<b>or プロパティを使用</b>します。</para>
+      <para><b>PivotItemList</b>コレクションが返された後、メソッドを使用して特定の <see cref="M:Microsoft.Office.Interop.Excel.PivotItemList.Item(System.Object)" /> <b>PivotItem リストを識別</b>できます。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -89,7 +89,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。 読み取り専用です。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。 読み取り専用です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -206,10 +206,10 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">必須<b>オブジェクト 。</b> オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
-        <remarks><para>オブジェクトのテキスト名は、プロパティの値 <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Name" /> <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Value" /> です。 OLAP (Online Analytical Processing) データ ソースの場合、値はプロパティの値と同 <see cref="P:Microsoft.Office.Interop.Excel._OLEObject.SourceName" /> じになります。 その他のデータ ソースの場合、値はプロパティの値と同 <see cref="P:Microsoft.Office.Interop.Excel._Application.Caption" /> じになります。</para>
+        <remarks><para>オブジェクトのテキスト名は、and プロパティの <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Name" /> 値 <see cref="P:Microsoft.Office.Interop.Excel.PivotItem.Value" /> です。 Online 分析処理 (OLAP) データ ソースの場合、値はプロパティの値と等 <see cref="P:Microsoft.Office.Interop.Excel._OLEObject.SourceName" /> しくなります。 他のデータ ソースの場合、値はプロパティの値と等 <see cref="P:Microsoft.Office.Interop.Excel._Application.Caption" /> しくなります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -236,7 +236,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

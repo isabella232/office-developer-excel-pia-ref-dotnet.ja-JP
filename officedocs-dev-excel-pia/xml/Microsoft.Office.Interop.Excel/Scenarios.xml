@@ -1,5 +1,5 @@
 <Type Name="Scenarios" FullName="Microsoft.Office.Interop.Excel.Scenarios">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ae2d83b0cebf35ca68c44e96b1d08c3bd0e82529" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010466" /></Metadata><TypeSignature Language="C#" Value="public interface Scenarios : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f05ebf37586e1c931e1afca777bd6c97bc0ac8caf386737ec0631e3bf5e87e3e" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518462" /></Metadata><TypeSignature Language="C#" Value="public interface Scenarios : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Scenarios implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Scenarios" />
   <TypeSignature Language="VB.NET" Value="Public Interface Scenarios&#xA;Implements IEnumerable" />
@@ -25,10 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>指定されたワークシートのすべての <see cref="T:Microsoft.Office.Interop.Excel.Scenario" /> オブジェクトのコレクションです。 シナリオとは、名前を付け保存する入力値 (と呼 <paramref name="changing cells" /> ばれる) のグループです。</summary>
-    <remarks><para>Scenarios コレクション <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Scenarios(System.Object)" /> を取得するには、このメソッド <b>を使用</b> します。</para>
-      <para>このメソッド <see cref="M:Microsoft.Office.Interop.Excel.Scenarios.Add(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)" /> を使用して、新しいシナリオを作成し、コレクションに追加します。</para>
-      <para>Use <b>Scenarios</b>( <paramref name="index" /> ), where is the scenario name or index <paramref name="index" /> number, to return a single <b>Scenario</b> object.</para>
+    <summary>指定したワークシート上のすべての <see cref="T:Microsoft.Office.Interop.Excel.Scenario" /> オブジェクトのコレクション。 シナリオは、名前が付いて保存されている入力値 ( <paramref name="changing cells" /> と呼ばれる) のグループです。</summary>
+    <remarks><para>このメソッドを <see cref="M:Microsoft.Office.Interop.Excel._Worksheet.Scenarios(System.Object)" /> 使用して <b>、Scenarios コレクションを取得</b> します。</para>
+      <para>新しい <see cref="M:Microsoft.Office.Interop.Excel.Scenarios.Add(System.String,System.Object,System.Object,System.Object,System.Object,System.Object)" /> シナリオを作成し、コレクションに追加するには、このメソッドを使用します。</para>
+      <para>単<b>一の Scenario</b>オブジェクト <paramref name="index" /> を取得するには <paramref name="index" /> 、シナリオ名またはインデックス番号を<b></b>使用します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -60,8 +60,8 @@
       </Parameters>
       <Docs>
         <param name="Name"><b>文字列</b> が必要です。 シナリオの名前を指定します。</param>
-        <param name="ChangingCells">Required <b>Object</b>. シナリオ <see cref="T:Microsoft.Office.Interop.Excel.Range" /> の変化するセルを参照するオブジェクト。</param>
-        <param name="Values">省略 <b>可能なオブジェクト</b>です。 内のセルのシナリオの値を含む配列 <paramref name="ChangingCells" /> です。 この引数を省略すると、シナリオの値は、内のセルの現在の値であると見なされます <paramref name="ChangingCells" /> 。</param>
+        <param name="ChangingCells">必須<b>オブジェクト 。</b> シナリオ <see cref="T:Microsoft.Office.Interop.Excel.Range" /> の変更セルを参照するオブジェクト。</param>
+        <param name="Values">省略 <b>可能なオブジェクト</b>です。 内のセルのシナリオ値を含む配列 <paramref name="ChangingCells" /> です。 この引数を省略すると、シナリオの値は 、 のセル内の現在の値と見なされます <paramref name="ChangingCells" /> 。</param>
         <param name="Comment">省略 <b>可能なオブジェクト</b>です。 シナリオの説明を示す文字列を指定します。 新しいシナリオを追加すると、作成者の名前と作成日がコメントの先頭に自動的に追加されます。</param>
         <param name="Locked">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、シナリオを変更できないようにロックします。 既定値は <b>True</b> です。</param>
         <param name="Hidden">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、シナリオを表示しません。 既定値は <b>False</b> です。</param>
@@ -94,7 +94,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -151,8 +151,8 @@
       </Parameters>
       <Docs>
         <param name="ReportType">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSummaryReportType" /> 可能です。</param>
-        <param name="ResultCells">省略 <b>可能なオブジェクト</b>です。 指定 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> されたワークシートの結果セルを表すオブジェクト。 通常、この範囲は、モデルの変化するセル値 (つまり、特定のシナリオの結果を示すセル) に依存する数式を含む 1 つ以上のセルを参照します。 この引数を省略すると、結果出力セルのないレポートが作成されます。</param>
-        <summary>指定されたワークシートのシナリオの概要レポートを含む新しいワークシートを作成します。</summary>
+        <param name="ResultCells">省略 <b>可能なオブジェクト</b>です。 指定 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> したワークシートの結果セルを表すオブジェクト。 通常、この範囲は、モデルのセル値の変化に依存する数式 (つまり、特定のシナリオの結果を示すセル) を含む 1 つ以上のセルを表します。 この引数を省略すると、結果出力セルのないレポートが作成されます。</param>
+        <summary>指定したワークシートのシナリオの概要レポートを含む新しいワークシートを作成します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -242,7 +242,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">必須<b>オブジェクト 。</b> オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -271,8 +271,8 @@
         <Parameter Name="Source" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Source">Required <b>Object</b>. 結合するシナリオを含むシートの名前、またはそのシート <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> を表すオブジェクト。</param>
-        <summary>別のシートからコレクションにシナリオを結合 <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> します。</summary>
+        <param name="Source">必須<b>オブジェクト 。</b> 結合するシナリオを含むシートの名前、またはシートを表 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> すオブジェクト。</param>
+        <summary>別のシートのシナリオをコレクションに結合 <see cref="T:Microsoft.Office.Interop.Excel.Scenarios" /> します。</summary>
         <returns>To be added.</returns>
         <remarks><para>結合されたセルには、対象のセル範囲の左上端のセルの値が入ります。</para>
           <para> </para></remarks>

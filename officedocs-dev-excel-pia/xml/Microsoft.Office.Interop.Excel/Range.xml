@@ -1,5 +1,5 @@
 <Type Name="Range" FullName="Microsoft.Office.Interop.Excel.Range">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="b8435c17b649304d5fae3920a40103ffa541f441" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010704" /></Metadata><TypeSignature Language="C#" Value="public interface Range : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="970c62ca3e06a81e143d3b1337bd0b64ff32de6cab8e45021521933e8d6aaf7b" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518196" /></Metadata><TypeSignature Language="C#" Value="public interface Range : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Range implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Range" />
   <TypeSignature Language="VB.NET" Value="Public Interface Range&#xA;Implements IEnumerable" />
@@ -175,7 +175,7 @@
       <Docs>
         <summary>1 つのセルをアクティブにします。セルは現在の選択範囲内にある必要があります。</summary>
         <returns>To be added.</returns>
-        <remarks><para>セル範囲を選択するには、このメソッドを使用 <see cref="M:Microsoft.Office.Interop.Excel.Range.Select" /> します。</para>
+        <remarks><para>セルの範囲を選択するには、メソッドを使用 <see cref="M:Microsoft.Office.Interop.Excel.Range.Select" /> します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -233,10 +233,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>セル内のテキストの配置を水平方向または垂直方向に均等に配置した場合に、テキストが自動的にインデントされるかどうかを指定します。</summary>
+        <summary>セル内のテキストの配置が水平方向または垂直方向に等しい分布に設定されている場合に、テキストが自動的にインデントされるかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks><para>セル内の文字列の配置が左右または垂直方向に均等に配置されている場合に、文字列が自動的にインデントされる場合、このプロパティは <b>True</b> を返します。</para>
-          <para>テキストの配置を均等分布に設定するには、プロパティの値が xlVertical の場合にプロパティを <see cref="P:Microsoft.Office.Interop.Excel.Range.VerticalAlignment" /> <b>xlVAlignDistributed</b>に設定し、Orientation プロパティの値が <see cref="P:Microsoft.Office.Interop.Excel.Range.Orientation" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.Range.HorizontalAlignment" /> <b>xlHorizontal</b>のときにプロパティを<b>xlHAlignDistributed</b>に設定できます。</para>
+        <remarks><para>セル内のテキストの配置 <b>が</b> 水平方向または垂直方向に等しい分布に設定されている場合、このプロパティは True を返します。</para>
+          <para>テキスト配置を等しい分布に設定するには、プロパティの値が xlVertical の場合にプロパティを <see cref="P:Microsoft.Office.Interop.Excel.Range.VerticalAlignment" /> <b>xlVAlignDistributed</b>に設定し、Orientation プロパティの値が xlHorizontal の場合は、プロパティを <see cref="P:Microsoft.Office.Interop.Excel.Range.Orientation" /> <b></b> <see cref="P:Microsoft.Office.Interop.Excel.Range.HorizontalAlignment" /> <b>xlHAlignDistributed</b><b></b>に設定できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -273,11 +273,11 @@
         <param name="RowAbsolute">省略 <b>可能なオブジェクト</b>です。 行部分の参照を絶対参照として返すには、 <b>True</b> を指定します。 既定値は <b>True</b> です。</param>
         <param name="ColumnAbsolute">省略 <b>可能なオブジェクト</b>です。 列部分の参照を絶対参照として返すには、 <b>True</b> を指定します。 既定値は <b>True</b> です。</param>
         <param name="ReferenceStyle">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlReferenceStyle" /> 可能です。</param>
-        <param name="External">省略 <b>可能なオブジェクト</b>です。 <b>True を</b> 指定すると、外部参照が返されます。 <b>False ローカル</b> 参照を返します。 既定値は <b>False</b> です。</param>
-        <param name="RelativeTo">省略 <b>可能なオブジェクト</b>です。 False <paramref name="RowAbsolute" /> <paramref name="ColumnAbsolute" /> で<b></b> <paramref name="ReferenceStyle" /> <b>、xlR1C1</b>の場合は、相対参照の開始点を含める必要があります。 この引数は <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 、開始点を定義するオブジェクトです。</param>
+        <param name="External">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、外部参照が返されます。 <b>ローカル</b> 参照を返す場合は False。 既定値は <b>False</b> です。</param>
+        <param name="RelativeTo">省略 <b>可能なオブジェクト</b>です。 False <paramref name="RowAbsolute" /> <paramref name="ColumnAbsolute" /> の <b>場合</b> <paramref name="ReferenceStyle" /> <b>、xlR1C1</b>の場合は、相対参照の開始点を含める必要があります。 この引数は、 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 開始点を定義するオブジェクトです。</param>
         <summary>範囲参照を返します。</summary>
         <value>To be added.</value>
-        <remarks><para>参照に複数のセルが含まれている場合は、すべての行と <paramref name="RowAbsolute" /> <paramref name="ColumnAbsolute" /> 列に適用されます。</para>
+        <remarks><para>参照に複数のセルが含まれている場合は <paramref name="RowAbsolute" /> 、 <paramref name="ColumnAbsolute" /> すべての行と列に適用されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -315,10 +315,10 @@
         <param name="ColumnAbsolute">省略 <b>可能なオブジェクト</b>です。 列部分の参照を絶対参照として返すには、 <b>True</b> を指定します。 既定値は <b>True</b> です。</param>
         <param name="ReferenceStyle">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlReferenceStyle" /> 可能です。</param>
         <param name="External">省略 <b>可能なオブジェクト</b>です。 外部参照を返すには、 <b>True</b> を指定します。 ローカル参照を返すには、 <b>False</b> を指定します。 既定値は <b>False</b> です。</param>
-        <param name="RelativeTo">省略 <b>可能なオブジェクト</b>です。 両方 <paramref name="RowAbsolute" /> とも <paramref name="ColumnAbsolute" /> <b>False</b> に設定され <paramref name="ReferenceStyle" /> <b>、xlR1C1</b>に設定されている場合は、相対参照の開始点を含める必要があります。 この引数は <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 、参照の開始点を定義するオブジェクトです。</param>
-        <summary>ユーザーの言語で指定された範囲の範囲の参照を返します。</summary>
+        <param name="RelativeTo">省略 <b>可能なオブジェクト</b>です。 両方 <paramref name="RowAbsolute" /> とも <paramref name="ColumnAbsolute" /> False に<b></b>設定され <paramref name="ReferenceStyle" /> <b>、xlR1C1</b>に設定されている場合は、相対参照の開始点を含める必要があります。 この引数は、 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 参照の開始点を定義するオブジェクトです。</param>
+        <summary>ユーザーの言語で指定した範囲の範囲参照を返します。</summary>
         <value>To be added.</value>
-        <remarks><para>参照に複数のセルが含まれている場合は、すべての行とすべての列 <paramref name="RowAbsolute" /> <paramref name="ColumnAbsolute" /> にそれぞれ適用されます。</para>
+        <remarks><para>参照に複数のセルが含まれている場合、すべての行とすべての列 <paramref name="RowAbsolute" /> <paramref name="ColumnAbsolute" /> にそれぞれ適用されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -347,13 +347,13 @@
         <Parameter Name="Unique" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Action">必須 <see cref="T:Microsoft.Office.Interop.Excel.XlFilterAction" /> 。 使用できる定数は<b>、XlFilterAction</b>クラスの<b>xlFilterCopy</b><b>xlFilterInPlace です</b>。</param>
+        <param name="Action">必須 <see cref="T:Microsoft.Office.Interop.Excel.XlFilterAction" /> 。 XlFilterAction クラスの<b>定数は、xlFilterCopy</b> <b>xlFilterInPlace クラスの定数の 1 つを指定できます。</b> <b></b></param>
         <param name="CriteriaRange">省略 <b>可能なオブジェクト</b>です。 検索条件範囲を指定します。 省略すると、検索条件なしで抽出されます。</param>
-        <param name="CopyToRange">省略 <b>可能なオブジェクト</b>です。 コピーされた行のコピー先の範囲 (Action が次の場合 <paramref name="xlFilterCopy" /> )。 それ以外の場合、この引数は無視されます。</param>
-        <param name="Unique">省略 <b>可能なオブジェクト</b>です。 <b>一意</b> のレコードのみをフィルター処理する場合は True。 <b>False</b> 条件を満たすすべてのレコードをフィルター処理します。 既定値は <b>False</b> です。</param>
-        <summary>条件範囲に基づいてリストからデータをフィルター処理またはコピーします。</summary>
+        <param name="CopyToRange">省略 <b>可能なオブジェクト</b>です。 Action が . の場合、コピーされた行のコピー先の範囲 <paramref name="xlFilterCopy" /> です。 それ以外の場合、この引数は無視されます。</param>
+        <param name="Unique">省略 <b>可能なオブジェクト</b>です。 <b>True を</b> 指定すると、一意のレコードのみをフィルター処理できます。 <b>False</b> を指定すると、条件を満たすすべてのレコードをフィルター処理できます。 既定値は <b>False</b> です。</param>
+        <summary>条件範囲に基づいてリストからデータをフィルターまたはコピーします。</summary>
         <returns>To be added.</returns>
-        <remarks><para>最初の選択範囲が 1 つのセルの場合は、そのセルの現在の領域が使用されます。</para>
+        <remarks><para>最初の選択範囲が 1 つのセルの場合、そのセルの現在の領域が使用されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -379,7 +379,7 @@
       <Parameters />
       <Docs>
         <summary>OLAP データ ソースに基づく範囲内の編集されたすべてのセルに書き戻し操作を実行します。</summary>
-        <remarks><para>このメソッドは、最後の変更の適用操作がコミットされた後に範囲内で行われたすべての変更に対して UPDATE CUBE ステートメント <see cref="M:Microsoft.Office.Interop.Excel.Range.AllocateChanges" /> を実行します。 このメソッドは、OLAP 以外のデータ ソースに基づくピボットテーブル レポートで実行すると、実行時エラーが発生します。</para>
+        <remarks><para>メソッドは、最後の適用変更操作がコミットされた後、範囲内で行われたすべての変更に対して UPDATE CUBE ステートメント <see cref="M:Microsoft.Office.Interop.Excel.Range.AllocateChanges" /> を実行します。 このメソッドは、OLAP 以外のデータ ソースに基づくピボットテーブル レポートで実行すると、実行時エラーが発生します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -408,7 +408,7 @@
       <Docs>
         <summary>保護されたワークシートで範囲を編集できるかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks><para>保護されたワークシート <b>で範囲を</b> 編集できる場合、このプロパティは True を返します。</para>
+        <remarks><para>保護されたワークシート <b>で範囲</b> を編集できる場合、このプロパティは True を返します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -435,7 +435,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -469,17 +469,17 @@
       </Parameters>
       <Docs>
         <param name="Names">省略 <b>可能なオブジェクト</b>です。 引用する名前の配列です。 この引数を省略すると、シートにあるすべての名前が対象セル範囲に引用されます。</param>
-        <param name="IgnoreRelativeAbsolute">省略 <b>可能なオブジェクト</b>です。 <b>True</b> の 名前または参照の参照の種類に関係なく、名前に参照を置き換える。 <b>絶対</b> 参照のみを絶対名に置き換える場合は False、相対参照は相対名のみ、混在参照は名前が混在します。 既定値は <b>True</b> です。</param>
-        <param name="UseRowColumnNames">省略 <b>可能なオブジェクト</b>です。 <b>True</b> の 範囲の名前が見つからない場合は、指定した範囲を含む行と列の範囲の名前を使用します。 <b>False</b> を指定すると、 <paramref name="OmitColumn" /> 引数 <paramref name="OmitRow" /> と引数は無視されます。 既定値は <b>True</b> です。</param>
+        <param name="IgnoreRelativeAbsolute">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、名前または参照の参照の種類に関係なく、参照を名前に置き換える。 <b>絶対</b> 参照のみを絶対名、相対参照のみを相対名、および混合参照を混合名でのみ置き換える場合は False。 既定値は <b>True</b> です。</param>
+        <param name="UseRowColumnNames">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、指定した範囲の名前が見つからない場合に、指定した範囲を含む行範囲と列範囲の名前を使用します。 <b>引数と</b> 引数を <paramref name="OmitColumn" /> 無視する <paramref name="OmitRow" /> 場合は False。 既定値は <b>True</b> です。</param>
         <param name="OmitColumn">省略 <b>可能なオブジェクト</b>です。 参照を行方向の名前に置き換えるには、 <b>True</b> を指定します。 参照されているセルが数式と同じ列にあり、行方向の名前を持つセル範囲に含まれるときだけ、列方向の名前を省略できます。 既定値は <b>True</b> です。</param>
         <param name="OmitRow">省略 <b>可能なオブジェクト</b>です。 参照を列方向の名前に置き換えるには、 <b>True</b> を指定します。 参照されているセルが数式と同じ行にあり、列方向の名前を持つセル範囲に含まれるときだけ、行方向の名前を省略できます。 既定値は <b>True</b> です。</param>
-        <param name="Order">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlApplyNamesOrder" /> 可能です。 セル参照が行方向と列方向の範囲名で置き換えられるとき、行と列のどちらの名前を先に表示するかを指定します。 使用できる定数は、 <b>次に示す XlApplyNamesOrder</b> 定数の 1 つです<b>。xlColumnThenRow</b><b>xlRowThenColumn </b><paramref name="default" /></param>
-        <param name="AppendLast">省略 <b>可能なオブジェクト</b>です。 <b>True</b> に定義されている名前の定義を置き換え、定義された最後の名前の定義 <paramref name="Names" /> も置き換える。 <b>名前</b> の定義のみを置き換える場合は <paramref name="Names" /> False。 既定値は <b>False</b> です。</param>
+        <param name="Order">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlApplyNamesOrder" /> 可能です。 セル参照が行方向と列方向の範囲名で置き換えられるとき、行と列のどちらの名前を先に表示するかを指定します。 <b>XlApplyNamesOrder</b>定数の 1 つを指定できます<b>。xlColumnThenRow</b><b>xlRowThenColumn</b><paramref name="default" /></param>
+        <param name="AppendLast">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、名前の定義を置き換え、定義された最後の名前の定義 <paramref name="Names" /> も置き換える。 <b>名前</b> の定義のみを置き換える場合は <paramref name="Names" /> False。 既定値は <b>False</b> です。</param>
         <summary>指定したセル範囲のセルに名前を付けます。</summary>
         <returns>To be added.</returns>
-        <remarks><para>Array 関数を <b>使用すると</b> 、引数の名前のリストを作成 <paramref name="Names" /> できます。</para>
+        <remarks><para>Array 関数を使用 <b>して</b> 、引数の名前のリストを作成 <paramref name="Names" /> できます。</para>
           <para>シート全体に名前を引用するには、Cells.ApplyNames を使ってください。</para>
-          <para>名前を "適用解除" することはできません。名前を削除するには、このメソッドを <see cref="M:Microsoft.Office.Interop.Excel.Name.Delete" /> 使用します。</para>
+          <para>名前を "適用解除" することはできません。名前を削除するには、メソッドを <see cref="M:Microsoft.Office.Interop.Excel.Name.Delete" /> 使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -532,7 +532,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Areas</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>複数領域 <see cref="T:Microsoft.Office.Interop.Excel.Areas" /> 選択のすべての範囲を表すコレクションを返します。</summary>
+        <summary>複数領域の <see cref="T:Microsoft.Office.Interop.Excel.Areas" /> 選択範囲のすべての範囲を表すコレクションを返します。</summary>
         <value>To be added.</value>
         <remarks><para>1 つの選択範囲の <b>場合、Areas</b> プロパティは、元のオブジェクト自体である 1 つのオブジェクトを含む <see cref="T:Microsoft.Office.Interop.Excel.Range" /> コレクションを返します。 選択範囲が複数のセル範囲の場合、 <b>Areas</b> プロパティは各選択範囲を 1 つのオブジェクトとして持つ、1 つのコレクションを返します。</para>
           <para> </para></remarks>
@@ -591,8 +591,8 @@
         <Parameter Name="Type" Type="Microsoft.Office.Interop.Excel.XlAutoFillType" />
       </Parameters>
       <Docs>
-        <param name="Destination">必須 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> のオブジェクト。 オートフィルの書き込み先になる Range オブジェクトを指定します。 基準となるデータの入ったセル範囲も含むようにします。</param>
-        <param name="Type">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlAutoFillType" /> 可能です。 オートフィルの種類を指定します。 使用できる定数は、次に示す<b>XlAutoFillType</b>定数です<b>。xlFillDays</b><b>xlFillSeries xlFillWeekdays</b><b></b><b></b><b>xlGrowthTrend</b><b>xlFillCopy xlFillDefault</b><b>xlFillMonths</b> <paramref name="default" /> <b></b><b>xlFillValues xlFillYears</b><b></b><b>xlLinearTrend</b>この引数が<b>xlFillDefault</b>または省略されている場合、ソース範囲に基づいて最も適切な塗りつぶしの種類が選択されます。</param>
+        <param name="Destination">必須 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> オブジェクト。 オートフィルの書き込み先になる Range オブジェクトを指定します。 基準となるデータの入ったセル範囲も含むようにします。</param>
+        <param name="Type">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlAutoFillType" /> 可能です。 オートフィルの種類を指定します。 これらの<b>XlAutoFillType</b>定数のいずれかを指定できます<b>。xlFillDays</b><b>xlFillFormats</b><b>xlFillSeries</b><b>xlFillWeekdays</b><b>xlGrowthTrend</b><b>xlFillCopy</b><b>xlFillDefault</b> <paramref name="default" /> <b>xlFillMonths</b><b>xlFillValues</b><b>xlFillYears</b><b>xlLinearTrend</b>この引数が<b>xlFillDefault</b>または省略された場合、Microsoft Excel はソース範囲に基づいて最も適切な塗りつぶしの種類を選択します。</param>
         <summary>指定された対象セル範囲内のセルに対してオートフィルを実行します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -625,10 +625,10 @@
       </Parameters>
       <Docs>
         <param name="Field">省略 <b>可能なオブジェクト</b>です。 フィルターの対象となるフィールド番号を整数で指定します。フィールド番号は、リストの左側から始まります。つまり、最も左側にあるフィールドはフィールド番号 1 になります。</param>
-        <param name="Criteria1">省略 <b>可能なオブジェクト</b>です。 抽出条件 ("101" などの文字列)。 空白のフィールドを検索するには "=" を使用し、空白以外のフィールドを検索するには &lt; &gt; "=" を使用します。 この引数を省略すると、条件は All <b>です</b>。 <paramref name="Operator" /> <b>xlTop10Items の</b>場合は、項目数を指定します <paramref name="Criteria1" /> ("10" など)。</param>
-        <param name="Operator">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlAutoFilterOperator" /> 可能です。 使用できる定数は<b>、XlAutoFilterOperator</b>クラスの<b>xlAnd</b> <paramref name="default" /> <b>xlBottom10Items</b><b>xlBottom10Percent</b><b>xlOr</b><b>xlTop10Items xlTop10Percent</b>Use<b>xlAnd</b>および<b>xlOr</b><b></b>で、複合条件を使用して作成します。 <paramref name="Criteria1" /> <paramref name="Criteria2" /></param>
+        <param name="Criteria1">省略 <b>可能なオブジェクト</b>です。 抽出条件 ("101" などの文字列)。 "=" を使用して空白フィールドを検索するか、"" を使用して非 &lt; &gt; ブランク フィールドを検索します。 この引数を省略すると、条件は All <b>です</b>。 <paramref name="Operator" /> <b>xlTop10Items の</b>場合は、アイテムの数 <paramref name="Criteria1" /> (たとえば"10") を指定します。</param>
+        <param name="Operator">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlAutoFilterOperator" /> 可能です。 <b>xlAnd</b>xlBottom10Items xlBottom10Percent xlOr xlTop10Items xlTop10Percent Use xlAnd と xlOr の 1 つの<b>XlAutoFilterOperator</b>クラスの定数のいずれかを指定できます。 <paramref name="default" /> <b></b><b></b><b></b><b></b><b></b> <b></b> <b></b> <paramref name="Criteria1" /> <paramref name="Criteria2" /></param>
         <param name="Criteria2">省略 <b>可能なオブジェクト</b>です。 2 番目の抽出条件となる文字列を指定します。 Criteria1 および Operator と組み合わせて使い、複合抽出条件を構築します。</param>
-        <param name="VisibleDropDown">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定 すると、フィルター処理されたフィールドのオートフィルターのドロップダウン矢印が表示されます。 <b>False</b> フィルター処理されたフィールドのオートフィルターのドロップダウン矢印を非表示にする場合です。 既定値は <b>True</b> です。</param>
+        <param name="VisibleDropDown">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、フィルター処理されたフィールドの AutoFilter ドロップダウン矢印が表示されます。 <b>False</b> を指定すると、フィルター処理されたフィールドの AutoFilter ドロップダウン矢印が非表示になります。 既定値は <b>True</b> です。</param>
         <summary>オートフィルターを使ってリストにフィルターをかけます。</summary>
         <returns>To be added.</returns>
         <remarks><para>オブジェクトを <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.AutoFilter" /> 取得するには、 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> オブジェクトにプロパティを適用 <see cref="T:Microsoft.Office.Interop.Excel.AutoFilter" /> します。</para>
@@ -695,16 +695,16 @@
         <Parameter Name="Width" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Format">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlRangeAutoFormat" /> 可能です。 指定した <b>AutoFormat.XlRangeAutoFormat</b> 定数の中には、選択またはインストールされている言語の設定 (たとえば、日本語) によっては使用できない場合があります。</param>
-        <param name="Number">省略 <b>可能なオブジェクト</b>です。 <b>True を</b> 指定すると、オートフォーマットに数値書式が含まれます。 既定値は、 <b>は True です</b> 。</param>
-        <param name="Font">省略 <b>可能なオブジェクト</b>です。 <b>True を</b> 設定すると、オートフォーマットにフォント形式が含まれます。 既定値は <b>True</b> です。</param>
-        <param name="Alignment">省略 <b>可能なオブジェクト</b>です。 <b>True オート</b> フォーマットに配置を含める場合です。 既定値は <b>True</b> です。</param>
-        <param name="Border">省略 <b>可能なオブジェクト</b>です。 <b>True オート</b> フォーマットに罫線の書式を含める場合です。 既定値は <b>True</b> です。</param>
-        <param name="Pattern">省略 <b>可能なオブジェクト</b>です。 <b>True を</b> 指定すると、オートフォーマットにパターン書式が含まれます。 既定値は <b>True</b> です。</param>
-        <param name="Width">省略 <b>可能なオブジェクト</b>です。 <b>True を</b> 指定すると、オートフォーマットに列の幅と行の高さが含まれます。 既定値は <b>True</b> です。</param>
-        <summary>定義済みの書式を使用して、指定範囲の書式を自動的に設定します。</summary>
+        <param name="Format">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlRangeAutoFormat" /> 可能です。 指定した AutoFormat.一部の <b>XlRangeAutoFormat</b> 定数は、選択またはインストールした言語サポート (英語など) によっては使用できない場合があります。</param>
+        <param name="Number">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、オートフォーマットに数値形式が含まれます。 既定値は、 <b>は True です</b> 。</param>
+        <param name="Font">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、オートフォーマットにフォント形式が含まれます。 既定値は <b>True</b> です。</param>
+        <param name="Alignment">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、AutoFormat に配置が含まれます。 既定値は <b>True</b> です。</param>
+        <param name="Border">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、オートフォーマットに罫線の書式が含まれます。 既定値は <b>True</b> です。</param>
+        <param name="Pattern">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、オートフォーマットにパターン形式が含まれます。 既定値は <b>True</b> です。</param>
+        <param name="Width">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、列の幅と行の高さがオートフォーマットに含まれます。 既定値は <b>True</b> です。</param>
+        <summary>定義済みの形式を使用して、指定した範囲の書式を自動的に設定します。</summary>
         <returns>To be added.</returns>
-        <remarks><para>セル範囲が 1 つのセルの場合は、セルの周囲のアクティブ領域の書式も設定されます。 </para>
+        <remarks><para>範囲が 1 つのセルの場合、このメソッドはセルを囲むアクティブ領域の書式も設定します。 </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -763,15 +763,15 @@
         <Parameter Name="Color" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="LineStyle">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlLineStyle" /> 可能です。 罫線の線のスタイルを指定します。 使用できる定数は<b>、XlContinuous</b> <b></b> <paramref name="default" /> <b>xlDash</b><b>xlDashDot xlDashDot</b><b></b><b>xlDot xlDot</b><b>xlDouble</b><b>xlLineStlyeNone</b><b>xlSlantDashDot</b><b>xlLineStlyeNone</b>です。</param>
-        <param name="Weight">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlBorderWeight" /> 可能です。 罫線の太さを指定します。 使用できる定数は <b>、XlBorderWeight</b> 定数である<b>xlHairline</b><b>xlMedium</b><b>xlThick</b><b>xlThin です。</b><paramref name="default" /></param>
-        <param name="ColorIndex">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> 可能です。 罫線の色を現在のカラー パレットのインデックス番号または <b>XlColorIndex</b> 定数で指定します。 使用できる定数は<b>、XlColorIndex</b>の定数である<b>xlColorIndexAutomatic</b> <paramref name="default" /> <b>xlColorIndexNone です</b>。</param>
+        <param name="LineStyle">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlLineStyle" /> 可能です。 罫線の線のスタイル。 <b>XlLineStyle</b>クラスの定数は<b>、xlContinuous</b> <paramref name="default" /> <b>xlDash</b><b>XlDashDot xlDashDot</b><b>xlDot</b><b>xlDouble</b><b></b><b>xlLineStlyeNone</b><b>xlSlantDashDot</b><b>xlLineStlyeNone</b>のいずれかを指定できます。</param>
+        <param name="Weight">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlBorderWeight" /> 可能です。 罫線の太さを指定します。 <b>XlBorderWeight</b>定数の 1 つを指定できます<b>。xlHairline</b><b>xlMedium</b><b>xlThick</b><b>xlThin</b><paramref name="default" /></param>
+        <param name="ColorIndex">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> 可能です。 罫線の色を現在のカラー パレットのインデックス番号または <b>XlColorIndex</b> 定数で指定します。 XlColorIndex 定数は<b>、xlColorIndexAutomatic</b> <b></b> <paramref name="default" /> <b>xlColorIndexNone の定数の 1 つを指定できます。</b></param>
         <param name="Color">省略 <b>可能なオブジェクト</b>です。 罫線の色を示す RGB 値を指定します。</param>
-        <summary>範囲に罫線を追加し、新しい罫線 <see cref="P:Microsoft.Office.Interop.Excel.Border.Color" /> <see cref="P:Microsoft.Office.Interop.Excel.Border.LineStyle" /> のプロパティ <see cref="P:Microsoft.Office.Interop.Excel.Border.Weight" /> を設定します。</summary>
+        <summary>範囲に罫線を追加し、新しい罫 <see cref="P:Microsoft.Office.Interop.Excel.Border.Color" /> 線 <see cref="P:Microsoft.Office.Interop.Excel.Border.LineStyle" /> の 、、 <see cref="P:Microsoft.Office.Interop.Excel.Border.Weight" /> およびプロパティを設定します。</summary>
         <returns>To be added.</returns>
-        <remarks><para>両方を指定する <paramref name="ColorIndex" /> 必要がありますが <paramref name="Color" /> 、両方を指定する必要はありません。</para>
-          <para>どちらかまたは両方 <paramref name="LineStyle" /> を指定 <paramref name="Weight" /> できますが、両方を指定できません。 両方の引数を省略すると、既定の太さでの罫線が使用されます。</para>
-          <para>このメソッドでは選択範囲全体が罫線で囲まれるのであって、範囲内の各セルが罫線で囲まれるわけではありません。 すべてのセルの罫線を設定するには、Borders コレクションの "," および "プロパティ" を <see cref="P:Microsoft.Office.Interop.Excel.Borders.Color" /> <see cref="P:Microsoft.Office.Interop.Excel.Borders.LineStyle" /> <see cref="P:Microsoft.Office.Interop.Excel.Borders.Weight" /> 設定する必要があります。 罫線を消去するには、消去する範囲に含まれているすべてのセルの <b>LineStyle</b> プロパティを <b>xlLineStyleNone</b> に設定します。</para>
+        <remarks><para>両方を指定しない <paramref name="ColorIndex" /> か <paramref name="Color" /> 、または両方を指定する必要があります。</para>
+          <para>どちらも指定できますが、 <paramref name="LineStyle" /> <paramref name="Weight" /> 両方を指定できません。 両方の引数を省略すると、既定の太さでの罫線が使用されます。</para>
+          <para>このメソッドでは選択範囲全体が罫線で囲まれるのであって、範囲内の各セルが罫線で囲まれるわけではありません。 すべてのセルの罫線を設定するには <see cref="P:Microsoft.Office.Interop.Excel.Borders.Color" /> 、Borders コレクションの <see cref="P:Microsoft.Office.Interop.Excel.Borders.LineStyle" /> 、 、および <see cref="P:Microsoft.Office.Interop.Excel.Borders.Weight" /> プロパティを設定する必要があります。 罫線を消去するには、消去する範囲に含まれているすべてのセルの <b>LineStyle</b> プロパティを <b>xlLineStyleNone</b> に設定します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -834,7 +834,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スタイルまたはセル範囲 (条件付き書式の一部として定義された範囲を含む) の罫線を表すコレクション <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> を返します。</summary>
+        <summary>スタイルの罫線またはセル範囲 (条件付き書式の一部として定義された範囲を含む) を表すコレクション <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -888,7 +888,7 @@
       <Docs>
         <summary>指定したセル範囲を計算します。</summary>
         <returns><b>Object</b></returns>
-        <remarks><para>このメソッドは、指定された範囲の左上隅から右下隅までのセルを行から主な順序 <see cref="M:Microsoft.Office.Interop.Excel.Range.CalculateRowMajorOrder" /> で計算します。 なおこれは、セル範囲の計算を行ううえで Excel 2000 以前のバージョンで採用されている処理と同じものとなります。</para>
+        <remarks><para>このメソッドは、指定したセル範囲のセルを左上隅から行の右隅まで、行の長い順序 <see cref="M:Microsoft.Office.Interop.Excel.Range.CalculateRowMajorOrder" /> で計算します。 なおこれは、セル範囲の計算を行ううえで Excel 2000 以前のバージョンで採用されている処理と同じものとなります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -953,7 +953,7 @@
         <value>To be added.</value>
         <remarks><para><b>Characters</b> オブジェクトを使用して、テキスト文字列内の文字の書式を設定できます。</para>
           <para><b>Characters</b> オブジェクトはコレクションではありません。</para>
-          <para>オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> の場合 <see cref="M:Microsoft.Office.Interop.Excel.TextFrame.Characters(System.Object,System.Object)" /> はメソッドです。</para>
+          <para>オブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.TextFrame" /> 場合は <see cref="M:Microsoft.Office.Interop.Excel.TextFrame.Characters(System.Object,System.Object)" /> 、メソッドです。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -982,15 +982,15 @@
         <Parameter Name="SpellLang" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="CustomDictionary">省略 <b>可能なオブジェクト</b>です。 メイン辞書に単語が見つからない場合に調べるユーザー辞書のファイル名を示す文字列。 この引数を省略すると、現在指定されている辞書が使用されます。</param>
-        <param name="IgnoreUppercase">省略 <b>可能なオブジェクト</b>です。 <b>True を</b> 指定すると、すべて大文字の単語が無視されます。 <b>すべて</b> 大文字の単語をチェックする場合は False。 この引数を省略すると、現在の設定が使われます。</param>
-        <param name="AlwaysSuggest">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、正しくないスペルが見つかったときに候補の代替スペルの一覧が表示されます。 <b>False</b> を指定すると、正しいスペルを入力している間、Microsoft Excel が一時停止します。 この引数を省略すると、現在の設定が使われます。</param>
-        <param name="SpellLang">省略 <b>可能なオブジェクト</b>です。 辞書に使用した言語を指定します。 プロパティで使用する <b>MsoLanguageID</b> 値のいずれかを指定 <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> できます。</param>
+        <param name="CustomDictionary">省略 <b>可能なオブジェクト</b>です。 単語がメイン 辞書に見つからない場合に調べるユーザー辞書のファイル名を示す文字列。 この引数を省略すると、現在指定されている辞書が使用されます。</param>
+        <param name="IgnoreUppercase">省略 <b>可能なオブジェクト</b>です。 <b>True</b>を指定Microsoft Excel大文字の単語を無視します。<b>False</b>を指定Microsoft Excel大文字の単語をチェックします。 この引数を省略すると、現在の設定が使われます。</param>
+        <param name="AlwaysSuggest">省略 <b>可能なオブジェクト</b>です。 <b>True</b>を指定するとMicrosoft Excelスペルが見つかったときに、候補の代替スペルの一覧が表示されます。<b>False</b>を指定すると、Microsoft Excel入力中に一時停止する必要があります。 この引数を省略すると、現在の設定が使われます。</param>
+        <param name="SpellLang">省略 <b>可能なオブジェクト</b>です。 辞書に使用した言語を指定します。 プロパティで使用される <b>MsoLanguageID</b> 値のいずれかを指定 <see cref="P:Microsoft.Office.Core.LanguageSettings.LanguageID(Microsoft.Office.Core.MsoAppLanguageID)" /> できます。</param>
         <summary>オブジェクトのスペルをチェックします。</summary>
         <returns>To be added.</returns>
-        <remarks><para>このメソッドには戻り値はありません。[スペル チェック] ダイアログ ボックスが表示されます。</para>
-          <para>ワークシートのヘッダー、フッター、およびオブジェクトを確認するには、オブジェクトに対してこのメソッドを使用 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> します。</para>
-          <para>セルとメモのみをチェックするには、このメソッドをプロパティから返されるオブジェクトと一緒に使用 <see cref="P:Microsoft.Office.Interop.Excel.Range.Cells" /> します。</para>
+        <remarks><para>このメソッドには戻り値はありません。Microsoft Excelスペル チェック ダイアログ ボックスが表示されます。</para>
+          <para>ワークシートのヘッダー、フッター、オブジェクトを確認するには、オブジェクトでこのメソッドを使用 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> します。</para>
+          <para>セルとメモのみをチェックするには、プロパティによって返されるオブジェクトと一緒にこのメソッドを使用 <see cref="P:Microsoft.Office.Interop.Excel.Range.Cells" /> します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1068,7 +1068,7 @@
       <Docs>
         <summary>選択範囲から数式と文字を削除します。</summary>
         <returns>To be added.</returns>
-        <remarks><para>このメソッドは、グラフからデータを消去しますが、書式設定は残ります。</para>
+        <remarks><para>このメソッドはグラフからデータを消去しますが、書式設定は残ります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1120,7 +1120,7 @@
       <Parameters />
       <Docs>
         <summary>指定された範囲からすべてのハイパーリンクを削除します。</summary>
-        <remarks><para>指定した範囲でメソッドを呼び出すのは、[ホーム] タブの [編集] セクションの [クリア] ドロップダウン リストから [ハイパーリンクのクリア] コマンドを使用するのと <see cref="M:Microsoft.Office.Interop.Excel.Range.ClearHyperlinks" /> 同じです。ハイパーリンクだけが削除されます。テキストや書式設定など、他のすべてのセルの内容は影響を受けません。</para>
+        <remarks><para>指定した範囲でメソッドを呼び出すのは、[ホーム] タブの [編集] セクションの [クリア] ドロップダウン リストから [ハイパーリンクのクリア] コマンドを使用 <see cref="M:Microsoft.Office.Interop.Excel.Range.ClearHyperlinks" /> するのと同じです。ハイパーリンクだけが削除されます。テキストや書式設定など、他のすべてのセルコンテンツは影響を受けません。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1228,8 +1228,8 @@
         <Parameter Name="Comparison" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Comparison">Required <b>Object</b>. 指定したセルと比較する単一セルを指定します。</param>
-        <summary>各列の比較セルと内容が異なるすべてのセルを表 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> すオブジェクトを返します。</summary>
+        <param name="Comparison">必須<b>オブジェクト 。</b> 指定したセルと比較する単一セルを指定します。</param>
+        <summary>各列の比較セルと内容が異なるすべてのセルを表す <see cref="T:Microsoft.Office.Interop.Excel.Range" /> オブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1262,7 +1262,7 @@
       <Docs>
         <summary>指定した範囲 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> の列を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks><para>複数のセル範囲を含む <b>Range</b> オブジェクトに対してこのプロパティを使用すると、選択範囲の中で最初に選択した領域の列が返されます。 たとえば <b>、Range</b> オブジェクトに A1:B2 と C3:D4 の 2 つの領域がある場合、このプロパティは 4 ではなく <see cref="P:Microsoft.Office.Interop.Excel.Range.Count" /> 2 を返します。 複数の領域を含む可能性がある範囲でこのプロパティを使用するには、オブジェクトのプロパティをテストして、範囲に複数の領域が含まれているかどうかを <see cref="P:Microsoft.Office.Interop.Excel.Areas.Count" /> <see cref="T:Microsoft.Office.Interop.Excel.Areas" /> 確認します。 複数の領域が含まれている場合は、セル範囲の領域ごとにループします。</para>
+        <remarks><para>複数のセル範囲を含む <b>Range</b> オブジェクトに対してこのプロパティを使用すると、選択範囲の中で最初に選択した領域の列が返されます。 たとえば <b>、Range</b> オブジェクトに A1:B2 と C3:D4 の 2 つの領域がある場合、プロパティは 4 ではなく <see cref="P:Microsoft.Office.Interop.Excel.Range.Count" /> 2 を返します。 複数領域の選択範囲を含む可能性がある範囲でこのプロパティを使用するには、オブジェクトのプロパティをテストして、範囲に複数の領域が含まれているかどうかを <see cref="P:Microsoft.Office.Interop.Excel.Areas.Count" /> <see cref="T:Microsoft.Office.Interop.Excel.Areas" /> 判断します。 複数の領域が含まれている場合は、セル範囲の領域ごとにループします。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1295,7 +1295,7 @@
         <summary>指定した範囲内のすべての列の幅を設定または返します。</summary>
         <value>To be added.</value>
         <remarks><para>列幅の単位は、標準スタイルの 1 文字分の幅に相当します。プロポーショナル フォントでは、数字の 0 の幅が列幅の単位になります。</para>
-          <para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.Range.Width" /> を使用して、列の幅をポイント単位で取得します。</para>
+          <para>プロパティを <see cref="P:Microsoft.Office.Interop.Excel.Range.Width" /> 使用して、列の幅をポイント単位で返します。</para>
           <para>対象セル範囲内のすべての列が同じ幅である場合、<b>ColumnWidth</b> プロパティはその値を返します。 If columns in the range have different widths, this property returns <b>Null</b>.</para>
           <para> </para></remarks>
       </Docs>
@@ -1323,7 +1323,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Comment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>範囲の <see cref="T:Microsoft.Office.Interop.Excel.Comment" /> 左上隅のセルに関連付けられているコメントを表すオブジェクトを返します。</summary>
+        <summary>範囲の左上隅にあるセルに関連付けられたコメントを表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Comment" /> を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1355,10 +1355,10 @@
       </Parameters>
       <Docs>
         <param name="Sources">省略 <b>可能なオブジェクト</b>です。 統合元範囲を参照する、R1C1 形式の文字列を指定します。 指定するセル参照には、必ず統合するシートのパスを含めます。</param>
-        <param name="Function">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" /> 可能です。 使用できる定数は、次に示す<b>XlConsilidationFunction</b>定数です<b>。xlAverage</b> <paramref name="default" /> <b>xlCount xlCountNums</b><b>xlMax</b><b>xlMin</b><b>xlProduct</b><b></b><b>xlStDev xlStDevP</b><b>xlSum</b><b>xlVarP</b><b></b> <b></b></param>
-        <param name="TopRow">省略 <b>可能なオブジェクト</b>です。 <b>True</b> 統合範囲の一番上の行の列タイトルに基づいてデータを統合します。 <b>False の</b> 位置でデータを統合します。 既定値は <b>False</b> です。</param>
-        <param name="LeftColumn">省略 <b>可能なオブジェクト</b>です。 <b>True</b> 統合範囲の左列の行タイトルに基づいてデータを統合します。 <b>False の</b> 位置でデータを統合します。 既定値は <b>False</b> です。</param>
-        <param name="CreateLinks">省略 <b>可能なオブジェクト</b>です。 <b>統合で</b>ワークシートリンクを使用する場合は True。データを統合コピーする場合は<b>False。</b> 既定値は <b>False</b> です。</param>
+        <param name="Function">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" /> 可能です。 <b>XlConsilidationFunction</b>定数は<b>、xlAverage</b> <paramref name="default" /> <b>xlCountNums</b><b>xlMax xlMin</b><b></b><b>xlProduct</b><b>xlStDevP</b><b></b><b></b><b>xlSum xlVar</b><b>xlVarP</b><b></b>のいずれかを指定できます。</param>
+        <param name="TopRow">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、連結範囲の一番上の行の列タイトルに基づいてデータが統合されます。 <b>False</b> を指定すると、データを位置別に統合できます。 既定値は <b>False</b> です。</param>
+        <param name="LeftColumn">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、連結範囲の左側の列の行タイトルに基づいてデータが統合されます。 <b>False</b> を指定すると、データを位置別に統合できます。 既定値は <b>False</b> です。</param>
+        <param name="CreateLinks">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、統合でワークシート リンクが使用されます。 <b>False</b> を指定すると、データが統合コピーされます。 既定値は <b>False</b> です。</param>
         <summary>複数のワークシートにある複数のセル範囲を、1 枚のワークシートの 1 つのセル範囲に統合します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1416,13 +1416,13 @@
         <Parameter Name="MaxColumns" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Data">Required <b>Object</b>. セル範囲にコピーする <b>Recordset</b> オブジェクトを指定します。</param>
+        <param name="Data">必須<b>オブジェクト 。</b> セル範囲にコピーする <b>Recordset</b> オブジェクトを指定します。</param>
         <param name="MaxRows">省略 <b>可能なオブジェクト</b>です。 ワークシートにコピーするレコードの最大数を指定します。 この引数を省略すると、<b>Recordset</b> オブジェクトのすべてのレコードをコピーします。</param>
         <param name="MaxColumns">省略 <b>可能なオブジェクト</b>です。 ワークシートにコピーするフィールドの最大数を指定します。 この引数を省略すると、<b>Recordset</b> オブジェクトのすべてのフィールドをコピーします。</param>
-        <summary>ADO オブジェクトまたは DAO <b>Recordset</b> オブジェクトの内容を、指定範囲の左上隅からワークシートにコピーします。</summary>
+        <summary>ADO オブジェクトまたは DAO <b>Recordset</b> オブジェクトの内容を、指定した範囲の左上隅からワークシートにコピーします。</summary>
         <returns>To be added.</returns>
         <remarks><para>Recordset オブジェクト <b>に OLE</b> オブジェクトが含まれるフィールドが含まれている場合、このメソッドは失敗します。</para>
-          <para>コピーは <b>Recordset</b> オブジェクトのカレント レコードの位置から行われます。 コピーが完了すると、<b>Recordset</b> オブジェクトの <b>EOF</b> プロパティは <b>True</b> になります。</para>
+          <para>コピーは <b>Recordset</b> オブジェクトのカレント レコードの位置から行われます。コピーが完了すると、<b>Recordset</b> オブジェクトの <b>EOF</b> プロパティは <b>True</b> になります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1449,8 +1449,8 @@
         <Parameter Name="Format" Type="Microsoft.Office.Interop.Excel.XlCopyPictureFormat" />
       </Parameters>
       <Docs>
-        <param name="Appearance">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlPictureAppearance" /> 可能です。 図をコピーする方法を指定します。 使用できる定数は <b>、XlCopyPictureFormat</b> 定数である<b>xlBitmap</b><b>xlPicture です。</b><paramref name="default" /></param>
-        <param name="Format">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlCopyPictureFormat" /> 可能です。 ピクチャの形式を指定します。 使用できる定数は <b>、XlPictureAppearance</b> 定数である<b>xlPrinter です</b>。 図は印刷時と同じ方法でコピーされます。<b>xlScreen</b> <paramref name="default" /> . ピクチャは画面の表示にできる限り近い形でコピーされます。</param>
+        <param name="Appearance">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlPictureAppearance" /> 可能です。 図をコピーする方法を指定します。 <b>XlCopyPictureFormat</b>の次の定数のいずれかを指定できます<b>。xlBitmap</b><b>xlPicture</b><paramref name="default" /></param>
+        <param name="Format">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlCopyPictureFormat" /> 可能です。 ピクチャの形式を指定します。 <b>XlPictureAppearance</b>の定数は<b>、xlPrinter</b>です。 図は、印刷時に表示される画像としてコピーされます。<b>xlScreen</b> <paramref name="default" /> . ピクチャは画面の表示にできる限り近い形でコピーされます。</param>
         <summary>選択しているオブジェクトを図としてクリップボードにコピーします。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1507,7 +1507,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された値の範囲の中で最大の値をカウントします。 読み取り専用です。</summary>
+        <summary>指定した範囲の値の中で最大の値をカウントします。 読み取り専用です。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1543,7 +1543,7 @@
         <param name="Right">省略 <b>可能なオブジェクト</b>です。 右端列のラベルを使用して名前を作成するには、 <b>True</b> を設定します。 既定値は <b>False</b> です。</param>
         <summary>シートの対象セル範囲内の文字列を使って、その指定された範囲の名前を作成します。</summary>
         <returns>To be added.</returns>
-        <remarks><para>You don't specify one, <paramref name="Top" /> or , Microsoft Excel <paramref name="Left" /> <paramref name="Bottom" /> <paramref name="Right" /> guesses the location of the text labels, based on the shape of the specified range.</para>
+        <remarks><para>、、のいずれかを指定しない場合、Microsoft Excel指定した範囲の図形に基づいて、テキスト ラベルの位置 <paramref name="Top" /> <paramref name="Left" /> <paramref name="Bottom" /> <paramref name="Right" /> が推測されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1583,7 +1583,7 @@
         <param name="ContainsBIFF">このパラメーターは Macintosh 専用です。使用しないでください。</param>
         <param name="ContainsRTF">このパラメーターは Macintosh 専用です。使用しないでください。</param>
         <param name="ContainsVALU">このパラメーターは Macintosh 専用です。使用しないでください。</param>
-        <summary>Macintosh でのみ使用されているキーワードのヘルプを要求しました。 このキーワードに関する詳細については、Office Macintosh Edition の言語リファレンスのヘルプを参照してください。</summary>
+        <summary>Macintosh でのみ使用されるキーワードのヘルプを要求しました。 このキーワードに関する詳細については、Office Macintosh Edition の言語リファレンスのヘルプを参照してください。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1613,7 +1613,7 @@
       <Docs>
         <summary>このオブジェクトを作成したアプリケーションを示す、32 ビットの整数値を返します。</summary>
         <value>To be added.</value>
-        <remarks><para>指定したオブジェクトが Microsoft Excel で作成された場合、このプロパティは文字列 XCEL を返します。これは、16 進数の 5843454C に相当します。</para>
+        <remarks><para>指定したオブジェクトが Microsoft Excel で作成された場合、このプロパティは、16 進数 5843454C に相当する文字列 XCEL を返します。</para>
           <para><b>Creator</b> プロパティは、各アプリケーションに 4 文字の作成元のコードが付加される Macintosh 版 Microsoft Excel で使用するように設計されました。 たとえば、Microsoft Excel の作成元コードは XCEL です。</para>
           <para> </para></remarks>
       </Docs>
@@ -1641,7 +1641,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたセルが配列の一部である場合は、配列全体を表 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> すオブジェクトを返します。</summary>
+        <summary>指定したセルが配列の一部である場合は、配列全体を表 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1672,7 +1672,7 @@
         <summary>現在の領域 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks><para>現在の選択範囲は、空白の行と空白の列の任意の組み合わせで囲まれた範囲です。</para>
-          <para>このプロパティは、メソッドなど、現在の領域全体を含む選択範囲を自動的に展開する多くの操作に便利 <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFormat(Microsoft.Office.Interop.Excel.XlRangeAutoFormat,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> です。</para>
+          <para>このプロパティは、メソッドなど、現在の領域全体を含む選択範囲を自動的に展開する多くの操作に役立 <see cref="M:Microsoft.Office.Interop.Excel.Range.AutoFormat(Microsoft.Office.Interop.Excel.XlRangeAutoFormat,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> ちます。</para>
           <para>このプロパティは、保護されたワークシートでは使うことができません。</para>
           <para> </para></remarks>
       </Docs>
@@ -1734,12 +1734,12 @@
         <Parameter Name="Trend" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Rowcol">省略 <b>可能なオブジェクト</b>です。 データ系列をそれぞれ行または列に入力するには <b>、xlRows</b> または <b>xlColumns</b> 定数を指定できます。 この引数を省略すると、指定範囲のサイズと図形が使用されます。</param>
-        <param name="Type">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlDataSeriesType" /> 可能です。 使用できる定数は<b>、XlDataSeriesType</b>クラスの定数である<b>xlAutoFill</b><b>xlDataSeriesLinear</b> <paramref name="default" /> <b>xlChronological</b><b>xlGrowth です</b>。</param>
-        <param name="Date">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlDataSeriesDate" /> 可能です。 引数 Type が <b>xlChronological の</b>場合 <b>、Date</b> 引数はステップ日付単位を示します。 使用できる定数は<b>、XlDataSeriesDate</b>クラスの定数である<b>xlDay</b> <paramref name="default" /> <b>xlWeekday</b><b>xlMonth</b><b>xlYear です</b>。</param>
+        <param name="Rowcol">省略 <b>可能なオブジェクト</b>です。 データ系列をそれぞれ行または列に入力するには <b>、xlRows</b> 定数または <b>xlColumns</b> 定数を指定できます。 この引数を省略すると、範囲のサイズと図形が使用されます。</param>
+        <param name="Type">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlDataSeriesType" /> 可能です。 XlDataSeriesType クラスの<b>定数は、xlAutoFill</b> <b></b><b>xlDataSeriesLinear</b> <paramref name="default" /> <b>xlChronological</b><b>xlGrowth</b>クラスの定数のいずれかを指定できます。</param>
+        <param name="Date">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlDataSeriesDate" /> 可能です。 引数 Type が<b>xlChronological の場合、Date</b>引数はステップ日付単位を示します。 <b></b> <b>XlDataSeriesDate</b>クラスの定数の 1 つを指定できます<b>。xlDay</b> <paramref name="default" /> <b>xlWeekday</b><b>xlMonth</b><b>xlYear</b></param>
         <param name="Step">省略 <b>可能なオブジェクト</b>です。 連続データの増分値です。 既定値は 1 です。</param>
         <param name="Stop">省略 <b>可能なオブジェクト</b>です。 連続データの停止値です。 この引数を省略すると、対象セル範囲の終端まで繰り返されます。</param>
-        <param name="Trend">省略 <b>可能なオブジェクト</b>です。 <b>True の</b> 線形傾向または成長傾向を作成します。 <b>False 標準</b> のデータ系列を作成します。 既定値は <b>False</b> です。</param>
+        <param name="Trend">省略 <b>可能なオブジェクト</b>です。 <b>直線</b> 的な傾向または成長傾向を作成するには、True を指定します。 <b>False</b> を指定すると、標準データ系列が作成されます。 既定値は <b>False</b> です。</param>
         <summary>指定されたセル範囲に連続データを作成します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1767,7 +1767,7 @@
         <Parameter Name="Shift" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Shift">省略 <b>可能なオブジェクト</b>です。 セルを削除した後で他のセルをどのようにシフトするかを指定します。 使用できる定数は <see cref="T:Microsoft.Office.Interop.Excel.XlDeleteShiftDirection" /> <b>、xlShiftToLeft または</b> <b>xlShiftUp です</b>。 この引数を省略すると、セル範囲の形に応じてシフト方向が自動的に決定されます。</param>
+        <param name="Shift">省略 <b>可能なオブジェクト</b>です。 セルを削除した後で他のセルをどのようにシフトするかを指定します。 次のいずれかの定数を指定 <see cref="T:Microsoft.Office.Interop.Excel.XlDeleteShiftDirection" /> できます。 <b>xlShiftToLeft または</b> <b>xlShiftUp</b>です。 この引数を省略すると、セル範囲の形に応じてシフト方向が自動的に決定されます。</param>
         <summary>オブジェクトを削除します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -1796,9 +1796,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>セルのすべての参照元を含む範囲を表 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> すオブジェクトを返します。</summary>
+        <summary>セルのすべての <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 依存を含む範囲を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks><para>複数の依存オブジェクトがある場合は、複数の選択範囲 <b>(Range</b> オブジェクトのユニオン) を指定できます。</para>
+        <remarks><para>複数の依存オブジェクトがある場合は、複数の選択範囲 <b>(Range</b> オブジェクトの共用体) を指定できます。</para>
           <para><b>Dependents</b> プロパティはアクティブ シートでのみ実行され、リモート参照をトレースできないことに注意してください。</para>
           <para> </para></remarks>
       </Docs>
@@ -1826,8 +1826,8 @@
       <Docs>
         <summary>Excel 4.0 マクロ シートのダイアログ ボックス定義テーブルで定義されているダイアログ ボックスを表示して、選択されたコントロールのインデックス番号を返します。</summary>
         <returns>To be added.</returns>
-        <remarks><para>このメソッドは、選択したコントロールの番号を返します。ユーザーが [キャンセル] ボタンをクリックした場合は <b>False</b> を返します。</para>
-          <para>返されるオブジェクトは、Microsoft Excel 4.0 マクロ シートのダイアログ ボックス定義テーブル <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を参照する必要があります。</para>
+        <remarks><para>このメソッドは、選択したコントロールの数を返します。ユーザーが [キャンセル] ボタンをクリックした場合は <b>False</b> を返します。</para>
+          <para>返されるオブジェクトは、4.0 マクロ シートのダイアログ ボックス定義 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> Microsoft Excel参照する必要があります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1854,9 +1854,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>セルのすべての <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 直接参照元を含む範囲を表すオブジェクトを返します。</summary>
+        <summary>セルのすべての直接依存を含む範囲を表す <see cref="T:Microsoft.Office.Interop.Excel.Range" /> オブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks><para>複数の依存オブジェクトがある場合は、複数の選択範囲 <b>(Range</b> オブジェクトのユニオン) を指定できます。</para>
+        <remarks><para>複数の依存オブジェクトがある場合は、複数の選択範囲 <b>(Range</b> オブジェクトの共用体) を指定できます。</para>
           <para><b>Direct Dependents</b> プロパティはアクティブ シートでのみ実行され、リモート参照をトレースできないことに注意してください。</para>
           <para> </para></remarks>
       </Docs>
@@ -1884,7 +1884,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>セルのすべての <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 直接参照元を含む範囲を表すオブジェクトを返します。</summary>
+        <summary>セルのすべての直接の前例を含む範囲を表す <see cref="T:Microsoft.Office.Interop.Excel.Range" /> オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks><para><b>DirectPrecedents</b> プロパティはアクティブ シートでのみ実行され、リモート参照をトレースできないことに注意してください。</para>
           <para> </para></remarks>
@@ -1912,8 +1912,8 @@
       <Parameters />
       <Docs>
         <summary>次の再計算が発生したときに再計算する範囲を指定します。</summary>
-        <remarks><para>このメソッドは、再計算が必要と Microsoft Excel が理解するセルに対して、指定された <see cref="M:Microsoft.Office.Interop.Excel.Range.Calculate" /> 範囲を強制的に再計算します。</para>
-          <para>アプリケーションが手動計算モードの場合は、このメソッドを使用して、再計算する指定されたセルを <see cref="M:Microsoft.Office.Interop.Excel.Range.Dirty" /> 識別するように Excel に指示します。 アプリケーションが自動再計算モードの場合、 <b>Dirty</b> メソッドを使用すると、再計算が行われます。</para>
+        <remarks><para>このメソッドは、再計算が必要と思Microsoft Excelセルに対して、指定された範囲を強制的 <see cref="M:Microsoft.Office.Interop.Excel.Range.Calculate" /> に再計算します。</para>
+          <para>アプリケーションが手動計算モードの場合、メソッドを使用して、再計算Excelセルを識別するように指示 <see cref="M:Microsoft.Office.Interop.Excel.Range.Dirty" /> します。 アプリケーションが自動再計算モードの場合、 <b>Dirty</b> メソッドを使用すると、再計算が行われます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1939,7 +1939,7 @@
       <Parameters />
       <Docs>
         <summary>編集されたセル範囲内のすべての変更を破棄します。</summary>
-        <remarks><para>OLAP データ ソースに基づく範囲の場合、このメソッドは、セルに入力されたすべての値と数式を削除し、更新操作を実行して、データ ソースから最新の値を取得します。 このメソッドは、編集された全値セルのデータ ソース値を null 参照 (Visual Basic では Nothing) に設定し、OLAP サーバーに対して ROLLBACK TRANSACTION ステートメントを実行します。 OLAP 以外のデータ ソースに基づく範囲の場合、このメソッドはすべての編集されたセルを削除するだけです。</para>
+        <remarks><para>OLAP データ ソースに基づく範囲の場合、このメソッドは、セルに入力されたすべての値と数式を削除し、更新操作を実行して、データ ソースから最新の値を取得します。 データ ソースの値を、編集されるすべての値セルの null 参照 (Visual Basic では Nothing) に設定し、OLAP サーバーに対して ROLLBACK TRANSACTION ステートメントを実行します。 OLAP 以外のデータ ソースに基づく範囲の場合、このメソッドはすべての編集されたセルを削除するだけです。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -1967,7 +1967,7 @@
       </ReturnValue>
       <Docs>
         <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.DisplayFormat" /> 範囲の表示設定を表すオブジェクトを取得します。</summary>
-        <value>指定 <see cref="T:Microsoft.Office.Interop.Excel.DisplayFormat" /> 範囲の表示設定を表すオブジェクト。</value>
+        <value>指定 <see cref="T:Microsoft.Office.Interop.Excel.DisplayFormat" /> した範囲の表示設定を表すオブジェクト。</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
       </Docs>
@@ -2007,7 +2007,7 @@
         <param name="Appearance">このパラメーターは Macintosh 専用です。使用しないでください。</param>
         <param name="ChartSize">このパラメーターは Macintosh 専用です。使用しないでください。</param>
         <param name="Format">このパラメーターは Macintosh 専用です。使用しないでください。</param>
-        <summary>Macintosh でのみ使用されているキーワードのヘルプを要求しました。 このキーワードに関する詳細については、Office Macintosh Edition の言語リファレンスのヘルプを参照してください。</summary>
+        <summary>Macintosh でのみ使用されるキーワードのヘルプを要求しました。 このキーワードに関する詳細については、Office Macintosh Edition の言語リファレンスのヘルプを参照してください。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2071,7 +2071,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された範囲 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を含む列全体を表すオブジェクトを返します。</summary>
+        <summary>指定した範囲 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を含む列 (または列) 全体を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2102,7 +2102,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された範囲 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を含む行全体を表すオブジェクトを返します。</summary>
+        <summary>指定した範囲 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を含む行 (または行) 全体を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2132,7 +2132,7 @@
       <Docs>
         <summary>ユーザーがエラー チェック オプションにアクセスできます。</summary>
         <value>To be added.</value>
-        <remarks><para>オブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.Errors" /> 参照して、エラー チェック オプションに関連付けられているインデックス値の一覧を表示します。</para>
+        <remarks><para>オブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.Errors" /> 参照して、エラー チェック オプションに関連付けられたインデックス値の一覧を表示します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2167,14 +2167,14 @@
       </Parameters>
       <Docs>
         <param name="Type">必須 <see cref="T:Microsoft.Office.Interop.Excel.XlFixedFormatType" /> エクスポートするファイル形式の種類。</param>
-        <param name="Filename">オプション <b>オブジェクト</b> 保存するファイルのファイル名を指定します。 完全なパスを含めるか、short_Excel2007フォルダーにファイルを保存できます。</param>
-        <param name="Quality">Optional <b>Object</b> Typically formatted as a <see cref="T:Microsoft.Office.Interop.Excel.XlFixedFormatQuality" /> . 発行されたファイルの品質を指定します。</param>
-        <param name="IncludeDocProperties">オプション <b>の Object</b> set to <b>True</b> to include the document properties;それ以外の場合 <b>は False です</b>。</param>
-        <param name="IgnorePrintAreas">発行 <b>時に</b> 設定された <b>印刷領域</b> を無視する場合は、オプションのオブジェクトを True に設定します。それ以外の場合 <b>は False です</b>。</param>
-        <param name="From">Optional <b>Object</b> 発行を開始するページの番号。 この引数を省略すると、先頭のページから発行が開始されます。</param>
-        <param name="To">Optional <b>Object</b> The number of the last page to publish. この引数を省略すると、最後のページまで発行します。</param>
-        <param name="OpenAfterPublish">公開<b>後に</b><b>ファイルをビューアー</b>に表示するには、オプションのオブジェクトを True に設定します。それ以外の場合<b>は False です</b>。</param>
-        <param name="FixedFormatExtClassPtr">FixedFormatExt クラスへのオプション<b>のオブジェクト</b>ポインター。 <b></b></param>
+        <param name="Filename">省略 <b>可能オブジェクト</b> 保存するファイルのファイル名。 完全なパスを含めるか、short_Excel2007フォルダーにファイルを保存できます。</param>
+        <param name="Quality">省略<b>可能なオブジェクト</b>通常、. <see cref="T:Microsoft.Office.Interop.Excel.XlFixedFormatQuality" /> 発行されたファイルの品質を指定します。</param>
+        <param name="IncludeDocProperties">ドキュメント <b>のプロパティ</b> を含 <b>める場合は、オプション</b> の Object を True に設定します。それ以外の場合 <b>は False です</b>。</param>
+        <param name="IgnorePrintAreas">発行 <b>時に</b> 設定 <b>されている印刷</b> 領域を無視するには、オプションのオブジェクトを True に設定します。それ以外の場合 <b>は False です</b>。</param>
+        <param name="From">省略 <b>可能オブジェクト</b> 発行を開始するページの番号。 この引数を省略すると、先頭のページから発行が開始されます。</param>
+        <param name="To">省略 <b>可能オブジェクト</b> 発行する最後のページの番号。 この引数を省略すると、最後のページまで発行します。</param>
+        <param name="OpenAfterPublish">省略 <b>可能なオブジェクト</b> を <b>True</b> に設定すると、ファイルが発行された後にビューアーにファイルが表示されます。それ以外の場合 <b>は False です</b>。</param>
+        <param name="FixedFormatExtClassPtr">FixedFormatExt クラスへの<b>省略可能なオブジェクト ポインター</b> 。 <b></b></param>
         <summary>指定された形式のファイルにエクスポートします。</summary>
         <remarks><para>この方法は、固定形式のファイルにエクスポートするためのアドインの初期化にも対応しています。たとえば、コンバーターが存在する場合は、Excel はファイル形式を変換します。通常は、ユーザーが変換を開始します。</para>
           <para> </para></remarks>
@@ -2318,21 +2318,21 @@
         <Parameter Name="SearchFormat" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="What">Required <b>Object</b>. 検索するデータです。 指定できるのは、文字列、または任意の Microsoft Excel のデータ型です。</param>
-        <param name="After">省略 <b>可能なオブジェクト</b>です。 このセルの後から検索を開始します。 これは、ユーザー インターフェイスから検索が実行されたときにアクティブなセルの場所に対応しています。 After は <b>範囲内</b> の 1 つのセルである必要があります。 検索は、このセルを開始します。指定されたセルは、メソッドがこのセルに折り返し戻るまで <paramref name="after" /> 検索されません。 この引数を指定しない場合は、範囲の左上隅のセルの後から検索が開始されます。</param>
+        <param name="What">必須<b>オブジェクト 。</b> 検索するデータです。 指定できるのは、文字列、または任意の Microsoft Excel のデータ型です。</param>
+        <param name="After">省略 <b>可能なオブジェクト</b>です。 このセルの後から検索を開始します。 これは、ユーザー インターフェイスから検索が実行されたときにアクティブなセルの場所に対応しています。 After は <b>、</b> 範囲内の 1 つのセルである必要があります。 検索では、このセルが開始されます。指定したセルは、メソッドがこのセルに折り返すまで <paramref name="after" /> 検索されません。 この引数を指定しない場合、範囲の左上隅にあるセルの後から検索が開始されます。</param>
         <param name="LookIn">省略 <b>可能なオブジェクト</b>です。 情報の種類。</param>
-        <param name="LookAt">省略 <b>可能なオブジェクト</b>です。 使用できる定数は <see cref="T:Microsoft.Office.Interop.Excel.XlLookAt" /> <b>、xlWhole</b> または <b>xlPart です</b>。</param>
-        <param name="SearchOrder">省略 <b>可能なオブジェクト</b>です。 使用できる定数は <see cref="T:Microsoft.Office.Interop.Excel.XlSearchOrder" /> <b>、xlByRows</b> または <b>xlByColumns です</b>。</param>
-        <param name="SearchDirection">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSearchDirection" /> 可能です。 検索の方向を指定します。 使用できる定数は、次に示す XlSearchDirection 定数です<b>。xlNext</b> <paramref name="default" /> <b>xlPrevious</b></param>
+        <param name="LookAt">省略 <b>可能なオブジェクト</b>です。 xlWhole または <see cref="T:Microsoft.Office.Interop.Excel.XlLookAt" /> <b>xlPart</b> の定数のいずれかを <b>指定できます</b>。</param>
+        <param name="SearchOrder">省略 <b>可能なオブジェクト</b>です。 次のいずれかの定数を <see cref="T:Microsoft.Office.Interop.Excel.XlSearchOrder" /> 指定できます。 <b>xlByRows または</b> <b>xlByColumns</b>。</param>
+        <param name="SearchDirection">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSearchDirection" /> 可能です。 検索の方向を指定します。 次のいずれかの XlSearchDirection 定数を指定できます<b>。xlNext</b> <paramref name="default" /> <b>xlPrevious</b></param>
         <param name="MatchCase">省略 <b>可能なオブジェクト</b>です。 大文字と小文字を区別するには、 <b>True</b> を指定します。 既定値は <b>False</b> です。</param>
-        <param name="MatchByte">省略 <b>可能なオブジェクト</b>です。 2 バイト言語サポートを選択またはインストールした場合にのみ使用します。 <b>True を</b> 指定すると、2 バイト文字が 2 バイト文字のみ一致します。 <b>False</b> を指定すると、2 バイト文字が 1 バイトの文字と一致します。</param>
+        <param name="MatchByte">省略 <b>可能なオブジェクト</b>です。 2 バイト言語のサポートを選択またはインストールした場合にのみ使用されます。 <b>True</b> を指定すると、2 バイト文字が 2 バイト文字のみ一致します。 <b>False</b> を指定すると、2 バイト文字が 1 バイトに相当する文字と一致します。</param>
         <param name="SearchFormat">省略 <b>可能なオブジェクト</b>です。 検索の書式を指定します。</param>
         <summary>範囲内の特定の情報を検索し、その情報が見つかった最初のセルを表す <see cref="T:Microsoft.Office.Interop.Excel.Range" /> オブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks><para>一致するデータが見つからなかった場合、このメソッドは <b>Nothing</b> を返します。</para>
           <para>このメソッドは、選択範囲やアクティブ セルには影響を与えかねない。</para>
-          <para>, <paramref name="LookIn" /> , <paramref name="LookAt" /> の設定 <paramref name="SearchOrder" /> は <paramref name="MatchByte" /> 、このメソッドを使用する度に保存されます。 次にメソッドを呼び出す時にこれらの引数の値を指定しない場合は、保存された値が使用されます。 これらの引数を設定すると、[検索] ダイアログ ボックスの設定が変更され、また、[検索] ダイアログ ボックスで設定を変更すると、引数を省略した場合に使用される保存された値が変更されます。 問題を回避するには、このメソッドを使用するたびに、これらの引数を明示的に設定します。</para>
-          <para>このメソッドとメソッド <see cref="M:Microsoft.Office.Interop.Excel.Range.FindNext(System.Object)" /> を <see cref="M:Microsoft.Office.Interop.Excel.Range.FindPrevious(System.Object)" /> 使用して、検索を繰り返します。</para>
+          <para>、 <paramref name="LookIn" /> 、 <paramref name="LookAt" /> の設定 <paramref name="SearchOrder" /> は <paramref name="MatchByte" /> 、このメソッドを使用する度に保存されます。 次にメソッドを呼び出す時にこれらの引数に値を指定しない場合は、保存された値が使用されます。 これらの引数を設定すると、[検索] ダイアログ ボックスの設定が変更され、また、[検索] ダイアログ ボックスで設定を変更すると、引数を省略した場合に使用される保存された値が変更されます。 問題を回避するには、このメソッドを使用するたびに、これらの引数を明示的に設定します。</para>
+          <para>and メソッドを <see cref="M:Microsoft.Office.Interop.Excel.Range.FindNext(System.Object)" /> 使用 <see cref="M:Microsoft.Office.Interop.Excel.Range.FindPrevious(System.Object)" /> して検索を繰り返します。</para>
           <para>検索は指定された範囲の最後に達すると、範囲の最初に戻って検索を繰り返します。同じ範囲を繰り返して検索しないようにするには、最初に検索内容が見つかったセルの位置を保存しておき、次のセルが見つかるたびに、そのセルの位置と保存しておいたセルの位置を比較するようにします。</para>
           <para>より複雑なパターンに一致するセルを見つけるには、<b>For Each...Next</b> ステートメントを <b>Like</b>演算子と共に使用します。</para>
           <para> </para></remarks>
@@ -2360,10 +2360,10 @@
         <Parameter Name="After" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="After">省略 <b>可能なオブジェクト</b>です。 指定したセルの下方 (行のときは右、列のときは下) のセルから検索を開始します。 検索がユーザー インターフェイスから実行されるときは、ワークシート上で検索を行う場合のアクティブ セルに相当します。 範囲内の <paramref name="After" /> 1 つのセルである必要があります。 検索は、このセルを開始します。指定されたセルは、メソッドがこのセルに折り返し戻るまで <paramref name="after" /> 検索されません。 この引数を指定しない場合は、範囲の左上隅のセルの後から検索が開始されます。</param>
+        <param name="After">省略 <b>可能なオブジェクト</b>です。 指定したセルの下方 (行のときは右、列のときは下) のセルから検索を開始します。 検索がユーザー インターフェイスから実行されるときは、ワークシート上で検索を行う場合のアクティブ セルに相当します。 範囲内の <paramref name="After" /> 1 つのセルである必要があります。 検索では、このセルが開始されます。指定したセルは、メソッドがこのセルに折り返すまで <paramref name="after" /> 検索されません。 この引数を指定しない場合、範囲の左上隅にあるセルの後から検索が開始されます。</param>
         <summary>メソッドで開始された検索を続行 <see cref="M:Microsoft.Office.Interop.Excel.Range.Find(System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSearchDirection,System.Object,System.Object,System.Object)" /> します。</summary>
         <returns>To be added.</returns>
-        <remarks><para>同じ条件に一致する次のセルを検索し、そのセルを表す <see cref="T:Microsoft.Office.Interop.Excel.Range" /> オブジェクトを返します。</para>
+        <remarks><para>同じ条件に一致する次のセルを検索し、そのセルを表 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> すオブジェクトを返します。</para>
           <para>このメソッドは、選択範囲やアクティブ セルには影響を与えかねない。</para>
           <para>検索は指定された範囲の最後に達すると、範囲の最初に戻って検索を繰り返します。同じ範囲を繰り返して検索しないようにするには、最初に検索内容が見つかったセルの位置を保存しておき、次のセルが見つかるたびに、そのセルの位置と保存しておいたセルの位置を比較するようにします。</para>
           <para> </para></remarks>
@@ -2391,11 +2391,11 @@
         <Parameter Name="After" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="After">省略 <b>可能なオブジェクト</b>です。 指定したセルの上方 (行のときは左、列のときは上) のセルから検索を開始します。 ワークシート上で検索を行う場合のアクティブ セルに相当します。 範囲内の <paramref name="After" /> 1 つのセルである必要があります。 検索は、このセルを開始します。指定されたセルは、メソッドがこのセルに折り返し戻るまで <paramref name="before" /> 検索されません。 この引数を指定しない場合は、範囲内の左上のセルの前から検索が開始されます。</param>
+        <param name="After">省略 <b>可能なオブジェクト</b>です。 指定したセルの上方 (行のときは左、列のときは上) のセルから検索を開始します。 ワークシート上で検索を行う場合のアクティブ セルに相当します。 範囲内の <paramref name="After" /> 1 つのセルである必要があります。 検索では、このセルが開始されます。指定したセルは、メソッドがこのセルに折り返すまで <paramref name="before" /> 検索されません。 この引数を指定しない場合、範囲の左上のセルの前に検索が開始されます。</param>
         <summary>メソッドで開始された検索を続行 <see cref="M:Microsoft.Office.Interop.Excel.Range.Find(System.Object,System.Object,System.Object,System.Object,System.Object,Microsoft.Office.Interop.Excel.XlSearchDirection,System.Object,System.Object,System.Object)" /> します。</summary>
         <returns>To be added.</returns>
-        <remarks><para>同じ条件に一致する前のセルを検索し、そのセルを表す <see cref="T:Microsoft.Office.Interop.Excel.Range" /> オブジェクトを返します。</para>
-          <para>このメソッドは、選択範囲またはアクティブ セルに影響を与える影響を受け取らない。</para>
+        <remarks><para>同じ条件に一致する前のセルを検索し、そのセルを表 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> すオブジェクトを返します。</para>
+          <para>このメソッドは、選択範囲やアクティブ セルには影響を与えかねない。</para>
           <para>検索は指定された範囲の最後に達すると、範囲の最初に戻って検索を繰り返します。同じ範囲を繰り返して検索しないようにするには、最初に検索内容が見つかったセルの位置を保存しておき、次のセルが見つかるたびに、そのセルの位置と保存しておいたセルの位置を比較するようにします。</para>
           <para> </para></remarks>
       </Docs>
@@ -2448,7 +2448,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.Font" /> オブジェクトのフォントを表すオブジェクトを返します。</summary>
+        <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Font" /> のフォントを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2512,7 +2512,7 @@
         <remarks><para>OLAP データ ソースでは、このプロパティを使用できません。</para>
           <para>セルに定数が入力されているときは、このプロパティはその定数を返します。セルが空のときは、この <b>Formula</b> プロパティは空の文字列を返します。セルが空のときは、<b>Formula</b> プロパティは、数式バーでの表示と同じ形式で、等号を含む数式を文字列として返します。</para>
           <para>セルの値または数式に日付を設定すると、Excel はそのセルに日付書式または時刻書式が既に設定されているかどうかをチェックします。書式が設定されていないときは、数値書式は標準の日付の短い形式になります。</para>
-          <para>範囲が 1 次元または 2 次元の範囲である場合は、同じ次元の配列に数式を設定できます。 同様に、数式を Basic 配列に挿入できます。</para>
+          <para>範囲が 1 次元または 2 次元の範囲の場合は、数式を同じ次元の配列に設定できます。 同様に、数式を Basic 配列に挿入できます。</para>
           <para>セル範囲に数式を設定すると、範囲内のすべてのセルにその数式が入ります。</para>
           <para> </para></remarks>
       </Docs>
@@ -2543,11 +2543,11 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>範囲の配列数式を設定または返します。</summary>
+        <summary>範囲の配列式を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para>このプロパティは、1 つの数式または配列を返します (または設定できます)。</para>
+        <remarks><para>このプロパティは、1 つの数式または配列を返します (または、設定できます)。</para>
           <para>指定した範囲に配列数式が含まれている場合、このプロパティは Null を返 <b>します</b>。</para>
-          <para>このプロパティを使用して配列数式を入力する場合、数式は A1 参照スタイルではなく R1C1 参照スタイルを使用する必要があります (2 番目の例を参照)。</para>
+          <para>このプロパティを使用して配列数式を入力する場合は、A1 参照スタイルではなく R1C1 参照スタイルを使用する必要があります (2 番目の例を参照)。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2579,8 +2579,8 @@
       <Docs>
         <summary>ワークシートが保護されているときに数式が非表示になるかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks><para>ワークシートが保護 <b>されているときに</b> 数式が非表示になる場合、このプロパティは True を返します。 指定した範囲<b>に、FormulaHidden</b>が<b>True</b>のセルと<b>、FormulaHidden</b>が<b></b>False に等しいセルが含まれている場合は Null を返<b>します</b>。</para>
-          <para>このプロパティとプロパティを混同 <see cref="P:Microsoft.Office.Interop.Excel.Range.Hidden" /> して使用してください。 ブックが保護され、ワークシートが保護されていない場合、数式は非表示ではなく、ワークシートが保護されている場合にのみ非表示になります。</para>
+        <remarks><para>ワークシートが保護 <b>されているときに</b> 数式が非表示になる場合、このプロパティは True を返します。 指定した範囲に<b>、FormulaHidden</b>が True に等しいセルと<b></b><b>、FormulaHidden</b>が<b>False</b>のセルが含まれている場合は Null を返<b>します</b>。</para>
+          <para>このプロパティをプロパティと混同 <see cref="P:Microsoft.Office.Interop.Excel.Range.Hidden" /> して使用しない。 ブックが保護され、ワークシートが保護されていない場合、数式は非表示にされませんが、ワークシートが保護されている場合にのみ表示されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2618,7 +2618,7 @@
       <Docs>
         <summary>指定した範囲の数式ラベルの種類を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para>範囲にラベルが含まれている場合、このプロパティの戻り値は <b>xlNone、</b> または次の <b>XlFormulaLabel</b> 定数のいずれかを指定できます。</para>
+        <remarks><para>このプロパティの戻り値は、範囲にラベルがない場合は <b>xlNone、</b> または次のいずれかの <b>XlFormulaLabel 定数</b> を指定できます。</para>
           <list type="bullet">
             <item>
               <description>
@@ -2674,7 +2674,7 @@
         <value>To be added.</value>
         <remarks><para>セルに定数が含まれている場合、その定数がそのまま返されます。セルが空の場合、空の文字列が返されます。セルに数式が含まれる場合、数式バーの表示と同じ形式の文字列で (等号も付加されます)、その数式が返されます。</para>
           <para>セルの値や数式を日付に設定すると、そのセルが日付や時刻の書式になっているかどうかが確認されます。日付や時刻の書式になっていないときは、既定の日付の形式に変更されます。</para>
-          <para>範囲が 1 次元または 2 次元の範囲である場合は、同じ次元の配列に数式を設定できます。 同様に、数式を配列に挿入できます。</para>
+          <para>範囲が 1 次元または 2 次元の範囲の場合は、数式を同じ次元の配列に設定できます。 同様に、数式を配列に挿入できます。</para>
           <para>セル範囲に対して数式を設定すると、範囲内のすべてのセルに同じ数式が設定されます。</para>
           <para> </para></remarks>
       </Docs>
@@ -2709,7 +2709,7 @@
         <value>To be added.</value>
         <remarks><para>セルに定数が含まれているときには、その定数がそのまま返されます。セルが空のときには、空の文字列が返されます。セルに数式が含まれるときには、数式バーの表示と同じ形式の文字列で (等号も付加されます)、その数式が返されます。</para>
           <para>セルの値や数式を日付に設定すると、そのセルが日付や時刻の書式になっているかどうかが確認されます。日付や時刻の書式になっていないときは、既定の日付の形式に変更されます。</para>
-          <para>範囲が 1 次元または 2 次元の範囲である場合は、同じ次元の配列に数式を設定できます。 同様に、数式を配列に挿入できます。</para>
+          <para>範囲が 1 次元または 2 次元の範囲の場合は、数式を同じ次元の配列に設定できます。 同様に、数式を配列に挿入できます。</para>
           <para>セル範囲に対して数式を設定すると、範囲内のすべてのセルに同じ数式が設定されます。</para>
           <para> </para></remarks>
       </Docs>
@@ -2744,7 +2744,7 @@
         <value>To be added.</value>
         <remarks><para>セルに定数が含まれている場合、その定数がそのまま返されます。セルが空の場合、空の文字列が返されます。セルに数式が含まれる場合、数式バーの表示と同じ形式の文字列で (等号も付加されます)、その数式が返されます。</para>
           <para>セルの値や数式を日付に設定すると、そのセルが日付や時刻の書式になっているかどうかが確認されます。日付や時刻の書式になっていないときは、既定の日付の形式に変更されます。</para>
-          <para>範囲が 1 次元または 2 次元の範囲である場合は、同じ次元の配列に数式を設定できます。 同様に、数式を配列に挿入できます。</para>
+          <para>範囲が 1 次元または 2 次元の範囲の場合は、数式を同じ次元の配列に設定できます。 同様に、数式を配列に挿入できます。</para>
           <para>セル範囲に対して数式を設定すると、範囲内のすべてのセルに同じ数式が設定されます。</para>
           <para> </para></remarks>
       </Docs>
@@ -2834,12 +2834,12 @@
         <Parameter Name="ChangingCell" Type="Microsoft.Office.Interop.Excel.Range" />
       </Parameters>
       <Docs>
-        <param name="Goal">Required <b>Object</b>. セルに返される必要のある目標値を指定します。</param>
+        <param name="Goal">必須<b>オブジェクト 。</b> セルに返される必要のある目標値を指定します。</param>
         <param name="ChangingCell">必須 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 。 目標値を達成するために変更するセル (Range オブジェクト) を指定します。</param>
         <summary>対象セルに入力されている数式の結果が指定された値になるまで、その数式で変数として指定されているセルの値を変えて計算します。</summary>
         <returns>To be added.</returns>
         <remarks><para>数式が返す値の目標値を設定すると、その数式が目標値を返すために必要な変数の値を算出します。</para>
-          <para>このメソッドは、目標 <b>シーク</b> が成功した場合に True を返します。</para>
+          <para>目標シークが成功 <b>した</b> 場合、このメソッドは True を返します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2870,11 +2870,11 @@
       <Docs>
         <param name="Start">省略 <b>可能なオブジェクト</b>です。 グループ化する最初の値を指定します。 この引数を省略するか、<b>True</b> を指定すると、フィールドの最初の値が使用されます。</param>
         <param name="End">省略 <b>可能なオブジェクト</b>です。 グループ化する最後の値を指定します。 この引数を省略するか、<b>True</b> を指定すると、フィールドの最後の値が使用されます。</param>
-        <param name="By">省略 <b>可能なオブジェクト</b>です。 フィールドが数値の場合は、この引数でグループごとのサイズを指定します。 フィールドが日付の場合、配列の要素 4 が True で、他のすべての要素が False の場合、この引数は各グループの日数 <paramref name="Periods" /> を指定<b>します</b>。 <b></b> それ以外の場合、この引数は無視されます。 この引数を省略すると、Microsoft Excel は自動的に既定のグループ サイズを選択します。</param>
-        <param name="Periods">省略 <b>可能なオブジェクト</b>です。 次の表に示すように、グループの期間を指定するブール値の配列。配列内の要素が <b>True</b>の場合、対応する時間のグループが作成されます。要素が False の <b>場合</b>、グループは作成されません。 フィールドが日付フィールドではない場合、この引数は無視されます。</param>
-        <summary>オブジェクトがピボットテーブル フィールドのデータ範囲内の単一のセルを表す場合、Group メソッドは、そのフィールドで数値または日付ベースのグループ化を <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 実行します。 <b></b></summary>
+        <param name="By">省略 <b>可能なオブジェクト</b>です。 フィールドが数値の場合は、この引数でグループごとのサイズを指定します。 フィールドが日付の場合、配列内の要素 4 が True で、他のすべての要素が False の場合、この引数は各グループの日数 <paramref name="Periods" /> を指定<b>します</b>。 <b></b> それ以外の場合、この引数は無視されます。 この引数を省略すると、Microsoft Excel は自動的に既定のグループ サイズを選択します。</param>
+        <param name="Periods">省略 <b>可能なオブジェクト</b>です。 次の表に示すように、グループの期間を指定するブール値の配列。配列内の要素が True の <b>場合</b>、対応する時間に対してグループが作成されます。要素が False の <b>場合</b>、グループは作成されません。 フィールドが日付フィールドではない場合、この引数は無視されます。</param>
+        <summary>オブジェクトがピボットテーブル フィールドのデータ範囲の 1 つのセルを表す場合、Group メソッドは、そのフィールドで数値または日付ベースのグループ化 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を実行します。 <b></b></summary>
         <returns>To be added.</returns>
-        <remarks><para><b>Range オブジェクト</b>は、ピボットテーブル フィールドのデータ範囲内の 1 つのセルである必要があります。 このメソッドを複数のセルに適用しようとすると失敗しますが、エラー メッセージは表示されません。</para>
+        <remarks><para><b>Range オブジェクトは</b>、ピボットテーブル フィールドのデータ範囲の 1 つのセルである必要があります。 このメソッドを複数のセルに適用しようとすると、失敗しますが、エラー メッセージは表示されません。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2901,9 +2901,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したセルが配列数式の一部かどうかを判別します。</summary>
+        <summary>指定したセルが配列数式の一部かどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks><para>指定したセルが <b>配列数式</b> の一部である場合、このプロパティは True を返します。</para>
+        <remarks><para>指定したセルが <b>配列数式の</b> 一部である場合、このプロパティは True を返します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2930,9 +2930,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>範囲内のすべてのセルに数式が含まれているかどうかを指定します。</summary>
+        <summary>範囲内のすべてのセルに数式が含まれるかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks><para>このプロパティは、範囲内のすべてのセルに数式が含まれている場合は <b>True</b> を返し、範囲内のセルに数式が含まれている場合は <b>False</b> を返し、それ以外の場合は <b>Null</b> を返します。</para>
+        <remarks><para>このプロパティ<b>は、範囲内</b>のすべてのセルに数式が含まれている場合は<b></b>True、範囲内のセルに数式が含まれているセルがない場合は<b>False、</b>それ以外の場合は Null を返します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -2959,7 +2959,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>範囲の高さを指定します。</summary>
+        <summary>範囲の高さ。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2992,8 +2992,8 @@
       <Docs>
         <summary>行または列が非表示かどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks><para>行または列が非表示 <b>の場合、この</b> プロパティは True を返します。 列全体または行全体を対象とする必要があります。</para>
-          <para>このプロパティをプロパティと混同 <see cref="P:Microsoft.Office.Interop.Excel.Range.FormulaHidden" /> して使用してください。</para>
+        <remarks><para>行または列が <b>非表示の場合</b> 、このプロパティは True を返します。 列全体または行全体を対象とする必要があります。</para>
+          <para>このプロパティをプロパティと混同 <see cref="P:Microsoft.Office.Interop.Excel.Range.FormulaHidden" /> して使用しない。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3082,7 +3082,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ページを Web ページとして保存するときに、指定したセルの識別ラベルを取得または設定します。</summary>
+        <summary>ページを Web ページとして保存するときに、指定したセルの識別ラベルを設定または返します。</summary>
         <value>To be added.</value>
         <remarks><para>ID ラベルは、別の HTML ドキュメントや同じ Web ページでハイパーリンクの参照先として使用できます。</para>
           <para> </para></remarks>
@@ -3144,7 +3144,7 @@
         <Parameter Name="CopyOrigin" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Shift">省略 <b>可能なオブジェクト</b>です。 セルをシフトする方向を指定します。 使用できる定数は <see cref="T:Microsoft.Office.Interop.Excel.XlInsertShiftDirection" /> <b>、xlShiftToRight</b> または <b>xlShiftDown です</b>。 この引数を省略すると、セル範囲の形に応じてシフト方向が自動的に決定されます。</param>
+        <param name="Shift">省略 <b>可能なオブジェクト</b>です。 セルをシフトする方向を指定します。 次の定数のいずれかを <see cref="T:Microsoft.Office.Interop.Excel.XlInsertShiftDirection" /> 指定できます。 <b>xlShiftToRight</b> または <b>xlShiftDown</b>です。 この引数を省略すると、セル範囲の形に応じてシフト方向が自動的に決定されます。</param>
         <param name="CopyOrigin">省略 <b>可能なオブジェクト</b>です。 コピー元を指定します。</param>
         <summary>ワークシートまたはマクロ シートの指定された範囲に、空白のセルまたはセル範囲を挿入します。指定された範囲にあったセルはシフトされます。</summary>
         <returns>To be added.</returns>
@@ -3177,7 +3177,7 @@
         <param name="InsertAmount">整数型 (<b>Integer</b>) の値を使用します。 現在のインデントに追加するレベルを指定します。インデントのレベルの範囲は 0 ～ 15 です。</param>
         <summary>指定した範囲のインデントを変更します。</summary>
         <remarks><para>インデントのレベルに 0 未満または 15 を超える値を設定し、このメソッドを実行するとエラーが発生します。</para>
-          <para>範囲の <b /> <see cref="P:Microsoft.Office.Interop.Excel.Range.IndentLevel" /> インデント レベルを取得するには、このプロパティを使用します。</para>
+          <para>プロパティを <b /> <see cref="P:Microsoft.Office.Interop.Excel.Range.IndentLevel" /> 使用して、範囲のインデント レベルを返します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3204,7 +3204,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Interior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> オブジェクトの内部を表すオブジェクトを返します。</summary>
+        <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Interior" /> の内部を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3239,11 +3239,11 @@
         <Parameter Name="ColumnIndex" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="RowIndex">Required <b>Object</b>. 左から右に、次に上から下に数えて、アクセスするセルのインデックス番号を指定します。 Range.Item(1) は、範囲内の左上のセルを返します。Range.Item(2) は、左上のセルの右にあるセルを返します。</param>
+        <param name="RowIndex">必須<b>オブジェクト 。</b> 左から右に、次に上から下に数えて、アクセスするセルのインデックス番号を指定します。 Range.Item(1) は、範囲内の左上のセルを返します。Range.Item(2) は、左上のセルの右側にあるセルをすぐに返します。</param>
         <param name="ColumnIndex">省略 <b>可能なオブジェクト</b>です。 範囲の最初の列を 1 または "A" として、アクセスするセルの列番号を示す数字または列文字を指定します。</param>
-        <summary>指定した範囲 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> へのオフセット位置にある範囲を表すオブジェクトを返します。</summary>
+        <summary>指定した範囲 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> へのオフセットで範囲を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks><para>引数 <paramref name="RowIndex" /> と <paramref name="ColumnIndex" /> 引数は相対オフセットです。 つまり、1 を指定すると、ワークシートの最初の行ではなく、範囲の最初の <paramref name="RowIndex" /> 行のセルが返されます。</para>
+        <remarks><para>引数 <paramref name="RowIndex" /> と <paramref name="ColumnIndex" /> 引数は相対オフセットです。 つまり、1 のセルを指定すると、ワークシートの最初の行ではなく、範囲の最初の行のセル <paramref name="RowIndex" /> が返されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3270,7 +3270,7 @@
       <Docs>
         <summary>対象セル範囲内の文字列を、そのセル範囲に合わせて割り付けます。</summary>
         <returns>To be added.</returns>
-        <remarks><para>セル範囲の大きさが不十分なときは、下のセルに文字列を上書きするかどうかを確認するメッセージが表示されます。 [OK] をクリックすると、文字の割り付けが行われた結果、対象セル範囲外のセル範囲の内容が上書きされます。 このメッセージが表示されるのを防ぐには、プロパティを False <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> に設定 <b>します</b>。 このように設定すると、対象セル範囲が小さい場合には、対象セル範囲外のセルの内容が自動的に上書きされます。</para>
+        <remarks><para>セル範囲の大きさが不十分なときは、下のセルに文字列を上書きするかどうかを確認するメッセージが表示されます。 [OK] をクリックすると、文字の割り付けが行われた結果、対象セル範囲外のセル範囲の内容が上書きされます。 このメッセージが表示されるのを防ぐには、プロパティ <see cref="P:Microsoft.Office.Interop.Excel._Application.DisplayAlerts" /> を False に <b>設定します</b>。 このように設定すると、対象セル範囲が小さい場合には、対象セル範囲外のセルの内容が自動的に上書きされます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3297,10 +3297,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>列 A の左側から範囲の左側までの距離を指定します。</summary>
+        <summary>列 A の左端から範囲の左端までの距離。</summary>
         <value>To be added.</value>
         <remarks><para>セル範囲が連続していない場合は、先頭の領域が使われます。複数の列を含む範囲の場合は、範囲内で最も左に位置する列が使用されます。</para>
-          <para>ウィンドウが最大化されている場合、このプロパティはウィンドウ枠の幅に基づいて変化する負の数を返します。 このプロパティを 0 (ゼロ) に設定すると、アプリケーション ウィンドウが最大化されている場合よりもウィンドウが小さくて少し小さになります。 つまり、このプロパティが 0 (ゼロ) の場合、メインの Microsoft Excel ウィンドウの左罫線は画面にはほとんど表示されません。</para>
+          <para>ウィンドウが最大化されている場合、このプロパティは、ウィンドウの枠線の幅に基づいて変化する負の数を返します。 このプロパティを 0 (ゼロ) に設定すると、アプリケーション ウィンドウが最大化された場合よりも小さいウィンドウになります。 つまり、このプロパティが 0 (ゼロ) の場合、メイン ウィンドウの左側の境界線Microsoft Excel画面にはほとんど表示されません。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3329,7 +3329,7 @@
       <Docs>
         <summary>指定したセル範囲内の見出し行の数を返します。</summary>
         <value>To be added.</value>
-        <remarks><para>このプロパティを使用する前に、この <see cref="P:Microsoft.Office.Interop.Excel.Range.CurrentRegion" /> プロパティを使用して範囲の境界を検索します。</para>
+        <remarks><para>このプロパティを使用する前に、 <see cref="P:Microsoft.Office.Interop.Excel.Range.CurrentRegion" /> プロパティを使用して範囲の境界を検索します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3354,9 +3354,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>範囲内の最初のセルから始まる、表示されている名前の一覧をワークシートに貼り付けます。</summary>
+        <summary>表示されている名前の一覧をワークシートに貼り付けます。範囲の最初のセルから始まる。</summary>
         <returns>To be added.</returns>
-        <remarks><para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel._Application.Names" /> を使用して、ワークシート上のすべての名前のコレクションを取得します。</para>
+        <remarks><para>ワークシート上 <see cref="P:Microsoft.Office.Interop.Excel._Application.Names" /> のすべての名前のコレクションを取得するには、プロパティを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3383,7 +3383,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.ListObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトまたは <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> オブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Range" /> オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> します。</summary>
+        <summary>オブジェクトまたはオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.ListObject" /> のオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を返 <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3414,7 +3414,7 @@
         <summary>指定した範囲の左上隅を含むレポートの部分を表す定数 <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> を返します。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>XlLocationInTable</b> には、次の定数 <see cref="T:Microsoft.Office.Interop.Excel.XlLocationInTable" /> のいずれかを指定できます。</para>
+            <b>XlLocationInTable には</b> 、次のいずれかの定数 <see cref="T:Microsoft.Office.Interop.Excel.XlLocationInTable" /> を指定できます。</para>
           <list type="bullet">
             <item>
               <description>
@@ -3491,9 +3491,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトがロックされているかどうかを指定します。</summary>
+        <summary>オブジェクトがロックされるかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks><para>このプロパティは、オブジェクトがロックされている場合は <b>True</b> を返します <b>。False</b> の場合、シートが保護されているときにオブジェクトを変更できます。指定した範囲にロックされたセルとロック解除されたセルの両方が含まれている場合は <b>Null</b> を返します。</para>
+        <remarks><para>このプロパティは、<b></b>オブジェクトがロックされている場合は True、シートが保護されているときにオブジェクトを変更できる場合は False、指定した範囲にロックされたセルとロック解除されたセルの両方が含まれている場合は<b>Null</b>を返します。 <b></b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3520,7 +3520,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの MDX 名を返 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> します。 読み取り専用です。</summary>
+        <summary>指定したオブジェクトの MDX 名を返 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> します。 読み取り専用です。</summary>
         <value>String</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3578,7 +3578,7 @@
       <Docs>
         <summary>指定したセル <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を含む結合範囲を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks><para>指定したセルが結合範囲に含まれる場合、このプロパティは指定されたセルを返します。</para>
+        <remarks><para>指定したセルが結合範囲に含されていない場合、このプロパティは指定したセルを返します。</para>
           <para><b>MergeArea</b> プロパティは単一セル範囲でのみ機能します。</para>
           <para> </para></remarks>
       </Docs>
@@ -3611,8 +3611,8 @@
       <Docs>
         <summary>範囲またはスタイルに結合されたセルが含まれているかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks><para>範囲または <b>スタイルに結合</b> されたセルが含まれている場合、このプロパティはTrue を返します。</para>
-          <para>結合されたセルが含まれるセル範囲を選択すると、指定したセル範囲と実際のセル範囲が異なる場合があります。 このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.Range.Address(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object)" /> を使用して、選択した範囲のアドレスを確認します。</para>
+        <remarks><para>範囲または <b>スタイルに結合</b> セルが含まれている場合、このプロパティは True を返します。</para>
+          <para>結合されたセルが含まれるセル範囲を選択すると、指定したセル範囲と実際のセル範囲が異なる場合があります。 プロパティを <see cref="P:Microsoft.Office.Interop.Excel.Range.Address(System.Object,System.Object,Microsoft.Office.Interop.Excel.XlReferenceStyle,System.Object,System.Object)" /> 使用して、選択した範囲のアドレスを確認します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3644,7 +3644,7 @@
       <Docs>
         <summary>オブジェクトの名前を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para>Range オブジェクトの <b>名前</b> はオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Name" /> です。 他のすべての種類のオブジェクトの場合、名前は <b>文字列です</b>。</para>
+        <remarks><para>Range オブジェクトの <b>名前</b> はオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Name" /> です。 他のすべての種類のオブジェクトでは、名前は String <b>です</b>。</para>
           <para>OLAP データ ソースの一意な名前が "[都道府県].[東京都].[東京]"、OLAP 以外のデータ ソースのアイテム名が "東京" とされた場合、<b>Name</b> プロパティ、および関連するプロパティの値を次に示します。</para>
           <list type="table">
             <item>
@@ -3668,17 +3668,17 @@
               <description>東京</description>
             </item>
           </list>
-          <para>コレクションにインデックスを指定する場合は、次の表 <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> に示す構文を使用できます。</para>
+          <para>コレクションにインデックスを指定する場合は <see cref="T:Microsoft.Office.Interop.Excel.PivotItems" /> 、次の表に示す構文を使用できます。</para>
           <list type="table">
             <item>
-              <term>式を使用します。PivotItems("[Europe].[フランス]。[パリ]")</term>
-              <description>式を使用します。PivotItems("Paris")</description>
+              <term>式。PivotItems("[Europe].[フランス]。[パリ]")</term>
+              <description>式。PivotItems("Paris")</description>
             </item>
           </list>
-          <para>このプロパティを使用してコレクションの特定のメンバーを参照する場合は、次の表に示すように、テキスト インデックス <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> 名を使用できます。</para>
+          <para>プロパティを使用してコレクションの特定のメンバーを参照する場合は、次の表に示すように、テキスト インデックス名 <see cref="M:Microsoft.Office.Interop.Excel.PivotItems.Item(System.Object)" /> を使用できます。</para>
           <list type="table">
             <item>
-              <term>[ヨーロッパ].[フランス].[パリ]</term>
+              <term>[ヨーロッパ][フランス][パリ]</term>
               <description>東京</description>
             </item>
           </list>
@@ -3709,12 +3709,12 @@
         <Parameter Name="LinkNumber" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="TowardPrecedent">省略 <b>可能なオブジェクト</b>です。 移動する方向を指定します <b>。True</b> を指定すると、参照先に移動します。 <b>False に</b> 依存する方向に移動します。</param>
+        <param name="TowardPrecedent">省略 <b>可能なオブジェクト</b>です。 移動する方向を指定します。 <b>前</b> 例に向かって移動するには True を指定します。 <b>False を</b> 指定すると、依存する方向に移動します。</param>
         <param name="ArrowNumber">省略 <b>可能なオブジェクト</b>です。 対象となるトレース矢印の番号を指定します。</param>
         <param name="LinkNumber">省略 <b>可能なオブジェクト</b>です。 トレース矢印が外部参照を表すとき、この引数でどの外部参照を対象とするかを指定します。 この引数を省略すると、最初の外部参照を指定したことになります。</param>
         <summary>指定されたセル範囲のトレース矢印をたどって、参照元のセル、参照先のセル、またはエラーの発生したセル (セル範囲) へ移動します。</summary>
         <returns>To be added.</returns>
-        <remarks><para>参照元、参照先、またはエラーのセルを選択し、新しい選択範囲を表す <see cref="T:Microsoft.Office.Interop.Excel.Range" /> オブジェクトを返します。 指定されたセルにトレース矢印が表示されていないときは、エラーを返します。</para>
+        <remarks><para>前のセル、依存セル、またはエラー セルを選択し、新しい選択範囲を表 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> すオブジェクトを返します。 指定されたセルにトレース矢印が表示されていないときは、エラーを返します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3743,7 +3743,7 @@
       <Docs>
         <summary>次のセル <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks><para>このプロパティは TAB キーをエミュレートしますが、このプロパティは選択せずに次のセルを返します。</para>
+        <remarks><para>このプロパティは TAB キーをエミュレートしますが、プロパティは選択せずに次のセルを返します。</para>
           <para>保護されたシートでは、ロックされていないセルの中から、次のセルを返します。保護されていないシートでは、指定したセルの右隣のセルを常に返します。</para>
           <para> </para></remarks>
       </Docs>
@@ -3772,12 +3772,12 @@
         <Parameter Name="Length" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Text">省略 <b>可能なオブジェクト</b>です。 コメントに追加する、半角で 255 文字までの文字列を指定します。 テキストは、既存のメモの文字を置き換え、位置から <paramref name="Start" /> <paramref name="Length" /> 挿入されます。 この引数を省略した場合、このメソッドは文字の位置から始まるメモの現在のテキスト <paramref name="Start" /> を返 <paramref name="Length" /> します。</param>
-        <param name="Start">省略 <b>可能なオブジェクト</b>です。 設定または取得するテキストの開始位置を指定します。 この引数を省略すると、最初の文字から設定または取得を開始します。 コメントに文字列を追加するには、既存のコメントの文字数を超える値を指定します。</param>
-        <param name="Length">省略 <b>可能なオブジェクト</b>です。 設定または取得する文字数を指定します。 この引数を省略すると、半角で 255 文字を上限として、コメントの開始位置から終了位置までの文字列を設定または取得します。 メモの末尾から末尾まで 255 文字を超える文字がある場合、このメソッドは <paramref name="Start" /> 255 文字のみを返します。</param>
-        <summary>セル範囲の左上隅のセルに関連付けられているセルのメモを設定または返します。</summary>
+        <param name="Text">省略 <b>可能なオブジェクト</b>です。 コメントに追加する、半角で 255 文字までの文字列を指定します。 テキストは、既存のノートの文字を置き換える位置から <paramref name="Start" /> <paramref name="Length" /> 挿入されます。 この引数を省略すると、このメソッドは、文字の位置から始まるノートの現在のテキスト <paramref name="Start" /> を返 <paramref name="Length" /> します。</param>
+        <param name="Start">省略 <b>可能なオブジェクト</b>です。 設定または返されるテキストの開始位置。 この引数を省略すると、最初の文字から設定または取得を開始します。 コメントに文字列を追加するには、既存のコメントの文字数を超える値を指定します。</param>
+        <param name="Length">省略 <b>可能なオブジェクト</b>です。 設定または取得する文字数を指定します。 この引数を省略すると、半角で 255 文字を上限として、コメントの開始位置から終了位置までの文字列を設定または取得します。 ノートの末尾に 255 文字を超える文字がある場合、このメソッドは <paramref name="Start" /> 255 文字のみを返します。</param>
+        <summary>セル範囲の左上隅にあるセルに関連付けられているセル メモを設定または返します。</summary>
         <returns>To be added.</returns>
-        <remarks><para>セルのコメントは、範囲コメントに置き換えられた。 詳細については、オブジェクトを参照 <see cref="T:Microsoft.Office.Interop.Excel.Comment" /> してください。</para>
+        <remarks><para>セルノートは範囲コメントに置き換えされています。 詳細については、オブジェクトを参照 <see cref="T:Microsoft.Office.Interop.Excel.Comment" /> してください。</para>
           <para>256 文字以上のコメントを追加するには、このメソッドを使用して最初の 255 文字を指定し、次に 255 文字以内ずつの文字列を追加していきます。</para>
           <para> </para></remarks>
       </Docs>
@@ -3811,7 +3811,7 @@
         <summary>オブジェクトの書式設定コードを設定または返します。</summary>
         <value>To be added.</value>
         <remarks><para>指定されたすべてのセル範囲の表示形式が同じでない場合、<b>Null</b> を返します。</para>
-          <para>表示形式を示す文字列は、[ セルの書式設定] ダイアログ ボックスの [ 表示形式] の文字列と同じです。 <b>Format 関数は</b>、NumberFormat やプロパティとは異なる書式<b>コード文字列を</b>使用 <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormatLocal" /> します。</para>
+          <para>表示形式を示す文字列は、[ セルの書式設定] ダイアログ ボックスの [ 表示形式] の文字列と同じです。 <b>Format 関数は、NumberFormat</b>およびプロパティとは異なる書式コード<b>文字列を</b>使用 <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormatLocal" /> します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3843,7 +3843,7 @@
       <Docs>
         <summary>ユーザーの言語で文字列としてオブジェクトの書式設定コードを設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para><b>Format 関数は</b>、NumberFormatLocal プロパティと異なる書式コード文字列 <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormat" /> <b>を使用</b>します。</para>
+        <remarks><para><b>Format 関数は</b>、NumberFormatLocal プロパティと異なる書式コード <see cref="P:Microsoft.Office.Interop.Excel.Range.NumberFormat" /> <b>文字列を使用</b>します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -3876,7 +3876,7 @@
       <Docs>
         <param name="RowOffset">省略 <b>可能なオブジェクト</b>です。 オフセットする範囲の行数 (正、負、または 0) を指定します。 正の値は下方向、負の値は上方向のオフセットを表します。 既定値は 0 です。</param>
         <param name="ColumnOffset">省略 <b>可能なオブジェクト</b>です。 オフセットする範囲の列数 (正、負、または 0) を指定します。 正の値は右方向、負の値は左方向のオフセットを表します。 既定値は 0 です。</param>
-        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 範囲からのオフセット範囲を表すオブジェクトを返します。</summary>
+        <summary>指定した範囲 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> からのオフセット範囲を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -3909,7 +3909,7 @@
       <Docs>
         <summary>テキストの向きを返します。</summary>
         <value>To be added.</value>
-        <remarks><para>この戻り方向の値には、90 ~ 90 度の整数値を指定できます。</para>
+        <remarks><para>この方向の値は、90 ~ 90 度の整数値を指定できます。</para>
           <para>OLAP データ ソースの場合、ある階層の 1 つのフィールドに対してこのプロパティを設定すると、同じ階層のその他のフィールドにも同じ値が設定されます。ディメンション フィールドは、ピボットテーブル レポートの行フィールド、列フィールド、またはページ フィールドの各領域にのみ配置できます。メジャー フィールドは、データ エリアにのみ配置できます。階層、またはデータ フィールドに <b>xlHidden</b> を設定すると、ピボットテーブル レポートから削除されます。</para>
           <para> </para></remarks>
       </Docs>
@@ -3972,7 +3972,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、ページ切り取りの場所を設定します。</summary>
+        <summary>ページブレークの場所を設定または返します。</summary>
         <value>To be added.</value>
         <remarks><para>戻り値には、次のいずれかの定数 <see cref="T:Microsoft.Office.Interop.Excel.XlPageBreak" /> <b /> を指定できます。</para>
           <list type="bullet">
@@ -4048,11 +4048,11 @@
         <Parameter Name="Destination" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="ParseLine">省略 <b>可能なオブジェクト</b>です。 セルを分割する場所を示す左角かっこと右角かっこを含む文字列。たとえば、"[xxx][xxx]" は、最初の 3 文字をコピー先の範囲の最初の列に挿入し、次の 3 文字を 2 番目の列に挿入します。この引数を省略すると、範囲内の左上のセルの間隔に基づいて列を分割する場所が推測されます。 解析行を推測するために別の範囲を使用する場合は、 <b>引数として Range</b> オブジェクトを使用 <paramref name="ParseLine" /> します。 用いる範囲は、分割されているセルのいずれかである必要があります。 引数 <paramref name="ParseLine" /> には、角かっことスペースを含め、255 文字を超えることはできません。</param>
-        <param name="Destination">省略 <b>可能なオブジェクト</b>です。 解析 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> されたデータのコピー先の範囲の左上隅を表すオブジェクト。 この引数を省略すると、分割元のセル範囲になります。</param>
+        <param name="ParseLine">省略 <b>可能なオブジェクト</b>です。 セルを分割する場所を示す左かっこと右かっこを含む文字列。たとえば、"[xxx][xxx]" は、移動先の範囲の最初の列に最初の 3 文字を挿入し、次の 3 文字を 2 番目の列に挿入します。この引数を省略すると、Microsoft Excelの左上のセルの間隔に基づいて列を分割する場所が推測されます。 別の範囲を使用して解析行を推測する場合は、 <b>引数として Range</b> オブジェクトを使用 <paramref name="ParseLine" /> します。 用いる範囲は、分割されているセルのいずれかである必要があります。 引数 <paramref name="ParseLine" /> は、角かっことスペースを含め、255 文字を超えることはできません。</param>
+        <param name="Destination">省略 <b>可能なオブジェクト</b>です。 解析 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> されたデータの移動先範囲の左上隅を表すオブジェクト。 この引数を省略すると、分割元のセル範囲になります。</param>
         <summary>指定セル範囲内のデータを分割して、複数のセルに入力します。</summary>
         <returns>To be added.</returns>
-        <remarks><para>複数の隣接する列を埋める範囲の内容を分散します。 指定できる範囲の幅は 1 列以下です。</para>
+        <remarks><para>複数の隣接する列を埋める範囲の内容を分散します。 範囲は、1 つの列幅以下にできます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4081,11 +4081,11 @@
         <Parameter Name="Transpose" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Paste">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlPasteType" /> 可能です。 貼り付け範囲の部分を指定します。 使用できる定数は、次に示す<b>XlPasteType</b>定数です<b>。xlPasteAll default</b><b>xlPasteAllExceptBorders</b><b>xlPasteColumnWidths</b><b>xlPasteComments xlPasteComments</b><b>xlPasteFormulas</b><b>xlPasteFormulasAndNumberFormats</b><b>xlPasteValidation</b><b>xlPasteValues xlPasteValuesAndNumberFormats</b><b></b> <b></b></param>
-        <param name="Operation">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlPasteSpecialOperation" /> 可能です。 貼り付け操作。 使用できる定数は<b>、XlPasteSpecialOperationAdd</b> <b>xlPasteSpecialOperationAdd</b><b>xlPasteSpecialOperationDivide</b><b>xlPasteSpecialOperationMultiply</b><b>xlPasteSpecialOperationNone</b> <paramref name="default" /> <b>xlPasteSpecialOperationSubtract</b>です。</param>
-        <param name="SkipBlanks">省略 <b>可能なオブジェクト</b>です。 <b>True</b> クリップボードの範囲に空白のセルが貼り付け先の範囲に貼り付けされていない場合です。 既定値は <b>False</b> です。</param>
-        <param name="Transpose">省略 <b>可能なオブジェクト</b>です。 <b>True</b> の 範囲を貼り付け時に行と列を置き替えします。 既定値は <b>False</b> です。</param>
-        <summary>クリップボードの a <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を指定した範囲に貼り付けます。</summary>
+        <param name="Paste">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlPasteType" /> 可能です。 貼り付けする範囲の部分。 XlPasteType<b></b>定数の 1 つを指定できます。<b>xlPasteAll</b>default<b>xlPasteAllExceptBorders</b><b>xlPasteColumnWidths</b><b>xlPasteComments</b><b>xlPasteFormulas xlPasteFormulasAndNumberFormats</b><b></b><b></b><b>xlPasteValidation xlPasteValidation</b><b>xlPasteValues</b><b>xlPasteValuesAndNumbersFormats</b></param>
+        <param name="Operation">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlPasteSpecialOperation" /> 可能です。 貼り付け操作。 <b>XlPasteSpecialOperation</b>定数は<b>、xlPasteSpecialOperationAdd</b><b>xlPasteSpecialOperationDivide</b><b>xlPasteSpecialOperationMultiply</b><b>xlPasteSpecialOperationNone</b> <paramref name="default" /> <b>xlPasteSpecialOperationSubtract</b>のいずれかを指定できます。</param>
+        <param name="SkipBlanks">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、クリップボードの範囲に空白のセルが貼り付け先の範囲に貼り付けされません。 既定値は <b>False</b> です。</param>
+        <param name="Transpose">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、範囲が貼り付け時に行と列が転置されます。 既定値は <b>False</b> です。</param>
+        <summary>クリップボードから指定 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> した範囲に a を貼り付けます。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4113,9 +4113,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Phonetic</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>セル内の <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> 特定の読み取り文字列に関する情報を含むオブジェクトを返します。</summary>
+        <summary>セル内の <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> 特定のテキスト文字列に関する情報を含むオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks><para>このプロパティは、最新バージョンでの Excel との互換性を提供します。 単一の <b>オブジェクトを取得するには、Phonetics</b>( ) を使用する必要があります 。index には、読み取り文字列の <paramref name="index" /> インデックス番号を指定 <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> します。</para>
+        <remarks><para>このプロパティは、最新バージョンでの Excel との互換性を提供します。 単一の <b>オブジェクトを取得するには、Phonetics</b>( ) を使用する必要があります。index は、読み取りテキストのインデックス <paramref name="index" /> <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> 番号です。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4170,7 +4170,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotCell</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ピボットテーブル <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> レポート内のセルを表すオブジェクトを返します。</summary>
+        <summary>ピボットテーブル レポート <see cref="T:Microsoft.Office.Interop.Excel.PivotCell" /> 内のセルを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4198,7 +4198,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotField</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した範囲の左上隅を含むピボットテーブル フィールドを表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> を返します。</summary>
+        <summary>指定した範囲の左上隅を含むピボットテーブル フィールドを表す <see cref="T:Microsoft.Office.Interop.Excel.PivotField" /> オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4226,7 +4226,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した範囲の左上隅を含むピボットテーブル アイテムを表 <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> すオブジェクトを返します。</summary>
+        <summary>指定した範囲の左上隅を含むピボットテーブル アイテムを表す <see cref="T:Microsoft.Office.Interop.Excel.PivotItem" /> オブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4254,7 +4254,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.PivotTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定範囲の左上隅を含むピボットテーブル レポート、またはピボットグラフ レポートに関連付けられたピボットテーブル レポートを表すオブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> 返します。</summary>
+        <summary>指定した範囲の左上隅を含むピボットテーブル レポート、またはピボットテーブル レポートに関連付けられたピボットテーブル レポートを表すオブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.PivotTable" /> ピボットグラフします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4282,7 +4282,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>セルのすべての <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 参照元を表すオブジェクトを返します。</summary>
+        <summary>セルのすべての <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 前例を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks><para>参照元のセル範囲が複数あるときは、複数選択範囲 ( <b>Range</b> オブジェクトの集合) を返します。</para>
           <para> </para></remarks>
@@ -4313,7 +4313,7 @@
       <Docs>
         <summary>セルのプレフィックス文字を返します。</summary>
         <value>To be added.</value>
-        <remarks><para>プロパティが <see cref="P:Microsoft.Office.Interop.Excel._Application.TransitionNavigKeys" /> False の <b>場合</b>、このプレフィックス文字はテキスト ラベルの場合は ' になります。空白になります。 If the <b>TransitionNavigKeys</b> property is <b>True</b>, this character will be ' for a left-justified label, " for a right-justified label, ^ for a centered label, \ for a repeated label, or blank.</para>
+        <remarks><para>プロパティが <see cref="P:Microsoft.Office.Interop.Excel._Application.TransitionNavigKeys" /> <b>False の場合</b>、このプレフィックス文字はテキスト ラベルの場合は ' または空白になります。 If the <b>TransitionNavigKeys</b> property is <b>True</b>, this character will be ' for a left-justified label, " for a right-justified label, ^ for a centered label, \ for a repeated label, or blank.</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4382,14 +4382,14 @@
         <param name="From">省略 <b>可能なオブジェクト</b>です。 印刷を開始するページの番号を指定します。 この引数を省略すると、最初のページから印刷します。</param>
         <param name="To">省略 <b>可能なオブジェクト</b>です。 印刷を終了するページの番号を指定します。 この引数を省略すると、最後のページまで印刷します。</param>
         <param name="Copies">省略 <b>可能なオブジェクト</b>です。 印刷部数を指定します。 この引数を省略すると、印刷部数は 1 部になります。</param>
-        <param name="Preview">省略 <b>可能なオブジェクト</b>です。 <b>True オブジェクト</b> を印刷する前に印刷プレビューを呼び出す場合。 <b>False</b> (または省略) を指定すると、オブジェクトが直ちに印刷されます。</param>
+        <param name="Preview">省略 <b>可能なオブジェクト</b>です。 <b>True</b>を指定すると、Microsoft Excel印刷前に印刷プレビューを呼び出す必要があります。<b>False</b> (または省略) を指定すると、オブジェクトを即座に印刷できます。</param>
         <param name="ActivePrinter">省略 <b>可能なオブジェクト</b>です。 アクティブなプリンターの名前を指定します。</param>
         <param name="PrintToFile">省略 <b>可能なオブジェクト</b>です。 <b>True</b> の場合、ファイルへ出力します。 引数 <b>PrToFileName</b> が省略された場合、出力先のファイル名を指定するためのダイアログ ボックスを表示します。</param>
         <param name="Collate">省略 <b>可能なオブジェクト</b>です。 <b>True</b> の場合、部単位で印刷します。</param>
         <param name="PrToFileName">省略 <b>可能なオブジェクト</b>です。 <b>PrintToFile</b> が <b>True</b> の場合、出力先ファイルの名前を指定します。</param>
         <summary>オブジェクトを印刷します。</summary>
         <returns>To be added.</returns>
-        <remarks><para>シートまたはブック内の全体的なページではなく、印刷ページの説明の 「ページ <paramref name="From" /> <paramref name="To" /> 」。印刷ページを参照します。</para>
+        <remarks><para>シートまたはブックの全体的なページではなく、印刷されたページの説明と参照の「ページ <paramref name="From" /> <paramref name="To" /> 」。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4457,7 +4457,7 @@
         <Parameter Name="EnableChanges" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="EnableChanges"><b>True 変更</b> を有効にする場合です。</param>
+        <param name="EnableChanges"><b>True を</b> 指定すると、変更が有効になります。</param>
         <summary>オブジェクトの印刷プレビュー (印刷時のイメージ) を表示します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -4486,7 +4486,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.QueryTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> と交差するクエリ テーブルを表すオブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> します。</summary>
+        <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.QueryTable" /> と交差するクエリ テーブルを表すオブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4517,11 +4517,11 @@
         <Parameter Name="Cell2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Cell1">Required <b>Object</b>. 範囲の名前を指定します。 A1 形式の参照をコード記述時の言語で指定します。 範囲名には、範囲を表す演算子 (:)、共通部分を表す演算子 (スペース)、または複数の範囲を表す演算子 (,) を含めることができます。 また、ドル記号を含めできますが、無視されます。 範囲の任意の部分には、ローカルに定義した名前を使用できます。 名前を使用する場合、その名前はコード記述時の言語で表されたものと見なされます。</param>
+        <param name="Cell1">必須<b>オブジェクト 。</b> 範囲の名前を指定します。 A1 形式の参照をコード記述時の言語で指定します。 範囲名には、範囲を表す演算子 (:)、共通部分を表す演算子 (スペース)、または複数の範囲を表す演算子 (,) を含めることができます。 また、ドル記号を含め、無視できます。 範囲の任意の部分には、ローカルに定義した名前を使用できます。 名前を使用する場合、その名前はコード記述時の言語で表されたものと見なされます。</param>
         <param name="Cell2">省略 <b>可能なオブジェクト</b>です。 セル範囲の左上隅と右下隅のセルを指定します。 各引数には、単一のセル、列全体、または行全体を含む <b>Range</b> オブジェクト、あるいはコード記述時の言語で単一のセルの名前を示す文字列を指定できます。</param>
         <summary>セルまたは <see cref="T:Microsoft.Office.Interop.Excel.Range" /> セル範囲を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
-        <remarks><para>このプロパティは <b>、Range</b> オブジェクトを基準にしています。 たとえば、選択範囲がセル C3 の場合、Selection.Range("B1") は、プロパティによって返される <b>Range</b> オブジェクトを基準にしたセル D3 を返します <see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" /> 。 一方、ActiveSheet.Range("B1") は常にセル B1 を返します。</para>
+        <remarks><para>このプロパティは Range オブジェクトを <b>基準</b> にしています。 たとえば、選択範囲がセル C3 の場合、Selection.Range("B1") は、プロパティによって返される <b>Range</b> オブジェクトを基準にしたセル D3 を返 <see cref="P:Microsoft.Office.Interop.Excel._Application.Selection" /> します。 一方、ActiveSheet.Range("B1") は常にセル B1 を返します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4553,7 +4553,7 @@
       <Docs>
         <summary>指定されたオブジェクトの読みの順序を返すか設定します。</summary>
         <value>To be added.</value>
-        <remarks><para>戻り値には、次の定数のいずれかを指定できます: <b>xlRTL</b> (右から左 <b>)、xlLTR</b> (左から右)、 <b>または xlContext</b>。</para>
+        <remarks><para>戻り値には <b>、xlRTL</b> (右から左 <b>)、xlLTR</b> (左から右)、または xlContext のいずれかの定数を <b>指定できます</b>。</para>
           <para>[!メモ] 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。</para>
           <para> </para></remarks>
       </Docs>
@@ -4581,8 +4581,8 @@
         <Parameter Name="Header" Type="Microsoft.Office.Interop.Excel.XlYesNoGuess" />
       </Parameters>
       <Docs>
-        <param name="Columns">重複 <b>する</b> 情報を含む列のインデックスのオプションのオブジェクト配列。  何も渡しない場合、すべての列に重複する情報が含まれていると見なされます。</param>
-        <param name="Header">オプション <see cref="T:Microsoft.Office.Interop.Excel.XlYesNoGuess" /> 最初の行にヘッダー情報が含まれるかどうかを指定します。  <see cref="F:Microsoft.Office.Interop.Excel.XlYesNoGuess.xlNo" /> は既定値です。は <see cref="F:Microsoft.Office.Interop.Excel.XlYesNoGuess.xlGuess" /> 、Excel がヘッダーの判別を試みるかどうかを指定します。</param>
+        <param name="Columns">重複 <b>する</b> 情報を含む列のインデックスのオプションの Object Array。  何も渡された場合、すべての列に重複する情報が含まれていると見なされます。</param>
+        <param name="Header">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlYesNoGuess" /> 可能 最初の行にヘッダー情報が含まれるかどうかを指定します。  <see cref="F:Microsoft.Office.Interop.Excel.XlYesNoGuess.xlNo" />は既定値です。ヘッダー <see cref="F:Microsoft.Office.Interop.Excel.XlYesNoGuess.xlGuess" /> の特定をExcelする場合に指定します。</param>
         <summary>値の範囲から重複した値を削除します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4642,18 +4642,18 @@
         <Parameter Name="ReplaceFormat" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="What">Required <b>Object</b>. Excel で検索する文字列を指定します。</param>
-        <param name="Replacement">Required <b>Object</b>. 置き換える文字列を指定します。</param>
-        <param name="LookAt">省略 <b>可能なオブジェクト</b>です。 使用できる定数は <see cref="T:Microsoft.Office.Interop.Excel.XlLookAt" /> <b>、xlWhole</b> または <b>xlPart です</b>。</param>
-        <param name="SearchOrder">省略 <b>可能なオブジェクト</b>です。 使用できる定数は <see cref="T:Microsoft.Office.Interop.Excel.XlSearchOrder" /> <b>、xlByRows</b> または <b>xlByColumns です</b>。</param>
+        <param name="What">必須<b>オブジェクト 。</b> Excel で検索する文字列を指定します。</param>
+        <param name="Replacement">必須<b>オブジェクト 。</b> 置き換える文字列を指定します。</param>
+        <param name="LookAt">省略 <b>可能なオブジェクト</b>です。 xlWhole または <see cref="T:Microsoft.Office.Interop.Excel.XlLookAt" /> <b>xlPart</b> の定数のいずれかを <b>指定できます</b>。</param>
+        <param name="SearchOrder">省略 <b>可能なオブジェクト</b>です。 次のいずれかの定数を <see cref="T:Microsoft.Office.Interop.Excel.XlSearchOrder" /> 指定できます。 <b>xlByRows または</b> <b>xlByColumns</b>。</param>
         <param name="MatchCase">省略 <b>可能なオブジェクト</b>です。 大文字と小文字を区別して検索するには、 <b>True</b> を指定します。</param>
-        <param name="MatchByte">省略 <b>可能なオブジェクト</b>です。 この引数は、Microsoft Excel で 2 バイト言語サポートを選択またはインストールした場合にのみ使用できます。 <b>True を</b> 指定すると、2 バイト文字が 2 バイト文字のみ一致します。 <b>False</b> を指定すると、2 バイト文字が 1 バイトの文字と一致します。</param>
+        <param name="MatchByte">省略 <b>可能なオブジェクト</b>です。 この引数は、2 バイト言語サポートを選択またはインストールした場合にのみ使用Microsoft Excel。 <b>True</b> を指定すると、2 バイト文字が 2 バイト文字のみ一致します。 <b>False</b> を指定すると、2 バイト文字が 1 バイトに相当する文字と一致します。</param>
         <param name="SearchFormat">省略 <b>可能なオブジェクト</b>です。 メソッドの検索書式を指定します。</param>
         <param name="ReplaceFormat">省略 <b>可能なオブジェクト</b>です。 メソッドの置換書式を指定します。</param>
         <summary>指定されたセル範囲内のセルの文字を示すブール型 (<b>Boolean</b>) の値を返します。</summary>
         <returns>To be added.</returns>
         <remarks><para>このメソッドを使用しても、選択範囲またはアクティブ セルは変更されません。</para>
-          <para>, <paramref name="LookAt" /> , <paramref name="SearchOrder" /> の設定 <paramref name="MatchCase" /> は <paramref name="MatchByte" /> 、このメソッドを使用する度に保存されます。 次にメソッドを呼び出す時にこれらの引数の値を指定しない場合は、保存された値が使用されます。 これらの引数を設定すると、[検索] ダイアログ ボックスの設定が変更され、また、[検索] ダイアログ ボックスで設定を変更すると、引数を省略した場合に使用される保存された値が変更されます。 問題を回避するには、このメソッドを使用するたびに、これらの引数を明示的に設定します。</para>
+          <para>、 <paramref name="LookAt" /> 、 <paramref name="SearchOrder" /> の設定 <paramref name="MatchCase" /> は <paramref name="MatchByte" /> 、このメソッドを使用する度に保存されます。 次にメソッドを呼び出す時にこれらの引数に値を指定しない場合は、保存された値が使用されます。 これらの引数を設定すると、[検索] ダイアログ ボックスの設定が変更され、また、[検索] ダイアログ ボックスで設定を変更すると、引数を省略した場合に使用される保存された値が変更されます。 問題を回避するには、このメソッドを使用するたびに、これらの引数を明示的に設定します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4714,7 +4714,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>範囲の最初の領域の最初の行の番号を返します。</summary>
+        <summary>範囲内の最初の領域の最初の行の番号を返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4742,7 +4742,7 @@
         <Parameter Name="Comparison" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Comparison">Required <b>Object</b>. 指定したセル範囲と比較する単一セルを指定します。</param>
+        <param name="Comparison">必須<b>オブジェクト 。</b> 指定したセル範囲と比較する単一セルを指定します。</param>
         <summary>各行の比較セルと内容が異なるすべてのセルを表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -4776,16 +4776,16 @@
       <Docs>
         <summary>指定した範囲内のすべての行の高さをポイント単位で返します。</summary>
         <value>To be added.</value>
-        <remarks><para>指定した範囲 <b>の行の</b> 高さが同じでない場合、このプロパティは Null を返します。</para>
-          <para>1 行の場合、プロパティの値 <see cref="P:Microsoft.Office.Interop.Excel.Range.Height" /> は <b>RowHeight プロパティの値と同</b> じになります。 ただし、Height プロパティを使用<b></b>してセル範囲の高さの合計を取得できます。</para>
-          <para><b>RowHeight と Height のその他の</b><b>違い</b>は次のとおりです。</para>
+        <remarks><para>指定した範囲の <b>行が</b> 同じ高さではない場合、このプロパティは Null を返します。</para>
+          <para>1 行の場合、プロパティの値 <see cref="P:Microsoft.Office.Interop.Excel.Range.Height" /> は <b>RowHeight プロパティの値と等</b> しくなります。 ただし、Height プロパティを使用 <b>して、</b> セル範囲の高さの合計を取得できます。</para>
+          <para><b>RowHeight</b>と Height の他の違い<b>としては、次</b>のようなものがあります。</para>
           <list type="bullet">
             <item>
               <description>
                 <b>高</b> さは読み取り専用です。</description>
             </item>
             <item>
-              <description>複数の行の <b>RowHeight</b> プロパティを取得する場合は、各行の行の高さ (すべての行が同じ高さである場合) または <b>Null</b> (高さが異なる場合) のどちらかを取得します。 複数の行の <b>Height</b> プロパティを取得すると、すべての行の高さの合計が取得されます。</description>
+              <description>複数の行の <b>RowHeight</b> プロパティを返す場合は、各行の行の高さ (すべての行が同じ高さである場合) または <b>Null</b> (高さが異なる場合) を取得します。 複数の行の <b>Height</b> プロパティを返す場合は、すべての行の合計の高さを取得します。</description>
             </item>
           </list>
           <para> </para></remarks>
@@ -4817,7 +4817,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Range</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した範囲 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> の行を表すオブジェクトを返します。</summary>
+        <summary>指定した範囲内 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> の行を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks><para>複数のセル範囲を含む <b>Range</b> オブジェクトに対してこのプロパティを使用すると、選択範囲の中で最初に選択した領域の行が返されます。</para>
           <para> </para></remarks>
@@ -4907,8 +4907,8 @@
         <summary>指定されたセル範囲にある Excel のマクロを実行します。</summary>
         <returns>To be added.</returns>
         <remarks><para>セル範囲はマクロ シートである必要があります。</para>
-          <para>このメソッドの引数では、名前を使用できません。 引数には、位置のパスで必ず指定してください。</para>
-          <para><b>Run</b> メソッドは、呼び出し先マクロが返す内容を返します。 </para>
+          <para>このメソッドの引数では、名前を使用できません。引数には、位置のパスで必ず指定してください。</para>
+          <para><b>Run</b> メソッドは、呼び出し先マクロが返す内容を返します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4935,7 +4935,7 @@
       <Docs>
         <summary>オブジェクトを選択します。</summary>
         <returns>To be added.</returns>
-        <remarks><para>セルまたはセル範囲を選択するには、Select メソッドを使用します。 1 つのセルをアクティブ セルにする場合は、このメソッドを使用 <see cref="M:Microsoft.Office.Interop.Excel.Range.Activate" /> します。</para>
+        <remarks><para>セルまたはセル範囲を選択するには、Select メソッドを使用します。 1 つのセルをアクティブ セルにする場合は、メソッドを使用 <see cref="M:Microsoft.Office.Interop.Excel.Range.Activate" /> します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -4962,7 +4962,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Actions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの SharePoint サーバーで実行できるアクションを指定 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> します。</summary>
+        <summary>オブジェクトのサーバーで実行できるアクションSharePoint指定 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> します。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.Actions" /></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5042,7 +5042,7 @@
         <Parameter Name="Remove" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Remove">省略 <b>可能なオブジェクト</b>です。 <b>True を</b> 直接依存するトレース矢印の 1 つのレベルを削除します。 <b>False トレース</b> 矢印の 1 つのレベルを展開します。 既定値は <b>False</b> です。</param>
+        <param name="Remove">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、1 つのレベルのトレーサー矢印を削除して、従属を指示します。 <b>False</b> を指定すると、1 つのレベルのトレーサー矢印が展開されます。 既定値は <b>False</b> です。</param>
         <summary>アクティブ セル (参照元) から、その値を直接参照しているセル (参照先) に向けてトレース矢印を引きます。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -5074,20 +5074,20 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した <b>範囲</b> のアウトラインが展開されている場合はTrue を返します (列または行の詳細が表示されます)。</summary>
+        <summary>指定した <b>範囲の</b> アウトラインが展開されている場合は True を返します (列または行の詳細が表示されます)。</summary>
         <value>To be added.</value>
         <remarks><para>指定する範囲は、アウトライン内の 1 つのサマリー列または行である必要があります。</para>
-          <para>範囲がピボットテーブル レポート内にある場合、アイテムに詳細が表示されている場合、このプロパティは <b>True</b> に設定されます。</para>
+          <para>範囲がピボットテーブル レポートにある場合、アイテムに詳細が表示されている場合、このプロパティは <b>True</b> に設定されます。</para>
           <para>ピボットテーブル レポート内のセル範囲以外が対象のとき、次のことに注意します。</para>
           <list type="bullet">
             <item>
               <description>セル範囲は、単一の集計行または集計列である必要があります。</description>
             </item>
             <item>
-              <description>行または列の子が非表示の場合、このプロパティは <b>False</b> を返します。</description>
+              <description>行または列の <b>子</b> が非表示の場合、このプロパティは False を返します。</description>
             </item>
             <item>
-              <description>このプロパティを <b>True に設定</b> すると、集計行または集計列のすべての子が表示されます。</description>
+              <description>このプロパティを <b>True に設定</b> すると、集計行または列のすべての子が表示されます。</description>
             </item>
             <item>
               <description>このプロパティに <b>False</b> を設定すると、集計行または集計列に対応する詳細行または詳細列をすべて非表示にすることになります。</description>
@@ -5121,7 +5121,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>エラーの原因であるセルに参照元ツリーを介してトレース矢印を描画し、そのセルを含む範囲を返します。</summary>
+        <summary>エラーの発生源であるセルに、前例ツリーを通してトレーサーの矢印を描画し、そのセルを含む範囲を返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5148,7 +5148,7 @@
         <Parameter Name="Remove" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Remove">省略 <b>可能なオブジェクト</b>です。 <b>True を</b> 直接参照するトレース矢印の 1 つのレベルを削除します。 <b>False トレース</b> 矢印の 1 つのレベルを展開します。 既定値は <b>False</b> です。</param>
+        <param name="Remove">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、1 つのレベルのトレーサー矢印を前例に直接削除できます。 <b>False</b> を指定すると、1 つのレベルのトレーサー矢印が展開されます。 既定値は <b>False</b> です。</param>
         <summary>対象セルが直接参照しているセル (参照元) から、対象セルに向けて矢印を引きます。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -5180,9 +5180,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>使用可能な列幅に収まるテキストを自動的に縮小するかどうかを指定します。</summary>
+        <summary>使用可能な列の幅に収まるテキストが自動的に縮小されるかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks><para>このプロパティは、<b></b>使用可能な列幅に収まるテキストが自動的に縮小する場合<b></b>はTrue を返し、このプロパティが指定範囲内のすべてのセルに同じ値に設定されていない場合は Null を返します。</para>
+        <remarks><para>このプロパティは、<b></b>使用可能な列の幅に収まるテキストが自動的に縮小する場合は True を返し、このプロパティが指定した範囲内のすべてのセルに対して同じ値に設定されていない場合は<b>Null</b>を返します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5212,7 +5212,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SmartTags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたセル <see cref="T:Microsoft.Office.Interop.Excel.SmartTags" /> の識別子を表すオブジェクトを返します。</summary>
+        <summary>指定したセル <see cref="T:Microsoft.Office.Interop.Excel.SmartTags" /> の識別子を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5253,24 +5253,24 @@
         <Parameter Name="DataOption3" Type="Microsoft.Office.Interop.Excel.XlSortDataOption" />
       </Parameters>
       <Docs>
-        <param name="Key1">省略 <b>可能なオブジェクト</b>です。 最初の並べ替えフィールドを、テキスト (ピボットテーブル フィールドまたは範囲名) またはオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Range" /> (たとえば、"Dept" または Cells(1, 1) で指定します。</param>
-        <param name="Order1">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" /> 可能です。 指定されたフィールドまたは範囲の並べ替え順序 <paramref name="Key1" /> です。 使用できる定数は <b>、XlSortOrder</b> 定数である<b>xlDescending です</b>。 降順 <paramref name="Key1" /> で並べ替えを行います。<b>xlAscending</b> <paramref name="default" /> . 昇順で <paramref name="Key1" /> 並べ替えます。</param>
-        <param name="Key2">省略 <b>可能なオブジェクト</b>です。 2 番目の並べ替えフィールドを、テキスト (ピボットテーブル フィールドまたは範囲名) または <b>Range</b> オブジェクトで指定します。 この引数を省略すると、2 番目の並べ替えフィールドはありません。 ピボットテーブル レポートの並べ替えには使用できません。</param>
-        <param name="Type">省略 <b>可能なオブジェクト</b>です。 並べ替える要素を指定します。 この引数は、ピボットテーブル レポートを並べ替えるときにのみ使用します。 使用できる定数は <b>、XlSortType</b> 定数である<b>xlSortLabels です</b>。 ピボットテーブル レポートをラベルで並べ替える。<b>xlSortValues</b>. ピボットテーブル レポートを値で並べ替えます。</param>
-        <param name="Order2">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" /> 可能です。 指定されたフィールドまたは範囲の並べ替え順序 <paramref name="Key2" /> です。 ピボットテーブル レポートの並べ替えには使用できません。 使用できる定数は <b>、XlSortOrder</b> 定数である<b>xlDescending です</b>。 降順 <paramref name="Key2" /> で並べ替えを行います。<b>xlAscending</b> <paramref name="default" /> . 昇順で <paramref name="Key2" /> 並べ替えます。</param>
+        <param name="Key1">省略 <b>可能なオブジェクト</b>です。 最初の並べ替えフィールド (たとえば、テキスト (ピボットテーブル フィールドまたは範囲名) またはオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Range" /> ("Dept" または Cells(1, 1) のいずれか)。</param>
+        <param name="Order1">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" /> 可能です。 で指定したフィールドまたは範囲の並べ替え順序 <paramref name="Key1" /> 。 XlSortOrder の<b>定数は</b><b>、xlDescending</b>です。 降順 <paramref name="Key1" /> で並べ替える。<b>xlAscending</b> <paramref name="default" /> . 昇順 <paramref name="Key1" /> で並べ替えます。</param>
+        <param name="Key2">省略 <b>可能なオブジェクト</b>です。 2 番目の並べ替えフィールドを、テキスト (ピボットテーブル フィールドまたは範囲名) または <b>Range</b> オブジェクトで指定します。 この引数を省略すると、2 番目の並べ替えフィールドはありません。 ピボット テーブル レポートを並べ替える場合は使用できません。</param>
+        <param name="Type">省略 <b>可能なオブジェクト</b>です。 並べ替える要素を指定します。 この引数は、ピボットテーブル レポートを並べ替えるときにのみ使用します。 XlSortType 定数 <b>の 1</b> つを指定できます<b>。xlSortLabels を指定します</b>。 ピボットテーブル レポートをラベルで並べ替える。<b>xlSortValues</b>. ピボットテーブル レポートを値で並べ替えます。</param>
+        <param name="Order2">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" /> 可能です。 で指定したフィールドまたは範囲の並べ替え順序 <paramref name="Key2" /> 。 ピボットテーブル レポートの並べ替えには使用できません。 XlSortOrder の<b>定数は</b><b>、xlDescending</b>です。 降順 <paramref name="Key2" /> で並べ替える。<b>xlAscending</b> <paramref name="default" /> . 昇順 <paramref name="Key2" /> で並べ替えます。</param>
         <param name="Key3">省略 <b>可能なオブジェクト</b>です。 3 番目の並べ替えフィールドを、テキスト (範囲名) または <b>Range</b> オブジェクトで指定します。 この引数を省略すると、3 番目の並べ替えフィールドはありません。 ピボットテーブル レポートの並べ替えには使用できません。</param>
-        <param name="Order3">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" /> 可能です。 指定されたフィールドまたは範囲の並べ替え順序 <paramref name="Key3" /> です。 ピボットテーブル レポートの並べ替えには使用できません。 使用できる定数は <b>、XlSortOrder</b> 定数である<b>xlDescending です</b>。 降順 <paramref name="Key3" /> で並べ替えを行います。<b>xlAscending</b> <paramref name="default" /> . 昇順で <paramref name="Key3" /> 並べ替えます。</param>
-        <param name="Header">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlYesNoGuess" /> 可能です。 先頭の行に見出しを含めるかどうかを指定します。 ピボットテーブル レポートの並べ替えには使用できません。 使用できる定数は <b>、XlYesNoGuess 定数</b> である<b>xlGuess です</b>。 ヘッダーが存在するかどうかを判断し、ヘッダーが存在するかどうかを判断します。<b>xlNo</b> <paramref name="default" /> . (範囲全体を並べ替える必要があります)。<b>xlYes</b>. (範囲全体を並べ替えは行う必要はありません)。</param>
-        <param name="OrderCustom">省略 <b>可能なオブジェクト</b>です。 この引数は、ユーザー設定の並べ替え順のリスト内の番号を示す、1 から始まる整数です。 省略すると <paramref name="OrderCustom" /> 、通常の並べ替えが使用されます。</param>
-        <param name="MatchCase">省略 <b>可能なオブジェクト</b>です。 <b>True を</b> 指定すると、大文字と小文字が区別されます。 <b>False</b> を指定すると、大文字と小文字が区別されない並べ替えを行います。 ピボットテーブル レポートの並べ替えには使用できません。</param>
-        <param name="Orientation">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrientation" /> 可能です。 並べ替えの方向を指定します。 使用できる定数は<b>、XlSortOrientation</b>定数である<b>xlSortRows です</b> <paramref name="default" /> 。 行で並べ替えを行います。<b>xlSortColumns</b>. 列単位で並べ替えます。</param>
-        <param name="SortMethod">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortMethod" /> 可能です。 並べ替えの種類を指定します。 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。 使用できる定数は<b>、XlSortMethod</b>です<b>。xlStroke</b>の各文字のストローク数による並べ替えです。<b>xlPinYin</b> <paramref name="default" /> . 中国語の発音表記の順で並べ替えます。</param>
-        <param name="DataOption1">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortDataOption" /> 可能です。 テキストを並べ替える方法を指定します <paramref name="Key 1" /> 。 ピボットテーブル レポートの並べ替えには使用できません。 使用できる定数は <b>、XlSortDataOption</b> クラスの<b>xlSortTextAsNumbers です</b>。 並べ替えでは、テキストを数値データとして扱います。<b>xlSortNormal</b> <paramref name="default" /> . 数値データとテキスト データを別々に並べ替えます。</param>
-        <param name="DataOption2">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortDataOption" /> 可能です。 テキストを並べ替える方法を指定します <paramref name="Key 2" /> 。 ピボットテーブル レポートの並べ替えには使用できません。 使用できる定数は <b>、XlSortDataOption</b> クラスの<b>xlSortTextAsNumbers です</b>。 並べ替えの数値データとしてテキストを処理します。<b>xlSortNormal</b> <paramref name="default" /> . 数値データとテキスト データを別々に並べ替えます。</param>
-        <param name="DataOption3">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortDataOption" /> 可能です。 キー 3 でテキストを並べ替える方法を指定します。 ピボットテーブル レポートの並べ替えには使用できません。 使用できる定数は <b>、XlSortDataOption</b> クラスの<b>xlSortTextAsNumbers です</b>。 テキストを並べ替えの数値データとして扱います。<b>xlSortNormal</b> <paramref name="default" /> . 数値データとテキスト データを別々に並べ替えます。</param>
-        <summary>指定範囲にセルが 1 つしか含まれている場合は、ピボットテーブル レポート、範囲、またはアクティブ領域を並べ替える。</summary>
+        <param name="Order3">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" /> 可能です。 で指定したフィールドまたは範囲の並べ替え順序 <paramref name="Key3" /> 。 ピボットテーブル レポートの並べ替えには使用できません。 XlSortOrder の<b>定数は</b><b>、xlDescending</b>です。 降順 <paramref name="Key3" /> で並べ替える。<b>xlAscending</b> <paramref name="default" /> . 昇順 <paramref name="Key3" /> で並べ替えます。</param>
+        <param name="Header">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlYesNoGuess" /> 可能です。 先頭の行に見出しを含めるかどうかを指定します。 ピボットテーブル レポートの並べ替えには使用できません。 <b>XlYesNoGuess 定数</b><b>xlGuess のいずれかを指定できます</b>。 ヘッダー Microsoft Excel確認し、ヘッダーが存在するかどうかを判断します。<b>xlNo</b> <paramref name="default" /> . (範囲全体を並べ替える必要があります)。<b>xlYes</b>. (範囲全体を並べ替える必要はありません)。</param>
+        <param name="OrderCustom">省略 <b>可能なオブジェクト</b>です。 この引数は、ユーザー設定の並べ替え順のリスト内の番号を示す、1 から始まる整数です。 省略すると、 <paramref name="OrderCustom" /> 通常の並べ替えが使用されます。</param>
+        <param name="MatchCase">省略 <b>可能なオブジェクト</b>です。 <b>大文字</b> と小文字を区別する並べ替えを実行する場合は True。 <b>大文字</b> と小文字を区別しない並べ替えを行う場合は False。 ピボットテーブル レポートの並べ替えには使用できません。</param>
+        <param name="Orientation">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrientation" /> 可能です。 並べ替えの方向を指定します。 <b>XlSortOrientation 定数は、xlSortRows</b>です<b></b> <paramref name="default" /> 。 行で並べ替え。<b>xlSortColumns</b>. 列単位で並べ替えます。</param>
+        <param name="SortMethod">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortMethod" /> 可能です。 並べ替えの種類を指定します。 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。 <b>XlSortMethod</b>定数の 1 つを指定できます。<b>xlStroke</b> Sorting by the strokes in each character.<b>xlPinYin</b> <paramref name="default" /> . 中国語の発音表記の順で並べ替えます。</param>
+        <param name="DataOption1">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortDataOption" /> 可能です。 でテキストを並べ替える方法を指定します <paramref name="Key 1" /> 。 ピボットテーブル レポートの並べ替えには使用できません。 <b>XlSortDataOption クラスの定数は</b><b>、xlSortTextAsNumbers</b>です。 並べ替えの数値データとしてテキストを扱います。<b>xlSortNormal</b> <paramref name="default" /> . 数値データとテキスト データを別々に並べ替えます。</param>
+        <param name="DataOption2">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortDataOption" /> 可能です。 でテキストを並べ替える方法を指定します <paramref name="Key 2" /> 。 ピボットテーブル レポートの並べ替えには使用できません。 <b>XlSortDataOption クラスの定数は</b><b>、xlSortTextAsNumbers</b>です。 並べ替えの数値データとしてテキストを扱います。<b>xlSortNormal</b> <paramref name="default" /> . 数値データとテキスト データを別々に並べ替えます。</param>
+        <param name="DataOption3">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortDataOption" /> 可能です。 キー 3 でテキストを並べ替える方法を指定します。 ピボットテーブル レポートの並べ替えには使用できません。 <b>XlSortDataOption クラスの定数は</b><b>、xlSortTextAsNumbers</b>です。 並べ替えの数値データとしてテキストを扱います。<b>xlSortNormal</b> <paramref name="default" /> . 数値データとテキスト データを別々に並べ替えます。</param>
+        <summary>指定した範囲に 1 つのセルしか含めない場合は、ピボットテーブル レポート、範囲、またはアクティブ領域を並べ替える。</summary>
         <returns>To be added.</returns>
-        <remarks><para>このメソッドを使用する度に、特定のワークシートの設定 ( , ) が <paramref name="Header" /> <paramref name="Order1" /> <paramref name="Order2" /> <paramref name="Order3" /> <paramref name="OrderCustom" /> <paramref name="Orientation" /> 保存されます。 次にメソッドを呼び出す時にこれらの引数の値を指定しない場合は、保存された値が使用されます。 保存された値を使用しない場合は <b>、Sort</b> メソッドを使用するごとに、これらの引数を明示的に設定します。</para>
+        <remarks><para>このメソッドを使用する度に、特定のワークシートの 、の設定 <paramref name="Header" /> <paramref name="Order1" /> <paramref name="Order2" /> <paramref name="Order3" /> <paramref name="OrderCustom" /> <paramref name="Orientation" /> が保存されます。 次にメソッドを呼び出す時にこれらの引数に値を指定しない場合は、保存された値が使用されます。 保存された値を使用しない場合は <b>、Sort</b> メソッドを使用する度に、これらの引数を明示的に設定します。</para>
           <para>数値データに変換できないテキスト文字列は、通常は並べ替えされます。</para>
           <para><b>Sort</b> メソッドで引数を何も定義しない場合、選択している範囲が昇順で並べ替えられます。</para>
           <para> </para></remarks>
@@ -5312,24 +5312,24 @@
         <Parameter Name="DataOption3" Type="Microsoft.Office.Interop.Excel.XlSortDataOption" />
       </Parameters>
       <Docs>
-        <param name="SortMethod">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortMethod" /> 可能です。 並べ替えの種類を指定します。 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。 使用できる定数は <b>、XlSortMethod</b> 定数である<b>xlStroke です</b>。 各文字のストローク数で並べ替える。<b>xlPinYin</b> <paramref name="default" /> . 中国語の発音表記の順で並べ替えます。</param>
-        <param name="Key1">省略 <b>可能なオブジェクト</b>です。 最初の並べ替えフィールドを、テキスト (ピボットテーブル フィールドまたは範囲名) または <b>Range</b> オブジェクト (たとえば、"Dept" または Cells(1, 1) で指定します。</param>
-        <param name="Order1">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" /> 可能です。 引数で指定されたフィールドまたは範囲の並べ替え順序 <paramref name="Key1" /> を指定します。 使用できる定数は <b>、XlSortOrder</b> 定数である<b>xlDescending です</b>。 降順 <paramref name="Key1" /> で並べ替えを行います。<b>xlAscending</b> <paramref name="default" /> . 昇順で <paramref name="Key1" /> 並べ替えます。</param>
+        <param name="SortMethod">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortMethod" /> 可能です。 並べ替えの種類を指定します。 選択またはインストールされている言語の設定 (たとえば、日本語) によって、これらのいくつかの定数が使用できない場合があります。 <b>XlSortMethod の定数は、xlStroke</b> <b></b>です。 各文字のストローク数で並べ替える。<b>xlPinYin</b> <paramref name="default" /> . 中国語の発音表記の順で並べ替えます。</param>
+        <param name="Key1">省略 <b>可能なオブジェクト</b>です。 最初の並べ替えフィールドは、テキスト (ピボットテーブル フィールドまたは範囲名) または <b>Range</b> オブジェクト ("Dept" や Cells(1, 1 など) のいずれかです。</param>
+        <param name="Order1">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" /> 可能です。 引数に指定されたフィールドまたは範囲の並べ替え <paramref name="Key1" /> 順序。 XlSortOrder の<b>定数は</b><b>、xlDescending</b>です。 降順 <paramref name="Key1" /> で並べ替える。<b>xlAscending</b> <paramref name="default" /> . 昇順 <paramref name="Key1" /> で並べ替えます。</param>
         <param name="Type">省略 <b>可能なオブジェクト</b>です。 並べ替える要素を指定します。 この引数は、ピボットテーブル レポートを並べ替えるときにのみ使用します。</param>
-        <param name="Key2">省略 <b>可能なオブジェクト</b>です。 2 番目の並べ替えフィールドを、テキスト (ピボットテーブル フィールドまたは範囲名) または <b>Range</b> オブジェクトで指定します。 この引数を省略すると、2 番目の並べ替えフィールドはありません。 ピボットテーブル レポートの並べ替えには使用できません。 使用できる定数は <b>、XlSortType</b> 定数である<b>xlSortLabels です</b>。 ピボットテーブル レポートをラベルで並べ替える。<b>xlSortValues</b>. ピボットテーブル レポートを値で並べ替えます。</param>
-        <param name="Order2">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" /> 可能です。 引数で指定されたフィールドまたは範囲の並べ替え順序 <paramref name="Key2" /> を指定します。 ピボットテーブル レポートの並べ替えには使用できません。 使用できる定数は <b>、XlSortOrder</b> 定数である<b>xlDescending です</b>。 既定値の <paramref name="Key2" /> <b>xlAscending を降順で並べ替</b> える。 昇順で <paramref name="Key2" /> 並べ替えます。</param>
+        <param name="Key2">省略 <b>可能なオブジェクト</b>です。 2 番目の並べ替えフィールドを、テキスト (ピボットテーブル フィールドまたは範囲名) または <b>Range</b> オブジェクトで指定します。 この引数を省略すると、2 番目の並べ替えフィールドはありません。 ピボットテーブル レポートの並べ替えには使用できません。 XlSortType 定数 <b>の 1</b> つを指定できます<b>。xlSortLabels を指定します</b>。 ピボットテーブル レポートをラベルで並べ替える。<b>xlSortValues</b>. ピボットテーブル レポートを値で並べ替えます。</param>
+        <param name="Order2">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" /> 可能です。 引数に指定されたフィールドまたは範囲の並べ替え <paramref name="Key2" /> 順序。 ピボットテーブル レポートの並べ替えには使用できません。 XlSortOrder の<b>定数は</b><b>、xlDescending</b>です。 既定の <paramref name="Key2" /> <b>xlAscending の降順で並べ替</b> え。 昇順 <paramref name="Key2" /> で並べ替えます。</param>
         <param name="Key3">省略 <b>可能なオブジェクト</b>です。 3 番目の並べ替えフィールドを、テキスト (範囲名) または <b>Range</b> オブジェクトで指定します。 この引数を省略すると、3 番目の並べ替えフィールドはありません。 ピボットテーブル レポートの並べ替えには使用できません。</param>
-        <param name="Order3">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" /> 可能です。 引数で指定されたフィールドまたは範囲の並べ替え順序 <paramref name="Key3" /> を指定します。 ピボットテーブル レポートの並べ替えには使用できません。 使用できる定数は <b>、XlSortOrder</b> 定数である <b>xlDescending です</b>。 降順 <paramref name="Key3" /> で並べ替えを行います。<b>xlAscending</b> <paramref name="default" /> . 昇順で <paramref name="Key3" /> 並べ替えます。</param>
-        <param name="Header">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlYesNoGuess" /> 可能です。 先頭の行に見出しを含めるかどうかを指定します。 ピボットテーブル レポートの並べ替えには使用できません。 使用できる定数は <b>、XlYesNoGuess 定数</b> である<b>xlGuess です</b>。 ヘッダーが存在するかどうかを判断し、ヘッダーが存在するかどうかを判断します。<b>xlNo</b> <paramref name="default" /> . 範囲全体を並べ替える必要があります。<b>xlYes</b>. 範囲全体が並べ替えられません。</param>
+        <param name="Order3">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrder" /> 可能です。 引数に指定されたフィールドまたは範囲の並べ替え <paramref name="Key3" /> 順序。 ピボットテーブル レポートの並べ替えには使用できません。 XlSortOrder の<b>定数は</b><b>、xlDescending</b>です。 降順 <paramref name="Key3" /> で並べ替える。<b>xlAscending</b> <paramref name="default" /> . 昇順 <paramref name="Key3" /> で並べ替えます。</param>
+        <param name="Header">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlYesNoGuess" /> 可能です。 先頭の行に見出しを含めるかどうかを指定します。 ピボットテーブル レポートの並べ替えには使用できません。 <b>XlYesNoGuess 定数</b><b>xlGuess のいずれかを指定できます</b>。 ヘッダー Microsoft Excelを特定し、ヘッダーが存在するかどうかを判断できます。<b>xlNo</b> <paramref name="default" /> . 範囲全体を並べ替える必要があります。<b>xlYes</b>. 範囲全体が並べ替えられません。</param>
         <param name="OrderCustom">省略 <b>可能なオブジェクト</b>です。 この引数は、ユーザー設定の並べ替え順のリスト内の番号を示す、1 から始まる整数です。 省略すると <paramref name="OrderCustom" /> 、(通常の並べ替え順序) が使用されます。</param>
-        <param name="MatchCase">省略 <b>可能なオブジェクト</b>です。 <b>True を</b> 指定すると、大文字と小文字が区別されます。 <b>False</b> を指定すると、大文字と小文字が区別されない並べ替えを行います。 ピボットテーブル レポートの並べ替えには使用できません。</param>
-        <param name="Orientation">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrientation" /> 可能です。 並べ替えの方向を指定します。 使用できる定数は<b>、XlSortOrientation</b>定数である<b>xlSortRows です</b> <paramref name="default" /> 。 並べ替えは行で行われます。<b>xlSortColumns</b>. 並べ替えは列で行われます。</param>
-        <param name="DataOption1">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortDataOption" /> 可能です。 テキストを並べ替える方法を指定します <paramref name="Key1" /> 。 ピボットテーブル レポートの並べ替えには使用できません。 使用できる定数は <b>、XlSortDataOption</b> クラスの<b>xlSortTextAsNumbers です</b>。 並べ替えの数値データとしてテキストを処理します。<b>xlSortNormal</b> <paramref name="default" /> . 数値データとテキスト データを別々に並べ替えます。</param>
-        <param name="DataOption2">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortDataOption" /> 可能です。 テキストを並べ替える方法を指定します <paramref name="Key 2" /> 。 ピボットテーブル レポートの並べ替えには使用できません。 使用できる定数は <b>、XlSortDataOption</b> クラスの<b>xlSortTextAsNumbers です</b>。 並べ替えの数値データとしてテキストを処理します。<b>xlSortNormal</b> <paramref name="default" /> . 数値データとテキスト データを別々に並べ替えます。</param>
-        <param name="DataOption3">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortDataOption" /> 可能です。 テキストを並べ替える方法を指定します <paramref name="Key 3" /> 。 ピボットテーブル レポートの並べ替えには使用できません。 使用できる定数は <b>、XlSortDataOption</b> クラスの<b>xlSortTextAsNumbers です</b>。 並べ替えのテキスト数値データを処理します。<b>xlSortNormal</b> <paramref name="default" /> . 数値データとテキスト データを別々に並べ替えます。</param>
-        <summary>東アジアの並べ替え方法を使用して範囲またはピボットテーブル レポートを並べ替え、範囲にセルが 1 つしか含まれている場合はアクティブ領域のメソッドを使用します。 たとえば、日本語では五十音順に並べ替えられます。</summary>
+        <param name="MatchCase">省略 <b>可能なオブジェクト</b>です。 <b>大文字</b> と小文字を区別する並べ替えを実行する場合は True。 <b>大文字</b> と小文字を区別しない並べ替えを行う場合は False。 ピボットテーブル レポートの並べ替えには使用できません。</param>
+        <param name="Orientation">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortOrientation" /> 可能です。 並べ替えの方向を指定します。 <b>XlSortOrientation 定数は、xlSortRows</b>です<b></b> <paramref name="default" /> 。 並べ替えは行で行われます。<b>xlSortColumns</b>. 並べ替えは列別に行われます。</param>
+        <param name="DataOption1">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortDataOption" /> 可能です。 でテキストを並べ替える方法を指定します <paramref name="Key1" /> 。 ピボットテーブル レポートの並べ替えには使用できません。 <b>XlSortDataOption クラスの定数は</b><b>、xlSortTextAsNumbers</b>です。 並べ替えの数値データとしてテキストを扱います。<b>xlSortNormal</b> <paramref name="default" /> . 数値データとテキスト データを別々に並べ替えます。</param>
+        <param name="DataOption2">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortDataOption" /> 可能です。 でテキストを並べ替える方法を指定します <paramref name="Key 2" /> 。 ピボットテーブル レポートの並べ替えには使用できません。 <b>XlSortDataOption クラスの定数は</b><b>、xlSortTextAsNumbers</b>です。 並べ替えの数値データとしてテキストを扱います。<b>xlSortNormal</b> <paramref name="default" /> . 数値データとテキスト データを別々に並べ替えます。</param>
+        <param name="DataOption3">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSortDataOption" /> 可能です。 でテキストを並べ替える方法を指定します <paramref name="Key 3" /> 。 ピボットテーブル レポートの並べ替えには使用できません。 <b>XlSortDataOption クラスの定数は</b><b>、xlSortTextAsNumbers</b>です。 並べ替えのテキスト数値データを処理します。<b>xlSortNormal</b> <paramref name="default" /> . 数値データとテキスト データを別々に並べ替えます。</param>
+        <summary>東アジアの並べ替えメソッドを使用して範囲またはピボットテーブル レポートを並べ替えるか、範囲にセルが 1 つしか含まれている場合は、アクティブな領域のメソッドを使用します。 たとえば、日本語では五十音順に並べ替えられます。</summary>
         <returns>To be added.</returns>
-        <remarks><para>引数が <b>SortSpecial</b> メソッドで定義されていない場合、選択した選択範囲は昇順で並べ替えされます。</para>
+        <remarks><para>引数が<b>SortSpecial</b>メソッドで定義されていない場合、Microsoft Excelは、並べ替えに選択された選択範囲を昇順で並べ替えます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5356,7 +5356,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SoundNote</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このプロパティは、使用しないでください。 サウンド メモは Excel から削除されました。</summary>
+        <summary>このプロパティは、使用しないでください。サウンド メモは Excel から削除されました。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5384,8 +5384,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SparklineGroups</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroups" /> 範囲からスパークラインの既存のグループを表すオブジェクトを取得します。</summary>
-        <value>指定 <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroups" /> 範囲のスパークラインの既存のグループを表すオブジェクト。</value>
+        <summary>指定した <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroups" /> 範囲のスパークラインの既存のグループを表すオブジェクトを取得します。</summary>
+        <value>指定 <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroups" /> した範囲のスパークラインの既存のグループを表すオブジェクト。</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
       </Docs>
@@ -5414,7 +5414,7 @@
       </Parameters>
       <Docs>
         <param name="SpeakDirection">省略 <b>可能なオブジェクト</b>です。 行順に読み上げるか、列順に読み上げるか。</param>
-        <param name="SpeakFormulas">省略 <b>可能なオブジェクト</b>です。 セルに含まれている数式を Text-To-Speech (TTS) エンジンに送る場合は  <b>True</b> 。 セルに数式が含されていない場合は、値が送信されます。 <b>False</b> (既定値) の場合、値は常に TTS エンジンに送信されます。</param>
+        <param name="SpeakFormulas">省略 <b>可能なオブジェクト</b>です。 セルに含まれている数式を Text-To-Speech (TTS) エンジンに送る場合は  <b>True</b> 。 セルに数式が含されていない場合は、値が送信されます。 <b>False</b> (既定値) を指定すると、値は常に TTS エンジンに送信されます。</param>
         <summary>範囲内のセルを、行順または列順に読み上げます。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5442,9 +5442,9 @@
         <Parameter Name="Value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Type">必須 <see cref="T:Microsoft.Office.Interop.Excel.XlCellType" /> 。 取得するセルの種類を指定します。 使用できる定数は <b>、XlCellType</b> の定数である<b>xlCellTypeAllFormatConditions です</b>。 任意の書式のセル。<b>xlCellTypeAllValidation</b>. 検証条件を持つセル。<b>xlCellTypeBlanks</b>. 空のセル。<b>xlCellTypeComments</b>. メモを含むセル。<b>xlCellTypeConstants</b>. 定数を含むセル。<b>xlCellTypeFormulas</b>. 数式を含むセル。<b>xlCellTypeLastCell</b>. 使用範囲の最後のセルを指定します。<b>xlCellTypeSameFormatConditions</b>. 書式が同じセル。<b>xlCellTypeSameValidation</b>. 同じ検証条件を持つセル。<b>xlCellTypeVisible</b>. すべての可視セル</param>
-        <param name="Value">省略 <b>可能なオブジェクト</b>です。 if <paramref name="Type" /> is either <b>xlCellTypeConstants</b> or <b>xlCellTypeFormulas,</b>this argument is used to determine which types of cells to include in the result. 複数の値を加算して指定すると、複数の種類の定数や数式を指定できます。 この引数を省略すると、すべての定数および数式が対象になります。 使用できる定数は <see cref="T:Microsoft.Office.Interop.Excel.XlSpecialCellsValue" /> <b>、xlErrors</b><b>xlLogical</b><b>xlNumbers</b><b>xlTextValues です。</b></param>
-        <summary>指定された型 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> と値に一致するセルを表すオブジェクトを返します。</summary>
+        <param name="Type">必須 <see cref="T:Microsoft.Office.Interop.Excel.XlCellType" /> 。 取得するセルの種類を指定します。 XlCellType 定数は<b></b><b>、xlCellTypeAllFormatConditions</b>の 1 つを指定できます。 任意の形式のセル。<b>xlCellTypeAllValidation</b>. 検証条件を持つセル。<b>xlCellTypeBlanks</b>. 空のセル。<b>xlCellTypeComments</b>. メモを含むセル。<b>xlCellTypeConstants</b>. 定数を含むセル。<b>xlCellTypeFormulas</b>. 数式を含むセル。<b>xlCellTypeLastCell</b>. 使用範囲の最後のセル。<b>xlCellTypeSameFormatConditions</b>. 同じ形式のセル。<b>xlCellTypeSameValidation</b>. 同じ検証条件を持つセル。<b>xlCellTypeVisible</b>. すべての可視セル</param>
+        <param name="Value">省略 <b>可能なオブジェクト</b>です。 <paramref name="Type" /> <b>xlCellTypeConstants</b>または<b>xlCellTypeFormulas</b>の場合、この引数を使用して、結果に含めるセルの種類を決定します。 複数の値を加算して指定すると、複数の種類の定数や数式を指定できます。 この引数を省略すると、すべての定数および数式が対象になります。 次のいずれかの定数を指定 <see cref="T:Microsoft.Office.Interop.Excel.XlSpecialCellsValue" /> できます。<b>xlErrors</b><b>xlLogical</b><b>xlNumbers</b><b>xlTextValues</b></param>
+        <summary>指定した型 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> と値に一致するすべてのセルを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5505,7 +5505,7 @@
       <Docs>
         <param name="Edition">このパラメーターは Macintosh 専用です。使用しないでください。</param>
         <param name="Format">このパラメーターは Macintosh 専用です。使用しないでください。</param>
-        <summary>Macintosh でのみ使用されているキーワードのヘルプを要求しました。 このキーワードに関する詳細については、Office Macintosh Edition の言語リファレンスのヘルプを参照してください。</summary>
+        <summary>Macintosh でのみ使用されるキーワードのヘルプを要求しました。 このキーワードに関する詳細については、Office Macintosh Edition の言語リファレンスのヘルプを参照してください。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5538,11 +5538,11 @@
       </Parameters>
       <Docs>
         <param name="GroupBy">整数型 (<b>Integer</b>) の値を使用します。 グループ化の基準となるフィールドの番号を、1 から始まる整数で指定します。 使用例を参照してください。</param>
-        <param name="Function">必須 <see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" /> 。 小計関数を指定します。 使用できる定数は、次に示す<b>XlConsolidationFunction</b>定数です<b>。xlAverage</b><b>xlCount xlCountNums</b><b></b><b>xlMax</b><b>xlMin</b><b>xlProduct</b><b>xlStDev xlStDevP</b><b></b><b>xlSum</b><b>xlUnknown</b><b>xlVarP</b><b></b></param>
-        <param name="TotalList">Required <b>Object</b>. 集計を追加するフィールド表す、1 から始まるオフセット番号の配列で指定します。 使用例を参照してください。</param>
+        <param name="Function">必須 <see cref="T:Microsoft.Office.Interop.Excel.XlConsolidationFunction" /> 。 小計関数。 <b>XlConsolidationFunction</b>定数の 1 つを指定できます<b>。xlAverage</b><b>xlCount XlCountNums</b><b>xlMax xlMin</b><b></b><b>xlProduct</b><b></b><b>xlStDev xlStDevP</b><b>xlSum</b><b>xlUnknown</b><b>xlVarP</b><b></b> <b></b></param>
+        <param name="TotalList">必須<b>オブジェクト 。</b> 集計を追加するフィールド表す、1 から始まるオフセット番号の配列で指定します。 使用例を参照してください。</param>
         <param name="Replace">省略 <b>可能なオブジェクト</b>です。 既存の集計表と置き換えるには、<b>True</b> を指定します。 既定値は <b>False</b> です。</param>
         <param name="PageBreaks">省略 <b>可能なオブジェクト</b>です。 グループごとに改ページが挿入されるようにするには、<b>True</b> を指定します。 既定値は <b>False</b> です。</param>
-        <param name="SummaryBelowData">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSummaryRow" /> 可能です。 集計を基準にサマリー データを設定します。 使用できる定数は、次に示す <b>XlSummaryRow</b> 定数です<b>。xlSummaryAbove</b><b>xlSummaryBelow</b><paramref name="default" /></param>
+        <param name="SummaryBelowData">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlSummaryRow" /> 可能です。 集計データを小計を基準に設定します。 次のいずれかの <b>XlSummaryRow</b> 定数を指定できます<b>。xlSummaryAbove</b><b>xlSummaryBelow</b><paramref name="default" /></param>
         <summary>セル範囲の集計を作成します。指定されたセル範囲が単一セルのときは、アクティブ セル領域を集計します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -5571,9 +5571,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>範囲が概要行または列の下線を引くかどうかを指定します。</summary>
+        <summary>範囲が概要の行または列の概要かどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks><para>指定範囲が <b>概要行</b> または列の場合、このプロパティは True を返します。</para>
+        <remarks><para>範囲が概要の <b>行</b> または列の場合、このプロパティは True を返します。</para>
           <para>範囲は、行または列である必要があります。</para>
           <para> </para></remarks>
       </Docs>
@@ -5634,7 +5634,7 @@
       <Docs>
         <summary>指定されたオブジェクトのテキストを返すか設定します。</summary>
         <value>To be added.</value>
-        <remarks><para>オブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> 場合、このプロパティは、その読み方を表す文字列を取得または設定します。 このプロパティを <b>Null</b> 値に設定できません。</para>
+        <remarks><para>オブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Phonetic" /> 場合、このプロパティは、その表形式のテキストを取得または設定します。 このプロパティを <b>Null</b> 値に設定できません。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5673,23 +5673,23 @@
         <Parameter Name="TrailingMinusNumbers" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Destination">省略 <b>可能なオブジェクト</b>です。 <see cref="T:Microsoft.Office.Interop.Excel.Range" />Microsoft Excel が結果を配置する場所を指定するオブジェクト。 表示先に指定したセル範囲が複数セルである場合には、左上端のセルが使われます。</param>
-        <param name="DataType">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlTextParsingType" /> 可能です。 複数の列に区切るデータの形式を指定します。 使用できる定数は<b>、XlTextParsingType</b>の定数である<b>xlDelimited </b> <paramref name="default" /> <b>xlFixedWidth です</b>。</param>
-        <param name="TextQualifier">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlTextQualifier" /> 可能です。 使用できる定数は<b>、XlTextQualifierDoubleQuote</b> <b></b> <paramref name="default" /> <b>xlTextQualifierNone</b><b>xlTextQualifierSingleQuote です</b>。</param>
+        <param name="Destination">省略 <b>可能なオブジェクト</b>です。 結果 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> を配置するMicrosoft Excelオブジェクト。 表示先に指定したセル範囲が複数セルである場合には、左上端のセルが使われます。</param>
+        <param name="DataType">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlTextParsingType" /> 可能です。 複数の列に区切るデータの形式を指定します。 <b>XlTextParsingType</b>定数は<b>、xlDelimited </b> <paramref name="default" /> <b>xlFixedWidth の 1 つになります。</b></param>
+        <param name="TextQualifier">省略 <see cref="T:Microsoft.Office.Interop.Excel.XlTextQualifier" /> 可能です。 <b>XlTextQualifier 定数は、xlTextQualifierDoubleQuote</b> <b></b> <paramref name="default" /> <b>xlTextQualifierNone</b><b>xlTextQualifierSingleQuote</b>の 1 つになります。</param>
         <param name="ConsecutiveDelimiter">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定すると、連続した区切り文字を 1 つの区切り文字として認識します。 既定値は <b>False</b> です。</param>
-        <param name="Tab">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を <paramref name="DataType" /> 指定 <b>すると、xlDelimited が設定</b> され、タブ文字が区切り文字になります。 既定値は <b>False</b> です。</param>
-        <param name="Semicolon">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を <paramref name="DataType" /> 指定 <b>すると、xlDelimited が指定</b> され、セミコロンが区切り文字になります。 既定値は <b>False</b> です。</param>
-        <param name="Comma">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を <paramref name="DataType" /> 指定 <b>すると、xlDelimited が指定</b> され、コンマは区切り文字になります。 既定値は <b>False</b> です。</param>
-        <param name="Space">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を <paramref name="DataType" /> 指定 <b>すると、xlDelimited が指定</b> され、区切り文字としてスペースが使用されます。 既定値は <b>False</b> です。</param>
-        <param name="Other">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を <paramref name="DataType" /> 指定 <b>すると、引数に区切</b> り記号として指定された文字が使用 <paramref name="OtherChar" /> されます。 既定値は <b>False</b> です。</param>
-        <param name="OtherChar">省略 <b>可能なオブジェクト</b> (True の <paramref name="Other" /> 場合は <b>必須</b>)。 区切り文字がTrue <paramref name="Other" /> の <b>場合</b>です。 If more than one character is specified, only the first character of the string is used; the remaining characters are ignored.</param>
-        <param name="FieldInfo">省略 <b>可能なオブジェクト</b>です。 区切り後の列のデータ形式に関する情報を持つ配列を指定します。 解釈は、 <paramref name="DataType" /> . データが区切り記号で区切られている場合は、この引数に 2 要素配列の配列を使用して、配列内の各 2 要素配列が特定の列の変換オプションを指定するようにします。 最初の要素は列番号 (1 から始)、2 番目の要素は列の解析方法を指定する定数の 1 <see cref="T:Microsoft.Office.Interop.Excel.XlColumnDataType" /> つです。 使用できる定数は <b>、XlColumnDataType</b> クラスの<b>xlGeneralFormat クラスの定数です</b>。 マトラ <b>xlTextFormat</b>. テキスト<b>xlMDYFormat</b>. MDY Date。<b>xlDMYFormat</b>. DMY 日付<b>xlYMDFormat</b>. YMD 日付<b>xlMYDFormat</b>. MYD 日付<b>xlDYMFormat</b>. DYM 日付<b>xlYDMFormat</b>. YDM 日付<b>xlEMDFormat</b>. EMD 日付<b>xlSkipColumn</b>. 列をスキップします <b>。xlEMDFormat</b> は、台湾語サポートがインストールされ、選択されている場合にのみ使用できます。 <b>定数 xlEMDFormat</b>は、台湾の元号の日付を使用します。列指定子は任意の順序で指定できます。 入力データの特定の列に対して特定の列指定子が存在しない場合、その列は [全般] 設定で <b>解析</b> されます。ソース データに固定幅列がある場合、各 2 要素配列の最初の要素は、列内の開始文字位置を整数で指定します。0 (ゼロ) が最初の文字です。 2 番目の要素は、上の 1 ～ 9 の数値を使って、列のデータ形式を指定します。</param>
+        <param name="Tab">省略 <b>可能なオブジェクト</b>です。 <b>True</b> を指定 <paramref name="DataType" /> すると <b>、xlDelimited が設定され</b> 、タブ文字が区切り文字になります。 既定値は <b>False</b> です。</param>
+        <param name="Semicolon">省略 <b>可能なオブジェクト</b>です。 <b>true</b> を指定 <paramref name="DataType" /> すると <b>、xlDelimited が設定され</b> 、セミコロンが区切り文字になります。 既定値は <b>False</b> です。</param>
+        <param name="Comma">省略 <b>可能なオブジェクト</b>です。 <b>true</b> を指定 <paramref name="DataType" /> すると <b>、xlDelimited が設定され</b> 、コンマが区切り文字になります。 既定値は <b>False</b> です。</param>
+        <param name="Space">省略 <b>可能なオブジェクト</b>です。 <b>true</b> を指定 <paramref name="DataType" /> すると <b>、xlDelimited が設定され</b> 、スペース文字が区切り文字になります。 既定値は <b>False</b> です。</param>
+        <param name="Other">省略 <b>可能なオブジェクト</b>です。 <b>true</b> を指定 <paramref name="DataType" /> すると <b>、xlDelimited が指定され</b> 、引数で指定された文字 <paramref name="OtherChar" /> が区切り文字になります。 既定値は <b>False</b> です。</param>
+        <param name="OtherChar">省略 <b>可能なオブジェクト</b> (True の場合 <paramref name="Other" /> は <b>必須</b>)。 区切り文字 when が <paramref name="Other" /> <b>True です</b>。 If more than one character is specified, only the first character of the string is used; the remaining characters are ignored.</param>
+        <param name="FieldInfo">省略 <b>可能なオブジェクト</b>です。 区切り後の列のデータ形式に関する情報を持つ配列を指定します。 解釈はの値に依存します <paramref name="DataType" /> 。 データが区切り記号で区切られている場合は、この引数に 2 要素配列の配列を使用して、配列内の各 2 要素配列が特定の列の変換オプションを指定するようにします。 最初の要素は列番号 (1 から始め) で、2 番目の要素は列の解析方法を指定する <see cref="T:Microsoft.Office.Interop.Excel.XlColumnDataType" /> 定数の 1 つです。 <b>XlColumnDataType</b>クラスの定数<b>(xlGeneralFormat) のいずれかを指定できます</b>。 Genera. <b>xlTextFormat</b>. テキスト。<b>xlMDYFormat</b>. MDY 日付。<b>xlDMYFormat</b>. DMY 日付。<b>xlYMDFormat</b>. YMD 日付。<b>xlMYDFormat</b>. MYD 日付。<b>xlDYMFormat</b>. DYM 日付。<b>xlYDMFormat</b>. YDM 日付。<b>xlEMDFormat</b>. EMD 日付。<b>xlSkipColumn</b>. 列をスキップします <b>。xlEMDFormat</b> を使用できるのは、台湾語のサポートがインストールされ、選択されている場合のみです。 <b>xlEMDFormat</b>定数は、台湾の元号の日付が使用されている場合に指定します。列指定子は、任意の順序で指定できます。 入力データ内の特定の列に対して特定の列指定子が存在しない場合、列は [全般] 設定で <b>解析</b> されます。ソース データに固定幅列がある場合、各 2 要素配列の最初の要素は、列の開始文字位置を指定します (整数で、0 (ゼロ) が最初の文字です)。 2 番目の要素は、上の 1 ～ 9 の数値を使って、列のデータ形式を指定します。</param>
         <param name="DecimalSeparator">文字列型 (<b>String</b>) の値を使用します。 Excel で数値を認識する場合に使う小数点の記号です。 既定はシステム設定です。</param>
         <param name="ThousandsSeparator">文字列型 (<b>String</b>) の値を使用します。 Excel で数値を認識する場合に使う桁区切り記号です。 既定はシステム設定です。</param>
         <param name="TrailingMinusNumbers">省略 <b>可能なオブジェクト</b>です。 負記号で始まる数値です。</param>
         <summary>セルに入力されているデータ (1 つのセル内で、カンマ、スペース、タブなどで区切られたデータ) を、複数の列に区切ります。対象となる列は 1 列だけです。</summary>
         <returns>To be added.</returns>
-        <remarks><para>次の表は、Excel へのテキストのインポートをさまざまなインポート設定で行った場合の結果を示したものです。 数値の結果は右詰めで表示します。</para>
+        <remarks><para>次の表は、Excel へのテキストのインポートをさまざまなインポート設定で行った場合の結果を示したものです。数値の結果は右詰めで表示します。</para>
           <list type="table">
             <item>
               <term>ピリオド</term>
@@ -5758,9 +5758,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>行 1 の上端から範囲の上端までの距離をポイント数で返します。</summary>
+        <summary>行 1 の上端から範囲の上端までの距離をポイントで返します。</summary>
         <value>To be added.</value>
-        <remarks><para>範囲が同じでない場合は、最初の領域が使用されます。 複数の行を含む範囲の場合は、範囲内で最も上に位置する (行番号が一番小さい) 行が使用されます。</para>
+        <remarks><para>範囲が非大きな場合は、最初の領域が使用されます。 複数の行を含む範囲の場合は、範囲内で最も上に位置する (行番号が一番小さい) 行が使用されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5843,9 +5843,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの行の高さがシートの標準の高さと <see cref="T:Microsoft.Office.Interop.Excel.Range" /> 等しいかどうかを指定します。</summary>
+        <summary>オブジェクトの行の高さがシートの標準の高 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> さと等しいかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks><para><b>Range</b>オブジェクトの行の高さがシートの標準の高さと等しい場合、このプロパティは<b>True</b>を返し、範囲に複数の行が含まれている場合、行の高さが同じでない場合は<b>Null</b>を返します。</para>
+        <remarks><para><b>Range</b>オブジェクトの<b></b>行の高さがシートの標準の高さと等しい場合は True を返し、範囲に複数の行が含まれている場合は<b>Null</b>を返し、行が同じ高さではない場合は Null を返します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5875,9 +5875,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクトの列幅がシートの標準 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> の幅と等しいかどうかを指定します。</summary>
+        <summary>オブジェクトの列幅がシートの標準幅 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> と等しいかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks><para><b>Range</b>オブジェクトの列幅がシートの標準の幅と等しい場合、このプロパティは<b>True</b>を返し、範囲に複数の列が含まれている場合、列の幅が同じでない場合は<b>Null</b>を返します。</para>
+        <remarks><para><b>Range</b>オブジェクトの<b></b>列幅がシートの標準幅と等しい場合は True を返し、範囲に複数の列が含まれている場合は<b>Null</b>を返し、列の幅が同じでない場合は Null を返します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -5904,7 +5904,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Validation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した範囲 <see cref="T:Microsoft.Office.Interop.Excel.Validation" /> のデータの入力規則を表すオブジェクトを返します。</summary>
+        <summary>指定した範囲 <see cref="T:Microsoft.Office.Interop.Excel.Validation" /> のデータ検証を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5938,10 +5938,10 @@
         <Parameter Name="RangeValueDataType" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="RangeValueDataType">省略 <b>可能なオブジェクト</b>です。 セル範囲の値のデータ型を指定します。 使用できる定数は <see cref="T:Microsoft.Office.Interop.Excel.XlRangeValueDataType" /> <b>、xlRangeValueDefault</b>です。指定したオブジェクトが空の場合は、値 Empty を返します (この場合は <paramref name="default" /> <see cref="T:Microsoft.Office.Interop.Excel.Range" /> <b>IsEmpty</b><b></b>関数を使用してテストします)。 Range オブジェクト<b>に</b>複数のセルが含まれている場合は、値の配列を返します<b>(IsArray</b>関数を使用してこのケースをテストします)。<b>xlRangeValueMSPersistXML</b>   指定された Range オブジェクトのレコード<b>セット表現を</b>XML 形式で返します。<b>xlRangeValueXMLSpreadsheet</b>   指定された Range オブジェクトの値、書式設定、数式、名前を<b></b>XML スプレッドシート形式で返します。</param>
-        <summary>指定した範囲の値を取得または設定します。</summary>
+        <param name="RangeValueDataType">省略 <b>可能なオブジェクト</b>です。 セル範囲の値のデータ型を指定します。 次のいずれかの定数を指定できます <see cref="T:Microsoft.Office.Interop.Excel.XlRangeValueDataType" /> 。<b>xlRangeValueDefault</b>指定したオブジェクトが空の場合は、値 Empty を返します (この場合は <paramref name="default" /> <see cref="T:Microsoft.Office.Interop.Excel.Range" /> <b>IsEmpty</b>関数を使用してテストします)。 <b></b> Range オブジェクト <b>に</b> 複数のセルが含まれている場合は、値の配列を返します (この場合は <b>、IsArray</b> 関数を使用してテストします)。<b>xlRangeValueMSPersistXML</b>    指定した Range オブジェクトのレコードセット表現 <b>を XML</b> 形式で返します。<b>xlRangeValueXMLSpreadsheet</b>    指定した Range オブジェクトの値、書式設定、数式、および名前を XML <b>スプレッドシート</b> 形式で返します。</param>
+        <summary>指定した範囲の値を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para>XML スプレッドシート ファイルのセル範囲のデータを設定する場合、ブックの最初のシートの値のみが使用されます。 XML スプレッドシート形式のセル範囲を設定または取得することはできません。</para>
+        <remarks><para>XML スプレッドシート ファイルのセル範囲のデータを設定する場合、ブックの最初のシートの値のみが使用されます。 XML スプレッドシート形式のセルの非一連のセルを設定または取得することはできません。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -6005,7 +6005,7 @@
       <Docs>
         <summary>指定したオブジェクトの垂直方向の配置を設定または返します。</summary>
         <value>.</value>
-        <remarks><para>返される垂直方向の配置指定子には、次のいずれかの読み取り/書き込み <b>オブジェクト値を指定</b> できます。</para>
+        <remarks><para>返される垂直方向の配置指定子は、次の読み取り/書き込みオブジェクトの値 <b>のいずれかを指定</b> できます。</para>
           <list type="bullet">
             <item>
               <description>
@@ -6118,9 +6118,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクト内のテキストを折り返すかどうかを指定します。</summary>
+        <summary>オブジェクト内Microsoft Excelテキストを折り返すかどうかを指定します。</summary>
         <value>To be added.</value>
-        <remarks><para>このプロパティは、 <b>オブジェクト</b> 内のテキストを折り返す場合は True を返し、指定した範囲にテキストを折り返すセルと、折り返されていないセルが含まれている場合は <b>Null</b> を返します。</para>
+        <remarks><para>このプロパティは、<b></b>オブジェクトMicrosoft Excel折り返す場合は True を返し、指定した範囲にテキストをラップするセルと折り返さなかった他のセルが含まれている場合は<b>Null</b>を返します。</para>
           <para>文字列をセル内に表示するために、行の高さは必要に応じて自動的に調節されます。</para>
           <para> </para></remarks>
       </Docs>
@@ -6148,9 +6148,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XPath</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> にマップされている要素の Xpath を表すオブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> します。</summary>
+        <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.XPath" /> にマップされた要素の Xpath を表すオブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> します。</summary>
         <value>To be added.</value>
-        <remarks><para>XML 機能は、ファイルを XML スプレッドシート形式で保存する場合を除き、Microsoft Office Professional Edition 2003 および excel 2003 Microsoft Officeでのみ使用できます。</para>
+        <remarks><para>XML 機能は、XML スプレッドシート形式でのファイルの保存を除き、Microsoft Office Professional Edition 2003 および Microsoft Office Excel 2003 でのみ使用できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

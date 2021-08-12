@@ -1,5 +1,5 @@
 <Type Name="Top10" FullName="Microsoft.Office.Interop.Excel.Top10">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="474d68fa0fa867d70e67f0c483f206c92800d97e" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009514" /></Metadata><TypeSignature Language="C#" Value="public interface Top10" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c4552ea7180fd30903326f2ef7389b40ba0efd3c2c953fcd984f31fdcbc66c43" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518875" /></Metadata><TypeSignature Language="C#" Value="public interface Top10" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Top10" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Top10" />
   <TypeSignature Language="VB.NET" Value="Public Interface Top10" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>条件付き書式設定ルールの上位 10 項目を表示します。色を領域に割り当てることにより、セルの値を他のセルと相対的に確認することができます。</summary>
-    <remarks><para>すべての条件付き書式オブジェクトは、コレクション <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> の子であるコレクション オブジェクト内に含 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> まれます。 FormatConditions コレクションの 1 つ以上のメソッドを使用して、上位 10 の書式設定ルール <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddTop10" /> <b>を作成</b> できます。</para>
+    <remarks><para>すべての条件付き書式オブジェクトはコレクション オブジェクト内に <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> 含まれます。これはコレクションの子 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> です。 FormatConditions コレクションの or メソッドを使用して、上位 10 の書式設定ルール <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddTop10" /> <b>を作成</b> できます。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Excel アプリケーションのMicrosoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> を返します。 オブジェクト修飾子を指定した場合、指定したオブジェクトを作成した <b>Application</b> オブジェクトを取得します。 値の取得のみ可能です。</summary>
+        <summary>オブジェクト修飾子なしで使用すると、このプロパティは、アプリケーションのオブジェクトを <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 表すオブジェクトMicrosoft Office Excelします。 オブジェクト修飾子を指定した場合、指定したオブジェクトを作成した <b>Application</b> オブジェクトを取得します。 値の取得のみ可能です。</summary>
         <value><b>アプリケーション</b></value>
         <remarks><para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、オブジェクトのアプリケーションを取得できます。</para>
           <para> </para></remarks>
@@ -106,7 +106,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Borders</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>条件付き書式ルールがTrue に評価される場合は、セルの罫線の書式を <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> 指定するコレクションを返 <b>します</b>。 読み取り専用です。</summary>
+        <summary>条件付き書式ルールが True に評価される場合、セルの罫線の書式設定を指定する <see cref="T:Microsoft.Office.Interop.Excel.Borders" /> コレクションを返 <b>します</b>。 読み取り専用です。</summary>
         <value><b>Borders</b></value>
         <remarks><para>条件付き書式オブジェクトで設定できるのは、セルの上下左右の罫線のプロパティだけです。</para>
           <para> </para></remarks>
@@ -141,7 +141,7 @@
         <summary>ピボットテーブル レポートの条件付き書式を評価する方法を設定または返します。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCalcFor" /></value>
         <remarks><para>このプロパティは、PivotTable レポートのデータに条件付き書式が適用されている場合にのみ有効です。</para>
-          <para>このプロパティは、プロパティが <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlAllValues" /> 設定されている場合にのみ、または設定 <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlColGroups" /> <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlRowGroups" /> <see cref="P:Microsoft.Office.Interop.Excel.Top10.ScopeType" /> できます <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlFieldsScope" /> 。 </para>
+          <para>このプロパティは、プロパティがに設定されている場合にのみ 、 、 に <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlAllValues" /> <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlColGroups" /> <see cref="F:Microsoft.Office.Interop.Excel.XlCalcFor.xlRowGroups" /> <see cref="P:Microsoft.Office.Interop.Excel.Top10.ScopeType" /> 設定できます <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlFieldsScope" /> 。 </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -168,7 +168,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>現在のオブジェクトが作成されたアプリケーションを示す 32 ビットの整数を返します。 値の取得のみ可能です。</summary>
+        <summary>現在のオブジェクトを作成したアプリケーションを 32 ビットの整数値として取得します。値の取得のみ可能です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlCreator" /></value>
         <remarks><para>Microsoft Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。<b>Creator</b> プロパティは、Macintosh 版 Excel でのみ使用できます。Macintosh では各アプリケーションに 4 文字のシグネチャが定められています。たとえば、Excel のシグネチャは XCEL です。</para>
           <para> </para></remarks>
@@ -222,7 +222,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>条件付き書式ルールがTrue に評価される場合にフォントの書式設定を <see cref="T:Microsoft.Office.Interop.Excel.Font" /> 指定するオブジェクトを返 <b>します</b>。 読み取り専用です。</summary>
+        <summary>条件付き書式ルールが True に評価される場合、フォントの書式設定を指定 <see cref="T:Microsoft.Office.Interop.Excel.Font" /> するオブジェクトを返 <b>します</b>。 読み取り専用です。</summary>
         <value><b>Font</b></value>
         <remarks><para>条件付き書式オブジェクトでは、<b>Font</b> オブジェクトの一部のプロパティがサポートされません。設定できるのは、フォント スタイル、下線、色、取り消し線の各属性です。</para>
           <para> </para></remarks>
@@ -311,9 +311,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>条件付き書式ルールが True に評価された場合にセルに適用される数値の書式を設定または返 <b>します</b>。 値の取得と設定が可能です。</summary>
+        <summary>条件付き書式ルールが True に評価される場合、セルに適用される数値形式を設定または返 <b>します</b>。 値の取得と設定が可能です。</summary>
         <value><b>Object</b></value>
-        <remarks><para>数値書式は、[セルの書式設定] ダイアログ ボックスの [数値] タブに表示されるのと同じ書式コードを使用して指定します。 組み込みの数値書式 ("General" など) を使用するか、ユーザー設定の数値書式を作成できます。</para>
+        <remarks><para>数値の書式は、[セルの書式設定] ダイアログ ボックスの [数値] タブに表示されるのと同じ書式コードを使用して指定します。 組み込みの数値形式 ("General" など) を使用するか、カスタム番号形式を作成できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -340,7 +340,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -431,7 +431,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>条件付き書式がピボットテーブル チャートに適用されるかどうかを表すブール型 (<b>Boolean</b>) の値を返します。 読み取り専用です。</summary>
+        <summary>条件付き書式がピボットテーブル チャートに適用されるかどうかを表すブール型 (<b>Boolean</b>) の値を返します。値の取得のみ可能です。</summary>
         <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -462,7 +462,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>条件付き書式ルールの <b>ランク値</b> の数または割合を指定する整数値を設定または返します。</summary>
+        <summary>条件付き書式ルールの <b>ランク</b> 値の数またはパーセンテージを指定する整数値を設定または返します。</summary>
         <value><b>Integer</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -493,9 +493,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotConditionScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ピボットテーブル グラフに適用される条件付き書式の範囲を取得または設定します。</summary>
+        <summary>ピボットテーブル グラフに適用される条件付き書式の範囲を設定または返します。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /></value>
-        <remarks><para>既定値は、 <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" /> プロパティを使用して範囲を設定 <see cref="P:Microsoft.Office.Interop.Excel.Top10.AppliesTo" /> します。</para>
+        <remarks><para>既定値は、プロパティ <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" /> を使用してスコープを設定 <see cref="P:Microsoft.Office.Interop.Excel.Top10.AppliesTo" /> します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -613,7 +613,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlTopBottom</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ランク付けが上から評価されるのか下から評価されるのかを判断する、列挙の定数の 1 つを取得または <see cref="T:Microsoft.Office.Interop.Excel.XlTopBottom" /> 設定します。</summary>
+        <summary>列挙の定数の 1 つを取得または設定し、ランク付けが上または下から評価されるの <see cref="T:Microsoft.Office.Interop.Excel.XlTopBottom" /> かを判断します。</summary>
         <value><b>XlTopBottom</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -643,7 +643,7 @@
       <Docs>
         <summary>条件付き書式の種類を返します。 読み取り専用です。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /></value>
-        <remarks><para>このプロパティは常に整数 <b>値</b> "5" を返します。これは、 <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlTop10" /> .</para>
+        <remarks><para>このプロパティは、常に "5" の <b>整数</b> 値を返します。これは、 に相当します <see cref="F:Microsoft.Office.Interop.Excel.XlFormatConditionType.xlTop10" /> 。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

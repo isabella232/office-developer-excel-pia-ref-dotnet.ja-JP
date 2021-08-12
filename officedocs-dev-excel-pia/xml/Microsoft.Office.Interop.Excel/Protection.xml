@@ -1,5 +1,5 @@
 <Type Name="Protection" FullName="Microsoft.Office.Interop.Excel.Protection">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="f9996163076ffe6bcb7674a54fe7b673141d992b" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010795" /></Metadata><TypeSignature Language="C#" Value="public interface Protection" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="195f588acc3a3d5583fc43fd847eb2ad3603bb30529456a0392154bd24cf0c32" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518987" /></Metadata><TypeSignature Language="C#" Value="public interface Protection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Protection" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Protection" />
   <TypeSignature Language="VB.NET" Value="Public Interface Protection" />
@@ -22,8 +22,8 @@
   </Attributes>
   <Docs>
     <summary>ワークシートに使用できる保護オプションのさまざまな種類を表します。</summary>
-    <remarks><para>Protection オブジェクト <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Protection" /> を取得 <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> するには、オブジェクトのプロパティ <b>を使用</b> します。</para>
-      <para>Protection オブジェクト <b>が返</b> された後は、次のプロパティを使用して保護オプションを設定または取得できます。</para>
+    <remarks><para>Protection オブジェクト <see cref="P:Microsoft.Office.Interop.Excel._Worksheet.Protection" /> を取得するには <see cref="T:Microsoft.Office.Interop.Excel.Worksheet" /> 、オブジェクトのプロパティ <b>を使用</b> します。</para>
+      <para>Protection オブジェクト <b>が返</b> された後は、次のプロパティを使用して保護オプションを設定または返します。</para>
       <list type="bullet">
         <item>
           <description>
@@ -107,9 +107,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>保護された <b>ワークシートで</b> 列の削除が許可されている場合はTrue を返します。</summary>
+        <summary>保護された <b>ワークシートで</b> 列の削除が許可されている場合は True を返します。</summary>
         <value>To be added.</value>
-        <remarks><para><b>AllowDeletingColumns</b>プロパティは、メソッド引数を使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> して設定できます。</para>
+        <remarks><para><b>AllowDeletingColumns プロパティ</b>は、メソッド引数を使用して <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> 設定できます。</para>
           <para>削除されるセルを含む列は、シートが保護されるときにロック解除される必要があります。</para>
           <para> </para></remarks>
       </Docs>
@@ -137,9 +137,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>保護された <b>ワークシートで</b> 行の削除が許可されている場合はTrue を返します。</summary>
+        <summary>保護された <b>ワークシートで</b> 行の削除が許可されている場合は True を返します。</summary>
         <value>To be added.</value>
-        <remarks><para><b>AllowDeletingRows</b>プロパティは、メソッド引数を使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> して設定できます。</para>
+        <remarks><para><b>AllowDeletingRows</b>プロパティは、メソッド引数を使用して <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> 設定できます。</para>
           <para>削除されるセルを含む行は、シートが保護されるときにロック解除される必要があります。</para>
           <para> </para></remarks>
       </Docs>
@@ -195,9 +195,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ユーザーが <b>シートが</b> 保護される前に作成されたオートフィルターを使用できる場合はTrue を返します。</summary>
+        <summary>シートが <b>保護される</b> 前に作成されたオートフィルターをユーザーが使用できる場合は True を返します。</summary>
         <value>To be added.</value>
-        <remarks><para><b>AllowFiltering プロパティは</b>、メソッド引数を使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> して設定できます。</para>
+        <remarks><para><b>AllowFiltering プロパティ</b>は、メソッド引数を使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> して設定できます。</para>
           <para><b>AllowFiltering</b> プロパティは、ユーザーが既存のオートフィルターのフィルター条件を変更できるようにします。ユーザーは、保護されたワークシート上でオートフィルターを作成または削除することはできません。</para>
           <para>フィルターの対象となるセルは、シートが保護されるときにロック解除される必要があります。</para>
           <para> </para></remarks>
@@ -226,10 +226,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>保護された <b>ワークシートで</b> セルの書式設定が可能な場合はTrue を返します。</summary>
+        <summary>保護された <b>ワークシートで</b> セルの書式設定が許可されている場合は True を返します。</summary>
         <value>To be added.</value>
-        <remarks><para><b>AllowFormattingCells</b>プロパティは、メソッド引数を使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> して設定できます。</para>
-          <para>このプロパティを使用すると、[保護] タブが無効になります。ユーザーは、すべての形式を変更できますが、範囲のロックを解除または再表示することはできません。</para>
+        <remarks><para><b>AllowFormattingCells</b>プロパティは、メソッド引数を使用して <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> 設定できます。</para>
+          <para>このプロパティを使用すると、[保護] タブが無効になります。ユーザーは、すべての形式を変更できますが、範囲のロックを解除したり非表示にしたりすることはできません。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -256,9 +256,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>保護された <b>ワークシートで</b> 列の書式設定が許可されている場合はTrue を返します。</summary>
+        <summary>保護された <b>ワークシートで</b> 列の書式設定が許可されている場合は True を返します。</summary>
         <value>To be added.</value>
-        <remarks><para><b>AllowFormattingColumns</b>プロパティは、メソッドの引数を <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> 使用して設定できます。</para>
+        <remarks><para><b>AllowFormattingColumns</b>プロパティは、メソッド引数を使用して <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> 設定できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -285,9 +285,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>保護された <b>ワークシートで</b> 行の書式設定が許可されている場合はTrue を返します。</summary>
+        <summary>保護された <b>ワークシートで</b> 行の書式設定が許可されている場合は True を返します。</summary>
         <value>To be added.</value>
-        <remarks><para><b>AllowFormattingRows</b>プロパティは、メソッド引数を使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> して設定できます。</para>
+        <remarks><para><b>AllowFormattingRows</b>プロパティは、メソッド引数を使用して <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> 設定できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -314,10 +314,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>保護された <b>ワークシートで</b> 列の挿入が許可されている場合はTrue を返します。</summary>
+        <summary>保護された <b>ワークシートで</b> 列の挿入が許可されている場合は True を返します。</summary>
         <value>To be added.</value>
         <remarks><para>挿入された列は、既定値として左側の列の書式を受け継ぐため、その列のセルがロックされる場合があります。つまり、ユーザーは挿入した列を削除できない場合があります。</para>
-          <para><b>AllowInsertingColumns</b>プロパティは、メソッド引数を使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> して設定できます。</para>
+          <para><b>AllowInsertingColumns</b>プロパティは、メソッド引数を使用して <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> 設定できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -344,10 +344,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>保護された <b>ワークシートに</b> ハイパーリンクの挿入が許可されている場合はTrue を返します。</summary>
+        <summary>保護された <b>ワークシートで</b> ハイパーリンクの挿入が許可されている場合は True を返します。</summary>
         <value>To be added.</value>
         <remarks><para>保護されたワークシートで、ロック解除されたセルまたは保護解除されたセルには、ハイパーリンクを挿入することができます。</para>
-          <para><b>AllowInsertingHyperlinks</b>プロパティは、メソッド引数を使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> して設定できます。</para>
+          <para><b>AllowInsertingHyperlinks</b>プロパティは、メソッド引数を使用して <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> 設定できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -374,9 +374,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>保護された <b>ワークシートに</b> 行の挿入が許可されている場合はTrue を返します。</summary>
+        <summary>保護された <b>ワークシートで</b> 行の挿入が許可されている場合は True を返します。</summary>
         <value>To be added.</value>
-        <remarks><para><b>AllowInsertingRows</b>プロパティは、メソッドの引数を使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> して設定できます。</para>
+        <remarks><para><b>AllowInsertingRows</b>プロパティは、メソッド引数を使用して <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> 設定できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -403,10 +403,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>保護された <b>ワークシートで</b> 並べ替えオプションが許可されている場合はTrue を返します。</summary>
+        <summary>保護された <b>ワークシートで</b> 並べ替えオプションが許可されている場合は True を返します。</summary>
         <value>To be added.</value>
-        <remarks><para>保護されたワークシートでは、並べ替えはロックされていないセルまたは保護されていないセルでのみ実行できます。</para>
-          <para><b>AllowSorting プロパティ</b>は、メソッド引数を使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> して設定できます。</para>
+        <remarks><para>保護されたワークシートでは、並べ替えは、ロックされていないセルまたは保護されていないセルでのみ実行できます。</para>
+          <para><b>AllowSorting プロパティは</b>、メソッド引数を使用して <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> 設定できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -433,10 +433,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ユーザーが <b>保護された</b> ワークシートのピボット テーブルを操作できる場合はTrue を返します。</summary>
+        <summary>ユーザーが <b>保護された</b> ワークシートでピボット テーブルを操作できる場合は True を返します。</summary>
         <value>To be added.</value>
         <remarks><para><b>AllowUsingPivotTables</b> プロパティは、OLAP 以外の元データに適用します。</para>
-          <para><b>AllowUsingPivotTables</b>プロパティは、メソッド引数を使用 <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> して設定できます。</para>
+          <para><b>AllowUsingPivotTables</b>プロパティは、メソッド引数を使用して <see cref="M:Microsoft.Office.Interop.Excel._Workbook.Protect(System.Object,System.Object,System.Object)" /> 設定できます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

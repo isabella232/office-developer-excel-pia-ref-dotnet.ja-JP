@@ -1,5 +1,5 @@
 <Type Name="RoutingSlip" FullName="Microsoft.Office.Interop.Excel.RoutingSlip">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d1e265b4ea2021fff6dba4ef91746a75aeaa3e17" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010494" /></Metadata><TypeSignature Language="C#" Value="public interface RoutingSlip" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="9c8337de7ae1eba925d8da90043087f2d04736d8b1f57e9186ae9e83e872ce1f" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54518210" /></Metadata><TypeSignature Language="C#" Value="public interface RoutingSlip" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RoutingSlip" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.RoutingSlip" />
   <TypeSignature Language="VB.NET" Value="Public Interface RoutingSlip" />
@@ -21,9 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>ブックのルーティング スリップを表します。 電子メール システムを介してブックを送信するには、この経路を使用します。</summary>
-    <remarks><para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel._Workbook.RoutingSlip" /> を使用して <b>RoutingSlip オブジェクトを取得</b> します。</para>
-      <para><b>RoutingSlip オブジェクト</b>は存在しないし、ブックのプロパティがTrue を指定しない限 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" /> り返<b>されません</b>。</para>
+    <summary>ブックのルーティング スリップを表します。 ルーティング スリップは、電子メール システムを介してブックを送信するために使用されます。</summary>
+    <remarks><para>プロパティを <see cref="P:Microsoft.Office.Interop.Excel._Workbook.RoutingSlip" /> 使用して <b>、RoutingSlip オブジェクトを取得</b> します。</para>
+      <para><b>RoutingSlip</b>オブジェクトは存在しません。ブックのプロパティが True の場合を指定しない限り <see cref="P:Microsoft.Office.Interop.Excel._Workbook.HasRoutingSlip" /> 、返<b>す必要はありません</b>。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -50,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -111,7 +111,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ルーティング配信方法を取得または設定します。 使用できる定数は <see cref="T:Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery" /> <b>、xlOneAfterAnother</b> または <b>xlAllAtOnce です</b>。</summary>
+        <summary>ルーティング配信方法を設定または返します。 次の定数のいずれかを <see cref="T:Microsoft.Office.Interop.Excel.XlRoutingSlipDelivery" /> 指定できます。 <b>xlOneAfterAnother または</b> <b>xlAllAtOnce</b>です。</summary>
         <value>To be added.</value>
         <remarks><para>ルーティングが進行中の場合は、このプロパティを設定できません。</para>
           <para> </para></remarks>
@@ -205,11 +205,11 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">省略 <b>可能なオブジェクト</b>です。 受信者。 この引数を指定しない場合 <b>、Recipients</b> プロパティは、すべての受信者を含む配列を返します (または設定できます)。</param>
-        <summary>返すまたは、ルーティング スリップの受信者を設定します。</summary>
+        <param name="Index">省略 <b>可能なオブジェクト</b>です。 受信者。 この引数を指定しない場合 <b>、Recipients</b> プロパティは、すべての受信者を含む配列を返します (または、設定できます)。</param>
+        <summary>ルーティング スリップの受信者を設定または返します。</summary>
         <value>To be added.</value>
         <remarks><para>ルーティング配信オプションが <b>xlOneAfterAnother</b>の場合、受信者リストの順序によって配信順序が定義されます。</para>
-          <para>ルーティング スリップが進行中の場合は、ドキュメントをまだ受信してルーティングしていない受信者だけが返されます。</para>
+          <para>ルーティング スリップが進行中の場合、ドキュメントを受信してルーティングしていない受信者だけが返または設定されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -234,9 +234,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>(同じ受信者の一覧と配信情報を使用して) 同じスリップで新しいルーティングを開始できるよう、ルーティング スリップをリセットします。</summary>
+        <summary>(同じ受信者リストと配信情報を使用して) 同じスリップで新しいルーティングを開始できるよう、ルーティング スリップをリセットします。</summary>
         <returns>To be added.</returns>
-        <remarks><para>このメソッドを使用する前に、回覧が完了している必要があります。 このメソッドを使用すると、エラーが発生します。</para>
+        <remarks><para>このメソッドを使用する前に、回覧が完了している必要があります。 このメソッドを他の場合に使用すると、エラーが発生します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -266,7 +266,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> の 場合は、ルーティングが完了すると、ブックが送信者に返されます。</summary>
+        <summary><b>True</b> の場合は、ルーティングが完了すると、ブックが送信者に返されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -325,9 +325,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、郵送者またはルーティング のスリップの件名を設定します。</summary>
+        <summary>メールまたはルーティング スリップの件名を設定または返します。</summary>
         <value>To be added.</value>
-        <remarks><para>オブジェクトの件名は <see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" /> 、ブックのルーティングに使用されるメール メッセージの件名として使用されます。</para>
+        <remarks><para>オブジェクトの件名 <see cref="T:Microsoft.Office.Interop.Excel.RoutingSlip" /> は、ブックのルーティングに使用されるメール メッセージの件名として使用されます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -357,7 +357,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True の</b> 場合は、ルーティング スリップのステータス追跡が有効になっています。</summary>
+        <summary><b>True</b> の場合は、ルーティング スリップの状態追跡が有効です。</summary>
         <value>To be added.</value>
         <remarks><para>ルーティングが進行中の場合は、このプロパティを設定できません。</para>
           <para> </para></remarks>
