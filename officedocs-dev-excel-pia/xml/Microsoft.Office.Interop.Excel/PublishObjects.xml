@@ -1,5 +1,5 @@
 <Type Name="PublishObjects" FullName="Microsoft.Office.Interop.Excel.PublishObjects">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="f387dc9c018dbd0378441a0c44743179b7b5fb9c" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010753" /></Metadata><TypeSignature Language="C#" Value="public interface PublishObjects : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6fe2cae33cf7bdeaa934dee8836349bfb3286b0661da03d1e1d77248b6b612d6" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516607" /></Metadata><TypeSignature Language="C#" Value="public interface PublishObjects : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract PublishObjects implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.PublishObjects" />
   <TypeSignature Language="VB.NET" Value="Public Interface PublishObjects&#xA;Implements IEnumerable" />
@@ -25,9 +25,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>ブック内のすべての <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> オブジェクトのコレクションです。 各 <b>PublishObject</b> オブジェクトは、Web ページとして保存されたブック内のアイテムを表し、オブジェクトのプロパティやメソッドで指定された値に従って更新されます。</summary>
-    <remarks><para>このプロパティ <see cref="P:Microsoft.Office.Interop.Excel._Workbook.PublishObjects" /> を使用して <b>PublishObjects コレクションを取得</b> します。</para>
-      <para><b>PublishObjects</b>( ) を使用して 1 つの PublishObject オブジェクトを取得します (ブック内の指定されたアイテムのインデックス <paramref name="index" /> <paramref name="index" /> 番号)。 <b></b></para>
+    <summary>ブック内のすべての <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> オブジェクトのコレクション。 各 <b>PublishObject</b> オブジェクトは、Web ページとして保存されたブック内のアイテムを表し、オブジェクトのプロパティやメソッドで指定された値に従って更新されます。</summary>
+    <remarks><para>プロパティを <see cref="P:Microsoft.Office.Interop.Excel._Workbook.PublishObjects" /> 使用して <b>PublishObjects コレクションを取得</b> します。</para>
+      <para><b>PublishObjects</b>( ) を使用して、ブック内の指定したアイテムのインデックス番号を指定して、1 つの <paramref name="index" /> <paramref name="index" /> <b>PublishObject オブジェクトを取得</b>します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -97,8 +97,8 @@
         <param name="SourceType">必須 <see cref="T:Microsoft.Office.Interop.Excel.XlSourceType" /> 。 ソースの種類を指定します。</param>
         <param name="Filename"><b>文字列</b> が必要です。 ソース オブジェクトが保存されたイントラネットまたは Web の URL、あるいはローカルまたはネットワークのパスを指定します。</param>
         <param name="Sheet">省略 <b>可能なオブジェクト</b>です。 Web ページとして保存されたワークシートの名前を指定します。</param>
-        <param name="Source">省略 <b>可能なオブジェクト</b>です。 引数 <paramref name="SourceType" /> xlSourceAutoFilter、xlSourceChart、xlSourcePivotTable、xlSourcePrintArea、xlSourceQuery、<b></b>または<b></b><b></b><b></b><b>xlSourceRange</b>のいずれかの定数を持つアイテムを識別するために使用される一<b></b>意の名前です。 <paramref name="SourceType" /> <b>xlSourceRange の場合、Source</b>は範囲を指定します。定義された名前を使用できます。 if <paramref name="SourceType" /> is <b>xlSourceChart</b>, <b>xlSourcePivotTable</b>, or <b>xlSourceQuery</b>, <paramref name="Source" /> specifies the name of a chart, PivotTable report, or query table.</param>
-        <param name="HtmlType">省略 <b>可能なオブジェクト</b>です。 アイテムを対話型の Microsoft Office Web コンポーネントとして保存するか、静的な文字列および画像として保存するかを指定します。 使用できる定数は、次 <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> に示す定数です。スプレッドシート コンポーネントの対話形式で保存された<b>ConstantDescription xlHtmlCalc</b>Microsoft Office。<b>xlHtmlChart</b>対話型のグラフ コンポーネントとしてMicrosoft Officeされるアイテム。<b>xlHtmlList</b>ピボットテーブル コンポーネントの対話型Microsoft Office保存されたアイテム。<b>xlHtmlStatic</b>静的テキストと画像として保存されたアイテム。</param>
+        <param name="Source">省略 <b>可能なオブジェクト</b>です。 引数として次のいずれかの定数を持つアイテムを識別するために使用される一意の名前: <paramref name="SourceType" /> <b>xlSourceAutoFilter</b> <b>、xlSourceChart</b> <b>、xlSourcePivotTable、xlSourcePrintArea、xlSourceQuery、</b><b>または xlSourceRange</b><b></b><b></b>です。 <paramref name="SourceType" /> <b>xlSourceRange の場合、Source</b>は範囲を指定します。定義された名前を指定できます。 <paramref name="SourceType" /> <b>xlSourceChart</b> <b>、xlSourcePivotTable、</b>または<b>xlSourceQuery</b>の場合は、グラフ、ピボットテーブル レポート、またはクエリ テーブルの名前 <paramref name="Source" /> を指定します。</param>
+        <param name="HtmlType">省略 <b>可能なオブジェクト</b>です。 アイテムを対話型の Microsoft Office Web コンポーネントとして保存するか、静的な文字列および画像として保存するかを指定します。 次のいずれかの定数を <see cref="T:Microsoft.Office.Interop.Excel.XlHtmlType" /> 指定できます。ConstantDescription<b>xlHtmlCalc</b>アイテムは、スプレッドシート コンポーネントの対話型Microsoft Office保存されます。<b>xlHtmlChart</b>対話型のグラフ コンポーネントとしてMicrosoft Officeアイテム。<b>xlHtmlList</b>対話型のピボットテーブル コンポーネントとしてMicrosoft Officeアイテム。<b>xlHtmlStatic</b>静的テキストと画像として保存されたアイテム。</param>
         <param name="DivID">省略 <b>可能なオブジェクト</b>です。 HTML の DIV タグで Web ページのアイテムを識別するために使用する一意識別子を指定します。</param>
         <param name="Title">省略 <b>可能なオブジェクト</b>です。 Web ページのタイトルを指定します。</param>
         <summary>Web ページとして保存されるドキュメント内でのアイテムを表すオブジェクトを作成します。 このようなオブジェクトを使用することにより、Excel のドキュメントへの変更を自動化でき、これ以降に行う Web ページの更新が容易になります。 オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.PublishObject" /> します。</summary>
@@ -129,7 +129,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -275,7 +275,7 @@
         <Parameter Name="Index" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Index">Required <b>Object</b>. オブジェクトの名前またはインデックス番号を指定します。</param>
+        <param name="Index">必須<b>オブジェクト 。</b> オブジェクトの名前またはインデックス番号を指定します。</param>
         <summary>コレクションから単一のオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

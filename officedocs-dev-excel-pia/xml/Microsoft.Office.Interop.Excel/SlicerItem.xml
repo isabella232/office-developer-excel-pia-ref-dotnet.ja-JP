@@ -1,5 +1,5 @@
 <Type Name="SlicerItem" FullName="Microsoft.Office.Interop.Excel.SlicerItem">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3c1b11b181cf76e60a0a1ab7e6eab3bce566f124" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50010193" /></Metadata><TypeSignature Language="C#" Value="public interface SlicerItem" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f7a55f46b762d5e367d09fbd04c745237b4a451b7c02bc1cce187b58e0094484" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516591" /></Metadata><TypeSignature Language="C#" Value="public interface SlicerItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SlicerItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SlicerItem" />
   <TypeSignature Language="VB.NET" Value="Public Interface SlicerItem" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>スライサー内のアイテムを表します。</summary>
-    <remarks><para>スライサーで現在選択されているボタンを表すオブジェクトにアクセスするには、オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" /> のプロパティを使用 <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> します。 ピボットテーブルをフィルター処理するスライサー内のすべてのアイテムを表すコレクションにアクセスするには、オブジェクトに関連付けられているオブジェクトのプロパティ <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> を使用 <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> します。 OLAP 階層のレベルをフィルター処理するスライサー内のアイテムを表すコレクションにアクセスするには、その階層レベルを表すオブジェクトのプロパティ <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> を使用します。</para>
+    <remarks><para>スライサーで現在選択されているボタンを表すオブジェクトにアクセスするには、 <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> オブジェクト <see cref="P:Microsoft.Office.Interop.Excel.Slicer.ActiveItem" /> のプロパティを使用 <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> します。 ピボットテーブルをフィルター処理するスライサー内のすべてのアイテムを表すコレクションにアクセスするには、オブジェクトに関連付けられているオブジェクトのプロパティ <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.SlicerItems" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> を使用 <see cref="T:Microsoft.Office.Interop.Excel.Slicer" /> します。 OLAP 階層のレベルをフィルター処理するスライサー内のアイテムを表すコレクションにアクセスするには、そのレベルの階層を表すオブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.SlicerItems" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.SlicerItems" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> プロパティを使用します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Microsoft Excel アプリケーションを表 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> すオブジェクトを返します。 オブジェクト修飾子と一緒に使用する場合、このプロパティは指定されたオブジェクトの作成元を表 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> すオブジェクトを返します。</summary>
+        <summary>オブジェクト修飾子なしで使用すると、このプロパティは、アプリケーションのオブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 表すオブジェクトMicrosoft Excelします。 オブジェクト修飾子と一緒に使用すると、このプロパティは、指定したオブジェクトの作成者を表す <see cref="T:Microsoft.Office.Interop.Excel.Application" /> オブジェクトを返します。</summary>
         <value>オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 。</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
@@ -107,9 +107,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このオブジェクトが作成されたアプリケーションを<b></b>示す 32 ビット整数を取得します。</summary>
-        <value>このオブジェクトが <b>作成されたアプリケーション</b> を示す 32 ビットの整数。</value>
-        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.Creator" /> Macintosh 用の Microsoft Excel で使用するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
+        <summary>このオブジェクトが作成されたアプリケーションを <b>示す</b> 32 ビット整数を取得します。</summary>
+        <value>このオブジェクトが <b>作成されたアプリケーション</b> を示す 32 ビット整数。</value>
+        <remarks><para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 このプロパティは、各アプリケーションに 4 文字のMicrosoft Excelコードを持つ Macintosh のプロパティで使用 <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.Creator" /> するように設計されています。 たとえば、Excel の作成元コードは XCEL です。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -136,12 +136,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スライサー アイテムに、現在の手動フィルター状態と一致するデータが含まれているかどうかを取得します。</summary>
-        <value><b>スライ</b> サー アイテムに現在の手動フィルター状態と一致するデータが含まれている場合は true。それ以外の場合は <b>false です</b>。</value>
+        <summary>スライサー アイテムに、現在の手動フィルター状態に一致するデータが含まれているかどうかを取得します。</summary>
+        <value><b>ス</b> ライサー アイテムに現在の手動フィルター状態に一致するデータが含まれている場合は true。それ以外の場合は <b>false です</b>。</value>
         <remarks><para>読み取り専用です。</para>
           <para>
-            <b>スライ</b> サー アイテムに現在の手動フィルター状態と一致するデータが含まれている場合は true。それ以外の場合 <b>は false です</b>。</para>
-          <para>このプロパティは、クロス フィルターがオンの場合にのみサポートされますが、それ以外の場合は実行時エラーが生成されます。 ピボットテーブル レポートに関連付けられたスライサーに対してクロス フィルターが有効になっているかどうかを確認するには、指定したオブジェクトの親オブジェクトのプロパティの値 <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> を確認 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> します。 OLAP データ ソースに関連付けられたスライサーに対してクロス フィルターが有効になっているかどうかを確認するには、フィルター処理する <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> OLAP 階層に対応するオブジェクトのプロパティの値を確認します。 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /></para>
+            <b>ス</b>ライサー アイテムに現在の手動フィルター状態に一致するデータが含まれている場合は true。それ以外の場合<b>は false 。</b></para>
+          <para>このプロパティは、クロス フィルターがオンの場合にのみサポートされますが、それ以外の場合は実行時エラーが生成されます。 ピボットテーブル レポートに関連付けられたスライサーに対してクロス フィルターが有効になっているかどうかを確認するには、指定したオブジェクトの親オブジェクトのプロパティの値 <see cref="P:Microsoft.Office.Interop.Excel.SlicerCache.CrossFilterType" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerItem" /> を確認 <see cref="T:Microsoft.Office.Interop.Excel.SlicerCache" /> します。 OLAP データ ソースに関連付けられたスライサーに対してクロス フィルターが有効になっているかどうかを確認するには、フィルター処理する OLAP 階層に対応するオブジェクトのプロパティの値を <see cref="P:Microsoft.Office.Interop.Excel.SlicerCacheLevel.CrossFilterType" /> <see cref="T:Microsoft.Office.Interop.Excel.SlicerCacheLevel" /> 確認します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -230,10 +230,10 @@
       </ReturnValue>
       <Docs>
         <summary>スライサー アイテムが選択されているかどうかを取得または設定します。 OLAP 以外のデータ ソースに接続されるスライサーの場合、値の取得および設定が可能です。 OLAP データ ソースに接続されるスライサーの場合、値の取得のみ可能です。</summary>
-        <value><b>スライ</b> サー アイテムが選択されている場合は true。それ以外の場合は <b>false です</b>。</value>
+        <value><b>ス</b> ライサー アイテムが選択されている場合は true。それ以外の場合は <b>false です</b>。</value>
         <remarks><para>値の取得と設定が可能です。</para>
           <para>
-            <b>スライ</b> サー アイテムが選択されている場合は true。それ以外の場合 <b>は false です</b>。</para>
+            <b>ス</b>ライサー アイテムが選択されている場合は true。それ以外の場合<b>は false 。</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -289,10 +289,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スライサー アイテムのソース名を、標準の英語 (米国) 形式の設定で取得します。</summary>
-        <value>スライサー アイテムのソース名 (標準の英語 (米国) 形式の設定)。</value>
+        <summary>スライサー アイテムのソース名を標準の英語 (米国) 形式の設定で取得します。</summary>
+        <value>スライサー アイテムのソース名 (英語 (米国) の標準書式設定。</value>
         <remarks><para>読み取り専用です。</para>
-          <para>このプロパティは、スライサー アイテムがローカライズされたバージョンを持ち、そのプロパティ値が日付の書式設定などのプロパティ値と <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.SourceNameStandard" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.SourceName" /> 異なる場合に使用されます。</para>
+          <para>このプロパティは、スライサー アイテムにローカライズされたバージョンが含まれる場合に使用され、そのプロパティ値は、日付の書式設定など、プロパティ値 <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.SourceNameStandard" /> <see cref="P:Microsoft.Office.Interop.Excel.SlicerItem.SourceName" /> と異なります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

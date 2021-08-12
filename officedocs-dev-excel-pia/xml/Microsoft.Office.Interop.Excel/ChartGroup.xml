@@ -1,5 +1,5 @@
 <Type Name="ChartGroup" FullName="Microsoft.Office.Interop.Excel.ChartGroup">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d867c9c484716da4b2528f8d662af2030b791599" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50005853" /></Metadata><TypeSignature Language="C#" Value="public interface ChartGroup" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fcdaf04a6bc78a16062476c83b6f5f4e0099dff507b10124466190701ee318fe" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54509705" /></Metadata><TypeSignature Language="C#" Value="public interface ChartGroup" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartGroup" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ChartGroup" />
   <TypeSignature Language="VB.NET" Value="Public Interface ChartGroup" />
@@ -21,34 +21,34 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>同じ形式のグラフにプロットされた 1 つまたは複数のデータ系列を表します。 <b>ChartGroup オブジェクト</b>はコレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> です。</summary>
+    <summary>同じ形式のグラフにプロットされた 1 つまたは複数のデータ系列を表します。 <b>ChartGroup オブジェクト</b>は、コレクションのメンバー <see cref="T:Microsoft.Office.Interop.Excel.ChartGroups" /> です。</summary>
     <remarks><para>1 つのグラフには、1 つ以上のグラフ グループが含まれ、各グラフ グループには 1 つ以上のデータ系列が、そして各データ系列には、1 つ以上のポイントが含まれています。 たとえば、1 つのグラフに、すべてのデータ系列を折れ線グラフ形式でプロットした折れ線グラフ グループと、すべてのデータ系列を横棒グラフ形式でプロットした横棒グラフ グループの両方を含めることができます。</para>
-      <para>Use <b>ChartGroups</b>( <paramref name="index" /> ) where the <paramref name="index" /> chart-group index number, to return a single <b>ChartGroup</b> object. グラフがアクティブ化されている場合は、このプロパティを使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" /> できます。</para>
-      <para>あるグラフ グループのグラフの形式を変更すると、そのグラフ グループのインデックス番号が変わることがあるため、特定のグラフ グループを取得するには、そのグラフ グループ専用のメソッドを使用した方が簡単な場合があります。 メソッド <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> は、グラフ内の円グラフ グループのコレクションを返し、メソッドは、線グラフ グループのコレクションを返します <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> 。 これらの各メソッドにインデックス番号を指定して使用し、1 つの <b>ChartGroup</b> オブジェクトを取得することも、インデックス番号を指定しないで、 <b>ChartGroups</b> コレクションを取得することもできます。 次のグラフ 種類グループメソッドを使用できます。</para>
+      <para>1 <b>つの ChartGroup オブジェクト</b>を取得するには、ChartGroups ( ) を使用します。グラフ グループインデックス番号 <paramref name="index" /> <paramref name="index" /> を <b>指定</b> します。 グラフがアクティブ化されている場合は、プロパティを使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.ActiveChart" /> できます。</para>
+      <para>あるグラフ グループのグラフの形式を変更すると、そのグラフ グループのインデックス番号が変わることがあるため、特定のグラフ グループを取得するには、そのグラフ グループ専用のメソッドを使用した方が簡単な場合があります。 この <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> メソッドは、グラフ内の円グラフ グループのコレクションを返し、グラフ グループのコレクション <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> を返します。 これらの各メソッドにインデックス番号を指定して使用し、1 つの <b>ChartGroup</b> オブジェクトを取得することも、インデックス番号を指定しないで、 <b>ChartGroups</b> コレクションを取得することもできます。 次のグラフ グループメソッドを使用できます。</para>
       <list type="bullet">
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" /> method</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.AreaGroups(System.Object)" /> メソッド</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" /> method</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.BarGroups(System.Object)" /> メソッド</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" /> method</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.ColumnGroups(System.Object)" /> メソッド</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" /> method</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.DoughnutGroups(System.Object)" /> メソッド</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> method</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.LineGroups(System.Object)" /> メソッド</description>
         </item>
         <item>
           <description>
-            <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> method</description>
+            <see cref="M:Microsoft.Office.Interop.Excel._Chart.PieGroups(System.Object)" /> メソッド</description>
         </item>
       </list>
       <para> </para></remarks>
@@ -77,7 +77,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定したオブジェクトの作成元を表すオブジェクトを返します (OLE オートメーション オブジェクトでこのプロパティを使用すると、そのオブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Application" /> アプリケーションを取得できます)。</summary>
+        <summary>指定したオブジェクトの作成者を表すオブジェクトを返します (このプロパティを OLE Automation オブジェクトと一緒に使用して、そのオブジェクトの <see cref="T:Microsoft.Office.Interop.Excel.Application" /> アプリケーションを取得できます)。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -108,9 +108,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlAxisGroup</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたグラフ種類グループまたはデータ系列のグループを返します。</summary>
+        <summary>指定したグラフ グループまたは系列のグループを返します。</summary>
         <value>To be added.</value>
-        <remarks><para>3-D グラフの場合は <b>、xlPrimary のみ</b> 有効です。</para>
+        <remarks><para>3-D グラフの場合 <b>、xlPrimary だけが</b> 有効です。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -168,7 +168,7 @@
       </Parameters>
       <Docs>
         <param name="Index">カテゴリの名前またはインデックス番号。</param>
-        <summary>グラフ 種類グループのすべての表示可能なカテゴリ (コレクション) のコレクションを表す <see cref="T:Microsoft.Office.Interop.Excel.CategoryCollection" /> オブジェクトを取得します。</summary>
+        <summary>グラフ グループ内のすべての表示カテゴリ (コレクション) のコレクションを表 <see cref="T:Microsoft.Office.Interop.Excel.CategoryCollection" /> すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -228,7 +228,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>取得またはドーナツ グラフ グループの穴のサイズを設定します。 穴の大きさは、グラフのサイズに対する割合 (10 ~ 90%) で表されます。</summary>
+        <summary>取得またはドーナツ グラフ グループの穴のサイズを設定します。 穴のサイズは、グラフのサイズに対する割合 (10 ~ 90%) で表されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -256,7 +256,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DownBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>線グラフ <see cref="T:Microsoft.Office.Interop.Excel.DownBars" /> の下線を表すオブジェクトを取得します。 折れ線グラフにのみ適用されます。</summary>
+        <summary>線グラフの <see cref="T:Microsoft.Office.Interop.Excel.DownBars" /> 下線を表すオブジェクトを返します。 折れ線グラフにのみ適用されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -284,7 +284,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.DropLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>線グラフ <see cref="T:Microsoft.Office.Interop.Excel.DropLines" /> またはエリア チャートのデータ系列の降下線を表すオブジェクトを取得します。 折れ線グラフまたは面グラフにのみ適用されます。</summary>
+        <summary>線グラフまたはエリア グラフ上の系列のドロップ 線を表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.DropLines" /> を返します。 折れ線グラフまたは面グラフにのみ適用されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -315,7 +315,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>円グラフまたはドーナツ グラフの最初のスライスの角度を、垂直から時計回りに設定します。 円グラフ、3-D 円グラフ、およびドーナツ グラフにのみ適用されます。</summary>
+        <summary>最初の円グラフまたはドーナツ グラフのスライスの角度を度 (垂直方向から時計回り) に設定または返します。 円グラフ、3-D 円グラフ、およびドーナツ グラフにのみ適用されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -343,7 +343,7 @@
       </Parameters>
       <Docs>
         <param name="Index">カテゴリの名前またはインデックス番号。</param>
-        <summary>グラフ 種類グループのすべての表示およびフィルター処理されたカテゴリ (a) のコレクションを表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.CategoryCollection" /> を取得します。</summary>
+        <summary>グラフ グループ内のすべての表示およびフィルター処理されたカテゴリ (a) のコレクションを表す <see cref="T:Microsoft.Office.Interop.Excel.CategoryCollection" /> オブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -374,7 +374,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>横棒グラフと横棒グラフ: 横棒グラフまたは横棒グラフの幅に対する割合として、棒または列のクラスター間のスペースを設定または返します。 円グラフ付き円グラフと付き円グラフ付き円グラフ: グラフの主セクションと第 2 セクションの間隔を設定します。</summary>
+        <summary>棒グラフと横棒グラフ: バーまたは列のクラスター間のスペースを、バーまたは列の幅に対する割合として設定または返します。 円グラフと円グラフの棒グラフ: グラフのプライマリ セクションとセカンダリ セクションの間の領域を設定または返します。</summary>
         <value>To be added.</value>
         <remarks><para>このプロパティに使用できる範囲は 5 ～ 200 の値です。</para>
           <para> </para></remarks>
@@ -406,7 +406,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True の</b> グラフ種類グループに 3-次元の網かけがある場合です。 このプロパティは、サーフェス グラフにのみ適用され、非サーフェス グラフに設定すると実行時エラーが返されます。</summary>
+        <summary><b>グラフ</b> グループに 3 次元網かけがある場合は True。 このプロパティはサーフェス グラフにのみ適用され、サーフェス以外のグラフに設定すると実行時エラーが返されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -437,7 +437,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>の <b>場合は true</b> 折れ線グラフまたは面グラフに降下線を表示がある場合。 線グラフとエリア チャートにのみ適用されます。</summary>
+        <summary>の <b>場合は true</b> 折れ線グラフまたは面グラフに降下線を表示がある場合。 線グラフとエリア グラフにのみ適用されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -499,7 +499,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True の</b> レーダー グラフに軸ラベルがある場合。 レーダー チャートにのみ適用されます。</summary>
+        <summary><b>True の</b> レーダー グラフに軸ラベルがある場合。 レーダー グラフにのみ適用されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -530,7 +530,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> の 場合は、積み上げ棒グラフまたは棒グラフに系列線がある場合、または円グラフの円グラフまたは円グラフの棒には、2 つのセクション間のコネクタ線があります。 積み上げ棒グラフ、棒グラフ、円グラフ付き円グラフ、または円グラフの棒グラフにのみ適用されます。</summary>
+        <summary><b>True</b> の場合、積み上げ列グラフまたは棒グラフに系列線がある場合、または円グラフの円グラフまたは円グラフの棒グラフに 2 つのセクションの間にコネクタ線がある場合。 積み上げ列グラフ、棒グラフ、円グラフの円グラフ、または円グラフの棒グラフにのみ適用されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -589,7 +589,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.HiLoLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>線グラフ <see cref="T:Microsoft.Office.Interop.Excel.HiLoLines" /> のデータ系列の高低線を表すオブジェクトを取得します。 折れ線グラフにのみ適用されます。</summary>
+        <summary>線グラフ <see cref="T:Microsoft.Office.Interop.Excel.HiLoLines" /> 上の系列の高低線を表すオブジェクトを返します。 折れ線グラフにのみ適用されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -648,9 +648,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>横棒と縦棒の配置方法を指定します。 -100 ~ 100 の値を指定できます。 2-D 横棒グラフと 2-D 縦棒グラフにのみ適用されます。</summary>
+        <summary>横棒と縦棒の配置方法を指定します。 –100 ~ 100 の値を指定できます。 2-D 横棒グラフと 2-D 縦棒グラフにのみ適用されます。</summary>
         <value>To be added.</value>
-        <remarks><para>このプロパティを -100 に設定すると、棒と棒の間に 1 本分の幅が設定されます。 0 を指定すると、棒の間の空きがなくなります。 100 を指定すると、各棒が重なり合います。</para>
+        <remarks><para>このプロパティを –100 に設定すると、バーの間に 1 つのバー幅が配置されます。 0 を指定すると、棒の間の空きがなくなります。 100 を指定すると、各棒が重なり合います。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -705,7 +705,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.TickLabels</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたグラフ <see cref="T:Microsoft.Office.Interop.Excel.TickLabels" /> 種類グループのレーダー チャートの軸ラベルを表すオブジェクトを返します。</summary>
+        <summary>指定したグラフ <see cref="T:Microsoft.Office.Interop.Excel.TickLabels" /> グループのレーダー軸ラベルを表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -736,7 +736,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>返すまたは、プライマリ 円グラフのサイズに対する割合として、円グラフまたは円グラフの棒グラフのセカンダリ セクションのサイズを設定します。 5 から 200 の範囲内で値を指定できます。</summary>
+        <summary>円グラフまたは円グラフの棒グラフのセカンダリ セクションのサイズを、プライマリ 円グラフのサイズに対する割合で設定または返します。 5 から 200 の範囲内で値を指定できます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -764,7 +764,7 @@
       </Parameters>
       <Docs>
         <param name="Index">省略 <b>可能なオブジェクト</b>です。 系列の名前または番号を指定します。</param>
-        <summary>グラフまたはグラフ 種類グループのすべてのデータ系列 (コレクション) の 1 つのデータ系列 (オブジェクト) またはコレクションを表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Series" /> <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> を取得します。</summary>
+        <summary>グラフまたはグラフ グループ内のすべての系列 (コレクション) の 1 つの系列 (オブジェクト) またはコレクションのいずれかを表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Series" /> <see cref="T:Microsoft.Office.Interop.Excel.SeriesCollection" /> を返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -792,7 +792,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SeriesLines</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>積み上げ棒グラフまたは積み上げ棒グラフのデータ系列を表す <see cref="T:Microsoft.Office.Interop.Excel.SeriesLines" /> オブジェクトを返します。 積み上げ横棒グラフおよび積み上げ縦棒グラフにのみ適用されます。</summary>
+        <summary>積み上げ棒グラフまたは積み上げ列グラフの系列線を表す <see cref="T:Microsoft.Office.Interop.Excel.SeriesLines" /> オブジェクトを返します。 積み上げ横棒グラフおよび積み上げ縦棒グラフにのみ適用されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -823,7 +823,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True の</b> 場合グラフ種類グループで負のバブルが表示されます。 バブル チャートでのみ有効です。</summary>
+        <summary><b>True の</b> 場合グラフ種類グループで負のバブルが表示されます。 バブル グラフにのみ有効です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -854,7 +854,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlSizeRepresents</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>バブル チャートでバブルの大きさが何を表すかを設定または返します。 使用できる定数は <b>、XlSizeRepresents</b> 定数である <b>xlSizeIsArea</b> または <b>xlSizeIsWidth です</b>。</summary>
+        <summary>バブル チャートでバブルの大きさが何を表すかを設定または返します。 <b>XlSizeRepresents</b>の定数は<b>、xlSizeIsArea</b>または<b>xlSizeIsWidth</b>のいずれかです。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -885,7 +885,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlChartSplitType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>円グラフ付き円グラフまたは棒グラフ付き円グラフの 2 つのセクションの分割方法を設定または返します。</summary>
+        <summary>円グラフの円グラフまたは円グラフの棒グラフの 2 つのセクションを分割する方法を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -916,7 +916,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>円グラフ付き円グラフまたは円グラフ付き円グラフの 2 つのセクションを区切るしきい値を設定または返します。</summary>
+        <summary>円グラフまたは円グラフの棒グラフの 2 つのセクションを区切るしきい値を設定または返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1018,7 +1018,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.UpBars</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>線グラフ <see cref="T:Microsoft.Office.Interop.Excel.UpBars" /> の上り線を表すオブジェクトを取得します。 折れ線グラフにのみ適用されます。</summary>
+        <summary>線グラフ <see cref="T:Microsoft.Office.Interop.Excel.UpBars" /> の上線を表すオブジェクトを返します。 折れ線グラフにのみ適用されます。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1049,7 +1049,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True の</b> 場合、Microsoft Excel は、各データ マーカーに異なる色またはパターンを割り当てる。 グラフに含まれるデータ系列は 1 つだけでなければなりません。</summary>
+        <summary><b>True</b>の場合Microsoft Excelデータ マーカーに異なる色またはパターンを割り当てる必要があります。 グラフに含まれるデータ系列は 1 つだけでなければなりません。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

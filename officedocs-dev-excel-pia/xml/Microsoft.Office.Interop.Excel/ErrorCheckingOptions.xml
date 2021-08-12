@@ -1,5 +1,5 @@
 <Type Name="ErrorCheckingOptions" FullName="Microsoft.Office.Interop.Excel.ErrorCheckingOptions">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="fcbc54c7e67e1b8642a95dec50c04ef275b48f27" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50003613" /></Metadata><TypeSignature Language="C#" Value="public interface ErrorCheckingOptions" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="36d64edfe0fb68e494eea472be2fd123cf51485ebb5fa0156b10acdfd290d8cc" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508487" /></Metadata><TypeSignature Language="C#" Value="public interface ErrorCheckingOptions" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ErrorCheckingOptions" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ErrorCheckingOptions" />
   <TypeSignature Language="VB.NET" Value="Public Interface ErrorCheckingOptions" />
@@ -23,8 +23,8 @@
   <Docs>
     <summary>アプリケーションのエラー チェックのオプションを表します。</summary>
     <remarks><para><see cref="P:Microsoft.Office.Interop.Excel._Application.ErrorCheckingOptions" /> <see cref="T:Microsoft.Office.Interop.Excel.Application" /> <b>ErrorCheckingOptions</b>オブジェクトを取得するには、オブジェクトのプロパティを使用します。</para>
-      <para>エラー チェック オプションに関連付けられているインデックス値の一覧を表示するには、オブジェクト <see cref="P:Microsoft.Office.Interop.Excel.Errors.Item(System.Object)" /> <see cref="T:Microsoft.Office.Interop.Excel.Errors" /> のプロパティを参照します。</para>
-      <para><b>ErrorCheckingOptions</b>オブジェクトのメンバーである次のプロパティを使用して、エラー チェック オプションを設定または取得できます。</para>
+      <para>オブジェクトの <see cref="P:Microsoft.Office.Interop.Excel.Errors.Item(System.Object)" /> プロパティを参照 <see cref="T:Microsoft.Office.Interop.Excel.Errors" /> して、エラーチェック オプションに関連付けられたインデックス値の一覧を表示します。</para>
+      <para><b>ErrorCheckingOptions</b>オブジェクトのメンバーである次のプロパティを使用して、エラー チェック オプションを設定または返します。</para>
       <list type="bullet">
         <item>
           <description>
@@ -98,7 +98,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,10 +129,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>有効なエラー チェック ルールに違反しているすべてのセルについてユーザーに警告します。</summary>
+        <summary>有効なエラーチェック ルールに違反しているすべてのセルについてユーザーに通知します。</summary>
         <value>To be added.</value>
-        <remarks><para><b>BackgroundChecking プロパティ</b>を<b>True</b> (既定値) に設定すると、有効なエラーに違反するセルの横に [オートコレクト オプション] ボタンが表示されます。 <b>False を</b> 指定すると、エラーのバックグラウンド チェックが無効になります。</para>
-          <para>有効にできる <see cref="T:Microsoft.Office.Interop.Excel.ErrorCheckingOptions" /> メンバーの一覧を表示するには、オブジェクトを参照します。</para>
+        <remarks><para><b>BackgroundChecking プロパティが</b> <b>True</b> (既定) に設定されている場合、有効なエラーに違反しているすべてのセルの横に [オートコレクト オプション] ボタンが表示されます。 <b>False を</b> 指定すると、エラーのバックグラウンド チェックが無効になります。</para>
+          <para>オブジェクトを参照 <see cref="T:Microsoft.Office.Interop.Excel.ErrorCheckingOptions" /> して、有効にできるメンバーの一覧を表示します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -192,7 +192,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> (既定値) に設定すると、[オートコレクト オプション] ボタンを使用して、空のセルを参照する数式を含む選択されたセルが識別されます。 <b>False を</b> 指定すると、空のセル参照チェックが無効になります。</summary>
+        <summary><b>True</b> (既定値) に設定すると、Microsoft Excelオートコレクト オプション ボタンを使用して、空のセルを参照する数式を含む選択したセルを識別します。 <b>False を</b> 指定すると、空のセル参照チェックが無効になります。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -223,7 +223,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> (既定値) に設定すると、[オートコレクト オプション] ボタンを使用して、エラーを評価する数式を含む選択されたセルが識別されます。 <b>False</b> を指定すると、エラー値として評価されるセルのエラー チェックが無効になります。</summary>
+        <summary><b>True</b> (既定値) に設定すると、Microsoft Excelオートコレクト オプション ボタンを使用して、エラーを評価する数式を含む選択したセルを識別します。 <b>False</b> を指定すると、エラー値に評価されるセルのエラー チェックが無効になります。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -254,7 +254,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>True (既定値) <b>に設定</b> すると、一貫性のない数式を含むセルが特定されます。 <b>False を</b> 指定すると、矛盾した数式チェックが無効になります。</summary>
+        <summary>True (既定値<b>) に</b>設定すると、Microsoft Excel一貫性のない数式を含むセルが識別されます。 <b>False</b> を指定すると、一貫性のない数式チェックが無効になります。</summary>
         <value>To be added.</value>
         <remarks><para><b>InconsistentFormula</b> プロパティを適切に機能させるためには、矛盾した数式が含まれるセルの左および右、または上および下には、正しい数式が入力されている必要があります。</para>
           <para> </para></remarks>
@@ -286,7 +286,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>テーブルの <b>数式が矛盾</b> している場合はTrue を返します。 読み取り/書き込みが可能な <b>Boolean</b> です。</summary>
+        <summary>表の数式が矛盾している場合、<b>True</b> を返します。値の取得および設定が可能です。ブール型 (<b>Boolean</b>) の値を使用します。</summary>
         <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -320,12 +320,12 @@
         <summary>エラー チェック オプションのインジケーターの色を設定または返します。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> 使用できる定数は、 <b>次に示す XlColorIndex</b> 定数です。</para>
+            <see cref="T:Microsoft.Office.Interop.Excel.XlColorIndex" /> 次の <b>XlColorIndex</b> 定数のいずれかを指定できます。</para>
           <para>
             <b>xlColorIndexAutomatic</b> 既定のシステム カラー。</para>
           <para>
             <b>xlColorIndexNone</b> このプロパティには使用できません。</para>
-          <para>インジケーターに特定の色を設定するには、その色に対応するインデックス番号を指定します。 このプロパティを使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Colors(System.Object)" /> して、現在のカラー パレットを取得できます。</para>
+          <para>インジケーターに特定の色を設定するには、その色に対応するインデックス番号を指定します。 プロパティを使用して <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Colors(System.Object)" /> 、現在のカラー パレットを取得できます。</para>
           <para>次の図には、標準のカラー パレットのインデックス番号が示されています。</para>
           <para> </para></remarks>
       </Docs>
@@ -356,9 +356,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>リスト <b>で</b> データの入力規則が有効になっている場合に <b>True</b> のブール値。</summary>
+        <summary>データ <b>検証が</b> リストで <b>有効になっている</b> 場合は True のブール値。</summary>
         <value>To be added.</value>
-        <remarks><para>リストのデータ検証は、[オプション] ダイアログ ボックスの [エラー チェック] タブで [リスト データの入力規則エラー] チェック ボックスをオンまたはオフにすることで、ユーザー インターフェイスでオンまたはオフにすることもできます。</para>
+        <remarks><para>リストのデータ検証は、[オプション] ダイアログ ボックスの [エラー チェック] タブの [リスト データ検証エラー] チェック ボックスをオンまたはオフにして、ユーザー インターフェイスでオンまたはオフにすることもできます。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -388,7 +388,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>True (既定値) <b>に</b> 設定すると、[オートコレクト オプション] ボタンを使用して、選択したセルに文字列として書き込まれた数値が含まれるセルが識別されます。 <b>False</b> を指定すると、テキストとして書き込まれた数値のエラー チェックが無効になります。</summary>
+        <summary><b>True</b> (既定値) に設定すると、Microsoft Excelオートコレクト オプション ボタンを使用して、テキストとして書き込まれた番号を含む選択したセルを識別します。 <b>False</b> を指定すると、テキストとして書き込まれた番号のエラー チェックが無効になります。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -419,7 +419,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> (既定値) に設定すると、[オートコレクト オプション] ボタンを使用して、隣接するセルを省略するセル範囲を参照する数式を含む選択されたセルが識別されます。 <b>False</b> は省略されたセルのエラー チェックを無効にします。</summary>
+        <summary>True <b>(既定値</b>) に設定すると、Microsoft Excel はオートコレクト オプション ボタンを使用して、含まれる可能性のある隣接するセルを省略する範囲を参照する数式を含む選択したセルを識別します。 <b>False</b> は省略されたセルのエラー チェックを無効にします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -478,7 +478,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary><b>True</b> (既定値) に設定すると、[オートコレクト オプション] ボタンを使用して、2 桁の年のテキスト日付を含むセルが識別されます。 <b>False</b> を指定すると、2 桁の年のテキスト日付を含むセルのエラー チェックが無効になります。</summary>
+        <summary><b>True</b> (既定値) に設定すると、Microsoft Excelは、オートコレクト オプション ボタンを使用して、2 桁の年のテキスト日付を含むセルを識別します。 <b>False</b> を指定すると、2 桁の年のテキスト日付を含むセルのエラー チェックが無効になります。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -509,7 +509,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>True (既定値) <b>に</b> 設定すると、ロックが解除され、数式が含まれる選択されたセルが識別されます。 <b>False</b> を指定すると、数式を含むロックされていないセルのエラー チェックが無効になります。</summary>
+        <summary>True (既定値<b>) に</b>設定すると、Microsoft Excel選択したセルがロック解除され、数式が含まれているセルが識別されます。 <b>False</b> を指定すると、数式を含むロック解除されたセルのエラー チェックが無効になります。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

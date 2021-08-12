@@ -1,5 +1,5 @@
 <Type Name="SparkHorizontalAxis" FullName="Microsoft.Office.Interop.Excel.SparkHorizontalAxis">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d17f400b5b6b710e5d3be00feaaaf13db697ccb6" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50009948" /></Metadata><TypeSignature Language="C#" Value="public interface SparkHorizontalAxis" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c9dc47e50c04fbdb0e028c54a82ea1279e54d41a030f1662731aa1bcff2c4d31" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516726" /></Metadata><TypeSignature Language="C#" Value="public interface SparkHorizontalAxis" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SparkHorizontalAxis" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.SparkHorizontalAxis" />
   <TypeSignature Language="VB.NET" Value="Public Interface SparkHorizontalAxis" />
@@ -22,7 +22,7 @@
   </Attributes>
   <Docs>
     <summary>スパークライン グループの横軸の設定を表します。</summary>
-    <remarks><para>スパーク <see cref="P:Microsoft.Office.Interop.Excel.SparkAxes.Horizontal" /> ラインのグループ <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> のオブジェクトを取得するには、 <see cref="T:Microsoft.Office.Interop.Excel.SparkHorizontalAxis" /> オブジェクトのプロパティを使用します。 横軸が表示されるのは、スパークラインの縦軸のデータに負の値と正の値の両方がある場合のみです。</para>
+    <remarks><para>オブジェクトの <see cref="P:Microsoft.Office.Interop.Excel.SparkAxes.Horizontal" /> プロパティを使用 <see cref="T:Microsoft.Office.Interop.Excel.SparkAxes" /> して、スパークライン <see cref="T:Microsoft.Office.Interop.Excel.SparkHorizontalAxis" /> のグループのオブジェクトを返します。 横軸が表示されるのは、スパークラインの縦軸のデータに負の値と正の値の両方がある場合のみです。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -49,7 +49,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Microsoft Excel アプリケーションを表 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> すオブジェクトを返します。 オブジェクト修飾子と一緒に使用する場合、このプロパティは指定されたオブジェクトの作成元 <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>オブジェクト修飾子なしで使用すると、このプロパティは、アプリケーションのオブジェクトを <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 表すオブジェクトMicrosoft Excelします。 オブジェクト修飾子と一緒に使用すると、このプロパティは、指定したオブジェクトの作成者を表す <see cref="T:Microsoft.Office.Interop.Excel.Application" /> オブジェクトを返します。</summary>
         <value>オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> 。</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
@@ -78,8 +78,8 @@
         <ReturnType>Microsoft.Office.Interop.Excel.SparkColor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スパーク <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> ラインの水平軸の色を指定するオブジェクトを取得します。</summary>
-        <value>ス <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> パークラインの水平軸の色を指定するオブジェクト。</value>
+        <summary>スパーク <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> ラインの横軸の色を指定するオブジェクトを取得します。</summary>
+        <value>ス <see cref="T:Microsoft.Office.Interop.Excel.SparkColor" /> パークラインの横軸の色を指定するオブジェクト。</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
       </Docs>
@@ -107,10 +107,10 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlCreator</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>このオブジェクトが作成されたアプリケーションを<b></b>示す 32 ビット整数を取得します。</summary>
-        <value>このオブジェクトが <b>作成されたアプリケーション</b> を示す 32 ビットの整数。</value>
-        <remarks><para>読み取り専用 <b>時間 です</b>。</para>
-          <para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 このプロパティは、各アプリケーションが 4 文字のクリエーター コードを持つ <see cref="P:Microsoft.Office.Interop.Excel.SparkHorizontalAxis.Creator" /> Macintosh 用の Microsoft Excel で使用するように設計されています。 たとえば、excelnv1 には作成者コード XCEL があります。</para>
+        <summary>このオブジェクトが作成されたアプリケーションを <b>示す</b> 32 ビット整数を取得します。</summary>
+        <value>このオブジェクトが <b>作成されたアプリケーション</b> を示す 32 ビット整数。</value>
+        <remarks><para>長い読み取 <b>り専用です</b>。</para>
+          <para>Excel で作成されたオブジェクトの場合は、文字列 XCEL を表す 16 進数の 5843454C を返します。 このプロパティは、各アプリケーションに 4 文字のMicrosoft Excelコードを持つ Macintosh のプロパティで使用 <see cref="P:Microsoft.Office.Interop.Excel.SparkHorizontalAxis.Creator" /> するように設計されています。 たとえば、excelnv1 には作成者コード XCEL があります。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -137,11 +137,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>スパークラインの水平軸が日付値に基づくかどうかを取得します。</summary>
-        <value><b>スパーク</b> ラインの水平軸が日付値に基づく場合は true。それ以外の場合、 <b>false です</b>。</value>
+        <summary>スパークラインの横軸が日付の値に基づくかどうかを取得します。</summary>
+        <value><b>ス</b> パークラインの横軸が日付の値に基づく場合は true。それ以外の場合は <b>false です</b>。</value>
         <remarks><para>読み取り専用です。</para>
           <para>
-            <b>水平軸</b> が日付値に基づく場合は true。それ以外の場合 <b>は false です</b>。</para>
+            <b>水平</b>軸が日付の値に基づく場合は true。それ以外の場合<b>は false 。</b></para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -169,7 +169,7 @@
       </ReturnValue>
       <Docs>
         <summary>指定したオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> の親オブジェクトを取得します。</summary>
-        <value>指定された <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> オブジェクトの親オブジェクト。</value>
+        <value>指定した <see cref="T:Microsoft.Office.Interop.Excel.SparklineGroup" /> オブジェクトの親オブジェクト。</value>
         <remarks><para>読み取り専用です。</para>
           <para> </para></remarks>
       </Docs>
@@ -201,9 +201,9 @@
       </ReturnValue>
       <Docs>
         <summary>水平軸上の点を右から左の順序でプロットするかどうかを取得または設定します。</summary>
-        <value>水平軸上の点が右から左の順序でプロットされている場合は<b>true。</b>それ以外の場合、 <b>false です</b>。</value>
+        <value><b>水平</b> 軸上の点が右から左の順序でプロットされている場合は true。それ以外の場合は <b>false です</b>。</value>
         <remarks><para>値の取得と設定が可能です。</para>
-          <para>水平軸の値を右から左の順序でプロットするには、プロパティを <see cref="P:Microsoft.Office.Interop.Excel.SparkHorizontalAxis.RightToLeftPlotOrder" /> <b>true</b> に設定します。</para>
+          <para>水平軸 <see cref="P:Microsoft.Office.Interop.Excel.SparkHorizontalAxis.RightToLeftPlotOrder" /> の <b>値を</b> 右から左の順序でプロットするには、プロパティを true に設定します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

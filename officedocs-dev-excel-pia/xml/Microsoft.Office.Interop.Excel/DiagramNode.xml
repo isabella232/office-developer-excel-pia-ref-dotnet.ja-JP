@@ -1,5 +1,5 @@
 <Type Name="DiagramNode" FullName="Microsoft.Office.Interop.Excel.DiagramNode">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="86e622fca7f83a44ee8326d13178a7a41108a865" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50012524" /></Metadata><TypeSignature Language="C#" Value="public interface DiagramNode : Microsoft.Office.Core._IMsoDispObj" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="596c9db6646e72359bb9061ca4c386cce081415b843e368dbe3a6cb3403fdabd" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54508599" /></Metadata><TypeSignature Language="C#" Value="public interface DiagramNode : Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract DiagramNode implements class Microsoft.Office.Core._IMsoDispObj" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.DiagramNode" />
   <TypeSignature Language="VB.NET" Value="Public Interface DiagramNode&#xA;Implements _IMsoDispObj" />
@@ -23,15 +23,15 @@
   </Attributes>
   <Docs>
     <summary>図のノードを表します。</summary>
-    <remarks><para>このメソッド <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> を使用して、図または図表ノードにノードを追加します。</para>
-      <para>このメソッド <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.Delete" /> を使用して、図または図表ノードからノードを削除します。</para>
-      <para><b>DiagramNode オブジェクトを取得</b>するには、次のいずれかを使用します。</para>
+    <remarks><para>このメソッド <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> を使用して、ダイアグラムまたはダイアグラム ノードにノードを追加します。</para>
+      <para>ダイアグラムまたは <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.Delete" /> ダイアグラム ノードからノードを削除するには、このメソッドを使用します。</para>
+      <para><b>DiagramNode オブジェクトを取得するには</b>、次のいずれかを使用します。</para>
       <list type="bullet">
         <item>
-          <description><b>DiagramNode オブジェクト</b>、メソッド <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> 、 <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.CloneNode(System.Boolean,Microsoft.Office.Interop.Excel.DiagramNode,Microsoft.Office.Core.MsoRelativeNodePosition)" /> <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.NextNode" /> <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.PrevNode" /> またはメソッド、 <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Root" /> またはプロパティ</description>
+          <description><b>DiagramNode</b>オブジェクト、 <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.AddNode(Microsoft.Office.Core.MsoRelativeNodePosition,Microsoft.Office.Core.MsoDiagramNodeType)" /> <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.CloneNode(System.Boolean,Microsoft.Office.Interop.Excel.DiagramNode,Microsoft.Office.Core.MsoRelativeNodePosition)" /> <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.NextNode" /> メソッド <see cref="M:Microsoft.Office.Interop.Excel.DiagramNode.PrevNode" /> 、またはプロパティ <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Root" /></description>
         </item>
         <item>
-          <description>コレクション <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" /> または <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" /> メソッド <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" /> または <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" /> <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" /> プロパティ</description>
+          <description>コレクション <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodeChildren" /> またはメソッド <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.AddNode(System.Object,Microsoft.Office.Core.MsoDiagramNodeType)" /> <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodeChildren.Item(System.Object)" /> または <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.FirstChild" /> <see cref="P:Microsoft.Office.Interop.Excel.DiagramNodeChildren.LastChild" /> プロパティ</description>
         </item>
         <item>
           <description>コレクション <see cref="T:Microsoft.Office.Interop.Excel.DiagramNodes" /> の <see cref="M:Microsoft.Office.Interop.Excel.DiagramNodes.Item(System.Object)" /> メソッド</description>
@@ -40,19 +40,19 @@
           <description>オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> またはコレクションの <see cref="T:Microsoft.Office.Interop.Excel.ShapeRange" /> <b>DiagramNode</b> プロパティ</description>
         </item>
       </list>
-      <para>図ノードは終了するか、他の子図、子ダイアグラムノード、または子図形を含む場合があります。 以下を使用してこれらを参照してください。</para>
+      <para>ダイアグラム ノードは終了するか、他の子ダイアグラム、子ダイアグラム ノード、または子図形を含む場合があります。 以下を使用して、これらを参照してください。</para>
       <list type="bullet">
         <item>
           <description>子ダイアグラムを参照するには、プロパティを使用 <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Diagram" /> します。</description>
         </item>
         <item>
-          <description>個々 の子ダイアグラムノードを参照するには、AddNode、CloneNode、NextNode または<b>PrevNode</b>メソッド、<b>または Root</b>プロパティを使用します。 <b></b> <b></b> <b></b></description>
+          <description>個々の子ダイアグラム ノードを参照するには <b>、AddNode</b>メソッド <b>、CloneNode</b>メソッド <b>、NextNode</b> メソッドまたは <b>PrevNode</b> メソッド、 <b>または Root</b> プロパティを使用します。</description>
         </item>
         <item>
-          <description>子ダイアグラムノードのコレクションを参照するには、プロパティを使用 <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" /> します。</description>
+          <description>子ダイアグラム ノードのコレクションを参照するには、プロパティを使用 <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Children" /> します。</description>
         </item>
         <item>
-          <description>図形を参照するには、1 つ以上のプロパティ <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Shape" /> を使用 <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.TextShape" /> します。</description>
+          <description>図形を参照するには、またはプロパティ <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.Shape" /> を使用 <see cref="P:Microsoft.Office.Interop.Excel.DiagramNode.TextShape" /> します。</description>
         </item>
       </list>
       <para> </para></remarks>
@@ -81,8 +81,8 @@
         <Parameter Name="nodeType" Type="Microsoft.Office.Core.MsoDiagramNodeType" />
       </Parameters>
       <Docs>
-        <param name="pos">省略 <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" /> 可能です。 ノードが追加される場所 (別のノードを基準に)。<b>使用できる定数</b>は<b>、msoAfterLastSibling</b><b>msoAfterNode </b>Default<b>msoBeforeFirstSibling</b><b>msoBeforeNode です</b>。</param>
-        <param name="nodeType">省略 <see cref="T:Microsoft.Office.Interop.Office.MsoDiagramNodeType" /> 可能です。 ノードの種類。 使用できる定数は、次に示す<b>MsoDiagramNodeType</b>クラスの<b>定数です。msoDiagramAssistant</b><b>msoDiagramNode Default</b></param>
+        <param name="pos">省略 <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" /> 可能です。 別のノードを基準に、ノードが追加される場所。<b>MsoRelativeNodePosition</b>には、次のいずれかの定数を指定できます<b>。msoAfterLastSibling</b><b>msoAfterNode Default </b><b>msoBeforeFirstSibling</b><b>msoBeforeNode</b></param>
+        <param name="nodeType">省略 <see cref="T:Microsoft.Office.Interop.Office.MsoDiagramNodeType" /> 可能です。 ノードの種類。 <b>MsoDiagramNodeType</b>クラスの定数のいずれかを指定できます<b>。msoDiagramAssistant</b><b>msoDiagramNode Default</b></param>
         <summary>ダイアグラム ノードを作成します。 新しいノード <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -114,7 +114,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -171,10 +171,10 @@
         <Parameter Name="pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
-        <param name="copyChildren">必須 <b>のブール値 です</b>。 <b>True</b> 図ノードの子も複製します。</param>
-        <param name="pTargetNode">必要 <b>な DiagramNode</b> オブジェクト。 新しいノードを配置するノードを表す <b>DiagramNode</b> オブジェクトを返す式です。</param>
-        <param name="pos">省略 <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" /> 可能です。 指定 <paramref name="pTargetNode" /> されている場合は、ノードを相対的に追加する場所を示します <paramref name="pTargetNode" /> 。<b>使用できる定数</b>は<b>、msoAfterLastSibling</b><b>msoAfterNode </b>Default<b>msoBeforeFirstSibling</b><b>msoBeforeNode です</b>。</param>
-        <summary>図ノードを複製します。 複製されたノード <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> を表すオブジェクトを返します。</summary>
+        <param name="copyChildren">必須 <b>のブール値</b>です。 <b>True</b> を指定すると、ダイアグラム ノードの子も複製されます。</param>
+        <param name="pTargetNode">必要 <b>な DiagramNode</b> オブジェクト。 新しいノードが配置されるノードを表す <b>DiagramNode</b> オブジェクトを返す式。</param>
+        <param name="pos">省略 <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" /> 可能です。 指定 <paramref name="pTargetNode" /> した場合は、ノードが相対的に追加される場所を示します <paramref name="pTargetNode" /> 。<b>MsoRelativeNodePosition</b>には、次のいずれかの定数を指定できます<b>。msoAfterLastSibling</b><b>msoAfterNode Default </b><b>msoBeforeFirstSibling</b><b>msoBeforeNode</b></param>
+        <summary>ダイアグラム ノードを複製します。 複製されたノード <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> を表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -291,22 +291,22 @@
         <ReturnType>Microsoft.Office.Core.MsoOrgChartLayoutType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>組織図の子ノードの書式設定を示す定数を設定または返します。</summary>
+        <summary>組織グラフの子ノードの書式設定を示す定数を設定または返します。</summary>
         <value>To be added.</value>
         <remarks><para>
-            <b>使用できる定数は</b> 、次に示す <b>MsoOrgChartLayoutType</b> 定数の 1 つです。</para>
+            <b>MsoOrgChartLayoutType には</b> 、次に示す <b>MsoOrgChartLayoutType</b> 定数のいずれかを指定できます。</para>
           <para>
             <b>msoOrgChartLayoutAssistant</b> 子ノードをアシスタントとして設定します。</para>
           <para>
-            <b>msoOrgChartLayoutBothHanging</b> 子ノードを、親ノードの左側と右側の両方から垂直方向に配置します。</para>
+            <b>msoOrgChartLayoutBothHanging</b> 子ノードを、左側と右側の両方の親ノードから垂直方向に配置します。</para>
           <para>
-            <b>msoOrgChartLayoutLeftHanging</b> 子ノードを、左側の親ノードから垂直方向に配置します。</para>
+            <b>msoOrgChartLayoutLeftHanging</b> 左側の親ノードから子ノードを垂直方向に配置します。</para>
           <para>
             <b>msoOrgChartLayoutMixed</b> 複数の <b>MsoOrgChartLayoutType</b>を使用して書式設定された子を持つ親ノードの値を返します。</para>
           <para>
             <b>msoOrgChartLayoutRightHanging</b> 子ノードを親ノードから右側に垂直に配置します。</para>
           <para>
-            <b>msoOrgChartLayoutStandard</b> 子ノードを親ノードの下に水平方向に配置します。</para>
+            <b>msoOrgChartLayoutStandard</b> 親ノードの下に子ノードを水平方向に配置します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -334,9 +334,9 @@
         <Parameter Name="pos" Type="Microsoft.Office.Core.MsoRelativeNodePosition" />
       </Parameters>
       <Docs>
-        <param name="pTargetNode">必須 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> のオブジェクト。 指定したノードの移動先のダイアグラム ノード。</param>
-        <param name="pos">必須 <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" /> 。 ノードを移動する位置を相対位置で指定します <paramref name="TargetNode" /> 。<b>MsoRelativeNodePosition</b> には、次の定数のいずれかを指定できます:<b>msoAfterLastSibling</b><b>msoAfterNode</b><b>msoBeforeFirstSibling</b><b>msoBeforeNode</b></param>
-        <summary>図内のダイアグラム ノードとその子ノードを移動します。</summary>
+        <param name="pTargetNode">必須 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> オブジェクト。 指定したノードを移動するダイアグラム ノード。</param>
+        <param name="pos">必須 <see cref="T:Microsoft.Office.Interop.Office.MsoRelativeNodePosiiton" /> 。 を基準に、ノードを移動する位置 <paramref name="TargetNode" /> です。<b>MsoRelativeNodePosition</b> には、次のいずれかの定数を指定できます<b>。msoAfterLastSibling</b><b>msoAfterNode</b><b>msoBeforeFirstSibling</b><b>msoBeforeNode</b></param>
+        <summary>ダイアグラム ノードとその子ノードをダイアグラム内で移動します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -361,7 +361,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>一連のノード内の次のダイアグラム ノードを選択します。 新しく選択 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> したノードを表すオブジェクトを返します。</summary>
+        <summary>一連のノードの次のダイアグラム ノードを選択します。 新しく選択 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> したノードを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -415,7 +415,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>図ノードの <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> コレクション内の前の図ノードを表すオブジェクトを返します。</summary>
+        <summary>ダイアグラム ノードの <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> コレクション内の前のダイアグラム ノードを表すオブジェクトを返します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -443,8 +443,8 @@
         <Parameter Name="pTargetNode" Type="Microsoft.Office.Interop.Excel.DiagramNode" />
       </Parameters>
       <Docs>
-        <param name="pTargetNode">必須 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> のオブジェクト。 置き換える対象のダイアグラム ノードを指定します。</param>
-        <summary>ターゲット ダイアグラム ノードをソース ダイアグラム ノードに置き換します。</summary>
+        <param name="pTargetNode">必須 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> オブジェクト。 置き換える対象のダイアグラム ノード。</param>
+        <summary>ターゲット ダイアグラム ノードをソース ダイアグラム ノードに置き換える。</summary>
         <remarks><para>ターゲット ダイアグラム ノードが削除され、ソース ダイアグラム ノード (子ノードを含む) がターゲット ダイアグラム ノードの場所に移動されます。</para>
           <para> </para></remarks>
       </Docs>
@@ -500,7 +500,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定された図面 <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> ノードに接続されている図形を表すオブジェクトを返します。</summary>
+        <summary>指定したダイアグラム <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> ノードに接続されている図形を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -528,8 +528,8 @@
         <Parameter Name="swapChildren" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="pTargetNode">必須 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> のオブジェクト。 置き換える対象のダイアグラム ノードを指定します。</param>
-        <param name="swapChildren">オプション <b>のブール値 です</b>。 スワップ対象のターゲット ノードとソース ノードの子ノード。 子ダイアグラムノードは、対応するルート ノードと共に移動されます。 既定値は <b>True で</b>、子ノードを入れ替えします。</param>
+        <param name="pTargetNode">必須 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> オブジェクト。 置き換える対象のダイアグラム ノード。</param>
+        <param name="swapChildren">オプション<b>のブール型 (Boolean)</b> スワップされるターゲット ノードとソース ノードの子ノード。 すべての子ダイアグラム ノードは、対応するルート ノードと共に移動されます。 既定値は <b>True で</b>、子ノードを交換します。</param>
         <summary>ソース ダイアグラム ノードをターゲット ダイアグラム ノードと交換します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -557,7 +557,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Shape</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>図のノード <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> に関連付けられているテキスト ボックスの形状を表すオブジェクトを返します。</summary>
+        <summary>ダイアグラム ノードに <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 関連付けられたテキスト ボックスの図形を表すオブジェクトを返します。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -585,8 +585,8 @@
         <Parameter Name="pReceivingNode" Type="Microsoft.Office.Interop.Excel.DiagramNode" />
       </Parameters>
       <Docs>
-        <param name="pReceivingNode">必須 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> オブジェクト。 指定されたノードから転送される子ノードを受け取る図ノード。</param>
-        <summary>図のノード <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> に関連付けられているテキスト ボックスの形状を表すオブジェクトを返します。</summary>
+        <param name="pReceivingNode">必須 <see cref="T:Microsoft.Office.Interop.Excel.DiagramNode" /> オブジェクト。 指定したノードから転送される子ノードを受け取るダイアグラム ノード。</param>
+        <summary>ダイアグラム ノードに <see cref="T:Microsoft.Office.Interop.Excel.Shape" /> 関連付けられたテキスト ボックスの図形を表すオブジェクトを返します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

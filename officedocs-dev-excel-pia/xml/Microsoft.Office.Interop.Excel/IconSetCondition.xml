@@ -1,5 +1,5 @@
 <Type Name="IconSetCondition" FullName="Microsoft.Office.Interop.Excel.IconSetCondition">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="60529c90129fadd3409df7f77d68bfab6f56e963" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50000212" /></Metadata><TypeSignature Language="C#" Value="public interface IconSetCondition" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c76ce9d8e56bba1d71f737e48f405e724b54cd34a1094a0e80e64e64ca98e426" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516271" /></Metadata><TypeSignature Language="C#" Value="public interface IconSetCondition" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IconSetCondition" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.IconSetCondition" />
   <TypeSignature Language="VB.NET" Value="Public Interface IconSetCondition" />
@@ -22,8 +22,8 @@
   </Attributes>
   <Docs>
     <summary>アイコン セットの条件付き書式ルールを表します。</summary>
-    <remarks><para>すべての条件付き書式オブジェクトは、コレクションの子であるコレクション <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> オブジェクト内に含 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> まれます。 FormatConditions コレクションのメソッドまたはメソッドを使用して、アイコン セットの書式設定ルール <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddIconSetCondition" /> <b>を作成</b> できます。</para>
-      <para>各アイコン セットには、3 つ、4 つ、または 5 つのアイコンが含まれています。 オブジェクトのプロパティを使用してオブジェクトを取得し、組み込みのアイコン セット <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> の <see cref="T:Microsoft.Office.Interop.Excel.IconSets" /> 1 つを指定します。 アイコン セット内の各アイコンは、その後、obect のメンバーによって範囲の値のサブセットに <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> 割り当てられます。 しきい値の種類もこのオブジェクトによって指定されます。</para>
+    <remarks><para>すべての条件付き書式オブジェクトはコレクション オブジェクト内に <see cref="T:Microsoft.Office.Interop.Excel.FormatConditions" /> 含まれます。これはコレクションの子 <see cref="T:Microsoft.Office.Interop.Excel.Range" /> です。 FormatConditions コレクションのメソッドまたはメソッドを使用して、アイコン セットの書式設定ルール <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.Add(Microsoft.Office.Interop.Excel.XlFormatConditionType,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> <see cref="M:Microsoft.Office.Interop.Excel.FormatConditions.AddIconSetCondition" /> <b>を作成</b> できます。</para>
+      <para>各アイコン セットには、3 つ、4 つ、または 5 つのアイコンが含まれています。 オブジェクトのプロパティ <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> を使用して、オブジェクトを取得して、組み込みのアイコン セット <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> <see cref="T:Microsoft.Office.Interop.Excel.IconSets" /> のいずれかを指定します。 アイコン セット内の各アイコンは、obect のメンバーによって範囲の値のサブセットに <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> 割り当てられます。 しきい値の種類もこのオブジェクトによって指定されます。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -50,7 +50,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>オブジェクト修飾子を指定せずに使用した場合、このプロパティは Excel アプリケーションのオブジェクトをMicrosoft Office  <see cref="T:Microsoft.Office.Interop.Excel._Application" /> します。 オブジェクト修飾子を指定した場合、指定したオブジェクトを作成した <b>Application</b> オブジェクトを取得します。 値の取得のみ可能です。</summary>
+        <summary>オブジェクト修飾子なしで使用すると、このプロパティは、アプリケーションのオブジェクトを <see cref="T:Microsoft.Office.Interop.Excel._Application" /> 表すオブジェクトMicrosoft Office Excelします。 オブジェクト修飾子を指定した場合、指定したオブジェクトを作成した <b>Application</b> オブジェクトを取得します。 値の取得のみ可能です。</summary>
         <value><b>アプリケーション</b> (上記を参照)</value>
         <remarks><para>OLE オートメーション オブジェクトに対してこのプロパティを使用すると、オブジェクトのアプリケーションを取得できます。</para>
           <para> </para></remarks>
@@ -165,7 +165,7 @@
       </ReturnValue>
       <Docs>
         <summary>アイコン セットが適用される値を決定する数式を表す文字列型 (<b>String</b>) の値を取得または設定します。</summary>
-        <value><b>String</b></value>
+        <value><b>文字列型 (String)</b></value>
         <remarks><para>プロパティは、条件フォーマットを表示する値の範囲を限定するときに便利です。一般的には、数値範囲に正の値と負の値の両方が含まれる場合です。この数値範囲の条件フォーマットを複数作成し、1 つを正の値用、もう 1 つを負の値用とします。</para>
           <para> </para></remarks>
       </Docs>
@@ -193,9 +193,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.IconCriteria</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>アイコン セットの <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> 条件付き書式ルールの条件のセットを表すコレクションを返します。</summary>
+        <summary>アイコン セットの条件付き書式ルールの条件セットを表す <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> コレクションを返します。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /></value>
-        <remarks><para>コレクションを取得 <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> した後、コレクションの <see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Item(System.Object)" /> プロパティを使用してオブジェクトを取得 <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> できます。 オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> は、アイコン セットの単一の条件を表します。</para>
+        <remarks><para>コレクションを取得 <see cref="T:Microsoft.Office.Interop.Excel.IconCriteria" /> した後、コレクションの <see cref="P:Microsoft.Office.Interop.Excel.IconCriteria.Item(System.Object)" /> プロパティを使用してオブジェクトを取得 <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> できます。 オブジェクト <see cref="T:Microsoft.Office.Interop.Excel.IconCriterion" /> は、アイコン セットの 1 つの条件を表します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -225,9 +225,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>条件付き書式で使用 <see cref="T:Microsoft.Office.Interop.Excel.IconSets" /> されるアイコン セットを指定するコレクションを取得または設定します。</summary>
+        <summary>条件付き書式で使用されるアイコン セットを指定 <see cref="T:Microsoft.Office.Interop.Excel.IconSets" /> するコレクションを取得または設定します。</summary>
         <value><b>Object</b></value>
-        <remarks><para>オブジェクトのプロパティを使用してアイコン セット <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> を割り当 <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> てできます。 </para>
+        <remarks><para>アイコン セットは、オブジェクトのプロパティを使用 <see cref="P:Microsoft.Office.Interop.Excel._Workbook.IconSets" /> して割り当 <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> てできます。 </para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -283,7 +283,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</summary>
         <value><b>Object</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -375,7 +375,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>条件付き書式がピボットテーブル チャートに適用されるかどうかを表すブール型 (<b>Boolean</b>) の値を返します。 読み取り専用です。</summary>
+        <summary>条件付き書式がピボットテーブル チャートに適用されるかどうかを表すブール型 (<b>Boolean</b>) の値を返します。値の取得のみ可能です。</summary>
         <value><b>Boolean</b></value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -438,9 +438,9 @@
         <ReturnType>Microsoft.Office.Interop.Excel.XlPivotConditionScope</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>ピボットテーブル グラフに適用される条件付き書式の範囲を決定する、列挙の定数の 1 つを取得または <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> 設定します。</summary>
+        <summary>ピボットテーブル グラフに適用される条件付き書式の範囲を決定する、列挙の定数の 1 つを <see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /> 設定または返します。</summary>
         <value><see cref="T:Microsoft.Office.Interop.Excel.XlPivotConditionScope" /></value>
-        <remarks><para>既定値は、プロパティ <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" /> を使用して範囲を設定 <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.AppliesTo" /> します。</para>
+        <remarks><para>既定値は、プロパティ <see cref="F:Microsoft.Office.Interop.Excel.XlPivotConditionScope.xlSelectionScope" /> を使用してスコープを設定 <see cref="P:Microsoft.Office.Interop.Excel.IconSetCondition.AppliesTo" /> します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -580,9 +580,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>条件付き書式の種類を指定する列挙の <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> 定数の 1 つを返します。 読み取り専用です。</summary>
+        <summary>条件付き書式の種類を指定する列挙の定数のいずれかを <see cref="T:Microsoft.Office.Interop.Excel.XlFormatConditionType" /> 返します。 読み取り専用です。</summary>
         <value><b>Integer</b></value>
-        <remarks><para>このプロパティは、常に 6 の値を返します。これは、 <see cref="T:Microsoft.Office.Interop.Excel.XlIconSet" /> .</para>
+        <remarks><para>このプロパティは常に 6 の値を返します。これは <see cref="T:Microsoft.Office.Interop.Excel.XlIconSet" /> .</para>
           <para> </para></remarks>
       </Docs>
     </Member>

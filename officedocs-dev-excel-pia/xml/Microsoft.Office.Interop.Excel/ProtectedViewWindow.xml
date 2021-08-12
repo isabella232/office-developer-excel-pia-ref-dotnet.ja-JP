@@ -1,5 +1,5 @@
 <Type Name="ProtectedViewWindow" FullName="Microsoft.Office.Interop.Excel.ProtectedViewWindow">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ba924f04fb4c1accdb23e5bb8b2f1b404a2117ad" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="49997195" /></Metadata><TypeSignature Language="C#" Value="public interface ProtectedViewWindow" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3d5b8f1f9232b7e5bbe5c5632e0e54f5e3d4661ee7456d27a9aa5c93f93a78c1" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54516523" /></Metadata><TypeSignature Language="C#" Value="public interface ProtectedViewWindow" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ProtectedViewWindow" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" />
   <TypeSignature Language="VB.NET" Value="Public Interface ProtectedViewWindow" />
@@ -22,13 +22,13 @@
   </Attributes>
   <Docs>
     <summary>[保護されたビュー] ウィンドウを表します。</summary>
-    <remarks><para>保護されたビュー ウィンドウは、安全でない可能性のある場所からブックを表示するために使用されます。 安全でない場所の定義は、次のとおりです。</para>
+    <remarks><para>保護されたビュー ウィンドウを使用して、安全でない可能性がある場所からブックを表示します。 安全でない場所の定義は、次のとおりです。</para>
       <list type="number">
         <item>
           <description>インターネットから開かれたファイル。</description>
         </item>
         <item>
-          <description>ファイルから開Microsoft Outlook 2010。</description>
+          <description>ファイルから開いたMicrosoft Outlook 2010。</description>
         </item>
         <item>
           <description>ファイル制限機能のポリシーによってブロックされたファイル。</description>
@@ -37,12 +37,12 @@
           <description>Office ファイル検証機能でエラーとなるファイル。</description>
         </item>
         <item>
-          <description>[開く] ダイアログ ボックスの [開く] ボタンの [保護されたビューで開く] コマンドを使用して、保護ビューで明示的に開いたファイル。</description>
+          <description>[開く] ダイアログ ボックスの [開く] ボタンの [保護されたビューで開く] コマンドを使用して、保護されたビューで明示的に開いたファイル。</description>
         </item>
       </list>
-      <para>[保護されたビュー] ウィンドウに表示されるブックは編集できません。また、マクロやデータ接続などのアクティブなVisual Basic for Applications実行が制限されます。</para>
-      <para>コレクションから 1 つのオブジェクトを取得するには <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> 、ProtectedViewWindows(Index) を使用します。Index には、開くウィンドウのインデックス <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" /> 番号を指定します。 オブジェクトのプロパティを使用して、アクティブな [保護されたビュー] ウィンドウを表す <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> <see cref="P:Microsoft.Office.Interop.Excel.Application.ActiveProtectedViewWindow" /> オブジェクトにアクセス <see cref="T:Microsoft.Office.Interop.Excel.Application" /> することもできます。</para>
-      <para>オブジェクトにアクセスした後、このプロパティを使用して、[保護されたビュー] ウィンドウで開いているブック ファイルを表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Workbook" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> にアクセスします。 [保護されたビュー] ウィンドウは、悪意のある可能性のあるコードからユーザーを保護するように設計されています。オブジェクトから返されるオブジェクトを使用して実行できる操作は <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> 制限されます。 許可されていないほとんどの操作は、"実行時エラー 1004: Excel がセキュリティで保護されている場合、このコマンドは使用できません" を返します。</para>
+      <para>[保護されたビュー] ウィンドウに表示されるブックは編集できません。また、マクロやデータ接続などのアクティブ コンテンツのVisual Basic for Applications制限されます。</para>
+      <para>コレクションから 1 <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> つのオブジェクトを取得するには <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindows" /> 、ProtectedViewWindows(Index) を使用します。ここで、Index は開くウィンドウのインデックス番号です。 オブジェクトのプロパティを使用して、アクティブな [保護されたビュー] ウィンドウを表す <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> <see cref="P:Microsoft.Office.Interop.Excel.Application.ActiveProtectedViewWindow" /> オブジェクトにアクセス <see cref="T:Microsoft.Office.Interop.Excel.Application" /> することもできます。</para>
+      <para>オブジェクトにアクセスした後、プロパティを使用して、[保護されたビュー] ウィンドウで開いているブック ファイルを表すオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.Workbook" /> <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> にアクセスします。 [保護されたビュー] ウィンドウは、悪意のある可能性のあるコードからユーザーを保護するように設計されています。オブジェクトによって返されるオブジェクトを使用して実行できる操作は <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> 制限されます。 許可されていないほとんどの操作では、"実行時エラー 1004: このコマンドは、セキュリティで保護されている場合Excel使用できません。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -98,7 +98,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>[保護されたビュー] ウィンドウを z オーダーの前面に移動します。</summary>
+        <summary>[保護されたビュー] ウィンドウを z オーダーの前面に表示します。</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,7 +128,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[保護されたビュー] ウィンドウのタイトル バーに表示される名前を表す値を取得または設定します。</summary>
+        <summary>保護されたビュー ウィンドウのタイトル バーに表示される名前を表す値を取得または設定します。</summary>
         <value>[保護されたビュー] ウィンドウのタイトル バーに表示される名前。</value>
         <remarks><para>値の取得と設定が可能です。</para>
           <para> </para></remarks>
@@ -184,13 +184,13 @@
       </Parameters>
       <Docs>
         <param name="WriteResPassword">書き込み保護されたブックに書き込むために必要なパスワードです。</param>
-        <param name="UpdateLinks">次の数式 =SUM([Budget.xls]Annual! の Budget.xls ブック内の範囲への参照など、ファイル内の外部参照 (リンク) の方法を指定します。C10:C25) が更新されます。</param>
-        <summary>指定した [保護されたビュー] ウィンドウで開いているブックを編集用に開きます。</summary>
+        <param name="UpdateLinks">次の数式 =SUM([Budget.xls]Annual の Budget.xls ブック内の範囲への参照など、ファイル内の外部参照 (リンク) の方法を指定します。C10:C25) が更新されます。</param>
+        <summary>指定した [保護されたビュー] ウィンドウで開いているブックを開き、編集します。</summary>
         <returns>オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> します。</returns>
-        <remarks><para>パラメーターを省略し、ブックにパスワードが必要な場合は、パスワードの <paramref name="WriteResPassword" /> 入力を求められます。</para>
-          <para>パラメーターを省略すると、リンクの更新方法を指定するように求める <paramref name="UpdateLinks" /> メッセージがユーザーに表示されます。 Excel が WKS、WK1、または WK3 形式でファイルを開き、引数が 0 の場合、グラフは作成されません。それ以外の場合、Excel はファイルに添付されたグラフからグラフを生成します。 <paramref name="UpdateLinks" /></para>
+        <remarks><para>パラメーターを省略し、ブックにパスワードが必要な場合は、ユーザーにパスワード <paramref name="WriteResPassword" /> の入力を求めるメッセージが表示されます。</para>
+          <para>パラメーターを省略すると、リンクの更新方法を指定するように求 <paramref name="UpdateLinks" /> めるメッセージが表示されます。 Excel が WKS、WK1、または WK3 形式でファイルを開き、引数が 0 の場合、グラフは作成されません。それ以外の場合は、Excel はファイルに添付されたグラフからグラフを生成します。 <paramref name="UpdateLinks" /></para>
           <para>アプリケーションにハードコードされたパスワードを使わないでください。プロシージャでパスワードが必要な場合は、ユーザーに要求したパスワードを変数に格納し、プログラムでその変数を使います。</para>
-          <para>次の表に示す値の 1 つをパラメーターに指定して、ブックを開く際に外部参照 (リンク) を更新するかどうかを <paramref name="UpdateLinks" /> 決定できます。</para>
+          <para>次の表に示す値の 1 つをパラメーターで指定して、ブックを開く際に外部参照 (リンク) が更新されるかどうかを <paramref name="UpdateLinks" /> 判断できます。</para>
           <list type="table">
             <item>
               <term>0</term>
@@ -231,7 +231,7 @@
       </ReturnValue>
       <Docs>
         <summary>[保護されたビュー] ウィンドウのサイズを変更できるかどうかを取得または設定します。</summary>
-        <value>保護されたビュー ウィンドウのサイズを変更できる場合は<b>true。</b>それ以外の場合、 <b>false です</b>。</value>
+        <value><b>保護</b> されたビュー ウィンドウのサイズを変更できる場合は true。それ以外の場合は <b>false です</b>。</value>
         <remarks><para>値の取得と設定が可能です。</para>
           <para> </para></remarks>
       </Docs>
@@ -262,10 +262,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>[保護されたビュー] ウィンドウの高さをポイント数で表す値を取得または設定します。</summary>
-        <value>[保護されたビュー] ウィンドウの高さをポイント数で指定します。</value>
+        <summary>保護されたビュー ウィンドウの高さをポイントで表す値を取得または設定します。</summary>
+        <value>[保護されたビュー] ウィンドウの高さ (ポイント)。</value>
         <remarks><para>値の取得と設定が可能です。</para>
-          <para>[保護されたビュー] ウィンドウが最大化または最小化されている場合、このプロパティを設定できません。 このプロパティを <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> 使用してウィンドウの状態を確認します。</para>
+          <para>[保護されたビュー] ウィンドウが最大化または最小化されている場合、このプロパティを設定できません。 プロパティを <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> 使用して、ウィンドウの状態を判断します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -295,8 +295,8 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>クライアント領域の左側から [保護されたビュー] ウィンドウの左側までの距離をポイント数で表す値を取得または設定します。</summary>
-        <value>クライアント領域の左側から [保護されたビュー] ウィンドウの左側までの距離をポイント数で指定します。</value>
+        <summary>クライアント領域の左側から [保護されたビュー] ウィンドウの左側の端までの距離をポイントで表す値を取得または設定します。</summary>
+        <value>クライアント領域の左側から [保護されたビュー] ウィンドウの左端までの距離をポイントで指定します。</value>
         <remarks><para>値の取得と設定が可能です。</para>
           <para> </para></remarks>
       </Docs>
@@ -356,7 +356,7 @@
         <summary>指定した [保護されたビュー] ウィンドウで開いているソース ファイルのパスを取得します。</summary>
         <value>指定した [保護されたビュー] ウィンドウで開いているソース ファイルのパス。</value>
         <remarks><para>読み取り専用です。</para>
-          <para>このパスの最後に円記号 (¥) は含まれないため、たとえば "C:¥MSOffice" のようになります。 このプロパティ <see cref="P:Microsoft.Office.Interop.Excel._Application.PathSeparator" /> を使用して、フォルダーとドライブ文字を分離する文字を追加します。 パスを <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.SourceName" /> 含め <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> ずにソース ファイル名を取得するには、オブジェクトの名前を使用します。</para>
+          <para>このパスの最後に円記号 (¥) は含まれないため、たとえば "C:¥MSOffice" のようになります。 このプロパティ <see cref="P:Microsoft.Office.Interop.Excel._Application.PathSeparator" /> を使用して、フォルダーとドライブ文字を分離する文字を追加します。 パスを <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.SourceName" /> 指定せずに <see cref="T:Microsoft.Office.Interop.Excel.ProtectedViewWindow" /> ソース ファイル名を取得するには、オブジェクトのオブジェクトを使用します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -386,10 +386,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した保護ビュー ウィンドウの上端から、使用できる領域の上端までの距離をポイント数で表す値を取得または設定します。</summary>
-        <value>指定した保護ビュー ウィンドウの上端から、使用できる領域の上端までの距離をポイント数で指定します。</value>
+        <summary>指定した [保護されたビュー] ウィンドウの上端から使用できる領域の上端までの距離をポイントで表す値を取得または設定します。</summary>
+        <value>指定した [保護されたビュー] ウィンドウの上端から使用できる領域の上端までの距離をポイントで指定します。</value>
         <remarks><para>値の取得と設定が可能です。</para>
-          <para>最大化された [保護されたビュー] ウィンドウに対してこのプロパティを設定することはできません。 このプロパティ <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> を使用して、ウィンドウの状態を取得または設定します。</para>
+          <para>最大化された [保護されたビュー] ウィンドウに対してこのプロパティを設定することはできません。 プロパティを <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> 使用して、ウィンドウの状態を取得または設定します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -419,8 +419,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定した [保護されたビュー] ウィンドウを表示するかどうかを決定する値を取得または設定します。</summary>
-        <value><b>true の</b> 場合は、指定した [保護されたビュー] ウィンドウが表示されます。それ以外の場合、 <b>false です</b>。</value>
+        <summary>指定した [保護されたビュー] ウィンドウが表示されるかどうかを決定する値を取得または設定します。</summary>
+        <value><b>指定した</b> [保護されたビュー] ウィンドウが表示されている場合は true。それ以外の場合は <b>false です</b>。</value>
         <remarks><para>値の取得と設定が可能です。</para>
           <para> </para></remarks>
       </Docs>
@@ -454,7 +454,7 @@
         <summary>指定した [保護されたビュー] ウィンドウの幅をポイント単位で指定する値を取得または設定します。</summary>
         <value>指定した [保護されたビュー] ウィンドウの幅をポイント単位で指定します。</value>
         <remarks><para>値の取得と設定が可能です。</para>
-          <para>[保護されたビュー] ウィンドウが最大化または最小化されている場合、このプロパティを設定できません。 このプロパティを <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> 使用してウィンドウの状態を確認します。</para>
+          <para>[保護されたビュー] ウィンドウが最大化または最小化されている場合、このプロパティを設定できません。 プロパティを <see cref="P:Microsoft.Office.Interop.Excel.ProtectedViewWindow.WindowState" /> 使用して、ウィンドウの状態を判断します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>
@@ -516,7 +516,7 @@
         <summary>指定した [保護されたビュー] ウィンドウで開いているブックを表すオブジェクトを取得します。</summary>
         <value>指定した [保護されたビュー] ウィンドウで開いているブック。</value>
         <remarks><para>読み取り専用です。</para>
-          <para>[保護されたビュー] ウィンドウは、悪意のある可能性のあるコードからユーザーを保護するように設計されています。メソッドによって返されるオブジェクトを使用して実行できる操作は <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> 制限されます。 許可されていない操作では、"実行時エラー 1004: Excel がセキュリティで保護されている場合、このコマンドは使用できません" が返されます。</para>
+          <para>保護されたビュー ウィンドウは、悪意のある可能性のあるコードからユーザーを保護するように設計されています。メソッドによって返されるオブジェクトを使用して実行できる操作は <see cref="T:Microsoft.Office.Interop.Excel.Workbook" /> <see cref="T:Microsoft.Office.Interop.Excel._Workbook" /> 制限されます。 許可されていない操作は、"実行時エラー 1004: このコマンドは、セキュリティで保護されているExcel返します。</para>
           <para> </para></remarks>
       </Docs>
     </Member>

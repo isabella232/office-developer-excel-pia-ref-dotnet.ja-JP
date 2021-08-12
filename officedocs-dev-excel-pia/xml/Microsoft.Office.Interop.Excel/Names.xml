@@ -1,5 +1,5 @@
 <Type Name="Names" FullName="Microsoft.Office.Interop.Excel.Names">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="25942f5647980d40fd5f4e153bf99810065d6715" /><Meta Name="ms.sourcegitcommit" Value="f58b07bd9753015d401a69461f61bc174edee843" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="01/27/2021" /><Meta Name="ms.locfileid" Value="50011432" /></Metadata><TypeSignature Language="C#" Value="public interface Names : System.Collections.IEnumerable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c8b57541ca50c6f2a0f5542451dbf6fe82f758340e8eab6edcae939433971b15" /><Meta Name="ms.sourcegitcommit" Value="daf501296516d104cf396246ac0d336adfeffd0d" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="ja-JP" /><Meta Name="ms.lasthandoff" Value="08/06/2021" /><Meta Name="ms.locfileid" Value="54515788" /></Metadata><TypeSignature Language="C#" Value="public interface Names : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Names implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Office.Interop.Excel.Names" />
   <TypeSignature Language="VB.NET" Value="Public Interface Names&#xA;Implements IEnumerable" />
@@ -25,10 +25,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>アプリケーションまたはブック内 <see cref="T:Microsoft.Office.Interop.Excel.Name" /> のすべてのオブジェクトのコレクションです。 各 <b>Name</b> オブジェクトは、セル範囲に付けられている名前を表します。 名前は、Database、Print_Area、Auto_Open などのように組み込まれている名前、またはユーザー定義の名前のどちらかです。</summary>
-    <remarks><para>Names コレクション <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Names" /> を取得するには、このプロパティ <b>を使用</b> します。</para>
-      <para>このメソッド <see cref="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> を使用して名前を作成し、コレクションに追加します。 Add <b>メソッドの</b> 引数は、必要に応じてドル記号 ($) を含む <paramref name="RefersTo" /> A1 形式で指定する必要があります。 たとえば、シート 1 でセル A10 が選択されている場合、引数 <paramref name="RefersTo" /> "=sheet1!A1:B1" の場合、新しい名前は実際にはセル A10:B10 を参照します (相対参照を指定したため)。 絶対参照を指定するには、"=sheet1!$A$1:$B$1" を使用します。</para>
-      <para>Use <b>Names</b>( <paramref name="index" /> ), where is the name index number or defined <paramref name="index" /> name, to return a single <b>Name</b> object.</para>
+    <summary>アプリケーションまたはブック内 <see cref="T:Microsoft.Office.Interop.Excel.Name" /> のすべてのオブジェクトのコレクション。 各 <b>Name</b> オブジェクトは、セル範囲に付けられている名前を表します。 名前は、Database、Print_Area、Auto_Open などのように組み込まれている名前、またはユーザー定義の名前のどちらかです。</summary>
+    <remarks><para>Names コレクションを <see cref="P:Microsoft.Office.Interop.Excel._Workbook.Names" /> 取得するには、プロパティ <b>を使用</b> します。</para>
+      <para>メソッドを <see cref="M:Microsoft.Office.Interop.Excel.Names.Add(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> 使用して名前を作成し、コレクションに追加します。 <b>Add メソッドの</b>引数は、必要に応じてドル記号 ($) を含む <paramref name="RefersTo" /> A1 スタイル表記で指定する必要があります。 たとえば、シート 1 でセル A10 が選択されている場合、引数 <paramref name="RefersTo" /> "=sheet1! を使用して名前を定義します。A1:B1"、新しい名前は実際にはセル A10:B10 を参照します (相対参照を指定したため)。 絶対参照を指定するには、"=sheet1!$A$1:$B$1" を使用します。</para>
+      <para>単 <b>一の Name</b>オブジェクトを取得するには、Name ( ) を使用します。名前インデックス番号または定義済みの名前 <paramref name="index" /> <paramref name="index" /> を <b>指定</b> します。</para>
       <para> </para></remarks>
   </Docs>
   <Members>
@@ -98,17 +98,17 @@
         <Parameter Name="RefersToR1C1Local" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Name">省略 <b>可能なオブジェクト</b>です。 指定しない <paramref name="NameLocal" /> 場合は必須です。 名前として使用するテキストを指定します。 名前にスペースを含めることはできません。また、セル参照のように見えることはできません。</param>
-        <param name="RefersTo">省略 <b>可能なオブジェクト</b>です。 他の引数のいずれかを指定しない <paramref name="RefersTo" /> 限り必須です。 名前が参照する名前を記述します (A1 形式の表記法を使用)。 <b>注</b> 参照が存在しない場合は何も返されません。</param>
-        <param name="Visible">省略 <b>可能なオブジェクト</b>です。 <b>True を</b> 指定すると、通常の名前が定義されます。 <b>名前</b> を非表示の名前として定義する場合は False ([名前の定義、名前の貼り付け、またはジャンプ] ダイアログ ボックスには表示されません)。 既定値は <b>True</b> です。</param>
-        <param name="MacroType">省略 <b>可能なオブジェクト</b>です。 次の表に示すように、マクロの種類を指定します。ValueMeaning1User-defined 関数 (<b>Function</b> procedure)2Macro <b>(Sub</b> プロシージャとも呼ばれる) 3 または省略されたNone (つまり、名前はユーザー定義関数またはマクロを参照しません)</param>
-        <param name="ShortcutKey">省略 <b>可能なオブジェクト</b>です。 マクロショートカット キー。 "z" または "Z" のように、アルファベットの 1 文字を指定します。 コマンド マクロに対してのみ適用されます。</param>
-        <param name="Category">省略 <b>可能なオブジェクト</b>です。 マクロまたは関数のカテゴリが 1 または <paramref name="MacroType" /> 2 の場合。 これは、関数ウィザードで使われる分類です。 既存のカテゴリは、数値 (1 から始まる) または名前 (マクロの言語) で参照できます。 指定したカテゴリが存在しない場合は、新しいカテゴリが作成されます。</param>
-        <param name="NameLocal">省略 <b>可能なオブジェクト</b>です。 指定しない <paramref name="Name" /> 場合は必須です。 名前として使用するテキスト (ユーザーの言語)。 名前にスペースを含めることはできません。また、セル参照のように見えることはできません。</param>
-        <param name="RefersToLocal">省略 <b>可能なオブジェクト</b>です。 他の引数のいずれかを指定しない <paramref name="RefersTo" /> 限り、必須です。 (A1 形式の表記法を使用して、ユーザーの言語で) 名前が参照する情報を記述します。</param>
-        <param name="CategoryLocal">省略 <b>可能なオブジェクト</b>です。 指定しない <paramref name="Category" /> 場合は必須です。 ユーザーの言語でカスタム関数のカテゴリを識別するテキスト。</param>
-        <param name="RefersToR1C1">省略 <b>可能なオブジェクト</b>です。 他の引数のいずれかを指定しない <paramref name="RefersTo" /> 限り必須です。 名前が参照する情報を記述します (R1C1 形式の表記法を使用)。</param>
-        <param name="RefersToR1C1Local">省略 <b>可能なオブジェクト</b>です。 他の引数のいずれかを指定しない <paramref name="RefersTo" /> 限り必須です。 (R1C1 形式の表記法を使用して、ユーザーの言語で) 名前が参照する情報を記述します。</param>
+        <param name="Name">省略 <b>可能なオブジェクト</b>です。 指定されていない <paramref name="NameLocal" /> 場合は必須です。 名前として使用するテキスト。 名前にはスペースを含めることはできません。セル参照のように見えることはできません。</param>
+        <param name="RefersTo">省略 <b>可能なオブジェクト</b>です。 他の引数のいずれかを指定しない <paramref name="RefersTo" /> 限り必須です。 名前が何を参照しているかについて説明します (A1 スタイル表記を使用)。 <b>メモ</b> 参照が存在しない場合は、何も返されません。</param>
+        <param name="Visible">省略 <b>可能なオブジェクト</b>です。 <b>名前</b> を通常の状態で定義する場合は True。 <b>名前</b> を非表示の名前として定義するには False を指定します (つまり、[名前の定義]、[名前の貼り付け]、または [ジャンプ] ダイアログ ボックスには表示されません)。 既定値は <b>True</b> です。</param>
+        <param name="MacroType">省略 <b>可能なオブジェクト</b>です。 次の表に示すように、マクロの種類。ValueMeaning1User-defined 関数 (<b>Function</b> procedure)2Macro <b>(Sub</b> procedure)3 または omittedNone (つまり、名前はユーザー定義関数またはマクロを参照しません)</param>
+        <param name="ShortcutKey">省略 <b>可能なオブジェクト</b>です。 マクロ ショートカット キー。 "z" または "Z" のように、アルファベットの 1 文字を指定します。 コマンド マクロに対してのみ適用されます。</param>
+        <param name="Category">省略 <b>可能なオブジェクト</b>です。 マクロまたは関数のカテゴリが 1 または <paramref name="MacroType" /> 2 の場合。 これは、関数ウィザードで使われる分類です。 既存のカテゴリは、数値 (1 から始まる) または名前 (マクロの言語) で参照できます。 Microsoft Excelが存在しない場合は、新しいカテゴリを作成します。</param>
+        <param name="NameLocal">省略 <b>可能なオブジェクト</b>です。 指定されていない <paramref name="Name" /> 場合は必須です。 名前として使用するテキスト (ユーザーの言語)。 名前にはスペースを含めることはできません。セル参照のように見えることはできません。</param>
+        <param name="RefersToLocal">省略 <b>可能なオブジェクト</b>です。 他の引数のいずれかを指定しない <paramref name="RefersTo" /> 限り必須です。 名前が何を参照しているか (A1 形式の表記を使用して、ユーザーの言語で) 説明します。</param>
+        <param name="CategoryLocal">省略 <b>可能なオブジェクト</b>です。 指定されていない <paramref name="Category" /> 場合は必須です。 ユーザーの言語でカスタム関数のカテゴリを識別するテキスト。</param>
+        <param name="RefersToR1C1">省略 <b>可能なオブジェクト</b>です。 他の引数のいずれかを指定しない <paramref name="RefersTo" /> 限り必須です。 名前が何を参照しているか (R1C1 形式の表記法を使用) について説明します。</param>
+        <param name="RefersToR1C1Local">省略 <b>可能なオブジェクト</b>です。 他の引数のいずれかを指定しない <paramref name="RefersTo" /> 限り必須です。 名前が何を参照しているかについて説明します (ユーザーの言語では、R1C1 形式の表記を使用します)。</param>
         <summary>新しい名前を定義します。 オブジェクトを返 <see cref="T:Microsoft.Office.Interop.Excel.Name" /> します。</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -137,7 +137,7 @@
         <ReturnType>Microsoft.Office.Interop.Excel.Application</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Microsoft Excel アプリケーション <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトを返します。</summary>
+        <summary>アプリケーションのオブジェクト <see cref="T:Microsoft.Office.Interop.Excel.Application" /> を表すオブジェクトMicrosoft Excelします。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -287,7 +287,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>指定されたオブジェクトの親オブジェクトを返します。 読み取り専用です。</summary>
+        <summary>指定されたオブジェクトの親オブジェクトを取得します。値の取得のみ可能です。</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
